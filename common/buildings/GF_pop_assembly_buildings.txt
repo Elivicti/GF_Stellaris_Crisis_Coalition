@@ -1,0 +1,37 @@
+#############
+# dolll buildings
+#############
+building_GF_doll_factory = {
+	icon = building_GF_doll_factory
+	base_buildtime = 360
+
+	category = pop_assembly
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+	}
+	
+	planet_modifier = {
+		job_GF_assemble_mechanic_add = 1
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	
+	triggered_desc = {
+		text = job_GF_assemble_mechanic_effect_desc
+	}	
+	prerequisites = {
+		"GF_tech_doll_assemble"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

@@ -1,0 +1,270 @@
+GF_guard_doll = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_stronghold
+	clothes_texture_index = 4
+	
+	planet_modifier = {
+		planet_crime_add = -5
+		planet_stability_add = 2
+	}
+	country_modifier = {
+		country_naval_cap_add = 2
+	}
+	
+	pop_modifier = {
+		pop_defense_armies_add = 2
+	}	
+	
+	resources = {
+		category = planet_soldiers
+		produces = { }
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_robot_pop = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		always = yes
+		hidden_trigger = { exists = owner }
+		owner = { has_authority = GF_auth_commonwealth }
+		has_trait = GF_trait_doll
+	}
+	
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 10	
+			planet = { has_modifier = GF_sercurity_protocol }
+			has_trait = GF_trait_doll
+		}
+	}
+}
+GF_dormancy_doll = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_maintenance_depot
+	pop_modifier = {
+		planet_pops_upkeep_mult = -2
+		pop_housing_usage_mult = -2
+		pop_amenities_usage_mult = -2
+		pop_political_power = -2
+		species_empire_size_mult = -2
+	}
+	planet_modifier = {
+		planet_crime_no_happiness_add = -1
+	}
+	resources = {
+		category = GF_planet_dormancy
+		upkeep = {
+			energy = 0.1
+		}
+		produces = {
+			trigger = {
+				exists = planet
+				planet = { has_modifier = GF_cloud_computing_protocol }
+			}
+			physics_research = 2
+			engineering_research = 2
+			society_research = 2
+		}
+	}	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_robot_pop = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		always = yes
+		hidden_trigger = { exists = owner }
+		has_trait = GF_trait_doll
+		owner = {
+			has_authority = GF_auth_commonwealth
+			NOT = { has_policy_flag = GF_doll_right_full }
+		}
+	}
+	
+	weight = {
+		weight = 0			
+	}
+}
+GF_command_doll = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_stronghold
+
+	pop_modifier = {
+	}
+	planet_modifier = {
+		planet_amenities_no_happiness_add = 4
+	}		
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 3
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = GF_civic_90WISH
+				}
+			}
+			unity = 1
+		}
+	}	
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_robot_pop = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		always = yes
+		hidden_trigger = { exists = owner }
+		owner = { has_authority = GF_auth_commonwealth }
+		has_trait = GF_trait_doll
+	}
+	
+	weight = {
+		weight = @ruler_job_weight
+		modifier = {
+			factor = 2	
+			has_trait = GF_trait_doll
+		}
+	}
+}
+GF_maintain_doll = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_maintenance_depot
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_valid_civic = GF_civic_90WISH
+				}
+			}
+			unity = 1
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_robot_pop = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		always = yes
+		hidden_trigger = { exists = owner }
+		owner = { has_authority = GF_auth_commonwealth }
+		has_trait = GF_trait_doll
+	}
+
+	planet_modifier = {
+		planet_amenities_no_happiness_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			planet_amenities_no_happiness_add = 1
+		}
+	}
+
+	weight = {
+		weight = 1
+		modifier = {
+			factor = 2
+			OR = {
+				has_trait = trait_robot_emotion_emulators
+				has_trait = trait_charismatic
+			}
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				has_trait = trait_robot_uncanny
+				has_trait = trait_repugnant
+			}
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { has_job = GF_maintain_doll }
+			planet = {
+				free_amenities > 5
+			}
+		}
+	}
+}
+GF_assemble_doll = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_robot_assembly_plant
+	clothes_texture_index = 3
+		
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+		is_robot_pop = yes
+	}
+	possible_precalc = can_fill_worker_job
+	possible = {
+		always = yes
+		hidden_trigger = { exists = owner }
+		owner = { has_authority = GF_auth_commonwealth }
+		has_trait = GF_trait_doll
+	}
+	
+	planet_modifier = {
+		planet_pop_assembly_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_valid_civic = GF_civic_IOP }
+		}
+		modifier = {
+			planet_pop_assembly_add = 0.5
+		}
+	}
+	resources = {
+		category = planet_pop_assemblers
+		upkeep = {
+			alloys = 1
+			food = 0.25
+		}
+	}
+		weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 100
+			planet = {
+				exists = owner
+				owner = { has_authority = GF_auth_commonwealth }
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+GF_ANDROID = {
+	species_trait_points = 3
+	species_max_traits = 6
+	robotic = yes
+}

@@ -1,0 +1,140 @@
+building_GF_doll_maintain_center_1 = {
+	base_buildtime = 360
+	icon = building_GF_doll_maintain_center_1
+	category = amenity
+	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
+		
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			AND = {
+				free_building_slots = 0
+				free_jobs = 0
+				free_housing > 10
+				owner = { is_ai = yes }
+			}
+			NOT = { owner = { has_authority = GF_auth_commonwealth } }
+		}
+	}
+	convert_to = {
+		building_luxury_residence
+		building_communal_housing
+		building_hive_warren
+	}
+	planet_modifier = {
+		planet_housing_add = 4
+		planet_amenities_add = 3
+		job_GF_dormancy_doll_add = 5
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	upgrades = {
+		"building_GF_doll_maintain_center_2"
+	}
+
+	ai_weight = { weight = 0 }
+}
+
+building_GF_doll_maintain_center_2 = {
+	base_buildtime = 480
+	can_build = no
+	icon = building_GF_doll_maintain_center_2
+	category = amenity
+	allow = {
+		has_upgraded_capital = yes
+	}
+	potential = {
+		has_building = building_GF_doll_maintain_center_1
+	}
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			NOT = { owner = { has_authority = GF_auth_commonwealth } }
+			buildings_no_crystals = yes
+		}
+	}
+	convert_to = {
+		building_paradise_dome
+		building_expanded_warren
+		building_communal_housing_large
+	}
+	planet_modifier = {
+		planet_housing_add = 8
+		planet_amenities_add = 6
+		job_GF_dormancy_doll_add = 10
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_domination_imperious_architecture
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 300
+		}
+		upkeep = {
+			energy = 2
+			gf_core_chip = 1
+		}
+	}
+	prerequisites = {
+		"GF_tech_maintain_process"
+	}
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+		}
+	}
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = {
+				set_timed_country_flag = {
+					flag = buildings_new_crystal_building
+					days = 270
+				}
+			}
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = {
+				set_timed_country_flag = {
+					flag = buildings_new_crystal_building
+					days = 390
+				}
+			}
+		}
+		else = {
+			planet = {
+				owner = {
+					set_timed_country_flag = {
+						flag = buildings_new_crystal_building
+						days = 510
+					}
+				}
+			}
+		}
+	}
+}

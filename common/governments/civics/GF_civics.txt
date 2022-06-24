@@ -1,0 +1,294 @@
+GF_civic_URNC = {
+	icon = "gfx/interface/icons/governments/civics/gf_URNC.dds"
+	potential = {
+		origin = { value = GF_origin_commonwealth }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+		}
+		civics = {
+			NOR = {
+				value = GF_civic_GK
+				value = GF_civic_AU
+			}
+		}
+	}
+	modifier = {
+		planet_stability_add = 10
+		pop_amenities_usage_mult = -0.1
+		pop_housing_usage_mult = -0.1
+		pop_citizen_happiness = 0.05
+		pop_government_ethic_attraction = 0.2
+	}
+	modification = no
+	description = "GF_civic_URNC_effects"
+	random_weight = { base = 0 }
+}
+
+GF_civic_AU = {
+	icon = "gfx/interface/icons/governments/civics/gf_AU.dds"
+	potential = {
+		origin = { value = GF_origin_commonwealth }
+	}
+	modification = no
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+			NOR = {
+				value = GF_civic_GK
+				value = GF_civic_URNC
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	description = "GF_civic_AU_effects"
+	modifier = {
+		country_starbase_influence_cost_mult = -0.1
+		starbases_upkeep_mult = -0.1
+		all_technology_research_speed = 0.1
+		science_ship_survey_speed = 0.1
+		ship_anomaly_research_speed_mult = 0.1
+	}
+}
+
+GF_civic_GK = {
+	icon = "gfx/interface/icons/governments/civics/gf_GK.dds"
+	potential = {
+		origin = { value = GF_origin_commonwealth }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		civics = {
+			NOR = {
+				value = GF_civic_AU
+				value = GF_civic_URNC
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	description = "GF_civic_GK_effects"
+	modification = no
+	modifier = {
+		trade_value_mult = 0.2
+		country_admin_cap_mult = -0.05
+	}
+}
+
+GF_civic_FSB = {
+	icon = "gfx/interface/icons/governments/civics/gf_FSB.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_URNC
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_admin_cap_mult = 0.1
+		planet_stability_add = 5
+	}
+}
+
+GF_civic_MID = {
+	icon = "gfx/interface/icons/governments/civics/gf_MID.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_AU
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_admin_cap_mult = 0.1
+		planet_stability_add = 5
+	}
+}
+
+GF_civic_KCCO = {
+	icon = "gfx/interface/icons/governments/civics/gf_KCCO.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_URNC
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		starbase_shipyard_build_cost_mult = -0.2
+		country_war_exhaustion_mult = -0.1
+		ships_upkeep_mult = -0.2
+		country_naval_cap_mult = 0.2
+		starbase_shipyard_build_speed_mult = 0.2
+	}
+}
+
+GF_civic_TASA = {
+	icon = "gfx/interface/icons/governments/civics/gf_TASA.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_AU
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_war_exhaustion_mult = -0.1
+		ships_upkeep_mult = 0.1
+		ship_hull_mult = 0.2
+		ship_weapon_range_mult = 0.2
+		ship_weapon_damage = 0.2
+		ship_fire_rate_mult = 0.2
+		ship_ftl_jumpdrive_range_mult = 0.4
+		ship_windup_mult = -0.5
+		admiral_skill_levels = 1
+		ship_accuracy_mult = 0.2
+		country_command_limit_add = 20
+	}
+}
+
+GF_civic_driller = {
+	icon = "gfx/interface/icons/governments/civics/gf_driller.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_AU
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_miners_minerals_produces_add = 1
+		planet_technician_energy_produces_add = 1
+	}
+}
+
+GF_civic_IOP = {
+	icon = "gfx/interface/icons/governments/civics/gf_IOP.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	modification = no
+	random_weight = { base = 0 }
+	description = "GF_civic_IOP_effects"
+	modifier = {
+	}
+}
+
+GF_civic_16LAB = {
+	icon = "gfx/interface/icons/governments/civics/gf_16LAB.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_base_gf_core_chip_produces_add = 1
+		num_tech_alternatives_add = 1
+	}
+}
+
+GF_civic_GOSPLAN = {
+	icon = "gfx/interface/icons/governments/civics/gf_GOSPLAN.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		planet_jobs_consumer_goods_produces_mult = 0.1
+	}
+}
+
+GF_civic_functional_architecture = {
+	icon = "gfx/interface/icons/governments/civics/gf_functional_architecture.dds"
+	description = "GF_civic_functional_architecture_effects"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_structures_cost_mult = -0.1
+		planet_structures_upkeep_mult = -0.1
+	}
+}
+
+GF_civic_NHC = {
+	icon = "gfx/interface/icons/governments/civics/gf_NHC.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		pop_growth_speed = 0.1
+	}
+}
+
+GF_civic_90WISH = {
+	icon = "gfx/interface/icons/governments/civics/gf_90WISH.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	description = "GF_civic_90WISH_effects"
+	modifier = {
+	}
+}
+
+GF_civic_scanner = {
+	icon = "gfx/interface/icons/governments/civics/gf_scanner.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_rare_crystals_produces_mult = 0.3
+		planet_jobs_exotic_gases_produces_mult = 0.3
+		planet_jobs_volatile_motes_produces_mult = 0.3
+	}
+}

@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+#################################
+ gf_core_chip:0 "心智核心"
+ gf_core_chip_desc:0 "生产人形必须的主控芯片，用于搭载人形的心智云图。"
+ gf_core_chip_deficit:0 "芯片短缺"

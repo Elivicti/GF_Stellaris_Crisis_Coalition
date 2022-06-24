@@ -1,0 +1,87 @@
+# Star glow from sun is set under atmosphere in	00_planet_classes
+# Star surface is set in worldgfx file for each star
+# Effects are set in particle effect for each star
+# New planets also need planet tiles (game\gfx\interface\icons\tile_backgrounds)
+# New planets need surface background (game\gfx\portraits\environments)
+
+### EXAMPLE:
+#pc_tropical = {
+#	entity = "gaia_planet"
+#	entity_scale = 8.0
+#
+#	picture = pc_tropical	# Use tropical portrait art instead of gaia
+#
+#	atmosphere_color		= hsv { 0.58	0.3 0.7 }
+#	atmosphere_intensity	= 1.0
+#	atmosphere_width		= 0.5
+#
+#	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.tga"
+#
+#	min_distance_from_sun = 60
+#	max_distance_from_sun = 80
+#	spawn_odds = 10
+#
+#	extra_orbit_size = 0
+#	extra_planet_count = 0
+#
+#	chance_of_ring = 0.2
+#
+#	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+#	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+#
+#	colonizable = yes
+#	colonization_tech = { "tech_tropical_colonization@1" }
+#	district_set = <string>		# Use any string here, for use in the uses_district_set trigger for easy compatibility
+#	initial = yes # Default is no, only specified for planets available as starting classes for custom species
+#
+#	space_monster_target = yes	# Country types with space monster AI will wander to this planet type if set to yes
+#
+#	is_artificial_planet = yes	# Will make sure that modifiers for non artificial planets are not added, e.g. max districts
+#}
+###
+
+# ###########
+# Habitable Planets
+# ###########
+
+#####铁血事件机械球
+pc_GF_sf_machine = {
+	entity = "machine_planet"
+	entity_scale = @planet_standard_scale
+	picture = pc_ai
+
+	icon = GFX_planet_type_machine
+
+	atmosphere_color		= hsv { 0.09 0.8 0.7 }
+	atmosphere_intensity	= 0.4
+	atmosphere_width		= 1.0
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_neutral.dds"
+
+	min_distance_from_sun = 40
+	max_distance_from_sun = 1000
+
+	modifier = {
+		planet_jobs_produces_mult = 0.20
+		pop_housing_usage_mult = -0.10
+		pop_environment_tolerance = 0.0
+		planet_max_buildings_add = 12
+	}
+
+	spawn_odds = 0
+	extra_orbit_size = 1
+	extra_planet_count = 2
+
+	can_be_moon = no
+	chance_of_ring = 0.0
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
+	district_set = gf_sf_machine_world
+	starting_planet = no
+	show_city = no
+
+	carry_cap_per_free_district = @carry_cap_low
+}

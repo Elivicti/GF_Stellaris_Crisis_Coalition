@@ -1,0 +1,34 @@
+GF_can_doll_fill_ruler_job = {
+	hidden_trigger = {
+		exists = owner
+		has_trait = GF_trait_doll
+		owner = {
+			OR = {
+				NOT = { has_authority = GF_auth_commonwealth }
+				AND = {
+					has_authority = GF_auth_commonwealth
+					has_policy_flag = GF_doll_right_full
+				}
+			}
+		}
+	}
+}
+
+GF_can_doll_fill_specialist_job = {
+	hidden_trigger = {
+		exists = owner
+		has_trait = GF_trait_doll
+		owner = {
+			OR = {
+				NOT = { has_authority = GF_auth_commonwealth }
+				AND = {
+					has_authority = GF_auth_commonwealth
+					OR = {
+						has_policy_flag = GF_doll_right_full
+						has_policy_flag = GF_doll_right_limited
+					}
+				}
+			}
+		}
+	}
+}

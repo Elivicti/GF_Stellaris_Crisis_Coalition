@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ GIRLF:0 "少女前线"
+############
+ pc_GF_sf_machine:0 "神秘的机械星球"
+ pc_GF_sf_machine_desc:0 "一个完全由钢铁与机械组成的星球，上面有太多秘密等待我们发掘。"
+
+ pc_GF_sf_machine_adj:0 "神秘的机械星球"
+ mod_pc_GF_sf_machine_habitability:0 "$pc_GF_sf_machine$宜居度"
+ trait_pc_GF_sf_machine_preference:0 "$pc_GF_sf_machine$偏好"
+ trait_pc_GF_sf_machine_preference_desc:0 "为啥会有物种偏好$pc_GF_sf_machine$？"

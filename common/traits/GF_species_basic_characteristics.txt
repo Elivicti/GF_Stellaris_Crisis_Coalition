@@ -1,0 +1,118 @@
+GF_trait_doll = {
+	cost = 0
+	sorting_priority = 20
+	potential_crossbreeding_chance = 0
+	initial = no
+	randomized = no
+
+	species_potential_add = { always = no }
+	species_possible_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+
+	immortal_leaders = yes
+	improves_leaders = yes
+	advanced_trait = no
+	allowed_archetypes = {
+		GF_ANDROID
+	}
+	icon = "gfx/interface/icons/traits/doll/doll.dds"
+	modifier = {
+		pop_environment_tolerance = 0.9
+		army_damage_mult = 0.2
+		planet_jobs_worker_produces_mult = 0.20
+		planet_jobs_ruler_produces_mult = -0.10
+		planet_jobs_specialist_produces_mult = -0.10
+		pop_demotion_time_mult = -2
+	}
+
+	## GF_doll_right_policy
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_doll_right_full }
+		}
+		planet_jobs_produces_mult = 0.10
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_doll_right_limited }
+		}
+		planet_jobs_produces_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = -0.10
+		pop_political_power = -0.25
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_doll_right_servitude }
+		}
+		planet_pops_consumer_goods_upkeep_mult = -0.15
+		pop_political_power = -0.50
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_doll_right_low }
+		}
+		planet_pops_consumer_goods_upkeep_mult = -10
+		pop_political_power = -0.80
+	}
+
+	## GF_run_mode_policy
+	# triggered_pop_modifier = {
+	# 	potential = {
+	# 		owner = { has_policy_flag = GF_run_mode_policy_normal }
+	# 	}
+	# 	planet_jobs_produces_mult = 0.05
+	# }
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_run_mode_policy_energy }
+		}
+		planet_pops_upkeep_mult = -0.05
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_run_mode_policy_no_food }
+		}
+		planet_pops_upkeep_mult = -0.05
+		planet_pops_food_upkeep_mult = -10
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			owner = { has_policy_flag = GF_run_mode_policy_overload }
+		}
+		planet_pops_upkeep_mult = -0.15
+	}
+}
+
+GF_trait_sequela = {
+	cost = 0
+	sorting_priority = 20
+	initial = no
+	randomized = no
+	
+	species_potential_add = { always = no }
+	species_possible_add = { always = no }
+	species_possible_remove = { always = no }
+	species_possible_merge_add = { always = no }
+	
+	advanced_trait = no
+	modifier = {
+		army_damage_mult = -0.2
+		planet_jobs_worker_produces_mult = -0.2
+		pop_growth_speed = -0.2
+		planet_jobs_specialist_produces_mult = 0.05
+	}
+	allowed_archetypes = {
+		BIOLOGICAL
+	}
+	ai_weight = {
+		weight = 0
+	}
+	icon = "gfx/interface/icons/traits/humankind/sequela.dds"
+}

@@ -1,0 +1,276 @@
+d_GF_south_pole_mineral = {
+	is_for_colonizable = yes
+	icon = d_crystalline_caverns
+	planet_modifier = {
+		district_mining_max = 3
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_south_pole_energy = {
+	is_for_colonizable = yes
+	icon = d_toxic_kelp
+	planet_modifier = {
+		district_generator_max = 4
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_black_zone = {
+	is_for_colonizable = yes
+	time = 300
+	icon = d_GF_black_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		pop_happiness = -0.05
+		planet_max_districts_add = -1
+	}
+	blocker_swap_types = {
+		d_GF_relic_preservation
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+	prerequisites = { "GF_tech_ecological_recovery" }
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_red_zone = {
+	is_for_colonizable = yes
+	time = 300
+	icon = d_GF_red_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		pop_happiness = -0.01
+		biological_pop_happiness = -0.02
+		planet_max_districts_add = -1
+	}
+	blocker_swap_types = {
+		d_GF_yellow_zone
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+	prerequisites = { "GF_tech_ecological_recovery" }
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_yellow_zone = {
+	is_for_colonizable = yes
+	time = 270
+	icon = d_GF_yellow_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		biological_pop_happiness = -0.01
+		planet_max_districts_add = -1
+	}
+	on_cleared = {
+		create_pop = {
+			species = owner
+		}
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_green_zone = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_green_zone
+	planet_modifier = {
+		biological_pop_happiness = 0.01
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_white_zone = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_white_zone
+	planet_modifier = {
+		biological_pop_happiness = 0.02
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_doll_factory_ruin = {
+	is_for_colonizable = yes
+	time = 120
+	icon = d_GF_doll_factory_ruin
+	category = deposit_cat_blockers
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	blocker_swap_types = {
+		d_GF_doll_factory
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 50
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_doll_factory = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_doll_factory
+	planet_modifier = {
+		job_GF_assemble_mechanic_add = 1
+		job_GF_programmer_add = 1
+		# debug
+		# planet_pop_assembly_add = 25
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_south_asia_food = {
+	is_for_colonizable = yes
+	icon = d_fertile_lands
+	planet_modifier = {
+		district_farming_max = 4
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_amazon_food = {
+	is_for_colonizable = yes
+	icon = d_fertile_lands
+	planet_modifier = {
+		district_farming_max = 4
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_australia_ruin = {
+	is_for_colonizable = yes
+	time = 270
+	icon = d_organic_landfill
+	category = deposit_cat_blockers
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	use_weights_for_blocker_swap_types = no
+	blocker_swap_types = {
+		d_GF_australia_mineral
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 300
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_australia_mineral = {
+	is_for_colonizable = yes
+	icon = d_fertile_lands
+	planet_modifier = {
+		district_mining_max = 3
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_asia_europe_factory = {
+	is_for_colonizable = yes
+	icon = d_fertile_lands
+	planet_modifier = {
+		district_mining_max = 2
+		district_generator_max = 4
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_relic_preservation = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_relic_preservation
+	planet_modifier = {
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_south_pole_urban = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_south_pole_urban
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_jobs_society_research_produces_mult = 0.1
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		district_farming_max = 1
+		district_mining_max = 1
+		district_generator_max = 1
+		planet_max_districts_add = 3
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_purify_wall = {
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	icon = d_GF_purify_wall
+	planet_modifier = {
+		biological_pop_happiness = 0.05
+		job_GF_guard_doll_add = 2
+	}
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 1
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}

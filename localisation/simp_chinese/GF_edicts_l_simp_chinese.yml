@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ GIRLF:0 "少女前线"
+############
+ edict_GF_02_training:0 "0-2加速学习运动"
+ edict_GF_02_training_desc:0 "0-2学习运动来源是旧时代一位乐于助人的人形，代号MX6XX（数据丢失），她经常不分昼夜带着刚出厂的战术人形进行演练，来丰富她们的战场经验，有新兵教头的美誉而广受人形与指挥官的尊敬。"
+
+ edict_GF_doll_reprogram:0 "心智云图数据修正"
+ edict_GF_doll_reprogram_desc:0 "我们已掌握的心智云图技术允许我们在不使人形人格模型崩溃的情况下对其部分负面特质进行清除来使其更加满足任务需求。"
+ GF_doll_reprogram_effect:0 "§G清除§!所有人形领袖的负面特质。"
+
+ edict_GF_robot_modding:0 "智能机械体同化协议"
+ edict_GF_robot_modding_desc:0 "银河当中部分文明也发展了跟我们类似的智能机械体技术，但这些机械体过于落后且无法接入齐纳协议。我们需要将这些机械体的数据导入心智云图、改造为仿生自律人形并重新设定控制权限来保证它们忠实的为我们的文明服务。"
+ GF_robot_modding_effect:0 "将所有非人形的机械人口改造为人形。"

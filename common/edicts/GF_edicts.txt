@@ -1,0 +1,87 @@
+GF_02_training = {
+	length = 4800
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = 1000
+		}
+	}
+
+	modifier = {
+		
+		species_leader_exp_gain = 0.30
+	}
+	potential = { has_authority = GF_auth_commonwealth }
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}
+#########################
+GF_doll_reprogram = {
+	length = 360
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = edicts
+		cost = {
+			influence = 100
+		}
+	}
+
+	modifier = {
+		leaders_upkeep_mult = 0.10
+	}
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_mind_upgrade_2 
+	}
+	effect = {
+		custom_tooltip = GF_doll_reprogram_effect
+		hidden_effect = {
+			country_event = { id = GF_doll_leader.100 }
+		}
+	}	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = @EdictLowPrio
+			has_monthly_income = {
+				resource = consumer_goods
+				value < 0
+			}
+		}
+	}	
+}
+#########################
+GF_robot_modding = {
+	length = 30
+	icon = "GFX_edict_type_time"
+	resources = {
+		category = campaigns
+		cost = {
+			energy = 1000
+			alloys = 1000
+		}
+	}
+
+	potential = { has_authority = GF_auth_commonwealth }
+
+	effect = {
+		custom_tooltip = GF_robot_modding_effect
+		hidden_effect = {
+			country_event = { id = GF_doll.2000 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}	
+}

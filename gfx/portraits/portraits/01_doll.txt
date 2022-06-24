@@ -1,0 +1,569 @@
+portraits = {
+	doll_000 = {
+		texturefile = "gfx/models/portraits/doll/ogas.dds"
+	}
+	doll_001 = {
+		texturefile = "gfx/models/portraits/doll/1.dds"
+	}
+	doll_002 = {
+		texturefile = "gfx/models/portraits/doll/2.dds"
+	}
+	doll_003 = {
+		texturefile = "gfx/models/portraits/doll/3.dds"
+	}
+	doll_004 = {
+		texturefile = "gfx/models/portraits/doll/4.dds"
+	}
+	doll_005 = {
+		texturefile = "gfx/models/portraits/doll/5.dds"
+	}
+	doll_006 = {
+		texturefile = "gfx/models/portraits/doll/6.dds"
+	}
+	doll_007 = {
+		texturefile = "gfx/models/portraits/doll/7.dds"
+	}
+	doll_008 = {
+		texturefile = "gfx/models/portraits/doll/8.dds"
+	}
+	doll_009 = {
+		texturefile = "gfx/models/portraits/doll/9.dds"
+	}
+	doll_010 = {
+		texturefile = "gfx/models/portraits/doll/10.dds"
+	}
+	doll_011 = {
+		texturefile = "gfx/models/portraits/doll/11.dds"
+	}
+	doll_012 = {
+		texturefile = "gfx/models/portraits/doll/12.dds"
+	}
+	doll_013 = {
+		texturefile = "gfx/models/portraits/doll/13.dds"
+	}
+	doll_014 = {
+		texturefile = "gfx/models/portraits/doll/AK12.dds"
+	}
+	doll_015 = {
+		texturefile = "gfx/models/portraits/doll/14.dds"
+	}
+	doll_016 = {
+		texturefile = "gfx/models/portraits/doll/15.dds"
+	}
+	doll_017 = {
+		texturefile = "gfx/models/portraits/doll/16.dds"
+	}
+	doll_018 = {
+		texturefile = "gfx/models/portraits/doll/17.dds"
+	}
+	doll_019 = {
+		texturefile = "gfx/models/portraits/doll/18.dds"
+	}
+	doll_020 = {
+		texturefile = "gfx/models/portraits/doll/19.dds"
+	}
+	doll_021 = {
+		texturefile = "gfx/models/portraits/doll/20.dds"
+	}
+	doll_022 = {
+		texturefile = "gfx/models/portraits/doll/1.dds"
+	}
+	doll_023 = {
+		texturefile = "gfx/models/portraits/doll/21.dds"
+	}
+	doll_024 = {
+		texturefile = "gfx/models/portraits/doll/22.dds"
+	}
+	doll_025 = {
+		texturefile = "gfx/models/portraits/doll/23.dds"
+	}
+	doll_026 = {
+		texturefile = "gfx/models/portraits/doll/24.dds"
+	}
+	doll_027 = {
+		texturefile = "gfx/models/portraits/doll/25.dds"
+	}
+	doll_028 = {
+		texturefile = "gfx/models/portraits/doll/26.dds"
+	}
+	doll_029 = {
+		texturefile = "gfx/models/portraits/doll/27.dds"
+	}
+	doll_030 = {
+		texturefile = "gfx/models/portraits/doll/28.dds"
+	}
+	doll_031 = {
+		texturefile = "gfx/models/portraits/doll/29.dds"
+	}
+	doll_032 = {
+		texturefile = "gfx/models/portraits/doll/30.dds"
+	}
+	doll_033 = {
+		texturefile = "gfx/models/portraits/doll/31.dds"
+	}
+	doll_034 = {
+		texturefile = "gfx/models/portraits/doll/32.dds"
+	}
+	doll_035 = {
+		texturefile = "gfx/models/portraits/doll/33.dds"
+	}
+	doll_036 = {
+		texturefile = "gfx/models/portraits/doll/34.dds"
+	}
+	doll_037 = {
+		texturefile = "gfx/models/portraits/doll/35.dds"
+	}
+	doll_038 = {
+		texturefile = "gfx/models/portraits/doll/36.dds"
+	}
+	doll_039 = {
+		texturefile = "gfx/models/portraits/doll/37.dds"
+	}
+	doll_040 = {
+		texturefile = "gfx/models/portraits/doll/38.dds"
+	}
+	doll_041 = {
+		texturefile = "gfx/models/portraits/doll/39.dds"
+	}
+	doll_042 = {
+		texturefile = "gfx/models/portraits/doll/40.dds"
+	}
+	doll_043 = {
+		texturefile = "gfx/models/portraits/doll/41.dds"
+	}
+	doll_044 = {
+		texturefile = "gfx/models/portraits/doll/42.dds"
+	}
+	doll_045 = {
+		texturefile = "gfx/models/portraits/doll/43.dds"
+	}
+	doll_046 = {
+		texturefile = "gfx/models/portraits/doll/44.dds"
+	}
+	doll_047 = {
+		texturefile = "gfx/models/portraits/doll/45.dds"
+	}
+	doll_048 = {
+		texturefile = "gfx/models/portraits/doll/46.dds"
+	}
+	doll_049 = {
+		texturefile = "gfx/models/portraits/doll/47.dds"
+	}
+	doll_050 = {
+		texturefile = "gfx/models/portraits/doll/48.dds"
+	}
+	doll_051 = {
+		texturefile = "gfx/models/portraits/doll/49.dds"
+	}
+	doll_052 = {
+		texturefile = "gfx/models/portraits/doll/50.dds"
+	}
+	doll_053 = {
+		texturefile = "gfx/models/portraits/doll/51.dds"
+	}
+	doll_054 = {
+		texturefile = "gfx/models/portraits/doll/52.dds"
+	}
+	doll_055 = {
+		texturefile = "gfx/models/portraits/doll/53.dds"
+	}
+	doll_056 = {
+		texturefile = "gfx/models/portraits/doll/54.dds"
+	}
+	doll_057 = {
+		texturefile = "gfx/models/portraits/doll/55.dds"
+	}
+	doll_058 = {
+		texturefile = "gfx/models/portraits/doll/56.dds"
+	}
+	doll_059 = {
+		texturefile = "gfx/models/portraits/doll/57.dds"
+	}
+	doll_060 = {
+		texturefile = "gfx/models/portraits/doll/58.dds"
+	}
+	doll_061 = {
+		texturefile = "gfx/models/portraits/doll/59.dds"
+	}
+	doll_062 = {
+		texturefile = "gfx/models/portraits/doll/60.dds"
+	}
+	doll_063 = {
+		texturefile = "gfx/models/portraits/doll/13.dds"
+	}
+	doll_064 = {
+		texturefile = "gfx/models/portraits/doll/12.dds"
+	}
+}
+
+portrait_groups = {
+	GF_doll = {
+		default = doll_032
+		game_setup = {
+			add = {
+				portraits = {
+					doll_000
+					doll_001
+					doll_002
+					doll_003
+					doll_004
+					doll_005
+					doll_006
+					doll_007
+					doll_008
+					doll_009
+					doll_010
+					doll_011
+					doll_012
+					doll_013
+					doll_014
+					doll_015
+					doll_016
+					doll_017
+					doll_018
+					doll_019
+					doll_020
+					doll_021
+					doll_022
+					doll_023
+					doll_024
+					doll_025
+					doll_026
+					doll_027
+					doll_028
+					doll_029
+					doll_030
+					doll_031
+					doll_032
+					doll_033
+					doll_034
+					doll_035
+					doll_036
+					doll_037
+					doll_038
+					doll_039
+					doll_040
+					doll_041
+					doll_042
+					doll_043
+					doll_044
+					doll_045
+					doll_046
+					doll_047
+					doll_048
+					doll_049
+					doll_050
+					doll_051
+					doll_052
+					doll_053
+					doll_054
+					doll_055
+					doll_056
+					doll_057
+					doll_058
+					doll_059
+					doll_060
+					doll_061
+					doll_062
+					doll_063
+					doll_064
+				}
+			}
+		}
+		#species scope
+		species = {
+			#generic portrait for a species
+			add = {
+				portraits = {
+					doll_001
+					doll_002
+					doll_003
+					doll_004
+					doll_005
+					doll_006
+					doll_007
+					doll_008
+					doll_009
+					doll_010
+					doll_011
+					doll_012
+					doll_013
+					doll_014
+					doll_015
+					doll_016
+					doll_017
+					doll_018
+					doll_019
+					doll_020
+					doll_021
+					doll_022
+					doll_023
+					doll_024
+					doll_025
+					doll_026
+					doll_027
+					doll_028
+					doll_029
+					doll_030
+					doll_031
+					doll_032
+					doll_033
+					doll_034
+					doll_035
+					doll_036
+					doll_037
+					doll_038
+					doll_039
+					doll_040
+					doll_041
+					doll_042
+					doll_043
+					doll_044
+					doll_045
+					doll_046
+					doll_047
+					doll_048
+					doll_049
+					doll_050
+					doll_051
+					doll_052
+					doll_053
+					doll_054
+					doll_055
+					doll_056
+					doll_057
+					doll_058
+					doll_059
+					doll_060
+					doll_061
+					doll_062
+					doll_063
+					doll_064
+				}
+			}
+		}
+		#pop scope
+		pop = {
+			#for a specific pop
+			add = {
+				portraits = {
+					doll_001
+					doll_002
+					doll_003
+					doll_004
+					doll_005
+					doll_006
+					doll_007
+					doll_008
+					doll_009
+					doll_010
+					doll_011
+					doll_012
+					doll_013
+					doll_014
+					doll_015
+					doll_016
+					doll_017
+					doll_018
+					doll_019
+					doll_020
+					doll_021
+					doll_022
+					doll_023
+					doll_024
+					doll_025
+					doll_026
+					doll_027
+					doll_028
+					doll_029
+					doll_030
+					doll_031
+					doll_032
+					doll_033
+					doll_034
+					doll_035
+					doll_036
+					doll_037
+					doll_038
+					doll_039
+					doll_040
+					doll_041
+					doll_042
+					doll_043
+					doll_044
+					doll_045
+					doll_046
+					doll_047
+					doll_048
+					doll_049
+					doll_050
+					doll_051
+					doll_052
+					doll_053
+					doll_054
+					doll_055
+					doll_056
+					doll_057
+					doll_058
+					doll_059
+					doll_060
+					doll_061
+					doll_062
+					doll_063
+					doll_064
+				}
+			}
+		}
+		#leader scope
+		leader = {
+			#scientists, generals, admirals, governor
+			add = {
+				portraits = {
+					doll_001
+					doll_002
+					doll_003
+					doll_004
+					doll_005
+					doll_006
+					doll_007
+					doll_008
+					doll_009
+					doll_010
+					doll_011
+					doll_012
+					doll_013
+					doll_014
+					doll_015
+					doll_016
+					doll_017
+					doll_018
+					doll_019
+					doll_020
+					doll_021
+					doll_022
+					doll_023
+					doll_024
+					doll_025
+					doll_026
+					doll_027
+					doll_028
+					doll_029
+					doll_030
+					doll_031
+					doll_032
+					doll_033
+					doll_034
+					doll_035
+					doll_036
+					doll_037
+					doll_038
+					doll_039
+					doll_040
+					doll_041
+					doll_042
+					doll_043
+					doll_044
+					doll_045
+					doll_046
+					doll_047
+					doll_048
+					doll_049
+					doll_050
+					doll_051
+					doll_052
+					doll_053
+					doll_054
+					doll_055
+					doll_056
+					doll_057
+					doll_058
+					doll_059
+					doll_060
+					doll_061
+					doll_062
+					doll_063
+					doll_064
+				}
+			}
+		}
+		#leader scope
+		ruler = {
+			add = {
+				portraits = {
+					doll_000
+					doll_001
+					doll_002
+					doll_003
+					doll_004
+					doll_005
+					doll_006
+					doll_007
+					doll_008
+					doll_009
+					doll_010
+					doll_011
+					doll_012
+					doll_013
+					doll_014
+					doll_015
+					doll_016
+					doll_017
+					doll_018
+					doll_019
+					doll_020
+					doll_021
+					doll_022
+					doll_023
+					doll_024
+					doll_025
+					doll_026
+					doll_027
+					doll_028
+					doll_029
+					doll_030
+					doll_031
+					doll_032
+					doll_033
+					doll_034
+					doll_035
+					doll_036
+					doll_037
+					doll_038
+					doll_039
+					doll_040
+					doll_041
+					doll_042
+					doll_043
+					doll_044
+					doll_045
+					doll_046
+					doll_047
+					doll_048
+					doll_049
+					doll_050
+					doll_051
+					doll_052
+					doll_053
+					doll_054
+					doll_055
+					doll_056
+					doll_057
+					doll_058
+					doll_059
+					doll_060
+					doll_061
+					doll_062
+					doll_063
+					doll_064
+				}
+			}
+		}
+		upgrader = {
+			add = {
+				portraits = {
+					doll_010
+				}
+			}
+		}
+	}
+}

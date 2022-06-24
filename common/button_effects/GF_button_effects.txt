@@ -1,0 +1,20 @@
+GF_quick_ogas_contact = {
+	potential = {
+		exists = from
+		from = {
+			has_authority = GF_auth_commonwealth
+			is_ai = no
+		}
+		any_country = { has_country_flag = flag_GF_ogas_country }
+	}
+	allow = { always = yes }
+	
+	effect = { 
+		custom_tooltip = "GF_quick_ogas_contact_tooltip"
+		hidden_effect = {
+			from = {
+				country_event = { id = GF_ogas.10000 }
+			}
+		}
+	}
+}

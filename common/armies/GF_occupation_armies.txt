@@ -1,0 +1,16 @@
+### gf
+GF_army_occupation_doll = {
+	defensive = yes
+	occupation = yes
+	health = 1.25
+	damage = 1.50
+	has_morale = no
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from occupation armies
+	icon = GFX_army_type_robot
+	has_species = yes		
+	potential = {
+		from = { has_trait = GF_trait_doll }
+		owner = { has_authority = GF_auth_commonwealth }
+	}
+}

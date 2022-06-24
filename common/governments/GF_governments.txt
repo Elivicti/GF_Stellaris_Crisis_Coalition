@@ -1,0 +1,14 @@
+GF_gov_commonwealth = {
+	ruler_title = GF_RT_OGAS
+	possible = {
+		OR = {
+			has_valid_civic = GF_civic_URNC
+			has_valid_civic = GF_civic_AU
+			has_valid_civic = GF_civic_GK
+		}
+	}
+
+	weight = {
+		base = 100000
+	}
+}

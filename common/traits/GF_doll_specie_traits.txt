@@ -1,0 +1,272 @@
+######(initial)
+GF_trait_strange_cloth = {
+	cost = 0
+	allowed_archetypes = { GF_ANDROID }
+	randomized = no
+	icon = "gfx/interface/icons/traits/doll/cloth.dds"
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.05
+		planet_pops_consumer_goods_upkeep_mult = 0.10
+	}
+}
+GF_trait_delicious_food = {
+	cost = -1
+	allowed_archetypes = { GF_ANDROID }
+	initial = yes
+	randomized = no
+	icon="gfx/interface/icons/traits/doll/food.dds"
+	modifier={
+		pop_happiness = 0.05
+		planet_pops_robotics_food_upkeep_mult = 0.10
+	}
+}
+GF_trait_doll_expand = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = yes
+	randomized = no
+	icon = "gfx/interface/icons/traits/doll/expand.dds"
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.10
+		planet_pops_upkeep_mult = 0.05
+		army_damage_mult = 0.10
+	}
+}
+######(advance)
+GF_trait_fire_core = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/firecore.dds"
+	modifier = {
+		army_damage_mult = 0.20
+	}
+}
+GF_trait_vanometriccell = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "GF_trait_nanobot_hives" }
+	icon = "gfx/interface/icons/traits/doll/battery.dds"
+	modifier = {
+		planet_pops_upkeep_mult = -0.05
+	}
+}
+GF_trait_liquid_metal_skeleton = {
+	cost = 1
+	initial = no
+	randomized = no
+    advanced_trait = yes
+	allowed_archetypes = { GF_ANDROID }
+	icon = "gfx/interface/icons/traits/doll/skeleton.dds"
+	modifier = {
+		pop_assembly_speed = 0.15
+	}
+}
+GF_trait_adapted_skin = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/skin.dds"
+	modifier = {
+		pop_environment_tolerance = 0.20
+	}
+}
+GF_trait_emotional_subroutine = {
+	cost = 2
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "GF_trait_zener_protocol" }
+	icon="gfx/interface/icons/traits/doll/emotion.dds"
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+		species_empire_size_mult = -0.10
+    }
+}
+GF_trait_analysis_model = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "GF_trait_logical_subroutine" }
+	icon="gfx/interface/icons/traits/doll/analysis.dds"
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = 0.1
+		planet_jobs_society_research_produces_mult = 0.1
+	}
+}
+######(perk1)
+GF_trait_logical_subroutine = {
+	cost = 2
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/logic.dds"
+	opposites = { "GF_trait_analysis_model" }
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+	}
+	modifier = {
+		planet_jobs_engineering_research_produces_mult = 0.2
+		planet_jobs_physics_research_produces_mult = 0.2
+		planet_jobs_society_research_produces_mult = 0.2
+	}
+}
+GF_trait_mind_cloud = {
+	cost = 2
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	improves_leaders = yes
+	icon = "gfx/interface/icons/traits/doll/mindcloud.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+	}
+	modifier = {
+		species_leader_exp_gain = 0.25
+		leader_skill_levels = 2
+	}
+}
+GF_trait_tacticalchip = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+	}
+	modifier = {
+		army_damage_mult = 0.20
+	}
+}
+GF_trait_zener_protocol = {
+	cost = 1
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "GF_trait_emotional_subroutine" }
+	icon = "gfx/interface/icons/traits/doll/zener.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+	}
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.15
+		species_empire_size_mult = -0.15
+	}
+}
+GF_trait_sercurity_program = {
+	cost = 1
+	initial = no
+	sorting_priority = 20
+	allowed_archetypes = { GF_ANDROID }
+	randomized = no
+	advanced_trait = no
+	icon = "gfx/interface/icons/traits/doll/defense.dds"
+	improves_leaders = yes
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+	}
+	modifier = {
+		pop_happiness = 0.2
+		pop_government_ethic_attraction = 0.30
+	}
+}
+######(perk2)
+GF_trait_nanobot_hives = {
+	cost = 3
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	opposites = { "GF_trait_vanometriccell" }
+	icon = "gfx/interface/icons/traits/doll/nanobot.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_body_upgrade
+		}
+	}
+	modifier = {
+		planet_pops_upkeep_mult = -0.10
+    }
+}	
+GF_trait_quantum_processors = {
+	cost = 3
+	initial = no
+	randomized = no
+	icon ="gfx/interface/icons/traits/doll/quantum.dds"
+	allowed_archetypes = { GF_ANDROID }
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_body_upgrade
+		}
+	}
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.10
+		planet_jobs_specialist_produces_mult = 0.10
+	}
+}
+GF_trait_overclock = {
+	cost = -3
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/overclock.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_body_upgrade
+		}
+	}
+	modifier = {
+ 
+	}
+}
+GF_trait_nuclear_engine = {
+	cost = 3
+	allowed_archetypes = { GF_ANDROID }
+	initial = no
+	randomized = no
+	advanced_trait = yes
+	icon = "gfx/interface/icons/traits/doll/nuclear.dds"
+	species_potential_add = {
+		exists = from
+		from = {
+			has_ascension_perk = ap_GF_body_upgrade
+		}
+	}
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.20
+	}
+}

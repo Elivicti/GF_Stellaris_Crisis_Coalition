@@ -1,0 +1,70 @@
+
+on_game_start_country = {
+	events = {
+		GF_start.0	# 初始化开局
+		GF_sf.0		# 铁血事件链
+	}
+}
+
+# Called during empire initialization when starting a new game if has_secondary_species game rule is true.
+# Called before empire_init_create_capital_pops.
+# scope: planet
+# from: founder species
+# fromfrom: secondary species (if exists)
+empire_init_capital_planet = {
+	events = {
+		GF_start.2	# 初始化第二物种（人形）
+	}
+}
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+		GF_ogas.0	# 建立OGAS国家
+	}
+}
+
+# A pop has finished assembling
+# This = Planet scope
+# From = Country
+# FromFrom = Pop
+on_pop_assembled = {
+	events = {
+		GF_doll.0	# 人形权利相关
+	}
+}
+
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
+on_policy_changed = {
+	events = {
+		GF_doll.1100	# 完整公民权利
+		GF_doll.1200	# 有限公民权利
+		GF_doll.1300	# 侍从
+		GF_doll.1400	# 商品
+	}
+}
+
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		GF_new_type.0		# 仅女性新人类物种领袖（都是美少女立绘为什么会有男人）
+		GF_doll_leader.0	# 添加专属领袖特质
+	}
+}
+
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+		
+	}
+}

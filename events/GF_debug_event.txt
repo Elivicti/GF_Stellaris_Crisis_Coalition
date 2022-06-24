@@ -1,0 +1,57 @@
+namespace = gf_debug
+
+# country_event = {
+# 	id = gf_debug.0
+# 	desc = gf_debug.0.desc
+
+# 	is_triggered_only = yes
+
+# 	immediate = {
+# 		set_variable = {
+# 			which = doll_cnt
+# 			value = 0
+# 		}
+# 		set_variable = {
+# 			which = r_cnt
+# 			value = 0
+# 		}
+# 		every_owned_species = {
+# 			limit = { has_trait = GF_trait_doll }
+# 			owner = {
+# 				change_variable = {
+# 					which = doll_cnt
+# 					value = 1
+# 				}
+# 			}
+# 		}
+# 		every_owned_species = {
+# 			limit = {
+# 				has_trait = GF_trait_doll
+# 				has_species_flag = community_mod_rules_trigger
+# 			}
+# 			owner = {
+# 				change_variable = {
+# 					which = r_cnt
+# 					value = 1
+# 				}
+# 			}
+# 		}
+# 	}
+# }
+
+# country_event = {
+# 	id = gf_debug.1
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = OK
+# 		every_owned_species = {
+# 			limit = {
+# 				has_trait = GF_trait_doll
+# 				has_species_flag = community_mod_rules_trigger
+# 			}
+# 			custom_tooltip = "community_mod_rules_trigger"
+# 		}
+# 	}
+# }

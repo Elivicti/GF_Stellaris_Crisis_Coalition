@@ -1,0 +1,70 @@
+GF_sf_system = {
+	name = "NAME_GF_sf_via_dolorosa"
+	class = "sc_g"
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 250
+	}
+	flags = { flag_GF_sf_system }
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 15
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 35
+		orbit_angle = 20
+		size = 15
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 17
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		class = "pc_shattered"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 12
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "NAME_GF_sf_the_great_sepulchre"
+		class = "pc_GF_sf_machine"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 25
+		init_effect = {
+			prevent_anomaly = yes
+			clear_deposits = yes
+			clear_blockers = yes
+			save_event_target_as = GF_sf_site_target_6
+		}
+	}
+}

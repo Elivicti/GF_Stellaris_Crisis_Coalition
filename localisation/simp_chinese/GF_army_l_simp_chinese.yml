@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+#################################
+ GF_army_defensive_auto_doll:0 "自律人形"
+ GF_army_defensive_auto_doll_plural:0 "人形"
+ GF_army_defensive_auto_doll_desc:0 "当地临时征作军用的仿生自律人形，云图才从齐纳网络下载基本武器使用方法，装备较简陋。"
+ GF_army_arm_doll:0 "武装人形"
+ GF_army_arm_doll_plural:0 "武装人形"
+ GF_army_arm_doll_desc:0 "在普通仿生自律人形基础上进行了部分军事化改装的人形，装载了火控核心，机体强度也得到增强，存储了基本战术技能，可以执行攻击性任务。"
+ GF_army_tactical_doll:0 "军用战术人形"
+ GF_army_tactical_doll_plural:0 "军用战术人形"
+ GF_army_tactical_doll_desc:0 "自设计之初便作为军用的特制人形，在普通人形基础上大幅度提升了机体性能，使用高强度合金作为机体骨架，内置防弹装甲与纳米机器修复装置，经过精简的心智云图留有大量空间装载专业的战术技能与知识，同时安有战斗思维管制程序抑制不必要的思维线程解放运算空间，保证其绝对的服从命令与专注于任务的强大执行力。这些特点让她们化身完美的杀戮机器，是给敌人带来恐惧的女武神。"
+ GF_army_occupation_doll:0 "防暴人形"
+ GF_army_occupation_doll_plural:0 "防暴人形"
+ GF_army_occupation_doll_desc:0 "负责在敌对占领区镇压当地暴乱、维持占领区治安的人形部队，主要装备为防爆盾与防暴枪。"

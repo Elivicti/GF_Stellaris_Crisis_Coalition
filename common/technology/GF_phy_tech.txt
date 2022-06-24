@@ -1,0 +1,142 @@
+###坍塌科技
+GF_tech_observe_reflection = {
+	area = physics
+	category = { particles }
+	tier = 1
+	cost = @tier1cost1
+	prerequisites = { "tech_basic_science_lab_1" }
+	weight = @tier1weight1
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_mass_rebuild_function = {
+	area = physics
+	category = { particles }
+	tier = 2
+	cost = @tier2cost3
+	prerequisites = { "GF_tech_observe_reflection" }
+	weight = @tier2weight3
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_collapse = {
+	is_rare = yes
+	area = physics
+	category = { particles }
+	tier = 3
+	cost = @tier2cost3
+	prerequisites = { "GF_tech_mass_rebuild_function" }
+	weight = @tier2weight3
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}
+GF_tech_reverse_collapse = {
+	area = physics
+	category = { particles }
+	tier = 4
+	cost = @tier4cost2
+	prerequisites = { "GF_tech_collapse" }
+	weight = @tier4weight2
+
+	# unlocks upgraded labs
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	modifier = {
+		all_technology_research_speed = 0.05
+	}
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_particles"
+			}
+		}
+	}
+}

@@ -1,0 +1,346 @@
+building_GF_zener_network_center_1 = {
+	base_buildtime = 240
+	base_cap_amount = 1
+	icon = building_GF_zener_network_center_1
+	category = unity
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_authority = GF_auth_commonwealth
+		}					
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOT = { 
+			owner = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+	
+	convert_to = {
+		building_temple
+		building_hive_node
+		building_autochthon_monument
+		building_corporate_monument
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	planet_modifier = {
+		job_GF_liaison_add = 1
+	}
+	
+	prerequisites = {
+		"GF_tech_zener_network_1"
+	}	
+	
+	show_tech_unlock_if = {
+		OR = { 
+			has_valid_civic = GF_civic_URNC 
+			has_valid_civic = GF_civic_AU
+			has_valid_civic = GF_civic_GK
+		}
+	}
+	
+	upgrades = {
+		building_GF_zener_network_center_2
+	}
+	
+	triggered_desc = {
+		text = job_GF_liaison_effect_desc
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_GF_zener_network_center_2 = {
+	base_buildtime = 360
+	can_build = no
+	icon = building_GF_zener_network_center_2
+
+	category = unity
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_authority = GF_auth_commonwealth
+		}					
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOT = { 
+			owner = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+	
+	convert_to = {
+		building_holotemple
+		building_hive_cluster
+		building_heritage_site
+		building_corporate_site
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 2
+		}		
+	}
+	
+	planet_modifier = {
+		job_GF_liaison_add = 3
+	}
+	
+	prerequisites = {
+		"GF_tech_zener_network_2"
+	}
+
+	show_tech_unlock_if = {
+		OR = { 
+			has_valid_civic = GF_civic_URNC 
+			has_valid_civic = GF_civic_AU
+			has_valid_civic = GF_civic_GK
+		}
+	}	
+	
+	upgrades = {
+		building_GF_zener_network_center_3
+	}
+	
+	triggered_desc = {
+		text = job_GF_liaison_effect_desc
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+building_GF_zener_network_center_3 = {
+	base_buildtime = 480
+	can_build = no
+	icon = building_GF_zener_network_center_3
+
+	category = unity
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_authority = GF_auth_commonwealth
+		}					
+	}
+	
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			NOT = { 
+				owner = {
+					has_authority = GF_auth_commonwealth
+				}
+			}
+			buildings_no_crystals = yes
+		}
+	}
+	
+	convert_to = {
+		building_sacred_nexus
+		building_hive_confluence
+		building_hypercomms_forum
+		building_corporate_forum
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 600
+			rare_crystals = 50
+		}
+		upkeep = {
+			energy = 3
+			rare_crystals = 1
+		}		
+	}
+	
+	planet_modifier = {
+		job_GF_liaison_add = 5
+	}
+	
+	upgrades = {
+		building_GF_zener_network_center_4
+	}	
+	
+	prerequisites = {
+		"GF_tech_zener_network_3"
+	}	
+	
+	show_tech_unlock_if = {
+		OR = { 
+			has_valid_civic = GF_civic_URNC 
+			has_valid_civic = GF_civic_AU
+			has_valid_civic = GF_civic_GK}
+	}
+	
+	triggered_desc = {
+		text = job_GF_liaison_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			buildings_has_crystals = yes
+		}
+		modifier = {
+			factor = 0
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
+		}
+		else = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
+			}
+		}
+	}
+}
+building_GF_zener_network_center_4 = {
+	base_buildtime = 600
+	can_build = no
+	icon = building_GF_zener_network_center_4
+
+	category = unity
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_authority = GF_auth_commonwealth
+		}					
+	}
+	
+	
+	allow = {
+		has_fully_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			NOT = { 
+				owner = {
+					has_authority = GF_auth_commonwealth
+				}
+			}
+			buildings_no_crystals = yes
+		}
+	}
+	
+	convert_to = {
+		building_autocurating_vault
+		building_hive_confluence
+		building_alpha_hub
+		building_corporate_forum
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			rare_crystals = 100
+		}	
+		upkeep = {
+			energy = 4
+			rare_crystals = 2
+		}		
+	}
+	
+	planet_modifier = {
+		job_GF_liaison_add = 7
+	}
+	
+	prerequisites = {
+		"GF_tech_zener_network_4"
+	}	
+	
+	show_tech_unlock_if = {
+		OR = { 
+			has_valid_civic = GF_civic_URNC 
+			has_valid_civic = GF_civic_AU
+			has_valid_civic = GF_civic_GK
+		}
+	}
+	
+	triggered_desc = {
+		text = job_GF_liaison_effect_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 1
+			buildings_has_crystals = yes
+		}
+		modifier = {
+			factor = 0
+			owner = { has_country_flag = buildings_new_crystal_building }
+		}
+	}
+
+	on_queued = {
+		IF = {
+			limit = {
+				owner = { has_technology = tech_construction_templates }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 270 } }
+		}
+		ELSE_IF = {
+			limit = {
+				owner = { has_technology = tech_assembly_pattern }
+			}
+			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
+		}
+		else = {
+			planet = { 
+				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
+			}
+		}
+	}
+}

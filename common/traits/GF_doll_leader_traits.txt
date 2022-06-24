@@ -1,0 +1,109 @@
+GF_trait_leader_ogas = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
+	modifier = {
+		edict_length_mult = 0.50
+		country_unity_produces_mult = 0.5
+		empire_size_colonies_mult = -0.25
+	}
+	leader_potential_add = {
+		from = { has_authority = GF_auth_commonwealth }
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
+}
+######
+GF_trait_leader_doll = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/doll/doll.dds"	
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+		leader_skill_levels = 1
+	}
+	modifier = {
+	}
+	immortal_leaders = yes	
+	hide_age = yes
+	randomized = no
+	leader_class = { scientist general governor admiral }
+	leader_trait = { scientist general governor admiral }
+}
+GF_trait_leader_scientisttrait_16lab = {
+	cost = 1
+	icon = "gfx/interface/icons/traits/other/16lab.dds"	
+	modifier = {
+	    all_technology_research_speed = 0.20
+	}
+	leader_potential_add = {
+		from = { has_valid_civic = GF_civic_16LAB }
+	}	
+	leader_class = { scientist }
+	leader_trait = { scientist }
+}
+GF_trait_leader_admiraltrait_plus = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+	}
+	modifier = {
+		ships_upkeep_mult = -0.2
+		ship_speed_mult = 0.20
+		ship_fire_rate_mult = 0.20
+		ship_weapon_damage = 0.20
+	}
+	leader_class = { admiral }
+	leader_trait = { admiral }
+	immortal_leaders = yes	
+	hide_age = yes
+	randomized = no
+}
+GF_trait_leader_scientisttrait_plus = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/doll/logic.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+	}
+	modifier = {
+	    all_technology_research_speed = 0.15
+	}
+	leader_class = { scientist }
+	leader_trait = { scientist}
+	immortal_leaders = yes	
+	hide_age = yes
+	randomized = no
+}
+GF_trait_leader_generaltrait_plus = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+	}
+	modifier = {
+	    army_damage_mult = 0.4
+	}
+	leader_class = {general}
+	leader_trait = {general}
+	immortal_leaders = yes	
+	hide_age = yes
+	randomized = no
+}
+GF_trait_leader_governortrait_plus = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/doll/zener.dds"
+	self_modifier = {
+		species_leader_exp_gain = 0.2
+	}
+	modifier = {
+	    planet_crime_add = -25
+	}
+	leader_class = { governor }
+	leader_trait = { governor }
+	immortal_leaders = yes	
+	hide_age = yes
+	randomized = no
+}

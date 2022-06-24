@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+################################# OGAS
+ GF_ogas_mode_governor:0 "社会管理模式"
+ GF_ogas_mode_governor_desc:0 "OGAS将分出部分算力辅助我们的内政管理工作。"
+ GF_ogas_mode_produce:0 "经济统计模式"
+ GF_ogas_mode_produce_desc:0 "OGAS将分出部分算力辅助规划我们的经济发展计划。"
+ GF_ogas_mode_upkeep:0 "人形运行管制模式"
+ GF_ogas_mode_upkeep_desc:0 "OGAS将分出部分算力辅助我们强化人形管控措施。"
+ GF_ogas_mode_war:0 "战略战术分析模式"
+ GF_ogas_mode_war_desc:0 "OGAS将分出部分算力辅助我们的军备发展与战略分析工作。"
+ GF_ogas_mode_research:0 "科研辅助模式"
+ GF_ogas_mode_research_desc:0 "OGAS将分出部分算力辅助我们的科研任务。"
+################################# 国家
+ gf_core_chip_deficit:0 "芯片短缺"
+################################# 星球
+ GF_sercurity_protocol:0 "人形安保协议"
+ GF_sercurity_protocol_desc:0 "暴力行为许可与基本战斗程序已下发，所有人形将接受来自政府的统一作战指令。"
+ GF_storage_protocol:0 "人形待机模式"
+ GF_storage_protocol_desc:0 "闲置人形已收纳入休眠舱进入待机模式以节省机体能源消耗。"
+ GF_cloud_computing_protocol:0 "人形云计算协议"
+ GF_cloud_computing_protocol_desc:0 "所有闲置人形的云图算力已接入科研网络。"
+ GF_auto_colony:0 "自动化遥控殖民地"
+ GF_auto_colony_desc:0 "该殖民地以一个巨大的信号接发装置为中心，人形严格按照远端星球所传来的指令并配合预置的自律程序进行运作。"
+################################# 遗珍
+ GF_enhanced_OGAS_signal:0 "被放大的OGAS信号"
+ GF_enhanced_OGAS_signal_desc:0 "OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"

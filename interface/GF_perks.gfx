@@ -1,0 +1,32 @@
+spriteTypes = {	
+	################################################################
+	# ASCENSION PERK ICONS
+	################################################################
+		spriteType = {
+		name = "GFX_ap_GF_mind_upgrade"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_mind_upgrade.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_chip_upgrade"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_chip_upgrade.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_GF_body_upgrade"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_body_upgrade.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_sfpermission_release"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_sfpermission_release.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_sfpermission_release2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_sfpermission_release2.dds"
+		alwaystransparent = yes
+	}
+}

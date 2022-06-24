@@ -1,0 +1,221 @@
+tech_robomodding = {
+	cost = @tier2cost1
+	area = engineering
+	tier = 1
+	category = { industry }
+	prerequisites = { "tech_robotic_workers" }
+	weight = @tier2weight1
+
+	feature_flags = {
+		modify_robots
+	}
+
+	modifier = {
+		ROBOT_species_trait_points_add = 2
+	}
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOT = { has_authority = GF_auth_commonwealth }
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_ai_personality_behaviour = robot_exploiter }
+			NOT = { has_ai_personality_behaviour = robot_liberator }
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = @robots_ai_tech_factor
+			is_materialist = yes
+		}
+	}
+}
+
+tech_robomodding_points_1 = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 2
+	category = { industry }
+	prerequisites = { "tech_robomodding" "tech_droid_workers" }
+	weight = @tier3weight1
+
+	modifier = {
+		ROBOT_species_trait_points_add = 1
+	}
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOT = { has_authority = GF_auth_commonwealth }
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+				has_level > 2
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_ai_personality_behaviour = robot_exploiter }
+			NOT = { has_ai_personality_behaviour = robot_liberator }
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = @robots_ai_tech_factor
+			is_materialist = yes
+		}
+	}
+}
+
+tech_robomodding_points_2 = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { industry }
+	is_rare = yes
+	prerequisites = { "tech_robomodding_points_1" "tech_synthetic_workers" }
+	weight = @tier4weight1
+
+	modifier = {
+		ROBOT_species_trait_points_add = 1
+	}
+
+	potential = {
+		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOT = { has_authority = GF_auth_commonwealth }
+	}
+
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = 4
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_robomodding_points_2 }
+			}
+		}
+		modifier = {
+			factor = 0.50
+			NOR = {
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_maniacal"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_spark_of_genius"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_curator"
+				}
+				research_leader = {
+					area = engineering
+					has_trait = "leader_trait_expertise_industry"
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_ai_personality_behaviour = robot_exploiter }
+			NOT = { has_ai_personality_behaviour = robot_liberator }
+		}
+		modifier = {
+			factor = 2
+			has_origin = origin_mechanists
+		}
+		modifier = {
+			factor = 2
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = @robots_ai_tech_factor
+			is_materialist = yes
+		}
+	}
+}

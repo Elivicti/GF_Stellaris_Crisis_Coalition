@@ -1,0 +1,165 @@
+decision_GF_doll_sercurity_on = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_sercurity_on
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		NOT = { has_modifier = GF_sercurity_protocol }
+	}
+	
+	allow = {
+		NOT = { has_modifier = GF_sercurity_protocol }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "GF_sercurity_protocol" days = -1 }
+	}	
+	
+	ai_weight = { weight = 0 }
+}
+decision_GF_doll_sercurity_off = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_sercurity_off
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		has_modifier = GF_sercurity_protocol
+	}
+	
+	allow = {
+		has_modifier = GF_sercurity_protocol
+	}	
+	
+	effect = {
+		remove_modifier = "GF_sercurity_protocol"
+	}
+	
+	ai_weight = { weight = 0 }
+}
+decision_GF_doll_storage_on = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_storage_on
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		NOT = { has_modifier = GF_storage_protocol }
+		
+	}
+	
+	allow = {
+		NOT = { has_modifier = GF_storage_protocol }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "GF_storage_protocol" days = -1 }
+	}	
+	
+	ai_weight = { weight = 0 }
+}
+decision_GF_doll_storage_off = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_storage_off
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		has_modifier = GF_storage_protocol
+	}
+	
+	allow = {
+		has_modifier = GF_storage_protocol
+	}	
+	
+	effect = {
+		remove_modifier = "GF_storage_protocol"
+	}	
+	
+	ai_weight = { weight = 0 }
+}
+decision_GF_doll_cloud_computing_on = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_cloud_computing_on
+	
+	resources = {
+		category = decisions
+		cost = {
+			energy = 50
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		NOT = { has_modifier = GF_cloud_computing_protocol }
+		
+	}
+	
+	allow = {
+		NOT = { has_modifier = GF_cloud_computing_protocol }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "GF_cloud_computing_protocol" days = -1 }
+	}	
+	
+	ai_weight = { weight = 0 }
+}
+decision_GF_doll_cloud_computing_off  = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_GF_doll_cloud_computing_off
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+	}
+	
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		has_modifier = GF_cloud_computing_protocol
+		
+	}
+	
+	allow = {
+		has_modifier = GF_cloud_computing_protocol
+	}	
+	
+	effect = {
+		remove_modifier = "GF_cloud_computing_protocol"
+	}	
+	
+	ai_weight = { weight = 0 }
+}

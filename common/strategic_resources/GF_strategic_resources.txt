@@ -1,0 +1,8 @@
+gf_core_chip = {
+	tradable = no
+	max = 15000
+	deficit_modifier = gf_core_chip_deficit
+	ai_weight = {
+		weight = 0
+	}
+}

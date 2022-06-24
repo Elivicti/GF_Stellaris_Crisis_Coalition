@@ -1,0 +1,85 @@
+spriteTypes = {	
+	# spriteType = {
+	# 	name = "GFX_evt_ring_of_contract"
+	# 	# texturefile = "gfx/event_pictures/3gfevent.png"
+	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	# 	alwaystransparent = yes		
+	# }
+	# spriteType = {
+	# 	name = "GFX_evt_mind"
+	# 	# texturefile = "gfx/event_pictures/2gfevent.png"
+	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	# 	alwaystransparent = yes		
+	# }
+	# spriteType = {
+	# 	name = "GFX_evt_gfevent"
+	# 	# texturefile = "gfx/event_pictures/gfevent.png"
+	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	# 	alwaystransparent = yes		
+	# }
+
+	## Start Events
+	spriteType = {
+		name = "GFX_evt_GF_URNC_flag"
+		texturefile = "gfx/event_pictures/GF_URNC_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_AU_flag"
+		texturefile = "gfx/event_pictures/GF_AU_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_GK_flag"
+		texturefile = "gfx/event_pictures/GF_GK_flag.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_burning_factory"
+
+		texturefile = "gfx/event_pictures/GF_burning_factory.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_core_with_body"
+
+		texturefile = "gfx/event_pictures/GF_core_with_body.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_core_with_butterfly"
+
+		texturefile = "gfx/event_pictures/GF_core_with_butterfly.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_sf_down"
+
+		texturefile = "gfx/event_pictures/GF_down_sf.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_deep_hole"
+
+		texturefile = "gfx/event_pictures/GF_deep_hole.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_net_world"
+
+		texturefile = "gfx/event_pictures/GF_net_world.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+}

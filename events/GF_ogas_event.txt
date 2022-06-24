@@ -1,0 +1,332 @@
+namespace = GF_ogas
+
+country_event = {
+	id = GF_ogas.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+		create_country = {
+			name = "NAME_GF_OGAS"
+			type = GF_ogas_country_type
+			flag = {
+				icon = {
+					category = "griffin"
+					file = "country_gf_ogas.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+			set_country_flag = flag_GF_ogas_country
+			save_global_event_target_as = GF_ogas_country
+		}
+		save_global_event_target_as = GF_ogas_owner
+
+		country_event = { id = GF_ogas.110 }
+	}
+}
+
+country_event = {
+	id = GF_ogas.110
+	title = contact
+	desc = GF_ogas.110.desc
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = GF_ogas.110.update_log
+		is_dialog_only = yes
+		response_text = GF_Stellaris_Update_Log
+	}
+	option = {
+		name = GF_ogas.110.a
+	}
+	option = {
+		name = GF_ogas.110.b
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = { id = GF_ogas.111 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_ogas.111
+	title = contact
+	desc = GF_ogas.111.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+	is_triggered_only = yes
+	option = { 
+		name = GF_ogas.111.a
+		response_text = GF_ogas.111.a.response
+	}
+}
+
+################ Main Contact Menu
+country_event = {
+	id = GF_ogas.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = GF_ogas_country_type }
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+	}
+
+	immediate = {
+		country_event = { id = GF_ogas.10000 }
+	}
+}
+
+
+country_event = {
+	id = GF_ogas.10000
+
+	title = connect
+	desc = GF_ogas.10000.desc.a
+	desc = GF_ogas.10000.desc.b
+	desc = GF_ogas.10000.desc.c
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = contract_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+	}
+
+	option = {
+		name = GF_ogas.10000.mission
+		trigger = { NOT = { has_country_flag = GF_ogas_work_mode } }
+
+		hidden_effect = {
+			country_event = { id = GF_ogas.11000 }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.mission
+		trigger = { has_country_flag = GF_ogas_work_mode }
+		is_dialog_only = yes
+		response_text = GF_ogas.10000.mission.busy_response
+	}
+	option = {
+		name = GF_ogas.10000.info
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.10000.emotion
+		# trigger = { NOT = { has_country_flag = gf_at_chat } }
+
+		is_dialog_only = yes						# 临时
+		response_text = GF_ogas.10000.emotion.response	# 临时
+
+		# hidden_effect = {
+		# 	country_event = { id = event_gf_ogas.8 }
+		# }
+	}
+	# option = {
+	# 	name = GF_ogas.10000.emotion
+	# 	trigger = { has_country_flag = gf_at_chat }
+
+	# 	is_dialog_only = yes
+	# 	response_text = GF_ogas.10000.emotion.response
+	# }
+
+	option = {
+		name = GF_ogas.10000.logout
+		response_text = GF_ogas.10000.logout.response
+	}
+}
+
+country_event = {
+	id = GF_ogas.11000
+	title = connect
+	desc = GF_ogas.11000.desc.a
+	desc = GF_ogas.11000.desc.b
+	desc = GF_ogas.11000.desc.c
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+	
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = GF_ogas_work_mode }
+	}
+
+	option = { # un
+		name = GF_ogas.11000.governor
+		response_text = GF_ogas.11000.governor.response
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		add_modifier = {
+			modifier = GF_ogas_mode_governor
+			days = 3600
+		}
+	}
+	option = { # en
+		name = GF_ogas.11000.produce
+		response_text = GF_ogas.11000.produce.response
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		add_modifier = {
+			modifier = GF_ogas_mode_produce
+			days = 3600
+		}
+	}
+	option = { # mi fo
+		name = GF_ogas.11000.upkeep
+		response_text = GF_ogas.11000.upkeep.response
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		add_modifier = {
+			modifier = GF_ogas_mode_upkeep
+			days = 3600
+		}
+	}
+	option = { # un
+		name = GF_ogas.11000.war
+		response_text = GF_ogas.11000.war.response
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		add_modifier = {
+			modifier = GF_ogas_mode_war
+			days = 3600
+		}
+	}
+	option = { # un
+		name = GF_ogas.11000.research
+		response_text = GF_ogas.11000.research.response
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		add_modifier = {
+			modifier = GF_ogas_mode_research
+			days = 3600
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = GF_ogas_work_mode }
+				country_event = { id = GF_ogas.11001 days = 3600 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_ogas.11001
+	title = connect
+	desc = GF_ogas.11001.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_ogas.11001.a
+		hidden_effect = {
+			country_event = { id = GF_ogas.11000 }
+		}
+	}
+
+	option = {
+		name = GF_ogas.10000.logout
+	}
+}
+
+country_event = {
+	id = GF_ogas.12000
+	title = connect
+	desc = GF_ogas.12000.desc.a
+	desc = GF_ogas.12000.desc.b
+	desc = GF_ogas.12000.desc.c
+	diplomatic = yes	
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+	
+	is_triggered_only = yes
+	option = { 
+		name = GF_ogas.12000.a
+		response_text = GF_ogas.12000.a.response
+		is_dialog_only = yes
+	}
+	option = { 
+		name = GF_ogas.12000.b
+		response_text = GF_ogas.12000.b.response
+		is_dialog_only = yes
+	}
+	option = { 
+		name = GF_ogas.12000.c
+		response_text = GF_ogas.12000.c.response
+		is_dialog_only = yes
+	}
+	option = { 
+		name = GF_ogas.12000.d
+		response_text = GF_ogas.12000.d.response
+		is_dialog_only = yes
+	}
+	option = { 
+		name = GF_ogas.12000.e
+		response_text = GF_ogas.12000.e.response
+		is_dialog_only = yes
+	}
+	option = { 
+		name = GF_ogas.12000.f
+		response_text = GF_ogas.12000.f.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}

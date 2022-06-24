@@ -1,0 +1,410 @@
+portraits = {
+	new_type_1 = {
+		texturefile = "gfx/models/portraits/new_type/1.png"
+	}
+	new_type_2 = {
+		texturefile = "gfx/models/portraits/new_type/2.png"
+	}
+	new_type_3 = {
+		texturefile = "gfx/models/portraits/new_type/3.png"
+	}
+	new_type_4 = {
+		texturefile = "gfx/models/portraits/new_type/4.png"
+	}
+	new_type_5 = {
+		texturefile = "gfx/models/portraits/new_type/5.png"
+	}
+	new_type_6 = {
+		texturefile = "gfx/models/portraits/new_type/6.png"
+	}
+	new_type_7 = {
+		texturefile = "gfx/models/portraits/new_type/7.png"
+	}
+	new_type_8 = {
+		texturefile = "gfx/models/portraits/new_type/8.png"
+	}
+	new_type_9 = {
+		texturefile = "gfx/models/portraits/new_type/9.png"
+	}
+	new_type_10 = {
+		texturefile = "gfx/models/portraits/new_type/10.png"
+	}
+	new_type_11 = {
+		texturefile = "gfx/models/portraits/new_type/11.png"
+	}
+	new_type_12 = {
+		texturefile = "gfx/models/portraits/new_type/12.png"
+	}
+	new_type_13 = {
+		texturefile = "gfx/models/portraits/new_type/13.png"
+	}
+	new_type_14 = {
+		texturefile = "gfx/models/portraits/new_type/14.png"
+	}
+	new_type_15 = {
+		texturefile = "gfx/models/portraits/new_type/15.png"
+	}
+	new_type_16 = {
+		texturefile = "gfx/models/portraits/new_type/16.png"
+	}
+	griffin000 = {
+		texturefile = "gfx/models/portraits/doll/ogas.dds"
+	}
+	griffin001 = {
+		texturefile = "gfx/models/portraits/doll/1.dds"
+	}
+	griffin002 = {
+		texturefile = "gfx/models/portraits/doll/2.dds"
+	}
+	griffin003 = {
+		texturefile = "gfx/models/portraits/doll/3.dds"
+	}
+	griffin004 = {
+		texturefile = "gfx/models/portraits/doll/4.dds"
+	}
+	griffin005 = {
+		texturefile = "gfx/models/portraits/doll/5.dds"
+	}
+	griffin006 = {
+		texturefile = "gfx/models/portraits/doll/6.dds"
+	}
+	griffin007 = {
+		texturefile = "gfx/models/portraits/doll/7.dds"
+	}
+	griffin008 = {
+		texturefile = "gfx/models/portraits/doll/8.dds"
+	}
+	griffin009 = {
+		texturefile = "gfx/models/portraits/doll/9.dds"
+	}
+	griffin010 = {
+		texturefile = "gfx/models/portraits/doll/10.dds"
+	}
+	griffin011 = {
+		texturefile = "gfx/models/portraits/doll/11.dds"
+	}
+	griffin012 = {
+		texturefile = "gfx/models/portraits/doll/12.dds"
+	}
+	griffin013 = {
+		texturefile = "gfx/models/portraits/doll/13.dds"
+	}
+	griffin014 = {
+		texturefile = "gfx/models/portraits/doll/AK12.dds"
+	}
+	griffin015 = {
+		texturefile = "gfx/models/portraits/doll/14.dds"
+	}
+	griffin016 = {
+		texturefile = "gfx/models/portraits/doll/15.dds"
+	}
+	griffin017 = {
+		texturefile = "gfx/models/portraits/doll/16.dds"
+	}
+	griffin018 = {
+		texturefile = "gfx/models/portraits/doll/17.dds"
+	}
+	griffin019 = {
+		texturefile = "gfx/models/portraits/doll/18.dds"
+	}
+	griffin020 = {
+		texturefile = "gfx/models/portraits/doll/19.dds"
+	}
+	griffin021 = {
+		texturefile = "gfx/models/portraits/doll/20.dds"
+	}
+	griffin022 = {
+		texturefile = "gfx/models/portraits/doll/1.dds"
+	}
+	griffin023 = {
+		texturefile = "gfx/models/portraits/doll/21.dds"
+	}
+	griffin024 = {
+		texturefile = "gfx/models/portraits/doll/22.dds"
+	}
+	griffin025 = {
+		texturefile = "gfx/models/portraits/doll/23.dds"
+	}
+	griffin026 = {
+		texturefile = "gfx/models/portraits/doll/24.dds"
+	}
+	griffin027 = {
+		texturefile = "gfx/models/portraits/doll/25.dds"
+	}
+	griffin028 = {
+		texturefile = "gfx/models/portraits/doll/26.dds"
+	}
+	griffin029 = {
+		texturefile = "gfx/models/portraits/doll/27.dds"
+	}
+	griffin030 = {
+		texturefile = "gfx/models/portraits/doll/28.dds"
+	}
+	griffin031 = {
+		texturefile = "gfx/models/portraits/doll/29.dds"
+	}
+	griffin032 = {
+		texturefile = "gfx/models/portraits/doll/30.dds"
+	}
+	griffin033 = {
+		texturefile = "gfx/models/portraits/doll/31.dds"
+	}
+	griffin034 = {
+		texturefile = "gfx/models/portraits/doll/32.dds"
+	}
+	griffin035 = {
+		texturefile = "gfx/models/portraits/doll/33.dds"
+	}
+	griffin036 = {
+		texturefile = "gfx/models/portraits/doll/34.dds"
+	}
+	griffin037 = {
+		texturefile = "gfx/models/portraits/doll/35.dds"
+	}
+	griffin038 = {
+		texturefile = "gfx/models/portraits/doll/36.dds"
+	}
+	griffin039 = {
+		texturefile = "gfx/models/portraits/doll/37.dds"
+	}
+	griffin040 = {
+		texturefile = "gfx/models/portraits/doll/38.dds"
+	}
+	griffin041 = {
+		texturefile = "gfx/models/portraits/doll/39.dds"
+	}
+	griffin042 = {
+		texturefile = "gfx/models/portraits/doll/40.dds"
+	}
+	griffin043 = {
+		texturefile = "gfx/models/portraits/doll/41.dds"
+	}
+	griffin044 = {
+		texturefile = "gfx/models/portraits/doll/42.dds"
+	}
+	griffin045 = {
+		texturefile = "gfx/models/portraits/doll/43.dds"
+	}
+	griffin046 = {
+		texturefile = "gfx/models/portraits/doll/44.dds"
+	}
+	griffin047 = {
+		texturefile = "gfx/models/portraits/doll/45.dds"
+	}
+	griffin048 = {
+		texturefile = "gfx/models/portraits/doll/46.dds"
+	}
+	griffin049 = {
+		texturefile = "gfx/models/portraits/doll/47.dds"
+	}
+	griffin050 = {
+		texturefile = "gfx/models/portraits/doll/48.dds"
+	}
+	griffin051 = {
+		texturefile = "gfx/models/portraits/doll/49.dds"
+	}
+	griffin052 = {
+		texturefile = "gfx/models/portraits/doll/50.dds"
+	}
+	griffin053 = {
+		texturefile = "gfx/models/portraits/doll/51.dds"
+	}
+	griffin054 = {
+		texturefile = "gfx/models/portraits/doll/52.dds"
+	}
+	griffin055 = {
+		texturefile = "gfx/models/portraits/doll/53.dds"
+	}
+	griffin056 = {
+		texturefile = "gfx/models/portraits/doll/54.dds"
+	}
+	griffin057 = {
+		texturefile = "gfx/models/portraits/doll/55.dds"
+	}
+	griffin058 = {
+		texturefile = "gfx/models/portraits/doll/56.dds"
+	}
+	griffin059 = {
+		texturefile = "gfx/models/portraits/doll/57.dds"
+	}
+	griffin060 = {
+		texturefile = "gfx/models/portraits/doll/58.dds"
+	}
+	griffin061 = {
+		texturefile = "gfx/models/portraits/doll/59.dds"
+	}
+	griffin062 = {
+		texturefile = "gfx/models/portraits/doll/60.dds"
+	}
+	griffin063 = {
+		texturefile = "gfx/models/portraits/doll/13.dds"
+	}
+	griffin064 = {
+		texturefile = "gfx/models/portraits/doll/12.dds"
+	}
+}
+
+portrait_groups = {
+	GF_new_type = {
+		default = new_type_1
+		game_setup = {
+			add = {
+				portraits = {
+					griffin000
+					griffin001
+					griffin002
+					griffin003
+					griffin004
+					griffin005
+					griffin006
+					griffin007
+					griffin008
+					griffin009
+					griffin010
+					griffin011
+					griffin012
+					griffin013
+					griffin014
+					griffin015
+					griffin016
+					griffin017
+					griffin018
+					griffin019
+					griffin020
+					griffin021
+					griffin022
+					griffin023
+					griffin024
+					griffin025
+					griffin026
+					griffin027
+					griffin028
+					griffin029
+					griffin030
+					griffin031
+					griffin032
+					griffin033
+					griffin034
+					griffin035
+					griffin036
+					griffin037
+					griffin038
+					griffin039
+					griffin040
+					griffin041
+					griffin042
+					griffin043
+					griffin044
+					griffin045
+					griffin046
+					griffin047
+					griffin048
+					griffin049
+					griffin050
+					griffin051
+					griffin052
+					griffin053
+					griffin054
+					griffin055
+					griffin056
+					griffin057
+					griffin058
+					griffin059
+					griffin060
+					griffin061
+					griffin062
+					griffin063
+					griffin064
+				}
+			}
+		}
+		species = {
+			add = {
+				portraits = {
+					new_type_1
+					new_type_2
+					new_type_3
+					new_type_4
+					new_type_5
+					new_type_6
+					new_type_7
+					new_type_8
+					new_type_9
+					new_type_10
+					new_type_11
+					new_type_12
+					new_type_13
+					new_type_14
+					new_type_15
+					new_type_16
+				}
+			}
+		}
+		pop = {
+			add = {
+				portraits = {
+					new_type_1
+					new_type_2
+					new_type_3
+					new_type_4
+					new_type_5
+					new_type_6
+					new_type_7
+					new_type_8
+					new_type_9
+					new_type_10
+					new_type_11
+					new_type_12
+					new_type_13
+					new_type_14
+					new_type_15
+					new_type_16
+				}
+			}
+		}
+		leader = {
+			add = {
+				portraits = {
+					new_type_1
+					new_type_2
+					new_type_3
+					new_type_4
+					new_type_5
+					new_type_6
+					new_type_7
+					new_type_8
+					new_type_9
+					new_type_10
+					new_type_11
+					new_type_12
+					new_type_13
+					new_type_14
+					new_type_15
+					new_type_16
+				}
+			}
+		}
+		ruler = {
+			add = {
+				portraits = {
+					new_type_1
+					new_type_2
+					new_type_3
+					new_type_4
+					new_type_5
+					new_type_6
+					new_type_7
+					new_type_8
+					new_type_9
+					new_type_10
+					new_type_11
+					new_type_12
+					new_type_13
+					new_type_14
+					new_type_15
+					new_type_16
+				}
+			}
+		}
+	}
+}

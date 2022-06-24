@@ -1,0 +1,66 @@
+namespace = GF_doll_leader
+
+country_event = {
+	id = GF_doll_leader.0
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			species = { has_trait = GF_trait_doll }
+		}
+	}
+
+	immediate = {
+		from = {
+			add_trait = GF_trait_leader_doll
+			switch = {
+				trigger = leader_class
+				admiral = {
+					if = {
+						limit = { species = { has_trait = GF_trait_tacticalchip } }
+						add_trait = GF_trait_leader_admiraltrait_plus
+					}
+				}
+				general = {
+					if = {
+						limit = { species = { has_trait = GF_trait_tacticalchip } }
+						add_trait = GF_trait_leader_generaltrait_plus
+					}
+				}
+				scientist = {
+					if = {
+						limit = { species = { has_trait = GF_trait_logical_subroutine } }
+						add_trait = GF_trait_leader_scientisttrait_plus
+					}
+				}
+				governor = {
+					if = {
+						limit = { species = { has_trait = GF_trait_zener_protocol } }
+						add_trait = GF_trait_leader_governortrait_plus
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_doll_leader.100
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		every_owned_leader = {
+			limit = { has_trait = GF_trait_leader_doll }
+			remove_trait = leader_trait_lethargic
+			remove_trait = leader_trait_nervous
+			# remove_trait = leader_trait_armchair_gf_GK_commander	# what is this?
+			remove_trait = leader_trait_corrupt
+			remove_trait = leader_trait_traumatized
+			remove_trait = leader_trait_maimed
+			remove_trait = leader_trait_substance_abuser
+			remove_trait = leader_trait_arrested_development
+		}
+	}
+}

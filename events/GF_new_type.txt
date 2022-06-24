@@ -1,0 +1,22 @@
+namespace = GF_new_type
+
+country_event = {
+	id = GF_new_type.0
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			species = { is_species_class = GF_new_type }
+			gender = male
+		}
+		# has_global_flag = g_flag_GF_female_new_type_only
+	}
+
+	immediate = {
+		from = {
+			set_is_female = yes
+		}
+	}
+}

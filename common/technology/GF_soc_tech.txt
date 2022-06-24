@@ -1,0 +1,211 @@
+# ##################
+# Unity gf
+# ##################
+
+GF_tech_zener_network_1 = {
+	cost = 0
+	area = society
+	start_tech = yes
+	category = { statecraft }
+	tier = 0
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+GF_tech_zener_network_2 = {
+	cost = @tier2cost2
+	area = society
+	category = { statecraft }
+	tier = 2
+	prerequisites = { "GF_tech_zener_network_1" }
+	weight = @tier2weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOR = {
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_rare_crystals
+				has_country_flag = has_market_access
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+GF_tech_zener_network_3 = {
+	cost = @tier3cost2
+	area = society
+	category = { statecraft }
+	tier = 3
+	prerequisites = { "GF_tech_zener_network_2" "tech_colonial_centralization" }
+	weight = @tier3weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+GF_tech_zener_network_4 = {
+	cost = @tier4cost2
+	area = society
+	category = { statecraft }
+	tier = 4
+	prerequisites = { "GF_tech_zener_network_3" "tech_administrative_ai" "tech_galactic_administration"}
+	weight = @tier4weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+GF_tech_ecological_recovery = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { new_worlds }
+	prerequisites = { "GF_tech_collapse" }
+	weight = @tier2weight2
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	weight_groups = {
+		deposit_blockers
+	}
+
+	mod_weight_if_group_picked = {
+		deposit_blockers = 0.5
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					has_deposit = d_gf_black_zone
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 3
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_planet =  {
+					has_deposit = d_gf_black_zone
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 2
+		}
+	}
+}

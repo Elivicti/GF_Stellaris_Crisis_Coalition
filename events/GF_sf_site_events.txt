@@ -1,0 +1,184 @@
+namespace = GF_sf_site
+###铁血事件链遗迹（1-3）
+##遗迹1（1-3）
+#遗迹1事件1
+fleet_event = {
+	id = GF_sf_site.11
+	title = "GF_sf_site.11.name"
+	desc = "GF_sf_site.11.desc"
+	picture = GFX_evt_crusher_droid
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.11.a"
+		owner = { add_resource = { minor_artifacts = 1 } }
+	}
+}
+#遗迹1事件2
+fleet_event = {
+	id = GF_sf_site.12
+	title = "GF_sf_site.12.name"
+	desc = "GF_sf_site.12.desc"
+	picture = GFX_evt_GF_burning_factory
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.12.a"
+		owner = { add_resource = { minor_artifacts = 2 } }
+	}
+}
+#遗迹1事件3
+fleet_event = {
+	id = GF_sf_site.13
+	title = "GF_sf_site.13.name"
+	desc = "GF_sf_site.13.desc"
+	picture = GFX_evt_GF_core_with_body
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "GF_sf_site.13.a"
+		owner = {
+			country_event = { id = GF_sf.3 } 
+			add_resource = { minor_artifacts = 3 }
+		}
+	}
+}
+
+##遗迹2（1-4）
+#遗迹2事件1
+fleet_event = {
+	id = GF_sf_site.21
+	title = "GF_sf_site.21.name"
+	desc = "GF_sf_site.21.desc"
+	picture = GFX_evt_relic_shipyard
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.21.a"
+		owner = { add_resource = { minor_artifacts = 1 } }
+	}
+}
+#遗迹2事件2
+fleet_event = {
+	id = GF_sf_site.22
+	title = "GF_sf_site.22.name"
+	desc = "GF_sf_site.22.desc"
+	picture = GFX_evt_warm_barren
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.22.a"
+		owner = { add_resource = { minor_artifacts = 2 } }
+	}
+}
+#遗迹2事件3
+fleet_event = {
+	id = GF_sf_site.23
+	title = "GF_sf_site.23.name"
+	desc = "GF_sf_site.23.desc"
+	picture = GFX_evt_mysterious_signal
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.23.a"
+		owner = { add_resource = { minor_artifacts = 3 } }
+	}
+}
+#遗迹2事件4
+fleet_event = {
+	id = GF_sf_site.24
+	title = "GF_sf_site.24.name"
+	desc = "GF_sf_site.24.desc"
+	picture = GFX_evt_derelict_interior
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = "GF_sf_site.24.a"
+		owner = {
+			add_resource = { minor_artifacts = 4 }
+			country_event = { id = GF_sf.5 } 
+		}
+	}
+}
+##遗迹3（1-4）
+#遗迹3事件1
+fleet_event = {
+	id = GF_sf_site.31
+	title = "GF_sf_site.31.name"
+	desc = "GF_sf_site.31.desc"
+	picture = GFX_evt_contingency_planet
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.31.a"
+		owner = { add_resource = { minor_artifacts = 1 } }
+	}
+}
+#遗迹3事件2
+fleet_event = {
+	id = GF_sf_site.32
+	title = "GF_sf_site.32.name"
+	desc = "GF_sf_site.32.desc"
+	picture = GFX_evt_city_ruins
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.32.a"
+		owner = { add_resource = { minor_artifacts = 2 } }
+	}
+}
+#遗迹3事件3
+fleet_event = {
+	id = GF_sf_site.33
+	title = "GF_sf_site.33.name"
+	desc = "GF_sf_site.33.desc"
+	picture = GFX_evt_GF_deep_hole	#以后修改
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.33.a"
+		owner = { add_resource = { minor_artifacts = 3 } }
+	}
+}
+#遗迹3事件4
+fleet_event = {
+	id = GF_sf_site.34
+	title = "GF_sf_site.34.name"
+	desc = "GF_sf_site.34.desc"
+	picture = GFX_evt_GF_sf_down
+	show_sound = event_door_opening
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+	option = {
+		name = "GF_sf_site.34.a"
+		owner = {
+			add_resource = { minor_artifacts = 5 }
+			country_event = { id = GF_sf.7 } 
+		}
+	}
+}

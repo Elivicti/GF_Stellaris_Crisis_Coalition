@@ -1,0 +1,156 @@
+namespace = GF_doll
+
+planet_event = {
+	id = GF_doll.0
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = { NOT = { has_policy_flag = GF_doll_right_full } }
+		fromfrom = { has_trait = GF_trait_doll }
+	}
+
+	immediate = {
+		owner = {
+			switch = {
+				trigger = has_policy_flag
+				GF_doll_right_limited = {
+					fromfrom = {
+						set_pop_flag = community_mod_rules_trigger
+						set_pop_flag = community_can_fill_ruler_job_false
+					}
+				}
+				GF_doll_right_servitude = {
+					fromfrom = {
+						set_pop_flag = community_mod_rules_trigger
+						set_pop_flag = community_can_fill_ruler_job_false
+						set_pop_flag = community_can_fill_specialist_job_false
+					}
+				}
+				GF_doll_right_low = {
+					fromfrom = {
+						set_pop_flag = community_mod_rules_trigger
+						set_pop_flag = community_can_fill_ruler_job_false
+						set_pop_flag = community_can_fill_specialist_job_false
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# 完整权利 所有职位
+country_event = {
+	id = GF_doll.1100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		last_changed_policy = GF_doll_right_policy
+		has_policy_flag = GF_doll_right_full
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = { has_trait = GF_trait_doll }
+			remove_pop_flag = community_mod_rules_trigger
+			remove_pop_flag = community_can_fill_ruler_job_false
+			remove_pop_flag = community_can_fill_specialist_job_false
+		}
+	}
+}
+# 有限权利 担任劳工、专家
+country_event = {
+	id = GF_doll.1200
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		last_changed_policy = GF_doll_right_policy
+		has_policy_flag = GF_doll_right_limited
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = { has_trait = GF_trait_doll }
+			set_pop_flag = community_mod_rules_trigger
+			set_pop_flag = community_can_fill_ruler_job_false
+			remove_pop_flag = community_can_fill_specialist_job_false
+		}
+	}
+}
+# 侍从权利 只能当劳工
+country_event = {
+	id = GF_doll.1300
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		last_changed_policy = GF_doll_right_policy
+		has_policy_flag = GF_doll_right_servitude
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = GF_trait_doll
+				NOR = {
+					has_pop_flag = community_mod_rules_trigger
+					has_pop_flag = community_can_fill_ruler_job_false
+					has_pop_flag = community_can_fill_specialist_job_false
+				}
+			}
+			set_pop_flag = community_mod_rules_trigger
+			set_pop_flag = community_can_fill_ruler_job_false
+			set_pop_flag = community_can_fill_specialist_job_false
+		}
+	}
+}
+# 最低权利 只能当劳工
+country_event = {
+	id = GF_doll.1400
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		last_changed_policy = GF_doll_right_policy
+		has_policy_flag = GF_doll_right_low
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = GF_trait_doll
+				NOR = {
+					has_pop_flag = community_mod_rules_trigger
+					has_pop_flag = community_can_fill_ruler_job_false
+					has_pop_flag = community_can_fill_specialist_job_false
+				}
+			}
+			set_pop_flag = community_mod_rules_trigger
+			set_pop_flag = community_can_fill_ruler_job_false
+			set_pop_flag = community_can_fill_specialist_job_false
+		}
+	}
+}
+
+
+country_event = {
+	id = GF_doll.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_pop = {
+			limit = { has_trait = trait_mechanical }
+			change_species = event_target:GF_doll_species
+		}
+	}
+}

@@ -1,0 +1,171 @@
+#############
+# dolll buildings
+#############
+building_GF_42lab_1 = {
+	icon = building_GF_42lab_1
+	base_buildtime = 360
+	base_cap_amount = 1
+	category = government
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+	upgrades = {
+		"building_GF_42lab_2"
+	}
+	planet_modifier = {
+		job_GF_programmer_add = 1
+		job_researcher_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = GF_civic_IOP
+			}
+		}
+		modifier = {
+			job_GF_programmer_add = 1
+		}
+	}
+	triggered_desc = {
+		text = job_GF_programmer_effect_desc
+	}
+	prerequisites = {
+		"GF_tech_doll_assemble"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+building_GF_42lab_2 = {
+	icon = building_GF_42lab_2
+	base_buildtime = 360
+	can_build = no
+	category = government
+	potential = {
+		exists = owner
+		has_building = building_GF_42lab_1
+	}
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+	upgrades = {
+		"building_GF_42lab_3"
+	}
+	allow = {
+	}
+	planet_modifier = {
+		job_GF_programmer_add = 2
+		job_researcher_add = 2
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = GF_civic_IOP
+			}
+		}
+		modifier = {
+			job_GF_programmer_add = 1
+		}
+	}
+	triggered_desc = {
+		text = job_GF_programmer_effect_desc
+	}
+	prerequisites = {
+		"GF_tech_mind_upgrade_1"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}
+
+building_GF_42lab_3 = {
+	icon = building_GF_42lab_3
+	base_buildtime = 360
+	can_build = no
+	category = government
+	potential = {
+		exists = owner
+		has_building = building_GF_42lab_2
+	}
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = {
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+	allow = {
+	}
+	planet_modifier = {
+		job_GF_programmer_add = 3
+		job_researcher_add = 3
+		job_head_researcher_add = 1
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 200
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = GF_civic_IOP
+			}
+		}
+		modifier = {
+			job_GF_programmer_add = 1
+		}
+	}
+	triggered_desc = {
+		text = job_GF_programmer_effect_desc
+	}
+	prerequisites = {
+		"GF_tech_mind_upgrade_2"
+	}
+	ai_weight = {
+		weight = 1
+	}
+}

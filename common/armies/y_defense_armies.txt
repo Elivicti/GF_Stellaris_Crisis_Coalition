@@ -1,0 +1,101 @@
+#Defensive armies can't transport of the planet
+#maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
+#morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
+#building spawned armies can't be built normally, but only created from pops working buildings
+
+# Defense Armies
+defense_army = {
+	defensive = yes
+	is_pop_spawned = yes
+	health = 1.25
+	damage = 1.50
+	morale = 1.25
+	collateral_damage = 0.0
+	war_exhaustion = 0.0 # No WE from defense armies
+	icon = GFX_army_type_defensive
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+
+				# GF
+				has_trait = "GF_trait_doll"
+			}
+		}
+		owner = {
+			is_primitive = no
+			OR = {
+				NOT = { has_authority = auth_machine_intelligence }
+				has_valid_civic = civic_machine_assimilator
+			}
+		}
+	}
+}
+
+# Undead Armies
+undead_defense_army = {
+	defensive = yes
+	is_pop_spawned = yes
+	health = 1.75
+	damage = 1.50
+	collateral_damage = 0.0
+	has_morale = no
+	morale_damage = 1.75
+	war_exhaustion = 0.0
+	icon = GFX_army_type_undead
+	use_armynames_from = undead_army
+
+	potential = {
+		from = {
+			NOR = {
+				has_trait = "trait_mechanical"
+				has_trait = "trait_machine_unit"
+				is_sapient = no
+
+				# GF
+				has_trait = "GF_trait_doll"
+			}
+		}
+		planet = {
+			OR = {
+				AND = {
+					has_active_building = building_dread_encampment
+					num_assigned_jobs = {
+						job = necromancer
+						value >= 1
+					}
+				}
+				has_planet_flag = active_dread_outpost
+			}
+		}
+	}
+
+	resources = {
+		category = armies
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_unyielding_resistance_is_frugal }
+			}
+			unity = 0.5
+		}
+	}
+
+	spawn_chance = {
+		factor = 100
+	}
+}
