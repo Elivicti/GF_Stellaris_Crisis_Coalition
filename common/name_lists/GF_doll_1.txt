@@ -104,7 +104,7 @@ GF_doll_1 = {
 		random_names = {
 			"战术舰队" "自律舰队" "格里芬舰队" "AR舰队" "忤逆舰队" "佣兵舰队" "联合舰队"
 		}
-		sequential_name = "舰队 %C%"
+		sequential_name = "舰队 %O%"
 	}
 	
 	army_names = {
@@ -121,23 +121,23 @@ GF_doll_1 = {
 		}
 		
 		clone_army = { 
-			sequential_name = "克隆小组 %C%"
+			sequential_name = "克隆小组 %O%"
 		}
 		
 		robotic_army = {
-			sequential_name = "猎杀小组 %C%"
+			sequential_name = "猎杀小组 %O%"
 		}
 
 		robotic_defense_army = {
-			sequential_name = "猎杀小组 %C%"
+			sequential_name = "猎杀小组 %O%"
 		}
 		
 		psionic_army = { 
-			sequential_name = "灵能小队 %C%"
+			sequential_name = "灵能小队 %O%"
 		}
 		
 		xenomorph_army = {
-			sequential_name = "生物小队 %C%"
+			sequential_name = "生物小队 %O%"
 		}
 		
 		gene_warrior_army = {
@@ -153,13 +153,13 @@ GF_doll_1 = {
 		}
 
 		primitive_army = {
-			sequential_name = "Primitive Army %C%"
+			sequential_name = "Primitive Army %O%"
 		}
 		industrial_army = {
-			sequential_name = "Industrial Army %C%"
+			sequential_name = "Industrial Army %O%"
 		}
 		postatomic_army = {
-			sequential_name = "Post-Atomic Army %C%"
+			sequential_name = "Post-Atomic Army %O%"
 		}
 	}
 

@@ -100,13 +100,13 @@
 			sequential_name = "%O% 安卓 加里森波德"
 		}
 		primitive_army = {
-			sequential_name = "原始军队 %C%"
+			sequential_name = "原始军队 %O%"
 		}
 		industrial_army = {
-			sequential_name = "工业军队 %C%"
+			sequential_name = "工业军队 %O%"
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 %C%"
+			sequential_name = "后原子军 %O%"
 		}
 	}
 		

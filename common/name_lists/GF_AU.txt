@@ -88,7 +88,7 @@ GF_AU = {
 		random_names = {
 			"守备舰队" "近卫舰队" "攻击舰队" "联合舰队"
 		}
-		sequential_name = "联邦舰队 %C%"
+		sequential_name = "联邦舰队 %O%"
 	}
 	
 	army_names = {
@@ -105,23 +105,23 @@ GF_AU = {
 		}
 		
 		clone_army = { 
-			sequential_name = "%C% 克隆部队"
+			sequential_name = "%O% 克隆部队"
 		}
 		
 		robotic_army = {
-			sequential_name = "%C% 猎杀小组"
+			sequential_name = "%O% 猎杀小组"
 		}
 
 		robotic_defense_army = {
-			sequential_name = "%C% 猎杀小组"
+			sequential_name = "%O% 猎杀小组"
 		}
 		
 		psionic_army = { 
-			sequential_name = "%C% 灵能部队"
+			sequential_name = "%O% 灵能部队"
 		}
 		
 		xenomorph_army = {
-			sequential_name = "%C% 异形部队"
+			sequential_name = "%O% 异形部队"
 		}
 		
 		gene_warrior_army = {
@@ -137,13 +137,13 @@ GF_AU = {
 		}
 
 		primitive_army = {
-			sequential_name = "原始军队 %C%"
+			sequential_name = "原始军队 %O%"
 		}
 		industrial_army = {
-			sequential_name = "工业军队 %C%"
+			sequential_name = "工业军队 %O%"
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 %C%"
+			sequential_name = "后原子军 %O%"
 		}
 	}
 
