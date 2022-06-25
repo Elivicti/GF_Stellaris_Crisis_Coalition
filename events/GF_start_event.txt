@@ -24,6 +24,8 @@ country_event = {
 	}
 
 	immediate = {
+		set_global_flag = GF_Stellairs_Crisis_Coalition
+
 		# Inititalize country's basic characteristics
 		give_technology = { message = no tech = tech_powered_exoskeletons }
 		give_technology = { message = no tech = GF_tech_doll_assemble }
@@ -142,7 +144,7 @@ planet_event = {
 	immediate = {
 		# Add second species
 		last_created_species = {
-			set_species_flag = flag_GF_doll_species@root.owner
+			set_species_flag = flag_GF_doll_species_@root.owner
 			set_citizenship_type = {
 				country = root.owner
 				type = citizenship_full
