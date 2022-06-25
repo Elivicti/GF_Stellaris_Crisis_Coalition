@@ -202,6 +202,10 @@ country_event = {
 			modifier = GF_ogas_mode_governor
 			days = 3600
 		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11001 days = 3600 }
+			
+		}
 	}
 	option = { # en
 		name = GF_ogas.11000.produce
@@ -210,6 +214,9 @@ country_event = {
 		add_modifier = {
 			modifier = GF_ogas_mode_produce
 			days = 3600
+		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11001 days = 3600 }
 		}
 	}
 	option = { # mi fo
@@ -220,6 +227,9 @@ country_event = {
 			modifier = GF_ogas_mode_upkeep
 			days = 3600
 		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 	}
 	option = { # un
 		name = GF_ogas.11000.war
@@ -228,6 +238,9 @@ country_event = {
 		add_modifier = {
 			modifier = GF_ogas_mode_war
 			days = 3600
+		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11001 days = 3600 }
 		}
 	}
 	option = { # un
@@ -238,20 +251,14 @@ country_event = {
 			modifier = GF_ogas_mode_research
 			days = 3600
 		}
+		hidden_effect = {
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 	}
 	option = {
 		name = GF_ogas.main_menu
 		hidden_effect = {
 			country_event = { id = GF_ogas.10000 }
-		}
-	}
-
-	after = {
-		hidden_effect = {
-			if = {
-				limit = { has_country_flag = GF_ogas_work_mode }
-				country_event = { id = GF_ogas.11001 days = 3600 }
-			}
 		}
 	}
 }
