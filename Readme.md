@@ -3,7 +3,9 @@
 ![Girls' Frontline](https://steamuserimages-a.akamaihd.net/ugc/999179427488511854/8858B1D211E33DF35B98382466A4AF94CD94666A/)
 
 本MOD为Mica-team云母组旗下游戏《**少女前线**》的延伸MOD。
+
 欢迎加入我们的MOD反馈讨论群：1035699926
+
 如果您喜欢这个MOD，请务必前往[创意工坊页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2068768158)为我们收藏和点赞。
 
 ![Like](https://i.imgur.com/fVVaDCS.gif[/img)
