@@ -66,7 +66,7 @@
 目前这个MOD并未制作其他语言的本地化文本，若你愿意为本MOD的翻译工作提供帮助，请联系我们。
 Currently this MOD has NOT been translated into other languages, but if you are willing to help us translate this MOD, please contact us.
 
-+ Girls' Frontline Wiki: [EN Wiki](https://iopwiki.com/wiki/Girls'_Frontline_Wiki)  [中文Wiki](url=http://www.gfwiki.org/)
++ Girls' Frontline Wiki: [EN Wiki](https://iopwiki.com/wiki/Girls'_Frontline_Wiki)  [中文Wiki](http://www.gfwiki.org/)
 + Girls' Frontline Home Page: [EN](http://gf.sunborngame.com/)  [中文官网](https://gf-cn.sunborngame.com/)
 
 #ドールズフロントライン　#ドルフロ　#少女前線　#少女前线　#Girls'Frontline  #소녀전선 모드. 트레잇, 시빅, 특수종족(인형) 포함
