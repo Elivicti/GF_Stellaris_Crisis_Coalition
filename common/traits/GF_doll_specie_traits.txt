@@ -10,7 +10,7 @@ GF_trait_strange_cloth = {
 	}
 }
 GF_trait_delicious_food = {
-	cost = -1
+	cost = 0
 	allowed_archetypes = { GF_ANDROID }
 	initial = yes
 	randomized = no
