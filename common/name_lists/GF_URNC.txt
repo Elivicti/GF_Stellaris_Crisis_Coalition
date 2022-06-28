@@ -118,41 +118,41 @@ GF_URNC = {
 		random_names = {
 			"甲兵舰队" "方阵兵舰队" "百夫长舰队" "长生军舰队" "骑士舰队" "弓兵舰队" "骑兵舰队" "枪骑兵舰队" "国土佣仆舰队" "近卫骑兵舰队" "火绳枪兵舰队" "大方阵舰队" "火枪手舰队" "千禧舰队"
 		}
-		sequential_name = "舰队 %O%"
+		sequential_name = "舰队 $O$"
 	}
 	
 	army_names = {
 	
 		defense_army = {
-			sequential_name = "%O% 民兵部队"
+			sequential_name = "$O$ 民兵部队"
 		}
 
 		assault_army = {
-			sequential_name = "%O% 正规部队"
+			sequential_name = "$O$ 正规部队"
 		}
 		
 		slave_army = {
-			sequential_name = "契约步枪 %O%"
+			sequential_name = "契约步枪 $O$"
 		}
 		
 		clone_army = { 
-			sequential_name = "克隆部队 %O%"
+			sequential_name = "克隆部队 $O$"
 		}
 		
 		robotic_army = {
-			sequential_name = "猎杀小组 %O%"
+			sequential_name = "猎杀小组 $O$"
 		}
 
 		robotic_defense_army = {
-			sequential_name = "猎杀小组 %O%"
+			sequential_name = "猎杀小组 $O$"
 		}
 		
 		psionic_army = { 
-			sequential_name = "灵能突击队 %O%"
+			sequential_name = "灵能突击队 $O$"
 		}
 		
 		xenomorph_army = {
-			sequential_name = "生物战争师 %O%"
+			sequential_name = "生物战争师 $O$"
 		}
 		
 		gene_warrior_army = {
@@ -160,23 +160,23 @@ GF_URNC = {
 				"SARC-A '角斗士'" "SARC-B '寡妇制造者'" "SARC-C '不朽'" "SARC-D '狂战士'" "SARC-E '刺客'"
 				"SARC-F '罗躲着'" "SARC-G '夜鹰'" "SARC-H '亡命徒'" "SARC-I '灰骑士" "SARC-J '暴徒'"  
 			}
-			sequential_name = "生物工程空中小组 %O%"
+			sequential_name = "生物工程空中小组 $O$"
 		}
 		occupation_army = {
-			sequential_name = "%O% 加里森波德"
+			sequential_name = "$O$ 加里森波德"
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "%O% 安卓 加里森波德"
+			sequential_name = "$O$ 安卓 加里森波德"
 		}
 		primitive_army = {
-			sequential_name = "原始军队 %O%"
+			sequential_name = "原始军队 $O$"
 		}
 		industrial_army = {
-			sequential_name = "工业军队 %O%"
+			sequential_name = "工业军队 $O$"
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 %O%"
+			sequential_name = "后原子军 $O$"
 		}
 	}
 

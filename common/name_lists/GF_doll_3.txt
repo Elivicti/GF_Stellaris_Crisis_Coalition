@@ -72,41 +72,41 @@
 		random_names = {
 			
 		}
-		sequential_name = "%O% 兵团"
+		sequential_name = "$O$ 兵团"
 	}
 	
 	army_names = {
 		
 		machine_assault_1 = {
-			sequential_name = "%O% 机械化突击力量"
+			sequential_name = "$O$ 机械化突击力量"
 		}
 
 		machine_defense = {
-			sequential_name = "%O% 机械化防御力量"
+			sequential_name = "$O$ 机械化防御力量"
 		}
 		
 		machine_assault_2 = {
-			sequential_name = "%O% 重型突击力量"
+			sequential_name = "$O$ 重型突击力量"
 		}
 	
 		machine_assault_3 = {
-			sequential_name = "%O% 突击超级泰坦"
+			sequential_name = "$O$ 突击超级泰坦"
 		}
 		occupation_army = {
-			sequential_name = "%O% 加里森波德"
+			sequential_name = "$O$ 加里森波德"
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "%O% 安卓 加里森波德"
+			sequential_name = "$O$ 安卓 加里森波德"
 		}
 		primitive_army = {
-			sequential_name = "原始军队 %O%"
+			sequential_name = "原始军队 $O$"
 		}
 		industrial_army = {
-			sequential_name = "工业军队 %O%"
+			sequential_name = "工业军队 $O$"
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 %O%"
+			sequential_name = "后原子军 $O$"
 		}
 	}
 		

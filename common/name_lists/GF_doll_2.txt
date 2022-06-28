@@ -103,62 +103,62 @@ GF_doll_2 = {
 		random_names = {
 			"战术舰队" "自律舰队" "格里芬舰队" "AR舰队" "忤逆舰队" "佣兵舰队" "联合舰队"
 		}
-		sequential_name = "舰队 %O%"
+		sequential_name = "舰队 $O$"
 	}
 	
 	army_names = {
 		defense_army = {
-			sequential_name = "%O% 自律小队"
+			sequential_name = "$O$ 自律小队"
 		}
 			
 		assault_army = {
-			sequential_name = "%O% 战术小队"
+			sequential_name = "$O$ 战术小队"
 		}
 		
 		slave_army = {
-			sequential_name = "%O% 契约小队"
+			sequential_name = "$O$ 契约小队"
 		}
 		
 		clone_army = { 
-			sequential_name = "克隆小组 %O%"
+			sequential_name = "克隆小组 $O$"
 		}
 		
 		robotic_army = {
-			sequential_name = "猎杀小组 %O%"
+			sequential_name = "猎杀小组 $O$"
 		}
 
 		robotic_defense_army = {
-			sequential_name = "猎杀小组 %O%"
+			sequential_name = "猎杀小组 $O$"
 		}
 		
 		psionic_army = { 
-			sequential_name = "灵能小队 %O%"
+			sequential_name = "灵能小队 $O$"
 		}
 		
 		xenomorph_army = {
-			sequential_name = "生物小队 %O%"
+			sequential_name = "生物小队 $O$"
 		}
 		
 		gene_warrior_army = {
-			sequential_name = "%O% 异形小队"
+			sequential_name = "$O$ 异形小队"
 		}
 
 		occupation_army = {
-			sequential_name = "%O% 加里森波德"
+			sequential_name = "$O$ 加里森波德"
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "%O% 安卓 加里森波德"
+			sequential_name = "$O$ 安卓 加里森波德"
 		}
 
 		primitive_army = {
-			sequential_name = "Primitive Army %O%"
+			sequential_name = "Primitive Army $O$"
 		}
 		industrial_army = {
-			sequential_name = "Industrial Army %O%"
+			sequential_name = "Industrial Army $O$"
 		}
 		postatomic_army = {
-			sequential_name = "Post-Atomic Army %O%"
+			sequential_name = "Post-Atomic Army $O$"
 		}
 	}
 
