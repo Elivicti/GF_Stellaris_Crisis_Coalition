@@ -1,5 +1,5 @@
-version = "2.6"
-tags = {
+version="2.6"
+tags={
 	"Species"
 	"Technologies"
 	"Events"
