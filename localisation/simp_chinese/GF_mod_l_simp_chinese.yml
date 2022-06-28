@@ -3,6 +3,10 @@
 ############
  mod_planet_pops_robotics_consumer_goods_upkeep_mult:0 "机械人口$consumer_goods$ £consumer_goods£ 维护费"
  mod_planet_pops_robotics_food_upkeep_mult:0 "机械人口$food$ £food£ 维护费"
+ mod_pop_category_workers_food_upkeep_add:0 "劳工人口$food$ £food£ 维护费"
+ mod_pop_category_specialists_food_upkeep_add:0 "专家人口$food$ £food£ 维护费"
+ mod_pop_category_rulers_food_upkeep_add:0 "统治者人口$food$ £food£ 维护费"
+
  GF_doll_upkeep:0 "人形人口维护费"
  GF_doll_consumer_goods_upkeep:0 "人形人口$consumer_goods$ £consumer_goods£ 维护费"
  GF_doll_food_upkeep:0 "人形人口$food$ £food£ 维护费"
