@@ -26,9 +26,9 @@ GF_trait_doll = {
 		planet_jobs_ruler_produces_mult = -0.10
 		planet_jobs_specialist_produces_mult = -0.10
 
-		pop_category_workers_food_upkeep_add = 1
-		pop_category_specialists_food_upkeep_add = 1
-		pop_category_rulers_food_upkeep_add = 1
+		pop_category_workers_food_upkeep_add = 0.5
+		pop_category_specialists_food_upkeep_add = 0.5
+		pop_category_rulers_food_upkeep_add = 0.5
 	}
 
 	## GF_doll_right_policy
