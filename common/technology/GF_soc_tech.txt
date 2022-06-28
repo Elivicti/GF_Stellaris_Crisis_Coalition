@@ -167,7 +167,7 @@ GF_tech_ecological_recovery = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					has_deposit = d_gf_black_zone
+					has_deposit = d_GF_black_zone
 				}
 			}
 		}
@@ -192,7 +192,7 @@ GF_tech_ecological_recovery = {
 			factor = 0
 			NOT = {
 				any_owned_planet =  {
-					has_deposit = d_gf_black_zone
+					has_deposit = d_GF_black_zone
 				}
 			}
 		}
