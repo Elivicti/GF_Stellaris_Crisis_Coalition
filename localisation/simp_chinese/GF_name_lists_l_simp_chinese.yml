@@ -16,3 +16,12 @@
 # SF events
  NAME_GF_sf_via_dolorosa:0 "受难之路"
  NAME_GF_sf_the_great_sepulchre:0 "圣墓"
+
+# 预设国家
+ PRESCRIPTED_GF_OGAS:0 "OGAS"
+ PRESCRIPTED_species_name_GF_doll:0 "自律人形"
+ PRESCRIPTED_species_plural_GF_doll:0 "自律人形"
+ PRESCRIPTED_species_adjective_GF_doll:0 "自律人形的"
+ EMPIRE_DESIGN_GF_URNC:0 "新人类罗克萨特主义联盟"
+ EMPIRE_DESIGN_GF_AU:0 "南极联邦"
+ EMPIRE_DESIGN_GF_GK:0 "格里芬与克鲁格军事承包商"

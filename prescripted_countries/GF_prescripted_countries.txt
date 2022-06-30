@@ -1,0 +1,271 @@
+GF_EMPIRE_URNC = {
+	# Union of Rossartrism Nations Coalition
+	name = "EMPIRE_DESIGN_GF_URNC"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	initializer = "sol_system_initializer"
+	system_name = "NAME_Sol"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+
+	spawn_enabled = no
+	spawn_as_fallen = no
+	ignore_portrait_duplication = yes
+
+	origin = GF_origin_commonwealth
+	authority = GF_auth_commonwealth
+	government = GF_gov_commonwealth
+	civics = {
+		"GF_civic_URNC"
+		"GF_civic_KCCO"
+	}
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_materialist"
+
+	flags = {
+		human_1
+		custom_start_screen
+	}
+
+	empire_flag = {
+		icon = {
+			category = "gk"
+			file = "griffin_flags_05.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"light_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = female
+		name = "PRESCRIPTED_GF_OGAS"
+		portrait = "griffin000"
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = "ruler"
+	}
+	room = "personality_hegemonic_imperialists_room"
+
+	species = {
+		class = "GF_new_type"
+		portrait = "GF_new_type"
+		name= "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN1"	# Temporarily using vanilla
+
+		trait = "GF_trait_sequela"
+		trait = "GF_trait_self_dependence"
+		trait = "trait_intelligent"
+		trait = "trait_nomadic"
+		trait = "trait_wasteful"
+	}
+	secondary_species = {
+		class = "GF_doll"
+		portrait = "GF_doll"
+		name = "PRESCRIPTED_species_name_GF_doll"
+		plural = "PRESCRIPTED_species_plural_GF_doll"
+		adjective = "PRESCRIPTED_species_adjective_GF_doll"
+		name_list = "GF_doll_1"
+
+		trait = "GF_trait_doll"
+		trait = "GF_trait_strange_cloth"
+		trait = "GF_trait_delicious_food"
+		trait = "GF_trait_doll_expand"
+	}
+}
+
+GF_EMPIER_AU = {
+	# Antarctic Union
+	name = "EMPIRE_DESIGN_GF_AU"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	initializer = "sol_system_initializer"
+	system_name = "NAME_Sol"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+
+	spawn_enabled = no
+	spawn_as_fallen = no
+	ignore_portrait_duplication = yes
+
+	origin = GF_origin_commonwealth
+	authority = GF_auth_commonwealth
+	government = GF_gov_commonwealth
+	civics = {
+		"GF_civic_AU"
+		"GF_civic_TASA"
+	}
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_materialist"
+
+	flags = {
+		human_1
+		custom_start_screen
+	}
+
+	empire_flag = {
+		icon = {
+			category = "gk"
+			file = "griffin_flags_04.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"sky_blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		gender = female
+		name = "PRESCRIPTED_GF_OGAS"
+		portrait = "griffin000"
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = "ruler"
+	}
+	room = "personality_hegemonic_imperialists_room"
+
+	species = {
+		class = "GF_new_type"
+		portrait = "GF_new_type"
+		name= "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN1"	# Temporarily using vanilla
+
+		trait = "GF_trait_sequela"
+		trait = "GF_trait_doll_master"
+		trait = "trait_intelligent"
+		trait = "trait_traditional"
+		trait = "trait_solitary"
+	}
+	secondary_species = {
+		class = "GF_doll"
+		portrait = "GF_doll"
+		name = "PRESCRIPTED_species_name_GF_doll"
+		plural = "PRESCRIPTED_species_plural_GF_doll"
+		adjective = "PRESCRIPTED_species_adjective_GF_doll"
+		name_list = "GF_doll_3"
+
+		trait = "GF_trait_doll"
+		trait = "GF_trait_strange_cloth"
+		trait = "GF_trait_delicious_food"
+		trait = "GF_trait_doll_expand"
+	}
+}
+
+GF_EMPIER_GK = {
+	# Antarctic Union
+	name = "EMPIRE_DESIGN_GF_GK"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	initializer = "sol_system_initializer"
+	system_name = "NAME_Sol"
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+
+	spawn_enabled = no
+	spawn_as_fallen = no
+	ignore_portrait_duplication = yes
+
+	origin = GF_origin_commonwealth
+	authority = GF_auth_commonwealth
+	government = GF_gov_commonwealth
+	civics = {
+		"GF_civic_GK"
+		"GF_civic_IOP"
+	}
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_xenophile"
+	ethic = "ethic_militarist"
+
+	flags = {
+		human_1
+		custom_start_screen
+	}
+
+	empire_flag = {
+		icon = {
+			category = "gk"
+			file = "griffin_flags_01.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "v.dds"
+		}
+		colors = {
+			"dark_grey"
+			"light_turquoise"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		gender = female
+		name = "PRESCRIPTED_GF_OGAS"
+		portrait = "griffin000"
+		texture = 0
+		hair = 0
+		clothes = 0
+		leader_class = "ruler"
+	}
+	room = "personality_hegemonic_imperialists_room"
+
+	species = {
+		class = "GF_new_type"
+		portrait = "GF_new_type"
+		name= "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN1"	# Temporarily using vanilla
+
+		trait = "GF_trait_sequela"
+		trait = "GF_trait_doll_master"
+		trait = "trait_thrifty"
+		trait = "trait_quick_learners"
+		trait = "trait_weak"
+	}
+	secondary_species = {
+		class = "GF_doll"
+		portrait = "GF_doll"
+		name = "PRESCRIPTED_species_name_GF_doll"
+		plural = "PRESCRIPTED_species_plural_GF_doll"
+		adjective = "PRESCRIPTED_species_adjective_GF_doll"
+		name_list = "GF_doll_1"
+
+		trait = "GF_trait_doll"
+		trait = "GF_trait_strange_cloth"
+		trait = "GF_trait_delicious_food"
+		trait = "GF_trait_doll_expand"
+	}
+}
