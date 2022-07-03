@@ -22,13 +22,22 @@ GF_trait_doll = {
 		pop_demotion_time_mult = -2
 		army_damage_mult = 0.2
 		planet_jobs_worker_produces_mult = 0.20
-		
-		planet_jobs_ruler_produces_mult = -0.10
-		planet_jobs_specialist_produces_mult = -0.10
 
 		pop_category_workers_food_upkeep_add = 0.5
 		pop_category_specialists_food_upkeep_add = 0.5
 		pop_category_rulers_food_upkeep_add = 0.5
+	}
+
+	custom_tooltip_with_modifiers = GF_trait_doll_tooltip
+	triggered_pop_modifier = {
+		potential = {
+			owner = {
+				has_authority = GF_auth_commonwealth
+				NOT = { has_technology = GF_tech_mind_upgrade_1 }
+			}
+		}
+		planet_jobs_ruler_produces_mult = -0.10
+		planet_jobs_specialist_produces_mult = -0.10
 	}
 
 	## GF_doll_right_policy
