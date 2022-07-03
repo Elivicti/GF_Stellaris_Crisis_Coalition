@@ -145,10 +145,10 @@ planet_event = {
 		# Add second species
 		last_created_species = {
 			set_species_flag = flag_GF_doll_species_@root.owner
-			set_citizenship_type = {
-				country = root.owner
-				type = citizenship_full
-			}
+			# set_citizenship_type = {
+			# 	country = root.owner
+			# 	type = citizenship_full
+			# }
 			set_species_flag = community_mod_rules_trigger
 			set_species_flag = community_can_species_be_assembled_true	# 物种可组装
 			set_species_flag = community_can_species_procreate_false	# 物种不可生殖
@@ -164,6 +164,7 @@ planet_event = {
 				set_pop_flag = community_mod_rules_trigger
 				set_pop_flag = community_can_fill_ruler_job_false		# 人口不可成为统治者 
 				set_pop_flag = community_can_fill_specialist_job_false	# 人口不可成为专家
+				set_pop_flag = community_can_generate_leader_from_pop_false
 			}
 		}
 		while = {
