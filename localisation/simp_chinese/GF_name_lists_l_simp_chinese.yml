@@ -10,7 +10,7 @@
  name_list_GF_doll_3:0 "仿生自律人形 3"
  name_list_GF_GK:0 "格里芬安全承包商"
  name_list_GF_AU:0 "南极联邦"
- name_list_GF_URNC:0 "罗克萨特主义联盟"
+ name_list_GF_URNC:0 "罗克萨特主义合众国联盟"
 
 
 # SF events
@@ -21,7 +21,16 @@
  PRESCRIPTED_GF_OGAS:0 "OGAS"
  PRESCRIPTED_species_name_GF_doll:0 "自律人形"
  PRESCRIPTED_species_plural_GF_doll:0 "自律人形"
- PRESCRIPTED_species_adjective_GF_doll:0 "自律人形的"
- EMPIRE_DESIGN_GF_URNC:0 "新人类罗克萨特主义联盟"
+ PRESCRIPTED_species_adjective_GF_doll:0 "自律人形"
+
+ EMPIRE_DESIGN_GF_URNC:0 "罗克萨特主义合众国联盟"
+ PRESCRIPTED_adjective_GF_URNC:0 "罗联"
+#  EMPIRE_DESIGN_GF_EMPIRE_URNC_desc:0 "这是罗联的介绍"
+
  EMPIRE_DESIGN_GF_AU:0 "南极联邦"
+ PRESCRIPTED_adjective_GF_AU:0 "南联"
+#  EMPIRE_DESIGN_GF_EMPIRE_AU_desc:0 "这是南联的介绍"
+
  EMPIRE_DESIGN_GF_GK:0 "格里芬与克鲁格军事承包商"
+ PRESCRIPTED_adjective_GF_GK:0 "格里芬"
+#  EMPIRE_DESIGN_GF_EMPIRE_GK_desc:0 "这是格里芬的介绍"

@@ -1,7 +1,7 @@
 GF_EMPIRE_URNC = {
 	# Union of Rossartrism Nations Coalition
 	name = "EMPIRE_DESIGN_GF_URNC"
-	adjective = "PRESCRIPTED_adjective_humans1"
+	adjective = "PRESCRIPTED_adjective_GF_URNC"
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
 
 	planet_name = "NAME_Earth"
@@ -39,10 +39,10 @@ GF_EMPIRE_URNC = {
 		}
 		background = {
 			category = "backgrounds"
-			file = "00_solid.dds"
+			file = "circle.dds"
 		}
 		colors = {
-			"light_blue"
+			"red"
 			"black"
 			"null"
 			"null"
@@ -91,7 +91,7 @@ GF_EMPIRE_URNC = {
 GF_EMPIER_AU = {
 	# Antarctic Union
 	name = "EMPIRE_DESIGN_GF_AU"
-	adjective = "PRESCRIPTED_adjective_humans1"
+	adjective = "PRESCRIPTED_adjective_GF_AU"
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
 
 	planet_name = "NAME_Earth"
@@ -129,11 +129,11 @@ GF_EMPIER_AU = {
 		}
 		background = {
 			category = "backgrounds"
-			file = "00_solid.dds"
+			file = "flag_BG_43.dds"
 		}
 		colors = {
 			"sky_blue"
-			"black"
+			"mist_blue"
 			"null"
 			"null"
 		}
@@ -182,7 +182,7 @@ GF_EMPIER_AU = {
 GF_EMPIER_GK = {
 	# Antarctic Union
 	name = "EMPIRE_DESIGN_GF_GK"
-	adjective = "PRESCRIPTED_adjective_humans1"
+	adjective = "PRESCRIPTED_adjective_GF_GK"
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
 
 	planet_name = "NAME_Earth"
@@ -224,7 +224,7 @@ GF_EMPIER_GK = {
 		}
 		colors = {
 			"dark_grey"
-			"light_turquoise"
+			"yellow"
 			"null"
 			"null"
 		}
