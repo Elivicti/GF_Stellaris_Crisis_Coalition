@@ -1,9 +1,20 @@
 namespace = GF_start
 
-country_event = {
+event = {
 	id = GF_start.0
-	title = GF_start.0.name
-	desc = GF_start.0.desc
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Installed
+	}
+}
+
+country_event = {
+	id = GF_start.1
+	title = GF_start.1.name
+	desc = GF_start.1.desc
 	
 	picture = {
 		picture = GFX_evt_GF_URNC_flag
@@ -24,7 +35,7 @@ country_event = {
 	}
 
 	immediate = {
-		set_global_flag = GF_Stellairs_Crisis_Coalition
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
 
 		# Inititalize country's basic characteristics
 		give_technology = { message = no tech = tech_powered_exoskeletons }
@@ -49,7 +60,7 @@ country_event = {
 		capital_scope = {
 			save_global_event_target_as = GF_home_world
 			clear_deposits = yes
-			planet_event = { id = GF_start.1 }
+			planet_event = { id = GF_start.10 }
 		}
 
 		# Set ruler basic characteristics
@@ -97,7 +108,7 @@ country_event = {
 	}
 
 	option = {
-		name = GF_start.0.a
+		name = GF_start.1.a
 		hidden_effect = {
 			owner = { country_event = { id = GF_ogas.100 days = 5 } }
 		}
@@ -105,7 +116,7 @@ country_event = {
 }
 
 planet_event = {
-	id = GF_start.1
+	id = GF_start.10
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -133,7 +144,7 @@ planet_event = {
 }
 
 planet_event = {
-	id = GF_start.2
+	id = GF_start.20
 	hide_window = yes
 
 	is_triggered_only = yes
