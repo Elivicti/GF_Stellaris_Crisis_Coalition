@@ -192,7 +192,10 @@ country_event = {
 	option = { # un
 		name = GF_ogas.11000.governor
 		response_text = GF_ogas.11000.governor.response
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		hidden_effect = {
+			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 		add_modifier = {
 			modifier = GF_ogas_mode_governor
 			days = 3600
@@ -201,7 +204,10 @@ country_event = {
 	option = { # en
 		name = GF_ogas.11000.produce
 		response_text = GF_ogas.11000.produce.response
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		hidden_effect = {
+			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 		add_modifier = {
 			modifier = GF_ogas_mode_produce
 			days = 3600
@@ -210,7 +216,10 @@ country_event = {
 	option = { # mi fo
 		name = GF_ogas.11000.upkeep
 		response_text = GF_ogas.11000.upkeep.response
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		hidden_effect = {
+			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 		add_modifier = {
 			modifier = GF_ogas_mode_upkeep
 			days = 3600
@@ -219,7 +228,10 @@ country_event = {
 	option = { # un
 		name = GF_ogas.11000.war
 		response_text = GF_ogas.11000.war.response
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		hidden_effect = {
+			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 		add_modifier = {
 			modifier = GF_ogas_mode_war
 			days = 3600
@@ -228,7 +240,10 @@ country_event = {
 	option = { # un
 		name = GF_ogas.11000.research
 		response_text = GF_ogas.11000.research.response
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+		hidden_effect = {
+			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
+			country_event = { id = GF_ogas.11001 days = 3600 }
+		}
 		add_modifier = {
 			modifier = GF_ogas_mode_research
 			days = 3600
@@ -238,15 +253,6 @@ country_event = {
 		name = GF_ogas.main_menu
 		hidden_effect = {
 			country_event = { id = GF_ogas.10000 }
-		}
-	}
-
-	after = {
-		hidden_effect = {
-			if = {
-				limit = { has_country_flag = GF_ogas_work_mode }
-				country_event = { id = GF_ogas.11001 days = 3600 }
-			}
 		}
 	}
 }
