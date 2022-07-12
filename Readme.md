@@ -43,7 +43,7 @@
 
 ## MOD使用方法
 
-1. 本MOD使用**[Stellaris Universal Gamerule Lib](https://steamcommunity.com/workshop/filedetails/?id=2797095333)**为前置，因此请将本MOD置于SUGL**之后**。
+1. 本MOD使用[Stellaris Universal Gamerule Lib](https://steamcommunity.com/workshop/filedetails/?id=2797095333)为前置，因此请将本MOD置于SUGL**之后**。
 
 1. 选择起源**少女前线：危机联合**，再选择**三大主国民理念**：罗联，南联与格里芬**其中之一**，最后选择政体**末日联合政府**。
 
