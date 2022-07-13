@@ -21,7 +21,7 @@ GF_trait_doll = {
 		pop_environment_tolerance = 0.9
 		pop_demotion_time_mult = -2
 		army_damage_mult = 0.2
-		planet_jobs_worker_produces_mult = 0.20
+		planet_jobs_worker_produces_mult = 0.10
 
 		pop_category_workers_food_upkeep_add = 0.5
 		pop_category_specialists_food_upkeep_add = 0.5
@@ -36,8 +36,8 @@ GF_trait_doll = {
 				NOT = { has_technology = GF_tech_mind_upgrade_1 }
 			}
 		}
-		planet_jobs_ruler_produces_mult = -0.10
-		planet_jobs_specialist_produces_mult = -0.10
+		planet_jobs_ruler_produces_mult = -0.05
+		planet_jobs_specialist_produces_mult = -0.05
 	}
 
 	## GF_doll_right_policy
