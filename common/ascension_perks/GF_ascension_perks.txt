@@ -11,7 +11,7 @@ ap_GF_mind_upgrade = {
 		modify_species_cost_mult = -0.50
 	}
 	possible = {
-		# has_technology = GF_tech_mind_upgrade_2
+		has_technology = GF_tech_mind_upgrade_2
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_1"
 			num_ascension_perks > 0
@@ -38,11 +38,8 @@ ap_GF_body_upgrade = {
 		GF_ANDROID_species_trait_points_add = 3
 	}	
 	possible = {
+		has_technology = GF_tech_doll_modding_point_3
 		has_ascension_perk = ap_GF_mind_upgrade
-		# custom_tooltip = {
-		# 	fail_text = "has_GF_tech_doll_modding_point_3"
-		# 	has_technology = GF_tech_doll_modding_point_3
-		# }
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_3"
 			num_ascension_perks > 2
