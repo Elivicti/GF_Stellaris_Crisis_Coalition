@@ -6,7 +6,6 @@
  GF_tech_doll_modding_point_2_desc:0 "人形升级第二阶段。"
  GF_tech_doll_modding_point_3:0 "人形升级III"
  GF_tech_doll_modding_point_3_desc:0 "人形升级最终阶段。"
- has_GF_tech_doll_modding_point_3:0 "拥有科技人形升级III"
  GF_tech_doll_assemble:0 "人形制造技术"
  GF_tech_doll_assemble_desc:0 "AI、心智云图、机械动力学科技结合的最终产物，是秩序毁灭的21世纪最伟大发明，给急需劳动力重建的人类文明提供了大量优质可靠的仿生人形仆从，也是我们迈向星海、重获新生的动力来源。"
  GF_tech_doll_modding:0 "机体改造"
