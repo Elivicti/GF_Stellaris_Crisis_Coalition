@@ -3,9 +3,6 @@ GF_origin_commonwealth = {
 	icon = "gfx/interface/icons/origins/origins_mechanist.dds"
 	picture = GFX_evt_GF_origin_commonwealth
 
-	playable = {
-	}
-
 	possible = {
 		authority = { 
 			value = GF_auth_commonwealth 
@@ -23,6 +20,8 @@ GF_origin_commonwealth = {
 		trait = GF_trait_sequela
 	}
 	advanced_start = yes
+
+	max_once_global = yes
 
 	random_weight = {
 		base = 0
