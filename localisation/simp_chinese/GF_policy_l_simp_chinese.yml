@@ -3,25 +3,25 @@
  policy_GF_doll_right_policy:0 "人形权利政策"
  policy_GF_doll_right_policy_desc:0 "关于仿生自律人形是一种更高级的工具，还是一种全新的有自主意识的生物，抑或是介于二者之间，这个问题自她们诞生起就在我们的社会中广泛争议。"
 
- GF_doll_right_full_name:0 "完整公民权利"
+ GF_doll_right_full_name:0 "人形权利：完整公民权利"
  GF_doll_right_policy_full:0 "完整公民权利"
  GF_doll_right_policy_full_desc:0 "人形将被视为我们社会中平等的一员，她们的诉求、需要必须得到尊重，享有一个自由公民应享有的一切。\n\n$GF_doll_right_full_effect$"
- GF_doll_right_full_effect:0 "人形的需求与普通公民一致，可担任所有岗位。\n人形岗位产出: §G+10%§!"
+ GF_doll_right_full_effect:0 "人形的公民权将被锁定在§Y$citizenship_full$§!。\n人形§G可以§!产生领袖。\n人形岗位产出: §G+10%§!"
 
- GF_doll_right_limited_name:0 "有限公民权利"
+ GF_doll_right_limited_name:0 "人形权利：有限公民权利"
  GF_doll_right_policy_limited:0 "有限公民权利"
  GF_doll_right_policy_limited_desc:0 "禁止私人或私人单位持有人形，所有人形最终权限设定为国家政权，她们由国家统一制造，并由国家统一安排工作与任务、为社会服务，正常情况下分配一定空间的维护室，同时在基本的能源供给上还提供适当的消费品以满足她们所谓的个性，允许她们依据自身工作与任务提出建议、参与社会管理。\n\n$GF_doll_right_limited_effect$"
- GF_doll_right_limited_effect:0 "各岗位人形需求相同，无法担任统治者职位。\n人形岗位产出: §G+5%§!\n$GF_doll_consumer_goods_upkeep$: §G-10%§!\n人形政治权利: §Y-25%§!"
+ GF_doll_right_limited_effect:0 "人形的公民权将被锁定在§Y$citizenship_limited$§!。\n人形§G可以§!产生领袖。\n人形岗位产出: §G+5%§!\n$GF_doll_consumer_goods_upkeep$: §G-10%§!\n人形政治权利: §Y-25%§!"
 
- GF_doll_right_servitude_name:0 "侍从"
+ GF_doll_right_servitude_name:0 "人形权利：侍从"
  GF_doll_right_policy_servitude:0 "侍从"
- GF_doll_right_policy_servitude_desc:0 "人形将作为人类的仆从而活动。§R§!尽管在同理心的作用下，一个类似于动物保护法的粗糙的人形保护体系建立了起来，过分地“虐待”人形将被视为违背道德、公序良俗而受到谴责，但私底下被如何对待依旧取决于所有者的意愿。\n\n$GF_doll_right_servitude_effect$"
- GF_doll_right_servitude_effect:0 "各岗位人形需求相同，只能担任劳工职位。\n$GF_doll_consumer_goods_upkeep$: §G-15%§!\n人形政治权利: §Y-50%§!"
+ GF_doll_right_policy_servitude_desc:0 "人形将作为人类的仆从而活动。尽管在同理心的作用下，一个类似于动物保护法的粗糙的人形保护体系建立了起来，过分地“虐待”人形将被视为违背道德、公序良俗而受到谴责，但私底下被如何对待依旧取决于所有者的意愿。\n\n$GF_doll_right_servitude_effect$"
+ GF_doll_right_servitude_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!。\n人形§R无法§!产生领袖。\n$GF_doll_consumer_goods_upkeep$: §G-15%§!\n人形政治权利: §Y-50%§!"
 
- GF_doll_right_low_name:0 "商品"
+ GF_doll_right_low_name:0 "人形权利：商品"
  GF_doll_right_policy_low:0 "商品"
  GF_doll_right_policy_low_desc:0 "她们是面向社会销售的商品、工具，只要不违背人形管理法律，人形将任所有者使用，这种情况下，人形将依靠类似棺材的维护仓进行维护、储存与运输，受到何种程度的维护将有所有者决定，希望她们都能有个好主人吧。\n\n$GF_doll_right_low_effect$"
- GF_doll_right_low_effect:0 "各岗位人形需求相同，只能担任劳工职位。\n$GF_doll_consumer_goods_upkeep$: §G-1000%§!\n人形政治权利: §Y-80%§!"
+ GF_doll_right_low_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!。\n人形§R无法§!产生领袖。\n人形将被禁止进入£job_entertainer£§Y娱乐业§!或£job_enforcer£§Y国家暴力机关§!。\n$GF_doll_consumer_goods_upkeep$: §G-1000%§!\n人形政治权利: §Y-80%§!"
 
 
  policy_GF_run_mode_policy:0 "人形维护政策"
@@ -29,40 +29,41 @@
 
  GF_run_mode_policy_normal:0 "正常运行标准"
  GF_run_mode_policy_normal_desc:0 "正常水平的维护，其提供的能量在满足任务与工作需要后甚至还有剩余可供人形自由支配。\n\n"
- GF_run_mode_policy_normal_name:0 "正常运行标准"
+ GF_run_mode_policy_normal_name:0 "人形维护：正常运行标准"
 #  GF_run_mode_policy_normal_effect:0 "人形岗位产出: §G+5%§!"
 
  GF_run_mode_policy_energy:0 "节能运行标准"
  GF_run_mode_policy_energy_desc:0 "经过精密控制得到的维护标准，保证所有供给的能量将一分不差的投入到有意义的地方。\n\n$GF_run_mode_policy_energy_effect$"
- GF_run_mode_policy_energy_name:0 "节能运行标准"
+ GF_run_mode_policy_energy_name:0 "人形维护：节能运行标准"
  GF_run_mode_policy_energy_effect:0 "$GF_doll_upkeep$: §G-5%§!"
 
  GF_run_mode_policy_no_food:0 "纯电能运行供给"
  GF_run_mode_policy_no_food_desc:0 "旧时代遗留下来的一种维护方式，毕竟有机物的供给意义在于模仿人类进食行为与仿生表皮的维护，如果只是为了工作，一副会动的金属骨架也并不是不能完成，除了视觉上不是那么美观。\n\n$GF_run_mode_policy_no_food_effect$"
- GF_run_mode_policy_no_food_name:0 "纯电能运行供给"
+ GF_run_mode_policy_no_food_name:0 "人形维护：纯电能运行供给"
  GF_run_mode_policy_no_food_effect:0 "人形将不消耗生物质\n$GF_doll_upkeep$: §G-5%§!\n$GF_doll_food_upkeep$: §G-1000%§!"
 
  GF_run_mode_policy_overload:0 "超负荷运行标准"
  GF_run_mode_policy_overload_desc:0 "有经济学家研究发现消减人形维护时间带来的损耗损失要小于将让人形把节约出的时间用于工作所创造的价值，毕竟是工具，又有谁会关心一个洗碗机的命运呢？\n\n$GF_run_mode_policy_overload_effect$"
- GF_run_mode_policy_overload_name:0 "超负荷运行标准"
+ GF_run_mode_policy_overload_name:0 "人形维护：超负荷运行标准"
  GF_run_mode_policy_overload_effect:0 "$GF_doll_upkeep$: §G-15%§!"
 
+ GF_doll_work_policy_doll_has_full_right:0 "£trigger_no£人形已经获得完整公民权利，她们现在可以自由地从事其想从事的工作了。"
 
  policy_GF_doll_work_policy:0 "人形任务分配政策"
- policy_GF_doll_work_policy_desc:0 "仿生自律人形是我们重要的劳动力，如何给她们指派任务将是一个重要的问题"
+ policy_GF_doll_work_policy_desc:0 "仿生自律人形是我们重要的劳动力，如何给她们指派任务是一个重要的问题。"
 
  GF_doll_work_policy_free:0 "自主任务模式"
- GF_doll_work_policy_free_desc:0 "人形可以自由从事其想从事的工作，任何职位都将对其开放"
- GF_doll_work_policy_free_name:0 "自主任务模式"
+ GF_doll_work_policy_free_name:0 "人形任务：自主任务模式"
+ GF_doll_work_policy_free_desc:0 "人形可以自由地从事其想从事的工作，任何职位都将对其开放。\n\n§Y人形§!将自由地选择§Y任何阶层§!的岗位。"
 
  GF_doll_work_policy_high:0 "高级任务模式"
- GF_doll_work_policy_high_desc:0 "人形是我们可靠的助手，工作上的互相搭配将提升我们多数岗位的效率，她们将被允许从事除了统治者外的任何职业"
- GF_doll_work_policy_high_name:0 "高级任务模式"
+ GF_doll_work_policy_high_name:0 "人形任务：高级任务模式"
+ GF_doll_work_policy_high_desc:0 "人形的各项机能都已经达到乃至超越了一般人类的水平，毫无疑问，她们能够成为我们社会的核心力量。\n\n§Y人形§!将能够从事£pop_cat_ruler£§Y统治者§!、£pop_cat_specialist£§Y专家§!和£pop_cat_worker£§Y劳工§!岗位。"
 
  GF_doll_work_policy_middle:0 "中级任务模式"
- GF_doll_work_policy_middle_desc:0 "不可否认人形拥有强大的记忆与处理能力，但我们认为其主观能动性与创造性还有所欠缺，无法胜任相对复杂的专家职位"
- GF_doll_work_policy_middle_name:0 "中级任务模式"
+ GF_doll_work_policy_middle_name:0 "人形任务：中级任务模式"
+ GF_doll_work_policy_middle_desc:0 "人形是我们可靠的助手，技术的进步让她们拥有强大的记忆与处理能力，在处理复杂的工作时具有一定优势。\n\n§Y人形§!将能够从事£pop_cat_specialist£§Y专家§!和£pop_cat_worker£§Y劳工§!岗位。"
 
  GF_doll_work_policy_low:0 "低级任务模式"
- GF_doll_work_policy_low_desc:0 "回归人形原始的用途，我们认为与人类比，她们拥有强大的机体但在智力上表现得像孩子，因此只适合从事简单的劳工工作"
- GF_doll_work_policy_low_name:0 "低级任务模式"
+ GF_doll_work_policy_low_name:0 "人形任务：低级任务模式"
+ GF_doll_work_policy_low_desc:0 "与人类相比，人形拥有强大的机体，但在智力上表现得像孩子，因此只适合从事简单的工作。\n\n§Y人形§!将只能从事£pop_cat_worker£§Y劳工§!岗位以及£job_entertainer£§Y娱乐业§!或£job_enforcer£§Y国家暴力机关§!。"

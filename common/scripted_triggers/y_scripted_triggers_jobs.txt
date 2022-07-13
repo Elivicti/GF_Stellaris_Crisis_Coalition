@@ -1,0 +1,69 @@
+
+entertainer_job_check_trigger = {
+	custom_tooltip = SPECIALIST_JOB_TRIGGER
+	hidden_trigger = {
+		exists = owner
+		OR = {
+			is_enslaved = no
+			has_slavery_type = { type = slavery_domestic }
+		}
+		is_being_purged = no
+		is_being_assimilated = no
+		NOT = { has_trait = trait_syncretic_proles }
+		can_think = yes
+		OR = {
+			NOT = { has_trait = trait_mechanical }
+			owner = { has_technology = tech_droid_workers }
+		}
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+		if = {
+			limit = {
+				divinity_right_to_work_job_check_trigger_exempt = no
+			}
+			divinity_right_to_work_job_check_trigger_specialist = yes
+		}
+
+		# GF 人形权利为 商品 时，不可进入娱乐业
+		NAND = {
+			has_trait = GF_trait_doll
+			owner = { has_policy_flag = GF_doll_right_low }
+		}
+	}
+}
+
+battle_thrall_job_check_trigger = {
+	custom_tooltip = BATTLE_THRALL_JOB_TRIGGER
+	hidden_trigger = {
+		exists = owner
+		OR = {
+			is_enslaved = no
+			has_slavery_type = { type = slavery_military }
+		}
+		is_being_purged = no
+		is_being_assimilated = no
+		NOT = { has_trait = trait_syncretic_proles }
+		can_think = yes
+		NOT = {
+			has_military_service_type = {
+				type = military_service_none
+			}
+		}
+		OR = {
+			NOT = { has_trait = trait_mechanical }
+			owner = { has_technology = tech_droid_workers }
+		}
+		NOT = { has_citizenship_type = { type = citizenship_organic_trophy } }
+		if = {
+			limit = {
+				divinity_right_to_work_job_check_trigger_exempt = no
+			}
+			divinity_right_to_work_job_check_trigger_specialist = yes
+		}
+		
+		# GF 人形权利为 商品 时，不可进入国家暴力机关
+		NAND = {
+			has_trait = GF_trait_doll
+			owner = { has_policy_flag = GF_doll_right_low }
+		}
+	}
+}

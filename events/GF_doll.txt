@@ -7,9 +7,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		# owner = { NOT = { has_policy_flag = GF_doll_right_full } }
 		fromfrom = { has_trait = GF_trait_doll }
-		owner = { has_authority = GF_auth_commonwealth }
 	}
 
 	immediate = {
@@ -18,25 +16,28 @@ planet_event = {
 			set_pop_flag = community_can_generate_leader_from_pop_true				# 生成领袖
 		}
 		owner = {
+			if = {
+				limit = {
+					OR = {
+						has_policy_flag = GF_doll_right_servitude	# 侍从权利
+						has_policy_flag = GF_doll_right_low			# 商品权利
+					}
+				}
+				fromfrom = {
+					set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
+				}
+			}
 			switch = {
 				trigger = has_policy_flag
-				GF_doll_right_limited = {
+				GF_doll_work_policy_middle = {
 					fromfrom = {
 						set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
 					}
 				}
-				GF_doll_right_servitude = {
+				GF_doll_work_policy_low = {
 					fromfrom = {
 						set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
 						set_pop_flag = community_can_fill_specialist_job_false		# 不可担任专家
-						set_pop_flag = community_can_generate_leader_from_pop_false	# 不可生成领袖
-					}
-				}
-				GF_doll_right_low = {
-					fromfrom = {
-						set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
-						set_pop_flag = community_can_fill_specialist_job_false		# 不可担任专家
-						set_pop_flag = community_can_generate_leader_from_pop_false	# 不可生成领袖
 					}
 				}
 			}
@@ -45,93 +46,116 @@ planet_event = {
 }
 
 
-# 完整权利 所有职位
+# 完整权利 或 有限权利 - 可以生成领袖
 country_event = {
-	id = GF_doll.1100
+	id = GF_doll.1110
 	hide_window = yes
 
 	is_triggered_only = yes
 
 	trigger = {
 		last_changed_policy = GF_doll_right_policy
-		has_policy_flag = GF_doll_right_full
+		OR = {
+			has_policy_flag = GF_doll_right_full
+			has_policy_flag = GF_doll_right_limited
+		}
 	}
 
 	immediate = {
 		every_owned_pop = {
 			limit = { has_trait = GF_trait_doll }
 			set_pop_flag = community_mod_rules_trigger
-			set_pop_flag = community_can_generate_leader_from_pop_true		# 可生成领袖
-			remove_pop_flag = community_can_fill_ruler_job_false			# 移除 不可担任统治者
-			remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
-			remove_pop_flag = community_can_generate_leader_from_pop_false	# 移除 不可生成领袖
+			set_pop_flag = community_can_generate_leader_from_pop_true				# 可生成领袖
+			remove_pop_flag = community_can_generate_leader_from_pop_false			# 移除 不可生成领袖
+		}
+		every_owned_species = {
+			limit = { has_trait = GF_trait_doll }
+			set_military_service_type = {
+				type = military_service_full
+				country = root
+				cooldown = no
+			}
 		}
 	}
 }
-# 有限权利 担任劳工、专家
+# 侍从权利 或 商品权利 - 不可生成领袖
+country_event = {
+	id = GF_doll.1120
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		last_changed_policy = GF_doll_right_policy
+		OR = {
+			has_policy_flag = GF_doll_right_servitude
+			has_policy_flag = GF_doll_right_low
+		}
+		
+	}
+
+	immediate = {
+		every_owned_pop = {
+			limit = { has_trait = GF_trait_doll }
+			set_pop_flag = community_mod_rules_trigger
+			set_pop_flag = community_can_generate_leader_from_pop_false				# 不可生成领袖
+		}
+		every_owned_species = {
+			limit = { has_trait = GF_trait_doll }
+			set_military_service_type = {
+				type = military_service_limited
+				country = root
+				cooldown = no
+			}
+		}
+	}
+}
+
+# 任务分配政策
 country_event = {
 	id = GF_doll.1200
 	hide_window = yes
 
 	is_triggered_only = yes
-
 	trigger = {
-		last_changed_policy = GF_doll_right_policy
-		has_policy_flag = GF_doll_right_limited
+		last_changed_policy = GF_doll_work_policy
 	}
 
 	immediate = {
-		every_owned_pop = {
-			limit = { has_trait = GF_trait_doll }
-			set_pop_flag = community_mod_rules_trigger
-			set_pop_flag = community_can_generate_leader_from_pop_true		# 可生成领袖
-			set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
-			remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
-			remove_pop_flag = community_can_generate_leader_from_pop_false	# 移除 不可生成领袖
-		}
-	}
-}
-# 侍从权利 只能担任劳工
-country_event = {
-	id = GF_doll.1300
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		last_changed_policy = GF_doll_right_policy
-		has_policy_flag = GF_doll_right_servitude
-	}
-
-	immediate = {
-		every_owned_pop = {
-			limit = { has_trait = GF_trait_doll }
-			set_pop_flag = community_mod_rules_trigger
-			set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
-			set_pop_flag = community_can_fill_specialist_job_false			# 不可担任专家
-			set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
-		}
-	}
-}
-# 最低权利 只能担任劳工
-country_event = {
-	id = GF_doll.1400
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		last_changed_policy = GF_doll_right_policy
-		has_policy_flag = GF_doll_right_low
-	}
-
-	immediate = {
-		every_owned_pop = {
-			limit = { has_trait = GF_trait_doll }
-			set_pop_flag = community_mod_rules_trigger
-			set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
-			set_pop_flag = community_can_fill_specialist_job_false			# 不可担任专家
-			set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
+		switch = {
+			trigger = has_policy_flag
+			GF_doll_work_policy_free = {
+				every_owned_pop = {
+					limit = { has_trait = GF_trait_doll }
+					set_pop_flag = community_mod_rules_trigger						# 前置trigger
+					remove_pop_flag = community_can_fill_ruler_job_false			# 移除 不可担任统治者
+					remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
+				}
+			}
+			GF_doll_work_policy_high = {
+				every_owned_pop = {
+					limit = { has_trait = GF_trait_doll }
+					set_pop_flag = community_mod_rules_trigger						# 前置trigger
+					remove_pop_flag = community_can_fill_ruler_job_false			# 移除 不可担任统治者
+					remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
+				}
+			}
+			GF_doll_work_policy_middle = {
+				every_owned_pop = {
+					limit = { has_trait = GF_trait_doll }
+					set_pop_flag = community_mod_rules_trigger						# 前置trigger
+					set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
+					remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
+				}
+			}
+			GF_doll_work_policy_low = {
+				every_owned_pop = {
+					limit = { has_trait = GF_trait_doll }
+					set_pop_flag = community_mod_rules_trigger						# 前置trigger
+					set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
+					set_pop_flag = community_can_fill_specialist_job_false			# 不可担任专家
+				}
+			}
 		}
 	}
 }
@@ -150,26 +174,101 @@ country_event = {
 			set_pop_flag = community_mod_rules_trigger									# 前置trigger
 			set_pop_flag = community_can_generate_leader_from_pop_true					# 生成领袖
 			root = {
+				# 设置是否生成领袖
+				if = {
+					limit = {
+						OR = {
+							has_policy_flag = GF_doll_right_servitude	# 侍从权利
+							has_policy_flag = GF_doll_right_low			# 商品权利
+						}
+					}
+					prev = {
+						set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
+					}
+				}
+				# 设置可从事的岗位阶层
 				switch = {
 					trigger = has_policy_flag
-					GF_doll_right_limited = {
-						fromfrom = {
-							set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
+					GF_doll_work_policy_free = {
+						prev = {
+							remove_pop_flag = community_can_fill_ruler_job_false			# 移除 不可担任统治者
+							remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
 						}
 					}
-					GF_doll_right_servitude = {
-						fromfrom = {
-							set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
-							set_pop_flag = community_can_fill_specialist_job_false		# 不可担任专家
-							set_pop_flag = community_can_generate_leader_from_pop_false	# 不可生成领袖
+					GF_doll_work_policy_high = {
+						prev = {
+							remove_pop_flag = community_can_fill_ruler_job_false			# 移除 不可担任统治者
+							remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
 						}
 					}
-					GF_doll_right_low = {
-						fromfrom = {
-							set_pop_flag = community_can_fill_ruler_job_false			# 不可担任统治者
-							set_pop_flag = community_can_fill_specialist_job_false		# 不可担任专家
-							set_pop_flag = community_can_generate_leader_from_pop_false	# 不可生成领袖
+					GF_doll_work_policy_middle = {
+						prev = {
+							set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
+							remove_pop_flag = community_can_fill_specialist_job_false		# 移除 不可担任专家
 						}
+					}
+					GF_doll_work_policy_low = {
+						prev = {
+							set_pop_flag = community_can_fill_ruler_job_false				# 不可担任统治者
+							set_pop_flag = community_can_fill_specialist_job_false			# 不可担任专家
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GF_doll.3000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	immediate = {
+		switch = {
+			trigger = has_policy_flag
+			GF_doll_right_full = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_full
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_limited = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_limited
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_servitude = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_robot_servitude
+						country = root
+						cooldown = yes
+					}
+				}
+			}
+			GF_doll_right_low = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						type = citizenship_robot_servitude
+						country = root
+						cooldown = yes
 					}
 				}
 			}

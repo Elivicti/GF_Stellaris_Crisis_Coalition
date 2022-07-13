@@ -50,64 +50,85 @@ GF_doll_right_policy = {
 		AI_weight = { weight = 0 }
 	}
 }
-# GF_doll_work_policy = {
-# 	potential = {	
-# 		has_authority = GF_auth_commonwealth
-# 	}
-# 	option = {
-# 		name = "GF_doll_work_policy_free"
-# 		modifier = {
-# 		}
-# 		valid = {
-# 			has_policy_flag = GF_doll_right_full
-# 		}
-# 		policy_flags = { GF_doll_work_policy_free }
-# 		AI_weight = { factor = 0 }
-# 	}	
-# 	option = {
-# 		name = "GF_doll_work_policy_high"
-# 		valid = {
-# 			has_policy_flag = GF_doll_right_high
-# 		}		
-# 		modifier = {
-# 		}
-# 		policy_flags = { GF_doll_work_policy_high }		
-# 		AI_weight = {
-# 			factor = 1
-# 		}
-# 	}
-# 	option = {
-# 		name = "GF_doll_work_policy_middle"
-# 		valid = {
-# 			OR = { 
-# 				has_policy_flag = GF_doll_right_high 
-# 				has_policy_flag = GF_doll_right_middle
-# 			}
-# 		}		
-# 		modifier = {
-# 		}
-# 		policy_flags = { GF_doll_work_policy_middle }		
-# 		AI_weight = {
-# 			factor = 1
-# 		}
-# 	}
-# 	option = {
-# 		name = "GF_doll_work_policy_low"	
-# 		valid = {
-# 			OR = { 
-# 				has_policy_flag = GF_doll_right_high 
-# 				has_policy_flag = GF_doll_right_middle
-# 				has_policy_flag = GF_doll_right_low
-# 			}
-# 		}	
-# 		modifier = {
-# 		}
-# 		policy_flags = { GF_doll_work_policy_low }		
-# 		AI_weight = {
-# 			factor = 1
-# 		}
-# 	}		
-# }
+
+GF_doll_work_policy = {
+	potential = {	
+		has_authority = GF_auth_commonwealth
+	}
+
+	option = {
+		name = "GF_doll_work_policy_free"
+		potential = {
+			has_policy_flag = GF_doll_right_full
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.10
+		}
+
+		policy_flags = { GF_doll_work_policy_free }
+		AI_weight = { weight = 1 }
+	}
+
+	option = {
+		name = "GF_doll_work_policy_high"
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+			has_policy_flag = GF_doll_right_limited
+			has_technology = GF_tech_mind_upgrade_2
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = 0.05
+		}
+
+		policy_flags = { GF_doll_work_policy_high }
+		AI_weight = { weight = 1 }
+	}
+	option = {
+		name = "GF_doll_work_policy_middle"
+
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+			OR = {
+				has_policy_flag = GF_doll_right_limited
+				has_policy_flag = GF_doll_right_servitude
+			}
+			has_technology = GF_tech_mind_upgrade_1
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.05
+		}
+
+		policy_flags = { GF_doll_work_policy_middle }
+		AI_weight = { weight = 1 }
+	}
+	option = {
+		name = "GF_doll_work_policy_low"
+
+		valid = {
+			custom_tooltip = {
+				fail_text = GF_doll_work_policy_doll_has_full_right
+				NOT = { has_policy_flag = GF_doll_right_full }
+			}
+		}
+
+		modifier = {
+			GF_ANDROID_pop_happiness = -0.10
+		}
+
+		policy_flags = { GF_doll_work_policy_low }
+		AI_weight = { weight = 1 }
+	}
+}
+
 GF_run_mode_policy = {
 	potential = { has_authority = GF_auth_commonwealth }
 
@@ -134,7 +155,7 @@ GF_run_mode_policy = {
 		policy_flags = { GF_run_mode_policy_energy }
 
 		AI_weight = { weight = 1 }
-	}		
+	}
 	option = {
 		name = "GF_run_mode_policy_no_food"
 		valid = { NOT = { has_policy_flag = GF_doll_right_full } }

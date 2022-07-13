@@ -48,10 +48,12 @@ on_pop_assembled = {
 # This = Country
 on_policy_changed = {
 	events = {
-		GF_doll.1100	# 完整公民权利
-		GF_doll.1200	# 有限公民权利
-		GF_doll.1300	# 侍从
-		GF_doll.1400	# 商品
+		# 权利政策
+		GF_doll.1110	# 完整权利 或 有限权利 - 可以生成领袖
+		GF_doll.1120	# 侍从权利 或 商品权利 - 不可生成领袖
+
+		# 任务分配政策
+		GF_doll.1200	#
 	}
 }
 
@@ -64,13 +66,9 @@ on_leader_spawned = {
 	}
 }
 
-# Triggers when a Special Project to apply a species modification template has completed.
-# Note that this will trigger once for each combination of planet & original species.
-#
-# This = Country
-# From = Species ( Post Modification )
-on_modification_complete = {
+# this = country
+on_monthly_pulse_country = {
 	events = {
-		
+		GF_doll.3000	# 月检事件 锁定人形的公民权
 	}
 }

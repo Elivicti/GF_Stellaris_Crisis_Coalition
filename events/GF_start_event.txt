@@ -111,6 +111,15 @@ country_event = {
 		name = GF_start.1.a
 		hidden_effect = {
 			owner = { country_event = { id = GF_ogas.100 days = 5 } }
+			# 设置人形权利
+			every_owned_species = {
+				limit = { has_trait = GF_trait_doll }
+				set_citizenship_type = {
+					country = root
+					type = citizenship_robot_servitude
+					cooldown = yes
+				}
+			}
 		}
 	}
 }
@@ -156,14 +165,11 @@ planet_event = {
 		# Add second species
 		last_created_species = {
 			set_species_flag = flag_GF_doll_species_@root.owner
-			# set_citizenship_type = {
-			# 	country = root.owner
-			# 	type = citizenship_full
-			# }
 			set_species_flag = community_mod_rules_trigger
 			set_species_flag = community_can_species_be_assembled_true	# 物种可组装
 			set_species_flag = community_can_species_procreate_false	# 物种不可生殖
 			set_species_flag = community_can_crossbreed_species_false	# 物种不可杂交
+
 		}
 		while = {
 			count = 14
