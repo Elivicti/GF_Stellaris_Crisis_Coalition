@@ -14,6 +14,7 @@ planet_event = {
 		fromfrom = {
 			set_pop_flag = community_mod_rules_trigger								# 前置trigger
 			set_pop_flag = community_can_generate_leader_from_pop_true				# 生成领袖
+			set_pop_flag = community_can_generate_military_leader_from_pop_true		# 可生成军事领袖
 		}
 		owner = {
 			if = {
@@ -24,7 +25,8 @@ planet_event = {
 					}
 				}
 				fromfrom = {
-					set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
+					set_pop_flag = community_can_generate_leader_from_pop_false				# 不可生成领袖
+					set_pop_flag = community_can_generate_military_leader_from_pop_false	# 不可生成军事领袖
 				}
 			}
 			switch = {
@@ -66,7 +68,9 @@ country_event = {
 			limit = { has_trait = GF_trait_doll }
 			set_pop_flag = community_mod_rules_trigger
 			set_pop_flag = community_can_generate_leader_from_pop_true				# 可生成领袖
+			set_pop_flag = community_can_generate_military_leader_from_pop_true		# 可生成军事领袖
 			remove_pop_flag = community_can_generate_leader_from_pop_false			# 移除 不可生成领袖
+			remove_pop_flag = community_can_generate_military_leader_from_pop_false # 移除 不可生成军事领袖
 		}
 		every_owned_species = {
 			limit = { has_trait = GF_trait_doll }
@@ -91,7 +95,6 @@ country_event = {
 			has_policy_flag = GF_doll_right_servitude
 			has_policy_flag = GF_doll_right_low
 		}
-		
 	}
 
 	immediate = {
@@ -99,6 +102,7 @@ country_event = {
 			limit = { has_trait = GF_trait_doll }
 			set_pop_flag = community_mod_rules_trigger
 			set_pop_flag = community_can_generate_leader_from_pop_false				# 不可生成领袖
+			set_pop_flag = community_can_generate_military_leader_from_pop_false	# 不可生成军事领袖
 		}
 		every_owned_species = {
 			limit = { has_trait = GF_trait_doll }
@@ -173,6 +177,7 @@ country_event = {
 			change_species = event_target:GF_doll_species
 			set_pop_flag = community_mod_rules_trigger									# 前置trigger
 			set_pop_flag = community_can_generate_leader_from_pop_true					# 生成领袖
+			set_pop_flag = community_can_generate_military_leader_from_pop_true			# 可生成军事领袖
 			root = {
 				# 设置是否生成领袖
 				if = {
@@ -183,7 +188,8 @@ country_event = {
 						}
 					}
 					prev = {
-						set_pop_flag = community_can_generate_leader_from_pop_false		# 不可生成领袖
+						set_pop_flag = community_can_generate_leader_from_pop_false				# 不可生成领袖
+						set_pop_flag = community_can_generate_military_leader_from_pop_false	# 不可生成军事领袖
 					}
 				}
 				# 设置可从事的岗位阶层
