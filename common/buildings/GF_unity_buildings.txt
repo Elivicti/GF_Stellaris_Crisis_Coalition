@@ -204,7 +204,8 @@ building_GF_zener_network_center_3 = {
 		OR = { 
 			has_valid_civic = GF_civic_URNC 
 			has_valid_civic = GF_civic_AU
-			has_valid_civic = GF_civic_GK}
+			has_valid_civic = GF_civic_GK
+		}
 	}
 	
 	triggered_desc = {
