@@ -32,3 +32,11 @@ GF_can_doll_fill_specialist_job = {
 		}
 	}
 }
+
+GF_planet_has_contaminated_zone = {
+	OR = {
+		has_deposit = d_GF_black_zone
+		has_deposit = d_GF_red_zone
+		has_deposit = d_GF_yellow_zone
+	}
+}
