@@ -26,7 +26,7 @@ d_GF_black_zone = {
 	icon = d_GF_black_zone
 	category = deposit_cat_blockers
 	planet_modifier = {
-		pop_happiness = -0.05
+		pop_environment_tolerance = -0.20
 		planet_max_districts_add = -1
 	}
 	blocker_swap_types = {
@@ -50,8 +50,7 @@ d_GF_red_zone = {
 	icon = d_GF_red_zone
 	category = deposit_cat_blockers
 	planet_modifier = {
-		pop_happiness = -0.01
-		biological_pop_happiness = -0.02
+		pop_environment_tolerance = -0.1
 		planet_max_districts_add = -1
 	}
 	blocker_swap_types = {
@@ -60,7 +59,7 @@ d_GF_red_zone = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 1000
+			energy = 500
 		}
 	}
 	prerequisites = { "GF_tech_ecological_recovery" }
@@ -75,7 +74,7 @@ d_GF_yellow_zone = {
 	icon = d_GF_yellow_zone
 	category = deposit_cat_blockers
 	planet_modifier = {
-		biological_pop_happiness = -0.01
+		pop_environment_tolerance = -0.05
 		planet_max_districts_add = -1
 	}
 	on_cleared = {
@@ -86,7 +85,7 @@ d_GF_yellow_zone = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 300
+			energy = 200
 		}
 	}
 	drop_weight = {
@@ -99,7 +98,7 @@ d_GF_green_zone = {
 	category = deposit_cat_rare
 	icon = d_GF_green_zone
 	planet_modifier = {
-		biological_pop_happiness = 0.01
+		planet_max_districts_add = 2
 	}
 	drop_weight = {
 		weight = 0
@@ -111,7 +110,9 @@ d_GF_white_zone = {
 	category = deposit_cat_rare
 	icon = d_GF_white_zone
 	planet_modifier = {
-		biological_pop_happiness = 0.02
+		pop_environment_tolerance = 0.05
+		biological_pop_happiness = 0.05
+		planet_max_districts_add = 1
 	}
 	drop_weight = {
 		weight = 0
@@ -192,7 +193,7 @@ d_GF_australia_ruin = {
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 300
+			energy = 200
 		}
 	}
 	drop_weight = {
@@ -261,7 +262,7 @@ d_GF_purify_wall = {
 	category = deposit_cat_blockers
 	icon = d_GF_purify_wall
 	planet_modifier = {
-		biological_pop_happiness = 0.05
+		pop_environment_tolerance = 0.05
 		job_GF_guard_doll_add = 2
 	}
 	resources = {
