@@ -1,567 +1,2258 @@
 portraits = {
-	doll_000 = {
-		texturefile = "gfx/models/portraits/doll/ogas.dds"
-	}
-	doll_001 = {
-		texturefile = "gfx/models/portraits/doll/1.dds"
-	}
-	doll_002 = {
-		texturefile = "gfx/models/portraits/doll/2.dds"
-	}
-	doll_003 = {
-		texturefile = "gfx/models/portraits/doll/3.dds"
-	}
-	doll_004 = {
-		texturefile = "gfx/models/portraits/doll/4.dds"
-	}
-	doll_005 = {
-		texturefile = "gfx/models/portraits/doll/5.dds"
-	}
-	doll_006 = {
-		texturefile = "gfx/models/portraits/doll/6.dds"
-	}
-	doll_007 = {
-		texturefile = "gfx/models/portraits/doll/7.dds"
-	}
-	doll_008 = {
-		texturefile = "gfx/models/portraits/doll/8.dds"
-	}
-	doll_009 = {
-		texturefile = "gfx/models/portraits/doll/9.dds"
-	}
-	doll_010 = {
-		texturefile = "gfx/models/portraits/doll/10.dds"
-	}
-	doll_011 = {
-		texturefile = "gfx/models/portraits/doll/11.dds"
-	}
-	doll_012 = {
-		texturefile = "gfx/models/portraits/doll/12.dds"
-	}
-	doll_013 = {
-		texturefile = "gfx/models/portraits/doll/13.dds"
-	}
-	doll_014 = {
-		texturefile = "gfx/models/portraits/doll/AK12.dds"
-	}
-	doll_015 = {
-		texturefile = "gfx/models/portraits/doll/14.dds"
-	}
-	doll_016 = {
-		texturefile = "gfx/models/portraits/doll/15.dds"
-	}
-	doll_017 = {
-		texturefile = "gfx/models/portraits/doll/16.dds"
-	}
-	doll_018 = {
-		texturefile = "gfx/models/portraits/doll/17.dds"
-	}
-	doll_019 = {
-		texturefile = "gfx/models/portraits/doll/18.dds"
-	}
-	doll_020 = {
-		texturefile = "gfx/models/portraits/doll/19.dds"
-	}
-	doll_021 = {
-		texturefile = "gfx/models/portraits/doll/20.dds"
-	}
-	doll_022 = {
-		texturefile = "gfx/models/portraits/doll/1.dds"
-	}
-	doll_023 = {
-		texturefile = "gfx/models/portraits/doll/21.dds"
-	}
-	doll_024 = {
-		texturefile = "gfx/models/portraits/doll/22.dds"
-	}
-	doll_025 = {
-		texturefile = "gfx/models/portraits/doll/23.dds"
-	}
-	doll_026 = {
-		texturefile = "gfx/models/portraits/doll/24.dds"
-	}
-	doll_027 = {
-		texturefile = "gfx/models/portraits/doll/25.dds"
-	}
-	doll_028 = {
-		texturefile = "gfx/models/portraits/doll/26.dds"
-	}
-	doll_029 = {
-		texturefile = "gfx/models/portraits/doll/27.dds"
-	}
-	doll_030 = {
-		texturefile = "gfx/models/portraits/doll/28.dds"
-	}
-	doll_031 = {
-		texturefile = "gfx/models/portraits/doll/29.dds"
-	}
-	doll_032 = {
-		texturefile = "gfx/models/portraits/doll/30.dds"
-	}
-	doll_033 = {
-		texturefile = "gfx/models/portraits/doll/31.dds"
-	}
-	doll_034 = {
-		texturefile = "gfx/models/portraits/doll/32.dds"
-	}
-	doll_035 = {
-		texturefile = "gfx/models/portraits/doll/33.dds"
-	}
-	doll_036 = {
-		texturefile = "gfx/models/portraits/doll/34.dds"
-	}
-	doll_037 = {
-		texturefile = "gfx/models/portraits/doll/35.dds"
-	}
-	doll_038 = {
-		texturefile = "gfx/models/portraits/doll/36.dds"
-	}
-	doll_039 = {
-		texturefile = "gfx/models/portraits/doll/37.dds"
-	}
-	doll_040 = {
-		texturefile = "gfx/models/portraits/doll/38.dds"
-	}
-	doll_041 = {
-		texturefile = "gfx/models/portraits/doll/39.dds"
-	}
-	doll_042 = {
-		texturefile = "gfx/models/portraits/doll/40.dds"
-	}
-	doll_043 = {
-		texturefile = "gfx/models/portraits/doll/41.dds"
-	}
-	doll_044 = {
-		texturefile = "gfx/models/portraits/doll/42.dds"
-	}
-	doll_045 = {
-		texturefile = "gfx/models/portraits/doll/43.dds"
-	}
-	doll_046 = {
-		texturefile = "gfx/models/portraits/doll/44.dds"
-	}
-	doll_047 = {
-		texturefile = "gfx/models/portraits/doll/45.dds"
-	}
-	doll_048 = {
-		texturefile = "gfx/models/portraits/doll/46.dds"
-	}
-	doll_049 = {
-		texturefile = "gfx/models/portraits/doll/47.dds"
-	}
-	doll_050 = {
-		texturefile = "gfx/models/portraits/doll/48.dds"
-	}
-	doll_051 = {
-		texturefile = "gfx/models/portraits/doll/49.dds"
-	}
-	doll_052 = {
-		texturefile = "gfx/models/portraits/doll/50.dds"
-	}
-	doll_053 = {
-		texturefile = "gfx/models/portraits/doll/51.dds"
-	}
-	doll_054 = {
-		texturefile = "gfx/models/portraits/doll/52.dds"
-	}
-	doll_055 = {
-		texturefile = "gfx/models/portraits/doll/53.dds"
-	}
-	doll_056 = {
-		texturefile = "gfx/models/portraits/doll/54.dds"
-	}
-	doll_057 = {
-		texturefile = "gfx/models/portraits/doll/55.dds"
-	}
-	doll_058 = {
-		texturefile = "gfx/models/portraits/doll/56.dds"
-	}
-	doll_059 = {
-		texturefile = "gfx/models/portraits/doll/57.dds"
-	}
-	doll_060 = {
-		texturefile = "gfx/models/portraits/doll/58.dds"
-	}
-	doll_061 = {
-		texturefile = "gfx/models/portraits/doll/59.dds"
-	}
-	doll_062 = {
-		texturefile = "gfx/models/portraits/doll/60.dds"
-	}
-	doll_063 = {
-		texturefile = "gfx/models/portraits/doll/13.dds"
-	}
-	doll_064 = {
-		texturefile = "gfx/models/portraits/doll/12.dds"
-	}
+	GF_doll_000 = { texturefile = "gfx/models/portraits/doll/ogas.dds" }
+	GF_doll_001 = { texturefile = "gfx/models/portraits/doll/pic_06typesmg.dds" }
+	GF_doll_002 = { texturefile = "gfx/models/portraits/doll/pic_4type.dds" }
+	GF_doll_003 = { texturefile = "gfx/models/portraits/doll/pic_56-1type.dds" }
+	GF_doll_004 = { texturefile = "gfx/models/portraits/doll/pic_56typer.dds" }
+	GF_doll_005 = { texturefile = "gfx/models/portraits/doll/pic_56typermod.dds" }
+	GF_doll_006 = { texturefile = "gfx/models/portraits/doll/pic_59type.dds" }
+	GF_doll_007 = { texturefile = "gfx/models/portraits/doll/pic_63type.dds" }
+	GF_doll_008 = { texturefile = "gfx/models/portraits/doll/pic_64typemod.dds" }
+	GF_doll_009 = { texturefile = "gfx/models/portraits/doll/pic_6p62.dds" }
+	GF_doll_010 = { texturefile = "gfx/models/portraits/doll/pic_79type.dds" }
+	GF_doll_011 = { texturefile = "gfx/models/portraits/doll/pic_80typemod.dds" }
+	GF_doll_012 = { texturefile = "gfx/models/portraits/doll/pic_81typer.dds" }
+	GF_doll_013 = { texturefile = "gfx/models/portraits/doll/pic_88typemod.dds" }
+	GF_doll_014 = { texturefile = "gfx/models/portraits/doll/pic_92type.dds" }
+	GF_doll_015 = { texturefile = "gfx/models/portraits/doll/pic_95type.dds" }
+	GF_doll_016 = { texturefile = "gfx/models/portraits/doll/pic_97type.dds" }
+	GF_doll_017 = { texturefile = "gfx/models/portraits/doll/pic_97types.dds" }
+	GF_doll_018 = { texturefile = "gfx/models/portraits/doll/pic_97typesmod.dds" }
+	GF_doll_019 = { texturefile = "gfx/models/portraits/doll/pic_98k.dds" }
+	GF_doll_020 = { texturefile = "gfx/models/portraits/doll/pic_9a91.dds" }
+	GF_doll_021 = { texturefile = "gfx/models/portraits/doll/pic_a545.dds" }
+	GF_doll_022 = { texturefile = "gfx/models/portraits/doll/pic_a91.dds" }
+	GF_doll_023 = { texturefile = "gfx/models/portraits/doll/pic_aa12.dds" }
+	GF_doll_024 = { texturefile = "gfx/models/portraits/doll/pic_aat52.dds" }
+	GF_doll_025 = { texturefile = "gfx/models/portraits/doll/pic_acr.dds" }
+	GF_doll_026 = { texturefile = "gfx/models/portraits/doll/pic_ads.dds" }
+	GF_doll_027 = { texturefile = "gfx/models/portraits/doll/pic_aek999.dds" }
+	GF_doll_028 = { texturefile = "gfx/models/portraits/doll/pic_ak12.dds" }
+	GF_doll_029 = { texturefile = "gfx/models/portraits/doll/pic_ak15mod.dds" }
+	GF_doll_030 = { texturefile = "gfx/models/portraits/doll/pic_ak47.dds" }
+	GF_doll_031 = { texturefile = "gfx/models/portraits/doll/pic_ak5.dds" }
+	GF_doll_032 = { texturefile = "gfx/models/portraits/doll/pic_ak74m.dds" }
+	GF_doll_033 = { texturefile = "gfx/models/portraits/doll/pic_ak74u.dds" }
+	GF_doll_034 = { texturefile = "gfx/models/portraits/doll/pic_akalfa.dds" }
+	GF_doll_035 = { texturefile = "gfx/models/portraits/doll/pic_ameli.dds" }
+	GF_doll_036 = { texturefile = "gfx/models/portraits/doll/pic_an94mod.dds" }
+	GF_doll_037 = { texturefile = "gfx/models/portraits/doll/pic_apc556.dds" }
+	GF_doll_038 = { texturefile = "gfx/models/portraits/doll/pic_aps.dds" }
+	GF_doll_039 = { texturefile = "gfx/models/portraits/doll/pic_apsmod.dds" }
+	GF_doll_040 = { texturefile = "gfx/models/portraits/doll/pic_ar15mod.dds" }
+	GF_doll_041 = { texturefile = "gfx/models/portraits/doll/pic_ar57.dds" }
+	GF_doll_042 = { texturefile = "gfx/models/portraits/doll/pic_ar70.dds" }
+	GF_doll_043 = { texturefile = "gfx/models/portraits/doll/pic_armod.dds" }
+	GF_doll_044 = { texturefile = "gfx/models/portraits/doll/pic_art556.dds" }
+	GF_doll_045 = { texturefile = "gfx/models/portraits/doll/pic_arx160.dds" }
+	GF_doll_046 = { texturefile = "gfx/models/portraits/doll/pic_ash127.dds" }
+	GF_doll_047 = { texturefile = "gfx/models/portraits/doll/pic_asvalmod.dds" }
+	GF_doll_048 = { texturefile = "gfx/models/portraits/doll/pic_aug.dds" }
+	GF_doll_049 = { texturefile = "gfx/models/portraits/doll/pic_augpara.dds" }
+	GF_doll_050 = { texturefile = "gfx/models/portraits/doll/pic_ballista.dds" }
+	GF_doll_051 = { texturefile = "gfx/models/portraits/doll/pic_bm59.dds" }
+	GF_doll_052 = { texturefile = "gfx/models/portraits/doll/pic_brenmk.dds" }
+	GF_doll_053 = { texturefile = "gfx/models/portraits/doll/pic_brenmkmod.dds" }
+	GF_doll_054 = { texturefile = "gfx/models/portraits/doll/pic_brenten.dds" }
+	GF_doll_055 = { texturefile = "gfx/models/portraits/doll/pic_browninghp.dds" }
+	GF_doll_056 = { texturefile = "gfx/models/portraits/doll/pic_c14.dds" }
+	GF_doll_057 = { texturefile = "gfx/models/portraits/doll/pic_c93.dds" }
+	GF_doll_058 = { texturefile = "gfx/models/portraits/doll/pic_c96.dds" }
+	GF_doll_059 = { texturefile = "gfx/models/portraits/doll/pic_c96mod.dds" }
+	GF_doll_060 = { texturefile = "gfx/models/portraits/doll/pic_car.dds" }
+	GF_doll_061 = { texturefile = "gfx/models/portraits/doll/pic_carcano1891.dds" }
+	GF_doll_062 = { texturefile = "gfx/models/portraits/doll/pic_carcano1938.dds" }
+	GF_doll_063 = { texturefile = "gfx/models/portraits/doll/pic_cbjms.dds" }
+	GF_doll_064 = { texturefile = "gfx/models/portraits/doll/pic_cetme556.dds" }
+	GF_doll_065 = { texturefile = "gfx/models/portraits/doll/pic_chauchatm1915.dds" }
+	GF_doll_066 = { texturefile = "gfx/models/portraits/doll/pic_coltdefender.dds" }
+	GF_doll_067 = { texturefile = "gfx/models/portraits/doll/pic_coltscw.dds" }
+	GF_doll_068 = { texturefile = "gfx/models/portraits/doll/pic_contender.dds" }
+	GF_doll_069 = { texturefile = "gfx/models/portraits/doll/pic_cr21.dds" }
+	GF_doll_070 = { texturefile = "gfx/models/portraits/doll/pic_cx4storm.dds" }
+	GF_doll_071 = { texturefile = "gfx/models/portraits/doll/pic_cz100.dds" }
+	GF_doll_072 = { texturefile = "gfx/models/portraits/doll/pic_cz2000.dds" }
+	GF_doll_073 = { texturefile = "gfx/models/portraits/doll/pic_cz52.dds" }
+	GF_doll_074 = { texturefile = "gfx/models/portraits/doll/pic_cz75.dds" }
+	GF_doll_075 = { texturefile = "gfx/models/portraits/doll/pic_cz805.dds" }
+	GF_doll_076 = { texturefile = "gfx/models/portraits/doll/pic_danuvia43m.dds" }
+	GF_doll_077 = { texturefile = "gfx/models/portraits/doll/pic_delisle.dds" }
+	GF_doll_078 = { texturefile = "gfx/models/portraits/doll/pic_derringer.dds" }
+	GF_doll_079 = { texturefile = "gfx/models/portraits/doll/pic_deserteagle.dds" }
+	GF_doll_080 = { texturefile = "gfx/models/portraits/doll/pic_dp12.dds" }
+	GF_doll_081 = { texturefile = "gfx/models/portraits/doll/pic_dp28.dds" }
+	GF_doll_082 = { texturefile = "gfx/models/portraits/doll/pic_dsr50.dds" }
+	GF_doll_083 = { texturefile = "gfx/models/portraits/doll/pic_dtasrs.dds" }
+	GF_doll_084 = { texturefile = "gfx/models/portraits/doll/pic_em2.dds" }
+	GF_doll_085 = { texturefile = "gfx/models/portraits/doll/pic_evo3.dds" }
+	GF_doll_086 = { texturefile = "gfx/models/portraits/doll/pic_f1mod.dds" }
+	GF_doll_087 = { texturefile = "gfx/models/portraits/doll/pic_f2000.dds" }
+	GF_doll_088 = { texturefile = "gfx/models/portraits/doll/pic_falcon.dds" }
+	GF_doll_089 = { texturefile = "gfx/models/portraits/doll/pic_famas.dds" }
+	GF_doll_090 = { texturefile = "gfx/models/portraits/doll/pic_fara83.dds" }
+	GF_doll_091 = { texturefile = "gfx/models/portraits/doll/pic_fedorov.dds" }
+	GF_doll_092 = { texturefile = "gfx/models/portraits/doll/pic_fg42.dds" }
+	GF_doll_093 = { texturefile = "gfx/models/portraits/doll/pic_fmg9.dds" }
+	GF_doll_094 = { texturefile = "gfx/models/portraits/doll/pic_fn49mod.dds" }
+	GF_doll_095 = { texturefile = "gfx/models/portraits/doll/pic_fn57.dds" }
+	GF_doll_096 = { texturefile = "gfx/models/portraits/doll/pic_fnfal.dds" }
+	GF_doll_097 = { texturefile = "gfx/models/portraits/doll/pic_fnfnc.dds" }
+	GF_doll_098 = { texturefile = "gfx/models/portraits/doll/pic_fnp9.dds" }
+	GF_doll_099 = { texturefile = "gfx/models/portraits/doll/pic_fnspr.dds" }
+	GF_doll_100 = { texturefile = "gfx/models/portraits/doll/pic_fo12.dds" }
+	GF_doll_101 = { texturefile = "gfx/models/portraits/doll/pic_fp6.dds" }
+	GF_doll_102 = { texturefile = "gfx/models/portraits/doll/pic_fx05.dds" }
+	GF_doll_103 = { texturefile = "gfx/models/portraits/doll/pic_g11mod.dds" }
+	GF_doll_104 = { texturefile = "gfx/models/portraits/doll/pic_g28.dds" }
+	GF_doll_105 = { texturefile = "gfx/models/portraits/doll/pic_g36cmod.dds" }
+	GF_doll_106 = { texturefile = "gfx/models/portraits/doll/pic_g36mod.dds" }
+	GF_doll_107 = { texturefile = "gfx/models/portraits/doll/pic_g3mod.dds" }
+	GF_doll_108 = { texturefile = "gfx/models/portraits/doll/pic_g41.dds" }
+	GF_doll_109 = { texturefile = "gfx/models/portraits/doll/pic_g43.dds" }
+	GF_doll_110 = { texturefile = "gfx/models/portraits/doll/pic_generalliu.dds" }
+	GF_doll_111 = { texturefile = "gfx/models/portraits/doll/pic_gepardm1mod.dds" }
+	GF_doll_112 = { texturefile = "gfx/models/portraits/doll/pic_glock17.dds" }
+	GF_doll_113 = { texturefile = "gfx/models/portraits/doll/pic_gm6lynx.dds" }
+	GF_doll_114 = { texturefile = "gfx/models/portraits/doll/pic_grizzly.dds" }
+	GF_doll_115 = { texturefile = "gfx/models/portraits/doll/pic_gsh18mod.dds" }
+	GF_doll_116 = { texturefile = "gfx/models/portraits/doll/pic_hezism1.dds" }
+	GF_doll_117 = { texturefile = "gfx/models/portraits/doll/pic_hk21.dds" }
+	GF_doll_118 = { texturefile = "gfx/models/portraits/doll/pic_hk23.dds" }
+	GF_doll_119 = { texturefile = "gfx/models/portraits/doll/pic_hk33.dds" }
+	GF_doll_120 = { texturefile = "gfx/models/portraits/doll/pic_hk416mod.dds" }
+	GF_doll_121 = { texturefile = "gfx/models/portraits/doll/pic_hk45.dds" }
+	GF_doll_122 = { texturefile = "gfx/models/portraits/doll/pic_hk512.dds" }
+	GF_doll_123 = { texturefile = "gfx/models/portraits/doll/pic_hkcaws.dds" }
+	GF_doll_124 = { texturefile = "gfx/models/portraits/doll/pic_howatype89.dds" }
+	GF_doll_125 = { texturefile = "gfx/models/portraits/doll/pic_hs2000.dds" }
+	GF_doll_126 = { texturefile = "gfx/models/portraits/doll/pic_hs50.dds" }
+	GF_doll_127 = { texturefile = "gfx/models/portraits/doll/pic_hsm10.dds" }
+	GF_doll_128 = { texturefile = "gfx/models/portraits/doll/pic_idwmod.dds" }
+	GF_doll_129 = { texturefile = "gfx/models/portraits/doll/pic_insas.dds" }
+	GF_doll_130 = { texturefile = "gfx/models/portraits/doll/pic_ithaca37.dds" }
+	GF_doll_131 = { texturefile = "gfx/models/portraits/doll/pic_iws2000.dds" }
+	GF_doll_132 = { texturefile = "gfx/models/portraits/doll/pic_jericho.dds" }
+	GF_doll_133 = { texturefile = "gfx/models/portraits/doll/pic_js-127.dds" }
+	GF_doll_134 = { texturefile = "gfx/models/portraits/doll/pic_js9mm.dds" }
+	GF_doll_135 = { texturefile = "gfx/models/portraits/doll/pic_k11.dds" }
+	GF_doll_136 = { texturefile = "gfx/models/portraits/doll/pic_k2.dds" }
+	GF_doll_137 = { texturefile = "gfx/models/portraits/doll/pic_k3.dds" }
+	GF_doll_138 = { texturefile = "gfx/models/portraits/doll/pic_k31.dds" }
+	GF_doll_139 = { texturefile = "gfx/models/portraits/doll/pic_k5.dds" }
+	GF_doll_140 = { texturefile = "gfx/models/portraits/doll/pic_k7.dds" }
+	GF_doll_141 = { texturefile = "gfx/models/portraits/doll/pic_kac.dds" }
+	GF_doll_142 = { texturefile = "gfx/models/portraits/doll/pic_kgp9.dds" }
+	GF_doll_143 = { texturefile = "gfx/models/portraits/doll/pic_kh2002.dds" }
+	GF_doll_144 = { texturefile = "gfx/models/portraits/doll/pic_klin.dds" }
+	GF_doll_145 = { texturefile = "gfx/models/portraits/doll/pic_kolibri.dds" }
+	GF_doll_146 = { texturefile = "gfx/models/portraits/doll/pic_kord.dds" }
+	GF_doll_147 = { texturefile = "gfx/models/portraits/doll/pic_kp31mod.dds" }
+	GF_doll_148 = { texturefile = "gfx/models/portraits/doll/pic_ks23.dds" }
+	GF_doll_149 = { texturefile = "gfx/models/portraits/doll/pic_ksg.dds" }
+	GF_doll_150 = { texturefile = "gfx/models/portraits/doll/pic_ksvkmod.dds" }
+	GF_doll_151 = { texturefile = "gfx/models/portraits/doll/pic_l85a1.dds" }
+	GF_doll_152 = { texturefile = "gfx/models/portraits/doll/pic_lewis.dds" }
+	GF_doll_153 = { texturefile = "gfx/models/portraits/doll/pic_liberator.dds" }
+	GF_doll_154 = { texturefile = "gfx/models/portraits/doll/pic_ls26.dds" }
+	GF_doll_155 = { texturefile = "gfx/models/portraits/doll/pic_ltlx7000.dds" }
+	GF_doll_156 = { texturefile = "gfx/models/portraits/doll/pic_lusa.dds" }
+	GF_doll_157 = { texturefile = "gfx/models/portraits/doll/pic_lwmmgmod.dds" }
+	GF_doll_158 = { texturefile = "gfx/models/portraits/doll/pic_m1.dds" }
+	GF_doll_159 = { texturefile = "gfx/models/portraits/doll/pic_m1014.dds" }
+	GF_doll_160 = { texturefile = "gfx/models/portraits/doll/pic_m12.dds" }
+	GF_doll_161 = { texturefile = "gfx/models/portraits/doll/pic_m14mod.dds" }
+	GF_doll_162 = { texturefile = "gfx/models/portraits/doll/pic_m16a1.dds" }
+	GF_doll_163 = { texturefile = "gfx/models/portraits/doll/pic_m16a1_boss.dds" }
+	GF_doll_164 = { texturefile = "gfx/models/portraits/doll/pic_m1873mod.dds" }
+	GF_doll_165 = { texturefile = "gfx/models/portraits/doll/pic_m1887.dds" }
+	GF_doll_166 = { texturefile = "gfx/models/portraits/doll/pic_m1891.dds" }
+	GF_doll_167 = { texturefile = "gfx/models/portraits/doll/pic_m1891mod.dds" }
+	GF_doll_168 = { texturefile = "gfx/models/portraits/doll/pic_m1895.dds" }
+	GF_doll_169 = { texturefile = "gfx/models/portraits/doll/pic_m1895mg.dds" }
+	GF_doll_170 = { texturefile = "gfx/models/portraits/doll/pic_m1895mod.dds" }
+	GF_doll_171 = { texturefile = "gfx/models/portraits/doll/pic_m1897mod.dds" }
+	GF_doll_172 = { texturefile = "gfx/models/portraits/doll/pic_m1903.dds" }
+	GF_doll_173 = { texturefile = "gfx/models/portraits/doll/pic_m1911mod.dds" }
+	GF_doll_174 = { texturefile = "gfx/models/portraits/doll/pic_m1918mod.dds" }
+	GF_doll_175 = { texturefile = "gfx/models/portraits/doll/pic_m1919a4.dds" }
+	GF_doll_176 = { texturefile = "gfx/models/portraits/doll/pic_m1928a1.dds" }
+	GF_doll_177 = { texturefile = "gfx/models/portraits/doll/pic_m1a1.dds" }
+	GF_doll_178 = { texturefile = "gfx/models/portraits/doll/pic_m200.dds" }
+	GF_doll_179 = { texturefile = "gfx/models/portraits/doll/pic_m21.dds" }
+	GF_doll_180 = { texturefile = "gfx/models/portraits/doll/pic_m249saw.dds" }
+	GF_doll_181 = { texturefile = "gfx/models/portraits/doll/pic_m26mass.dds" }
+	GF_doll_182 = { texturefile = "gfx/models/portraits/doll/pic_m2hb.dds" }
+	GF_doll_183 = { texturefile = "gfx/models/portraits/doll/pic_m3.dds" }
+	GF_doll_184 = { texturefile = "gfx/models/portraits/doll/pic_m45.dds" }
+	GF_doll_185 = { texturefile = "gfx/models/portraits/doll/pic_m4a1mod.dds" }
+	GF_doll_186 = { texturefile = "gfx/models/portraits/doll/pic_m500.dds" }
+	GF_doll_187 = { texturefile = "gfx/models/portraits/doll/pic_m500_dog.dds" }
+	GF_doll_188 = { texturefile = "gfx/models/portraits/doll/pic_m500mod.dds" }
+	GF_doll_189 = { texturefile = "gfx/models/portraits/doll/pic_m590.dds" }
+	GF_doll_190 = { texturefile = "gfx/models/portraits/doll/pic_m60.dds" }
+	GF_doll_191 = { texturefile = "gfx/models/portraits/doll/pic_m6asw.dds" }
+	GF_doll_192 = { texturefile = "gfx/models/portraits/doll/pic_m82.dds" }
+	GF_doll_193 = { texturefile = "gfx/models/portraits/doll/pic_m82a1.dds" }
+	GF_doll_194 = { texturefile = "gfx/models/portraits/doll/pic_m870p.dds" }
+	GF_doll_195 = { texturefile = "gfx/models/portraits/doll/pic_m9.dds" }
+	GF_doll_196 = { texturefile = "gfx/models/portraits/doll/pic_m950a.dds" }
+	GF_doll_197 = { texturefile = "gfx/models/portraits/doll/pic_m950amod.dds" }
+	GF_doll_198 = { texturefile = "gfx/models/portraits/doll/pic_m99.dds" }
+	GF_doll_199 = { texturefile = "gfx/models/portraits/doll/pic_mab38.dds" }
+	GF_doll_200 = { texturefile = "gfx/models/portraits/doll/pic_mab38mod.dds" }
+	GF_doll_201 = { texturefile = "gfx/models/portraits/doll/pic_mac10.dds" }
+	GF_doll_202 = { texturefile = "gfx/models/portraits/doll/pic_mag7.dds" }
+	GF_doll_203 = { texturefile = "gfx/models/portraits/doll/pic_magal.dds" }
+	GF_doll_204 = { texturefile = "gfx/models/portraits/doll/pic_mas38.dds" }
+	GF_doll_205 = { texturefile = "gfx/models/portraits/doll/pic_mat49.dds" }
+	GF_doll_206 = { texturefile = "gfx/models/portraits/doll/pic_mdr.dds" }
+	GF_doll_207 = { texturefile = "gfx/models/portraits/doll/pic_mg338.dds" }
+	GF_doll_208 = { texturefile = "gfx/models/portraits/doll/pic_mg34.dds" }
+	GF_doll_209 = { texturefile = "gfx/models/portraits/doll/pic_mg36.dds" }
+	GF_doll_210 = { texturefile = "gfx/models/portraits/doll/pic_mg3mod.dds" }
+	GF_doll_211 = { texturefile = "gfx/models/portraits/doll/pic_mg42.dds" }
+	GF_doll_212 = { texturefile = "gfx/models/portraits/doll/pic_mg4mod.dds" }
+	GF_doll_213 = { texturefile = "gfx/models/portraits/doll/pic_mg5.dds" }
+	GF_doll_214 = { texturefile = "gfx/models/portraits/doll/pic_microuzimod.dds" }
+	GF_doll_215 = { texturefile = "gfx/models/portraits/doll/pic_mk12.dds" }
+	GF_doll_216 = { texturefile = "gfx/models/portraits/doll/pic_mk23.dds" }
+	GF_doll_217 = { texturefile = "gfx/models/portraits/doll/pic_mk46.dds" }
+	GF_doll_218 = { texturefile = "gfx/models/portraits/doll/pic_mk48.dds" }
+	GF_doll_219 = { texturefile = "gfx/models/portraits/doll/pic_mlemk1.dds" }
+	GF_doll_220 = { texturefile = "gfx/models/portraits/doll/pic_mondragonm1908.dds" }
+	GF_doll_221 = { texturefile = "gfx/models/portraits/doll/pic_mp40.dds" }
+	GF_doll_222 = { texturefile = "gfx/models/portraits/doll/pic_mp41.dds" }
+	GF_doll_223 = { texturefile = "gfx/models/portraits/doll/pic_mp443mod.dds" }
+	GF_doll_224 = { texturefile = "gfx/models/portraits/doll/pic_mp446mod.dds" }
+	GF_doll_225 = { texturefile = "gfx/models/portraits/doll/pic_mp448.dds" }
+	GF_doll_226 = { texturefile = "gfx/models/portraits/doll/pic_mp5mod.dds" }
+	GF_doll_227 = { texturefile = "gfx/models/portraits/doll/pic_mp7.dds" }
+	GF_doll_228 = { texturefile = "gfx/models/portraits/doll/pic_mpk.dds" }
+	GF_doll_229 = { texturefile = "gfx/models/portraits/doll/pic_mpl.dds" }
+	GF_doll_230 = { texturefile = "gfx/models/portraits/doll/pic_mt9.dds" }
+	GF_doll_231 = { texturefile = "gfx/models/portraits/doll/pic_negev.dds" }
+	GF_doll_232 = { texturefile = "gfx/models/portraits/doll/pic_ns2000.dds" }
+	GF_doll_233 = { texturefile = "gfx/models/portraits/doll/pic_ntw20mod.dds" }
+	GF_doll_234 = { texturefile = "gfx/models/portraits/doll/pic_nz75.dds" }
+	GF_doll_235 = { texturefile = "gfx/models/portraits/doll/pic_obrmod.dds" }
+	GF_doll_236 = { texturefile = "gfx/models/portraits/doll/pic_oc44.dds" }
+	GF_doll_237 = { texturefile = "gfx/models/portraits/doll/pic_ots12.dds" }
+	GF_doll_238 = { texturefile = "gfx/models/portraits/doll/pic_ots14.dds" }
+	GF_doll_239 = { texturefile = "gfx/models/portraits/doll/pic_ots39.dds" }
+	GF_doll_240 = { texturefile = "gfx/models/portraits/doll/pic_p08.dds" }
+	GF_doll_241 = { texturefile = "gfx/models/portraits/doll/pic_p22.dds" }
+	GF_doll_242 = { texturefile = "gfx/models/portraits/doll/pic_p226.dds" }
+	GF_doll_243 = { texturefile = "gfx/models/portraits/doll/pic_p30.dds" }
+	GF_doll_244 = { texturefile = "gfx/models/portraits/doll/pic_p38.dds" }
+	GF_doll_245 = { texturefile = "gfx/models/portraits/doll/pic_p7.dds" }
+	GF_doll_246 = { texturefile = "gfx/models/portraits/doll/pic_p90.dds" }
+	GF_doll_247 = { texturefile = "gfx/models/portraits/doll/pic_p99.dds" }
+	GF_doll_248 = { texturefile = "gfx/models/portraits/doll/pic_pa15.dds" }
+	GF_doll_249 = { texturefile = "gfx/models/portraits/doll/pic_pdw.dds" }
+	GF_doll_250 = { texturefile = "gfx/models/portraits/doll/pic_pk.dds" }
+	GF_doll_251 = { texturefile = "gfx/models/portraits/doll/pic_pkp.dds" }
+	GF_doll_252 = { texturefile = "gfx/models/portraits/doll/pic_pm06.dds" }
+	GF_doll_253 = { texturefile = "gfx/models/portraits/doll/pic_pm1910.dds" }
+	GF_doll_254 = { texturefile = "gfx/models/portraits/doll/pic_pm9.dds" }
+	GF_doll_255 = { texturefile = "gfx/models/portraits/doll/pic_pmmod.dds" }
+	GF_doll_256 = { texturefile = "gfx/models/portraits/doll/pic_pp1901.dds" }
+	GF_doll_257 = { texturefile = "gfx/models/portraits/doll/pic_pp19mod.dds" }
+	GF_doll_258 = { texturefile = "gfx/models/portraits/doll/pic_pp2000.dds" }
+	GF_doll_259 = { texturefile = "gfx/models/portraits/doll/pic_pp90.dds" }
+	GF_doll_260 = { texturefile = "gfx/models/portraits/doll/pic_ppd40.dds" }
+	GF_doll_261 = { texturefile = "gfx/models/portraits/doll/pic_ppkmod.dds" }
+	GF_doll_262 = { texturefile = "gfx/models/portraits/doll/pic_ppq.dds" }
+	GF_doll_263 = { texturefile = "gfx/models/portraits/doll/pic_pps43.dds" }
+	GF_doll_264 = { texturefile = "gfx/models/portraits/doll/pic_ppsh41mod.dds" }
+	GF_doll_265 = { texturefile = "gfx/models/portraits/doll/pic_psg1.dds" }
+	GF_doll_266 = { texturefile = "gfx/models/portraits/doll/pic_psm.dds" }
+	GF_doll_267 = { texturefile = "gfx/models/portraits/doll/pic_ptrd.dds" }
+	GF_doll_268 = { texturefile = "gfx/models/portraits/doll/pic_px4storm.dds" }
+	GF_doll_269 = { texturefile = "gfx/models/portraits/doll/pic_python.dds" }
+	GF_doll_270 = { texturefile = "gfx/models/portraits/doll/pic_pzb39.dds" }
+	GF_doll_271 = { texturefile = "gfx/models/portraits/doll/pic_qbu88.dds" }
+	GF_doll_272 = { texturefile = "gfx/models/portraits/doll/pic_qbz191.dds" }
+	GF_doll_273 = { texturefile = "gfx/models/portraits/doll/pic_qsb91.dds" }
+	GF_doll_274 = { texturefile = "gfx/models/portraits/doll/pic_r5rgp.dds" }
+	GF_doll_275 = { texturefile = "gfx/models/portraits/doll/pic_r93.dds" }
+	GF_doll_276 = { texturefile = "gfx/models/portraits/doll/pic_rexzero1.dds" }
+	GF_doll_277 = { texturefile = "gfx/models/portraits/doll/pic_rfb.dds" }
+	GF_doll_278 = { texturefile = "gfx/models/portraits/doll/pic_rhino.dds" }
+	GF_doll_279 = { texturefile = "gfx/models/portraits/doll/pic_ribeyrolles.dds" }
+	GF_doll_280 = { texturefile = "gfx/models/portraits/doll/pic_rmb93mod.dds" }
+	GF_doll_281 = { texturefile = "gfx/models/portraits/doll/pic_ro635mod.dds" }
+	GF_doll_282 = { texturefile = "gfx/models/portraits/doll/pic_rpd.dds" }
+	GF_doll_283 = { texturefile = "gfx/models/portraits/doll/pic_rpk16.dds" }
+	GF_doll_284 = { texturefile = "gfx/models/portraits/doll/pic_rpk203.dds" }
+	GF_doll_285 = { texturefile = "gfx/models/portraits/doll/pic_rt20.dds" }
+	GF_doll_286 = { texturefile = "gfx/models/portraits/doll/pic_sacr.dds" }
+	GF_doll_287 = { texturefile = "gfx/models/portraits/doll/pic_saf.dds" }
+	GF_doll_288 = { texturefile = "gfx/models/portraits/doll/pic_saiga12.dds" }
+	GF_doll_289 = { texturefile = "gfx/models/portraits/doll/pic_sar21.dds" }
+	GF_doll_290 = { texturefile = "gfx/models/portraits/doll/pic_sat8.dds" }
+	GF_doll_291 = { texturefile = "gfx/models/portraits/doll/pic_savage99.dds" }
+	GF_doll_292 = { texturefile = "gfx/models/portraits/doll/pic_scout.dds" }
+	GF_doll_293 = { texturefile = "gfx/models/portraits/doll/pic_scr.dds" }
+	GF_doll_294 = { texturefile = "gfx/models/portraits/doll/pic_shipka.dds" }
+	GF_doll_295 = { texturefile = "gfx/models/portraits/doll/pic_sig510.dds" }
+	GF_doll_296 = { texturefile = "gfx/models/portraits/doll/pic_sig556.dds" }
+	GF_doll_297 = { texturefile = "gfx/models/portraits/doll/pic_sigmcx.dds" }
+	GF_doll_298 = { texturefile = "gfx/models/portraits/doll/pic_six12.dds" }
+	GF_doll_299 = { texturefile = "gfx/models/portraits/doll/pic_sks.dds" }
+	GF_doll_300 = { texturefile = "gfx/models/portraits/doll/pic_sl8.dds" }
+	GF_doll_301 = { texturefile = "gfx/models/portraits/doll/pic_sp9.dds" }
+	GF_doll_302 = { texturefile = "gfx/models/portraits/doll/pic_spas12.dds" }
+	GF_doll_303 = { texturefile = "gfx/models/portraits/doll/pic_spectrem4.dds" }
+	GF_doll_304 = { texturefile = "gfx/models/portraits/doll/pic_spitfire.dds" }
+	GF_doll_305 = { texturefile = "gfx/models/portraits/doll/pic_spp1.dds" }
+	GF_doll_306 = { texturefile = "gfx/models/portraits/doll/pic_sps.dds" }
+	GF_doll_307 = { texturefile = "gfx/models/portraits/doll/pic_sr2.dds" }
+	GF_doll_308 = { texturefile = "gfx/models/portraits/doll/pic_sr3mp.dds" }
+	GF_doll_309 = { texturefile = "gfx/models/portraits/doll/pic_ssg3000.dds" }
+	GF_doll_310 = { texturefile = "gfx/models/portraits/doll/pic_ssg69.dds" }
+	GF_doll_311 = { texturefile = "gfx/models/portraits/doll/pic_stenmk2mod.dds" }
+	GF_doll_312 = { texturefile = "gfx/models/portraits/doll/pic_sterling.dds" }
+	GF_doll_313 = { texturefile = "gfx/models/portraits/doll/pic_stg44mod.dds" }
+	GF_doll_314 = { texturefile = "gfx/models/portraits/doll/pic_stg940.dds" }
+	GF_doll_315 = { texturefile = "gfx/models/portraits/doll/pic_sub2000.dds" }
+	GF_doll_316 = { texturefile = "gfx/models/portraits/doll/pic_supersassmod.dds" }
+	GF_doll_317 = { texturefile = "gfx/models/portraits/doll/pic_supershorty.dds" }
+	GF_doll_318 = { texturefile = "gfx/models/portraits/doll/pic_sv98mod.dds" }
+	GF_doll_319 = { texturefile = "gfx/models/portraits/doll/pic_svch.dds" }
+	GF_doll_320 = { texturefile = "gfx/models/portraits/doll/pic_svd.dds" }
+	GF_doll_321 = { texturefile = "gfx/models/portraits/doll/pic_svt38.dds" }
+	GF_doll_322 = { texturefile = "gfx/models/portraits/doll/pic_t5000.dds" }
+	GF_doll_323 = { texturefile = "gfx/models/portraits/doll/pic_t65.dds" }
+	GF_doll_324 = { texturefile = "gfx/models/portraits/doll/pic_t77.dds" }
+	GF_doll_325 = { texturefile = "gfx/models/portraits/doll/pic_t91.dds" }
+	GF_doll_326 = { texturefile = "gfx/models/portraits/doll/pic_tabuk.dds" }
+	GF_doll_327 = { texturefile = "gfx/models/portraits/doll/pic_tac50.dds" }
+	GF_doll_328 = { texturefile = "gfx/models/portraits/doll/pic_tar21.dds" }
+	GF_doll_329 = { texturefile = "gfx/models/portraits/doll/pic_tavorts12.dds" }
+	GF_doll_330 = { texturefile = "gfx/models/portraits/doll/pic_tcms.dds" }
+	GF_doll_331 = { texturefile = "gfx/models/portraits/doll/pic_tec9.dds" }
+	GF_doll_332 = { texturefile = "gfx/models/portraits/doll/pic_tfq.dds" }
+	GF_doll_333 = { texturefile = "gfx/models/portraits/doll/pic_thunder50.dds" }
+	GF_doll_334 = { texturefile = "gfx/models/portraits/doll/pic_tkb408.dds" }
+	GF_doll_335 = { texturefile = "gfx/models/portraits/doll/pic_tmp.dds" }
+	GF_doll_336 = { texturefile = "gfx/models/portraits/doll/pic_tt33.dds" }
+	GF_doll_337 = { texturefile = "gfx/models/portraits/doll/pic_type03.dds" }
+	GF_doll_338 = { texturefile = "gfx/models/portraits/doll/pic_type100.dds" }
+	GF_doll_339 = { texturefile = "gfx/models/portraits/doll/pic_type62.dds" }
+	GF_doll_340 = { texturefile = "gfx/models/portraits/doll/pic_type64-ar.dds" }
+	GF_doll_341 = { texturefile = "gfx/models/portraits/doll/pic_type88.dds" }
+	GF_doll_342 = { texturefile = "gfx/models/portraits/doll/pic_ukm2000.dds" }
+	GF_doll_343 = { texturefile = "gfx/models/portraits/doll/pic_ump40.dds" }
+	GF_doll_344 = { texturefile = "gfx/models/portraits/doll/pic_ump45mod.dds" }
+	GF_doll_345 = { texturefile = "gfx/models/portraits/doll/pic_ump9mod.dds" }
+	GF_doll_346 = { texturefile = "gfx/models/portraits/doll/pic_usas12.dds" }
+	GF_doll_347 = { texturefile = "gfx/models/portraits/doll/pic_uspcompact.dds" }
+	GF_doll_348 = { texturefile = "gfx/models/portraits/doll/pic_vector.dds" }
+	GF_doll_349 = { texturefile = "gfx/models/portraits/doll/pic_vepr.dds" }
+	GF_doll_350 = { texturefile = "gfx/models/portraits/doll/pic_vhs.dds" }
+	GF_doll_351 = { texturefile = "gfx/models/portraits/doll/pic_vigneronm2.dds" }
+	GF_doll_352 = { texturefile = "gfx/models/portraits/doll/pic_vp1915.dds" }
+	GF_doll_353 = { texturefile = "gfx/models/portraits/doll/pic_vp70.dds" }
+	GF_doll_354 = { texturefile = "gfx/models/portraits/doll/pic_vpm5.dds" }
+	GF_doll_355 = { texturefile = "gfx/models/portraits/doll/pic_vsk.dds" }
+	GF_doll_356 = { texturefile = "gfx/models/portraits/doll/pic_vz61.dds" }
+	GF_doll_357 = { texturefile = "gfx/models/portraits/doll/pic_wa2000.dds" }
+	GF_doll_358 = { texturefile = "gfx/models/portraits/doll/pic_webley.dds" }
+	GF_doll_359 = { texturefile = "gfx/models/portraits/doll/pic_welrodmod.dds" }
+	GF_doll_360 = { texturefile = "gfx/models/portraits/doll/pic_wkp.dds" }
+	GF_doll_361 = { texturefile = "gfx/models/portraits/doll/pic_wz29.dds" }
+	GF_doll_362 = { texturefile = "gfx/models/portraits/doll/pic_x95.dds" }
+	GF_doll_363 = { texturefile = "gfx/models/portraits/doll/pic_xm3mod.dds" }
+	GF_doll_364 = { texturefile = "gfx/models/portraits/doll/pic_xm8mod.dds" }
+	GF_doll_365 = { texturefile = "gfx/models/portraits/doll/pic_z62.dds" }
+	GF_doll_366 = { texturefile = "gfx/models/portraits/doll/pic_zasm76.dds" }
+	GF_doll_367 = { texturefile = "gfx/models/portraits/doll/pic_zastavam21.dds" }
+	GF_doll_368 = { texturefile = "gfx/models/portraits/doll/pic_zb26.dds" }
+	GF_doll_369 = { texturefile = "gfx/models/portraits/doll/pic_zip22.dds" }
 }
 
 portrait_groups = {
 	GF_doll = {
-		default = doll_032
+		default = GF_doll_001
 		game_setup = {
 			add = {
 				portraits = {
-					doll_000
-					doll_001
-					doll_002
-					doll_003
-					doll_004
-					doll_005
-					doll_006
-					doll_007
-					doll_008
-					doll_009
-					doll_010
-					doll_011
-					doll_012
-					doll_013
-					doll_014
-					doll_015
-					doll_016
-					doll_017
-					doll_018
-					doll_019
-					doll_020
-					doll_021
-					doll_022
-					doll_023
-					doll_024
-					doll_025
-					doll_026
-					doll_027
-					doll_028
-					doll_029
-					doll_030
-					doll_031
-					doll_032
-					doll_033
-					doll_034
-					doll_035
-					doll_036
-					doll_037
-					doll_038
-					doll_039
-					doll_040
-					doll_041
-					doll_042
-					doll_043
-					doll_044
-					doll_045
-					doll_046
-					doll_047
-					doll_048
-					doll_049
-					doll_050
-					doll_051
-					doll_052
-					doll_053
-					doll_054
-					doll_055
-					doll_056
-					doll_057
-					doll_058
-					doll_059
-					doll_060
-					doll_061
-					doll_062
-					doll_063
-					doll_064
+					GF_doll_000
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
 				}
 			}
 		}
-		#species scope
 		species = {
-			#generic portrait for a species
 			add = {
 				portraits = {
-					doll_001
-					doll_002
-					doll_003
-					doll_004
-					doll_005
-					doll_006
-					doll_007
-					doll_008
-					doll_009
-					doll_010
-					doll_011
-					doll_012
-					doll_013
-					doll_014
-					doll_015
-					doll_016
-					doll_017
-					doll_018
-					doll_019
-					doll_020
-					doll_021
-					doll_022
-					doll_023
-					doll_024
-					doll_025
-					doll_026
-					doll_027
-					doll_028
-					doll_029
-					doll_030
-					doll_031
-					doll_032
-					doll_033
-					doll_034
-					doll_035
-					doll_036
-					doll_037
-					doll_038
-					doll_039
-					doll_040
-					doll_041
-					doll_042
-					doll_043
-					doll_044
-					doll_045
-					doll_046
-					doll_047
-					doll_048
-					doll_049
-					doll_050
-					doll_051
-					doll_052
-					doll_053
-					doll_054
-					doll_055
-					doll_056
-					doll_057
-					doll_058
-					doll_059
-					doll_060
-					doll_061
-					doll_062
-					doll_063
-					doll_064
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
 				}
 			}
 		}
-		#pop scope
 		pop = {
-			#for a specific pop
 			add = {
 				portraits = {
-					doll_001
-					doll_002
-					doll_003
-					doll_004
-					doll_005
-					doll_006
-					doll_007
-					doll_008
-					doll_009
-					doll_010
-					doll_011
-					doll_012
-					doll_013
-					doll_014
-					doll_015
-					doll_016
-					doll_017
-					doll_018
-					doll_019
-					doll_020
-					doll_021
-					doll_022
-					doll_023
-					doll_024
-					doll_025
-					doll_026
-					doll_027
-					doll_028
-					doll_029
-					doll_030
-					doll_031
-					doll_032
-					doll_033
-					doll_034
-					doll_035
-					doll_036
-					doll_037
-					doll_038
-					doll_039
-					doll_040
-					doll_041
-					doll_042
-					doll_043
-					doll_044
-					doll_045
-					doll_046
-					doll_047
-					doll_048
-					doll_049
-					doll_050
-					doll_051
-					doll_052
-					doll_053
-					doll_054
-					doll_055
-					doll_056
-					doll_057
-					doll_058
-					doll_059
-					doll_060
-					doll_061
-					doll_062
-					doll_063
-					doll_064
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
 				}
 			}
 		}
-		#leader scope
 		leader = {
-			#scientists, generals, admirals, governor
 			add = {
 				portraits = {
-					doll_001
-					doll_002
-					doll_003
-					doll_004
-					doll_005
-					doll_006
-					doll_007
-					doll_008
-					doll_009
-					doll_010
-					doll_011
-					doll_012
-					doll_013
-					doll_014
-					doll_015
-					doll_016
-					doll_017
-					doll_018
-					doll_019
-					doll_020
-					doll_021
-					doll_022
-					doll_023
-					doll_024
-					doll_025
-					doll_026
-					doll_027
-					doll_028
-					doll_029
-					doll_030
-					doll_031
-					doll_032
-					doll_033
-					doll_034
-					doll_035
-					doll_036
-					doll_037
-					doll_038
-					doll_039
-					doll_040
-					doll_041
-					doll_042
-					doll_043
-					doll_044
-					doll_045
-					doll_046
-					doll_047
-					doll_048
-					doll_049
-					doll_050
-					doll_051
-					doll_052
-					doll_053
-					doll_054
-					doll_055
-					doll_056
-					doll_057
-					doll_058
-					doll_059
-					doll_060
-					doll_061
-					doll_062
-					doll_063
-					doll_064
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
 				}
 			}
 		}
-		#leader scope
 		ruler = {
 			add = {
 				portraits = {
-					doll_000
-					doll_001
-					doll_002
-					doll_003
-					doll_004
-					doll_005
-					doll_006
-					doll_007
-					doll_008
-					doll_009
-					doll_010
-					doll_011
-					doll_012
-					doll_013
-					doll_014
-					doll_015
-					doll_016
-					doll_017
-					doll_018
-					doll_019
-					doll_020
-					doll_021
-					doll_022
-					doll_023
-					doll_024
-					doll_025
-					doll_026
-					doll_027
-					doll_028
-					doll_029
-					doll_030
-					doll_031
-					doll_032
-					doll_033
-					doll_034
-					doll_035
-					doll_036
-					doll_037
-					doll_038
-					doll_039
-					doll_040
-					doll_041
-					doll_042
-					doll_043
-					doll_044
-					doll_045
-					doll_046
-					doll_047
-					doll_048
-					doll_049
-					doll_050
-					doll_051
-					doll_052
-					doll_053
-					doll_054
-					doll_055
-					doll_056
-					doll_057
-					doll_058
-					doll_059
-					doll_060
-					doll_061
-					doll_062
-					doll_063
-					doll_064
-				}
-			}
-		}
-		upgrader = {
-			add = {
-				portraits = {
-					doll_010
+					GF_doll_000
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
 				}
 			}
 		}
