@@ -33,10 +33,181 @@ GF_can_doll_fill_specialist_job = {
 	}
 }
 
+can_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
+	custom_tooltip = {
+		fail_text = is_not_a_standard_planet_or_megastructure
+		is_a_planet_megastructure = yes
+	}
+	custom_tooltip = {
+		fail_text = is_shielded
+		NOR = {
+			is_planet_class = pc_shielded
+			is_planet_class = pc_ringworld_shielded
+			is_planet_class = pc_habitat_shielded
+		}
+	}
+	#custom_tooltip = {
+		#fail_text = is_not_hostile
+		OR = {
+			custom_tooltip = {
+				text = is_not_hostile_cracker
+				OR = {
+					AND = {
+						exists = space_owner
+						space_owner = {
+							OR = {
+								is_at_war_with = from.owner
+								is_country_type = swarm
+								is_country_type = extradimensional
+								is_country_type = extradimensional_2
+								is_country_type = extradimensional_3
+								is_country_type = ai_empire
+							}
+						}
+					}
+					AND = { # colony
+						exists = owner
+						owner = {
+							OR = {
+								is_at_war_with = from.owner
+								is_country_type = swarm
+								is_country_type = extradimensional
+								is_country_type = extradimensional_2
+								is_country_type = extradimensional_3
+								is_country_type = ai_empire
+							}
+						}
+					}
+					AND = { # primitive
+						exists = space_owner
+						exists = owner
+						owner = {
+							is_primitive = yes
+						}
+						space_owner = {
+							OR = {
+								is_at_war_with = from.owner
+								is_country_type = swarm
+								is_country_type = extradimensional
+								is_country_type = extradimensional_2
+								is_country_type = extradimensional_3
+								is_country_type = ai_empire
+							}
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = not_barren_molten_frozen_toxic_test_fire
+				NOT = { exists = owner }
+				OR = {
+					NOT = { exists = space_owner }
+					AND = {
+						exists = space_owner
+						space_owner = { is_same_value = from.owner }
+					}
+				}
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+					is_planet_class = pc_molten
+					is_planet_class = pc_toxic
+					is_planet_class = pc_desert
+					is_planet_class = pc_tropical
+					is_planet_class = pc_arid
+					is_planet_class = pc_continental
+					is_planet_class = pc_ocean
+					is_planet_class = pc_tundra
+					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_gaia
+					is_planet_class = pc_relic
+					is_planet_class = pc_nuked
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_habitat
+				}
+			}
+		}
+	#}
+}
+
+GF_default_zion_comm_trigger = {
+	AND = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_established_communication_with_zion
+	}
+}
+
+# scope = species
+GF_is_gavirul_species = {
+	hidden_trigger = {
+		this = { is_species_class = GF_new_type }
+	}
+	from = {
+		custom_tooltip = {
+			has_country_flag = flag_GF_gavirul_project_finished
+			fail_text = fail_text_GF_gavirul_project_finished
+		}
+	}
+}
+
+# scope = country, checks the country's authority and if v_GF_elid_threat_level is bigger than 0
+GF_default_elid_event_trigger = {
+	AND = {
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value > 0
+			}
+		}
+	}
+}
+
+# scope = planet
 GF_planet_has_contaminated_zone = {
 	OR = {
 		has_deposit = d_GF_black_zone
 		has_deposit = d_GF_red_zone
 		has_deposit = d_GF_yellow_zone
+	}
+}
+
+
+# scope = country
+
+@high_zion_favor_threshold	 = 100
+@medium_zion_favor_threshold = 50				# currently no use...
+@low_zion_favor_threshold	 = 15
+
+GF_has_zion_favor_high = {
+	is_variable_set = v_GF_zion_favor
+	check_variable = {
+		which = v_GF_zion_favor
+		value >= @high_zion_favor_threshold
+	}
+}
+
+GF_has_zion_favor_medium = {
+	is_variable_set = v_GF_zion_favor
+	AND = {
+		check_variable = {
+			which = v_GF_zion_favor
+			value < @high_zion_favor_threshold
+		}
+		check_variable = {
+			which = v_GF_zion_favor
+			value > @low_zion_favor_threshold
+		}
+	}
+}
+
+GF_has_zion_favor_low = {
+	is_variable_set = v_GF_zion_favor
+	check_variable = {
+		which = v_GF_zion_favor
+		value <= @low_zion_favor_threshold
 	}
 }

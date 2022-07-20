@@ -209,3 +209,102 @@ GF_tech_ecological_recovery = {
 		}
 	}
 }
+
+
+######
+tech_GF_elid_army = {
+	area = society
+	category = {
+		biology
+	}
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+
+	is_rare = yes
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_valid_civic = civic_reanimated_armies
+	}
+
+	prerequisites = {
+		"tech_GF_collapse_relic_tech"
+		"tech_GF_collapsetech_weaponize"
+		"tech_cloning"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+tech_GF_collapse_bomb = {
+	area = society
+	category = { military_theory }
+	tier = 5
+
+	cost = @tier5cost3
+	weight = @tier5weight3
+
+	is_rare = yes
+
+	potential = {
+		AND = {
+			has_authority = GF_auth_commonwealth
+			has_country_flag = flag_GF_collapse_relic_surveyed
+		}
+	}
+
+	prerequisites = {
+		"tech_GF_collapsetech_weaponize"
+		"tech_GF_collapse_relic_tech"
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "tech_GF_collapse_bomb_title"
+			desc = "tech_GF_collapse_bomb_desc"
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}

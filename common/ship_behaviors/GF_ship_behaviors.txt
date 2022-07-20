@@ -1,0 +1,68 @@
+# ship_behavior = {
+# 	name = "GF_ogas_picket"
+
+# 	preferred_attack_range = 30
+# 	formation_distance = 30				#when orbing/following ship will try to keep this distance to assigned position
+# 	return_to_formation_distance = 40	#when attacking the ship will switch to passive mode if distance to assigned position is greater that this
+
+# 	collision_awareness = 0.75			#how much we try to avoid other ships
+# 	collision_strafe = 0.75				#collision_strafe allows the ship to move in any direction while colliding with another
+# 	collision_radius = 1.0
+
+# 	attack_move_pattern = stay_at_range			#stationary/charge/follow/stationary/none
+# 	passive_move_pattern = charge
+
+# 	desc = "GF_OGASPICKET_BEHAVIOR_DESC"
+# }
+
+ship_behavior = {
+	name = "GF_ogas_artillery"
+	preferred_attack_range = 200
+	formation_distance = 240
+	return_to_formation_distance = 250
+
+	combat_target_anchor = root
+
+	collision_awareness = 0.2
+	collision_radius = 1.0							#collision_radius is a multiplier on the radius specified in the ship size
+	collision_strafe = 2.5							#collision_strafe allows the ship to move in any direction while colliding with another
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = stay_at_range
+
+	desc = "GF_OGAS_ARTILLERY_BEHAVIOR_DESC"
+}
+
+ship_behavior = {
+	name = "GF_ogas_carrier"
+	preferred_attack_range = 240
+	formation_distance = 300
+	return_to_formation_distance = 320
+	
+	collision_awareness = 1
+	collision_radius = 20
+	collision_strafe = 10
+	attack_move_pattern = follow 
+	passive_move_pattern = stay_at_range
+
+	desc = "GF_OGAS_CARRIER_BEHAVIOR_DESC"
+}
+
+ship_behavior = {
+	name = "GF_ogas_free"
+
+	preferred_attack_range = 240
+	formation_distance = 240
+	return_to_formation_distance = 250
+	
+	collision_awareness = 0.2
+	collision_radius = 1.0							#collision_radius is a multiplier on the radius specified in the ship size
+	collision_strafe = 2.5
+
+	attack_move_pattern = stay_at_range
+	passive_move_pattern = charge
+
+	ignore_combat_movement = yes
+	
+	desc = "GF_OGAS_FREE_BEHAVIOR_DESC"
+}
+

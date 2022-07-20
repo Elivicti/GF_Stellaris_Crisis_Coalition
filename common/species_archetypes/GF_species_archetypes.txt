@@ -3,3 +3,9 @@ GF_ANDROID = {
 	species_max_traits = 6
 	robotic = yes
 }
+
+collective_consciousness = {
+	species_trait_points = 3
+	species_max_traits = 3
+	robotic = yes
+}

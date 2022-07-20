@@ -8,3 +8,11 @@
  mod_pc_GF_sf_machine_habitability:0 "$pc_GF_sf_machine$宜居度"
  trait_pc_GF_sf_machine_preference:0 "$pc_GF_sf_machine$偏好"
  trait_pc_GF_sf_machine_preference_desc:0 "为啥会有物种偏好$pc_GF_sf_machine$？"
+
+ pc_GF_collapsed:0 "坍塌死寂星球"
+ pc_GF_collapsed_desc:0 "一颗大气中充斥着坍塌粒子的岩石星球，依稀能看出它曾经是生机勃勃的宜居星球，现在地表上遍布着在强烈的坍塌辐射下形成的结晶，原本的生态在强烈的坍塌辐射的影响下形成了由硅基生物构成的生态圈，然而一般的生物完全无法在这样的环境中生存。"
+ pc_GF_collapsed_adj:0 "荒芜"
+
+ pc_GF_collapsed_not_habitable:0 "$pc_GF_collapsed$"
+ pc_GF_collapsed_not_habitable_desc:0 "一颗表面遍布坍塌辐射结晶的岩石星球，浓烈的坍塌辐射粒子成为了这颗星球的大气层，不可能有任何生命能在这颗星球上生存。"
+ pc_GF_collapsed_not_habitable_adj:0 "荒芜"

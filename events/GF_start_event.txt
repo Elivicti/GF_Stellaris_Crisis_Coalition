@@ -120,6 +120,8 @@ country_event = {
 					cooldown = yes
 				}
 			}
+			
+			country_event = { id = GF_elid.0 days = 30 } # initialize elid attack events
 		}
 	}
 }

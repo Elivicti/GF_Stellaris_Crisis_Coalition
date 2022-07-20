@@ -1,0 +1,237 @@
+#####################
+# 坍塌反应堆
+#####################
+
+utility_component_template = {
+	# 护卫舰反应堆
+	key = "CORVETTE_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 350
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.05
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+
+}
+
+utility_component_template = {
+	# 驱逐舰反应堆
+	key = "DESTROYER_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 750
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 90
+		}
+		upkeep = {
+			energy = 1.0
+			alloys = 0.1
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	
+	size_restriction = { destroyer crisis_destroyer }
+}
+
+utility_component_template = {
+	# 巡洋舰反应堆
+	key = "CRUISER_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 1200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 180
+		}
+		upkeep = {
+			energy = 1.8
+			alloys = 0.8
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { cruiser crisis_cruiser }
+
+}
+
+utility_component_template = {
+	# 战列舰反应堆
+	key = "BATTLESHIP_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 2500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 350
+		}
+		upkeep = {
+			energy = 3.5
+			alloys = 0.45
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { battleship }
+}
+
+utility_component_template = {
+	# 泰坦反应堆
+	key = "TITAN_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 5000
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 630
+		}
+		upkeep = {
+			energy = 6.8
+			alloys = 0.7
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { titan }
+}
+
+utility_component_template = {
+	# 巨像反应堆
+	key = "COLOSSUS_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 12000
+	resources = {
+		category = ship_components
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { colossus star_eater }
+}
+
+utility_component_template = {
+	# 防御平台反应堆
+	key = "PLATFORM_GF_COLLAPSE_REACTOR"
+	size = large
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 1200
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 0.85
+			alloys = 0.09
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = {
+		military_station_small
+		military_station_medium
+		military_station_large
+	}
+}
+
+utility_component_template = {
+	# 离子炮反应堆
+	key = "ION_CANNON_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 1500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 160
+		}
+	}
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { ion_cannon }
+}
+
+utility_component_template = {
+	# 恒星基地/主宰反应堆
+	key = "STARBASE_GF_COLLAPSE_REACTOR"
+	size = large
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 7500
+
+	prerequisites = { "tech_GF_collapse_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	size_restriction = {
+		starbase_outpost
+		starbase_starport
+		starbase_starhold
+		starbase_starfortress
+		starbase_citadel
+		juggernaut
+	}
+}
+
+#####################
+# 坍塌跃迁引擎
+#####################
+utility_component_template = {
+	key = "GF_COLLAPSE_JUMP_DRIVE"
+	size = small
+	icon = "GFX_GF_collapse_jump_drive"
+	icon_frame = 1
+	power = -45
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	ftl = yes
+	jumpdrive = yes
+	ship_modifier = {
+		ship_windup_mult = -0.70
+		ship_jumpdrive_cooldown_mult = -0.50
+		ship_ftl_jumpdrive_range_mult = 0.50
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+
+	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
+	prerequisites = { "tech_GF_collapse_jump_drive" }
+	component_set = "ftl_components"
+}

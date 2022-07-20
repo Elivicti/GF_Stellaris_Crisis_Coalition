@@ -1,0 +1,66 @@
+
+opinion_collapsed_a_world = {
+	opinion = {
+		base = -80
+	}
+	accumulative = yes
+	min = -500
+	decay = {
+		base = 1
+	}
+}
+
+opinion_collapsed_an_uninhabited_world = {
+	opinion = {
+		base = -30
+	}
+	accumulative = yes
+	min = -150
+	decay = {
+		base = 1
+	}
+}
+
+opinion_collapsed_my_world = {
+	opinion = {
+		base = -750
+	}
+	accumulative = yes
+	min = -5000
+	decay = {
+		base = 1
+	}
+}
+
+opinion_collapsed_my_uninhabited_world = {
+	opinion = {
+		base = -300
+	}
+	accumulative = yes
+	min = -1500
+	decay = {
+		base = 1
+	}
+}
+
+opinion_collapsed_a_primitive_world = {
+	opinion = {
+		base = -30
+	}
+	accumulative = yes
+	min = -200
+	decay = {
+		base = 1
+	}
+}
+
+opinion_collapsed_a_primitive_world_phile = {
+	opinion = {
+		base = -50
+	}
+	accumulative = yes
+	min = -300
+	decay = {
+		base = 1
+	}
+}

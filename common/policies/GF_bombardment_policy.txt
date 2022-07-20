@@ -1,0 +1,61 @@
+collapse_bombardment = {
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+		has_technology = tech_GF_collapse_bomb
+	}
+
+	option = {
+		name = "enable_collapse_bombardment"
+		policy_flags = { GF_enable_collapse_bombardment }
+		AI_weight = {
+			base = 1
+			modifier = {
+				add = 50
+				OR = {
+					# 军国
+					has_ethic = ethic_militarist
+					# 排外
+					has_ethic = ethic_xenophobe
+				}
+			}
+			modifier = {
+				add = 100
+				OR = {
+					# 军国
+					has_ethic = ethic_fanatic_militarist
+					# 排外
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+	}
+	option = {
+		name = "disable_collapse_bombardment"
+		policy_flags = { GF_disable_collapse_bombardment }
+		AI_weight = {
+			base = 0
+			modifier = {
+				add = 50
+				OR = {
+					# 和平
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+					# 亲外
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+				}
+			}
+			modifier = {
+				add = 100
+				OR = {
+					# 和平
+					has_ethic = ethic_fanatic_pacifist
+					# 亲外
+					has_ethic = ethic_fanatic_xenophile
+				}
+			}
+		}
+	}
+	
+}

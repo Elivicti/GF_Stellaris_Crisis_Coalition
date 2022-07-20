@@ -1,0 +1,1247 @@
+namespace = GF_elid
+
+@elid_attack_interval = 720
+@elid_attack_interval_random = 180
+
+# events entry
+country_event = {
+	id = GF_elid.0
+	title = GF_elid.0.name
+	desc = GF_elid.0.desc
+
+	picture = GFX_evt_GF_protected_purify_wall
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_origin = GF_origin_commonwealth
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			set_variable = {
+				which = v_GF_elid_threat_level
+				value = 6 # should be [0, 10]
+			}
+		}
+		country_event = {
+			id = GF_elid.1
+			days = 1800
+		}
+	}
+
+	option = {
+		name = GF_elid.0.a
+		custom_tooltip = GF_elid.0.a.tooltip
+	}
+}
+
+country_event = { # notice to tell player that elid will be spawned
+	id = GF_elid.1
+	title = GF_elid.1.name
+	desc = GF_elid.1.desc
+	is_triggered_only = yes
+
+	picture = GFX_evt_GF_protected_purify_wall
+
+	location = event_target:GF_home_world
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_origin = GF_origin_commonwealth
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			planet_event = {
+				id = GF_elid.1000
+				days = 240
+				random = 60
+			}
+		}
+	}
+	
+	option = {
+		name = GF_elid.1.a
+		custom_tooltip = GF_elid.1.tooltip
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_elid_threat_level_mid
+				days = -1
+			}
+		}
+	}
+
+	option = {
+		name = GF_elid.1.b
+		custom_tooltip = GF_elid.1.tooltip
+		custom_tooltip = GF_elid.1.b.tooltip
+		add_resource = {
+			energy = -1000
+			unity = -300
+		}
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_elid_threat_level_mid
+				days = -1
+			}
+		}
+		trigger = { NOT = { event_target:GF_home_world = { any_planet_army = { exists = leader } } } }
+		allow = {
+			has_resource = { type = energy amount >= 1000 }
+			has_resource = { type = unity  amount >= 500  }
+		}
+
+		hidden_effect = {
+			create_leader = {
+				class = general
+				species = owner
+				skill = 3
+				set_age = 21
+
+				traits = {
+					trait = leader_trait_glory_seeker
+					trait = leader_trait_army_logistician
+				}
+	
+				effect = {
+					if = {
+						limit = { is_species = new_type gender = male }
+						set_is_female = yes
+						set_name = random
+					}
+				}
+			}
+		}
+	}
+}
+
+
+### when contaminated zone exists, elid will try to attack
+
+# general elid spawning event
+planet_event = {
+	id = GF_elid.1000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		# owner = { GF_default_elid_event_trigger = yes }
+		owner = { has_authority = GF_auth_commonwealth }
+		OR = {
+			has_deposit = d_GF_black_zone
+			has_deposit = d_GF_red_zone
+			has_deposit = d_GF_yellow_zone
+		}
+		check_variable = {
+			which = v_GF_elid_threat_level
+			value > 0
+		}
+	}
+
+	immediate = {
+
+		if = {
+			limit = { has_ground_combat = no is_occupied_flag = no } # checks whether the planet has been occupied
+
+			# notice event
+			owner = { country_event = { id = GF_elid.1001 } }
+
+			create_country = {
+				name = "NAME_GF_elid_invasion"
+				type = elid_country
+				effect = {
+					establish_communications_no_message = root.owner
+					establish_contact = { who = root.owner location = root.solar_system }
+					save_global_event_target_as = aggressive_elid_country
+				}
+				flag = {
+					icon = {
+						category = "SidesFlag"
+						file = "Unknown.dds"
+					}
+					background = {
+						category = "backgrounds"
+						file = "sinus.dds"
+					}
+					colors = {
+						"black"
+						"black"
+						"null"
+						"null"
+					}
+				}
+			}
+			create_species = {
+				name = "NAME_GF_aggressive_elid"
+				class = aggressive_elid
+				portrait = random
+				effect = {
+					save_global_event_target_as = aggressive_elid_species
+				}
+			}
+
+			multiply_variable = {
+				which = v_GF_elid_threat_level
+				value = 3
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid"
+					}
+				}
+			}
+			divide_variable = {
+				which = v_GF_elid_threat_level
+				value = 3
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid_boss"
+					}
+				}
+			}
+		}
+		else = { # if the planet is in ground combat or is occupied, check again in 2 months
+			planet_event = {
+				id = GF_elid.1000
+				days = 60
+			}
+		}
+	}
+}
+
+country_event = { # a notice to tell player that elid has been spawned
+	id = GF_elid.1001
+	title = GF_elid.1001.name
+	desc = {
+		text = GF_elid.1001.desc
+		trigger = { event_target:GF_home_world = { has_deposit = d_GF_purify_wall } }
+	}
+	desc = {
+		text = GF_elid.1001.desc.no_purify_wall
+		trigger = { event_target:GF_home_world = { NOT = { has_deposit = d_GF_purify_wall } } }
+	}
+
+	picture = GFX_evt_ground_combat
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = { GF_default_elid_event_trigger = yes }
+
+	option = {
+		name = GF_elid.1001.a
+	}
+}
+
+# defender victory
+country_event = {
+	id = GF_elid.1010
+	title = GF_elid.1010.name
+	desc = {
+		text = GF_elid.1010.desc.high_devastation_no_further
+		trigger = {
+			fromfrom = {
+				AND = {
+					planet_devastation >= 20
+					GF_planet_has_contaminated_zone = no
+				}
+			}
+		}
+	}
+	desc = {
+		text = GF_elid.1010.desc.low_devastation_no_further
+		trigger = { 
+			fromfrom = {
+				AND = {
+					planet_devastation < 20
+					GF_planet_has_contaminated_zone = no
+				}
+			}
+		}
+	}
+
+	desc = {
+		text = GF_elid.1010.desc.high_devastation
+		trigger = {
+			fromfrom = {
+				AND = {
+					planet_devastation >= 20
+					GF_planet_has_contaminated_zone = yes
+				}
+				
+			}
+		}
+	}
+	desc = {
+		text = GF_elid.1010.desc.low_devastation
+		trigger = {
+			fromfrom = {
+				AND = {
+					planet_devastation < 20
+					GF_planet_has_contaminated_zone = yes
+				}
+			}
+		}
+	}
+
+	picture = GFX_evt_crisis_defeated
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		this = { GF_default_elid_event_trigger = yes }
+		from = { is_country_type = elid_country }
+		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			planet_event = {
+				id = GF_elid.1000
+				days = @elid_attack_interval
+				random = @elid_attack_interval_random
+			}
+			if = {
+				limit = { GF_planet_has_contaminated_zone = no }
+				change_variable = {
+					which = v_GF_elid_threat_level
+					value = -1
+				}
+				set_planet_flag = tmp_GF_elid_threat_level_decreased
+			}
+		}
+	}
+	
+	option = {
+		name = GF_elid.1010.a
+		trigger = { event_target:GF_home_world = { NOT = { has_planet_flag = tmp_GF_elid_threat_level_decreased } } }
+		add_resource = {
+			minerals = 200
+			mult = event_target:GF_home_world.v_GF_elid_threat_level
+		}
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_victory_in_defending_elid
+				days = 90
+			}
+		}
+	}
+
+	option = {
+		name = GF_elid.1010.a
+		custom_tooltip = GF_elid.tooltip.elid_threat_decreased
+		trigger = { event_target:GF_home_world = { has_planet_flag = tmp_GF_elid_threat_level_decreased } }
+		add_resource = {
+			minerals = 200
+			mult = event_target:GF_home_world.v_GF_elid_threat_level
+		}
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_victory_in_defending_elid
+				days = 120
+			}
+			hidden_effect = { planet_event = { id = GF_elid.1030 } }
+		}
+	}
+
+	after = {
+		event_target:GF_home_world = { remove_planet_flag = tmp_GF_elid_threat_level_decreased }
+	}
+}
+
+# defender lose
+country_event = {
+	id = GF_elid.1020
+	title = GF_elid.1020.name
+	desc = GF_elid.1020.desc
+
+	picture = GFX_evt_GF_collapsed_city
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		this = { GF_default_elid_event_trigger = yes }
+		from = { is_country_type = elid_country }
+		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			if = {
+				limit = { has_deposit = d_GF_purify_wall }
+				switch = {
+					trigger = has_modifier
+					GF_pm_elid_threat_level_low = {
+						random = {
+							chance = 2
+							remove_deposit = d_GF_purify_wall
+							change_variable = {
+								which = v_GF_elid_threat_level
+								value = 2
+							}
+						}
+					}
+					GF_pm_elid_threat_level_mid = {
+						random = {
+							chance = 20
+							remove_deposit = d_GF_purify_wall
+							change_variable = {
+								which = v_GF_elid_threat_level
+								value = 2
+							}
+						}
+					}
+					GF_pm_elid_threat_level_high = {
+						random = {
+							chance = 33
+							remove_deposit = d_GF_purify_wall
+							change_variable = {
+								which = v_GF_elid_threat_level
+								value = 2
+							}
+						}
+					}
+				}
+			}
+			planet_event = { id = GF_elid.1030 }
+		}
+	}
+	
+	option = {
+		name = GF_elid.1020.a
+		trigger = { event_target:GF_home_world = { has_deposit = d_GF_purify_wall } }
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_failed_in_defending_elid
+				days = -1
+			}
+		}
+	}
+
+	option = {
+		name = GF_elid.1020.a
+		custom_tooltip = GF_elid.1020.a.purify_wall_destoryed
+		trigger = { NOT = { event_target:GF_home_world = { has_deposit = d_GF_purify_wall } } }
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_failed_in_defending_elid
+				days = -1
+			}
+			add_planet_devastation = 10
+		}
+	}
+}
+
+# take back planet after failed
+country_event = {
+	id = GF_elid.1021
+	title = GF_elid.1021.name
+	desc = GF_elid.1021.desc
+
+	picture = GFX_evt_crisis_defeated
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		# from = { GF_default_elid_event_trigger = yes }
+		fromfrom.controller = {
+			is_country_type = elid_country
+		}
+		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			planet_event = {
+				id = GF_elid.1000
+				days = @elid_attack_interval
+				random = @elid_attack_interval_random
+			}
+			planet_event = { id = GF_elid.1030 }
+		}
+	}
+	
+	option = {
+		name = GF_elid.1021.a
+		add_resource = {
+			minerals = 250
+			mult = event_target:GF_home_world.v_GF_elid_threat_level
+		}
+		event_target:GF_home_world = {
+			remove_modifier = GF_pm_failed_in_defending_elid
+		}
+	}
+}
+
+# failed again
+country_event = {
+	id = GF_elid.1022
+	title = GF_elid.1022.name
+	desc = { # failed to take back planet after failed in defence
+		text = GF_elid.1022.desc.defend
+		trigger = { event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } } }
+	}
+	desc = { # failed to take back planet after failed to attack
+		text = GF_elid.1022.desc.attack
+		trigger = { event_target:GF_home_world = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
+	}
+
+	picture = GFX_evt_GF_collapsed_city
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		# from = { GF_default_elid_event_trigger = yes }
+		fromfrom.controller = {
+			is_country_type = elid_country
+		}
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			random = {
+				chance = 75
+				change_variable = {
+					which = v_GF_elid_threat_level
+					value = 1
+				}
+				planet_event = { id = GF_elid.1030 }
+				set_planet_flag = tmp_flag_p_GF_elid_threat_up
+			}
+		}
+	}
+	
+	option = {
+		name = GF_elid.1022.a
+		trigger = { NOT = { event_target:GF_home_world = { has_planet_flag = tmp_flag_p_GF_elid_threat_up } } }
+	}
+	option = {
+		name = GF_elid.1022.a
+		custom_tooltip = GF_elid.1022.a.tooltip
+		trigger = { event_target:GF_home_world = { has_planet_flag = tmp_flag_p_GF_elid_threat_up } }
+	}
+
+	after = {
+		event_target:GF_home_world = {
+			remove_planet_flag = tmp_flag_p_GF_elid_threat_up
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+		}
+	}
+}
+
+# checks threat level and changes the modifier
+planet_event = {
+
+	id = GF_elid.1030
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		owner = { has_authority = GF_auth_commonwealth }
+		is_variable_set = v_GF_elid_threat_level
+	}
+
+	immediate = {
+		remove_modifier = GF_pm_elid_threat_level_low
+		remove_modifier = GF_pm_elid_threat_level_mid
+		remove_modifier = GF_pm_elid_threat_level_high
+		if = { # threat level is less than 2
+			limit = {
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value <= 2
+				}
+			}
+			add_modifier = { modifier = GF_pm_elid_threat_level_low days = -1 }
+			remove_modifier = GF_pm_elid_threat_level_mid
+			remove_modifier = GF_pm_elid_threat_level_high
+		}
+		else_if = { # threat level is (2, 6]
+			limit = {
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value <= 6
+				}
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value > 2
+				}
+			}
+			remove_modifier = GF_pm_elid_threat_level_low
+			add_modifier = { modifier = GF_pm_elid_threat_level_mid days = -1 }
+			remove_modifier = GF_pm_elid_threat_level_high
+		}
+		else = { # threat level is bigger than 6
+			remove_modifier = GF_pm_elid_threat_level_low
+			remove_modifier = GF_pm_elid_threat_level_mid
+			add_modifier = { modifier = GF_pm_elid_threat_level_high days = -1 }
+		}
+		# final victory
+		owner = { country_event = { id = GF_elid.1031 } }
+	}
+}
+
+# when threat level is less than 0
+country_event = {
+	id = GF_elid.1031
+	title = GF_elid.1031.name
+	desc = GF_elid.1031.desc
+
+	picture = GFX_evt_crisis_defeated
+
+	location = event_target:GF_home_world
+	
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			is_variable_set = v_GF_elid_threat_level
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value <= 0
+			}
+		}
+	}
+
+	immediate = {
+		event_target:GF_home_world = {
+			remove_modifier = GF_pm_elid_threat_level_low
+			remove_modifier = GF_pm_elid_threat_level_mid
+			remove_modifier = GF_pm_elid_threat_level_high
+		}
+	}
+
+	option = {
+		name = GF_elid.1031.a
+		event_target:GF_home_world = { add_modifier = { modifier = GF_pm_final_victory_in_defending_elid days = 1800 } }
+	}
+	option = {
+		name = GF_elid.1031.b
+		event_target:GF_home_world = { add_modifier = { modifier = GF_pm_final_victory_in_defending_elid days = 1800 } }
+	}
+
+	after = {
+		hidden_effect = { event_target:GF_home_world = { planet_event = { id = GF_relic.1000 days = 30 } } }
+	}
+}
+
+
+### on_blocker_cleared events
+
+# when purify wall is cleared while contaminated zone still exists
+planet_event = {
+	id = GF_elid.2001
+	title = GF_elid.2001.name
+	desc = GF_elid.2001.desc
+
+	picture = GFX_evt_GF_contaminated_area
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		owner = { has_authority = GF_auth_commonwealth }
+		from = { is_deposit_type = d_GF_purify_wall }
+		event_target:GF_home_world = { GF_planet_has_contaminated_zone = yes }
+	}
+
+	option = {
+		name = GF_elid.2001.a
+	}
+}
+
+
+# on black zone cleared
+planet_event = {
+	id = GF_elid.2100
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		owner = { GF_default_elid_event_trigger = yes }
+		from = { is_deposit_type = d_GF_black_zone }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_ground_combat = yes }
+			planet_event = {
+				id = GF_elid.2100
+				days = 15
+			}
+		}
+		else = {
+			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			set_planet_flag = flag_p_GF_battle_in_black_zone
+
+			owner = { country_event = { id =GF_elid.2101 } } # notice
+			
+			create_country = {
+				name = "NAME_GF_elid_invasion"
+				type = elid_country
+				effect = {
+					establish_communications_no_message = root.owner
+					establish_contact = { who = root.owner location = root.solar_system }
+					save_global_event_target_as = aggressive_elid_country
+				}
+			}
+			create_species = {
+				name = "NAME_GF_aggressive_elid"
+				class = aggressive_elid
+				portrait = random
+				effect = {
+					save_global_event_target_as = aggressive_elid_species
+				}
+			}
+
+			multiply_variable = {
+				which = v_GF_elid_threat_level
+				value = 6
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid"
+					}
+				}
+			}
+			divide_variable = {
+				which = v_GF_elid_threat_level
+				value = 6
+			}
+			change_variable = {
+				which = v_GF_elid_threat_level
+				value = 4
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid_boss"
+					}
+				}
+			}
+			change_variable = {
+				which = v_GF_elid_threat_level
+				value = -4
+			}
+		}
+	}
+}
+
+# notice to tell player that elid has been spawned
+country_event = {
+	id = GF_elid.2101
+	title = GF_elid.2101.name
+	desc = GF_elid.2101.desc
+
+	picture = GFX_evt_GF_black_zone
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = { GF_default_elid_event_trigger = yes }
+
+	option = {
+		name = GF_elid.2000.a
+	}
+}
+
+# on player(defender) victory
+country_event = {
+	id = GF_elid.2110
+	title = GF_elid.2110.name
+	desc = GF_elid.2110.desc
+
+	picture = GFX_evt_victorious_army
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_black_zone
+		}
+	}
+
+	option = {
+		name = GF_elid.2110.a
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_contaminated_zone_purified
+				days = 180
+			}
+			add_deposit = d_GF_relic_preservation
+		}
+		add_resource = { minerals = 3500 }
+		
+		hidden_effect = {
+			event_target:GF_home_world = {
+				change_variable = {
+					which = v_GF_elid_threat_level
+					value = -2
+				}
+				planet_event = { id = GF_elid.1030 }
+			}
+		}
+	}
+
+	after = {
+		event_target:GF_home_world = {
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			remove_planet_flag = flag_p_GF_battle_in_black_zone
+		}
+		if = {
+			limit = {
+				event_target:GF_home_world = {
+					check_variable = {
+						which = v_GF_elid_threat_level
+						value > 0
+					}
+				}
+			}
+			country_event = {
+				id = GF_elid.2111
+				days = 10
+			}
+		}
+	}
+}
+
+# notice to tell player that elid threat is above 0
+country_event = {
+	id = GF_elid.2111
+	title = GF_elid.2111.name
+	desc = GF_elid.2111.desc
+
+	picture = GFX_evt_undertaker
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_elid.2111.a
+	}
+}
+
+# on player(defender) lose
+country_event = {
+	id = GF_elid.2120
+	title = GF_elid.2120.name
+	desc = GF_elid.2120.desc
+
+	picture = GFX_evt_GF_broken_town
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_black_zone
+		}
+	}
+
+	option = {
+		name = GF_elid.2120.a
+		event_target:GF_home_world = { add_deposit = d_GF_black_zone }
+	}
+
+	after = { event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_black_zone } }
+}
+
+# on red zone cleared
+planet_event = {
+	id = GF_elid.2200
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		owner = { GF_default_elid_event_trigger = yes }
+		from = { is_deposit_type = d_GF_red_zone }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_ground_combat = yes }
+			planet_event = {
+				id = GF_elid.2200
+				days = 15
+			}
+		}
+		else = {
+			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			set_planet_flag = flag_p_GF_battle_in_red_zone
+
+			owner = { country_event = { id = GF_elid.2201 } } # notice
+	
+			create_country = {
+				name = "NAME_GF_elid_invasion"
+				type = elid_country
+				effect = {
+					establish_communications_no_message = root.owner
+					establish_contact = { who = root.owner location = root.solar_system }
+					save_global_event_target_as = aggressive_elid_country
+				}
+			}
+			create_species = {
+				name = "NAME_GF_aggressive_elid"
+				class = aggressive_elid
+				portrait = random
+				effect = {
+					save_global_event_target_as = aggressive_elid_species
+				}
+			}
+
+			multiply_variable = {
+				which = v_GF_elid_threat_level
+				value = 3
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid"
+					}
+				}
+			}
+			divide_variable = {
+				which = v_GF_elid_threat_level
+				value = 3
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid_boss"
+					}
+				}
+			}
+
+		}
+	}
+}
+
+# notice to tell player that elid has been spawned
+country_event = {
+	id = GF_elid.2201
+	title = GF_elid.2201.name
+	desc = GF_elid.2201.desc
+
+	picture = GFX_evt_GF_red_zone
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = { GF_default_elid_event_trigger = yes }
+
+	option = {
+		name = GF_elid.2000.a
+	}
+}
+
+
+# on player(defender) victory
+country_event = {
+	id = GF_elid.2210
+	title = GF_elid.2210.name
+	desc = GF_elid.2210.desc
+
+	picture = GFX_evt_victorious_army
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_red_zone
+		}
+	}
+
+	option = {
+		name = GF_elid.2210.a
+		add_resource = { minerals = 2400 }
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_contaminated_zone_purified
+				days = 180
+			}
+		}
+		
+		hidden_effect = {
+			event_target:GF_home_world = {
+				change_variable = {
+					which = v_GF_elid_threat_level
+					value = -1
+				}
+				planet_event = { id = GF_elid.1030 }
+			}
+		}
+	}
+
+	after = {
+		event_target:GF_home_world = {
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			remove_planet_flag = flag_p_GF_battle_in_red_zone
+		}
+	}
+}
+# on player(defender) lose
+country_event = {
+	id = GF_elid.2220
+	title = GF_elid.2220.name
+	desc = GF_elid.2220.desc
+
+	picture = GFX_evt_GF_building_ruins
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_red_zone
+		}
+	}
+
+	option = {
+		name = GF_elid.2220.a
+		event_target:GF_home_world = { add_deposit = d_GF_red_zone }
+	}
+
+	after = {
+		event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_red_zone }
+	}
+}
+
+# on yellow zone cleared
+planet_event = {
+	id = GF_elid.2300
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		owner = { GF_default_elid_event_trigger = yes }
+		from = { is_deposit_type = d_GF_yellow_zone }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_ground_combat = yes }
+			planet_event = {
+				id = GF_elid.2300
+				days = 15
+			}
+		}
+		else = {
+			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			set_planet_flag = flag_p_GF_battle_in_yellow_zone
+
+			owner = { country_event = { id = GF_elid.2301 } } # notice
+
+			create_country = {
+				name = "NAME_GF_elid_invasion"
+				type = elid_country
+				effect = {
+					establish_communications_no_message = root.owner
+					establish_contact = { who = root.owner location = root.solar_system }
+					save_global_event_target_as = aggressive_elid_country
+				}
+			}
+			create_species = {
+				name = "NAME_GF_aggressive_elid"
+				class = aggressive_elid
+				portrait = random
+				effect = {
+					save_global_event_target_as = aggressive_elid_species
+				}
+			}
+	
+			multiply_variable = {
+				which = v_GF_elid_threat_level
+				value = 4
+			}
+			while = {
+				count = v_GF_elid_threat_level
+				event_target:GF_home_world = {
+					create_army = {
+						name = "NAME_GF_aggressive_elid"
+						owner = event_target:aggressive_elid_country
+						species = last_created_species
+						type = "GF_army_hostile_elid"
+					}
+				}
+			}
+			divide_variable = {
+				which = v_GF_elid_threat_level
+				value = 4
+			}
+		}
+	}
+}
+
+# notice to tell player that elid has been spawned
+country_event = {
+	id = GF_elid.2301
+	title = GF_elid.2301.name
+	desc = GF_elid.2301.desc
+
+	picture = GFX_evt_GF_yellow_zone
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = { GF_default_elid_event_trigger = yes }
+
+	option = {
+		name = GF_elid.2000.a
+	}
+}
+
+# on player(defender) victory
+country_event = {
+	id = GF_elid.2310
+	title = GF_elid.2310.name
+	desc = GF_elid.2310.desc
+
+	picture = GFX_evt_victorious_army
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_yellow_zone
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				event_target:GF_home_world = {
+					check_variable = {
+						which = v_GF_elid_threat_level
+						value >= 5
+					}
+				}
+			}
+			set_country_flag = tmp_flag_GF_elid_threat_down
+		}
+	}
+
+	option = {
+		name = GF_elid.2310.a
+		custom_tooltip = GF_elid.tooltip.elid_threat_decreased
+		add_resource = { minerals = 1200 }
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_contaminated_zone_purified
+				days = 180
+			}
+		}
+		trigger = { has_country_flag = tmp_flag_GF_elid_threat_down }
+		hidden_effect = {
+			event_target:GF_home_world = {
+				change_variable = {
+					which = v_GF_elid_threat_level
+					value = -1
+				}
+				planet_event = { id = GF_elid.1030 }
+			}
+		}
+	}
+
+	option = {
+		name = GF_elid.2310.a
+		add_resource = { minerals = 1200 }
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_contaminated_zone_purified
+				days = 180
+			}
+		}
+		
+		trigger = { NOT = { has_country_flag = tmp_flag_GF_elid_threat_down } }
+	}
+
+	after = {
+		remove_country_flag = tmp_flag_GF_elid_threat_down
+		event_target:GF_home_world = {
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			remove_planet_flag = flag_p_GF_battle_in_yellow_zone
+		}
+	}
+}
+# on player(defender) lose
+country_event = {
+	id = GF_elid.2320
+	title = GF_elid.2320.name
+	desc = GF_elid.2320.desc
+
+	picture = GFX_evt_GF_damaged_slum
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = {
+		from = { is_country_type = elid_country }
+		has_authority = GF_auth_commonwealth
+		event_target:GF_home_world = {
+			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			has_planet_flag = flag_p_GF_battle_in_yellow_zone
+		}
+	}
+
+	option = {
+		name = GF_elid.2320.a
+		event_target:GF_home_world = { add_deposit = d_GF_yellow_zone }
+	}
+
+	after = {
+		event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_yellow_zone }
+	}
+}

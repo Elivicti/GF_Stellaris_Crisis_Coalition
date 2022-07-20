@@ -385,3 +385,44 @@ GF_tech_maintain_process = {
 		}
 	}
 }
+
+########
+tech_GF_ship_collapse_armor = {
+	# 坍塌零素材料
+	area = engineering
+	category = { materials }
+	tier = 4
+	cost   = @tier5cost1
+	weight = @tier5weight1
+	ai_update_type = all
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_reverse_engineerable = no
+	is_rare = yes
+
+	prerequisites = {
+		"tech_ship_armor_5"
+		"tech_GF_collapsetech_weaponize"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

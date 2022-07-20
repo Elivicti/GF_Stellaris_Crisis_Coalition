@@ -1,0 +1,144 @@
+namespace = GF_bombardment
+
+planet_event = {
+	id = GF_bombardment.1100
+
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		planet_devastation >= 100
+		has_orbital_bombardment_stance = collapsebomb
+	}
+
+	immediate = {
+		random = {
+			chance = 50
+			# if = {
+			# 	limit = { exists = owner }
+			# 	every_owned_pop = { kill_pop = yes }
+			# }
+			every_owned_pop = { kill_pop = yes }
+			every_deposit = { remove_deposit = yes }
+			
+			remove_all_buildings = yes
+			change_pc = pc_GF_collapsed
+			save_event_target_as = collpsed_planet
+			from.owner = {
+				play_sound = event_air_raid_siren
+				country_event = {
+					id = GF_bombardment.1101
+				}
+				save_event_target_as = collapse_bombarder
+			}
+			owner = {
+				play_sound = event_air_raid_siren
+				add_opinion_modifier = {
+					who = event_target:collapse_bombarder
+					modifier = opinion_collapsed_my_world
+				}
+				country_event = {
+					id = GF_bombardment.1102
+				}
+			}
+		}
+	}
+}
+
+country_event = { # event for bombarder country
+	id = GF_bombardment.1101
+	title = GF_bombardment.1101.name
+	desc = GF_bombardment.1101.desc
+
+	picture = GFX_evt_GF_black_zone
+
+	location = event_target:collpsed_planet
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_policy_flag = GF_enable_collapse_bombardment
+		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
+	}
+	
+	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
+
+	option = {
+		name = GF_bombardment.1101.a
+	}
+}
+
+country_event = { # event for victim country
+	id = GF_bombardment.1102
+	title = GF_bombardment.1102.name
+	desc = GF_bombardment.1102.desc
+
+	picture = GFX_evt_GF_black_zone
+	show_sound = event_air_raid_siren
+	location = event_target:collpsed_planet
+
+	is_triggered_only = yes
+	# trigger = { any_owned_planet = { has_orbital_bombardment_stance = collapsebomb } }
+
+	option = {
+		name = GF_bombardment.1102.a
+	}
+}
+
+planet_event = {
+	id = GF_bombardment.1200
+
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = collapsebomb
+		planet_devastation <= 99
+	}
+
+	immediate = {
+		if = {
+			limit = { planet_devastation <= 40 }
+			random = {
+				chance = 1
+				add_deposit = d_GF_red_zone_extra
+			}
+			random = {
+				chance = 1
+				add_deposit = d_GF_yellow_zone_extra
+			}
+		}
+		else_if = {
+			limit = { 
+				planet_devastation > 40
+				planet_devastation <= 80
+			}
+			random = {
+				chance = 4
+				add_deposit = d_GF_red_zone_extra
+			}
+			random = {
+				chance = 4
+				add_deposit = d_GF_yellow_zone_extra
+			}
+			random = {
+				chance = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		else = {
+			random = {
+				chance = 2
+				add_deposit = d_GF_red_zone_extra
+			}
+			random = {
+				chance = 2
+				add_deposit = d_GF_yellow_zone_extra
+			}
+			random = {
+				chance = 6
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+	}
+}

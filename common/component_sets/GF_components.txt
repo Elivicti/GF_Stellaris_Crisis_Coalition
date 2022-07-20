@@ -1,0 +1,29 @@
+component_set = {
+	key = "GF_COLLAPSE_ARMOR"
+	icon = "GFX_GF_collapse_armor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_LANCE"
+	icon = "GFX_GF_collapse_energy_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_LANCE_TITAN"
+	icon = "GFX_GF_collapse_energy_lance"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_COLLAPSE_ENDING_FLASH"
+	icon = "GFX_GF_collpase_ending_flash"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "MINIATURIZED_GF_COLLAPSE_LANCE"
+	icon = "GFX_GF_miniaturized_collapse_lance"
+	icon_frame = 1
+}

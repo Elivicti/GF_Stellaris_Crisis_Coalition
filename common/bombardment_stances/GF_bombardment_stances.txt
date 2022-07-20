@@ -1,0 +1,51 @@
+collapsebomb = {
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_policy_flag = GF_enable_collapse_bombardment
+			OR = {
+				NOT = { is_country_type = default }
+				has_policy_flag = orbital_bombardment_indiscriminate
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
+	}
+
+	default = no
+
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 1.8
+	army_damage = 3.0
+
+	kill_pop_chance = {
+		base = 5.0
+		modifier = { # 机械人口和人形受到的伤害减少
+			factor = 0.75
+			OR = {
+				pop_has_trait = trait_machine_unit
+				pop_has_trait = trait_mechanical
+				pop_has_trait = GF_trait_doll
+			}
+		}
+		modifier = { # 有坍塌辐射完全免疫的人口更难被杀死
+			factor = 0.10
+			pop_has_trait = trait_GF_sequela_immune
+		}
+	}
+	min_pops_to_kill_pop = 0
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0.1
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = {
+				owner = { NOT = { is_hostile = root.owner } }
+			}
+		}
+	}
+}

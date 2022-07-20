@@ -1,7 +1,7 @@
 spriteTypes = {
 
 	SpriteType = {
-		name = "GFX_GF_relic_orb_mainframe_alpha"
+		name = "GFX_evt_GF_relic_orb_mainframe_alpha"
 		texturefile = "gfx/interface/icons/relics/GF_relic_orb_mainframe_alpha.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

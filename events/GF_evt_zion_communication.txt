@@ -1,0 +1,317 @@
+
+#### 创建领袖模板
+# create_species = {
+# 	name = "ogas_consciousness"
+# 	class = ogas_consciousness
+
+# 	# 暂时先用破界者的立绘
+# 	portrait = exd1 
+# 	traits = {
+# 		trait = trait_pc_ai_preference
+# 		trait = trait_fertile
+# 		trait = trait_mechanical
+# 	}
+# }
+# create_leader = {
+# 	name = NAME_ogas_consciousness
+			
+# 	class = scientist
+# 	species = last_created_species
+# 	skill = 10
+# 	set_age = 720
+
+# 	traits = {
+# 		trait = leader_trait_spark_of_genius
+# 	}
+# }
+
+#### 通讯基本模块
+# title = GF_ZION
+# desc = GF_alaya.xxxx.desc
+
+# is_triggered_only = yes
+
+# trigger = {
+# 	GF_default_zion_comm_trigger = yes
+# }
+
+# diplomatic = yes
+# diplomatic_title = BLANK_STRING
+# force_open = yes
+# picture_event_data = { room = whitenet_room }
+
+namespace = GF_zion
+
+# 通讯入口
+country_event = {
+	id = GF_zion.0
+
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	immediate = {
+		if = {
+			limit = { NOT = { has_country_flag = flag_GF_first_zion_comm_completed } }
+			country_event = { 
+				id = GF_zion.10000
+			}
+		}
+		else = {
+			country_event = {
+				id = GF_zion.20000
+			}
+		}
+	}
+}
+
+# 结束“稳定化锡安”后首次与锡安通讯
+country_event = {
+	id = GF_zion.10000
+
+	title = GF_ZION
+	desc = GF_zion.10000.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.10000.a
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.11000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion.11000
+
+	title = GF_ZION
+	desc = GF_zion.11000.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.11000.a
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.12000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion.12000
+
+	title = GF_ZION
+	desc = GF_zion.12000.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.12000.a
+		is_dialog_only = yes
+		response_text = GF_zion.12000.a.repsonse
+	}
+	option = {
+		name = GF_zion.12000.b
+		is_dialog_only = yes
+		response_text = GF_zion.12000.b.repsonse
+	}
+	option = {
+		name = GF_zion.12000.c
+		custom_tooltip = GF_dialog_tooltip
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.13000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion.13000
+
+	title = GF_ZION
+	desc = GF_zion.13000.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.13000.a
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.14000
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion.14000
+
+	title = GF_ZION
+	desc = GF_zion.14000.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.14000.a
+		enable_special_project = {
+			name = SP_GF_OGAS_IN_MIRROR
+			owner = root
+			location = this.capital_scope
+		}
+		hidden_effect = {
+			set_country_flag = flag_GF_first_zion_comm_completed
+		}
+	}
+	
+}
+
+country_event = {
+	id = GF_zion.14100
+
+	title = GF_zion.14100.title
+	desc = GF_zion.14100.desc
+
+	picture = GFX_evt_sapient_AI
+
+	is_triggered_only = yes
+
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		has_country_flag = flag_GF_first_zion_comm_completed
+	}
+
+	option = {
+		name = GF_zion.14100.a
+
+		hidden_effect = {
+			ruler = { remove_trait = GF_trait_leader_ogas }
+		}
+		ruler = {
+			add_experience = 200
+			add_trait = GF_trait_leader_ogas_2
+		}
+
+		owner = { add_research_option = tech_GF_combat_ogas_computers }
+	}
+
+	option = {
+		name = GF_zion.14100.b
+		
+		hidden_effect = {
+			ruler = { remove_trait = GF_trait_leader_ogas }
+		}
+		ruler = {
+			add_experience = 200
+			add_trait = GF_trait_leader_ogas_2
+		}
+		
+		owner = { add_research_option = tech_GF_combat_ogas_computers }
+	}
+}
+##### end
+
+# normal communications
+country_event = {
+	id = GF_zion.20000
+	
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+		has_country_flag = flag_GF_first_zion_comm_completed
+	}
+
+	desc = GF_zion.20000.desc
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	option = {
+		name = GF_zion.20000.a
+		is_dialog_only = yes
+		response_text = GF_zion.20000.a.temp_response ##暂时占位用，以后更新
+	}
+
+	option = {
+		name = GF_zion.20000.b
+	}
+
+	option = {
+		name = GF_zion.20000.c
+	}
+
+	option = {
+		name = GF_zion.20000.d
+	}
+
+	option = {
+		name = GF_zion.20000.close
+	}
+	option = {
+		name = GF_zion.20000.ogas
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}

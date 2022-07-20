@@ -16,3 +16,13 @@
  decision_GF_auto_colony_on_desc:0 "该协议旨在使我们可以派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将在远程发出的指令与云图内置的自律程序的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
  decision_GF_auto_colony_off:0 "关闭自动化遥控殖民协议"
  decision_GF_auto_colony_off_desc:0 "在经过先遣人形对殖民地不断的建设与改造，部分地区的环境与设施已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。" 
+
+
+ decision_GF_rebuild_purify_wall:0 "重建隔离墙"
+ decision_GF_rebuild_purify_wall_desc:0 "没有隔离墙的保护，E.L.I.D感染者集群将会对城市构成极大的威胁。"
+ decision_GF_rebuild_purify_wall_requirements:0 "E.L.I.D感染者已经不再具有威胁，我们没必要建设隔离墙。"
+ decision_GF_rebuild_purify_wall_tooltip:0 "§G减少§!E.L.I.D感染者对城市的§R威胁度§!"
+
+ decision_GF_eliminate_all_elid:0 "清理剩余E.L.I.D感染者"
+ decision_GF_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的E.L.I.D感染者集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
+ decision_GF_eliminate_all_elid_effects:0 "将会消灭所有剩余的E.L.I.D感染者，将它们的威胁降至0。"

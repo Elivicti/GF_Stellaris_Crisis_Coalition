@@ -1,0 +1,125 @@
+# required scope: system
+GF_create_collapse_relic_site = {
+	random_system_planet = {
+		limit = {
+			is_a_planet = yes
+			NOR = {	#以下条件均不能满足
+				is_planet_class = pc_cybrex							# 环形世界
+				is_planet_class = pc_shattered						# 破碎星球
+				is_planet_class = pc_broken							# 残破星球
+				is_planet_class = pc_egg_cracked					# 破碎星球
+				is_planet_class = pc_crystal_asteroid				# 晶态小行星
+				is_planet_class = pc_gas_giant						# 气态巨行星
+				is_planet_class = pc_asteroid						# 小行星
+				is_planet_class = pc_ice_asteroid					# 冰晶小行星
+				is_planet_class = pc_rare_crystal_asteroid			# 晶态小行星
+				is_planet_class = pc_hive							# 蜂巢星球
+				is_planet_class = pc_machine						# 机械星球
+				is_planet_class = pc_shielded						# 屏障星球
+				is_planet_class = pc_ai								# 人工智能星球
+				is_planet_class = pc_infested						# 孵化星球
+				is_planet_class = pc_ringworld_habitable			# 环形世界
+				is_planet_class = pc_ringworld_habitable_damaged	# 破损的环形世界
+				is_planet_class = pc_habitat						# 轨道居住站
+				is_planet_class = pc_shrouded						# 虚境星球
+				has_modifier = holy_planet							# 圣地
+				exists = archaeological_site		# 存在考古点
+
+				has_planet_flag = $NO_P_FLAG_1$		# 不能有标识1
+				has_planet_flag = $NO_P_FLAG_2$		# 不能有标识2
+			}
+			solar_system = {
+				OR = {
+					NOT = { exists = owner }
+					owner = { has_origin = GF_origin_commonwealth }
+				}
+			}
+		}
+		set_planet_flag = $P_FLAG$
+		create_archaeological_site = $SITE$
+	}
+	set_star_flag = flag_s_GF_has_collapse_relic_site_in_system
+}
+
+# required scope: planet
+GF_create_black_zone_deposit = {
+	if = {
+		limit = { planet_size > 20 }
+		while = {
+			count = 3
+			add_deposit = d_GF_black_zone_extra
+			add_deposit = d_GF_red_zone_extra
+		}
+		random = {
+			chance = 25
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 50
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 3
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+	else_if = {
+		limit = { 
+			planet_size >= 15 
+			planet_size <= 20
+		}
+		while = {
+			count = 2
+			add_deposit = d_GF_black_zone_extra
+		}
+		add_deposit = d_GF_red_zone_extra
+		random = {
+			chance = 25
+			while = {
+				count = 2
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 50
+			while = {
+				count = 1
+				add_deposit = d_GF_black_zone_extra
+			}
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 3
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+	else = {
+		while = {
+			count = 2
+			add_deposit = d_GF_black_zone_extra
+			add_deposit = d_GF_red_zone_extra
+		}
+		random = {
+			chance = 50
+			add_deposit = d_GF_black_zone_extra
+		}
+		random = {
+			chance = 75
+			while = {
+				count = 2
+				add_deposit = d_GF_red_zone_extra
+			}
+		}
+	}
+}

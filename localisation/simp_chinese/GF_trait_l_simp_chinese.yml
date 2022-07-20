@@ -71,3 +71,12 @@
  GF_trait_leader_admiraltrait_plus_desc:0 "这个人形加装了舰队指挥与规划模块，这将允许其接入舰队指挥网络，让她可以灵活的调整舰队队形、规划行进方向、精准快速的投射火力，让敌人闻风丧胆。"
  GF_trait_leader_governortrait_plus:0 "行政模块"
  GF_trait_leader_governortrait_plus_desc:0 "这个人形加装了行政模块，这将允许其接入星球行政网络，让她拥有极强的数据收集能力来针对性处理星球各事项，如打击犯罪、建设规划等。"
+
+#############
+ trait_GF_sequela_immune:0 "坍塌辐射完全免疫"
+ trait_GF_sequela_immune_desc:0 "完成GAVIRUL计划之后，这个物种从基因层面获得了对坍塌辐射的完全免疫力，不仅如此，利用从遗迹中获取的技术，其各项身体素质也都得到了提升。"
+
+ fail_text_GF_gavirul_project_finished:0 "需要完成§Y$SP_GF_GAVIRUL_PROJECT$§!"
+
+ GF_trait_leader_ogas_2:0 "$GF_trait_leader_ogas$"
+ GF_trait_leader_ogas_2_desc:0 "$GF_trait_leader_ogas_desc$\n\n在学习了$GF_ZION$中得到的资料后计算能力和管理能力都得到了提升。"

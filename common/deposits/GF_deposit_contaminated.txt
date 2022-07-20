@@ -1,0 +1,97 @@
+d_GF_black_zone = {
+	is_for_colonizable = yes
+	time = 300
+	icon = d_GF_black_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		pop_environment_tolerance = -0.20
+		planet_max_districts_add = -1
+	}
+	can_be_cleared = {
+		NOT = { has_deposit = d_GF_red_zone }
+	}
+	on_cleared = { custom_tooltip = GF_on_black_zone_cleared_effect }
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 1000
+		}
+	}
+	prerequisites = { "GF_tech_ecological_recovery" }
+	
+	drop_weight = { weight = 0 }
+}
+
+d_GF_red_zone = {
+	is_for_colonizable = yes
+	time = 300
+	icon = d_GF_red_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		pop_environment_tolerance = -0.1
+		planet_max_districts_add = -1
+	}
+	can_be_cleared = {
+		NOT = { has_deposit = d_GF_yellow_zone }
+	}
+	on_cleared = { custom_tooltip = GF_on_red_zone_cleared_effect }
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 500
+		}
+	}
+	prerequisites = { "GF_tech_ecological_recovery" }
+	drop_weight = { weight = 0 }
+}
+
+d_GF_yellow_zone = {
+	is_for_colonizable = yes
+	time = 270
+	icon = d_GF_yellow_zone
+	category = deposit_cat_blockers
+	planet_modifier = {
+		pop_environment_tolerance = -0.05
+		planet_max_districts_add = -1
+	}
+	on_cleared = { custom_tooltip = GF_on_yellow_zone_cleared_effect }
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 200
+		}
+	}
+	drop_weight = { weight = 0 }
+}
+
+d_GF_purify_wall = {
+	is_for_colonizable = yes
+	category = deposit_cat_blockers
+	icon = d_GF_purify_wall
+	planet_modifier = {
+		planet_max_districts_add = -1
+		pop_environment_tolerance = 0.05
+		job_GF_guard_doll_add = 2
+	}
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 1
+		}
+	}
+	drop_weight = { weight = 0 }
+
+	on_cleared = {
+		if = {
+			limit = { GF_planet_has_contaminated_zone = yes }
+			custom_tooltip = clear_d_GF_purify_wall_tooltip
+
+			hidden_effect = {
+				change_variable = {
+					which = v_GFEXT_elid_threat_level
+					value = 2
+				}
+			}
+		}
+	}
+}

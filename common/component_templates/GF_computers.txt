@@ -1,0 +1,150 @@
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_PICKET"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = -25
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "picket"
+	prerequisites = { "tech_GF_combat_ogas_computers" }
+
+	modifier = {
+		ship_evasion_mult = 0.40
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_tracking_add = 30
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_ARTILLERY"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "GF_ogas_artillery"
+	prerequisites = { "tech_GF_combat_ogas_computers" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+		ship_tracking_add = 5
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_CARRIER"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	component_set = "combat_computers"
+	ship_behavior = "GF_ogas_carrier"
+	prerequisites = { "tech_GF_combat_ogas_computers" }
+
+	modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = 0.15
+		weapon_type_strike_craft_speed_mult = 0.5
+	}
+	ship_modifier = {
+		ship_engagement_range_mult = 1.0
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 15
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_FREE"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 35
+		}
+	}
+	class_restriction = { shipclass_military shipclass_starbase }
+	size_restriction = { juggernaut }
+	component_set = "combat_computers"
+	ship_behavior = "GF_ogas_free"
+	prerequisites = { "tech_GF_combat_ogas_computers" }
+
+	ship_modifier = {
+		ship_engagement_range_mult = 1.2
+		ship_weapon_range_mult = 0.20
+		ship_fire_rate_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_PLATFORM"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 25
+		}
+	}
+	class_restriction = { shipclass_military_station }
+	component_set = "combat_computers"
+	ship_behavior = "platform"
+	prerequisites = { "tech_GF_combat_ogas_computers" }
+
+	ship_modifier = {
+		ship_fire_rate_mult    = 0.20
+		ship_weapon_range_mult = 0.20
+		ship_tracking_add = 15
+		ship_accuracy_add = 15
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

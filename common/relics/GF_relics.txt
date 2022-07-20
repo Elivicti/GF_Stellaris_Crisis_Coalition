@@ -5,7 +5,7 @@
 
 GF_relic_orb_mainframe_alpha = {
 	activation_duration = @triumph_duration
-	portrait = "GFX_GF_relic_orb_mainframe_alpha"
+	portrait = "GFX_evt_GF_relic_orb_mainframe_alpha"
 	sound = "relic_activation_ether_drake_trophy"
 
 	resources = {

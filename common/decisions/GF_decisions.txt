@@ -163,3 +163,147 @@ decision_GF_doll_cloud_computing_off  = {
 	
 	ai_weight = { weight = 0 }
 }
+
+
+###########
+decision_GF_rebuild_purify_wall = {
+	owned_planets_only = yes
+	icon = decision_rebuild_purify_wall
+
+	enactment_time = 120
+	resources = {
+		category = decisions
+		cost = {
+			influence = 5
+			minerals = 200
+			energy = 100
+		}
+	}
+
+	potential = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_origin = GF_origin_commonwealth
+		}
+		OR = {
+			has_deposit = d_GF_black_zone
+			has_deposit = d_GF_red_zone
+			has_deposit = d_GF_yellow_zone
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value > 0
+			}
+		}
+		NOT = { has_deposit = d_GF_purify_wall }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_GF_rebuild_purify_wall_requirements
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value > 0
+			}
+			
+		}
+	}
+
+	effect = {
+		add_deposit = d_GF_purify_wall
+		custom_tooltip = decision_GF_rebuild_purify_wall_tooltip
+		hidden_effect = {
+			event_target:GF_home_world = {
+				change_variable =  {
+					which = v_GF_elid_threat_level
+					value = -2
+				}
+				planet_event = { id = GF_elid.1030 }
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 100
+			AND = {
+				OR = {
+					has_deposit = d_GF_black_zone
+					has_deposit = d_GF_red_zone
+					has_deposit = d_GF_yellow_zone
+				}
+				NOT = { has_deposit = d_GF_purify_wall }
+			}
+		}
+	}
+}
+
+decision_GF_eliminate_all_elid = {
+	owned_planets_only = yes
+	icon = decision_eliminate_all_elid
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 20
+			energy = 300
+			multiplier = v_GF_elid_threat_level
+		}
+	}
+
+	potential = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_origin = GF_origin_commonwealth
+		}
+		NOR = {
+			has_deposit = d_GF_black_zone
+			has_deposit = d_GF_red_zone
+			has_deposit = d_GF_yellow_zone
+		}
+		check_variable = {
+			which = v_GF_elid_threat_level
+			value > 0
+		}
+	}
+
+	allow = {
+		has_ground_combat = no
+		hidden_trigger = {
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value > 0
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_GF_eliminate_all_elid_effects
+		hidden_effect = {
+			set_variable = {
+				which = v_GF_elid_threat_level
+				value = 0
+			}
+			planet_event = { id = GF_elid.1030 }
+		}
+	}
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 100
+			AND = {
+				NOR = {
+					has_deposit = d_GF_black_zone
+					has_deposit = d_GF_red_zone
+					has_deposit = d_GF_yellow_zone
+				}
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value > 0
+				}
+			}
+		}
+	}
+}

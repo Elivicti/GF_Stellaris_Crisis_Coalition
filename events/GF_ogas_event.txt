@@ -165,6 +165,18 @@ country_event = {
 	# 	is_dialog_only = yes
 	# 	response_text = GF_ogas.10000.emotion.response
 	# }
+	
+	# gf extension newly added: 与锡安通讯
+	option = {
+		name = event_GF_zion_comm.option
+		trigger = { GF_default_zion_comm_trigger = yes }
+		
+		hidden_effect = {
+			country_event = {
+				id = GF_zion.0
+			}
+		}
+	}
 
 	option = {
 		name = GF_ogas.10000.logout

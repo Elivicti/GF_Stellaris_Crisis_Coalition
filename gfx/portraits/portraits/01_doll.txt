@@ -186,7 +186,7 @@ portraits = {
 	GF_doll_184 = { texturefile = "gfx/models/portraits/doll/pic_m45.dds" }
 	GF_doll_185 = { texturefile = "gfx/models/portraits/doll/pic_m4a1mod.dds" }
 	GF_doll_186 = { texturefile = "gfx/models/portraits/doll/pic_m500.dds" }
-	GF_doll_187 = { texturefile = "gfx/models/portraits/doll/pic_m500_dog.dds" }
+	
 	GF_doll_188 = { texturefile = "gfx/models/portraits/doll/pic_m500mod.dds" }
 	GF_doll_189 = { texturefile = "gfx/models/portraits/doll/pic_m590.dds" }
 	GF_doll_190 = { texturefile = "gfx/models/portraits/doll/pic_m60.dds" }
@@ -564,7 +564,7 @@ portrait_groups = {
 					GF_doll_184
 					GF_doll_185
 					GF_doll_186
-					GF_doll_187
+					
 					GF_doll_188
 					GF_doll_189
 					GF_doll_190
@@ -940,7 +940,7 @@ portrait_groups = {
 					GF_doll_184
 					GF_doll_185
 					GF_doll_186
-					GF_doll_187
+					
 					GF_doll_188
 					GF_doll_189
 					GF_doll_190
@@ -1316,7 +1316,7 @@ portrait_groups = {
 					GF_doll_184
 					GF_doll_185
 					GF_doll_186
-					GF_doll_187
+					
 					GF_doll_188
 					GF_doll_189
 					GF_doll_190
@@ -1692,7 +1692,7 @@ portrait_groups = {
 					GF_doll_184
 					GF_doll_185
 					GF_doll_186
-					GF_doll_187
+					
 					GF_doll_188
 					GF_doll_189
 					GF_doll_190
@@ -2069,7 +2069,7 @@ portrait_groups = {
 					GF_doll_184
 					GF_doll_185
 					GF_doll_186
-					GF_doll_187
+					
 					GF_doll_188
 					GF_doll_189
 					GF_doll_190

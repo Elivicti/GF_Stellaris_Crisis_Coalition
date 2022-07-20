@@ -24,3 +24,40 @@
 ################################# 遗珍
  GF_enhanced_OGAS_signal:0 "被放大的OGAS信号"
  GF_enhanced_OGAS_signal_desc:0 "OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"
+
+#################################
+ collapsed_terraforming_candidate:0 "$terraforming_candidate$"
+ collapsed_terraforming_candidate_desc:0 "尽管这颗星球的地表绝大部分都被坍塌辐射破坏了，但曾经生机勃勃的环境还是在这颗星球上留下了痕迹。"
+ collapsed_terraforming_candidate_tooltip:0 "在我们研究了£society£ §Y$tech_climate_restoration$§!科技之后，我们能在一定程度上对这颗星球进行环境改造，让其再次适宜居住。\n改造这颗星球的代价十分昂贵，也许我们需要一些§Y特殊§!的技术？"
+
+
+ GF_productive_relic_device:0 "遗迹设施投入生产"
+ GF_productive_relic_device_desc:0 "从遗迹中回收的设施已经能为生产和研究做贡献了。"
+
+ GF_productive_relic_abnormal:0 "异常的遗迹设施"
+ GF_productive_relic_abnormal_desc:0 "遗迹中回收的设施出现了未知异常，生产和研究都受到影响了！"
+
+ GF_studying_zion:0 "研究$GF_ZION$"
+#FALSEDESTINATION
+ GF_studying_zion_desc:0 "..-. / .- / .-.. / ... / . / -.. / . / ... / - / .. / -. / .- / - / .. / --- / -."
+
+ GF_pm_victory_in_defending_elid:0 "E.L.I.D防御战胜利"
+ GF_pm_victory_in_defending_elid_desc:0 "我们的军队在上一场与E.L.I.D感染者的冲突中大获全胜，没有遭受多少损失。"
+
+ GF_pm_failed_in_defending_elid:0 "E.L.I.D防御战失败"
+ GF_pm_failed_in_defending_elid_desc:0 "我们的军队在上一场与E.L.I.D感染者的冲突中遭遇了惨重的失败，许多设施都被破坏了。"
+
+ GF_pm_elid_threat_level_low:0 "E.L.I.D威胁度：§G低§!"
+ GF_pm_elid_threat_level_low_desc:0 "主要的E.L.I.D感染者均已被消灭，只有小股感染者仍然在野外游荡。"
+
+ GF_pm_elid_threat_level_mid:0 "E.L.I.D威胁度：§H中§!"
+ GF_pm_elid_threat_level_mid_desc:0 "野外存在中小规模的E.L.I.D感染者集群，对城市构成不可小视的威胁。"
+
+ GF_pm_elid_threat_level_high:0 "E.L.I.D威胁度：§R高§!"
+ GF_pm_elid_threat_level_high_desc:0 "E.L.I.D感染者控制了交通枢纽外的绝大部分地区，城市郊外几乎没有安全的地区。"
+
+ GF_pm_final_victory_in_defending_elid:0 "最终的胜利"
+ GF_pm_final_victory_in_defending_elid_desc:0 "我们与广域低辐射感染症的斗争终于迎来了终点——以我们的胜利为句号。"
+
+ GF_pm_contaminated_zone_purified:0 "污染区已净化"
+ GF_pm_contaminated_zone_purified_desc:0 "我们针对污染区的净化行动圆满完成。"

@@ -37,3 +37,49 @@
  GF_tech_reverse_collapse_desc:0 "逆向坍塌则是坍塌的反过程，正如坍塌是打碎物质一样，逆向坍塌则是先通过计算机导入目标物质的空间模型结构，再按照这个模型，将坍塌液中粒子包解开压缩，让其中的粒子归位到模型对应的位置有序排列，从而构建生成空间模型所指定的新物质。"
  GF_tech_ecological_recovery:0 "坍塌辐射污染无害化技术"
  GF_tech_ecological_recovery_desc:0 "以我们目前对于坍塌过程的认识，我们终于有能力处理遍布我们母星的坍塌辐射污染，一劳永逸的将原本的污染区清理出来，以供生产生活需要。"
+
+
+##################################
+ tech_GF_collapsetech_weaponize:0 "坍塌技术武器化"
+ tech_GF_collapsetech_weaponize_desc:0 "坍塌物质曾经差一点毁灭我们，但如果我们能掌控这份力量，它将化作我们的利刃。"
+
+ tech_GF_ship_collapse_armor:0 "坍塌零素材料"
+ tech_GF_ship_collapse_armor_desc:0 "在零素装甲中使用坍塌技术，进一步强化了零素装甲的强度，现在它能抵抗更加强大的火力了。"
+ tech_GF_collapse_power_core:0 "坍塌反应能源"
+ tech_GF_collapse_power_core_desc:0 "类似于核裂变和核聚变，坍塌反应堆从物质在坍塌的过程中汲取能量。"
+ tech_GF_collapse_jump_drive:0 "逆向坍塌跃迁"
+ tech_GF_collapse_jump_drive_desc:0 "物质的坍塌与逆坍塌过程能够使我们能更轻易地打破时空的连续性，让舰船在一瞬之间“跳跃”到远处的空间。"
+
+ TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_REACTOR$"
+ TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_DESC:0 "§H$GF_COLLAPSE_REACTOR$§!\n$tech_GF_collapse_power_core_desc$"
+
+ TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_JUMP_DRIVE$"
+ TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_DESC:0 "§H$GF_COLLAPSE_JUMP_DRIVE$§!\n$tech_GF_collapse_jump_drive_desc$"
+
+
+ tech_GF_collapse_relic_tech:0 "遗迹技术"
+ tech_GF_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管我们确信这部分技术只是全部遗迹文明技术的冰山一角，它也足够把我们帝国的研究提升到一个新的高度了。"
+
+ tech_GF_elid_army:0 "量产E.L.I.D军队"
+ tech_GF_elid_army_desc:0 "过去这些ELID感染者曾给我们造成了不小的麻烦，但是有了死灵法师，为什么不让它们为我们而战呢？"
+
+ tech_GF_collapse_energy_lance:0 "高能坍塌粒子射线"
+ tech_GF_collapse_energy_lance_desc:0 "坍塌粒子对物质有极强的损坏能力，若是能将其聚焦并发射出去，想必能对敌方舰船造成相当可观的伤害。"
+
+ tech_GF_collapse_ending_flash:0 "终末辉光"
+ tech_GF_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
+
+ tech_GF_combat_ogas_computers:0 "OGAS作战中枢"
+ tech_GF_combat_ogas_computers_desc:0 "OGAS系统具有庞大的算力，在战场的风险评估和战术优化上具有无可比拟的优势。"
+ 
+ tech_GF_miniaturized_collapse_lance:0 "坍塌粒子武器小型化"
+ tech_GF_miniaturized_collapse_lance_desc:0 "坍塌粒子在军事上具有极大的优势，但由于技术限制，坍塌粒子武器需要庞大的发射器和维护设备才能安全运行。从$GF_ZION$得到的资料表明，坍塌粒子武器具有小型化的可能性。"
+
+ tech_GF_collapse_bomb:0 "坍塌液脏弹"
+ tech_GF_collapse_bomb_desc:0 "$tech_GF_collapse_bomb$已经在我们的历史上被证明对人员和设施具有毁灭性的打击能力，将其用于轨道轰炸将是瓦解敌方星球防御甚至毁灭敌方星球的不二之选。"
+ tech_GF_collapse_bomb_title:0 "§H解锁轨道轰炸姿态：§!$bombardment_collapsebomb$"
+ tech_GF_collapse_bomb_desc:0 "$bombardment_collapsebomb_desc$"
+ # tech_GF_collapse_bomb_desc:0 "我们的舰队将会装备$tech_GF_collapse_bomb$以备用于轨道轰炸，我们可以在政策中选择是否允许我们的舰队这样做。"
+
+ tech_GF_collapse_slingshot_protocal:0 ""
+ tech_GF_collapse_slingshot_protocal_desc:0 ""

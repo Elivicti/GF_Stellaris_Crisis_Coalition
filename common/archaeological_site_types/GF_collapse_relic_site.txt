@@ -1,0 +1,192 @@
+GF_collapse_relic_site_0 = {
+	# 母星上的遗迹考古点
+	# 共4阶段
+	# 全部发掘完成后在母星四跳范围内随机选取三个岩石星球刷新三个遗迹考古点
+
+	desc = GF_collapse_relic_site_0_desc
+	picture = GFX_evt_GF_door
+
+	stages = 4
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	visible = {
+		has_authority = GF_auth_commonwealth
+		default_site_visible_trigger = yes
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { 
+				RANDOM_EVENTS = all_random_events 
+			}
+		}
+	}
+
+	stage = {
+		difficulty = 5
+		icon = GFX_archaeology_runes_A1
+		event = GF_relic.1
+	}
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_A2
+		event = GF_relic.2
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_A3
+		event = GF_relic.3
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_A4
+		event = GF_relic.4
+	}
+}
+
+GF_collapse_relic_site_1 = {
+	# 母星四跳范围内的遗迹考古点，共三个，内容相同
+	# 共三阶段
+	# 1号
+
+	desc = GF_collapse_relic_site_1_desc
+	picture = GFX_evt_GF_door
+
+	stages = 3
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	visible = {
+		has_authority = GF_auth_commonwealth
+		default_site_visible_trigger = yes
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { 
+				RANDOM_EVENTS = all_random_events 
+			}
+		}
+	}
+
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_B1
+		event = GF_relic.5
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_B2
+		event = GF_relic.6
+	}
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_B3
+		event = GF_relic.701
+	}
+}
+
+GF_collapse_relic_site_2 = {
+	# 母星四跳范围内的遗迹考古点，共三个，内容相同
+	# 共三阶段
+	# 2号
+
+	desc = GF_collapse_relic_site_2_desc
+	picture = GFX_evt_GF_door
+
+	stages = 3
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	visible = {
+		has_authority = GF_auth_commonwealth
+		default_site_visible_trigger = yes
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { 
+				RANDOM_EVENTS = all_random_events 
+			}
+		}
+	}
+
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_B1
+		event = GF_relic.5
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_B2
+		event = GF_relic.6
+	}
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_B3
+		event = GF_relic.702
+	}
+}
+
+GF_collapse_relic_site_3 = {
+	# 母星四跳范围内的遗迹考古点，共三个，内容相同
+	# 共三阶段
+	# 3号
+
+	desc = GF_collapse_relic_site_3_desc
+	picture = GFX_evt_GF_door
+
+	stages = 3
+	max_instances = 1
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	visible = {
+		has_authority = GF_auth_commonwealth
+		default_site_visible_trigger = yes
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { 
+				RANDOM_EVENTS = all_random_events 
+			}
+		}
+	}
+
+	stage = {
+		difficulty = 6
+		icon = GFX_archaeology_runes_B1
+		event = GF_relic.5
+	}
+	stage = {
+		difficulty = 7
+		icon = GFX_archaeology_runes_B2
+		event = GF_relic.6
+	}
+	stage = {
+		difficulty = 8
+		icon = GFX_archaeology_runes_B3
+		event = GF_relic.703
+	}
+}

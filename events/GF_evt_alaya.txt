@@ -1,0 +1,676 @@
+namespace = GF_alaya
+
+country_event = {
+	id = GF_alaya.0
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+		last_increased_tech = tech_GF_collapse_relic_tech
+	}
+
+	immediate = {
+		country_event = {
+			id = GF_alaya.001
+			days = 30
+		}
+	}
+}
+
+country_event = {
+	# 在研究完“遗迹技术”30天后触发
+	id = GF_alaya.001
+	title = GF_alaya.001.name
+	desc = GF_alaya.001.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_physics_research
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_technology = tech_GF_collapse_relic_tech
+	}
+
+	option = {
+		name = GF_alaya.001.a
+		
+		hidden_effect = {
+			set_variable = {
+				# 已经收集的遗迹设施数量
+				which = v_GF_relic_device_collected
+				value = 0
+			}
+			every_system = {
+				limit = { has_star_flag = flag_s_GF_has_collapse_relic_site_in_system }
+	
+				random_system_planet = {
+					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_1 }
+
+					save_event_target_as = collapse_relic_site
+					enable_special_project = {
+						name = SP_GF_COLLECT_RELIC_DEVICE
+						owner = root
+						location = this
+					}
+					
+				}
+				random_system_planet = {
+					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 }
+					
+					save_event_target_as = collapse_relic_site
+					enable_special_project = {
+						name = SP_GF_COLLECT_RELIC_DEVICE
+						owner = root
+						location = this
+					}
+					
+				}
+				random_system_planet = {
+					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 }
+					
+					save_event_target_as = collapse_relic_site
+					enable_special_project = {
+						name = SP_GF_COLLECT_RELIC_DEVICE
+						owner = root
+						location = this
+					}
+					
+				}
+			}
+		}
+
+		begin_event_chain = {
+			event_chain = GF_collect_relic_device_event_chain
+			target = root
+		}
+
+		
+	}
+}
+
+country_event = {
+	id = GF_alaya.002
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+
+			# 检查已经收集的遗迹设施数量
+			check_variable = {
+				which = v_GF_relic_device_collected
+				value < 3
+			}
+			
+		}
+	}
+
+	immediate = {
+		owner = {
+			# 已经收集的遗迹设施数量 + 1
+			change_variable = {
+				which = v_GF_relic_device_collected 
+				value = 1
+			}
+		}
+		add_event_chain_counter = {
+			event_chain = "GF_collect_relic_device_event_chain"
+			counter = "c_GF_devices_collected"
+			amount = 1
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.003
+	title = GF_alaya.003.name
+	desc = GF_alaya.003.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_ancient_artifact
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			
+			check_variable = {
+				which = v_GF_relic_device_collected
+				value >= 3
+			}
+		}
+	}
+
+	option = {
+		name = GF_alaya.003.a
+
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.004
+				days = 60
+			}
+		}
+	}
+}
+
+# 遗迹设施全部回收完毕，加buff
+country_event = {
+	id = GF_alaya.004
+	title = GF_alaya.004.name
+	desc = GF_alaya.004.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_analyzing_artifacts
+
+	immediate = {
+		# 用于本地化文件显示她/他
+		random_owned_leader = {
+			limit = { is_researching_area = physics }
+			save_event_target_as = physics_research_leader
+		}
+	}
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			
+			check_variable = {
+				which = v_GF_relic_device_collected
+				value >= 3
+			}
+		}
+	}
+
+	option = {
+		name = GF_alaya.004.a
+
+		end_event_chain = "GF_collect_relic_device_event_chain"
+
+		add_modifier = {
+			modifier = "GF_productive_relic_device"
+			days = -1
+		}
+
+		# 十年后遗迹设施出现异常
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.100
+				days = 3600
+			}
+		}
+	}
+}
+
+# 五年后，遗迹设施出现异常，debuff
+country_event = {
+	id = GF_alaya.100
+	title = GF_alaya.100.name
+	desc = GF_alaya.100.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_glitchy_matrix
+
+	immediate = {
+		# 用于本地化文件显示她/他
+		random_owned_leader = {
+			limit = { is_researching_area = physics }
+			save_event_target_as = physics_research_leader
+		}
+	}
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_device"
+		}
+	}
+
+	option = {
+		name = GF_alaya.100.a
+
+		owner = {
+			remove_modifier = "GF_productive_relic_device"
+			add_modifier = {
+				modifier = "GF_productive_relic_abnormal"
+				days = -1
+			}
+			ruler = {
+				add_trait = leader_trait_stubborn
+			}
+			enable_special_project = {
+				name = SP_GF_ALAYA_BEGIN
+			}
+		}
+	}
+}
+
+# 准备进入锡安
+country_event = {
+	id = GF_alaya.101
+	title = GF_alaya.101.name
+	desc = GF_alaya.101.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_GF_net_world
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	option = {
+		name = GF_alaya.101.a
+
+		owner = {
+			begin_event_chain = {
+				event_chain = GF_alaya_event_chain
+			}
+			capital_scope = {
+				enable_special_project = {
+					name = SP_GF_ENTER_ZION
+					owner = root
+					location = this
+				}
+			}
+		}
+	}
+}
+
+# “进入锡安”特殊项目完成
+country_event = {
+	id = GF_alaya.102
+	title = GF_alaya.102.name
+	desc = GF_alaya.102.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_GF_white_net
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	option = {
+		name = GF_alaya.102.a
+		country_event = {
+			id = GF_alaya.103
+		}
+	}
+}
+
+# 与锡安通讯
+country_event = {
+	id = GF_alaya.103
+	title = GF_ZION
+	desc = GF_alaya.103.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.103.a
+		response_text = GF_alaya.103.a.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = GF_alaya.103.b
+		response_text = GF_alaya.103.b.response
+		is_dialog_only = yes
+	}
+
+	option = {
+		name = GF_alaya.103.c
+		custom_tooltip = GF_dialog_tooltip
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.104
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.104
+	title = GF_ZION
+	desc = GF_alaya.104.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.104.a
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.105
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.105
+	title = GF_ZION
+	desc = GF_alaya.105.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.105.a
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.106
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.106
+	title = GF_ZION
+	desc = GF_alaya.106.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		# 与锡安共存
+		name = GF_alaya.106.a
+		custom_tooltip = GF_alaya.106.a.tooltip
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.120
+			}
+		}
+	}
+	option = {
+		# 与锡安断开连接
+		name = GF_alaya.106.b
+		custom_tooltip = GF_alaya.106.b.tooltip
+
+		enable_special_project = {
+			name = SP_GF_DISCONNECT_WITH_ZION
+			location = capital_scope
+			owner = this
+		}
+
+		hidden_effect = {
+			set_country_flag = flag_GF_disconnect_with_zion
+		}
+	}
+}
+
+country_event = {
+	# 强行中断锡安连接
+	id = GF_alaya.110
+	title = GF_alaya.110.name
+	desc = GF_alaya.110.desc
+
+	picture = GFX_evt_GF_red_net
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_disconnect_with_zion
+	}
+
+	option = {
+		name = GF_alaya.110.a
+		end_event_chain = "GF_alaya_event_chain"
+
+		remove_modifier = GF_productive_relic_abnormal
+		ruler = {
+			remove_trait = leader_trait_stubborn
+		}
+		hidden_effect = {
+			remove_country_flag = flag_GF_disconnect_with_zion
+		}
+	}
+}
+
+
+# 与锡安共存
+country_event = {
+	id = GF_alaya.120
+	title = GF_ZION
+	desc = GF_alaya.120.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.120.a
+		hidden_effect = {
+			country_event = {
+				id = GF_alaya.121
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.121
+	title = GF_ZION
+	desc = GF_alaya.121.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.121.a
+		response_text = GF_alaya.121.a.response
+		is_dialog_only = yes
+		hidden_effect = {
+			set_country_flag = flag_GF_dialog_1_completed
+		}
+	}
+	option = {
+		name = GF_alaya.121.b
+		custom_tooltip = GF_dialog_tooltip
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_dialog_1_not_completed
+				has_country_flag = flag_GF_dialog_1_completed
+			}
+		}
+		
+		hidden_effect = {
+			remove_country_flag = flag_GF_dialog_1_completed
+			country_event = {
+				id = GF_alaya.122
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.122
+	title = GF_ZION
+	desc = GF_alaya.122.desc
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+
+	force_open = yes
+
+	picture_event_data = {
+		room = whitenet_room
+	}
+
+	option = {
+		name = GF_alaya.122.a
+
+		enable_special_project = {
+			name = SP_GF_COEXIST_WITH_ZION
+			location = capital_scope
+			owner = this
+		}
+	}
+}
+
+country_event = {
+	id = GF_alaya.123
+	title = GF_alaya.123.name
+	desc = GF_alaya.123.desc
+
+	is_triggered_only = yes
+
+	picture = GFX_evt_sapient_AI
+
+	trigger = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = tech_GF_collapse_relic_tech
+			has_modifier = "GF_productive_relic_abnormal"
+		}
+	}
+
+	option = {
+		name = GF_alaya.123.a
+
+		remove_modifier = GF_productive_relic_abnormal
+		ruler = {
+			remove_trait = leader_trait_stubborn
+		}
+		add_modifier = {
+			modifier = GF_studying_zion
+			days = -1
+		}
+		hidden_effect = {
+			set_country_flag = flag_GF_established_communication_with_zion
+			# 锡安好感
+			set_variable = {
+				which = v_GF_zion_favor
+				value = 40
+			}
+		}
+	}
+	
+}

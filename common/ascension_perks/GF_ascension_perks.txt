@@ -56,3 +56,45 @@ ap_GF_body_upgrade = {
 	}
 }
 #######collapse坍缩科技
+
+####### gavirul计划
+ap_GF_gavirul_project = {
+	on_enabled = {
+		custom_tooltip = enable_GF_gavirul_project
+		custom_tooltip = describe_GF_gavirul_project
+		hidden_effect = {
+			set_country_flag = flag_GF_gavirul_project_started
+			country_event = {
+				id = GF_gavirul.0
+			}
+		}
+	}
+	# modifier = {
+	# 	description = ap_GF_gavirul_project_desc
+	# 	BIOLOGICAL_species_trait_points_add = 2
+	# }
+	possible = {
+		has_technology = tech_gene_tailoring
+		has_technology = tech_GF_collapse_relic_tech
+		
+		custom_tooltip = {
+			fail_text = "has_flag_GF_collapse_relic_surveyed"
+			has_country_flag = flag_GF_collapse_relic_surveyed
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+		NOT = {
+			has_ascension_perk = ap_GF_gavirul_project
+		}
+	}
+	
+	ai_weight = {
+		factor = 0	
+	}
+}

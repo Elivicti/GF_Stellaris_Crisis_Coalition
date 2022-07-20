@@ -20,78 +20,7 @@ d_GF_south_pole_energy = {
 	}
 }
 
-d_GF_black_zone = {
-	is_for_colonizable = yes
-	time = 300
-	icon = d_GF_black_zone
-	category = deposit_cat_blockers
-	planet_modifier = {
-		pop_environment_tolerance = -0.20
-		planet_max_districts_add = -1
-	}
-	blocker_swap_types = {
-		d_GF_relic_preservation
-	}
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 1000
-		}
-	}
-	prerequisites = { "GF_tech_ecological_recovery" }
-	drop_weight = {
-		weight = 0
-	}
-}
 
-d_GF_red_zone = {
-	is_for_colonizable = yes
-	time = 300
-	icon = d_GF_red_zone
-	category = deposit_cat_blockers
-	planet_modifier = {
-		pop_environment_tolerance = -0.1
-		planet_max_districts_add = -1
-	}
-	blocker_swap_types = {
-		d_GF_yellow_zone
-	}
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 500
-		}
-	}
-	prerequisites = { "GF_tech_ecological_recovery" }
-	drop_weight = {
-		weight = 0
-	}
-}
-
-d_GF_yellow_zone = {
-	is_for_colonizable = yes
-	time = 270
-	icon = d_GF_yellow_zone
-	category = deposit_cat_blockers
-	planet_modifier = {
-		pop_environment_tolerance = -0.05
-		planet_max_districts_add = -1
-	}
-	on_cleared = {
-		create_pop = {
-			species = owner
-		}
-	}
-	resources = {
-		category = deposit_blockers
-		cost = {
-			energy = 200
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
 
 d_GF_green_zone = {
 	is_for_colonizable = yes
@@ -257,21 +186,4 @@ d_GF_south_pole_urban = {
 	}
 }
 
-d_GF_purify_wall = {
-	is_for_colonizable = yes
-	category = deposit_cat_blockers
-	icon = d_GF_purify_wall
-	planet_modifier = {
-		pop_environment_tolerance = 0.05
-		job_GF_guard_doll_add = 2
-	}
-	resources = {
-		category = planet_deposits
-		upkeep = {
-			energy = 1
-		}
-	}
-	drop_weight = {
-		weight = 0
-	}
-}
+

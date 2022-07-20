@@ -1,0 +1,140 @@
+special_project = {
+	# 回收遗迹设施，共3个
+	key = SP_GF_COLLECT_RELIC_DEVICE
+	event_scope = ship_event
+
+	picture = GFX_evt_ship_in_orbit_2
+
+	requirements = {
+		shipclass_constructor = 1
+	}
+	location = yes
+
+	days_to_research = 90
+
+	event_chain = "GF_collect_relic_device_event_chain"
+
+	on_success = {
+		owner = {
+			country_event = {
+				id = GF_alaya.002
+			}
+		}
+		
+		hidden_effect = {
+			owner = {
+				country_event = {
+					id = GF_alaya.003
+				}
+			}
+		}
+	}
+}
+
+special_project = {
+	
+	#找出遗迹设施异常原因
+
+	key = SP_GF_ALAYA_BEGIN
+	event_scope = country_event
+
+	picture = GFX_evt_glitchy_matrix
+
+	location = no
+
+	cost = 16000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = {
+			id = GF_alaya.101
+		}
+	}
+}
+
+special_project = {
+
+	# 进入锡安
+
+	key = SP_GF_ENTER_ZION
+	event_scope = country_event
+
+	picture = GFX_evt_GF_net_world
+
+	location = yes
+
+	cost = 20000
+	tech_department = physics_technology
+
+	event_chain = "GF_alaya_event_chain"
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill >= 5
+	}
+
+	on_success = {
+		country_event = {
+			id = GF_alaya.102
+		}
+	}
+}
+
+special_project = {
+
+	# 与锡安断开连接
+
+	key = SP_GF_DISCONNECT_WITH_ZION
+	event_scope = country_event
+
+	picture = GFX_evt_glitchy_matrix
+
+	location = yes
+
+	cost = 15000
+	tech_department = physics_technology
+
+	event_chain = "GF_alaya_event_chain"
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill >= 5
+	}
+
+	on_success = {
+		country_event = {
+			id = GF_alaya.110
+		}
+	}
+}
+
+special_project = {
+
+	# 维持锡安存在
+
+	key = SP_GF_COEXIST_WITH_ZION
+	event_scope = country_event
+
+	picture = GFX_evt_sapient_AI
+
+	location = yes
+
+	cost = 20000
+	tech_department = engineering_technology
+
+	event_chain = "GF_alaya_event_chain"
+
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill >= 5
+	}
+
+	on_success = {
+		country_event = {
+			id = GF_alaya.123
+		}
+	}
+}

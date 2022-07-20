@@ -1,0 +1,408 @@
+### From Collapsed World to Vanilla
+
+@highestCost = 25000
+@highestTime = 18000
+
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_gaia"
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		has_ascension_perk = "ap_world_shaper"
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+
+	duration = @highestTime
+	resources = {
+		category = terraforming
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_desert"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_arid"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_savannah"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_continental"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_tropical"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_ocean"
+
+	resources = {
+		category = terraforming_ocean
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 4
+			has_trait = trait_aquatic
+		}
+	}
+}
+
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_arctic"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_tundra"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+terraform_link = {
+	from = "pc_GF_collapsed"
+	to = "pc_alpine"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+	condition = {
+		has_technology = "tech_climate_restoration"
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+
+terraform_link = {
+	to = "pc_machine"
+	from = "pc_GF_collapsed"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		has_ascension_perk = ap_machine_worlds
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+		#It's a barren world!
+	}
+}
+
+terraform_link = {
+	to = "pc_hive"
+	from = "pc_GF_collapsed"
+
+	resources = {
+		category = terraforming
+
+		cost = {
+			energy = @highestCost
+		}
+	}
+
+	duration = @highestTime
+
+	potential = {
+		has_ascension_perk = ap_hive_worlds
+		NOT = { has_technology = GF_tech_ecological_recovery }
+		from = { has_modifier = collapsed_terraforming_candidate }
+	}
+
+	effect = {
+		from = {
+			GF_create_black_zone_deposit = yes
+			remove_modifier = collapsed_terraforming_candidate
+		}
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}

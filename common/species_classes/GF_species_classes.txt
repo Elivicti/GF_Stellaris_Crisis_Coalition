@@ -37,3 +37,50 @@ GF_new_type = {
 	move_pop_sound_effect = "moving_pop_confirmation"
 	trait = "GF_trait_sequela"
 }
+
+
+ogas_consciousness = {
+	archetype = collective_consciousness
+
+	playable = { always = no }
+
+	gender = no
+	use_climate_preference = no
+	portrait_modding = no
+	randomized = no
+	# 暂时先用破界者的立绘
+	portraits = {
+		"exd1"
+	}
+	non_randomized_portraits = {
+		"exd1"
+	}
+	leader_age_min = 100
+	leader_age_max = 500
+	graphical_culture = extra_dimensional_01
+	move_pop_sound_effect = "robot_pops_move"
+	trait = "trait_mechanical"
+}
+
+aggressive_elid = {
+	archetype = LITHOID
+
+	playable = { always = no }
+
+	gender = no
+	use_climate_preference = no
+	portrait_modding = no
+	randomized = no
+
+	portraits = {
+		"exd1"
+	}
+	non_randomized_portraits = {
+		"exd1"
+	}
+	leader_age_min = 100
+	leader_age_max = 500
+	graphical_culture = extra_dimensional_01
+	move_pop_sound_effect = "robot_pops_move"
+	trait = "trait_extremely_adaptive"
+}

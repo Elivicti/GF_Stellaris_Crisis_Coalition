@@ -11,3 +11,6 @@
  edict_GF_robot_modding:0 "智能机械体同化协议"
  edict_GF_robot_modding_desc:0 "银河当中部分文明也发展了跟我们类似的智能机械体技术，但这些机械体过于落后且无法接入齐纳协议。我们需要将这些机械体的数据导入心智云图、改造为仿生自律人形并重新设定控制权限来保证它们忠实的为我们的文明服务。"
  GF_robot_modding_effect:0 "将所有非人形的机械人口改造为人形。"
+
+ edict_GF_relocate_relic_site:0 "重定位$collapse_relic$"
+ edict_GF_relocate_relic_site_desc:0 "即便我们不小心失去了$collapse_relic$的坐标，我们也能利用现有的数据再次定位它。"

@@ -1,0 +1,68 @@
+on_blocker_cleared = {
+	events = {
+		# GF_relic.1000
+		GF_elid.2001
+		GF_elid.2100
+		GF_elid.2200
+		GF_elid.2300
+	}
+}
+
+on_tech_increased = {
+	events = {
+		# GF_relic.0
+		GF_alaya.0
+	}
+}
+
+on_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
+	events = {
+		crisis.5015
+		planet_destruction.600
+		
+		ending_flash.100
+	}
+}
+
+on_planet_bombarded = {
+	events = {
+		GF_bombardment.1200
+	}
+}
+
+on_planet_zero_pops = {
+	events = {
+		GF_bombardment.1100
+	}
+}
+
+
+# Triggers country_event for the defender upon victory
+# Root = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win = {
+	events = {
+		GF_elid.1010
+		GF_elid.1022 # player failed taking back planet
+
+		GF_elid.2110
+		GF_elid.2210
+		GF_elid.2310
+	}
+}
+
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+		GF_elid.1020 # player lose
+		GF_elid.1021 # elid lose afer taken player's planet
+
+		GF_elid.2120
+		GF_elid.2220
+		GF_elid.2320
+	}
+}

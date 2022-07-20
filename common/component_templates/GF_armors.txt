@@ -1,0 +1,74 @@
+utility_component_template = {
+	# 小型坍塌零素装甲
+	key = "GF_COLLAPSE_ARMOR_SMALL"
+	size = small
+	icon = "GFX_GF_collapse_armor"
+
+	icon_frame = 1
+	component_set = "GF_COLLAPSE_ARMOR"
+	power = 0
+	prerequisites = { "tech_GF_ship_collapse_armor" }
+	modifier = {
+		ship_armor_add = 240
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 30
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.050
+		}
+	}
+}
+
+utility_component_template = {
+	# 中型坍塌零素装甲
+	key = "GF_COLLAPSE_ARMOR_MEDIUM"
+	size = medium
+	icon = "GFX_GF_collapse_armor"
+
+	icon_frame = 1
+	component_set = "GF_COLLAPSE_ARMOR"
+	power = 0
+	prerequisites = { "tech_GF_ship_collapse_armor" }
+	modifier = {
+		ship_armor_add = 500
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 60
+		}
+		upkeep = {
+			energy = 1.0
+			alloys = 0.1
+		}
+	}
+}
+
+utility_component_template = {
+	# 大型坍塌零素装甲
+	key = "GF_COLLAPSE_ARMOR_LARGE"
+	size = large
+	icon = "GFX_GF_collapse_armor"
+
+	icon_frame = 1
+	component_set = "GF_COLLAPSE_ARMOR"
+	power = 0
+	prerequisites = { "tech_GF_ship_collapse_armor" }
+	modifier = {
+		ship_armor_add = 1250
+	}
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 120
+		}
+		upkeep = {
+			energy = 2.0
+			alloys = 0.21
+		}
+	}
+}

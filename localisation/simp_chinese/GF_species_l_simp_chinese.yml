@@ -31,7 +31,8 @@ GIRLF:0 "少女前线"
  GF_doll_fossil:0 "骨架"
  GF_doll_fossil_plural:0 "骨架"
  GF_doll_remnant:0 "残骸"
- GF_doll_remnant_plural:0 "残骸"  
+ GF_doll_remnant_plural:0 "残骸"
+
 #GF New Type
  GF_new_type:0 "新人类"
  GF_new_type:0 "人型生物"
@@ -67,3 +68,40 @@ GIRLF:0 "少女前线"
  GF_new_type_fossil_plural:0 "化石"
  GF_new_type_remnant:0 "残骸"
  GF_new_type_remnant_plural:0 "残骸"
+
+
+# ogas consciousness
+ ogas_consciousness:0 "§H欧伽斯意识§!"
+ ogas_consciousness_desc:0 "欧伽斯意识_DESC"
+# no use
+ ogas_consciousness_plural:0 "$ogas_consciousness$"
+
+ ogas_consciousness_insult_01:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_insult_plural_01:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_compliment_01:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_compliment_plural_01:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_spawn:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_spawn_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_sound_01:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_sound_02:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_sound_03:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_sound_04:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_sound_05:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_organ:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_mouth:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_hand:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_ear:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_tooth:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_fossil:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_remnant:0 "NO_USE_LOCALISATION"
+
+ ogas_consciousness_organ_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_hand_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_ear_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_tooth_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_fossil_plural:0 "NO_USE_LOCALISATION"
+ ogas_consciousness_remnant_plural:0 "NO_USE_LOCALISATION"
+
+# only for disabling warnings
+ new_type_fossil_plural:0 "NO_USE_LOCALISATION"
+ new_type_remnant_plural:0 "NO_USE_LOCALISATION"

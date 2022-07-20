@@ -2,7 +2,7 @@ spriteTypes = {
 	################################################################
 	# ASCENSION PERK ICONS
 	################################################################
-		spriteType = {
+	spriteType = {
 		name = "GFX_ap_GF_mind_upgrade"
 		texturefile = "gfx/interface/icons/ascension_perks/ap_GF_mind_upgrade.dds"
 		alwaystransparent = yes
@@ -27,6 +27,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ap_sfpermission_release2"
 		texturefile = "gfx/interface/icons/ascension_perks/ap_sfpermission_release2.dds"
+		alwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_ap_GF_gavirul_project"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_gavirul.dds"
 		alwaystransparent = yes
 	}
 }

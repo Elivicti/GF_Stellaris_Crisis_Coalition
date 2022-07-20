@@ -1,0 +1,111 @@
+GF_army_elid_1 = {
+	damage = 2.40
+	health = 2.00
+	has_morale = no
+	has_species = no
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 4.00
+	war_exhaustion = 3.00
+	time = 20
+	icon = GFX_army_type_clone
+
+	pop_limited = no
+	
+	prerequisites = { "tech_GF_elid_army" }
+	resources = {
+		category = armies
+		cost = {
+			energy = 10
+			minerals = 50
+		}
+		upkeep = {
+			energy = 0.5
+		}
+	}
+
+	show_tech_unlock_if = {
+		has_authority = GF_auth_commonwealth
+		has_valid_civic = civic_reanimated_armies
+	}
+
+	potential = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_valid_civic = civic_reanimated_armies
+		}
+	}
+}
+
+GF_army_elid_2 = {
+	damage = 3.60
+	health = 4.00
+	has_morale = no
+	has_species = no
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 8.00
+	war_exhaustion = 4.50
+	time = 120
+	icon = GFX_army_type_undead
+
+	pop_limited = no
+	
+	prerequisites = { "tech_GF_elid_army" }
+	resources = {
+		category = armies
+		cost = {
+			minerals = 200
+			food = 80
+		}
+		upkeep = {
+			energy = 1.2
+		}
+	}
+
+	show_tech_unlock_if = {
+		has_authority = GF_auth_commonwealth
+		has_valid_civic = civic_reanimated_armies
+	}
+
+	potential = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_valid_civic = civic_reanimated_armies
+		}
+	}
+}
+
+
+# hostile elid, event only
+GF_army_hostile_elid = {
+	icon = GFX_army_type_gene_warrior
+
+	damage = 1.00
+	health = 1.60
+	has_morale = no
+	has_species = no
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 2.40
+	war_exhaustion = 3.00
+
+	
+	potential = { always = no }
+}
+
+GF_army_hostile_elid_boss = {
+	icon = GFX_army_type_undead
+
+	damage = 1.50
+	health = 2.00
+	has_morale = no
+	has_species = no
+	morale = 1.00
+	morale_damage = 1.00
+	collateral_damage = 5.00
+	war_exhaustion = 4.50
+
+
+	potential = { always = no }
+}

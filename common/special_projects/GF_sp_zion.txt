@@ -1,0 +1,20 @@
+special_project = {
+	key = SP_GF_OGAS_IN_MIRROR
+
+	event_scope = country_event
+
+	event_chain = GF_alaya_event_chain
+
+	picture = GFX_evt_sapient_AI
+
+	location = no
+
+	cost = 24000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = {
+			id = GF_zion.14100
+		}
+	}
+}

@@ -7,3 +7,12 @@
  ap_GF_body_upgrade_desc:0 "生产仿生自律人形的科技是一个多世纪之前的古老科技，前面的工作只是简单修补改良，现在来看其基本设计已经落后于时代了，我们应利用现有先进技术对人形机体进行完全的重新设计。"
  ap_chip_upgrade_modifier_desc:0 "将新增更加强大的人形改造特质。\n$GF_ANDROID$$species_trait_points_add$：§G+3§!"
  has_GF_tech_doll_modding_point_3:0 "$TRIGGER_FAIL$拥有科技£engineering£§Y$GF_tech_doll_modding_point_3$§!"
+
+# GAVIRUL
+ ap_GF_gavirul_project:0 "重启GAVIRUL计划"
+ ap_GF_gavirul_project_desc:0 "曾经的失败不会让我们停止脚步，已经踏入星空的我们已经有了更成熟的技术来重新启动GAVIRUL计划。"
+
+ enable_GF_gavirul_project:0 "§H发布特殊项目：§!GAVIRUL计划\n\n"
+ describe_GF_gavirul_project:0 "完成§YGAVIRUL计划§!，能够使我们的种族成为§R坍塌辐射完全免疫体§!，得到强大的§H种族特质§!。"
+
+ has_flag_GF_collapse_relic_surveyed:0 "$TRIGGER_FAIL$需要完成遗迹的探索"

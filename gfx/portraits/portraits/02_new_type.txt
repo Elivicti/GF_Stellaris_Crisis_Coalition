@@ -47,6 +47,122 @@ portraits = {
 	new_type_16 = {
 		texturefile = "gfx/models/portraits/new_type/16.png"
 	}
+	# added unused potraits
+	new_type_17 = {
+		texturefile = "gfx/models/portraits/new_type/D10-1.png"
+	}
+	new_type_18 = {
+		texturefile = "gfx/models/portraits/new_type/D10-10.png"
+	}
+	new_type_19 = {
+		texturefile = "gfx/models/portraits/new_type/D10-11.png"
+	}
+	new_type_20 = {
+		texturefile = "gfx/models/portraits/new_type/D10-12.png"
+	}
+	new_type_21 = {
+		texturefile = "gfx/models/portraits/new_type/D10-13.png"
+	}
+	new_type_22 = {
+		texturefile = "gfx/models/portraits/new_type/D10-14.png"
+	}
+	new_type_23 = {
+		texturefile = "gfx/models/portraits/new_type/D10-15.png"
+	}
+	new_type_24 = {
+		texturefile = "gfx/models/portraits/new_type/D10-16.png"
+	}
+	new_type_25 = {
+		texturefile = "gfx/models/portraits/new_type/D10-17.png"
+	}
+	new_type_26 = {
+		texturefile = "gfx/models/portraits/new_type/D10-18.png"
+	}
+	new_type_27 = {
+		texturefile = "gfx/models/portraits/new_type/D10-19.png"
+	}
+	new_type_28 = {
+		texturefile = "gfx/models/portraits/new_type/D10-2.png"
+	}
+	new_type_29 = {
+		texturefile = "gfx/models/portraits/new_type/D10-4.png"
+	}
+	new_type_30 = {
+		texturefile = "gfx/models/portraits/new_type/D10-5.png"
+	}
+	new_type_31 = {
+		texturefile = "gfx/models/portraits/new_type/D10-6.png"
+	}
+	new_type_32 = {
+		texturefile = "gfx/models/portraits/new_type/D10-7.png"
+	}
+	new_type_33 = {
+		texturefile = "gfx/models/portraits/new_type/D11-10.png"
+	}
+	new_type_34 = {
+		texturefile = "gfx/models/portraits/new_type/D11-11.png"
+	}
+	new_type_35 = {
+		texturefile = "gfx/models/portraits/new_type/D11-2.png"
+	}
+	new_type_36 = {
+		texturefile = "gfx/models/portraits/new_type/D11-3.png"
+	}
+	new_type_37 = {
+		texturefile = "gfx/models/portraits/new_type/D11-4.png"
+	}
+	new_type_38 = {
+		texturefile = "gfx/models/portraits/new_type/D11-5.png"
+	}
+	new_type_39 = {
+		texturefile = "gfx/models/portraits/new_type/D11-6.png"
+	}
+	new_type_40 = {
+		texturefile = "gfx/models/portraits/new_type/D11-7.png"
+	}
+	new_type_41 = {
+		texturefile = "gfx/models/portraits/new_type/D11-8.png"
+	}
+	new_type_42 = {
+		texturefile = "gfx/models/portraits/new_type/D9-1.png"
+	}
+	new_type_43 = {
+		texturefile = "gfx/models/portraits/new_type/D9-11.png"
+	}
+	new_type_44 = {
+		texturefile = "gfx/models/portraits/new_type/D9-14.png"
+	}
+	new_type_45 = {
+		texturefile = "gfx/models/portraits/new_type/D9-15.png"
+	}
+	new_type_46 = {
+		texturefile = "gfx/models/portraits/new_type/D9-16.png"
+	}
+	new_type_47 = {
+		texturefile = "gfx/models/portraits/new_type/D9-18.png"
+	}
+	new_type_48 = {
+		texturefile = "gfx/models/portraits/new_type/D9-19.png"
+	}
+	new_type_49 = {
+		texturefile = "gfx/models/portraits/new_type/D9-20.png"
+	}
+	new_type_50 = {
+		texturefile = "gfx/models/portraits/new_type/D9-21.png"
+	}
+	new_type_51 = {
+		texturefile = "gfx/models/portraits/new_type/D9-4.png"
+	}
+	new_type_52 = {
+		texturefile = "gfx/models/portraits/new_type/D9-5.png"
+	}
+	new_type_53 = {
+		texturefile = "gfx/models/portraits/new_type/D9-8.png"
+	}
+	new_type_54 = {
+		texturefile = "gfx/models/portraits/new_type/D9-9.png"
+	}
+	
 	griffin000 = {
 		texturefile = "gfx/models/portraits/doll/ogas.dds"
 	}
@@ -337,6 +453,44 @@ portrait_groups = {
 					new_type_14
 					new_type_15
 					new_type_16
+					new_type_17
+					new_type_18
+					new_type_19
+					new_type_20
+					new_type_21
+					new_type_22
+					new_type_23
+					new_type_24
+					new_type_25
+					new_type_26
+					new_type_27
+					new_type_28
+					new_type_29
+					new_type_30
+					new_type_31
+					new_type_32
+					new_type_33
+					new_type_34
+					new_type_35
+					new_type_36
+					new_type_37
+					new_type_38
+					new_type_39
+					new_type_40
+					new_type_41
+					new_type_42
+					new_type_43
+					new_type_44
+					new_type_45
+					new_type_46
+					new_type_47
+					new_type_48
+					new_type_49
+					new_type_50
+					new_type_51
+					new_type_52
+					new_type_53
+					new_type_54
 				}
 			}
 		}
@@ -359,6 +513,44 @@ portrait_groups = {
 					new_type_14
 					new_type_15
 					new_type_16
+					new_type_17
+					new_type_18
+					new_type_19
+					new_type_20
+					new_type_21
+					new_type_22
+					new_type_23
+					new_type_24
+					new_type_25
+					new_type_26
+					new_type_27
+					new_type_28
+					new_type_29
+					new_type_30
+					new_type_31
+					new_type_32
+					new_type_33
+					new_type_34
+					new_type_35
+					new_type_36
+					new_type_37
+					new_type_38
+					new_type_39
+					new_type_40
+					new_type_41
+					new_type_42
+					new_type_43
+					new_type_44
+					new_type_45
+					new_type_46
+					new_type_47
+					new_type_48
+					new_type_49
+					new_type_50
+					new_type_51
+					new_type_52
+					new_type_53
+					new_type_54
 				}
 			}
 		}
@@ -381,6 +573,44 @@ portrait_groups = {
 					new_type_14
 					new_type_15
 					new_type_16
+					new_type_17
+					new_type_18
+					new_type_19
+					new_type_20
+					new_type_21
+					new_type_22
+					new_type_23
+					new_type_24
+					new_type_25
+					new_type_26
+					new_type_27
+					new_type_28
+					new_type_29
+					new_type_30
+					new_type_31
+					new_type_32
+					new_type_33
+					new_type_34
+					new_type_35
+					new_type_36
+					new_type_37
+					new_type_38
+					new_type_39
+					new_type_40
+					new_type_41
+					new_type_42
+					new_type_43
+					new_type_44
+					new_type_45
+					new_type_46
+					new_type_47
+					new_type_48
+					new_type_49
+					new_type_50
+					new_type_51
+					new_type_52
+					new_type_53
+					new_type_54
 				}
 			}
 		}
@@ -403,6 +633,44 @@ portrait_groups = {
 					new_type_14
 					new_type_15
 					new_type_16
+					new_type_17
+					new_type_18
+					new_type_19
+					new_type_20
+					new_type_21
+					new_type_22
+					new_type_23
+					new_type_24
+					new_type_25
+					new_type_26
+					new_type_27
+					new_type_28
+					new_type_29
+					new_type_30
+					new_type_31
+					new_type_32
+					new_type_33
+					new_type_34
+					new_type_35
+					new_type_36
+					new_type_37
+					new_type_38
+					new_type_39
+					new_type_40
+					new_type_41
+					new_type_42
+					new_type_43
+					new_type_44
+					new_type_45
+					new_type_46
+					new_type_47
+					new_type_48
+					new_type_49
+					new_type_50
+					new_type_51
+					new_type_52
+					new_type_53
+					new_type_54
 				}
 			}
 		}

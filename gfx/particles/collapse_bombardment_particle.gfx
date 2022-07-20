@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxparticle = {
+		name = "collapse_bombardment_effect"
+		type = "collapse_bombardment"
+		scale = 1
+	}
+}

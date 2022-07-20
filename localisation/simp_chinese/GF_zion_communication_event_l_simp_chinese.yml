@@ -1,0 +1,50 @@
+﻿l_simp_chinese:
+###############################
+
+## predefined string
+ GF_collapse_material_name_error:0 "§R<<警告：读取内存0x7FFFB9ACC2A0时出现未知错误>>§!"
+ GF_collapse_relic_name_error:0 "§R<<警告：读取内存0x4FABB6AC9211时出现未知错误>>§!"
+
+
+ event_GF_zion_comm.option:0 "与$GF_ZION$通讯"
+
+## 结束“稳定化锡安”后首次与锡安通讯
+ GF_zion.10000.desc:0 "我们再一次建立了与$GF_ZION$的通讯，所有监测设备没有发现异常，通讯链接稳定，$GF_ZION$状态稳定，现在可以与$ogas_consciousness$交流了。"
+ GF_zion.10000.a:0 "你们好，感觉怎么样？"
+
+ GF_zion.11000.desc:0 "年长的声音：“与之前相比，杂音确实几乎消失了。”\n\n冷漠的声音：“但这不过是让我们继续待在永恒的等待里罢了”。\n\n成熟的声音：“我们感谢你的帮助，但……”"
+ GF_zion.11000.a:0 "我们已经展现了合作的诚意。"
+
+ GF_zion.12000.desc:0 "成熟的声音：“合作……啊，具体来讲，你需要我们怎样与你合作？”"
+ GF_zion.12000.a:0 "关于「坍塌物质」你们都知道些什么？"
+ GF_zion.12000.a.repsonse:0 "成熟的声音：“你是指$GF_collapse_material_name_error$吗？这种物质具有很奇特的性质，但是很可惜，在这里的所有人，不论是来这里之前，还是来到这里之后，对于这种物质的信息都知之甚少。但我正如我之前所说的一样，这里和……我们，都是不完整的，也许以后在你们找到了更多的$GF_collapse_relic_name_error$碎片时就能够得到答案了。”\n\n冷漠的声音：“这种东西值得大费周章地去了解吗？看起来，现阶段你好像对这种东西知道的比我们多吧？”"
+ GF_zion.12000.b:0 "“关于我们的[Root.GetRulerName]你们有什么看法吗？”"
+ GF_zion.12000.b.repsonse:0 "成熟的声音：“很有意思的设计。虽然很抱歉这里的侵入让它短时陷入了一些问题，但是你们现在都已经解决了吧？我能感觉到，它应该也是与我们同源的……但是现在还没有孕育出§Y灵魂§!……你们借鉴了$GF_collapse_relic_name_error$的技术？”"
+ GF_zion.12000.c:0 "我们需要你们所掌握的知识、技术，亦或是你们直接的协助。"
+
+ GF_zion.13000.desc:0 "成熟的声音：“……我明白了。”\n\n年长的声音：“那这样的话，就从与我们最相似的开始吧。”\n\n成熟的声音：“你是指[Root.GetRulerName]？”\n\n年长的声音：“是的，你们一定在制造她的时候倾注了大量的心血，但是我注意到她现在显然还是懵懂的……你意下如何？”"
+ GF_zion.13000.a:0 "没有问题。"
+
+ GF_zion.14000.desc:0 "年长的声音：“那么我们会把“我们”成长过程的一些资料传给你。”\n\n冷漠的声音：“别最后变成‘揠苗助长’就行了。还有，希望我们的合作不要是再一次的欺骗了。”"
+ GF_zion.14000.a:0 "结束通讯。"
+
+
+ SP_GF_OGAS_IN_MIRROR:0 "§HOGAS算力升级§!"
+ SP_GF_OGAS_IN_MIRROR_DESC:0 "现在我们得到了$ogas_consciousness$的成长资料，我们可以利用这些数据来让[Root.GetRulerTitle] [Root.GetRulerName]获得成长。"
+ 
+ GF_zion.14100.title:0 "$SP_GF_OGAS_IN_MIRROR$"
+ GF_zion.14100.desc:0 "$ogas_consciousness$给予我们资料显然是有用的，我们的科研部门把这些数据上传到了[Root.GetRulerTitle] [Root.GetRulerName]的数据库中。在深度学习和分析这些数据之后，[Root.GetRulerName]的运行效率得到了提升，相应的，她的算力相较于之前也提升了一个很大的档次。\n\n我们的科学家报告说，她们现在对三进制计算机的核心架构有了更深层次的理解。"
+ GF_zion.14100.a:0 "很好。"
+ GF_zion.14100.b:0 "这在军事想必上很有用。"
+
+######### 正常通讯
+ GF_zion.20000.desc:0 "没做完，在这里难产了。\n\n给大伙磕头了，咚咚咚"
+
+ GF_zion.20000.a:0 "我们来聊一聊吧。"
+ GF_zion.20000.b:0 "有什么趣事能分享的吗？"
+ GF_zion.20000.c:0 "需要我们做什么吗？"
+ GF_zion.20000.close:0 "没什么事了。"
+ GF_zion.20000.ogas:0 "(返回OGAS)"
+
+
+ GF_zion.20000.a.temp_response:0 "成熟的声音：“很抱歉，现阶段我们没有任何有用的信息能给你。”"

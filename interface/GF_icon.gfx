@@ -1,0 +1,35 @@
+spriteTypes = {	
+
+	# ship components
+	spriteType = {
+		name = "GFX_GF_collapse_power_core"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_power_core.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collapse_armor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collapse_jump_drive"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_collapse_jump_drive.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_energy_lance"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_lance.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collpase_ending_flash"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_world_collapser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_miniaturized_collapse_lance"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_miniaturized_collapse_lance.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_ogas_computer"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_computer_ogas.dds"
+	}
+}

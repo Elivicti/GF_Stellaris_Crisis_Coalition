@@ -1,0 +1,463 @@
+namespace = GF_relic
+
+planet_event = {
+	# 研究完“坍塌辐射污染无害化技术”且清除母星上的黑区后此事件触发
+
+	id = GF_relic.1000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_technology = GF_tech_ecological_recovery
+			has_authority = GF_auth_commonwealth
+		}
+		GF_planet_has_contaminated_zone = no
+		# from = {
+		# 	is_deposit_type = d_GF_black_zone	
+		# }
+	}
+
+	immediate = {
+		owner = {
+			country_event = {
+				id = GF_relic.0
+				days = 30
+			}
+		}
+	}
+}
+
+country_event = {
+
+	# 在母星上添加遗迹考古点
+
+	id = GF_relic.0
+	title = GF_relic.0.name
+	desc = GF_relic.0.desc
+
+	picture = GFX_evt_GF_door
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_ecological_recovery
+	}
+
+	option = {
+		name = GF_relic.0.a
+		event_target:GF_home_world = {
+			create_archaeological_site = GF_collapse_relic_site_0
+		}
+	}
+}
+
+fleet_event = {
+
+	# 母星上的遗迹考古点
+	# 阶段1
+
+	id = GF_relic.1
+	title = GF_relic.1.name
+	desc = GF_relic.1.desc
+
+	picture = GFX_evt_GF_deep_well
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = GF_relic.1.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+
+	# 母星上的遗迹考古点
+	# 阶段2
+
+	id = GF_relic.2
+	title = GF_relic.2.name
+	desc = GF_relic.2.desc
+	
+	picture = GFX_evt_in_the_dark
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = GF_relic.2.a
+		large_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+
+	# 母星上的遗迹考古点
+	# 阶段3
+
+	id = GF_relic.3
+	title = GF_relic.3.name
+	desc = GF_relic.3.desc
+
+	picture = GFX_evt_GF_computer
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = GF_relic.3.a
+		large_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+
+	# 母星上的遗迹考古点
+	# 阶段4
+	# 完成后在母星四跳以内随机三个岩石行星上创建三个遗迹考古点
+
+	id = GF_relic.4
+	title = GF_relic.4.name
+	desc = GF_relic.4.desc
+
+	picture = GFX_evt_GF_core
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = GF_relic.4.a
+		great_artifact_reward = yes
+		owner = {
+			add_resource = {
+				physics_research = 10000
+				engineering_research = 10000
+			}
+
+			set_country_flag = flag_GF_foreign_relic_site_acknowledged
+
+			event_target:GF_home_world = {
+				solar_system = {
+					while = {
+						limit = {
+							NOT = {
+								any_system = {
+									any_system_planet = {
+										has_planet_flag = flag_p_GF_has_collapse_relic_site_1
+									}
+								}
+							}
+						}
+						random_system = {
+							limit = {
+								distance = {
+									source = prev
+									max_jumps = 4
+									min_jumps = 1
+								}
+							}
+							GF_create_collapse_relic_site = {
+								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_2
+								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
+					
+								P_FLAG = flag_p_GF_has_collapse_relic_site_1
+								SITE = GF_collapse_relic_site_1
+							}
+						}
+					}
+
+					while = {
+						limit = {
+							NOT = {
+								any_system = {
+									any_system_planet = {
+										has_planet_flag = flag_p_GF_has_collapse_relic_site_2
+									}
+								}
+							}
+						}
+						random_system = {
+							limit = {
+								distance = {
+									source = prev
+									max_jumps = 4
+									min_jumps = 1
+								}
+							}
+							GF_create_collapse_relic_site = {
+								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
+								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
+					
+								P_FLAG = flag_p_GF_has_collapse_relic_site_2
+								SITE = GF_collapse_relic_site_2
+							}
+						}
+					}
+
+					while = {
+						limit = {
+							NOT = {
+								any_system = {
+									any_system_planet = {
+										has_planet_flag = flag_p_GF_has_collapse_relic_site_3
+									}
+								}
+							}
+						}
+						random_system = {
+							limit = {
+								distance = {
+									source = prev
+									max_jumps = 4
+									min_jumps = 1
+								}
+							}
+							GF_create_collapse_relic_site = {
+								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
+								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_2
+					
+								P_FLAG = flag_p_GF_has_collapse_relic_site_3
+								SITE = GF_collapse_relic_site_3
+							}
+						}
+					}
+					
+					
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+
+	# 母星四跳内的遗迹考古点
+	# 阶段1
+
+	id = GF_relic.5
+	title = GF_relic.5.name
+	desc = GF_relic.5.desc
+
+	picture = GFX_evt_archaeology_camp
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.5.a
+		small_artifact_reward = yes
+	}
+}
+
+fleet_event = {
+
+	# 母星四跳内的遗迹考古点
+	# 阶段2
+
+	id = GF_relic.6
+	title = GF_relic.6.name
+	desc = GF_relic.6.desc
+
+	picture = GFX_evt_GF_tunnel
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.6.a
+		small_artifact_reward = yes
+		
+	}
+}
+
+fleet_event = {
+
+	# 母星四跳内的遗迹考古点
+	# 阶段3 - 1
+
+	id = GF_relic.701
+	title = GF_relic.7.name
+	desc = GF_relic.701.desc
+
+	picture = GFX_evt_GF_computer
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.7.a
+		large_artifact_reward = yes
+		owner = {
+			add_resource = {
+				physics_research = 10000
+			}
+
+			hidden_effect = {
+				set_country_flag = flag_GF_collapse_relic_1_surveyed
+				country_event = {
+					id = GF_relic.8
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+
+	# 母星四跳内的遗迹考古点
+	# 阶段3 - 2
+
+	id = GF_relic.702
+	title = GF_relic.7.name
+	desc = GF_relic.702.desc
+
+	picture = GFX_evt_GF_bio_tank
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.7.a
+		large_artifact_reward = yes
+		owner = {
+			add_resource = {
+				society_research = 10000
+			}
+
+			hidden_effect = {
+				set_country_flag = flag_GF_collapse_relic_2_surveyed
+				country_event = {
+					id = GF_relic.8
+				}
+			}
+		}
+	}
+}
+
+fleet_event = {
+
+	# 母星四跳内的遗迹考古点
+	# 阶段3 - 3
+
+	id = GF_relic.703
+	title = GF_relic.7.name
+	desc = GF_relic.703.desc
+
+	picture = GFX_evt_GF_repair_room
+	# show_sound = 
+	location = from
+
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.7.a
+		large_artifact_reward = yes
+		owner = {
+			add_resource = {
+				engineering_research = 10000
+			}
+
+			hidden_effect = {
+				set_country_flag = flag_GF_collapse_relic_3_surveyed
+				country_event = {
+					id = GF_relic.8
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# 研究完所有遗迹以后触发
+	# 给予帝国“ flag_GF_collapse_relic_surveyed ”
+
+	id = GF_relic.8
+	title = GF_relic.8.name
+	desc = GF_relic.8.desc
+
+	picture = GFX_evt_GF_door
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_authority =  GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_1_surveyed
+		has_country_flag = flag_GF_collapse_relic_2_surveyed
+		has_country_flag = flag_GF_collapse_relic_3_surveyed
+	}
+
+	immediate = {
+		remove_country_flag = flag_GF_collapse_relic_1_surveyed
+		remove_country_flag = flag_GF_collapse_relic_2_surveyed
+		remove_country_flag = flag_GF_collapse_relic_3_surveyed
+		set_country_flag = flag_GF_collapse_relic_surveyed
+	}
+
+	option = {
+		name = GF_relic.8.a
+		add_tech_progress = {
+			tech = tech_GF_collapse_relic_tech
+			progress = 0.1
+		}
+	}
+}
+
