@@ -231,4 +231,18 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes 
 	}
+
+	spriteType = {
+		name = "GFX_evt_GF_elid_in_tank"
+		textureFile = "gfx/event_pictures/GF_elid_in_tank.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_barracuda_core"
+		textureFile = "gfx/event_pictures/GF_barracuda_core.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes 
+	}
 }
