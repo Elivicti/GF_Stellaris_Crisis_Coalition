@@ -31,7 +31,7 @@ collapsebomb = {
 		}
 		modifier = { # 有坍塌辐射完全免疫的人口更难被杀死
 			factor = 0.10
-			pop_has_trait = trait_GF_sequela_immune
+			pop_has_trait = GF_trait_sequela_immune
 		}
 	}
 	min_pops_to_kill_pop = 0

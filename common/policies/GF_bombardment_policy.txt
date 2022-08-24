@@ -2,7 +2,7 @@ collapse_bombardment = {
 
 	potential = {
 		has_authority = GF_auth_commonwealth
-		has_technology = tech_GF_collapse_bomb
+		has_technology = GF_tech_collapse_bomb
 	}
 
 	option = {

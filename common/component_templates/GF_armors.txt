@@ -7,7 +7,7 @@ utility_component_template = {
 	icon_frame = 1
 	component_set = "GF_COLLAPSE_ARMOR"
 	power = 0
-	prerequisites = { "tech_GF_ship_collapse_armor" }
+	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 240
 	}
@@ -32,7 +32,7 @@ utility_component_template = {
 	icon_frame = 1
 	component_set = "GF_COLLAPSE_ARMOR"
 	power = 0
-	prerequisites = { "tech_GF_ship_collapse_armor" }
+	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 500
 	}
@@ -57,7 +57,7 @@ utility_component_template = {
 	icon_frame = 1
 	component_set = "GF_COLLAPSE_ARMOR"
 	power = 0
-	prerequisites = { "tech_GF_ship_collapse_armor" }
+	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 1250
 	}

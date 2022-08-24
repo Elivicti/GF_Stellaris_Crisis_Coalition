@@ -23,7 +23,7 @@ planet_event = {
 			
 			remove_all_buildings = yes
 			change_pc = pc_GF_collapsed
-			save_event_target_as = collpsed_planet
+			save_event_target_as = collapsed_planet
 			from.owner = {
 				play_sound = event_air_raid_siren
 				country_event = {
@@ -52,7 +52,7 @@ country_event = { # event for bombarder country
 
 	picture = GFX_evt_GF_black_zone
 
-	location = event_target:collpsed_planet
+	location = event_target:collapsed_planet
 
 	is_triggered_only = yes
 	trigger = {
@@ -75,7 +75,7 @@ country_event = { # event for victim country
 
 	picture = GFX_evt_GF_black_zone
 	show_sound = event_air_raid_siren
-	location = event_target:collpsed_planet
+	location = event_target:collapsed_planet
 
 	is_triggered_only = yes
 	# trigger = { any_owned_planet = { has_orbital_bombardment_stance = collapsebomb } }

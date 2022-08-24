@@ -20,7 +20,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
 
@@ -44,7 +44,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	
 	size_restriction = { destroyer crisis_destroyer }
@@ -68,7 +68,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { cruiser crisis_cruiser }
 
@@ -92,7 +92,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { battleship }
 }
@@ -115,7 +115,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { titan }
 }
@@ -131,7 +131,7 @@ utility_component_template = {
 		category = ship_components
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { colossus star_eater }
 }
@@ -154,7 +154,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	class_restriction = { shipclass_military_station }
 	size_restriction = {
@@ -178,7 +178,7 @@ utility_component_template = {
 		}
 	}
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	size_restriction = { ion_cannon }
 }
@@ -191,7 +191,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 7500
 
-	prerequisites = { "tech_GF_collapse_power_core" }
+	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
@@ -232,6 +232,6 @@ utility_component_template = {
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
-	prerequisites = { "tech_GF_collapse_jump_drive" }
+	prerequisites = { "GF_tech_collapse_jump_drive" }
 	component_set = "ftl_components"
 }

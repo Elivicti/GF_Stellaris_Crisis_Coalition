@@ -14,7 +14,7 @@ utility_component_template = {
 	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
-	prerequisites = { "tech_GF_combat_ogas_computers" }
+	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	modifier = {
 		ship_evasion_mult = 0.40
@@ -45,7 +45,7 @@ utility_component_template = {
 	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_artillery"
-	prerequisites = { "tech_GF_combat_ogas_computers" }
+	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.25
@@ -74,7 +74,7 @@ utility_component_template = {
 	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_carrier"
-	prerequisites = { "tech_GF_combat_ogas_computers" }
+	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	modifier = {
 		weapon_type_strike_craft_weapon_damage_mult = 0.15
@@ -107,7 +107,7 @@ utility_component_template = {
 	size_restriction = { juggernaut }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_free"
-	prerequisites = { "tech_GF_combat_ogas_computers" }
+	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	ship_modifier = {
 		ship_engagement_range_mult = 1.2
@@ -135,7 +135,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military_station }
 	component_set = "combat_computers"
 	ship_behavior = "platform"
-	prerequisites = { "tech_GF_combat_ogas_computers" }
+	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	ship_modifier = {
 		ship_fire_rate_mult    = 0.20

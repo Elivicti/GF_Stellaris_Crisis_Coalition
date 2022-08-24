@@ -1,15 +1,15 @@
-namespace = ending_flash
+namespace = GF_ending_flash
 
 planet_event = {
-	id = ending_flash.100
+	id = GF_ending_flash.100
 	is_triggered_only = yes
 	hide_window = yes
 
 	immediate = {
-		save_event_target_as = collpsed_planet
+		save_event_target_as = collapsed_planet
 		from.owner = { 
 			country_event = { 
-				id = ending_flash.101
+				id = GF_ending_flash.101
 			}
 		}
 
@@ -271,13 +271,13 @@ planet_event = {
 }
 
 country_event = {
-	id = ending_flash.101
-	title = ending_flash.101.name
-	desc = ending_flash.101.desc
+	id = GF_ending_flash.101
+	title = GF_ending_flash.101.name
+	desc = GF_ending_flash.101.desc
 
 	picture = GFX_evt_GF_black_zone
 
-	location = event_target:collpsed_planet
+	location = event_target:collapsed_planet
 
 	trigger = {
 		NOT = {
@@ -292,7 +292,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = ending_flash.101.a
+		name = GF_ending_flash.101.a
 	}
 }
 

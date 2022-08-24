@@ -75,7 +75,7 @@ ap_GF_gavirul_project = {
 	# }
 	possible = {
 		has_technology = tech_gene_tailoring
-		has_technology = tech_GF_collapse_relic_tech
+		has_technology = GF_tech_collapse_relic_tech
 		
 		custom_tooltip = {
 			fail_text = "has_flag_GF_collapse_relic_surveyed"
