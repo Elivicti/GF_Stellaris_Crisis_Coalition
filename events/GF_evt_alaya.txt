@@ -9,7 +9,7 @@ country_event = {
 	trigger = {
 		has_authority = GF_auth_commonwealth
 		has_country_flag = flag_GF_collapse_relic_surveyed
-		last_increased_tech = tech_GF_collapse_relic_tech
+		last_increased_tech = GF_tech_collapse_relic_tech
 	}
 
 	immediate = {
@@ -32,7 +32,7 @@ country_event = {
 
 	trigger = {
 		has_authority = GF_auth_commonwealth
-		has_technology = tech_GF_collapse_relic_tech
+		has_technology = GF_tech_collapse_relic_tech
 	}
 
 	option = {
@@ -100,7 +100,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 
 			# 检查已经收集的遗迹设施数量
 			check_variable = {
@@ -139,7 +139,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			
 			check_variable = {
 				which = v_GF_relic_device_collected
@@ -181,7 +181,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			
 			check_variable = {
 				which = v_GF_relic_device_collected
@@ -231,7 +231,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_device"
 		}
 	}
@@ -268,7 +268,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -304,7 +304,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -328,7 +328,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -375,7 +375,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -409,7 +409,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -443,7 +443,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -525,7 +525,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -559,7 +559,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -610,7 +610,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -647,7 +647,7 @@ country_event = {
 	trigger = {
 		owner = {
 			has_authority = GF_auth_commonwealth
-			has_technology = tech_GF_collapse_relic_tech
+			has_technology = GF_tech_collapse_relic_tech
 			has_modifier = "GF_productive_relic_abnormal"
 		}
 	}
@@ -668,7 +668,7 @@ country_event = {
 			# 锡安好感
 			set_variable = {
 				which = v_GF_zion_favor
-				value = 40
+				value = 10
 			}
 		}
 	}

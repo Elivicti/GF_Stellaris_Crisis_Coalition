@@ -110,7 +110,7 @@ country_event = {
 	option = {
 		name = GF_start.1.a
 		hidden_effect = {
-			owner = { country_event = { id = GF_ogas.100 days = 5 } }
+			country_event = { id = GF_ogas.100 days = 5 }
 			# 设置人形权利
 			every_owned_species = {
 				limit = { has_trait = GF_trait_doll }

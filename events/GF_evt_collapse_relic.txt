@@ -455,7 +455,7 @@ country_event = {
 	option = {
 		name = GF_relic.8.a
 		add_tech_progress = {
-			tech = tech_GF_collapse_relic_tech
+			tech = GF_tech_collapse_relic_tech
 			progress = 0.1
 		}
 	}
