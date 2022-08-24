@@ -110,10 +110,12 @@ GF_trait_sequela = {
 	initial = no
 	randomized = no
 	
-	species_potential_add = { always = no }
-	species_possible_add = { always = no }
-	species_possible_remove = { always = no }
+	species_potential_add = { GF_is_gavirul_species = yes }
+	species_potential_remove = { GF_is_gavirul_species = yes }
+	species_possible_add = { GF_is_gavirul_species = yes }
+	species_possible_remove = { GF_is_gavirul_species = yes }
 	species_possible_merge_add = { always = no }
+	species_possible_merge_remove = { always = no }
 	
 	advanced_trait = no
 	modifier = {

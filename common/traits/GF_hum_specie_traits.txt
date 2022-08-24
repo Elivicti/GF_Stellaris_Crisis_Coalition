@@ -21,7 +21,7 @@ GF_trait_doll_master = {
 		weight = 0
 	}
 	opposites = { "GF_trait_self_dependence" }
-	icon="gfx/interface/icons/traits/humankind/master.dds"
+	icon = "gfx/interface/icons/traits/humankind/master.dds"
 }
 
 GF_trait_self_dependence = {
@@ -49,8 +49,7 @@ GF_trait_self_dependence = {
 }
 
 ####
-trait_GF_sequela_immune = {
-	
+GF_trait_sequela_immune = {
 	icon = "gfx/interface/icons/traits/humankind/sequela_immune.dds"
 	cost = 0
 	initial = no
@@ -70,7 +69,10 @@ trait_GF_sequela_immune = {
 		always = no
 	}
 	species_possible_merge_add = {
-		GF_is_gavirul_species = yes
+		always = no
+	}
+	species_possible_merge_remove = {
+		always = no
 	}
 
 	opposites = { "GF_trait_sequela" }
