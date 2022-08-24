@@ -17,24 +17,24 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000
-			y=200.000
-			z=150.000
-			alpha=30.000,shockwave_alpha
+			x=100
+			y=200
+			z=150
+			alpha=15,shockwave_alpha
 		}
 		position={
-			y=0.200
+			y=0.2
 		}
-		duration=0.100
-		velocity_pitch={ 0.000 180.000 }
-		velocity_yaw={ 0.000 180.000 }
-		velocity=0.000
-		life=0.900
-		emission=50.000
-		size=3.000,grow_shockwave
-		particle_yaw=0.000
-		particle_pitch=90.000
-		rotation=0.000
+		duration=0.1
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity=0
+		life=0.9
+		emission=50
+		size=5,grow_shockwave
+		particle_yaw=0
+		particle_pitch=90
+		rotation=0
 	}
 	subsystem={
 		name="glow_background"
@@ -53,25 +53,25 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000
-			y=200.000
-			z=120.000
-			alpha=25.000,fade_alpha
+			x=255
+			y=200
+			z=120
+			alpha=25,fade_alpha
 		}
 		position={
-			y=0.000
+			y=0
 		}
-		duration=0.100
-		velocity_pitch=90.000
-		velocity_yaw=0.000
-		velocity=1.000
-		life=1.000
-		emission=50.000
-		size=10.000,grow
-		particle_yaw=0.000
-		particle_pitch=90.000
-		rotation={ 0.000 180.000 }
-		rotation_speed=50.000
+		duration=0.1
+		velocity_pitch=90
+		velocity_yaw=0
+		velocity=1
+		life=1
+		emission=50
+		size=10,grow
+		particle_yaw=0
+		particle_pitch=90
+		rotation={ 0 180 }
+		rotation_speed=50
 	}
 	subsystem={
 		name="glow_base_ring_blast"
@@ -90,24 +90,24 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000
-			y=150.000
-			z=100.000
-			alpha=255.000,fade_alpha
+			x=180
+			y=200
+			z=150
+			alpha=255,fade_alpha
 		}
 		position={
-			y=0.200
+			y=0.2
 		}
-		duration=0.100
-		velocity_pitch={ 0.000 180.000 }
-		velocity_yaw={ 0.000 180.000 }
-		velocity=0.000
-		life=1.000
-		emission=50.000
-		size=2.000,grow
-		particle_yaw=0.000
-		particle_pitch=90.000
-		rotation=0.000
+		duration=0.1
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity=0
+		life=1
+		emission=50
+		size=3,grow
+		particle_yaw=0
+		particle_pitch=90
+		rotation=0
 	}
 	subsystem={
 		name="glow_base_flare"
@@ -126,24 +126,24 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000
-			y=180.000
-			z=100.000
-			alpha=255.000,fade_alpha
+			x=180
+			y=200
+			z=150
+			alpha=255,fade_alpha
 		}
 		position={
-			y=0.200
+			y=0.2
 		}
-		duration=0.100
-		velocity_pitch={ 0.000 180.000 }
-		velocity_yaw={ 0.000 180.000 }
-		velocity=0.000
-		life=1.150
-		emission=50.000
-		size=0.800,grow
-		particle_yaw=0.000
-		particle_pitch=90.000
-		rotation=0.000
+		duration=0.1
+		velocity_pitch={ 0 180 }
+		velocity_yaw={ 0 180 }
+		velocity=0
+		life=1.15
+		emission=50
+		size=0.8,grow
+		particle_yaw=0
+		particle_pitch=90
+		rotation=0
 	}
 	subsystem={
 		name="mushroom_cloud"
@@ -162,72 +162,72 @@ particle={
 			shader="ParticleAdditive"
 		}
 		color={
-			x=255.000
-			y=180.000
-			z=100.000
-			alpha=255.000,shockwave_alpha
+			x=255
+			y=255
+			z=180
+			alpha=255,shockwave_alpha
 		}
 		position={
-			y=0.200
+			y=0.2
 		}
-		duration=0.200
-		velocity_pitch=90.000
-		velocity_yaw=0.000
-		life=1.000
-		emission=50.000
-		size=0.400,grow
-		particle_yaw=0.000
-		particle_pitch=90.000
-		rotation={ 0.000 180.000 }
+		duration=0.2
+		velocity_pitch=90
+		velocity_yaw=0
+		life=1
+		emission=50
+		size=0.4,grow
+		particle_yaw=0
+		particle_pitch=90
+		rotation={ 0 180 }
 	}
 	animation={
 		name="fade_alpha"
-		start=0.000
-		duration=1.000
+		start=0
+		duration=1
 		repeat=no
-		minValue=0.000
-		maxValue=1.000
+		minValue=0
+		maxValue=1
 		curve={
-			0.000 1.000 0.644 0.859 1.000 0.000 
+			0 1 0.644 0.859 1 0 
 		}
 		op="MUL"
 		time="life"
 	}
 	animation={
 		name="grow"
-		start=0.000
-		duration=1.000
+		start=0
+		duration=1
 		repeat=no
-		minValue=0.000
-		maxValue=1.000
+		minValue=0
+		maxValue=1
 		curve={
-			0.000 0.477 1.000 1.000 
+			0 0.477 1 1 
 		}
 		op="MUL"
 		time="life_abs"
 	}
 	animation={
 		name="shockwave_alpha"
-		start=0.000
-		duration=1.000
+		start=0
+		duration=1
 		repeat=no
-		minValue=0.000
-		maxValue=1.000
+		minValue=0
+		maxValue=1
 		curve={
-			0.000 1.000 1.000 0.000 
+			0 1 1 0 
 		}
 		op="MUL"
 		time="life"
 	}
 	animation={
 		name="grow_shockwave"
-		start=0.000
-		duration=1.000
+		start=0
+		duration=1
 		repeat=no
-		minValue=0.000
-		maxValue=1.000
+		minValue=0
+		maxValue=1
 		curve={
-			0.000 0.398 1.000 1.000 
+			0 0.398 1 1 
 		}
 		op="MUL"
 		time="life"
@@ -236,14 +236,14 @@ particle={
 		type="planar"
 		name="force0"
 		position={
-			0.000 0.000 0.000 
+			0 0 0 
 		}
 		direction={
-			0.000 1.000 0.000 
+			0 1 0 
 		}
 		local_force=yes
-		yaw=0.000
+		yaw=0
 		division=16
-		amount=5.000
+		amount=5
 	}
 }
