@@ -141,12 +141,20 @@ GF_tech_mind_upgrade_1 = {
 		NOT = { has_ethic = "ethic_gestalt_consciousness" }
 	    has_authority = GF_auth_commonwealth
 	}
-	
+	gateway = GF_tech_gateway_doll_modding
+
+	prereqfor_desc = {
+		custom = {
+			title = "feature_GF_doll_mind_upgrade"
+			desc = "feature_GF_doll_mind_upgrade_desc"
+		}
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
 			has_policy_flag = robots_outlawed
-		}	
+		}
 		modifier = {
 			factor = 0
 			has_policy_flag = ai_outlawed
@@ -181,7 +189,15 @@ GF_tech_mind_upgrade_2 = {
 		NOT = { has_ethic = "ethic_gestalt_consciousness" }
 		has_authority = GF_auth_commonwealth
 	}
+	gateway = GF_tech_gateway_doll_modding
 	
+	prereqfor_desc = {
+		custom = {
+			title = "feature_GF_doll_mind_upgrade"
+			desc = "feature_GF_doll_mind_upgrade_desc"
+		}
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -239,6 +255,8 @@ GF_tech_doll_modding_point_1 = {
 	feature_flags = {
 		modify_robots
 	}
+
+	gateway = GF_tech_gateway_doll_modding
 	
 	modifier = {
 		GF_ANDROID_species_trait_points_add = 2
@@ -387,7 +405,7 @@ GF_tech_maintain_process = {
 }
 
 ########
-tech_GF_ship_collapse_armor = {
+GF_tech_ship_collapse_armor = {
 	# 坍塌零素材料
 	area = engineering
 	category = { materials }
@@ -403,7 +421,7 @@ tech_GF_ship_collapse_armor = {
 
 	prerequisites = {
 		"tech_ship_armor_5"
-		"tech_GF_collapsetech_weaponize"
+		"GF_tech_collapsetech_weaponize"
 	}
 
 	weight_modifier = {

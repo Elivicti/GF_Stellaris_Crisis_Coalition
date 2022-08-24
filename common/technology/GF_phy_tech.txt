@@ -24,6 +24,8 @@ GF_tech_observe_reflection = {
 		}
 	}
 
+	gateway = GF_tech_gateway_collapse_tech
+
 	ai_weight = {
 		modifier = {
 			factor = 1.25
@@ -58,6 +60,7 @@ GF_tech_mass_rebuild_function = {
 			}
 		}
 	}
+	gateway = GF_tech_gateway_collapse_tech
 
 	ai_weight = {
 		modifier = {
@@ -94,6 +97,7 @@ GF_tech_collapse = {
 			}
 		}
 	}
+	gateway = GF_tech_gateway_collapse_tech
 
 	ai_weight = {
 		modifier = {
@@ -129,6 +133,7 @@ GF_tech_reverse_collapse = {
 			}
 		}
 	}
+	gateway = GF_tech_gateway_collapse_tech
 
 	ai_weight = {
 		modifier = {
@@ -142,59 +147,8 @@ GF_tech_reverse_collapse = {
 }
 
 ########
-tech_GF_collapsetech_weaponize = {
-	# 坍塌技术武器化
-	area = physics
-	category = { particles }
-	tier = 3
-	cost   = @tier4cost2
-	weight = @tier3weight3
 
-	is_rare = yes
-
-	potential = {
-		has_authority = GF_auth_commonwealth
-	}
-
-	prerequisites = {
-		"GF_tech_collapse"
-		"GF_tech_reverse_collapse"
-	}
-
-	weight_modifier = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
-		}
-	}
-
-	ai_weight = {
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
-		}
-	}
-
-	modifier = {
-		army_attack_damage_mult = 0.10
-		army_collateral_damage_mult = 0.25
-	}
-}
-
-tech_GF_collapse_power_core = {
+GF_tech_collapse_power_core = {
 	# 坍塌反应能源
 	area = physics
 	category = { particles }
@@ -210,7 +164,7 @@ tech_GF_collapse_power_core = {
 
 	prerequisites = {
 		"tech_zero_point_power"
-		"tech_GF_collapsetech_weaponize"
+		"GF_tech_collapsetech_weaponize"
 	}
 
 	weight_modifier = {
@@ -243,7 +197,7 @@ tech_GF_collapse_power_core = {
 
 }
 
-tech_GF_collapse_jump_drive = {
+GF_tech_collapse_jump_drive = {
 	# 坍塌跃迁引擎
 	area = physics
 	category = { particles }
@@ -259,7 +213,7 @@ tech_GF_collapse_jump_drive = {
 
 	prerequisites = {
 		"tech_jump_drive_1"
-		"tech_GF_collapsetech_weaponize"
+		"GF_tech_collapsetech_weaponize"
 	}
 
 	weight_modifier = {
@@ -291,7 +245,7 @@ tech_GF_collapse_jump_drive = {
 
 }
 
-tech_GF_collapse_relic_tech = {
+GF_tech_collapse_relic_tech = {
 	# 遗迹技术
 	# 需要挖完所有的遗迹坟
 	area = physics
@@ -309,6 +263,8 @@ tech_GF_collapse_relic_tech = {
 		}
 	}
 
+	gateway = GF_tech_gateway_collapse_relic_tech
+
 	prerequisites = {
 		"GF_tech_collapse"
 		"GF_tech_reverse_collapse"
@@ -323,7 +279,7 @@ tech_GF_collapse_relic_tech = {
 	}
 }
 
-tech_GF_collapse_energy_lance = {
+GF_tech_collapse_energy_lance = {
 	area = physics
 	category = { particles }
 	tier = 5
@@ -340,8 +296,8 @@ tech_GF_collapse_energy_lance = {
 	}
 
 	prerequisites = {
-		"tech_GF_collapsetech_weaponize"
-		"tech_GF_collapse_relic_tech"
+		"GF_tech_collapsetech_weaponize"
+		"GF_tech_collapse_relic_tech"
 		"tech_energy_lance_2"
 	}
 
@@ -366,7 +322,7 @@ tech_GF_collapse_energy_lance = {
 	}
 }
 
-tech_GF_collapse_ending_flash = {
+GF_tech_collapse_ending_flash = {
 	area = physics
 	category = { particles }
 	tier = 5
@@ -384,9 +340,9 @@ tech_GF_collapse_ending_flash = {
 	}
 
 	prerequisites = {
-		"tech_GF_collapsetech_weaponize"
-		"tech_GF_collapse_energy_lance"
-		"tech_GF_collapse_relic_tech"
+		"GF_tech_collapsetech_weaponize"
+		"GF_tech_collapse_energy_lance"
+		"GF_tech_collapse_relic_tech"
 		"tech_colossus"
 	}
 
@@ -411,7 +367,7 @@ tech_GF_collapse_ending_flash = {
 	}
 }
 
-tech_GF_combat_ogas_computers = {
+GF_tech_combat_ogas_computers = {
 	area = physics
 	tier = 5
 	cost = 54000
@@ -419,7 +375,7 @@ tech_GF_combat_ogas_computers = {
 	ai_update_type = military
 	is_rare = yes
 	
-	prerequisites = { "tech_combat_computers_2" "tech_GF_collapse_relic_tech" }
+	prerequisites = { "tech_combat_computers_2" "GF_tech_collapse_relic_tech" }
 	weight = 0
 	weight_modifier = {
 		factor = 0
@@ -435,7 +391,7 @@ tech_GF_combat_ogas_computers = {
 	}
 }
 
-tech_GF_miniaturized_collapse_lance = {
+GF_tech_miniaturized_collapse_lance = {
 	area = physics
 	tier = 5
 	cost = 50000
@@ -443,7 +399,7 @@ tech_GF_miniaturized_collapse_lance = {
 	ai_update_type = military
 	is_rare = yes
 	
-	prerequisites = { "tech_GF_collapse_energy_lance" "tech_GF_collapse_relic_tech" }
+	prerequisites = { "GF_tech_collapse_energy_lance" "GF_tech_collapse_relic_tech" }
 
 	weight = 0
 	weight_modifier = {
@@ -457,7 +413,7 @@ tech_GF_miniaturized_collapse_lance = {
 }
 
 
-tech_GF_collapse_slingshot_protocal = {
+GF_tech_collapse_slingshot_protocal = {
 	area = physics
 	tier = 5
 	cost = 50000
@@ -466,8 +422,8 @@ tech_GF_collapse_slingshot_protocal = {
 	is_rare = yes
 	
 	prerequisites = {
-		"tech_GF_collapse_jump_drive"
-		"tech_GF_collapse_relic_tech"
+		"GF_tech_collapse_jump_drive"
+		"GF_tech_collapse_relic_tech"
 		"tech_quantum_catapult"
 	}
 
@@ -482,6 +438,7 @@ tech_GF_collapse_slingshot_protocal = {
 	}
 
 	modifier = {
+		country_mia_time_mult = -0.20
 		catapult_spread_mult = -0.75
 		catapult_range_mult  = 1.0
 		ship_jumpdrive_cooldown_mult = -0.25

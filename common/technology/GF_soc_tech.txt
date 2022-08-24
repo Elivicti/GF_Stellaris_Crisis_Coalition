@@ -146,8 +146,11 @@ GF_tech_ecological_recovery = {
 	area = society
 	tier = 2
 	category = { new_worlds }
-	prerequisites = { "GF_tech_collapse" }
-	weight = @tier2weight2
+	prerequisites = {
+		"GF_tech_collapse"
+		"GF_tech_recover_plan"
+	}
+	weight = @tier3weight1
 	potential = {
 		has_authority = GF_auth_commonwealth
 	}
@@ -172,21 +175,27 @@ GF_tech_ecological_recovery = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 10
+			years_passed >= 20
+		}
+		modifier = {
+			factor = 5
+			any_owned_planet =  {
+				has_deposit = d_GF_black_zone
+			}
+		}
+		modifier = {
+			factor = 1.5
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
 	}
 
 	ai_weight = {
 		modifier = {
-			factor = 3
+			factor = 4
 		}
 		modifier = {
 			factor = 0
@@ -197,41 +206,35 @@ GF_tech_ecological_recovery = {
 			}
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = society
 				has_trait = "leader_trait_expertise_new_worlds"
 			}
 		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 2
-		}
 	}
 }
 
 
-######
-tech_GF_elid_army = {
+GF_tech_collapsetech_weaponize = {
+	# 坍塌技术武器化
 	area = society
-	category = {
-		biology
-	}
-	tier = 5
-	cost = @tier5cost1
-	weight = @tier5weight1
+	category = { military_theory }
+	tier = 3
+	cost   = @tier4cost2
+	weight = @tier3weight3
 
 	is_rare = yes
-	
+
+	gateway = GF_tech_gateway_collapse_weapon
+
 	potential = {
 		has_authority = GF_auth_commonwealth
-		has_valid_civic = civic_reanimated_armies
 	}
 
 	prerequisites = {
-		"tech_GF_collapse_relic_tech"
-		"tech_GF_collapsetech_weaponize"
-		"tech_cloning"
+		"GF_tech_collapse"
+		"GF_tech_reverse_collapse"
 	}
 
 	weight_modifier = {
@@ -243,6 +246,63 @@ tech_GF_elid_army = {
 			}
 		}
 		modifier = {
+			factor = 2
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+
+	modifier = {
+		army_attack_damage_mult = 0.10
+		army_collateral_damage_mult = 0.25
+	}
+}
+
+######
+GF_tech_elid_army = {
+	area = society
+	category = { biology }
+	tier = 5
+	cost = @tier5cost1
+	weight = @tier5weight1
+
+	is_rare = yes
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	prerequisites = {
+		"GF_tech_collapse_relic_tech"
+		"GF_tech_collapsetech_weaponize"
+		"tech_cloning"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = { has_valid_civic = civic_reanimated_armies }
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
 			factor = 1.25
 			research_leader = {
 				area = society
@@ -252,6 +312,10 @@ tech_GF_elid_army = {
 	}
 
 	ai_weight = {
+		modifier = {
+			factor = 0
+			NOT = { has_valid_civic = civic_reanimated_armies }
+		}
 		modifier = {
 			factor = 1.25
 			research_leader = {
@@ -269,7 +333,7 @@ tech_GF_elid_army = {
 	}
 }
 
-tech_GF_collapse_bomb = {
+GF_tech_collapse_bomb = {
 	area = society
 	category = { military_theory }
 	tier = 5
@@ -287,14 +351,14 @@ tech_GF_collapse_bomb = {
 	}
 
 	prerequisites = {
-		"tech_GF_collapsetech_weaponize"
-		"tech_GF_collapse_relic_tech"
+		"GF_tech_collapsetech_weaponize"
+		"GF_tech_collapse_relic_tech"
 	}
 
 	prereqfor_desc = {
 		custom = {
-			title = "tech_GF_collapse_bomb_title"
-			desc = "tech_GF_collapse_bomb_desc"
+			title = "GF_tech_collapse_bomb_title"
+			desc = "GF_tech_collapse_bomb_desc"
 		}
 	}
 
@@ -306,5 +370,24 @@ tech_GF_collapse_bomb = {
 				has_trait = "leader_trait_expertise_military_theory"
 			}
 		}
+	}
+}
+#####坍塌辐射污染区恢复及振兴联合开拓协议
+GF_tech_recover_plan = {
+	area = society
+	category = { statecraft }
+	tier = 1
+	cost = 1000
+	prerequisites = { }
+	weight = 0
+
+	
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	
+	
+	ai_weight = {
+		factor  = 0
 	}
 }
