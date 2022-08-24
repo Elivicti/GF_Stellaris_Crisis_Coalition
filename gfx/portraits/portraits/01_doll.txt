@@ -747,7 +747,6 @@ portrait_groups = {
 					GF_doll_367
 					GF_doll_368
 					GF_doll_369
-					GF_doll_370
 				}
 			}
 		}
@@ -1123,7 +1122,6 @@ portrait_groups = {
 					GF_doll_367
 					GF_doll_368
 					GF_doll_369
-					GF_doll_370
 				}
 			}
 		}
@@ -1499,7 +1497,6 @@ portrait_groups = {
 					GF_doll_367
 					GF_doll_368
 					GF_doll_369
-					GF_doll_370
 				}
 			}
 		}
@@ -1875,7 +1872,6 @@ portrait_groups = {
 					GF_doll_367
 					GF_doll_368
 					GF_doll_369
-					GF_doll_370
 				}
 			}
 		}
@@ -2252,7 +2248,6 @@ portrait_groups = {
 					GF_doll_367
 					GF_doll_368
 					GF_doll_369
-					GF_doll_370
 				}
 			}
 		}
