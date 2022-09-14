@@ -142,13 +142,12 @@ GF_default_zion_comm_trigger = {
 
 # scope = species
 GF_is_gavirul_species = {
-	hidden_trigger = {
-		this = { is_species_class = GF_new_type }
-	}
+	hidden_trigger = { is_same_species = from }
 	from = {
+		hidden_trigger = { has_authority = GF_auth_commonwealth }
 		custom_tooltip = {
-			has_country_flag = flag_GF_gavirul_project_finished
-			fail_text = fail_text_GF_gavirul_project_finished
+			has_country_flag = flag_GF_gavirul_project_completed
+			fail_text = GF_require_gavirul_project_finished
 		}
 	}
 }
@@ -178,36 +177,230 @@ GF_planet_has_contaminated_zone = {
 
 # scope = country
 
-@high_zion_favor_threshold	 = 100
-@medium_zion_favor_threshold = 50				# currently no use...
-@low_zion_favor_threshold	 = 15
+@high_zion_favor_threshold		= 50
+@decent_zion_favor_threshold 	= 30
+@low_zion_favor_threshold		= 0
+
+GF_has_zion_favor_very_high = {
+	AND = {
+		is_variable_set = v_GF_zion_favor
+		check_variable_arithmetic = {
+			which = v_GF_zion_favor
+			subtract = @decent_zion_favor_threshold
+			value >= @high_zion_favor_threshold			# value >= @high + @decent
+		}
+	}
+	
+}
 
 GF_has_zion_favor_high = {
-	is_variable_set = v_GF_zion_favor
-	check_variable = {
-		which = v_GF_zion_favor
-		value >= @high_zion_favor_threshold
+	AND = {
+		is_variable_set = v_GF_zion_favor
+		check_variable = {
+			which = v_GF_zion_favor
+			value >= @high_zion_favor_threshold
+		}
+	}
+	
+}
+
+GF_has_zion_favor_decent = {
+	AND = {
+		is_variable_set = v_GF_zion_favor
+		check_variable = {
+			which = v_GF_zion_favor
+			value >= @decent_zion_favor_threshold
+		}
 	}
 }
 
-GF_has_zion_favor_medium = {
-	is_variable_set = v_GF_zion_favor
+GF_has_zion_favor_mid = {
 	AND = {
+		is_variable_set = v_GF_zion_favor
 		check_variable = {
 			which = v_GF_zion_favor
-			value < @high_zion_favor_threshold
-		}
-		check_variable = {
-			which = v_GF_zion_favor
-			value > @low_zion_favor_threshold
+			value >= @low_zion_favor_threshold
 		}
 	}
 }
 
 GF_has_zion_favor_low = {
-	is_variable_set = v_GF_zion_favor
-	check_variable = {
-		which = v_GF_zion_favor
-		value <= @low_zion_favor_threshold
+	AND = {
+		is_variable_set = v_GF_zion_favor
+		check_variable = {
+			which = v_GF_zion_favor
+			value < @low_zion_favor_threshold
+		}
+	}
+}
+
+GF_require_zion_favor_high = {
+	custom_tooltip = {
+		text = GF_require_zion_favor_high
+		GF_has_zion_favor_high = yes
+	}
+}
+GF_require_zion_favor_decent = {
+	custom_tooltip = {
+		text = GF_require_zion_favor_decent
+		GF_has_zion_favor_decent = yes
+	}
+}
+GF_require_zion_favor_mid = {
+	custom_tooltip = {
+		text = GF_require_zion_favor_mid
+		GF_has_zion_favor_mid = yes
+	}
+}
+# GF_require_zion_favor_low = {
+# 	custom_tooltip = {
+# 		text = GF_require_zion_favor_low
+# 		GF_has_zion_favor_low = yes
+# 	}
+# }
+
+# scope = country, energy >= 5K or 1 monthly income
+GF_require_energy_stockpile_1 = {
+	if = {
+		limit = {
+			check_variable = {
+				which = v_GF_monthly_energy_income
+				value >= @GF_zion_project_cost_max
+			}
+		}
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_cost_max
+		}
+	}
+	else = {
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_energy_cost_1
+		}
+		custom_tooltip = {
+			text = GF_require_energy_stockpile_1_monthly_income
+			check_variable = {
+				which = v_GF_monthly_energy_income
+				value < v_GF_energy_stockpile
+			}
+		}
+	}
+	
+}
+
+# scope = country, energy >= 10K or 2 monthly income
+GF_require_energy_stockpile_2 = {
+	if = {
+		limit = {
+			check_variable_arithmetic = {
+				which = v_GF_monthly_energy_income
+				multiply = 2
+				value >= @GF_zion_project_cost_max
+			}
+		}
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_cost_max
+		}
+	}
+	else = {
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_energy_cost_2
+		}
+		custom_tooltip = {
+			text = GF_require_energy_stockpile_2_monthly_income
+			check_variable_arithmetic = {
+				which = v_GF_monthly_energy_income
+				multiply = 2
+				value < v_GF_energy_stockpile
+			}
+		}
+	}
+}
+
+# scope = country, energy >= 15K or 3 monthly income
+GF_require_energy_stockpile_3 = {
+	if = {
+		limit = {
+			check_variable_arithmetic = {
+				which = v_GF_monthly_energy_income
+				multiply = 3
+				value >= @GF_zion_project_cost_max
+			}
+		}
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_cost_max
+		}
+	}
+	else = {
+		has_resource = {
+			type = energy
+			amount >= @GF_zion_project_energy_cost_3
+		}
+		custom_tooltip = {
+			text = GF_require_energy_stockpile_3_monthly_income
+			check_variable_arithmetic = {
+				which = v_GF_monthly_energy_income
+				multiply = 3
+				value < v_GF_energy_stockpile
+			}
+		}
+	}
+}
+
+# scope = pop
+GF_is_non_doll_robot_pop = {
+	AND = {
+		NOT = { has_trait = GF_trait_doll }
+		is_robot_pop = yes
+	}
+}
+
+# scope = country
+GF_has_robotic_leaders = {
+	any_owned_leader = {
+		species = { is_robotic = yes }
+	}
+}
+
+# scope = leader
+GF_is_enhanced_leader = {
+	OR = {
+		has_trait = GF_trait_leader_enhanced_governor
+		has_trait = GF_trait_leader_enhanced_scientist
+		has_trait = GF_trait_leader_enhanced_admiral
+		has_trait = GF_trait_leader_enhanced_general
+	}
+}
+
+# scope = leader
+GF_leader_has_vanilla_negative_traits = {
+	OR = {
+		has_trait = leader_trait_stubborn				# 顽固
+		has_trait = leader_trait_rigid_programming		# 死板编程
+		has_trait = leader_trait_erratic_morality_core	# 不稳定道德核心
+		has_trait = leader_trait_unstable_code_base		# 不稳定代码库
+		has_trait = leader_trait_substance_abuser		# 药物依赖
+		has_trait = leader_trait_arrested_development	# 没有前途
+		has_trait = leader_trait_nervous				# 神经质
+		has_trait = leader_trait_lethargic				# 懒散
+		has_trait = leader_trait_armchair_commander		# 纸上谈兵
+		has_trait = leader_trait_paranoid				# 偏执
+		has_trait = leader_trait_corrupt				# 腐败
+		has_trait = leader_trait_traumatized			# 受挫
+		has_trait = leader_trait_maimed					# 残废
+	}
+}
+
+# scope = leader
+GF_leader_has_core_glitch = {
+	OR = {
+		has_trait = GF_trait_leader_core_glitch_governor
+		has_trait = GF_trait_leader_core_glitch_scientist
+		has_trait = GF_trait_leader_core_glitch_admiral
+		has_trait = GF_trait_leader_core_glitch_general
 	}
 }

@@ -1,0 +1,7 @@
+
+# projects from Zion
+@GF_zion_project_energy_cost_1 = 5000
+@GF_zion_project_energy_cost_2 = 10000
+@GF_zion_project_energy_cost_3 = 15000
+
+@GF_zion_project_cost_max = 1000000
