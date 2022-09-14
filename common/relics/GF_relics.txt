@@ -1,18 +1,19 @@
-@activation_cost = 150
+@activation_cost = 3000
 @triumph_duration = 3600
 @triumph_duration_short = 1800
 @triumph_duration_veryshort = 900
 
 GF_relic_orb_mainframe_alpha = {
-	activation_duration = @triumph_duration
+	activation_duration = @triumph_duration_short
 	portrait = "GFX_evt_GF_relic_orb_mainframe_alpha"
-	sound = "relic_activation_ether_drake_trophy"
+	sound = "relic_activation_isolated_contingency_core"
 
 	resources = {
 		category = relics
 		# Activation cost
 		cost = {
-			influence = @activation_cost
+			energy = @activation_cost
+			unity  = 1000
 		}
 	}
 
@@ -27,18 +28,18 @@ GF_relic_orb_mainframe_alpha = {
 		planet_jobs_produces_mult = 0.10
 	}
 
-	score = 1000
+	score = 3000
 	#遗珍效果未更改，还是原版效果
 	active_effect = {
 		add_modifier = {
 			modifier = "GF_enhanced_OGAS_signal"
 			days = @triumph_duration
 		}
-		custom_tooltip = relic_triumph_cooldown
+		custom_tooltip = relic_triumph_cooldown_short
 		hidden_effect = {
 			add_modifier = {
 				modifier = "relic_activation_cooldown"
-				days = @triumph_duration
+				days = @triumph_duration_short
 			}
 		}
 	}
@@ -48,6 +49,60 @@ GF_relic_orb_mainframe_alpha = {
 		custom_tooltip = {
 			fail_text = "requires_relic_no_cooldown"
 			NOT = { has_modifier = relic_activation_cooldown }
+		}
+	}
+}
+
+@GF_zion_triumph_duration = 1080
+
+GF_relic_data_singularity = {
+	activation_duration = @GF_zion_triumph_duration
+	portrait = "GFX_evt_GF_relic_orb_mainframe_alpha"
+	sound = "relic_activation_intact_zro_soulstone"
+
+	resources = {
+		category = relics
+		cost = { unity = @activation_cost }
+		cost = {
+			energy = 4
+			multiplier = value:GF_monthly_resource_income|RES|energy|MIN|@GF_zion_project_energy_cost_1|
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+	score = 5000
+	
+	active_effect = {
+		add_modifier = {
+			modifier = GF_zion_deep_dive_data_horizon
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+		custom_tooltip_with_params = {
+			description = GF_relic_triumph_cooldown_tooltip
+			description_parameters = {
+				COOLDOWN = @GF_zion_triumph_duration
+			}
+		}
+		hidden_effect = {
+			add_modifier = {
+				modifier = "relic_activation_cooldown"
+				days = @GF_zion_triumph_duration
+			}
+		}
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = { has_modifier = relic_activation_cooldown }
+		}
+		custom_tooltip = {
+			fail_text = GF_relic_require_zion_deep_dive_no_cooldown
+			NOT = { has_modifier = GF_zion_deep_dive_cooldown }
 		}
 	}
 }
