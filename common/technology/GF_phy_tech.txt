@@ -257,10 +257,8 @@ GF_tech_collapse_relic_tech = {
 	is_rare = yes
 
 	potential = {
-		AND = {
-			has_authority = GF_auth_commonwealth
-			has_country_flag = flag_GF_collapse_relic_surveyed
-		}
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
 	}
 
 	gateway = GF_tech_gateway_collapse_relic_tech
@@ -289,10 +287,8 @@ GF_tech_collapse_energy_lance = {
 	is_rare = yes
 
 	potential = {
-		AND = {
-			has_authority = GF_auth_commonwealth
-			has_country_flag = flag_GF_collapse_relic_surveyed
-		}
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
 	}
 
 	prerequisites = {
@@ -332,17 +328,13 @@ GF_tech_collapse_ending_flash = {
 	is_rare = yes
 
 	potential = {
-		AND = {
-			has_authority = GF_auth_commonwealth
-			has_country_flag = flag_GF_collapse_relic_surveyed
-			has_ascension_perk = ap_colossus
-		}
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_collapse_relic_surveyed
+		has_country_flag = colossus_project
 	}
 
 	prerequisites = {
-		"GF_tech_collapsetech_weaponize"
 		"GF_tech_collapse_energy_lance"
-		"GF_tech_collapse_relic_tech"
 		"tech_colossus"
 	}
 
@@ -375,7 +367,9 @@ GF_tech_combat_ogas_computers = {
 	ai_update_type = military
 	is_rare = yes
 	
-	prerequisites = { "tech_combat_computers_2" "GF_tech_collapse_relic_tech" }
+	prerequisites = {
+		"GF_tech_collapse_energy_lance"
+	}
 	weight = 0
 	weight_modifier = {
 		factor = 0
@@ -399,7 +393,10 @@ GF_tech_miniaturized_collapse_lance = {
 	ai_update_type = military
 	is_rare = yes
 	
-	prerequisites = { "GF_tech_collapse_energy_lance" "GF_tech_collapse_relic_tech" }
+	prerequisites = {
+		"GF_tech_collapse_energy_lance"
+		"GF_tech_collapse_relic_tech"
+	}
 
 	weight = 0
 	weight_modifier = {
@@ -408,7 +405,6 @@ GF_tech_miniaturized_collapse_lance = {
 
 	potential = {
 		has_authority = GF_auth_commonwealth
-		#has_country_flag = flag_GF_zion_tech_miniaturized_collapse_lance
 	}
 }
 
@@ -433,14 +429,13 @@ GF_tech_collapse_slingshot_protocal = {
 	}
 
 	potential = {
-		has_overlord_dlc = yes
 		has_authority = GF_auth_commonwealth
 	}
 
 	modifier = {
 		country_mia_time_mult = -0.20
-		catapult_spread_mult = -0.75
-		catapult_range_mult  = 1.0
+		catapult_spread_mult = 0.75
+		catapult_range_mult  = 0.50
 		ship_jumpdrive_cooldown_mult = -0.25
 	}
 }
