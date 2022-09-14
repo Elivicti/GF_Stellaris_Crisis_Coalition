@@ -9,6 +9,7 @@ on_game_start_country = {
 	events = {
 		GF_start.1	# 初始化开局
 		GF_sf.0		# 铁血事件链
+		GF_recover_plan.0 # 复兴协议
 	}
 }
 
@@ -70,5 +71,15 @@ on_leader_spawned = {
 on_monthly_pulse_country = {
 	events = {
 		GF_doll.3000	# 月检事件 锁定人形的公民权
+	}
+}
+
+
+# fires when a country releases a sector as a vassal
+# This = released vassal
+# From = overlord
+on_released_as_vassal = {
+	events = {
+		
 	}
 }
