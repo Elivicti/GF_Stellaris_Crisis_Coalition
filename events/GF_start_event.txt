@@ -151,6 +151,11 @@ planet_event = {
 		add_deposit = d_GF_relic_preservation
 		add_deposit = d_GF_purify_wall
 		add_deposit = d_GF_south_pole_urban
+		add_deposit = d_GF_railway_hub
+		set_variable = {
+			which = v_GF_armored_train_capacity
+			value = 2
+		}
 	}
 }
 
