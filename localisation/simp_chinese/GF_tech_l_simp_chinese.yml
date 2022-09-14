@@ -1,5 +1,10 @@
 ﻿l_simp_chinese:
 #################################
+ gateway_GF_tech_gateway_collapse_tech:0 "§H坍塌科技§!\n§E这项科技将进一步推动物质坍塌和逆向坍塌领域的研究进程。§!"
+ gateway_GF_tech_gateway_collapse_weapon:0 ""§H坍塌武器§!\n§E这项科技将推动武器化坍塌技术的研究进程。§!"
+ gateway_GF_tech_gateway_collapse_relic_tech:0 "§H遗迹科技§!\n§E这项科技将推动遗迹技术的研究进程。§!"
+ gateway_GF_tech_gateway_doll_modding:0 "§H人形科技§!\n§E这项科技将推动人形领域的研究进程。§!"
+#################################
  GF_tech_doll_modding_point_1:0 "人形升级I"
  GF_tech_doll_modding_point_1_desc:0 "人形升级第一阶段。"
  GF_tech_doll_modding_point_2:0 "人形升级II"
@@ -14,6 +19,8 @@
  GF_tech_mind_upgrade_1_desc:0 "在计算机技术发展下，人形心智，这一源于遗迹的技术黑盒终于有了初步突破，在我们的修改下，人形将对任务有更强的主观能动性，这将给予她们担当领袖，独立完成某项任务的可能。"
  GF_tech_mind_upgrade_2:0 "完全心智算法解析"
  GF_tech_mind_upgrade_2_desc:0 "人形心智的形成已对我们完全透明，我们能让人形更好的模拟人类，又有谁能分辨出99.9999999999999....%与100%的区别呢？"
+ feature_GF_doll_mind_upgrade:0 "§H解锁特性：§!人形心智升级"
+ feature_GF_doll_mind_upgrade_desc:0 "强化人形心智的算力，使她们可以担任更§H高级§!的岗位。"
  GF_tech_tactical_doll:0 "战术人形特化生产"
  GF_tech_tactical_doll_desc:0 "原有的普通人形加装火控核心的简单武装化流程已无法满足高强度星际战争需要，所有军用人形将单独设计并专门化生产，将采用最新材料与技术强化机体防御力与作战效能，同时特别编写对应的心智云图以抑制情绪表达来达到火控计算的最大化。"
  GF_tech_zener_network_1:0 "齐纳协议网络技术"
@@ -26,9 +33,9 @@
  GF_tech_zener_network_4_desc:0 "齐纳协议网络升级最终阶段。"
  GF_tech_maintain_process:0 "人形维护专业化流程"
  GF_tech_maintain_process_desc:0 "最新改进的人形维护技术，可以让我们的人形维护设施更有效率，从而容纳更多人形。"
-################################# 
+#################################
  GF_tech_observe_reflection:0 "坍塌现象观察"
- GF_tech_observe_reflection_desc:0 "实践是认识的来源与发展动力，只有先观察到可控的坍缩过程，才能着手展开对这一技术的研究，然而得到这一可控的坍塌过程并非易事。" 
+ GF_tech_observe_reflection_desc:0 "实践是认识的来源与发展动力，只有先观察到可控的坍缩过程，才能着手展开对这一技术的研究，然而得到这一可控的坍塌过程并非易事。"
  GF_tech_mass_rebuild_function:0 "佩斯特级质量重建方程"
  GF_tech_mass_rebuild_function_desc:0 "佩斯特级质量重建方程表明，物质重建质量与坍塌密位粒子波长成正比，与逆坍塌电子源衍射成反比，这一结果确立了物质从无序的坍塌态到有序的结构互相转化的物理准则。"
  GF_tech_collapse:0 "物质坍塌技术"
@@ -37,49 +44,51 @@
  GF_tech_reverse_collapse_desc:0 "逆向坍塌则是坍塌的反过程，正如坍塌是打碎物质一样，逆向坍塌则是先通过计算机导入目标物质的空间模型结构，再按照这个模型，将坍塌液中粒子包解开压缩，让其中的粒子归位到模型对应的位置有序排列，从而构建生成空间模型所指定的新物质。"
  GF_tech_ecological_recovery:0 "坍塌辐射污染无害化技术"
  GF_tech_ecological_recovery_desc:0 "以我们目前对于坍塌过程的认识，我们终于有能力处理遍布我们母星的坍塌辐射污染，一劳永逸的将原本的污染区清理出来，以供生产生活需要。"
+ GF_tech_recover_plan:0 "坍塌辐射污染区恢复及振兴联合开拓协议"
+ GF_tech_recover_plan_desc:0 "该协议旨在统合所有与坍塌辐射污染区相关的资料与技术资源，同时推进污染区的治理与恢复行动。"
 
 
 ##################################
- tech_GF_collapsetech_weaponize:0 "坍塌技术武器化"
- tech_GF_collapsetech_weaponize_desc:0 "坍塌物质曾经差一点毁灭我们，但如果我们能掌控这份力量，它将化作我们的利刃。"
+ GF_tech_collapsetech_weaponize:0 "坍塌技术武器化"
+ GF_tech_collapsetech_weaponize_desc:0 "坍塌物质曾经差一点毁灭我们，但如果我们能掌控这份力量，它将化作我们的利刃。"
 
- tech_GF_ship_collapse_armor:0 "坍塌零素材料"
- tech_GF_ship_collapse_armor_desc:0 "在零素装甲中使用坍塌技术，进一步强化了零素装甲的强度，现在它能抵抗更加强大的火力了。"
- tech_GF_collapse_power_core:0 "坍塌反应能源"
- tech_GF_collapse_power_core_desc:0 "类似于核裂变和核聚变，坍塌反应堆从物质在坍塌的过程中汲取能量。"
- tech_GF_collapse_jump_drive:0 "逆向坍塌跃迁"
- tech_GF_collapse_jump_drive_desc:0 "物质的坍塌与逆坍塌过程能够使我们能更轻易地打破时空的连续性，让舰船在一瞬之间“跳跃”到远处的空间。"
+ GF_tech_ship_collapse_armor:0 "坍塌零素材料"
+ GF_tech_ship_collapse_armor_desc:0 "在零素装甲中使用坍塌技术，进一步强化了零素装甲的强度，现在它能抵抗更加强大的火力了。"
+ GF_tech_collapse_power_core:0 "坍塌反应能源"
+ GF_tech_collapse_power_core_desc:0 "类似于核裂变和核聚变，坍塌反应堆从物质在坍塌的过程中汲取能量。"
+ GF_tech_collapse_jump_drive:0 "逆向坍塌跃迁"
+ GF_tech_collapse_jump_drive_desc:0 "物质的坍塌与逆坍塌过程能够使我们能更轻易地打破时空的连续性，让舰船在一瞬之间“跳跃”到远处的空间。"
 
  TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_REACTOR$"
- TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_DESC:0 "§H$GF_COLLAPSE_REACTOR$§!\n$tech_GF_collapse_power_core_desc$"
+ TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_DESC:0 "§H$GF_COLLAPSE_REACTOR$§!\n$GF_tech_collapse_power_core_desc$"
 
  TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_JUMP_DRIVE$"
- TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_DESC:0 "§H$GF_COLLAPSE_JUMP_DRIVE$§!\n$tech_GF_collapse_jump_drive_desc$"
+ TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_DESC:0 "§H$GF_COLLAPSE_JUMP_DRIVE$§!\n$GF_tech_collapse_jump_drive_desc$"
 
 
- tech_GF_collapse_relic_tech:0 "遗迹技术"
- tech_GF_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管我们确信这部分技术只是全部遗迹文明技术的冰山一角，它也足够把我们帝国的研究提升到一个新的高度了。"
+ GF_tech_collapse_relic_tech:0 "遗迹技术"
+ GF_tech_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管我们确信这部分技术只是全部遗迹文明技术的冰山一角，它也足够把我们帝国的研究提升到一个新的高度了。"
 
- tech_GF_elid_army:0 "量产E.L.I.D军队"
- tech_GF_elid_army_desc:0 "过去这些ELID感染者曾给我们造成了不小的麻烦，但是有了死灵法师，为什么不让它们为我们而战呢？"
+ GF_tech_elid_army:0 "量产E.L.I.D军队"
+ GF_tech_elid_army_desc:0 "这些基因改造的克隆士兵经过坍塌辐射照射后成为了令人胆寒的硅化生物，我们可以通过一定的手段驱使这些ELID感染者，为我们的敌人带去恐惧。"
 
- tech_GF_collapse_energy_lance:0 "高能坍塌粒子射线"
- tech_GF_collapse_energy_lance_desc:0 "坍塌粒子对物质有极强的损坏能力，若是能将其聚焦并发射出去，想必能对敌方舰船造成相当可观的伤害。"
+ GF_tech_collapse_energy_lance:0 "高能坍塌粒子射线"
+ GF_tech_collapse_energy_lance_desc:0 "坍塌粒子对物质有极强的损坏能力，若是能将其聚焦并发射出去，想必能对敌方舰船造成相当可观的伤害。"
 
- tech_GF_collapse_ending_flash:0 "终末辉光"
- tech_GF_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
+ GF_tech_collapse_ending_flash:0 "终末辉光"
+ GF_tech_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
 
- tech_GF_combat_ogas_computers:0 "OGAS作战中枢"
- tech_GF_combat_ogas_computers_desc:0 "OGAS系统具有庞大的算力，在战场的风险评估和战术优化上具有无可比拟的优势。"
+ GF_tech_combat_ogas_computers:0 "OGAS作战中枢"
+ GF_tech_combat_ogas_computers_desc:0 "OGAS系统具有庞大的算力，在战场的风险评估和战术优化上具有无可比拟的优势。"
  
- tech_GF_miniaturized_collapse_lance:0 "坍塌粒子武器小型化"
- tech_GF_miniaturized_collapse_lance_desc:0 "坍塌粒子在军事上具有极大的优势，但由于技术限制，坍塌粒子武器需要庞大的发射器和维护设备才能安全运行。从$GF_ZION$得到的资料表明，坍塌粒子武器具有小型化的可能性。"
+ GF_tech_miniaturized_collapse_lance:0 "小型坍塌粒子武器"
+ GF_tech_miniaturized_collapse_lance_desc:0 "这些像激光一样的武器尽管在威力与射程上无法比拟常规的大型坍塌粒子射线阵列，但依然足够具有威慑，尤其是当它们被搬上快速灵活的中小型舰船以后。"
 
- tech_GF_collapse_bomb:0 "坍塌液脏弹"
- tech_GF_collapse_bomb_desc:0 "$tech_GF_collapse_bomb$已经在我们的历史上被证明对人员和设施具有毁灭性的打击能力，将其用于轨道轰炸将是瓦解敌方星球防御甚至毁灭敌方星球的不二之选。"
- tech_GF_collapse_bomb_title:0 "§H解锁轨道轰炸姿态：§!$bombardment_collapsebomb$"
- tech_GF_collapse_bomb_desc:0 "$bombardment_collapsebomb_desc$"
- # tech_GF_collapse_bomb_desc:0 "我们的舰队将会装备$tech_GF_collapse_bomb$以备用于轨道轰炸，我们可以在政策中选择是否允许我们的舰队这样做。"
+ GF_tech_collapse_bomb:0 "坍塌液脏弹"
+ GF_tech_collapse_bomb_desc:0 "$GF_tech_collapse_bomb$已经在我们的历史上被证明对人员和设施具有毁灭性的打击能力，将其用于轨道轰炸将是瓦解敌方星球防御甚至毁灭敌方星球的不二之选。"
+ GF_tech_collapse_bomb_title:0 "§H解锁轨道轰炸姿态：§!$bombardment_collapsebomb$"
+ GF_tech_collapse_bomb_desc:0 "$bombardment_collapsebomb_desc$"
+ # GF_tech_collapse_bomb_desc:0 "我们的舰队将会装备$GF_tech_collapse_bomb$以备用于轨道轰炸，我们可以在政策中选择是否允许我们的舰队这样做。"
 
- tech_GF_collapse_slingshot_protocal:0 ""
- tech_GF_collapse_slingshot_protocal_desc:0 ""
+ GF_tech_collapse_slingshot_protocal:0 "逆向坍塌量子弹射协议"
+ GF_tech_collapse_slingshot_protocal_desc:0 "优化设备产生逆向坍塌过程的效率，以便更加快捷高效地将舰船投射到星系的每一个角落。"
