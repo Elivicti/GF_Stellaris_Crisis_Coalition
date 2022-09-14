@@ -78,7 +78,6 @@ country_event = {
 						owner = root
 						location = this
 					}
-					
 				}
 			}
 		}
@@ -87,8 +86,6 @@ country_event = {
 			event_chain = GF_collect_relic_device_event_chain
 			target = root
 		}
-
-		
 	}
 }
 
@@ -98,27 +95,19 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
 
-			# 检查已经收集的遗迹设施数量
-			check_variable = {
-				which = v_GF_relic_device_collected
-				value < 3
+		# 检查已经收集的遗迹设施数量
+		NOT = {
+			has_completed_event_chain_counter = {
+				event_chain = "GF_collect_relic_device_event_chain"
+				counter = "c_GF_devices_collected"
 			}
-			
 		}
 	}
 
 	immediate = {
-		owner = {
-			# 已经收集的遗迹设施数量 + 1
-			change_variable = {
-				which = v_GF_relic_device_collected 
-				value = 1
-			}
-		}
 		add_event_chain_counter = {
 			event_chain = "GF_collect_relic_device_event_chain"
 			counter = "c_GF_devices_collected"
@@ -137,14 +126,11 @@ country_event = {
 	picture = GFX_evt_ancient_artifact
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			
-			check_variable = {
-				which = v_GF_relic_device_collected
-				value >= 3
-			}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_completed_event_chain_counter = {
+			event_chain = "GF_collect_relic_device_event_chain"
+			counter = "c_GF_devices_collected"
 		}
 	}
 
@@ -179,14 +165,12 @@ country_event = {
 	}
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			
-			check_variable = {
-				which = v_GF_relic_device_collected
-				value >= 3
-			}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		
+		has_completed_event_chain_counter = {
+			event_chain = "GF_collect_relic_device_event_chain"
+			counter = "c_GF_devices_collected"
 		}
 	}
 
@@ -246,7 +230,7 @@ country_event = {
 				days = -1
 			}
 			ruler = {
-				add_trait = leader_trait_stubborn
+				add_trait = GF_trait_leader_ogas_glitch
 			}
 			enable_special_project = {
 				name = SP_GF_ALAYA_BEGIN
@@ -505,7 +489,7 @@ country_event = {
 
 		remove_modifier = GF_productive_relic_abnormal
 		ruler = {
-			remove_trait = leader_trait_stubborn
+			remove_trait = GF_trait_leader_ogas_glitch
 		}
 		hidden_effect = {
 			remove_country_flag = flag_GF_disconnect_with_zion
@@ -657,7 +641,7 @@ country_event = {
 
 		remove_modifier = GF_productive_relic_abnormal
 		ruler = {
-			remove_trait = leader_trait_stubborn
+			remove_trait = GF_trait_leader_ogas_glitch
 		}
 		add_modifier = {
 			modifier = GF_studying_zion
