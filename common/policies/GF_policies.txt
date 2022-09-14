@@ -9,6 +9,13 @@ GF_doll_right_policy = {
 			GF_ANDROID_pop_happiness = 0.15
 		}
 		valid = {
+			custom_tooltip = {
+				fail_text = GF_require_no_xenophobe_and_fxxk_you_paradox
+				NOR = {
+					has_ethic = ethic_fanatic_xenophobe
+					has_ethic = ethic_xenophobe
+				}
+			}
 			has_technology = GF_tech_mind_upgrade_2
 			NOR = {
 				has_policy_flag = ai_outlawed
@@ -52,7 +59,7 @@ GF_doll_right_policy = {
 }
 
 GF_doll_work_policy = {
-	potential = {	
+	potential = {
 		has_authority = GF_auth_commonwealth
 	}
 
@@ -180,4 +187,4 @@ GF_run_mode_policy = {
 
 		AI_weight = { weight = 0 }
 	}
-} 
+}
