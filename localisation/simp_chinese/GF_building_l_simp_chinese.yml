@@ -22,12 +22,12 @@
  building_GF_42lab_2_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
  building_GF_42lab_3:0 "42LAB心智云图综合研究中心"
  building_GF_42lab_3_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
-################################# 
+#################################
  building_GF_GK_headquarters_1:0 "格里芬战地临时指挥部"
  building_GF_GK_headquarters_1_desc:0 "格里芬在最前线与新开拓地带部署的指挥中心，一般条件较为简陋，仅能承担简单的指挥功能，指挥官与人形配置有限。"
  building_GF_GK_headquarters_2:0 "格里芬战区前进基地"
- building_GF_GK_headquarters_2_desc:0 "位于二线的前进基地，拥有指挥功能的同时兼具一定的后勤保障能力，包括弹药补给与人形维护"
- building_GF_GK_headquarters_3:0 "格里芬安全承包区指挥部。"
+ building_GF_GK_headquarters_2_desc:0 "位于二线的前进基地，拥有指挥功能的同时兼具一定的后勤保障能力，包括弹药补给与人形维护。"
+ building_GF_GK_headquarters_3:0 "格里芬安全承包区指挥部"
  building_GF_GK_headquarters_3_desc:0 "一个安全承包区的格里芬最高指挥部，统筹处理格里芬在该区域的所有任务事项。"
  building_GF_GK_headquarters_4:0 "格里芬安全承包商总部"
  building_GF_GK_headquarters_4_desc:0 "是首席执行官与董事会所在地，也是整个格里芬的总指挥中心，并且时刻与众多安全承包区保持联络，统一协调各承包区行动。"
@@ -47,8 +47,8 @@
  building_GF_AU_council_3_desc:0 "联邦科学理事会的地方派出机构，维持着联邦对当地的统治。"
  building_GF_AU_council_4:0 "南联最高科学理事会大楼"
  building_GF_AU_council_4_desc:0 "联邦的最高权力机构，这里集合整个联邦的科技与政治精英。"
- ### 
- building_GFmilitary_contractors:0 "人形事务所"
- building_GFmilitary_contractors_desc:0 "我们承诺会派出最精锐的人形来执行任务，给各国提供优秀的雇佣兵服务。"
- building_GFbuilding_contractors:0 "人形制造分公司"
- building_GFbuilding_contractors_desc:0 "将一些不涉及核心技术的零件设计图分享给国外的公司，能够加快我们人形的建筑速度。"
+ ###
+ building_GF_military_contractors:0 "人形事务所"
+ building_GF_military_contractors_desc:0 "我们承诺会派出最精锐的人形来执行任务，给各国提供优秀的雇佣兵服务。"
+ building_GF_building_contractors:0 "人形制造分公司"
+ building_GF_building_contractors_desc:0 "将一些不涉及核心技术的零件设计图分享给国外的公司，能够加快我们人形的组装速度。"
