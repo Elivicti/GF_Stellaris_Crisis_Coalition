@@ -32,23 +32,28 @@
  d_GF_australia_ruin:0 "澳大利亚前线废墟"
  d_GF_australia_ruin_desc:0 "澳洲作为南罗双方冲突的前线发生了数十次大规模军事行动，截至联合政府成立，该地区已遍布废墟。"
  d_GF_australia_mineral:0 "澳大利亚矿区"
- d_GF_australia_mineral_desc:0 "清理完毕的澳洲废墟区已不太适合居住，其拥有的矿产资源促使联合政府将此地规划为矿区。" 
+ d_GF_australia_mineral_desc:0 "清理完毕的澳洲废墟区已不太适合居住，其拥有的矿产资源促使联合政府将此地规划为矿区。"
  d_GF_asia_europe_factory:0 "亚欧工业基地带"
- d_GF_asia_europe_factory_desc:0 "罗联重要工业基地集群的统称，主要分布于中国、新苏联与泛欧联盟。" 
+ d_GF_asia_europe_factory_desc:0 "罗联重要工业基地集群的统称，主要分布于中国、新苏联与泛欧联盟。"
  d_GF_relic_preservation:0 "遗迹保护开发区"
- d_GF_relic_preservation_desc:0 "对已清理完毕、无害化处理的遗迹区域的统称，有相关科研基地设立，其中以北兰岛遗迹最为著名。" 
+ d_GF_relic_preservation_desc:0 "对已清理完毕、无害化处理的遗迹区域的统称，有相关科研基地设立，其中以北兰岛遗迹最为著名。"
  d_GF_south_pole_urban:0 "南极空洞城市群"
- d_GF_south_pole_urban_desc:0 "一个由巨大防御门保护的大型地下城市群，是南极联邦的核心地区，空洞内还有清理完的前遗迹文明留下的遗迹设施，内有大量未知科技供我们研究。" 
+ d_GF_south_pole_urban_desc:0 "一个由巨大防御门保护的大型地下城市群，是南极联邦的核心地区，空洞内还有清理完的前遗迹文明留下的遗迹设施，内有大量未知科技供我们研究。"
  d_GF_purify_wall:0 "大型辐射隔离净化墙"
  d_GF_purify_wall_desc:0 "处于辐射污染区与可居住区之间的隔离净化墙，配置的大型净化器防止辐射污染向可居住区进一步扩大，同时还有相应的军事设施、部署了大量人类与人形部队以阻击EILD辐射感染者突破封锁的可能。"
 
  clear_d_GF_purify_wall_tooltip:0 "在§R坍塌辐射污染区§!仍然存在时移除$d_GF_purify_wall$将会提升E.L.I.D对城市的§R威胁§!！"
 
  d_GF_black_zone_extra:0 "$d_GF_black_zone$"
- d_GF_black_zone_extra_desc:0 "$d_GF_black_zone_desc$"
+ d_GF_black_zone_extra_desc:0 "坍塌辐射源头所在地，大约为原爆造成的半径数公里的环形坑洞及周边数十公里地区。该地区坍塌辐射浓度极高，一旦进入，难以生还。"
 
  d_GF_red_zone_extra:0 "$d_GF_red_zone$"
- d_GF_red_zone_extra_desc:0 "$d_GF_red_zone_desc$"
+ d_GF_red_zone_extra_desc:0 "红区紧邻黑区，存在相当浓度的坍塌辐射，无论是有机生物还是机械，进入此区域都必须进行周密防护。"
 
  d_GF_yellow_zone_extra:0 "$d_GF_yellow_zone$"
- d_GF_yellow_zone_extra_desc:0 "$d_GF_yellow_zone_desc$"
+ d_GF_yellow_zone_extra_desc:0 "黄区紧邻红区，坍塌辐射浓度较低，有机生物在其中行动需要进行周密防护，机械可自由行动。"
+
+ require_GF_tech_ecological_recovery:0 "£trigger_no£ 需要科技：£society£ §Y$GF_tech_ecological_recovery$§!"
+
+ d_GF_railway_hub:0 "大型铁路枢纽"
+ d_GF_railway_hub_desc:0 "一套焕然一新、彻夜不眠的现代化铁路枢纽，统合化的铁路交通在此处流转不息。借助发达的铁路网络，我们可以部署$GF_army_defensive_armored_train$来增强重要城市的防御。\n\n注意：星球视图中的维护费显示有误，实际如下\n每个铁路枢纽维护费：£energy£0.12  £alloys£0.06"
