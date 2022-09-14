@@ -17,11 +17,11 @@ decision_GF_doll_sercurity_on = {
 	
 	allow = {
 		NOT = { has_modifier = GF_sercurity_protocol }
-	}	
+	}
 	
 	effect = {
 		add_modifier = { modifier = "GF_sercurity_protocol" days = -1 }
-	}	
+	}
 	
 	ai_weight = { weight = 0 }
 }
@@ -44,7 +44,7 @@ decision_GF_doll_sercurity_off = {
 	
 	allow = {
 		has_modifier = GF_sercurity_protocol
-	}	
+	}
 	
 	effect = {
 		remove_modifier = "GF_sercurity_protocol"
@@ -72,11 +72,11 @@ decision_GF_doll_storage_on = {
 	
 	allow = {
 		NOT = { has_modifier = GF_storage_protocol }
-	}	
+	}
 	
 	effect = {
 		add_modifier = { modifier = "GF_storage_protocol" days = -1 }
-	}	
+	}
 	
 	ai_weight = { weight = 0 }
 }
@@ -99,11 +99,11 @@ decision_GF_doll_storage_off = {
 	
 	allow = {
 		has_modifier = GF_storage_protocol
-	}	
+	}
 	
 	effect = {
 		remove_modifier = "GF_storage_protocol"
-	}	
+	}
 	
 	ai_weight = { weight = 0 }
 }
@@ -127,11 +127,11 @@ decision_GF_doll_cloud_computing_on = {
 	
 	allow = {
 		NOT = { has_modifier = GF_cloud_computing_protocol }
-	}	
+	}
 	
 	effect = {
 		add_modifier = { modifier = "GF_cloud_computing_protocol" days = -1 }
-	}	
+	}
 	
 	ai_weight = { weight = 0 }
 }
@@ -155,11 +155,11 @@ decision_GF_doll_cloud_computing_off  = {
 	
 	allow = {
 		has_modifier = GF_cloud_computing_protocol
-	}	
+	}
 	
 	effect = {
 		remove_modifier = "GF_cloud_computing_protocol"
-	}	
+	}
 	
 	ai_weight = { weight = 0 }
 }
@@ -186,9 +186,7 @@ decision_GF_rebuild_purify_wall = {
 			has_origin = GF_origin_commonwealth
 		}
 		OR = {
-			has_deposit = d_GF_black_zone
-			has_deposit = d_GF_red_zone
-			has_deposit = d_GF_yellow_zone
+			GF_planet_has_contaminated_zone = yes
 			check_variable = {
 				which = v_GF_elid_threat_level
 				value > 0
@@ -257,11 +255,7 @@ decision_GF_eliminate_all_elid = {
 			has_authority = GF_auth_commonwealth
 			has_origin = GF_origin_commonwealth
 		}
-		NOR = {
-			has_deposit = d_GF_black_zone
-			has_deposit = d_GF_red_zone
-			has_deposit = d_GF_yellow_zone
-		}
+		GF_planet_has_contaminated_zone = no
 		check_variable = {
 			which = v_GF_elid_threat_level
 			value > 0
@@ -303,6 +297,102 @@ decision_GF_eliminate_all_elid = {
 					which = v_GF_elid_threat_level
 					value > 0
 				}
+			}
+		}
+	}
+}
+
+decision_GF_construct_railway_line = {
+	icon = decision_GF_construct_railway_line
+	owned_planets_only = yes
+
+	enactment_time = 1080
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			minerals = 500
+			alloys = 500
+		}
+	}
+
+	potential = {
+		owner = {
+			has_authority = GF_auth_commonwealth
+			has_technology = GF_tech_recover_plan
+		}
+	}
+
+	allow = {
+		if = {
+			limit = { is_capital = yes }
+			custom_tooltip = {
+				fail_text = GF_require_yellow_zone_cleared
+				NOT = { has_deposit = d_GF_yellow_zone }
+			}
+			custom_tooltip = {
+				fail_text = decision_GF_construct_railway_line_fail_tooltip_2
+				count_deposits = {
+					type = d_GF_railway_hub
+					count < 2
+				}
+			}
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = decision_GF_construct_railway_line_fail_tooltip_1
+				count_deposits = {
+					type = d_GF_railway_hub
+					count < 1
+				}
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_GF_construct_railway_line_effects
+		hidden_effect = {
+			GF_construct_railway_line_effect = yes
+		}
+	}
+}
+
+decision_GF_deploy_armored_train = {
+	icon = decision_GF_deploy_armored_train
+	owned_planets_only = yes
+
+	enactment_time = 120
+	resources = {
+		category = decisions
+		cost = {
+			energy = 500
+			alloys = 300
+		}
+	}
+
+	potential = {
+		owner = { has_authority = GF_auth_commonwealth }
+		has_deposit = d_GF_railway_hub
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_GF_deploy_armored_train_fail_tooltip
+			count_planet_army = {
+				limit = { army_type = GF_army_defensive_armored_train }
+				count < v_GF_armored_train_capacity
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_GF_deploy_armored_train_effects
+		hidden_effect = {
+			create_army = {
+				owner = this.owner
+				species = this.owner
+				name = "NAME_GF_armored_train"
+				type = GF_army_defensive_armored_train
 			}
 		}
 	}
