@@ -1,21 +1,27 @@
 d_GF_black_zone_extra = {
 	is_for_colonizable = yes
-	time = 360	
+	time = 360
 	icon = d_GF_black_zone
-	category = deposit_cat_blockers	
-	planet_modifier = { 
+	category = deposit_cat_blockers
+	planet_modifier = {
 		pop_happiness = -0.05
 		planet_max_districts_add = -2
 		pop_environment_tolerance = -0.2
 	}
 	blocker_swap_types = {
 		d_GF_red_zone
-	}	
+	}
 	resources = {
 		category = deposit_blockers
 		cost = { energy = 1000 }
 	}
-	prerequisites = { "GF_tech_ecological_recovery" }
+	
+	can_be_cleared = {
+		custom_tooltip = {
+			fail_text = require_GF_tech_ecological_recovery
+			planet = { owner = { has_technology = GF_tech_ecological_recovery } }
+		}
+	}
 
 	blocker_swap_types = { d_GF_red_zone_extra }
 	
@@ -26,7 +32,7 @@ d_GF_red_zone_extra = {
 	is_for_colonizable = yes
 	time = 300
 	icon = d_GF_red_zone
-	category = deposit_cat_blockers	
+	category = deposit_cat_blockers
 	planet_modifier = {
 		pop_environment_tolerance = -0.05
 		biological_pop_happiness = -0.05
@@ -36,7 +42,13 @@ d_GF_red_zone_extra = {
 		category = deposit_blockers
 		cost = { energy = 750 }
 	}
-	prerequisites = { "GF_tech_ecological_recovery" }
+	
+	can_be_cleared = {
+		custom_tooltip = {
+			fail_text = require_GF_tech_ecological_recovery
+			planet = { owner = { has_technology = GF_tech_ecological_recovery } }
+		}
+	}
 
 	blocker_swap_types = { d_GF_yellow_zone_extra }
 
@@ -45,9 +57,9 @@ d_GF_red_zone_extra = {
 
 d_GF_yellow_zone_extra = {
 	is_for_colonizable = yes
-	time = 270	
+	time = 270
 	icon = d_GF_yellow_zone
-	category = deposit_cat_blockers	
+	category = deposit_cat_blockers
 	planet_modifier = {
 		pop_environment_tolerance = -0.1
 		biological_pop_happiness = -0.05
