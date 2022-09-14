@@ -85,7 +85,8 @@ GF_civic_GK = {
 	modification = no
 	modifier = {
 		trade_value_mult = 0.2
-		country_admin_cap_mult = -0.05
+		country_enclave_capacity_add = 2
+		planet_administrators_produces_mult = -0.05
 	}
 }
 
@@ -103,7 +104,7 @@ GF_civic_FSB = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		country_admin_cap_mult = 0.1
+		planet_administrators_produces_mult = 0.10
 		planet_stability_add = 5
 	}
 }
@@ -122,7 +123,7 @@ GF_civic_MID = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		country_admin_cap_mult = 0.1
+		planet_administrators_produces_mult = 0.10
 		planet_stability_add = 5
 	}
 }
@@ -222,6 +223,7 @@ GF_civic_16LAB = {
 		country_base_gf_core_chip_produces_add = 1
 		num_tech_alternatives_add = 1
 	}
+	description = "GF_civic_16LAB_effects"
 }
 
 GF_civic_GOSPLAN = {
