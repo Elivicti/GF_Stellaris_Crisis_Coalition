@@ -16,10 +16,12 @@ decision_GF_auto_colony_on = {
 
 	potential = {
 		is_capital = no
-		NOT = { has_modifier = penal_colony }
-		NOT = { has_modifier = slave_colony }
-		NOT = { has_modifier = GF_auto_colony }
-		NOT = { is_planet_class = pc_city }
+		NOR = {
+			has_modifier = penal_colony
+			has_modifier = slave_colony
+			has_modifier = GF_auto_colony
+			is_planet_class = pc_city
+		}
 		owner = {
 			is_regular_empire = yes
 			has_authority = GF_auth_commonwealth
@@ -48,6 +50,7 @@ decision_GF_auto_colony_on = {
 		hidden_effect = {
 			remove_building = building_colony_shelter
 			add_building = building_GF_auto_colony_capital
+			set_colony_type = GF_auto_colony
 		}
 		hidden_effect = { validate_planet_buildings_and_districts = yes }
 	}
