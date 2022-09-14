@@ -1,0 +1,38 @@
+#####坍塌辐射污染区恢复及振兴联合开拓协议特殊项目
+special_project = {
+	key = "GF_recover_plan_project_1"
+	cost = 1000
+	tech_department = society_technology
+	timelimit = -1
+	picture = GFX_evt_GF_protected_purify_wall
+	event_scope = country_event
+	
+	on_success = {
+		country_event = {
+			id = GF_recover_plan.2
+		}
+	}
+	on_fail = {}
+}
+
+special_project = {
+	key = SP_GF_ROBOT_MODDING
+	event_scope = country_event
+
+	picture = GFX_situation_log_modification_picture
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+
+	tech_department = engineering_technology
+	cost = {
+		base = 0
+		scaled_modifier = {
+			limit = {
+				NOT = { has_trait = GF_trait_doll }
+				is_robot_pop = yes
+			}
+			scope = this
+			add = 50
+			calc = pop_count
+		}
+	}
+}
