@@ -4,8 +4,8 @@ GF_origin_commonwealth = {
 	picture = GFX_evt_GF_origin_commonwealth
 
 	possible = {
-		authority = { 
-			value = GF_auth_commonwealth 
+		authority = {
+			value = GF_auth_commonwealth
 		}
 	}
 	description = "GF_origin_commonwealth_effects_tooltip"
@@ -19,11 +19,10 @@ GF_origin_commonwealth = {
 	traits = {
 		trait = GF_trait_sequela
 	}
-	advanced_start = yes
+	initializers = { sol_system_initializer }
 
+	advanced_start = yes
 	max_once_global = yes
 
-	random_weight = {
-		base = 0
-	}
+	random_weight = { base = 0 	}
 }
