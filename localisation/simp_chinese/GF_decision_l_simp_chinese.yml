@@ -9,13 +9,13 @@
  decision_GF_doll_storage_off:0 "激活待机人形"
  decision_GF_doll_storage_off_desc:0 "将待机状态的人形全部激活，对她们分配新的任务。"
  decision_GF_doll_cloud_computing_on:0 "开启云计算协议"
- decision_GF_doll_cloud_computing_on_desc:0 "该协议允许我们接入那些正在休眠待机中的人形，连接其心智云图并利用这些闲置算力辅助我们的科研活动。" 
+ decision_GF_doll_cloud_computing_on_desc:0 "该协议允许我们接入那些正在休眠待机中的人形，连接其心智云图并利用这些闲置算力辅助我们的科研活动。"
  decision_GF_doll_cloud_computing_off:0 "中止云计算协议"
  decision_GF_doll_cloud_computing_off_desc:0 "云计算协议中止。"
  decision_GF_auto_colony_on:0 "开启自动化遥控殖民协议"
  decision_GF_auto_colony_on_desc:0 "该协议旨在使我们可以派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将在远程发出的指令与云图内置的自律程序的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
  decision_GF_auto_colony_off:0 "关闭自动化遥控殖民协议"
- decision_GF_auto_colony_off_desc:0 "在经过先遣人形对殖民地不断的建设与改造，部分地区的环境与设施已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。" 
+ decision_GF_auto_colony_off_desc:0 "在经过先遣人形对殖民地不断的建设与改造，部分地区的环境与设施已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
 
 
  decision_GF_rebuild_purify_wall:0 "重建隔离墙"
@@ -26,3 +26,16 @@
  decision_GF_eliminate_all_elid:0 "清理剩余E.L.I.D感染者"
  decision_GF_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的E.L.I.D感染者集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
  decision_GF_eliminate_all_elid_effects:0 "将会消灭所有剩余的E.L.I.D感染者，将它们的威胁降至0。"
+
+
+ decision_GF_construct_railway_line:0 "现代化铁路网络建设"
+ decision_GF_construct_railway_line_desc:0 "一个遍布全球的现代化铁路网络能够有效地将分布在全球各处的经济中心和工业中心连接起来，高效地统合全球的经贸和货物往来。"
+ decision_GF_construct_railway_line_effects:0 "添加地块§Y$d_GF_railway_hub$§!\n    效果：$MOD_TRADE_VALUE_ADD$: §G+25%§!，$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$: §G+5%§!\n    维护费：£energy£§Y0.12§!  £alloys£§Y0.06§!\n允许$decision_GF_deploy_armored_train$"
+ decision_GF_construct_railway_line_fail_tooltip_1:0 "£trigger_no£ §Y[planet.GetName]§!上最多只能建设§H1个§!大型铁路网络"
+ decision_GF_construct_railway_line_fail_tooltip_2:0 "£trigger_no£ §Y[planet.GetName]§!上最多只能建设§H2个§!大型铁路网络"
+ GF_require_yellow_zone_cleared:0 "£trigger_no£ 需要先清理§Y$d_GF_yellow_zone$§!"
+
+ decision_GF_deploy_armored_train:0 "部署§H$GF_army_defensive_armored_train$§!"
+ decision_GF_deploy_armored_train_desc:0 "在铁路沿线部署装甲铁路车辆以巩固在铁路网络发达地区的防御能力。"
+ decision_GF_deploy_armored_train_effects:0 "部署一辆§H$GF_army_defensive_armored_train$§!，每月维护费：£energy£§Y2§!  £alloys£§Y1§!\n当前在§Y[planet.GetName]§!最多可以部署§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"
+ decision_GF_deploy_armored_train_fail_tooltip:0 "£trigger_no£ §Y[planet.GetName]§!上的铁路网络最多只能支持§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"
