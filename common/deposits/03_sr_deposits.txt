@@ -1,0 +1,15 @@
+
+d_dark_matter_deposit_5 = {
+	resources = {
+		category = orbital_research_deposits
+		produces = {
+			sr_dark_matter = 5
+		}
+	}
+	station = shipclass_research_station
+	is_for_colonizable = no
+
+	drop_weight = {
+		weight = 0
+	}
+}
