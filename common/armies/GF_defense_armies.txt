@@ -14,3 +14,37 @@ GF_army_defensive_auto_doll = {
 		owner = { has_authority = GF_auth_commonwealth }
 	}
 }
+
+GF_army_defensive_armored_train = {
+	damage = 2.50
+	health = 8.00
+	has_morale = no
+	has_species = no
+	morale = 0.50
+	morale_damage = 1.00
+	collateral_damage = 1.20
+	war_exhaustion = 0.15
+	icon = GFX_GF_army_type_armored_train
+
+	defensive = yes
+	is_pop_spawned = no
+
+	potential = {
+		always = no
+		owner = { has_authority = GF_auth_commonwealth }
+		planet = { has_deposit = d_GF_railway_hub }
+	}
+
+	time = 270
+	resources = {
+		category = armies
+		cost = {
+			energy = 500
+			alloys = 300
+		}
+		upkeep = {
+			energy = 2.0
+			alloys = 1.0
+		}
+	}
+}
