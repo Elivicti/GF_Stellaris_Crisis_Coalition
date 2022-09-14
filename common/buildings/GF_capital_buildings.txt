@@ -34,16 +34,8 @@ building_GF_auto_colony_capital = {
 		building_ancient_palace
 	}
 
-	allow = {
-	}
-
-	upgrades = {
-	}
-
-	prerequisites = {
-	}
-
 	show_tech_unlock_if = {
+		has_authority = GF_auth_commonwealth
 		is_regular_empire = yes
 	}
 
@@ -97,30 +89,28 @@ building_GF_GK_headquarters_1 = {
 	icon = building_GF_capital_1
 	base_buildtime = 360
 	base_cap_amount = 1
-	category = government	
+	category = government
 	potential = {
 		exists = owner
 		owner = {
 		    AND = {
 				has_authority = GF_auth_commonwealth
-		        has_civic = GF_civic_GK
+		        has_valid_civic = GF_civic_GK
 			}
         }
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
-			owner = {
-				has_authority = GF_auth_commonwealth
-			}
+		NOT = {
+			owner = { has_authority = GF_auth_commonwealth }
 		}
 	}
 	upgrades = {
 		"building_GF_GK_headquarters_2"
-	}	
+	}
 	planet_modifier = {
 		job_GF_GK_commander_add = 1
-	}	
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -134,18 +124,21 @@ building_GF_GK_headquarters_1 = {
 		potential = {
 			exists = owner
 			owner = {
-		        has_civic = GF_civic_IOP
+		        has_valid_civic = GF_civic_IOP
             }
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_GK_commander_effect_desc
-	}	
+	}
 	prerequisites = {
 		"tech_planetary_government"
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_GK
 	}
 	ai_weight = {
 		weight = 1
@@ -163,7 +156,7 @@ building_GF_GK_headquarters_2 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -174,7 +167,7 @@ building_GF_GK_headquarters_2 = {
 	}
 	allow = {
 		num_pops >= 10
-	}	
+	}
 	planet_modifier = {
 		job_GF_GK_commander_add = 2
 	}
@@ -192,18 +185,21 @@ building_GF_GK_headquarters_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_GK_commander_effect_desc
-	}	
+	}
 	prerequisites = {
 		"tech_colonial_centralization"
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_GK
 	}
 	ai_weight = {
 		weight = 1
@@ -221,7 +217,7 @@ building_GF_GK_headquarters_3 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -229,10 +225,10 @@ building_GF_GK_headquarters_3 = {
 	}
 	allow = {
 		num_pops >= 40
-	}	
+	}
 	planet_modifier = {
 		job_GF_GK_commander_add = 3
-		job_GF_GK_officer_add = 1	
+		job_GF_GK_officer_add = 1
 	}
 	
 	resources = {
@@ -248,16 +244,19 @@ building_GF_GK_headquarters_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_GK_officer_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_GK
+	}
 	prerequisites = {
 		"tech_galactic_administration"
 	}
@@ -277,13 +276,13 @@ building_GF_AU_council_1 = {
 		owner = {
 			AND = {
 				has_authority = GF_auth_commonwealth
-				has_civic = GF_civic_AU
+				has_valid_civic = GF_civic_AU
 			}
 		}
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -291,10 +290,10 @@ building_GF_AU_council_1 = {
 	}
 	upgrades = {
 		"building_GF_AU_council_2"
-	}	
+	}
 	planet_modifier = {
 		job_GF_AU_consultant_add = 1
-	}	
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -308,16 +307,19 @@ building_GF_AU_council_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_AU_consultant_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_AU
+	}
 	prerequisites = {
 		"tech_planetary_government"
 	}
@@ -336,7 +338,7 @@ building_GF_AU_council_2 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -347,7 +349,7 @@ building_GF_AU_council_2 = {
 	}
 	allow = {
 		num_pops >= 10
-	}	
+	}
 	planet_modifier = {
 		job_GF_AU_consultant_add = 2
 	}
@@ -365,16 +367,19 @@ building_GF_AU_council_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_AU_consultant_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_AU
+	}
 	prerequisites = {
 		"tech_colonial_centralization"
 	}
@@ -393,17 +398,17 @@ building_GF_AU_council_3 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
 		}
-	}	
+	}
 	allow = {
 		num_pops >= 40
-	}	
+	}
 	planet_modifier = {
-		job_GF_AU_consultant_add = 3	
+		job_GF_AU_consultant_add = 3
 		job_GF_AU_director_add = 1
 	}
 	
@@ -420,16 +425,19 @@ building_GF_AU_council_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_AU_director_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_AU
+	}
 	prerequisites = {
 		"tech_galactic_administration"
 	}
@@ -442,19 +450,19 @@ building_GF_URNC_committee_1 = {
 	icon = building_GF_capital_1
 	base_buildtime = 360
 	base_cap_amount = 1
-	category = government	
+	category = government
 	potential = {
 		exists = owner
 		owner = {
 			AND = {
 				has_authority = GF_auth_commonwealth
-				has_civic = GF_civic_URNC
+				has_valid_civic = GF_civic_URNC
 			}
 		}
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -462,10 +470,10 @@ building_GF_URNC_committee_1 = {
 	}
 	upgrades = {
 		"building_GF_URNC_committee_2"
-	}	
+	}
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 1
-	}	
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -479,16 +487,19 @@ building_GF_URNC_committee_1 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_URNC_secretary_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_URNC_secretary_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_URNC
+	}
 	prerequisites = {
 		"tech_planetary_government"
 	}
@@ -508,7 +519,7 @@ building_GF_URNC_committee_2 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -519,10 +530,10 @@ building_GF_URNC_committee_2 = {
 	}
 	allow = {
 		num_pops >= 10
-	}	
+	}
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 2
-	}	
+	}
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -536,16 +547,19 @@ building_GF_URNC_committee_2 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
 			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_URNC_secretary_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_URNC
+	}
 	prerequisites = {
 		"tech_colonial_centralization"
 	}
@@ -564,7 +578,7 @@ building_GF_URNC_committee_3 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
@@ -572,10 +586,10 @@ building_GF_URNC_committee_3 = {
 	}
 	allow = {
 		num_pops >= 40
-	}	
+	}
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 3
-		job_GF_URNC_commissioner_add = 1	
+		job_GF_URNC_commissioner_add = 1
 	}
 	resources = {
 		category = planet_buildings
@@ -590,16 +604,19 @@ building_GF_URNC_committee_3 = {
 		potential = {
 			exists = owner
 			owner = {
-				has_civic = GF_civic_IOP
+				has_valid_civic = GF_civic_IOP
 			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
 		}
-	}	
+	}
 	triggered_desc = {
 		text = job_GF_URNC_commissioner_effect_desc
-	}	
+	}
+	show_tech_unlock_if = {
+		has_valid_civic = GF_civic_URNC
+	}
 	prerequisites = {
 		"tech_galactic_administration"
 	}
