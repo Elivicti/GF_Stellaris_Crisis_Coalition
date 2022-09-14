@@ -10,3 +10,33 @@ GF_planet_dormancy = {
 		produces
 	}
 }
+
+GF_planet_pop_assemblers = {
+	parent = planet_pop_assemblers
+	generate_add_modifiers = {
+		produces
+	}
+	generate_mult_modifiers = {
+		upkeep
+	}
+}
+
+GF_ship_components = {
+	parent = ship_components
+}
+
+GF_ship_collapse_weapons = {
+	parent = GF_ship_components
+}
+
+GF_ship_collapse_armors = {
+	parent = GF_ship_components
+}
+
+GF_ship_collapse_utilities = {
+	parent = GF_ship_components
+}
+
+GF_ship_computers = {
+	parent = GF_ship_components
+}
