@@ -1,4 +1,9 @@
-spriteTypes = {	
+spriteTypes = {
+	# armies
+	spriteType = {
+		name = "GFX_GF_army_type_armored_train"
+		texturefile = "gfx/interface/planetview/GF_armored_train_army.dds"
+	}
 
 	# ship components
 	spriteType = {
@@ -31,5 +36,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GF_ogas_computer"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_computer_ogas.dds"
+	}
+
+	# edicts
+	spriteType = {
+		name = "GFX_GF_edict_type_robot"
+		textureFile = "gfx/interface/icons/edicts/roboticist.dds"
 	}
 }
