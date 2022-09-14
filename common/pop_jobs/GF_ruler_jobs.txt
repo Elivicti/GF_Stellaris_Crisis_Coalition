@@ -28,11 +28,10 @@ GF_URNC_commissioner = {
 	}
 
 	planet_modifier = {
+		planet_administrators_produces_mult = 0.05
 		planet_amenities_add = 8
 	}
-	country_modifier = {
-		country_admin_cap_add = 5
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -154,11 +153,10 @@ GF_AU_director = {
 	}
 
 	planet_modifier = {
+		planet_administrators_produces_mult = 0.05
 		planet_amenities_add = 2
 	}
-	country_modifier = {
-		country_admin_cap_add = 5
-	}
+
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -306,12 +304,11 @@ GF_GK_officer = {
 	}
 
 	planet_modifier = {
+		planet_administrators_produces_mult = 0.05
 		planet_amenities_add = 2
 		trade_value_add = 6
 	}
-	country_modifier = {
-		country_admin_cap_add = 5
-	}
+	
 	triggered_planet_modifier = {
 		potential = {
 			has_trait = trait_thrifty

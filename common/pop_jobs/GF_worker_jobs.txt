@@ -14,7 +14,7 @@ GF_guard_doll = {
 	
 	pop_modifier = {
 		pop_defense_armies_add = 2
-	}	
+	}
 	
 	resources = {
 		category = planet_soldiers
@@ -30,16 +30,15 @@ GF_guard_doll = {
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
-		always = yes
 		hidden_trigger = { exists = owner }
-		owner = { has_authority = GF_auth_commonwealth }
 		has_trait = GF_trait_doll
+		owner = { has_authority = GF_auth_commonwealth }
 	}
 	
 	weight = {
 		weight = @clerk_job_weight
 		modifier = {
-			factor = 10	
+			factor = 10
 			planet = { has_modifier = GF_sercurity_protocol }
 			has_trait = GF_trait_doll
 		}
@@ -73,7 +72,7 @@ GF_dormancy_doll = {
 			engineering_research = 2
 			society_research = 2
 		}
-	}	
+	}
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
@@ -93,7 +92,7 @@ GF_dormancy_doll = {
 	}
 	
 	weight = {
-		weight = 0			
+		weight = 0
 	}
 }
 GF_command_doll = {
@@ -105,7 +104,7 @@ GF_command_doll = {
 	}
 	planet_modifier = {
 		planet_amenities_no_happiness_add = 4
-	}		
+	}
 	resources = {
 		category = planet_administrators
 		produces = {
@@ -120,7 +119,7 @@ GF_command_doll = {
 			}
 			unity = 1
 		}
-	}	
+	}
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -140,7 +139,7 @@ GF_command_doll = {
 	weight = {
 		weight = @ruler_job_weight
 		modifier = {
-			factor = 2	
+			factor = 2
 			has_trait = GF_trait_doll
 		}
 	}
@@ -251,13 +250,13 @@ GF_assemble_doll = {
 		}
 	}
 	resources = {
-		category = planet_pop_assemblers
+		category = GF_planet_pop_assemblers
 		upkeep = {
 			alloys = 1
 			food = 0.25
 		}
 	}
-		weight = {
+	weight = {
 		weight = @specialist_job_weight
 		modifier = {
 			factor = 100
