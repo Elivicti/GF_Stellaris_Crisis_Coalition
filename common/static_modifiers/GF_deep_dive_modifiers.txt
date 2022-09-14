@@ -1,0 +1,212 @@
+#### deep dive cooldown
+GF_zion_deep_dive_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_shroud_unavailable.dds"
+}
+
+
+# n -> negative, 都是负面buff
+
+### Tier 1
+GF_zion_deep_dive_all_research_speed_1 = {
+	all_technology_research_speed = 0.05
+}
+
+GF_zion_deep_dive_all_research_produces_1 = {
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+	planet_jobs_physics_research_produces_mult = 0.05
+	planet_jobs_society_research_produces_mult = 0.05
+	planet_jobs_engineering_research_produces_mult = 0.05
+}
+
+GF_zion_deep_dive_physics_research_produces_1 = {
+	planet_jobs_physics_research_produces_mult = 0.05
+}
+
+GF_zion_deep_dive_society_research_produces_1 = {
+	planet_jobs_society_research_produces_mult = 0.05
+}
+
+GF_zion_deep_dive_engineering_research_produces_1 = {
+	planet_jobs_engineering_research_produces_mult = 0.05
+}
+
+GF_zion_deep_dive_robotic_produces_1 = {
+	planet_jobs_robotic_produces_mult = 0.05
+}
+
+GF_zion_deep_dive_base_intel_1 = {
+	add_base_country_intel = 20
+}
+
+GF_zion_deep_dive_crime_1 = {
+	planet_crime_mult = -0.05
+}
+
+GF_zion_deep_dive_planet_development_1 = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_building_build_speed_mult.dds"
+	planet_colony_development_speed_mult = 0.05
+	planet_building_build_speed_mult = 0.05
+	planet_clear_blocker_speed_mult = 0.05
+}
+
+GF_zion_deep_dive_army_exp_1 = {
+	icon = "gfx/interface/icons/modifiers/mod_army_morale.dds"
+	planet_army_build_speed_mult = 0.05
+	army_starting_experience_add = 10
+}
+
+# debuff
+GF_zion_deep_dive_all_research_speed_n_1 = {
+	all_technology_research_speed = -0.05
+}
+GF_zion_deep_dive_robot_produces_n_1 = {
+	planet_jobs_robotic_produces_mult = -0.05
+}
+GF_zion_deep_dive_crime_n_1 = {
+	planet_crime_mult = 0.05
+}
+
+
+### Tier 2
+GF_zion_deep_dive_all_research_produces_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+	planet_jobs_physics_research_produces_mult = 0.10
+	planet_jobs_society_research_produces_mult = 0.10
+	planet_jobs_engineering_research_produces_mult = 0.10
+}
+
+GF_zion_deep_dive_planet_development_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_building_build_speed_mult.dds"
+	planet_colony_development_speed_mult = 0.15
+	planet_building_build_speed_mult = 0.15
+	planet_clear_blocker_speed_mult = 0.15
+}
+
+GF_zion_deep_dive_army_exp_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_army_morale.dds"
+	planet_army_build_speed_mult = 0.15
+	army_starting_experience_add = 30
+}
+
+GF_zion_deep_dive_robotic_produces_2 = {
+	planet_jobs_robotic_produces_mult = 0.10
+}
+
+GF_zion_deep_dive_ship_fire_power_2 = {
+	ship_weapon_damage = 0.10
+	ship_hull_damage_mult = 0.10
+	ship_piracy_suppression_add = 10
+	ship_evasion_mult = 0.05
+}
+
+GF_zion_deep_dive_ship_exp_2 = {
+	ship_starting_experience_add = 50
+}
+
+GF_zion_deep_dive_empire_size_2 = {
+	empire_size_mult = -0.10
+	empire_size_penalty_mult = -0.10
+}
+
+GF_zion_deep_dive_station_produces_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_minerals_produces_add.dds"
+	station_gatherers_produces_mult = 0.15
+	station_researchers_produces_mult = 0.15
+}
+
+# debuff
+GF_zion_deep_dive_ship_fire_power_n_2 = {
+	ship_weapon_damage = -0.05
+	ship_accuracy_mult = -0.10
+	ship_evasion_mult = -0.10
+}
+
+GF_zion_deep_dive_empire_size_n_2 = {
+	empire_size_mult = 0.10
+	empire_size_penalty_mult = 0.10
+}
+
+GF_zion_deep_dive_all_research_speed_n_2 = {
+	all_technology_research_speed = -0.10
+}
+
+GF_zion_deep_dive_robot_produces_n_2 = {
+	planet_jobs_robotic_produces_mult = -0.10
+}
+
+### Tier 3
+GF_zion_deep_dive_research_3 = {
+	all_technology_research_speed = 0.50
+	station_researchers_produces_mult = 0.50
+	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_society_research_produces_mult = 0.25
+	planet_jobs_engineering_research_produces_mult = 0.25
+}
+
+GF_zion_deep_dive_production_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
+	planet_jobs_robotic_produces_mult = 0.50
+	station_gatherers_produces_mult = 0.50
+	megastructures_produces_mult = 0.50
+}
+
+GF_zion_deep_dive_diplomacy_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_found_encryption_key.dds"
+	country_base_influence_produces_add = 3
+	first_contact_clues_add = 5
+	add_base_country_intel = 80
+	spy_network_daily_value_mult = 1.00
+	country_trust_growth = 0.5
+}
+
+GF_zion_deep_dive_fleet_3 = {
+	ship_weapon_damage = 0.25
+	ship_evasion_mult = 0.5
+	ship_tracking_mult = 0.5
+	ship_starting_experience_add = 200
+}
+
+# debuff
+GF_zion_deep_dive_research_n_3 = {
+	all_technology_research_speed = -0.25
+	station_researchers_produces_mult = -0.25
+	planet_jobs_physics_research_produces_mult = -0.20
+	planet_jobs_society_research_produces_mult = -0.20
+	planet_jobs_engineering_research_produces_mult = -0.20
+}
+
+GF_zion_deep_dive_production_n_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
+	planet_jobs_robotic_produces_mult = -0.25
+	station_gatherers_produces_mult = -0.20
+	megastructures_produces_mult = -0.20
+	megastructures_upkeep_mult = 0.50
+}
+
+GF_zion_deep_dive_diplomacy_n_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_found_encryption_key.dds"
+	first_contact_clues_add = -5
+	add_base_country_intel = -50
+	spy_network_daily_value_mult = -0.5
+	country_trust_growth = -0.5
+	diplo_weight_technology_mult = -0.25
+}
+
+GF_zion_deep_dive_fleet_n_3 = {
+	ship_weapon_damage = -0.20
+	ship_evasion_mult = -0.25
+	ship_tracking_mult = -0.25
+	ship_shield_mult = -0.5
+}
+
+# Tier 4
+GF_zion_deep_dive_data_horizon = {
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	planet_jobs_robotic_produces_mult = 0.50
+	stations_produces_mult = 0.50
+	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_society_research_produces_mult = 0.25
+	planet_jobs_engineering_research_produces_mult = 0.25
+	country_base_influence_produces_add = 3
+}
+

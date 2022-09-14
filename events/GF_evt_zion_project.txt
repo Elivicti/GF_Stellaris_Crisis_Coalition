@@ -1,0 +1,1689 @@
+namespace = GF_zion_project
+
+# 关于ELID
+country_event = {
+	id = GF_zion_project.1000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = {
+		text = GF_zion_project.1000.desc
+		trigger = {
+			NOR = {
+				has_country_flag = flag_GF_requested_elid_army
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+	}
+	desc = {
+		text = GF_zion_project.1000.desc.repeat
+		trigger = {
+			has_country_flag = flag_GF_requested_elid_army
+			NOT = { has_valid_civic = civic_reanimated_armies }
+		}
+	}
+	desc = {
+		text = GF_zion_project.1000.desc.reanimated_armies
+		trigger = { has_valid_civic = civic_reanimated_armies }
+	}
+
+	option = {
+		name = GF_zion_project.1000.a
+		is_dialog_only = yes
+		response_text = GF_zion_project.1000.a.response
+	}
+
+	option = {
+		name = GF_zion_project.1000.b
+		is_dialog_only = yes
+		response_text = GF_zion_project.1000.b.response
+	}
+
+	option = {
+		name = GF_zion_project.1000.request
+		response_text = GF_zion_project.1000.request.response
+
+		trigger = {
+			NOR = {
+				has_country_flag = flag_GF_requested_elid_army
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = flag_GF_requested_elid_army	# 标记
+		}
+		GF_enable_zion_project = { PROJECT = SP_GF_ZION_ELID_ARMY_PROJECT }
+	}
+
+	option = {
+		name = GF_zion_project.1000.request
+		response_text = GF_zion_project.1000.request.reanimated_armies_response
+
+		trigger = {
+			has_valid_civic = civic_reanimated_armies
+			NOR = {
+				has_tech_option = GF_tech_elid_army
+				has_technology = GF_tech_elid_army
+			}
+		}
+
+		hidden_effect = {
+			set_country_flag = flag_GF_requested_elid_army	# 标记
+		}
+		add_research_option = GF_tech_elid_army
+	}
+
+	option = {
+		name = GF_zion_project.return
+		trigger = {
+			has_country_flag = flag_GF_requested_elid_army
+		}
+
+		hidden_effect = {
+			country_event = { id = GF_zion.21000 }
+		}
+	}
+}
+
+# 完成特殊项目
+country_event = {
+	id = GF_zion_project.1010
+	title = GF_zion_project.1010.name
+	desc = GF_zion_project.1010.desc
+
+	picture = GFX_evt_GF_elid_in_tank
+
+	is_triggered_only = yes
+
+	immediate = {
+		abort_special_project = {
+			type = SP_GF_ZION_ELID_ARMY_PROJECT
+		}
+	}
+
+	option = {
+		name = GF_zion_project.1010.a
+		GF_end_zion_secrets_event_chain = yes
+
+		give_technology = { tech = GF_tech_elid_army }
+		GF_increase_zion_favor = { VALUE = 5 }
+	}
+}
+
+# 关于坍塌粒子武器
+country_event = {
+	id = GF_zion_project.2000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = {
+		text = GF_zion_project.2000.desc
+		trigger = {
+			NOT = { has_country_flag = flag_GF_requested_collapse_weapon }
+		}
+	}
+	desc = {
+		text = GF_zion_project.2000.desc.repeat
+		trigger = { has_country_flag = flag_GF_requested_collapse_weapon }
+	}
+
+	option = {
+		name = GF_zion_project.2000.a
+		is_dialog_only = yes
+		response_text = GF_zion_project.2000.a.response
+	}
+
+	option = {
+		name = GF_zion_project.2000.b
+		is_dialog_only = yes
+		response_text = GF_zion_project.2000.b.response
+	}
+
+	option = {
+		name = GF_zion_project.2000.request
+		response_text = GF_zion_project.2000.request.response
+
+		trigger = {
+			NOT = { has_country_flag = flag_GF_requested_collapse_weapon }
+		}
+
+		GF_enable_zion_project = { PROJECT = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT }
+		hidden_effect = {
+			set_country_flag = flag_GF_requested_collapse_weapon	# 标记
+		}
+	}
+
+	option = {
+		name = GF_zion_project.return
+		trigger = {
+			has_country_flag = flag_GF_requested_collapse_weapon
+		}
+
+		hidden_effect = {
+			country_event = { id = GF_zion.21000 }
+		}
+	}
+}
+
+# 完成特殊项目
+country_event = {
+	id = GF_zion_project.2010
+	title = GF_zion_project.2010.name
+	desc = GF_zion_project.2010.desc
+
+	picture = GFX_evt_rare_tech_cache
+
+	is_triggered_only = yes
+
+	immediate = {
+		abort_special_project = {
+			type = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT
+		}
+	}
+
+	option = {
+		name = GF_zion_project.2010.a
+		GF_end_zion_secrets_event_chain = yes
+
+		give_technology = { tech = GF_tech_miniaturized_collapse_lance }
+		GF_increase_zion_favor = { VALUE = 10 }
+	}
+}
+
+# 关于逆向坍塌
+country_event = {
+	id = GF_zion_project.3000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = {
+		text = GF_zion_project.3000.desc
+		trigger = {
+			NOT = { has_country_flag = flag_GF_requested_collapse_singshot }
+		}
+	}
+	desc = {
+		text = GF_zion_project.3000.desc.repeat
+		trigger = { has_country_flag = flag_GF_requested_collapse_singshot }
+	}
+
+	option = {
+		name = GF_zion_project.3000.a
+		is_dialog_only = yes
+		response_text = GF_zion_project.3000.a.response
+	}
+
+	option = {
+		name = GF_zion_project.3000.b
+		is_dialog_only = yes
+		response_text = GF_zion_project.3000.b.response
+	}
+
+	option = {
+		name = GF_zion_project.3000.request
+		response_text = GF_zion_project.3000.request.response
+
+		trigger = {
+			NOT = { has_country_flag = flag_GF_requested_collapse_singshot }
+		}
+
+		GF_enable_zion_project = { PROJECT = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT }
+		hidden_effect = {
+			set_country_flag = flag_GF_requested_collapse_singshot	# 标记
+		}
+	}
+
+	option = {
+		name = GF_zion_project.return
+		trigger = {
+			has_country_flag = flag_GF_requested_collapse_singshot
+		}
+
+		hidden_effect = {
+			country_event = { id = GF_zion.21000 }
+		}
+	}
+}
+
+# 完成特殊项目
+country_event = {
+	id = GF_zion_project.3010
+	title = GF_zion_project.3010.name
+	desc = GF_zion_project.3010.desc
+
+	picture = GFX_evt_quantum_catapult
+
+	is_triggered_only = yes
+
+	immediate = {
+		abort_special_project = {
+			type = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT
+		}
+	}
+
+	option = {
+		name = GF_zion_project.3010.a
+		GF_end_zion_secrets_event_chain = yes
+
+		give_technology = { tech = GF_tech_collapse_slingshot_protocal }
+		GF_increase_zion_favor = { VALUE = 10 }
+	}
+}
+
+
+# 关于 球形主机alpha
+country_event = {
+	id = GF_zion_project.20000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion_project.20000.desc
+
+	option = {
+		name = GF_zion_project.20000.a
+		hidden_effect = {
+			country_event = { id = GF_zion_project.20001 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.20001
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion_project.20001.desc
+
+	option = {
+		name = GF_zion_project.20001.a
+		hidden_effect = {
+			country_event = { id = GF_zion_project.20002 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.20002
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion_project.20002.desc
+
+	option = {
+		name = GF_zion_project.20002.a
+		GF_enable_zion_project = { PROJECT = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT }
+		hidden_effect = {
+			set_country_flag = flag_GF_requested_zion_deep_dive
+		}
+	}
+}
+
+# 特殊项目完成
+country_event = {
+	id = GF_zion_project.20010
+	title = GF_zion_project.20010.name
+	desc = GF_zion_project.20010.desc
+
+	picture = GFX_evt_GF_core
+
+	is_triggered_only = yes
+
+	immediate = {
+		abort_special_project = {
+			type = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT
+		}
+	}
+
+	option = {
+		name = GF_zion_project.20010.a
+		remove_relic = GF_relic_orb_mainframe_alpha
+		add_modifier = {
+			modifier = GF_orb_mainframe_alpha
+			days = -1
+		}
+		custom_tooltip = GF_zion_deep_dive_enabled_tooltip
+		GF_end_zion_secrets_event_chain = yes
+		hidden_effect = {
+			remove_modifier = GF_enhanced_OGAS_signal
+		}
+		GF_increase_zion_favor = { VALUE = 15 }
+	}
+}
+
+
+## 深入锡安 (虚境抽卡)
+country_event = {
+	id = GF_zion_project.30000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion_project.30000.desc.a
+	desc = GF_zion_project.30000.desc.b
+	desc = GF_zion_project.30000.desc.c
+	desc = GF_zion_project.30000.desc.d
+
+	immediate = {
+		GF_get_monthly_income_and_stockpile = {
+			RES = energy
+			MIN = @GF_zion_project_energy_cost_1
+		}
+	}
+
+	option = {
+		name = GF_zion_project.30000.low_energy
+		custom_tooltip = GF_zion_project.30000.low_energy.tooltip
+		allow = { GF_require_energy_stockpile_1 = yes }
+		GF_zion_project_cost = { RES = energy TIER = 1 }
+
+		hidden_effect = {
+			country_event = { id = GF_zion_project.31000 }
+			GF_set_zion_deep_dive_cooldown_no_notification = yes
+		}
+	}
+
+	option = {
+		name = GF_zion_project.30000.mid_energy
+		custom_tooltip = GF_zion_project.30000.mid_energy.tooltip
+		allow = { GF_require_energy_stockpile_2 = yes }
+		GF_zion_project_cost = { RES = energy TIER = 2 }
+
+		hidden_effect = {
+			country_event = { id = GF_zion_project.32000 }
+			GF_set_zion_deep_dive_cooldown_no_notification = yes
+		}
+	}
+
+	option = {
+		name = GF_zion_project.30000.high_energy
+		custom_tooltip = GF_zion_project.30000.high_energy.tooltip
+		allow = { GF_require_energy_stockpile_3 = yes }
+		GF_zion_project_cost = { RES = energy TIER = 3 }
+
+		hidden_effect = {
+			country_event = { id = GF_zion_project.33000 }
+			GF_set_zion_deep_dive_cooldown_no_notification = yes
+		}
+	}
+
+	option = {
+		name = GF_zion_project.30000.cancel
+
+		hidden_effect = {
+			country_event = { id = GF_zion.20000 }
+		}
+	}
+}
+
+# 少量能量
+country_event = {
+	id = GF_zion_project.31000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			10 = { country_event = { id = GF_zion_project.31100 } }	# 无事发生
+			40 = { country_event = { id = GF_zion_project.31200 } }	# 加科研点
+			50 = { country_event = { id = GF_zion_project.31300 } } # 加修正（包括buff和debuff）
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31100
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31100.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31100.a
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31200
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31200.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31200.a
+		locked_random_list = {
+			1 = {
+				add_monthly_resource_mult = {
+					resource = physics_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+			1 = {
+				add_monthly_resource_mult = {
+					resource = society_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+			1 = {
+				add_monthly_resource_mult = {
+					resource = engineering_research
+					value = @tier4researchreward
+					min = @tier4researchmin
+					max = @tier4researchmax
+				}
+			}
+		}
+
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31300
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			13 = { country_event = { id = GF_zion_project.31301 } }	# 科研
+			15 = { country_event = { id = GF_zion_project.31302 } }	# 机器人产出
+			15 = { country_event = { id = GF_zion_project.31303 } }	# 基础情报
+			15 = { country_event = { id = GF_zion_project.31304 } } # 犯罪度
+			15 = { country_event = { id = GF_zion_project.31305 } } # 星球发展
+			15 = { country_event = { id = GF_zion_project.31306 } } # 陆军
+			
+			# debuff
+			4 = { country_event = { id = GF_zion_project.31307 } } # 科研速度
+			4 = { country_event = { id = GF_zion_project.31308 } } # 机器人产出
+			4 = { country_event = { id = GF_zion_project.31309 } } # 犯罪度
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31301
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31301.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31301.a
+		locked_random_list = {
+			1 = { add_modifier = { modifier = GF_zion_deep_dive_all_research_speed_1 			years = 3 } }
+			1 = { add_modifier = { modifier = GF_zion_deep_dive_all_research_produces_1 		years = 3 } }
+			1 = { add_modifier = { modifier = GF_zion_deep_dive_physics_research_produces_1 	years = 3 } }
+			1 = { add_modifier = { modifier = GF_zion_deep_dive_society_research_produces_1 	years = 3 } }
+			1 = { add_modifier = { modifier = GF_zion_deep_dive_engineering_research_produces_1 years = 3 } }
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31302
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31302.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31302.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_robotic_produces_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31303
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31303.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31303.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_base_intel_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+
+country_event = {
+	id = GF_zion_project.31304
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31304.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31304.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_crime_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+
+country_event = {
+	id = GF_zion_project.31305
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31305.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31305.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_planet_development_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31306
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31306.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31306.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_army_exp_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31307
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31307.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31307.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_all_research_speed_n_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31308
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31308.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31308.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_robot_produces_n_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.31309
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.31309.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.31309.a
+		add_modifier = {
+			modifier = GF_zion_deep_dive_crime_n_1
+			years = 3
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+
+# 中等能量
+country_event = {
+	id = GF_zion_project.32000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			50 = {
+				# 加修正（包括buff和debuff）
+				modifier = { add = 30 GF_has_robotic_leaders = no }
+				country_event = { id = GF_zion_project.32100 }
+			}
+			35 = {
+				# 仅在有机械领袖的情况下，触发这个事件：给机械领袖加特质
+				modifier = { factor = 0 GF_has_robotic_leaders = no }
+				country_event = { id = GF_zion_project.32200 }
+			}
+			15 = {
+				# 给境内随机非宜居星球加产出特征
+				modifier = { add = 5 GF_has_robotic_leaders = no }
+				country_event = { id = GF_zion_project.32300 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32100
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			12 = { country_event = { id = GF_zion_project.32101 } }	# 科研
+			12 = { country_event = { id = GF_zion_project.32102 } }	# 星球发展
+			12 = { country_event = { id = GF_zion_project.32103 } } # 陆军
+			12 = { country_event = { id = GF_zion_project.32104 } } # 机器人产出
+			12 = { country_event = { id = GF_zion_project.32105 } } # 舰船火力
+			12 = { country_event = { id = GF_zion_project.32106 } } # 舰船经验
+			12 = { country_event = { id = GF_zion_project.32107 } } # 帝国规模
+			12 = { country_event = { id = GF_zion_project.32108 } } # 轨道空间站产出
+
+			# debuff
+			1 = { country_event = { id = GF_zion_project.32109 } }	# 舰船火力
+			1 = { country_event = { id = GF_zion_project.32110 } }	# 帝国规模
+			1 = { country_event = { id = GF_zion_project.32111 } }	# 科研速度
+			1 = { country_event = { id = GF_zion_project.32112 } }	# 机器人产出
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32101
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32101.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32101.a
+		add_modifier = { modifier = GF_zion_deep_dive_all_research_produces_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32102
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32102.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32102.a
+		add_modifier = { modifier = GF_zion_deep_dive_planet_development_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32103
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32103.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32103.a
+		add_modifier = { modifier = GF_zion_deep_dive_army_exp_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32104
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32104.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32104.a
+		add_modifier = { modifier = GF_zion_deep_dive_robotic_produces_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32105
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32105.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32105.a
+		add_modifier = { modifier = GF_zion_deep_dive_ship_fire_power_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32106
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32106.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32106.a
+		add_modifier = { modifier = GF_zion_deep_dive_ship_exp_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32107
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32107.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32107.a
+		add_modifier = { modifier = GF_zion_deep_dive_empire_size_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32108
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32108.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32108.a
+		add_modifier = { modifier = GF_zion_deep_dive_station_produces_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32109
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32109.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32109.a
+		add_modifier = { modifier = GF_zion_deep_dive_ship_fire_power_n_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32110
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32110.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32110.a
+		add_modifier = { modifier = GF_zion_deep_dive_empire_size_n_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32111
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32111.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32111.a
+		add_modifier = { modifier = GF_zion_deep_dive_all_research_speed_n_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32112
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32112.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32112.a
+		add_modifier = { modifier = GF_zion_deep_dive_robot_produces_n_2 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32200
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			1 = {
+				modifier = {
+					# 如果 未被增强的机械领袖 的 数量 为 0 则不触发此事件
+					factor = 0
+					count_owned_leader = {
+						limit = {
+							species = { is_robotic = yes }
+							GF_is_enhanced_leader = no
+						}
+						count = 0
+					}
+				}
+				# 随机领袖添加高级特质
+				random_owned_leader = {
+					limit = {
+						species = { is_robotic = yes }
+						NOT = { leader_class = ruler }
+						GF_is_enhanced_leader = no
+					}
+					save_event_target_as = enhancing_leader
+				}
+				country_event = { id = GF_zion_project.32201 }
+			}
+			1 = {
+				modifier = {
+					# 如果 拥有原版负面特质的机械领袖 的 数量 为 0 则不触发此事件
+					factor = 0
+					count_owned_leader = {
+						limit = {
+							species = { is_robotic = yes }
+							GF_leader_has_vanilla_negative_traits = yes
+						}
+						count = 0
+					}
+				}
+				# 清除所有机械领袖的原版负面特质
+				country_event = { id = GF_zion_project.32202 }
+			}
+			1 = {
+				# 随机领袖添加高级负面特质
+				random_owned_leader = {
+					limit = {
+						species = { is_robotic = yes }
+						NOT = { leader_class = ruler }
+					}
+					save_event_target_as = glitching_leader
+				}
+				country_event = { id = GF_zion_project.32203 }
+			}
+			1 = {
+				# 随机领袖添加经验
+				random_owned_leader = {
+					limit = {
+						species = { is_robotic = yes }
+						NOT = { leader_class = ruler }
+					}
+					save_event_target_as = choosing_leader
+				}
+				country_event = { id = GF_zion_project.32204 }	# 正面特质
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32201
+	title = GF_ZION_DEEP_DIVE
+
+	desc = {
+		text = GF_zion_project.32201.desc.governor
+		trigger = { event_target:enhancing_leader = { leader_class = governor } }
+	}
+	desc = {
+		text = GF_zion_project.32201.desc.scientist
+		trigger = { event_target:enhancing_leader = { leader_class = scientist } }
+	}
+	desc = {
+		text = GF_zion_project.32201.desc.admiral
+		trigger = { event_target:enhancing_leader = { leader_class = admiral } }
+	}
+	desc = {
+		text = GF_zion_project.32201.desc.general
+		trigger = { event_target:enhancing_leader = { leader_class = general } }
+	}
+
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32201.a
+		event_target:enhancing_leader = {
+			switch = {
+				trigger = leader_class
+				governor = { add_trait = GF_trait_leader_enhanced_governor }
+				scientist = { add_trait = GF_trait_leader_enhanced_scientist }
+				admiral = { add_trait = GF_trait_leader_enhanced_admiral }
+				general = { add_trait = GF_trait_leader_enhanced_general }
+			}
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32202
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32202.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32202.a
+		every_owned_leader = {
+			limit = { species = { is_robotic = yes } }
+			remove_trait = leader_trait_stubborn				# 顽固
+			remove_trait = leader_trait_rigid_programming		# 死板编程
+			remove_trait = leader_trait_erratic_morality_core	# 不稳定道德核心
+			remove_trait = leader_trait_unstable_code_base		# 不稳定代码库
+			remove_trait = leader_trait_substance_abuser		# 药物依赖
+			remove_trait = leader_trait_arrested_development	# 没有前途
+			remove_trait = leader_trait_nervous					# 神经质
+			remove_trait = leader_trait_lethargic				# 懒散
+			remove_trait = leader_trait_armchair_commander		# 纸上谈兵
+			remove_trait = leader_trait_paranoid				# 偏执
+			remove_trait = leader_trait_corrupt					# 腐败
+			remove_trait = leader_trait_traumatized				# 受挫
+			remove_trait = leader_trait_maimed					# 残废
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32203
+	title = GF_ZION_DEEP_DIVE
+
+	desc = {
+		text = GF_zion_project.32203.desc.governor
+		trigger = { event_target:glitching_leader = { leader_class = governor } }
+	}
+	desc = {
+		text = GF_zion_project.32203.desc.scientist
+		trigger = { event_target:glitching_leader = { leader_class = scientist } }
+	}
+	desc = {
+		text = GF_zion_project.32203.desc.admiral
+		trigger = { event_target:glitching_leader = { leader_class = admiral } }
+	}
+	desc = {
+		text = GF_zion_project.32203.desc.general
+		trigger = { event_target:glitching_leader = { leader_class = general } }
+	}
+
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.32203.a
+		custom_tooltip = GF_zion_project.32203.a.tooltip
+		event_target:glitching_leader = {
+			switch = {
+				trigger = leader_class
+				governor = { add_trait = GF_trait_leader_core_glitch_governor }
+				scientist = { add_trait = GF_trait_leader_core_glitch_scientist }
+				admiral = { add_trait = GF_trait_leader_core_glitch_admiral }
+				general = { add_trait = GF_trait_leader_core_glitch_general }
+			}
+			hidden_effect = { set_leader_flag = flag_l_GF_glitching_leader }
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32204
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32204.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:choosing_leader = {
+			export_trigger_value_to_variable = {
+				trigger = has_skill
+				variable = current_skill
+			}
+			# 读取当前领袖的等级上限
+			add_skill = 100
+			export_trigger_value_to_variable = {
+				trigger = has_skill
+				variable = max_skill
+			}
+			set_skill = current_skill
+
+			if = {
+				limit = { 
+					check_variable = {
+						which = current_skill
+						value >= max_skill
+					}
+				}
+				set_leader_flag = skill_at_max
+			}
+			# 添加的经验的计算公式: 
+			# skill <  10: -40 * skill + 900
+			# skill >= 10: -40 *    10 + 900
+			if = {
+				limit = {
+					check_variable = {
+						which = current_skill
+						value >= 10
+					}
+				}
+				set_variable = {
+					which = current_skill
+					value = 10
+				}
+			}
+			multiply_variable = {
+				which = current_skill
+				value = -40
+			}
+			change_variable = {
+				which = current_skill
+				value = 900
+			}
+		}
+	}
+
+	option = {
+		name = GF_zion_project.32204.a
+		event_target:choosing_leader = {
+			if = {
+				# 如果领袖已经到达最大等级且未拥有特殊特质，则给予特殊特质
+				limit = {
+					has_leader_flag = skill_at_max
+					NOR = {
+						has_trait = GF_trait_leader_inspired_governor
+						has_trait = GF_trait_leader_inspired_scientist
+						has_trait = GF_trait_leader_inspired_admiral
+						has_trait = GF_trait_leader_inspired_general
+					}
+				}
+				switch = {
+					trigger = leader_class
+					governor = { add_trait = GF_trait_leader_inspired_governor }
+					scientist = { add_trait = GF_trait_leader_inspired_scientist }
+					admiral = { add_trait = GF_trait_leader_inspired_admiral }
+					general = { add_trait = GF_trait_leader_inspired_general }
+				}
+			}
+			else = {
+				event_target:choosing_leader = {
+					add_experience = current_skill
+				}
+			}
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:choosing_leader = {
+				remove_leader_flag = skill_at_max
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.32300
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.32300.desc
+	picture = GFX_evt_GF_white_net
+	location = event_target:chosen_planet
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_planet_within_border = {
+			limit = {
+				habitable_planet = no
+				is_artificial = no
+				NOR = {
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+				}
+				# check that the random list won't come up empty
+				OR = {
+					energy_candidate = yes
+					mineral_candidate = yes
+					alloy_candidate = yes
+					exotic_gas_candidate = yes
+					rare_crystal_candidate = yes
+					volatile_motes_candidate = yes
+				}
+			}
+			save_event_target_as = chosen_planet
+		}
+	}
+
+	option = {
+		name = GF_zion_project.32300.a
+		locked_random_list = {
+			# Energy
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { energy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_energy_10 }
+			}
+			# Minerals
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { mineral_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_minerals_10 }
+			}
+			# Alloys
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { alloy_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_alloys_10 }
+			}
+			# Exotic Gas
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { exotic_gas_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_exotic_gases_5 }
+			}
+			# Rare Crystals
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { rare_crystal_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_rare_crystals_5 }
+			}
+			# Volatile Motes
+			15 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { volatile_motes_candidate = no }
+				}
+				event_target:chosen_planet = { add_deposit = d_volatile_motes_5 }
+			}
+			# Dark Matter
+			5 = {
+				modifier = {
+					factor = 0
+					event_target:chosen_planet = { NOT = { has_deposit_for = shipclass_mining_station } }
+				}
+				event_target:chosen_planet = { add_deposit = d_dark_matter_deposit_5 }
+			}
+			# Zro
+			5 = {
+				modifier = {
+					factor = 0
+					NOT = { has_technology = tech_mine_zro }
+				}
+				event_target:chosen_planet = { add_deposit = d_zro_deposit_5 }
+			}
+		}
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+
+# 大量能量
+country_event = {
+	id = GF_zion_project.33000
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			55 = { country_event = { id = GF_zion_project.33100 } }	# 给予buff
+			42 = {
+				# 给予debuff
+				modifier = {
+					add = 3
+					has_country_flag = flag_GF_data_singularity_triggered
+				}
+				country_event = { id = GF_zion_project.33200 }
+			}
+			3 = {
+				# 特殊事件：获得遗珍（提供强力buff），使天灾强度翻倍
+				modifier = {
+					factor = 0
+					has_country_flag = flag_GF_data_singularity_triggered
+				}
+				country_event = { id = GF_zion_project.33300 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33100
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			1 = { country_event = { id = GF_zion_project.33101 } }	# 科研
+			1 = { country_event = { id = GF_zion_project.33102 } }	# 生产
+			1 = { country_event = { id = GF_zion_project.33103 } }	# 外交
+			1 = { country_event = { id = GF_zion_project.33104 } }	# 舰队
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33101
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33101.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33101.a
+		add_modifier = { modifier = GF_zion_deep_dive_research_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33102
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33102.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33102.a
+		add_modifier = { modifier = GF_zion_deep_dive_production_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33103
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33103.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33103.a
+		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33104
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33104.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33104.a
+		add_modifier = { modifier = GF_zion_deep_dive_fleet_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33200
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			1 = { country_event = { id = GF_zion_project.33201 } }	# 科研
+			1 = { country_event = { id = GF_zion_project.33202 } }	# 生产
+			1 = { country_event = { id = GF_zion_project.33203 } }	# 外交
+			1 = { country_event = { id = GF_zion_project.33204 } }	# 舰队
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33201
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33201.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33201.a
+		add_modifier = { modifier = GF_zion_deep_dive_research_n_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33202
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33202.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33202.a
+		add_modifier = { modifier = GF_zion_deep_dive_production_n_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33203
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33203.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33203.a
+		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_n_3 years = 3 }
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33204
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33204.desc
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33204.a
+		add_modifier = { modifier = GF_zion_deep_dive_fleet_n_3 years = 3 }
+	}
+}
+
+# 特殊事件：获得遗珍（提供强力buff），TODO: 使天灾强度翻倍
+country_event = {
+	id = GF_zion_project.33300
+	title = GF_ZION_DEEP_DIVE
+	desc = GF_zion_project.33300.desc
+	picture = GFX_evt_GF_net_world
+	
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = flag_GF_data_singularity_triggered
+	}
+
+	option = {
+		name = GF_zion_project.33300.a
+		hidden_effect = {
+			country_event = { id = GF_zion_project.33301 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33301
+	title = GF_ZION
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion_project.33301.desc
+	is_triggered_only = yes
+
+	option = {
+		name = GF_zion_project.33301.a
+		GF_enable_zion_project = { PROJECT = SP_GF_DATA_SINGULARITY_PROJECT }
+		GF_decrease_zion_favor = { VALUE = 5 }
+
+		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_inf
+		hidden_effect = {
+			remove_modifier = GF_zion_deep_dive_cooldown
+			add_modifier = {
+				modifier = GF_zion_deep_dive_cooldown
+				years = -1
+			}
+		}
+	}
+
+	option = {
+		name = GF_zion_project.33301.b
+		custom_tooltip = GF_zion_project.33301.b.tooltip
+		GF_decrease_zion_favor = { VALUE = 25 }
+		
+		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_10
+		hidden_effect = {
+			remove_modifier = GF_zion_deep_dive_cooldown
+			add_modifier = {
+				modifier = GF_zion_deep_dive_cooldown
+				years = 10
+			}
+			country_event = {
+				id = GF_zion_project.34000
+				days = 3600
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_zion_project.33310
+	title = GF_zion_project.33310.name
+	desc = GF_zion_project.33310.desc
+	picture = GFX_evt_GF_barracuda_core
+
+	is_triggered_only = yes
+
+	immediate = {
+		abort_special_project = {
+			type = SP_GF_DATA_SINGULARITY_PROJECT
+		}
+		random_owned_leader = {
+			limit = { is_researching_area = physics }
+			save_event_target_as = physics_leader
+		}
+	}
+
+	option = {
+		name = GF_zion_project.33310.a
+	}
+
+	option = {
+		name = GF_zion_project.33310.b
+		custom_tooltip = GF_zion_project.33310.b.tooltip
+		add_relic = GF_relic_data_singularity
+		hidden_effect = {
+			set_global_flag = flag_g_GF_data_singularity_obtained
+			set_country_flag = flag_GF_data_singularity_owner
+		}
+	}
+
+	after = {
+		GF_end_zion_secrets_event_chain = yes
+		GF_increase_zion_favor = { VALUE = 5 }
+		hidden_effect = { remove_modifier = GF_zion_deep_dive_cooldown }
+		GF_set_zion_deep_dive_cooldown = yes
+	}
+}
+
+
+# 冷却结束后的提醒事件
+country_event = {
+	id = GF_zion_project.34000
+	title = GF_zion_project.34000.name
+	desc = {
+		text = GF_zion_project.34000.desc
+		trigger = { NOT = { any_owned_leader = { has_leader_flag = flag_l_GF_glitching_leader } } }
+	}
+	desc = {
+		text = GF_zion_project.34000.desc.glitch_leader
+		trigger = { any_owned_leader = { has_leader_flag = flag_l_GF_glitching_leader } }
+	}
+	picture = GFX_evt_GF_white_net
+
+	is_triggered_only = yes
+
+	option = {
+		name = {
+			text = GF_zion_project.34000.a
+			trigger = { NOT = { any_owned_leader = { has_leader_flag = flag_l_GF_glitching_leader } } }
+		}
+		name = {
+			text = GF_zion_project.34000.b
+			trigger = { any_owned_leader = { has_leader_flag = flag_l_GF_glitching_leader } }
+		}
+	}
+
+	option = {
+		name = GF_zion_project.34000.c
+		hidden_effect = {
+			country_event = { id = GF_zion.0 }
+		}
+	}
+
+	after = {
+		if = {
+			limit = { any_owned_leader = { has_leader_flag = flag_l_GF_glitching_leader } }
+			event_target:glitching_leader = {
+				switch = {
+					trigger = leader_class
+					governor = { remove_trait = GF_trait_leader_core_glitch_governor }
+					scientist = { remove_trait = GF_trait_leader_core_glitch_scientist }
+					admiral = { remove_trait = GF_trait_leader_core_glitch_admiral }
+					general = { remove_trait = GF_trait_leader_core_glitch_general }
+				}
+			}
+		}
+		hidden_effect = {
+			event_target:glitching_leader = {
+				remove_leader_flag = flag_l_GF_glitching_leader
+			}
+		}
+	}
+}

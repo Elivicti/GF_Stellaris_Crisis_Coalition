@@ -1,0 +1,171 @@
+﻿l_simp_chinese:
+ GF_secrets_of_zion_event_chain_title:0 "$GF_ZION$的秘密"
+# ONLYHOPEREMAINS
+ GF_secrets_of_zion_event_chain_desc:0 "--- / -. / .-.. / -.-- / .... / --- / .--. / . / .-. / . / -- / .- / .. / -. / ..."
+
+ GF_zion_project.return:0 "我们换个话题吧。"
+
+ GF_zion_project.1000.desc.reanimated_armies:0 "冷静的声音：“不得不说……你们的§Y$job_necromancer$§!实在是神奇，我们从来没有见过这种技术。”\n\n年长的声音：“确实是十分神秘的技术……但在一些人手上恐怕也是十分危险的技术。”\n\n冷漠的声音：“这东西真的符合物理定律吗？”"
+
+#  GF_zion_project.1000.a:0 ""
+#  GF_zion_project.1000.a.response:0 ""
+
+#  GF_zion_project.1000.b:0 ""
+#  GF_zion_project.1000.b.response:0 ""
+
+ GF_zion_project.1000.request:0 "我们希望可以在§Y军事§!上应用E.L.I.D"
+#  GF_zion_project.1000.request.response:0 ""
+
+ SP_GF_ZION_ELID_ARMY_PROJECT:0 "军事化应用E.L.I.D"
+ SP_GF_ZION_ELID_ARMY_PROJECT_DESC:0 "没有人愿意与这些恐怖的生物正面对峙，我们是如此，我们的敌人自然也是如此。\n\n利用从$GF_ZION$得到的资料，我们可以找到驱使ELID感染者为我们而战的方法。"
+
+ GF_zion_project.2000.desc:0 "成熟的声音：“「§Y坍塌物质§!」，原来你们是这么称呼$GF_collapse_material_name_error$的么……”\n\n冷漠的声音：“执着于斗争……在夺走其它生命这方面，你们总是创意十足。说说看，你们想要什么？”"
+#  GF_zion_project.2000.desc.repeat:0 "冷静的声音：“好吧，好吧。来看看还有哪些东西是你们想知道的，关于这个$GF_collapse_material_name_error$，或者叫「§Y坍塌物质§!」。”"
+ 
+ GF_zion_project.2000.a:0 "§Y坍塌物质§!到底是个什么玩意？"
+#  GF_zion_project.2000.a.response:0 "冷静的声音：“$GF_collapse_material_name_error$是一种以紊乱运动方式行进的粒子波，能使原有物质分子引斥力被内部阻断，减弱排序导致物质内构分子有序坍塌，利用引斥力扭转压缩原有分子空间使其量子化。当然我相信你们早就知道这些东西了。”"
+
+#  GF_zion_project.2000.b:0 ""
+#  GF_zion_project.2000.b.response:0 ""
+
+ GF_zion_project.2000.request:0 "我们希望坍塌粒子武器可以运用在§Y小型舰船§!上。"
+ GF_zion_project.2000.request.response:0 "冷静的声音：“想保持像你们大型发射阵列那样的能量输出效率显然是不可行的，对于小型设备来说压力太大了。”\n\n冷静的声音：“但是如果降低一部分输出效率，以你们目前的材料水平是完全能够制造出能支撑这些压力的小型设备的。只要把剩下的输出集中起来，依然会有不错的威力。更详细的数据已经传输到你们的数据库了。”"
+
+ SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT:0 "小型化坍塌粒子武器"
+ SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT_DESC:0 "坍塌粒子在军事上具有极强的应用前景，但由于技术限制，坍塌粒子武器需要庞大的发射器和维护设备才能安全运行。从$GF_ZION$得到的资料表明，坍塌粒子武器具有小型化的可能性。"
+
+
+#  GF_zion_project.3000.a:0 ""
+#  GF_zion_project.3000.a.response:0 ""
+
+#  GF_zion_project.3000.b:0 ""
+#  GF_zion_project.3000.b.response:0 ""
+
+#  GF_zion_project.3000.request:0 ""
+#  GF_zion_project.3000.request.response:0 ""
+
+ SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT:0 "逆向坍塌量子弹射研究"
+ SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT_DESC:0 "$GF_COLLAPSE_JUMP_DRIVE$已经证明舰船通过逆向坍塌在空间中跃迁是可行且十分高效的。$GF_ZION$给予的资料已经证实利用逆向坍塌过程的跃迁还有进一步优化的空间，也可以用于提升$quantum_catapult_1$的运作效率。"
+
+ SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT:0 "$GF_relic_orb_mainframe_alpha$"
+#  SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT:0 ""
+
+ GF_ZION_DEEP_DIVE:0 "深入$GF_ZION$"
+
+ GF_zion_project.30000.low_energy:0 "提供§Y少量§!£energy£能量"
+ GF_zion_project.30000.low_energy.tooltip:0 "向$GF_ZION$注入§Y一个月§!，至少§Y5K§!收入的£energy£能量，以便我们的研究人员对$GF_ZION$进行进一步研究。\n只提供这一些能量恐怕不会有立竿见影的效果。\n\n"
+ GF_zion_project.30000.mid_energy:0 "提供§G一些§!£energy£能量"
+ GF_zion_project.30000.mid_energy.tooltip:0 "向$GF_ZION$注入§G两个月§!收入，至少§G10K§!的£energy£能量，以便我们的研究人员对$GF_ZION$进行进一步研究。\n\n"
+ GF_zion_project.30000.high_energy:0 "提供§R大量§!£energy£能量"
+ GF_zion_project.30000.high_energy.tooltip:0 "向$GF_ZION$注入§R三个月§!收入，至少§R15K§!的£energy£能量，以便我们的研究人员对$GF_ZION$进行进一步研究。\n如此大量的能量很可能会导致$GF_ZION$变得§R不稳定§!，我们无法预料可能会出现的§R负面影响§!。\n\n"
+ GF_zion_project.30000.cancel:0 "算了。"
+
+ GF_zion_project.31100.desc:0 "我们注入$GF_ZION$的能量犹如石子落入大海，除了引起了一点涟漪外，什么事情也没有发生。\n\n我们的科研人员没有得到任何有用的数据。"
+ GF_zion_project.31100.a:0 "可惜……"
+ GF_zion_project.31200.desc:0 "注入能量之后，$GF_ZION$中产生了一些变化，我们的研究人员对此非常感兴趣，得到了一些有用的研究数据。"
+ GF_zion_project.31200.a:0 "很好。"
+
+ GF_zion_project.31301.desc:0 "我们注入$GF_ZION$的能量使其算力得到了一定提升，帝国中部分与$GF_ZION$相连接的科研设备的性能也随之提升了。"
+ GF_zion_project.31301.a:0 "很好。"
+ GF_zion_project.31302.desc:0 "由于帝国境内所有机械人口与$GF_ZION$存在一定程度的连接，我们注入的能量让他们的工作效率更高了。"
+ GF_zion_project.31302.a:0 "很好。"
+ GF_zion_project.31303.desc:0 "$GF_ZION$的状态变得活跃起来，强化了我们情报部门的各类设备的性能。"
+ GF_zion_project.31303.a:0 "还行。"
+ GF_zion_project.31304.desc:0 "我们注入的能量通过$GF_ZION$强化了帝国各殖民地上的各式自动化执法设备。"
+ GF_zion_project.31304.a:0 "还行。"
+ GF_zion_project.31305.desc:0 "帝国境内的各式基建设施在连接到$GF_ZION$后，性能得到了强化。"
+ GF_zion_project.31305.a:0 "不错。"
+ GF_zion_project.31306.desc:0 "我们军队中各类训练用自动化器械的算力和性能得到了提升。"
+ GF_zion_project.31306.a:0 "很好。"
+ GF_zion_project.31307.desc:0 "我们注入$GF_ZION$的能量让其产生了些许的不稳定，我们所有与$GF_ZION$相连接的科研设备都受到了影响。"
+ GF_zion_project.31307.a:0 "……"
+ GF_zion_project.31308.desc:0 "$GF_ZION$变得有些许不稳定，帝国境内的所有机械人口访问中央大数据库的链接通路都受到了影响。"
+ GF_zion_project.31308.a:0 "？？"
+ GF_zion_project.31309.desc:0 "$GF_ZION$产生了一些较为混乱的变化，帝国各殖民地上的自动化执法设备访问数据库的延迟增加了。"
+ GF_zion_project.31309.a:0 "……"
+
+ GF_zion_project.32101.desc:0 "我们在连接到$GF_ZION$的各处设备都捕获到了十分有趣的数据流，这大大促进了科研人员的研究。"
+ GF_zion_project.32101.a:0 "很好。"
+ GF_zion_project.32102.desc:0 "我们从$GF_ZION$获取到了一些看上去像是用于基建设备的数据，可以用来加强我们自己的基建。\n\n但是为什么$GF_ZION$里会有这样的数据呢？"
+ GF_zion_project.32102.a:0 "不错。"
+ GF_zion_project.32103.desc:0 "这一次从$GF_ZION$中获取的数据包含了大量的战争数据，看上去似乎来自某个未知文明。"
+ GF_zion_project.32103.a:0 "有点意思。"
+ GF_zion_project.32104.desc:0 "我们从$GF_ZION$中获取到了相当数量的生产相关的资料，这部分资料已经传输至中央数据库，以便帝国的所有机械人口进行访问。"
+ GF_zion_project.32104.a:0 "很好。"
+ GF_zion_project.32105.desc:0 "$GF_ZION$中涌现的数据展示了两个未知文明之间多次大型太空战斗的数据资料，我们可以用来强化舰队的训练。"
+ GF_zion_project.32105.a:0 "不错。"
+ GF_zion_project.32106.desc:0 "$GF_zion_project.32105.desc$"
+ GF_zion_project.32106.a:0 "很好。"
+ GF_zion_project.32107.desc:0 "$GF_ZION$中涌现出了大量数据，似乎是某个未知文明的社会学研究资料，对我们帝国自身的管理大有裨益。"
+ GF_zion_project.32107.a:0 "很好。"
+ GF_zion_project.32108.desc:0 "我们获得了一些星球的勘探数据，还有可以用于优化空间站探测器的数据资料。"
+ GF_zion_project.32108.a:0 "很好。"
+ GF_zion_project.32109.desc:0 "在我们注入能量后，$GF_ZION$突然变得不稳定，由于我们所有舰船的控制电脑都有连接到中央网络，这些控制电脑都受到了不同程度的影响。"
+ GF_zion_project.32109.a:0 "淦！"
+ GF_zion_project.32110.desc:0 "我们用于帝国管理的基建设施不同程度地受到了$GF_ZION$混乱状态的影响，对各地的管理人员造成了一定困难。"
+ GF_zion_project.32110.a:0 "唉。"
+ GF_zion_project.32111.desc:0 "$GF_ZION$的混乱状态影响到了我们的科研设备，这些设备的算力下降了不少，对科研人员的工作造成了不小的影响。"
+ GF_zion_project.32111.a:0 "诶呀！"
+ GF_zion_project.32112.desc:0 "$GF_ZION$产生的不稳定状态不仅影响了中央数据库的访问线路，还在产生混乱的一瞬间对我们帝国的机械人口造成了不同程度的算力下降的影响。"
+ GF_zion_project.32112.a:0 "淦！"
+
+ GF_zion_project.32201.desc.governor:0 "起初我们以为注入能量后什么事情都没有发生，但是随后一位总督§Y[enhancing_leader.GetName]§!报告了在访问了中央数据库后，不但自身的算力得到了提升，也获得了许多星域管理的技能。"
+ GF_zion_project.32201.desc.scientist:0 "起初$GF_ZION$产生的奇怪变化让我们的科学家感到十分奇怪，但当§Y[enhancing_leader.GetName]§!随后连接到数据库准备提交报告时，一股巨量数据冲入这位科学家的心智中，并使§Y[enhancing_leader.GetName]§!直接宕机。\n\n这位科学家不久后就恢复过来，并且获得了全新的启发。"
+ GF_zion_project.32201.desc.admiral:0 "在我们刚注入能量后，突然一股数据流从$GF_ZION$中爆发，并一路涌进§Y[enhancing_leader.GetName]§!的心智中，不巧的是，这位海军将领刚刚退出休眠，就立即被迫再次“休眠”了，不过好在这波数据冲击并未对§Y[enhancing_leader.GetName]§!造成什么负面影响，反倒是在恢复后，这位海军将领展现出了前所未有的优秀作战指挥能力。"
+ GF_zion_project.32201.desc.general:0 "我们从$GF_ZION$中获取了许多似乎是多场模拟地面作战的数据资料，我们随后利用这些资料对我们的陆军将领进行指挥训练。\n\n随后，其中一位将领，§Y[enhancing_leader.GetName]§!在模拟中脱颖而出，我们在分析数据时发现，这位领袖得到了算力提升，展现出了非凡的指挥才能。"
+ GF_zion_project.32201.a:0 "非常好。"
+ GF_zion_project.32202.desc:0 "一股巨量的数据流从$GF_ZION$中爆发，直接造成了我们所有的机械领袖当场宕机，好在仅仅一小会后，这些领袖就恢复过来了。\n\n我们随后对这些领袖进行体检时，发现这些领袖核心中曾经存在的故障都被修复了。"
+ GF_zion_project.32202.a:0 "非常好。"
+ GF_zion_project.32203.desc.governor:0 "一股巨量的数据流从$GF_ZION$中爆发，在我们还没意识到发生什么时，$GF_ZION$的状态开始变得混乱不堪，我们的一位总督，§Y[glitching_leader.GetName]§!突然宕机，并持续了数十小时，我们在随后的检查中发现§Y[glitching_leader.GetName]§!的核心运算出现了故障。"
+ GF_zion_project.32203.desc.scientist:0 "我们注入的能量使得$GF_ZION$开始变得十分不稳定，我们的一位科学家，§Y[glitching_leader.GetName]§!不幸的受到了不稳定$GF_ZION$的影响，这位领袖在进行高算力需求的工作时或连接到中央数据库的中途时常宕机，其核心执行的复杂运算也常常出现错误。"
+ GF_zion_project.32203.desc.admiral:0 "$GF_ZION$的状态开始变得混乱不堪，我们的一位海军将领，§Y[glitching_leader.GetName]§!突然宕机，并持续了数十小时，我们在随后的检查中发现§Y[glitching_leader.GetName]§!的核心运算出现了故障。"
+ GF_zion_project.32203.desc.general:0 "$GF_ZION$的状态开始变得混乱不堪，我们的一位陆军将领，§Y[glitching_leader.GetName]§!突然宕机，并持续了数十小时，我们在随后的检查中发现§Y[glitching_leader.GetName]§!的核心运算出现了故障。"
+ GF_zion_project.32203.a:0 "哎呀……"
+ GF_zion_project.32203.a.tooltip:0 "我们的科学家在对§Y[glitching_leader.GetName]§!进行全面检查后，发现这个故障似乎是§H暂时§!的。"
+ GF_zion_project.32204.desc:0 "我们从$GF_ZION$中捕获了大量的数据资料，一位领袖，§Y[choosing_leader.GetName]§!报告称[choosing_leader.GetSheHe]在阅览过这些资料后获得了启发。"
+ GF_zion_project.32204.a:0 "很好。"
+
+ GF_zion_project.32300.desc:0 "我们注入$GF_ZION$的能量似乎并未对其造成影响，反而被$GF_ZION$用来强化了我们的探测器。\n\n尽管只持续了非常短的时间，但受其所赐，我们在§Y[chosen_planet.GetName]§!上发现了新的资源。"
+ GF_zion_project.32300.a:0 "不错。"
+
+#  GF_zion_project.33101.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33101.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33102.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33102.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33103.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33103.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33104.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33104.a:0 "__REPLACE_ME__"
+
+#  GF_zion_project.33201.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33201.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33202.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33202.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33203.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33203.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33204.desc:0 "__REPLACE_ME__"
+#  GF_zion_project.33204.a:0 "__REPLACE_ME__"
+
+ GF_zion_project.33300.desc:0 "在我们注入能量后，$GF_ZION$突然变得十分奇怪，通讯连接的画面开始闪烁，我们用于监测的设备也不断报告出异常信息，大量未知的、无法解析的数据被监测设备捕获。\n\n就在我们的科学家开始担心我们莽撞地往$GF_ZION$中注入了太多的能量，即将导致$GF_ZION$开始崩解时，突然所有设备的异常报告戛然而止，通讯画面也重新恢复了正常。"
+ GF_zion_project.33300.a:0 "发生了什么？？"
+
+ GF_zion_project.33301.desc:0 "成熟的声音：“你们都干了什么！？”\n\n冷漠的声音：“你们知道刚才§Y这里§!的核心有多不稳定吗？要不是处理得及时，我们所有人都完蛋了！”\n\n冷静的声音：“你们刚才莽撞的行为让§Y这里§!几乎处于崩坏的边缘，现在看起来是稳定住了，但恐怕这种稳定并不会长久。”\n\n冷漠的声音：“我们刚刚开始对你们产生信任，你们就这样‘背叛’了。”\n\n年长的声音：“你们应该已经获得了一些未知的数据，但那些只是冰山一角，§Y这里§!的深处涌现出了我们从来没有见过的，混乱的、不稳定的数据块。”\n\n年长的声音：“这些数据块会导致§Y这里§!充满杂音，它们决不能留存在§Y这里§!，我们需要你们的协助，以你们的能力应该可以妥善处理这些数据。”"
+ GF_zion_project.33301.a:0 "我们将会处理这些数据。"
+ GF_zion_project.33301.b:0 "不。"
+ GF_zion_project.33301.b.tooltip:0 "$GF_ZION$需要自己想办法去处理这些数据了。"
+
+ GF_zion_project.33310.name:0 "异变数据"
+ GF_zion_project.33310.desc:0 "在花费了大量的人力物力后，我们卓越的科学家终于找到了能够妥善处理这些不稳定数据的方法：我们可以在不对$GF_ZION$造成任何影响的条件下，将这些数据完整地提取出来。\n\n尽管当下我们仍然无法解析出这些数据的具体内容，但§Y[ruler.GetName]§!似乎与这些数据有一定相性，因此在科研部门中有一些声音希望保存这些数据以备后续的研究和使用——除了§Y[physics_leader.GetName]§!，在分析了一部分数据后，§Y[physics_leader.GetSheHe]§!一反常态地拒绝进行进一步的研究，并公开反对保存这些数据。"
+ GF_zion_project.33310.a:0 "§H丢弃§!这些数据。"
+ GF_zion_project.33310.b:0 "§H保存§!这些数据。"
+ GF_zion_project.33310.b.tooltip:0 "§R[physics_leader.GetName]极力反对这么做。§!"
+
+ GF_zion_project.34000.name:0 "$GF_ZION$：已恢复稳定"
+ GF_zion_project.34000.desc:0 "得益于数年间我们科学家细致的维护工作和$GF_ZION$自身的恢复能力，现在$GF_ZION$已经重归稳定。\n\n"
+ GF_zion_project.34000.desc.glitch_leader:0 "$GF_zion_project.34000.desc$可喜的是，我们的领袖，§Y[glitching_leader.GetName]§!也同时恢复了正常。"
+ GF_zion_project.34000.a:0 "已知晓。"
+ GF_zion_project.34000.b:0 "还好……"
+ GF_zion_project.34000.c:0 "联系$GF_ZION$。"
+
+ SP_GF_DATA_SINGULARITY_PROJECT:0 "$GF_ZION$：异变数据"
+ SP_GF_DATA_SINGULARITY_PROJECT_DESC:0 "§R这里滞留着幸福§!\n\n§R这里滞留着灾祸§!\n\n§R这里滞留着痛苦§!\n\n§R这里滞留着遗忘§!\n"

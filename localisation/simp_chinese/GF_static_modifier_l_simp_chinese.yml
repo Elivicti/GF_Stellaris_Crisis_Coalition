@@ -12,6 +12,8 @@
  GF_ogas_mode_research_desc:0 "OGAS将分出部分算力辅助我们的科研任务。"
 ################################# 国家
  gf_core_chip_deficit:0 "芯片短缺"
+ GF_gavirul_project_finished:0 "§YGAVIRUL计划§!已完成"
+ GF_gavirul_project_finished_desc:0 "历经重重艰险，我们终于完成了物种的蜕变！"
 ################################# 星球
  GF_sercurity_protocol:0 "人形安保协议"
  GF_sercurity_protocol_desc:0 "暴力行为许可与基本战斗程序已下发，所有人形将接受来自政府的统一作战指令。"
@@ -29,7 +31,12 @@
  collapsed_terraforming_candidate:0 "$terraforming_candidate$"
  collapsed_terraforming_candidate_desc:0 "尽管这颗星球的地表绝大部分都被坍塌辐射破坏了，但曾经生机勃勃的环境还是在这颗星球上留下了痕迹。"
  collapsed_terraforming_candidate_tooltip:0 "在我们研究了£society£ §Y$tech_climate_restoration$§!科技之后，我们能在一定程度上对这颗星球进行环境改造，让其再次适宜居住。\n改造这颗星球的代价十分昂贵，也许我们需要一些§Y特殊§!的技术？"
+############
 
+ GF_edict_robot_modding_cooldown:0 "$edict_GF_robot_modding$"
+ GF_edict_doll_reprogram_cooldown:0 "$edict_GF_doll_reprogram$"
+
+############
 
  GF_productive_relic_device:0 "遗迹设施投入生产"
  GF_productive_relic_device_desc:0 "从遗迹中回收的设施已经能为生产和研究做贡献了。"
@@ -47,17 +54,78 @@
  GF_pm_failed_in_defending_elid:0 "E.L.I.D防御战失败"
  GF_pm_failed_in_defending_elid_desc:0 "我们的军队在上一场与E.L.I.D感染者的冲突中遭遇了惨重的失败，许多设施都被破坏了。"
 
+ GF_elid_thread_level_increase_tooltip:0 "\n我们的科学家预估，当§R坍塌辐射污染区§!存在时，E.L.I.D威胁度每§H20年§!将§R增加1点§!。"
+ GF_elid_thread_level_tooltip:0 "当前威胁度等级细分：§G[GF_home_world.v_GF_elid_threat_level]§!"
+
  GF_pm_elid_threat_level_low:0 "E.L.I.D威胁度：§G低§!"
- GF_pm_elid_threat_level_low_desc:0 "主要的E.L.I.D感染者均已被消灭，只有小股感染者仍然在野外游荡。"
+ GF_pm_elid_threat_level_low_desc:0 "主要的E.L.I.D感染者均已被消灭，只有小股感染者仍然在野外游荡。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$"
 
  GF_pm_elid_threat_level_mid:0 "E.L.I.D威胁度：§H中§!"
- GF_pm_elid_threat_level_mid_desc:0 "野外存在中小规模的E.L.I.D感染者集群，对城市构成不可小视的威胁。"
+ GF_pm_elid_threat_level_mid_desc:0 "野外存在中小规模的E.L.I.D感染者集群，对城市构成不可小视的威胁。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$"
 
  GF_pm_elid_threat_level_high:0 "E.L.I.D威胁度：§R高§!"
- GF_pm_elid_threat_level_high_desc:0 "E.L.I.D感染者控制了交通枢纽外的绝大部分地区，城市郊外几乎没有安全的地区。"
+ GF_pm_elid_threat_level_high_desc:0 "E.L.I.D感染者控制了交通枢纽外的绝大部分地区，城市郊外几乎没有安全的地区。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$"
 
  GF_pm_final_victory_in_defending_elid:0 "最终的胜利"
  GF_pm_final_victory_in_defending_elid_desc:0 "我们与广域低辐射感染症的斗争终于迎来了终点——以我们的胜利为句号。"
 
  GF_pm_contaminated_zone_purified:0 "污染区已净化"
  GF_pm_contaminated_zone_purified_desc:0 "我们针对污染区的净化行动圆满完成。"
+
+####
+ GF_zion_research_low:0 "$GF_secrets_of_zion_event_chain_title$"
+ GF_zion_research_low_desc:0 "$GF_ZION$中的欧伽斯意识承诺协助我们的研究。"
+ GF_zion_research_mid:0 "$GF_secrets_of_zion_event_chain_title$"
+ GF_zion_research_mid_desc:0 "$GF_zion_research_low_desc$"
+ GF_zion_research_high:0 "$GF_secrets_of_zion_event_chain_title$"
+ GF_zion_research_high_desc:0 "$GF_zion_research_low_desc$"
+
+ GF_orb_mainframe_alpha:0 "$GF_relic_orb_mainframe_alpha$"
+ GF_orb_mainframe_alpha_desc:0 "在§Y$NAME_GF_sf_the_great_sepulchre$§!中获得的高科技计算机主机，经由$GF_ZION$的解析后并入了§Y[GF_ogas_owner.GetRulerTitle] [GF_ogas_owner.GetRulerName]§!的中央数据库。"
+
+ GF_zion_deep_dive_cooldown:0 "$GF_ZION$稳定化冷却"
+ GF_zion_deep_dive_cooldown_desc:0 "频繁地向$GF_ZION$中注入能量会导致$GF_ZION$变得极其不稳定，我们需要等待$GF_ZION$处于平和的条件时才能继续。"
+
+###
+
+## Tier 1
+ GF_zion_deep_dive_all_research_speed_1:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_all_research_produces_1:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_physics_research_produces_1:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_society_research_produces_1:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_engineering_research_produces_1:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_robotic_produces_1:0 "$GF_ZION$增幅：机械生产"
+ GF_zion_deep_dive_base_intel_1:0 "$GF_ZION$增幅：情报"
+ GF_zion_deep_dive_crime_1:0 "$GF_ZION$增幅：星球管理"
+ GF_zion_deep_dive_planet_development_1:0 "$GF_ZION$增幅：星球建设"
+ GF_zion_deep_dive_army_exp_1:0 "$GF_ZION$增幅：陆军训练"
+# debuff
+ GF_zion_deep_dive_all_research_speed_n_1:0 "$GF_ZION$反噬：科研"
+ GF_zion_deep_dive_robot_produces_n_1:0 "$GF_ZION$反噬：机械"
+ GF_zion_deep_dive_crime_n_1:0 "$GF_ZION$反噬：星球管理"
+## Tier 2
+ GF_zion_deep_dive_all_research_produces_2:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_planet_development_2:0 "$GF_ZION$增幅：星球发展"
+ GF_zion_deep_dive_army_exp_2:0 "$GF_ZION$增幅：陆军训练"
+ GF_zion_deep_dive_robotic_produces_2:0 "$GF_ZION$增幅：机械生产"
+ GF_zion_deep_dive_ship_fire_power_2:0 "$GF_ZION$增幅：舰队"
+ GF_zion_deep_dive_ship_exp_2:0 "$GF_ZION$增幅：海军训练"
+ GF_zion_deep_dive_empire_size_2:0 "$GF_ZION$增幅：行政管理"
+ GF_zion_deep_dive_station_produces_2:0 "$GF_ZION$增幅：空间站生产"
+# debuff
+ GF_zion_deep_dive_ship_fire_power_n_2:0 "$GF_ZION$反噬：舰队"
+ GF_zion_deep_dive_empire_size_n_2:0 "$GF_ZION$反噬：行政管理"
+ GF_zion_deep_dive_all_research_speed_n_2:0 "$GF_ZION$反噬：科研"
+ GF_zion_deep_dive_robot_produces_n_2:0 "$GF_ZION$反噬：机械生产"
+## Tier 3
+ GF_zion_deep_dive_research_3:0 "$GF_ZION$增幅：科研"
+ GF_zion_deep_dive_production_3:0 "$GF_ZION$增幅：生产"
+ GF_zion_deep_dive_diplomacy_3:0 "$GF_ZION$增幅：外交"
+ GF_zion_deep_dive_fleet_3:0 "$GF_ZION$增幅：舰队"
+# debuff
+ GF_zion_deep_dive_research_n_3:0 "$GF_ZION$反噬：科研"
+ GF_zion_deep_dive_production_n_3:0 "$GF_ZION$反噬：生产"
+ GF_zion_deep_dive_diplomacy_n_3:0 "$GF_ZION$反噬：外交"
+ GF_zion_deep_dive_fleet_n_3:0 "$GF_ZION$反噬：舰队"
+## Tier 4
+ GF_zion_deep_dive_data_horizon:0 "数据视界"

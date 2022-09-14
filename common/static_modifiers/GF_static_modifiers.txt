@@ -55,6 +55,22 @@ GF_ogas_mode_research = {
 }
 
 ######
+GF_gavirul_project_finished = {
+	BIOLOGICAL_species_trait_points_add = 2
+	modify_species_cost_mult = -0.20
+}
+
+######
+GF_edict_robot_modding_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_jobs_robotic_produces_mult.dds"
+}
+
+GF_edict_doll_reprogram_cooldown = {
+	icon = "gfx/interface/icons/modifiers/mod_upkeep_mult.dds"
+	leaders_upkeep_mult = 0.10
+}
+
+######
 GF_productive_relic_device = {
 
 	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
@@ -75,7 +91,27 @@ GF_studying_zion = {
 
 	icon = "gfx/interface/icons/modifiers/mod_studying_zion.dds"
 
-	planet_jobs_worker_produces_mult = 0.10
+	planet_jobs_produces_mult = 0.10
 	all_technology_research_speed = 0.10
 	country_energy_produces_mult = -0.10
+}
+
+## zion
+GF_zion_research_low = {
+
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+
+	all_technology_research_speed = 0.05
+}
+GF_zion_research_mid = {
+
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+
+	all_technology_research_speed = 0.10
+}
+GF_zion_research_high = {
+
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+
+	all_technology_research_speed = 0.15
 }

@@ -18,3 +18,85 @@ special_project = {
 		}
 	}
 }
+
+special_project = {
+	key = SP_GF_ZION_ELID_ARMY_PROJECT
+	event_scope = country_event
+	location = no
+	event_chain = GF_secrets_of_zion_event_chain
+
+	picture = GFX_evt_GF_elid_in_tank
+
+	cost = 30000
+	tech_department = society_technology
+
+	on_success = {
+		country_event = { id = GF_zion_project.1010 }
+	}
+}
+
+special_project = {
+	key = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT
+	event_scope = country_event
+	location = no
+	event_chain = GF_secrets_of_zion_event_chain
+
+	picture = GFX_evt_rare_tech_cache
+
+	cost = 50000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = { id = GF_zion_project.2010 }
+	}
+}
+
+special_project = {
+	key = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT
+	event_scope = country_event
+	location = no
+	event_chain = GF_secrets_of_zion_event_chain
+
+	picture = GFX_evt_quantum_catapult
+
+	cost = 50000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = { id = GF_zion_project.3010 }
+	}
+}
+
+special_project = {
+	key = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT
+	event_scope = country_event
+	location = no
+	event_chain = GF_secrets_of_zion_event_chain
+	
+	picture = GFX_evt_GF_core
+
+	cost = 50000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = { id = GF_zion_project.20010 }
+	}
+}
+
+special_project = {
+	key = SP_GF_DATA_SINGULARITY_PROJECT
+	event_scope = country_event
+	location = no
+	event_chain = GF_secrets_of_zion_event_chain
+
+	picture = GFX_evt_GF_barracuda_core
+
+	cost = 100000
+	tech_department = physics_technology
+
+	on_success = {
+		country_event = {
+			id = GF_zion_project.33310
+		}
+	}
+}

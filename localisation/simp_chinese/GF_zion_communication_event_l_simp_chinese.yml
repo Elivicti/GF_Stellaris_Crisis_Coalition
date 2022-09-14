@@ -2,8 +2,8 @@
 ###############################
 
 ## predefined string
- GF_collapse_material_name_error:0 "§R<<警告：读取内存0x7FFFB9ACC2A0时出现未知错误>>§!"
- GF_collapse_relic_name_error:0 "§R<<警告：读取内存0x4FABB6AC9211时出现未知错误>>§!"
+ GF_collapse_material_name_error:0 "§R<<警告：无法解析内存0x7FFFB9ACC2A0处的数据>>§!"
+ GF_collapse_relic_name_error:0 "§R<<警告：无法解析内存0x4FABB6AC9211处的数据>>§!"
 
 
  event_GF_zion_comm.option:0 "与$GF_ZION$通讯"
@@ -38,13 +38,53 @@
  GF_zion.14100.b:0 "这在军事想必上很有用。"
 
 ######### 正常通讯
+ GF_zion_favor_tooltip:0 "$GF_ZION$对我们的评价：£opinion£"
+ GF_zion_favor_high_tooltip:0 "当前$GF_zion_favor_tooltip$ §G+[this.v_GF_zion_favor]§!"
+ GF_zion_favor_mid_tooltip:0 "当前$GF_zion_favor_tooltip$ §Y+[this.v_GF_zion_favor]§!"
+ GF_zion_favor_low_tooltip:0 "当前$GF_zion_favor_tooltip$ §R[this.v_GF_zion_favor]§!"
  GF_zion.20000.desc:0 "没做完，在这里难产了。\n\n给大伙磕头了，咚咚咚"
 
- GF_zion.20000.a:0 "我们来聊一聊吧。"
- GF_zion.20000.b:0 "有什么趣事能分享的吗？"
- GF_zion.20000.c:0 "需要我们做什么吗？"
- GF_zion.20000.close:0 "没什么事了。"
- GF_zion.20000.ogas:0 "(返回OGAS)"
+ GF_increase_zion_favor_tooltip:0 "$GF_ZION$对我们的评价改变了：£opinion£§G+$VALUE|*0$§!"
+ GF_decrease_zion_favor_tooltip:0 "$GF_ZION$对我们的评价改变了：£opinion£§R$VALUE|*0$§!"
+ 
+ GF_add_zion_deep_dive_cooldown_tooltip_inf:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：无法进行§Y深入$GF_ZION$§!行动。"
+ GF_add_zion_deep_dive_cooldown_tooltip_10:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y10年§!内无法进行§Y深入$GF_ZION$§!行动。"
+ GF_add_zion_deep_dive_cooldown_tooltip_5:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y5年§!内无法进行§Y深入$GF_ZION$§!行动。"
+ GF_add_zion_deep_dive_cooldown_tooltip_4:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y4年§!内无法进行§Y深入$GF_ZION$§!行动。"
+ GF_add_zion_deep_dive_cooldown_tooltip_3:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y3年§!内无法进行§Y深入$GF_ZION$§!行动。"
 
+ GF_zion.20000.secrets:0 "愿意与我们分享些§H秘密§!吗？"
+ GF_zion.20000.research:0 "我们需要你们协助研究。"
+ GF_zion_already_researching_tooltip:0 "$GF_ZION$已经在协助研究了！"
+ GF_zion.20000.deep_dive:0 "深入$GF_ZION$"
+ GF_zion.20000.ogas:0 "返回OGAS"
+ GF_zion.20000.close:0 "结束通讯"
 
- GF_zion.20000.a.temp_response:0 "成熟的声音：“很抱歉，现阶段我们没有任何有用的信息能给你。”"
+ GF_zion.21000.desc:0 "成熟的声音：“我们可以分享一些我们知道的信息。”\n\n冷漠的声音：“但不要指望我们什么都知道，而且，这种分享也不会是免费的。”"
+ GF_zion.21000.return:0 "我们换个话题吧。"
+
+ GF_require_zion_deep_dive_no_cooldown:0 "需要$GF_ZION$处于稳定化的状态"
+
+ GF_require_zion_favor_very_high:0 "至少需要$GF_zion_favor_tooltip$ §G+80§!"
+ GF_require_zion_favor_high:0 "至少需要$GF_zion_favor_tooltip$ §G+50§!"
+ GF_require_zion_favor_decent:0 "至少需要$GF_zion_favor_tooltip$ §Y+30§!"
+ GF_require_zion_favor_mid:0 "至少需要$GF_zion_favor_tooltip$ §Y+0§!"
+ GF_require_zion_favor_low:0 "需要$GF_zion_favor_tooltip$"
+
+ GF_require_energy_stockpile_1_monthly_income:0 "至少需要§Y一个月收入§!的£energy£§Y能量币§!库存"
+ GF_require_energy_stockpile_2_monthly_income:0 "至少需要§Y两个月收入§!的£energy£§Y能量币§!库存"
+ GF_require_energy_stockpile_3_monthly_income:0 "至少需要§Y三个月收入§!的£energy£§Y能量币§!库存"
+
+ GF_zion.21000.elid:0 "关于§RE.L.I.D§!你们知道多少？"
+ GF_zion.21000.elid.repeat:0 "重新讲讲§RE.L.I.D§!的事情。"
+ GF_zion.21000.collapse_weapon:0 "可以帮助我们优化一下§Y坍塌粒子武器§!吗？"
+ GF_zion.21000.collapse_weapon.repeat:0 "再给我们讲讲§Y坍塌粒子武器§!。"
+ GF_zion.21000.quantum_catapult:0 "我们想要知道更多关于§H逆向坍塌§!的知识。"
+ GF_zion.21000.quantum_catapult.repeat:0 "再讲讲关于§H逆向坍塌§!的知识。"
+ GF_zion.21000.orb_mainframe_alpha:0 "关于§Y$GF_relic_orb_mainframe_alpha$§!你们知道多少？"
+ GF_zion_deep_dive_enabled_tooltip:0 "解锁§Y锡安通讯§!选项：§H深入$GF_ZION$§!"
+
+ GF_zion.22000.low:0 "提供§Y5K§!£energy£能量币"
+ GF_zion.22000.mid:0 "提供§Y10K§!£energy£能量币"
+ GF_zion.22000.high:0 "提供§Y15K§!£energy£能量币"
+ GF_zion.22000.return:0 "算了。"

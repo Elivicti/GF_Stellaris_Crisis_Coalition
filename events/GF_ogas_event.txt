@@ -170,6 +170,17 @@ country_event = {
 	option = {
 		name = event_GF_zion_comm.option
 		trigger = { GF_default_zion_comm_trigger = yes }
+		if = {
+			limit = { GF_has_zion_favor_high = yes }
+			custom_tooltip = GF_zion_favor_high_tooltip
+		}
+		else_if = {
+			limit = { GF_has_zion_favor_low = yes }
+			custom_tooltip = GF_zion_favor_low_tooltip
+		}
+		else = {
+			custom_tooltip = GF_zion_favor_mid_tooltip
+		}
 		
 		hidden_effect = {
 			country_event = {

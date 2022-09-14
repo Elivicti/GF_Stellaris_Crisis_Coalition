@@ -27,10 +27,7 @@
 
 #### 通讯基本模块
 # title = GF_ZION
-# desc = GF_alaya.xxxx.desc
-
 # is_triggered_only = yes
-
 # trigger = {
 # 	GF_default_zion_comm_trigger = yes
 # }
@@ -39,6 +36,8 @@
 # diplomatic_title = BLANK_STRING
 # force_open = yes
 # picture_event_data = { room = whitenet_room }
+
+# desc = GF_zion.xxxx.desc
 
 namespace = GF_zion
 
@@ -241,30 +240,22 @@ country_event = {
 
 	option = {
 		name = GF_zion.14100.a
-
-		hidden_effect = {
-			ruler = { remove_trait = GF_trait_leader_ogas }
-		}
-		ruler = {
-			add_experience = 200
-			add_trait = GF_trait_leader_ogas_2
-		}
-
-		owner = { add_research_option = tech_GF_combat_ogas_computers }
 	}
 
 	option = {
 		name = GF_zion.14100.b
-		
+		trigger = { is_militarist = yes }
+	}
+
+	after = {
 		hidden_effect = {
 			ruler = { remove_trait = GF_trait_leader_ogas }
 		}
 		ruler = {
-			add_experience = 200
+			add_experience = 500
 			add_trait = GF_trait_leader_ogas_2
 		}
-		
-		owner = { add_research_option = tech_GF_combat_ogas_computers }
+		owner = { add_research_option = GF_tech_combat_ogas_computers }
 	}
 }
 ##### end
@@ -280,7 +271,20 @@ country_event = {
 		has_country_flag = flag_GF_first_zion_comm_completed
 	}
 
-	desc = GF_zion.20000.desc
+	desc = GF_zion.20000.desc.a
+	desc = GF_zion.20000.desc.b
+	desc = {
+		text = GF_zion.20000.desc.high_favor.a
+		trigger = { GF_has_zion_favor_high = yes }
+	}
+	desc = {
+		text = GF_zion.20000.desc.high_favor.b
+		trigger = { GF_has_zion_favor_high = yes }
+	}
+	desc = {
+		text = GF_zion.20000.desc.very_high_favor
+		trigger = { GF_has_zion_favor_very_high = yes }
+	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -288,30 +292,284 @@ country_event = {
 	picture_event_data = { room = whitenet_room }
 
 	option = {
-		name = GF_zion.20000.a
-		is_dialog_only = yes
-		response_text = GF_zion.20000.a.temp_response ##暂时占位用，以后更新
+		name = GF_zion.20000.secrets
+		hidden_effect = {
+			country_event = { id = GF_zion.21000 }
+		}
 	}
 
 	option = {
-		name = GF_zion.20000.b
+		name = GF_zion.20000.research
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_zion_already_researching_tooltip
+				NOR = {
+					has_modifier = GF_zion_research_low
+					has_modifier = GF_zion_research_mid
+					has_modifier = GF_zion_research_high
+				}
+			}
+			GF_require_zion_favor_decent = yes
+		}
+		hidden_effect = {
+			country_event = { id = GF_zion.22000 }
+		}
 	}
 
 	option = {
-		name = GF_zion.20000.c
+		name = GF_zion.20000.deep_dive
+		trigger = { has_modifier = GF_orb_mainframe_alpha }
+		allow = {
+			custom_tooltip = {
+				text = GF_require_zion_deep_dive_no_cooldown
+				NOT = { has_modifier = GF_zion_deep_dive_cooldown }
+			}
+			GF_require_zion_favor_high = yes
+		}
+		hidden_effect = {
+			country_event = { id = GF_zion_project.30000 }
+		}
 	}
-
+	
 	option = {
-		name = GF_zion.20000.d
+		name = GF_zion.20000.ogas
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
 	}
 
 	option = {
 		name = GF_zion.20000.close
 	}
+}
+
+# “解锁秘密” 界面
+country_event = {
+	id = GF_zion.21000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	desc = GF_zion.21000.desc.a
+	desc = GF_zion.21000.desc.b
+	desc = GF_zion.21000.desc.c
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	immediate = {
+		GF_get_monthly_income_and_stockpile = {
+			RES = energy
+			MIN = @GF_zion_project_energy_cost_1
+		}
+	}
+
 	option = {
-		name = GF_zion.20000.ogas
+		name = GF_zion.21000.elid
+		trigger = {
+			NOR = {
+				has_valid_civic = civic_reanimated_armies
+				has_technology = GF_tech_elid_army
+				has_tech_option = GF_tech_elid_army
+			}
+			has_technology = GF_tech_collapsetech_weaponize
+			has_technology = tech_cloning
+		}
+		allow = {
+			GF_require_zion_favor_mid = yes
+			GF_require_energy_stockpile_1 = yes
+		}
+		GF_zion_project_cost = { RES = energy TIER = 1 }
+
 		hidden_effect = {
-			country_event = { id = GF_ogas.10000 }
+			country_event = { id = GF_zion_project.1000 }
+		}
+	}
+
+	option = {
+		name = {
+			text =  GF_zion.21000.elid.repeat
+			trigger = { NOT = { has_valid_civic = civic_reanimated_armies } }
+		}
+		name = {
+			text = GF_zion.21000.elid
+			trigger = { has_valid_civic = civic_reanimated_armies }
+		}
+		trigger = {
+			OR = {
+				has_country_flag = flag_GF_requested_elid_army
+				has_valid_civic = civic_reanimated_armies
+			}
+		}
+		hidden_effect = {
+			country_event = { id = GF_zion_project.1000 }
+			if = {
+				limit = { has_technology = GF_tech_elid_army }
+				set_country_flag = flag_GF_requested_elid_army
+			}
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.collapse_weapon
+		trigger = {
+			NOT = { has_country_flag = flag_GF_requested_collapse_weapon }
+			has_technology = GF_tech_collapse_energy_lance
+		}
+		allow = {
+			GF_require_zion_favor_high = yes
+			GF_require_energy_stockpile_2 = yes
+		}
+		GF_zion_project_cost = { RES = energy TIER = 2 }
+
+		hidden_effect = {
+			country_event = { id = GF_zion_project.2000 }
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.collapse_weapon.repeat
+		trigger = { has_country_flag = flag_GF_requested_collapse_weapon }
+		hidden_effect = {
+			country_event = { id = GF_zion_project.2000 }
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.quantum_catapult
+		trigger = {
+			has_technology = GF_tech_collapse_jump_drive
+			has_technology = tech_quantum_catapult
+			any_owned_megastructure = {
+				OR = {
+					is_megastructure_type = quantum_catapult_2
+					is_megastructure_type = quantum_catapult_3
+					is_megastructure_type = quantum_catapult_restored
+					is_megastructure_type = quantum_catapult_restored_slingshot
+					is_megastructure_type = quantum_catapult_improved_slingshot
+				}
+			}
+		}
+		allow = {
+			GF_require_zion_favor_high = yes
+			GF_require_energy_stockpile_2 = yes
+		}
+		GF_zion_project_cost = { RES = energy TIER = 2 }
+		
+		hidden_effect = {
+			country_event = { id = GF_zion_project.3000 }
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.quantum_catapult.repeat
+		trigger = { has_country_flag = flag_GF_requested_collapse_singshot }
+		hidden_effect = {
+			country_event = { id = GF_zion_project.3000 }
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.orb_mainframe_alpha
+		trigger = {
+			has_relic = GF_relic_orb_mainframe_alpha
+			NOT = { has_country_flag = flag_GF_requested_zion_deep_dive }
+		}
+		allow = {
+			GF_require_energy_stockpile_1 = yes
+			GF_require_zion_favor_mid = yes
+		}
+		GF_zion_project_cost = { RES = energy TIER = 1 }
+
+		hidden_effect = {
+			country_event = { id = GF_zion_project.20000 }
+		}
+	}
+
+	option = {
+		name = GF_zion.21000.return
+		hidden_effect = {
+			country_event = { id = GF_zion.20000 }
+		}
+	}
+}
+
+# “协助科研” 界面
+country_event = {
+	id = GF_zion.22000
+	title = GF_ZION
+	is_triggered_only = yes
+	trigger = {
+		GF_default_zion_comm_trigger = yes
+	}
+
+	diplomatic = yes
+	diplomatic_title = BLANK_STRING
+	force_open = yes
+	picture_event_data = { room = whitenet_room }
+
+	desc = GF_zion.22000.desc
+
+	option = {
+		name = GF_zion.22000.low
+		response_text = GF_zion.22000.low.response
+		allow = {
+			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_1 }
+		}
+		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_1 }
+		add_modifier = { modifier = GF_zion_research_low years = 5 }
+
+		if = {
+			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
+			GF_increase_zion_favor = { VALUE = 5 }
+			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
+		}
+	}
+
+	option = {
+		name = GF_zion.22000.mid
+		response_text = GF_zion.22000.mid.response
+		allow = {
+			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_2 }
+		}
+		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_2 }
+		add_modifier = { modifier = GF_zion_research_mid years = 5 }
+
+		if = {
+			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
+			GF_increase_zion_favor = { VALUE = 10 }
+			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
+		}
+		else = { GF_increase_zion_favor = { VALUE = 5 } }
+	}
+
+	option = {
+		name = GF_zion.22000.high
+		response_text = GF_zion.22000.high.response
+		allow = {
+			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_3 }
+		}
+		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_3 }
+		add_modifier = { modifier = GF_zion_research_high years = 5 }
+
+		if = {
+			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
+			GF_increase_zion_favor = { VALUE = 15 }
+			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
+		}
+		else = { GF_increase_zion_favor = { VALUE = 5 } }
+	}
+
+
+	option = {
+		name = GF_zion.22000.return
+
+		hidden_effect = {
+			country_event = { id = GF_zion.20000 }
 		}
 	}
 }

@@ -1,4 +1,13 @@
 ### 少前铁血事件遗珍
 GF_enhanced_OGAS_signal = {
+	icon = "gfx/interface/icons/modifiers/mod_GF_orb_mainframe_alpha.dds"
+	planet_jobs_robotic_produces_mult = 0.10
+}
+
+
+GF_orb_mainframe_alpha = {
+	icon = "gfx/interface/icons/modifiers/mod_GF_orb_mainframe_alpha.dds"
+	
+	planet_jobs_produces_mult = 0.10
 	planet_jobs_robotic_produces_mult = 0.10
 }
