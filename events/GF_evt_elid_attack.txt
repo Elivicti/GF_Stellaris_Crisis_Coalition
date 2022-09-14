@@ -1,5 +1,8 @@
 namespace = GF_elid
 
+@begin_elid_attact_interval = 1800
+@begin_elid_attact_interval_random = 360
+
 @elid_attack_interval = 720
 @elid_attack_interval_random = 180
 
@@ -28,7 +31,8 @@ country_event = {
 		}
 		country_event = {
 			id = GF_elid.1
-			days = 1800
+			days = @begin_elid_attact_interval
+			random = @begin_elid_attact_interval_random
 		}
 	}
 
@@ -41,7 +45,28 @@ country_event = {
 country_event = { # notice to tell player that elid will be spawned
 	id = GF_elid.1
 	title = GF_elid.1.name
-	desc = GF_elid.1.desc
+	desc = {
+		text = GF_elid.1.desc
+		trigger = {
+			event_target:GF_home_world = {
+				count_planet_army = {
+					limit = { army_type = GF_army_defensive_armored_train }
+					count > 0
+				}
+			}
+		}
+	}
+	desc = {
+		text = GF_elid.1.desc.no_armored_train
+		trigger = {
+			event_target:GF_home_world = {
+				count_planet_army = {
+					limit = { army_type = GF_army_defensive_armored_train }
+					count = 0
+				}
+			}
+		}
+	}
 	is_triggered_only = yes
 
 	picture = GFX_evt_GF_protected_purify_wall
@@ -60,18 +85,16 @@ country_event = { # notice to tell player that elid will be spawned
 				days = 240
 				random = 60
 			}
+			planet_event = {
+				id = GF_elid.10
+				days = 7200		# 20 years
+			}
 		}
 	}
 	
 	option = {
 		name = GF_elid.1.a
 		custom_tooltip = GF_elid.1.tooltip
-		event_target:GF_home_world = {
-			add_modifier = {
-				modifier = GF_pm_elid_threat_level_mid
-				days = -1
-			}
-		}
 	}
 
 	option = {
@@ -82,16 +105,10 @@ country_event = { # notice to tell player that elid will be spawned
 			energy = -1000
 			unity = -300
 		}
-		event_target:GF_home_world = {
-			add_modifier = {
-				modifier = GF_pm_elid_threat_level_mid
-				days = -1
-			}
-		}
 		trigger = { NOT = { event_target:GF_home_world = { any_planet_army = { exists = leader } } } }
 		allow = {
 			has_resource = { type = energy amount >= 1000 }
-			has_resource = { type = unity  amount >= 500  }
+			has_resource = { type = unity  amount >= 300  }
 		}
 
 		hidden_effect = {
@@ -100,12 +117,11 @@ country_event = { # notice to tell player that elid will be spawned
 				species = owner
 				skill = 3
 				set_age = 21
-
 				traits = {
 					trait = leader_trait_glory_seeker
 					trait = leader_trait_army_logistician
 				}
-	
+
 				effect = {
 					if = {
 						limit = { is_species = new_type gender = male }
@@ -114,6 +130,37 @@ country_event = { # notice to tell player that elid will be spawned
 					}
 				}
 			}
+		}
+	}
+
+	after = {
+		event_target:GF_home_world = {
+			add_modifier = {
+				modifier = GF_pm_elid_threat_level_mid
+				days = -1
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GF_elid.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		GF_planet_has_contaminated_zone = yes
+		is_variable_set = v_GF_elid_threat_level
+	}
+	immediate = {
+		change_variable = {
+			which = v_GF_elid_threat_level
+			value = 1
+		}
+		planet_event = { id = GF_elid.1030 }
+		planet_event = {
+			id = GF_elid.10
+			days = 7200		# 20 years
 		}
 	}
 }
@@ -130,11 +177,7 @@ planet_event = {
 	trigger = {
 		# owner = { GF_default_elid_event_trigger = yes }
 		owner = { has_authority = GF_auth_commonwealth }
-		OR = {
-			has_deposit = d_GF_black_zone
-			has_deposit = d_GF_red_zone
-			has_deposit = d_GF_yellow_zone
-		}
+		GF_planet_has_contaminated_zone = yes
 		check_variable = {
 			which = v_GF_elid_threat_level
 			value > 0
