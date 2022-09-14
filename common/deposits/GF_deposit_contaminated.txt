@@ -61,6 +61,7 @@ d_GF_yellow_zone = {
 			energy = 200
 		}
 	}
+	prerequisites = { "GF_tech_recover_plan" }
 	drop_weight = { weight = 0 }
 }
 
@@ -68,9 +69,11 @@ d_GF_purify_wall = {
 	is_for_colonizable = yes
 	category = deposit_cat_blockers
 	icon = d_GF_purify_wall
+	time = 180
 	planet_modifier = {
 		planet_max_districts_add = -1
 		pop_environment_tolerance = 0.05
+		army_defense_health_mult = 0.20
 		job_GF_guard_doll_add = 2
 	}
 	resources = {
@@ -88,7 +91,7 @@ d_GF_purify_wall = {
 
 			hidden_effect = {
 				change_variable = {
-					which = v_GFEXT_elid_threat_level
+					which = v_GF_elid_threat_level
 					value = 2
 				}
 			}
