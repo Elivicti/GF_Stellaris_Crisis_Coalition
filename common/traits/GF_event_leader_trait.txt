@@ -1,0 +1,274 @@
+GF_trait_leader_ogas_glitch = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+	leader_potential_add = { always = no }
+
+	modifier = {
+		empire_size_mult = 0.10
+		empire_size_penalty_mult = 0.10
+	}
+	self_modifier = {
+		leader_skill_levels = -2
+		species_leader_exp_gain = -0.20
+	}
+}
+
+GF_trait_leader_ogas_2 = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/ruler_trait_ogas.dds"
+
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
+
+	leader_potential_add = { always = no }
+	
+	modifier = {
+		edict_length_mult = 0.50
+		country_unity_produces_mult = 0.5
+		empire_size_colonies_mult = -0.25
+		country_admin_cap_add = 50
+	}
+}
+
+GF_trait_leader_enhanced_governor = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	leader_trait = { governor }
+	leader_class = { governor }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		planet_stability_add = 10
+		planet_jobs_produces_mult = 0.15
+	}
+}
+
+GF_trait_leader_enhanced_scientist = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		all_technology_research_speed = 0.10
+		science_ship_survey_speed = 0.50
+		ship_archeaological_site_clues_add = 3
+		shipclass_science_ship_disengage_mult = 0.25
+	}
+
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+GF_trait_leader_enhanced_admiral = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		ship_weapon_damage = 0.15
+		ship_hull_damage_mult = 0.15
+		ship_evasion_mult = 0.25
+	}
+}
+
+GF_trait_leader_enhanced_general = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		army_morale = 0.30
+		army_morale_damage_mult = 0.30
+		army_damage_mult = 0.20
+	}
+}
+
+
+#####
+GF_trait_leader_core_glitch_governor = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
+	leader_trait = { governor }
+	leader_class = { governor }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		planet_stability_add = -10
+		planet_jobs_unity_produces_mult = -0.10
+		planet_jobs_upkeep_mult = 0.05
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.10
+	}
+}
+
+GF_trait_leader_core_glitch_scientist = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		all_technology_research_speed = -0.10
+		science_ship_survey_speed = -0.20
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.10
+	}
+}
+
+GF_trait_leader_core_glitch_admiral = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+	
+	modifier = {
+		ship_evasion_mult = -0.10
+		ship_accuracy_mult = -0.10
+		ship_tracking_mult = -0.10
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.10
+	}
+}
+
+GF_trait_leader_core_glitch_general = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+	
+	modifier = {
+		army_morale = -0.2
+		army_damage_mult = -0.2
+	}
+	self_modifier = {
+		species_leader_exp_gain = -0.10
+	}
+}
+
+
+###
+GF_trait_leader_inspired_governor = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
+	leader_trait = { governor }
+	leader_class = { governor }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		planet_stability_add = 10
+	}
+	self_modifier = {
+		leader_skill_levels = 2
+	}
+}
+
+GF_trait_leader_inspired_scientist = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
+	leader_trait = { scientist }
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		all_technology_research_speed = 0.10
+	}
+	self_modifier = {
+		leader_skill_levels = 2
+	}
+}
+
+GF_trait_leader_inspired_admiral = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
+	leader_trait = { admiral }
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		ship_sensor_range_add = 1
+		ship_speed_mult = 0.05
+	}
+	self_modifier = {
+		leader_skill_levels = 2
+	}
+}
+
+GF_trait_leader_inspired_general = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
+	leader_trait = { general }
+	leader_class = { general }
+	initial = no
+	randomized = no
+
+	leader_potential_add = { always = no }
+
+	modifier = {
+		armies_upkeep_mult = -0.10
+		army_experience_gain_mult = 0.10
+	}
+	self_modifier = {
+		leader_skill_levels = 2
+	}
+}
