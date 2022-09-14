@@ -8,13 +8,16 @@ GF_collect_relic_device_event_chain = {
 	picture = GFX_evt_physics_research
 	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
 	counter = {
-		c_GF_devices_collected = {
-			max = 3
-		}
+		c_GF_devices_collected = { max = 3 }
 	}
 }
 
 GF_alaya_event_chain = {
 	picture = GFX_evt_GF_overhanging_forest
-	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+}
+
+GF_secrets_of_zion_event_chain = {
+	picture = GFX_evt_GF_white_net
+	icon = "gfx/interface/icons/situation_log/situation_log_precursor.dds"
 }
