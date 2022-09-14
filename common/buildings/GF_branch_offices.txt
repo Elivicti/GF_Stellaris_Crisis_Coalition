@@ -1,0 +1,101 @@
+building_GF_military_contractors = {
+	base_buildtime = @b1_time
+
+	owner_type = corporate
+
+	base_cap_amount = 1
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_valid_civic = GF_civic_GK
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 10
+	}
+	triggered_country_modifier = {
+		country_naval_cap_add = 10
+		potential = {
+			branch_office_owner = { has_ascension_perk = ap_lord_of_war }
+		}
+	}
+
+	planet_modifier = {
+		planet_crime_mult = -0.10
+		job_soldier_add = 1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 400
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+building_GF_building_contractors = {
+	base_buildtime = @b1_time
+
+	owner_type = corporate
+	category = pop_assembly
+
+	base_cap_amount = 1
+
+	empire_limit = {
+		base = 3
+	}
+
+	potential = {
+		has_branch_office = yes
+		branch_office_owner = {
+			is_ai = no
+			has_valid_civic = GF_civic_GK
+		}
+	}
+	allow = {
+		owner = { NOT = { has_policy_flag = ai_outlawed } }
+	}
+
+	planet_modifier = {
+		branch_office_value_mult = 0.10
+		job_clerk_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_robotic_workers }
+		}
+		job_roboticist_add = 1
+	}
+
+	country_modifier = {
+		planet_pop_assembly_mult = 0.20
+		planet_pop_assemblers_upkeep_mult = 0.1
+	}
+
+	resources = {
+		category = planet_branch_office_buildings
+		cost = {
+			minerals = 500
+			alloys = 100
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
