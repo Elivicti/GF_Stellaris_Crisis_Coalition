@@ -15,75 +15,100 @@ GF_02_training = {
 	potential = { has_authority = GF_auth_commonwealth }
 	
 	ai_weight = {
-		weight = 0
-		modifier = {
-			weight = @EdictLowPrio
-			has_monthly_income = {
-				resource = consumer_goods
-				value < 0
-			}
-		}
-	}	
+		weight = @EdictLowPrio
+	}
 }
 #########################
 GF_doll_reprogram = {
-	length = 360
+	length = 0
 	icon = "GFX_edict_type_time"
 	resources = {
 		category = edicts
+		cost = { unity = 1000 }
 		cost = {
-			influence = 100
+			energy = 1000
+			multiplier = value:GF_count_robotic_leader_with_vanilla_negative_traits
 		}
 	}
 
-	modifier = {
-		leaders_upkeep_mult = 0.10
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_require_any_doll_leader_has_vanilla_negative_traits
+			count_owned_leader = {
+				limit = {
+					species = { is_robotic = yes }
+					GF_leader_has_vanilla_negative_traits = yes
+				}
+				count > 0
+			}
+		}
+		NOT = { has_modifier = GF_edict_doll_reprogram_cooldown }
 	}
+
 	potential = {
 		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_mind_upgrade_2 
+		has_technology = GF_tech_mind_upgrade_2
 	}
 	effect = {
 		custom_tooltip = GF_doll_reprogram_effect
 		hidden_effect = {
+			add_modifier = {
+				modifier = GF_edict_doll_reprogram_cooldown
+			}
 			country_event = { id = GF_doll_leader.100 }
 		}
-	}	
+	}
+
 	ai_weight = {
 		weight = 0
 		modifier = {
-			weight = @EdictLowPrio
-			has_monthly_income = {
-				resource = consumer_goods
-				value < 0
+			add = @EdictHighPrio
+			count_owned_leader = {
+				limit = { GF_leader_has_vanilla_negative_traits = yes }
+				count > 0
 			}
 		}
-	}	
+	}
 }
 #########################
 GF_robot_modding = {
-	length = 30
-	icon = "GFX_edict_type_time"
+	length = 0
+	icon = "GFX_GF_edict_type_robot"
 	resources = {
 		category = campaigns
 		cost = {
-			energy = 1000
-			alloys = 1000
+			energy = 100
+			alloys = 50
+			multiplier = value:GF_count_non_doll_robot_pop
 		}
 	}
 
 	potential = { has_authority = GF_auth_commonwealth }
 
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_edict_robot_modding_require_non_doll_robot
+			any_owned_pop = { GF_is_non_doll_robot_pop = yes }
+		}
+		NOT = {
+			has_modifier = GF_edict_robot_modding_cooldown
+		}
+	}
+
 	effect = {
 		custom_tooltip = GF_robot_modding_effect
 		hidden_effect = {
+			add_modifier = {
+				modifier = GF_edict_robot_modding_cooldown
+				days = 180
+			}
 			country_event = { id = GF_doll.2000 }
 		}
 	}
 	
 	ai_weight = {
 		weight = 0
-	}	
+	}
 }
 
 ################
@@ -129,7 +154,7 @@ GF_relocate_relic_site = {
 		}
 		if = {
 			limit = {
-				NOT = { 
+				NOT = {
 					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 } } 
 				}
 			}
@@ -156,7 +181,7 @@ GF_relocate_relic_site = {
 		}
 		if = {
 			limit = {
-				NOT = { 
+				NOT = {
 					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 } }
 				}
 			}
