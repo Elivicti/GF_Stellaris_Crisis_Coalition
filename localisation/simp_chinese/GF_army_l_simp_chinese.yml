@@ -26,3 +26,8 @@
 
  GF_army_hostile_elid_boss:0 "E.L.I.D感染者头目"
  GF_army_hostile_elid_boss_desc:0 "曾经是遭受坍塌辐射的严重污染，身体发生变异的军方人类士兵。ELID感染者会随感染事件和辐射强度而逐渐出现内脏，表皮硬化的症状，所以这些重度感染者的皮肤十分坚硬难以被伤害，性格比其他感染者更狂暴，破坏力也更加恐怖。"
+
+##
+ GF_army_defensive_armored_train:0 "装甲列车"
+ GF_army_defensive_armored_train_desc:0 "一种在铁路沿线对部队进行火力支援和独立作战的装甲铁路车辆，其行动受制于铁路线路，但在铁路网络发达的地区中进行防御作战时有得天独厚的优势。"
+ 
