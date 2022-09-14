@@ -12,7 +12,7 @@ utility_component_template = {
 		ship_armor_add = 240
 	}
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_armors
 		cost = {
 			alloys = 30
 		}
@@ -37,7 +37,7 @@ utility_component_template = {
 		ship_armor_add = 500
 	}
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_armors
 		cost = {
 			alloys = 60
 		}
@@ -62,7 +62,7 @@ utility_component_template = {
 		ship_armor_add = 1250
 	}
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_armors
 		cost = {
 			alloys = 120
 		}

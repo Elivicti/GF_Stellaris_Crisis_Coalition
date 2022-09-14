@@ -10,7 +10,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 350
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 50
 		}
@@ -34,7 +34,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 750
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 90
 		}
@@ -58,7 +58,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 1200
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 180
 		}
@@ -82,7 +82,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 2500
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 350
 		}
@@ -105,7 +105,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 5000
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 630
 		}
@@ -128,7 +128,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = 12000
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 	}
 
 	prerequisites = { "GF_tech_collapse_power_core" }
@@ -142,9 +142,9 @@ utility_component_template = {
 	size = large
 	icon = "GFX_GF_collapse_power_core"
 	icon_frame = 1
-	power = 1200
+	power = 1500
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 80
 		}
@@ -170,9 +170,9 @@ utility_component_template = {
 	size = small
 	icon = "GFX_GF_collapse_power_core"
 	icon_frame = 1
-	power = 1500
+	power = 1800
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 160
 		}
@@ -214,7 +214,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -45
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 30
 		}
@@ -222,13 +222,13 @@ utility_component_template = {
 	ftl = yes
 	jumpdrive = yes
 	ship_modifier = {
-		ship_windup_mult = -0.70
+		ship_windup_mult = -0.80
 		ship_jumpdrive_cooldown_mult = -0.50
 		ship_ftl_jumpdrive_range_mult = 0.50
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 10
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }

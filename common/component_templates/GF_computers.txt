@@ -5,7 +5,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -25
 	resources = {
-		category = ship_components
+		category = GF_ship_computers
 		cost = {
 			alloys = -25
 		}
@@ -36,7 +36,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -30
 	resources = {
-		category = ship_components
+		category = GF_ship_computers
 		cost = {
 			alloys = 30
 		}
@@ -65,7 +65,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -30
 	resources = {
-		category = ship_components
+		category = GF_ship_computers
 		cost = {
 			alloys = 30
 		}
@@ -98,7 +98,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -25
 	resources = {
-		category = ship_components
+		category = GF_ship_computers
 		cost = {
 			alloys = 35
 		}
@@ -127,7 +127,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = -20
 	resources = {
-		category = ship_components
+		category = GF_ship_computers
 		cost = {
 			alloys = 25
 		}

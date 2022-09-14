@@ -4,10 +4,10 @@ weapon_component_template = {
 	icon = "GFX_GF_collapse_energy_lance"
 	icon_frame = 1
 
-	projectile_gfx = "tachyon_lance"
+	projectile_gfx = "GF_collapse_lance_projectile"
 
 	prerequisites = {
-		"tech_GF_collapse_energy_lance"
+		"GF_tech_collapse_energy_lance"
 	}
 
 	component_set = "GF_COLLAPSE_LANCE"
@@ -18,14 +18,14 @@ weapon_component_template = {
 
 	power = -500
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 300
+			alloys = 500
 			rare_crystals = 4.5
 		}
 		upkeep = {
-			energy = 3.2
-			alloys = 0.55
+			energy = 4.2
+			alloys = 0.6
 		}
 	}
 
@@ -39,10 +39,10 @@ weapon_component_template = {
 	}
 
 	windup = {
-		min = 0.1
-		max = 1.9
+		min = 2.0
+		max = 8.0
 	}
-	total_fire_time = 59
+	total_fire_time = 50
 
 	range = 200
 	accuracy = 1
@@ -62,10 +62,10 @@ weapon_component_template = {
 	icon = "GFX_GF_collapse_energy_lance"
 	icon_frame = 1
 
-	projectile_gfx = "perdition_beam"
+	projectile_gfx = "titan_GF_collapse_lance_projectile"
 
 	prerequisites = {
-		"tech_GF_collapse_energy_lance"
+		"GF_tech_collapse_energy_lance"
 	}
 
 	component_set = "GF_COLLAPSE_LANCE_TITAN"
@@ -74,16 +74,16 @@ weapon_component_template = {
 
 	# size_restriction = { titan }
 
-	power = -750
+	power = -800
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 400
-			rare_crystals = 5.2
+			alloys = 750
+			rare_crystals = 8.0
 		}
 		upkeep = {
-			energy = 4
-			alloys = 0.65
+			energy = 5.4
+			alloys = 1.6
 		}
 	}
 
@@ -92,13 +92,13 @@ weapon_component_template = {
 	ai_tag_weight = 0
 
 	damage = {
-		min = 2100
-		max = 2700
+		min = 3000
+		max = 5000
 	}
 
 	windup = {
-		min = 0.3
-		max = 2.2
+		min = 16.0
+		max = 24.0
 	}
 	total_fire_time = 80
 
@@ -121,10 +121,10 @@ weapon_component_template = {
 	icon = GFX_GF_collpase_ending_flash
 	icon_frame = 1
 
-	planet_destruction_gfx = "neutron_planet_gfx"
+	planet_destruction_gfx = "GF_ending_flash_gfx"
 
 	prerequisites = { 
-		"tech_GF_collapse_ending_flash" 
+		"GF_tech_collapse_ending_flash" 
 	}
 
 	component_set = "GF_COLLAPSE_ENDING_FLASH"
@@ -136,17 +136,17 @@ weapon_component_template = {
 
 	power = -7500
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_weapons
 		cost = {
 			alloys = 500
 		}
 	}
 
 	windup = {
-		min = 70
-		max = 70
+		min = 60
+		max = 60
 	}
-	total_fire_time = 30
+	total_fire_time = 60
 
 	accuracy = 1
 	damage = { min = 0 max = 0 }
@@ -166,38 +166,38 @@ weapon_component_template = {
 	tags = { weapon_type_energy }
 	ai_tags = { weapon_role_anti_armor }
 
-	component_set = "MINING_DRONE_LASER_1"
-	prerequisites = { "tech_GF_miniaturized_collapse_lance" }
+	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
+	prerequisites = { "GF_tech_miniaturized_collapse_lance" }
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 15
+			alloys = 45
 			rare_crystals = 0.65
 		}
 		upkeep = {
-			energy = 0.15
-			alloys = 0.03
+			energy = 0.28
+			alloys = 0.04
 		}
 	}
-	power = -18
+	power = -30
 
 	damage = {
-		min = 30
-		max = 60
+		min = 10
+		max = 50
 	}
 
 	windup = {
-		min = 0.1
-		max = 1.2
+		min = 2.0
+		max = 3.0
 	}
-	total_fire_time = 50
+	total_fire_time = 40
 
 	range = 50
-	accuracy = 1
-	tracking = 0
-	hull_damage = 1.10
-	shield_penetration = 1
-	armor_penetration = 1
+	accuracy = 0.75
+	tracking = 0.60
+	armor_damage = 1.20
+	shield_penetration = 0.8
+	armor_penetration = 0.8
 
 }
 
@@ -213,36 +213,36 @@ weapon_component_template = {
 	ai_tags = { weapon_role_anti_armor }
 
 	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
-	prerequisites = { "tech_GF_miniaturized_collapse_lance" }
+	prerequisites = { "GF_tech_miniaturized_collapse_lance" }
 	resources = {
-		category = ship_components
+		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 28
+			alloys = 60
 			rare_crystals = 0.85
 		}
 		upkeep = {
-			energy = 0.28
-			alloys = 0.06
+			energy = 0.56
+			alloys = 0.08
 		}
 	}
-	power = -32
+	power = -50
 
 	damage = {
-		min = 50
-		max = 90
+		min = 30
+		max = 60
 	}
 
 	windup = {
-		min = 0.1
-		max = 1.7
+		min = 2.0
+		max = 3.0
 	}
-	total_fire_time = 50
+	total_fire_time = 45
 
 	range = 80
-	accuracy = 1
-	tracking = 0
-	hull_damage = 1.15
-	shield_penetration = 1
-	armor_penetration = 1
+	accuracy = 0.70
+	tracking = 0.30
+	armor_damage = 1.50
+	shield_penetration = 0.8
+	armor_penetration = 0.8
 
 }
