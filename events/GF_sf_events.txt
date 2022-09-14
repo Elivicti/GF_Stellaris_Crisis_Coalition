@@ -26,7 +26,7 @@ planet_event = {
 	desc = "GF_sf.1.desc"
 	picture = GFX_evt_announcement
 	show_sound = event_activating_unknown_technology
-	location = ROOT
+	location = this
 	trackable = yes
 	is_triggered_only = yes
 	pre_triggers = {
@@ -49,7 +49,7 @@ planet_event = {
 		enable_special_project = {
 			name = "GF_sf_event_project_1"
 			location = ROOT
-			owner = root
+			owner = root.owner
 		}
 	}
 }
@@ -59,17 +59,16 @@ planet_event = {
 	id = GF_sf.2
 	title = "GF_sf.2.name"
 	desc = "GF_sf.2.desc"
-	picture = GFX_evt_mysterious_signal	#缺少相关图片
+	picture = GFX_evt_mysterious_signal
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
 		owner = { has_origin = GF_origin_commonwealth }
 	}
 
-	option = {
-		name = "GF_sf.2.a"
+	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
@@ -91,13 +90,18 @@ planet_event = {
 				}
 				set_star_flag = flag_GF_sf_event_system
 			}
+		}
+	}
+
+	option = {
+		name = "GF_sf.2.a"
+		event_target:GF_sf_site_target_2 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_2"
-				location = event_target:GF_sf_site_target_2
+				location = this
 				owner = root.owner
 			}
 		}
-		
 	}
 }
 
@@ -110,7 +114,7 @@ country_event = {
 	picture = GFX_evt_barren_dig_site
 
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
@@ -132,17 +136,13 @@ country_event = {
 	desc = "GF_sf.3.desc"
 	picture = GFX_evt_exploding_ship
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_3
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
 		owner = { has_origin = GF_origin_commonwealth }
 	}
 	immediate = {
-		
-	}
-	option = {
-		name = "GF_sf.3.a"
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
@@ -164,9 +164,15 @@ country_event = {
 				}
 				set_star_flag = flag_GF_sf_event_system
 			}
+			
+		}
+	}
+	option = {
+		name = "GF_sf.3.a"
+		event_target:GF_sf_site_target_3 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_3"
-				location = event_target:GF_sf_site_target_3
+				location = this
 				owner = root.owner
 			}
 		}
@@ -180,17 +186,13 @@ ship_event = {
 	desc = "GF_sf.4.desc"
 	picture = GFX_evt_sabotaged_ship
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
 		owner = { has_origin = GF_origin_commonwealth }
 	}
 	immediate = {
-		
-	}
-	option = {
-		name = "GF_sf.4.a"
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
@@ -212,9 +214,15 @@ ship_event = {
 				}
 				set_star_flag = flag_GF_sf_event_system
 			}
+			
+		}
+	}
+	option = {
+		name = "GF_sf.4.a"
+		event_target:GF_sf_site_target_4 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_4"
-				location = event_target:GF_sf_site_target_4
+				location = this
 				owner = root.owner
 			}
 		}
@@ -229,7 +237,7 @@ country_event = {
 	picture = GFX_evt_relic_world_street
 	show_sound = event_activating_unknown_technology
 
-	location = THIS
+	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
@@ -240,7 +248,7 @@ country_event = {
 		name = "GF_sf.41.a"
 		event_target:GF_sf_site_target_4 = {
 			create_archaeological_site = GF_sf_site_2
-		} 
+		}
 	}
 }
 
@@ -251,15 +259,14 @@ country_event = {
 	desc = "GF_sf.5.desc"
 	picture = GFX_evt_asteroid_field
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_5
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
 		owner = { has_origin = GF_origin_commonwealth }
 	}
-	
-	option = {
-		name = "GF_sf.5.a"
+
+	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
@@ -281,9 +288,15 @@ country_event = {
 				}
 				set_star_flag = flag_GF_sf_event_system
 			}
+		}
+	}
+	
+	option = {
+		name = "GF_sf.5.a"
+		event_target:GF_sf_site_target_5 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_5"
-				location = event_target:GF_sf_site_target_5
+				location = this
 				owner = root.owner
 			}
 		}
@@ -297,7 +310,7 @@ ship_event = {
 	desc = "GF_sf.6.desc"
 	picture = GFX_evt_ruined_system
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_sf_site_target_6
 	trackable = yes
 	is_triggered_only = yes
 	immediate = {
@@ -313,8 +326,7 @@ ship_event = {
 					initializer = GF_sf_system
 				}
 			}
-			random_system = {
-				limit = { has_star_flag = flag_GF_sf_system }
+			last_created_system = {
 				star = {
 					create_ambient_object = {
 						type = "contingency_2"
@@ -339,7 +351,7 @@ ship_event = {
 		event_target:GF_sf_site_target_6 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_6"
-				location = event_target:GF_sf_site_target_6
+				location = this
 				owner = root.owner
 			}
 		}
@@ -353,7 +365,7 @@ country_event = {
 	picture = GFX_evt_contingency_planet
 	show_sound = event_activating_unknown_technology
 
-	location = THIS
+	location = event_target:GF_sf_site_target_6
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
@@ -364,7 +376,7 @@ country_event = {
 		name = "GF_sf.61.a"
 		event_target:GF_sf_site_target_6 = {
 			create_archaeological_site = GF_sf_site_3
-		} 
+		}
 	}
 }
 
@@ -375,7 +387,7 @@ country_event = {
 	desc = "GF_sf.7.desc"
 	picture = GFX_evt_physics_research
 	show_sound = event_activating_unknown_technology
-	location = THIS
+	location = event_target:GF_home_world
 	trackable = yes
 	is_triggered_only = yes
 	trigger = {
@@ -401,8 +413,7 @@ country_event = {
 	desc = "GF_sf.8.desc"
 	picture = GFX_evt_GF_net_world
 	show_sound = event_door_opening
-	location = THIS
-	trackable = yes
+	
 	is_triggered_only = yes
 	trigger = {
 		owner = { has_origin = GF_origin_commonwealth }
@@ -410,11 +421,10 @@ country_event = {
 	
 	option = {
 		name = "GF_sf.8.a"
-		owner = {
-			add_relic = GF_relic_orb_mainframe_alpha
-			hidden_effect = {
-				set_country_flag = flag_GF_relic_orb_mainframe_alpha_get
-			}
+		add_relic = GF_relic_orb_mainframe_alpha
+		end_event_chain = "GF_sf_event_chain"
+		hidden_effect = {
+			set_country_flag = flag_GF_relic_orb_mainframe_alpha_get
 		}
 	}
 }

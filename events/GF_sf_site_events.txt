@@ -46,7 +46,7 @@ fleet_event = {
 	option = {
 		name = "GF_sf_site.13.a"
 		owner = {
-			country_event = { id = GF_sf.3 } 
+			country_event = { id = GF_sf.3 }
 			add_resource = { minor_artifacts = 3 }
 		}
 	}
@@ -114,7 +114,7 @@ fleet_event = {
 		name = "GF_sf_site.24.a"
 		owner = {
 			add_resource = { minor_artifacts = 4 }
-			country_event = { id = GF_sf.5 } 
+			country_event = { id = GF_sf.5 }
 		}
 	}
 }
@@ -154,7 +154,7 @@ fleet_event = {
 	id = GF_sf_site.33
 	title = "GF_sf_site.33.name"
 	desc = "GF_sf_site.33.desc"
-	picture = GFX_evt_GF_deep_well	#以后修改
+	picture = GFX_evt_GF_deep_well
 	show_sound = event_door_opening
 	location = from
 	archaeology = yes
@@ -178,7 +178,7 @@ fleet_event = {
 		name = "GF_sf_site.34.a"
 		owner = {
 			add_resource = { minor_artifacts = 5 }
-			country_event = { id = GF_sf.7 } 
+			country_event = { id = GF_sf.7 }
 		}
 	}
 }
