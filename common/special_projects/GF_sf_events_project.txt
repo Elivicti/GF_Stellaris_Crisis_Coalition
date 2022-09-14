@@ -94,7 +94,7 @@ special_project = {
 		leader = scientist
 		#skill = 3
 	}
-	on_success = { 
+	on_success = {
 		owner = {
 			country_event = { id = GF_sf.61 }
 		}
@@ -109,8 +109,8 @@ special_project = {
 	days_to_research = 90
 	picture = GFX_evt_physics_research
 	event_scope = country_event
-	on_success = { 
-		country_event = { id = GF_sf.8 } 
+	on_success = {
+		country_event = { id = GF_sf.8 }
 	}
 	on_fail = {}
 }
