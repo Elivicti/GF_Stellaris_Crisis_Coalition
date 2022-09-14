@@ -20,8 +20,6 @@ d_GF_south_pole_energy = {
 	}
 }
 
-
-
 d_GF_green_zone = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -187,3 +185,24 @@ d_GF_south_pole_urban = {
 }
 
 
+d_GF_railway_hub = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		trade_value_mult = 0.25
+		planet_building_build_speed_mult = 0.05
+	}
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			energy = 0.12
+			alloys = 0.06
+		}
+	}
+
+	drop_weight = {
+		weight = 0
+	}
+}
