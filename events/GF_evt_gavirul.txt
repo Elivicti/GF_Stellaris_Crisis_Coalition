@@ -20,12 +20,9 @@ country_event = {
 
 	option = {
 		name = GF_gavirul.0.a
-		capital_scope = {
-			enable_special_project = {
-				name = "SP_GF_GAVIRUL_PROJECT"
-				location = this
-				owner = root
-			}
+		enable_special_project = {
+			name = "SP_GF_GAVIRUL_PROJECT"
+			owner = root
 		}
 	}
 }

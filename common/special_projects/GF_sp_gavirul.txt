@@ -19,10 +19,8 @@ special_project = {
 	location = no
 
 	on_success = {
-		owner = {
-			country_event = {
-				id = GF_gavirul.1
-			}
+		country_event = {
+			id = GF_gavirul.1
 		}
 	}
 }
