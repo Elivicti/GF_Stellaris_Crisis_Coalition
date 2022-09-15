@@ -175,9 +175,7 @@ planet_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		# owner = { GF_default_elid_event_trigger = yes }
 		owner = { has_authority = GF_auth_commonwealth }
-		GF_planet_has_contaminated_zone = yes
 		check_variable = {
 			which = v_GF_elid_threat_level
 			value > 0
@@ -188,9 +186,6 @@ planet_event = {
 
 		if = {
 			limit = { has_ground_combat = no is_occupied_flag = no } # checks whether the planet has been occupied
-
-			# notice event
-			owner = { country_event = { id = GF_elid.1001 } }
 
 			create_country = {
 				name = "NAME_GF_elid_invasion"
@@ -225,37 +220,60 @@ planet_event = {
 					save_global_event_target_as = aggressive_elid_species
 				}
 			}
+			if = {
+				limit = { GF_planet_has_contaminated_zone = yes }
+				
+				# notice event
+				owner = { country_event = { id = GF_elid.1001 } }
 
-			multiply_variable = {
-				which = v_GF_elid_threat_level
-				value = 3
-			}
-			while = {
-				count = v_GF_elid_threat_level
-				event_target:GF_home_world = {
-					create_army = {
-						name = "NAME_GF_aggressive_elid"
-						owner = event_target:aggressive_elid_country
-						species = last_created_species
-						type = "GF_army_hostile_elid"
+				multiply_variable = {
+					which = v_GF_elid_threat_level
+					value = 3
+				}
+				while = {
+					count = v_GF_elid_threat_level
+					event_target:GF_home_world = {
+						create_army = {
+							name = "NAME_GF_aggressive_elid"
+							owner = event_target:aggressive_elid_country
+							species = last_created_species
+							type = "GF_army_hostile_elid"
+						}
+					}
+				}
+				divide_variable = {
+					which = v_GF_elid_threat_level
+					value = 3
+				}
+				while = {
+					count = v_GF_elid_threat_level
+					event_target:GF_home_world = {
+						create_army = {
+							name = "NAME_GF_aggressive_elid"
+							owner = event_target:aggressive_elid_country
+							species = last_created_species
+							type = "GF_army_hostile_elid_boss"
+						}
 					}
 				}
 			}
-			divide_variable = {
-				which = v_GF_elid_threat_level
-				value = 3
-			}
-			while = {
-				count = v_GF_elid_threat_level
-				event_target:GF_home_world = {
-					create_army = {
-						name = "NAME_GF_aggressive_elid"
-						owner = event_target:aggressive_elid_country
-						species = last_created_species
-						type = "GF_army_hostile_elid_boss"
+			else = {
+				# notice event
+				owner = { country_event = { id = GF_elid.1002 } }
+
+				while = {
+					count = v_GF_elid_threat_level
+					event_target:GF_home_world = {
+						create_army = {
+							name = "NAME_GF_aggressive_elid"
+							owner = event_target:aggressive_elid_country
+							species = last_created_species
+							type = "GF_army_hostile_elid"
+						}
 					}
 				}
 			}
+			
 		}
 		else = { # if the planet is in ground combat or is occupied, check again in 2 months
 			planet_event = {
@@ -290,6 +308,23 @@ country_event = { # a notice to tell player that elid has been spawned
 	}
 }
 
+country_event = { # a notice to tell player that elid has been spawned
+	id = GF_elid.1002
+	title = GF_elid.1002.name
+	desc = GF_elid.1002.desc
+
+	picture = GFX_evt_GF_protected_purify_wall
+
+	location = event_target:GF_home_world
+
+	is_triggered_only = yes
+	trigger = { GF_default_elid_event_trigger = yes }
+
+	option = {
+		name = GF_elid.1002.a
+	}
+}
+
 # defender victory
 country_event = {
 	id = GF_elid.1010
@@ -307,7 +342,7 @@ country_event = {
 	}
 	desc = {
 		text = GF_elid.1010.desc.low_devastation_no_further
-		trigger = { 
+		trigger = {
 			fromfrom = {
 				AND = {
 					planet_devastation < 20
@@ -615,6 +650,9 @@ planet_event = {
 			add_modifier = { modifier = GF_pm_elid_threat_level_low days = -1 }
 			remove_modifier = GF_pm_elid_threat_level_mid
 			remove_modifier = GF_pm_elid_threat_level_high
+
+			# final victory
+			owner = { country_event = { id = GF_elid.1031 } }
 		}
 		else_if = { # threat level is (2, 6]
 			limit = {
@@ -636,8 +674,6 @@ planet_event = {
 			remove_modifier = GF_pm_elid_threat_level_mid
 			add_modifier = { modifier = GF_pm_elid_threat_level_high days = -1 }
 		}
-		# final victory
-		owner = { country_event = { id = GF_elid.1031 } }
 	}
 }
 
