@@ -63,7 +63,10 @@ building_GF_building_contractors = {
 		}
 	}
 	allow = {
-		owner = { NOT = { has_policy_flag = ai_outlawed } }
+		custom_tooltip = {
+			fail_text = GF_require_planet_owner_allowed_AI
+			owner = { NOT = { has_policy_flag = ai_outlawed } }
+		}
 	}
 
 	planet_modifier = {

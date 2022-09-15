@@ -52,3 +52,4 @@
  building_GF_military_contractors_desc:0 "我们承诺会派出最精锐的人形来执行任务，给各国提供优秀的雇佣兵服务。"
  building_GF_building_contractors:0 "人形制造分公司"
  building_GF_building_contractors_desc:0 "将一些不涉及核心技术的零件设计图分享给国外的公司，能够加快我们人形的组装速度。"
+ GF_require_planet_owner_allowed_AI:0 "£trigger_no£ 这个国家已宣布§R人工智能非法§!"
