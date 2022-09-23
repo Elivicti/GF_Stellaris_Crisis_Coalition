@@ -79,7 +79,7 @@
  GF_require_gavirul_project_finished:0 "需要完成§Y$SP_GF_GAVIRUL_PROJECT$§!"
 
  GF_trait_leader_ogas_glitch:0 "核心故障"
- GF_trait_leader_ogas_glitch_desc0 "§L一些未知的奇怪程序正在侵占这位领袖的核心算力。§!\n"
+ GF_trait_leader_ogas_glitch_desc:0 "§L一些未知的奇怪程序正在侵占这位领袖的核心算力。§!\n"
 
  GF_trait_leader_ogas_2:0 "$GF_trait_leader_ogas$"
  GF_trait_leader_ogas_2_desc:0 "§L$GF_trait_leader_ogas_desc$\n\n在学习了$GF_ZION$中得到的资料后计算能力和管理能力都得到了提升。§!\n"
