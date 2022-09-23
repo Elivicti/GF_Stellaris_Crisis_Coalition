@@ -5,6 +5,7 @@ special_project = {
 	tech_department = society_technology
 	timelimit = -1
 	picture = GFX_evt_GF_protected_purify_wall
+	icon = "gfx/interface/icons/situation_log/situation_log_society.dds"
 	event_scope = country_event
 	
 	on_success = {
@@ -20,19 +21,22 @@ special_project = {
 	event_scope = country_event
 
 	picture = GFX_situation_log_modification_picture
-	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
 
 	tech_department = engineering_technology
 	cost = {
 		base = 0
 		scaled_modifier = {
 			limit = {
-				NOT = { has_trait = GF_trait_doll }
-				is_robot_pop = yes
+				GF_is_non_doll_robot_pop = yes
 			}
 			scope = this
 			add = 50
 			calc = pop_count
 		}
+	}
+
+	on_success = {
+		country_event = { id = GF_doll.2000 }
 	}
 }
