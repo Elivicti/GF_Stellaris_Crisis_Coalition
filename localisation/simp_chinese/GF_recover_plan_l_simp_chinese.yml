@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ GF_recover_plan_project_1:0 "坍塌辐射污染区恢复及振兴联合开拓计划"
+ GF_recover_plan_project_1_desc:0 ""
+
+ GF_recover_plan.1.name:0 "$GF_recover_plan_project_1$"
+ GF_recover_plan.1.desc:0 "随着我们在星际的探索和扩张，[This.Capital.GetName]上的§R坍塌辐射污染区§!已经越来越成为不可忽视的重要问题，星际扩张要求更强的生产建设，人民要求更好的生活。\n\n由[society_leader.GetName]牵头社会学研究部门提交了一份计划书，详细地规划了未来数年内$d_GF_yellow_zone$边缘及其周边地区的基础整治方案，同时[society_leader.GetName]还提出，应该利用联合政府成立以来形成的强大合力，统合全球的技术、资源与人力，对§R坍塌辐射污染区§!的治理工作进行更加深入与长远的研究。"
+ GF_recover_plan.1.desc.authoritarian:0 "随着我们在星际的探索和扩张，[This.Capital.GetName]上的§R坍塌辐射污染区§!已经越来越成为阻碍我们生产建设的绊脚石。\n\n由[society_leader.GetName]牵头社会学研究部门提交了一份计划书，详细地规划了未来数年内$d_GF_yellow_zone$边缘及其周边地区的基础整治方案，同时[society_leader.GetName]还提出，应该利用联合政府的强权，统合全球的技术、资源与人力，对§R坍塌辐射污染区§!的治理工作进行更加深入与长远的研究。"
+ GF_recover_plan.1.a:0 "批准计划。"
+
+ GF_recover_plan.2.name:0 "$GF_recover_plan_project_1$"
+ GF_recover_plan.2.desc:0 "我们的社会学研究部门借助联合政府的影响力，成功完成了统合全球技术与资源的工作，还吸纳了许多有用的人才。\n\n同时，在$d_GF_yellow_zone$周边地区实施的基础整治方案进展十分顺利，在$d_GF_yellow_zone$内部实行的部分治理试验也获得了可靠的成果，可以说我们现在已经掌握了治理$d_GF_yellow_zone$所需的技术了。"
+ GF_recover_plan.2.a:0 "很好。"
+ GF_recover_plan.2.a.tooltip:0 "允许清理§Y$d_GF_yellow_zone$§!\n允许发起§H星球决议§!来建设§Y$d_GF_railway_hub$§!\n\n§H注意§!：清理§R坍塌辐射污染区§!时将与E.L.I.D感染者进行作战，我们应该做好充足准备再进行清理行动。"

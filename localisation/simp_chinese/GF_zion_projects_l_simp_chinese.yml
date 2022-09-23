@@ -128,23 +128,30 @@
  GF_zion_project.32300.desc:0 "我们注入$GF_ZION$的能量似乎并未对其造成影响，反而被$GF_ZION$用来强化了我们的探测器。\n\n尽管只持续了非常短的时间，但受其所赐，我们在§Y[chosen_planet.GetName]§!上发现了新的资源。"
  GF_zion_project.32300.a:0 "不错。"
 
-#  GF_zion_project.33101.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33101.a:0 "__REPLACE_ME__"
-#  GF_zion_project.33102.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33102.a:0 "__REPLACE_ME__"
-#  GF_zion_project.33103.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33103.a:0 "__REPLACE_ME__"
-#  GF_zion_project.33104.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33104.a:0 "__REPLACE_ME__"
+ GF_zion_project.33101.desc:0 "$GF_ZION$内部的数据流突然产生了极大的波动，之后突然平静下来，此时我们的设备才后知后觉地响起了警报，不过实际上并没有造成任何损失。\n\n随后我们的科学家分析了监测设备的日志，发现我们设备捕获到的一些数据携带着数千年甚至数万年前的时间戳。\n\n不论这些古老而庞大的数据来自哪里，如今又为何存在于$GF_ZION$之中，它们对于帝国的科研都是极其宝贵的资料。"
+ GF_zion_project.33101.a:0 "很好。"
+
+ GF_zion_project.33102.desc:0 "注入如此庞大的能力让$GF_ZION$一时之间陷入了强烈的不稳定状态，但我们的科学家迅速通过模拟计算得出的预案将$GF_ZION$稳定了下来，同时还在$GF_ZION$进入不稳定态时，从中捕获到一份数据——某个远古帝国的生产研究资料。\n\n初步的分析已经表明这份研究适用于我国，且可以极大地提高我们帝国的生产力。"
+ GF_zion_project.33102.a:0 "棒极了。"
+
+ GF_zion_project.33103.desc:0 "注入能量之后，$GF_ZION$内部涌出了巨量的数据流，险些让我们的数个设备过载，不过好在有惊无险，这些数据流被全部捕获，初步分析发现其中绝大部分内容是关于一个不知名的远古帝国的外交日志，还有一部分似乎是一个专攻破解的算法。\n\n我们的外交部门表示这份资料经过修缮以后非常适合用来训练外交人员，而情报部门则表示这个算法十分有用。"
+ GF_zion_project.33103.a:0 "很好"
+
+ GF_zion_project.33104.desc:0 "注入能量之后，$GF_ZION$却没有产生任何波动，一小会后，开始缓慢地涌出数据流——但却持续了几乎24个[GF_home_world.GetName]时，因此我们实际上捕获的数据量十分庞大，初步分析这些数据也几乎花费24个[GF_home_world.GetName]时。\n\n这些数据似乎记录了数万年前数个文明与一个机械文明之间几乎遍及整个银河的庞大战争，其激烈程度与惨烈程度都超乎想象，在各个战斗中，双方的舰队都表现出了极其高超的指挥水平与战斗素质，这部分资料经过处理后可以用于训练我们的舰队。"
+ GF_zion_project.33104.a:0 "非常好。"
 
 #  GF_zion_project.33201.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33201.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33201.a:0 "真糟糕。"
+
 #  GF_zion_project.33202.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33202.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33202.a:0 "可恶。"
+
 #  GF_zion_project.33203.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33203.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33203.a:0 "真不幸。"
+
 #  GF_zion_project.33204.desc:0 "__REPLACE_ME__"
-#  GF_zion_project.33204.a:0 "__REPLACE_ME__"
+#  GF_zion_project.33204.a:0 "真糟糕。"
+
 
  GF_zion_project.33300.desc:0 "在我们注入能量后，$GF_ZION$突然变得十分奇怪，通讯连接的画面开始闪烁，我们用于监测的设备也不断报告出异常信息，大量未知的、无法解析的数据被监测设备捕获。\n\n就在我们的科学家开始担心我们莽撞地往$GF_ZION$中注入了太多的能量，即将导致$GF_ZION$开始崩解时，突然所有设备的异常报告戛然而止，通讯画面也重新恢复了正常。"
  GF_zion_project.33300.a:0 "发生了什么？？"
