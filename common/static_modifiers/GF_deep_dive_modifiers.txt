@@ -147,7 +147,7 @@ GF_zion_deep_dive_production_3 = {
 	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
 	planet_jobs_robotic_produces_mult = 0.50
 	station_gatherers_produces_mult = 0.50
-	megastructures_produces_mult = 0.50
+	megastructures_produces_mult = 0.25
 }
 
 GF_zion_deep_dive_diplomacy_3 = {
