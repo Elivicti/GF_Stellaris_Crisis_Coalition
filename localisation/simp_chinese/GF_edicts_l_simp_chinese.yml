@@ -11,8 +11,11 @@
 
  edict_GF_robot_modding:0 "智能机械体同化协议"
  edict_GF_robot_modding_desc:0 "银河当中部分文明也发展了跟我们类似的智能机械体技术，但这些机械体过于落后且无法接入齐纳协议。我们需要将这些机械体的数据导入心智云图、改造为仿生自律人形并重新设定控制权限来保证它们忠实的为我们的文明服务。"
- GF_robot_modding_effect:0 "获得修正§Y$edict_GF_robot_modding$§!，持续§Y6个月§!，期间无法再次启动此法令。\n将所有§Y非人形§!的§Y机械 £pop£ 人口§!改造为§Y人形§!，§Y每个§!机械 £pop£ 人口花费§Y100§! £energy£ 能量币和§Y50§! £alloys£ 合金。"
- GF_edict_robot_modding_require_non_doll_robot:0 "\n£trigger_no£我们帝国境内§R没有§!§Y非人形§!的§Y机械 £pop£ 人口§!"
+ GF_robot_modding_effect:0 "发起特殊项目：§Y$edict_GF_robot_modding$§!\n完成后将所有§Y非人形§!的 £pop£ §Y机械人口§!改造为§Y人形§!"
+ GF_edict_robot_modding_require_non_doll_robot:0 "\n£trigger_no£我们帝国境内§R没有§!§Y非人形§!的 £pop£ §Y机械人口§!"
+ GF_edict_robot_modding_is_ongoing:0 "£trigger_no£这个项目已经在执行了"
+ SP_GF_ROBOT_MODDING:0 "$edict_GF_robot_modding$"
+ SP_GF_ROBOT_MODDING_DESC:0 "$edict_GF_robot_modding_desc$"
 
  edict_GF_relocate_relic_site:0 "重定位$collapse_relic$"
  edict_GF_relocate_relic_site_desc:0 "即便我们不小心失去了$collapse_relic$的坐标，我们也能利用现有的数据再次定位它。"
