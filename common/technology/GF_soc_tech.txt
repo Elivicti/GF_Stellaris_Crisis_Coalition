@@ -175,8 +175,12 @@ GF_tech_ecological_recovery = {
 			}
 		}
 		modifier = {
-			factor = 10
+			factor = 5
 			years_passed >= 20
+		}
+		modifier = {
+			factor = 10
+			years_passed >= 50
 		}
 		modifier = {
 			factor = 5
@@ -194,9 +198,7 @@ GF_tech_ecological_recovery = {
 	}
 
 	ai_weight = {
-		modifier = {
-			factor = 4
-		}
+		factor = 5
 		modifier = {
 			factor = 0
 			NOT = {
