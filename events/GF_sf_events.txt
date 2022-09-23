@@ -42,9 +42,11 @@ planet_event = {
 
 	option = {
 		name = GF_sf.1.a
-		begin_event_chain = {
-			event_chain = "GF_sf_event_chain"
-			target = ROOT
+		owner = {
+			begin_event_chain = {
+				event_chain = "GF_sf_event_chain"
+				target = this
+			}
 		}
 		enable_special_project = {
 			name = "GF_sf_event_project_1"
