@@ -5,7 +5,7 @@
 # 	class = ogas_consciousness
 
 # 	# 暂时先用破界者的立绘
-# 	portrait = exd1 
+# 	portrait = exd1
 # 	traits = {
 # 		trait = trait_pc_ai_preference
 # 		trait = trait_fertile
@@ -14,7 +14,7 @@
 # }
 # create_leader = {
 # 	name = NAME_ogas_consciousness
-			
+
 # 	class = scientist
 # 	species = last_created_species
 # 	skill = 10
@@ -55,7 +55,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { NOT = { has_country_flag = flag_GF_first_zion_comm_completed } }
-			country_event = { 
+			country_event = {
 				id = GF_zion.10000
 			}
 		}
@@ -293,6 +293,7 @@ country_event = {
 
 	option = {
 		name = GF_zion.20000.secrets
+		allow = { GF_require_zion_favor_decent = yes }
 		hidden_effect = {
 			country_event = { id = GF_zion.21000 }
 		}
@@ -309,7 +310,7 @@ country_event = {
 					has_modifier = GF_zion_research_high
 				}
 			}
-			GF_require_zion_favor_decent = yes
+			GF_require_zion_favor_mid = yes
 		}
 		hidden_effect = {
 			country_event = { id = GF_zion.22000 }
@@ -375,6 +376,7 @@ country_event = {
 				has_valid_civic = civic_reanimated_armies
 				has_technology = GF_tech_elid_army
 				has_tech_option = GF_tech_elid_army
+				has_special_project = SP_GF_ZION_ELID_ARMY_PROJECT
 			}
 			has_technology = GF_tech_collapsetech_weaponize
 			has_technology = tech_cloning
@@ -417,7 +419,10 @@ country_event = {
 	option = {
 		name = GF_zion.21000.collapse_weapon
 		trigger = {
-			NOT = { has_country_flag = flag_GF_requested_collapse_weapon }
+			NOR = {
+				has_country_flag = flag_GF_requested_collapse_weapon
+				has_special_project = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT
+			}
 			has_technology = GF_tech_collapse_energy_lance
 		}
 		allow = {
@@ -453,6 +458,10 @@ country_event = {
 					is_megastructure_type = quantum_catapult_improved_slingshot
 				}
 			}
+			NOR = {
+				has_country_flag = flag_GF_requested_collapse_singshot
+				has_special_project = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT
+			}
 		}
 		allow = {
 			GF_require_zion_favor_high = yes
@@ -481,7 +490,7 @@ country_event = {
 		}
 		allow = {
 			GF_require_energy_stockpile_1 = yes
-			GF_require_zion_favor_mid = yes
+			GF_require_zion_favor_decent = yes
 		}
 		GF_zion_project_cost = { RES = energy TIER = 1 }
 
