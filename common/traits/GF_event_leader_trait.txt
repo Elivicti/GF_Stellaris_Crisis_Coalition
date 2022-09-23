@@ -67,7 +67,7 @@ GF_trait_leader_enhanced_scientist = {
 	modifier = {
 		all_technology_research_speed = 0.10
 		science_ship_survey_speed = 0.50
-		ship_archeaological_site_clues_add = 3
+		ship_archaeological_site_clues_add = 3
 		shipclass_science_ship_disengage_mult = 0.25
 	}
 
