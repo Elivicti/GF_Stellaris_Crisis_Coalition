@@ -11,8 +11,6 @@ GF_tech_doll_assemble = {
 	potential = {
 		has_authority = GF_auth_commonwealth
 	}
-	start_tech = yes
-	
 }
 GF_tech_doll_modding = {
 	cost = @tier3cost1
@@ -26,6 +24,7 @@ GF_tech_doll_modding = {
 	
 	feature_flags = {
 		add_advanced_traits
+		modify_robots
 	}
 
 	potential = {
@@ -33,17 +32,9 @@ GF_tech_doll_modding = {
 	}
 	
 	weight_modifier = {
-		factor = 0.5
 		modifier = {
-			factor = 0
+			factor = 0.1
 			has_policy_flag = robots_outlawed
-		}
-		modifier = {
-			factor = 0.5
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
 		}
 		modifier = {
 			factor = 2
@@ -53,7 +44,7 @@ GF_tech_doll_modding = {
 			}
 		}
 		modifier = {
-			factor = 0.20
+			factor = 0.25
 			NOR = {
 				research_leader = {
 					area = engineering
@@ -146,6 +137,10 @@ GF_tech_mind_upgrade_2 = {
 			title = "feature_GF_doll_mind_upgrade"
 			desc = "feature_GF_doll_mind_upgrade_desc"
 		}
+		custom = {
+			title = "unlock_edict_GF_doll_reprogram"
+			desc = "unlock_edict_GF_doll_reprogram_desc"
+		}
 	}
 
 	weight_modifier = {
@@ -201,10 +196,6 @@ GF_tech_doll_modding_point_1 = {
 	category = { industry }
 	prerequisites = {"GF_tech_doll_modding" }
 	weight = @tier2weight1
-	
-	feature_flags = {
-		modify_robots
-	}
 
 	gateway = GF_tech_gateway_doll_modding
 	
