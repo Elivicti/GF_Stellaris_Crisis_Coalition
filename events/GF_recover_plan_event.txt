@@ -19,16 +19,40 @@ country_event = {
 country_event = {
 	id = GF_recover_plan.1
 	title = GF_recover_plan.1.name
-	desc = GF_recover_plan.1.desc
+	desc = {
+		text = GF_recover_plan.1.desc
+		trigger = {
+			NOR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	desc = {
+		text = GF_recover_plan.1.desc.authoritarian
+		trigger = {
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
 	picture = GFX_evt_GF_protected_purify_wall
 	is_triggered_only = yes
 	trigger = {
 		has_authority = GF_auth_commonwealth
 		has_origin = GF_origin_commonwealth
 	}
+
+	immediate = {
+		random_owned_leader = {
+			limit = { is_researching_area = society }
+			save_event_target_as = society_leader
+		}
+	}
+
 	option = {
 		name = GF_recover_plan.1.a
-		custom_tooltip = GF_recover_plan.1.a.tooltip
 		enable_special_project = {
 			name = "GF_recover_plan_project_1"
 			owner = root
@@ -47,9 +71,7 @@ country_event = {
 	}
 	option = {
 		name = GF_recover_plan.2.a
+		give_technology = { message = no tech = GF_tech_recover_plan }
 		custom_tooltip = GF_recover_plan.2.a.tooltip
-		owner = {
-			give_technology = { message = no tech = GF_tech_recover_plan }
-		}
 	}
 }
