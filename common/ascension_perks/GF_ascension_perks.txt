@@ -24,7 +24,7 @@ ap_GF_mind_upgrade = {
 	}
 	
 	ai_weight = {
-		factor = 0	
+		factor = 0
 	}
 }
 ap_GF_body_upgrade = {
@@ -36,7 +36,7 @@ ap_GF_body_upgrade = {
 	modifier = {
 	    description = ap_chip_upgrade_modifier_desc
 		GF_ANDROID_species_trait_points_add = 3
-	}	
+	}
 	possible = {
 		has_technology = GF_tech_doll_modding_point_3
 		has_ascension_perk = ap_GF_mind_upgrade
@@ -52,7 +52,7 @@ ap_GF_body_upgrade = {
 	}
 	
 	ai_weight = {
-		factor = 0	
+		factor = 0
 	}
 }
 #######collapse坍缩科技
@@ -95,6 +95,6 @@ ap_GF_gavirul_project = {
 	}
 	
 	ai_weight = {
-		factor = 0	
+		factor = 0
 	}
 }
