@@ -1,0 +1,84 @@
+﻿l_simp_chinese:
+ IAMVERYSORRY:0 "\n\n这部分事件的文本量非常庞大，我作为一个文案废物实在是写不出来更多了，而安娜又忙于现实事务……总之给大伙磕头了，咚咚咚"
+
+ GF_zion.20000.desc.a:0 "主界面 - 闲聊A$IAMVERYSORRY$"
+ GF_zion.20000.desc.b:0 "主界面 - 闲聊B$IAMVERYSORRY$"
+ GF_zion.20000.desc.high_favor.a:0 "主界面 - 闲聊A (高评价)$IAMVERYSORRY$"
+ GF_zion.20000.desc.high_favor.b:0 "主界面 - 闲聊B (高评价)$IAMVERYSORRY$"
+ GF_zion.20000.desc.very_high_favor:0 "主界面 - 闲聊 (极高评价)$IAMVERYSORRY$"
+
+ GF_zion.21000.desc.a:0 "解锁秘密 - 闲聊A"
+ GF_zion.21000.desc.b:0 "解锁秘密 - 闲聊B"
+ GF_zion.21000.desc.c:0 "解锁秘密 - 闲聊C"
+
+ GF_zion.22000.desc:0 "协助科研 - 闲聊"
+ GF_zion.22000.low.response:0 "协助科研 - 回应 (低能量)"
+ GF_zion.22000.mid.response:0 "协助科研 - 回应 (中能量)"
+ GF_zion.22000.high.response:0 "协助科研 - 回应 (高能量)"
+
+ GF_zion_project.1000.desc:0 "关于ELID - 闲聊 (初次进入)"
+ GF_zion_project.1000.desc.repeat:0 "关于ELID - 闲聊 (重复进入)"
+ GF_zion_project.1000.a:0 "关于ELID - 选项A"
+ GF_zion_project.1000.a.response:0 "关于ELID - 选项A (回应)"
+ GF_zion_project.1000.b:0 "关于ELID - 选项B"
+ GF_zion_project.1000.b.response:0 "关于ELID - 选项B (回应)"
+ GF_zion_project.1000.request.response:0 "关于ELID - 请求 (回应)"
+ GF_zion_project.1000.request.reanimated_armies_response:0 "关于ELID - 请求 (逝者军势 回应)"
+
+ GF_zion_project.1010.name:0 "关于ELID - 特殊项目完成标题"
+ GF_zion_project.1010.desc:0 "关于ELID - 特殊项目完成描述\n\n你现在可以建造ELID陆军了。"
+ GF_zion_project.1010.a:0 "已知晓。"
+
+
+ GF_zion_project.2000.desc.repeat:0 "关于坍塌粒子武器 - 闲聊 (重复进入)"
+ GF_zion_project.2000.a.response:0 "关于坍塌粒子武器 - 选项A (回应)"
+ GF_zion_project.2000.b:0 "关于坍塌粒子武器 - 选项B"
+ GF_zion_project.2000.b.response:0 "关于坍塌粒子武器 - 选项B (回应)"
+
+ GF_zion_project.2010.name:0 "关于坍塌粒子武器 - 特殊项目完成标题"
+ GF_zion_project.2010.desc:0 "关于坍塌粒子武器 - 特殊项目完成描述\n\n你现在可以建造小型化的坍塌射线武器了。"
+ GF_zion_project.2010.a:0 "棒极了。"
+
+
+ GF_zion_project.3000.desc:0 "关于逆向坍塌 - 闲聊 (初次进入)"
+ GF_zion_project.3000.desc.repeat:0 "关于逆向坍塌 - 闲聊 (重复进入)"
+ GF_zion_project.3000.a:0 "关于逆向坍塌 - 选项A"
+ GF_zion_project.3000.a.response:0 "关于逆向坍塌 - 选项A (回应)"
+ GF_zion_project.3000.b:0 "关于逆向坍塌 - 选项B"
+ GF_zion_project.3000.b.response:0 "关于逆向坍塌 - 选项B (回应)"
+ GF_zion_project.3000.request:0 "我们想要深入了解§H逆向坍塌§!"
+ GF_zion_project.3000.request.response:0 "关于逆向坍塌 - 请求 (回应)"
+
+ GF_zion_project.3010.name:0 "关于逆向坍塌 - 特殊项目完成标题"
+ GF_zion_project.3010.desc:0 "关于逆向坍塌 - 特殊项目完成描述\n\n你的量子弹弓和舰队的跃迁能力被强化了。"
+ GF_zion_project.3010.a:0 "非常好。"
+
+
+ GF_zion_project.20000.desc:0 "关于球形主机 - 描述 (阶段1)"
+ GF_zion_project.20000.a:0 "关于球形主机 - 选项 (阶段1)"
+ GF_zion_project.20001.desc:0 "关于球形主机 - 描述 (阶段2)"
+ GF_zion_project.20001.a:0 "关于球形主机 - 选项 (阶段2)"
+ GF_zion_project.20002.desc:0 "关于球形主机 - 描述 (阶段3)"
+ GF_zion_project.20002.a:0 "关于球形主机 - 选项 (阶段3)"
+
+ GF_zion_project.20010.name:0 "关于球形主机 - 特殊项目完成标题"
+ GF_zion_project.20010.desc:0 "关于球形主机 - 特殊项目完成描述"
+ GF_zion_project.20010.a:0 "关于球形主机 - 特殊项目完成选项"
+
+
+ GF_zion_project.30000.desc.a:0 "深入锡安 - 闲聊A"
+ GF_zion_project.30000.desc.b:0 "深入锡安 - 闲聊B"
+ GF_zion_project.30000.desc.c:0 "深入锡安 - 闲聊C"
+ GF_zion_project.30000.desc.d:0 "深入锡安 - 闲聊D"
+
+ GF_zion_project.33201.desc:0 "各位HXD们，我是真的写不出来文本了，给大伙磕头了，咚咚咚！\n\n总之这个事件是你的科研获得了Debff。"
+ GF_zion_project.33201.a:0 "怎会如此……"
+
+ GF_zion_project.33202.desc:0 "各位HXD们，我是真的写不出来文本了，给大伙磕头了，咚咚咚！\n\n总之这个事件是你的生产获得了Debff。"
+ GF_zion_project.33202.a:0 "怎会如此……"
+
+ GF_zion_project.33203.desc:0 "各位HXD们，我是真的写不出来文本了，给大伙磕头了，咚咚咚！\n\n总之这个事件是你的外交获得了Debff。"
+ GF_zion_project.33203.a:0 "怎会如此……"
+
+ GF_zion_project.33204.desc:0 "各位HXD们，我是真的写不出来文本了，给大伙磕头了，咚咚咚！\n\n总之这个事件是你的舰队获得了Debff。"
+ GF_zion_project.33204.a:0 "怎会如此……"
