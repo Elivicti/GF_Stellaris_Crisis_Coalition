@@ -186,7 +186,7 @@ planet_event = {
 				change_species = last_created_species
 
 				set_pop_flag = community_mod_rules_trigger
-				set_pop_flag = community_can_fill_ruler_job_false		# 人口不可成为统治者 
+				set_pop_flag = community_can_fill_ruler_job_false		# 人口不可成为统治者
 				set_pop_flag = community_can_fill_specialist_job_false	# 人口不可成为专家
 				set_pop_flag = community_can_generate_leader_from_pop_false
 				set_pop_flag = community_can_generate_military_leader_from_pop_false
