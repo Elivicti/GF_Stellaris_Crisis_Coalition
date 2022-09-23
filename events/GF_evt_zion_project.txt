@@ -1171,7 +1171,7 @@ country_event = {
 			set_skill = current_skill
 
 			if = {
-				limit = { 
+				limit = {
 					check_variable = {
 						which = current_skill
 						value >= max_skill
@@ -1179,7 +1179,7 @@ country_event = {
 				}
 				set_leader_flag = skill_at_max
 			}
-			# 添加的经验的计算公式: 
+			# 添加的经验的计算公式:
 			# skill <  10: -40 * skill + 900
 			# skill >= 10: -40 *    10 + 900
 			if = {
@@ -1409,6 +1409,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33101.a
 		add_modifier = { modifier = GF_zion_deep_dive_research_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1423,6 +1424,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33102.a
 		add_modifier = { modifier = GF_zion_deep_dive_production_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1437,6 +1439,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33103.a
 		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1451,6 +1454,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33104.a
 		add_modifier = { modifier = GF_zion_deep_dive_fleet_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1480,6 +1484,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33201.a
 		add_modifier = { modifier = GF_zion_deep_dive_research_n_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1494,6 +1499,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33202.a
 		add_modifier = { modifier = GF_zion_deep_dive_production_n_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1508,6 +1514,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33203.a
 		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_n_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
@@ -1522,6 +1529,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33204.a
 		add_modifier = { modifier = GF_zion_deep_dive_fleet_n_3 years = 3 }
+		GF_set_zion_deep_dive_cooldown = yes
 	}
 }
 
