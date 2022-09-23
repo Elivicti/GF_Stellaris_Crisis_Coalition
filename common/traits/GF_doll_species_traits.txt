@@ -15,7 +15,7 @@ GF_trait_delicious_food = {
 	initial = yes
 	randomized = no
 	icon="gfx/interface/icons/traits/doll/food.dds"
-	modifier={
+	modifier = {
 		pop_happiness = 0.05
 		planet_pops_robotics_food_upkeep_mult = 0.10
 	}
@@ -39,7 +39,10 @@ GF_trait_fire_core = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	icon = "gfx/interface/icons/traits/doll/firecore.dds"
 	modifier = {
 		army_damage_mult = 0.20
@@ -50,7 +53,10 @@ GF_trait_vanometriccell = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	opposites = { "GF_trait_nanobot_hives" }
 	icon = "gfx/interface/icons/traits/doll/battery.dds"
 	modifier = {
@@ -61,7 +67,10 @@ GF_trait_liquid_metal_skeleton = {
 	cost = 1
 	initial = no
 	randomized = no
-    advanced_trait = yes
+    species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	allowed_archetypes = { GF_ANDROID }
 	icon = "gfx/interface/icons/traits/doll/skeleton.dds"
 	modifier = {
@@ -73,7 +82,10 @@ GF_trait_adapted_skin = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	icon = "gfx/interface/icons/traits/doll/skin.dds"
 	modifier = {
 		pop_environment_tolerance = 0.20
@@ -84,7 +96,10 @@ GF_trait_emotional_subroutine = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	opposites = { "GF_trait_zener_protocol" }
 	icon="gfx/interface/icons/traits/doll/emotion.dds"
 	modifier = {
@@ -97,7 +112,10 @@ GF_trait_analysis_model = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	species_potential_add = {
+		exists = from
+		from = { has_technology = GF_tech_doll_modding }
+	}
 	opposites = { "GF_trait_logical_subroutine" }
 	icon="gfx/interface/icons/traits/doll/analysis.dds"
 	modifier = {
@@ -112,7 +130,7 @@ GF_trait_logical_subroutine = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	icon = "gfx/interface/icons/traits/doll/logic.dds"
 	opposites = { "GF_trait_analysis_model" }
 	species_potential_add = {
@@ -150,7 +168,7 @@ GF_trait_tacticalchip = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
 	species_potential_add = {
 		exists = from
@@ -167,7 +185,7 @@ GF_trait_zener_protocol = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	opposites = { "GF_trait_emotional_subroutine" }
 	icon = "gfx/interface/icons/traits/doll/zener.dds"
 	species_potential_add = {
@@ -187,7 +205,7 @@ GF_trait_sercurity_program = {
 	sorting_priority = 20
 	allowed_archetypes = { GF_ANDROID }
 	randomized = no
-	advanced_trait = no
+	
 	icon = "gfx/interface/icons/traits/doll/defense.dds"
 	improves_leaders = yes
 	species_potential_add = {
@@ -207,7 +225,7 @@ GF_trait_nanobot_hives = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	opposites = { "GF_trait_vanometriccell" }
 	icon = "gfx/interface/icons/traits/doll/nanobot.dds"
 	species_potential_add = {
@@ -219,7 +237,7 @@ GF_trait_nanobot_hives = {
 	modifier = {
 		planet_pops_upkeep_mult = -0.10
     }
-}	
+}
 GF_trait_quantum_processors = {
 	cost = 3
 	initial = no
@@ -242,7 +260,7 @@ GF_trait_overclock = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	icon = "gfx/interface/icons/traits/doll/overclock.dds"
 	species_potential_add = {
 		exists = from
@@ -259,7 +277,7 @@ GF_trait_nuclear_engine = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	advanced_trait = yes
+	
 	icon = "gfx/interface/icons/traits/doll/nuclear.dds"
 	species_potential_add = {
 		exists = from
