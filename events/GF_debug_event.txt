@@ -63,25 +63,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		capital_scope = {
-			create_species = {
-				name = random
-				class = ROBOT
-				traits = {
-					trait = random_traits
-				}
-				effect = {
-					save_event_target_as = robot_species
-				}
-			}
-			while = {
-				count = 5
-				create_pop = {
-					species = event_target:robot_species
-					ethos = root
-				}
-			}
-		}
+		end_event_chain = GF_collect_relic_device_event_chain
 	}
 }
 
@@ -119,6 +101,7 @@ country_event = {
 			count = 3
 			create_leader = {
 				species = event_target:doll
+				class = random
 				traits = {
 					trait = GF_trait_leader_doll
 					trait = leader_trait_stubborn
@@ -221,5 +204,32 @@ country_event = {
 			multiplier = 1000
 		}
 		add_relic = GF_relic_data_singularity
+	}
+}
+
+country_event = {
+	id = gfdebug.7
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+
+		capital_scope = {
+			create_species = {
+				name = random
+				class = ROBOT
+				traits = random
+				effect = {
+					save_event_target_as = robot_species
+				}
+			}
+			while = {
+				count = 5
+				create_pop = {
+					species = event_target:robot_species
+					ethos = root
+				}
+			}
+		}
 	}
 }
