@@ -2,7 +2,23 @@ gf_core_chip = {
 	tradable = no
 	max = 15000
 	deficit_modifier = gf_core_chip_deficit
+	prerequisites = {
+		"GF_tech_doll_assemble"
+	}
+
 	ai_weight = {
 		weight = 0
+		modifier = {
+			add = 10
+			GF_potential_trigger_advanced = yes
+		}
+	}
+
+	ai_wants = {
+		base = 0
+		modifier = {
+			add = 20
+			GF_potential_trigger_advanced = yes
+		}
 	}
 }
