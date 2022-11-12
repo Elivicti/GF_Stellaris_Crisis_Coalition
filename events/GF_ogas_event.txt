@@ -5,7 +5,7 @@ country_event = {
 	hide_window = yes
 
 	is_triggered_only = yes
-	
+
 	immediate = {
 		create_country = {
 			name = "NAME_GF_OGAS"
@@ -33,7 +33,20 @@ country_event = {
 			save_global_event_target_as = GF_ogas_country
 		}
 		save_global_event_target_as = GF_ogas_owner
-
+		set_country_flag = flag_GF_can_contact_OGAS
+		set_country_flag = flag_GF_ogas_owner
+		set_variable = {
+			which = v_GF_ogas_threads_available
+			value = 1
+		}
+		set_variable = {
+			which = v_GF_ogas_threads_used
+			value = 0
+		}
+		set_variable = {
+			which = v_GF_ogas_level
+			value = 1
+		}
 		country_event = { id = GF_ogas.110 }
 	}
 }
@@ -77,7 +90,7 @@ country_event = {
 		room = ethic_griffin_room
 	}
 	is_triggered_only = yes
-	option = { 
+	option = {
 		name = GF_ogas.111.a
 		response_text = GF_ogas.111.a.response
 	}
@@ -91,6 +104,7 @@ country_event = {
 	trigger = {
 		from = { is_country_type = GF_ogas_country_type }
 		NOT = { has_country_flag = contract_diplomacy_engaged }
+		has_country_flag = flag_GF_can_contact_OGAS
 	}
 
 	immediate = {
@@ -101,12 +115,25 @@ country_event = {
 country_event = {
 	id = GF_ogas.10000
 
-	title = connect
-	desc = GF_ogas.10000.desc.a
-	desc = GF_ogas.10000.desc.b
-	desc = GF_ogas.10000.desc.c
+	title = GF_OGAS_connect
+	desc = {
+		text = GF_ogas.10000.desc.a
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.b
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.c
+		trigger = { has_authority = GF_auth_commonwealth }
+	}
+	desc = {
+		text = GF_ogas.10000.desc.d
+		trigger = { NOT = { has_authority = GF_auth_commonwealth } }
+	}
 	diplomatic = yes
-	
+
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -115,7 +142,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_can_contact_OGAS
 		NOT = { has_country_flag = contract_diplomacy_engaged }
 	}
 
@@ -129,26 +156,45 @@ country_event = {
 
 	option = {
 		name = GF_ogas.10000.mission
-		trigger = { NOT = { has_country_flag = GF_ogas_work_mode } }
+		trigger = {
+			hidden_trigger = {
+				NAND = {
+					NOT = { has_authority = GF_auth_commonwealth }
+					has_country_flag = GF_ogas_work_mode
+				}
+			}
+		}
+		allow = {
+			GF_OGAS_has_available_threads = yes
+		}
 
 		hidden_effect = {
-			country_event = { id = GF_ogas.11000 }
+			if = {
+				limit = { has_country_flag = flag_GF_ogas_owner }
+				country_event = { id = GF_ogas.11000 }
+			}
+			else = { country_event = { id = GF_ogas.11100 } }
 		}
 	}
 	option = {
 		name = GF_ogas.10000.mission
-		trigger = { has_country_flag = GF_ogas_work_mode }
+		trigger = {
+			NOT = { has_authority = GF_auth_commonwealth }
+			has_country_flag = GF_ogas_work_mode
+		 }
 		is_dialog_only = yes
 		response_text = GF_ogas.10000.mission.busy_response
 	}
 	option = {
 		name = GF_ogas.10000.info
+		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
 		hidden_effect = {
 			country_event = { id = GF_ogas.12000 }
 		}
 	}
 	option = {
 		name = GF_ogas.10000.emotion
+		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
 		# trigger = { NOT = { has_country_flag = gf_at_chat } }
 
 		is_dialog_only = yes						# 临时
@@ -165,8 +211,8 @@ country_event = {
 	# 	is_dialog_only = yes
 	# 	response_text = GF_ogas.10000.emotion.response
 	# }
-	
-	# gf extension newly added: 与锡安通讯
+
+	# 与锡安通讯
 	option = {
 		name = event_GF_zion_comm.option
 		trigger = { GF_default_zion_comm_trigger = yes }
@@ -181,7 +227,7 @@ country_event = {
 		else = {
 			custom_tooltip = GF_zion_favor_mid_tooltip
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = GF_zion.0
@@ -197,80 +243,125 @@ country_event = {
 
 country_event = {
 	id = GF_ogas.11000
-	title = connect
+	title = GF_OGAS_connect
 	desc = GF_ogas.11000.desc.a
 	desc = GF_ogas.11000.desc.b
 	desc = GF_ogas.11000.desc.c
+
 	diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
 	}
-	
+
 	is_triggered_only = yes
-	trigger = {
-		NOT = { has_country_flag = GF_ogas_work_mode }
-	}
 
 	option = { # un
 		name = GF_ogas.11000.governor
 		response_text = GF_ogas.11000.governor.response
-		hidden_effect = {
-			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
-			country_event = { id = GF_ogas.11001 days = 3600 }
+		allow = {
+			GF_OGAS_has_available_threads = yes
+			custom_tooltip = {
+				fail_text = GF_OGAS_mission_already_working_on
+				NOT = { has_modifier = GF_ogas_mode_governor }
+			}
 		}
-		add_modifier = {
-			modifier = GF_ogas_mode_governor
-			days = 3600
-		}
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
 	}
 	option = { # en
 		name = GF_ogas.11000.produce
 		response_text = GF_ogas.11000.produce.response
-		hidden_effect = {
-			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
-			country_event = { id = GF_ogas.11001 days = 3600 }
+		allow = {
+			GF_OGAS_has_available_threads = yes
+			custom_tooltip = {
+				fail_text = GF_OGAS_mission_already_working_on
+				NOT = { has_modifier = GF_ogas_mode_produce }
+			}
 		}
-		add_modifier = {
-			modifier = GF_ogas_mode_produce
-			days = 3600
-		}
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
 	}
 	option = { # mi fo
 		name = GF_ogas.11000.upkeep
 		response_text = GF_ogas.11000.upkeep.response
-		hidden_effect = {
-			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
-			country_event = { id = GF_ogas.11001 days = 3600 }
+		allow = {
+			GF_OGAS_has_available_threads = yes
+			custom_tooltip = {
+				fail_text = GF_OGAS_mission_already_working_on
+				NOT = { has_modifier = GF_ogas_mode_upkeep }
+			}
 		}
-		add_modifier = {
-			modifier = GF_ogas_mode_upkeep
-			days = 3600
-		}
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
 	}
 	option = { # un
 		name = GF_ogas.11000.war
 		response_text = GF_ogas.11000.war.response
-		hidden_effect = {
-			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
-			country_event = { id = GF_ogas.11001 days = 3600 }
+		allow = {
+			GF_OGAS_has_available_threads = yes
+			custom_tooltip = {
+				fail_text = GF_OGAS_mission_already_working_on
+				NOT = { has_modifier = GF_ogas_mode_war }
+			}
 		}
-		add_modifier = {
-			modifier = GF_ogas_mode_war
-			days = 3600
-		}
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
 	}
 	option = { # un
 		name = GF_ogas.11000.research
 		response_text = GF_ogas.11000.research.response
+		allow = {
+			GF_OGAS_has_available_threads = yes
+			custom_tooltip = {
+				fail_text = GF_OGAS_mission_already_working_on
+				NOT = { has_modifier = GF_ogas_mode_research }
+			}
+		}
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
+	}
+	option = {
+		name = GF_ogas.main_menu
 		hidden_effect = {
-			set_timed_country_flag = { flag = GF_ogas_work_mode days = 3600 }
-			country_event = { id = GF_ogas.11001 days = 3600 }
+			country_event = { id = GF_ogas.10000 }
 		}
-		add_modifier = {
-			modifier = GF_ogas_mode_research
-			days = 3600
-		}
+	}
+}
+
+# 给附庸的任务界面
+country_event = {
+	id = GF_ogas.11100
+	title = GF_OGAS_connect
+	desc = GF_ogas.11100.desc
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	option = { # un
+		name = GF_ogas.11000.governor
+		response_text = GF_ogas.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
+	}
+	option = { # en
+		name = GF_ogas.11000.produce
+		response_text = GF_ogas.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
+	}
+	option = { # mi fo
+		name = GF_ogas.11000.upkeep
+		response_text = GF_ogas.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
+	}
+	option = { # un
+		name = GF_ogas.11000.war
+		response_text = GF_ogas.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
+	}
+	option = { # un
+		name = GF_ogas.11000.research
+		response_text = GF_ogas.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
 	}
 	option = {
 		name = GF_ogas.main_menu
@@ -282,8 +373,19 @@ country_event = {
 
 country_event = {
 	id = GF_ogas.11001
-	title = connect
-	desc = GF_ogas.11001.desc
+	title = GF_OGAS_connect
+	desc = {
+		text = GF_ogas.11001.desc
+		trigger = {
+			has_authority = GF_auth_commonwealth
+		}
+	}
+	desc = {
+		text = GF_ogas.11001.desc.subnet
+		trigger = {
+			NOT = { has_authority = GF_auth_commonwealth }
+		}
+	}
 	diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
@@ -306,43 +408,43 @@ country_event = {
 
 country_event = {
 	id = GF_ogas.12000
-	title = connect
+	title = GF_OGAS_connect
 	desc = GF_ogas.12000.desc.a
 	desc = GF_ogas.12000.desc.b
 	desc = GF_ogas.12000.desc.c
-	diplomatic = yes	
+	diplomatic = yes
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
 	}
-	
+
 	is_triggered_only = yes
-	option = { 
+	option = {
 		name = GF_ogas.12000.a
 		response_text = GF_ogas.12000.a.response
 		is_dialog_only = yes
 	}
-	option = { 
+	option = {
 		name = GF_ogas.12000.b
 		response_text = GF_ogas.12000.b.response
 		is_dialog_only = yes
 	}
-	option = { 
+	option = {
 		name = GF_ogas.12000.c
 		response_text = GF_ogas.12000.c.response
 		is_dialog_only = yes
 	}
-	option = { 
+	option = {
 		name = GF_ogas.12000.d
 		response_text = GF_ogas.12000.d.response
 		is_dialog_only = yes
 	}
-	option = { 
+	option = {
 		name = GF_ogas.12000.e
 		response_text = GF_ogas.12000.e.response
 		is_dialog_only = yes
 	}
-	option = { 
+	option = {
 		name = GF_ogas.12000.f
 		response_text = GF_ogas.12000.f.response
 		is_dialog_only = yes
