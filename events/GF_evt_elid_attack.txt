@@ -42,7 +42,8 @@ country_event = {
 	}
 }
 
-country_event = { # notice to tell player that elid will be spawned
+# 提示事件：即将刷新ELID进攻事件
+country_event = {
 	id = GF_elid.1
 	title = GF_elid.1.name
 	desc = {
@@ -87,7 +88,7 @@ country_event = { # notice to tell player that elid will be spawned
 			}
 			planet_event = {
 				id = GF_elid.10
-				days = 7200		# 20 years
+				days = 7200		# 每20年 ELID威胁度+1
 			}
 		}
 	}
@@ -143,6 +144,7 @@ country_event = { # notice to tell player that elid will be spawned
 	}
 }
 
+# 每20年 ELID威胁度+1
 planet_event = {
 	id = GF_elid.10
 	hide_window = yes
@@ -160,15 +162,15 @@ planet_event = {
 		planet_event = { id = GF_elid.1030 }
 		planet_event = {
 			id = GF_elid.10
-			days = 7200		# 20 years
+			days = 7200		# 20年
 		}
 	}
 }
 
 
-### when contaminated zone exists, elid will try to attack
+### 污染区存在时，刷新ELID进攻事件
 
-# general elid spawning event
+# 通用ELID进攻刷新事件
 planet_event = {
 	id = GF_elid.1000
 	hide_window = yes
@@ -183,13 +185,16 @@ planet_event = {
 	}
 
 	immediate = {
-
 		if = {
-			limit = { has_ground_combat = no is_occupied_flag = no } # checks whether the planet has been occupied
+			# 检查星球是否被占领/正在进行地面作战
+			limit = {
+				has_ground_combat = no
+				is_occupied_flag = no
+			}
 
 			create_country = {
 				name = "NAME_GF_elid_invasion"
-				type = elid_country
+				type = GF_elid_country
 				effect = {
 					establish_communications_no_message = root.owner
 					establish_contact = { who = root.owner location = root.solar_system }
@@ -223,7 +228,7 @@ planet_event = {
 			if = {
 				limit = { GF_planet_has_contaminated_zone = yes }
 				
-				# notice event
+				# 有污染区 提示事件
 				owner = { country_event = { id = GF_elid.1001 } }
 
 				multiply_variable = {
@@ -258,7 +263,7 @@ planet_event = {
 				}
 			}
 			else = {
-				# notice event
+				# 无污染区 提示事件
 				owner = { country_event = { id = GF_elid.1002 } }
 
 				while = {
@@ -275,7 +280,7 @@ planet_event = {
 			}
 			
 		}
-		else = { # if the planet is in ground combat or is occupied, check again in 2 months
+		else = { # 若星球已被占领/正在进行地面作战，2个月后再次检查
 			planet_event = {
 				id = GF_elid.1000
 				days = 60
@@ -284,7 +289,7 @@ planet_event = {
 	}
 }
 
-country_event = { # a notice to tell player that elid has been spawned
+country_event = { # ELID刷新提示 (有污染区)
 	id = GF_elid.1001
 	title = GF_elid.1001.name
 	desc = {
@@ -308,7 +313,7 @@ country_event = { # a notice to tell player that elid has been spawned
 	}
 }
 
-country_event = { # a notice to tell player that elid has been spawned
+country_event = { # ELID刷新提示 (无污染区)
 	id = GF_elid.1002
 	title = GF_elid.1002.name
 	desc = GF_elid.1002.desc
@@ -325,7 +330,7 @@ country_event = { # a notice to tell player that elid has been spawned
 	}
 }
 
-# defender victory
+# ELID进攻后 首次 玩家击败ELID
 country_event = {
 	id = GF_elid.1010
 	title = GF_elid.1010.name
@@ -383,7 +388,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		this = { GF_default_elid_event_trigger = yes }
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
 	}
 
@@ -442,7 +447,7 @@ country_event = {
 	}
 }
 
-# defender lose
+# ELID进攻后 首次 玩家被ELID击败
 country_event = {
 	id = GF_elid.1020
 	title = GF_elid.1020.name
@@ -455,7 +460,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		this = { GF_default_elid_event_trigger = yes }
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
 	}
 
@@ -524,110 +529,28 @@ country_event = {
 			add_planet_devastation = 10
 		}
 	}
-}
-
-# take back planet after failed
-country_event = {
-	id = GF_elid.1021
-	title = GF_elid.1021.name
-	desc = GF_elid.1021.desc
-
-	picture = GFX_evt_crisis_defeated
-
-	location = event_target:GF_home_world
-
-	is_triggered_only = yes
-	trigger = {
-		# from = { GF_default_elid_event_trigger = yes }
-		fromfrom.controller = {
-			is_country_type = elid_country
-		}
-		event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
-	}
-
-	immediate = {
-		event_target:GF_home_world = {
-			planet_event = {
-				id = GF_elid.1000
-				days = @elid_attack_interval
-				random = @elid_attack_interval_random
-			}
-			planet_event = { id = GF_elid.1030 }
-		}
-	}
-	
-	option = {
-		name = GF_elid.1021.a
-		add_resource = {
-			minerals = 250
-			mult = event_target:GF_home_world.v_GF_elid_threat_level
-		}
-		event_target:GF_home_world = {
-			remove_modifier = GF_pm_failed_in_defending_elid
-		}
-	}
-}
-
-# failed again
-country_event = {
-	id = GF_elid.1022
-	title = GF_elid.1022.name
-	desc = { # failed to take back planet after failed in defence
-		text = GF_elid.1022.desc.defend
-		trigger = { event_target:GF_home_world = { NOT = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } } }
-	}
-	desc = { # failed to take back planet after failed to attack
-		text = GF_elid.1022.desc.attack
-		trigger = { event_target:GF_home_world = { has_planet_flag = flag_p_GF_battle_in_contaminated_zone } }
-	}
-
-	picture = GFX_evt_GF_collapsed_city
-
-	location = event_target:GF_home_world
-
-	is_triggered_only = yes
-	trigger = {
-		# from = { GF_default_elid_event_trigger = yes }
-		fromfrom.controller = {
-			is_country_type = elid_country
-		}
-	}
-
-	immediate = {
-		event_target:GF_home_world = {
-			random = {
-				chance = 75
-				change_variable = {
-					which = v_GF_elid_threat_level
-					value = 1
-				}
-				planet_event = { id = GF_elid.1030 }
-				set_planet_flag = tmp_flag_p_GF_elid_threat_up
-			}
-		}
-	}
-	
-	option = {
-		name = GF_elid.1022.a
-		trigger = { NOT = { event_target:GF_home_world = { has_planet_flag = tmp_flag_p_GF_elid_threat_up } } }
-	}
-	option = {
-		name = GF_elid.1022.a
-		custom_tooltip = GF_elid.1022.a.tooltip
-		trigger = { event_target:GF_home_world = { has_planet_flag = tmp_flag_p_GF_elid_threat_up } }
-	}
 
 	after = {
 		event_target:GF_home_world = {
-			remove_planet_flag = tmp_flag_p_GF_elid_threat_up
-			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			hidden_effect = {
+				# 移除ELID陆军
+				every_planet_army = {
+					limit = {
+						OR = {
+							army_type = GF_army_hostile_elid
+							army_type = GF_army_hostile_elid_boss
+						}
+					}
+					remove_army = yes
+				}
+			}
+			add_deposit = d_GF_yellow_zone
 		}
 	}
 }
 
-# checks threat level and changes the modifier
+# 检查ELID威胁度并更新星球修正
 planet_event = {
-
 	id = GF_elid.1030
 	hide_window = yes
 	is_triggered_only = yes
@@ -677,7 +600,7 @@ planet_event = {
 	}
 }
 
-# when threat level is less than 0
+# ELID威胁度 < 0: 最终胜利
 country_event = {
 	id = GF_elid.1031
 	title = GF_elid.1031.name
@@ -770,11 +693,11 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			set_planet_flag = flag_p_GF_battle_in_black_zone
 
-			owner = { country_event = { id =GF_elid.2101 } } # notice
+			owner = { country_event = { id = GF_elid.2101 } } # 提示事件
 			
 			create_country = {
 				name = "NAME_GF_elid_invasion"
-				type = elid_country
+				type = GF_elid_country
 				effect = {
 					establish_communications_no_message = root.owner
 					establish_contact = { who = root.owner location = root.solar_system }
@@ -832,7 +755,7 @@ planet_event = {
 	}
 }
 
-# notice to tell player that elid has been spawned
+# 清理黑区 提示事件
 country_event = {
 	id = GF_elid.2101
 	title = GF_elid.2101.name
@@ -850,7 +773,7 @@ country_event = {
 	}
 }
 
-# on player(defender) victory
+# 清理黑区 玩家击败ELID
 country_event = {
 	id = GF_elid.2110
 	title = GF_elid.2110.name
@@ -862,7 +785,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -914,7 +837,7 @@ country_event = {
 	}
 }
 
-# notice to tell player that elid threat is above 0
+# 提示事件：告知玩家威胁度仍大于0
 country_event = {
 	id = GF_elid.2111
 	title = GF_elid.2111.name
@@ -931,7 +854,7 @@ country_event = {
 	}
 }
 
-# on player(defender) lose
+# 清理黑区 玩家被ELID击败
 country_event = {
 	id = GF_elid.2120
 	title = GF_elid.2120.name
@@ -943,7 +866,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -953,13 +876,33 @@ country_event = {
 
 	option = {
 		name = GF_elid.2120.a
-		event_target:GF_home_world = { add_deposit = d_GF_black_zone }
+		event_target:GF_home_world = {
+			add_deposit = d_GF_black_zone
+			add_deposit = d_GF_yellow_zone
+		}
 	}
 
-	after = { event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_black_zone } }
+	after = {
+		event_target:GF_home_world = {
+			hidden_effect = {
+				# 移除ELID陆军
+				every_planet_army = {
+					limit = {
+						OR = {
+							army_type = GF_army_hostile_elid
+							army_type = GF_army_hostile_elid_boss
+						}
+					}
+					remove_army = yes
+				}
+			}
+			remove_planet_flag = flag_p_GF_battle_in_black_zone
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+		}
+	}
 }
 
-# on red zone cleared
+# 清理红区
 planet_event = {
 	id = GF_elid.2200
 	hide_window = yes
@@ -982,11 +925,11 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			set_planet_flag = flag_p_GF_battle_in_red_zone
 
-			owner = { country_event = { id = GF_elid.2201 } } # notice
+			owner = { country_event = { id = GF_elid.2201 } } # 提示事件
 	
 			create_country = {
 				name = "NAME_GF_elid_invasion"
-				type = elid_country
+				type = GF_elid_country
 				effect = {
 					establish_communications_no_message = root.owner
 					establish_contact = { who = root.owner location = root.solar_system }
@@ -1037,7 +980,7 @@ planet_event = {
 	}
 }
 
-# notice to tell player that elid has been spawned
+# 清理红区 提示事件
 country_event = {
 	id = GF_elid.2201
 	title = GF_elid.2201.name
@@ -1056,7 +999,7 @@ country_event = {
 }
 
 
-# on player(defender) victory
+# 清理红区 玩家击败ELID
 country_event = {
 	id = GF_elid.2210
 	title = GF_elid.2210.name
@@ -1068,7 +1011,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -1104,7 +1047,7 @@ country_event = {
 		}
 	}
 }
-# on player(defender) lose
+# 清理红区 玩家被ELID击败
 country_event = {
 	id = GF_elid.2220
 	title = GF_elid.2220.name
@@ -1116,7 +1059,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -1126,15 +1069,33 @@ country_event = {
 
 	option = {
 		name = GF_elid.2220.a
-		event_target:GF_home_world = { add_deposit = d_GF_red_zone }
+		event_target:GF_home_world = {
+			add_deposit = d_GF_red_zone
+			add_deposit = d_GF_red_zone
+		}
 	}
 
 	after = {
-		event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_red_zone }
+		event_target:GF_home_world = {
+			hidden_effect = {
+				# 移除ELID陆军
+				every_planet_army = {
+					limit = {
+						OR = {
+							army_type = GF_army_hostile_elid
+							army_type = GF_army_hostile_elid_boss
+						}
+					}
+					remove_army = yes
+				}
+			}
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			remove_planet_flag = flag_p_GF_battle_in_red_zone
+		}
 	}
 }
 
-# on yellow zone cleared
+# 清理黄区
 planet_event = {
 	id = GF_elid.2300
 	hide_window = yes
@@ -1157,11 +1118,11 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			set_planet_flag = flag_p_GF_battle_in_yellow_zone
 
-			owner = { country_event = { id = GF_elid.2301 } } # notice
+			owner = { country_event = { id = GF_elid.2301 } } # 提示事件
 
 			create_country = {
 				name = "NAME_GF_elid_invasion"
-				type = elid_country
+				type = GF_elid_country
 				effect = {
 					establish_communications_no_message = root.owner
 					establish_contact = { who = root.owner location = root.solar_system }
@@ -1200,7 +1161,7 @@ planet_event = {
 	}
 }
 
-# notice to tell player that elid has been spawned
+# 清理黄区 提示事件
 country_event = {
 	id = GF_elid.2301
 	title = GF_elid.2301.name
@@ -1218,7 +1179,7 @@ country_event = {
 	}
 }
 
-# on player(defender) victory
+# 清理黄区 玩家击败ELID
 country_event = {
 	id = GF_elid.2310
 	title = GF_elid.2310.name
@@ -1230,7 +1191,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -1295,7 +1256,7 @@ country_event = {
 		}
 	}
 }
-# on player(defender) lose
+# 清理黄区 玩家被ELID击败
 country_event = {
 	id = GF_elid.2320
 	title = GF_elid.2320.name
@@ -1307,7 +1268,7 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		from = { is_country_type = elid_country }
+		from = { is_country_type = GF_elid_country }
 		has_authority = GF_auth_commonwealth
 		event_target:GF_home_world = {
 			has_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -1317,10 +1278,28 @@ country_event = {
 
 	option = {
 		name = GF_elid.2320.a
-		event_target:GF_home_world = { add_deposit = d_GF_yellow_zone }
+		event_target:GF_home_world = {
+			add_deposit = d_GF_yellow_zone
+			add_deposit = d_GF_yellow_zone
+		}
 	}
 
 	after = {
-		event_target:GF_home_world = { remove_planet_flag = flag_p_GF_battle_in_yellow_zone }
+		event_target:GF_home_world = {
+			hidden_effect = {
+				# 移除ELID陆军
+				every_planet_army = {
+					limit = {
+						OR = {
+							army_type = GF_army_hostile_elid
+							army_type = GF_army_hostile_elid_boss
+						}
+					}
+					remove_army = yes
+				}
+			}
+			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+			remove_planet_flag = flag_p_GF_battle_in_yellow_zone
+		}
 	}
 }

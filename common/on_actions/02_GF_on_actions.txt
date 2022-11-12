@@ -43,12 +43,11 @@ on_planet_zero_pops = {
 # FromFrom = planet
 on_planet_defenders_win = {
 	events = {
-		GF_elid.1010
-		GF_elid.1022 # player failed taking back planet
+		GF_elid.1010 # 周期性ELID进攻：玩家胜利
 
-		GF_elid.2110
-		GF_elid.2210
-		GF_elid.2310
+		GF_elid.2110 # 清理黑区：玩家胜利
+		GF_elid.2210 # 清理红区：玩家胜利
+		GF_elid.2310 # 清理黄区：玩家胜利
 	}
 }
 
@@ -58,11 +57,10 @@ on_planet_defenders_win = {
 # FromFrom = planet
 on_planet_defenders_lose = {
 	events = {
-		GF_elid.1020 # player lose
-		GF_elid.1021 # elid lose afer taken player's planet
+		GF_elid.1020 # 周期性ELID进攻：玩家失败
 
-		GF_elid.2120
-		GF_elid.2220
-		GF_elid.2320
+		GF_elid.2120 # 清理黑区：玩家失败
+		GF_elid.2220 # 清理红区：玩家失败
+		GF_elid.2320 # 清理黄区：玩家失败
 	}
 }
