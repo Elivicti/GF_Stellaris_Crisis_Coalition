@@ -115,3 +115,24 @@ GF_zion_research_high = {
 
 	all_technology_research_speed = 0.15
 }
+
+
+## overlord
+GF_OGAS_subnet_distributed_compute = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_specialist_scholarium_neighbor.dds"
+	GF_planet_jobs_doll_programmers_produces_mult = 0.25
+	GF_planet_jobs_doll_programmers_upkeep_mult = -0.10
+}
+
+GF_OGAS_subnet_disconnected = {
+	icon = "gfx/interface/icons/modifiers/mod_empire_size_mult.dds"
+	planet_researchers_produces_mult = -0.50
+	planet_researchers_upkeep_mult = 0.50
+	empire_size_mult = 0.25
+}
+
+GF_OGAS_subnet_assemble_speed_compensate = {
+	# 仅限AI用
+	hide_from_country_list = yes
+	planet_pop_assembly_mult = 2.00
+}
