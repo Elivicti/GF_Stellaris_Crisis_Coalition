@@ -25,7 +25,7 @@ GF_ogas_country_type = {
 	}
 }
 
-elid_country = {
+GF_elid_country = {
 	government = no
 	observable = no
 	ai = {
