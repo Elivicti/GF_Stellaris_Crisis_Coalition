@@ -15,6 +15,13 @@ GF_guard_doll = {
 	pop_modifier = {
 		pop_defense_armies_add = 2
 	}
+
+	triggered_pop_modifier = {
+		potential = {
+			planet = { has_modifier = GF_sercurity_protocol }
+		}
+		pop_defense_armies_add = 1
+	}
 	
 	resources = {
 		category = planet_soldiers
@@ -250,7 +257,7 @@ GF_assemble_doll = {
 		}
 	}
 	resources = {
-		category = GF_planet_pop_assemblers
+		category = GF_planet_jobs_pop_assemblers
 		upkeep = {
 			alloys = 1
 			food = 0.25
