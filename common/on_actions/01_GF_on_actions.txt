@@ -38,25 +38,25 @@ on_custom_diplomacy = {
 # This = Planet scope
 # From = Country
 # FromFrom = Pop
-on_pop_assembled = {
-	events = {
-		GF_doll.0	# 人形权利相关
-	}
-}
+# on_pop_assembled = {
+# 	events = {
+# 		GF_doll.0	# 人形权利相关
+# 	}
+# }
 
 # Executes after a policy has been changed
 # use last_changed_policy to identify which policy it was
 # This = Country
-on_policy_changed = {
-	events = {
-		# 权利政策
-		GF_doll.1110	# 完整权利 或 有限权利 - 可以生成领袖
-		GF_doll.1120	# 侍从权利 或 商品权利 - 不可生成领袖
+# on_policy_changed = {
+# 	events = {
+# 		# 权利政策
+# 		GF_doll.1110	# 完整权利 或 有限权利 - 可以生成领袖
+# 		GF_doll.1120	# 侍从权利 或 商品权利 - 不可生成领袖
 
-		# 任务分配政策
-		GF_doll.1200	#
-	}
-}
+# 		# 任务分配政策
+# 		GF_doll.1200	#
+# 	}
+# }
 
 # a new leader is generated for an empire, to be available for recruitment
 # scope: country, from: leader
@@ -64,6 +64,7 @@ on_leader_spawned = {
 	events = {
 		GF_new_type.0		# 仅女性新人类物种领袖（都是美少女立绘为什么会有男人）
 		GF_doll_leader.0	# 添加专属领袖特质
+		GF_overlord.100		# OGAS子网 II：机械领袖等级+2
 	}
 }
 
@@ -80,6 +81,6 @@ on_monthly_pulse_country = {
 # From = overlord
 on_released_as_vassal = {
 	events = {
-		
+		GF_overlord.0
 	}
 }
