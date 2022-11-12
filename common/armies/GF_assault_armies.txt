@@ -9,7 +9,7 @@ GF_army_arm_doll = {
 	has_species = yes
 	pop_limited = no
 	time = 90
-	icon = GFX_army_type_robot
+	icon = GFX_GF_army_type_doll
 	prerequisites = {
 		"tech_assault_armies"
 	}
@@ -22,11 +22,9 @@ GF_army_arm_doll = {
 			energy = 1
 		}
 	}
-	show_tech_unlock_if = { has_authority = GF_auth_commonwealth }
-	potential = {
-		from = { has_trait = GF_trait_doll }
-		owner = { has_authority = GF_auth_commonwealth }
-	}
+	show_tech_unlock_if = { GF_potential_trigger_advanced = yes }
+	potential = { from = { has_trait = GF_trait_doll } }
+	potential_country = { GF_potential_trigger_advanced = yes }
 }
 
 GF_army_tactical_doll = {
@@ -37,7 +35,7 @@ GF_army_tactical_doll = {
 	collateral_damage = 1.5
 	war_exhaustion = 1.5
 	time = 120
-	icon = GFX_army_type_robot
+	icon = GFX_GF_army_type_doll
 	has_species = yes
 	pop_limited = no
 	resources = {
@@ -49,14 +47,42 @@ GF_army_tactical_doll = {
 			energy = 3
 		}
 	}
-	potential = {
-		from = { has_trait = GF_trait_doll }
-		owner = { has_authority = GF_auth_commonwealth }
-	}
+	show_tech_unlock_if = { has_authority = GF_auth_commonwealth }
+	potential = { from = { has_trait = GF_trait_doll } }
+	potential_country = { has_authority = GF_auth_commonwealth }
 	prerequisites = {
 		"GF_tech_tactical_doll"
 	}
 	allow = {
 		owner = { NOT = { has_policy_flag = robots_outlawed } }
+	}
+}
+
+GF_army_gavirul = {
+	damage = 3.6
+	health = 2.4
+	morale_damage = 2.0
+	collateral_damage = 1.2
+	war_exhaustion = 1.8
+	time = 100
+	icon = GFX_GF_army_type_gavirul
+	has_species = yes
+	pop_limited = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 400
+			alloys = 50
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	potential = { from = { has_trait = GF_trait_sequela_immune } }
+	potential_country = {
+		# always = no		# temp
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_gavirul_project_completed
 	}
 }

@@ -7,8 +7,8 @@ GF_army_occupation_doll = {
 	has_morale = no
 	collateral_damage = 0.0
 	war_exhaustion = 0.0 # No WE from occupation armies
-	icon = GFX_army_type_robot
-	has_species = yes		
+	icon = GFX_GF_army_type_doll
+	has_species = yes
 	potential = {
 		from = { has_trait = GF_trait_doll }
 		owner = { has_authority = GF_auth_commonwealth }

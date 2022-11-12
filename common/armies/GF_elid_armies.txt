@@ -24,9 +24,7 @@ GF_army_elid_1 = {
 		}
 	}
 
-	potential = {
-		owner = { has_authority = GF_auth_commonwealth }
-	}
+	potential_country = { has_authority = GF_auth_commonwealth }
 }
 
 GF_army_elid_2 = {
@@ -55,9 +53,7 @@ GF_army_elid_2 = {
 		}
 	}
 
-	potential = {
-		owner = { has_authority = GF_auth_commonwealth }
-	}
+	potential_country = { has_authority = GF_auth_commonwealth }
 }
 
 
