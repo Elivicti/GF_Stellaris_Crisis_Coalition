@@ -20,25 +20,25 @@ country_event = {
 				admiral = {
 					if = {
 						limit = { species = { has_trait = GF_trait_tacticalchip } }
-						add_trait = GF_trait_leader_admiraltrait_plus
+						add_trait = GF_trait_leader_admiral_plus
 					}
 				}
 				general = {
 					if = {
 						limit = { species = { has_trait = GF_trait_tacticalchip } }
-						add_trait = GF_trait_leader_generaltrait_plus
+						add_trait = GF_trait_leader_general_plus
 					}
 				}
 				scientist = {
 					if = {
 						limit = { species = { has_trait = GF_trait_logical_subroutine } }
-						add_trait = GF_trait_leader_scientisttrait_plus
+						add_trait = GF_trait_leader_scientist_plus
 					}
 				}
 				governor = {
 					if = {
 						limit = { species = { has_trait = GF_trait_zener_protocol } }
-						add_trait = GF_trait_leader_governortrait_plus
+						add_trait = GF_trait_leader_governor_plus
 					}
 				}
 			}
