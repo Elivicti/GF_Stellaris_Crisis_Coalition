@@ -140,7 +140,7 @@ GF_default_zion_comm_trigger = {
 	}
 }
 
-# scope = species
+# scope = species, from = country
 GF_is_gavirul_species = {
 	hidden_trigger = { is_same_species = from }
 	from = {

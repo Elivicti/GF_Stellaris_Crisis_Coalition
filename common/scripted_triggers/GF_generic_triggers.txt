@@ -1,0 +1,65 @@
+
+# scope = country
+is_GF_authority = {
+	OR = {
+		has_authority = GF_auth_commonwealth
+		has_authority = GF_auth_OGAS_subnet
+	}
+}
+
+# scope = country
+is_valid_GF_vassal = {
+	AND = {
+		has_country_flag = flag_GF_commonwealth_vassal			# 必须是少前政体释放的附庸
+
+		has_any_overlord = yes									# 必须有宗主
+		overlord = { has_authority = GF_auth_commonwealth }		# 宗主必须是少前政体
+	}
+}
+
+# scope = country
+is_valid_GF_OGAS_subnet = {
+	AND = {
+		has_country_flag = flag_GF_commonwealth_vassal			# 必须是少前政体释放的附庸
+		has_authority = GF_auth_OGAS_subnet						# 必须是少前的附庸政体
+
+		has_any_overlord = yes									# 必须有宗主
+		overlord = { has_authority = GF_auth_commonwealth }		# 宗主必须是少前政体
+	}
+}
+
+# scope = country
+GF_potential_trigger = {
+	OR = {
+		has_authority = GF_auth_commonwealth
+		is_valid_GF_vassal = yes
+	}
+}
+
+# scope = country, 高级条件
+GF_potential_trigger_advanced = {
+	OR = {
+		has_authority = GF_auth_commonwealth
+		is_valid_GF_OGAS_subnet = yes
+	}
+}
+
+# scope = country, all triggers must be hidden triggers
+GF_can_contact_OGAS = {
+	hidden_trigger = {
+		has_country_flag = flag_GF_can_contact_OGAS
+	}
+}
+
+# scope = any
+GF_OGAS_has_available_threads = {
+	custom_tooltip = {
+		fail_text = GF_OGAS_has_no_threads_available
+		event_target:GF_ogas_owner = {
+			check_variable = {
+				which = v_GF_ogas_threads_available
+				value > v_GF_ogas_threads_used
+			}
+		}
+	}
+}

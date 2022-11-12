@@ -288,3 +288,197 @@ GF_construct_railway_line_effect = {
 		}
 	}
 }
+
+
+# scope = country
+GF_convert_to_OGAS_subnet = {
+	optimize_memory
+	# 附庸特化：OGAS子网
+	save_event_target_as = GF_vassal_subnet
+	# create_country = {
+	# 	type = faction
+	# 	effect = {
+	# 		copy_ethos_and_authority = event_target:GF_vassal_subnet
+	# 	}
+	# }
+
+	store_country_backup_data = {
+		flag = yes
+		room = yes
+		name = yes
+		ethics = yes
+		government = yes
+	}
+	
+	change_government = {
+		authority = GF_auth_OGAS_subnet
+		civics = random
+	}
+	add_intel = { amount = 100 who = from }
+	random_galaxy_species = {
+		limit = { has_species_flag = flag_GF_doll_species_@from }
+		save_event_target_as = GF_doll_species
+	}
+	clone_leader = {
+		target = event_target:GF_ogas_leader
+		effect = {
+			set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
+			save_event_target_as = GF_ogas_leader_subnet
+			remove_trait = GF_trait_leader_doll
+			if = {
+				limit = { has_trait = GF_trait_leader_ogas_2 }
+				remove_trait = GF_trait_leader_ogas_2
+				add_trait = GF_trait_leader_ogas
+			}
+		}
+	}
+	assign_leader = event_target:GF_ogas_leader_subnet
+	country_event = {
+		id = GF_overlord.1000
+		days = 30
+	}
+	# 添加基础资源
+	add_resource = {
+		energy = 100
+		minerals = 100
+		food = 100
+		alloys = 100
+		consumer_goods = 100
+		gf_core_chip = 100
+		
+		unity = 1000
+	}
+	capital_scope = {
+		# 添加42lab
+		if = {
+			limit = {
+				free_building_slots > 0
+				NOR = {
+					has_building = building_GF_42lab_1
+					has_building = building_GF_42lab_2
+					has_building = building_GF_42lab_3
+				}
+			}
+			add_building = building_GF_42lab_1
+		}
+		# 移除原版机器人组装建筑并替换为少前的
+		while = {
+			limit = { has_building = building_robot_assembly_plant }
+			remove_building = building_robot_assembly_plant
+			add_building = building_GF_doll_factory
+		}
+		while = {
+			limit = { has_building = building_robot_assembly_plant }
+			remove_building = building_machine_assembly_plant
+			add_building = building_GF_doll_factory
+		}
+		if = {
+			limit = {
+				free_building_slots > 0
+				NOT = { has_building = building_GF_doll_factory }
+			}
+			add_building = building_GF_doll_factory
+		}
+		if = {
+			limit = {
+				any_owned_pop = {
+					NOT = { is_same_species_class = event_target:GF_doll_species }
+				}
+			}
+			create_pop = { species = event_target:GF_doll_species }
+			
+		}
+	}
+}
+
+GF_deactivate_OGAS_subnet = {
+	optimize_memory
+	# change_government = {
+	# 	authority = random
+	# 	civics = random
+	# }
+	save_event_target_as = GF_vassal_subnet
+	restore_country_backup_data = yes
+	if = {
+		limit = { ruler = { has_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet } }
+		kill_leader = {
+			type = ruler
+			show_notification = yes
+		}
+	}
+}
+
+@GF_OGAS_mission_duration = 3600
+
+# scope = country
+GF_set_ogas_mission = {
+	hidden_effect = {
+		set_timed_country_flag = { flag = GF_ogas_work_mode days = @GF_OGAS_mission_duration }
+		country_event = { id = GF_ogas.11001 days = @GF_OGAS_mission_duration }
+		if = {
+			limit = { has_country_flag = flag_GF_ogas_owner }
+			change_variable = {
+				which = v_GF_ogas_threads_used
+				value = 1
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = flag_GF_ogas_owner }
+		add_modifier = {
+			modifier = $modifier$
+			days = @GF_OGAS_mission_duration
+			multiplier = v_GF_ogas_level
+		}
+	}
+	else = {
+		add_modifier = {
+			modifier = $modifier$
+			days = @GF_OGAS_mission_duration
+		}
+	}
+}
+
+# scope = any
+GF_change_ogas_threads = {
+	event_target:GF_ogas_owner = {
+		change_variable = {
+			which = v_GF_ogas_threads_available
+			value = $value$
+		}
+		if = {	# 可用线程最大为 5
+			limit = {
+				check_variable = {
+					which = v_GF_ogas_threads_available
+					value > 5
+				}
+			}
+			set_variable = {
+				which = v_GF_ogas_threads_available
+				value = 5
+			}
+		}
+		if = {	# 可用线程最小为 1
+			limit = {
+				check_variable = {
+					which = v_GF_ogas_threads_available
+					value <= 0
+				}
+			}
+			set_variable = {
+				which = v_GF_ogas_threads_available
+				value = 1
+			}
+		}
+	}
+}
+
+# scope = any
+GF_change_ogas_level = {
+	event_target:GF_ogas_owner = {
+		change_variable = {
+			which = v_GF_ogas_level
+			value = $value$
+		}
+	}
+}
