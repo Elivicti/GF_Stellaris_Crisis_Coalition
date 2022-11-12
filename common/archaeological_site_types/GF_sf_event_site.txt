@@ -90,7 +90,7 @@ GF_sf_site_3 = {
 	desc = "GF_sf_site_3_desc"
 	
 	picture = GFX_evt_contingency_planet
-	stages = 5	#阶段
+	stages = 4	#阶段
 	max_instances = 10
 	weight = 0
 	allow = {
