@@ -20,23 +20,30 @@ GF_assemble_mechanic = {
 			GF_can_doll_fill_specialist_job = yes
 		}
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
 		planet_pop_assembly_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
 	}
 	triggered_planet_modifier = {
 		potential = {
-			owner = {
-				has_valid_civic = GF_civic_IOP
-			}
+			owner = { has_valid_civic = GF_civic_IOP }
 		}
 		modifier = {
 			planet_pop_assembly_add = 1
 		}
 	}
 	resources = {
-		category = GF_planet_pop_assemblers
+		category = GF_planet_jobs_pop_assemblers
 		upkeep = {
 			alloys = 2
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					exists = assembling_species
+					assembling_species = { has_trait = GF_trait_doll }
+				}
+			}
 			gf_core_chip = 1
 		}
 	}
