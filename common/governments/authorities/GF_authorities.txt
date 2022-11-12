@@ -3,8 +3,8 @@ GF_auth_commonwealth = {
 	has_factions = no
 	can_reform = no
 	election_type = none
-	localization_postfix = corporate
 	has_agendas = no
+	valid_for_released_vassal = no
 	possible = {
 		ethics = {
 			NOR = {
@@ -24,7 +24,6 @@ GF_auth_commonwealth = {
 	icon = "gfx/interface/icons/governments/GF_auth_commonwealth.dds"
 	random_weight = {
 		base = 0
-		modifier = { factor = 0 }
 	}
 	country_modifier = {
 		country_base_influence_produces_add = 1
@@ -32,6 +31,40 @@ GF_auth_commonwealth = {
 		planet_pops_robotics_upkeep_mult = -0.05
 	}
 	tags = {
-		BE_APPOINTED_BY_PLAYER
+		GF_AUTH_TAG_RULED_BY_OGAS
+	}
+}
+
+GF_auth_OGAS_subnet = {
+	has_heir = no
+	has_factions = no
+	can_reform = no
+	election_type = none
+	has_agendas = no
+	valid_for_released_vassal = yes
+
+	playable = {
+		has_country_flag = flag_GF_commonwealth_vassal
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+
+	icon = "gfx/interface/icons/governments/GF_auth_OGAS_subnet.dds"
+	random_weight = {
+		base = 0
+	}
+	country_modifier = {
+		country_admin_cap_add = 50
+		planet_pops_robotics_upkeep_mult = -0.05
+	}
+
+	tags = {
+		GF_AUTH_TAG_VASSAL_OF_OGAS
 	}
 }
