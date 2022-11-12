@@ -9,7 +9,7 @@ GF_tech_doll_assemble = {
 	gateway = robotics
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_potential_trigger_advanced = yes
 	}
 }
 GF_tech_doll_modding = {
@@ -67,7 +67,7 @@ GF_tech_doll_modding = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }
 ## unlocks doll-leaders
@@ -79,8 +79,7 @@ GF_tech_mind_upgrade_1 = {
 	prerequisites = { "tech_self_aware_logic" }
 	weight = @tier2weight2
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-	    has_authority = GF_auth_commonwealth
+		GF_potential_trigger_advanced = yes
 	}
 	gateway = GF_tech_gateway_doll_modding
 
@@ -110,7 +109,7 @@ GF_tech_mind_upgrade_1 = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 200
 		modifier = {
 			factor = 0
 			NOT = { has_ai_personality_behaviour = robot_exploiter }
@@ -127,8 +126,7 @@ GF_tech_mind_upgrade_2 = {
 	weight = @tier4weight3
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		has_authority = GF_auth_commonwealth
+		GF_potential_trigger_advanced = yes
 	}
 	gateway = GF_tech_gateway_doll_modding
 	
@@ -163,7 +161,7 @@ GF_tech_mind_upgrade_2 = {
 	}
 
 	ai_weight = {
-		weight = 2
+		weight = 200
 		modifier = {
 			factor = 0
 			NOT = { has_ai_personality_behaviour = robot_exploiter }
@@ -204,13 +202,13 @@ GF_tech_doll_modding_point_1 = {
 	}
 	
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_potential_trigger_advanced = yes
 	}
 
 	weight_modifier = {
 		modifier = {
 			factor = 4
-			has_authority = GF_auth_commonwealth
+			GF_potential_trigger_advanced = yes
 		}
 		modifier = {
 			factor = 0
@@ -226,7 +224,7 @@ GF_tech_doll_modding_point_1 = {
 	}
 	
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }
 
@@ -243,9 +241,9 @@ GF_tech_doll_modding_point_2 = {
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_potential_trigger_advanced = yes
 	}
-	
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -253,7 +251,7 @@ GF_tech_doll_modding_point_2 = {
 		}
 		modifier = {
 			factor = 2
-			has_authority = GF_auth_commonwealth
+			GF_potential_trigger_advanced = yes
 		}
 		modifier = {
 			factor = 1.25
@@ -266,7 +264,7 @@ GF_tech_doll_modding_point_2 = {
 	}
 
 	ai_weight = {
-		weight = 0
+		weight = 100
 	}
 }
 
