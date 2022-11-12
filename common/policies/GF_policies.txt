@@ -1,7 +1,7 @@
 ########## GF_policy
 
 GF_doll_right_policy = {
-	potential = { has_authority = GF_auth_commonwealth }
+	potential = { GF_potential_trigger_advanced = yes }
 
 	option = {
 		name = "GF_doll_right_policy_full"
@@ -24,7 +24,29 @@ GF_doll_right_policy = {
 		}
 		policy_flags = { GF_doll_right_full }
 
-		AI_weight = { weight = 0 }
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_full
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 0.2
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
 	}
 	option = {
 		name = "GF_doll_right_policy_limited"
@@ -37,12 +59,47 @@ GF_doll_right_policy = {
 		}
 		policy_flags = { GF_doll_right_limited }
 
-		AI_weight = { weight = 0 }
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_full
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
+		AI_weight = {
+			weight = 8
+			modifier = {
+				factor = 0.5
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
 	}
 	option = {
 		name = "GF_doll_right_policy_servitude"
 
 		policy_flags = { GF_doll_right_servitude }
+
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_limited
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
 
 		AI_weight = { weight = 1 }
 	}
@@ -54,14 +111,25 @@ GF_doll_right_policy = {
 		}
 		policy_flags = { GF_doll_right_low }
 
+		on_enabled = {
+			hidden_effect = {
+				every_owned_species = {
+					limit = { has_trait = GF_trait_doll }
+					set_military_service_type = {
+						type = military_service_limited
+						country = root
+						cooldown = no
+					}
+				}
+			}
+		}
+
 		AI_weight = { weight = 0 }
 	}
 }
 
 GF_doll_work_policy = {
-	potential = {
-		has_authority = GF_auth_commonwealth
-	}
+	potential = { GF_potential_trigger_advanced = yes }
 
 	option = {
 		name = "GF_doll_work_policy_free"
@@ -93,7 +161,16 @@ GF_doll_work_policy = {
 		}
 
 		policy_flags = { GF_doll_work_policy_high }
-		AI_weight = { weight = 1 }
+		AI_weight = {
+			weight = 10
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
 	}
 	option = {
 		name = "GF_doll_work_policy_middle"
@@ -107,7 +184,6 @@ GF_doll_work_policy = {
 				has_policy_flag = GF_doll_right_limited
 				has_policy_flag = GF_doll_right_servitude
 			}
-			has_technology = GF_tech_mind_upgrade_1
 		}
 
 		modifier = {
@@ -115,7 +191,14 @@ GF_doll_work_policy = {
 		}
 
 		policy_flags = { GF_doll_work_policy_middle }
-		AI_weight = { weight = 1 }
+		AI_weight = {
+			weight = 0
+			modifier = {
+				set = 8
+				is_ai = yes
+				years_passed > 5
+			}
+		}
 	}
 	option = {
 		name = "GF_doll_work_policy_low"
@@ -132,12 +215,12 @@ GF_doll_work_policy = {
 		}
 
 		policy_flags = { GF_doll_work_policy_low }
-		AI_weight = { weight = 1 }
+		AI_weight = { weight = 2 }
 	}
 }
 
 GF_run_mode_policy = {
-	potential = { has_authority = GF_auth_commonwealth }
+	potential = { GF_potential_trigger_advanced = yes }
 
 	option = {
 		name = "GF_run_mode_policy_normal"
@@ -149,9 +232,18 @@ GF_run_mode_policy = {
 
 		policy_flags = { GF_run_mode_policy_normal }
 
-		AI_weight = { weight = 0 }
+		AI_weight = {
+			weight = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
 	}
-	
+
 	option = {
 		name = "GF_run_mode_policy_energy"
 
@@ -160,8 +252,11 @@ GF_run_mode_policy = {
 		}
 		
 		policy_flags = { GF_run_mode_policy_energy }
+		valid = {
+			NOT = { has_policy_flag = GF_doll_right_full }
+		}
 
-		AI_weight = { weight = 1 }
+		AI_weight = { weight = 5 }
 	}
 	option = {
 		name = "GF_run_mode_policy_no_food"
