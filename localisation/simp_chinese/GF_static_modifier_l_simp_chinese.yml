@@ -16,7 +16,8 @@
  GF_gavirul_project_finished_desc:0 "历经重重艰险，我们终于完成了物种的蜕变！"
 ################################# 星球
  GF_sercurity_protocol:0 "人形安保协议"
- GF_sercurity_protocol_desc:0 "暴力行为许可与基本战斗程序已下发，所有人形将接受来自政府的统一作战指令。"
+ GF_sercurity_protocol_desc:0 "§W$job_GF_guard_doll_effect_desc$§!\n\n暴力行为许可与基本战斗程序已下发，所有人形将接受来自政府的统一作战指令。"
+ GF_sercurity_protocol_effect_tooltip:0 "£job_GF_guard_doll£ $job_GF_guard_doll_plural$生成的£defense_army£ 人形防御部队: §G+1§!\n$mod_job_GF_guard_doll_add$: §G+5§!\n$mod_planet_jobs_robotic_produces_mult$: §R-25%§!"
  GF_storage_protocol:0 "人形待机模式"
  GF_storage_protocol_desc:0 "闲置人形已收纳入休眠舱进入待机模式以节省机体能源消耗。"
  GF_cloud_computing_protocol:0 "人形云计算协议"
@@ -129,3 +130,13 @@
  GF_zion_deep_dive_fleet_n_3:0 "$GF_ZION$反噬：舰队"
 ## Tier 4
  GF_zion_deep_dive_data_horizon:0 "数据视界"
+
+
+#### overlord
+ GF_OGAS_subnet_distributed_compute:0 "$GF_OGAS_subnet_3_distributed_compute$"
+ GF_OGAS_subnet_distributed_compute_desc:0 "通过超空间中继网道，OGAS与子网通信的速率得到了极大地提升。"
+
+ GF_OGAS_subnet_disconnected:0 "断连的OGAS网络"
+
+ GF_OGAS_subnet_assemble_speed_compensate:0 "OGAS子网人口组装速度补正"
+ GF_OGAS_subnet_assemble_speed_compensate_desc:0 "这个修正是给AI的，它不应该出现在玩家帝国里！"

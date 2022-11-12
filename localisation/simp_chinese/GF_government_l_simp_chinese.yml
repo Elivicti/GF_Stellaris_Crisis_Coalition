@@ -5,6 +5,14 @@
  GF_auth_commonwealth_desc:0 "自北兰岛事件以来人类与人类、人类与叛乱人形间无休止的战争让人厌倦，双方最终签署《乔治王岛和约》，标志着“终战之战”的南极-罗联战争结束，这颗饱受摧残的星球终于迎来了和平的曙光。南极与罗联成立联合政府，带领残存的人类，重新开创这个文明的新纪元。与此同时，由于战争与环境恶化，人口数已不足以承载整个文明，幸亏我们创造出了灵巧的人工造物仿生自律人形，她们将为我们服务、替我们承担低级的工作，而我们职责在于发出指令、控制她们进行劳动生产，自然地形成了人类-人形这一自上而下的文明体系。"
  GF_gov_commonwealth:0 "联合政府"
  GF_gov_commonwealth_desc:0 "联合政府"
- BE_APPOINTED_BY_PLAYER:0 "由绝对的智能AI §YOGAS§! 对国家进行生产指导与资源调配，无§R换届选举§!，但是可以§G强制选举§!。"
+ GF_AUTH_TAG_RULED_BY_OGAS:0 "由绝对的智能AI §YOGAS§! 对国家进行生产指导与资源调配，无§R换届选举§!。"
  GF_RT_OGAS:0 "国家信息处理自动化系统"
  GF_RT_FERRI:0 "副总指挥"
+
+
+ GF_RT_OGAS_VASSAL:0 "OGAS子网核心"
+ GF_auth_OGAS_subnet:0 "OGAS子网"
+ GF_auth_OGAS_subnet_desc:0 "这个政府隶通过其宗主的信息处理自动化系统子网核心来调控资源和管理政务。"
+ GF_AUTH_TAG_VASSAL_OF_OGAS:0 "OGAS子网政府与其宗主存在十分紧密的联系，通过宗主的国家信息处理自动化系统，这一政体能够高效地调控资源和管理政务。"
+ GF_gov_commonwealth_vassal:0 "$GF_auth_OGAS_subnet$"
+ GF_gov_commonwealth_vassal_desc:0 "$GF_AUTH_TAG_VASSAL_OF_OGAS$"

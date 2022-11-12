@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
 ############################
+ weapon_type_GF_collapsed:0 "坍塌武器"
+
  GF_COLLAPSE_ARMOR:0 "坍塌零素装甲"
  GF_COLLAPSE_ARMOR_DESC:0 "$GF_tech_ship_collapse_armor_desc$"
  GF_COLLAPSE_ARMOR_SMALL:0 "小型坍塌零素装甲"

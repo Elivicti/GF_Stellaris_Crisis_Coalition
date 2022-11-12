@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 #################################
  decision_GF_doll_sercurity_on:0 "激活人形安保协议"
- decision_GF_doll_sercurity_on_desc:0 "当前星球陷入骚乱或外敌入侵时，政府将接管所有人形权限，开放相关暴力行为许可，传输基本战斗知识，分配武器，命令她们协助当地防卫。"
+ decision_GF_doll_sercurity_on_desc:0 "§W$job_GF_guard_doll_effect_desc$§!\n\n当前星球陷入骚乱或外敌入侵时，政府将接管所有人形权限，开放相关暴力行为许可，传输基本战斗知识，分配武器，命令她们协助当地防卫。"
  decision_GF_doll_sercurity_off:0 "结束人形安保协议"
  decision_GF_doll_sercurity_off_desc:0 "当前星球恢复正常，政府将收回人形的暴力行为许可，并将人形重新分配回各自工作岗位，继续原先生产任务。"
  decision_GF_doll_storage_on:0 "开启人形待机模式"
