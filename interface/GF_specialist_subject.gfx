@@ -1,0 +1,76 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_GF_specialist_OGAS_subnet_subject"
+		texturefile = "gfx/interface/subjugation/diplomacy_specialist_subject_GF_OGAS_subnet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_specialist_subject_GF_OGAS_subnet"
+		texturefile = "gfx/interface/subjugation/diplomacy_specialist_subject_GF_OGAS_subnet.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_specialist_subject_GF_OGAS_subnet_large"
+		texturefile = "gfx/interface/subjugation/specialists_icons/specialist_subject_GF_OGAS_subnet_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_message_GF_OGAS_subnet_level_up"
+		texturefile = "gfx/interface/subjugation/message_GF_OGAS_subnet_level_up.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_GF_OGAS_subnet"
+		textureFile = "gfx/interface/subjugation/text_specialist_subject_GF_OGAS_subnet.dds"
+	}
+
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_1_off"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_1_off.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_1_on"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_1_on.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_2_off"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_2_off.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_2_on"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_2_on.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_3_off"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_3_off.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_tier_GF_specialist_OGAS_subnet_3_on"
+		textureFile = "gfx/interface/subjugation/specialist_tiers/specialist_tier_GF_specialist_OGAS_subnet_3_on.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_1_subnet_core"
+		textureFile = "gfx/interface/subjugation/specialist_perks/bulwark_1_bulwark_array.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_1_overlord_modifier"
+		textureFile = "gfx/interface/subjugation/specialist_perks/bulwark_3_bulwark_insight.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_2_authority"
+		textureFile = "gfx/interface/subjugation/specialist_perks/GF_OGAS_subnet_2_authority.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_2_leaders"
+		textureFile = "gfx/interface/subjugation/specialist_perks/scholarium_2_leaders.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_2_doll_assemble"
+		textureFile = "gfx/interface/subjugation/specialist_perks/GF_OGAS_subnet_2_doll_assemble.dds"
+	}
+	spriteType = {
+		name = "GFX_specialist_perk_GF_OGAS_subnet_3_connected_OGAS"
+		textureFile = "gfx/interface/subjugation/specialist_perks/GF_OGAS_subnet_3_connected_OGAS.dds"
+	}
+}

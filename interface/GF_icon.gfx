@@ -4,6 +4,14 @@ spriteTypes = {
 		name = "GFX_GF_army_type_armored_train"
 		texturefile = "gfx/interface/planetview/GF_armored_train_army.dds"
 	}
+	spriteType = {
+		name = "GFX_GF_army_type_gavirul"
+		texturefile = "gfx/interface/planetview/GF_gavirul_army.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_army_type_doll"
+		texturefile = "gfx/interface/planetview/GF_doll_army.dds"
+	}
 
 	# ship components
 	spriteType = {
