@@ -50,9 +50,7 @@ country_event = {
 				give_technology = { message = no tech = GF_tech_mass_rebuild_function }
 			}
 			GF_civic_GK = {
-				set_country_flag = community_mod_rules_trigger
-				set_country_flag = community_can_build_branch_offices_true
-				set_country_flag = community_can_support_branch_offices_false
+				
 			}
 		}
 
@@ -172,11 +170,6 @@ planet_event = {
 		# Add second species
 		last_created_species = {
 			set_species_flag = flag_GF_doll_species_@root.owner
-			set_species_flag = community_mod_rules_trigger
-			set_species_flag = community_can_species_be_assembled_true	# 物种可组装
-			set_species_flag = community_can_species_procreate_false	# 物种不可生殖
-			set_species_flag = community_can_crossbreed_species_false	# 物种不可杂交
-
 		}
 		while = {
 			count = 14
@@ -184,12 +177,6 @@ planet_event = {
 			random_owned_pop = {
 				limit = { NOT = { is_same_species = last_created_species } }
 				change_species = last_created_species
-
-				set_pop_flag = community_mod_rules_trigger
-				set_pop_flag = community_can_fill_ruler_job_false		# 人口不可成为统治者
-				set_pop_flag = community_can_fill_specialist_job_false	# 人口不可成为专家
-				set_pop_flag = community_can_generate_leader_from_pop_false
-				set_pop_flag = community_can_generate_military_leader_from_pop_false
 			}
 		}
 		while = {
