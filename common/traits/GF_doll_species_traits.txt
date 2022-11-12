@@ -269,7 +269,7 @@ GF_trait_overclock = {
 		}
 	}
 	modifier = {
- 
+		planet_pops_upkeep_mult = 0.15
 	}
 }
 GF_trait_nuclear_engine = {
