@@ -72,7 +72,6 @@ building_GF_doll_maintain_center_2 = {
 		exists = owner
 		OR = {
 			NOT = { owner = { has_authority = GF_auth_commonwealth } }
-			buildings_no_crystals = yes
 		}
 	}
 	convert_to = {

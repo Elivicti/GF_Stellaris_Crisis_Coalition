@@ -3,23 +3,23 @@ building_GF_zener_network_center_1 = {
 	base_cap_amount = 1
 	icon = building_GF_zener_network_center_1
 	category = unity
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_authority = GF_auth_commonwealth
-		}					
+		}
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
 		}
 	}
-	
+
 	convert_to = {
 		building_temple
 		building_hive_node
@@ -36,28 +36,28 @@ building_GF_zener_network_center_1 = {
 			energy = 1
 		}
 	}
-	
+
 	planet_modifier = {
 		job_GF_liaison_add = 1
 		species_empire_size_mult = -0.05
 	}
-	
+
 	prerequisites = {
 		"GF_tech_zener_network_1"
-	}	
-	
+	}
+
 	show_tech_unlock_if = {
-		OR = { 
-			has_valid_civic = GF_civic_URNC 
+		OR = {
+			has_valid_civic = GF_civic_URNC
 			has_valid_civic = GF_civic_AU
 			has_valid_civic = GF_civic_GK
 		}
 	}
-	
+
 	upgrades = {
 		building_GF_zener_network_center_2
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_liaison_effect_desc
 	}
@@ -73,27 +73,27 @@ building_GF_zener_network_center_2 = {
 	icon = building_GF_zener_network_center_2
 
 	category = unity
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_authority = GF_auth_commonwealth
-		}					
+		}
 	}
-	
+
 	allow = {
 		has_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
-		NOT = { 
+		NOT = {
 			owner = {
 				has_authority = GF_auth_commonwealth
 			}
 		}
 	}
-	
+
 	convert_to = {
 		building_holotemple
 		building_hive_cluster
@@ -108,30 +108,30 @@ building_GF_zener_network_center_2 = {
 		}
 		upkeep = {
 			energy = 2
-		}		
+		}
 	}
-	
+
 	planet_modifier = {
 		job_GF_liaison_add = 3
 		species_empire_size_mult = -0.1
 	}
-	
+
 	prerequisites = {
 		"GF_tech_zener_network_2"
 	}
 
 	show_tech_unlock_if = {
-		OR = { 
-			has_valid_civic = GF_civic_URNC 
+		OR = {
+			has_valid_civic = GF_civic_URNC
 			has_valid_civic = GF_civic_AU
 			has_valid_civic = GF_civic_GK
 		}
-	}	
-	
+	}
+
 	upgrades = {
 		building_GF_zener_network_center_3
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_liaison_effect_desc
 	}
@@ -147,30 +147,25 @@ building_GF_zener_network_center_3 = {
 	icon = building_GF_zener_network_center_3
 
 	category = unity
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_authority = GF_auth_commonwealth
-		}					
+		}
 	}
-	
+
 	allow = {
 		has_major_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			NOT = { 
-				owner = {
-					has_authority = GF_auth_commonwealth
-				}
-			}
-			buildings_no_crystals = yes
+		NOT = {
+			owner = { has_authority = GF_auth_commonwealth }
 		}
 	}
-	
+
 	convert_to = {
 		building_sacred_nexus
 		building_hive_confluence
@@ -187,30 +182,30 @@ building_GF_zener_network_center_3 = {
 		upkeep = {
 			energy = 3
 			rare_crystals = 1
-		}		
+		}
 	}
-	
+
 	planet_modifier = {
 		job_GF_liaison_add = 5
 		species_empire_size_mult = -0.15
 	}
-	
+
 	upgrades = {
 		building_GF_zener_network_center_4
-	}	
-	
+	}
+
 	prerequisites = {
 		"GF_tech_zener_network_3"
-	}	
-	
+	}
+
 	show_tech_unlock_if = {
-		OR = { 
-			has_valid_civic = GF_civic_URNC 
+		OR = {
+			has_valid_civic = GF_civic_URNC
 			has_valid_civic = GF_civic_AU
 			has_valid_civic = GF_civic_GK
 		}
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_liaison_effect_desc
 	}
@@ -241,7 +236,7 @@ building_GF_zener_network_center_3 = {
 			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
 		}
 		else = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
 			}
 		}
@@ -253,31 +248,26 @@ building_GF_zener_network_center_4 = {
 	icon = building_GF_zener_network_center_4
 
 	category = unity
-	
+
 	potential = {
 		exists = owner
-		owner = { 
+		owner = {
 			has_authority = GF_auth_commonwealth
-		}					
+		}
 	}
-	
-	
+
+
 	allow = {
 		has_fully_upgraded_capital = yes
 	}
-	
+
 	destroy_trigger = {
 		exists = owner
-		OR = {
-			NOT = { 
-				owner = {
-					has_authority = GF_auth_commonwealth
-				}
-			}
-			buildings_no_crystals = yes
+		NOT = {
+			owner = { has_authority = GF_auth_commonwealth }
 		}
 	}
-	
+
 	convert_to = {
 		building_autocurating_vault
 		building_hive_confluence
@@ -289,30 +279,30 @@ building_GF_zener_network_center_4 = {
 		cost = {
 			minerals = 1000
 			rare_crystals = 100
-		}	
+		}
 		upkeep = {
 			energy = 4
 			rare_crystals = 2
-		}		
+		}
 	}
-	
+
 	planet_modifier = {
 		job_GF_liaison_add = 7
 		species_empire_size_mult = -0.2
 	}
-	
+
 	prerequisites = {
 		"GF_tech_zener_network_4"
-	}	
-	
+	}
+
 	show_tech_unlock_if = {
-		OR = { 
-			has_valid_civic = GF_civic_URNC 
+		OR = {
+			has_valid_civic = GF_civic_URNC
 			has_valid_civic = GF_civic_AU
 			has_valid_civic = GF_civic_GK
 		}
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_liaison_effect_desc
 	}
@@ -343,7 +333,7 @@ building_GF_zener_network_center_4 = {
 			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
 		}
 		else = {
-			planet = { 
+			planet = {
 				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
 			}
 		}
