@@ -29,7 +29,7 @@ weapon_component_template = {
 		}
 	}
 
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_type_GF_collapsed }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
@@ -87,7 +87,7 @@ weapon_component_template = {
 		}
 	}
 
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_type_GF_collapsed }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
@@ -123,8 +123,8 @@ weapon_component_template = {
 
 	planet_destruction_gfx = "GF_ending_flash_gfx"
 
-	prerequisites = { 
-		"GF_tech_collapse_ending_flash" 
+	prerequisites = {
+		"GF_tech_collapse_ending_flash"
 	}
 
 	component_set = "GF_COLLAPSE_ENDING_FLASH"
@@ -163,7 +163,7 @@ weapon_component_template = {
 	icon = "GFX_GF_miniaturized_collapse_lance"
 	icon_frame = 1
 	projectile_gfx = "disruptor_3_small"
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_type_GF_collapsed }
 	ai_tags = { weapon_role_anti_armor }
 
 	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
@@ -209,7 +209,7 @@ weapon_component_template = {
 	icon = "GFX_GF_miniaturized_collapse_lance"
 	icon_frame = 1
 	projectile_gfx = "disruptor_3_medium"
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_type_GF_collapsed }
 	ai_tags = { weapon_role_anti_armor }
 
 	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
