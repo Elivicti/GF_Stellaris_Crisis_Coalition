@@ -9,16 +9,15 @@ building_GF_42lab_1 = {
 	potential = {
 		exists = owner
 		owner = {
-			has_authority = GF_auth_commonwealth
+			GF_potential_trigger_advanced = yes
 		}
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = {
-			owner = {
-				has_authority = GF_auth_commonwealth
-			}
-		}
+		owner = { GF_potential_trigger_advanced = no }
+	}
+	convert_to = {
+		building_research_lab_1
 	}
 	upgrades = {
 		"building_GF_42lab_2"
@@ -39,9 +38,7 @@ building_GF_42lab_1 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_civic = GF_civic_IOP
-			}
+			owner = { has_civic = GF_civic_IOP }
 		}
 		modifier = {
 			job_GF_programmer_add = 1
@@ -69,16 +66,13 @@ building_GF_42lab_2 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = {
-			owner = {
-				has_authority = GF_auth_commonwealth
-			}
-		}
+		owner = { GF_potential_trigger_advanced = no }
 	}
 	upgrades = {
 		"building_GF_42lab_3"
 	}
-	allow = {
+	convert_to = {
+		building_research_lab_2
 	}
 	planet_modifier = {
 		job_GF_programmer_add = 2
@@ -96,9 +90,7 @@ building_GF_42lab_2 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_civic = GF_civic_IOP
-			}
+			owner = { has_civic = GF_civic_IOP }
 		}
 		modifier = {
 			job_GF_programmer_add = 1
@@ -126,13 +118,10 @@ building_GF_42lab_3 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		NOT = {
-			owner = {
-				has_authority = GF_auth_commonwealth
-			}
-		}
+		owner = { GF_potential_trigger_advanced = no }
 	}
-	allow = {
+	convert_to = {
+		building_research_lab_3
 	}
 	planet_modifier = {
 		job_GF_programmer_add = 3
@@ -151,9 +140,7 @@ building_GF_42lab_3 = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_civic = GF_civic_IOP
-			}
+			owner = { has_civic = GF_civic_IOP }
 		}
 		modifier = {
 			job_GF_programmer_add = 1

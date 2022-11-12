@@ -8,11 +8,21 @@ building_GF_doll_factory = {
 	category = pop_assembly
 	
 	potential = {
-		owner = { has_authority = GF_auth_commonwealth }
+		owner = { GF_potential_trigger_advanced = yes }
 	}
 	
 	planet_modifier = {
 		job_GF_assemble_mechanic_add = 1
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { GF_potential_trigger_advanced = no }
+	}
+
+	convert_to = {
+		building_robot_assembly_plant
+		building_machine_assembly_plant
 	}
 	
 	resources = {
@@ -24,14 +34,20 @@ building_GF_doll_factory = {
 			energy = 2
 		}
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_assemble_mechanic_effect_desc
-	}	
-	prerequisites = {
-		"GF_tech_doll_assemble"
 	}
+	prerequisites = { "GF_tech_doll_assemble" }
+
 	ai_weight = {
 		weight = 1
+		modifier = {
+			factor = 0
+			num_buildings = {
+				type = building_GF_doll_factory
+				value >= 3
+			}
+		}
 	}
 }
