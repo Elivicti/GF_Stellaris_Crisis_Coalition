@@ -1,0 +1,112 @@
+# This file contains presets that are selectable when proposing an Agreement.
+# The terms of the preset are defined as key/value pairs.
+# Would be nice to make scripting of the key/value pairs less verbose, but that requires some more work with serialization.
+
+# Example:
+#
+# name_of_preset = {
+# 	term_data = {
+# 		discrete_terms = {						# The default discrete terms of this preset
+# 			{
+# 				key = name_of_term				# The term name, as defined in agreement_terms
+# 				value = name_of_term_value		# The term value to use, as defined in agreement_term_values
+# 			}
+# 			{
+# 				key = name_of_other_term
+# 				value = name_of_other_term_value
+# 			}
+# 		}
+#		resource_terms = {
+#			{
+#				key = name_of_resource_term_value # The resource term value to use, as defined in agreement_term_values
+#				value = <number>				# subsidy percentage
+#			}
+#		}
+# 	}
+# }
+
+@protectorate_tech_threshold = 0.4
+@protectorate_tech_switch = 0.5
+
+@specialist_base_acceptance_value = 50
+@specialist_subject_base_acceptance_value = 50
+@specialist_aligned_ethics_value = 50
+@specialist_unaligned_ethics_value = -50
+
+GF_preset_OGAS_subnet = {
+	icon = "GFX_GF_specialist_OGAS_subnet_subject"
+	specialist_type = GF_specialist_OGAS_subnet
+	term_data = {
+		discrete_terms = {
+			{
+				key = specialist_type
+				value = GF_specialist_OGAS_subnet
+			}
+			{
+				key = subject_integration
+				value = subject_can_not_be_integrated
+			}
+			{
+				key = subject_diplomacy
+				value = subject_can_do_diplomacy_but_not_vote
+			}
+			{
+				key = subject_expand
+				value = subject_can_expand_with_tithe
+			}
+			{
+				key = joins_overlord_wars
+				value = joins_overlord_wars_defensive
+			}
+			{
+				key = joins_subject_wars
+				value = joins_subject_wars_all
+			}
+			{
+				key = subject_holdings_limit
+				value = subject_holdings_limit_4
+			}
+			{
+				key = subject_loyalty
+				value = subject_loyalty_effects
+			}
+			{
+				key = protectorate
+				value = subject_is_not_protectorate
+			}
+		}
+		resource_terms = {
+			{
+				key = resource_subsidies_basic
+				value = -0.15
+			}
+			{
+				key = resource_subsidies_research
+				value = 0.75
+			}
+		}
+	}
+
+	overlord_weight = {
+		base = 100
+	}
+	subject_weight = {
+		base = 25
+	}
+
+	potential = {
+		has_overlord_dlc = yes
+		has_country_flag = flag_GF_commonwealth_vassal
+		NOR = {
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_fanatic_spiritualist
+
+			has_authority = auth_corporate
+		}
+		tech_unlocked_ratio = {
+			who = from
+			ratio >= @protectorate_tech_threshold
+		}
+		from = { has_authority = GF_auth_commonwealth }
+	}
+}

@@ -1,0 +1,54 @@
+@level_2_xp_cost =  6#00 #  5 years at 100 Loyalty.
+@level_3_xp_cost = 18#00 # 15 years at 100 Loyalty.
+
+@specialist_base_conversion_time = 30
+
+# If you add any new types or change the keys of the existing ones, make sure to change the level-up message_types for them and their loc keys
+
+GF_specialist_OGAS_subnet = {
+	icon = "GFX_diplomacy_specialist_subject_GF_OGAS_subnet"
+	icon_large = "GFX_diplomacy_specialist_subject_GF_OGAS_subnet_large"
+	preferred_ethic = ethic_materialist
+	base_conversion_time = @specialist_base_conversion_time
+
+	# 大幅强化科研，上供科研点数
+	# 强化人口组装，向宗主国输送人形人口（每半年一人口？）
+	# 弱化军事
+
+	levels = {
+		# Level 1
+		{
+			experience_needed_for_next_level = @level_2_xp_cost
+			perks = {
+				GF_OGAS_subnet_1_modifier
+				GF_OGAS_subnet_1_penalties
+
+				GF_OGAS_subnet_1_subnet_core
+				GF_OGAS_subnet_1_overlord_modifier
+			}
+		}
+		# Level 2
+		{
+			experience_needed_for_next_level = @level_3_xp_cost
+			perks = {
+				GF_OGAS_subnet_2_modifier
+				GF_OGAS_subnet_2_penalties
+
+				GF_OGAS_subnet_2_authority
+				GF_OGAS_subnet_2_leaders
+				GF_OGAS_subnet_2_doll_assemble
+			}
+		}
+		# Level 3
+		{
+			perks = {
+				GF_OGAS_subnet_3_modifier
+				GF_OGAS_subnet_3_penalties
+
+				GF_OGAS_subnet_3_connected_OGAS
+				GF_OGAS_subnet_3_distributed_compute
+			}
+		}
+	}
+
+}

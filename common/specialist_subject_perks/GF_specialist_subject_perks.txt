@@ -1,0 +1,180 @@
+
+GF_OGAS_subnet_1_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_gf_core_chip_produces_mult = 0.1
+		pop_assembly_speed = 0.30
+	}
+
+	activate_effect = {
+		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_1 }
+	}
+
+	deactivate_effect = {
+		target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_1 }
+	}
+}
+
+GF_OGAS_subnet_1_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		ship_military_cost_mult = 0.50
+		country_naval_cap_mult = -0.25
+		planet_pop_assemblers_upkeep_mult = 0.33
+	}
+}
+
+GF_OGAS_subnet_1_subnet_core = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_1_subnet_core"
+	
+	subject_modifier = {
+		planet_researchers_produces_mult = 0.30
+		planet_researchers_upkeep_mult = 0.25
+	}
+
+	desc = {
+		description = GF_OGAS_subnet_1_subnet_core_desc
+	}
+}
+
+GF_OGAS_subnet_1_overlord_modifier = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_1_overlord_modifier"
+	overlord_modifier = {
+		country_society_research_produces_mult = 0.1
+		country_physics_research_produces_mult = 0.1
+		country_engineering_research_produces_mult = 0.1
+	}
+}
+
+GF_OGAS_subnet_2_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_gf_core_chip_produces_mult = 0.2
+		pop_assembly_speed = 0.60
+	}
+
+	activate_effect = {
+		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
+	}
+
+	deactivate_effect = {
+		target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
+	}
+}
+
+GF_OGAS_subnet_2_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		ship_military_cost_mult = 1.00
+		country_naval_cap_mult = -0.50
+		planet_pop_assemblers_upkeep_mult = 0.67
+	}
+}
+
+GF_OGAS_subnet_2_authority = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_2_authority"
+	
+	activate_effect = {
+		hidden_effect = { target = { GF_convert_to_OGAS_subnet = yes } }
+	}
+
+	subject_modifier = {
+		planet_researchers_produces_mult = 0.30
+		planet_researchers_upkeep_mult = 0.25
+	}
+
+	desc = {
+		description = GF_OGAS_subnet_2_authority_desc
+	}
+}
+
+GF_OGAS_subnet_2_leaders = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_2_leaders"
+
+	subject_modifier = {
+		leaders_upkeep_mult = -0.20
+	}
+
+	desc = {
+		description = GF_OGAS_subnet_2_leaders_desc
+	}
+}
+
+GF_OGAS_subnet_2_doll_assemble = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_2_doll_assemble"
+
+	activate_effect = {
+		target = {
+			country_event = {
+				id = GF_overlord.200
+				days = 360
+			}
+		}
+	}
+	overlord_modifier = {
+		GF_planet_jobs_pop_assemblers_produces_mult = 0.10
+	}
+
+	desc = {
+		description = GF_OGAS_subnet_2_doll_assemble_desc
+	}
+}
+
+
+GF_OGAS_subnet_3_modifier = {
+	main_perk = yes
+	subject_modifier = {
+		country_gf_core_chip_produces_mult = 0.3
+		pop_assembly_speed = 1.00
+	}
+
+	activate_effect = {
+		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+	}
+
+	deactivate_effect = {
+		# target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+	}
+}
+
+GF_OGAS_subnet_3_penalties = {
+	main_perk = yes
+	subject_modifier = {
+		ship_military_cost_mult = 1.00
+		country_naval_cap_mult = -0.75
+		planet_pop_assemblers_upkeep_mult = 1.00
+	}
+}
+
+GF_OGAS_subnet_3_connected_OGAS = {
+	icon = "GFX_specialist_perk_GF_OGAS_subnet_3_connected_OGAS"
+
+	desc = {
+		description = GF_OGAS_subnet_3_connected_OGAS_desc
+	}
+
+	activate_effect = {
+		target = {
+			establish_communications = event_target:GF_ogas_country
+			set_country_flag = flag_GF_can_contact_OGAS
+		}
+		GF_change_ogas_threads = { value = 1 }
+	}
+
+	subject_modifier = {
+		planet_researchers_produces_mult = 0.40
+		planet_researchers_upkeep_mult = 0.30
+	}
+}
+
+GF_OGAS_subnet_3_distributed_compute = {
+	icon = "GFX_specialist_perk_scholarium_1_neighbor_bonuses"
+
+	overlord_relay_network_modifier = {
+		GF_OGAS_subnet_distributed_compute = 1
+	}
+
+	desc = {
+		description = GF_OGAS_subnet_3_distributed_compute_desc
+	}
+}
