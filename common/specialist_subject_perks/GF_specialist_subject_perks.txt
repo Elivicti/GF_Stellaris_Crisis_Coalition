@@ -9,10 +9,6 @@ GF_OGAS_subnet_1_modifier = {
 	activate_effect = {
 		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_1 }
 	}
-
-	deactivate_effect = {
-		target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_1 }
-	}
 }
 
 GF_OGAS_subnet_1_penalties = {
@@ -55,10 +51,6 @@ GF_OGAS_subnet_2_modifier = {
 
 	activate_effect = {
 		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
-	}
-
-	deactivate_effect = {
-		target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
 	}
 }
 
@@ -130,10 +122,6 @@ GF_OGAS_subnet_3_modifier = {
 
 	activate_effect = {
 		target = { set_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
-	}
-
-	deactivate_effect = {
-		# target = { remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
 	}
 }
 
