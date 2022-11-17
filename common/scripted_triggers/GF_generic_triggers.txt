@@ -22,6 +22,7 @@ is_valid_GF_OGAS_subnet = {
 	AND = {
 		has_country_flag = flag_GF_commonwealth_vassal			# 必须是少前政体释放的附庸
 		has_authority = GF_auth_OGAS_subnet						# 必须是少前的附庸政体
+		has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 
 		has_any_overlord = yes									# 必须有宗主
 		overlord = { has_authority = GF_auth_commonwealth }		# 宗主必须是少前政体
