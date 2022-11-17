@@ -8,7 +8,7 @@
 
 如果您喜欢这个MOD，请务必前往[创意工坊页面](https://steamcommunity.com/sharedfiles/filedetails/?id=2068768158)为我们收藏和点赞。
 
-![Like](https://i.imgur.com/fVVaDCS.gif[/img)
+![Like](https://i.imgur.com/fVVaDCS.gif)
 
 
 
@@ -43,8 +43,6 @@
 
 ## MOD使用方法
 
-1. 本MOD使用[Stellaris Universal Gamerule Lib](https://steamcommunity.com/workshop/filedetails/?id=2797095333)为前置，因此请将本MOD置于SUGL**之后**。
-
 1. 选择起源**少女前线：危机联合**，再选择**三大主国民理念**：罗联，南联与格里芬**其中之一**，最后选择政体**末日联合政府**。
 
    _* 在游玩时请注意MOD中政体与各国民理念的选择条件_
@@ -53,12 +51,34 @@
 
 3. 其余国策、思潮、特质可自由搭配。
 
-   
+
+
+
+## 关于前置
+
++ 在之前的版本中使用的前置模组Stellaris Universal Gamerule Lib已被弃用，此后兼容性将会依赖于兼容补丁
++ 前置模组为兼容性补丁，为可选项，如果你开启的模组较多，建议使用，同时请检查兼容补丁所支持的模组
+
+
+
+## 相关模组
+
++ OGAS快捷通讯
+	+ [UI Overhaul Dynamic版](https://steamcommunity.com/sharedfiles/filedetails/?id=2785435872)
+	
+	+ [暗蓝科技UI版](https://steamcommunity.com/sharedfiles/filedetails/?id=2785436213)
+	
+		_* 此外，**暗蓝科技UI**内置的快速联系已支持OGAS_
+	
++ [扩展模组](https://steamcommunity.com/sharedfiles/filedetails/?id=2752229316)
+
+
 
 ## 更新计划
 
-1. 完善故事线
-2. 数据平衡与BUG修复
++ 完善故事线
+
++ 数据平衡与BUG修复
 
 
 
@@ -69,8 +89,14 @@
 
 Currently this MOD has NOT been translated into other languages, but if you are willing to help us translate this MOD, please contact us.
 
-+ Girls' Frontline Wiki: [EN Wiki](https://iopwiki.com/wiki/Girls'_Frontline_Wiki)  [中文Wiki](http://www.gfwiki.org/)
-+ Girls' Frontline Home Page: [EN](http://gf.sunborngame.com/)  [中文官网](https://gf-cn.sunborngame.com/)
++ Girls' Frontline Wiki:
+	+ [EN Wiki](https://iopwiki.com/wiki/Girls'_Frontline_Wiki)
+	+ [中文Wiki](http://www.gfwiki.org/)
+
++ Girls' Frontline Home Page:
+	+ [EN Home Page](http://gf.sunborngame.com/)
+	+ [中文官网](https://gf-cn.sunborngame.com/)
+
 
 #ドールズフロントライン　#ドルフロ　#少女前線　#少女前线　#Girls'Frontline  #소녀전선 모드. 트레잇, 시빅, 특수종족(인형) 포함
 
