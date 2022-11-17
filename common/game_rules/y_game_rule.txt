@@ -285,7 +285,7 @@ can_build_branch_offices = {
 			has_authority = auth_corporate
 			has_civic = civic_galactic_sovereign_megacorp
 
-			has_valid_civic = GF_civic_GK	# GF
+			has_civic = GF_civic_GK	# GF
 		}
 	}
 }
@@ -305,7 +305,7 @@ can_support_branch_offices = {
 			has_authority = auth_corporate
 			has_civic = civic_galactic_sovereign_megacorp
 
-			has_valid_civic = GF_civic_GK	# GF
+			has_civic = GF_civic_GK	# GF
 		}
 	}
 	custom_tooltip = {
@@ -352,10 +352,6 @@ can_trade_leader = {
 			# 必须为少前政体附庸
 			ROOT = {
 				is_valid_GF_OGAS_subnet = yes
-				any_agreement = {
-					has_active_specialization = GF_specialist_OGAS_subnet
-					specialist_tier >= 2
-				}
 			}
 			# 少前政体必须为宗主
 			FROM = {
@@ -374,9 +370,14 @@ can_trade_leader = {
 species_can_live_on_planet = {
 	exists = root #somehow this appeared in the error log. No idea how!
 	NAND = {
-		root = { is_planet_class = pc_machine }
+		root = {
+			OR = {
+				is_planet_class = pc_machine
+				is_planet_class = pc_GF_sf_machine		# GF 神秘机械星球
+			}
+		}
 		NOR = {
-			has_trait = GF_trait_doll			# GF 人形
+			has_trait = GF_trait_doll					# GF 人形
 
 			has_trait = trait_machine_unit
 			has_trait = trait_mechanical
