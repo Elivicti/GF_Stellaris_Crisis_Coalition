@@ -39,8 +39,8 @@ ap_GF_body_upgrade = {
 	modifier = {
 		description = ap_GF_body_upgrade_modifier_desc
 		description_parameters = {
-			POINTS = @GF_doll_upgrade_POINTS
-			COST_MULT = 2
+			POINTS = 2
+			COST_MULT = @GF_doll_upgrade_COST_MULT
 		}
 		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
 		GF_ANDROID_species_trait_picks_add = 2
