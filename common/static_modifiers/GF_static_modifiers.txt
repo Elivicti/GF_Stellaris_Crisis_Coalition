@@ -12,7 +12,7 @@ GF_ogas_mode_governor = {
 	pop_happiness = 0.1
 	planet_buildings_cost_mult = -0.15
 	planet_districts_cost_mult = -0.15
-	country_energy_produces_mult = -0.05
+	planet_jobs_energy_upkeep_mult = 0.05
 }
 
 GF_ogas_mode_produce = {
@@ -20,7 +20,7 @@ GF_ogas_mode_produce = {
 	icon_frame = 3
 	planet_jobs_alloys_produces_mult = 0.1
 	planet_jobs_consumer_goods_produces_mult = 0.1
-	country_energy_produces_mult = -0.05
+	planet_jobs_energy_upkeep_mult = 0.05
 }
 
 GF_ogas_mode_upkeep = {
@@ -28,7 +28,7 @@ GF_ogas_mode_upkeep = {
 	icon_frame = 3
 	planet_jobs_robotic_produces_mult = 0.1
 	planet_pops_robotics_upkeep_mult = -0.1
-	country_energy_produces_mult = -0.05
+	planet_jobs_energy_upkeep_mult = 0.05
 }
 
 GF_ogas_mode_war = {
@@ -39,7 +39,7 @@ GF_ogas_mode_war = {
 	army_damage_mult = 0.2
 	army_morale = 0.2
 	armies_upkeep_mult = -0.2
-	country_energy_produces_mult = -0.05
+	planet_jobs_energy_upkeep_mult = 0.05
 }
 
 GF_ogas_mode_research = {
@@ -51,7 +51,7 @@ GF_ogas_mode_research = {
 	planet_jobs_engineering_research_produces_mult = 0.05
 	science_ship_survey_speed = 0.1
 	ship_anomaly_research_speed_mult = 0.1
-	country_energy_produces_mult = -0.05
+	planet_jobs_energy_upkeep_mult = 0.05
 }
 
 ######
