@@ -1,5 +1,5 @@
-@level_2_xp_cost =  6#00 #  5 years at 100 Loyalty.
-@level_3_xp_cost = 18#00 # 15 years at 100 Loyalty.
+@level_2_xp_cost =  600 #  5 years at 100 Loyalty.
+@level_3_xp_cost = 1800 # 15 years at 100 Loyalty.
 
 @specialist_base_conversion_time = 30
 
