@@ -22,6 +22,7 @@
  GF_storage_protocol_desc:0 "闲置人形已收纳入休眠舱进入待机模式以节省机体能源消耗。"
  GF_cloud_computing_protocol:0 "人形云计算协议"
  GF_cloud_computing_protocol_desc:0 "所有闲置人形的云图算力已接入科研网络。"
+ GF_cloud_computing_protocol_modifier_desc:0 "来自§Y$job_GF_dormancy_doll_plural$§!的 £physics£ £society£ £engineering£ 研究点数: §G+2§!\n$mod_GF_planet_dormancy_upkeep_mult$: §R+100%§!"
  GF_auto_colony:0 "自动化遥控殖民地"
  GF_auto_colony_desc:0 "该殖民地以一个巨大的信号接发装置为中心，人形严格按照远端星球所传来的指令并配合预置的自律程序进行运作。"
 ################################# 遗珍
