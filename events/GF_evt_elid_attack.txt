@@ -512,7 +512,7 @@ country_event = {
 		event_target:GF_home_world = {
 			add_modifier = {
 				modifier = GF_pm_failed_in_defending_elid
-				days = -1
+				days = 360
 			}
 		}
 	}
@@ -524,7 +524,7 @@ country_event = {
 		event_target:GF_home_world = {
 			add_modifier = {
 				modifier = GF_pm_failed_in_defending_elid
-				days = -1
+				days = 360
 			}
 			add_planet_devastation = 10
 		}
