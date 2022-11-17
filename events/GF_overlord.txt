@@ -130,9 +130,9 @@ country_event = {
 
 # 提示事件：附属国 - 人口不足，上供资源 (仅限玩家)
 country_event = {
-	id = GF_overlord.204
-	title = GF_overlord.204.name
-	desc = GF_overlord.204.desc
+	id = GF_overlord.203
+	title = GF_overlord.203.name
+	desc = GF_overlord.203.desc
 
 	picture = GFX_evt_imperial_vassal
 
@@ -143,7 +143,7 @@ country_event = {
 	}
 
 	option = {
-		name = GF_overlord.204.a
+		name = GF_overlord.203.a
 		add_monthly_resource_mult = {
 			resource = minerals
 			value = -12

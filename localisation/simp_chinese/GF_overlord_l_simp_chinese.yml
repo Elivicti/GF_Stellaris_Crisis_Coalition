@@ -40,6 +40,13 @@
  GF_overlord.202.a:0 "很好。"
  GF_overlord.202.a.tooltip:0 "获得一个[transfer_pop.Species.GetName]£pop£人口"
 
+ GF_overlord.203.name:0 "资源已上供"
+ GF_overlord.203.desc:0 "我们没有足够的机械人口向宗主国移交，作为代替，需要向宗主国进贡一些资源。\n"
+ GF_overlord.203.a:0 "已知晓。"
+ GF_overlord.204.name:0 "资源已上供"
+ GF_overlord.204.desc:0 "由于[from.GetName]没有足够的机械人口向我们移交，作为代替，他们进贡了一些资源。\n"
+ GF_overlord.204.a:0 "已知晓。"
+
  GF_overlord.1010.name:0 "OGAS链接中断"
  GF_overlord.1010.desc:0 "由于我们脱离了原来的宗主[overlord.GetName]，他们断开了OGAS子网的链接，并且回收了许多重要科技，帝国境内的政务管理和科学研究都受到了影响。\n"
  GF_overlord.1010.a:0 "唉……"
