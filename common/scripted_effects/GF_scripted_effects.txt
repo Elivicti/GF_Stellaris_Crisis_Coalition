@@ -406,6 +406,8 @@ GF_deactivate_OGAS_subnet = {
 			show_notification = yes
 		}
 	}
+	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
+	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
 }
 
 @GF_OGAS_mission_duration = 3600
