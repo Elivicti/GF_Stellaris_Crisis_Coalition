@@ -392,6 +392,16 @@ country_event = {
 		room = ethic_griffin_room
 	}
 
+	immediate = {
+		if = {
+			limit = { has_country_flag = flag_GF_ogas_owner }
+			change_variable = {
+				which = v_GF_ogas_threads_used
+				value = -1
+			}
+		}
+	}
+
 	is_triggered_only = yes
 
 	option = {
