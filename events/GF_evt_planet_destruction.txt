@@ -7,8 +7,8 @@ planet_event = {
 
 	immediate = {
 		save_event_target_as = collapsed_planet
-		from.owner = { 
-			country_event = { 
+		from.owner = {
+			country_event = {
 				id = GF_ending_flash.101
 			}
 		}

@@ -20,7 +20,7 @@ planet_event = {
 			# }
 			every_owned_pop = { kill_pop = yes }
 			every_deposit = { remove_deposit = yes }
-			
+
 			remove_all_buildings = yes
 			change_pc = pc_GF_collapsed
 			save_event_target_as = collapsed_planet
@@ -60,7 +60,7 @@ country_event = { # event for bombarder country
 		has_policy_flag = GF_enable_collapse_bombardment
 		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
 	}
-	
+
 	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
 
 	option = {
@@ -109,7 +109,7 @@ planet_event = {
 			}
 		}
 		else_if = {
-			limit = { 
+			limit = {
 				planet_devastation > 40
 				planet_devastation <= 80
 			}
