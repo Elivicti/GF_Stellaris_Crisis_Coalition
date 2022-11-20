@@ -71,7 +71,7 @@ on_leader_spawned = {
 # this = country
 on_monthly_pulse_country = {
 	events = {
-		GF_doll.3000	# 月检事件 锁定人形的公民权
+		GF_doll.3000		# 月检事件 锁定人形的公民权
 	}
 }
 
@@ -81,6 +81,6 @@ on_monthly_pulse_country = {
 # From = overlord
 on_released_as_vassal = {
 	events = {
-		GF_overlord.0
+		GF_overlord.0		# 少前政体释放附庸
 	}
 }
