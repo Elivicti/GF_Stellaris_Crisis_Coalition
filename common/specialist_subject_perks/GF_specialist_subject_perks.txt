@@ -3,7 +3,7 @@ GF_OGAS_subnet_1_modifier = {
 	main_perk = yes
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.1
-		pop_assembly_speed = 0.30
+		planet_pop_assembly_mult = 0.30
 	}
 
 	activate_effect = {
@@ -46,7 +46,7 @@ GF_OGAS_subnet_2_modifier = {
 	main_perk = yes
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.2
-		pop_assembly_speed = 0.60
+		planet_pop_assembly_mult = 0.60
 	}
 
 	activate_effect = {
@@ -117,7 +117,7 @@ GF_OGAS_subnet_3_modifier = {
 	main_perk = yes
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.3
-		pop_assembly_speed = 1.00
+		planet_pop_assembly_mult = 1.00
 	}
 
 	activate_effect = {
