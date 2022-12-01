@@ -1,14 +1,11 @@
 GF_can_doll_fill_ruler_job = {
 	hidden_trigger = {
 		exists = owner
-		has_trait = GF_trait_doll
 		owner = {
 			OR = {
-				NOT = { has_authority = GF_auth_commonwealth }
-				AND = {
-					has_authority = GF_auth_commonwealth
-					has_policy_flag = GF_doll_right_full
-				}
+				is_GF_authority = no
+				has_policy_flag = GF_doll_work_policy_free
+				has_policy_flag = GF_doll_work_policy_high
 			}
 		}
 	}
@@ -17,17 +14,12 @@ GF_can_doll_fill_ruler_job = {
 GF_can_doll_fill_specialist_job = {
 	hidden_trigger = {
 		exists = owner
-		has_trait = GF_trait_doll
 		owner = {
 			OR = {
-				NOT = { has_authority = GF_auth_commonwealth }
-				AND = {
-					has_authority = GF_auth_commonwealth
-					OR = {
-						has_policy_flag = GF_doll_right_full
-						has_policy_flag = GF_doll_right_limited
-					}
-				}
+				is_GF_authority = no
+				has_policy_flag = GF_doll_work_policy_free
+				has_policy_flag = GF_doll_work_policy_high
+				has_policy_flag = GF_doll_work_policy_middle
 			}
 		}
 	}
@@ -142,12 +134,13 @@ GF_default_zion_comm_trigger = {
 
 # scope = species, from = country
 GF_is_gavirul_species = {
-	hidden_trigger = { is_same_species = from }
-	from = {
-		hidden_trigger = { has_authority = GF_auth_commonwealth }
-		custom_tooltip = {
-			has_country_flag = flag_GF_gavirul_project_completed
-			fail_text = GF_require_gavirul_project_finished
+	hidden_trigger = {
+		has_species_flag = flag_GF_GAVIRUL_species
+		from = {
+			custom_tooltip = {
+				has_country_flag = flag_GF_gavirul_project_completed
+				fail_text = GF_require_gavirul_project_finished
+			}
 		}
 	}
 }

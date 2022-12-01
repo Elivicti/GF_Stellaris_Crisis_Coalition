@@ -8,6 +8,12 @@ event = {
 
 	immediate = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Installed
+		every_country = {
+			limit = { has_origin = GF_origin_commonwealth }
+			fire_on_action = {
+				on_action = on_GF_game_start
+			}
+		}
 	}
 }
 
@@ -35,7 +41,11 @@ country_event = {
 	}
 
 	immediate = {
-		set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
+		if = {
+			limit = { NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled } }
+			set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
+		}
+		add_resource = { gf_core_chip = 100 }
 
 		# Inititalize country's basic characteristics
 		give_technology = { message = no tech = tech_powered_exoskeletons }
@@ -49,9 +59,7 @@ country_event = {
 				give_technology = { message = no tech = GF_tech_observe_reflection }
 				give_technology = { message = no tech = GF_tech_mass_rebuild_function }
 			}
-			GF_civic_GK = {
-				
-			}
+			GF_civic_GK = { }
 		}
 
 		# Add special deposits
@@ -109,16 +117,6 @@ country_event = {
 		name = GF_start.1.a
 		hidden_effect = {
 			country_event = { id = GF_ogas.100 days = 5 }
-			# 设置人形权利
-			every_owned_species = {
-				limit = { has_trait = GF_trait_doll }
-				set_citizenship_type = {
-					country = root
-					type = citizenship_robot_servitude
-					cooldown = yes
-				}
-			}
-			
 			country_event = { id = GF_elid.0 days = 30 } # initialize elid attack events
 		}
 	}
@@ -177,6 +175,23 @@ planet_event = {
 			random_owned_pop = {
 				limit = { NOT = { is_same_species = last_created_species } }
 				change_species = last_created_species
+			}
+		}
+		owner = {
+			every_owned_species = {
+				if = {
+					limit = { is_same_species = owner_main_species }
+					set_species_flag = flag_GF_GAVIRUL_species
+				}
+				# 设置人形权利
+				else_if = {
+					limit = { has_trait = GF_trait_doll }
+					set_citizenship_type = {
+						country = root
+						type = citizenship_GF_doll_servitude
+						cooldown = yes
+					}
+				}
 			}
 		}
 		while = {
