@@ -5,12 +5,16 @@ on_game_start = {
 	}
 }
 
-on_game_start_country = {
+# this = GF country
+on_GF_game_start = {
 	events = {
 		GF_start.1	# 初始化开局
 		GF_sf.0		# 铁血事件链
 		GF_recover_plan.0 # 复兴协议
 	}
+}
+
+on_game_start_country = {
 }
 
 # Called during empire initialization when starting a new game if has_secondary_species game rule is true.
