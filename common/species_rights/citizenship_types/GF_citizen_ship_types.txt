@@ -1,0 +1,124 @@
+# 暂存，等蠢驴更新
+# 妈的，新权利不能按类别判断，太他妈蠢了
+
+# citizenship_GF_doll_full = {
+# 	is_full_citizenship = yes
+	
+# 	pop_modifier = {
+# 		planet_jobs_produces_mult = 0.10
+# 	}
+
+# 	potential = {
+# 		exists = from
+# 		from = { is_GF_authority = yes }
+# 		has_trait = GF_trait_doll
+# 	}
+
+# 	allow = {
+# 		hidden_trigger = { exists = from }
+# 		from = { has_policy_flag = GF_doll_right_full }
+# 	}
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# }
+
+# citizenship_GF_doll_limited = {
+
+# 	pop_modifier = {
+# 		planet_jobs_produces_mult = 0.05
+# 		planet_pops_consumer_goods_upkeep_mult = -0.10
+# 		pop_political_power = -0.25
+# 	}
+
+# 	potential = {
+# 		exists = from
+# 		from = { is_GF_authority = yes }
+# 		has_trait = GF_trait_doll
+# 	}
+
+# 	allow = {
+# 		hidden_trigger = { exists = from }
+# 		from = { has_policy_flag = GF_doll_right_limited }
+# 	}
+# 	ai_will_do = {
+# 		factor = 1
+# 	}
+# }
+
+
+citizenship_GF_doll_servitude = {
+	is_robot_servant = yes
+
+	# triggered_pop_modifier = {
+	# 	potential = {
+	# 		from = { has_policy_flag = GF_doll_right_servitude }
+	# 	}
+		
+	# 	planet_pops_consumer_goods_upkeep_mult = -0.15
+	# 	pop_political_power = -0.50
+	# }
+
+	# triggered_pop_modifier = {
+	# 	potential = {
+	# 		from = { has_policy_flag = GF_doll_right_low }
+	# 	}
+	# 	planet_pops_consumer_goods_upkeep_mult = -10
+	# 	pop_political_power = -0.80
+	# }
+
+	potential = {
+		exists = from
+		from = { is_GF_authority = yes }
+		has_trait = GF_trait_doll		# GF 人形特质
+	}
+	allow = {
+		hidden_trigger = { exists = from }
+		from = {
+			OR = {
+				has_policy_flag = GF_doll_right_servitude
+				has_policy_flag = GF_doll_right_low
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+citizenship_GF_doll_purge = {
+	is_purge = yes
+
+	# triggered_pop_modifier = {
+	# 	potential = {
+	# 		from = { has_policy_flag = GF_doll_right_servitude }
+	# 	}
+		
+	# 	planet_pops_consumer_goods_upkeep_mult = -0.15
+	# 	pop_political_power = -0.50
+	# }
+
+	# triggered_pop_modifier = {
+	# 	potential = {
+	# 		from = { has_policy_flag = GF_doll_right_low }
+	# 	}
+	# 	planet_pops_consumer_goods_upkeep_mult = -10
+	# 	pop_political_power = -0.80
+	# }
+
+	potential = {
+		exists = from
+		from = { is_GF_authority = no }
+		has_trait = GF_trait_doll		# GF 人形特质
+	}
+	allow = {
+		hidden_trigger = { exists = from }
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 10000
+		factor = 10000
+	}
+}

@@ -102,6 +102,20 @@ GIRLF:0 "少女前线"
  ogas_consciousness_fossil_plural:0 "NO_USE_LOCALISATION"
  ogas_consciousness_remnant_plural:0 "NO_USE_LOCALISATION"
 
-# only for disabling warnings
- new_type_fossil_plural:0 "NO_USE_LOCALISATION"
- new_type_remnant_plural:0 "NO_USE_LOCALISATION"
+
+# 公民权
+ citizenship_GF_doll_full:0 "完整公民权利"
+ citizenship_GF_doll_full_tooltip:0 "人形能够自由地行使政治权利，并且§G允许§!人形产生领袖。"
+ citizenship_GF_doll_full_tooltip_delayed:0 "§L人形被视为[from.GetAdj]社会中平等的一员，她们的诉求、需要必须得到尊重，享有一个自由公民应享有的一切。§!"
+
+ citizenship_GF_doll_limited:0 "有限公民权利"
+ citizenship_GF_doll_limited_tooltip:0 "人形享有一定的自由，但政治权利较低，§G允许§!人形产生领袖。"
+ citizenship_GF_doll_limited_tooltip_delayed:0 "§L§!"
+
+ citizenship_GF_doll_servitude:0 "人形侍从"
+ citizenship_GF_doll_servitude_tooltip:0 ""
+ citizenship_GF_doll_servitude_tooltip_delayed:0 "§L人形存在的意义就是为她们的主人服务。§!"
+
+ citizenship_GF_doll_purge:0 "$citizenship_purge$"
+ citizenship_GF_doll_purge_tooltip:0 "$citizenship_purge_tooltip$"
+ citizenship_GF_doll_purge_tooltip_delayed:0 "$citizenship_purge_tooltip_delayed$"
