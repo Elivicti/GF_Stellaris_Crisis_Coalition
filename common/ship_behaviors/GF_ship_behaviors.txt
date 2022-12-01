@@ -20,7 +20,7 @@ ship_behavior = {
 	preferred_attack_range = 200
 	formation_distance = 240
 	return_to_formation_distance = 250
-
+	source_target_anchor_factor = 1.0
 	combat_target_anchor = root
 
 	collision_awareness = 0.2
@@ -34,14 +34,16 @@ ship_behavior = {
 
 ship_behavior = {
 	name = "GF_ogas_carrier"
-	preferred_attack_range = 240
-	formation_distance = 300
-	return_to_formation_distance = 320
+	preferred_attack_range = max
+	formation_distance = median
+	return_to_formation_distance = max
+	source_target_anchor_factor = 1.0
+	combat_target_anchor = root
 	
 	collision_awareness = 1
 	collision_radius = 20
 	collision_strafe = 10
-	attack_move_pattern = follow 
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = stay_at_range
 
 	desc = "GF_OGAS_CARRIER_BEHAVIOR_DESC"
