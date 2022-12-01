@@ -10,7 +10,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 420
-		ship_armor_hardening_add = 0.05
+		ship_armor_hardening_add = 0.025
 	}
 	resources = {
 		category = GF_ship_collapse_armors
@@ -36,7 +36,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 1000
-		ship_armor_hardening_add = 0.05
+		ship_armor_hardening_add = 0.025
 	}
 	resources = {
 		category = GF_ship_collapse_armors
@@ -62,7 +62,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_ship_collapse_armor" }
 	modifier = {
 		ship_armor_add = 2400
-		ship_armor_hardening_add = 0.05
+		ship_armor_hardening_add = 0.025
 	}
 	resources = {
 		category = GF_ship_collapse_armors
