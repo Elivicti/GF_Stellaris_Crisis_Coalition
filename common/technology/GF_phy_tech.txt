@@ -368,7 +368,7 @@ GF_tech_combat_ogas_computers = {
 	is_rare = yes
 	
 	prerequisites = {
-		"GF_tech_collapse_energy_lance"
+		"GF_tech_collapse_relic_tech"
 	}
 	weight = 0
 	weight_modifier = {
