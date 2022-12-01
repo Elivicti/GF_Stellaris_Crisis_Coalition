@@ -8,9 +8,8 @@ GF_sf_site_1 = {
 	weight = 0
 	allow = {
 		exists = leader
-		leader = {
-			leader_class = scientist
-		}
+		leader = { leader_class = scientist }
+		owner = { has_origin = GF_origin_commonwealth }
 	}
 	visible = {
 		owner = { has_origin = GF_origin_commonwealth }
@@ -49,9 +48,8 @@ GF_sf_site_2 = {
 	weight = 0
 	allow = {
 		exists = leader
-		leader = {
-			leader_class = scientist
-		}
+		leader = { leader_class = scientist }
+		owner = { has_origin = GF_origin_commonwealth }
 	}
 	visible = {
 		owner = { has_origin = GF_origin_commonwealth }
@@ -95,9 +93,8 @@ GF_sf_site_3 = {
 	weight = 0
 	allow = {
 		exists = leader
-		leader = {
-			leader_class = scientist
-		}
+		leader = { leader_class = scientist }
+		owner = { has_origin = GF_origin_commonwealth }
 	}
 	visible = {
 		owner = { has_origin = GF_origin_commonwealth }
