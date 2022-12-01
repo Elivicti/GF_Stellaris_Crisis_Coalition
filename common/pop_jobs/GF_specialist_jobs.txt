@@ -140,9 +140,9 @@ GF_programmer = {
 	}
 
 	resources = {
-		category = planet_administrators
+		category = GF_planet_jobs_doll_programmers
 		produces = {
-			gf_core_chip = 1
+			gf_core_chip = 2
 		}
 		upkeep = {
 			energy = 1
