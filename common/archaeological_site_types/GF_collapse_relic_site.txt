@@ -22,8 +22,8 @@ GF_collapse_relic_site_0 = {
 
 	on_roll_failed = {
 		from = {
-			standard_archaeological_site_on_roll_failed = { 
-				RANDOM_EVENTS = all_random_events 
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
 			}
 		}
 	}
@@ -74,8 +74,8 @@ GF_collapse_relic_site_1 = {
 
 	on_roll_failed = {
 		from = {
-			standard_archaeological_site_on_roll_failed = { 
-				RANDOM_EVENTS = all_random_events 
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
 			}
 		}
 	}
@@ -121,8 +121,8 @@ GF_collapse_relic_site_2 = {
 
 	on_roll_failed = {
 		from = {
-			standard_archaeological_site_on_roll_failed = { 
-				RANDOM_EVENTS = all_random_events 
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
 			}
 		}
 	}
@@ -168,8 +168,8 @@ GF_collapse_relic_site_3 = {
 
 	on_roll_failed = {
 		from = {
-			standard_archaeological_site_on_roll_failed = { 
-				RANDOM_EVENTS = all_random_events 
+			standard_archaeological_site_on_roll_failed = {
+				RANDOM_EVENTS = all_random_events
 			}
 		}
 	}
