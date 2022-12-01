@@ -180,6 +180,7 @@ GF_doll_work_policy = {
 				fail_text = GF_doll_work_policy_doll_has_full_right
 				NOT = { has_policy_flag = GF_doll_right_full }
 			}
+			has_technology = GF_tech_mind_upgrade_1
 			OR = {
 				has_policy_flag = GF_doll_right_limited
 				has_policy_flag = GF_doll_right_servitude
