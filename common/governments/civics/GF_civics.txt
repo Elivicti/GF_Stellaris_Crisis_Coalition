@@ -84,6 +84,7 @@ GF_civic_GK = {
 	description = "GF_civic_GK_effects"
 	modification = no
 	modifier = {
+		envoys_add = 2
 		trade_value_mult = 0.2
 		country_enclave_capacity_add = 2
 		planet_administrators_produces_mult = -0.05
