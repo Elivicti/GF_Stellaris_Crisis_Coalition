@@ -188,7 +188,7 @@ planet_event = {
 					limit = { has_trait = GF_trait_doll }
 					set_citizenship_type = {
 						country = root
-						type = citizenship_GF_doll_servitude
+						type = citizenship_robot_servitude
 						cooldown = yes
 					}
 				}
