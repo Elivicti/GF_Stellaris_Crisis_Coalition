@@ -19,6 +19,15 @@ GF_doll = {
 	graphical_culture = GF_doll_01
 	move_pop_sound_effect = "robot_pops_move"
 	trait = "GF_trait_doll"
+
+	resources = {
+		category = planet_pops
+		upkeep = {
+			trigger = { is_being_purged = no }
+			food = 0.5
+			gf_core_chip = 0.01
+		}
+	}
 }
 
 GF_new_type = {
