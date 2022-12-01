@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
 ############################
- weapon_type_GF_collapsed:0 "坍塌武器"
+ weapon_type_GF_collapsed:0 "§E坍塌粒子§!"
 
  GF_COLLAPSE_ARMOR:0 "坍塌零素装甲"
  GF_COLLAPSE_ARMOR_DESC:0 "$GF_tech_ship_collapse_armor_desc$"
@@ -51,7 +51,7 @@
  GF_OGAS_COMPUTER_PLATFORM:0 "OGAS作战中枢（平台）"
 
  GF_OGAS_ARTILLERY_BEHAVIOR_DESC:0 "§H炮击战术：§!舰船会停留在距离敌人较远的位置（§Y200§!）上并使用其远程武器来攻击目标。"
- GF_OGAS_CARRIER_BEHAVIOR_DESC:0 "§H航母战术：§!舰船会停留在超视距（§Y240§!）打击敌人，并在战斗开始后尝试后撤。"
+ GF_OGAS_CARRIER_BEHAVIOR_DESC:0 "§H航母战术：§!舰船会停留在其机库的最远交战半径上打击敌人，并在战斗时尝试与敌人保持距离。"
  GF_OGAS_FREE_BEHAVIOR_DESC:0 "§H自由战术：§!舰船会直接听从你的指挥，无视一切敌人执行命令。"
 
 
