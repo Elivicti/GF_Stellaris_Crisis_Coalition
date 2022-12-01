@@ -100,11 +100,19 @@ GF_tech_mind_upgrade_1 = {
 			has_policy_flag = ai_outlawed
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_industry"
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 10
+		}
+		modifier = {
+			factor = 10
+			years_passed > 15
 		}
 	}
 
@@ -151,12 +159,19 @@ GF_tech_mind_upgrade_2 = {
 			has_policy_flag = ai_outlawed
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.5
 			research_leader = {
 				area = engineering
 				has_trait = "leader_trait_expertise_industry"
-				has_level > 3
 			}
+		}
+		modifier = {
+			factor = 5
+			years_passed > 20
+		}
+		modifier = {
+			factor = 10
+			years_passed > 25
 		}
 	}
 
