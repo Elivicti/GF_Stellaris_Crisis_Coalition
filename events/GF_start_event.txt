@@ -118,6 +118,21 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_ogas.100 days = 5 }
 			country_event = { id = GF_elid.0 days = 30 } # initialize elid attack events
+
+			every_owned_species = {
+				if = {
+					limit = { has_trait = GF_trait_doll }
+					# 设置人形权利
+					set_citizenship_type = {
+						country = root
+						type = citizenship_robot_servitude
+						cooldown = yes
+					}
+				}
+				else = {
+					set_species_flag = flag_GF_GAVIRUL_species
+				}
+			}
 		}
 	}
 }
@@ -177,23 +192,9 @@ planet_event = {
 				change_species = last_created_species
 			}
 		}
-		owner = {
-			every_owned_species = {
-				if = {
-					limit = { is_same_species = owner_main_species }
-					set_species_flag = flag_GF_GAVIRUL_species
-				}
-				# 设置人形权利
-				else_if = {
-					limit = { has_trait = GF_trait_doll }
-					set_citizenship_type = {
-						country = root
-						type = citizenship_robot_servitude
-						cooldown = yes
-					}
-				}
-			}
-		}
+		# owner = {
+			
+		# }
 		while = {
 			count = 2
 			create_pop = { species = owner_main_species }
