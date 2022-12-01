@@ -1,3 +1,51 @@
+
+
+
+
+#Root = planet
+#This = species
+species_can_live_on_planet = {
+	exists = root #somehow this appeared in the error log. No idea how!
+	NAND = {
+		root = {
+			OR = {
+				is_planet_class = pc_machine
+				is_planet_class = pc_GF_sf_machine		# GF 神秘机械星球
+			}
+		}
+		NOR = {
+			has_trait = GF_trait_doll					# GF 人形
+
+			has_trait = trait_machine_unit
+			has_trait = trait_mechanical
+			AND = {
+				has_trait = trait_cybernetic
+				exists = root.owner
+				root.owner = {
+					has_authority = auth_machine_intelligence
+					has_civic = civic_machine_assimilator # Assimilator empire
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			root = { is_planet_class = pc_hive }
+		}
+		OR = {
+			has_trait = trait_hive_mind
+			AND = { #Necrophage Hive Mind can have Necrophytes
+				exists = root.owner
+				root.owner = {
+					is_hive_empire = yes
+					has_origin = origin_necrophage
+					prev = { species_can_be_necrophaged = yes }
+				}
+			}
+		}
+	}
+}
+
 #Checks whether any leaders (scientists etc) can be formed from this pop
 #Root = country
 #This = pop
@@ -77,6 +125,182 @@ can_generate_military_leader_from_pop = {
 	}
 }
 
+# Checks if a pop can procreate
+# This = Species
+# Root = Planet
+can_species_procreate = {
+	is_sapient = yes
+	NOR = {
+		has_trait = trait_machine_unit
+		has_trait = trait_mechanical
+		has_trait = GF_trait_doll	# GF
+	}
+	NAND = {
+		root = { has_modifier = slave_colony }
+		NOT = { has_citizenship_type = { type = citizenship_slavery country = root.owner } }
+	}
+	if = {
+		limit = {
+			has_trait = trait_necrophage
+		}
+		NOT = {
+			root = {
+				any_owned_species = {
+					has_population_control = { country = root.owner type = no }
+					species_can_be_necrophaged = yes
+				}
+			}
+		}
+	}
+	NOT = { has_species_flag = nivlac_no_procreation }
+}
+
+# Checks if a pop can be assembled
+# This = Species
+# Root = Planet
+can_species_be_assembled = {
+	is_sapient = yes
+	OR = {
+		AND = {
+			is_robotic = yes
+			root = {
+				check_modifier_value = {
+					modifier = planet_pop_assembly_add
+					value > 0
+				}
+			}
+
+			if = {	# GF
+				limit = { has_trait = GF_trait_doll }
+				root.owner = {
+					OR = {
+						has_authority = GF_auth_commonwealth
+						is_valid_GF_OGAS_subnet = yes
+					}
+				}
+			}
+		}
+		AND = {
+			is_organic_species = yes
+			if = {
+				limit = {
+					root.owner = { is_hive_empire = yes }
+				}
+				has_trait = trait_hive_mind
+			}
+			else_if = {
+				limit = { has_budding_trait = yes }
+				root = {
+					any_owned_species = { is_exact_same_species = prevprev }
+				}
+			}
+			else_if = {
+				limit = { has_trait = trait_tiyanki }
+				root = {
+					any_owned_species = { is_exact_same_species = prevprev }
+				}
+			}
+			else_if = {
+				limit = {
+					root.owner = {
+						has_tradition = tr_cybernetics_assembly_standards
+						has_policy_flag = roboticist_output_build_cyborgs
+					}
+				}
+				has_trait = trait_cybernetic
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_trait = trait_clone_soldier_infertile
+						has_trait = trait_clone_soldier_infertile_full_potential
+					}
+				}
+				root = {
+					# Event 'clones.3' should cover this, but extra safety check.
+					has_building = building_clone_army_clone_vat
+					NOT = {
+						check_variable = {
+							which = clone_pops_missing
+							value = 0
+						}
+					}
+				}
+			}
+			else = {
+				root = {
+					OR = {
+						has_building = building_clone_vats
+						has_modifier = tiyanki_trophy
+						owner = { has_modifier = syamelles_curse }
+						AND = {
+							has_building = building_posthumous_employment_center
+							owner = { has_civic = civic_permanent_employment }
+						}
+						has_planet_flag = can_organic_assemble_flag #for mod compatibility
+					}
+				}
+			}
+		}
+	}
+	has_population_control = {
+		type = no
+		country = root.owner
+	}
+}
+
+
+# This = country
+can_build_branch_offices = {
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_MEGACORP
+		OR = {
+			has_authority = auth_corporate
+			has_civic = civic_galactic_sovereign_megacorp
+
+			has_civic = GF_civic_GK	# GF
+		}
+	}
+}
+
+# This = country
+can_support_branch_offices = {
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
+		NOR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+	}
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
+		NOR = {
+			has_authority = auth_corporate
+			has_civic = civic_galactic_sovereign_megacorp
+
+			has_civic = GF_civic_GK	# GF
+		}
+	}
+	custom_tooltip = {
+		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
+		is_regular_empire = yes
+	}
+}
+
+
+# This = species one
+# Root = species two
+can_crossbreed_species = {
+	is_crossbreeding_possible = yes
+	root = { is_crossbreeding_possible = yes }
+	NOR = {
+		is_subspecies = root
+		root = { is_subspecies = prev }
+
+		has_trait = GF_trait_doll	# GF
+	}
+}
+
 #this/root = pop
 #checked if job's possible_precalc = can_fill_specialist_job
 can_fill_specialist_job = {
@@ -94,7 +318,6 @@ can_fill_specialist_job = {
 		}
 	}
 }
-
 #this/root = pop
 #checked if job's possible_precalc = can_fill_ruler_job
 can_fill_ruler_job = {
@@ -153,167 +376,6 @@ can_fill_ruler_job = {
 	}
 }
 
-
-# Checks if a pop can procreate
-# This = Species
-# Root = Planet
-can_species_procreate = {
-	is_sapient = yes
-	NOR = {
-		has_trait = trait_machine_unit
-		has_trait = trait_mechanical
-		has_trait = GF_trait_doll	# GF
-	}
-	NAND = {
-		root = { has_modifier = slave_colony }
-		NOT = { has_citizenship_type = { type = citizenship_slavery country = root.owner } }
-	}
-	if = {
-		limit = {
-			has_trait = trait_necrophage
-		}
-		NOT = {
-			root = {
-				any_owned_species = {
-					has_population_control = { country = root.owner value = no }
-					species_can_be_necrophaged = yes
-				}
-			}
-		}
-	}
-	NOT = { has_species_flag = nivlac_no_procreation }
-}
-
-# Checks if a pop can be assembled
-# This = Species
-# Root = Planet
-can_species_be_assembled = {
-	is_sapient = yes
-	OR = {
-		AND = {
-			is_robotic = yes
-			root = {
-				check_modifier_value = {
-					modifier = planet_pop_assembly_add
-					value > 0
-				}
-			}
-
-			if = {	# GF
-				limit = { has_trait = GF_trait_doll }
-				root.owner = {
-					OR = {
-						has_authority = GF_auth_commonwealth
-						is_valid_GF_OGAS_subnet = yes
-					}
-				}
-			}
-		}
-		AND = {
-			is_organic_species = yes
-			if = {
-				limit = {
-					root.owner = { is_hive_empire = yes }
-				}
-				has_trait = trait_hive_mind
-			}
-			else_if = {
-				limit = { has_budding_trait = yes }
-				root = {
-					any_owned_species = { is_exact_same_species = prevprev }
-				}
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_trait = trait_clone_soldier_infertile
-						has_trait = trait_clone_soldier_infertile_full_potential
-					}
-				}
-				root = {
-					# Event 'clones.3' should cover this, but extra safety check.
-					has_building = building_clone_army_clone_vat
-					NOT = {
-						check_variable = {
-							which = clone_pops_missing
-							value = 0
-						}
-					}
-				}
-			}
-			else = {
-				root = {
-					OR = {
-						has_building = building_clone_vats
-						has_modifier = tiyanki_trophy
-						owner = { has_modifier = syamelles_curse }
-						AND = {
-							has_building = building_posthumous_employment_center
-							owner = { has_civic = civic_permanent_employment }
-						}
-						has_planet_flag = can_organic_assemble_flag #for mod compatibility
-					}
-				}
-			}
-		}
-	}
-	has_population_control = {
-		value = no
-		country = root.owner
-	}
-}
-
-# This = species one
-# Root = species two
-can_crossbreed_species = {
-	is_crossbreeding_possible = yes
-	root = { is_crossbreeding_possible = yes }
-	NOR = {
-		is_subspecies = root
-		root = { is_subspecies = prev }
-
-		has_trait = GF_trait_doll	# GF
-	}
-}
-
-
-# This = country
-can_build_branch_offices = {
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_MEGACORP
-		OR = {
-			has_authority = auth_corporate
-			has_civic = civic_galactic_sovereign_megacorp
-
-			has_civic = GF_civic_GK	# GF
-		}
-	}
-}
-
-# This = country
-can_support_branch_offices = {
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
-		NOR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
-		NOR = {
-			has_authority = auth_corporate
-			has_civic = civic_galactic_sovereign_megacorp
-
-			has_civic = GF_civic_GK	# GF
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
-		is_regular_empire = yes
-	}
-}
-
 # This = leader, leader we'd like to trade
 # Root = country, country that owns the leader currently
 # From = country, country that would receive the leader
@@ -325,16 +387,28 @@ can_trade_leader = {
 			# The subject and overlord must both be regular empires, machine intelligences or hive-minds.
 			OR = {
 				AND = {
-					ROOT = { is_regular_empire = yes }
-					FROM = { is_regular_empire = yes }
+					ROOT = {
+						is_regular_empire = yes
+					}
+					FROM = {
+						is_regular_empire = yes
+					}
 				}
 				AND = {
-					ROOT = {has_authority = auth_machine_intelligence }
-					FROM = { has_authority = auth_machine_intelligence }
+					ROOT = {
+						has_authority = auth_machine_intelligence
+					}
+					FROM = {
+						has_authority = auth_machine_intelligence
+					}
 				}
 				AND = {
-					ROOT = { has_authority = auth_hive_mind }
-					FROM = { has_authority = auth_hive_mind }
+					ROOT = {
+						has_authority = auth_hive_mind
+					}
+					FROM = {
+						has_authority = auth_hive_mind
+					}
 				}
 			}
 			# The overlord can't be a fallen or awakened empire.
@@ -360,51 +434,6 @@ can_trade_leader = {
 			}
 			# 是机械领袖
 			this = { species = { is_robotic = yes } }
-		}
-	}
-}
-
-
-#Root = planet
-#This = species
-species_can_live_on_planet = {
-	exists = root #somehow this appeared in the error log. No idea how!
-	NAND = {
-		root = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_GF_sf_machine		# GF 神秘机械星球
-			}
-		}
-		NOR = {
-			has_trait = GF_trait_doll					# GF 人形
-
-			has_trait = trait_machine_unit
-			has_trait = trait_mechanical
-			AND = {
-				has_trait = trait_cybernetic
-				exists = root.owner
-				root.owner = {
-					has_authority = auth_machine_intelligence
-					has_civic = civic_machine_assimilator # Assimilator empire
-				}
-			}
-		}
-	}
-	if = {
-		limit = {
-			root = { is_planet_class = pc_hive }
-		}
-		OR = {
-			has_trait = trait_hive_mind
-			AND = { #Necrophage Hive Mind can have Necrophytes
-				exists = root.owner
-				root.owner = {
-					is_hive_empire = yes
-					has_origin = origin_necrophage
-					prev = { species_can_be_necrophaged = yes }
-				}
-			}
 		}
 	}
 }
