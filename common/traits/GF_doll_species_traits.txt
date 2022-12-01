@@ -74,7 +74,7 @@ GF_trait_liquid_metal_skeleton = {
 	allowed_archetypes = { GF_ANDROID }
 	icon = "gfx/interface/icons/traits/doll/skeleton.dds"
 	modifier = {
-		pop_assembly_speed = 0.15
+		planet_pop_assembly_mult = 0.15
 	}
 }
 GF_trait_adapted_skin = {
