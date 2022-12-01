@@ -1,10 +1,13 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20221117$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20221201$\n\n$GF_Stellaris_Update_Log_Tip$"
 
- GF_Stellaris_Update_Log_Tip:0 "要获取更详尽的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+ GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
 
-# 2022.11.xx
+# 2022.12.1
+ GF_Stellaris_Log_20221201:0 "1. 适配群星3.6.0\n2. 修复了部分问题\n3. 人形现在需要£gf_core_chip£§Y心智核心§!作为维护费\n4. 坍塌科技相关的部分舰船部件得到了加强\n5. 提高了£engineering£§Y初步心智算法解析§!的权重"
+
+# 2022.11.17
  GF_Stellaris_Log_20221117:0 "1. 添加附属国特化：§YOGAS子网§!\n2. 调整了部分图标，优化了部分文本\n3. 修复§Y人形维护专业化流程§!科技的修正不生效的问题\n4. 现在仅当组装人形时，人形技师才会有心智核心作为维护费了\n5. §H重要：§!弃用了SUGL作为前置，如果你仍然在使用它，可能会导致问题"
 
 # 2022.9.7
