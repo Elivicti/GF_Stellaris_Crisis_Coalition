@@ -43,3 +43,120 @@ defined_text = {
 	default = GF_text_OGAS_connection_title_subnet
 	
 }
+
+
+defined_text = {
+	name = GF_Get_Archive_Title
+
+	text = {
+		localization_key = GF_ogas.12200.a
+		trigger = { has_country_flag = GF_history_archive_flag_a }
+	}
+	text = {
+		localization_key = GF_ogas.12200.b
+		trigger = { has_country_flag = GF_history_archive_flag_b }
+	}
+	text = {
+		localization_key = GF_ogas.12200.c
+		trigger = { has_country_flag = GF_history_archive_flag_c }
+	}
+	text = {
+		localization_key = GF_ogas.12200.d
+		trigger = { has_country_flag = GF_history_archive_flag_d }
+	}
+	text = {
+		localization_key = GF_ogas.12200.e
+		trigger = { has_country_flag = GF_history_archive_flag_e }
+	}
+	text = {
+		localization_key = GF_ogas.12200.f
+		trigger = { has_country_flag = GF_history_archive_flag_f }
+	}
+
+	default = BLANK_STRING
+}
+
+defined_text = {
+	name = GF_Get_OGAS_Work_Governer_Action
+	text = {
+		localization_key = GF_OGAS_Work_Action_Disable
+		trigger = { has_modifier = GF_ogas_mode_governor }
+	}
+	default = GF_OGAS_Work_Action_Enable
+}
+defined_text = {
+	name = GF_Get_OGAS_Work_Governer_Response
+	text = {
+		localization_key = GF_OGAS_Work_Governer_Disable_Response
+		trigger = { has_modifier = GF_ogas_mode_governor }
+	}
+	default = GF_OGAS_Work_Governer_Enable_Response
+}
+
+defined_text = {
+	name = GF_Get_OGAS_Work_Produce_Action
+	text = {
+		localization_key = GF_OGAS_Work_Action_Disable
+		trigger = { has_modifier = GF_ogas_mode_produce }
+	}
+	default = GF_OGAS_Work_Action_Enable
+}
+defined_text = {
+	name = GF_Get_OGAS_Work_Produce_Response
+	text = {
+		localization_key = GF_OGAS_Work_Produce_Disable_Response
+		trigger = { has_modifier = GF_ogas_mode_produce }
+	}
+	default = GF_OGAS_Work_Produce_Enable_Response
+}
+
+defined_text = {
+	name = GF_Get_OGAS_Work_Upkeep_Action
+	text = {
+		localization_key = GF_OGAS_Work_Action_Disable
+		trigger = { has_modifier = GF_ogas_mode_upkeep }
+	}
+	default = GF_OGAS_Work_Action_Enable
+}
+defined_text = {
+	name = GF_Get_OGAS_Work_Upkeep_Response
+	text = {
+		localization_key = GF_OGAS_Work_Upkeep_Disable_Response
+		trigger = { has_modifier = GF_ogas_mode_upkeep }
+	}
+	default = GF_OGAS_Work_Upkeep_Enable_Response
+}
+
+defined_text = {
+	name = GF_Get_OGAS_Work_War_Action
+	text = {
+		localization_key = GF_OGAS_Work_Action_Disable
+		trigger = { has_modifier = GF_ogas_mode_war }
+	}
+	default = GF_OGAS_Work_Action_Enable
+}
+defined_text = {
+	name = GF_Get_OGAS_Work_War_Response
+	text = {
+		localization_key = GF_OGAS_Work_War_Disable_Response
+		trigger = { has_modifier = GF_ogas_mode_war }
+	}
+	default = GF_OGAS_Work_War_Enable_Response
+}
+
+defined_text = {
+	name = GF_Get_OGAS_Work_Research_Action
+	text = {
+		localization_key = GF_OGAS_Work_Action_Disable
+		trigger = { has_modifier = GF_ogas_mode_research }
+	}
+	default = GF_OGAS_Work_Action_Enable
+}
+defined_text = {
+	name = GF_Get_OGAS_Work_Research_Response
+	text = {
+		localization_key = GF_OGAS_Work_Research_Disable_Response
+		trigger = { has_modifier = GF_ogas_mode_research }
+	}
+	default = GF_OGAS_Work_Research_Enable_Response
+}

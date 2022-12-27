@@ -414,29 +414,36 @@ GF_deactivate_OGAS_subnet = {
 
 # scope = country
 GF_set_ogas_mission = {
-	hidden_effect = {
-		set_timed_country_flag = { flag = GF_ogas_work_mode days = @GF_OGAS_mission_duration }
-		country_event = { id = GF_ogas.11001 days = @GF_OGAS_mission_duration }
-		if = {
-			limit = { has_country_flag = flag_GF_ogas_owner }
+	if = {
+		limit = { has_country_flag = flag_GF_ogas_owner }
+		add_modifier = {
+			modifier = $modifier$
+			multiplier = v_GF_ogas_level
+		}
+		hidden_effect = {
 			change_variable = {
 				which = v_GF_ogas_threads_used
 				value = 1
 			}
 		}
 	}
-	if = {
-		limit = { has_country_flag = flag_GF_ogas_owner }
-		add_modifier = {
-			modifier = $modifier$
-			days = @GF_OGAS_mission_duration
-			multiplier = v_GF_ogas_level
-		}
-	}
 	else = {
 		add_modifier = {
 			modifier = $modifier$
 			days = @GF_OGAS_mission_duration
+		}
+	}
+}
+
+GF_end_ogas_mission = {
+	if = {
+		limit = { has_modifier = $modifier$ }
+		remove_modifier = $modifier$
+		hidden_effect = {
+			change_variable = {
+				which = v_GF_ogas_threads_used
+				value = -1
+			}
 		}
 	}
 }
