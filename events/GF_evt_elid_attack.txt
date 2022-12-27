@@ -816,6 +816,7 @@ country_event = {
 	}
 
 	after = {
+		set_country_flag = flag_GF_home_world_contaminated_zone_cleared
 		event_target:GF_home_world = {
 			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			remove_planet_flag = flag_p_GF_battle_in_black_zone
