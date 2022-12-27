@@ -112,7 +112,7 @@ building_GF_zener_network_center_2 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 3
+		job_GF_liaison_add = 2
 		species_empire_size_mult = -0.1
 	}
 
@@ -186,7 +186,7 @@ building_GF_zener_network_center_3 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 5
+		job_GF_liaison_add = 3
 		species_empire_size_mult = -0.15
 	}
 
@@ -287,7 +287,7 @@ building_GF_zener_network_center_4 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 7
+		job_GF_liaison_add = 4
 		species_empire_size_mult = -0.2
 	}
 
