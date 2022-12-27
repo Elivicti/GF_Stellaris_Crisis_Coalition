@@ -1,6 +1,6 @@
 GF_auth_commonwealth = {
 	has_heir = no
-	has_factions = no
+	has_factions = yes
 	can_reform = no
 	election_type = none
 	has_agendas = no
