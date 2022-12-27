@@ -1,0 +1,97 @@
+GF_situation_collapse_liquid_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+	on_start = {
+	}
+	on_abort = {
+		hidden_effect = { destroy_situation = this }
+	}
+
+	start_value = 50
+	stages = {
+		deficit_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+		}
+	}
+
+	abort_trigger = {
+		owner = { NOT = { has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid } } }
+	}
+
+	on_progress_complete = {
+		# country_defaulted_in_situation_tooltip = yes
+		# hidden_effect = {
+		# 	situation_event = { id = deficit.110 }
+		# }
+		hidden_effect = { destroy_situation = this }
+	}
+	on_fail = {
+		# custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = { destroy_situation = this }
+	}
+	monthly_progress = {
+		base = 0
+		# modifier = {
+		# 	add = value:deficit_situation_progress_value|RESOURCE|energy|
+		# 	desc = string_expenditures_greater_than_income_energy
+		# 	owner = { has_actual_deficit = { RESOURCE = energy } }
+		# }
+		# modifier = {
+		# 	subtract = 5
+		# 	desc = string_not_in_deficit_energy
+		# 	owner = {
+		# 		resource_income_compare = {
+		# 			resource = energy
+		# 			value >= 0
+		# 		}
+		# 	}
+		# }
+		# modifier = {
+		# 	subtract = 1
+		# 	desc = string_resource_reserves_energy
+		# 	owner = {
+		# 		has_negative_income_with_stockpile = { RESOURCE = energy }
+		# 	}
+		# }
+	}
+	approach = {
+		name = GF_deficit_collapse_liquid_approach
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		on_select = {
+			if = {
+				limit = { owner = { has_authority = auth_GF_paradeus } } # 涅托
+				custom_tooltip = GF_deficit_approach_nyto
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				# owner = { has_authority = auth_GF_paradeus } # 涅托
+			}
+			modifier = {
+				planet_stability_add = -200
+				country_produces_mult = -0.25
+			}
+		}
+
+		triggered_modifier = {
+			potential = {
+				owner = { has_authority = GF_auth_commonwealth }
+			}
+			modifier = { }
+		}
+
+		ai_weight = {
+			base = 1
+		}
+	}
+}
