@@ -48,6 +48,7 @@ country_event = {
 		add_resource = { gf_core_chip = 100 }
 
 		# Inititalize country's basic characteristics
+		set_country_flag = suppress_vanilla_factions	# 禁用原版派系
 		give_technology = { message = no tech = tech_powered_exoskeletons }
 		give_technology = { message = no tech = GF_tech_doll_assemble }
 		switch = {
@@ -111,14 +112,15 @@ country_event = {
 			set_leader_flag = flag_GF_ogas_leader
 			save_global_event_target_as = GF_ogas_leader
 		}
+
+		# events
+		country_event = { id = GF_ogas.100 days =  5 }
+		country_event = { id = GF_elid.0   days = 30 } # initialize elid attack events
 	}
 
 	option = {
 		name = GF_start.1.a
 		hidden_effect = {
-			country_event = { id = GF_ogas.100 days = 5 }
-			country_event = { id = GF_elid.0 days = 30 } # initialize elid attack events
-
 			every_owned_species = {
 				if = {
 					limit = { has_trait = GF_trait_doll }
@@ -129,9 +131,7 @@ country_event = {
 						cooldown = yes
 					}
 				}
-				else = {
-					set_species_flag = flag_GF_GAVIRUL_species
-				}
+				else = { set_species_flag = flag_GF_GAVIRUL_species }
 			}
 		}
 	}
@@ -167,6 +167,9 @@ planet_event = {
 			which = v_GF_armored_train_capacity
 			value = 2
 		}
+
+		remove_building = building_commercial_zone
+		add_building = building_GF_42lab_1
 	}
 }
 
@@ -192,9 +195,6 @@ planet_event = {
 				change_species = last_created_species
 			}
 		}
-		# owner = {
-			
-		# }
 		while = {
 			count = 2
 			create_pop = { species = owner_main_species }
