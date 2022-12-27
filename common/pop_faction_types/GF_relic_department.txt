@@ -1,0 +1,163 @@
+# 遗迹署
+GF_relic_department = {
+	election_header = "GFX_faction_header_blue"
+	guiding_ethic = ethic_militarist
+
+	unique = yes
+	support_multiplier = 1
+
+	resources = { 
+		category = pop_factions
+		produces = {
+			influence = 0.5
+			physics_research = 1
+			society_research = 1
+			engineering_research = 1
+		}
+	}
+
+	is_potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+
+	can_join_pre_triggers = {
+		is_being_purged = no
+		is_enslaved = no
+		is_sapient = yes
+	}
+
+	can_join_faction = {
+		is_shackled_robot = no
+		can_think = yes
+
+		if = {
+			limit = { has_trait = GF_trait_doll }
+			owner = {
+				OR = {
+					has_policy_flag = GF_doll_right_full
+					has_policy_flag = GF_doll_right_limited
+				}
+			}
+		}
+	}
+
+	attraction = {
+		base = 150
+		modifier = {
+			factor = 10000
+			exists = from
+			from = {
+				num_pops < 8
+			}
+		}
+	}
+
+	leader = {
+		base = 0
+		modifier = {
+			set = 100
+			has_leader_flag = flag_GF_ogas_leader
+		}
+	}
+
+	on_create = {
+		pop_faction_event = { id = GF_factions.1 }
+	}
+
+	on_destroy = {
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_research_relic_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_research_relic_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_research_relic_desc"
+		
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			always = yes
+		}
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -0.001
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_collapsetech_weaponize_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_collapsetech_weaponize_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_collapsetech_weaponize_desc"
+		
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_technology = GF_tech_collapsetech_weaponize
+				has_technology = GF_tech_collapse_energy_lance
+			}
+		}
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_clear_contaminated_zone_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_clear_contaminated_zone_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_clear_contaminated_zone_desc"
+
+		potential = {
+			exists = owner
+			owner = { has_country_flag = flag_GF_recover_plan_initiated }
+		}
+
+		trigger = {
+			owner = {
+				has_country_flag = flag_GF_home_world_contaminated_zone_cleared
+			}
+		}
+
+		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_research_relic_site_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_research_relic_site_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_research_relic_site_desc"
+
+		potential = {
+			exists = owner
+			owner = { has_country_flag = flag_GF_discovered_relic_site }
+		}
+
+		trigger = {
+			owner = { has_country_flag = flag_GF_collapse_relic_surveyed }
+		}
+
+		fulfilled_effect = 10
+		unfulfilled_effect = -0.001
+	}
+
+	actions = {
+		
+	}
+}

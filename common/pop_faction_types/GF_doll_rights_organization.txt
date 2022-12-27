@@ -1,0 +1,456 @@
+# # 人形权利组织
+GF_doll_rights_organization = {
+	election_header = "GFX_faction_header_blue"
+	guiding_ethic = ethic_egalitarian
+
+	unique = yes
+	support_multiplier = 1
+
+	resources = { 
+		category = pop_factions
+		produces = {
+			unity = 1.5
+		}
+		produces = {
+			trigger = { 
+				FROM = { has_valid_civic = civic_shared_burden }
+			}
+			unity = 0.5
+		}
+	}
+
+	is_potential = {
+		years_passed > 3
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_mind_upgrade_1
+	}
+
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+
+	can_join_pre_triggers = {
+		is_being_purged = no
+		is_sapient = yes
+	}
+
+	can_join_faction = {
+		can_think = yes
+		if = {
+			limit = { has_trait = GF_trait_doll }
+			owner = { has_technology = GF_tech_mind_upgrade_1 }
+		}
+	}
+
+	attraction = {
+		base = 100
+		modifier = {
+			factor = 0.1
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		modifier = {
+			factor = 0
+			has_trait = GF_trait_doll
+			owner = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait = GF_trait_doll
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}
+
+	leader = {
+		base = 100
+		modifier = {
+			factor = 0
+			OR = {
+				is_event_leader = yes
+				leader_class = ruler
+			}
+		}
+	}
+
+	on_create = {
+		pop_faction_event = { id = factions.1 }
+	}
+
+	on_destroy = {
+		if = {
+			limit = { has_modifier = promoted_egalitarian }
+			remove_modifier = promoted_egalitarian
+		}
+		if = {
+			limit = { has_modifier = suppressed_egalitarian }
+			remove_modifier = suppressed_egalitarian
+		}
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_doll_full_rights_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_doll_full_rights_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_doll_full_rights_desc"
+		
+		potential = {
+			exists = owner
+			owner = {
+				NOR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+				has_technology = GF_tech_mind_upgrade_2
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_policy_flag = GF_doll_right_full
+			}
+		}
+
+		fulfilled_effect = 10
+		unfulfilled_effect = -5
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_doll_half_rights_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_doll_half_rights_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_doll_half_rights_desc"
+		
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = {
+				OR = {
+					has_policy_flag = GF_doll_right_full
+					has_policy_flag = GF_doll_right_limited
+				}
+			}
+		}
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_doll_job_rights_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_doll_job_rights_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_doll_job_rights_desc"
+		
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = {
+				OR = {
+					has_policy_flag = GF_doll_work_policy_free
+					has_policy_flag = GF_doll_work_policy_high
+				}
+			}
+		}
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+	}
+
+	demand = {
+		title = "GF_FACTION_DEMAND_doll_living_rights_title"
+		unfulfilled_title = "GF_FACTION_DEMAND_doll_living_rights_unfulfilled_title"
+		desc = "GF_FACTION_DEMAND_doll_living_rights_desc"
+		
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = {
+				NOR = {
+					has_policy_flag = GF_run_mode_policy_no_food
+					has_policy_flag = GF_run_mode_policy_overload
+				}
+			}
+		}
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -10
+	}
+
+
+	actions = {
+		embrace_faction = {
+			title = "EMBRACE_FACTION"
+			description = "EMBRACE_FACTION_DESC"
+
+			cost = {
+				unity = 5000
+			}
+
+			potential = {
+				exists = owner
+				owner = {
+					OR = {
+						is_subject = no
+						NOT = { any_agreement = { agreement_preset = preset_dominion } }
+					}
+				}
+			}
+
+			valid = {
+				custom_tooltip = {
+					fail_text = EMBRACE_FACTION_COOLDOWN
+					parameter:empire = {
+						NOT = { has_modifier = embraced_faction_timer }
+					}
+				}
+				support > 0.20
+				parameter:empire = {
+					NOR = {
+						has_ethic = "ethic_fanatic_egalitarian"
+						has_policy_flag = ai_outlawed
+						has_policy_flag = ai_servitude
+					}
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = embraced_faction days = 3600 }
+				
+				parameter:empire = {
+					if = {
+						limit = {
+							OR = {
+								has_ethic = ethic_xenophobe
+								has_ethic = ethic_fanatic_xenophobe
+								NOT = { has_technology = GF_tech_mind_upgrade_2 }
+							}
+						}
+						set_policy = {
+							policy = GF_doll_right_policy
+							option = GF_doll_right_policy_limited
+							cooldown = yes
+						}
+						if = {
+							limit = { has_technology = GF_tech_mind_upgrade_2 }
+							set_policy = {
+								policy = GF_doll_work_policy
+								option = GF_doll_work_policy_high
+								cooldown = yes
+							}
+						}
+						else = {
+							set_policy = {
+								policy = GF_doll_work_policy
+								option = GF_doll_work_policy_middle
+								cooldown = yes
+							}
+						}
+					}
+					else = {
+						set_policy = {
+							policy = GF_doll_right_policy
+							option = GF_doll_right_policy_full
+							cooldown = yes
+						}
+						set_policy = {
+							policy = GF_doll_work_policy
+							option = GF_doll_work_policy_free
+							cooldown = yes
+						}
+					}
+					set_policy = {
+						policy = GF_run_mode_policy
+						option = GF_run_mode_policy_normal
+						cooldown = yes
+					}
+
+					shift_ethic = ethic_egalitarian
+					hidden_effect = {
+						add_modifier = { modifier = embraced_faction_timer days = 3600 }
+						every_pop_faction = {
+							limit = {
+								NOR = {
+									is_same_value = root
+									is_pop_faction_type = GF_relic_department
+								}
+							}
+							add_modifier = { modifier = embraced_another_faction days = 3600 }
+						}
+					}
+				}
+				hidden_effect = {
+					save_event_target_as = TargetFaction
+					parameter:empire = {
+						every_relation = {
+							limit = {
+								is_ai = no
+								is_country_type = default
+								has_communications = prev
+								has_intel_level = {
+									who = prev
+									category = government
+									level >= 1
+								}
+							}
+							country_event = { id = GF_factions.2000 }
+						}
+					}
+				}
+			}
+
+			ai_weight = {
+				base = 1
+				modifier = {
+					factor = 0
+					support < 0.50
+					owner = {
+						has_ethic = ethic_egalitarian
+					}
+				}
+				modifier = {
+					factor = 0
+					owner = { has_valid_civic = civic_fanatic_purifiers }
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						owner = {
+							exists = ruler
+							ruler = {
+								leader_of_faction = progressive
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					owner = {
+						count_pop_faction = {
+							count < 4
+						}
+					}
+				}
+			}
+		}
+		promote_faction = {
+			title = "PROMOTE_FACTION"
+			description = "PROMOTE_FACTION_DESC"
+
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_egalitarian
+						has_modifier = promoted_egalitarian
+					}
+				}
+			}
+
+			valid = {
+				exists = owner
+				parameter:empire = {
+					OR = {
+						has_policy_flag = GF_doll_right_full
+						has_policy_flag = GF_doll_right_limited
+					}
+				}
+			}
+
+			effect = {
+				parameter:empire = {
+					add_modifier = { modifier = promoted_egalitarian days = -1 }
+				}
+			}
+
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_promote_faction = {
+			title = "CANCEL_PROMOTE_FACTION"
+			description = "CANCEL_PROMOTE_FACTION_DESC"
+
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = promoted_egalitarian
+				}
+			}
+
+			effect = {
+				parameter:empire = {
+					remove_modifier = promoted_egalitarian
+				}
+			}
+
+			ai_weight = {
+				base = 0
+			}
+		}
+		suppress_faction = {
+			title = "SUPPRESS_FACTION"
+			description = "SUPPRESS_FACTION_DESC"
+
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_egalitarian
+						has_modifier = promoted_egalitarian
+					}
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = suppressed_faction days = -1 }
+				parameter:empire = {
+					add_modifier = { modifier = suppressed_egalitarian days = -1 }
+				}
+			}
+
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_suppress_faction = {
+			title = "CANCEL_SUPPRESS_FACTION"
+			description = "CANCEL_SUPPRESS_FACTION_DESC"
+
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = suppressed_egalitarian
+				}
+			}
+
+			effect = {
+				remove_modifier = suppressed_faction
+				parameter:empire = {
+					remove_modifier = suppressed_egalitarian
+				}
+			}
+
+			ai_weight = {
+				base = 0
+			}
+		}
+	}
+}

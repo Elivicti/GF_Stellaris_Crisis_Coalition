@@ -1,0 +1,36 @@
+pop_faction_name_parts_list = {
+	key = "GF_faction_names_1"
+	parts = {
+		"GF_faction_name_relic_department" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = GF_relic_department
+		}
+	}
+	format = "{<GF_faction_names_1>}"
+}
+
+
+pop_faction_name_parts_list = {
+	key = "GF_faction_names_2"
+	parts = {
+		"GF_faction_name_doll_rights_organization" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = GF_doll_rights_organization
+		}
+	}
+	format = "{<GF_faction_names_2>}"
+}

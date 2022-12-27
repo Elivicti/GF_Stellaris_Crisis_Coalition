@@ -1,0 +1,42 @@
+﻿l_simp_chinese:
+
+ GF_faction_name_relic_department:0 "遗迹署"
+ pft_GF_relic_department:0 "$GF_faction_name_relic_department$"
+ pft_GF_relic_department_desc:0 "两个世纪前由联合国建立的遗迹及遗迹相关技术研究与监管部门，致力于让遗迹为人类所用。\n\n§L唯物主义思潮§!"
+
+ GF_FACTION_DEMAND_research_relic_title:0 "坍塌技术研究"
+ GF_FACTION_DEMAND_research_relic_unfulfilled_title:0 "$GF_FACTION_DEMAND_research_relic_title$"
+ GF_FACTION_DEMAND_research_relic_desc:0 "[Root.GetName]要求我们推进对坍塌技术的研究。"
+ GF_FACTION_DEMAND_collapsetech_weaponize_title:0 "坍塌技术武器化"
+ GF_FACTION_DEMAND_collapsetech_weaponize_unfulfilled_title:0 "$GF_FACTION_DEMAND_collapsetech_weaponize_title$"
+ GF_FACTION_DEMAND_collapsetech_weaponize_desc:0 "推进坍塌技术武器化的进程，并至少研究出一种攻击性的坍塌技术武器。"
+ GF_FACTION_DEMAND_clear_contaminated_zone_title:0 "净化坍塌辐射污染区"
+ GF_FACTION_DEMAND_clear_contaminated_zone_unfulfilled_title:0 "未净化坍塌辐射污染区"
+ GF_FACTION_DEMAND_clear_contaminated_zone_desc:0 "为保证民生与建设，[Root.GetName]要求推进坍塌污染净化技术的研究，并最终彻底清除所有污染区。"
+ GF_FACTION_DEMAND_research_relic_site_title:0 "探索$collapse_relic$"
+ GF_FACTION_DEMAND_research_relic_site_unfulfilled_title:0 "探索$collapse_relic$"
+ GF_FACTION_DEMAND_research_relic_site_desc:0 "[Root.GetName]要求探索所有的$collapse_relic$以便获取所有的遗迹技术。"
+
+ GF_faction_name_doll_rights_organization:0 "人形权利组织"
+ pft_GF_doll_rights_organization:0 "$GF_faction_name_doll_rights_organization$"
+ pft_GF_doll_rights_organization_desc:0 "人形权利组织的成员认为人形应当被视为社会中平等的一员，他们致力于保障人形的权利和人形在社会中的机遇平等。\n\n§L平等主义思潮§!"
+
+ GF_FACTION_DEMAND_doll_full_rights_title:0 "完整公民权利"
+ GF_FACTION_DEMAND_doll_full_rights_unfulfilled_title:0 "完整公民权利"
+ GF_FACTION_DEMAND_doll_full_rights_desc:0 "给予人形人口完整公民权利能够极大地取悦[Root.GetName]。"
+ GF_FACTION_DEMAND_doll_half_rights_title:0 "有限公民权利"
+ GF_FACTION_DEMAND_doll_half_rights_unfulfilled_title:0 "有限公民权利"
+ GF_FACTION_DEMAND_doll_half_rights_desc:0 "给予人形人口有限公民权利能够取悦[Root.GetName]。"
+ GF_FACTION_DEMAND_doll_job_rights_title:0 "自由工作权"
+ GF_FACTION_DEMAND_doll_job_rights_unfulfilled_title:0 "自由工作权"
+ GF_FACTION_DEMAND_doll_job_rights_desc:0 "让人形人口能够不受限制地从事任何职业能够取悦[Root.GetName]。"
+ GF_FACTION_DEMAND_doll_living_rights_title:0 "人形生活保障"
+ GF_FACTION_DEMAND_doll_living_rights_unfulfilled_title:0 "人形生活保障"
+ GF_FACTION_DEMAND_doll_living_rights_desc:0 "给予人形过低的维护保障将会极大地惹恼[Root.GetName]。"
+
+ GF_factions.1.title:0 "派系已建立"
+ GF_factions.1.desc:0 "随着交接工作的完成，§H[Root.GetName]§!，这一建立于两个世纪前的遗迹研究与监管部门开始重新在[Root.Owner.GetName]的政治圈和学术圈活动，他们的成员致力于发掘和研究在遗迹中发现的技术，并确保这些技术能够为[Root.Owner.GetSpeciesName]所用。\n\n§H[Root.GetName]§!将会由§Y[Root.Leader.GetTitle] [Root.Leader.GetName]§!进行直接管辖。\n"
+
+ GF_factions.2000.title:0 "[TargetFaction.Owner.GetName]的主流思潮发生转变"
+ GF_factions.2000.desc.start:0 "随着长期以来§Y[TargetFaction.GetName]§!支持率的不断增长，§Y[TargetFaction.Owner.GetName]§!终于接纳了这个派系，接受了他们的核心价值观和政策。"
+ GF_factions.2000.desc.GF_doll_rights_organization:0 "因为接纳了此派系，帝国的主流思潮变成了§H平等主义§!。\n\n"

@@ -1,0 +1,56 @@
+namespace = GF_factions
+
+pop_faction_event = {
+	id = GF_factions.1
+	title = GF_factions.1.title
+	desc = GF_factions.1.desc
+
+	picture = GFX_evt_galactic_senate
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_pop_faction_type = GF_relic_department
+	}
+
+	option = {
+		name = OK
+		hidden_effect = {
+			owner = {
+				every_owned_planet = {
+					every_owned_pop = {
+						force_faction_evaluation = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# Notification event - other empire shifts ethics
+country_event = {
+	id = GF_factions.2000
+	title = GF_factions.2000.title
+	location = event_target:TargetFaction.Owner.capital_scope
+	desc = {
+		trigger = {
+			text = GF_factions.2000.desc.start
+			text = newline
+			success_text = {
+				text = GF_factions.2000.desc.GF_doll_rights_organization
+				event_target:TargetFaction = { is_pop_faction_type = GF_doll_rights_organization }
+			}
+		}
+	}
+
+	picture = GFX_evt_alien_propaganda
+	show_sound = event_factions
+
+	is_triggered_only = yes
+
+	option = {
+		name = OK
+	}
+}
