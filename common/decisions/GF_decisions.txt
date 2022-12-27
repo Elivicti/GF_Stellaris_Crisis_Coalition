@@ -67,7 +67,6 @@ decision_GF_doll_storage_on = {
 	potential = {
 		owner = { has_authority = GF_auth_commonwealth }
 		NOT = { has_modifier = GF_storage_protocol }
-		
 	}
 	
 	allow = {
@@ -99,6 +98,7 @@ decision_GF_doll_storage_off = {
 	
 	allow = {
 		has_modifier = GF_storage_protocol
+		NOT = { has_modifier = GF_cloud_computing_protocol }
 	}
 	
 	effect = {
@@ -115,18 +115,17 @@ decision_GF_doll_cloud_computing_on = {
 	resources = {
 		category = decisions
 		cost = {
-			energy = 50
+			energy = 10
 		}
 	}
 	
 	potential = {
 		owner = { has_authority = GF_auth_commonwealth }
-		NOT = { has_modifier = GF_cloud_computing_protocol }
-		
+		NOT = { has_modifier = GF_cloud_computing_protocol }		
 	}
 	
 	allow = {
-		NOT = { has_modifier = GF_cloud_computing_protocol }
+		has_modifier = GF_storage_protocol
 	}
 	
 	effect = {
@@ -150,7 +149,6 @@ decision_GF_doll_cloud_computing_off  = {
 	potential = {
 		owner = { has_authority = GF_auth_commonwealth }
 		has_modifier = GF_cloud_computing_protocol
-		
 	}
 	
 	allow = {

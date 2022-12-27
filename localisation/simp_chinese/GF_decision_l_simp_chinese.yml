@@ -3,9 +3,9 @@
  decision_GF_doll_sercurity_on:0 "激活人形安保协议"
  decision_GF_doll_sercurity_on_desc:0 "§W$job_GF_guard_doll_effect_desc$§!\n\n当前星球陷入骚乱或外敌入侵时，政府将接管所有人形权限，开放相关暴力行为许可，传输基本战斗知识，分配武器，命令她们协助当地防卫。"
  decision_GF_doll_sercurity_off:0 "结束人形安保协议"
- decision_GF_doll_sercurity_off_desc:0 "当前星球恢复正常，政府将收回人形的暴力行为许可，并将人形重新分配回各自工作岗位，继续原先生产任务。"
+ decision_GF_doll_sercurity_off_desc:0 "星球当前已恢复正常，政府将收回人形的暴力行为许可，并将她们重新分配回各自工作岗位，继续原先的生产任务。"
  decision_GF_doll_storage_on:0 "开启人形待机模式"
- decision_GF_doll_storage_on_desc:0 "允许当前星球上的无任务指派的人形进入人形维护仓中休眠待机，这将比正常状态下节省全部的维护费用。"
+ decision_GF_doll_storage_on_desc:0 "允许星球上当前无任务的人形进入人形维护仓中休眠待机，与人形正常的运行状态相比，这将节省大部分的维护费用。\n\n§H提示：配合星球法令云计算协议可以使休眠人形在低消耗的情况下产出科研点。§!"
  decision_GF_doll_storage_off:0 "激活待机人形"
  decision_GF_doll_storage_off_desc:0 "将待机状态的人形全部激活，对她们分配新的任务。"
  decision_GF_doll_cloud_computing_on:0 "开启云计算协议"
@@ -13,9 +13,9 @@
  decision_GF_doll_cloud_computing_off:0 "中止云计算协议"
  decision_GF_doll_cloud_computing_off_desc:0 "云计算协议中止。"
  decision_GF_auto_colony_on:0 "开启自动化遥控殖民协议"
- decision_GF_auto_colony_on_desc:0 "该协议旨在使我们可以派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将在远程发出的指令与云图内置的自律程序的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
+ decision_GF_auto_colony_on_desc:0 "该协议旨在允许我们派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将基于内置自律程序并在远程控制命令的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
  decision_GF_auto_colony_off:0 "关闭自动化遥控殖民协议"
- decision_GF_auto_colony_off_desc:0 "在经过先遣人形对殖民地不断的建设与改造，部分地区的环境与设施已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
+ decision_GF_auto_colony_off_desc:0 "经过人形先遣队的不断建设与改造后，原本目标星球不适宜的环境已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
 
 
  decision_GF_rebuild_purify_wall:0 "重建隔离墙"
