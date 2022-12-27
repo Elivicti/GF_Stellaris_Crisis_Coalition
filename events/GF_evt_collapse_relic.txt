@@ -14,9 +14,6 @@ planet_event = {
 			has_authority = GF_auth_commonwealth
 		}
 		GF_planet_has_contaminated_zone = no
-		# from = {
-		# 	is_deposit_type = d_GF_black_zone	
-		# }
 	}
 
 	immediate = {
@@ -46,6 +43,10 @@ country_event = {
 	trigger = {
 		has_authority = GF_auth_commonwealth
 		has_technology = GF_tech_ecological_recovery
+	}
+
+	immediate = {
+		set_country_flag = flag_GF_discovered_relic_site
 	}
 
 	option = {
