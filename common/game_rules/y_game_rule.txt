@@ -134,6 +134,11 @@ can_species_procreate = {
 		has_trait = trait_machine_unit
 		has_trait = trait_mechanical
 		has_trait = GF_trait_doll	# GF
+		
+		AND = {	# GF SF
+			has_trait = trait_gf_sfdoll
+			NOT = {	has_trait = trait_sfdoll_nanite	}
+		}
 	}
 	NAND = {
 		root = { has_modifier = slave_colony }
@@ -161,6 +166,16 @@ can_species_procreate = {
 can_species_be_assembled = {
 	is_sapient = yes
 	OR = {
+		# GF Nyto
+		is_archetype = WARSHIPGIRL
+		is_archetype = SHENHAI
+		is_archetype = UNITED_FLEET
+		is_archetype = STARSHIPGIRLS
+		is_archetype = KANMUSU
+		is_archetype = DATEALIVE
+		is_archetype = NANITES_CROP
+		is_archetype = Dolls
+		is_archetype = NYTO
 		AND = {
 			is_robotic = yes
 			root = {
