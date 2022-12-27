@@ -51,4 +51,17 @@ spriteTypes = {
 		name = "GFX_GF_edict_type_robot"
 		textureFile = "gfx/interface/icons/edicts/roboticist.dds"
 	}
+
+	# factions
+	spriteType = {
+		name = "GFX_faction_icon_GF_relic_department"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_technologists.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_faction_icon_GF_doll_rights_organization"
+		textureFile = "gfx/interface/icons/faction_icons/faction_icons_progressives.dds"
+		noOfFrames = 1
+	}
 }
