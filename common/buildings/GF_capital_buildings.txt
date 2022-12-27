@@ -62,14 +62,6 @@ building_GF_auto_colony_capital = {
 			planet_housing_add = 1
 		}
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_mechanical_empire = yes }
-		}
-		job_roboticist_add = 1
-	}
 	triggered_desc = {
 		text = job_enforcer_effect_desc
 	}
@@ -93,11 +85,11 @@ building_GF_GK_headquarters_1 = {
 	potential = {
 		exists = owner
 		owner = {
-		    AND = {
+			AND = {
 				has_authority = GF_auth_commonwealth
-		        has_valid_civic = GF_civic_GK
+				has_valid_civic = GF_civic_GK
 			}
-        }
+		}
 	}
 	destroy_trigger = {
 		exists = owner
@@ -110,6 +102,8 @@ building_GF_GK_headquarters_1 = {
 	}
 	planet_modifier = {
 		job_GF_GK_commander_add = 1
+		planet_max_buildings_add = 1
+		planet_housing_add = 1
 	}
 	resources = {
 		category = planet_buildings
@@ -124,8 +118,8 @@ building_GF_GK_headquarters_1 = {
 		potential = {
 			exists = owner
 			owner = {
-		        has_valid_civic = GF_civic_IOP
-            }
+				has_valid_civic = GF_civic_IOP
+			}
 		}
 		modifier = {
  			job_GF_programmer_add = 1
@@ -170,6 +164,8 @@ building_GF_GK_headquarters_2 = {
 	}
 	planet_modifier = {
 		job_GF_GK_commander_add = 2
+		planet_max_buildings_add = 2
+		planet_housing_add = 3
 	}
 	
 	resources = {
@@ -229,6 +225,8 @@ building_GF_GK_headquarters_3 = {
 	planet_modifier = {
 		job_GF_GK_commander_add = 3
 		job_GF_GK_officer_add = 1
+		planet_max_buildings_add = 3
+		planet_housing_add = 5
 	}
 	
 	resources = {
@@ -293,6 +291,8 @@ building_GF_AU_council_1 = {
 	}
 	planet_modifier = {
 		job_GF_AU_consultant_add = 1
+		planet_max_buildings_add = 1
+		planet_housing_add = 1
 	}
 	resources = {
 		category = planet_buildings
@@ -352,6 +352,8 @@ building_GF_AU_council_2 = {
 	}
 	planet_modifier = {
 		job_GF_AU_consultant_add = 2
+		planet_max_buildings_add = 2
+		planet_housing_add = 3
 	}
 	
 	resources = {
@@ -410,6 +412,8 @@ building_GF_AU_council_3 = {
 	planet_modifier = {
 		job_GF_AU_consultant_add = 3
 		job_GF_AU_director_add = 1
+		planet_max_buildings_add = 3
+		planet_housing_add = 5
 	}
 	
 	resources = {
@@ -473,6 +477,8 @@ building_GF_URNC_committee_1 = {
 	}
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 1
+		planet_max_buildings_add = 1
+		planet_housing_add = 1
 	}
 	resources = {
 		category = planet_buildings
@@ -533,6 +539,8 @@ building_GF_URNC_committee_2 = {
 	}
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 2
+		planet_max_buildings_add = 2
+		planet_housing_add = 3
 	}
 	resources = {
 		category = planet_buildings
@@ -590,6 +598,8 @@ building_GF_URNC_committee_3 = {
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 3
 		job_GF_URNC_commissioner_add = 1
+		planet_max_buildings_add = 3
+		planet_housing_add = 5
 	}
 	resources = {
 		category = planet_buildings
