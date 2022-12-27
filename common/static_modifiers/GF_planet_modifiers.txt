@@ -16,7 +16,8 @@ GF_cloud_computing_protocol = {
 GF_storage_protocol = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_GF_storage_protocol.dds"
 	icon_frame = 2
-	job_GF_dormancy_doll_add = 5
+	# job_GF_dormancy_doll_add = 5
+	custom_tooltip = GF_storage_protocol_modifier_desc
 }
 
 
