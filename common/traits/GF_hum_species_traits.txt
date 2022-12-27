@@ -64,13 +64,13 @@ GF_trait_sequela_immune = {
 		GF_is_gavirul_species = yes
 	}
 	species_possible_remove = {
-		always = no
+		GF_is_gavirul_species = yes
 	}
 	species_possible_merge_add = {
-		always = no
+		GF_is_gavirul_species = yes
 	}
 	species_possible_merge_remove = {
-		always = no
+		GF_is_gavirul_species = yes
 	}
 
 	opposites = { "GF_trait_sequela" }
