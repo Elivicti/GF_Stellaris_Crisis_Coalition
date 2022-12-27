@@ -32,7 +32,7 @@
  GF_civic_NHC_effects:0 ""
  GF_civic_90WISH:0 "90Wish组织"
  GF_civic_90WISH_desc:0 "90Wish是我们人类在研究齐纳协议通讯网络方面的先驱，而进入星空后庞大国家的管理更离不开快速的信息传播手段，因此成立对应部门对齐纳网络继续改进是相当必要的。"
- GF_civic_90WISH_effects:0 "每个£job_GF_liaison£§Y联络员岗位§!额外提供$mod_planet_jobs_produces_mult$§G+2%§!"
+ GF_civic_90WISH_effects:0 "每个£job_GF_liaison£§Y联络员岗位§!额外提供$mod_planet_jobs_produces_mult$§G+2.5%§!"
  GF_civic_scanner:0 "稀有矿物扫描仪"
  GF_civic_scanner_desc:0 "在冰天雪地的南极找到稀有矿藏不是一件容易的事，南极联邦的研究者开发了一款大型地下资源扫描仪帮助他们更好的获取自然财富。"
  GF_civic_scanner_effects:0 ""

@@ -83,15 +83,15 @@ GF_liaison = {
 
 	planet_modifier = {
 		planet_administrators_produces_mult = 0.05
-		planet_jobs_produces_mult = 0.03
-		planet_jobs_robotic_produces_mult = 0.02
+		planet_jobs_produces_mult = 0.025
+		planet_jobs_robotic_produces_mult = 0.025
 	}
 
 	triggered_pop_modifier = {
 		potential = {
 			owner = { has_valid_civic = GF_civic_90WISH }
 		}
-		planet_jobs_produces_mult = 0.02
+		planet_jobs_produces_mult = 0.025
 	}
 
 	resources = {
