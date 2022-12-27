@@ -15,3 +15,8 @@ GF_quick_ogas_contact = {
 		}
 	}
 }
+
+GF_effect_button_always_on = {
+	potential = { always = yes }
+	allow = { always = yes }
+}
