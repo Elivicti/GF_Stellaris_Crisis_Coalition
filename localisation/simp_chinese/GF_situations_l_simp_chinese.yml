@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ GF_situation_collapse_liquid_deficit:0 "$GF_nyto_collapse_liquid_deficit$"
+ GF_situation_collapse_liquid_deficit_type:0 "$GF_nyto_collapse_liquid_deficit$"
+ GF_situation_collapse_liquid_deficit_desc:0 "我们的$GF_nyto_collapse_liquid$赤字已经失控了！"
+ GF_deficit_collapse_liquid_approach:0 "$GF_nyto_collapse_liquid_deficit$"
+ GF_deficit_approach_nyto:0 "$GF_nyto_collapse_liquid_deficit_desc$"
+
+ GF_nyto_collapse_liquid_deficit:0 "坍缩液匮乏"
+ GF_nyto_collapse_liquid_deficit_desc:0 "坍缩液匮乏，无论日常生活还是生产建造都陷入瘫痪。"

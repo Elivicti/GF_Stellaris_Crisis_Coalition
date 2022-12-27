@@ -3,3 +3,6 @@
  gf_core_chip:0 "心智核心"
  gf_core_chip_desc:0 "生产人形必须的主控芯片，用于搭载人形的心智云图。"
  gf_core_chip_deficit:0 "芯片短缺"
+
+ GF_nyto_collapse_liquid:0 "坍塌液"
+ GF_nyto_collapse_liquid_desc:0 "坍塌液是一种以辐射方式行进的高频粒子波，可由环向偏振器封装，可以使微观粒子之间的强弱相互作用力失效而导致其有序坍缩。"
