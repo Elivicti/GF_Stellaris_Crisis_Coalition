@@ -358,6 +358,117 @@ GF_tech_maintain_process = {
 	}
 }
 
+GF_tech_collapse_plant_1 = {
+	area = engineering
+	category = { industry }
+	tier = 3
+	cost = @tier3cost3
+	weight = @tier3weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_rare = yes
+
+	prerequisites = {
+		"GF_tech_collapse"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+GF_tech_collapse_plant_2 = {
+	area = engineering
+	category = { industry }
+	tier = 4
+	cost = @tier4cost2
+	weight = @tier4weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_rare = yes
+
+	prerequisites = {
+		"GF_tech_collapse_plant_1"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+GF_tech_reverse_collapse_plant = {
+	area = engineering
+	category = { industry }
+	tier = 4
+	cost = @tier4cost2
+	weight = @tier4weight2
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+	is_rare = yes
+
+	prerequisites = {
+		"GF_tech_reverse_collapse"
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
 ########
 GF_tech_ship_collapse_armor = {
 	# 坍塌零素材料
