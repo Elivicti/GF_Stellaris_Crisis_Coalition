@@ -114,8 +114,9 @@ country_event = {
 		}
 
 		# events
-		country_event = { id = GF_ogas.100 days =  5 }
-		country_event = { id = GF_elid.0   days = 30 } # initialize elid attack events
+		country_event = { id = GF_ogas.100	 days =  5 }
+		country_event = { id = GF_elid.0	 days = 30 } # initialize elid attack events
+		country_event = { id = GF_factions.0 days = 16 }
 	}
 
 	option = {
@@ -167,6 +168,9 @@ planet_event = {
 			which = v_GF_armored_train_capacity
 			value = 2
 		}
+
+		add_district = district_industrial
+		add_district = district_mining
 
 		remove_building = building_commercial_zone
 		add_building = building_GF_42lab_1
