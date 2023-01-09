@@ -1,5 +1,28 @@
 namespace = GF_factions
 
+country_event = {
+	id = GF_factions.0
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		count_pop_faction = {
+			limit = { is_pop_faction_type = GF_relic_department }
+			count = 0
+		}
+	}
+
+	immediate = {
+		every_owned_pop = { force_faction_evaluation = yes }
+		enable_faction_of_type = GF_relic_department
+		country_event = {
+			id = GF_factions.0
+			days = 1
+		}
+		
+	}
+}
+
 pop_faction_event = {
 	id = GF_factions.1
 	title = GF_factions.1.title
@@ -12,19 +35,15 @@ pop_faction_event = {
 
 	trigger = {
 		is_pop_faction_type = GF_relic_department
+		owner = { NOT = { has_country_flag = flag_GF_relic_department } }
+	}
+
+	immediate = {
+		owner = { set_country_flag = flag_GF_relic_department }
 	}
 
 	option = {
 		name = OK
-		hidden_effect = {
-			owner = {
-				every_owned_planet = {
-					every_owned_pop = {
-						force_faction_evaluation = yes
-					}
-				}
-			}
-		}
 	}
 }
 

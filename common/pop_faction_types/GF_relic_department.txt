@@ -1,7 +1,8 @@
 # 遗迹署
 GF_relic_department = {
 	election_header = "GFX_faction_header_blue"
-	guiding_ethic = ethic_militarist
+	guiding_ethic = ethic_materialist
+	use_guiding_ethic_as_pop_filter = no
 
 	unique = yes
 	support_multiplier = 1
@@ -9,7 +10,7 @@ GF_relic_department = {
 	resources = { 
 		category = pop_factions
 		produces = {
-			influence = 0.5
+			influence = 0.15
 			physics_research = 1
 			society_research = 1
 			engineering_research = 1
@@ -36,8 +37,22 @@ GF_relic_department = {
 	}
 
 	can_join_faction = {
-		is_shackled_robot = no
-		can_think = yes
+		# is_shackled_robot = no
+		OR = {
+			has_job = bureaucrat
+			has_job = manager
+			has_job = researcher
+			has_job_category = ruler
+		}
+		owner = {
+			if = {
+				limit = { num_pops > 53 }
+				pop_percentage = {
+					percentage <= 0.15
+					limit = { member_of_faction = GF_relic_department }
+				}
+			}
+		}
 
 		if = {
 			limit = { has_trait = GF_trait_doll }
@@ -51,13 +66,14 @@ GF_relic_department = {
 	}
 
 	attraction = {
-		base = 150
+		base = 100
 		modifier = {
-			factor = 10000
-			exists = from
-			from = {
-				num_pops < 8
-			}
+			factor = 0.05
+			NOT = { pop_has_ethic = ethic_materialist }
+		}
+		modifier = {
+			factor = 0
+			pop_has_ethic = ethic_spiritualist
 		}
 	}
 
@@ -74,6 +90,12 @@ GF_relic_department = {
 	}
 
 	on_destroy = {
+		owner = {
+			country_event = {
+				id = GF_factions.0
+				days = 5
+			}
+		}
 	}
 
 	demand = {
