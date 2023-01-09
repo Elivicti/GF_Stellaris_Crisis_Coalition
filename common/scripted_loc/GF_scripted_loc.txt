@@ -160,3 +160,50 @@ defined_text = {
 	}
 	default = GF_OGAS_Work_Research_Enable_Response
 }
+
+# scope = planet
+defined_text = {
+	name = GetVolatileMotesIconIfAvailable
+	text = {
+		localization_key = volatile_motes_icon
+		trigger = {
+			owner = {
+				OR = {
+					has_technology = tech_volatile_motes
+					has_technology = tech_mine_volatile_motes
+				}
+			}
+		}
+	}
+	default = BLANK_STRING
+}
+defined_text = {
+	name = GetExoticGasesIconIfAvailable
+	text = {
+		localization_key = exotic_gases_icon
+		trigger = {
+			owner = {
+				OR = {
+					has_technology = tech_exotic_gases
+					has_technology = tech_mine_exotic_gases
+				}
+			}
+		}
+	}
+	default = BLANK_STRING
+}
+defined_text = {
+	name = GetRareCrystalsIconIfAvailable
+	text = {
+		localization_key = rare_crystals_icon
+		trigger = {
+			owner = {
+				OR = {
+					has_technology = tech_rare_crystals
+					has_technology = tech_mine_rare_crystals
+				}
+			}
+		}
+	}
+	default = BLANK_STRING
+}

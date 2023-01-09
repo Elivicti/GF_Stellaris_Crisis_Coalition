@@ -18,3 +18,7 @@
  disable_collapse_bombardment:0 "禁止"
  disable_collapse_bombardment_desc:0 "禁止舰队使用§R$bombardment_collapsebomb$§!对星球进行轨道轰炸"
  
+
+ volatile_motes_icon:0 "£volatile_motes£"
+ exotic_gases_icon:0 "£exotic_gases£"
+ rare_crystals_icon:0 "£rare_crystals£"
