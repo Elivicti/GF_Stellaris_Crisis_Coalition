@@ -266,3 +266,130 @@ country_event = {
 		custom_tooltip = GF_overlord.1011.a.tooltip
 	}
 }
+
+###子网用OGAS主界面
+country_event = {
+	id = GF_overlord.10000
+
+	title = GF_OGAS_connect
+	desc = GF_overlord.10000.desc
+	diplomatic = yes
+
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = flag_GF_can_contact_OGAS
+		NOT = { has_country_flag = contract_diplomacy_engaged }
+	}
+
+	immediate = {
+		set_country_flag = contract_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+	}
+
+	option = {
+		name = GF_overlord.10000.mission
+		trigger = {
+			NOT = { has_country_flag = GF_ogas_work_mode }
+		}
+
+		hidden_effect = {
+			country_event = { id = GF_overlord.11000 }
+		}
+	}
+	option = {
+		name = GF_overlord.10000.mission
+		trigger = {
+			has_country_flag = GF_ogas_work_mode
+		}
+		is_dialog_only = yes
+		response_text = GF_overlord.10000.mission.busy_response
+	}
+	
+
+	option = {
+		name = GF_ogas.10000.logout
+		response_text = GF_overlord.10000.logout.response
+	}
+}
+
+# 给附庸的任务界面
+country_event = {
+	id = GF_overlord.11000
+	title = GF_OGAS_connect
+	desc = GF_overlord.11000.desc
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	option = { # un
+		name = GF_overlord.11000.governor
+		response_text = GF_overlord.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
+		
+	}
+	option = { # en
+		name = GF_overlord.11000.produce
+		response_text = GF_overlord.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
+	}
+	option = { # mi fo
+		name = GF_overlord.11000.upkeep
+		response_text = GF_overlord.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
+	}
+	option = { # un
+		name = GF_overlord.11000.war
+		response_text = GF_overlord.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
+	}
+	option = { # un
+		name = GF_overlord.11000.research
+		response_text = GF_overlord.11100.response
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_overlord.10000 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_overlord.11001
+	title = GF_OGAS_connect
+	desc = GF_overlord.11001.desc.subnet
+
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_overlord.10000.mission
+		hidden_effect = {
+			country_event = { id = GF_overlord.11000 }
+		}
+	}
+
+	option = {
+		name = GF_ogas.10000.logout
+	}
+}

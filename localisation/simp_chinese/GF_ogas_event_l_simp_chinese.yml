@@ -31,7 +31,6 @@
  GF_ogas.10000.desc.a:0 "检测到最高权限登入，待机模式中止，欢迎回来，执政官，有什么事需要本系统的服务？"
  GF_ogas.10000.desc.b:0 "生物信息验证通过，确认执政官已上线，欢迎回来，本机随时待命，请下达您的指令。"
  GF_ogas.10000.desc.c:0 "识别到执政官登入信号，系统中止待机，欢迎回来，执政官，报告：OGAS系统状态良好，可随时投入运行。"
- GF_ogas.10000.desc.d:0 "子网连接已受理，正在等待请求。"
 
  GF_ogas.10000.mission:0 "OGAS政务系统"
 #GF_ogas.10000.mission.busy_response:0 "系统繁忙中，正在全力执行先前指令，目前尚无多余线程可供分配到下一道指令。"
@@ -100,15 +99,7 @@
  GF_OGAS_Work_Research_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_Research_Enable_Response:0 "了解，已接入科研数据库，正在统合并分析所有科研院所相关数据，并根据结果为相关科研人员提供建议，包括分配研究任务、可行性分析与跨学科合作指导等。"
 
-
-#GF_ogas.11001.desc:0 "任务指令圆满完成，执政官。OGAS所有系统已待命，等待进一步指令。"
-#GF_ogas.11001.desc.subnet:0 "任务指令完成，系统进入待命状态。"
-#GF_ogas.11001.a:0 "$GF_ogas.10000.mission$"
-
  GF_ogas.11200.cancel.response:0 "该系统任务已取消，占用线程已释放。"
-
-#GF_ogas.11100.desc:0 "任务系统进入待命状态，正在等待指令。"
-#GF_ogas.11100.response:0 "请求已确认，即刻开始执行。"
 
 ###档案查询
  GF_ogas.12000.desc.a:0 "最高级权限已验证通过，您有权连接联合政府的机密数据库。"

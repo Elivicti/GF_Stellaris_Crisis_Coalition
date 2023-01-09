@@ -113,7 +113,7 @@ country_event = {
 			country_event = { id = GF_ogas.10000 }
 		}
 		else = {
-			
+			country_event = { id = GF_overlord.10000 }
 		}
 	}
 }

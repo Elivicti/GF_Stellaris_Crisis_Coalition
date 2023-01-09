@@ -54,3 +54,17 @@
  GF_overlord.1011.desc:0 "由于OGAS子网§Y[from.GetName]§!脱离了掌控，我们已经断开了子网与OGAS的链接，并回收了重要科技，现在他们将不再受益于OGAS管理系统带来的优势。\n"
  GF_overlord.1011.a:0 "已知晓。"
  GF_overlord.1011.a.tooltip:0 "§Y[from.GetName]§!将在很长一段时间内受到严重的负面影响。"
+
+### 子网OGAS通讯事件
+ GF_overlord.10000.desc:0 "子网连接已受理，正在等待请求。"
+ GF_overlord.10000.mission:0 "任务指令发布"
+ GF_overlord.10000.mission.busy_response:0 "系统繁忙中，目前无多余线程可供分配到下一条请求。"
+ GF_overlord.10000.logout.response:0 "请求受理结束，指令已结算。"
+ GF_overlord.11000.desc:0 "任务系统进入待命状态，正在等待指令。"
+ GF_overlord.11100.response:0 "请求已确认，即刻开始执行。"
+ GF_overlord.11000.governor:0 "开启$GF_ogas.11200.governor$"
+ GF_overlord.11000.produce:0 "开启$GF_ogas.11200.produce$"
+ GF_overlord.11000.upkeep:0 "开启$GF_ogas.11200.upkeep$"
+ GF_overlord.11000.war:0 "开启$GF_ogas.11200.war$"
+ GF_overlord.11000.research:0 "开启$GF_ogas.11200.research$"
+ GF_overlord.11001.desc.subnet:0 "任务指令完成，系统进入待命状态。"
