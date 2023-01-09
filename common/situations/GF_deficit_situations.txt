@@ -9,7 +9,6 @@ GF_situation_collapse_liquid_deficit = {
 	on_start = {
 	}
 	on_abort = {
-		hidden_effect = { destroy_situation = this }
 	}
 
 	start_value = 50
@@ -21,19 +20,11 @@ GF_situation_collapse_liquid_deficit = {
 		}
 	}
 
-	abort_trigger = {
-		owner = { NOT = { has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid } } }
-	}
-
 	on_progress_complete = {
-		# country_defaulted_in_situation_tooltip = yes
-		# hidden_effect = {
-		# 	situation_event = { id = deficit.110 }
-		# }
 		hidden_effect = { destroy_situation = this }
 	}
 	on_fail = {
-		# custom_tooltip = deficit_situation_finish_tooltip
+		custom_tooltip = deficit_situation_finish_tooltip
 		hidden_effect = { destroy_situation = this }
 	}
 	monthly_progress = {
@@ -43,55 +34,88 @@ GF_situation_collapse_liquid_deficit = {
 		# 	desc = string_expenditures_greater_than_income_energy
 		# 	owner = { has_actual_deficit = { RESOURCE = energy } }
 		# }
-		# modifier = {
-		# 	subtract = 5
-		# 	desc = string_not_in_deficit_energy
-		# 	owner = {
-		# 		resource_income_compare = {
-		# 			resource = energy
-		# 			value >= 0
-		# 		}
-		# 	}
-		# }
-		# modifier = {
-		# 	subtract = 1
-		# 	desc = string_resource_reserves_energy
-		# 	owner = {
-		# 		has_negative_income_with_stockpile = { RESOURCE = energy }
-		# 	}
-		# }
+		modifier = {
+			subtract = 5
+			desc = string_not_in_deficit_GF_nyto_collapse_liquid
+			owner = {
+				resource_income_compare = {
+					resource = GF_nyto_collapse_liquid
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 1
+			desc = string_resource_reserves_GF_nyto_collapse_liquid
+			owner = {
+				has_negative_income_with_stockpile = { RESOURCE = GF_nyto_collapse_liquid }
+			}
+		}
 	}
 	approach = {
-		name = GF_deficit_collapse_liquid_approach
+		name = GF_deficit_collapse_liquid_approach_nyto
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+
+		on_select = {
+			custom_tooltip = GF_deficit_collapse_liquid_approach_nyto_tooltip
+		}
+
+		potential = {
+			owner = { has_authority = auth_GF_paradeus } # 涅托
+		}
+
+		modifier = {
+			planet_stability_add = -200
+			country_produces_mult = -0.25
+		}
+		
+		ai_weight = {
+			base = 0
+			modifier = {
+				set = 100
+				owner = { has_authority = auth_GF_paradeus }
+			}
+		}
+	}
+	approach = {
+		name = GF_deficit_collapse_liquid_approach_commonwealth
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_yellow
 		default = yes
 		on_select = {
-			if = {
-				limit = { owner = { has_authority = auth_GF_paradeus } } # 涅托
-				custom_tooltip = GF_deficit_approach_nyto
-			}
+			custom_tooltip = GF_deficit_collapse_liquid_approach_commonwealth_tooltip
 		}
 
+		potential = {
+			owner = { has_authority = GF_auth_commonwealth }
+		}
+
+		modifier = {
+			GF_planet_reverse_collapser_produces_mult = -10
+		}
+		
 		triggered_modifier = {
-			potential = {
-				# owner = { has_authority = auth_GF_paradeus } # 涅托
-			}
+			potential = { owner = { has_technology = GF_tech_collapsetech_weaponize } }
 			modifier = {
-				planet_stability_add = -200
-				country_produces_mult = -0.25
+				GF_ship_collapse_armors_alloys_upkeep_mult = 5
+				GF_ship_collapse_utilities_alloys_upkeep_mult = 5
 			}
 		}
-
+		
 		triggered_modifier = {
-			potential = {
-				owner = { has_authority = GF_auth_commonwealth }
+			potential = { owner = { has_technology = GF_tech_collapse_relic_tech } }
+			modifier = {
+				GF_ship_collapse_weapons_alloys_upkeep_mult = 5
 			}
-			modifier = { }
 		}
 
 		ai_weight = {
-			base = 1
+			base = 0
+			modifier = {
+				set = 100
+				owner = { has_authority = GF_auth_commonwealth }
+			}
 		}
 	}
 }
