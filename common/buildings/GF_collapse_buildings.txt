@@ -1,0 +1,250 @@
+#############
+# Collapse buildings
+#############
+
+building_GF_collapse_1 = {
+	base_buildtime = @b1_time
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		owner = {
+			NOR = {
+				has_authority = GF_auth_commonwealth
+				is_valid_GF_OGAS_subnet = yes
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_GF_collapser_add = 2
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_technology = GF_tech_ecological_recovery } }
+		}
+		pop_environment_tolerance = -0.05
+		# mult = value:scripted_modifier_mult|MODIFIER|GF_collpase_contamination_mult|
+	}
+
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+			alloys = 0.05
+		}
+	}
+
+
+	prerequisites = {
+		"GF_tech_collapse_plant_1"
+	}
+
+	triggered_desc = {
+		text = job_GF_collapser_effect_desc
+	}
+}
+
+building_GF_collapse_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		owner = {
+			NOR = {
+				has_authority = GF_auth_commonwealth
+				is_valid_GF_OGAS_subnet = yes
+			}
+		}
+	}
+
+	planet_modifier = {
+		job_GF_collapser_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_technology = GF_tech_ecological_recovery } }
+		}
+		pop_environment_tolerance = -0.10
+		# mult = value:scripted_modifier_mult|MODIFIER|GF_collpase_contamination_mult|
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			alloys = 0.15
+		}
+	}
+
+	prerequisites = {
+		"GF_tech_collapse_plant_2"
+	}
+
+	triggered_desc = {
+		text = job_GF_collapser_effect_desc
+	}
+}
+
+building_GF_reverse_collapse = {
+	base_buildtime = @b2_time
+	category = manufacturing
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+		}
+	}
+
+	destroy_trigger = {
+		owner = {
+			NOR = {
+				has_authority = GF_auth_commonwealth
+				is_valid_GF_OGAS_subnet = yes
+			}
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_technology = GF_tech_ecological_recovery } }
+		}
+		pop_environment_tolerance = -0.10
+		# mult = value:scripted_modifier_mult|MODIFIER|GF_collpase_contamination_mult|
+	}
+
+
+	triggered_planet_modifier = {
+		potential = { has_refinery_designation = no }
+		job_GF_reverse_collapser_industry_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_industrial_designation = yes
+				has_factory_designation = yes
+				has_foundry_designation = yes
+			}
+		}
+		job_GF_reverse_collapser_industry_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_refinery_designation = yes
+			exists = owner
+			owner = {
+				OR = {
+					has_technology = tech_exotic_gases
+					has_technology = tech_mine_exotic_gases
+					has_technology = tech_volatile_motes
+					has_technology = tech_mine_volatile_motes
+					has_technology = tech_rare_crystals
+					has_technology = tech_mine_rare_crystals
+				}
+			}
+		}
+		job_GF_reverse_collapser_refinery_add = 1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			NOR = {
+				has_industrial_designation = yes
+				has_factory_designation = yes
+				has_foundry_designation = yes
+			}
+			exists = owner
+			owner = {
+				OR = {
+					has_technology = tech_exotic_gases
+					has_technology = tech_mine_exotic_gases
+					has_technology = tech_volatile_motes
+					has_technology = tech_mine_volatile_motes
+					has_technology = tech_rare_crystals
+					has_technology = tech_mine_rare_crystals
+				}
+			}
+		}
+		job_GF_reverse_collapser_refinery_add = 1
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			alloys = 0.25
+		}
+	}
+
+	prerequisites = {
+		"GF_tech_reverse_collapse_plant"
+	}
+	triggered_desc = {
+		text = building_GF_reverse_collapse_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			NOR = {
+				has_factory_designation = yes
+				has_foundry_designation = yes
+				has_refinery_designation = yes
+			}
+		}
+		text = job_GF_reverse_collapser_industry_effect_desc
+	}
+	triggered_desc = {
+		trigger = { has_foundry_designation = yes }
+		text = job_GF_reverse_collapser_industry_alloys_effect_desc
+	}
+	triggered_desc = {
+		trigger = { has_factory_designation = yes }
+		text = job_GF_reverse_collapser_industry_consumer_goods_effect_desc
+	}
+	triggered_desc = {
+		trigger = {
+			NOR = {
+				has_industrial_designation = yes
+				has_factory_designation = yes
+				has_foundry_designation = yes
+			}
+			exists = owner
+			owner = {
+				OR = {
+					has_technology = tech_exotic_gases
+					has_technology = tech_mine_exotic_gases
+					has_technology = tech_volatile_motes
+					has_technology = tech_mine_volatile_motes
+					has_technology = tech_rare_crystals
+					has_technology = tech_mine_rare_crystals
+				}
+			}
+		}
+		text = job_GF_reverse_collapser_refinery_effect_desc
+	}
+}

@@ -23,6 +23,14 @@
  building_GF_42lab_2_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
  building_GF_42lab_3:0 "42LAB心智云图综合研究中心"
  building_GF_42lab_3_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
+
+ building_GF_collapse_1:0 "坍塌液工厂1（待定）"
+ building_GF_collapse_1_desc:0 "（坍塌液工厂1介绍）"
+ building_GF_collapse_2:0 "坍塌液工厂2（待定）"
+ building_GF_collapse_2_desc:0 "（坍塌液工厂2介绍）"
+ building_GF_reverse_collapse:0 "逆向坍塌工厂（待定）"
+ building_GF_reverse_collapse_desc:0 "（逆向坍塌工厂介绍）"
+ building_GF_reverse_collapse_effect_desc:0 "坍塌液工厂将会根据殖民地类型来提供不同的逆向坍塌转化师岗位\n\n"
 #################################
  building_GF_GK_headquarters_1:0 "格里芬战地临时指挥部"
  building_GF_GK_headquarters_1_desc:0 "格里芬在最前线与新开拓地带部署的指挥中心，一般条件较为简陋，仅能承担简单的指挥功能，指挥官与人形配置有限。"
