@@ -49,6 +49,12 @@
  GF_tech_recover_plan:0 "坍塌辐射污染区恢复及振兴联合开拓协议"
  GF_tech_recover_plan_desc:0 "该协议旨在统合所有与坍塌辐射污染区相关的资料与技术资源，同时推进污染区的治理与恢复行动。"
 
+ GF_tech_collapse_plant_1:0 "坍塌液工厂1（待定）"
+ GF_tech_collapse_plant_1_desc:0 "（坍塌液工厂1介绍）"
+ GF_tech_collapse_plant_2:0 "坍塌液工厂2（待定）"
+ GF_tech_collapse_plant_2_desc:0 "（坍塌液工厂2介绍）"
+ GF_tech_reverse_collapse_plant:0 "逆向坍塌工厂（待定）"
+ GF_tech_reverse_collapse_plant_desc:0 "（逆向坍塌工厂介绍）"
 
 ##################################
  GF_tech_collapsetech_weaponize:0 "坍塌技术武器化"
