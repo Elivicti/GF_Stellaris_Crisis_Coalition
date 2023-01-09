@@ -24,14 +24,23 @@ GF_planet_jobs_pop_assemblers = {
 
 GF_ship_collapse_weapons = {
 	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
 }
 
 GF_ship_collapse_armors = {
 	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
 }
 
 GF_ship_collapse_utilities = {
 	parent = ship_components
+	generate_mult_modifiers = {
+		upkeep
+	}
 }
 
 GF_ship_computers = {
@@ -44,4 +53,32 @@ GF_planet_jobs_doll_programmers = {
 		upkeep
 		produces
 	}
+}
+
+GF_planet_collapser = {
+	icon = "job_GF_collapser"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
+}
+
+GF_planet_reverse_collapser = {
+	icon = "job_GF_reverse_collapser_industry"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+	modifier_category = pop
 }

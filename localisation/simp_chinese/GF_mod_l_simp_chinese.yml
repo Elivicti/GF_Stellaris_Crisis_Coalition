@@ -11,9 +11,28 @@
  GF_ship_collapse_utilities:0 "坍塌组件"
  GF_ship_computers:0 "OGAS作战电脑"
 
+ mod_GF_ship_collapse_armors_upkeep_mult:0 "$GF_ship_collapse_armors$维护费"
+ mod_GF_ship_collapse_utilities_upkeep_mult:0 "$GF_ship_collapse_utilities$维护费"
+ mod_GF_ship_collapse_weapons_upkeep_mult:0 "$GF_ship_collapse_weapons$维护费"
+ mod_GF_ship_collapse_armors_alloys_upkeep_mult:0 "$GF_ship_collapse_armors$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_utilities_alloys_upkeep_mult:0 "$GF_ship_collapse_utilities$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_weapons_alloys_upkeep_mult:0 "$GF_ship_collapse_weapons$ £alloys£ 合金维护费"
+ mod_GF_ship_collapse_armors_energy_upkeep_mult:0 "$GF_ship_collapse_armors$ £energy£ 能量币维护费"
+ mod_GF_ship_collapse_utilities_energy_upkeep_mult:0 "$GF_ship_collapse_utilities$ £energy£ 能量币维护费"
+ mod_GF_ship_collapse_weapons_energy_upkeep_mult:0 "$GF_ship_collapse_weapons$ £energy£ 能量币维护费"
+
  GF_planet_jobs_doll_programmers:0 "云图技术员"
  mod_GF_planet_jobs_doll_programmers_produces_mult:0 "$GF_planet_jobs_doll_programmers$产出"
  mod_GF_planet_jobs_doll_programmers_upkeep_mult:0 "$GF_planet_jobs_doll_programmers$维护费"
+
+
+ mod_job_GF_collapser_add:0 "坍塌液生产工（待定）"
+ mod_job_GF_reverse_collapser_refinery_add:0 "精炼转化师"
+ mod_job_GF_reverse_collapser_industry_add:0 "工业转化师"
+
+ GF_planet_collapser:0 "坍塌液生产工（待定）岗位"
+ GF_planet_reverse_collapser:0 "逆向坍塌转化师岗位"
+ GF_planet_reverse_collapser_produces_mult:0 "$GF_planet_reverse_collapser$产出"
 
 ############
  mod_planet_pops_robotics_consumer_goods_upkeep_mult:0 "机械人口$consumer_goods$ £consumer_goods£ 维护费"
