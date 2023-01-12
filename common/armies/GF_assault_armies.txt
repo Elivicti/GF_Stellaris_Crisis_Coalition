@@ -86,3 +86,67 @@ GF_army_gavirul = {
 		has_country_flag = flag_GF_gavirul_project_completed
 	}
 }
+GF_army_gavirul = {
+	damage = 3.6
+	health = 2.4
+	morale_damage = 2.0
+	collateral_damage = 1.2
+	war_exhaustion = 1.8
+	time = 100
+	icon = GFX_GF_army_type_gavirul
+	has_species = no
+	pop_limited = yes
+	resources = {
+		category = armies
+		cost = {
+			minerals = 400
+			alloys = 50
+		}
+		upkeep = {
+			energy = 3
+		}
+	}
+	
+	potential = {
+		custom_tooltip = {
+			text = gavirul_army_limit_tooltip
+			planet = { has_planet_flag = flag_p_GF_home_world }
+		}
+	}
+	potential_country = {
+		# always = no		# temp
+		has_authority = GF_auth_commonwealth
+		has_country_flag = flag_GF_gavirul_project_completed
+	}
+	allow = {
+		custom_tooltip = {
+			text = gavirul_army_limit_tooltip
+			owner = {
+				NOT = {
+					 check_variable = {
+						which = "gavirul_army_count"
+						value = 3
+					}
+				}
+			}
+		}
+	}
+
+	on_queued = {
+		owner = {
+			change_variable = {
+				which = "gavirul_army_count"
+				value = 1
+			}
+		}
+	}
+
+	on_unqueued = {
+		owner = {
+			change_variable = {
+				which = "gavirul_army_count"
+				value = -1
+			}
+		}
+	}
+}
