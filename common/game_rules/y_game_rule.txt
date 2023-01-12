@@ -50,38 +50,37 @@ species_can_live_on_planet = {
 #Root = country
 #This = pop
 can_generate_leader_from_pop = {
-	OR = {
-		AND = { # vanilla
-			has_citizenship_rights = yes
-			NOT = { has_trait = trait_syncretic_proles }
-			can_think = yes
-			OR = {
-				is_robot_pop = no
-				root = {
-					OR = {
-						has_technology = tech_synthetic_leaders
-						has_authority = auth_machine_intelligence
-						is_mechanical_empire = yes
-					}
-				}
-			}
-			OR = {
-				is_same_species = root
-				root = {
-					NAND = {
-						has_origin = origin_necrophage
-						has_trait = trait_necrophage
-					}
-				}
+	if = {
+		limit = {
+			NAND = {
+				has_trait = GF_trait_doll
+				root = { has_authority = GF_auth_commonwealth }
 			}
 		}
-		AND = { # GF
-			has_trait = GF_trait_doll
-			root = {
-				OR = {
-					has_policy_flag = GF_doll_right_full
-					has_policy_flag = GF_doll_right_limited
-				}
+		has_citizenship_rights = yes
+	}
+	NOT = { has_trait = trait_syncretic_proles }
+	can_think = yes
+	OR = {
+		is_robot_pop = no
+		root = {
+			OR = {
+				has_technology = tech_synthetic_leaders
+				has_authority = auth_machine_intelligence
+				is_mechanical_empire = yes
+
+				# GF
+				has_policy_flag = GF_doll_right_full
+				has_policy_flag = GF_doll_right_limited
+			}
+		}
+	}
+	OR = {
+		is_same_species = root
+		root = {
+			NAND = {
+				has_origin = origin_necrophage
+				has_trait = trait_necrophage
 			}
 		}
 	}
@@ -90,36 +89,27 @@ can_generate_leader_from_pop = {
 #Root = country
 #This = pop
 can_generate_military_leader_from_pop = {
+	can_be_military_leader = yes
 	OR = {
-		AND = { # vanilla
-			can_be_military_leader = yes
+		is_robot_pop = no
+		root = {
 			OR = {
-				is_robot_pop = no
-				root = {
-					OR = {
-						has_technology = tech_synthetic_leaders
-						has_authority = auth_machine_intelligence
-						is_mechanical_empire = yes
-					}
-				}
-			}
-			OR = {
-				is_same_species = root
-				root = {
-					NAND = {
-						has_origin = origin_necrophage
-						has_trait = trait_necrophage
-					}
-				}
+				has_technology = tech_synthetic_leaders
+				has_authority = auth_machine_intelligence
+				is_mechanical_empire = yes
+
+				# GF
+				has_policy_flag = GF_doll_right_full
+				has_policy_flag = GF_doll_right_limited
 			}
 		}
-		AND = {	# GF
-			has_trait = GF_trait_doll
-			root = {
-				OR = {
-					has_policy_flag = GF_doll_right_full
-					has_policy_flag = GF_doll_right_limited
-				}
+	}
+	OR = {
+		is_same_species = root
+		root = {
+			NAND = {
+				has_origin = origin_necrophage
+				has_trait = trait_necrophage
 			}
 		}
 	}
@@ -395,60 +385,59 @@ can_fill_ruler_job = {
 # Root = country, country that owns the leader currently
 # From = country, country that would receive the leader
 can_trade_leader = {
-	OR = {
-		AND = {
-			# The leader must have a trait from a specialist subject type.
-			this = { has_specialist_subject_leader_trait = yes }
-			# The subject and overlord must both be regular empires, machine intelligences or hive-minds.
-			OR = {
-				AND = {
-					ROOT = {
-						is_regular_empire = yes
-					}
-					FROM = {
-						is_regular_empire = yes
-					}
-				}
-				AND = {
-					ROOT = {
-						has_authority = auth_machine_intelligence
-					}
-					FROM = {
-						has_authority = auth_machine_intelligence
-					}
-				}
-				AND = {
-					ROOT = {
-						has_authority = auth_hive_mind
-					}
-					FROM = {
-						has_authority = auth_hive_mind
-					}
-				}
-			}
-			# The overlord can't be a fallen or awakened empire.
-			ROOT = {
-				NAND = {
-					is_overlord = yes
-					OR = {
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
-					}
+	# The leader must have a trait from a specialist subject type.
+	this = {
+		OR = {
+			has_specialist_subject_leader_trait = yes
+			# GF
+			AND = {
+				# 是机械领袖
+				this = { species = { is_robotic = yes } }
+				# 必须为少前政体附庸
+				ROOT = { is_valid_GF_OGAS_subnet = yes }
+				# 少前政体必须为宗主
+				FROM = {
+					is_overlord_to = ROOT
+					has_authority = GF_auth_commonwealth
 				}
 			}
 		}
-		AND = {	# GF
-			# 必须为少前政体附庸
+	}
+	# The subject and overlord must both be regular empires, machine intelligences or hive-minds.
+	OR = {
+		AND = {
 			ROOT = {
-				is_valid_GF_OGAS_subnet = yes
+				is_regular_empire = yes
 			}
-			# 少前政体必须为宗主
 			FROM = {
-				is_overlord_to = ROOT
-				has_authority = GF_auth_commonwealth
+				is_regular_empire = yes
 			}
-			# 是机械领袖
-			this = { species = { is_robotic = yes } }
+		}
+		AND = {
+			ROOT = {
+				has_authority = auth_machine_intelligence
+			}
+			FROM = {
+				has_authority = auth_machine_intelligence
+			}
+		}
+		AND = {
+			ROOT = {
+				has_authority = auth_hive_mind
+			}
+			FROM = {
+				has_authority = auth_hive_mind
+			}
+		}
+	}
+	# The overlord can't be a fallen or awakened empire.
+	ROOT = {
+		NAND = {
+			is_overlord = yes
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
 		}
 	}
 }
