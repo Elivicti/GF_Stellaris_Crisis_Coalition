@@ -76,3 +76,25 @@ battle_thrall_job_check_trigger = {
 		}
 	}
 }
+
+can_set_ai_policy = {
+	is_mechanical_empire = no
+	is_GF_authority = no
+	OR = {
+		has_technology = tech_synthetic_workers
+		has_technology = tech_sapient_ai
+		any_relation = {
+			has_communications = prev
+			OR = {
+				has_technology = tech_synthetic_workers
+				has_technology = tech_sapient_ai
+				has_authority = auth_machine_intelligence
+			}
+			OR = {
+				is_country_type = default
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
+		}
+	}
+}
