@@ -44,15 +44,6 @@ GF_relic_department = {
 			has_job = researcher
 			has_job_category = ruler
 		}
-		owner = {
-			if = {
-				limit = { num_pops > 53 }
-				pop_percentage = {
-					percentage <= 0.15
-					limit = { member_of_faction = GF_relic_department }
-				}
-			}
-		}
 
 		if = {
 			limit = { has_trait = GF_trait_doll }
@@ -74,6 +65,19 @@ GF_relic_department = {
 		modifier = {
 			factor = 0
 			pop_has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 0
+			owner = {
+				if = {
+					limit = { num_pops > 53 }
+					pop_percentage = {
+						percentage > 0.15
+						limit = { member_of_faction = GF_relic_department }
+					}
+				}
+				else = { always = no }
+			}
 		}
 	}
 
