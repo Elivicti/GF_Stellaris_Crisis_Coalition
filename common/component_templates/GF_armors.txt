@@ -20,6 +20,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 0.5
 			alloys = 0.05
+			GF_nyto_collapse_liquid = 0.02
 		}
 	}
 }
@@ -46,6 +47,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 1.0
 			alloys = 0.1
+			GF_nyto_collapse_liquid = 0.05
 		}
 	}
 }
@@ -72,6 +74,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 2.0
 			alloys = 0.21
+			GF_nyto_collapse_liquid = 0.1
 		}
 	}
 }

@@ -26,6 +26,7 @@ weapon_component_template = {
 		upkeep = {
 			energy = 4.2
 			alloys = 0.6
+			GF_nyto_collapse_liquid = 0.3
 		}
 	}
 
@@ -84,6 +85,7 @@ weapon_component_template = {
 		upkeep = {
 			energy = 5.4
 			alloys = 1.6
+			GF_nyto_collapse_liquid = 0.8
 		}
 	}
 
@@ -177,6 +179,7 @@ weapon_component_template = {
 		upkeep = {
 			energy = 0.28
 			alloys = 0.04
+			GF_nyto_collapse_liquid = 0.02
 		}
 	}
 	power = -30
@@ -223,6 +226,7 @@ weapon_component_template = {
 		upkeep = {
 			energy = 0.56
 			alloys = 0.08
+			GF_nyto_collapse_liquid = 0.04
 		}
 	}
 	power = -50

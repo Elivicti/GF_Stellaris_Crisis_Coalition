@@ -17,6 +17,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 0.5
 			alloys = 0.05
+			GF_nyto_collapse_liquid = 0.02
 		}
 	}
 
@@ -41,6 +42,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 1.0
 			alloys = 0.1
+			GF_nyto_collapse_liquid = 0.05
 		}
 	}
 
@@ -63,8 +65,9 @@ utility_component_template = {
 			alloys = 180
 		}
 		upkeep = {
-			energy = 1.8
-			alloys = 0.8
+			energy = 1.4
+			alloys = 0.12
+			GF_nyto_collapse_liquid = 0.6
 		}
 	}
 
@@ -89,6 +92,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 3.5
 			alloys = 0.45
+			GF_nyto_collapse_liquid = 0.22
 		}
 	}
 
@@ -112,6 +116,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 6.8
 			alloys = 0.7
+			GF_nyto_collapse_liquid = 0.35
 		}
 	}
 
@@ -129,6 +134,9 @@ utility_component_template = {
 	power = 12000
 	resources = {
 		category = GF_ship_collapse_utilities
+		upkeep = {
+			GF_nyto_collapse_liquid = 0.05
+		}
 	}
 
 	prerequisites = { "GF_tech_collapse_power_core" }
@@ -151,6 +159,7 @@ utility_component_template = {
 		upkeep = {
 			energy = 0.85
 			alloys = 0.09
+			GF_nyto_collapse_liquid = 0.04
 		}
 	}
 
@@ -176,6 +185,11 @@ utility_component_template = {
 		cost = {
 			alloys = 160
 		}
+		upkeep = {
+			energy = 1.2
+			alloys = 0.18
+			GF_nyto_collapse_liquid = 0.09
+		}
 	}
 
 	prerequisites = { "GF_tech_collapse_power_core" }
@@ -190,6 +204,14 @@ utility_component_template = {
 	icon = "GFX_GF_collapse_power_core"
 	icon_frame = 1
 	power = 7500
+	resources = {
+		category = GF_ship_collapse_utilities
+		upkeep = {
+			energy = 1.5
+			alloys = 0.5
+			GF_nyto_collapse_liquid = 0.25
+		}
+	}
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
@@ -217,6 +239,9 @@ utility_component_template = {
 		category = GF_ship_collapse_utilities
 		cost = {
 			alloys = 30
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 0.05
 		}
 	}
 	ftl = yes
