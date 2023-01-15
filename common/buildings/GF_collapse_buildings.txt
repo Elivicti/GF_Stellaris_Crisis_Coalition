@@ -53,6 +53,10 @@ building_GF_collapse_1 = {
 	triggered_desc = {
 		text = job_GF_collapser_effect_desc
 	}
+
+	upgrades = {
+		"building_GF_collapse_2"
+	}
 }
 
 building_GF_collapse_2 = {
