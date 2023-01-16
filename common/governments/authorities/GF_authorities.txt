@@ -26,7 +26,6 @@ GF_auth_commonwealth = {
 		base = 0
 	}
 	country_modifier = {
-		country_base_influence_produces_add = 1
 		country_admin_cap_add = 50
 		planet_pops_robotics_upkeep_mult = -0.05
 	}
