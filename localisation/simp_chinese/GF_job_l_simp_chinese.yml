@@ -41,7 +41,7 @@
  job_GF_reverse_collapser_industry_consumer_goods_effect_desc:0 "$job_GF_reverse_collapser_industry_plural$利用 £GF_nyto_collapse_liquid£ §Y坍塌液§!将 £minerals£ §Y矿物§!高效地转化为 £consumer_goods£ §Y消费品§!"
  GF_reverse_collapser_research:0 "逆向坍塌研究员"
  GF_reverse_collapser_research_plural:0 "逆向坍塌研究员"
- GF_reverse_collapser_research_desc:0 "这些先驱者将揭开微观粒子世界的奥秘。"
+ GF_reverse_collapser_research_desc:0 "这些研究员消耗坍塌液反复进行逆向坍塌试验，通过尝试各种新奇古怪的物质结构理论模型来揭开微观粒子世界的奥秘。"
  job_GF_reverse_collapser_research_effect_desc:0 "$GF_reverse_collapser_research_plural$通过消耗并研究 £GF_nyto_collapse_liquid£ §Y坍塌液§!来产出 £physics£ £society£ £engineering£ §Y研究点数§!"
 
 ############
