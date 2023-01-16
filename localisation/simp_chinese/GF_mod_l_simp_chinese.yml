@@ -27,11 +27,11 @@
 
 
  mod_job_GF_collapser_add:0 "坍塌反应技师"
- mod_job_GF_reverse_collapser_refinery_add:0 "精炼转化师"
- mod_job_GF_reverse_collapser_industry_add:0 "工业转化师"
+ mod_job_GF_reverse_collapser_refinery_add:0 "逆向坍塌精炼技师岗位"
+ mod_job_GF_reverse_collapser_industry_add:0 "逆向坍塌工业技师岗位"
 
  GF_planet_collapser:0 "坍塌反应技师岗位"
- GF_planet_reverse_collapser:0 "逆向坍塌转化师岗位"
+ GF_planet_reverse_collapser:0 "逆向坍塌技师岗位"
  GF_planet_reverse_collapser_produces_mult:0 "$GF_planet_reverse_collapser$产出"
 
 ############
