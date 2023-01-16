@@ -374,6 +374,13 @@ GF_tech_collapse_plant_1 = {
 		"GF_tech_collapse"
 	}
 
+	prereqfor_desc = {
+		custom = {
+			title = GF_UNLOCK_COLLAPSE_UPKEEP_POLICY_TITLE
+			desc = GF_UNLOCK_COLLAPSE_UPKEEP_POLICY_DESC
+		}
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 1.25

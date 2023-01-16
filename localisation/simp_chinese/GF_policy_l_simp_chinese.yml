@@ -68,3 +68,16 @@
  GF_doll_work_policy_low:0 "低级任务模式"
  GF_doll_work_policy_low_name:0 "人形任务：低级任务模式"
  GF_doll_work_policy_low_desc:0 "与人类相比，人形拥有强大的机体，但在智力上表现得像孩子，因此只适合从事简单的工作。\n\n§Y人形§!将只能从事£pop_cat_worker£§Y劳工§!岗位以及£job_entertainer£§Y娱乐业§!或£job_enforcer£§Y国家暴力机关§!。"
+
+
+ policy_GF_collapse_upkeep_policy:0 "坍塌反应维护方案"
+ policy_GF_collapse_upkeep_policy_desc:0 "坍塌反应是把原有物质所组成的粒子完全打碎的过程，我们可以自由选择将哪种物质打碎来生产坍塌液。"
+ GF_collapse_upkeep_policy_mineral_name:0 "坍塌反应维护方案：矿物"
+ GF_collapse_upkeep_policy_mineral:0 "矿物"
+ GF_collapse_upkeep_policy_mineral_desc:0 "使用矿物来生产坍塌液。\n\n§E效果：§!\n$job_GF_collapser_plural$的基础维护费：£energy£§Y3.0§! £minerals£§Y6.0§!"
+ GF_collapse_upkeep_policy_mixed_name:0 "坍塌反应维护方案：混合"
+ GF_collapse_upkeep_policy_mixed:0 "混合"
+ GF_collapse_upkeep_policy_mixed_desc:0 "混合使用矿物和食物来生产坍塌液。\n\n§E效果：§!\n$job_GF_collapser_plural$的基础维护费：£energy£§Y3.0§! £minerals£§Y3.0§! £food£§Y4.5§!"
+ GF_collapse_upkeep_policy_food_name:0 "坍塌反应维护方案：食物"
+ GF_collapse_upkeep_policy_food:0 "食物"
+ GF_collapse_upkeep_policy_food_desc:0 "使用食物来生产坍塌液。\n\n§E效果：§!\n$job_GF_collapser_plural$的基础维护费：£energy£§Y3.0§! £food£§Y9.0§!"

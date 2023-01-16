@@ -279,3 +279,31 @@ GF_run_mode_policy = {
 		AI_weight = { weight = 0 }
 	}
 }
+
+GF_collapse_upkeep_policy = {
+	potential = {
+		has_technology = GF_tech_collapse_plant_1
+	}
+
+	option = {
+		name = GF_collapse_upkeep_policy_mineral
+		policy_flags = { GF_collapse_upkeep_policy_mineral }
+		AI_weight = {
+			weight = 5
+		}
+	}
+	option = {
+		name = GF_collapse_upkeep_policy_mixed
+		policy_flags = { GF_collapse_upkeep_policy_mixed }
+		AI_weight = {
+			weight = 1
+		}
+	}
+	option = {
+		name = GF_collapse_upkeep_policy_food
+		policy_flags = { GF_collapse_upkeep_policy_food }
+		AI_weight = {
+			weight = 1
+		}
+	}
+}
