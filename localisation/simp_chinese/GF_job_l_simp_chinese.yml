@@ -25,9 +25,9 @@
  job_GF_liaison:0 "联络员"
  job_GF_liaison_desc:0 "负责收发、传递齐纳网络信号信息的职位。"
 
- job_GF_collapser:0 "坍塌液生产工（待定）"
- job_GF_collapser_plural:0 "坍塌液生产工（待定）"
- job_GF_collapser_desc:0 "（坍塌液生产工介绍）"
+ job_GF_collapser:0 "坍塌反应技师"
+ job_GF_collapser_plural:0 "坍塌反应技师"
+ job_GF_collapser_desc:0 "在高能条件下进行的坍塌反应会放射出大量辐射，这些辐射对于生物而言会造成严重的坍塌辐射病，因而坍塌反应技师必须在严密的防护下工作"
  job_GF_collapser_effect_desc:0 "$job_GF_collapser_plural$利用 £energy£ §Y能量§!将 £minerals£ §Y矿物§!转化为 £GF_nyto_collapse_liquid£ §Y坍塌液§!"
  job_GF_reverse_collapser_refinery:0 "精炼转化师"
  job_GF_reverse_collapser_refinery_plural:0 "精炼转化师"

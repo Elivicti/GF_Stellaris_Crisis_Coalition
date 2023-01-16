@@ -24,12 +24,12 @@
  building_GF_42lab_3:0 "42LAB心智云图综合研究中心"
  building_GF_42lab_3_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
 
- building_GF_collapse_1:0 "坍塌液工厂1（待定）"
- building_GF_collapse_1_desc:0 "（坍塌液工厂1介绍）"
- building_GF_collapse_2:0 "坍塌液工厂2（待定）"
- building_GF_collapse_2_desc:0 "（坍塌液工厂2介绍）"
- building_GF_reverse_collapse:0 "逆向坍塌工厂（待定）"
- building_GF_reverse_collapse_desc:0 "（逆向坍塌工厂介绍）"
+ building_GF_collapse_1:0 "试验型坍塌反应釜"
+ building_GF_collapse_1_desc:0 "坍塌反应是一种通过高能输入把原有物质所组成的粒子完全打碎的过程，当这种处于被打碎状态的高能粒子团储存于特殊晶体格中时，会呈现绿色，这便是坍塌液的由来。在基本理清坍塌反应原理后，我们已经可以稳定生产这一特殊的物质状态"
+ building_GF_collapse_2:0 "改进型坍塌反应釜"
+ building_GF_collapse_2_desc:0 "改进后的坍塌反应釜极大加强了设施使用寿命与安全性，将坍塌辐射对环境影响降至最低，同时也提升了坍塌液的产量"
+ building_GF_reverse_collapse:0 "逆向坍塌物质重构实验室"
+ building_GF_reverse_collapse_desc:0 "世界上各种客观物质都是由相同的基本粒子组成，只是不同的组成结构带来了不同的物质性质，只要通过计算机记录相应物质的结构，再像按说明书搭积木一样把特定的粒子放在对应的位置，就可以得到想要的物质，这便是逆向坍塌反应。通过物质重构实验室，我们可以把已经打散的高能粒子团“坍塌液”组合成任意的其他物质，这意味着我们掌握了近乎神的权能，拥有了无限可能"
  building_GF_reverse_collapse_effect_desc:0 "坍塌液工厂将会根据殖民地类型来提供不同的逆向坍塌转化师岗位\n\n"
 #################################
  building_GF_GK_headquarters_1:0 "格里芬战地临时指挥部"
