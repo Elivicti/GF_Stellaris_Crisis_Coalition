@@ -2,7 +2,7 @@ GF_EMPIRE_URNC = {
 	# Union of Rossartrism Nations Coalition
 	name = "EMPIRE_DESIGN_GF_URNC"
 	adjective = "PRESCRIPTED_adjective_GF_URNC"
-	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+	ship_prefix = "URNC"
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -92,7 +92,7 @@ GF_EMPIER_AU = {
 	# Antarctic Union
 	name = "EMPIRE_DESIGN_GF_AU"
 	adjective = "PRESCRIPTED_adjective_GF_AU"
-	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+	ship_prefix = "AU"
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -183,7 +183,7 @@ GF_EMPIER_GK = {
 	# Antarctic Union
 	name = "EMPIRE_DESIGN_GF_GK"
 	adjective = "PRESCRIPTED_adjective_GF_GK"
-	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
+	ship_prefix = "GK"
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
