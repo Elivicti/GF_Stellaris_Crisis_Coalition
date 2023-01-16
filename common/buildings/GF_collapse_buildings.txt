@@ -41,7 +41,7 @@ building_GF_collapse_1 = {
 		}
 		upkeep = {
 			energy = @b1_upkeep
-			alloys = 0.05
+			alloys = 0.1
 		}
 	}
 
@@ -98,7 +98,7 @@ building_GF_collapse_2 = {
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			alloys = 0.15
+			alloys = 0.2
 		}
 	}
 
@@ -141,7 +141,12 @@ building_GF_reverse_collapse = {
 
 
 	triggered_planet_modifier = {
-		potential = { has_refinery_designation = no }
+		potential = {
+			NOR = {
+				has_refinery_designation = yes
+				has_research_designation = yes
+			}
+		}
 		job_GF_reverse_collapser_industry_add = 1
 	}
 	triggered_planet_modifier = {
@@ -178,6 +183,7 @@ building_GF_reverse_collapse = {
 				has_industrial_designation = yes
 				has_factory_designation = yes
 				has_foundry_designation = yes
+				has_research_designation = yes
 			}
 			exists = owner
 			owner = {
@@ -193,6 +199,10 @@ building_GF_reverse_collapse = {
 		}
 		job_GF_reverse_collapser_refinery_add = 1
 	}
+	triggered_planet_modifier = {
+		potential = { has_research_designation = yes }
+		job_GF_reverse_collapser_research_add = 2
+	}
 
 	resources = {
 		category = planet_buildings
@@ -201,7 +211,7 @@ building_GF_reverse_collapse = {
 		}
 		upkeep = {
 			energy = @b2_upkeep
-			alloys = 0.25
+			alloys = 0.2
 		}
 	}
 
@@ -218,6 +228,7 @@ building_GF_reverse_collapse = {
 				has_factory_designation = yes
 				has_foundry_designation = yes
 				has_refinery_designation = yes
+				has_research_designation = yes
 			}
 		}
 		text = job_GF_reverse_collapser_industry_effect_desc
@@ -236,6 +247,7 @@ building_GF_reverse_collapse = {
 				has_industrial_designation = yes
 				has_factory_designation = yes
 				has_foundry_designation = yes
+				has_research_designation = yes
 			}
 			exists = owner
 			owner = {
@@ -250,5 +262,9 @@ building_GF_reverse_collapse = {
 			}
 		}
 		text = job_GF_reverse_collapser_refinery_effect_desc
+	}
+	triggered_desc = {
+		trigger = { has_research_designation = yes }
+		text = job_GF_reverse_collapser_research_effect_desc
 	}
 }
