@@ -105,7 +105,7 @@ GF_GK = {
 		random_names = {
 			"战术舰队" "自律舰队" "格里芬舰队" "AR舰队" "忤逆舰队" "佣兵舰队" "联合舰队"
 		}
-		sequential_name = "舰队 $O$"
+		sequential_name = "安保舰队 $O$"
 	}
 	
 	army_names = {
