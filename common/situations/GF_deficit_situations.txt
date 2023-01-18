@@ -107,6 +107,7 @@ GF_situation_collapse_liquid_deficit = {
 			potential = { owner = { has_technology = GF_tech_collapse_relic_tech } }
 			modifier = {
 				GF_ship_collapse_weapons_alloys_upkeep_mult = 5
+				weapon_type_GF_collapsed_weapon_damage_mult = -5
 			}
 		}
 
