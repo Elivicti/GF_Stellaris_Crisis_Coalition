@@ -348,7 +348,7 @@ GF_convert_to_OGAS_subnet = {
 		
 		unity = 1000
 	}
-	capital_scope = {
+	every_owned_planet = {
 		# 添加42lab
 		if = {
 			limit = {
@@ -381,14 +381,14 @@ GF_convert_to_OGAS_subnet = {
 		}
 		if = {
 			limit = {
-				any_owned_pop = {
-					NOT = { is_same_species_class = event_target:GF_doll_species }
+				NOT = {
+					any_owned_pop = { is_same_species_class = event_target:GF_doll_species }
 				}
 			}
 			create_pop = { species = event_target:GF_doll_species }
-			
 		}
 	}
+	give_technology = { tech = GF_tech_doll_assemble }
 }
 
 GF_deactivate_OGAS_subnet = {
