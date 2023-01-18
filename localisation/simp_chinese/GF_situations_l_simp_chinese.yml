@@ -12,7 +12,7 @@
  GF_deficit_collapse_liquid_approach_nyto_tooltip:0 "$GF_nyto_collapse_liquid_deficit_desc$"
 
  GF_deficit_collapse_liquid_approach_commonwealth:0 "$GF_deficit_collapse_liquid_approach$"
- GF_deficit_collapse_liquid_approach_commonwealth_tooltip:0 "坍缩液匮乏，（待定）"
+ GF_deficit_collapse_liquid_approach_commonwealth_tooltip:0 "坍缩液匮乏，所有依赖坍塌液的地方都停摆了！"
 
  GF_nyto_collapse_liquid_deficit:0 "坍缩液匮乏"
  GF_nyto_collapse_liquid_deficit_desc:0 "坍缩液匮乏，无论日常生活还是生产建造都陷入瘫痪。"
