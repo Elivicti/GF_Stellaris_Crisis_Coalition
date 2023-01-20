@@ -8,7 +8,7 @@ GF_purge = {
 	possible = {
 		exists = owner
 		has_trait = GF_trait_doll
-		has_citizenship_type = { type = citizenship_GF_purge }
+		has_citizenship_type = { type = citizenship_GF_doll_purge }
 		# OR = {
 		# 	has_citizenship_type = { type = citizenship_purge_machine }
 		# 	has_citizenship_type = { type = citizenship_purge }
@@ -158,7 +158,7 @@ GF_purge = {
 		modifier = {
 			set = 100000
 			has_trait = GF_trait_doll
-			has_citizenship_type = { type = citizenship_GF_purge }
+			has_citizenship_type = { type = citizenship_GF_doll_purge }
 		}
 	}
 }

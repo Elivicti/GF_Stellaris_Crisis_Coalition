@@ -108,17 +108,25 @@ citizenship_GF_doll_purge = {
 	# }
 
 	potential = {
+		has_trait = GF_trait_doll		# GF 人形特质
 		exists = from
 		from = {
 			NOR = {
-				is_valid_GF_vassal = yes
 				has_authority = GF_auth_commonwealth
+				is_valid_GF_vassal = yes
 			}
 		}
-		has_trait = GF_trait_doll		# GF 人形特质
 	}
 	allow = {
-		hidden_trigger = { exists = from }
+		hidden_trigger = {
+			exists = from
+			from = {
+				NOR = {
+					has_authority = GF_auth_commonwealth
+					is_valid_GF_vassal = yes
+				}
+			}
+		}
 		always = yes
 	}
 
