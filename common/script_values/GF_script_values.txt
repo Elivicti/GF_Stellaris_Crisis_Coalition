@@ -95,3 +95,15 @@ GF_count_robotic_leader_with_vanilla_negative_traits = {
 		mode = add
 	}
 }
+
+GF_count_district = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_districts
+		trigger_scope = this
+		parameters = {
+			type = $TYPE$
+		}
+		mode = add
+	}
+}
