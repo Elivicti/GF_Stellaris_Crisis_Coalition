@@ -31,6 +31,7 @@ GF_assemble_mechanic = {
 		modifier = {
 			planet_pop_assembly_add = 1
 		}
+		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
 	}
 	resources = {
 		category = GF_planet_jobs_pop_assemblers
