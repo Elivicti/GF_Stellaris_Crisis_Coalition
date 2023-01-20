@@ -1,9 +1,9 @@
 ﻿l_simp_chinese:
 #################################
- GF_planet_jobs_pop_assemblers:0 "人形组装师"
+ GF_planet_jobs_pop_assemblers:0 "人形组装岗位"
  GF_planet_dormancy:0 "人形休眠舱"
 #################################
- job_GF_assemble_mechanic_effect_desc:0 "£job_GF_assemble_mechanic£ $job_GF_assemble_mechanic_plural$利用£alloys£ §Y$alloys$§!和£gf_core_chip£ §Y$gf_core_chip$§!组装新的 £pop£ §Y自律人形§!人口，组装非 £pop£ §Y自律人形§!人口时，不消耗£gf_core_chip£ §Y$gf_core_chip$§!"
+ job_GF_assemble_mechanic_effect_desc:0 "£job_GF_assemble_mechanic£ $job_GF_assemble_mechanic_plural$消耗 £alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!，组装§Y$GF_ANDROID$§!人口时额外消耗 £gf_core_chip£ §Y$gf_core_chip$§!"
  job_GF_assemble_mechanic_plural:0 "人形技师"
  job_GF_assemble_mechanic:0 "人形技师"
  job_GF_assemble_mechanic_desc:0 "负责生产仿生自律人形的技术专家。"
@@ -70,15 +70,20 @@
  job_GF_AU_director:0 "理事"
  job_GF_AU_director_desc:0 "理事负责监督所辖地区的治安与经济运行情况。"
 ############
- job_GF_command_doll_effect_desc:0 "£job_GF_command_doll£ $job_GF_command_doll_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!。"
+ job_GF_command_doll_effect_desc:0 "£job_GF_command_doll£ $job_GF_command_doll_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!"
  job_GF_command_doll_plural:0 "指挥人形"
  job_GF_command_doll:0 "指挥人形"
  job_GF_command_doll_desc:0 "指挥人形平时负责接收、并向下属人形下发远程传输来的行动指令，也可以在失去上级联络的情况下根据相关预载程序自行分析情报信息来发出指令指挥下属人形自律行动，通常由装配了指挥模块的高级人形担任，是自动化殖民地中的核心单位。"
- job_GF_maintain_doll_effect_desc:0 "£job_GF_maintain_doll£ $job_GF_maintain_doll_plural$生产 £unity£ §Y凝聚力§!"
+ job_GF_maintain_doll_effect_desc:0 "£job_GF_maintain_doll£ $job_GF_maintain_doll_plural$能够提高星球的 £amenities£ §Y舒适度§!"
+ job_GF_maintain_doll_effect_90WISH_desc:0 "£job_GF_maintain_doll£ $job_GF_maintain_doll_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!"
  job_GF_maintain_doll_plural:0 "维护人形"
  job_GF_maintain_doll:0 "维护人形"
  job_GF_maintain_doll_desc:0 "依据人形自我维护程序与远程指令来保养、维修其他人形的人形单位。"
- job_GF_assemble_doll_effect_desc:0 "£job_GF_assemble_doll£ $job_GF_assemble_doll_plural$组装新的 £pop£ §Y自律人形§!人口"
+ job_GF_assemble_doll_effect_desc:0 "£job_GF_assemble_doll£ $job_GF_assemble_doll_plural$消耗 £alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!，组装§Y$GF_ANDROID$§!人口时额外消耗 £gf_core_chip£ §Y$gf_core_chip$§!"
  job_GF_assemble_doll_plural:0 "组装人形"
  job_GF_assemble_doll:0 "组装人形"
  job_GF_assemble_doll_desc:0 "依据预载的人形组装程序与远程指令来组装其他人形的人形单位。"
+############
+ job_GF_purge:0 "$job_purge$"
+ job_GF_purge_plural:0 "$job_purge_plural$"
+ job_GF_purge_desc:0 "$job_purge_desc$"

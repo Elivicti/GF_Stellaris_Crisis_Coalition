@@ -54,7 +54,7 @@ GF_guard_doll = {
 GF_dormancy_doll = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_maintenance_depot
+	building_icon = building_GF_doll_maintain_center_1
 	pop_modifier = {
 		planet_pops_upkeep_mult = -2
 		pop_housing_usage_mult = -2
@@ -105,12 +105,12 @@ GF_dormancy_doll = {
 GF_command_doll = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_stronghold
+	building_icon = building_GF_auto_colony_capital
 
 	pop_modifier = {
 	}
 	planet_modifier = {
-		planet_amenities_no_happiness_add = 4
+		planet_amenities_add = 4
 	}
 	resources = {
 		category = planet_administrators
@@ -154,7 +154,7 @@ GF_command_doll = {
 GF_maintain_doll = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_maintenance_depot
+	building_icon = building_GF_doll_maintain_center_1
 
 	resources = {
 		category = planet_jobs
@@ -185,7 +185,7 @@ GF_maintain_doll = {
 	}
 
 	planet_modifier = {
-		planet_amenities_no_happiness_add = 4
+		planet_amenities_add = 4
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -195,7 +195,7 @@ GF_maintain_doll = {
 			}
 		}
 		modifier = {
-			planet_amenities_no_happiness_add = 1
+			planet_amenities_add = 1
 		}
 	}
 
@@ -227,7 +227,7 @@ GF_maintain_doll = {
 GF_assemble_doll = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_robot_assembly_plant
+	building_icon = building_GF_doll_factory
 	clothes_texture_index = 3
 		
 	possible_pre_triggers = {
@@ -245,8 +245,9 @@ GF_assemble_doll = {
 		has_trait = GF_trait_doll
 	}
 	
-	planet_modifier = {
+	triggered_planet_modifier = {
 		planet_pop_assembly_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -255,12 +256,21 @@ GF_assemble_doll = {
 		modifier = {
 			planet_pop_assembly_add = 0.5
 		}
+		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
 	}
 	resources = {
 		category = GF_planet_jobs_pop_assemblers
 		upkeep = {
 			alloys = 1
-			food = 0.25
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					exists = assembling_species
+					assembling_species = { has_trait = GF_trait_doll }
+				}
+			}
+			gf_core_chip = 1
 		}
 	}
 	weight = {
