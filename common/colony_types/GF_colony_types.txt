@@ -10,8 +10,8 @@
 @built_districts_high_threshold = 8
 
 # Colony
-GF_auto_colony = {
-	icon = GFX_colony_type_picker
+col_GF_auto_colony = {
+	icon = GFX_colony_type_GF_auto_colony
 
 	potential = {
 		exists = owner
@@ -28,7 +28,6 @@ GF_auto_colony = {
 		planet_clear_blocker_speed_mult = 0.10
 		planet_districts_cost_mult = -0.05
 
-		planet_immigration_pull_mult = -1.00
 		planet_jobs_robotic_produces_mult = -0.05
 	}
 

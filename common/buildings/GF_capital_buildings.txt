@@ -1,6 +1,11 @@
 #############
 # Capital buildings
 #############
+@buildings_t1 = 1
+@buildings_t2 = 2
+@buildings_t3 = 3
+@buildings_t4 = 4
+
 # 自动殖民地
 building_GF_auto_colony_capital = {
 	base_buildtime = @b2_time
@@ -26,6 +31,7 @@ building_GF_auto_colony_capital = {
 	}
 
 	convert_to = {
+		building_colony_shelter
 		building_hive_capital
 		building_machine_capital
 		building_resort_capital
@@ -41,14 +47,17 @@ building_GF_auto_colony_capital = {
 
 	planet_modifier = {
 		job_GF_command_doll_per_pop = 0.1
-		job_GF_command_doll_add = 2
-		job_GF_guard_doll_per_pop = 0.05
-		job_GF_guard_doll_add = 1
 		job_GF_assemble_doll_per_pop = 0.1
+		job_GF_guard_doll_per_pop = 0.05
+
+		job_GF_command_doll_add = 2
+		job_GF_guard_doll_add = 1
 		job_GF_assemble_doll_add = 1
 		job_GF_dormancy_doll_add = 1
+
 		planet_housing_add = 5
 		planet_amenities_add = 5
+		planet_max_buildings_add = @buildings_t1
 	}
 
 	triggered_planet_modifier = {
@@ -62,8 +71,25 @@ building_GF_auto_colony_capital = {
 			planet_housing_add = 1
 		}
 	}
+	triggered_desc = { text = job_GF_command_doll_effect_desc }
+	triggered_desc = { text = job_GF_assemble_doll_effect_desc }
+	triggered_desc = { text = job_GF_guard_doll_effect_desc }
+	triggered_desc = { text = job_GF_dormancy_doll_effect_desc }
+	triggered_desc = { text = building_GF_auto_colony_capital_effect_desc }
 	triggered_desc = {
-		text = job_enforcer_effect_desc
+		trigger = {
+			num_districts = {
+				type = district_city
+				value > 0
+			}
+		}
+		text = job_GF_maintain_doll_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		job_GF_maintain_doll_add = 1
+		mult = value:GF_count_district|TYPE|district_city|
+		
 	}
 
 	ai_weight = {

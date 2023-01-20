@@ -14,8 +14,11 @@
  decision_GF_doll_cloud_computing_off_desc:0 "云计算协议中止。"
  decision_GF_auto_colony_on:0 "开启自动化遥控殖民协议"
  decision_GF_auto_colony_on_desc:0 "该协议旨在允许我们派遣人形殖民一些当前并不适宜我们居住的星球。启动该协议后，人形将基于内置自律程序并在远程控制命令的指挥下开展一些诸如建设、资源采集、环境改造等复杂的殖民活动。"
+ decision_GF_auto_colony_on_effect_tooltip:0 "将殖民地规划类型设置为§Y$col_GF_auto_colony$§!\n将首都建筑替换为§Y$building_GF_auto_colony_capital$§!"
+ decision_GF_auto_colony_on_effect_not_automation_tooltip:0 "\n\n§R注意：§!该§Y自动化§!与§Y$PLANET_AUTOMATION_TITLE$§!§R无关§!"
  decision_GF_auto_colony_off:0 "关闭自动化遥控殖民协议"
  decision_GF_auto_colony_off_desc:0 "经过人形先遣队的不断建设与改造后，原本目标星球不适宜的环境已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
+ decision_GF_auto_colony_off_effect_tooltip:0 "移除§Y$col_GF_auto_colony$§!规划类型\n移除§Y$building_GF_auto_colony_capital$§!"
 
 
  decision_GF_rebuild_purify_wall:0 "重建隔离墙"

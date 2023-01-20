@@ -43,6 +43,7 @@ decision_GF_auto_colony_on = {
 	}
 
 	effect = {
+		custom_tooltip = decision_GF_auto_colony_on_effect_tooltip
 		add_modifier = {
 			modifier = GF_auto_colony
 			days = -1
@@ -50,9 +51,11 @@ decision_GF_auto_colony_on = {
 		hidden_effect = {
 			remove_building = building_colony_shelter
 			add_building = building_GF_auto_colony_capital
-			set_colony_type = GF_auto_colony
+			set_colony_type = col_GF_auto_colony
+
+			validate_planet_buildings_and_districts = yes
 		}
-		hidden_effect = { validate_planet_buildings_and_districts = yes }
+		custom_tooltip = decision_GF_auto_colony_on_effect_not_automation_tooltip
 	}
 
 	ai_weight = {
@@ -76,11 +79,15 @@ decision_GF_auto_colony_off = {
 	}
 
 	effect = {
+		custom_tooltip = decision_GF_auto_colony_off_effect_tooltip
 		remove_modifier = GF_auto_colony
-		hidden_effect = { validate_planet_buildings_and_districts = yes }
+		
 		hidden_effect = {
 			add_building = building_colony_shelter
 			remove_building = building_GF_auto_colony_capital
+			set_colony_type = col_default
+
+			validate_planet_buildings_and_districts = yes
 		}
 	}
 

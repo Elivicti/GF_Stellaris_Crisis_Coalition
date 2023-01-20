@@ -17,6 +17,7 @@
  building_GF_zener_network_center_4_desc:0 "最终升级版的齐纳信息高速公路，海量的数据在此光速传播，堪称星际时代的奇迹。"
  building_GF_auto_colony_capital:0 "自动化殖民控制中心"
  building_GF_auto_colony_capital_desc:0 "一体式自动化殖民建筑，内有强大的信号接收发射器与人形自动化制造、维护、存储设施以辅助人形开展殖民活动。"
+ building_GF_auto_colony_capital_effect_desc:0 "\n每有一个§Y$district_city$§!将提供§G+1§!$job_GF_maintain_doll$岗位"
  building_GF_42lab_1:0 "42LAB云图研究实验室"
  building_GF_42lab_1_desc:0 "42LAB承担了最早期的心智云图研究任务，而其主持的云图计划直接助力了人形技术的高速发展。虽然时光飞逝，这一机构依旧保持着古老研究传统，探索着心智云图的无限可能。"
  building_GF_42lab_2:0 "42LAB云图研究分部"
