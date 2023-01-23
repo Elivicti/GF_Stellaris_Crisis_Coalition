@@ -71,11 +71,11 @@ building_GF_auto_colony_capital = {
 			planet_housing_add = 1
 		}
 	}
+	triggered_desc = { text = building_GF_auto_colony_capital_effect_desc }
 	triggered_desc = { text = job_GF_command_doll_effect_desc }
 	triggered_desc = { text = job_GF_assemble_doll_effect_desc }
 	triggered_desc = { text = job_GF_guard_doll_effect_desc }
 	triggered_desc = { text = job_GF_dormancy_doll_effect_desc }
-	triggered_desc = { text = building_GF_auto_colony_capital_effect_desc }
 	triggered_desc = {
 		trigger = {
 			num_districts = {
@@ -88,8 +88,8 @@ building_GF_auto_colony_capital = {
 
 	triggered_planet_modifier = {
 		job_GF_maintain_doll_add = 1
+		job_clerk_add = -1
 		mult = value:GF_count_district|TYPE|district_city|
-		
 	}
 
 	ai_weight = {
