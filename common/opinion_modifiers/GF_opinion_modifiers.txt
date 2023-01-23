@@ -64,3 +64,14 @@ opinion_collapsed_a_primitive_world_phile = {
 		base = 1
 	}
 }
+
+opinion_collapse_bombarded_my_habitat = {
+	opinion = {
+		base = -100
+	}
+	accumulative = yes
+	min = -500
+	decay = {
+		base = 1
+	}
+}
