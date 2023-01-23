@@ -17,14 +17,14 @@
 
 ship_behavior = {
 	name = "GF_ogas_artillery"
-	preferred_attack_range = 200
-	formation_distance = 240
-	return_to_formation_distance = 250
+	preferred_attack_range = max
+	formation_distance = max
+	return_to_formation_distance = max
 	source_target_anchor_factor = 1.0
 	combat_target_anchor = root
 
 	collision_awareness = 0.2
-	collision_radius = 1.0							#collision_radius is a multiplier on the radius specified in the ship size
+	collision_radius = 2.0							#collision_radius is a multiplier on the radius specified in the ship size
 	collision_strafe = 2.5							#collision_strafe allows the ship to move in any direction while colliding with another
 	attack_move_pattern = stay_at_range
 	passive_move_pattern = stay_at_range
@@ -34,15 +34,15 @@ ship_behavior = {
 
 ship_behavior = {
 	name = "GF_ogas_carrier"
-	preferred_attack_range = max
-	formation_distance = median
-	return_to_formation_distance = max
+	preferred_attack_range = 240
+	formation_distance = 240
+	return_to_formation_distance = 240
 	source_target_anchor_factor = 1.0
 	combat_target_anchor = root
 	
 	collision_awareness = 1
-	collision_radius = 20
-	collision_strafe = 10
+	collision_radius = 2.0
+	collision_strafe = 2.5
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = stay_at_range
 
@@ -52,9 +52,9 @@ ship_behavior = {
 ship_behavior = {
 	name = "GF_ogas_free"
 
-	preferred_attack_range = 240
-	formation_distance = 240
-	return_to_formation_distance = 250
+	preferred_attack_range = max
+	formation_distance = max
+	return_to_formation_distance = max
 	
 	collision_awareness = 0.2
 	collision_radius = 1.0							#collision_radius is a multiplier on the radius specified in the ship size
