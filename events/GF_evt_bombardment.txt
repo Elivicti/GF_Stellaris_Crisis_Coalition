@@ -9,36 +9,46 @@ planet_event = {
 	trigger = {
 		planet_devastation >= 100
 		has_orbital_bombardment_stance = collapsebomb
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	immediate = {
-		random = {
-			chance = 50
-			# if = {
-			# 	limit = { exists = owner }
-			# 	every_owned_pop = { kill_pop = yes }
-			# }
-			every_owned_pop = { kill_pop = yes }
-			every_deposit = { remove_deposit = yes }
+		random_list = {
+			1 = {}
+			3 = {
+				every_owned_pop = { kill_pop = yes }
+				every_deposit = { remove_deposit = yes }
 
-			remove_all_buildings = yes
-			change_pc = pc_GF_collapsed
-			save_event_target_as = collapsed_planet
-			from.owner = {
-				play_sound = event_air_raid_siren
-				country_event = {
-					id = GF_bombardment.1101
+				remove_all_buildings = yes
+				if = {
+					limit = { is_ringworld = yes }
+					spawn_ringworld_cracker_effect = yes
+					change_pc = pc_ringworld_habitable_damaged
 				}
-				save_event_target_as = collapse_bombarder
-			}
-			owner = {
-				play_sound = event_air_raid_siren
-				add_opinion_modifier = {
-					who = event_target:collapse_bombarder
-					modifier = opinion_collapsed_my_world
+				else_if = {
+					limit = { habitable_planet = yes }
+					change_pc = pc_GF_collapsed
+					clear_deposits = yes
+					add_modifier = {
+						modifier = collapsed_terraforming_candidate
+						days = -1
+					}
+					add_deposit = d_society_10
 				}
-				country_event = {
-					id = GF_bombardment.1102
+
+				save_event_target_as = collapsed_planet
+				from.owner = {
+					play_sound = event_air_raid_siren
+					save_event_target_as = collapse_bombarder
+					country_event = { id = GF_bombardment.1101 }
+				}
+				owner = {
+					play_sound = event_air_raid_siren
+					add_opinion_modifier = {
+						who = event_target:collapse_bombarder
+						modifier = opinion_collapsed_my_world
+					}
+					country_event = { id = GF_bombardment.1102 }
 				}
 			}
 		}
@@ -48,6 +58,19 @@ planet_event = {
 country_event = { # event for bombarder country
 	id = GF_bombardment.1101
 	title = GF_bombardment.1101.name
+	desc = {
+		trigger = {
+			text = GF_bombardment.1101.desc
+			success_text = {
+				text = GF_bombardment.1101.desc.ringworld
+				event_target:collapsed_planet = { is_planet_class = pc_ringworld_habitable_damaged }
+			}
+			success_text = {
+				text = GF_bombardment.1101.desc.planet
+				event_target:collapsed_planet = { is_planet_class = pc_GF_collapsed }
+			}
+		}
+	}
 	desc = GF_bombardment.1101.desc
 
 	picture = GFX_evt_GF_black_zone
@@ -71,8 +94,19 @@ country_event = { # event for bombarder country
 country_event = { # event for victim country
 	id = GF_bombardment.1102
 	title = GF_bombardment.1102.name
-	desc = GF_bombardment.1102.desc
-
+	desc = {
+		trigger = {
+			text = GF_bombardment.1101.desc
+			success_text = {
+				text = GF_bombardment.1101.desc.ringworld
+				event_target:collapsed_planet = { is_planet_class = pc_ringworld_habitable_damaged }
+			}
+			success_text = {
+				text = GF_bombardment.1101.desc.planet
+				event_target:collapsed_planet = { is_planet_class = pc_GF_collapsed }
+			}
+		}
+	}
 	picture = GFX_evt_GF_black_zone
 	show_sound = event_air_raid_siren
 	location = event_target:collapsed_planet
@@ -94,18 +128,16 @@ planet_event = {
 	trigger = {
 		has_orbital_bombardment_stance = collapsebomb
 		planet_devastation <= 99
+		NOT = { is_planet_class = pc_habitat }
 	}
 
 	immediate = {
 		if = {
 			limit = { planet_devastation <= 40 }
-			random = {
-				chance = 1
-				add_deposit = d_GF_red_zone_extra
-			}
-			random = {
-				chance = 1
-				add_deposit = d_GF_yellow_zone_extra
+			random_list = {
+				89 = {}
+				10 = { add_deposit = d_GF_yellow_zone_extra }
+				1 = { add_deposit = d_GF_red_zone_extra }
 			}
 		}
 		else_if = {
@@ -113,31 +145,146 @@ planet_event = {
 				planet_devastation > 40
 				planet_devastation <= 80
 			}
-			random = {
-				chance = 4
-				add_deposit = d_GF_red_zone_extra
-			}
-			random = {
-				chance = 4
-				add_deposit = d_GF_yellow_zone_extra
-			}
-			random = {
-				chance = 2
-				add_deposit = d_GF_black_zone_extra
+			random_list = {
+				69 = {}
+				20 = { add_deposit = d_GF_yellow_zone_extra }
+				10 = { add_deposit = d_GF_red_zone_extra }
+				1 = { add_deposit = d_GF_black_zone_extra }
 			}
 		}
 		else = {
-			random = {
-				chance = 2
-				add_deposit = d_GF_red_zone_extra
+			random_list = {
+				65 = {}
+				5 = { add_deposit = d_GF_yellow_zone_extra }
+				10 = { add_deposit = d_GF_red_zone_extra }
+				20 = { add_deposit = d_GF_black_zone_extra }
 			}
-			random = {
-				chance = 2
-				add_deposit = d_GF_yellow_zone_extra
+		}
+		if = {
+			limit = {
+				planet_devastation > 40
+				num_pops > 5
 			}
-			random = {
-				chance = 6
-				add_deposit = d_GF_black_zone_extra
+			random_list = {
+				2 = {}
+				1 = {
+					random_owned_pop = {
+						limit = {
+							NOR = {
+								has_trait = GF_trait_sequela_immune
+								is_robot_pop = yes
+							}
+						}
+						kill_pop = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = GF_bombardment.1300
+
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		planet_devastation >= 100
+		has_orbital_bombardment_stance = collapsebomb
+		is_planet_class = pc_habitat
+	}
+
+	immediate = {
+		every_owned_pop = { kill_pop = yes }
+		every_deposit = { remove_deposit = yes }
+		remove_all_buildings = yes
+		spawn_habitat_cracker_effect = yes
+		
+		save_event_target_as = collapsed_planet
+		solar_system = {
+			save_event_target_as = collapsed_planet_system
+		}
+
+		from.owner = {
+			play_sound = event_air_raid_siren
+			save_event_target_as = collapse_bombarder
+			country_event = { id = GF_bombardment.1301 }
+		}
+		owner = {
+			play_sound = event_air_raid_siren
+			add_opinion_modifier = {
+				who = event_target:collapse_bombarder
+				modifier = opinion_collapse_bombarded_my_habitat
+			}
+			country_event = { id = GF_bombardment.1302 }
+		}
+
+		remove_planet = yes
+	}
+}
+
+country_event = { # event for bombarder country
+	id = GF_bombardment.1301
+	title = GF_bombardment.1301.name
+	desc = GF_bombardment.1301.desc
+
+	picture = GFX_evt_GF_black_zone
+
+	location = event_target:collapsed_planet_system
+
+	is_triggered_only = yes
+	trigger = {
+		has_authority = GF_auth_commonwealth
+		has_policy_flag = GF_enable_collapse_bombardment
+		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
+	}
+
+	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
+
+	option = {
+		name = GF_bombardment.1101.a
+	}
+}
+
+country_event = { # event for victim country
+	id = GF_bombardment.1302
+	title = GF_bombardment.1302.name
+	desc = GF_bombardment.1302.desc
+
+	picture = GFX_evt_GF_black_zone
+	show_sound = event_air_raid_siren
+	location = event_target:collapsed_planet_system
+
+	is_triggered_only = yes
+	# trigger = { any_owned_planet = { has_orbital_bombardment_stance = collapsebomb } }
+
+	option = {
+		name = GF_bombardment.1302.a
+	}
+}
+
+planet_event = {
+	id = GF_bombardment.1310
+
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = collapsebomb
+		planet_devastation <= 99
+		is_planet_class = pc_habitat
+	}
+
+	immediate = {
+		add_planet_devastation = 2
+		if = {
+			limit = { num_pops > 5 }
+			random_list = {
+				1 = {}
+				1 = {
+					random_owned_pop = { kill_pop = yes }
+				}
 			}
 		}
 	}
