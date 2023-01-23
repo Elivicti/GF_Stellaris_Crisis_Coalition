@@ -82,6 +82,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -110,6 +112,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -138,6 +142,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -177,6 +183,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -205,6 +213,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -287,6 +297,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -358,6 +370,8 @@ country_event = {
 	desc = GF_zion.21000.desc.c
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
@@ -517,6 +531,8 @@ country_event = {
 	}
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }

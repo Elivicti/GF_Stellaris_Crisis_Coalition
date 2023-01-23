@@ -57,6 +57,8 @@ country_event = {
 	desc = GF_ogas.110.desc
 
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -85,6 +87,8 @@ country_event = {
 	title = contact
 	desc = GF_ogas.111.desc
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -139,6 +143,8 @@ country_event = {
 		trigger = { NOT = { has_authority = GF_auth_commonwealth } }
 	}
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
@@ -238,6 +244,8 @@ country_event = {
 #	desc = GF_ogas.11000.desc.b
 #	desc = GF_ogas.11000.desc.c
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -271,6 +279,8 @@ country_event = {
 #	desc = GF_ogas.11100.desc.b
 #	desc = GF_ogas.11100.desc.c
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -317,6 +327,8 @@ country_event = {
 		trigger = { GF_OGAS_has_available_threads = no }
 	}
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -436,6 +448,8 @@ country_event = {
 	desc = GF_ogas.12000.desc.b
 	desc = GF_ogas.12000.desc.c
 	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
