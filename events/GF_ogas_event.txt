@@ -260,6 +260,14 @@ country_event = {
 	}
 	option = {
 		name = GF_ogas.11000.b
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_require_OGAS_no_glitch
+				ruler = {
+					NOT = { has_trait = GF_trait_leader_ogas_glitch }
+				}
+			}
+		}
 		hidden_effect = {
 			country_event = { id = GF_ogas.11200 }
 		}
@@ -336,6 +344,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		GF_update_OGAS_threads_variable = yes
+	}
+
 	option = {
 		name = GF_ogas.11200.governor
 		response_text = GF_ogas.11200.governor.response
@@ -352,6 +364,7 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_governor } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 	
 	option = {
@@ -370,6 +383,7 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_produce } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -382,12 +396,14 @@ country_event = {
 				GF_OGAS_has_available_threads = yes
 			}
 		}
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 		custom_tooltip = GF_ogas.11200.upkeep.tooltip
 		if = {
 			limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_upkeep } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -406,6 +422,7 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_war } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -424,6 +441,7 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_research } }
+		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 	
 	

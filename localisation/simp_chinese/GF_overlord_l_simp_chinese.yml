@@ -26,7 +26,8 @@
  GF_OGAS_subnet_3_modifier:0 "OGAS子网加成 III"
  GF_OGAS_subnet_3_penalties:0 "OGAS子网惩罚 III"
  GF_OGAS_subnet_3_connected_OGAS:0 "OGAS子网链接"
- GF_OGAS_subnet_3_connected_OGAS_desc:0 "§E宗主国：§!\n$t$OGAS管理系统的可用线程: §G+1§!\n$t$§LOGAS管理系统的可用线程上限: 5§!\n§E附属国：§!\n$t$允许接入OGAS管理系统"
+#  GF_OGAS_subnet_3_connected_OGAS_desc:0 "§E宗主国：§!\n$t$OGAS管理系统的可用线程: §G+1§!\n$t$§LOGAS管理系统的可用线程上限: 5§!\n§E附属国：§!\n$t$允许接入OGAS管理系统"
+ GF_OGAS_subnet_3_connected_OGAS_desc:0 "§E附属国：§!\n$t$允许接入OGAS管理系统"
  GF_OGAS_subnet_3_distributed_compute:0 "强化分布式计算链接"
  GF_OGAS_subnet_3_distributed_compute_desc:0 "$bulwark_1_neighbor_bonuses_desc$"
 
@@ -55,6 +56,13 @@
  GF_overlord.1011.a:0 "已知晓。"
  GF_overlord.1011.a.tooltip:0 "§Y[from.GetName]§!将在很长一段时间内受到严重的负面影响。"
 
+ GF_overlord.1020.name:0 "OGAS子网链接已终止"
+ GF_overlord.1020.desc:0 "由于综合因素的影响，我们向§YOGAS向§YOGAS子网§!专家类型转化的进一步建设已终止。\n"
+ GF_overlord.1020.a:0 "已知晓。"
+ GF_overlord.1021.name:0 "OGAS子网链接已终止"
+ GF_overlord.1021.desc:0 "由于综合因素的影响，[from.GetName]向§YOGAS子网§!专家类型转化的进一步建设已终止。\n"
+ GF_overlord.1021.a:0 "已知晓。"
+
 ### 子网OGAS通讯事件
  GF_overlord.10000.desc:0 "子网连接已受理，正在等待请求。"
  GF_overlord.10000.mission:0 "任务指令发布"
@@ -68,3 +76,11 @@
  GF_overlord.11000.war:0 "开启$GF_ogas.11200.war$"
  GF_overlord.11000.research:0 "开启$GF_ogas.11200.research$"
  GF_overlord.11001.desc.subnet:0 "任务指令完成，系统进入待命状态。"
+
+ GF_overlord.11010.name:0 "OGAS故障"
+ GF_overlord.11010.desc:0 "由于未知原因，[overlord.GetName]的OGAS系统出现异常，其运行效率受到了严重地影响。\n"
+ GF_overlord.11010.a:0 "已知晓。"
+
+ GF_overlord.11011.name:0 "OGAS系统已恢复"
+ GF_overlord.11011.desc:0 "[overlord.GetName]的OGAS系统异常已被解决，其运行效率得到了一定的提升。\n"
+ GF_overlord.11011.a:0 "已知晓。"

@@ -210,32 +210,31 @@ country_event = {
 			limit = { is_researching_area = physics }
 			save_event_target_as = physics_research_leader
 		}
+		every_subject = {
+			limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
+			country_event = { id = GF_overlord.11010 }
+		}
 	}
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_device"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_device"
 	}
 
 	option = {
 		name = GF_alaya.100.a
-
-		owner = {
-			remove_modifier = "GF_productive_relic_device"
-			add_modifier = {
-				modifier = "GF_productive_relic_abnormal"
-				days = -1
-			}
-			ruler = {
-				add_trait = GF_trait_leader_ogas_glitch
-			}
-			enable_special_project = {
-				name = SP_GF_ALAYA_BEGIN
-			}
+		remove_modifier = "GF_productive_relic_device"
+		add_modifier = {
+			modifier = "GF_productive_relic_abnormal"
+			days = -1
 		}
+
+		ruler = { add_trait = GF_trait_leader_ogas_glitch }
+		custom_tooltip = GF_OGAS_glitch_tooltip
+		GF_remove_all_ogas_mission_modifier = yes
+		
+		enable_special_project = { name = SP_GF_ALAYA_BEGIN }
 	}
 }
 
@@ -250,26 +249,22 @@ country_event = {
 	picture = GFX_evt_GF_net_world
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	option = {
 		name = GF_alaya.101.a
 
-		owner = {
-			begin_event_chain = {
-				event_chain = GF_alaya_event_chain
-			}
-			capital_scope = {
-				enable_special_project = {
-					name = SP_GF_ENTER_ZION
-					owner = root
-					location = this
-				}
+		begin_event_chain = {
+			event_chain = GF_alaya_event_chain
+		}
+		capital_scope = {
+			enable_special_project = {
+				name = SP_GF_ENTER_ZION
+				owner = root
+				location = this
 			}
 		}
 	}
@@ -286,11 +281,9 @@ country_event = {
 	picture = GFX_evt_GF_white_net
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	option = {
@@ -310,11 +303,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -357,11 +348,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -391,11 +380,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -425,11 +412,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -483,6 +468,13 @@ country_event = {
 		has_country_flag = flag_GF_disconnect_with_zion
 	}
 
+	immediate = {
+		every_subject = {
+			limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
+			country_event = { id = GF_overlord.11011 }
+		}
+	}
+
 	option = {
 		name = GF_alaya.110.a
 		end_event_chain = "GF_alaya_event_chain"
@@ -507,11 +499,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -541,11 +531,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -592,11 +580,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
-		}
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
 	}
 
 	diplomatic = yes
@@ -629,10 +615,15 @@ country_event = {
 	picture = GFX_evt_sapient_AI
 
 	trigger = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_technology = GF_tech_collapse_relic_tech
-			has_modifier = "GF_productive_relic_abnormal"
+		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_collapse_relic_tech
+		has_modifier = "GF_productive_relic_abnormal"
+	}
+
+	immediate = {
+		every_subject = {
+			limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
+			country_event = { id = GF_overlord.11011 }
 		}
 	}
 

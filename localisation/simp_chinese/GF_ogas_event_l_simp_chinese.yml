@@ -55,6 +55,7 @@
 
  GF_ogas.11000.a:0 "OGAS数据统计"
  GF_ogas.11000.b:0 "OGAS任务管理"
+ GF_require_OGAS_no_glitch:0 "£trigger_no£ OGAS故障时无法进行任务管理"
 ##数据统计
  GF_ogas.11100.desc.a:0 "本机目前暂无任何统计数据"
 ##系统命令

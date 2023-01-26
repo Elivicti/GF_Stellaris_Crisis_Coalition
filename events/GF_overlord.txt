@@ -206,8 +206,7 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				exists = overlord
-				overlord = { has_authority = GF_auth_commonwealth }
+				any_agreement = { has_active_specialization = GF_specialist_OGAS_subnet }
 			}
 			country_event = {
 				id = GF_overlord.1000
@@ -220,12 +219,26 @@ country_event = {
 				limit = {
 					has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
 				}
-				GF_change_ogas_threads = { value = -1 }
+				event_target:GF_ogas_owner = {
+					GF_update_OGAS_threads_variable = yes
+				}
 			}
-			remove_country_flag = flag_GF_can_contact_OGAS
-			country_event = { id = GF_overlord.1010 }
-			event_target:GF_ogas_owner = {
-				country_event = { id = GF_overlord.1011 }
+
+			if = {
+				limit = {
+					exists = overlord
+					overlord = { has_authority = GF_auth_commonwealth }
+				}
+				country_event = { id = GF_overlord.1020 }
+				event_target:GF_ogas_owner = {
+					country_event = { id = GF_overlord.1021 }
+				}
+			}
+			else = {
+				country_event = { id = GF_overlord.1010 }
+				event_target:GF_ogas_owner = {
+					country_event = { id = GF_overlord.1011 }
+				}
 			}
 		}
 	}
@@ -265,6 +278,38 @@ country_event = {
 	option = {
 		name = GF_overlord.1011.a
 		custom_tooltip = GF_overlord.1011.a.tooltip
+	}
+}
+
+# OGAS子网转化被取消（变保护国，条款更改 etc）：提示事件 附属国
+# this = ogas subnet (country)
+country_event = {
+	id = GF_overlord.1020
+	title = GF_overlord.1020.name
+	desc = GF_overlord.1020.desc
+
+	picture = GFX_evt_imperial_vassal
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_overlord.1020.a
+	}
+}
+
+# OGAS子网转化被取消（变保护国，条款更改 etc）：提示事件 宗主国
+# this = ex overlord of ogas subnet
+country_event = {
+	id = GF_overlord.1021
+	title = GF_overlord.1021.name
+	desc = GF_overlord.1021.desc
+
+	picture = GFX_evt_imperial_vassal
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_overlord.1021.a
 	}
 }
 
@@ -310,6 +355,12 @@ country_event = {
 		name = GF_overlord.10000.mission
 		trigger = {
 			has_country_flag = GF_ogas_work_mode
+			custom_tooltip = {
+				fail_text = GF_require_OGAS_no_glitch
+				ruler = {
+					NOT = { has_trait = GF_trait_leader_ogas_glitch }
+				}
+			}
 		}
 		is_dialog_only = yes
 		response_text = GF_overlord.10000.mission.busy_response
@@ -392,5 +443,43 @@ country_event = {
 
 	option = {
 		name = GF_ogas.10000.logout
+	}
+}
+
+country_event = {
+	id = GF_overlord.11010
+	title = GF_overlord.11010.name
+	desc = GF_overlord.11010.desc
+
+	picture = GFX_evt_glitchy_matrix
+	is_triggered_only = yes
+
+	option = {
+		name = GF_overlord.11010.a
+		
+		ruler = { add_trait = GF_trait_leader_ogas_glitch }
+		if = {
+			limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+			custom_tooltip = GF_OGAS_glitch_tooltip
+			GF_remove_all_ogas_mission_modifier = yes
+		}
+	}
+}
+
+country_event = {
+	id = GF_overlord.11011
+	title = GF_overlord.11011.name
+	desc = GF_overlord.11011.desc
+
+	picture = GFX_evt_GF_net_world
+	is_triggered_only = yes
+
+	option = {
+		name = GF_overlord.11011.a
+		
+		ruler = {
+			remove_trait = GF_trait_leader_ogas_glitch
+			add_experience = 500
+		}
 	}
 }
