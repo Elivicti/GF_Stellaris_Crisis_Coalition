@@ -44,7 +44,7 @@ GF_preset_OGAS_subnet = {
 			}
 			{
 				key = subject_integration
-				value = subject_can_not_be_integrated
+				value = subject_can_be_integrated
 			}
 			{
 				key = subject_diplomacy
@@ -60,19 +60,23 @@ GF_preset_OGAS_subnet = {
 			}
 			{
 				key = joins_subject_wars
-				value = joins_subject_wars_all
+				value = joins_subject_wars_defensive
 			}
 			{
 				key = subject_holdings_limit
-				value = subject_holdings_limit_4
+				value = subject_holdings_limit_2
 			}
 			{
 				key = subject_loyalty
-				value = subject_loyalty_effects
+				value = GF_specialist_OGAS_subnet_loyalty_effect
 			}
 			{
 				key = protectorate
 				value = subject_is_not_protectorate
+			}
+			{
+				key = subject_sensors
+				value = subject_gets_sensors
 			}
 		}
 		resource_terms = {
@@ -81,8 +85,12 @@ GF_preset_OGAS_subnet = {
 				value = -0.15
 			}
 			{
+				key = resource_subsidies_advanced
+				value = -0.15
+			}
+			{
 				key = resource_subsidies_research
-				value = 0.75
+				value = 0.45
 			}
 		}
 	}
@@ -95,7 +103,6 @@ GF_preset_OGAS_subnet = {
 	}
 
 	potential = {
-		has_overlord_dlc = yes
 		has_country_flag = flag_GF_commonwealth_vassal
 		NOR = {
 			has_ethic = ethic_spiritualist

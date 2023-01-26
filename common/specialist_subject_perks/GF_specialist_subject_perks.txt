@@ -1,9 +1,14 @@
+# this   = agreement
+# target = subject
+# owner  = overlord
+
 
 GF_OGAS_subnet_1_modifier = {
 	main_perk = yes
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.1
 		planet_pop_assembly_mult = 0.30
+		num_tech_alternatives_add = 1
 	}
 
 	activate_effect = {
@@ -16,7 +21,7 @@ GF_OGAS_subnet_1_penalties = {
 	subject_modifier = {
 		ship_military_cost_mult = 0.50
 		country_naval_cap_mult = -0.25
-		planet_pop_assemblers_upkeep_mult = 0.33
+		planet_pop_assemblers_upkeep_mult = 0.25
 	}
 }
 
@@ -24,8 +29,15 @@ GF_OGAS_subnet_1_subnet_core = {
 	icon = "GFX_specialist_perk_GF_OGAS_subnet_1_subnet_core"
 	
 	subject_modifier = {
-		planet_researchers_produces_mult = 0.30
-		planet_researchers_upkeep_mult = 0.25
+		country_society_research_produces_mult = 0.2
+		country_physics_research_produces_mult = 0.2
+		country_engineering_research_produces_mult = 0.2
+	}
+
+	active_effect = {
+		target = {
+			remove_modifier = divided_patronage
+		}
 	}
 
 	desc = {
@@ -47,6 +59,7 @@ GF_OGAS_subnet_2_modifier = {
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.2
 		planet_pop_assembly_mult = 0.60
+		num_tech_alternatives_add = 2
 	}
 
 	activate_effect = {
@@ -59,7 +72,7 @@ GF_OGAS_subnet_2_penalties = {
 	subject_modifier = {
 		ship_military_cost_mult = 1.00
 		country_naval_cap_mult = -0.50
-		planet_pop_assemblers_upkeep_mult = 0.67
+		planet_pop_assemblers_upkeep_mult = 0.5
 	}
 }
 
@@ -71,8 +84,9 @@ GF_OGAS_subnet_2_authority = {
 	}
 
 	subject_modifier = {
-		planet_researchers_produces_mult = 0.30
-		planet_researchers_upkeep_mult = 0.25
+		country_society_research_produces_mult = 0.2
+		country_physics_research_produces_mult = 0.2
+		country_engineering_research_produces_mult = 0.2
 	}
 
 	desc = {
@@ -118,6 +132,7 @@ GF_OGAS_subnet_3_modifier = {
 	subject_modifier = {
 		country_gf_core_chip_produces_mult = 0.3
 		planet_pop_assembly_mult = 1.00
+		num_tech_alternatives_add = 3
 	}
 
 	activate_effect = {
@@ -130,7 +145,7 @@ GF_OGAS_subnet_3_penalties = {
 	subject_modifier = {
 		ship_military_cost_mult = 1.00
 		country_naval_cap_mult = -0.75
-		planet_pop_assemblers_upkeep_mult = 1.00
+		planet_pop_assemblers_upkeep_mult = 0.75
 	}
 }
 
@@ -150,8 +165,13 @@ GF_OGAS_subnet_3_connected_OGAS = {
 	}
 
 	subject_modifier = {
-		planet_researchers_produces_mult = 0.40
-		planet_researchers_upkeep_mult = 0.30
+		country_society_research_produces_mult = 0.2
+		country_physics_research_produces_mult = 0.2
+		country_engineering_research_produces_mult = 0.2
+	}
+
+	overlord_modifier = {
+		GF_OGAS_threads_add = 1
 	}
 }
 
