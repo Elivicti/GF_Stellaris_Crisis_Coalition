@@ -319,17 +319,18 @@ GF_convert_to_OGAS_subnet = {
 		limit = { has_species_flag = flag_GF_doll_species_@from }
 		save_event_target_as = GF_doll_species
 	}
+	ruler = {
+		exile_leader_as = GF_OGAS_subnet_previous_ruler
+	}
 	clone_leader = {
 		target = event_target:GF_ogas_leader
 		effect = {
 			set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
 			save_event_target_as = GF_ogas_leader_subnet
 			remove_trait = GF_trait_leader_doll
-			if = {
-				limit = { has_trait = GF_trait_leader_ogas_2 }
-				remove_trait = GF_trait_leader_ogas_2
-				add_trait = GF_trait_leader_ogas
-			}
+			remove_trait = GF_trait_leader_ogas_2
+			remove_trait = GF_trait_leader_ogas
+			add_trait = GF_trait_leader_ogas_subnet_core
 		}
 	}
 	assign_leader = event_target:GF_ogas_leader_subnet
@@ -389,6 +390,7 @@ GF_convert_to_OGAS_subnet = {
 		}
 	}
 	give_technology = { tech = GF_tech_doll_assemble }
+	set_built_species = event_target:GF_doll_species
 }
 
 GF_deactivate_OGAS_subnet = {
@@ -405,6 +407,7 @@ GF_deactivate_OGAS_subnet = {
 			type = ruler
 			show_notification = yes
 		}
+		set_leader = GF_OGAS_subnet_previous_ruler
 	}
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
@@ -445,6 +448,7 @@ GF_set_ogas_mission = {
 	}
 }
 
+# scope = country
 GF_end_ogas_mission = {
 	if = {
 		limit = { has_modifier = $modifier$ }
@@ -461,9 +465,43 @@ GF_end_ogas_mission = {
 	}
 }
 
-# scope = any
+# scope = country
+GF_remove_all_ogas_mission_modifier = {
+	if = {
+		limit = { has_modifier = GF_ogas_mode_governor }
+		remove_modifier = GF_ogas_mode_governor
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_produce }
+		remove_modifier = GF_ogas_mode_produce
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_upkeep }
+		remove_modifier = GF_ogas_mode_upkeep
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_war }
+		remove_modifier = GF_ogas_mode_war
+	}
+	if = {
+		limit = { has_modifier = GF_ogas_mode_research }
+		remove_modifier = GF_ogas_mode_research
+	}
+	hidden_effect = {
+		if = {
+			limit = { has_country_flag = flag_GF_ogas_owner }
+			set_variable = {
+				which = v_GF_ogas_threads_used
+				value = 0
+			}
+		}
+	}
+}
+
+# scope = GF country
 GF_change_ogas_threads = {
-	event_target:GF_ogas_owner = {
+	if = {
+		limit = { has_authority = GF_auth_commonwealth }
 		change_variable = {
 			which = v_GF_ogas_threads_available
 			value = $value$
@@ -491,6 +529,17 @@ GF_change_ogas_threads = {
 				which = v_GF_ogas_threads_available
 				value = 1
 			}
+		}
+	}
+}
+
+# scope = GF country
+GF_update_OGAS_threads_variable = {
+	if = {
+		limit = { has_authority = GF_auth_commonwealth }
+		export_modifier_to_variable = {
+			modifier = GF_OGAS_threads_add
+			variable = v_GF_ogas_threads_available
 		}
 	}
 }

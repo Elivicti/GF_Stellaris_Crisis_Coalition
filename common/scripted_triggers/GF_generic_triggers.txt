@@ -58,8 +58,8 @@ GF_OGAS_has_available_threads = {
 		fail_text = GF_OGAS_has_no_threads_available
 		event_target:GF_ogas_owner = {
 			check_variable = {
-				which = v_GF_ogas_threads_available
-				value > v_GF_ogas_threads_used
+				which = v_GF_ogas_threads_used
+				value < modifier:GF_OGAS_threads_add
 			}
 		}
 	}
