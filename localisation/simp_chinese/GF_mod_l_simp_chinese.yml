@@ -85,3 +85,6 @@
  mod_weapon_type_GF_collapsed_weapon_damage_mult:0 "坍塌武器伤害"
  mod_weapon_type_GF_collapsed_weapon_fire_rate_mult:0 "坍塌武器攻击速度"
 #  mod_weapon_type_GF_collapsed_speed_mult:0 "" # no use
+
+#####
+ mod_GF_OGAS_threads_add:0 "OGAS可用线程数"
