@@ -85,6 +85,9 @@
  GF_trait_leader_ogas_2:0 "$GF_trait_leader_ogas$"
  GF_trait_leader_ogas_2_desc:0 "§L$GF_trait_leader_ogas_desc$\n\n在学习了$GF_ZION$中得到的资料后计算能力和管理能力都得到了提升。§!\n"
 
+ GF_trait_leader_ogas_subnet_core:0 "子网核心"
+ GF_trait_leader_ogas_subnet_core_desc:0 "§L这位领袖是隶属于一个庞大的计算机网络的子节点。§!\n"
+
 ############
  GF_trait_leader_enhanced:0 "受祝福"
  GF_trait_leader_enhanced_governor:0 "$GF_trait_leader_enhanced$"

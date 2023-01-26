@@ -35,7 +35,27 @@ GF_trait_leader_ogas_2 = {
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
 		country_admin_cap_add = 50
+		GF_OGAS_threads_add = 2
 	}
+}
+
+GF_trait_leader_ogas_subnet_core = {
+	cost = 0
+	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
+	modifier = {
+		edict_length_mult = 0.25
+		country_unity_produces_mult = 0.25
+		empire_size_colonies_mult = -0.25
+	}
+	leader_potential_add = {
+		from = { has_authority = GF_auth_OGAS_subnet }
+	}
+	leader_trait = { ruler }
+	leader_class = { ruler }
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
 }
 
 GF_trait_leader_enhanced_governor = {
