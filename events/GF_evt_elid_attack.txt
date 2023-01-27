@@ -279,6 +279,12 @@ planet_event = {
 				}
 			}
 			
+			# 正常刷出后，立即启动下一次刷新事件
+			planet_event = {
+				id = GF_elid.1000
+				days = @elid_attack_interval
+				random = @elid_attack_interval_random
+			}
 		}
 		else = { # 若星球已被占领/正在进行地面作战，2个月后再次检查
 			planet_event = {
@@ -394,11 +400,6 @@ country_event = {
 
 	immediate = {
 		event_target:GF_home_world = {
-			planet_event = {
-				id = GF_elid.1000
-				days = @elid_attack_interval
-				random = @elid_attack_interval_random
-			}
 			if = {
 				limit = { GF_planet_has_contaminated_zone = no }
 				change_variable = {
@@ -471,32 +472,38 @@ country_event = {
 				switch = {
 					trigger = has_modifier
 					GF_pm_elid_threat_level_low = {
-						random = {
-							chance = 2
-							remove_deposit = d_GF_purify_wall
-							change_variable = {
-								which = v_GF_elid_threat_level
-								value = 2
+						random_list = {
+							98 = {}
+							2 = {
+								remove_deposit = d_GF_purify_wall
+								change_variable = {
+									which = v_GF_elid_threat_level
+									value = 2
+								}
 							}
 						}
 					}
 					GF_pm_elid_threat_level_mid = {
-						random = {
-							chance = 20
-							remove_deposit = d_GF_purify_wall
-							change_variable = {
-								which = v_GF_elid_threat_level
-								value = 2
+						random_list = {
+							4 = {}
+							1 = {
+								remove_deposit = d_GF_purify_wall
+								change_variable = {
+									which = v_GF_elid_threat_level
+									value = 2
+								}
 							}
 						}
 					}
 					GF_pm_elid_threat_level_high = {
-						random = {
-							chance = 33
-							remove_deposit = d_GF_purify_wall
-							change_variable = {
-								which = v_GF_elid_threat_level
-								value = 2
+						random_list = {
+							2 = {}
+							3 = {
+								remove_deposit = d_GF_purify_wall
+								change_variable = {
+									which = v_GF_elid_threat_level
+									value = 2
+								}
 							}
 						}
 					}
