@@ -88,3 +88,7 @@
 
 #####
  mod_GF_OGAS_threads_add:0 "OGAS可用线程数"
+
+
+#####
+ mod_district_GF_assmebly_max:0 "$district_GF_assmebly$最大建造数量"
