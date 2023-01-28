@@ -1,0 +1,20 @@
+#
+# This file is used to provide some customization options for empires.
+# for each country, the various customizations are weighted, and the one that ends up with the highest weight is used
+#
+
+GF_country_customization = {
+	colony_shelter = {
+		default = "building_colony_shelter"
+		pc_habitat = "building_hab_capital"
+		pc_GF_sf_machine = "building_GF_colony_shelter"
+	}
+
+	weight = {									# scope = country
+		base = 1								# a value of 0 will be ignored entirely, otherwise the customization with the highest value wins.
+		modifier = {
+			factor = 100
+			has_authority = GF_auth_commonwealth
+		}
+	}
+}

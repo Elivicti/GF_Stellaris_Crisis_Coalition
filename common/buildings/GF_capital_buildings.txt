@@ -6,6 +6,85 @@
 @buildings_t3 = 3
 @buildings_t4 = 4
 
+building_GF_colony_shelter = {
+	capital = yes
+	can_build = no
+	can_demolish = no
+	can_be_ruined = no
+	can_be_disabled = no
+	position_priority = 0
+	icon = building_colony_shelter
+
+	category = government
+
+	potential = {
+		exists = owner
+		owner = {
+			has_authority = GF_auth_commonwealth
+		}
+		NOR = {
+			has_modifier = GF_auto_colony
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			uses_habitat_capitals = yes
+		}
+	}
+
+	convert_to = {
+		building_hive_capital
+		building_deployment_post
+		building_resort_capital
+		building_slave_capital
+		building_ancient_control_center
+		building_ancient_palace
+		building_colony_shelter
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+		planet_amenities_add = 7
+		planet_max_buildings_add = @buildings_t1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			NOT = { is_planet_class = pc_GF_sf_machine }
+		}
+		job_colonist_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			is_planet_class = pc_GF_sf_machine
+		}
+		job_GF_command_doll_add = 1
+		job_GF_assemble_doll_add = 2
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	upgrades = {
+		building_capital
+	}
+
+	triggered_desc = {
+		trigger = { NOT = { is_planet_class = pc_GF_sf_machine } }
+		text = job_colonist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = { is_planet_class = pc_GF_sf_machine }
+		text = job_GF_command_doll_effect_desc
+	}
+}
+
 # 自动殖民地
 building_GF_auto_colony_capital = {
 	base_buildtime = @b2_time

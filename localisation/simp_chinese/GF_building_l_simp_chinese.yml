@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
 #################################
+ building_GF_colony_shelter:0 "$building_colony_shelter$"
+ building_GF_colony_shelter_desc:0 "$building_colony_shelter_desc$"
  building_GF_doll_factory:0 "人形生产工厂"
  building_GF_doll_factory_desc:0 "人形生产工厂是制造仿生自律人形的基地，是我们文明劳动力与士兵的重要来源。"
  building_GF_doll_maintain_center_1:0 "人形维护库"
