@@ -109,8 +109,9 @@ GF_command_doll = {
 
 	pop_modifier = {
 	}
-	planet_modifier = {
+	triggered_planet_modifier = {
 		planet_amenities_add = 4
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 	resources = {
 		category = planet_administrators
@@ -184,19 +185,9 @@ GF_maintain_doll = {
 		has_trait = GF_trait_doll
 	}
 
-	planet_modifier = {
-		planet_amenities_add = 4
-	}
 	triggered_planet_modifier = {
-		potential = {
-			OR = {
-				has_trait = trait_robot_emotion_emulators
-				has_trait = trait_charismatic
-			}
-		}
-		modifier = {
-			planet_amenities_add = 1
-		}
+		planet_amenities_add = 4
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	weight = {
