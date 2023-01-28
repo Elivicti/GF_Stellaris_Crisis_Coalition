@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
 #################################
  d_GF_south_pole_mineral:0 "南极深井矿区"
- d_GF_south_pole_mineral_desc:0 "该区域动用大型钻井机械击穿岩层来采集其下的矿物，为南联提供了丰厚的资源。"
+ d_GF_south_pole_mineral_desc:0 "该区域动用大型钻井机械击穿岩层来采集其下的矿物，为南联提供了丰厚的矿产资源。"
  d_GF_south_pole_energy:0 "南极洋流发电项目"
  d_GF_south_pole_energy_desc:0 "通过海洋洋流循环带动海底布置的大型涡轮机产生电力，这一项目被广泛布置于南极周边海域。"
 
