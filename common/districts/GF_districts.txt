@@ -376,9 +376,9 @@ district_GF_collapse = {
 	}
 }
 
-district_GF_assmebly = {
+district_GF_assembly = {
 	base_buildtime = 360
-	icon = district_GF_assmebly
+	icon = district_GF_assembly
 	is_capped_by_modifier = yes
 
 	show_on_uncolonized = {
