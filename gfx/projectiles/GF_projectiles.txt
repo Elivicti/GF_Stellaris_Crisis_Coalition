@@ -88,3 +88,176 @@ projectile_gfx_beam = {
 		delay = 0.2
 	}
 }
+
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "GF_small_collapse_missile"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+
+	hit_entity = "GF_small_collapse_missile_hit_entity"
+	shield_hit_entity = "missile_small_shield_hit_entity"
+	muzzle_flash_entity = "missile_small_muzzle_flash_entity"
+	
+	#missile specific data
+	entity = "missile_small_entity"
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_missile = {
+	#common for all types of projectiles
+	name = "GF_collapse_torpedo"
+	color = { 1.0 	0.5 	0.0 	1.0 }
+	hit_entity = "GF_collapse_torpedo_hit_entity"
+	shield_hit_entity = "missile_large_shield_hit_entity"
+	muzzle_flash_entity = "torpedo_large_muzzle_entity"
+	
+	#torpedo specific data
+	entity = "torpedo_03_large_entity"
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "GF_collapse_artillery_projectile"
+	color = { 0.9	1.0		0.9		1.0 }
+	hit_entity = "adv_kinetic_artillery_hit_entity"
+	shield_hit_entity = "adv_kinetic_artillery_shield_hit_entity"
+	muzzle_flash_entity = "adv_kinetic_artillery_muzzle_entity"
+	#windup_entity = "adv_kinetic_artillery_windup_entity"
+	
+	#ballistic specific
+	entity = "adv_kinetic_artillery_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "GF_collapse_cannon_s"
+	color = { 0.2 	0.8 	0.4 	5.0 }
+	hit_entity = "GF_collapse_cannon_small_hit_entity"
+	shield_hit_entity = "stormfire_auto_cannons_small_shield_hit_entity"
+	muzzle_flash_entity = "GF_collapse_cannon_small_muzzle_entity"
+	
+	#beam specific data
+	width = 0.3
+	texture_scroll_speed = 25.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	texture = "gfx/models/combat_items/auto_cannon_diffuse.dds"
+	
+	shield_impact = {
+		size = small
+		loop_duration = 1.5
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "GF_collapse_cannon_m"
+	color = { 0.2 	0.8 	0.4 	5.0 }
+	hit_entity = "GF_collapse_cannon_medium_hit_entity"
+	shield_hit_entity = "stormfire_auto_cannons_medium_shield_hit_entity"
+	muzzle_flash_entity = "GF_collapse_cannon_medium_muzzle_entity"
+	
+	#beam specific data
+	width = 0.5
+	texture_scroll_speed = 25.5
+	texture_tiling = 10.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	texture = "gfx/models/combat_items/auto_cannon_diffuse.dds"
+	
+	shield_impact = {
+		size = medium
+		loop_duration = 1.5
+		delay = 0.0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "GF_collapse_cannon_l"
+	color = { 0.2 	0.8 	0.4 	5.0 }
+	hit_entity = "GF_collapse_cannon_large_hit_entity"
+	shield_hit_entity = "stormfire_auto_cannons_large_shield_hit_entity"
+	muzzle_flash_entity = "GF_collapse_cannon_large_muzzle_entity"
+	
+	#beam specific data
+	width = 0.7
+	texture_scroll_speed = 25.5
+	texture_tiling = 12.0
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.2		1.0
+			0.9		1.0
+			1.0 	0.0
+		}
+		duration = 1.5
+	}
+	texture = "gfx/models/combat_items/auto_cannon_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		loop_duration = 1.5
+		delay = 0.0
+	}
+}
