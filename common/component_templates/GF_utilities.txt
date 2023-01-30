@@ -23,7 +23,7 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
+	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
 
 }
 
