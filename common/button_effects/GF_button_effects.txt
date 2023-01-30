@@ -6,7 +6,12 @@ GF_quick_ogas_contact = {
 			GF_can_contact_OGAS = yes
 		}
 	}
-	allow = { is_ai = no }
+	allow = {
+		hidden_trigger = {
+			exists = from
+			from = { is_ai = no }
+		}
+	}
 	
 	effect = {
 		custom_tooltip = "GF_quick_ogas_contact_tooltip"

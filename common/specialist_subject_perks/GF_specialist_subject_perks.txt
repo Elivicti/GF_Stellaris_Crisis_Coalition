@@ -161,7 +161,7 @@ GF_OGAS_subnet_3_connected_OGAS = {
 			establish_communications = event_target:GF_ogas_country
 			set_country_flag = flag_GF_can_contact_OGAS
 		}
-		GF_change_ogas_threads = { value = 1 }
+		owner = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	subject_modifier = {
