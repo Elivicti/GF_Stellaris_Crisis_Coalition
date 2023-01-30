@@ -46,6 +46,31 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_computer_ogas.dds"
 	}
 
+	spriteType = {
+		name = "GFX_GF_collapse_artillery"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_artillery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_cannon"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_cannon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_mass_accelerator"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_mass_accelerator.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_missile"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_missile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_collapse_torpedo"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_torpedo.dds"
+	}
+
 	# edicts
 	spriteType = {
 		name = "GFX_GF_edict_type_robot"

@@ -1,3 +1,39 @@
+@GF_weapon_s_cost = 45
+@GF_weapon_m_cost = 75
+@GF_weapon_l_cost = 250
+@GF_weapon_xl_cost = 500
+@GF_weapon_t_cost = 800
+
+@GF_weapon_s_rare = 0.65
+@GF_weapon_m_rare = 0.85
+@GF_weapon_l_rare = 1.5
+@GF_weapon_xl_rare = 4.5
+@GF_weapon_t_rare = 8.0
+
+@GF_weapon_s_upkeep_energy = 0.38
+@GF_weapon_m_upkeep_energy = 0.56
+@GF_weapon_l_upkeep_energy = 1.8
+@GF_weapon_xl_upkeep_energy = 4.2
+@GF_weapon_t_upkeep_energy = 5.4
+
+@GF_weapon_s_upkeep_alloys = 0.08
+@GF_weapon_m_upkeep_alloys = 0.12
+@GF_weapon_l_upkeep_alloys = 0.6
+@GF_weapon_xl_upkeep_alloys = 1.0
+@GF_weapon_t_upkeep_alloys = 1.6
+
+@GF_weapon_s_upkeep_liquid = 0.04
+@GF_weapon_m_upkeep_liquid = 0.06
+@GF_weapon_l_upkeep_liquid = 0.3
+@GF_weapon_xl_upkeep_liquid = 0.5
+@GF_weapon_t_upkeep_liquid = 0.8
+
+@GF_weapon_s_power = -30
+@GF_weapon_m_power = -50
+@GF_weapon_l_power = -200
+@GF_weapon_xl_power = -500
+@GF_weapon_t_power = -800
+
 weapon_component_template = {
 
 	key = "XLARGE_GF_COLLAPSE_ENERGY_LANCE"
@@ -16,17 +52,17 @@ weapon_component_template = {
 
 	# size_restriction = { battleship titan }
 
-	power = -500
+	power = @GF_weapon_xl_power
 	resources = {
 		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 500
-			rare_crystals = 4.5
+			alloys = @GF_weapon_xl_cost
+			rare_crystals = @GF_weapon_xl_rare
 		}
 		upkeep = {
-			energy = 4.2
-			alloys = 0.6
-			GF_nyto_collapse_liquid = 0.3
+			energy = @GF_weapon_xl_upkeep_energy
+			alloys = @GF_weapon_xl_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_xl_upkeep_liquid
 		}
 	}
 
@@ -35,15 +71,15 @@ weapon_component_template = {
 	ai_tag_weight = 0
 
 	damage = {
-		min = 1500
-		max = 2000
+		min = 1600
+		max = 2400
 	}
 
 	windup = {
-		min = 2.0
-		max = 8.0
+		min = 12.0
+		max = 28.0
 	}
-	total_fire_time = 50
+	total_fire_time = 60
 
 	range = 200
 	accuracy = 1
@@ -53,8 +89,17 @@ weapon_component_template = {
 	shield_penetration = 2
 	armor_penetration = 2
 
-	firing_arc = 35.0
+	firing_arc = 25.0
 	min_range = 10.0
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
 }
 
 weapon_component_template = {
@@ -75,17 +120,17 @@ weapon_component_template = {
 
 	# size_restriction = { titan }
 
-	power = -800
+	power = @GF_weapon_t_power
 	resources = {
 		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 750
-			rare_crystals = 8.0
+			alloys = @GF_weapon_t_cost
+			rare_crystals = @GF_weapon_t_rare
 		}
 		upkeep = {
-			energy = 5.4
-			alloys = 1.6
-			GF_nyto_collapse_liquid = 0.8
+			energy = @GF_weapon_t_upkeep_energy
+			alloys = @GF_weapon_t_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_t_upkeep_liquid
 		}
 	}
 
@@ -94,15 +139,15 @@ weapon_component_template = {
 	ai_tag_weight = 0
 
 	damage = {
-		min = 3000
-		max = 5000
+		min = 6000
+		max = 10000
 	}
 
 	windup = {
-		min = 16.0
-		max = 24.0
+		min = 20.0
+		max = 60.0
 	}
-	total_fire_time = 80
+	total_fire_time = 160
 
 	range = 240
 	accuracy = 1
@@ -112,8 +157,17 @@ weapon_component_template = {
 	shield_penetration = 2.5
 	armor_penetration = 2.5
 
-	firing_arc = 35.0
+	firing_arc = 25.0
 	min_range = 10.0
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
 }
 
 
@@ -140,7 +194,7 @@ weapon_component_template = {
 	resources = {
 		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 500
+			alloys = 1000
 		}
 	}
 
@@ -153,6 +207,15 @@ weapon_component_template = {
 	accuracy = 1
 	damage = { min = 0 max = 0 }
 	range = 0
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
 
 }
 
@@ -173,30 +236,30 @@ weapon_component_template = {
 	resources = {
 		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 45
-			rare_crystals = 0.65
+			alloys = @GF_weapon_s_cost
+			rare_crystals = @GF_weapon_s_rare
 		}
 		upkeep = {
-			energy = 0.28
-			alloys = 0.04
-			GF_nyto_collapse_liquid = 0.02
+			energy = @GF_weapon_s_upkeep_energy
+			alloys = @GF_weapon_s_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_s_upkeep_liquid
 		}
 	}
-	power = -30
+	power = @GF_weapon_s_power
 
 	damage = {
-		min = 10
-		max = 50
+		min = 24
+		max = 40
 	}
 
 	windup = {
-		min = 2.0
-		max = 3.0
+		min = 8.0
+		max = 12.0
 	}
-	total_fire_time = 40
+	total_fire_time = 30
 
 	range = 50
-	accuracy = 0.75
+	accuracy = 1
 	tracking = 0.60
 	armor_damage = 1.20
 	shield_penetration = 0.8
@@ -220,33 +283,440 @@ weapon_component_template = {
 	resources = {
 		category = GF_ship_collapse_weapons
 		cost = {
-			alloys = 60
-			rare_crystals = 0.85
+			alloys = @GF_weapon_m_cost
+			rare_crystals = @GF_weapon_m_rare
 		}
 		upkeep = {
-			energy = 0.56
-			alloys = 0.08
-			GF_nyto_collapse_liquid = 0.04
+			energy = @GF_weapon_m_upkeep_energy
+			alloys = @GF_weapon_m_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_m_upkeep_liquid
 		}
 	}
 	power = -50
 
 	damage = {
-		min = 30
-		max = 60
+		min = 60
+		max = 90
 	}
 
 	windup = {
-		min = 2.0
-		max = 3.0
+		min = 8.0
+		max = 12.0
 	}
-	total_fire_time = 45
+	total_fire_time = 40
 
 	range = 80
-	accuracy = 0.70
+	accuracy = 1
 	tracking = 0.30
 	armor_damage = 1.50
 	shield_penetration = 0.8
 	armor_penetration = 0.8
 
+}
+
+weapon_component_template = {
+	key = "GF_COLLAPSE_MISSILE"
+	size = small
+
+	icon = "GFX_GF_collapse_missile"
+	icon_frame = 1
+	type = missile
+
+	prerequisites = { "GF_tech_collapse_missile" }
+	component_set = "GF_COLLAPSE_MISSILE"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
+	ai_tag_weight = 0
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_s_cost
+			volatile_motes = @GF_weapon_s_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_s_upkeep_energy
+			alloys = @GF_weapon_s_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_s_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_s_power
+	damage = {
+		min = 48
+		max = 80
+	}
+	hull_damage = 1.25
+	armor_damage = 1.5
+	shield_damage = 1
+	shield_penetration = 1
+
+	windup = {
+		min = 10
+		max = 30
+	}
+	total_fire_time = 60
+	range = 120
+	accuracy = 1
+	tracking = 0.25
+	missile_speed = 20
+	missile_evasion = 0.4
+	missile_armor = 8
+	missile_health = 8
+	missile_retarget_range = 120
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			OR = {
+				no_resource_for_component = { RESOURCE = volatile_motes }
+				no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+			}
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "GF_COLLAPSE_TORPEDO"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+
+	icon = "GFX_GF_collapse_torpedo"
+	icon_frame = 1
+	type = missile
+
+	firing_arc = 25.0
+
+	prerequisites = { "GF_tech_collapse_torpedo" }
+	component_set = "GF_COLLAPSE_TORPEDO"
+	projectile_gfx = "large_torpedo_03"
+	tags = { weapon_type_explosive weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_anti_shield explosive }
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_m_cost
+			volatile_motes = @GF_weapon_m_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_m_upkeep_energy
+			alloys = @GF_weapon_m_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_m_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_s_power
+	damage = {
+		min = 240
+		max = 300
+	}
+	hull_damage = 1.25
+	armor_damage = 2.0
+	shield_damage = 1
+	shield_penetration = 1.0
+	windup = {
+		min = 16
+		max = 24
+	}
+	total_fire_time = 160
+	range = 50
+	accuracy = 0.8
+	tracking = 0.1
+	size_damage_factor = 1.0
+	missile_speed = 12
+	missile_armor = 10
+	missile_health = 10
+	missile_retarget_range = 100
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "GF_COLLAPSE_ARTILLERY"
+	size = large
+
+	icon = "GFX_GF_collapse_artillery"
+	icon_frame = 1
+
+	min_range = 30
+
+	prerequisites = { "GF_tech_collapse_artillery" }
+	component_set = "GF_COLLAPSE_ARTILLERY"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_artillery artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_l_cost
+			volatile_motes = @GF_weapon_l_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_l_upkeep_energy
+			alloys = @GF_weapon_l_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_l_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_l_power
+
+	damage = {
+		min = 240
+		max = 600
+	}
+	hull_damage = 1.25
+	armor_damage = 1.5
+	shield_damage = 1.25
+	windup = {
+		min = 10
+		max = 30
+	}
+	total_fire_time = 50
+	range = 150
+	accuracy = 0.8
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "GF_COLLAPSE_MASS_ACCELERATOR"
+	size = extra_large
+
+	icon = "GFX_GF_collapse_mass_accelerator"
+	icon_frame = 1
+
+	firing_arc = 25.0
+	min_range = 30
+	use_ship_kill_target = no
+
+	prerequisites = { "GF_tech_collapse_mass_accelerator" }
+	component_set = "GF_COLLAPSE_MASS_ACCELERATOR"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_artillery artillery }
+	ai_tag_weight = 0
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_xl_cost
+			volatile_motes = @GF_weapon_xl_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_xl_upkeep_energy
+			alloys = @GF_weapon_xl_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_xl_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_xl_power
+
+	damage = {
+		min = 1800
+		max = 3200
+	}
+	hull_damage = 1.25
+	armor_damage = 2.0
+	shield_damage = 1.5
+	windup = {
+		min = 30
+		max = 50
+	}
+	total_fire_time = 60
+	range = 200
+	accuracy = 0.80
+	tracking = 0.0
+
+	target_weights = {
+		titan = 3
+		battleship = 2
+	}
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "GF_COLLAPSE_CANNON_SMALL"
+	size = small
+
+	icon = "GFX_GF_collapse_cannon"
+	icon_frame = 1
+
+	prerequisites = { "GF_tech_collapse_cannon" }
+	component_set = "GF_COLLAPSE_CANNON"
+	projectile_gfx = "stormfire_auto_cannons_s"
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_anti_shield brawler }
+	
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_s_cost
+			volatile_motes = @GF_weapon_s_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_s_upkeep_energy
+			alloys = @GF_weapon_s_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_s_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_s_power
+	damage = {
+		min = 24
+		max = 36
+	}
+	hull_damage = 1.25
+	armor_damage = 1
+	shield_damage = 1
+	windup = {
+		min = 2
+		max = 2
+	}
+	total_fire_time = 8
+	range = 35
+	accuracy = 0.9
+	tracking = 0.75
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "GF_COLLAPSE_CANNON_MEDIUM"
+	size = medium
+
+	icon = "GFX_GF_collapse_cannon"
+	icon_frame = 1
+
+	prerequisites = { "GF_tech_collapse_cannon" }
+	component_set = "GF_COLLAPSE_CANNON"
+	projectile_gfx = "stormfire_auto_cannons_m"
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_anti_shield brawler }
+	
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_m_cost
+			volatile_motes = @GF_weapon_m_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_m_upkeep_energy
+			alloys = @GF_weapon_m_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_m_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_m_power
+
+	damage = {
+		min = 40
+		max = 80
+	}
+	hull_damage = 1.25
+	shield_damage = 1
+	armor_damage = 1
+	windup = {
+		min = 4
+		max = 6
+	}
+	total_fire_time = 10
+	range = 40
+	accuracy = 0.9
+	tracking = 0.5
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
+}
+
+weapon_component_template = {
+	type = instant
+
+	key = "GF_COLLAPSE_CANNON_LARGE"
+	size = large
+
+	icon = "GFX_GF_collapse_cannon"
+	icon_frame = 1
+
+	prerequisites = { "GF_tech_collapse_cannon" }
+	component_set = "GF_COLLAPSE_CANNON"
+	projectile_gfx = "stormfire_auto_cannons_l"
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	ai_tags = { weapon_role_anti_shield brawler }
+	
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_l_cost
+			volatile_motes = @GF_weapon_l_rare
+		}
+		upkeep = {
+			energy = @GF_weapon_l_upkeep_energy
+			alloys = @GF_weapon_l_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_l_upkeep_liquid
+		}
+	}
+	power = @GF_weapon_l_power
+
+	damage = {
+		min = 120
+		max = 200
+	}
+	hull_damage = 1.25
+	shield_damage = 1
+	armor_damage = 1
+	windup = {
+		min = 4
+		max = 6
+	}
+	total_fire_time = 15
+	range = 45
+	accuracy = 0.9
+	tracking = 0.25
+
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = volatile_motes }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+	}
 }
