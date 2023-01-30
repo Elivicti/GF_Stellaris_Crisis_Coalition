@@ -157,7 +157,7 @@ weapon_component_template = {
 	shield_penetration = 2.5
 	armor_penetration = 2.5
 
-	firing_arc = 25.0
+	firing_arc = 10.0
 	min_range = 10.0
 
 	ai_weight = {
