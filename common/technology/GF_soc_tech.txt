@@ -346,15 +346,11 @@ GF_tech_collapse_bomb = {
 	is_rare = yes
 
 	potential = {
-		AND = {
-			has_authority = GF_auth_commonwealth
-			has_country_flag = flag_GF_collapse_relic_surveyed
-		}
+		has_authority = GF_auth_commonwealth
 	}
 
 	prerequisites = {
 		"GF_tech_collapsetech_weaponize"
-		"GF_tech_collapse_relic_tech"
 	}
 
 	prereqfor_desc = {
