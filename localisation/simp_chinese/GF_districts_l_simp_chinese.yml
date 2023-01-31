@@ -1,7 +1,7 @@
 ﻿l_simp_chinese: 
- district_GF_center:0 "中枢区划"
- district_GF_center_plural:0 "中枢区划"
- district_GF_center_desc:0 "负责收纳、维护人形的区划，内有专门的人形休眠仓与维护设施。"
+ district_GF_center:0 "人形中枢区划"
+ district_GF_center_plural:0 "人形中枢区划"
+ district_GF_center_desc:0 "负责调配、收纳、维护人形的区划，内有专门的人形休眠仓与维护设施。"
  district_GF_generator:0 "能源区划"
  district_GF_generator_plural:0 "能源区划"
  district_GF_generator_desc:0 "专门产生能源的区划，为整个星球的生产活动提供能量。"
