@@ -1,0 +1,97 @@
+d_GF_sf_control_center_ruin = {
+	is_for_colonizable = yes
+	time = 120
+	icon = d_GF_sf_control_center_ruin
+	category = deposit_cat_blockers
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	blocker_swap_types = {
+		d_GF_sf_control_center
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 50
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_sf_control_center = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	icon = d_GF_sf_control_center
+	planet_modifier = {
+		planet_crime_mult = -0.10
+		species_empire_size_mult = -0.10
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_sf_doll_factory_ruin = {
+	is_for_colonizable = yes
+	time = 120
+	icon = d_GF_doll_factory_ruin
+	category = deposit_cat_blockers
+	planet_modifier = {
+		district_GF_assembly_max = -5
+	}
+	blocker_swap_types = {
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 50
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_sf_battle_field = {
+	is_for_colonizable = yes
+	time = 120
+	icon = d_GF_sf_battle_field
+	category = deposit_cat_blockers
+	planet_modifier = {
+		planet_max_districts_add = -5
+	}
+	blocker_swap_types = {
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 50
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}
+
+d_GF_sf_relic_entrance = {
+	is_for_colonizable = yes
+	time = 120
+	icon = d_GF_sf_relic_entrance
+	category = deposit_cat_blockers
+	planet_modifier = {
+		district_GF_collapse_max = -25
+	}
+	blocker_swap_types = {
+	}
+	resources = {
+		category = deposit_blockers
+		cost = {
+			energy = 50
+		}
+	}
+	drop_weight = {
+		weight = 0
+	}
+}

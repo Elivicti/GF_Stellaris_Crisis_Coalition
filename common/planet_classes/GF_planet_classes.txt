@@ -67,6 +67,7 @@ pc_GF_sf_machine = {
 		pop_environment_tolerance = 0.0
 		planet_max_buildings_add = 36
 		district_GF_assembly_max = 5
+		district_GF_collapse_max = 25
 	}
 
 	spawn_odds = 0

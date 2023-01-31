@@ -65,6 +65,12 @@ GF_sf_system = {
 			clear_deposits = yes
 			clear_blockers = yes
 			save_event_target_as = GF_sf_site_target_6
+			add_deposit = d_GF_sf_control_center_ruin
+			add_deposit = d_GF_sf_doll_factory_ruin
+			add_deposit = d_GF_sf_battle_field
+			add_deposit = d_GF_sf_battle_field
+			add_deposit = d_GF_sf_battle_field
+			add_deposit = d_GF_sf_relic_entrance
 		}
 	}
 }

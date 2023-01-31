@@ -298,7 +298,7 @@ district_GF_mining = {
 #少前坍塌反应区划
 district_GF_collapse = {
 	base_buildtime = 480
-	is_capped_by_modifier = no
+	is_capped_by_modifier = yes
 
 	prerequisites = {
 		GF_tech_collapse
