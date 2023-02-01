@@ -9,10 +9,14 @@ district_GF_center = {
 	exempt_from_ai_planet_specialization = yes
 
 	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
 	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
@@ -27,6 +31,8 @@ district_GF_center = {
         district_nexus
 		district_city
 		district_hive
+		district_GF_duplicate_city
+		district_GF_duplicate_nexus
 	}
 
 	resources = {
@@ -38,33 +44,7 @@ district_GF_center = {
 	planet_modifier = {
 		planet_housing_add = 5
 		planet_max_buildings_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = GF_auth_commonwealth }
-		}
-		modifier = { job_GF_maintain_doll_add = 3 }
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = { job_maintenance_drone_add = 3 }
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_authority = GF_auth_commonwealth }
-				is_machine_empire = no
-			}
-		}
-		modifier = { job_clerk_add = 3 }
+		job_GF_maintain_doll_add = 3
 	}
 
 	triggered_planet_modifier = {
@@ -78,39 +58,7 @@ district_GF_center = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_machine_empire = yes
-				has_technology = tech_housing_2
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_maintenance_drone_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOT = { has_authority = GF_auth_commonwealth }
-				is_regular_empire = yes
-				has_technology = tech_housing_2
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_clerk_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_authority = GF_auth_commonwealth
-				has_technology = tech_housing_2
-			}
+			owner = { has_technology = tech_housing_2 }
 		}
 		modifier = {
 			planet_housing_add = 1
@@ -155,10 +103,14 @@ district_GF_generator = {
 	}
 
 	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
 	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
@@ -169,6 +121,7 @@ district_GF_generator = {
 	conversion_ratio = 1
 	convert_to = {
 		district_generator_uncapped
+		district_GF_duplicate_generator_uncapped
 	}
 
 	resources = {
@@ -179,6 +132,7 @@ district_GF_generator = {
 
 	planet_modifier = {
 		planet_housing_add = 2
+		job_technician_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -188,30 +142,7 @@ district_GF_generator = {
 		}
 		modifier = { planet_housing_add = 1 }
 	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
-		modifier = { job_technician_add = 2 }
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = { job_technician_drone_add = 2 }
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
-		text = job_technician_effect_desc
-	}
+	
 	triggered_desc = {
 		trigger = {
 			exists = owner
@@ -231,10 +162,14 @@ district_GF_mining = {
 	}
 
 	show_on_uncolonized = {
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
 	potential = {
+		exists = owner
+		owner = { has_authority = GF_auth_commonwealth }
 		uses_district_set = GF_sf_machine_world
 	}
 
@@ -245,6 +180,7 @@ district_GF_mining = {
 	conversion_ratio = 1
 	convert_to = {
 		district_mining_uncapped
+		district_GF_duplicate_mining_uncapped
 	}
 
 	resources = {
@@ -255,65 +191,42 @@ district_GF_mining = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
-		modifier = { job_miner_add = 2 }
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = { job_mining_drone_add = 2 }
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_valid_civic = civic_agrarian_idyll }
-		}
-		modifier = { planet_housing_add = 1 }
+		job_miner_add = 2
 	}
 
 	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = no }
-		}
 		text = job_miner_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_mining_drone_effect_desc
 	}
 }
 #少前坍塌反应区划
 district_GF_collapse = {
 	base_buildtime = 480
-	is_capped_by_modifier = yes
+	is_capped_by_modifier = no
+
+	desc = {
+		trigger = { uses_district_set = GF_sf_machine_world }
+		text = district_GF_collapse_sf_machine_world_desc
+	}
+
+	desc = {
+		trigger = { NOT = { uses_district_set = GF_sf_machine_world } }
+		text = district_GF_collapse_desc
+	}
 
 	prerequisites = {
 		GF_tech_collapse
 	}
 
 	show_on_uncolonized = {
+		exists = from
 		from = { has_authority = GF_auth_commonwealth }
-		uses_district_set = GF_sf_machine_world
+		has_planet_flag = flag_p_GF_has_collapse_district
 	}
 
 	potential = {
 		exists = owner
 		owner = { has_authority = GF_auth_commonwealth }
-		uses_district_set = GF_sf_machine_world
+		has_planet_flag = flag_p_GF_has_collapse_district
 	}
 
 	allow = {
@@ -328,6 +241,7 @@ district_GF_collapse = {
 		district_arcology_arms_industry
 		district_rw_industrial
 		district_industrial
+		district_GF_duplicate_industrial
 	}
 
 	resources = {
@@ -346,16 +260,7 @@ district_GF_collapse = {
 
 	planet_modifier = {
 		planet_housing_add = 2
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = GF_auth_commonwealth }
-		}
-		modifier = {
-			job_GF_collapser_add = 2
-		}
+		job_GF_collapser_add = 2
 	}
 
 	triggered_planet_modifier = {
@@ -369,10 +274,6 @@ district_GF_collapse = {
 	}
 	
 	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { has_authority = GF_auth_commonwealth }
-		}
 		text = job_GF_collapser_effect_desc
 	}
 }
@@ -383,11 +284,33 @@ district_GF_assembly = {
 	is_capped_by_modifier = yes
 
 	show_on_uncolonized = {
+		exists = from
 		uses_district_set = GF_sf_machine_world
 	}
 
 	potential = {
 		uses_district_set = GF_sf_machine_world
+	}
+
+	desc = {
+		trigger = {
+			OR = {
+				NOT = { exists = owner }
+				AND = {
+					exists = owner
+					owner = { has_authority = GF_auth_commonwealth }
+				}
+			}
+		}
+		text = district_GF_assembly_desc
+	}
+
+	desc = {
+		trigger = { 
+			exists = owner
+			owner = { NOT = { has_authority = GF_auth_commonwealth } }
+		}
+		text = district_GF_assembly_vanilla_desc
 	}
 
 	allow = {
@@ -402,6 +325,7 @@ district_GF_assembly = {
 		district_arcology_arms_industry
 		district_rw_industrial
 		district_industrial
+		district_GF_duplicate_industrial
 	}
 
 	resources = {
