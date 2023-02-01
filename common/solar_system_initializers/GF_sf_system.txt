@@ -8,6 +8,7 @@ GF_sf_system = {
 	flags = { flag_GF_sf_system }
 	planet = {
 		class = star
+		size = 30
 		orbit_distance = 0
 		orbit_angle = 1
 		init_effect = {
