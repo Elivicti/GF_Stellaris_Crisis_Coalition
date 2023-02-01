@@ -1,97 +1,107 @@
+@GF_deposit_clear_time_t1 = 120
+@GF_deposit_clear_time_t2 = 240
+@GF_deposit_clear_time_t3 = 360
+
+@GF_deposit_clear_cost_t1 = 600
+@GF_deposit_clear_cost_t2 = 900
+@GF_deposit_clear_cost_t3 = 1200
+
 d_GF_sf_control_center_ruin = {
 	is_for_colonizable = yes
-	time = 120
-	icon = d_GF_sf_control_center_ruin
+	time = @GF_deposit_clear_time_t2
 	category = deposit_cat_blockers
 	planet_modifier = {
-		planet_max_districts_add = -1
+		planet_max_districts_add = -2
+		planet_structures_upkeep_mult = 0.5
 	}
-	blocker_swap_types = {
-		d_GF_sf_control_center
-	}
+	blocker_swap_types = { d_GF_sf_control_center }
+	use_for_min_max_adjustments = yes
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 50
+			energy = @GF_deposit_clear_cost_t2
+			minerals = @GF_deposit_clear_cost_t1
 		}
 	}
-	drop_weight = {
-		weight = 0
-	}
+	drop_weight = { weight = 0 }
 }
 
 d_GF_sf_control_center = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
-	icon = d_GF_sf_control_center
 	planet_modifier = {
 		planet_crime_mult = -0.10
 		species_empire_size_mult = -0.10
 	}
-	drop_weight = {
-		weight = 0
-	}
+	drop_weight = { weight = 0 }
 }
 
 d_GF_sf_doll_factory_ruin = {
 	is_for_colonizable = yes
-	time = 120
+	time = @GF_deposit_clear_time_t2
 	icon = d_GF_doll_factory_ruin
 	category = deposit_cat_blockers
 	planet_modifier = {
 		district_GF_assembly_max = -5
 	}
-	blocker_swap_types = {
-	}
+	
+	use_for_min_max_adjustments = yes
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 50
+			energy = @GF_deposit_clear_cost_t2
+			minerals = @GF_deposit_clear_cost_t1
 		}
 	}
-	drop_weight = {
-		weight = 0
-	}
+	drop_weight = { weight = 0 }
 }
 
 d_GF_sf_battle_field = {
 	is_for_colonizable = yes
-	time = 120
-	icon = d_GF_sf_battle_field
+	time = @GF_deposit_clear_time_t1
 	category = deposit_cat_blockers
 	planet_modifier = {
 		planet_max_districts_add = -5
 	}
-	blocker_swap_types = {
-	}
+	use_for_min_max_adjustments = yes
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 50
+			energy = @GF_deposit_clear_cost_t1
 		}
 	}
-	drop_weight = {
-		weight = 0
-	}
+	drop_weight = { weight = 0 }
 }
 
 d_GF_sf_relic_entrance = {
 	is_for_colonizable = yes
-	time = 120
-	icon = d_GF_sf_relic_entrance
+	time = @GF_deposit_clear_time_t3
 	category = deposit_cat_blockers
-	planet_modifier = {
-		district_GF_collapse_max = -25
+	
+	can_be_cleared = {
+		hidden_trigger = { exists = owner }
+		if = {
+			limit = { owner = { has_authority = GF_auth_commonwealth } }
+			hidden_trigger = { always = yes }
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = GF_cannot_clear_relic_entrance_tooltip
+				always = no
+			}
+		}
 	}
-	blocker_swap_types = {
+
+	on_cleared = {
+		set_planet_flag = flag_p_GF_has_collapse_district
 	}
+	
+	use_for_min_max_adjustments = yes
 	resources = {
 		category = deposit_blockers
 		cost = {
-			energy = 50
+			energy = @GF_deposit_clear_cost_t3
 		}
 	}
-	drop_weight = {
-		weight = 0
-	}
+	drop_weight = { weight = 0 }
 }

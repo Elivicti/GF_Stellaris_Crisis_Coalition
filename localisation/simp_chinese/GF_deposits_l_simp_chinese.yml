@@ -30,7 +30,7 @@
  d_GF_amazon_food:0 "亚马逊开发区"
  d_GF_amazon_food_desc:0 "出于对罗克萨特主义一体化的不信任，使南美国家接受了南联的科技援助。在南联的帮助下，亚马逊平原被有计划的改造为农业区。"
  d_GF_australia_ruin:0 "澳大利亚重建区"
- d_GF_australia_ruin_desc:0 "澳洲作为南罗双方冲突的前线发生了数十次大规模军事行动，截至联合政府成立，该地区已遍布废墟，急需清理重建。"
+ d_GF_australia_ruin_desc:0 "澳洲作为南罗双方冲突的前线发生了数十次大规模军事行动，截至联合政府成立，该地区已遍布废墟，急需清理重建。" 
  d_GF_australia_mineral:0 "澳大利亚矿区"
  d_GF_australia_mineral_desc:0 "清理完毕的澳洲废墟区已不太适合居住，其拥有的矿产资源促使联合政府将此地规划为矿区。"
  d_GF_asia_europe_factory:0 "亚欧工业基地带"
@@ -59,16 +59,17 @@
  d_GF_railway_hub_desc:0 "一套焕然一新、彻夜不眠的现代化铁路枢纽，统合化的铁路交通在此处流转不息。借助发达的铁路网络，我们可以部署$GF_army_defensive_armored_train$来增强重要城市的防御。\n\n注意：星球视图中的维护费显示有误，实际如下\n每个铁路枢纽维护费：£energy£0.12  £alloys£0.06"
 
  d_GF_sf_control_center_ruin:0 "中央控制室废墟"
- d_GF_sf_control_center_ruin_desc:0 "这个布满了线路与服务器的地下废墟便是整个机械星球的中央控制室，伊莱莎就是在这里放大伞病毒的信号，控制那些感染了病毒的仿生人形，而如今此地已经完全被失控人形摧毁。"
+ d_GF_sf_control_center_ruin_desc:0 "这个遍布着大型服务器和复杂线路的地下废墟曾是整个机械星球的中央控制室，伊莱莎就是在这里对低级的子个体和病毒俘获的机械个体发号施令。"
 
  d_GF_sf_control_center:0 "重建的中央控制室"
- d_GF_sf_control_center_desc:0 "原先被摧毁的中央控制室已经完成重建，内部电子设备也已格式化，清除了伞病毒的影响。在实现了对该设施的完全接管后，我们便开始使用它传输正常的人形网络信号"
+ d_GF_sf_control_center_desc:0 "焕然一新的中央控制室，其中的大型服务器也被清理以剔除任何可能的不兼容代码或病毒程序，现在这颗机械大脑将承担传输人形信号和调控人形的重要功能。"
 
- d_GF_sf_doll_factory_ruin:0 "人形装配区划废墟"
- d_GF_sf_doll_factory_ruin_desc:0 "这里原先是伊莱莎为了扩展她的人形大军所建立的专门负责人形生产制造的区划。但当人形失控事件发生后，此处因为其重要的战略地位立即引发了双方的争夺，高烈度的战斗将这里的一切摧毁殆尽"
+ d_GF_sf_doll_factory_ruin:0 "$district_GF_assembly$废墟"
+ d_GF_sf_doll_factory_ruin_desc:0 "这里曾是大型的人形装配生产线，绝大部分设施都在高烈度的争夺战后遭到了摧毁，但仍能看出伊莱莎试图扩充自己军队的野心。"
 
- d_GF_sf_battle_field:0 "惨烈的人形战场遗址"
- d_GF_sf_battle_field_desc:0 "破损的人形遗骸遍布这一区域，随处可见大量人形的残肢断臂扭曲在一起，人形机体的循环液泄露一地，散发着刺鼻的气味，整个地区经历了一次仿生人形之间的惨烈战斗"
+ d_GF_sf_battle_field:0 "人形战场遗址"
+ d_GF_sf_battle_field_desc:0 "这一区域遍布着破损的人形遗骸，大量人形的残肢断臂扭曲在一起，人形机体的循环液泄露一地，散发着刺鼻的气味，从中可以窥见这里曾经历过的惨烈战斗。"
 
  d_GF_sf_relic_entrance:0 "被掩埋的神秘大门"
- d_GF_sf_relic_entrance_desc:0 "在完成对整个机械星球勘察后，我们在错综复杂宛如迷宫的钢铁丛林之中发现了这道大门，初步确认该门历史极其古老，由坚固材质构成并配有严密的防护措施，至于大门到底在保护什么，还需要打开后才知道"
+ d_GF_sf_relic_entrance_desc:0 "深藏于这颗机械星球错综复杂宛如迷宫的钢铁丛林之中的古老大门，其材质十分坚固，且配有严密的防护措施，在这扇大门开启前，我们将无从得知它所保护的秘密。"
+ GF_cannot_clear_relic_entrance_tooltip:0 "£trigger_no£ 我们无法清理这个神秘的障碍"
