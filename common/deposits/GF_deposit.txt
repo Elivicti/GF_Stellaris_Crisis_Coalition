@@ -1,6 +1,6 @@
 d_GF_south_pole_mineral = {
 	is_for_colonizable = yes
-	icon = d_crystalline_caverns
+	icon = d_GF_south_pole_mineral
 	planet_modifier = {
 		district_mining_max = 3
 	}
@@ -11,7 +11,7 @@ d_GF_south_pole_mineral = {
 
 d_GF_south_pole_energy = {
 	is_for_colonizable = yes
-	icon = d_toxic_kelp
+	icon = d_GF_south_pole_energy
 	planet_modifier = {
 		district_generator_max = 4
 	}
@@ -85,7 +85,7 @@ d_GF_doll_factory = {
 
 d_GF_south_asia_food = {
 	is_for_colonizable = yes
-	icon = d_fertile_lands
+	icon = d_GF_south_asia_food
 	planet_modifier = {
 		district_farming_max = 4
 	}
@@ -96,7 +96,7 @@ d_GF_south_asia_food = {
 
 d_GF_amazon_food = {
 	is_for_colonizable = yes
-	icon = d_fertile_lands
+	icon = d_GF_amazon_food
 	planet_modifier = {
 		district_farming_max = 4
 	}
@@ -130,7 +130,7 @@ d_GF_australia_ruin = {
 
 d_GF_australia_mineral = {
 	is_for_colonizable = yes
-	icon = d_fertile_lands
+	icon = d_GF_australia_mineral
 	planet_modifier = {
 		district_mining_max = 3
 	}
@@ -141,7 +141,7 @@ d_GF_australia_mineral = {
 
 d_GF_asia_europe_factory = {
 	is_for_colonizable = yes
-	icon = d_fertile_lands
+	icon = d_GF_asia_europe_factory
 	planet_modifier = {
 		district_mining_max = 2
 		district_generator_max = 4
