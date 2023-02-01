@@ -8,6 +8,12 @@ event = {
 
 	immediate = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Installed
+		event_target:global_event_country = {
+			set_variable = {
+				which = v_GF_Stellaris_MOD_VER
+				value = @GF_Stellaris_MOD_VER
+			}
+		}
 		every_country = {
 			limit = { has_origin = GF_origin_commonwealth }
 			fire_on_action = {

@@ -88,3 +88,22 @@ on_released_as_vassal = {
 		GF_overlord.0		# 少前政体释放附庸
 	}
 }
+
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		GF_evt_misc.1000	# 加载旧版存档时的处理
+	}
+}
+
+#Fired whenever a new owner is set for a planet,
+#be it after a war or through a trade
+#FromFrom = Former Owner (if any)
+#From = Country scope (new owner)
+#This = Planet scope
+on_planet_transfer = {
+	events = {
+		GF_evt_misc.2000	# 处理球上的人口组装建筑
+	}
+}

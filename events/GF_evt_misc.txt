@@ -1,0 +1,93 @@
+# 一些杂项事件
+namespace = GF_evt_misc
+
+### on_single_player_save_game_load
+# no scope
+
+# 存档加载，用于处理部分旧版本升级、更新日志等
+event = {
+	id = GF_evt_misc.1000
+	hide_window = yes
+
+	is_triggered_only = yes
+	immediate = {
+		every_country = {
+			limit = { has_authority = GF_auth_commonwealth }
+			if = {
+				limit = { NOT = { has_country_flag = suppress_vanilla_factions } }
+				set_country_flag = suppress_vanilla_factions
+			}
+			country_event = { id = GF_evt_misc.1001 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = GF_evt_misc.1001
+	title = contact
+	desc = GF_evt_misc.1001.desc
+
+	diplomatic = yes
+	custom_gui = "GF_DiplomaticEventWindow"
+	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		event_target:global_event_country = {
+			check_variable = {
+				which = v_GF_Stellaris_MOD_VER
+				value < @GF_Stellaris_MOD_VER
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			event_target:global_event_country = {
+				set_variable = {
+					which = v_GF_Stellaris_MOD_VER
+					value = @GF_Stellaris_MOD_VER
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GF_evt_misc.1001.a
+	}
+}
+
+
+### on_planet_transfer
+# FromFrom = Former Owner (if any)
+# From = Country scope (new owner)
+# This = Planet scope
+
+# 处理球上的人口组装建筑
+planet_event = {
+	id = GF_evt_misc.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_building = building_robot_assembly_plant
+			has_building = building_robot_assembly_complex
+			has_building = building_machine_assembly_plant
+			has_building = building_machine_assembly_complex
+		}
+		from = { has_authority = GF_auth_commonwealth }
+	}
+
+	immediate = {
+		remove_building = building_robot_assembly_plant
+		remove_building = building_robot_assembly_complex
+		remove_building = building_machine_assembly_plant
+		remove_building = building_machine_assembly_complex
+		add_building = building_GF_doll_factory
+	}
+}

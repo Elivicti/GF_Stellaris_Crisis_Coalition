@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+# 一些杂项事件
+
+ GF_evt_misc.1001.desc:0 "通知：系统已更新，日志如下：\n\n$GF_Stellaris_Log_202302xx$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_evt_misc.1001.a:0 "了解"
