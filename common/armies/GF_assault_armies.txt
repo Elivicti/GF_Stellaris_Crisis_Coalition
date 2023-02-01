@@ -36,7 +36,7 @@ GF_army_tactical_doll = {
 	war_exhaustion = 1.5
 	time = 120
 	icon = GFX_GF_army_type_doll
-	has_species = no
+	has_species = yes
 	pop_limited = no
 	resources = {
 		category = armies
@@ -48,7 +48,7 @@ GF_army_tactical_doll = {
 		}
 	}
 	show_tech_unlock_if = { has_authority = GF_auth_commonwealth }
-#	potential = { from = { has_trait = GF_trait_doll } }
+	potential = { from = { has_trait = GF_trait_doll } }
 	potential_country = { has_authority = GF_auth_commonwealth }
 	prerequisites = {
 		"GF_tech_tactical_doll"
