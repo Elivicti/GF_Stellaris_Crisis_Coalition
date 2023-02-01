@@ -72,4 +72,6 @@
 
  d_GF_sf_relic_entrance:0 "被掩埋的神秘大门"
  d_GF_sf_relic_entrance_desc:0 "深藏于这颗机械星球错综复杂宛如迷宫的钢铁丛林之中的古老大门，其材质十分坚固，且配有严密的防护措施，在这扇大门开启前，我们将无从得知它所保护的秘密。"
+ GF_can_clear_relic_entrance_tooltip:0 "£trigger_no£ 需要先清理其它障碍"
  GF_cannot_clear_relic_entrance_tooltip:0 "£trigger_no£ 我们无法清理这个神秘的障碍"
+ GF_sf_relic_entrance_cleared_effect:0 "§H将发掘这扇大门背后的秘密§!"
