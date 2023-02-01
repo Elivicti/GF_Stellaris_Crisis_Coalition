@@ -81,6 +81,7 @@ pc_GF_sf_machine = {
 
 	colonizable = yes
 	district_set = GF_sf_machine_world
+	is_artificial_planet = yes
 	starting_planet = no
 	show_city = no
 
