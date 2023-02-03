@@ -137,7 +137,10 @@ GF_relic_department = {
 		trigger = {
 			owner = {
 				has_technology = GF_tech_collapsetech_weaponize
-				has_technology = GF_tech_collapse_energy_lance
+				OR = {
+					has_technology = GF_tech_collapse_bomb
+					has_technology = GF_tech_collapse_energy_lance
+				}
 			}
 		}
 
