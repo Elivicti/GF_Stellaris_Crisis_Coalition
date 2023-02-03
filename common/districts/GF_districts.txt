@@ -213,10 +213,6 @@ district_GF_collapse = {
 		text = district_GF_collapse_desc
 	}
 
-	prerequisites = {
-		GF_tech_collapse
-	}
-
 	show_on_uncolonized = {
 		exists = from
 		from = { has_authority = GF_auth_commonwealth }
@@ -230,6 +226,10 @@ district_GF_collapse = {
 	}
 
 	allow = {
+		custom_tooltip = {
+			fail_text = GF_require_tech_collapse
+			owner = { has_technology = GF_tech_collapse }
+		}
 		NOR = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony

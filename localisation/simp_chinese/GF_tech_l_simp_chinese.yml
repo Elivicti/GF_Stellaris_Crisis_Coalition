@@ -42,6 +42,7 @@
  GF_tech_mass_rebuild_function_desc:0 "佩斯特级质量重建方程表明，物质重建质量与坍塌密位粒子波长成正比，与逆坍塌电子源衍射成反比，这一结果确立了物质从无序的坍塌态到有序的结构互相转化的物理准则。"
  GF_tech_collapse:0 "物质坍塌技术"
  GF_tech_collapse_desc:0 "物质坍塌技术可以让我们任意的将任何物体打碎为其最本质的组成状态，也就是单独的一个个粒子状态，而这种被打碎的粒子组合在相互只剩引力的情况下会进行压缩，这个过程中产生辐射，从而成为近一个世纪人们闻之色变的坍塌液。"
+ GF_require_tech_collapse:0 "要求 £physics£ §Y$GF_tech_collapse$§!科技"
  GF_tech_reverse_collapse:0 "物质逆向坍塌技术"
  GF_tech_reverse_collapse_desc:0 "逆向坍塌则是坍塌的反过程，正如坍塌是打碎物质一样，逆向坍塌则是先通过计算机导入目标物质的空间模型结构，再按照这个模型，将坍塌液中粒子包解开压缩，让其中的粒子归位到模型对应的位置有序排列，从而构建生成空间模型所指定的新物质。"
  GF_tech_ecological_recovery:0 "坍塌辐射污染无害化技术"
