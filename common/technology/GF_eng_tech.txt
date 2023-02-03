@@ -143,10 +143,6 @@ GF_tech_mind_upgrade_2 = {
 			title = "feature_GF_doll_mind_upgrade"
 			desc = "feature_GF_doll_mind_upgrade_desc"
 		}
-		custom = {
-			title = "unlock_edict_GF_doll_reprogram"
-			desc = "unlock_edict_GF_doll_reprogram_desc"
-		}
 	}
 
 	weight_modifier = {

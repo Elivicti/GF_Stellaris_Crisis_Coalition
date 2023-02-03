@@ -54,6 +54,7 @@ GF_doll_reprogram = {
 		hidden_effect = {
 			add_modifier = {
 				modifier = GF_edict_doll_reprogram_cooldown
+				years = 1
 			}
 			country_event = { id = GF_doll_leader.100 }
 		}
@@ -69,6 +70,8 @@ GF_doll_reprogram = {
 			}
 		}
 	}
+
+	prerequisites = { "GF_tech_mind_upgrade_2" }
 }
 #########################
 GF_robot_modding = {
