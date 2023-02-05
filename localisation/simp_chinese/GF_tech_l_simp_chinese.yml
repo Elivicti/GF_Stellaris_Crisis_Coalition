@@ -104,17 +104,17 @@
  GF_tech_collapse_slingshot_protocal:0 "逆向坍塌量子弹射协议"
  GF_tech_collapse_slingshot_protocal_desc:0 "优化设备产生逆向坍塌过程的效率，以便更加快捷高效地将舰船投射到星系的每一个角落。"
 
- GF_tech_collapse_missile:0 "坍塌液导弹（待定）"
- GF_tech_collapse_missile_desc:0 "坍塌液导弹（待定）介绍"
+ GF_tech_collapse_missile:0 "坍塌晶格导弹"
+ GF_tech_collapse_missile_desc:0 "采用高爆型坍塌晶格装药的先进制导导弹，能够对舰船的装甲造成极大的破坏。"
 
- GF_tech_collapse_torpedo:0 "坍塌液鱼雷（待定）"
- GF_tech_collapse_torpedo_desc:0 "坍塌液鱼雷（待定）介绍"
+ GF_tech_collapse_torpedo:0 "坍塌晶格鱼雷"
+ GF_tech_collapse_torpedo_desc:0 "采用高爆型坍塌晶格装药的先进鱼雷，改进过的弹体可以轻松穿过护盾对舰船的装甲和船体造成毁灭性打击。"
 
- GF_tech_collapse_mass_accelerator:0 "坍塌液千兆炮（待定）"
- GF_tech_collapse_mass_accelerator_desc:0 "坍塌液千兆炮（待定）介绍"
+ GF_tech_collapse_mass_accelerator:0 "千兆级坍塌加农炮"
+ GF_tech_collapse_mass_accelerator_desc:0 "特化改进过的大型质量加速炮，发射特制的坍塌晶格炮弹，能够轻易地撕碎任何装甲单位。"
 
- GF_tech_collapse_artillery:0 "坍塌液火炮（待定）"
- GF_tech_collapse_artillery_desc:0 "坍塌液火炮（待定）介绍"
+ GF_tech_collapse_artillery:0 "坍塌动能火炮"
+ GF_tech_collapse_artillery_desc:0 "特化改进过的远程舰载火力系统，发射特制的坍塌晶格炮弹，并且更准、更快、更具威慑力。"
 
- GF_tech_collapse_cannon:0 "坍塌液机炮（待定）"
- GF_tech_collapse_cannon_desc:0 "坍塌液机炮（待定）介绍"
+ GF_tech_collapse_cannon:0 "高爆坍塌机炮"
+ GF_tech_collapse_cannon_desc:0 "特化改进过的自动火炮，采用特制的高爆型坍塌晶格装药炮弹，能够向目标倾泻一片致命的弹幕。"
