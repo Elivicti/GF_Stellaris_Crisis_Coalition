@@ -278,7 +278,7 @@ district_GF_collapse = {
 		text = job_GF_collapser_effect_desc
 	}
 }
-
+#少前人形组装区划
 district_GF_assembly = {
 	base_buildtime = 360
 	icon = district_GF_assembly
