@@ -6,7 +6,7 @@
  GF_doll_right_full_name:0 "人形权利：完整公民权利"
  GF_doll_right_policy_full:0 "完整公民权利"
  GF_doll_right_policy_full_desc:0 "人形将被视为我们社会中平等的一员，她们的诉求、需要必须得到尊重，享有一个自由公民应享有的一切。\n\n$GF_doll_right_full_effect$"
- GF_doll_right_full_effect:0 "人形的公民权将被锁定在§Y$citizenship_full$§!。\n人形§G可以§!产生领袖。\n§H仅当§!开启§Y$GF_storage_protocol$§!时才允许人形进入§Y$job_GF_dormancy_doll$岗位§!。\n人形岗位产出: §G+10%§!"
+ GF_doll_right_full_effect:0 "人形的公民权将被锁定在§Y$citizenship_full$§!。\n人形§G可以§!产生领袖。\n人形岗位产出: §G+10%§!"
  GF_require_no_xenophobe_and_fxxk_you_paradox:0 "$TRIGGER_FAIL$§R总之蠢驴觉得排外的主物种就应该认为第二物种很异端§!"
 
  GF_doll_right_limited_name:0 "人形权利：有限公民权利"
