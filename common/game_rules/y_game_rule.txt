@@ -178,10 +178,7 @@ can_species_be_assembled = {
 			if = {	# GF
 				limit = { has_trait = GF_trait_doll }
 				root.owner = {
-					OR = {
-						has_authority = GF_auth_commonwealth
-						is_valid_GF_OGAS_subnet = yes
-					}
+					GF_can_build_doll_species = yes
 				}
 			}
 		}

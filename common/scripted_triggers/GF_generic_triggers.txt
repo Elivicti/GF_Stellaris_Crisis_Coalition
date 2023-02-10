@@ -64,3 +64,9 @@ GF_OGAS_has_available_threads = {
 		}
 	}
 }
+
+# scope = country
+GF_can_build_doll_species = {
+	NOT = { has_deficit = gf_core_chip }
+	GF_potential_trigger_advanced = yes
+}
