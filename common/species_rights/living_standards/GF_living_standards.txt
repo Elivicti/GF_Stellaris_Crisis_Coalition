@@ -1,0 +1,28 @@
+# from = country
+# this = species
+#triggered_pop_modifier = {
+#	potential = { is_pop_category = ruler }
+#	pop_happiness = 0.15
+#}
+
+# only for purge, so no happiness effect
+living_standard_GF_purge_none = {
+	potential = {
+		exists = from
+		has_citizenship_type = {
+			type = citizenship_GF_doll_purge
+			country = from
+		}
+	}
+	allow = {
+		exists = from
+		has_citizenship_type = {
+			type = citizenship_GF_doll_purge
+			country = from
+		}
+	}
+
+	ai_will_do = {
+		factor = 10
+	}
+}

@@ -30,112 +30,44 @@ GF_purge = {
 				exists = owner
 				owner = { has_valid_civic = civic_hive_devouring_swarm }
 			}
-			society_research = 2
+			engineering_research = 2
 		}
-		produces = { # regular processing
+
+		produces = {
 			trigger = {
-				has_purge_type = { type = purge_processing }
-				is_robotic_species = no
-				is_lithoid = no
-			}
-			food = 6
-		}
-		produces = { # regular processing
-			trigger = {
-				has_purge_type = { type = purge_processing }
-				is_lithoid = yes
-			}
-			minerals = 4
-		}
-		produces = { # processing robots (devouring swarm)
-			trigger = {
-				has_purge_type = { type = purge_processing }
-				is_robotic_species = yes
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
 			}
 			alloys = 3
 		}
 		produces = {
 			trigger = {
-				has_purge_type = { type = purge_matrix }
-			}
-			energy = 6
-		}
-		produces = {
-			trigger = {
-				has_purge_type = { type = purge_labor_camps }
-			}
-			food = 3
-			minerals = 3
-		}
-		produces = {
-			trigger = {
-				planet = { has_active_building = building_food_processing_facility }
-				OR = {
-					has_purge_type = { type = purge_labor_camps }
-					AND = {
-						has_purge_type = { type = purge_processing }
-						is_robotic_species = no
-						is_lithoid = no
-					}
-				}
-			}
-			food = 1
-		}
-		produces = {
-			trigger = {
-				planet = { has_active_building = building_food_processing_center }
-				OR = {
-					has_purge_type = { type = purge_labor_camps }
-					AND = {
-						has_purge_type = { type = purge_processing }
-						is_robotic_species = no
-						is_lithoid = no
-					}
-				}
-			}
-			food = 2
-		}
-		produces = {
-			trigger = {
-				planet = { has_active_building = building_mineral_purification_plant }
-				OR = {
-					has_purge_type = { type = purge_labor_camps }
-					AND = {
-						has_purge_type = { type = purge_processing }
-						is_lithoid = yes
-					}
-				}
-			}
-			minerals = 1
-		}
-		produces = {
-			trigger = {
-				planet = { has_active_building = building_mineral_purification_hub }
-				OR = {
-					has_purge_type = { type = purge_labor_camps }
-					AND = {
-						has_purge_type = { type = purge_processing }
-						is_lithoid = yes
-					}
-				}
-			}
-			minerals = 2
-		}
-		produces = {
-			trigger = {
 				planet = { has_active_building = building_foundry_2 }
-				has_purge_type = { type = purge_processing }
-				is_robotic_species = yes
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
 			}
 			alloys = 1
 		}
 		produces = {
 			trigger = {
 				planet = { has_active_building = building_foundry_3 }
-				has_purge_type = { type = purge_processing }
-				is_robotic_species = yes
+				OR = {
+					has_purge_type = { type = purge_processing }
+					has_purge_type = { type = purge_GF_dismantle }
+				}
 			}
 			alloys = 2
+		}
+
+		produces = {
+			trigger = {
+				has_purge_type = { type = purge_matrix }
+			}
+			energy = 6
 		}
 		produces = {
 			trigger = {
@@ -150,6 +82,42 @@ GF_purge = {
 				has_purge_type = { type = purge_matrix }
 			}
 			energy = 2
+		}
+
+		produces = {
+			trigger = {
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 3
+			minerals = 3
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_facility }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_food_processing_center }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			food = 2
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_plant }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			minerals = 1
+		}
+		produces = {
+			trigger = {
+				planet = { has_active_building = building_mineral_purification_hub }
+				has_purge_type = { type = purge_labor_camps }
+			}
+			minerals = 2
 		}
 	}
 

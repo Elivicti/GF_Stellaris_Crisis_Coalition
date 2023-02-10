@@ -1,0 +1,33 @@
+purge_GF_dismantle = {
+	pop_escape_chance = 0.0
+	pop_decline_rate = 100 # 1 pop per 1 months, overrides BASE_POP_DECLINE, will only work on purge types
+
+	pop_modifier = {
+		pop_happiness = -10
+		pop_housing_usage_mult = -1.0
+	}
+
+	pop_tooltip = purge_GF_dismantle_tooltip
+
+	potential = {
+		exists = from
+
+		has_trait = GF_trait_doll
+		has_citizenship_type = {
+			type = citizenship_GF_doll_purge
+			country = from
+		}
+		from = { has_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll }
+	}
+
+	allow = {
+		hidden_trigger = {
+			exists = from
+			from = { has_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll }
+		}
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -25,3 +25,30 @@
  gfpurge_policy2_desc:0 "非战术人形将不会获得入境许可"
  gfpurge_policy3:0 "非战术人形开放入境"
  gfpurge_policy3_desc:0 "经过长时间的社会实验，我们决定给予非战术人形生物有限入境权"
+
+# 公民权
+#  citizenship_GF_doll_full:0 "完整公民权利"
+#  citizenship_GF_doll_full_tooltip:0 "人形能够自由地行使政治权利，并且§G允许§!人形产生领袖。"
+#  citizenship_GF_doll_full_tooltip_delayed:0 "§L人形被视为[from.GetAdj]社会中平等的一员，她们的诉求、需要必须得到尊重，享有一个自由公民应享有的一切。§!"
+
+#  citizenship_GF_doll_limited:0 "有限公民权利"
+#  citizenship_GF_doll_limited_tooltip:0 "人形享有一定的自由，但政治权利较低，§G允许§!人形产生领袖。"
+#  citizenship_GF_doll_limited_tooltip_delayed:0 "§L§!"
+
+#  citizenship_GF_doll_servitude:0 "人形侍从"
+#  citizenship_GF_doll_servitude_tooltip:0 ""
+#  citizenship_GF_doll_servitude_tooltip_delayed:0 "§L人形存在的意义就是为她们的主人服务。§!"
+
+ citizenship_GF_doll_purge:0 "$citizenship_purge$"
+ citizenship_GF_doll_purge_tooltip:0 "$citizenship_purge_tooltip$"
+ citizenship_GF_doll_purge_tooltip_delayed:0 "$citizenship_purge_tooltip_delayed$"
+
+# 净化
+ purge_GF_dismantle:0 "拆解"
+ purge_GF_dismantle_tooltip:0 "受影响的人口将被拆解为 £alloys£ §H合金§!"
+ purge_GF_dismantle_tooltip_delayed:0 "§L这些人口的利用价值甚至没有它们的组成材料高。§!"
+
+# 生活标准
+ living_standard_GF_purge_none:0 "$living_standard_none$"
+ living_standard_GF_purge_none_tooltip:0 "$living_standard_none_tooltip$"
+ living_standard_GF_purge_none_tooltip_delayed:0 "$living_standard_none_tooltip_delayed$"
