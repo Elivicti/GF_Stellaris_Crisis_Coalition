@@ -553,3 +553,10 @@ GF_change_ogas_level = {
 		}
 	}
 }
+
+# scope = country
+GF_clear_core_chip_deficit_flags = {
+	remove_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies
+	remove_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll
+	remove_country_flag = flag_GF_deficit_core_chip_approach_assimilate_doll
+}

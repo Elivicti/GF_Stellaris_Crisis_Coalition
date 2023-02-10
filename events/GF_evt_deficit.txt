@@ -1,0 +1,238 @@
+namespace = GF_deficit
+
+situation_event = {
+	id = GF_deficit.10
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { current_stage = deficit_first }
+	}
+
+	immediate = {
+		export_trigger_value_to_variable = {
+			trigger = situation_progress
+			variable = v_GF_doll_leader_monthly_malfunction_chance
+		}
+		divide_variable = {
+			which = v_GF_doll_leader_monthly_malfunction_chance
+			value = 2
+		}
+	}
+}
+
+situation_event = {
+	id = GF_deficit.20
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		current_stage = deficit_third
+	}
+
+	immediate = {
+		export_trigger_value_to_variable = {
+			trigger = situation_progress
+			variable = v_GF_doll_pop_monthly_malfunction_chance
+		}
+		change_variable = {
+			which = v_GF_doll_pop_monthly_malfunction_chance
+			value = -60
+		}
+	}
+}
+
+country_event = {
+	id = GF_deficit.50
+	title = GF_deficit.50.name
+	desc = GF_deficit.50.desc
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_leader = {
+			limit = { GF_is_doll_leader = yes }
+			kill_leader = { show_notification = yes }
+		}
+		every_owned_pop = {
+			limit = { has_trait = GF_trait_doll }
+			kill_pop = yes
+		}
+	}
+
+	option = {
+		name = GF_deficit.50.a
+		custom_tooltip = GF_deficit.50.a.tooltip
+	}
+}
+
+situation_event = {
+	id = GF_deficit.100
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { current_stage = deficit_first }
+		owner = {
+			any_owned_leader = {
+				GF_is_doll_leader = yes
+			}
+		}
+	}
+
+	immediate = {
+		random_list = {
+			200 = {
+				modifier = { subtract = trigger:situation_progress }
+			}
+			0 = {
+				modifier = { add = trigger:situation_progress }
+				modifier = {
+					subtract = 15
+					current_situation_approach = GF_deficit_core_chip_approach_programmer_subsidies
+				}
+				modifier = { min = 0 }
+				owner = {
+					random_owned_leader = {
+						limit = { GF_is_doll_leader = yes }
+						save_event_target_as = GF_malfunctioned_doll_leader
+					}
+					country_event = { id = GF_deficit.101 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_deficit.101
+	title = GF_deficit.101.name
+	desc = GF_deficit.101.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_deficit.101.a
+		event_target:GF_malfunctioned_doll_leader = {
+			kill_leader = { show_notification = yes }
+		}
+	}
+}
+
+situation_event = {
+	id = GF_deficit.110
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { current_stage = deficit_first }
+	}
+
+	immediate = {
+		random_list = {
+			160 = {
+				modifier = { subtract = trigger:situation_progress }
+			}
+			0 = {
+				modifier = { add = trigger:situation_progress }
+				modifier = { subtract = 60 }
+				modifier = { min = 0 }
+				owner = {
+					random_owned_pop = {
+						limit = { has_trait = GF_trait_doll }
+						save_event_target_as = GF_malfunctioned_pop
+					}
+					country_event = { id = GF_deficit.111 }
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GF_deficit.111
+	title = GF_deficit.111.name
+	desc = GF_deficit.111.desc
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_deficit.111.a
+		custom_tooltip = GF_deficit.111.a.tooltip
+		hidden_effect = {
+			event_target:GF_malfunctioned_pop = { kill_pop = yes }
+		}
+	}
+}
+
+situation_event = {
+	id = GF_deficit.120
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		current_situation_approach = GF_deficit_core_chip_approach_dismantle_doll
+	}
+
+	immediate = {
+		owner = {
+			every_owned_species = {
+				limit = { has_trait = GF_trait_doll }
+				set_citizenship_type = {
+					type = citizenship_GF_doll_purge
+					cooldown = yes
+					country = prev
+				}
+				set_purge_type = {
+					type = purge_GF_dismantle
+					cooldown = yes
+					country = prev
+				}
+				set_living_standard = {
+					type = living_standard_GF_purge_none
+					cooldown = yes
+					country = prev
+				}
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = GF_deficit.125
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		current_situation_approach = GF_deficit_core_chip_approach_ignore
+		owner = { GF_potential_trigger_advanced = no }
+	}
+
+	immediate = {
+		owner = {
+			every_owned_species = {
+				limit = { has_trait = GF_trait_doll }
+				set_citizenship_type = {
+					type = citizenship_robot_servitude
+					cooldown = no
+					country = prev
+				}
+				set_purge_type = {
+					type = purge_GF_dismantle
+					cooldown = no
+					country = prev
+				}
+				set_living_standard = {
+					type = living_standard_GF_purge_none
+					cooldown = no
+					country = prev
+				}
+			}
+		}
+	}
+}

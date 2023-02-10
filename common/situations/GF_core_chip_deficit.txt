@@ -1,0 +1,254 @@
+GF_situation_core_chip_deficit = {
+	picture = GFX_evt_deficit
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_negative
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+	on_start = {
+	}
+	on_abort = {
+		owner = { GF_clear_core_chip_deficit_flags = yes }
+	}
+
+	modifier = {
+		GF_doll_produces_mult = -10
+		GF_ANDROID_pop_happiness = -10
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = { GF_potential_trigger_advanced = yes }
+		}
+		modifier = { GF_doll_assembly_speed_mult = -10 }
+	}
+
+	on_progress_complete = {
+		custom_tooltip = GF_core_chip_deficit_kill_all_doll_tooltip
+		hidden_effect = {
+			owner = {
+				country_event = { id = GF_deficit.50 }
+				GF_clear_core_chip_deficit_flags = yes 
+			}
+			destroy_situation = this
+		}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = {
+			owner = { GF_clear_core_chip_deficit_flags = yes }
+			destroy_situation = this
+		}
+	}
+
+	start_value = 5
+	stages = {
+		deficit_first = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 80
+			custom_tooltip = GF_core_chip_deficit_malfunction_doll_leader_tooltip
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 100
+			custom_tooltip = GF_core_chip_deficit_malfunction_doll_leader_and_pop_tooltip
+		}
+	}
+
+	# 总进度 100 (50 + 30 + 20)；起始进度 5
+	# 在什么都不做的情况下：进度月结+1（0~80进度）；进度月结+0.5（80~100进度）
+	# 到完全破产（局势走完）需要(80 - 5 + 20 / 0.5 = 115)个月
+	# 不会有人这么久都不能把心智核心产出扳正吧？
+	monthly_progress = {
+		base = 1
+		modifier = {
+			subtract = 0.5
+			desc = string_deficit_gf_core_chip_progress_limit
+			situation_progress >= 80
+		}
+		modifier = {
+			subtract = 6
+			desc = string_not_in_deficit_gf_core_chip
+			owner = {
+				resource_income_compare = {
+					resource = gf_core_chip
+					value >= 0
+				}
+			}
+		}
+		modifier = {
+			subtract = 2
+			desc = string_resource_reserves_gf_core_chip
+			owner = {
+				has_negative_income_with_stockpile = { RESOURCE = gf_core_chip }
+			}
+		}
+	}
+
+	# this = situation
+	on_monthly = {
+		events = {
+			GF_deficit.10	# 导出领袖死亡概率（仅用于显示）
+			GF_deficit.20	# 导出人口死亡概率（仅用于显示）
+			GF_deficit.100	# 随机领袖死亡
+			GF_deficit.110	# 随机人口死亡
+
+			GF_deficit.120	# 设置人形权利为“不可接触者”，净化方式为“拆解”，生活标准为“无保障”
+		}
+	}
+
+	approach = {
+		name = GF_deficit_core_chip_approach_ignore
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+
+		on_select = {
+			custom_tooltip = deficit_approach_do_nothing_tooltip
+			owner = { GF_clear_core_chip_deficit_flags = yes }
+			hidden_effect = {
+				situation_event = { id = GF_deficit.125 }
+			}
+		}
+
+		ai_weight = {
+			base = 1
+			modifier = {
+				add = 5
+				owner = {
+					pop_percentage = {
+						percentage < 0.05
+						limit = { has_trait = GF_trait_doll }
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				owner = { has_deficit = energy }
+			}
+		}
+	}
+
+	approach = {
+		name = GF_deficit_core_chip_approach_dismantle_doll
+		icon = GFX_situation_approach_scales
+		icon_background = GFX_situation_approach_bg_yellow
+
+		potential = {
+			owner = { GF_potential_trigger_advanced = no }
+		}
+
+		on_select = {
+			custom_tooltip = GF_deficit_core_chip_approach_dismantle_doll_tooltip
+			hidden_effect = {
+				owner = {
+					GF_clear_core_chip_deficit_flags = yes
+					set_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll
+				}
+				situation_event = { id = GF_deficit.120 }
+			}
+		}
+
+		resources = {
+			category = situations
+			upkeep = { energy = 5 }
+		}
+
+		ai_weight = {
+			base = 10
+			modifier = {
+				factor = 0
+				owner = { has_deficit = energy }
+			}
+		}
+	}
+
+	# approach = {
+	# 	name = GF_deficit_core_chip_approach_assimilate_doll
+	# 	icon = GFX_situation_approach_scales
+	# 	icon_background = GFX_situation_approach_bg_yellow
+
+	# 	potential = {
+	# 		owner = { has_country_flag = flag_can_assimilate_GF_doll }
+	# 	}
+
+	# 	on_select = {
+	# 		custom_tooltip = GF_deficit_core_chip_approach_assimilate_doll_tooltip
+	# 		hidden_effect = {
+	# 			owner = {
+	# 				GF_clear_core_chip_deficit_flags = yes
+	# 				set_country_flag = flag_GF_deficit_core_chip_approach_assimilate_doll
+	# 			}
+	# 			# situation_event = { id = GF_deficit.120 }
+	# 		}
+	# 	}
+
+	# 	resources = {
+	# 		category = situations
+	# 		upkeep = { energy = 5 }
+	# 	}
+
+	# 	ai_weight = {
+			
+	# 		modifier = {
+	# 			factor = 0
+	# 			owner = { has_deficit = energy }
+	# 		}
+	# 	}
+	# }
+	
+	approach = {
+		name = GF_deficit_core_chip_approach_programmer_subsidies
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		
+		on_select = {
+			custom_tooltip = GF_deficit_core_chip_approach_programmer_subsidies_tooltip
+			hidden_effect = {
+				owner = {
+					GF_clear_core_chip_deficit_flags = yes
+					set_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies
+				}
+			}
+		}
+
+		potential = {
+			owner = { GF_potential_trigger_advanced = yes }
+		}
+
+		modifier = {
+			GF_planet_jobs_doll_programmers_upkeep_mult = 1
+			GF_planet_jobs_doll_programmers_produces_mult = 1
+		}
+
+		resources = {
+			category = situations
+			upkeep = { energy = 50 }
+		}
+
+		ai_weight = {
+			base = 0
+			modifier = {
+				set = 100
+				owner = { 
+					GF_potential_trigger_advanced = yes
+					NOT = { has_deficit = energy }
+				}
+			}
+			modifier = {
+				factor = 0.05
+				owner = {
+					has_negative_income_with_stockpile = { RESOURCE = energy }
+				}
+			}
+		}
+	}
+}
