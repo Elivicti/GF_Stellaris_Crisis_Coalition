@@ -89,12 +89,11 @@ GF_dormancy_doll = {
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
-		always = yes
 		hidden_trigger = { exists = owner }
 		has_trait = GF_trait_doll
-		owner = {
-			has_authority = GF_auth_commonwealth
-			NOT = { has_policy_flag = GF_doll_right_full }
+		OR = {
+			owner = { NOT = { has_policy_flag = GF_doll_right_full } }
+			planet = { has_modifier = GF_storage_protocol }
 		}
 	}
 	
