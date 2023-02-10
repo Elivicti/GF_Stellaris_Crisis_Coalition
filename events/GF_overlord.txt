@@ -113,17 +113,16 @@ country_event = {
 		has_authority = GF_auth_commonwealth
 	}
 
-	immediate = {
-		capital_scope = {
-			create_pop = { species = event_target:transfer_pop }
-		}
-		event_target:transfer_pop = { kill_pop = yes }
-	}
-
 	option = {
 		name = GF_overlord.202.a
 		capital_scope = {
 			custom_tooltip = GF_overlord.202.a.tooltip
+			hidden_effect = {
+				resettle_pop = {
+					pop = event_target:transfer_pop
+					planet = this
+				}
+			}
 		}
 	}
 }
