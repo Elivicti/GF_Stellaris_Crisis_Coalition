@@ -44,6 +44,13 @@ building_GF_42lab_1 = {
 			job_GF_programmer_add = 1
 		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies }
+		}
+		modifier = { job_GF_programmer_add = 1 }
+	}
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
 	}
@@ -96,6 +103,13 @@ building_GF_42lab_2 = {
 			job_GF_programmer_add = 1
 		}
 	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies }
+		}
+		modifier = { job_GF_programmer_add = 1 }
+	}
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
 	}
@@ -145,6 +159,13 @@ building_GF_42lab_3 = {
 		modifier = {
 			job_GF_programmer_add = 1
 		}
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies }
+		}
+		modifier = { job_GF_programmer_add = 1 }
 	}
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
