@@ -26,3 +26,17 @@ GF_OGAS_threads_add = {
 	good = yes
 	category = country
 }
+
+GF_doll_produces_mult = {
+	icon = mod_planet_jobs_robotic_produces_mult
+	percentage = yes
+	good = yes
+	category = pop
+}
+
+GF_doll_assembly_speed_mult = {
+	icon = mod_planet_pop_assembly_mult
+	percentage = yes
+	good = yes
+	category = pop
+}

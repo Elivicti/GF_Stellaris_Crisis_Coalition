@@ -41,6 +41,12 @@ GF_trait_doll = {
 	# 	pop_category_rulers_food_upkeep_add = 0.5
 	# }
 
+	triggered_pop_modifier = {
+		potential = { is_being_purged = no }
+		planet_jobs_produces_mult = 1
+		mult = modifier:GF_doll_produces_mult
+	}
+
 	## GF_doll_right_policy
 	triggered_pop_modifier = {
 		potential = {

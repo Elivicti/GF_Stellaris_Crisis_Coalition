@@ -89,6 +89,8 @@
 #####
  mod_GF_OGAS_threads_add:0 "OGAS可用线程数"
 
+ mod_GF_doll_produces_mult:0 "$GF_ANDROID$产出"
+ mod_GF_doll_assembly_speed_mult:0 "$GF_ANDROID$组装速度"
 
 #####
  mod_district_GF_assembly_max:0 "$district_GF_assembly$最大建造数量"
