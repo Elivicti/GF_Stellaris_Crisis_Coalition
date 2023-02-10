@@ -31,14 +31,14 @@
  GF_core_chip_deficit_kill_all_doll_tooltip:0 "所有的§Y$GF_ANDROID$§!人口和领袖将会§R死亡§!"
 
  GF_core_chip_deficit_malfunction_doll_leader_tooltip:0 "此阶段开始，$gf_core_chip$短缺将可能造成$GF_ANDROID$§Y领袖§!§R故障并死亡§!。[GF_GetCoreChipDeficitStageSecondTooltip]"
- GF_core_chip_deficit_malfunction_doll_leader_and_pop_tooltip:0 "此阶段开始，$gf_core_chip$短缺将可能造成$GF_ANDROID$§Y领袖§!或§Y人形§!§R故障并死亡§!。[GF_GetCoreChipDeficitStageThirdTooltip]"
+ GF_core_chip_deficit_malfunction_doll_leader_and_pop_tooltip:0 "此阶段开始，$gf_core_chip$短缺将可能造成$GF_ANDROID$§Y领袖§!或§Y人口§!§R故障并死亡§!。[GF_GetCoreChipDeficitStageThirdTooltip]"
 
  GF_core_chip_deficit_malfunction_doll_leader_modifier:0 "\n每月人形领袖故障死亡概率: §R+[This.v_GF_doll_leader_monthly_malfunction_chance]%§!"
  GF_core_chip_deficit_malfunction_doll_leader_and_pop_modifier:0 "$GF_core_chip_deficit_malfunction_doll_leader_modifier$\n每月人形人口故障死亡概率: §R+[This.v_GF_doll_pop_monthly_malfunction_chance]%§!"
 
  GF_deficit_core_chip_approach_ignore:0 "维持当前支出"
  GF_deficit_core_chip_approach_dismantle_doll:0 "拆解$GF_ANDROID$"
- GF_deficit_core_chip_approach_dismantle_doll_tooltip:0 "§Y$GF_ANDROID$§!的公民权将被设置为§H$citizenship_GF_doll_purge$§!，并送去拆解为 £alloys£ §Y$alloys$§!"
+ GF_deficit_core_chip_approach_dismantle_doll_tooltip:0 "§Y$GF_ANDROID$§!的公民权将被设置为§H$citizenship_GF_doll_purge$§!，并送去拆解为 £alloys£ §Y$alloys$§!\n§R注意：此操作不可逆！§!"
 #  GF_deficit_core_chip_approach_assimilate_doll:0 "同化$GF_ANDROID$"
 #  GF_deficit_core_chip_approach_assimilate_doll_tooltip:0 ""
 
