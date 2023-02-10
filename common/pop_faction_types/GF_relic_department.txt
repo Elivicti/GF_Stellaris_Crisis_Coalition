@@ -57,7 +57,7 @@ GF_relic_department = {
 	}
 
 	attraction = {
-		base = 100
+		base = 200
 		modifier = {
 			factor = 0.05
 			NOT = { pop_has_ethic = ethic_materialist }
