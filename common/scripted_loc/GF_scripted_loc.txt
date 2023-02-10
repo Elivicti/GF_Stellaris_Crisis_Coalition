@@ -207,3 +207,27 @@ defined_text = {
 	}
 	default = BLANK_STRING
 }
+
+# scope = situation
+defined_text = {
+	name = GF_GetCoreChipDeficitStageSecondTooltip
+	text = {
+		localization_key = GF_core_chip_deficit_malfunction_doll_leader_modifier
+		trigger = {
+			current_stage = deficit_second
+		}
+	}
+	default = BLANK_STRING
+}
+
+# scope = situation
+defined_text = {
+	name = GF_GetCoreChipDeficitStageThirdTooltip
+	text = {
+		localization_key = GF_core_chip_deficit_malfunction_doll_leader_and_pop_modifier
+		trigger = {
+			current_stage = deficit_third
+		}
+	}
+	default = BLANK_STRING
+}
