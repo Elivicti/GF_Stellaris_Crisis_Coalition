@@ -104,15 +104,16 @@ GF_preset_OGAS_subnet = {
 
 	potential = {
 		has_country_flag = flag_GF_commonwealth_vassal
-		NOR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-
-			has_authority = auth_corporate
-		}
-		tech_unlocked_ratio = {
-			who = from
-			ratio >= @protectorate_tech_threshold
+		OR = {
+			tech_unlocked_ratio = {
+				who = from
+				ratio >= @protectorate_tech_threshold
+			}
+			has_country_flag = specialistion_subject_conversion_flag
+			AND = {
+				is_subject = yes
+				any_agreement = { has_active_specialization = GF_specialist_OGAS_subnet }
+			}
 		}
 		from = { has_authority = GF_auth_commonwealth }
 	}

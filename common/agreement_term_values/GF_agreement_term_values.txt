@@ -41,7 +41,7 @@
 GF_specialist_OGAS_subnet = {
 	term = specialist_type
 
-	loyalty_change = 80
+	loyalty_change = 40
 
 	activate_effect = {
 		convert_to_specialist = GF_specialist_OGAS_subnet
@@ -50,6 +50,27 @@ GF_specialist_OGAS_subnet = {
 	target_modifier = {
 		monthly_loyalty = 8
 	}
+	triggered_loyalty_change = {
+		trigger = {
+			target = {
+				OR = {
+					is_spiritualist = yes
+					is_megacorp = yes
+				}
+			}
+		}
+		loyalty_change = -10000
+	}
+	triggered_loyalty_change = {
+		trigger = {
+			has_term_value = {
+				term = subject_integration
+				value = subject_can_be_integrated
+			}
+		}
+		loyalty_change = 50
+	}
+
 	potential = {
 		agreement_preset = GF_preset_OGAS_subnet
 	}
