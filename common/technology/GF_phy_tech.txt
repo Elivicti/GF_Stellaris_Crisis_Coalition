@@ -210,6 +210,7 @@ GF_tech_collapse_jump_drive = {
 	}
 	is_reverse_engineerable = no
 	is_rare = yes
+	is_dangerous = yes
 
 	prerequisites = {
 		"tech_jump_drive_1"
@@ -255,6 +256,7 @@ GF_tech_collapse_relic_tech = {
 	weight = 0
 
 	is_rare = yes
+	is_dangerous = yes
 
 	potential = {
 		has_authority = GF_auth_commonwealth
@@ -273,7 +275,7 @@ GF_tech_collapse_relic_tech = {
 	}
 
 	modifier = {
-		all_technology_research_speed = 0.05
+		all_technology_research_speed = 0.10
 	}
 }
 
