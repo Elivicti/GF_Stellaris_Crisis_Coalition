@@ -107,3 +107,9 @@ on_planet_transfer = {
 		GF_evt_misc.2000	# 处理球上的人口组装建筑
 	}
 }
+
+on_leader_death = {
+	events = {
+		GF_ogas.50
+	}
+}

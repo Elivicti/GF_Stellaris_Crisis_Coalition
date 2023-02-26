@@ -1,4 +1,31 @@
 namespace = GF_ogas
+
+# This = Country
+# From = Leader
+country_event = {
+	id = GF_ogas.50
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		from = { has_leader_flag = flag_GF_ogas_leader }
+	}
+
+	immediate = {
+		clone_leader = {
+			target = from
+			effect = {
+				remove_trait = GF_trait_leader_doll
+				save_global_event_target_as = GF_ogas_leader
+			}
+		}
+		assign_leader = last_created_leader
+		clear_custom_ruler_and_heir_titles = yes
+	}
+}
+
+
 ###建立OGAS国家
 country_event = {
 	id = GF_ogas.100
@@ -31,6 +58,12 @@ country_event = {
 			establish_communications_no_message = root
 			set_country_flag = flag_GF_ogas_country
 			save_global_event_target_as = GF_ogas_country
+			# clone_leader = {
+			# 	target = prev.ruler
+			# 	effect = {
+			# 		save_global_event_target_as = GF_ogas_leader_clone
+			# 	}
+			# }
 		}
 		save_global_event_target_as = GF_ogas_owner
 		set_country_flag = flag_GF_can_contact_OGAS
