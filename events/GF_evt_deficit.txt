@@ -1,5 +1,7 @@
 namespace = GF_deficit
 
+@GF_programmer_subsidies_decrease_death_chance = 10
+
 situation_event = {
 	id = GF_deficit.10
 	hide_window = yes
@@ -18,6 +20,13 @@ situation_event = {
 		divide_variable = {
 			which = v_GF_doll_leader_monthly_malfunction_chance
 			value = 2
+		}
+		if = {
+			limit = { current_situation_approach = GF_deficit_core_chip_approach_programmer_subsidies }
+			subtract_variable = {
+				which = v_GF_doll_leader_monthly_malfunction_chance
+				value = @GF_programmer_subsidies_decrease_death_chance
+			}
 		}
 	}
 }
@@ -48,6 +57,8 @@ country_event = {
 	id = GF_deficit.50
 	title = GF_deficit.50.name
 	desc = GF_deficit.50.desc
+
+	picture = XXX
 
 	is_triggered_only = yes
 
@@ -91,7 +102,7 @@ situation_event = {
 			0 = {
 				modifier = { add = trigger:situation_progress }
 				modifier = {
-					subtract = 15
+					subtract = @GF_programmer_subsidies_decrease_death_chance
 					current_situation_approach = GF_deficit_core_chip_approach_programmer_subsidies
 				}
 				modifier = { min = 0 }
@@ -111,6 +122,8 @@ country_event = {
 	id = GF_deficit.101
 	title = GF_deficit.101.name
 	desc = GF_deficit.101.desc
+
+	picture = XXX
 
 	is_triggered_only = yes
 
@@ -158,6 +171,8 @@ country_event = {
 	id = GF_deficit.111
 	title = GF_deficit.111.name
 	desc = GF_deficit.111.desc
+
+	picture = XXX
 
 	is_triggered_only = yes
 

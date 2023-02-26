@@ -43,7 +43,7 @@
 #  GF_deficit_core_chip_approach_assimilate_doll_tooltip:0 ""
 
  GF_deficit_core_chip_approach_programmer_subsidies:0 "$job_GF_programmer$补贴"
- GF_deficit_core_chip_approach_programmer_subsidies_tooltip:0 "§Y42LAB§!建筑将会额外提供 £job_GF_programmer£ $mod_job_GF_programmer_add$: §G+1§!"
+ GF_deficit_core_chip_approach_programmer_subsidies_tooltip:0 "能在一定程度上§Y降低§!领袖死亡的概率。\n§Y42LAB§!建筑将会额外提供 £job_GF_programmer£ $mod_job_GF_programmer_add$: §G+1§!"
 
  GF_deficit.50.name:0 "心智损坏"
  GF_deficit.50.desc:0 "经历了长达数年的$gf_core_chip$短缺，我们仍然没能扭转颓势，现在帝国境内的所有$GF_ANDROID$§Y领袖§!和§Y人口§!都由于长期缺乏维护而完全失去了机能。"
