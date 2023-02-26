@@ -5,7 +5,7 @@
 
  GF_specialist_OGAS_subnet:0 "OGAS子网"
  GF_preset_OGAS_subnet:0 "$GF_specialist_OGAS_subnet$"
- GF_preset_OGAS_subnet_desc:0 "$GF_specialist_OGAS_subnet$是一种着重于科研和机器人制造的附属国特化类型，代价是削弱军事能力，且生存上严重依赖于宗主。"
+ GF_preset_OGAS_subnet_desc:0 "$GF_specialist_OGAS_subnet$是一种着重于科研和机器人制造的附属国特化类型，代价是削弱军事能力，且生存上严重依赖于宗主。\n\n§R拥有唯心思潮或巨企政体的国家将极度抗拒转化为此专家类型§!"
  GF_preset_OGAS_subnet_flavor_desc:0 "这个附属国将作为其宗主的大型人工智能网络的一个子节点，专注科研和机器人制造，并每隔固定的时间向宗主输送机械人口。\n\n相对应的，由于他们的核心政务管理严重依赖宗主的大型人工智能网络，且几乎全部的资源都用来为宗主服务，他们十分需要宗主的保护。"
 
  GF_OGAS_subnet_1_modifier:0 "OGAS子网加成 I"
