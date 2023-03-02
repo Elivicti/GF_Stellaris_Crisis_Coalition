@@ -142,8 +142,8 @@ GF_command_doll = {
 	weight = {
 		weight = @ruler_job_weight
 		modifier = {
-			factor = 2
-			has_trait = GF_trait_doll
+			factor = 0
+			has_job = GF_assemble_doll
 		}
 	}
 }
@@ -262,10 +262,9 @@ GF_assemble_doll = {
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
-			factor = 100
+			set = @ruler_job_weight
 			planet = {
-				exists = owner
-				owner = { has_authority = GF_auth_commonwealth }
+				num_pops < 3
 			}
 		}
 	}
