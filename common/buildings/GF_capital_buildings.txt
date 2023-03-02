@@ -126,12 +126,10 @@ building_GF_auto_colony_capital = {
 
 	planet_modifier = {
 		job_GF_command_doll_per_pop = 0.1
-		job_GF_assemble_doll_per_pop = 0.1
 		job_GF_guard_doll_per_pop = 0.05
 
-		job_GF_command_doll_add = 2
 		job_GF_guard_doll_add = 1
-		job_GF_assemble_doll_add = 1
+		job_GF_assemble_doll_add = 4
 		job_GF_dormancy_doll_add = 1
 
 		planet_housing_add = 5
