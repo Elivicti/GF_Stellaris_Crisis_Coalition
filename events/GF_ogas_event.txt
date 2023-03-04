@@ -15,9 +15,15 @@ country_event = {
 	immediate = {
 		clone_leader = {
 			target = from
+			gender = female
 			effect = {
 				remove_trait = GF_trait_leader_doll
 				save_global_event_target_as = GF_ogas_leader
+				set_leader_flag = flag_GF_ogas_leader
+				if = {
+					limit = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
+					GFEXT_remove_doll_leader_flags = yes
+				}
 			}
 		}
 		assign_leader = last_created_leader

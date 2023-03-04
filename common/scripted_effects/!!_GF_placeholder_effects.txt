@@ -1,0 +1,4 @@
+GFEXT_remove_doll_leader_flags = {
+	set_leader_flag = flag_no_use
+	remove_leader_flag = flag_no_use
+}
