@@ -58,7 +58,7 @@ country_event = {
 	title = GF_deficit.50.name
 	desc = GF_deficit.50.desc
 
-	picture = XXX
+	picture = GFX_evt_city_ruins
 
 	is_triggered_only = yes
 
@@ -123,7 +123,7 @@ country_event = {
 	title = GF_deficit.101.name
 	desc = GF_deficit.101.desc
 
-	picture = XXX
+	picture = GFX_evt_cybernetics
 
 	is_triggered_only = yes
 
@@ -172,7 +172,7 @@ country_event = {
 	title = GF_deficit.111.name
 	desc = GF_deficit.111.desc
 
-	picture = XXX
+	picture = GFX_evt_disease_outbreak
 
 	is_triggered_only = yes
 
