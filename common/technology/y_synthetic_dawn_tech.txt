@@ -45,7 +45,7 @@ tech_robomodding = {
 		}
 		modifier = {
 			factor = 2
-			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_evolution
 		}
 		modifier = {
 			factor = 1.25
@@ -109,7 +109,7 @@ tech_robomodding_points_1 = {
 		}
 		modifier = {
 			factor = 2
-			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_evolution
 		}
 		modifier = {
 			factor = 1.25
@@ -155,7 +155,7 @@ tech_robomodding_points_2 = {
 		}
 		modifier = {
 			factor = 4
-			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_evolution
 		}
 		modifier = {
 			factor = @ap_technological_ascendancy_rare_tech
@@ -204,7 +204,7 @@ tech_robomodding_points_2 = {
 		}
 		modifier = {
 			factor = 2
-			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_synthetic_evolution
 		}
 		modifier = {
 			factor = 1.25
