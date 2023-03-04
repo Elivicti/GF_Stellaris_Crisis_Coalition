@@ -369,8 +369,8 @@ GF_convert_to_OGAS_subnet = {
 			add_building = building_GF_doll_factory
 		}
 		while = {
-			limit = { has_building = building_robot_assembly_plant }
-			remove_building = building_machine_assembly_plant
+			limit = { has_building = building_robot_assembly_complex }
+			remove_building = building_machine_assembly_complex
 			add_building = building_GF_doll_factory
 		}
 		if = {
