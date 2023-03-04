@@ -6,13 +6,13 @@ GF_doll_rights_organization = {
 	unique = yes
 	support_multiplier = 1
 
-	resources = { 
+	resources = {
 		category = pop_factions
 		produces = {
 			unity = 1.5
 		}
 		produces = {
-			trigger = { 
+			trigger = {
 				FROM = { has_valid_civic = civic_shared_burden }
 			}
 			unity = 0.5
@@ -74,6 +74,10 @@ GF_doll_rights_organization = {
 				has_ethic = ethic_fanatic_egalitarian
 			}
 		}
+		modifier = {
+			set = 0
+			member_of_faction = GF_relic_department
+		}
 	}
 
 	leader = {
@@ -89,6 +93,7 @@ GF_doll_rights_organization = {
 
 	on_create = {
 		pop_faction_event = { id = factions.1 }
+		owner = { set_country_flag = flag_GF_has_doll_rights_oganization }
 	}
 
 	on_destroy = {
@@ -100,13 +105,14 @@ GF_doll_rights_organization = {
 			limit = { has_modifier = suppressed_egalitarian }
 			remove_modifier = suppressed_egalitarian
 		}
+		owner = { remove_country_flag = flag_GF_has_doll_rights_oganization }
 	}
 
 	demand = {
 		title = "GF_FACTION_DEMAND_doll_full_rights_title"
 		unfulfilled_title = "GF_FACTION_DEMAND_doll_full_rights_unfulfilled_title"
 		desc = "GF_FACTION_DEMAND_doll_full_rights_desc"
-		
+
 		potential = {
 			exists = owner
 			owner = {
@@ -132,7 +138,7 @@ GF_doll_rights_organization = {
 		title = "GF_FACTION_DEMAND_doll_half_rights_title"
 		unfulfilled_title = "GF_FACTION_DEMAND_doll_half_rights_unfulfilled_title"
 		desc = "GF_FACTION_DEMAND_doll_half_rights_desc"
-		
+
 		potential = {
 			exists = owner
 		}
@@ -154,7 +160,7 @@ GF_doll_rights_organization = {
 		title = "GF_FACTION_DEMAND_doll_job_rights_title"
 		unfulfilled_title = "GF_FACTION_DEMAND_doll_job_rights_unfulfilled_title"
 		desc = "GF_FACTION_DEMAND_doll_job_rights_desc"
-		
+
 		potential = {
 			exists = owner
 		}
@@ -176,7 +182,7 @@ GF_doll_rights_organization = {
 		title = "GF_FACTION_DEMAND_doll_living_rights_title"
 		unfulfilled_title = "GF_FACTION_DEMAND_doll_living_rights_unfulfilled_title"
 		desc = "GF_FACTION_DEMAND_doll_living_rights_desc"
-		
+
 		potential = {
 			exists = owner
 		}
@@ -233,7 +239,7 @@ GF_doll_rights_organization = {
 
 			effect = {
 				add_modifier = { modifier = embraced_faction days = 3600 }
-				
+
 				parameter:empire = {
 					if = {
 						limit = {
