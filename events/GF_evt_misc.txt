@@ -18,6 +18,13 @@ event = {
 				set_country_flag = suppress_vanilla_factions
 			}
 			country_event = { id = GF_evt_misc.1001 days = 1 }
+			every_owned_planet = {
+				limit = {
+					has_modifier = GF_auto_colony
+					NOT = { has_planet_flag = flag_p_GF_auto_colony }
+				}
+				planet_event = { id = GF_colony.10 }
+			}
 		}
 	}
 }
@@ -58,36 +65,5 @@ country_event = {
 
 	option = {
 		name = GF_evt_misc.1001.a
-	}
-}
-
-
-### on_planet_transfer
-# FromFrom = Former Owner (if any)
-# From = Country scope (new owner)
-# This = Planet scope
-
-# 处理球上的人口组装建筑
-planet_event = {
-	id = GF_evt_misc.2000
-	hide_window = yes
-
-	is_triggered_only = yes
-	trigger = {
-		OR = {
-			has_building = building_robot_assembly_plant
-			has_building = building_robot_assembly_complex
-			has_building = building_machine_assembly_plant
-			has_building = building_machine_assembly_complex
-		}
-		from = { has_authority = GF_auth_commonwealth }
-	}
-
-	immediate = {
-		remove_building = building_robot_assembly_plant
-		remove_building = building_robot_assembly_complex
-		remove_building = building_machine_assembly_plant
-		remove_building = building_machine_assembly_complex
-		add_building = building_GF_doll_factory
 	}
 }

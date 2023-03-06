@@ -1,7 +1,7 @@
 ##########################################################################
 # Decisions
 ##########################################################################
-# Resort Colony
+# Auto Colony
 decision_GF_auto_colony_on = {
 	owned_planets_only = yes
 	icon = decision_GF_auto_colony_on
@@ -9,8 +9,9 @@ decision_GF_auto_colony_on = {
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 10
-			energy = 10
+			minerals = 100
+			energy = 100
+			unity = 100
 		}
 	}
 
@@ -20,14 +21,8 @@ decision_GF_auto_colony_on = {
 			has_modifier = penal_colony
 			has_modifier = slave_colony
 			has_modifier = GF_auto_colony
-			is_planet_class = pc_city
 		}
-		owner = {
-			is_regular_empire = yes
-			has_authority = GF_auth_commonwealth
-			NOT = { has_policy_flag = GF_doll_right_full }
-		}
-		habitable_structure = no
+		owner = { has_authority = GF_auth_commonwealth }
 	}
 
 	allow = {
@@ -48,18 +43,30 @@ decision_GF_auto_colony_on = {
 			modifier = GF_auto_colony
 			days = -1
 		}
+		custom_tooltip = decision_GF_auto_colony_boundary_tooltip
 		hidden_effect = {
 			remove_building = building_colony_shelter
 			add_building = building_GF_auto_colony_capital
 			set_colony_type = col_GF_auto_colony
-
+			set_planet_flag = flag_p_GF_auto_colony
 			validate_planet_buildings_and_districts = yes
+			
+			planet_event = {
+				id = GF_colony.10
+				days = 60
+			}
 		}
 		custom_tooltip = decision_GF_auto_colony_on_effect_not_automation_tooltip
 	}
 
 	ai_weight = {
 		weight = 0
+		# modifier = {
+		# 	check_modifier_value = {
+		# 		modifier = pop_environment_tolerance
+		# 		value < 50
+		# 	}
+		# }
 	}
 }
 
@@ -70,7 +77,7 @@ decision_GF_auto_colony_off = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 5
+			unity = 100
 		}
 	}
 
@@ -81,11 +88,16 @@ decision_GF_auto_colony_off = {
 	effect = {
 		custom_tooltip = decision_GF_auto_colony_off_effect_tooltip
 		remove_modifier = GF_auto_colony
+		if = {
+			limit = { has_modifier = GF_auto_colony_boundary_modifier }
+			remove_modifier = GF_auto_colony_boundary_modifier
+		}
 		
 		hidden_effect = {
 			add_building = building_colony_shelter
 			remove_building = building_GF_auto_colony_capital
 			set_colony_type = col_default
+			remove_planet_flag = flag_p_GF_auto_colony
 
 			validate_planet_buildings_and_districts = yes
 		}

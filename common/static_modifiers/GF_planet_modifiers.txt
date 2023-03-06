@@ -28,9 +28,19 @@ GF_auto_colony = {
 	pop_growth_speed = -10
 	planet_immigration_pull_mult = -10
 
-	planet_jobs_worker_produces_mult = 0.2
-	GF_planet_jobs_pop_assemblers_produces_mult = 0.5
-	GF_planet_jobs_pop_assemblers_upkeep_mult = 0.5
+	planet_jobs_robotic_produces_mult = 0.15
+	GF_planet_jobs_pop_assemblers_produces_mult = 0.20
+	GF_planet_jobs_pop_assemblers_upkeep_mult = 0.20
+}
+
+GF_auto_colony_boundary_modifier = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_GF_auto_colony_boundary_modifier.dds"
+	icon_frame = 3
+	empire_size_colonies_mult = 1
+	planet_jobs_upkeep_mult = 1
+	planet_pops_robotics_upkeep_mult = 1
+	planet_jobs_robotic_produces_mult = -0.5
+	planet_pop_assembly_mult = -1
 }
 
 

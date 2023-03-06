@@ -1,0 +1,81 @@
+namespace = GF_colony
+
+### Auto Colony
+@GF_auto_colony_boundary_effect_interval = 30
+@GF_auto_colony_boundary_start = 15
+@GF_auto_colony_boundary_addend = 20
+
+# 计算方式：factor = (num_pops - start) / addend
+# 边际效应Debuff从第(start + 1)个人口开始起作用，直到第(start + addend)个人口时，factor = 1
+# factor的计算无上限
+# factor将与边际效应Debuff相乘
+planet_event = {
+	id = GF_colony.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_modifier = GF_auto_colony
+	}
+
+	immediate = {
+		if = {
+			limit = { num_pops > @GF_auto_colony_boundary_start }
+			export_trigger_value_to_variable = {
+				trigger = num_pops
+				variable = v_GF_auto_colony_boundary_factor
+			}
+			subtract_variable = {
+				which = v_GF_auto_colony_boundary_factor
+				value = @GF_auto_colony_boundary_start
+			}
+			divide_variable = {
+				which = v_GF_auto_colony_boundary_factor
+				value = 20
+			}
+			add_modifier = {
+				modifier = GF_auto_colony_boundary_modifier
+				mult = this.v_GF_auto_colony_boundary_factor
+				days = @GF_auto_colony_boundary_effect_interval
+			}
+		}
+		set_colony_type = col_GF_auto_colony
+		planet_event = {
+			id = GF_colony.10
+			days = @GF_auto_colony_boundary_effect_interval
+		}
+	}
+}
+
+
+
+
+### on_planet_transfer
+# FromFrom = Former Owner (if any)
+# From = Country scope (new owner)
+# This = Planet scope
+
+# 处理球上的人口组装建筑
+planet_event = {
+	id = GF_colony.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			has_building = building_robot_assembly_plant
+			has_building = building_robot_assembly_complex
+			has_building = building_machine_assembly_plant
+			has_building = building_machine_assembly_complex
+		}
+		from = { has_authority = GF_auth_commonwealth }
+	}
+
+	immediate = {
+		remove_building = building_robot_assembly_plant
+		remove_building = building_robot_assembly_complex
+		remove_building = building_machine_assembly_plant
+		remove_building = building_machine_assembly_complex
+		add_building = building_GF_doll_factory
+	}
+}

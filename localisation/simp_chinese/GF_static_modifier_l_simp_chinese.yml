@@ -26,6 +26,8 @@
  GF_cloud_computing_protocol_modifier_desc:0 "来自§Y$job_GF_dormancy_doll_plural$§!的 £physics£ £society£ £engineering£ 研究点数: §G+2§!\n$mod_GF_planet_dormancy_upkeep_mult$: §R+100%§!"
  GF_auto_colony:0 "自动化遥控殖民地"
  GF_auto_colony_desc:0 "该殖民地以一个巨大的信号接发装置为中心，人形严格按照远端星球所传来的指令并配合预置的自律程序进行运作。"
+ GF_auto_colony_boundary_modifier:0 "自动化遥控协议缺陷"
+ GF_auto_colony_boundary_modifier_desc:0 "当前殖民地的规模超出了这个协议能够处理的范围，一些设计缺陷被暴露了出来……"
 ################################# 遗珍
  GF_enhanced_OGAS_signal:0 "被放大的OGAS信号"
  GF_enhanced_OGAS_signal_desc:0 "OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"

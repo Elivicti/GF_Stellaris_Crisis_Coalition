@@ -104,7 +104,7 @@ on_single_player_save_game_load = {
 #This = Planet scope
 on_planet_transfer = {
 	events = {
-		GF_evt_misc.2000	# 处理球上的人口组装建筑
+		GF_colony.2000	# 处理球上的人口组装建筑
 	}
 }
 

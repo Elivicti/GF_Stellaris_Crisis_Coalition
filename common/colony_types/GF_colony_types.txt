@@ -23,12 +23,12 @@ col_GF_auto_colony = {
 	}
 
 	planet_modifier = {
-		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_mult = 0.10
 		planet_building_build_speed_mult = 0.20
 		planet_clear_blocker_speed_mult = 0.10
 		planet_districts_cost_mult = -0.05
 
-		planet_jobs_robotic_produces_mult = -0.05
+		planet_pops_robotics_upkeep_mult = 0.10
 	}
 
 	weight_modifier = {
