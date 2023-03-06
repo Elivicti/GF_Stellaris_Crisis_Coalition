@@ -6,52 +6,46 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
+		has_origin = GF_origin_commonwealth
 	}
 	immediate = {
-		event_target:GF_home_world = {
-			planet_event = {
-				id = GF_sf.1
-				days = 7200
-			}
-			solar_system = { set_star_flag = flag_GF_sf_event_system }
+		country_event = {
+			id = GF_sf.1
+			days = 7200
 		}
 	}
 }
 
 #事件1:开局20年触发的事件，定位在母星
-planet_event = {
+country_event = {
 	id = GF_sf.1
 	title = "GF_sf.1.name"
 	desc = "GF_sf.1.desc"
 	picture = GFX_evt_announcement
 	show_sound = event_activating_unknown_technology
-	location = this
+	location = event_target:GF_home_world
 	trackable = yes
 	is_triggered_only = yes
-	pre_triggers = {
-		has_owner = yes
-		original_owner = yes
-		has_ground_combat = no
-		is_capital = yes
-		is_occupied_flag = no
-	}
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
+
+	immediate = {
+		event_target:GF_home_world.solar_system = {
+			set_star_flag = flag_GF_sf_event_system
+		}
 	}
 
 	option = {
 		name = GF_sf.1.a
-		owner = {
-			begin_event_chain = {
-				event_chain = "GF_sf_event_chain"
-				target = this
-			}
+		begin_event_chain = {
+			event_chain = "GF_sf_event_chain"
+			target = this
 		}
-		enable_special_project = {
-			name = "GF_sf_event_project_1"
-			location = ROOT
-			owner = root.owner
+		
+		event_target:GF_home_world = {
+			enable_special_project = {
+				name = "GF_sf_event_project_1"
+				location = this
+				owner = root
+			}
 		}
 	}
 }
@@ -66,15 +60,19 @@ planet_event = {
 	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
 
 	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
 				any_system_planet = { is_planet_class = pc_barren }
+				OR = {
+					NOT = { exists = space_owner }
+					AND = {
+						exists = space_owner
+						space_owner = { is_same_value = root.owner }
+					}
+				}
 			}
 			min_steps = 2
 			max_steps = 10
@@ -82,10 +80,6 @@ planet_event = {
 				random_system_planet = {
 					limit = {
 						NOT = { exists = archaeological_site }
-						OR = {
-							has_owner = no
-							owner = { is_same_value = root.owner }
-						}
 						is_planet_class = pc_barren
 					}
 					save_event_target_as = GF_sf_site_target_2
@@ -119,9 +113,6 @@ country_event = {
 	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
 
 	option = {
 		name = "GF_sf.21.a"
@@ -141,14 +132,19 @@ country_event = {
 	location = event_target:GF_sf_site_target_3
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
+	
 	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
 				any_system_planet = { is_asteroid = yes }
+				OR = {
+					NOT = { exists = space_owner }
+					AND = {
+						exists = space_owner
+						space_owner = { is_same_value = root.owner }
+					}
+				}
 			}
 			min_steps = 2
 			max_steps = 10
@@ -157,10 +153,6 @@ country_event = {
 					limit = {
 						is_asteroid = yes
 						NOT = { exists = archaeological_site }
-						OR = {
-							has_owner = no
-							owner = { is_same_value = root.owner }
-						}
 					}
 					save_event_target_as = GF_sf_site_target_3
 				}
@@ -191,14 +183,19 @@ ship_event = {
 	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
+	
 	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
 				any_system_planet = { is_planet_class = pc_barren }
+				OR = {
+					NOT = { exists = space_owner }
+					AND = {
+						exists = space_owner
+						space_owner = { is_same_value = root.owner }
+					}
+				}
 			}
 			min_steps = 2
 			max_steps = 10
@@ -206,10 +203,6 @@ ship_event = {
 				random_system_planet = {
 					limit = {
 						NOT = { exists = archaeological_site }
-						OR = {
-							has_owner = no
-							owner = { is_same_value = root.owner }
-						}
 						is_planet_class = pc_barren
 					}
 					save_event_target_as = GF_sf_site_target_4
@@ -242,9 +235,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
+	
 	
 	option = {
 		name = "GF_sf.41.a"
@@ -264,15 +255,19 @@ country_event = {
 	location = event_target:GF_sf_site_target_5
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
 
 	immediate = {
 		closest_system = {
 			limit = {
 				NOT = { has_star_flag = flag_GF_sf_event_system }
 				any_system_planet = { is_asteroid = yes }
+				OR = {
+					NOT = { exists = space_owner }
+					AND = {
+						exists = space_owner
+						space_owner = { is_same_value = root.owner }
+					}
+				}
 			}
 			min_steps = 2
 			max_steps = 10
@@ -280,10 +275,6 @@ country_event = {
 				random_system_planet = {
 					limit = {
 						NOT = { exists = archaeological_site }
-						OR = {
-							has_owner = no
-							owner = { is_same_value = root.owner }
-						}
 						is_asteroid = yes
 					}
 					save_event_target_as = GF_sf_site_target_5
@@ -370,9 +361,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_6
 	trackable = yes
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
+
 	
 	option = {
 		name = "GF_sf.61.a"
@@ -389,20 +378,18 @@ country_event = {
 	desc = "GF_sf.7.desc"
 	picture = GFX_evt_physics_research
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_home_world
+	location = capital_scope
 	trackable = yes
+
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
 	
 	option = {
 		name = "GF_sf.7.a"
-		event_target:GF_home_world = {
+		capital_scope = {
 			enable_special_project = {
 				name = "GF_sf_event_project_7"
-				location = event_target:GF_home_world
-				owner = root.owner
+				location = this
+				owner = prev
 			}
 		}
 	}
@@ -417,9 +404,6 @@ country_event = {
 	show_sound = event_door_opening
 	
 	is_triggered_only = yes
-	trigger = {
-		owner = { has_origin = GF_origin_commonwealth }
-	}
 	
 	option = {
 		name = "GF_sf.8.a"
