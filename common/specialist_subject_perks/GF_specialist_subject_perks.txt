@@ -34,7 +34,7 @@ GF_OGAS_subnet_1_subnet_core = {
 		country_engineering_research_produces_mult = 0.2
 	}
 
-	active_effect = {
+	activate_effect = {
 		target = {
 			remove_modifier = divided_patronage
 		}
