@@ -166,16 +166,13 @@ GF_civic_TASA = {
 	random_weight = { base = 0 }
 	modifier = {
 		country_war_exhaustion_mult = -0.1
-		ships_upkeep_mult = 0.1
-		ship_hull_mult = 0.2
-		ship_weapon_range_mult = 0.2
-		ship_weapon_damage = 0.2
-		ship_fire_rate_mult = 0.2
-		ship_ftl_jumpdrive_range_mult = 0.4
-		ship_windup_mult = -0.5
+		ship_speed_mult = 0.10
+		ship_hull_mult = 0.10
+		ship_ftl_jumpdrive_range_mult = 0.20
+		ship_windup_mult = -0.25
+		country_mia_time_mult = -0.50
 		admiral_skill_levels = 1
-		ship_accuracy_mult = 0.2
-		country_command_limit_add = 20
+		ships_upkeep_mult = 0.15
 	}
 }
 
