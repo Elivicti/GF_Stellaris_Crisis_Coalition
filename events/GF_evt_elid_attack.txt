@@ -23,6 +23,42 @@ country_event = {
 	}
 
 	immediate = {
+		create_country = {
+			name = "NAME_GF_elid_invasion"
+			type = GF_elid_country
+			effect = {
+				establish_communications_no_message = root.owner
+				establish_contact = { who = root.owner location = root.solar_system }
+				save_global_event_target_as = aggressive_elid_country
+
+				create_species = {
+					name = "NAME_GF_aggressive_elid"
+					class = aggressive_elid
+					portrait = random
+					effect = {
+						save_global_event_target_as = aggressive_elid_species
+					}
+				}
+			}
+			flag = {
+				icon = {
+					category = "SidesFlag"
+					file = "Unknown.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		
+
 		event_target:GF_home_world = {
 			set_variable = {
 				which = v_GF_elid_threat_level
@@ -192,39 +228,7 @@ planet_event = {
 				is_occupied_flag = no
 			}
 
-			create_country = {
-				name = "NAME_GF_elid_invasion"
-				type = GF_elid_country
-				effect = {
-					establish_communications_no_message = root.owner
-					establish_contact = { who = root.owner location = root.solar_system }
-					save_global_event_target_as = aggressive_elid_country
-				}
-				flag = {
-					icon = {
-						category = "SidesFlag"
-						file = "Unknown.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "sinus.dds"
-					}
-					colors = {
-						"black"
-						"black"
-						"null"
-						"null"
-					}
-				}
-			}
-			create_species = {
-				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
-				portrait = random
-				effect = {
-					save_global_event_target_as = aggressive_elid_species
-				}
-			}
+
 			if = {
 				limit = { GF_planet_has_contaminated_zone = yes }
 				
@@ -241,7 +245,7 @@ planet_event = {
 						create_army = {
 							name = "NAME_GF_aggressive_elid"
 							owner = event_target:aggressive_elid_country
-							species = last_created_species
+							species = event_target:aggressive_elid_species
 							type = "GF_army_hostile_elid"
 						}
 					}
@@ -256,7 +260,7 @@ planet_event = {
 						create_army = {
 							name = "NAME_GF_aggressive_elid"
 							owner = event_target:aggressive_elid_country
-							species = last_created_species
+							species = event_target:aggressive_elid_species
 							type = "GF_army_hostile_elid_boss"
 						}
 					}
@@ -272,7 +276,7 @@ planet_event = {
 						create_army = {
 							name = "NAME_GF_aggressive_elid"
 							owner = event_target:aggressive_elid_country
-							species = last_created_species
+							species = event_target:aggressive_elid_species
 							type = "GF_army_hostile_elid"
 						}
 					}
@@ -550,6 +554,7 @@ country_event = {
 					}
 					remove_army = yes
 				}
+				set_controller = owner
 			}
 			add_deposit = d_GF_yellow_zone
 		}
@@ -730,7 +735,7 @@ planet_event = {
 					create_army = {
 						name = "NAME_GF_aggressive_elid"
 						owner = event_target:aggressive_elid_country
-						species = last_created_species
+						species = event_target:aggressive_elid_species
 						type = "GF_army_hostile_elid"
 					}
 				}
@@ -749,7 +754,7 @@ planet_event = {
 					create_army = {
 						name = "NAME_GF_aggressive_elid"
 						owner = event_target:aggressive_elid_country
-						species = last_created_species
+						species = event_target:aggressive_elid_species
 						type = "GF_army_hostile_elid_boss"
 					}
 				}
@@ -903,6 +908,7 @@ country_event = {
 					}
 					remove_army = yes
 				}
+				set_controller = owner
 			}
 			remove_planet_flag = flag_p_GF_battle_in_black_zone
 			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
@@ -963,7 +969,7 @@ planet_event = {
 					create_army = {
 						name = "NAME_GF_aggressive_elid"
 						owner = event_target:aggressive_elid_country
-						species = last_created_species
+						species = event_target:aggressive_elid_species
 						type = "GF_army_hostile_elid"
 					}
 				}
@@ -978,7 +984,7 @@ planet_event = {
 					create_army = {
 						name = "NAME_GF_aggressive_elid"
 						owner = event_target:aggressive_elid_country
-						species = last_created_species
+						species = event_target:aggressive_elid_species
 						type = "GF_army_hostile_elid_boss"
 					}
 				}
@@ -1096,6 +1102,7 @@ country_event = {
 					}
 					remove_army = yes
 				}
+				set_controller = owner
 			}
 			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			remove_planet_flag = flag_p_GF_battle_in_red_zone
@@ -1156,7 +1163,7 @@ planet_event = {
 					create_army = {
 						name = "NAME_GF_aggressive_elid"
 						owner = event_target:aggressive_elid_country
-						species = last_created_species
+						species = event_target:aggressive_elid_species
 						type = "GF_army_hostile_elid"
 					}
 				}
@@ -1305,6 +1312,7 @@ country_event = {
 					}
 					remove_army = yes
 				}
+				set_controller = owner
 			}
 			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			remove_planet_flag = flag_p_GF_battle_in_yellow_zone
