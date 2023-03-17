@@ -71,6 +71,10 @@ GF_relic_department = {
 			pop_has_ethic = ethic_spiritualist
 		}
 		modifier = {
+			factor = 2
+			member_of_faction = manifesti
+		}
+		modifier = {
 			factor = 0
 			NOT = { member_of_faction = GF_relic_department }
 			owner = {
