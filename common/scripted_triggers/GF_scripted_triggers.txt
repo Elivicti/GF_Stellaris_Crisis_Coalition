@@ -136,11 +136,11 @@ GF_default_zion_comm_trigger = {
 GF_is_gavirul_species = {
 	hidden_trigger = {
 		has_species_flag = flag_GF_GAVIRUL_species
-		from = {
-			custom_tooltip = {
-				has_country_flag = flag_GF_gavirul_project_completed
-				fail_text = GF_require_gavirul_project_finished
-			}
+	}
+	from = {
+		custom_tooltip = {
+			has_country_flag = flag_GF_gavirul_project_completed
+			fail_text = GF_require_gavirul_project_finished
 		}
 	}
 }

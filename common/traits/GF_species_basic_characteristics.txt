@@ -6,7 +6,7 @@ GF_trait_doll = {
 	randomized = no
 
 	species_potential_add = { always = no }
-	species_possible_add = { always = no }
+	species_possible_add = { always = yes }
 	species_possible_remove = { always = no }
 	species_possible_merge_add = { always = no }
 
@@ -118,7 +118,7 @@ GF_trait_sequela = {
 	randomized = no
 	
 	species_potential_add = { GF_is_gavirul_species = yes }
-	species_possible_add = { GF_is_gavirul_species = yes }
+	species_possible_add = { always = yes }
 	species_possible_remove = { GF_is_gavirul_species = yes }
 	species_possible_merge_add = { always = no }
 	species_possible_merge_remove = { GF_is_gavirul_species = yes }
