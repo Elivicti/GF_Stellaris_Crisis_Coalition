@@ -706,24 +706,6 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_black_zone
 
 			owner = { country_event = { id = GF_elid.2101 } } # 提示事件
-			
-			create_country = {
-				name = "NAME_GF_elid_invasion"
-				type = GF_elid_country
-				effect = {
-					establish_communications_no_message = root.owner
-					establish_contact = { who = root.owner location = root.solar_system }
-					save_global_event_target_as = aggressive_elid_country
-				}
-			}
-			create_species = {
-				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
-				portrait = random
-				effect = {
-					save_global_event_target_as = aggressive_elid_species
-				}
-			}
 
 			multiply_variable = {
 				which = v_GF_elid_threat_level
@@ -940,24 +922,6 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_red_zone
 
 			owner = { country_event = { id = GF_elid.2201 } } # 提示事件
-	
-			create_country = {
-				name = "NAME_GF_elid_invasion"
-				type = GF_elid_country
-				effect = {
-					establish_communications_no_message = root.owner
-					establish_contact = { who = root.owner location = root.solar_system }
-					save_global_event_target_as = aggressive_elid_country
-				}
-			}
-			create_species = {
-				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
-				portrait = random
-				effect = {
-					save_global_event_target_as = aggressive_elid_species
-				}
-			}
 
 			multiply_variable = {
 				which = v_GF_elid_threat_level
@@ -1134,24 +1098,6 @@ planet_event = {
 			set_planet_flag = flag_p_GF_battle_in_yellow_zone
 
 			owner = { country_event = { id = GF_elid.2301 } } # 提示事件
-
-			create_country = {
-				name = "NAME_GF_elid_invasion"
-				type = GF_elid_country
-				effect = {
-					establish_communications_no_message = root.owner
-					establish_contact = { who = root.owner location = root.solar_system }
-					save_global_event_target_as = aggressive_elid_country
-				}
-			}
-			create_species = {
-				name = "NAME_GF_aggressive_elid"
-				class = aggressive_elid
-				portrait = random
-				effect = {
-					save_global_event_target_as = aggressive_elid_species
-				}
-			}
 	
 			multiply_variable = {
 				which = v_GF_elid_threat_level
