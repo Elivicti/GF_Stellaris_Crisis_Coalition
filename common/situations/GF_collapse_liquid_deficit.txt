@@ -11,12 +11,64 @@ GF_situation_collapse_liquid_deficit = {
 	on_abort = {
 	}
 
+	desc = {
+		text = GF_situation_collapse_liquid_deficit_desc
+		trigger = {
+			owner = {
+				NOR = {
+					has_authority = auth_GF_paradeus
+					has_authority = GF_auth_commonwealth
+				}
+			}
+		}
+	}
+
+	desc = {
+		text = GF_situation_collapse_liquid_deficit_nyto
+		trigger = { owner = { has_authority = auth_GF_paradeus } }
+	}
+
+	desc = {
+		text = GF_situation_collapse_liquid_deficit_commonwealth
+		trigger = { owner = { has_authority = GF_auth_commonwealth } }
+	}
+
 	start_value = 50
 	stages = {
 		deficit_stage = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_red
 			end = 100
+		}
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = {
+				GF_should_country_has_collapse_liquid_deficit_debuff = {
+					OR_HAS_TECH = GF_tech_reverse_collapse_plant
+				}
+			}
+		}
+		modifier = {
+			GF_planet_reverse_collapser_produces_mult = -10
+		}
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = {
+				GF_should_country_has_collapse_liquid_deficit_debuff = {
+					OR_HAS_TECH = GF_tech_collapsetech_weaponize
+				}
+			}
+		}
+		modifier = {
+			GF_ship_collapse_armors_alloys_upkeep_mult = 5
+			GF_ship_collapse_utilities_alloys_upkeep_mult = 5
+			GF_ship_collapse_weapons_alloys_upkeep_mult = 5
+			weapon_type_GF_collapsed_weapon_damage_mult = -10
+			weapon_type_GF_collapsed_weapon_fire_rate_mult = -10
 		}
 	}
 
@@ -29,11 +81,12 @@ GF_situation_collapse_liquid_deficit = {
 	}
 	monthly_progress = {
 		base = 0
-		# modifier = {
-		# 	add = value:deficit_situation_progress_value|RESOURCE|energy|
-		# 	desc = string_expenditures_greater_than_income_energy
-		# 	owner = { has_actual_deficit = { RESOURCE = energy } }
-		# }
+		modifier = {
+			add = 5
+			desc = string_expenditures_greater_than_income_GF_nyto_collapse_liquid
+			owner = { has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid } }
+			situation_progress < 50
+		}
 		modifier = {
 			subtract = 5
 			desc = string_not_in_deficit_GF_nyto_collapse_liquid
@@ -52,14 +105,11 @@ GF_situation_collapse_liquid_deficit = {
 			}
 		}
 	}
+
 	approach = {
 		name = GF_deficit_collapse_liquid_approach_nyto
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_yellow
-
-		on_select = {
-			custom_tooltip = GF_deficit_collapse_liquid_approach_nyto_tooltip
-		}
 
 		potential = {
 			owner = { has_authority = auth_GF_paradeus } # 涅托
@@ -78,44 +128,54 @@ GF_situation_collapse_liquid_deficit = {
 			}
 		}
 	}
+
 	approach = {
-		name = GF_deficit_collapse_liquid_approach_commonwealth
-		icon = GFX_situation_approach_balance_sheet
+		name = GF_deficit_collapse_liquid_approach_commonwealth_do_nothing
+		icon = GFX_situation_approach_this_is_fine
 		icon_background = GFX_situation_approach_bg_yellow
 		default = yes
-		on_select = {
-			custom_tooltip = GF_deficit_collapse_liquid_approach_commonwealth_tooltip
-		}
 
 		potential = {
 			owner = { has_authority = GF_auth_commonwealth }
 		}
 
-		modifier = {
-			GF_planet_reverse_collapser_produces_mult = -10
-		}
-		
-		triggered_modifier = {
-			potential = { owner = { has_technology = GF_tech_collapsetech_weaponize } }
-			modifier = {
-				GF_ship_collapse_armors_alloys_upkeep_mult = 5
-				GF_ship_collapse_utilities_alloys_upkeep_mult = 5
-			}
-		}
-		
-		triggered_modifier = {
-			potential = { owner = { has_technology = GF_tech_collapse_relic_tech } }
-			modifier = {
-				GF_ship_collapse_weapons_alloys_upkeep_mult = 5
-				weapon_type_GF_collapsed_weapon_damage_mult = -5
-			}
-		}
 
 		ai_weight = {
 			base = 0
 			modifier = {
 				set = 100
 				owner = { has_authority = GF_auth_commonwealth }
+			}
+		}
+	}
+	approach = {
+		name = GF_deficit_collapse_liquid_approach_commonwealth_collapser_subsidies
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+
+		potential = {
+			owner = { has_authority = GF_auth_commonwealth }
+		}
+
+		modifier = {
+			GF_planet_collapser_upkeep_mult = 1
+			GF_planet_collapser_produces_mult = 1
+		}
+
+		resources = {
+			category = situations
+			upkeep = { energy = 20 }
+		}
+
+		ai_weight = {
+			base = 0
+			modifier = {
+				set = 120
+				owner = { has_authority = GF_auth_commonwealth }
+			}
+			modifier = {
+				factor = 0
+				owner = { owner = { has_actual_deficit = { RESOURCE = energy } } }
 			}
 		}
 	}

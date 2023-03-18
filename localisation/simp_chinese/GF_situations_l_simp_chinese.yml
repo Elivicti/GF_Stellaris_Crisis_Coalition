@@ -2,17 +2,19 @@
  GF_situation_collapse_liquid_deficit_monthly_change_tooltip:0 "$situation_deficit_monthly_change_tooltip$"
  string_not_in_deficit_GF_nyto_collapse_liquid:0 "$GF_nyto_collapse_liquid$月度结余为正"
  string_resource_reserves_GF_nyto_collapse_liquid:0 "$GF_nyto_collapse_liquid$储备"
+ string_expenditures_greater_than_income_GF_nyto_collapse_liquid:0 "$GF_nyto_collapse_liquid$赤字"
 
  GF_situation_collapse_liquid_deficit:0 "$GF_nyto_collapse_liquid_deficit$"
  GF_situation_collapse_liquid_deficit_type:0 "$GF_nyto_collapse_liquid_deficit$"
  GF_situation_collapse_liquid_deficit_desc:0 "我们的$GF_nyto_collapse_liquid$赤字已经失控了！"
+ GF_situation_collapse_liquid_deficit_nyto:0 "$GF_nyto_collapse_liquid_deficit_desc$"
+ GF_situation_collapse_liquid_deficit_commonwealth:0 "$GF_situation_collapse_liquid_deficit_desc$所有依赖$GF_nyto_collapse_liquid$的地方都停摆了！"
 
  GF_deficit_collapse_liquid_approach:0 "坍缩液匮乏"
  GF_deficit_collapse_liquid_approach_nyto:0 "$GF_deficit_collapse_liquid_approach$"
- GF_deficit_collapse_liquid_approach_nyto_tooltip:0 "$GF_nyto_collapse_liquid_deficit_desc$"
 
- GF_deficit_collapse_liquid_approach_commonwealth:0 "$GF_deficit_collapse_liquid_approach$"
- GF_deficit_collapse_liquid_approach_commonwealth_tooltip:0 "坍缩液匮乏，所有依赖坍塌液的地方都停摆了！"
+ GF_deficit_collapse_liquid_approach_commonwealth_do_nothing:0 "维持当前支出"
+ GF_deficit_collapse_liquid_approach_commonwealth_collapser_subsidies:0 "坍塌反应技师补贴"
 
  GF_nyto_collapse_liquid_deficit:0 "坍缩液匮乏"
  GF_nyto_collapse_liquid_deficit_desc:0 "坍缩液匮乏，无论日常生活还是生产建造都陷入瘫痪。"

@@ -406,3 +406,12 @@ GF_is_doll_leader = {
 	}
 	species = { has_trait = GF_trait_doll }
 }
+
+# scope = country
+GF_should_country_has_collapse_liquid_deficit_debuff = {
+	OR = {
+		has_country_flag = solarpunk_country
+		has_country_flag = flag_GF_country_has_collapse_liquid_deficit_debuff
+		has_technology = $OR_HAS_TECH$
+	}
+}
