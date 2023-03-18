@@ -2,6 +2,7 @@ building_GF_military_contractors = {
 	base_buildtime = @b1_time
 
 	owner_type = corporate
+	category = army
 
 	base_cap_amount = 1
 
