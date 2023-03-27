@@ -415,3 +415,11 @@ GF_should_country_has_collapse_liquid_deficit_debuff = {
 		has_technology = $OR_HAS_TECH$
 	}
 }
+
+# scope = planet
+GF_is_habitat = {
+	OR = {
+		is_planet_class = pc_habitat
+		has_planet_flag = flag_p_GF_is_habitat_type_planet	# 兼容
+	}
+}
