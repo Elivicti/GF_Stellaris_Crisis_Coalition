@@ -3,11 +3,6 @@ collapsebomb = {
 		owner = {
 			has_authority = GF_auth_commonwealth
 			has_policy_flag = GF_enable_collapse_bombardment
-			OR = {
-				NOT = { is_country_type = default }
-				has_policy_flag = orbital_bombardment_indiscriminate
-				has_policy_flag = orbital_bombardment_armageddon
-			}
 		}
 	}
 
@@ -23,14 +18,10 @@ collapsebomb = {
 		base = 5.0
 		modifier = { # 机械人口和人形受到的伤害减少
 			factor = 0.75
-			OR = {
-				pop_has_trait = trait_machine_unit
-				pop_has_trait = trait_mechanical
-				pop_has_trait = GF_trait_doll
-			}
+			is_robot_pop = yes
 		}
 		modifier = { # 有坍塌辐射完全免疫的人口更难被杀死
-			factor = 0.10
+			factor = 0.25
 			pop_has_trait = GF_trait_sequela_immune
 		}
 	}
@@ -39,7 +30,7 @@ collapsebomb = {
 	# root = fleet
 	# from = planet
 	ai_weight = {
-		weight = 0.1
+		weight = 0.5
 		modifier = {
 			factor = 0.01
 			exists = from

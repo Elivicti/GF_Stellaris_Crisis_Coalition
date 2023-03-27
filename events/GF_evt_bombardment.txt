@@ -1,178 +1,45 @@
 namespace = GF_bombardment
 
-planet_event = {
-	id = GF_bombardment.1100
-
-	hide_window = yes
-
-	is_triggered_only = yes
-	trigger = {
-		planet_devastation >= 100
-		has_orbital_bombardment_stance = collapsebomb
-		NOT = { is_planet_class = pc_habitat }
-	}
-
-	immediate = {
-		random_list = {
-			1 = {}
-			3 = {
-				every_owned_pop = { kill_pop = yes }
-				every_deposit = { remove_deposit = yes }
-
-				remove_all_buildings = yes
-				if = {
-					limit = { is_ringworld = yes }
-					spawn_ringworld_cracker_effect = yes
-					change_pc = pc_ringworld_habitable_damaged
-				}
-				else_if = {
-					limit = { habitable_planet = yes }
-					change_pc = pc_GF_collapsed
-					clear_deposits = yes
-					add_modifier = {
-						modifier = collapsed_terraforming_candidate
-						days = -1
-					}
-					add_deposit = d_society_10
-				}
-
-				save_event_target_as = collapsed_planet
-				from.owner = {
-					play_sound = event_air_raid_siren
-					save_event_target_as = collapse_bombarder
-					country_event = { id = GF_bombardment.1101 }
-				}
-				owner = {
-					play_sound = event_air_raid_siren
-					add_opinion_modifier = {
-						who = event_target:collapse_bombarder
-						modifier = opinion_collapsed_my_world
-					}
-					country_event = { id = GF_bombardment.1102 }
-				}
-			}
-		}
-	}
-}
-
-country_event = { # event for bombarder country
-	id = GF_bombardment.1101
-	title = GF_bombardment.1101.name
-	desc = {
-		trigger = {
-			text = GF_bombardment.1101.desc
-			success_text = {
-				text = GF_bombardment.1101.desc.ringworld
-				event_target:collapsed_planet = { is_planet_class = pc_ringworld_habitable_damaged }
-			}
-			success_text = {
-				text = GF_bombardment.1101.desc.planet
-				event_target:collapsed_planet = { is_planet_class = pc_GF_collapsed }
-			}
-		}
-	}
-	desc = GF_bombardment.1101.desc
-
-	picture = GFX_evt_GF_black_zone
-
-	location = event_target:collapsed_planet
-
-	is_triggered_only = yes
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_policy_flag = GF_enable_collapse_bombardment
-		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
-	}
-
-	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
-
-	option = {
-		name = GF_bombardment.1101.a
-	}
-}
-
-country_event = { # event for victim country
-	id = GF_bombardment.1102
-	title = GF_bombardment.1102.name
-	desc = {
-		trigger = {
-			text = GF_bombardment.1101.desc
-			success_text = {
-				text = GF_bombardment.1101.desc.ringworld
-				event_target:collapsed_planet = { is_planet_class = pc_ringworld_habitable_damaged }
-			}
-			success_text = {
-				text = GF_bombardment.1101.desc.planet
-				event_target:collapsed_planet = { is_planet_class = pc_GF_collapsed }
-			}
-		}
-	}
-	picture = GFX_evt_GF_black_zone
-	show_sound = event_air_raid_siren
-	location = event_target:collapsed_planet
-
-	is_triggered_only = yes
-	# trigger = { any_owned_planet = { has_orbital_bombardment_stance = collapsebomb } }
-
-	option = {
-		name = GF_bombardment.1102.a
-	}
-}
+@GF_mid_planet_devastation = 50
+@GF_high_planet_devastation = 80
 
 planet_event = {
-	id = GF_bombardment.1200
-
+	id = GF_bombardment.1000
 	hide_window = yes
 
 	is_triggered_only = yes
 	trigger = {
 		has_orbital_bombardment_stance = collapsebomb
-		planet_devastation <= 99
-		NOT = { is_planet_class = pc_habitat }
 	}
 
 	immediate = {
+		# 随机杀死人口
 		if = {
-			limit = { planet_devastation <= 40 }
+			limit = { num_pops > 3 }
 			random_list = {
-				89 = {}
-				10 = { add_deposit = d_GF_yellow_zone_extra }
-				1 = { add_deposit = d_GF_red_zone_extra }
-			}
-		}
-		else_if = {
-			limit = {
-				planet_devastation > 40
-				planet_devastation <= 80
-			}
-			random_list = {
-				69 = {}
-				20 = { add_deposit = d_GF_yellow_zone_extra }
-				10 = { add_deposit = d_GF_red_zone_extra }
-				1 = { add_deposit = d_GF_black_zone_extra }
-			}
-		}
-		else = {
-			random_list = {
-				65 = {}
-				5 = { add_deposit = d_GF_yellow_zone_extra }
-				10 = { add_deposit = d_GF_red_zone_extra }
-				20 = { add_deposit = d_GF_black_zone_extra }
-			}
-		}
-		if = {
-			limit = {
-				planet_devastation > 40
-				num_pops > 5
-			}
-			random_list = {
-				2 = {}
-				1 = {
+				100 = {
+					modifier = { subtract = trigger:planet_devastation }
+					modifier = {
+						min = 25
+					}
+				}
+				0 = {
+					modifier = { add = trigger:planet_devastation }
+					modifier = { max = 75 }
+					modifier = {
+						add = 15
+						is_planet_class = pc_habitat
+					}
 					random_owned_pop = {
-						limit = {
-							NOR = {
-								has_trait = GF_trait_sequela_immune
+						weights = {
+							base = 1.0
+							modifier = {
+								factor = 0.75
 								is_robot_pop = yes
+							}
+							modifier = {
+								factor = 0.25
+								has_trait = GF_trait_sequela_immune
 							}
 						}
 						kill_pop = yes
@@ -180,64 +47,200 @@ planet_event = {
 				}
 			}
 		}
+
+		if = {
+			# 居住站不添加污染区，额外增加2破坏度
+			limit = { GF_is_habitat = yes }
+			add_planet_devastation = 2
+		}
+		else = {
+			# 非居住站（包括星球和环世界）添加污染区
+			random_list = {
+				90 = {
+					modifier = { subtract = trigger:planet_devastation }
+					modifier = { min = 5 }
+				}
+				10 = {
+					modifier = {
+						add = 10
+						planet_devastation >= @GF_mid_planet_devastation
+					}
+					modifier = {
+						subtract = 15
+						planet_devastation >= @GF_high_planet_devastation
+					}
+					modifier = {
+						factor = 0
+						count_deposits = {
+							count >= 20
+							type = d_GF_yellow_zone_extra
+						}
+					}
+					add_deposit = d_GF_yellow_zone_extra
+				}
+				40 = {
+					modifier = {
+						subtract = 25
+						planet_devastation >= @GF_high_planet_devastation
+					}
+					modifier = {
+						factor = 0
+						OR = {
+							planet_devastation < @GF_mid_planet_devastation
+							count_deposits = {
+								count >= 15
+								type = d_GF_red_zone_extra
+							}
+						}
+					}
+					add_deposit = d_GF_red_zone_extra
+				}
+				20 = {
+					modifier = {
+						factor = 0
+						OR = {
+							planet_devastation < @GF_high_planet_devastation
+							count_deposits = {
+								count >= 10
+								type = d_GF_black_zone_extra
+							}
+						}
+					}
+					add_deposit = d_GF_black_zone_extra
+				}
+			}
+		}
 	}
 }
 
 planet_event = {
-	id = GF_bombardment.1300
-
+	id = GF_bombardment.2000
 	hide_window = yes
 
 	is_triggered_only = yes
 	trigger = {
-		planet_devastation >= 100
 		has_orbital_bombardment_stance = collapsebomb
-		is_planet_class = pc_habitat
+		NOT = { has_planet_flag = flag_p_GF_planet_cannot_be_bombarded_to_collapse }
 	}
 
 	immediate = {
-		every_owned_pop = { kill_pop = yes }
-		every_deposit = { remove_deposit = yes }
-		remove_all_buildings = yes
-		spawn_habitat_cracker_effect = yes
-		
-		save_event_target_as = collapsed_planet
-		solar_system = {
-			save_event_target_as = collapsed_planet_system
-		}
-
-		from.owner = {
-			play_sound = event_air_raid_siren
-			save_event_target_as = collapse_bombarder
-			country_event = { id = GF_bombardment.1301 }
-		}
-		owner = {
-			play_sound = event_air_raid_siren
-			add_opinion_modifier = {
-				who = event_target:collapse_bombarder
-				modifier = opinion_collapse_bombarded_my_habitat
+		random_list = {
+			67 = {
+				modifier = {
+					factor = 0
+					OR = {
+						GF_is_habitat = yes
+						planet_devastation >= 95
+					}
+				}
 			}
-			country_event = { id = GF_bombardment.1302 }
-		}
+			33 = {
+				modifier = {
+					add = trigger:planet_devastation
+					planet_devastation >= 50
+				}
+				modifier = {
+					subtract = 20
+					planet_devastation >= 50
+				}
 
-		remove_planet = yes
+				from.owner = {
+					create_message = {
+						type = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
+						localization = MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE_DESC
+						days = 30
+						variable = {
+							type = name
+							localization = PLANET
+							scope = prev
+						}
+						variable = {
+							type = name
+							localization = BOMBARDER
+							scope = from.owner
+						}
+						target = prev
+					}
+
+					fire_on_action = {
+						on_action = on_planet_bombarded_to_collapse_bombarder
+						scopes = { from = prev }
+					}
+				}
+				owner = {
+					create_message = {
+						type = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
+						localization = MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE_DESC
+						days = 30
+						variable = {
+							type = name
+							localization = PLANET
+							scope = prev
+						}
+						variable = {
+							type = name
+							localization = BOMBARDER
+							scope = from.owner
+						}
+						target = prev
+					}
+
+					if = {
+						limit = { prev = { GF_is_habitat = no } }
+						add_opinion_modifier = {
+							who = fromfrom.owner
+							modifier = opinion_collapsed_my_world
+						}
+					}
+					else = {
+						add_opinion_modifier = {
+							who = fromfrom.owner
+							modifier = opinion_collapse_bombarded_my_habitat
+						}
+					}
+
+					fire_on_action = {
+						on_action = on_planet_bombarded_to_collapse_victim
+						scopes = {
+							from = prev
+							fromfrom = from
+						}
+					}
+				}
+
+				GF_collapse_planet_effect = yes
+			}
+		}
 	}
 }
 
-country_event = { # event for bombarder country
-	id = GF_bombardment.1301
-	title = GF_bombardment.1301.name
-	desc = GF_bombardment.1301.desc
+### 非居住站（包括普通星球和环世界）被轰炸至坍塌
 
+# 轰炸者
+country_event = {
+	id = GF_bombardment.1101
+	title = GF_bombardment.1101.name
+	desc = {
+		trigger = {
+			text = GF_bombardment.1101.desc
+			success_text = {
+				text = GF_bombardment.1101.desc.ringworld
+				from = { is_ringworld = yes }
+			}
+			success_text = {
+				text = GF_bombardment.1101.desc.planet
+				from = { is_ringworld = no }
+			}
+		}
+	}
 	picture = GFX_evt_GF_black_zone
 
-	location = event_target:collapsed_planet_system
+	location = from
 
 	is_triggered_only = yes
 	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_policy_flag = GF_enable_collapse_bombardment
 		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
+		from = { GF_is_habitat = no }
 	}
 
 	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
@@ -247,45 +250,83 @@ country_event = { # event for bombarder country
 	}
 }
 
-country_event = { # event for victim country
+# 受害者
+country_event = {
+	id = GF_bombardment.1102
+	title = GF_bombardment.1102.name
+	desc = {
+		trigger = {
+			text = GF_bombardment.1101.desc
+			success_text = {
+				text = GF_bombardment.1102.desc.ringworld
+				from = { is_ringworld = yes }
+			}
+			success_text = {
+				text = GF_bombardment.1102.desc.planet
+				from = { is_ringworld = no }
+			}
+		}
+	}
+	picture = GFX_evt_GF_black_zone
+	location = from
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = GF_has_a_world_been_bombard_collapsed }
+		from = { GF_is_habitat = no }
+	}
+
+	immediate = { set_country_flag = GF_has_a_world_been_bombard_collapsed }
+
+	option = {
+		name = GF_bombardment.1102.a
+	}
+}
+
+
+### 居住站被轰炸至摧毁
+
+# 轰炸者
+country_event = {
+	id = GF_bombardment.1301
+	title = GF_bombardment.1301.name
+	desc = GF_bombardment.1301.desc
+
+	picture = GFX_evt_GF_black_zone
+
+	location = from.solar_system
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
+		from = { GF_is_habitat = yes }
+	}
+
+	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
+
+	option = {
+		name = GF_bombardment.1101.a
+	}
+}
+
+# 受害者
+country_event = {
 	id = GF_bombardment.1302
 	title = GF_bombardment.1302.name
 	desc = GF_bombardment.1302.desc
 
 	picture = GFX_evt_GF_black_zone
-	show_sound = event_air_raid_siren
-	location = event_target:collapsed_planet_system
-
-	is_triggered_only = yes
-	# trigger = { any_owned_planet = { has_orbital_bombardment_stance = collapsebomb } }
-
-	option = {
-		name = GF_bombardment.1302.a
-	}
-}
-
-planet_event = {
-	id = GF_bombardment.1310
-
-	hide_window = yes
+	location = from.solar_system
 
 	is_triggered_only = yes
 	trigger = {
-		has_orbital_bombardment_stance = collapsebomb
-		planet_devastation <= 99
-		is_planet_class = pc_habitat
+		NOT = { has_country_flag = GF_has_a_world_been_bombard_collapsed }
+		from = { GF_is_habitat = yes }
 	}
 
-	immediate = {
-		add_planet_devastation = 2
-		if = {
-			limit = { num_pops > 5 }
-			random_list = {
-				1 = {}
-				1 = {
-					random_owned_pop = { kill_pop = yes }
-				}
-			}
-		}
+	immediate = { set_country_flag = GF_has_a_world_been_bombard_collapsed }
+
+	option = {
+		name = GF_bombardment.1302.a
 	}
 }

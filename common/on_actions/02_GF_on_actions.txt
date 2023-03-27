@@ -33,8 +33,9 @@ on_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
 # From = Bombarder
 on_planet_bombarded = {
 	events = {
-		GF_bombardment.1200	# 向轰炸目标添加污染区
-		GF_bombardment.1310 # 居住站
+		GF_bombardment.1000
+		# GF_bombardment.1200	# 向轰炸目标添加污染区
+		# GF_bombardment.1310 # 居住站
 	}
 }
 
@@ -43,8 +44,32 @@ on_planet_bombarded = {
 # From = Bombarder
 on_planet_zero_pops = {
 	events = {
-		GF_bombardment.1100	# 轰炸目标概率变为坍塌死寂星球
-		GF_bombardment.1300 # 轰炸目标为居住站
+		GF_bombardment.2000
+		# GF_bombardment.1100	# 轰炸目标概率变为坍塌死寂星球
+		# GF_bombardment.1300 # 轰炸目标为居住站
+	}
+}
+
+# 当星球被轰炸为坍塌死寂星球时触发，触发时间满足：
+## 早于星球类型被更改
+## 以下两个on_action分别在轰炸者(国家)和行星所有者(国家)先后触发一次
+# 注意：当被轰炸的是居住站时，居住站将在这两个on_action之后移除
+
+# This = country (轰炸者)
+# From = planet
+on_planet_bombarded_to_collapse_bombarder = {
+	events = {
+		GF_bombardment.1101	# 非居住站
+		GF_bombardment.1301 # 居住站
+	}
+}
+# This = country (行星所有者)
+# From = planet
+# FromFrom = bombarder (fleet)
+on_planet_bombarded_to_collapse_victim = {
+	events = {
+		GF_bombardment.1102	# 非居住站
+		GF_bombardment.1302 # 居住站
 	}
 }
 

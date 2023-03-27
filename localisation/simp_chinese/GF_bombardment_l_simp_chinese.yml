@@ -1,0 +1,42 @@
+﻿l_simp_chinese:
+###############################
+
+#### 坍塌液脏弹轨道轰炸
+ bombardment_collapsebomb:0 "坍塌液脏弹"
+ bombardment_collapsebomb_desc:0 "使用$bombardment_collapsebomb$进行轨道轰炸，对地面上的一切设施甚至地形造成巨大破坏。\n—对§Y军团§!造成§H巨大§!伤害\n—对§Y星球§!造成§H巨大§!伤害\n—对§Y人口§!造成§H巨大§!伤害\n—将会轰炸不设防的星球，轰炸时有一定概率向星球上添加§R坍塌辐射污染区§!\n—会§R消灭所有人口§!，并在星球破坏度达到§R100%§!时有一定概率使星球转化为§R$pc_GF_collapsed$§!"
+
+ MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE:0 "行星被摧毁"
+ MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE_DESC:0 "§Y$PLANET$§!被§Y$BOMBARDER$§!的舰队轰炸摧毁"
+
+## 坍塌液脏弹政策
+ policy_collapse_bombardment:0 "轨道轰炸姿态：$bombardment_collapsebomb$"
+ policy_collapse_bombardment_desc:0 "这个政策将会决定我们的舰队是否能使用§R$bombardment_collapsebomb$§!对星球进行轨道轰炸"
+ 
+ GF_enable_collapse_bombardment_name:0 "允许$bombardment_collapsebomb$轨道轰炸"
+ enable_collapse_bombardment:0 "允许"
+ enable_collapse_bombardment_desc:0 "允许舰队使用§R$bombardment_collapsebomb$§!对星球进行轨道轰炸"
+
+ GF_disable_collapse_bombardment_name:0 "禁止$bombardment_collapsebomb$轨道轰炸"
+ disable_collapse_bombardment:0 "禁止"
+ disable_collapse_bombardment_desc:0 "禁止舰队使用§R$bombardment_collapsebomb$§!对星球进行轨道轰炸"
+
+######## 坍塌液脏弹轨道轰炸
+ GF_bombardment.1101.name:0 "§R[from.GetName]被坍塌§!"
+ GF_bombardment.1101.desc:0 "在长时间对[from.GetName]使用$GF_tech_collapse_bomb$进行轰炸以后，"
+ GF_bombardment.1101.desc.ringworld:0 "这个环形世界的地表终于完全地被黑区覆盖了，其结构也受到了永久性的损坏。"
+ GF_bombardment.1101.desc.planet:0 "这颗星球的地表终于完全地被黑区覆盖了。\n\n换言之，现在[from.GetName]已经成为了地狱般的$pc_GF_collapsed$。"
+ GF_bombardment.1101.a:0 "确认"
+
+ GF_bombardment.1102.name:0 "§R[from.GetName]被坍塌§!"
+ GF_bombardment.1102.desc:0 "在§H[fromfrom.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[from.GetName]§!之后，"
+ GF_bombardment.1102.desc.ringworld:0 "这个环形世界的地表已经面目全非，其结构也受到了永久性的损坏，所有的居民都痛苦地死去了。"
+ GF_bombardment.1102.desc.planet:0 "这颗星球的地表已经面目全非，昔日的城市化为废墟，所有的居民都在高浓度的辐射中痛苦地死去了。"
+ GF_bombardment.1102.a:0 "可恶！"
+
+ GF_bombardment.1301.name:0 "§R[from.GetName]被摧毁§!"
+ GF_bombardment.1301.desc:0 "在长时间对[from.GetName]使用$GF_tech_collapse_bomb$进行轰炸以后，这个居住站被彻底地摧毁了。"
+ GF_bombardment.1301.a:0 "确认"
+
+ GF_bombardment.1302.name:0 "§R[from.GetName]被摧毁§!"
+ GF_bombardment.1302.desc:0 "在§H[fromfrom.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[from.GetName]§!之后，这个居住站已经彻底损坏，化为太空中冰冷的残骸，所有的居民都痛苦地死去了。"
+ GF_bombardment.1302.a:0 "可恶！"

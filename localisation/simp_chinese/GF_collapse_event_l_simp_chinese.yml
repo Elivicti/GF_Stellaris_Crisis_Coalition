@@ -185,27 +185,6 @@
 
 ##############
 
-######## 坍塌液脏弹轨道轰炸
- GF_bombardment.1101.name:0 "§R[collapsed_planet.GetName]被坍塌§!"
- GF_bombardment.1101.desc:0 "在长时间对[collapsed_planet.GetName]使用$GF_tech_collapse_bomb$进行轰炸以后，"
- GF_bombardment.1101.desc.ringworld:0 "这个环形世界的地表终于完全地被黑区覆盖了，其结构也受到了永久性的损坏。"
- GF_bombardment.1101.desc.planet:0 "这颗星球的地表终于完全地被黑区覆盖了。\n\n换言之，现在[collapsed_planet.GetName]已经成为了地狱般的$pc_GF_collapsed$。"
- GF_bombardment.1101.a:0 "确认"
-
- GF_bombardment.1102.name:0 "§R[collapsed_planet.GetName]被坍塌§!"
- GF_bombardment.1102.desc:0 "在§H[collapse_bombarder.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[collapsed_planet.GetName]§!之后，"
- GF_bombardment.1102.desc.ringworld:0 "这个环形世界的地表已经面目全非，其结构也受到了永久性的损坏，所有的居民都痛苦地死去了。"
- GF_bombardment.1102.desc.planet:0 "这颗星球的地表已经面目全非，昔日的城市化为废墟，所有的居民都在高浓度的辐射中痛苦地死去了。"
- GF_bombardment.1102.a:0 "可恶！"
-
- GF_bombardment.1301.name:0 "§R[collapsed_planet.GetName]被摧毁§!"
- GF_bombardment.1301.desc:0 "在长时间对[collapsed_planet.GetName]使用$GF_tech_collapse_bomb$进行轰炸以后，这个居住站被彻底地摧毁了。"
- GF_bombardment.1301.a:0 "确认"
-
- GF_bombardment.1302.name:0 "§R[collapsed_planet.GetName]被摧毁§!"
- GF_bombardment.1302.desc:0 "在§H[collapse_bombarder.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[collapsed_planet.GetName]§!之后，这个居住站已经彻底损坏，化为太空中冰冷的残骸，所有的居民都痛苦地死去了。"
- GF_bombardment.1302.a:0 "可恶！"
-
 ######## ELID事件
  NAME_GF_elid_invasion:0 "E.L.I.D入侵"
  NAME_GF_aggressive_elid:0 "E.L.I.D感染者"
