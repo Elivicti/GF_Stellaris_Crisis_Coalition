@@ -8,6 +8,12 @@ collapse_bombardment = {
 	option = {
 		name = "enable_collapse_bombardment"
 		policy_flags = { GF_enable_collapse_bombardment }
+		valid = {
+			OR = {
+				has_policy_flag = orbital_bombardment_indiscriminate
+				has_policy_flag = orbital_bombardment_armageddon
+			}
+		}
 		AI_weight = {
 			base = 1
 			modifier = {
