@@ -72,7 +72,7 @@ planet_event = {
 					modifier = {
 						factor = 0
 						count_deposits = {
-							count >= 20
+							count >= 12
 							type = d_GF_yellow_zone_extra
 						}
 					}
@@ -88,7 +88,7 @@ planet_event = {
 						OR = {
 							planet_devastation < @GF_mid_planet_devastation
 							count_deposits = {
-								count >= 15
+								count >= 9
 								type = d_GF_red_zone_extra
 							}
 						}
@@ -101,7 +101,7 @@ planet_event = {
 						OR = {
 							planet_devastation < @GF_high_planet_devastation
 							count_deposits = {
-								count >= 10
+								count >= 6
 								type = d_GF_black_zone_extra
 							}
 						}
