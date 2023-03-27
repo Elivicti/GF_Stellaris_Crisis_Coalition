@@ -92,5 +92,7 @@
  mod_GF_doll_produces_mult:0 "$GF_ANDROID$产出"
  mod_GF_doll_assembly_speed_mult:0 "$GF_ANDROID$组装速度"
 
+ mod_GF_auto_colony_capacity_add:0 "自动化遥控殖民地协议承载力"
+
 #####
  mod_district_GF_assembly_max:0 "$district_GF_assembly$最大建造数量"

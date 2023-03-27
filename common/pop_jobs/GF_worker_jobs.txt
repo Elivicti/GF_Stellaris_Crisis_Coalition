@@ -123,6 +123,11 @@ GF_command_doll = {
 			unity = 1
 		}
 	}
+
+	triggered_planet_modifier = {
+		potential = { planet = { has_modifier = GF_auto_colony } }
+		GF_auto_colony_capacity_add = 0.5
+	}
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -178,6 +183,11 @@ GF_maintain_doll = {
 		hidden_trigger = { exists = owner }
 		owner = { has_authority = GF_auth_commonwealth }
 		has_trait = GF_trait_doll
+	}
+
+	triggered_planet_modifier = {
+		potential = { planet = { has_modifier = GF_auto_colony } }
+		GF_auto_colony_capacity_add = 0.1
 	}
 
 	triggered_planet_modifier = {

@@ -3,10 +3,13 @@ namespace = GF_colony
 ### Auto Colony
 @GF_auto_colony_boundary_effect_interval = 30
 @GF_auto_colony_boundary_start = 15
-@GF_auto_colony_boundary_addend = 20
+@GF_auto_colony_boundary_addend = 25
 
-# 计算方式：factor = (num_pops - start) / addend
-# 边际效应Debuff从第(start + 1)个人口开始起作用，直到第(start + addend)个人口时，factor = 1
+# 计算方式：factor = (equivalent_pop_load - capacity) / addend
+# equivalent_pop_load = num_pops - 休眠人形数 * 0.75 (等价于：每人口产生1负载，休眠人形产生0.25负载)
+# capacity = start + mod_capacity_add
+# 边际效应Debuff从第(capacity + 1)个人口开始起作用，直到第(capacity + addend)个人口时，factor = 1
+# 由于mod_capacity_add不是整数，所以理论上factor = 1时的人口数大概率不是整数，但是并不影响整体的效果
 # factor的计算无上限
 # factor将与边际效应Debuff相乘
 planet_event = {
@@ -19,19 +22,57 @@ planet_event = {
 	}
 
 	immediate = {
+		set_variable = {
+			which = v_GF_auto_colony_equivalent_pop_load
+			value = 0
+		}
+		set_variable = {
+			# modifier = GF_auto_colony_capacity_add
+			which = v_GF_auto_colony_capacity
+			value = modifier:GF_auto_colony_capacity_add
+		}
+		change_variable = {
+			which = v_GF_auto_colony_capacity
+			value = @GF_auto_colony_boundary_start
+		}
+		every_owned_pop = {
+			if = {
+				limit = { has_job = GF_dormancy_doll }
+				prev = {
+					change_variable = {
+						which = v_GF_auto_colony_equivalent_pop_load
+						value = 0.25
+					}
+				}
+			}
+			else = {
+				prev = {
+					change_variable = {
+						which = v_GF_auto_colony_equivalent_pop_load
+						value = 1
+					}
+				}
+			}
+		}
+
 		if = {
-			limit = { num_pops > @GF_auto_colony_boundary_start }
-			export_trigger_value_to_variable = {
-				trigger = num_pops
-				variable = v_GF_auto_colony_boundary_factor
+			limit = {
+				check_variable = {
+					which = v_GF_auto_colony_equivalent_pop_load
+					value > v_GF_auto_colony_capacity
+				}
+			}
+			set_variable = {
+				which = v_GF_auto_colony_boundary_factor
+				value = v_GF_auto_colony_equivalent_pop_load
 			}
 			subtract_variable = {
 				which = v_GF_auto_colony_boundary_factor
-				value = @GF_auto_colony_boundary_start
+				value = v_GF_auto_colony_capacity
 			}
 			divide_variable = {
 				which = v_GF_auto_colony_boundary_factor
-				value = 20
+				value = @GF_auto_colony_boundary_addend
 			}
 			add_modifier = {
 				modifier = GF_auto_colony_boundary_modifier

@@ -40,3 +40,11 @@ GF_doll_assembly_speed_mult = {
 	good = yes
 	category = pop
 }
+
+GF_auto_colony_capacity_add = {
+	icon = mod_country_admin_cap_add
+	good = yes
+	percentage = no
+	category = planet
+	max_decimals = 1
+}

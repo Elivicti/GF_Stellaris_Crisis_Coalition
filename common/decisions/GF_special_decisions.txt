@@ -51,10 +51,7 @@ decision_GF_auto_colony_on = {
 			set_planet_flag = flag_p_GF_auto_colony
 			validate_planet_buildings_and_districts = yes
 			
-			planet_event = {
-				id = GF_colony.10
-				days = 60
-			}
+			planet_event = { id = GF_colony.10 days = 1 }
 		}
 		custom_tooltip = decision_GF_auto_colony_on_effect_not_automation_tooltip
 	}
@@ -100,6 +97,10 @@ decision_GF_auto_colony_off = {
 			remove_planet_flag = flag_p_GF_auto_colony
 
 			validate_planet_buildings_and_districts = yes
+
+			clear_variable = v_GF_auto_colony_boundary_factor
+			clear_variable = v_GF_auto_colony_equivalent_pop_load
+			clear_variable = v_GF_auto_colony_capacity
 		}
 	}
 

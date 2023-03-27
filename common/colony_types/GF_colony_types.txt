@@ -15,10 +15,7 @@ col_GF_auto_colony = {
 
 	potential = {
 		exists = owner
-		owner = {
-			has_authority = GF_auth_commonwealth
-			NOT = { has_policy_flag = GF_doll_right_full }
-		}
+		owner = { has_authority = GF_auth_commonwealth }
 		has_modifier = GF_auto_colony
 	}
 
