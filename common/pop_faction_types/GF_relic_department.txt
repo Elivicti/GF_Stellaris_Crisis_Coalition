@@ -42,6 +42,7 @@ GF_relic_department = {
 			has_job = bureaucrat
 			has_job = manager
 			has_job = researcher
+			has_job = GF_programmer
 			has_job_category = ruler
 		}
 
