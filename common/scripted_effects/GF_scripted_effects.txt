@@ -24,6 +24,7 @@ GF_create_collapse_relic_site = {
 				is_planet_class = pc_shrouded						# 虚境星球
 				has_modifier = holy_planet							# 圣地
 				exists = archaeological_site		# 存在考古点
+				has_planet_flag = suppress_archaeological_sites
 
 				has_planet_flag = $NO_P_FLAG_1$		# 不能有标识1
 				has_planet_flag = $NO_P_FLAG_2$		# 不能有标识2
@@ -315,10 +316,6 @@ GF_convert_to_OGAS_subnet = {
 		civics = random
 	}
 	add_intel = { amount = 100 who = from }
-	random_galaxy_species = {
-		limit = { has_species_flag = flag_GF_doll_species_@from }
-		save_event_target_as = GF_doll_species
-	}
 	ruler = {
 		exile_leader_as = GF_OGAS_subnet_previous_ruler
 	}
@@ -383,14 +380,14 @@ GF_convert_to_OGAS_subnet = {
 		if = {
 			limit = {
 				NOT = {
-					any_owned_pop = { is_same_species_class = event_target:GF_doll_species }
+					any_owned_pop = { is_same_species_class = prev.ruler.species }
 				}
 			}
-			create_pop = { species = event_target:GF_doll_species }
+			create_pop = { species = prev.ruler.species }
 		}
 	}
 	give_technology = { tech = GF_tech_doll_assemble }
-	set_built_species = event_target:GF_doll_species
+	set_built_species = prev.ruler.species
 }
 
 GF_deactivate_OGAS_subnet = {
@@ -409,6 +406,7 @@ GF_deactivate_OGAS_subnet = {
 		}
 		set_leader = GF_OGAS_subnet_previous_ruler
 	}
+	remove_communications = event_target:GF_ogas_country
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
 }
@@ -559,4 +557,36 @@ GF_clear_core_chip_deficit_flags = {
 	remove_country_flag = flag_GF_deficit_core_chip_approach_programmer_subsidies
 	remove_country_flag = flag_GF_deficit_core_chip_approach_dismantle_doll
 	remove_country_flag = flag_GF_deficit_core_chip_approach_assimilate_doll
+}
+
+# this = planet
+GF_collapse_planet_effect = {
+	every_owned_pop = { kill_pop = yes }
+	remove_all_buildings = yes
+	# destroy habitats and ringworlds
+	if = {
+		limit = { is_planet_class = pc_habitat }
+		spawn_habitat_cracker_effect = yes
+		remove_planet = yes
+	}
+	else_if = {
+		limit = { is_ringworld = yes }
+		spawn_ringworld_cracker_effect = yes
+		change_pc = pc_ringworld_habitable_damaged
+	}
+	else_if = {
+		limit = { habitable_planet = yes }
+		change_pc = pc_GF_collapsed
+		clear_deposits = yes
+		add_modifier = {
+			modifier = collapsed_terraforming_candidate
+			days = -1
+		}
+
+		add_deposit = d_society_10
+	}
+	else = {
+		change_pc = pc_GF_collapsed_not_habitable
+		clear_deposits = yes
+	}
 }
