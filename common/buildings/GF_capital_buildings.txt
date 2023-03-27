@@ -128,6 +128,7 @@ building_GF_auto_colony_capital = {
 		job_GF_command_doll_per_pop = 0.1
 		job_GF_guard_doll_per_pop = 0.05
 
+		job_GF_command_doll_add = 1
 		job_GF_guard_doll_add = 1
 		job_GF_assemble_doll_add = 4
 		job_GF_dormancy_doll_add = 1
@@ -153,15 +154,7 @@ building_GF_auto_colony_capital = {
 	triggered_desc = { text = job_GF_assemble_doll_effect_desc }
 	triggered_desc = { text = job_GF_guard_doll_effect_desc }
 	triggered_desc = { text = job_GF_dormancy_doll_effect_desc }
-	triggered_desc = {
-		trigger = {
-			num_districts = {
-				type = district_city
-				value > 0
-			}
-		}
-		text = job_GF_maintain_doll_effect_desc
-	}
+	triggered_desc = { text = job_GF_maintain_doll_effect_desc }
 
 	triggered_planet_modifier = {
 		job_GF_maintain_doll_add = 1
