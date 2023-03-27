@@ -143,11 +143,11 @@ GF_civic_KCCO = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		starbase_shipyard_build_cost_mult = -0.2
 		country_war_exhaustion_mult = -0.1
-		ships_upkeep_mult = -0.2
 		country_naval_cap_mult = 0.2
 		starbase_shipyard_build_speed_mult = 0.2
+		starbase_shipyard_build_cost_mult = -0.2
+		ships_upkeep_mult = -0.2
 	}
 }
 
@@ -165,14 +165,12 @@ GF_civic_TASA = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		country_war_exhaustion_mult = -0.1
 		ship_speed_mult = 0.10
 		ship_hull_mult = 0.10
-		ship_ftl_jumpdrive_range_mult = 0.20
-		ship_windup_mult = -0.25
-		country_mia_time_mult = -0.50
-		admiral_skill_levels = 1
-		ships_upkeep_mult = 0.15
+		ship_weapon_damage = 0.10
+		ship_fire_rate_mult = 0.15
+		ship_weapon_range_mult = 0.15
+		ships_upkeep_mult = 0.10
 	}
 }
 
