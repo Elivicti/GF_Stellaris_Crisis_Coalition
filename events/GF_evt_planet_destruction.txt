@@ -60,20 +60,6 @@ planet_event = {
 
 		if = {
 			limit = {
-				OR = {
-					is_active_resolution = "resolution_rulesofwar_reverence_for_life"
-					is_active_resolution = "resolution_rulesofwar_independent_tribunals"
-					is_active_resolution = "resolution_rulesofwar_last_resort_doctrine"
-					is_active_resolution = "resolution_rulesofwar_demobilization_initiative"
-				}
-			}
-			from.owner = {
-				set_timed_country_flag = { flag = resolution_breached_fired_cracker days = 3600 }
-			}
-		}
-
-		if = {
-			limit = {
 				exists = owner
 				owner = {
 					NOT = { is_same_value = from.owner }
@@ -86,9 +72,7 @@ planet_event = {
 			}
 			# Generate threat
 			if = {
-				limit = {
-					is_colony = yes
-				}
+				limit = { is_colony = yes }
 				add_threat = { who = from.owner amount = 3 }
 				# modifier for allies + those upset by genocide
 				every_country = {
@@ -135,9 +119,8 @@ planet_event = {
 					}
 				}
 			}
-			else = {
-				add_threat = { who = from.owner amount = 1 }
-			}
+			else = { add_threat = { who = from.owner amount = 1 } }
+
 			# modifiers for victim
 			owner = {
 				if = {
@@ -215,14 +198,11 @@ planet_event = {
 		}
 		# Add war exhaustion to planet owner
 		if = {
-			limit = {
-				exists = owner
-			}
+			limit = { exists = owner }
 			owner = {
 				if = {
-					limit = { #isn't the case when the crisis bombards planets, for instance
-						is_at_war_with = from.fleet.owner
-					}
+					#isn't the case when the crisis bombards planets, for instance
+					limit = { is_at_war_with = from.fleet.owner }
 					add_static_war_exhaustion = {
 						attacker = from.fleet.owner
 						location = root
@@ -231,42 +211,7 @@ planet_event = {
 				}
 			}
 		}
-		every_owned_pop = {
-			kill_pop = yes
-		}
-		remove_all_buildings = yes
-		# destroy habitats and ringworlds
-		if = {
-			limit = {
-				is_planet_class = pc_habitat
-			}
-			spawn_habitat_cracker_effect = yes
-			remove_planet = yes
-		}
-		else_if = {
-			limit = {
-				is_ringworld = yes
-			}
-			spawn_ringworld_cracker_effect = yes
-			change_pc = pc_ringworld_habitable_damaged
-		}
-		else_if = {
-			limit = { habitable_planet = yes }
-			change_pc = pc_GF_collapsed
-			clear_deposits = yes
-			add_modifier = {
-				modifier = collapsed_terraforming_candidate
-				days = -1
-			}
-
-			add_deposit = d_society_10
-		}
-		else = {
-			change_pc = pc_GF_collapsed_not_habitable
-			clear_deposits = yes
-
-			# add_deposit = d_society_10
-		}
+		GF_collapse_planet_effect = yes
 	}
 }
 
