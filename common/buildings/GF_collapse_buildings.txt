@@ -70,6 +70,9 @@ building_GF_collapse_2 = {
 			has_modifier = slave_colony
 		}
 	}
+	allow = {
+		has_upgraded_capital = yes
+	}
 
 	destroy_trigger = {
 		owner = {
@@ -120,6 +123,9 @@ building_GF_reverse_collapse = {
 			has_modifier = resort_colony
 			has_modifier = slave_colony
 		}
+	}
+	allow = {
+		has_upgraded_capital = yes
 	}
 
 	destroy_trigger = {
