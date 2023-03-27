@@ -139,12 +139,12 @@ country_event = {
 		custom_tooltip = GF_elid.1.tooltip
 		custom_tooltip = GF_elid.1.b.tooltip
 		add_resource = {
-			energy = -1000
+			energy = -500
 			unity = -300
 		}
 		trigger = { NOT = { event_target:GF_home_world = { any_planet_army = { exists = leader } } } }
 		allow = {
-			has_resource = { type = energy amount >= 1000 }
+			has_resource = { type = energy amount >= 500 }
 			has_resource = { type = unity  amount >= 300  }
 		}
 
@@ -161,7 +161,7 @@ country_event = {
 
 				effect = {
 					if = {
-						limit = { is_species = new_type gender = male }
+						limit = { is_species_class = GF_new_type gender = male }
 						set_is_female = yes
 						set_name = random
 					}
