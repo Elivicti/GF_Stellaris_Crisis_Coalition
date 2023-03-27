@@ -1,4 +1,33 @@
 utility_component_template = {
+	key = "GF_OGAS_COMPUTER_TORPEDO"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = -25
+		}
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { frigate }
+	component_set = "combat_computers"
+	ship_behavior = "torpedo"
+	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { explosive explosive_stealth }
+
+	modifier = {
+		weapon_type_explosive_weapon_damage_mult = 0.20
+		ship_evasion_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
 	key = "GF_OGAS_COMPUTER_PICKET"
 	size = small
 	icon = "GFX_GF_ogas_computer"
@@ -103,15 +132,15 @@ utility_component_template = {
 			alloys = 35
 		}
 	}
-	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { juggernaut }
+	class_restriction = { shipclass_military }
+
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_free"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 
 	ship_modifier = {
-		ship_engagement_range_mult = 1.2
-		ship_weapon_range_mult = 0.20
+		ship_engagement_range_mult = 0.5
+		ship_weapon_range_mult = 0.10
 		ship_fire_rate_mult = 0.10
 	}
 
