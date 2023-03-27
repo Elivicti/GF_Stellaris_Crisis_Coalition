@@ -20,11 +20,19 @@
 # 		my_unique_target_modifier = 1
 # 	}
 # 	loyalty_change = value					# How much the subject's loyalty will change when a new agreement with this term starts
+# 	ai_acceptance = {
+#		overlord = 1						# Willingness of AI overlord to accept this term
+#		subject = 1							# Willingness of AI subject to accept this term
+#	}
 # 	triggered_loyalty_change = {			# How much the subject's loyalty will additionally change when a new agreement with this term starts, if "trigger" is true
 # 		trigger = {
 # 			agreement_scope_trigger
 # 		}
 # 		loyalty_change = value
+#		ai_acceptance = {
+#			overlord = 1
+#			subject = 1
+#		}
 # 	}
 # 	extra_term_text_subject = <LOC_KEY> 	# What should be shown in the "extra terms" panel for the subject if this term value is active (default is to not show it)
 # 											# This loc key can use $SUBJECT$ and $OVERLORD$ to show the name of the relevant empire, and $MODIFIER$ to show the modifiers applying to the subject
@@ -60,6 +68,10 @@ GF_specialist_OGAS_subnet = {
 			}
 		}
 		loyalty_change = -10000
+		ai_acceptance = {
+			overlord = -10000
+			subject = -10000
+		}
 	}
 	triggered_loyalty_change = {
 		trigger = {
