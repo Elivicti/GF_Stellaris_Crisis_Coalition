@@ -1,4 +1,8 @@
 ﻿l_simp_chinese:
+ volatile_motes_icon:0 "£volatile_motes£"
+ exotic_gases_icon:0 "£exotic_gases£"
+ rare_crystals_icon:0 "£rare_crystals£"
+
 # 一些杂项事件
 
  GF_evt_misc.1001.desc:0 "通知：系统已更新，$GF_Stellaris_Update_Log$"
