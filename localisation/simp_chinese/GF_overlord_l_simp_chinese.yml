@@ -35,11 +35,17 @@
  GF_overlord.201.desc:0 "根据我们与[overlord.GetName]的协议，已经将我们境内的[transfer_pop.Species.GetName]的一个人口移交至[overlord.Capital.GetName]。\n"
  GF_overlord.201.a:0 "已知晓。"
  GF_overlord.201.a.tooltip:0 "§Y[transfer_pop.Planet.GetName]§!上的一个£pop£人口：已移交"
+ GF_overlord.201.b:0 "不再提醒。"
 
  GF_overlord.202.name:0 "人口已移交"
  GF_overlord.202.desc:0 "根据我们与[from.GetName]的协议，[from.GetName]境内的一个[transfer_pop.Species.GetName]人口已移交至我们的首都。\n"
  GF_overlord.202.a:0 "很好。"
  GF_overlord.202.a.tooltip:0 "获得一个[transfer_pop.Species.GetName]£pop£人口"
+ GF_overlord.202.b:0 "不再提醒。"
+
+ MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_TITLE:0 "机械人口已移交"
+ MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_SUBNET_DESC:0 "根据协议，§Y$PLANET$§!上的一个§Y$POP$ £pop£ §!人口已移交至§Y$OVERLORD$§!"
+ MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_OVERLORD_DESC:0 "根据协议，§Y$SUBNET$§!境内的一个§Y$POP$ £pop£ §!人口已移交至我们的首都"
 
  GF_overlord.203.name:0 "资源已上供"
  GF_overlord.203.desc:0 "我们没有足够的机械人口向宗主国移交，作为代替，需要向宗主国进贡一些资源。\n"

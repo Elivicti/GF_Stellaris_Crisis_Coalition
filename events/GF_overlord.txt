@@ -58,15 +58,63 @@ country_event = {
 				limit = { is_robot_pop = yes }
 				save_event_target_as = transfer_pop
 			}
-			country_event = { id = GF_overlord.201 }
-			event_target:GF_ogas_owner = {
-				country_event = { id = GF_overlord.202 }
+			if = {
+				limit = { has_country_flag = flag_GF_disable_pop_transfer_notification_subnet@overlord }
+				create_message = {
+					type = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_SUBNET
+					localization = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_SUBNET_DESC
+					days = 30
+					target = THIS
+					variable = {
+						type = name
+						localization = POP
+						scope = event_target:transfer_pop.species
+					}
+					variable = {
+						type = name
+						localization = OVERLORD
+						scope = overlord
+					}
+					variable = {
+						type = name
+						localization = PLANET
+						scope = event_target:transfer_pop.planet
+					}
+				}
+			}
+			else = { country_event = { id = GF_overlord.201 } }
+
+			overlord = {
+				if = {
+					limit = { has_country_flag = flag_GF_disable_pop_transfer_notification@prev }
+					create_message = {
+						type = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_OVERLORD
+						localization = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_OVERLORD_DESC
+						days = 30
+						target = THIS
+						variable = {
+							type = name
+							localization = POP
+							scope = event_target:transfer_pop.species
+						}
+						variable = {
+							type = name
+							localization = SUBNET
+							scope = prev
+						}
+					}
+					resettle_pop = {
+						pop = event_target:transfer_pop
+						planet = capital_scope
+					}
+				}
+				else = { country_event = { id = GF_overlord.202 } }
 			}
 		}
 		else = {
 			# 机械人口不足，上供资源
 			country_event = { id = GF_overlord.203 }
-			event_target:GF_ogas_owner = {
+			overlord = {
 				country_event = { id = GF_overlord.204 }
 			}
 		}
@@ -98,6 +146,14 @@ country_event = {
 		name = GF_overlord.201.a
 		custom_tooltip = GF_overlord.201.a.tooltip
 	}
+
+	option = {
+		name = GF_overlord.201.b
+		custom_tooltip = GF_overlord.201.a.tooltip
+		hidden_effect = {
+			set_country_flag = flag_GF_disable_pop_transfer_notification_subnet@overlord
+		}
+	}
 }
 
 # 提示事件：宗主国 - 人口已移交
@@ -115,6 +171,16 @@ country_event = {
 
 	option = {
 		name = GF_overlord.202.a
+	}
+
+	option = {
+		name = GF_overlord.202.b
+		hidden_effect = {
+			set_country_flag = flag_GF_disable_pop_transfer_notification@from
+		}
+	}
+
+	after = {
 		capital_scope = {
 			custom_tooltip = GF_overlord.202.a.tooltip
 			hidden_effect = {
@@ -138,22 +204,38 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		is_valid_GF_OGAS_subnet = yes
-		is_ai = no
+	}
+
+	immediate = {
+		if = {
+			limit = { is_ai = yes }
+			add_modifier = {
+				modifier = GF_OGAS_subnet_assemble_speed_compensate
+				multiplier = 2.5
+				days = 360
+			}
+		}
 	}
 
 	option = {
 		name = GF_overlord.203.a
-		add_monthly_resource_mult = {
-			resource = minerals
-			value = -12
-			min = -2000
-			max = -150
-		}
-		add_monthly_resource_mult = {
-			resource = alloys
-			value = -12
-			min = -2000
-			max = -150
+	}
+
+	after = {
+		if = {
+			limit = { is_ai = no }
+			add_monthly_resource_mult = {
+				resource = minerals
+				value = -12
+				min = -3000
+				max = -500
+			}
+			add_monthly_resource_mult = {
+				resource = alloys
+				value = -12
+				min = -3000
+				max = -500
+			}
 		}
 	}
 }
