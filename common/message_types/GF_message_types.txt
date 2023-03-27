@@ -28,3 +28,34 @@ message_type = {
 	sound = "discovery"
 	ping = "mixed_notification_green"
 }
+
+
+message_type = {
+	key = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_SUBNET
+	icon = "GFX_message_refugees_arrived"
+	icon_frame = 1
+
+	name = "MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}
+
+message_type = {
+	key = MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_OVERLORD
+	icon = "GFX_message_refugees_arrived"
+	icon_frame = 1
+
+	name = "MESSAGE_TYPE_GF_ROBOT_POP_TRANSFERED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}
+
+message_type = {
+	key = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
+	icon = "GFX_message_planet_destroyed"
+	icon_frame = 1
+
+	name = "MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE"
+	sound = "event_air_raid_siren"
+	ping = "mixed_notification_red"
+}
