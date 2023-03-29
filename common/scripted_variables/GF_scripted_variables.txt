@@ -1,5 +1,5 @@
 # MOD Version
-@GF_Stellaris_MOD_VER = 20230300
+@GF_Stellaris_MOD_VER = 20230329
 
 
 # projects from Zion

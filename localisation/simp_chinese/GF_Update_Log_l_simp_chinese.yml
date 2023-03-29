@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230319$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230329$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+
+# 2023.3.29
+ GF_Stellaris_Log_20230329:0 "1. 添加§YOGAS作战中枢（鱼雷）§!\n2. 削弱§YOGAS作战中枢（自由）§!提供的效果，但现在所有军事舰船可用\n3. 优化了§YOGAS子网§!附庸相关的若干效果\n4. 优化§Y自动化遥控殖民地协议§!的负载计算和效果提示\n5. 轨道轰炸姿态§H坍塌液脏弹§!效果重做，提升了轰炸效率，开放兼容接口，详见§Y02_GF_on_actions.txt§!中的§Yon_planet_bombarded_to_collapse§!相关条目\n6. §Y逆向坍塌跃迁引擎§!范围提升至§G+70%§!\n7. 重新§H调整§!了国民理念§Y战术空降突击队§!的效果\n8. 建筑§Y$building_GF_collapse_2$§!和§Y$building_GF_reverse_collapse$§!现在需要§Y$building_capital$§!才能升级/建造"
 
 # 2023.3.19
  GF_Stellaris_Log_20230319:0 "1. 添加 £gf_core_chip£ §Y$gf_core_chip$§!短缺局势与相关事件\n2. 现在§Y自动化遥控殖民地§!将在人口超过一定数量后受到§R负面效果§!\n3. 调整了§Y遗迹署§!吸引力权重判定，现在别的派系不容易抢人口了\n4. 现在§YOGAS领袖§!死亡后会立即复活了\n5. £physics£ §Y坍塌跃迁引擎§!和 £physics£ §Y遗迹技术§!升级为§R危险科技§!\n6. 优化了§Y子网附庸§!的条件判定和移交人口的效果\n7. 大幅§R削弱§!了国民理念§Y战术空降突击队§!的效果\n8. 优化了§Y受难之路§!事件链和§YELID进攻§!事件\n9. 修复了一些错误"
