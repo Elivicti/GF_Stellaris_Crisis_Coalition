@@ -1,0 +1,24 @@
+GF_tradition_automation = {
+	tree_template = "tree_11_21"
+	adoption_bonus = "tr_gf_automation_adopt"
+	finish_bonus = "tr_gf_automation_finish"
+	traditions = {
+		"tr_gf_automation_1"
+		"tr_gf_automation_2"
+		"tr_gf_automation_3"
+		"tr_gf_automation_4"
+		"tr_gf_automation_5"
+	}
+
+	potential = {
+		has_authority = GF_auth_commonwealth
+	}
+
+	ai_weight = {
+		base = 0
+		modifier = {
+			add = 5000
+			has_authority = GF_auth_commonwealth
+		}
+	}
+}

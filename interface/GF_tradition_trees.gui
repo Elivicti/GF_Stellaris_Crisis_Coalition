@@ -1,0 +1,65 @@
+@entries_row1_y = 63
+@entries_row2_y = 329
+@entries_column1 = 11
+@entries_column2 = 325
+@entries_column3 = 639
+@entries_column4 = 953
+@entry_h = 260
+@entry_w = 308
+
+@two_layer_tree_h = 25
+@three_layer_tree_h = 0
+
+@dynamic_extra = 0.8
+@dynamic_extra_max = 260
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "tree_11_21"
+		position = { x = 0 y = @two_layer_tree_h }
+
+		iconType = {
+			name = "arrow_1"
+			spriteType = "GFX_arrow_single"
+			position = { x = 77 y = 100 }
+		}
+
+		iconType = {
+			name = "arrow_2"
+			spriteType = "GFX_arrow_merge"
+			position = { x = 147 y = 100 }
+		}
+
+		containerWindowType = {
+			name = "tree_11_12_tradition_1"
+			position = { x = 61 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_11_12_tradition_2"
+			position = { x = 61 y = 125 }
+		}
+
+		containerWindowType = {
+			name = "tree_11_12_tradition_3"
+			position = { x = 131 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_11_12_tradition_4"
+			position = { x = 201 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_11_12_tradition_5"
+			position = { x = 166 y = 125 }
+		}
+
+		# containerWindowType = {
+		# 	name = "tree_11_12_tradition_6"
+		# 	position = { x = 166 y = 155 }
+		# }
+		# Don't put any container windows above this comment that shouldn't contain a tradition.
+	}
+}
