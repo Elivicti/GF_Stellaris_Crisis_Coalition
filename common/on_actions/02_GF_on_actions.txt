@@ -21,10 +21,13 @@ on_tech_increased = {
 # from = fleet that fired
 on_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
 	events = {
-		crisis.5015
-		planet_destruction.600
+		toxoids.8016 #Destroyed knight Keep
+		crisis.5015 # Menace Objective - Destroy World/Empire
+		origin.3245 # Glassing a Progenitors Nest
+		planet_destruction.600 # frag holy world
 		
 		GF_ending_flash.100
+		awareness.150 # Planet cracker used OR planet terraformed, chance to gain 20 awareness.
 	}
 }
 
