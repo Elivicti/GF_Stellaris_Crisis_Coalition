@@ -23,7 +23,7 @@
  GF_storage_protocol_modifier_desc:0 "§Y$building_GF_doll_maintain_center_1$§!额外提供 £job_GF_dormancy_doll£ $mod_job_GF_dormancy_doll_add$: §G+10§!\n§Y$building_GF_doll_maintain_center_2$§!额外提供 £job_GF_dormancy_doll£ $mod_job_GF_dormancy_doll_add$: §G+20§!"
  GF_cloud_computing_protocol:0 "人形云计算协议"
  GF_cloud_computing_protocol_desc:0 "所有闲置人形的云图算力已接入科研网络。"
- GF_cloud_computing_protocol_modifier_desc:0 "来自§Y$job_GF_dormancy_doll_plural$§!的 £physics£ £society£ £engineering£ 研究点数: §G+2§!\n$mod_GF_planet_dormancy_energy_upkeep_add$: §R+0.2%§!"
+ GF_cloud_computing_protocol_modifier_desc:0 "来自§Y$job_GF_dormancy_doll_plural$§!的 £physics£ £society£ £engineering£ 研究点数: §G+2§!\n$mod_GF_planet_dormancy_energy_upkeep_add$: §R+0.1%§!"
  GF_auto_colony:0 "自动化遥控殖民地"
  GF_auto_colony_desc:0 "§T当前协议承载力上限：§Y[this.v_GF_auto_colony_capacity]§!\n基础承载力: §G+15§!\n£job_GF_maintain_doll£ $job_GF_maintain_doll_plural$提供的承载力: §G+0.1§!\n£job_GF_command_doll£ $job_GF_command_doll_plural$提供的承载力: §G+0.5§!\n\n当前协议负荷：§Y[this.v_GF_auto_colony_equivalent_pop_load]§!\n每人口 £pop£ 产生的负荷: §R+1§!\n£job_GF_dormancy_doll£ $job_GF_dormancy_doll_plural$产生的负荷: §R+0.25§!§!\n\n该殖民地以一个巨大的信号接发装置为中心，人形严格按照远端星球所传来的指令并配合预置的自律程序进行运作。"
  GF_auto_colony_boundary_modifier:0 "自动化遥控协议缺陷"
