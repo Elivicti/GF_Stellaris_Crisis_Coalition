@@ -116,6 +116,7 @@ GF_tech_reverse_collapse = {
 	cost = @tier4cost2
 	prerequisites = { "GF_tech_collapse" }
 	weight = @tier4weight2
+	is_rare = yes
 
 	# unlocks upgraded labs
 	potential = {
@@ -264,11 +265,6 @@ GF_tech_collapse_relic_tech = {
 	}
 
 	gateway = GF_tech_gateway_collapse_relic_tech
-
-	prerequisites = {
-		"GF_tech_collapse"
-		"GF_tech_reverse_collapse"
-	}
 
 	weight_modifier = {
 		factor = 0

@@ -235,7 +235,6 @@ GF_tech_collapsetech_weaponize = {
 	}
 
 	prerequisites = {
-		"GF_tech_collapse"
 		"GF_tech_reverse_collapse"
 	}
 
