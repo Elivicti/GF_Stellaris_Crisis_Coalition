@@ -206,7 +206,7 @@ GF_EMPIER_GK = {
 	}
 	ethic = "ethic_egalitarian"
 	ethic = "ethic_xenophile"
-	ethic = "ethic_militarist"
+	ethic = "ethic_materialist"
 
 	flags = {
 		human_1
