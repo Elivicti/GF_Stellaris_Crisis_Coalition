@@ -64,11 +64,11 @@
  GF_tech_collapsetech_weaponize_desc:0 "坍塌物质曾经差一点毁灭我们，但如果我们能掌控这份力量，它将化作我们的利刃。"
 
  GF_tech_ship_collapse_armor:0 "坍塌零素材料"
- GF_tech_ship_collapse_armor_desc:0 "在零素装甲中使用坍塌技术，进一步强化了零素装甲的强度，现在它能抵抗更加强大的火力了。"
+ GF_tech_ship_collapse_armor_desc:0 "在零素材料中混合使用坍塌技术研制而成的尖端反应装甲材料，能够更加高效地抵御敌方舰船的攻击。"
  GF_tech_collapse_power_core:0 "坍塌反应能源"
  GF_tech_collapse_power_core_desc:0 "类似于核裂变和核聚变，坍塌反应堆从物质在坍塌的过程中汲取能量。"
  GF_tech_collapse_jump_drive:0 "逆向坍塌跃迁"
- GF_tech_collapse_jump_drive_desc:0 "物质的坍塌与逆坍塌过程能够使我们能更轻易地打破时空的连续性，让舰船在一瞬之间“跳跃”到远处的空间。"
+ GF_tech_collapse_jump_drive_desc:0 "物质的坍塌与逆坍塌过程能够使我们能更轻易地打破时空的连续性，高效地实现空间中点对点的“跳跃”。"
 
  TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_REACTOR$"
  TECH_UNLOCK_GF_COLLAPSE_POWER_CORE_DESC:0 "§H$GF_COLLAPSE_REACTOR$§!\n$GF_tech_collapse_power_core_desc$"
@@ -78,25 +78,26 @@
 
 
  GF_tech_collapse_relic_tech:0 "遗迹技术"
- GF_tech_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管我们确信这部分技术只是全部遗迹文明技术的冰山一角，它也足够把我们帝国的研究提升到一个新的高度了。"
+ GF_tech_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管只是全部遗迹文明技术的冰山一角，它也足以重构我们对微观粒子的认知。"
 
  GF_tech_elid_army:0 "量产E.L.I.D军队"
  GF_tech_elid_army_desc:0 "这些基因改造的克隆士兵经过坍塌辐射照射后成为了令人胆寒的硅化生物，我们可以通过一定的手段驱使这些ELID感染者，为我们的敌人带去恐惧。"
 
  GF_tech_collapse_energy_lance:0 "高能坍塌粒子射线"
- GF_tech_collapse_energy_lance_desc:0 "坍塌粒子对物质有极强的损坏能力，若是能将其聚焦并发射出去，想必能对敌方舰船造成相当可观的伤害。"
+ GF_tech_collapse_energy_lance_desc:0 "坍塌粒子能够将物质打碎为最基本的状态，一束聚焦的高能坍塌粒子将成为几乎任何舰船装甲的噩梦。"
 
  GF_tech_collapse_ending_flash:0 "终末辉光"
  GF_tech_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
+ GF_tech_collapse_ending_flash_desc:0 "以更大的功率向整个星球发射坍塌粒子，能够将地表的任何造物打碎为基本粒子，并彻底摧毁甚至重塑行星地表。"
 
  GF_tech_combat_ogas_computers:0 "OGAS作战中枢"
  GF_tech_combat_ogas_computers_desc:0 "OGAS系统具有庞大的算力，在战场的风险评估和战术优化上具有无可比拟的优势。"
  
  GF_tech_miniaturized_collapse_lance:0 "小型坍塌粒子武器"
- GF_tech_miniaturized_collapse_lance_desc:0 "这些像激光一样的武器尽管在威力与射程上无法比拟常规的大型坍塌粒子射线阵列，但依然足够具有威慑，尤其是当它们被搬上快速灵活的中小型舰船以后。"
+ GF_tech_miniaturized_collapse_lance_desc:0 "曾经需要大型发射阵列的坍塌粒子射线如今搬上了快速灵活的中小型舰船，而仍然足够具有威慑力。"
 
  GF_tech_collapse_bomb:0 "坍塌液脏弹"
- GF_tech_collapse_bomb_desc:0 "$GF_tech_collapse_bomb$已经在我们的历史上被证明对人员和设施具有毁灭性的打击能力，将其用于轨道轰炸将是瓦解敌方星球防御甚至毁灭敌方星球的不二之选。"
+ GF_tech_collapse_bomb_desc:0 "坍塌液能够造成灾难性的基建和生态破坏，将其作为脏弹的装药，并用于轨道轰炸将能有效瓦解敌方星球防御甚至毁灭整个星球。"
  GF_tech_collapse_bomb_title:0 "§H解锁轨道轰炸姿态：§!$bombardment_collapsebomb$"
  GF_tech_collapse_bomb_desc:0 "$bombardment_collapsebomb_desc$"
  # GF_tech_collapse_bomb_desc:0 "我们的舰队将会装备$GF_tech_collapse_bomb$以备用于轨道轰炸，我们可以在政策中选择是否允许我们的舰队这样做。"
