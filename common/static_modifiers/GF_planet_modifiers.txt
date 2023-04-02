@@ -10,7 +10,7 @@ GF_cloud_computing_protocol = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_GF_cloud_computing_protocol.dds"
 	icon_frame = 2
 	custom_tooltip = GF_cloud_computing_protocol_modifier_desc
-	GF_planet_dormancy_upkeep_mult = 1.0
+	GF_planet_dormancy_energy_upkeep_add = 0.2
 }
 
 GF_storage_protocol = {

@@ -46,6 +46,7 @@
  GF_doll_consumer_goods_upkeep:0 "人形人口$consumer_goods$ £consumer_goods£ 维护费"
  GF_doll_food_upkeep:0 "人形人口$food$ £food£ 维护费"
  mod_GF_planet_dormancy_upkeep_mult:0 "人形休眠舱位维护费"
+ mod_GF_planet_dormancy_energy_upkeep_add:0 "人形休眠舱位 £energy£ 维护费"
  mod_country_base_gf_core_chip_produces_add:0 "基础每月核心芯片"
  mod_country_gf_core_chip_produces_mult:0 "每月核心芯片"
  mod_GF_ANDROID_species_trait_points_add:0 "人形机体升级点数"

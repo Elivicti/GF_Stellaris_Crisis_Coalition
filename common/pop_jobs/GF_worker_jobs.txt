@@ -67,9 +67,6 @@ GF_dormancy_doll = {
 	}
 	resources = {
 		category = GF_planet_dormancy
-		upkeep = {
-			energy = 0.1
-		}
 		produces = {
 			trigger = {
 				exists = planet

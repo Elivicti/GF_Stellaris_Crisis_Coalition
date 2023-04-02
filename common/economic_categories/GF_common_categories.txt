@@ -1,13 +1,14 @@
 GF_planet_dormancy = {
 	use_for_ai_budget = yes
 	parent = planet_jobs
-	generate_mult_modifiers = {
-		upkeep
-		produces
-	}
+	# generate_mult_modifiers = {
+	# 	upkeep
+	# 	produces
+	# }
 
 	generate_add_modifiers = {
-		produces
+		upkeep
+		# produces
 	}
 }
 
