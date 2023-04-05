@@ -13,7 +13,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.11.a"
-		owner = { add_resource = { minor_artifacts = 1 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹1事件2
@@ -28,7 +28,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.12.a"
-		owner = { add_resource = { minor_artifacts = 2 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹1事件3
@@ -47,7 +47,7 @@ fleet_event = {
 		name = "GF_sf_site.13.a"
 		owner = {
 			country_event = { id = GF_sf.3 }
-			add_resource = { minor_artifacts = 3 }
+			small_artifact_reward = yes
 		}
 	}
 }
@@ -65,7 +65,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.21.a"
-		owner = { add_resource = { minor_artifacts = 1 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹2事件2
@@ -80,7 +80,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.22.a"
-		owner = { add_resource = { minor_artifacts = 2 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹2事件3
@@ -95,7 +95,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.23.a"
-		owner = { add_resource = { minor_artifacts = 3 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹2事件4
@@ -113,7 +113,7 @@ fleet_event = {
 	option = {
 		name = "GF_sf_site.24.a"
 		owner = {
-			add_resource = { minor_artifacts = 4 }
+			small_artifact_reward = yes
 			country_event = { id = GF_sf.5 }
 		}
 	}
@@ -131,7 +131,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.31.a"
-		owner = { add_resource = { minor_artifacts = 1 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹3事件2
@@ -146,7 +146,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.32.a"
-		owner = { add_resource = { minor_artifacts = 2 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹3事件3
@@ -161,7 +161,7 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.33.a"
-		owner = { add_resource = { minor_artifacts = 3 } }
+		small_artifact_reward = yes
 	}
 }
 #遗迹3事件4
@@ -176,8 +176,8 @@ fleet_event = {
 	is_triggered_only = yes
 	option = {
 		name = "GF_sf_site.34.a"
+		small_artifact_reward = yes
 		owner = {
-			add_resource = { minor_artifacts = 5 }
 			country_event = { id = GF_sf.7 }
 		}
 	}

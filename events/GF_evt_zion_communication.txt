@@ -499,7 +499,7 @@ country_event = {
 	option = {
 		name = GF_zion.21000.orb_mainframe_alpha
 		trigger = {
-			has_relic = GF_relic_orb_mainframe_alpha
+			has_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_finished
 			NOT = { has_country_flag = flag_GF_requested_zion_deep_dive }
 		}
 		allow = {

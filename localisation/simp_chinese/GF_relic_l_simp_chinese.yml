@@ -1,7 +1,11 @@
 ﻿l_simp_chinese:
 #################################
  GF_relic_orb_mainframe_alpha:0 "神秘的球形主机-阿尔法"
- GF_relic_orb_mainframe_alpha_desc:0 "一个由未知高科技组成的计算机主机，唯一可以确定的是OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"
+ GF_relic_orb_mainframe_alpha_desc_no_activation:0 "一个由未知高科技组成的计算机主机，不知为何无法启动，但我们的人形能与它被动地建立链接并获得一定程度的运行效率提升。"
+ GF_relic_orb_mainframe_alpha_desc_can_activate:0 "一个由未知高科技组成的计算机主机，唯一可以确定的是OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"
+ GF_relic_orb_mainframe_alpha_desc:0 "[This.GF_GetOrbMainframeAlphaDesc]"
+ GF_requies_analyse_orb_mainframe_alpha_finished:0 "£trigger_no£需要完成稀有文物行动：§Y$GF_artifact_analyse_orb_mainframe_alpha$§!"
+ GF_unkonwn_activate_effect_relic_orb_mainframe_alpha:0 "§R我们尚无法得知启动它会有什么效果§!"
 
  GF_relic_triumph_cooldown_tooltip:0 "\n$relic_activation_cooldown$：£time£ §Y$COOLDOWN|*0$§!"
  GF_relic_require_zion_deep_dive_no_cooldown:0 "£trigger_no£ 需要$GF_ZION$处于稳定化的状态"

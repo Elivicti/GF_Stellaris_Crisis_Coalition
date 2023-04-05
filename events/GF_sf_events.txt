@@ -376,22 +376,19 @@ country_event = {
 	id = GF_sf.7
 	title = "GF_sf.7.name"
 	desc = "GF_sf.7.desc"
-	picture = GFX_evt_physics_research
+	picture = GFX_evt_GF_core
 	show_sound = event_activating_unknown_technology
 	location = capital_scope
-	trackable = yes
 
 	is_triggered_only = yes
 	
 	option = {
 		name = "GF_sf.7.a"
-		capital_scope = {
-			enable_special_project = {
-				name = "GF_sf_event_project_7"
-				location = this
-				owner = prev
-			}
+		add_relic = GF_relic_orb_mainframe_alpha
+		hidden_effect = {
+			set_country_flag = flag_GF_relic_orb_mainframe_alpha_get
 		}
+		custom_tooltip = "GF_sf.7.a.tooltip"
 	}
 }
 
@@ -404,14 +401,20 @@ country_event = {
 	show_sound = event_door_opening
 	
 	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_finished
+	}
 	
 	option = {
 		name = "GF_sf.8.a"
-		add_relic = GF_relic_orb_mainframe_alpha
-		end_event_chain = "GF_sf_event_chain"
-		hidden_effect = {
-			set_country_flag = flag_GF_relic_orb_mainframe_alpha_get
+		custom_tooltip = "GF_sf.8.a.tooltip"
+		add_research_option = GF_tech_ternary_quantum_computing
+		if = {
+			limit = { has_country_flag = flag_GF_established_communication_with_zion }
+			custom_tooltip = "GF_sf.8.a.zion_tooltip"
 		}
+		end_event_chain = "GF_sf_event_chain"
 	}
 }
 

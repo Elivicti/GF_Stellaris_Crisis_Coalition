@@ -1,0 +1,30 @@
+@minor_artifact_decision_cost = 100
+@minor_artifact_decision_duration = 3600
+@minor_artifact_ai_threshold = 200
+
+GF_artifact_analyse_orb_mainframe_alpha = {
+	potential = {
+		has_country_flag = flag_GF_relic_orb_mainframe_alpha_get
+		NOT = { has_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_started }
+	}
+
+	resources = {
+		category = artifact_actions
+		cost = {
+			trigger = { has_ancrel = yes }
+			minor_artifacts = 500
+		}
+		cost = {
+			trigger = { has_ancrel = no }
+			unity = 5000
+		}
+	}
+
+	effect = {
+		set_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_started
+		enable_special_project = {
+			name = GF_sf_event_project_7
+			location = capital_scope
+		}
+	}
+}
