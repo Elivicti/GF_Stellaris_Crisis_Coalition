@@ -11,7 +11,7 @@ GF_tradition_automation = {
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		has_technology = GF_tech_ternary_quantum_computing
 	}
 
 	ai_weight = {

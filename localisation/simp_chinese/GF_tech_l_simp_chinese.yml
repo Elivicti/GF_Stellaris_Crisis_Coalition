@@ -119,3 +119,8 @@
 
  GF_tech_collapse_cannon:0 "高爆坍塌机炮"
  GF_tech_collapse_cannon_desc:0 "特化改进过的自动火炮，采用特制的高爆型坍塌晶格装药炮弹，能够向目标倾泻一片致命的弹幕。"
+
+ GF_tech_ternary_quantum_computing:0 "三进制量子计算"
+ GF_tech_ternary_quantum_computing_desc:0 "三进制量子计算desc"
+ GF_UNLOCK_TRADITION_AUTOMATION_TITLE:0 "§H解锁传统：§!$GF_tradition_automation$"
+ GF_UNLOCK_TRADITION_AUTOMATION_DESC:0 "$GF_tradition_automation_desc$"

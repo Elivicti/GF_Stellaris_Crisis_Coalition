@@ -435,3 +435,27 @@ GF_tech_collapse_slingshot_protocal = {
 		ship_jumpdrive_cooldown_mult = -0.25
 	}
 }
+
+GF_tech_ternary_quantum_computing = {
+	area = physics
+	tier = 5
+	cost = @tier5cost3
+	weight = 0
+	category = { computing }
+	is_rare = yes
+
+	potential = {
+		has_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_started
+	}
+
+	modifier = {
+		GF_OGAS_threads_add = 1
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = GF_UNLOCK_TRADITION_AUTOMATION_TITLE
+			desc = GF_UNLOCK_TRADITION_AUTOMATION_DESC
+		}
+	}
+}
