@@ -11,6 +11,10 @@ GF_tech_doll_assemble = {
 	potential = {
 		GF_potential_trigger_advanced = yes
 	}
+
+	prereqfor_desc = {
+		hide_prereq_for_desc = resource
+	}
 }
 GF_tech_doll_modding = {
 	cost = @tier3cost1
