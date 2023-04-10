@@ -16,9 +16,11 @@ event = {
 		}
 		every_country = {
 			limit = { has_origin = GF_origin_commonwealth }
-			fire_on_action = {
-				on_action = on_GF_game_start
+			if = {
+				limit = { NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled } }
+				set_country_flag = flag_GF_main_country
 			}
+			fire_on_action = { on_action = on_GF_game_start }
 		}
 	}
 }
@@ -44,13 +46,12 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_origin = GF_origin_commonwealth
+		NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled }
 	}
 
 	immediate = {
-		if = {
-			limit = { NOT = { has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled } }
-			set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
-		}
+		# set_country_flag = flag_GF_main_country
+		set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
 		add_resource = { gf_core_chip = 100 }
 
 		# Inititalize country's basic characteristics
@@ -141,6 +142,62 @@ country_event = {
 					}
 				}
 				else = { set_species_flag = flag_GF_GAVIRUL_species }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GF_start.2
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = GF_origin_commonwealth
+		has_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
+		NOT = { has_country_flag = flag_GF_main_country }
+	}
+
+	immediate = {
+		set_origin = origin_default
+		create_species = {
+			class = HUM
+			portrait = random
+			homeworld = root.capital_scope
+			name = random
+			plural = random
+			adjective = random
+			name_list = HUMAN1
+			traits = {
+				trait = trait_adaptive
+				trait = trait_nomadic
+				trait = trait_wasteful
+			}
+			effect = {
+				save_event_target_as = target_species
+			}
+		}
+		every_owned_pop = { change_species = event_target:target_species }
+		every_owned_leader = { change_species = event_target:target_species }
+		change_dominant_species = {
+			species = event_target:target_species
+			change_all = yes
+		}
+		ruler = {
+			change_leader_portrait = event_target:target_species
+			remove_trait = GF_trait_leader_ogas
+			add_trait = trait_ruler_eye_for_talent
+		}
+		while = {
+			count = 2
+			random_owned_pop = { kill_pop = yes }
+		}
+		change_government = random
+		remove_country_flag = human_1
+		capital_scope = {
+			remove_planet_flag = planet_earth
+			solar_system = {
+				remove_star_flag = sol_system
+				remove_star_flag = sol
 			}
 		}
 	}

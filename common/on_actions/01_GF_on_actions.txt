@@ -9,6 +9,7 @@ on_game_start = {
 on_GF_game_start = {
 	events = {
 		GF_start.1	# 初始化开局
+		GF_start.2	# 移除重复危机联合
 		GF_sf.0		# 铁血事件链
 		GF_recover_plan.0 # 复兴协议
 	}
