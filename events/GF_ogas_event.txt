@@ -19,6 +19,7 @@ country_event = {
 			effect = {
 				remove_trait = GF_trait_leader_doll
 				save_global_event_target_as = GF_ogas_leader
+				set_leader_flag = has_gained_level_trait
 				set_leader_flag = flag_GF_ogas_leader
 				if = {
 					limit = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }

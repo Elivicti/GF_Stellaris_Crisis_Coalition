@@ -119,6 +119,7 @@ country_event = {
 			change_species = event_target:GF_doll_species
 			add_trait = GF_trait_leader_ogas
 			set_leader_flag = flag_GF_ogas_leader
+			set_leader_flag = has_gained_level_trait
 			save_global_event_target_as = GF_ogas_leader
 		}
 
@@ -162,7 +163,7 @@ country_event = {
 		create_species = {
 			class = HUM
 			portrait = random
-			homeworld = root.capital_scope
+			homeworld = capital_scope
 			name = random
 			plural = random
 			adjective = random
@@ -185,7 +186,9 @@ country_event = {
 		ruler = {
 			change_leader_portrait = event_target:target_species
 			remove_trait = GF_trait_leader_ogas
-			add_trait = trait_ruler_eye_for_talent
+			remove_leader_flag = flag_GF_ogas_leader
+			remove_leader_flag = has_gained_level_trait
+			add_random_leader_trait = yes
 		}
 		while = {
 			count = 2
