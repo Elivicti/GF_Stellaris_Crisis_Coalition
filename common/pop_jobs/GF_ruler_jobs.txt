@@ -21,7 +21,7 @@ GF_URNC_commissioner = {
 	# }
 
 	resources = {
-		category = planet_administrators
+		category = planet_politicians
 		produces = {
 			unity = 4
 		}
@@ -177,7 +177,7 @@ GF_AU_director = {
 		}
 		modifier = {
 			factor = 5
-			has_job = head_researcher
+			has_job = GF_AU_director
 		}
 		modifier = {
 			factor = 0.65
@@ -315,7 +315,7 @@ GF_GK_officer = {
 		}
 		modifier = {
 			factor = 5
-			has_job = executive
+			has_job = GF_GK_officer
 		}
 		# crisis purge
 		modifier = {
