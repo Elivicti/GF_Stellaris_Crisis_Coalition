@@ -22,7 +22,7 @@
 
 
 GF_OGAS_threads_add = {
-	icon = mod_country_admin_cap_add
+	icon = mod_GF_OGAS_threads_add
 	good = yes
 	category = country
 }
