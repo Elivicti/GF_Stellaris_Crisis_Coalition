@@ -139,6 +139,7 @@ GF_trait_logical_subroutine = {
 			has_ascension_perk = ap_GF_mind_upgrade
 		}
 	}
+	custom_tooltip_with_modifiers = GF_trait_logical_subroutine_effect
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.2
 		planet_jobs_physics_research_produces_mult = 0.2
@@ -176,6 +177,7 @@ GF_trait_tacticalchip = {
 			has_ascension_perk = ap_GF_mind_upgrade
 		}
 	}
+	custom_tooltip_with_modifiers = GF_trait_tacticalchip_effect
 	modifier = {
 		army_damage_mult = 0.20
 	}
@@ -194,6 +196,7 @@ GF_trait_zener_protocol = {
 			has_ascension_perk = ap_GF_mind_upgrade
 		}
 	}
+	custom_tooltip_with_modifiers = GF_trait_zener_protocol_effect
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.15
 		species_empire_size_mult = -0.15
