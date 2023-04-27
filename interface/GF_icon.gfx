@@ -95,4 +95,14 @@ spriteTypes = {
 		name = "GFX_colony_type_GF_auto_colony"
 		textureFile = "gfx/interface/planetview/GF_colony_type_auto_colony.dds"
 	}
+
+	# planet types
+	spriteType = {
+		name = "GFX_planet_type_GF_collapsed"
+		textureFile = "gfx/interface/icons/planet_types/pc_type_GF_collapsed.dds"
+	}
+	spriteType = {
+		name = "GFX_planet_type_GF_automated_city"
+		textureFile = "gfx/interface/icons/planet_types/pc_type_GF_automated_city.dds"
+	}
 }
