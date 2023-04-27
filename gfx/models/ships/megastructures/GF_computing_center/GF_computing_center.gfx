@@ -1,0 +1,22 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_computing_center_rings_mesh"
+		file = "gfx/models/ships/colossus/mammalian_01/mammalian_01_colossus_rings.mesh"
+		
+		animation = { id = "idle" type = "mammalian_01_colossus_rings_idle_animation" }
+		
+		meshsettings = {
+			# name = "rings_meshShape"
+			# index = 0
+			texture_diffuse = "mammalian_01_colossus_diffuse.dds"
+			texture_normal = "mammalian_01_colossus_normal.dds"
+			texture_specular = "mammalian_01_colossus_specular.dds"
+			shader = "PdxMeshShipCloaked"	# 会莫名其妙只隐形半个模型
+			# shader = "PdxMeshShip"		# 默认着色器
+
+			# 备用，恶魔船的着色器看着也有隐形（半透明）效果
+			# texture_diffuse = "ship_mask.dds"			# 恶魔船贴图
+			# shader = "PdxMeshExtraDimensionalShip"	# 恶魔船着色器
+		}
+	}
+}

@@ -1,0 +1,61 @@
+
+entity = {
+	name = "GF_computing_center_phase_01_entity"
+	locator = { name = "root"	position = { 0 0 0 } }
+
+	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
+
+	scale = 1.0
+	cull_radius = 500
+}
+
+entity = {
+	name = "GF_computing_center_phase_02_entity"
+	locator = { name = "root"	position = { 0 0 0 } }
+
+	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_1_entity" }
+
+	attach = { "root" = "penta_rays_short_entity" }
+
+	scale = 1.0
+	cull_radius = 500
+}
+
+entity = {
+	name = "GF_computing_center_phase_03_entity"
+	locator = { name = "root"	position = { 0 0 0 } }
+	locator = { name = "ring"	position = { 0 0 0 } rotation = { 90 90 0 } }
+
+	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_1_entity" }
+	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
+	attach = { "ring" = "GF_computing_center_rings_entity" }
+
+	attach = { "root" = "penta_rays_short_entity" }
+
+	scale = 1.0
+	cull_radius = 500
+}
+
+entity = {
+	name = "GF_computing_center_phase_03_construction_entity"
+	locator = { name = "root"	position = { 0 0 0 } }
+	locator = { name = "ring"	position = { 0 0 0 } rotation = { 90 90 0 } }
+
+	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
+	attach = { "ring" = "GF_computing_center_rings_entity" }
+
+	scale = 1.0
+	cull_radius = 500
+}
+
+entity = {
+	name = "GF_computing_center_rings_entity"
+	pdxmesh = "GF_computing_center_rings_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	scale = 7.0
+}
+
