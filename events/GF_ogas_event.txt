@@ -375,8 +375,8 @@ country_event = {
 		trigger = { GF_OGAS_has_available_threads = no }
 	}
 	diplomatic = yes
-	custom_gui = "GF_DiplomaticEventWindow"
-	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	custom_gui = "GF_OGAS_mission_system"
+	custom_gui_option = "GF_OGAS_mission_system_Option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
