@@ -46,6 +46,78 @@ country_event = {
 	}
 }
 
+# from = species
+country_event = {
+	id = GF_doll_leader.1
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { has_trait = GF_trait_tacticalchip }
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				is_same_species = from
+				NOR = {
+					has_trait = GF_trait_leader_admiral_plus
+					has_trait = GF_trait_leader_general_plus
+				}
+			}
+			switch = {
+				trigger = leader_class
+				admiral = { add_trait = GF_trait_leader_admiral_plus }
+				general = { add_trait = GF_trait_leader_general_plus }
+			}
+		}
+	}
+}
+
+# from = species
+country_event = {
+	id = GF_doll_leader.2
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { has_trait = GF_trait_zener_protocol }
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				is_same_species = from
+				leader_class = governor
+				NOT = { has_trait = GF_trait_leader_governor_plus }
+			}
+			add_trait = GF_trait_leader_governor_plus
+		}
+	}
+}
+
+# from = species
+country_event = {
+	id = GF_doll_leader.3
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { has_trait = GF_trait_logical_subroutine }
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				is_same_species = from
+				leader_class = scientist
+				NOT = { has_trait = GF_trait_leader_scientist_plus }
+			}
+			add_trait = GF_trait_leader_scientist_plus
+		}
+	}
+}
+
 country_event = {
 	id = GF_doll_leader.100
 	is_triggered_only = yes

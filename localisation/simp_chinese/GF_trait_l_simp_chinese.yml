@@ -33,10 +33,13 @@
  GF_trait_emotional_subroutine_desc:0 "§L该可选模块极大的改善了人机交互体验，使体验者更难区分人与人形二者之间的不同。§!\n"
 ############
  GF_trait_tacticalchip:0 "战术芯片"
+ GF_trait_tacticalchip_effect:0 "§G来自这个物种的舰队司令和陆军将领能够获得额外的特质和加成§!"
  GF_trait_tacticalchip_desc:0 "§L集成了各种战斗知识、技巧甚至是指挥与战略规划的芯片，让人形可以担任陆军将领与舰队司令等职位时具有更大的优势。§!\n"
  GF_trait_logical_subroutine:0 "逻辑子模块"
+ GF_trait_logical_subroutine_effect:0 "§G来自这个物种的科学家能够获得额外的特质和加成§!"
  GF_trait_logical_subroutine_desc:0 "§L该可选模块加载了各式各样的复杂知识与最新的思考模式方程，这将保证人形在科学上有更好创造性与逻辑思考能力，增强科研能力。§!\n"
  GF_trait_zener_protocol:0 "齐纳协议升级"
+ GF_trait_zener_protocol_effect:0 "§G来自这个物种的总督能够获得额外的特质和加成§!"
  GF_trait_zener_protocol_desc:0 "§L人形内置的通讯与权限协议的升级版，可以更高效的传递人形与人形、人形与权限所有者之间的信息，让人形更加胜任总督职位。§!\n"
  GF_trait_sercurity_program:0 "底层安全程式"
  GF_trait_sercurity_program_desc:0 "§L原本它的开发是为了抵御伞病毒的攻击，后来则发展出了更复杂的作用，它可以监视、引导人形心智云图的运行，自动过滤掉可能危及任务执行与底层安全的思维信号，保证人形忠实的履行她们的使命。§!\n"

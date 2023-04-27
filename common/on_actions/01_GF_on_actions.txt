@@ -114,3 +114,16 @@ on_leader_death = {
 		GF_ogas.50
 	}
 }
+
+# Triggers when a Special Project to apply a species modification template has completed.
+# Note that this will trigger once for each combination of planet & original species.
+#
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+		GF_doll_leader.1
+		GF_doll_leader.2
+		GF_doll_leader.3
+	}
+}
