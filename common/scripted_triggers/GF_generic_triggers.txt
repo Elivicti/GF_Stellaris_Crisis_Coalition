@@ -52,15 +52,40 @@ GF_can_contact_OGAS = {
 	}
 }
 
-# scope = any
-GF_OGAS_has_available_threads = {
+# scope = country
+GF_OGAS_has_used_threads_over_cap = {
+	check_modifier_value = {
+		modifier = GF_OGAS_threads_used_add
+		value > value:GF_get_OGAS_threads_cap
+	}
+}
+
+# scope = country
+GF_OGAS_has_any_available_threads = {
+	check_modifier_value = {
+		modifier = GF_OGAS_threads_add
+		value > value:GF_get_OGAS_threads_used
+	}
+}
+
+# scope = country
+GF_require_OGAS_has_available_threads = {
 	custom_tooltip = {
-		fail_text = GF_OGAS_has_no_threads_available
-		event_target:GF_ogas_owner = {
-			check_variable = {
-				which = v_GF_ogas_threads_used
-				value < modifier:GF_OGAS_threads_add
-			}
+		fail_text = GF_require_OGAS_has_available_threads_more_than_$amount$
+		check_modifier_value = {
+			modifier = GF_OGAS_threads_add
+			value >= value:GF_get_OGAS_threads_used|add|$amount$|
+		}
+	}
+}
+
+# scope = country
+GF_require_OGAS_has_available_threads_with_trigger_icon = {
+	custom_tooltip = {
+		fail_text = GF_require_OGAS_has_available_threads_more_than_$amount$_with_trigger_icon
+		check_modifier_value = {
+			modifier = GF_OGAS_threads_add
+			value >= value:GF_get_OGAS_threads_used|add|$amount$|
 		}
 	}
 }
