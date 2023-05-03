@@ -95,6 +95,50 @@ spriteTypes = {
 		name = "GFX_colony_type_GF_auto_colony"
 		textureFile = "gfx/interface/planetview/GF_colony_type_auto_colony.dds"
 	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_energy"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_energy.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_minerals"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_minerals.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_food"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_food.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_alloys"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_alloys.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_consumer_goods"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_consumer_goods.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_refinery"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_refinery.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_research"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_research.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_factory"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_factory.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_collapse"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_collapse.dds"
+	}
+	spriteType = {
+		name = "GFX_colony_type_GF_auto_city_reverse_collapse"
+		textureFile = "gfx/interface/planetview/GF_colony_type_automated_city_reverse_collapse.dds"
+	}
 
 	# planet types
 	spriteType = {
@@ -104,5 +148,51 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_planet_type_GF_automated_city"
 		textureFile = "gfx/interface/icons/planet_types/pc_type_GF_automated_city.dds"
+	}
+
+	# districts
+	spriteType = {
+		name = "GFX_district_GF_automated_nexus"
+		textureFile = "gfx/interface/icons/districts/district_GF_automated_nexus.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_energy"
+		textureFile = "gfx/interface/icons/districts/district_rw_generator.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_mining"
+		textureFile = "gfx/interface/icons/districts/district_mining.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_farming"
+		textureFile = "gfx/interface/icons/districts/district_rw_farming.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_foundary"
+		textureFile = "gfx/interface/icons/districts/district_arcology_arms_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_industry"
+		textureFile = "gfx/interface/icons/districts/district_arcology_civilian_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_refinery"
+		textureFile = "gfx/interface/icons/districts/district_GF_automated_refinery.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_research"
+		textureFile = "gfx/interface/icons/districts/district_research.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_factory"
+		textureFile = "gfx/interface/icons/districts/district_GF_assembly.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_collapse"
+		textureFile = "gfx/interface/icons/districts/district_GF_collapse.dds"
+	}
+	spriteType = {
+		name = "GFX_district_GF_automated_reverse_collapse"
+		textureFile = "gfx/interface/icons/districts/district_GF_automated_reverse_collapse.dds"
 	}
 }
