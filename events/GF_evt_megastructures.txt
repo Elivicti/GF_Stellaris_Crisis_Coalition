@@ -1,0 +1,258 @@
+namespace = GF_mega
+
+# from = megastructure
+country_event = {
+	id = GF_mega.100
+	title = GF_mega.100.name
+	desc = GF_mega.100.desc
+	show_sound = event_dyson_sphere_build_start
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_mega.100.a
+	}
+}
+country_event = {
+	id = GF_mega.101
+	title = GF_mega.101.name
+	desc = GF_mega.101.desc
+	show_sound = event_dyson_sphere_build_upgrade_frame
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_mega.101.a
+	}
+}
+country_event = {
+	id = GF_mega.102
+	title = GF_mega.102.name
+	desc = GF_mega.102.desc
+	show_sound = event_dyson_sphere_build_upgrade_panel
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_mega.102.a
+	}
+}
+country_event = {
+	id = GF_mega.103
+	title = GF_mega.103.name
+	desc = GF_mega.103.desc
+	show_sound = event_think_tank_build_complete
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_mega.103.a
+	}
+}
+
+@GF_computing_center_expire_date_limit = 90
+@GF_computing_center_expire_date_limit_expire = 120
+
+# on_megastructure_change_owner
+# this = new owner
+# from = megastructure
+# fromfrom = old owner (if existing)
+country_event = {
+	id = GF_mega.181
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_technology = GF_tech_ogas_computing_center }
+		from = { GF_is_computing_center = yes }
+	}
+
+	immediate = {
+		random_playable_country = {
+			limit = {
+				from = { has_megastructure_flag = flag_mega_GF_computing_center_@prev }
+			}
+			save_event_target_as = old_owner
+		}
+		from = {
+			set_saved_date = {
+				key = computing_center_expire_date
+				days_from_present = @GF_computing_center_expire_date_limit
+				expires = @GF_computing_center_expire_date_limit_expire
+			}
+			solar_system = {
+				system_event = {
+					id = GF_mega.185
+					days = @GF_computing_center_expire_date_limit
+					scopes = {
+						from = prevprev.from
+						fromfrom = event_target:old_owner
+					}
+				}
+			}
+		}
+		if = {
+			limit = { exists = event_target:old_owner }
+			event_target:old_owner = {
+				country_event = {
+					id = GF_mega.190
+					scopes = { from = prev.from }
+				}
+			}
+		}
+		else = {
+			GF_remove_computing_center_effect = { target = from }
+			# remove_megastructure = from
+		}
+	}
+}
+
+# on_megastructure_ownerless
+# Executed when a megastructure is rendered ownerless
+# this = solar system containing megastructure
+# from = megastructure
+# fromfrom = old owner (if existing)
+system_event = {
+	id = GF_mega.182
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { GF_is_computing_center = yes }
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = fromfrom }
+			from = {
+				set_saved_date = {
+					key = computing_center_expire_date
+					days_from_present = @GF_computing_center_expire_date_limit
+					expires = @GF_computing_center_expire_date_limit_expire
+				}
+				save_event_target_as = center
+			}
+			system_event = {
+				id = GF_mega.185
+				days = @GF_computing_center_expire_date_limit
+				scopes = {
+					from = from
+					fromfrom = fromfrom
+				}
+			}
+			fromfrom = {
+				country_event = {
+					id = GF_mega.190
+					scopes = { from = prev.from }
+				}
+			}
+		}
+		else = {
+			GF_remove_computing_center_effect = { target = from }
+			# remove_megastructure = from
+		}
+	}
+}
+
+# this = new owner
+# from = megastructure
+# fromfrom = old owner (if existing)
+country_event = {
+	id = GF_mega.184
+	title = GF_mega.184.name
+	desc = GF_mega.184.desc
+	location = from.solar_system
+
+	is_triggered_only = yes
+	trigger = {
+		has_technology = GF_tech_ogas_computing_center
+		from = { GF_is_computing_center = yes }
+	}
+
+	option = {
+		name = GF_mega.184.a
+	}
+}
+
+system_event = {
+	id = GF_mega.185
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			NOT = { exists = space_owner }
+			space_owner = {
+				NOT = { has_technology = GF_tech_ogas_computing_center }
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { exists = fromfrom }
+			fromfrom = {
+				country_event = {
+					id = GF_mega.191
+					scopes = { from = prev }
+				}
+			}
+		}
+		GF_remove_computing_center_effect = { target = from }
+		# remove_megastructure = from
+	}
+}
+
+
+# from = megastructure
+country_event = {
+	id = GF_mega.190
+	title = GF_mega.190.name
+	desc = GF_mega.190.desc
+	location = from.solar_system
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_mega.190.a
+	}
+}
+
+# from = system
+country_event = {
+	id = GF_mega.191
+	title = GF_mega.191.name
+	desc = GF_mega.191.desc
+	location = from
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = flag_GF_has_built_computing_center
+	}
+
+	option = {
+		name = GF_mega.191.a
+	}
+}
+
+country_event = {
+	id = GF_mega.195
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_flag = flag_GF_has_built_computing_center
+		fromfrom.solar_system = {
+			every_ambient_object = {
+				limit = { has_ambient_object_flag = GF_computing_center_ambient }
+				destroy_ambient_object = this
+			}
+		}
+	}
+}

@@ -127,3 +127,38 @@ on_modification_complete = {
 		GF_doll_leader.3
 	}
 }
+
+# Executed when a megastructure has a new owner
+# this = new owner
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_change_owner = {
+	events = {
+		GF_mega.181
+		GF_mega.184
+	}
+}
+
+# Executed when a megastructure is rendered ownerless
+# this = solar system containing megastructure
+# from = megastructure
+# fromfrom = old owner (if existing)
+on_megastructure_ownerless = {
+	events = {
+		GF_mega.182
+	}
+}
+
+# 奇观拓展拆除兼容
+# root = country	国家
+# this = country	国家
+# from = country	国家
+# fromfrom = megastructure	巨构
+# fromfromfrom = country	国家
+# fromfrom.planet = planet	巨构下的星球(如果存在)
+# fromfrom.solar_system = system	星系
+on_aow_demolish_megastructure = {
+	events = {
+		GF_mega.195
+	}
+}

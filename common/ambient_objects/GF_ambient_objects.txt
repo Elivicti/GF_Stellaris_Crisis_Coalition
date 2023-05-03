@@ -1,0 +1,8 @@
+
+# Crisis Sphere 2
+ambient_object = {
+	name = "GF_amb_computing_center"
+	entity = "GF_amb_computing_center_entity"
+	selectable = no
+	show_name = no
+}

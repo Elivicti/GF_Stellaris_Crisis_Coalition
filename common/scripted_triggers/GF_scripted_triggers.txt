@@ -423,3 +423,13 @@ GF_is_habitat = {
 		has_planet_flag = flag_p_GF_is_habitat_type_planet	# 兼容
 	}
 }
+
+# scope = megastructure
+GF_is_computing_center = {
+	OR = {
+		is_megastructure_type = GF_computing_center_0
+		is_megastructure_type = GF_computing_center_1
+		is_megastructure_type = GF_computing_center_2
+		is_megastructure_type = GF_computing_center_3
+	}
+}

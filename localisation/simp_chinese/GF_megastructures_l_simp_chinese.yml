@@ -1,0 +1,42 @@
+﻿l_simp_chinese:
+ GF_only_one_computing_center:0 "$TRIGGER_FAIL$至多只能建造一座$GF_computing_center_3$"
+ GF_mega_requires_single_star_system:0 "$TRIGGER_FAIL$只能在单恒星星系建造"
+
+ GF_computing_center_0:0 "OGAS计算中心基址"
+ GF_computing_center_0_DESC:0 "以OGAS为核心的恒星级计算机的建造基址，是建筑工人和工程师的前沿阵地。"
+ GF_computing_center_0_MEGASTRUCTURE_DETAILS:0 "$GF_computing_center_3_DESC$"
+ GF_computing_center_1:0 "OGAS计算中心框架"
+ GF_computing_center_1_DESC:0 "未来恒星级计算机的基础框架，但已经足以承担一部分中小型科研计算的负担。"
+ GF_computing_center_2:0 "OGAS计算中心"
+ GF_computing_center_2_DESC:0 "一座已经接近完成的恒星级计算机，能够协助科学研究，并扩充OGAS的线程池。"
+ GF_computing_center_3:0 "OGAS计算中心"
+ GF_computing_center_3_DESC:0 "一座以OGAS为核心的恒星级计算机，能够协助科学研究，并大幅扩充OGAS的线程池。"
+
+ GF_mega.100.name:0 "$GF_computing_center_0$"
+ GF_mega.100.desc:0 "位于[from.System.GetName]的恒星级计算机建造基址已经准备完成，这里将成为我们最优秀的建筑工人和工程师的前沿阵地，为未来的巨型结构打下基础。"
+ GF_mega.100.a:0 "准备建造。"
+
+ GF_mega.101.name:0 "$GF_computing_center_1$已完成"
+ GF_mega.101.desc:0 "恒星级计算机的主体框架已经建造完成，基础计算系统已上线并连接至中央数据库。"
+ GF_mega.101.a:0 "继续建造。"
+
+ GF_mega.102.name:0 "$GF_computing_center_2$已完成"
+ GF_mega.102.desc:0 "恒星级计算机的能源收集嵌板已安装，能俘获大量来自恒星的能源，以支持更庞大和复杂的计算任务。"
+ GF_mega.102.a:0 "继续建造。"
+
+ GF_mega.103.name:0 "$GF_computing_center_3$已完成"
+ GF_mega.103.desc:0 "更多的能源收集嵌板安装完成，外围辅助环建造完毕，这个恒星级计算机系统已经完全上线。"
+ GF_mega.103.a:0 "很好。"
+
+
+ GF_mega.184.name:0 "§Y[from.System.GetName]§!已控制"
+ GF_mega.184.desc:0 "我们及时地重新取得了§Y[from.System.GetName]§!星系的控制权，§Y[from.GetName]§!的自毁程序已终止。\n\n"
+ GF_mega.184.a:0 "很好。"
+
+ GF_mega.190.name:0 "失去§Y[from.GetName]§!"
+ GF_mega.190.desc:0 "我们失去了§Y[from.System.GetName]§!星系的控制权，一并失去的还有位于该星系的§Y[from.GetName]§!。\n\n我们需要尽快重新控制§Y[from.System.GetName]§!星系，否则§Y[from.GetName]§!内置的安全协议将在§H90§! £time£ 后（§H[from.computing_center_expire_date]§!）启动自毁程序。\n"
+ GF_mega.190.a:0 "已知晓。"
+
+ GF_mega.191.name:0 "§Y$GF_computing_center_3$§!已自毁"
+ GF_mega.191.desc:0 "我们未能及时取得§Y[from.GetName]§!星系的控制权，§Y$GF_computing_center_3$§!的自毁程序已启动。\n\n"
+ GF_mega.191.a:0 "看来得重新建造一座了……"

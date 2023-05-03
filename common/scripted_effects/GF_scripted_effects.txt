@@ -563,3 +563,16 @@ GF_collapse_planet_effect = {
 		clear_deposits = yes
 	}
 }
+
+# this = any
+GF_remove_computing_center_effect = {
+	$target$ = {
+		solar_system = {
+			every_ambient_object = {
+				limit = { has_ambient_object_flag = GF_computing_center_ambient }
+				destroy_ambient_object = this
+			}
+		}
+	}
+	remove_megastructure = $target$
+}
