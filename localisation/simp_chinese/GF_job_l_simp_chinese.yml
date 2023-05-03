@@ -44,6 +44,17 @@
  job_GF_reverse_collapser_research_desc:0 "这些研究员消耗坍塌液反复进行逆向坍塌试验，通过尝试各种新奇古怪的物质结构理论模型来揭开微观粒子世界的奥秘。"
  job_GF_reverse_collapser_research_effect_desc:0 "$job_GF_reverse_collapser_research_plural$通过消耗并研究 £GF_nyto_collapse_liquid£ §Y坍塌液§!来产出 £physics£ £society£ £engineering£ §Y研究点数§!"
 
+ job_GF_system_dispatcher:0 "系统调度员"
+ job_GF_system_dispatcher_plural:0 "系统调度员"
+ job_GF_system_dispatcher_desc:0 "负责统筹、调度大型自动化设施，以确保自动化系统的正常运转。"
+ job_GF_system_dispatcher_effect_desc:0 "£job_GF_system_dispatcher£ $job_GF_system_dispatcher_plural$花费 £energy£ §Y能量§!和 £gf_core_chip£ §Y$gf_core_chip$§!来调度和管理§Y$GF_automated_city_districts$§!"
+
+ job_GF_maintenance_engineer:0 "维护工程师"
+ job_GF_maintenance_engineer_plural:0 "维护工程师"
+ job_GF_maintenance_engineer_desc:0 "负责修缮、维护大型自动化设施，以确保各类自动化机械的正常运转。"
+ job_GF_maintenance_engineer_effect_desc:0 "£job_GF_maintenance_engineer£ $job_GF_maintenance_engineer_plural$花费 £energy£ §Y能量§!和 £alloys£ §Y合金§!来维护§Y$GF_automated_city_districts$§!"
+
+
 ############
  job_GF_GK_commander_effect_desc:0 "£job_GF_GK_commander£ $job_GF_GK_commander_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!和 £trade_value£ §Y贸易额§!"
  job_GF_GK_commander_plural:0 "指挥官"

@@ -120,3 +120,152 @@ planet_event = {
 		add_building = building_GF_doll_factory
 	}
 }
+
+
+planet_event = {
+	id = GF_colony.5000
+	title = GF_colony.5000.name
+	desc = GF_colony.5000.desc
+
+	location = this
+
+	diplomatic = yes
+	diplomatic_title = GF_colony.5000.diplo_title
+
+	picture_event_data = {
+		city_level = this
+		planet_background = this
+		room = this.owner
+		portrait = this.sector.leader
+	}
+
+	custom_gui = GF_automated_city_design_gui
+	custom_gui_option = GF_automated_city_design_gui_option
+
+	is_triggered_only = yes
+
+	immediate = {
+		remove_planet_flag = flag_p_GF_automated_city_base_resources
+		remove_planet_flag = flag_p_GF_automated_city_advanced_resources
+		remove_planet_flag = flag_p_GF_automated_city_special_resources
+		save_global_event_target_as = auto_city
+
+		owner = { set_country_flag = flag_GF_automated_city_terraform_ongoing }
+	}
+
+	option = {
+		name = GF_colony.5000.a
+		is_dialog_only = yes
+		response_text = GF_colony.5000.desc
+		allow = {
+			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 2 } }
+		}
+
+		set_planet_flag = flag_p_GF_automated_city_base_resources
+		remove_planet_flag = flag_p_GF_automated_city_advanced_resources
+		remove_planet_flag = flag_p_GF_automated_city_special_resources
+	}
+	option = {
+		name = GF_colony.5000.b
+		is_dialog_only = yes
+		response_text = GF_colony.5000.desc
+		allow = {
+			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 2 } }
+		}
+
+		set_planet_flag = flag_p_GF_automated_city_advanced_resources
+		remove_planet_flag = flag_p_GF_automated_city_base_resources
+		remove_planet_flag = flag_p_GF_automated_city_special_resources
+	}
+	option = {
+		name = GF_colony.5000.c
+		is_dialog_only = yes
+		response_text = GF_colony.5000.desc
+		allow = {
+			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 2 } }
+		}
+
+		set_planet_flag = flag_p_GF_automated_city_special_resources
+		remove_planet_flag = flag_p_GF_automated_city_base_resources
+		remove_planet_flag = flag_p_GF_automated_city_advanced_resources
+	}
+
+	option = {
+		name = GF_colony.5000.sep
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_colony.5000.sep.tooltip
+				always = no
+			}
+		}
+	}
+	option = {
+		name = GF_colony.5000.sep
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_colony.5000.sep.tooltip
+				always = no
+			}
+		}
+	}
+	option = {
+		name = GF_colony.5000.sep
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_colony.5000.sep.tooltip
+				always = no
+			}
+		}
+	}
+	
+	option = {
+		name = CANCEL
+		remove_planet_flag = flag_p_GF_automated_city_base_resources
+		remove_planet_flag = flag_p_GF_automated_city_advanced_resources
+		remove_planet_flag = flag_p_GF_automated_city_special_resources
+	}
+
+	option = {
+		name = CONFIRM
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_colony.5000.confirm_require
+				OR = {
+					has_planet_flag = flag_p_GF_automated_city_base_resources
+					has_planet_flag = flag_p_GF_automated_city_advanced_resources
+					has_planet_flag = flag_p_GF_automated_city_special_resources
+				}
+			}
+		}
+		owner = {
+			start_situation = {
+				type = GF_automated_city_construction
+				target = prev
+			}
+		}
+	}
+
+	after = {
+		clear_global_event_target = auto_city
+		owner = { remove_country_flag = flag_GF_automated_city_terraform_ongoing }
+	}
+}
+
+planet_event = {
+	id = GF_colony.5010
+	title = GF_colony.5010.name
+	desc = GF_colony.5010.desc
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+	location = this
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_colony.5010.a
+		add_modifier = {
+			modifier = GF_automated_city_construction_ongoing
+			days = 540
+		}
+	}
+}

@@ -43,3 +43,9 @@
  decision_GF_deploy_armored_train_desc:0 "在铁路沿线部署装甲铁路车辆以巩固在铁路网络发达地区的防御能力。"
  decision_GF_deploy_armored_train_effects:0 "部署一辆§H$GF_army_defensive_armored_train$§!，每月维护费：£energy£§Y2§!  £alloys£§Y1§!\n当前在§Y[planet.GetName]§!最多可以部署§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"
  decision_GF_deploy_armored_train_fail_tooltip:0 "£trigger_no£ §Y[planet.GetName]§!上的铁路网络最多只能支持§H[planet.v_GF_armored_train_capacity]辆§!$GF_army_defensive_armored_train$"
+
+ decision_GF_automated_city_project:0 "$pc_GF_automated_city$建设计划"
+ decision_GF_automated_city_project_desc:0 "由坚定的意志和明确的目的锤炼而成的大型机械将取代随意而低效的自然法则。"
+ decision_GF_automated_city_project_effect:0 "将星球变成§Y$pc_GF_automated_city$§!，并选择特定的§Y专精类型§! (§R一次性§!)，解锁特殊的 £district£ §Y自动化区划§!，这些区划只需§Y少量§! £pop£ 人口进行维护即可高效运作。"
+ GF_other_automated_city_terraform_ongoing:0 "£trigger_no£ 另一处$pc_GF_automated_city$建设决策中"
+ GF_automated_city_terraform_ongoing:0 "£trigger_no£ $pc_GF_automated_city$建设进行中"

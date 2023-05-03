@@ -722,14 +722,14 @@ GF_reverse_collapser_industry = {
 
 		produces = {
 			trigger = {
-				planet = { has_foundry_designation = yes }
+				planet = { GF_has_foundry_designation = yes }
 			}
 			alloys = 8
 		}
 
 		produces = {
 			trigger = {
-				planet = { has_factory_designation = yes }
+				planet = { GF_has_factory_designation = yes }
 			}
 			consumer_goods = 15
 		}
@@ -738,8 +738,8 @@ GF_reverse_collapser_industry = {
 			trigger = {
 				planet = {
 					NOR	= {
-						has_foundry_designation = yes
-						has_factory_designation = yes
+						GF_has_foundry_designation = yes
+						GF_has_factory_designation = yes
 					}
 				}
 			}
@@ -815,6 +815,83 @@ GF_reverse_collapser_research = {
 		modifier = {
 			factor = 7
 			has_job = GF_reverse_collapser_research
+		}
+	}
+}
+
+GF_system_dispatcher = {
+	category = specialist
+	clothes_texture_index = 3
+
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+
+	planet_modifier = {
+		GF_system_maintenance = 0.12
+		planet_stability_add = 2
+		planet_crime_add = -15
+	}
+	resources = {
+		category = GF_automated_city_maintainer
+		upkeep = {
+			energy = 3
+			gf_core_chip = 1
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		factor = 5
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 7
+			has_job = GF_system_dispatcher
+		}
+	}
+}
+
+GF_maintenance_engineer = {
+	category = specialist
+	clothes_texture_index = 3
+	
+	condition_string = SPECIALIST_JOB_TRIGGER
+	possible_precalc = can_fill_specialist_job
+
+	planet_modifier = {
+		GF_system_maintenance = 0.08
+	}
+
+	resources = {
+		category = GF_automated_city_maintainer
+		upkeep = {
+			energy = 2
+			alloys = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		factor = 3.5
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 7
+			has_job = GF_maintenance_engineer
 		}
 	}
 }

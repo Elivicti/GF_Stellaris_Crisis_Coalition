@@ -20,6 +20,14 @@ GF_storage_protocol = {
 	custom_tooltip = GF_storage_protocol_modifier_desc
 }
 
+GF_automated_city_construction_ongoing = {
+	icon = "gfx/interface/icons/planet_modifiers/capital.dds"
+	planet_building_build_speed_mult = 0.50
+	planet_districts_cost_mult = -0.10
+}
+GF_automated_city_status = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_GF_automated_city_status.dds"
+}
 
 ###
 GF_auto_colony = {

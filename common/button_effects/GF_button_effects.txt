@@ -25,3 +25,44 @@ GF_effect_button_always_on = {
 	potential = { always = yes }
 	allow = { always = yes }
 }
+
+GF_show_base_res_district_icons = {
+	potential = {
+		event_target:auto_city = {
+			has_planet_flag = flag_p_GF_automated_city_base_resources
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_show_advanced_res_district_icons = {
+	potential = {
+		event_target:auto_city = {
+			has_planet_flag = flag_p_GF_automated_city_advanced_resources
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_show_special_res_district_icons = {
+	potential = {
+		event_target:auto_city = {
+			has_planet_flag = flag_p_GF_automated_city_special_resources
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_show_district_desc = {
+	potential = {
+		event_target:auto_city = {
+			OR = {
+				has_planet_flag = flag_p_GF_automated_city_base_resources
+				has_planet_flag = flag_p_GF_automated_city_advanced_resources
+				has_planet_flag = flag_p_GF_automated_city_special_resources
+			}
+		}
+	}
+	allow = { always = yes }
+
+}

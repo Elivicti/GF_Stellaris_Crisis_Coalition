@@ -1,0 +1,582 @@
+guiTypes = {
+	### EVENT OPTION ###
+
+	containerWindowType = {
+		name = "GF_automated_city_design_gui_option"
+		position = { x = 0 y = 0 }
+		size = { width = 480 height = 30 }
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_event_button_452"
+			position = { x = 10 y = 8 }
+			font = "cg_16b"
+			text = "OPTION_TEXT"
+		}
+		overlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = 10 y = 10 }
+			size = { x = 65 y = 28 }
+		}
+	}
+
+	### EVENT WINDOW ###
+
+	containerWindowType = {
+		name = "GF_automated_city_design_gui"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 1400 height = 800 }
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tile_large_bg_plain"
+		}
+		containerWindowType = {
+			name = "GF_automated_city_design_desc"
+			orientation = "UPPER_LEFT"
+			origo = "LEFT"
+			position = { x = 1005 y = 0 }
+			size = { width = 400 height = 800 }
+
+			effectButtonType = {
+				name = "GF_automated_city_specialist_type_title"
+				text = "GF_automated_city_specialist_type_title"
+				size = { width = 385 height = 50 }
+				orientation = "UPPER_LEFT"
+				position = { x = -10 y = 20 }
+				
+				effect = GF_effect_button_always_on
+				spriteType = "GFX_invisible"
+				font = large_title_font_28
+				alwaysTransparent = yes
+			}
+			buttonType = {
+				name = "GF_automated_city_specialist_type_desc_bg"
+				position = { x = -10 y = 65 }
+				size = { width = 385 height = 190 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_specialist_type_desc"
+				text = "GF_automated_city_specialist_type_desc"
+				size = { width = 365 height = 170 }
+				maxHeight = 200
+				orientation = "UPPER_LEFT"
+				position = { x = 0 y = 70 }
+				effect = GF_effect_button_always_on
+				spriteType = "GFX_invisible"
+				font = malgun_goth_24
+				alwaysTransparent = yes
+				multiline = yes
+				format = LEFT
+				vertical_alignment = top
+				
+			}
+
+			# 中央管理区划
+			buttonType = {
+				name = "GF_automated_city_district_bg0"
+				position = { x = 90 y = 270 }
+				size = { width = 285 height = 87 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+				text = BLANK_STRING
+			}
+			instantTextBoxType = {
+				name = "GF_automated_city_district_0_desc"
+				text = "GF_automated_city_district_0_desc"
+				position = { x = 95 y = 275 }
+				maxWidth = 275
+				maxHeight = 72
+				font = "cg_16b"
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_nexus_icon"
+				position = { x = 0 y = 270 }
+				spriteType = "GFX_district_GF_automated_nexus"
+				orientation = "UPPER_LEFT"
+				effect = GF_effect_button_always_on
+				alwaysTransparent = yes
+			}
+
+			# 区划1
+			effectButtonType = {
+				name = "GF_automated_city_district_bg1"
+				position = { x = 90 y = 370 }
+				size = { width = 285 height = 87 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				text = BLANK_STRING
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_1_desc"
+				text = "GF_automated_city_district_1_desc"
+				position = { x = 95 y = 375 }
+				size = { width = 275 height = 72 }
+				font = "cg_16b"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				format = LEFT
+				vertical_alignment = top
+				multiline = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_energy_icon"
+				position = { x = 0 y = 370 }
+				spriteType = "GFX_district_GF_automated_energy"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_base_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_foundary_icon"
+				position = { x = 0 y = 370 }
+				spriteType = "GFX_district_GF_automated_foundary"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_advanced_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_research_icon"
+				position = { x = 0 y = 370 }
+				spriteType = "GFX_district_GF_automated_research"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_special_res_district_icons
+				alwaysTransparent = yes
+			}
+
+			# 区划2
+			effectButtonType = {
+				name = "GF_automated_city_district_bg2"
+				position = { x = 90 y = 470 }
+				size = { width = 285 height = 87 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				text = BLANK_STRING
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_2_desc"
+				text = "GF_automated_city_district_2_desc"
+				position = { x = 95 y = 475 }
+				size = { width = 275 height = 72 }
+				font = "cg_16b"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				format = LEFT
+				vertical_alignment = top
+				multiline = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_mining_icon"
+				position = { x = 0 y = 470 }
+				spriteType = "GFX_district_GF_automated_mining"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_base_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_industry_icon"
+				position = { x = 0 y = 470 }
+				spriteType = "GFX_district_GF_automated_industry"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_advanced_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_factory_icon"
+				position = { x = 0 y = 470 }
+				spriteType = "GFX_district_GF_automated_factory"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_special_res_district_icons
+				alwaysTransparent = yes
+			}
+
+			# 区划3
+			effectButtonType = {
+				name = "GF_automated_city_district_bg3"
+				position = { x = 90 y = 570 }
+				size = { width = 285 height = 87 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				text = BLANK_STRING
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_3_desc"
+				text = "GF_automated_city_district_3_desc"
+				position = { x = 95 y = 575 }
+				size = { width = 275 height = 72 }
+				font = "cg_16b"
+				alwaysTransparent = yes
+				effect = GF_show_district_desc
+				format = LEFT
+				vertical_alignment = top
+				multiline = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_food_icon"
+				position = { x = 0 y = 570 }
+				spriteType = "GFX_district_GF_automated_farming"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_base_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_refinery_icon"
+				position = { x = 0 y = 570 }
+				spriteType = "GFX_district_GF_automated_refinery"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_advanced_res_district_icons
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_collapse_icon"
+				position = { x = 0 y = 570 }
+				spriteType = "GFX_district_GF_automated_collapse"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_special_res_district_icons
+				alwaysTransparent = yes
+			}
+
+			# 区划4
+			effectButtonType = {
+				name = "GF_automated_city_district_bg4"
+				position = { x = 90 y = 670 }
+				size = { width = 285 height = 87 }
+				orientation = "UPPER_LEFT"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+				alwaysTransparent = yes
+				effect = GF_show_special_res_district_icons
+				text = BLANK_STRING
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_4_desc"
+				text = "GF_automated_city_district_4_desc"
+				position = { x = 95 y = 675 }
+				size = { width = 275 height = 72 }
+				font = "cg_16b"
+				alwaysTransparent = yes
+				effect = GF_show_special_res_district_icons
+				format = LEFT
+				vertical_alignment = top
+				multiline = yes
+			}
+			effectButtonType = {
+				name = "GF_automated_city_district_reverse_collapse_icon"
+				position = { x = 0 y = 670 }
+				spriteType = "GFX_district_GF_automated_reverse_collapse"
+				orientation = "UPPER_LEFT"
+				effect = GF_show_special_res_district_icons
+				alwaysTransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "GF_automated_city_design_evt"
+			orientation = "UPPER_LEFT"
+			origo = LEFT
+			position = { x = 0 y = 0 }
+			size = { width = 1000 height = 800 }
+			iconType = {
+				name = "hex_bg_left"
+				position = { x = -79 y = 22 }
+				spriteType = "GFX_hex_center_bg"
+				orientation = center_up
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "hex_bg_right"
+				position = { x = 79 y = 22 }
+				spriteType = "GFX_hex_center_bg"
+				orientation = center_up
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "header_line"
+				position = { x = 0 y = 42 }
+				spriteType = "GFX_line_center"
+				orientation = center_up
+				centerPosition = yes
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "focus_button"
+			position = { x = -45 y = 7 }
+			orientation = upper_right
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+			shortcut = "q"
+		}
+		# 外交标题 diplo_title
+		instantTextBoxType = {
+			name = "heading"
+			font = "malgun_goth_24"
+			text = "DIPLOMACY"
+			position = { x = -400 y = 7 }
+			orientation = center_up
+			maxWidth = 400
+			maxHeight = 24
+			fixedSize = yes
+			format = center
+			alwaysTransparent = yes
+		}
+		### PORTRAIT ###
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 18 y = 56 }
+			size = { width = 964 height = 350 }
+			orientation = "UPPER_LEFT"
+			origo = "UPPER_LEFT"
+			clipping = yes
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+			}
+			iconType = {
+				name = "portrait"
+				position = { x = 256 y = 5 }
+				spriteType = "GFX_portrait_character"
+			}
+		}
+		# 图片/背景/立绘
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 18 y = 51 }
+			size = { width = 964 height = 350 }
+			orientation = "UPPER_LEFT"
+			origo = "UPPER_LEFT"
+			clipping = yes
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+				position = { x = 6 y = 5 }
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = 2 y = 0 }
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				position = { x = 6 y = 5 }
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				alwaysTransparent = yes
+			}
+		}
+		### EMPIRE INFO ###
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 36 y = 75 }
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Kammarian Galactic Concordat"
+			position = { x = 48 y = 81 }
+			maxWidth = 450
+			maxHeight = 24
+			format = left
+			text_color_code = "E"
+			fixedSize = yes
+		}
+		instantTextBoxType = {
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Autocracy"
+			position = { x = 48 y = 106 }
+			maxWidth = 250
+			maxHeight = 16
+			format = left
+			fixedSize = yes
+			text_color_code = "Y"
+		}
+		instantTextBoxType = {
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Despicable Neutrals"
+			position = { x = 48 y = 123 }
+			maxWidth = 250
+			maxHeight = 16
+			format = left
+			fixedSize = yes
+		}
+		overlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+			position = { x = 48 y = 149 }
+			size = { x = 240 y = 30 }
+			spacing = 2.0
+			format = left
+		}
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 28 y = 248 }
+		}
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 225 y = 86 }
+			containerWindowType = {
+				name = "empire_traits_box"
+				position = { x = 0 y = -5 }
+				size = { width = 210 height = 75 }
+				background = {
+					name = "ethics_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 214 y = 37 }
+				font = "cg_16b"
+				maxWidth = 230
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 215 y = 55 }
+				size = { x = 125 y = 330 }
+			}
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 10 y = 0 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 10 y = 18 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+		### OPINION
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = 27 y = 123 }
+			size = { width = 94 height = 30 }
+			# Use this for tooltip area, picture comes from somewhere else
+			background = {
+				name = "opinion_bg"
+				spriteType = "GFX_tiled_window_transparent"
+			}
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 7 y = 4 }
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+				maxWidth = 40
+				position = { x = 40 y = 7 }
+				format = left
+				text = "100"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "tts_button"
+			position = { x = 461 y = 643 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
+		### DESCRIPTION ###
+		containerWindowType = {
+			name = "alien_message_background"
+			position = { x = 20 y = 441 }
+			size = { width = 480 height = 340 }
+			background = {
+				name = "ethics_bg"
+				spriteType = "GFX_tiles_dark_area_cut_8"
+			}
+		}
+		instantTextBoxType = {
+			name = "alien_message"
+			font = cg_16b
+			position = { x = 30 y = 451 }
+			maxWidth = 460
+			maxHeight = 320
+			format = left
+			scrollbartype = "standardtext_slider_small"
+		}
+		
+		### EVENT DIPLO ###
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 410 }
+			size = { width = 100%% height = 100%% }
+
+			# 事件标题
+			instantTextBoxType = {
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = 20 y = 0 }
+				maxWidth = 480
+				#alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = { x = 510 y = 0 }
+				maxWidth = 480
+				maxHeight = 180
+				format = center
+				#alwaysTransparent = yes
+				text_color_code = "H"
+			}
+			listboxType = {
+				name = "option_list"
+				position = { x = 510 y = 20 }
+				size = { x = 480 y = 240 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+		}
+		buttonType = {
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x = -175 y = -116 }
+			orientation = lower_right
+			font = "cg_16b"
+			text = "MESSAGE_OK"
+			clicksound = "confirmation"
+		}
+	}
+}

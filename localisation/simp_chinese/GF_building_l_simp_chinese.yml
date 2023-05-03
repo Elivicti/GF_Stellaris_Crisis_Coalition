@@ -59,6 +59,8 @@
  building_GF_AU_council_3_desc:0 "联邦科学理事会的地方派出机构，维持着联邦对地方的统治。"
  building_GF_AU_council_4:0 "南联科学理事会中央联席会议"
  building_GF_AU_council_4_desc:0 "联邦的最高权力机构，整个联邦各行各业的理事们齐聚于此商讨联邦下一步的发展方向。"
+ building_GF_connection_nexus:0 "核心枢纽"
+ building_GF_connection_nexus_desc:0 "连接星球各处设施的自动化系统网络根节点，除了实现基本的自动化管理，还负责与OGAS和国家中央数据库建立可靠的链接。"
  ###
  building_GF_military_contractors:0 "人形佣兵事务所"
  building_GF_military_contractors_desc:0 "我们承诺会派出最精锐的人形来执行任务，给各国提供优秀的雇佣兵服务。"

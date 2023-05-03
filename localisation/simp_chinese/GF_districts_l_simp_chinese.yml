@@ -1,4 +1,4 @@
-﻿l_simp_chinese: 
+﻿l_simp_chinese:
  district_GF_center:0 "人形管理中枢"
  district_GF_center_plural:0 "人形管理中枢"
  district_GF_center_desc:0 "负责调配、收纳、维护人形的中枢区划，内有专门的人形休眠仓与维护设施。"
@@ -33,3 +33,60 @@
  district_GF_duplicate_mining_uncapped:0 "$district_mining_uncapped$"
  district_GF_duplicate_mining_uncapped_desc:0 "$district_mining_uncapped_desc$"
  district_GF_duplicate_mining_uncapped_plural:0 "$district_mining_uncapped_plural$"
+
+## 自动化星球区划
+ district_GF_automated_nexus:0 "中央管理区划"
+ district_GF_automated_nexus_desc:0 "各类自动化区划的核心，相比于生产作业，这类区划更专注于统筹与管理。"
+ district_GF_automated_nexus_plural:0 "中央管理区划"
+ district_GF_automated_nexus_desc_spec:0 "§H$district_GF_automated_nexus$§!：协调并管理$pc_GF_automated_city$上的各类设施。\n\n维护：£energy£"
+
+ district_GF_automated_energy:0 "自动化能源中心"
+ district_GF_automated_energy_desc:0 "这个大型自动化设施专注于生产能源。"
+ district_GF_automated_energy_plural:0 "自动化能源中心"
+ district_GF_automated_energy_desc_spec:0 "§H$district_GF_automated_energy$§!：高效地生产大量能源。\n\n\n维护：£energy£ £rare_crystals£ 生产：£energy£"
+
+ district_GF_automated_mining:0 "自动化采矿中心"
+ district_GF_automated_mining_desc:0 "这个大型自动化设施专注于从星球深处采掘矿物。"
+ district_GF_automated_mining_plural:0 "自动化采矿中心"
+ district_GF_automated_mining_desc_spec:0 "§H$district_GF_automated_mining$§!：高效地采集埋藏于地下的各类矿物。\n\n维护：£energy£ 生产：£minerals£"
+
+ district_GF_automated_farming:0 "自动化农业中心"
+ district_GF_automated_farming_desc:0 "这个大型自动化设施专注于利用水培技术大规模种植作物。"
+ district_GF_automated_farming_plural:0 "自动化农业中心"
+ district_GF_automated_farming_desc_spec:0 "§H$district_GF_automated_farming$§!：种植和繁育各类作物。\n\n\n维护：£energy£ £volatile_motes£ 生产：£food£"
+
+ district_GF_automated_foundary:0 "自动化冶金中心"
+ district_GF_automated_foundary_desc:0 "这个大型自动化设施专注于将矿物冶炼为各类合金。"
+ district_GF_automated_foundary_plural:0 "自动化冶金中心"
+ district_GF_automated_foundary_desc_spec:0 "§H$district_GF_automated_foundary$§!：锻造和生产各类合金。\n\n\n维护：£energy£ £volatile_motes£ £minerals£ 生产：£alloys£"
+
+ district_GF_automated_industry:0 "自动化工业中心"
+ district_GF_automated_industry_desc:0 "这个大型自动化设施专注于将矿物制造成各类民用消费品。"
+ district_GF_automated_industry_plural:0 "自动化工业中心"
+ district_GF_automated_industry_desc_spec:0 "§H$district_GF_automated_industry$§!：锻造和生产各类民用消费品。\n\n维护：£energy£ £rare_crystals£ £minerals£ 生产：£consumer_goods£"
+
+ district_GF_automated_refinery:0 "自动化精炼中心"
+ district_GF_automated_refinery_desc:0 "这个大型自动化设施专注于从矿物中精炼出各类稀有资源。"
+ district_GF_automated_refinery_plural:0 "自动化精炼中心"
+ district_GF_automated_refinery_preq:0 "£trigger_no£ 至少研究一种£exotic_gases£ £volatile_motes£ £rare_crystals£稀有资源科技"
+ district_GF_automated_refinery_desc_spec:0 "§H$district_GF_automated_refinery$§!：高效地从矿物中精炼出各类稀有资源。\n\n维护：£energy£ £minerals£ 生产：£exotic_gases£ £volatile_motes£ £rare_crystals£"
+
+ district_GF_automated_research:0 "自动化云图研究中心"
+ district_GF_automated_research_desc:0 "这个大型自动化设施专注于从事深度的科学研究和云图研究。"
+ district_GF_automated_research_plural:0 "自动化云图研究中心"
+ district_GF_automated_research_desc_spec:0 "§H$district_GF_automated_research$§!：进行深层次的人形云图研究。\n\n维护：£energy£ £exotic_gases£ 生产：£physics_research£ £society_research£ £engineering_research£ £gf_core_chip£"
+
+ district_GF_automated_factory:0 "自动化人形制造中心"
+ district_GF_automated_factory_desc:0 "这个大型自动化设施专注于制造人形。"
+ district_GF_automated_factory_plural:0 "自动化人形制造中心"
+ district_GF_automated_factory_desc_spec:0 "§H$district_GF_automated_factory$§!：大规模的人形制造生产线。\n\n维护：£alloys£ £gf_core_chip£ 生产：£mod_planet_pop_assembly_add£"
+
+ district_GF_automated_collapse:0 "自动化坍塌反应中心"
+ district_GF_automated_collapse_desc:0 "这个大型自动化设施专注于利用坍塌反应将矿物转化为坍塌液。"
+ district_GF_automated_collapse_plural:0 "自动化坍塌反应中心"
+ district_GF_automated_collapse_desc_spec:0 "§H$district_GF_automated_collapse$§!：利用坍塌反应大量生产$GF_nyto_collapse_liquid$。\n\n维护：£energy£ £minerals£ 生产：£GF_nyto_collapse_liquid£"
+
+ district_GF_automated_reverse_collapse:0 "自动化物质重构中心"
+ district_GF_automated_reverse_collapse_desc:0 "这个大型自动化设施专注于利用逆向坍塌原理将坍塌液重构为各类物质。"
+ district_GF_automated_reverse_collapse_plural:0 "自动化物质重构中心"
+ district_GF_automated_reverse_collapse_desc_spec:0 "§H$district_GF_automated_reverse_collapse$§!：利用$GF_nyto_collapse_liquid$高效地合成各类物质。\n\n维护：£energy£ £exotic_gases£ £GF_nyto_collapse_liquid£ 生产：£alloys£ £consumer_goods£ £exotic_gases£ £volatile_motes£ £rare_crystals£"

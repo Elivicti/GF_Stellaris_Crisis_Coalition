@@ -83,3 +83,21 @@ GF_planet_reverse_collapser = {
 	}
 	modifier_category = pop
 }
+
+GF_automated_city_districts = {
+	parent = planet_districts
+	modifier_category = planet
+
+	generate_add_modifiers = {
+		produces
+	}
+
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+}
+
+GF_automated_city_maintainer = {
+	parent = planet_jobs
+}

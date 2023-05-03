@@ -730,3 +730,72 @@ building_GF_URNC_committee_3 = {
 		weight = 1
 	}
 }
+
+# 起这个名字(主要是_capitalz的部分)单纯为了建筑的排序
+building_GF_connection_nexus = {
+	can_build = no
+	can_be_disabled = no
+	can_be_ruined = no
+	can_demolish = no
+	position_priority = 1
+	category = government
+
+	potential = {
+		is_planet_class = pc_GF_automated_city
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 5
+			gf_core_chip = 2.5
+		}
+	}
+
+
+	country_modifier = {
+		GF_OGAS_threads_used_add = 2
+	}
+	triggered_country_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		GF_OGAS_threads_used_add = 1
+	}
+	triggered_country_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		GF_OGAS_threads_used_add = 2
+	}
+
+	planet_modifier = {
+		planet_stability_add = 10
+		GF_system_maintenance = 0.20
+		job_GF_system_dispatcher_add = 1
+		job_GF_maintenance_engineer_add = 2
+	}
+
+	triggered_planet_modifier = {
+		GF_automated_city_districts_produces_mult = 1
+		mult = value:GF_cal_system_maintenance_production_effect
+	}
+
+	triggered_planet_modifier = {
+		GF_automated_city_districts_upkeep_mult = 1
+		mult = value:GF_cal_system_maintenance_upkeep_effect
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
+		GF_automated_city_districts_produces_mult = -0.50
+		GF_automated_city_districts_upkeep_mult = 0.50
+		planet_building_build_speed_mult = -0.50
+	}
+
+	triggered_desc = {
+		text = job_GF_system_dispatcher_effect_desc
+	}
+	triggered_desc = {
+		text = job_GF_maintenance_engineer_effect_desc
+	}
+}
