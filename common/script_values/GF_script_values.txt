@@ -107,3 +107,38 @@ GF_count_district = {
 		mode = add
 	}
 }
+
+# scope = planet
+GF_cal_system_maintenance_production_effect = {
+	base = -0.5
+	add = modifier:GF_system_maintenance
+	max = 0.5
+	min = -0.5
+}
+
+# scope = planet
+GF_cal_system_maintenance_upkeep_effect = {
+	base = -0.5
+	mult = modifier:GF_system_maintenance
+	add = 0.2
+	max = 0.25
+	min = -0.2
+}
+
+# scope = planet
+GF_get_system_maintenance_percentage = {
+	base = 100
+	mult = modifier:GF_system_maintenance
+}
+
+# scope = country
+GF_get_OGAS_threads_cap = {
+	base = $add|0$
+	add = modifier:GF_OGAS_threads_add
+}
+
+# scope = country
+GF_get_OGAS_threads_used = {
+	base = $add|0$
+	add = modifier:GF_OGAS_threads_used_add
+}

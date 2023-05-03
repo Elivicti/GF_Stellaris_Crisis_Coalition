@@ -243,3 +243,197 @@ defined_text = {
 	}
 	default = GF_relic_orb_mainframe_alpha_desc_no_activation
 }
+
+defined_text = {
+	name = GF_GetOGASThreads
+	value = value:GF_get_OGAS_threads_cap
+}
+defined_text = {
+	name = GF_GetOGASThreadsUsed
+	value = value:GF_get_OGAS_threads_used
+}
+
+# !!! Effect Button Only !!!
+defined_text = {
+	name = GF_GetAutomatedCityDistrict_1_Desc
+	text = {
+		localization_key = district_GF_automated_energy_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_foundary_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_research_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		}
+	}
+	default = test_fall_back
+}
+defined_text = {
+	name = GF_GetAutomatedCityDistrict_2_Desc
+	text = {
+		localization_key = district_GF_automated_mining_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_industry_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_factory_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		}
+	}
+	default = test_fall_back
+}
+defined_text = {
+	name = GF_GetAutomatedCityDistrict_3_Desc
+	text = {
+		localization_key = district_GF_automated_farming_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_refinery_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		}
+	}
+	text = {
+		localization_key = district_GF_automated_collapse_desc_spec
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		}
+	}
+	default = test_fall_back
+}
+defined_text = {
+	name = GF_GetAutomatedCitySpecialistTypeEB
+	text = {
+		localization_key = GFAutomatedCityBaseResource
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+		}
+	}
+	text = {
+		localization_key = GFAutomatedCityAdvancedResource
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		}
+	}
+	text = {
+		localization_key = GFAutomatedCitySpecialResource
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		}
+	}
+	default = GF_GetAutomatedCitySpecialistTypeEBNone
+}
+defined_text = {
+	name = GF_GetAutomatedCitySpecialistTypeEBDesc
+	text = {
+		localization_key = GFAutomatedCityBaseResourceDesc
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+		}
+	}
+	text = {
+		localization_key = GFAutomatedCityAdvancedResourceDesc
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		}
+	}
+	text = {
+		localization_key = GFAutomatedCitySpecialResourceDesc
+		trigger = {
+			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		}
+	}
+	default = GF_GetAutomatedCitySpecialistTypeEBNoneDesc
+}
+
+# scope = planet
+defined_text = {
+	name = GF_GetAutomatedCitySpecialistType
+	text = {
+		localization_key = GFAutomatedCityBaseResource
+		trigger = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+	}
+	text = {
+		localization_key = GFAutomatedCityAdvancedResource
+		trigger = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+	}
+	text = {
+		localization_key = GFAutomatedCitySpecialResource
+		trigger = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+	}
+	default = BLANK_STRING
+}
+
+# scope = planet
+defined_text = {
+	name = GF_GetSystemMaintenance
+	text = {
+		localization_key = GFSystemMaintenanceGood
+		trigger = {
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value >= 0.5
+			}
+		}
+	}
+	text = {
+		localization_key = GFSystemMaintenanceMid
+		trigger = {
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value < 0.5
+			}
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value >= 0.25
+			}
+		}
+	}
+	text = {
+		localization_key = GFSystemMaintenanceLow
+		trigger = {
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value < 0.25
+			}
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value >= 0
+			}
+		}
+	}
+	text = {
+		localization_key = GFSystemMaintenanceLowNeg
+		trigger = {
+			check_modifier_value = {
+				modifier = GF_system_maintenance
+				value < 0
+			}
+		}
+	}
+}
+
+# scope = planet
+defined_text = {
+	name = GF_GetSystemMaintenancePercentage
+	value = value:GF_get_system_maintenance_percentage
+}
