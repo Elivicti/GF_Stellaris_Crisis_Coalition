@@ -121,6 +121,9 @@
  GF_tech_collapse_cannon_desc:0 "特化改进过的自动火炮，采用特制的高爆型坍塌晶格装药炮弹，能够向目标倾泻一片致命的弹幕。"
 
  GF_tech_ternary_quantum_computing:0 "三进制量子计算"
- GF_tech_ternary_quantum_computing_desc:0 "三进制量子计算desc"
+ GF_tech_ternary_quantum_computing_desc:0 "采用三进制并利用量子力学规律调控量子信息单元进行计算的计算机系统架构，其运算效率远超传统的计算机系统。"
  GF_UNLOCK_TRADITION_AUTOMATION_TITLE:0 "§H解锁传统：§!$GF_tradition_automation$"
  GF_UNLOCK_TRADITION_AUTOMATION_DESC:0 "$GF_tradition_automation_desc$"
+
+ GF_tech_ogas_computing_center:0 "$GF_computing_center_3$"
+ GF_tech_ogas_computing_center_desc:0 "$GF_computing_center_3_desc$"
