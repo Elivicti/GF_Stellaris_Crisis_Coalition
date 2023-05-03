@@ -19,36 +19,60 @@
  SP_GF_ZION_ELID_ARMY_PROJECT:0 "军事化应用E.L.I.D"
  SP_GF_ZION_ELID_ARMY_PROJECT_DESC:0 "没有人愿意与这些恐怖的生物正面对峙，我们是如此，我们的敌人自然也是如此。\n\n利用从$GF_ZION$得到的资料，我们可以找到驱使ELID感染者为我们而战的方法。"
 
- GF_zion_project.2000.desc:0 "成熟的声音：“「§Y坍塌物质§!」，原来你们是这么称呼$GF_collapse_material_name_error$的么……”\n\n冷漠的声音：“执着于斗争……在夺走其它生命这方面，你们总是创意十足。说说看，你们想要什么？”"
-#  GF_zion_project.2000.desc.repeat:0 "冷静的声音：“好吧，好吧。来看看还有哪些东西是你们想知道的，关于这个$GF_collapse_material_name_error$，或者叫「§Y坍塌物质§!」。”"
+
+ GF_zion_project.2000.desc:0 "成熟的声音：“「§Y坍塌物质§!」，原来你们是这么称呼$GF_collapse_material_name_error$的么……”\n\n冷漠的声音：“执着于斗争……在夺走其它生命这方面，文明总是创意十足。”"
+ GF_zion_project.2000.desc.repeat:0 "成熟的声音：“将一切物质打碎为基本粒子的状态，坍塌反应真是最有效也最骇人的攻击手段了。”"
  
  GF_zion_project.2000.a:0 "§Y坍塌物质§!到底是个什么玩意？"
-#  GF_zion_project.2000.a.response:0 "冷静的声音：“$GF_collapse_material_name_error$是一种以紊乱运动方式行进的粒子波，能使原有物质分子引斥力被内部阻断，减弱排序导致物质内构分子有序坍塌，利用引斥力扭转压缩原有分子空间使其量子化。当然我相信你们早就知道这些东西了。”"
+ GF_zion_project.2000.a.response:0 "冷静的声音：“$GF_collapse_material_name_error$是一种以紊乱运动方式行进的粒子波，能使原有物质分子引斥力被内部阻断，减弱排序导致物质内构分子有序坍塌，利用引斥力扭转压缩原有分子空间使其量子化。”\n\n成熟的声音：“也就是说，核子内的强力被破坏，物质变成了由基本微观粒子组成的‘液体’。”"
 
-#  GF_zion_project.2000.b:0 ""
-#  GF_zion_project.2000.b.response:0 ""
+ GF_zion_project.2000.b:0 "详细讲讲§Y坍塌反应§!"
+ GF_zion_project.2000.b.response:0 "冷静的声音：“坍塌反应是在高能环境中利用技术手段诱发核子坍缩从而释放$GF_collapse_material_name_error$的过程，这也是制备你们所说的「§Y坍塌物质§!」的必要过程。”\n\n冷静的声音：“通过定向发射坍塌粒子，粒子散发的辐射将轻而易举的打碎目标的物质结构，将其还原为无序的基本粒子，没有任何已知的材料能够阻挡这一过程。”"
 
  GF_zion_project.2000.request:0 "我们希望坍塌粒子武器可以运用在§Y小型舰船§!上。"
- GF_zion_project.2000.request.response:0 "冷静的声音：“想保持像你们大型发射阵列那样的能量输出效率显然是不可行的，对于小型设备来说压力太大了。”\n\n冷静的声音：“但是如果降低一部分输出效率，以你们目前的材料水平是完全能够制造出能支撑这些压力的小型设备的。只要把剩下的输出集中起来，依然会有不错的威力。更详细的数据已经传输到你们的数据库了。”"
+ GF_zion_project.2000.request.response:0 "冷静的声音：“想保持大型发射阵列那样的能量输出效率显然不可行，小型设备难以承受如此之大的输出功率。”\n\n冷静的声音：“但如果减小输出功率，而将输出集中，它仍然可以称得上是极具威慑力的武器。更详细的数据将在稍后传输到你们的数据库。”"
 
  SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT:0 "小型化坍塌粒子武器"
  SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT_DESC:0 "坍塌粒子在军事上具有极强的应用前景，但由于技术限制，坍塌粒子武器需要庞大的发射器和维护设备才能安全运行。从$GF_ZION$得到的资料表明，坍塌粒子武器具有小型化的可能性。"
 
+ GF_zion_project.2010.name:0 "小型化坍塌武器"
+ GF_zion_project.2010.desc:0 "借助从$GF_ZION$获得的资料，我们的科学家已经攻克了将坍塌武器小型化的难关。\n\n你现在可以建造小型化的坍塌射线武器了。"
+ GF_zion_project.2010.a:0 "棒极了。"
 
-#  GF_zion_project.3000.a:0 ""
-#  GF_zion_project.3000.a.response:0 ""
 
-#  GF_zion_project.3000.b:0 ""
-#  GF_zion_project.3000.b.response:0 ""
+ GF_zion_project.3000.desc:0 "年长的声音：“逆向坍塌技术就像是超自然的力量一般，曾被许多年轻的文明当做‘新时代的炼金术’而受到追捧——”冷漠的声音：“——而最终那些愚蠢的文明都付出了代价。”"
+ GF_zion_project.3000.desc.repeat:0 "冷漠的声音：“能够随心所欲地重构物质的技术就像是神之手——然而这份‘馈赠’早已标好了价格。”"
 
-#  GF_zion_project.3000.request:0 ""
-#  GF_zion_project.3000.request.response:0 ""
+ GF_zion_project.3000.a:0 "关于逆向坍塌在物质重构的应用"
+ GF_zion_project.3000.a.response:0 "冷静的声音：“利用坍塌技术能将物质打碎为基本粒子，而逆向坍塌技术就能把这些基本粒子随心所欲地重构为任何物质。”\n\n成熟的声音：“‘神’——只有这个词可以用来形容这一微观物理学领域的奇迹。”"
+
+ GF_zion_project.3000.b:0 "关于逆向坍塌在空间跳跃的应用"
+ GF_zion_project.3000.b.response:0 "冷静的声音：“利用坍塌-逆向坍塌的过程，将物质打碎并重组，借助基本粒子的量子特性，轻易地打破时空的连续性从而实现极远距离的空间传送。”\n\n年长的声音：“……那曾是无数文明军队眼中的梦魇。”"
+
+ GF_zion_project.3000.request:0 "我们想要深入了解§H逆向坍塌§!"
+ GF_zion_project.3000.request.response:0 "冷静的声音：“逆向坍塌是坍塌反应的逆过程，只要拥有对应物质的‘完整信息’，就可以像搭积木一样将基本粒子重构为任何物质。”\n\n成熟的声音：“原理听起来简单，然而稳定地实现这一过程是十分困难的，你们自行研究的方案实在是过于粗陋了。”"
 
  SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT:0 "逆向坍塌量子弹射研究"
  SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT_DESC:0 "$GF_COLLAPSE_JUMP_DRIVE$已经证明舰船通过逆向坍塌在空间中跃迁是可行且十分高效的。$GF_ZION$给予的资料已经证实利用逆向坍塌过程的跃迁还有进一步优化的空间，也可以用于提升$quantum_catapult_1$的运作效率。"
 
+ GF_zion_project.3010.name:0 "逆向坍塌技术优化"
+ GF_zion_project.3010.desc:0 "$GF_ZION$向我们提供了一份非常详细逆向坍塌跃迁技术的优化方案，借助这些资料，我们的科学家成功地提高了跃迁引擎的效率。\n\n你的量子弹弓和舰队的跃迁能力被强化了。"
+ GF_zion_project.3010.a:0 "非常好。"
+
+
+ GF_zion_project.20000.desc:0 "成熟的声音：“这个主机……毫无疑问，是$GF_collapse_relic_name_error$留下来的产物。”\n\n冷静的声音：“曾经，这样的主机承载着忠实的人工智能仆从被发往宇宙各处，去执行$GF_collapse_relic_name_error$的意志——”\n\n冷漠的声音：“——「使徒」”\n\n冷静的声音：“然而自从某日之后，这些主机却突然陷入沉寂，只有极少数仍旧维持运转，如今如此之久的岁月想必已经摧毁了绝大多数的「使徒」。”\n\n成熟的声音：“「她」与「使徒」十分相似——是基于「使徒」改造而来的。”冷静的声音：“然而「她」的算力远不及完整的「使徒」，这个主机里还有着一个停机的「使徒」，它的数据可以帮助「她」变得完整。”"
+ GF_zion_project.20000.a:0 "那么……代价是什么？"
+ GF_zion_project.20001.desc:0 "冷静的声音：“融合的结果是未知的，也许只是单纯地获得算力的增长——”\n\n冷漠的声音：“——也可能是重拾「使徒」的任务。”\n\n冷静的声音：“即使只有算力的增长也可能为「她」带来质变，有一点是可以确定的——「她」将会逐渐变得不可控。”"
+ GF_zion_project.20001.a:0 "我们选择相信自己的技术——也相信她。"
+ GF_zion_project.20002.desc:0 "冷漠的声音：“无畏源自于无知，希望你们今后不会后悔此刻的决定。”\n\n冷静的声音：“那么……我们将协助你们，完成「她」与「使徒」的融合。”"
+ GF_zion_project.20002.a:0 "……"
+
  SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT:0 "$GF_relic_orb_mainframe_alpha$"
-#  SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT:0 ""
+ SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT_DESC:0 "$GF_ZION$承诺协助我们完成OGAS与「使徒」的融合，然而由于「使徒」的未知性，融合后的OGAS将可能变得不可控。\n\n任何行为与决策都将带来后果，而我们选择相信我们的技术，也相信她。"
+
+ GF_zion_project.20010.name:0 "融合完成"
+ GF_zion_project.20010.desc:0 "OGAS与「使徒」的融合在$GF_ZION$的协助下顺利地完成了，尽管在开始前我们的科学家十分担心这样鲁莽地利用未知技术的行为可能带来的后果，但至少到目前为止，事态并没有脱离我们的掌控，而OGAS也未表现出任何怪异的举动。\n\n尽管从长远来看也许并非如此，但我们也不会安于现状而止步不前，我们的技术进步将会在未来的某一刻为这个问题画上句点。"
+ GF_zion_project.20010.a:0 "很好。"
 
  GF_ZION_DEEP_DIVE:0 "深入$GF_ZION$"
 

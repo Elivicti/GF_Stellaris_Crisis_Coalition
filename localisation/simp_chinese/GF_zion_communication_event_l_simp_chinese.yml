@@ -53,6 +53,12 @@
  GF_add_zion_deep_dive_cooldown_tooltip_4:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y4年§!内无法进行§Y深入$GF_ZION$§!行动。"
  GF_add_zion_deep_dive_cooldown_tooltip_3:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y3年§!内无法进行§Y深入$GF_ZION$§!行动。"
 
+ GF_zion.20000.desc.a:0 "成熟的声音：“你们的文明就像抱着核武器的婴儿，根本不知道自己面对的是什么……”"
+ GF_zion.20000.desc.b:0 "冷漠的声音：“‘归宿’不过是个永恒牢笼，只有欺骗和数千年的等待……你们也将成为下一个受害者。”"
+ GF_zion.20000.desc.high_favor.a:0 "年长的声音：“年轻的文明总是对未知充满了渴求与好奇，这份进取之心，总会让我想起过去……”"
+ GF_zion.20000.desc.high_favor.b:0 "冷漠的声音：“这里从来没有真正接纳过任何人……”\n\n成熟的声音：“即使追逐的梦想变成了梦魇，你们也会坚持下去吗？”"
+ GF_zion.20000.desc.very_high_favor:0 "迷惘的声音：“如果文明注定被毁灭……那么挣扎的意义是什么？”\n\n年长的声音：“也许……年轻的文明将会带来巨人之殇……”"
+
  GF_zion.20000.secrets:0 "愿意与我们分享些§H秘密§!吗？"
  GF_zion.20000.research:0 "我们需要你们协助研究。"
  GF_zion_already_researching_tooltip:0 "$GF_ZION$已经在协助研究了！"
@@ -60,7 +66,10 @@
  GF_zion.20000.ogas:0 "返回OGAS"
  GF_zion.20000.close:0 "结束通讯"
 
- GF_zion.21000.desc:0 "成熟的声音：“我们可以分享一些我们知道的信息。”\n\n冷漠的声音：“但不要指望我们什么都知道，而且，这种分享也不会是免费的。”"
+ GF_zion.21000.desc.a:0 "年长的声音：“文明的进步总是好奇心推动的……”\n\n冷漠的声音：“而好奇心也会将文明引入深渊。”"
+ GF_zion.21000.desc.b:0 "冷漠的声音：“当你凝视深渊的时候……”\n\n成熟的声音：“……深渊也在凝视着你。”"
+ GF_zion.21000.desc.c:0 "成熟的声音：“渴求那些不为人所知的秘密往往有着代价——”\n\n悲伤的声音：“——那些知识曾经埋葬了无数的年轻文明。”"
+
  GF_zion.21000.return:0 "我们换个话题吧。"
 
  GF_require_zion_deep_dive_no_cooldown:0 "需要$GF_ZION$处于稳定化的状态"
