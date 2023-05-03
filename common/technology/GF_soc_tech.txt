@@ -142,15 +142,15 @@ GF_tech_zener_network_4 = {
 }
 
 GF_tech_ecological_recovery = {
-	cost = @tier2cost2
+	cost = @tier3cost1
 	area = society
-	tier = 4
+	tier = 3
 	category = { new_worlds }
 	prerequisites = {
 		"GF_tech_collapse"
 		"GF_tech_recover_plan"
 	}
-	weight = @tier3weight1
+	weight = @tier3weight3
 	potential = {
 		has_authority = GF_auth_commonwealth
 	}
@@ -180,7 +180,7 @@ GF_tech_ecological_recovery = {
 		}
 		modifier = {
 			factor = 10
-			years_passed >= 50
+			years_passed >= 30
 		}
 		modifier = {
 			factor = 5
