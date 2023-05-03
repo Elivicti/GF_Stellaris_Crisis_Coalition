@@ -280,7 +280,7 @@ guiTypes = {
 		}
 		effectButtonType = {
 			name = "GF_OGAS_threads_tip"
-			text = "GF_OGAS_threads_info"
+			text = "GF_OGAS_threads_info_from"
 			font = "malgun_goth_24"
 			effect = GF_effect_button_always_on
 			position = { x = 30 y = 621 }

@@ -83,10 +83,6 @@ country_event = {
 			which = v_GF_ogas_threads_used
 			value = 0
 		}
-		set_variable = {
-			which = v_GF_ogas_level
-			value = 1
-		}
 		country_event = { id = GF_ogas.110 }
 	}
 }
@@ -147,7 +143,7 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		from = { is_country_type = GF_ogas_country_type }
-		NOT = { has_country_flag = contract_diplomacy_engaged }
+		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 		has_country_flag = flag_GF_can_contact_OGAS
 	}
 
@@ -195,15 +191,13 @@ country_event = {
 
 	trigger = {
 		has_country_flag = flag_GF_can_contact_OGAS
-		NOT = { has_country_flag = contract_diplomacy_engaged }
+		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 	}
 
-	immediate = {
-		set_country_flag = contract_diplomacy_engaged
-	}
+	immediate = { set_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 
 	after = {
-		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+		hidden_effect = { remove_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 	}
 
 	option = {
@@ -303,9 +297,7 @@ country_event = {
 		allow = {
 			custom_tooltip = {
 				fail_text = GF_require_OGAS_no_glitch
-				ruler = {
-					NOT = { has_trait = GF_trait_leader_ogas_glitch }
-				}
+				ruler = { NOT = { has_trait = GF_trait_leader_ogas_glitch } }
 			}
 		}
 		hidden_effect = {
@@ -360,19 +352,19 @@ country_event = {
 	title = GF_OGAS_connect
 	desc = {
 		text = GF_ogas.11200.desc.a
-		trigger = { GF_OGAS_has_available_threads = yes }
+		trigger = { GF_OGAS_has_any_available_threads = yes }
 	}
 	desc = {
 		text = GF_ogas.11200.desc.b
-		trigger = { GF_OGAS_has_available_threads = yes }
+		trigger = { GF_OGAS_has_any_available_threads = yes }
 	}
 	desc = {
 		text = GF_ogas.11200.desc.c
-		trigger = { GF_OGAS_has_available_threads = yes }
+		trigger = { GF_OGAS_has_any_available_threads = yes }
 	}
 	desc = {
 		text = GF_ogas.11200.desc.d
-		trigger = { GF_OGAS_has_available_threads = no }
+		trigger = { GF_OGAS_has_any_available_threads = no }
 	}
 	diplomatic = yes
 	custom_gui = "GF_OGAS_mission_system"
@@ -384,10 +376,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	immediate = {
-		GF_update_OGAS_threads_variable = yes
-	}
-
 	option = {
 		name = GF_ogas.11200.governor
 		response_text = GF_ogas.11200.governor.response
@@ -395,7 +383,7 @@ country_event = {
 		allow = {
 			if = {
 				limit = { NOT = { has_modifier = GF_ogas_mode_governor } }
-				GF_OGAS_has_available_threads = yes
+				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
 		custom_tooltip = GF_ogas.11200.governor.tooltip
@@ -404,7 +392,6 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_governor } }
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 	
 	option = {
@@ -414,7 +401,7 @@ country_event = {
 		allow = {
 			if = {
 				limit = { NOT = { has_modifier = GF_ogas_mode_produce } }
-				GF_OGAS_has_available_threads = yes
+				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
 		custom_tooltip = GF_ogas.11200.produce.tooltip
@@ -423,7 +410,6 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_produce } }
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -433,7 +419,7 @@ country_event = {
 		allow = {
 			if = {
 				limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
-				GF_OGAS_has_available_threads = yes
+				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
 		hidden_effect = { GF_update_OGAS_threads_variable = yes }
@@ -443,7 +429,6 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_upkeep } }
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -453,7 +438,7 @@ country_event = {
 		allow = {
 			if = {
 				limit = { NOT = { has_modifier = GF_ogas_mode_war } }
-				GF_OGAS_has_available_threads = yes
+				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
 		custom_tooltip = GF_ogas.11200.war.tooltip
@@ -462,7 +447,6 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_war } }
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 
 	option = {
@@ -472,7 +456,7 @@ country_event = {
 		allow = {
 			if = {
 				limit = { NOT = { has_modifier = GF_ogas_mode_research } }
-				GF_OGAS_has_available_threads = yes
+				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
 		custom_tooltip = GF_ogas.11200.research.tooltip
@@ -481,7 +465,6 @@ country_event = {
 			GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
 		}
 		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_research } }
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 	}
 	
 	

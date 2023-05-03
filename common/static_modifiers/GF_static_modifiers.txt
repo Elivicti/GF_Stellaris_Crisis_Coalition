@@ -14,6 +14,7 @@ GF_ogas_mode_governor = {
 	planet_buildings_cost_mult = -0.15
 	planet_districts_cost_mult = -0.15
 	planet_jobs_energy_upkeep_mult = 0.05
+	GF_OGAS_threads_used_add = 1
 }
 
 GF_ogas_mode_produce = {
@@ -22,6 +23,7 @@ GF_ogas_mode_produce = {
 	planet_jobs_alloys_produces_mult = 0.1
 	planet_jobs_consumer_goods_produces_mult = 0.1
 	planet_jobs_energy_upkeep_mult = 0.05
+	GF_OGAS_threads_used_add = 1
 }
 
 GF_ogas_mode_upkeep = {
@@ -30,6 +32,7 @@ GF_ogas_mode_upkeep = {
 	planet_jobs_robotic_produces_mult = 0.1
 	planet_pops_robotics_upkeep_mult = -0.1
 	planet_jobs_energy_upkeep_mult = 0.05
+	GF_OGAS_threads_used_add = 1
 }
 
 GF_ogas_mode_war = {
@@ -41,6 +44,7 @@ GF_ogas_mode_war = {
 	army_morale = 0.2
 	armies_upkeep_mult = -0.2
 	planet_jobs_energy_upkeep_mult = 0.05
+	GF_OGAS_threads_used_add = 1
 }
 
 GF_ogas_mode_research = {
@@ -53,6 +57,7 @@ GF_ogas_mode_research = {
 	science_ship_survey_speed = 0.1
 	ship_anomaly_research_speed_mult = 0.1
 	planet_jobs_energy_upkeep_mult = 0.05
+	GF_OGAS_threads_used_add = 1
 }
 
 ######

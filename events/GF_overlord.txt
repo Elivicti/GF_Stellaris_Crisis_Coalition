@@ -411,21 +411,27 @@ country_event = {
 
 	trigger = {
 		has_country_flag = flag_GF_can_contact_OGAS
-		NOT = { has_country_flag = contract_diplomacy_engaged }
+		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 	}
 
 	immediate = {
-		set_country_flag = contract_diplomacy_engaged
+		set_country_flag = flag_GF_OGAS_contact_diplomacy_engaged
 	}
 
 	after = {
-		hidden_effect = { remove_country_flag = contract_diplomacy_engaged }
+		hidden_effect = { remove_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 	}
 
 	option = {
 		name = GF_overlord.10000.mission
 		trigger = {
 			NOT = { has_country_flag = GF_ogas_work_mode }
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = GF_require_OGAS_no_glitch
+				ruler = { NOT = { has_trait = GF_trait_leader_ogas_glitch } }
+			}
 		}
 
 		hidden_effect = {
@@ -436,12 +442,6 @@ country_event = {
 		name = GF_overlord.10000.mission
 		trigger = {
 			has_country_flag = GF_ogas_work_mode
-			custom_tooltip = {
-				fail_text = GF_require_OGAS_no_glitch
-				ruler = {
-					NOT = { has_trait = GF_trait_leader_ogas_glitch }
-				}
-			}
 		}
 		is_dialog_only = yes
 		response_text = GF_overlord.10000.mission.busy_response

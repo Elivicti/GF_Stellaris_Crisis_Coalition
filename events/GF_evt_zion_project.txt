@@ -392,10 +392,7 @@ country_event = {
 		}
 		custom_tooltip = GF_zion_deep_dive_enabled_tooltip
 		GF_end_zion_secrets_event_chain = yes
-		hidden_effect = {
-			remove_modifier = GF_enhanced_OGAS_signal
-			GF_change_ogas_level = { value = 0.5 }
-		}
+		hidden_effect = { remove_modifier = GF_enhanced_OGAS_signal }
 		GF_increase_zion_favor = { VALUE = 15 }
 	}
 }
@@ -1551,7 +1548,6 @@ country_event = {
 		name = GF_zion_project.33300.a
 		hidden_effect = {
 			country_event = { id = GF_zion_project.33301 }
-			GF_change_ogas_level = { value = 1 }
 		}
 	}
 }

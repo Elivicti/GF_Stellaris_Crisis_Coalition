@@ -417,16 +417,7 @@ GF_deactivate_OGAS_subnet = {
 GF_set_ogas_mission = {
 	if = {
 		limit = { has_country_flag = flag_GF_ogas_owner }
-		add_modifier = {
-			modifier = $modifier$
-			multiplier = v_GF_ogas_level
-		}
-		hidden_effect = {
-			change_variable = {
-				which = v_GF_ogas_threads_used
-				value = 1
-			}
-		}
+		add_modifier = { modifier = $modifier$ }
 	}
 	else = {
 		add_modifier = {
@@ -451,15 +442,6 @@ GF_end_ogas_mission = {
 	if = {
 		limit = { has_modifier = $modifier$ }
 		remove_modifier = $modifier$
-		if = {
-			limit = { has_country_flag = flag_GF_ogas_owner }
-			hidden_effect = {
-				change_variable = {
-					which = v_GF_ogas_threads_used
-					value = -1
-				}
-			}
-		}
 	}
 }
 
@@ -488,10 +470,7 @@ GF_remove_all_ogas_mission_modifier = {
 	hidden_effect = {
 		if = {
 			limit = { has_country_flag = flag_GF_ogas_owner }
-			set_variable = {
-				which = v_GF_ogas_threads_used
-				value = 0
-			}
+			GF_update_OGAS_threads_variable = yes
 		}
 	}
 }
@@ -539,15 +518,9 @@ GF_update_OGAS_threads_variable = {
 			modifier = GF_OGAS_threads_add
 			variable = v_GF_ogas_threads_available
 		}
-	}
-}
-
-# scope = any
-GF_change_ogas_level = {
-	event_target:GF_ogas_owner = {
-		change_variable = {
-			which = v_GF_ogas_level
-			value = $value$
+		export_modifier_to_variable = {
+			modifier = GF_OGAS_threads_used_add
+			variable = v_GF_ogas_threads_used
 		}
 	}
 }

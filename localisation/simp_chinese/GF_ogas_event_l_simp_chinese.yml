@@ -47,7 +47,8 @@
  GF_ogas.return:0 "返回上一级"
 
 
- GF_OGAS_threads_info:0 "当前线程占用：§Y[GF_ogas_owner.v_GF_ogas_threads_used]§! / §Y[GF_ogas_owner.v_GF_ogas_threads_available]§!"
+ GF_OGAS_threads_info:0 "当前线程占用：§Y[GF_GetOGASThreadsUsed]§! / §Y[GF_GetOGASThreads]§!"
+ GF_OGAS_threads_info_from:0 "当前线程占用：§Y[from.GF_GetOGASThreadsUsed]§! / §Y[from.GF_GetOGASThreads]§!"
 ###系统操作
  GF_ogas.11000.desc.a:0 "欢迎进入政务系统界面，执政官请选择您要操作的项目"
  GF_ogas.11000.desc.b:0 ""
@@ -55,14 +56,27 @@
 
  GF_ogas.11000.a:0 "OGAS数据统计"
  GF_ogas.11000.b:0 "OGAS任务管理"
- GF_require_OGAS_no_glitch:0 "£trigger_no£ OGAS故障时无法进行任务管理"
+ GF_require_OGAS_no_glitch:0 "OGAS故障时无法进行任务管理"
 ##数据统计
  GF_ogas.11100.desc.a:0 "本机目前暂无任何统计数据"
 ##系统命令
- GF_ogas.11200.desc.a:0 "OGAS所有系统待命，等待执政官进一步指令。\n\n$GF_OGAS_threads_info$"
- GF_ogas.11200.desc.b:0 "当前系统有空余线程可供分配更多任务，请下达命令。\n\n$GF_OGAS_threads_info$"
- GF_ogas.11200.desc.c:0 "OGAS目前尚有多余处理能力，可以接受更多指示，请执政官给予相关权限许可。\n\n$GF_OGAS_threads_info$"
- GF_ogas.11200.desc.d:0 "§H警告：OGAS系统当前并无更多空余线程，无法执行更多任务。§!\n\n$GF_OGAS_threads_info$"
+ GF_ogas.11200.desc.a:0 "OGAS所有系统待命，等待执政官进一步指令。"
+ GF_ogas.11200.desc.b:0 "当前系统有空余线程可供分配更多任务，请下达命令。"
+ GF_ogas.11200.desc.c:0 "OGAS目前尚有多余处理能力，可以接受更多指示，请执政官给予相关权限许可。"
+ GF_ogas.11200.desc.d:0 "§H警告：OGAS系统当前并无更多空余线程，无法执行更多任务。§!"
+
+ GF_OGAS_threads_held:0 "OGAS线程占用: $THREADS|0=-$"
+ GF_require_OGAS_has_available_threads_more_than_1:0 "需要OGAS空闲线程数大于等于§Y1§!"
+ GF_require_OGAS_has_available_threads_more_than_2:0 "需要OGAS空闲线程数大于等于§Y2§!"
+ GF_require_OGAS_has_available_threads_more_than_3:0 "需要OGAS空闲线程数大于等于§Y3§!"
+ GF_require_OGAS_has_available_threads_more_than_4:0 "需要OGAS空闲线程数大于等于§Y4§!"
+ GF_require_OGAS_has_available_threads_more_than_5:0 "需要OGAS空闲线程数大于等于§Y5§!"
+
+ GF_require_OGAS_has_available_threads_more_than_1_with_trigger_icon:0 "£trigger_no£需要OGAS空闲线程数大于等于§Y1§!"
+ GF_require_OGAS_has_available_threads_more_than_2_with_trigger_icon:0 "£trigger_no£需要OGAS空闲线程数大于等于§Y2§!"
+ GF_require_OGAS_has_available_threads_more_than_3_with_trigger_icon:0 "£trigger_no£需要OGAS空闲线程数大于等于§Y3§!"
+ GF_require_OGAS_has_available_threads_more_than_4_with_trigger_icon:0 "£trigger_no£需要OGAS空闲线程数大于等于§Y4§!"
+ GF_require_OGAS_has_available_threads_more_than_5_with_trigger_icon:0 "£trigger_no£需要OGAS空闲线程数大于等于§Y5§!"
 
  GF_OGAS_has_no_threads_available:0 "当前无可用线程"
  v_GF_ogas_threads_used:0 "OGAS已使用线程数"
@@ -72,31 +86,31 @@
 
  GF_ogas.11200.governor:0 "社会管理辅助模式"
  GF_ogas.11200.governor.response:0 "[GF_Get_OGAS_Work_Governer_Response]"
- GF_ogas.11200.governor.tooltip:0 "[GF_Get_OGAS_Work_Governer_Action]$GF_ogas.11200.governor$\n$GF_OGAS_threads_info$\n\n"
+ GF_ogas.11200.governor.tooltip:0 "[GF_Get_OGAS_Work_Governer_Action]$GF_ogas.11200.governor$\n\n"
  GF_OGAS_Work_Governer_Enable_Response:0 "互联网准入证书已获取，本机将持续监视有关舆论导向，并将热点词条、事件发往对应处理部门。"
  GF_OGAS_Work_Governer_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
 
  GF_ogas.11200.produce:0 "经济生产辅助模式"
  GF_ogas.11200.produce.response:0 "[GF_Get_OGAS_Work_Produce_Response]"
- GF_ogas.11200.produce.tooltip:0 "[GF_Get_OGAS_Work_Produce_Action]$GF_ogas.11200.produce$\n$GF_OGAS_threads_info$\n\n"
+ GF_ogas.11200.produce.tooltip:0 "[GF_Get_OGAS_Work_Produce_Action]$GF_ogas.11200.produce$\n\n"
  GF_OGAS_Work_Produce_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_Produce_Enable_Response:0 "数据调用许可已获取，正在调用全国工业企业产品生产数据、构建产品供求模型。依据新模型，本系统将持续连接全国各工业企业，指导原材料、制成品的生产投放。"
 
  GF_ogas.11200.upkeep:0 "人形运行辅助模式"
  GF_ogas.11200.upkeep.response:0 "[GF_Get_OGAS_Work_Upkeep_Response]"
- GF_ogas.11200.upkeep.tooltip:0 "[GF_Get_OGAS_Work_Upkeep_Action]$GF_ogas.11200.upkeep$\n$GF_OGAS_threads_info$\n\n"
+ GF_ogas.11200.upkeep.tooltip:0 "[GF_Get_OGAS_Work_Upkeep_Action]$GF_ogas.11200.upkeep$\n\n"
  GF_OGAS_Work_Upkeep_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_Upkeep_Enable_Response:0 "指令接受，齐纳网络接入许可已授予，相关权限由执政官赋予，正在优化当前仿生人形运行参数，新参数将通过齐纳网络发送至人形个体完成对旧模式更新。"
 
  GF_ogas.11200.war:0 "战略战术辅助模式"
  GF_ogas.11200.war.response:0 "[GF_Get_OGAS_Work_War_Response]"
- GF_ogas.11200.war.tooltip:0 "[GF_Get_OGAS_Work_War_Action]$GF_ogas.11200.war$\n$GF_OGAS_threads_info$\n\n"
+ GF_ogas.11200.war.tooltip:0 "[GF_Get_OGAS_Work_War_Action]$GF_ogas.11200.war$\n\n"
  GF_OGAS_Work_War_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_War_Enable_Response:0 "军用系统接入权限已确认。本机将持续指导舰队与战术人形的训练，并收集分析所得战斗数据，以完善改进现有作战程式。"
 
  GF_ogas.11200.research:0 "科技研发辅助模式"
  GF_ogas.11200.research.response:0 "[GF_Get_OGAS_Work_Research_Response]"
- GF_ogas.11200.research.tooltip:0 "[GF_Get_OGAS_Work_Research_Action]$GF_ogas.11200.research$\n$GF_OGAS_threads_info$\n\n"
+ GF_ogas.11200.research.tooltip:0 "[GF_Get_OGAS_Work_Research_Action]$GF_ogas.11200.research$\n\n"
  GF_OGAS_Work_Research_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_Research_Enable_Response:0 "了解，已接入科研数据库，正在统合并分析所有科研院所相关数据，并根据结果为相关科研人员提供建议，包括分配研究任务、可行性分析与跨学科合作指导等。"
 
