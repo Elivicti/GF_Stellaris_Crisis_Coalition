@@ -149,8 +149,8 @@ building_GF_reverse_collapse = {
 	triggered_planet_modifier = {
 		potential = {
 			NOR = {
-				has_refinery_designation = yes
-				has_research_designation = yes
+				GF_has_refinery_designation = yes
+				GF_has_research_designation = yes
 			}
 		}
 		job_GF_reverse_collapser_industry_add = 1
@@ -159,8 +159,8 @@ building_GF_reverse_collapse = {
 		potential = {
 			OR = {
 				has_industrial_designation = yes
-				has_factory_designation = yes
-				has_foundry_designation = yes
+				GF_has_factory_designation = yes
+				GF_has_foundry_designation = yes
 			}
 		}
 		job_GF_reverse_collapser_industry_add = 1
@@ -168,7 +168,7 @@ building_GF_reverse_collapse = {
 
 	triggered_planet_modifier = {
 		potential = {
-			has_refinery_designation = yes
+			GF_has_refinery_designation = yes
 			exists = owner
 			owner = {
 				OR = {
@@ -187,9 +187,9 @@ building_GF_reverse_collapse = {
 		potential = {
 			NOR = {
 				has_industrial_designation = yes
-				has_factory_designation = yes
-				has_foundry_designation = yes
-				has_research_designation = yes
+				GF_has_factory_designation = yes
+				GF_has_foundry_designation = yes
+				GF_has_research_designation = yes
 			}
 			exists = owner
 			owner = {
@@ -206,7 +206,7 @@ building_GF_reverse_collapse = {
 		job_GF_reverse_collapser_refinery_add = 1
 	}
 	triggered_planet_modifier = {
-		potential = { has_research_designation = yes }
+		potential = { GF_has_research_designation = yes }
 		job_GF_reverse_collapser_research_add = 2
 	}
 
@@ -231,29 +231,29 @@ building_GF_reverse_collapse = {
 	triggered_desc = {
 		trigger = {
 			NOR = {
-				has_factory_designation = yes
-				has_foundry_designation = yes
-				has_refinery_designation = yes
-				has_research_designation = yes
+				GF_has_factory_designation = yes
+				GF_has_foundry_designation = yes
+				GF_has_refinery_designation = yes
+				GF_has_research_designation = yes
 			}
 		}
 		text = job_GF_reverse_collapser_industry_effect_desc
 	}
 	triggered_desc = {
-		trigger = { has_foundry_designation = yes }
+		trigger = { GF_has_foundry_designation = yes }
 		text = job_GF_reverse_collapser_industry_alloys_effect_desc
 	}
 	triggered_desc = {
-		trigger = { has_factory_designation = yes }
+		trigger = { GF_has_factory_designation = yes }
 		text = job_GF_reverse_collapser_industry_consumer_goods_effect_desc
 	}
 	triggered_desc = {
 		trigger = {
 			NOR = {
 				has_industrial_designation = yes
-				has_factory_designation = yes
-				has_foundry_designation = yes
-				has_research_designation = yes
+				GF_has_factory_designation = yes
+				GF_has_foundry_designation = yes
+				GF_has_research_designation = yes
 			}
 			exists = owner
 			owner = {
@@ -270,7 +270,7 @@ building_GF_reverse_collapse = {
 		text = job_GF_reverse_collapser_refinery_effect_desc
 	}
 	triggered_desc = {
-		trigger = { has_research_designation = yes }
+		trigger = { GF_has_research_designation = yes }
 		text = job_GF_reverse_collapser_research_effect_desc
 	}
 }
