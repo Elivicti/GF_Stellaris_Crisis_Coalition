@@ -1,0 +1,89 @@
+
+# 奇观拓展
+# global_flag = AOW_installed
+
+AOW_trgr_PLNT_existing_megastructure = {
+	OR = {
+		has_any_megastructure = yes
+		has_planet_flag = megastructure
+		has_planet_flag = has_megastructure
+		is_ringworld = yes
+		is_artificial = yes
+		is_planet_class = pc_habitat
+	}
+}
+AOW_trgr_SSTM_single_star_system = {
+	count_system_planet = { limit = { is_star = yes } count = 1 }
+}
+
+AOW_trgr_PLNT_obafgkm_star = {
+	OR = {
+		AOW_trgr_PLNT_o_spectrum = yes
+		AOW_trgr_PLNT_b_spectrum = yes
+		AOW_trgr_PLNT_a_spectrum = yes
+		AOW_trgr_PLNT_f_spectrum = yes
+		AOW_trgr_PLNT_g_spectrum = yes
+		AOW_trgr_PLNT_k_spectrum = yes
+		AOW_trgr_PLNT_m_spectrum = yes
+	}
+}
+AOW_trgr_PLNT_o_spectrum = {#O
+	OR = {
+		is_planet_class = pc_o_hyper_star
+		is_planet_class = pc_lbv_blue_star
+		is_planet_class = pc_lbv_green_star
+		is_planet_class = pc_lbv_red_star
+		is_planet_class = pc_w_azure_star
+		is_planet_class = pc_w_red_star
+		is_planet_class = pc_w_green_star
+		is_planet_class = pc_w_purple_star
+		is_planet_class = pc_o_super_star
+		is_planet_class = pc_o_star
+	}
+}
+AOW_trgr_PLNT_b_spectrum = {#B
+	OR = {
+		is_planet_class = pc_b_super_star
+		is_planet_class = pc_b_star
+		is_planet_class = pc_ae_star
+	}
+}
+AOW_trgr_PLNT_a_spectrum = {#A
+	OR = {
+		is_planet_class = pc_a_super_star
+		is_planet_class = pc_a_star
+	}
+}
+AOW_trgr_PLNT_f_spectrum = {#F
+	OR = {
+		is_planet_class = pc_f_super_star
+		is_planet_class = pc_f_star
+		is_planet_class = pc_tt_white_star
+	}
+}
+AOW_trgr_PLNT_g_spectrum = {#G
+	OR = {
+		is_planet_class = pc_g_super_star
+		is_planet_class = pc_fu_star
+		is_planet_class = pc_g_giant_star
+		is_planet_class = pc_g_star
+		is_planet_class = pc_tt_orange_star
+	}
+}
+AOW_trgr_PLNT_k_spectrum = {#K
+	OR = {
+		is_planet_class = pc_k_super_star
+		is_planet_class = pc_k_giant_star
+		is_planet_class = pc_s_giant_star
+		is_planet_class = pc_k_star
+		is_planet_class = pc_tt_red_star
+	}
+}
+AOW_trgr_PLNT_m_spectrum = {#M
+	OR = {
+		is_planet_class = pc_m_hyper_star
+		is_planet_class = pc_m_giant_star
+		is_planet_class = pc_c_giant_star
+		is_planet_class = pc_m_star
+	}
+}
