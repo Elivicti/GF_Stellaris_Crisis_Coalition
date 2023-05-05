@@ -87,12 +87,8 @@
  GF_pm_contaminated_zone_purified_desc:0 "我们针对污染区的净化行动圆满完成。"
 
 ####
- GF_zion_research_low:0 "$GF_secrets_of_zion_event_chain_title$"
- GF_zion_research_low_desc:0 "$GF_ZION$中的欧伽斯意识承诺协助我们的研究。"
- GF_zion_research_mid:0 "$GF_secrets_of_zion_event_chain_title$"
- GF_zion_research_mid_desc:0 "$GF_zion_research_low_desc$"
- GF_zion_research_high:0 "$GF_secrets_of_zion_event_chain_title$"
- GF_zion_research_high_desc:0 "$GF_zion_research_low_desc$"
+ GF_zion_research_assistance:0 "$GF_secrets_of_zion_event_chain_title$"
+ GF_zion_research_assistance_desc:0 "$GF_ZION$中的欧伽斯意识承诺协助我们的研究。"
 
  GF_orb_mainframe_alpha:0 "$GF_relic_orb_mainframe_alpha$"
  GF_orb_mainframe_alpha_desc:0 "在§Y$NAME_GF_sf_the_great_sepulchre$§!中获得的高科技计算机主机，经由$GF_ZION$的解析后并入了§Y[GF_ogas_owner.GetRulerTitle] [GF_ogas_owner.GetRulerName]§!的中央数据库。"

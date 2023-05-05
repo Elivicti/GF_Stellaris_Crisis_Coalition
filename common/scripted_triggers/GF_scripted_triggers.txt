@@ -252,94 +252,15 @@ GF_require_zion_favor_mid = {
 # 	}
 # }
 
-# scope = country, energy >= 5K or 1 monthly income
-GF_require_energy_stockpile_1 = {
-	if = {
-		limit = {
-			check_variable = {
-				which = v_GF_monthly_energy_income
-				value >= @GF_zion_project_cost_max
-			}
-		}
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_cost_max
-		}
-	}
-	else = {
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_energy_cost_1
-		}
-		custom_tooltip = {
-			text = GF_require_energy_stockpile_1_monthly_income
-			check_variable = {
-				which = v_GF_monthly_energy_income
-				value < v_GF_energy_stockpile
-			}
-		}
-	}
-	
-}
-
-# scope = country, energy >= 10K or 2 monthly income
-GF_require_energy_stockpile_2 = {
-	if = {
-		limit = {
-			check_variable_arithmetic = {
-				which = v_GF_monthly_energy_income
-				multiply = 2
-				value >= @GF_zion_project_cost_max
-			}
-		}
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_cost_max
-		}
-	}
-	else = {
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_energy_cost_2
-		}
-		custom_tooltip = {
-			text = GF_require_energy_stockpile_2_monthly_income
-			check_variable_arithmetic = {
-				which = v_GF_monthly_energy_income
-				multiply = 2
-				value < v_GF_energy_stockpile
-			}
-		}
-	}
-}
-
-# scope = country, energy >= 15K or 3 monthly income
-GF_require_energy_stockpile_3 = {
-	if = {
-		limit = {
-			check_variable_arithmetic = {
-				which = v_GF_monthly_energy_income
-				multiply = 3
-				value >= @GF_zion_project_cost_max
-			}
-		}
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_cost_max
-		}
-	}
-	else = {
-		has_resource = {
-			type = energy
-			amount >= @GF_zion_project_energy_cost_3
-		}
-		custom_tooltip = {
-			text = GF_require_energy_stockpile_3_monthly_income
-			check_variable_arithmetic = {
-				which = v_GF_monthly_energy_income
-				multiply = 3
-				value < v_GF_energy_stockpile
-			}
+# 检查锡安项目所需的资源库存
+# 需要$TIER$ * $RES$月收入的$RES$，最少为@GF_zion_project_$RES$_cost_$TIER$（定义于GF_scripted_variables.txt）
+# scope = country
+GF_zion_require_resource_stockpile = {
+	custom_tooltip = {
+		text = GF_zion_require_$RES$_stockpile_$TIER$
+		resource_stockpile_compare = {
+			resource = $RES$
+			value >= value:GF_monthly_resource_income|RES|$RES$|MULT|$TIER$|MIN|@GF_zion_project_$RES$_cost_$TIER$|
 		}
 	}
 }

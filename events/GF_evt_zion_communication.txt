@@ -316,11 +316,7 @@ country_event = {
 		allow = {
 			custom_tooltip = {
 				fail_text = GF_zion_already_researching_tooltip
-				NOR = {
-					has_modifier = GF_zion_research_low
-					has_modifier = GF_zion_research_mid
-					has_modifier = GF_zion_research_high
-				}
+				NOT = { has_modifier = GF_zion_research_assistance }
 			}
 			GF_require_zion_favor_mid = yes
 		}
@@ -376,13 +372,6 @@ country_event = {
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
 
-	immediate = {
-		GF_get_monthly_income_and_stockpile = {
-			RES = energy
-			MIN = @GF_zion_project_energy_cost_1
-		}
-	}
-
 	option = {
 		name = GF_zion.21000.elid
 		trigger = {
@@ -397,7 +386,7 @@ country_event = {
 		}
 		allow = {
 			GF_require_zion_favor_mid = yes
-			GF_require_energy_stockpile_1 = yes
+			GF_zion_require_resource_stockpile = { RES = energy TIER = 1 }
 		}
 		GF_zion_project_cost = { RES = energy TIER = 1 }
 
@@ -441,7 +430,7 @@ country_event = {
 		}
 		allow = {
 			GF_require_zion_favor_high = yes
-			GF_require_energy_stockpile_2 = yes
+			GF_zion_require_resource_stockpile = { RES = energy TIER = 2 }
 		}
 		GF_zion_project_cost = { RES = energy TIER = 2 }
 
@@ -479,7 +468,7 @@ country_event = {
 		}
 		allow = {
 			GF_require_zion_favor_high = yes
-			GF_require_energy_stockpile_2 = yes
+			GF_zion_require_resource_stockpile = { RES = energy TIER = 2 }
 		}
 		GF_zion_project_cost = { RES = energy TIER = 2 }
 		
@@ -503,7 +492,7 @@ country_event = {
 			NOT = { has_country_flag = flag_GF_requested_zion_deep_dive }
 		}
 		allow = {
-			GF_require_energy_stockpile_1 = yes
+			GF_zion_require_resource_stockpile = { RES = energy TIER = 1 }
 			GF_require_zion_favor_decent = yes
 		}
 		GF_zion_project_cost = { RES = energy TIER = 1 }
@@ -546,11 +535,11 @@ country_event = {
 			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_1 }
 		}
 		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_1 }
-		add_modifier = { modifier = GF_zion_research_low years = 5 }
+		add_modifier = { modifier = GF_zion_research_assistance multiplier = 1 years = 5 }
 
 		if = {
 			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
-			GF_increase_zion_favor = { VALUE = 5 }
+			GF_change_zion_favor = { VALUE = 5 }
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
 	}
@@ -562,14 +551,14 @@ country_event = {
 			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_2 }
 		}
 		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_2 }
-		add_modifier = { modifier = GF_zion_research_mid years = 5 }
+		add_modifier = { modifier = GF_zion_research_assistance multiplier = 2 years = 5 }
 
 		if = {
 			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
-			GF_increase_zion_favor = { VALUE = 10 }
+			GF_change_zion_favor = { VALUE = 10 }
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
-		else = { GF_increase_zion_favor = { VALUE = 5 } }
+		else = { GF_change_zion_favor = { VALUE = 5 } }
 	}
 
 	option = {
@@ -579,14 +568,14 @@ country_event = {
 			has_resource = { type = energy amount >= @GF_zion_project_energy_cost_3 }
 		}
 		add_resource = { energy = -1 mult = @GF_zion_project_energy_cost_3 }
-		add_modifier = { modifier = GF_zion_research_high years = 5 }
+		add_modifier = { modifier = GF_zion_research_assistance multiplier = 3 years = 5 }
 
 		if = {
 			limit = { NOT = { has_country_flag = flag_GF_requested_zion_research } }
-			GF_increase_zion_favor = { VALUE = 15 }
+			GF_change_zion_favor = { VALUE = 15 }
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
-		else = { GF_increase_zion_favor = { VALUE = 5 } }
+		else = { GF_change_zion_favor = { VALUE = 5 } }
 	}
 
 

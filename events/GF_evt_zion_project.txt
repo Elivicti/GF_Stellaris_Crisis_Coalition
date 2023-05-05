@@ -115,7 +115,7 @@ country_event = {
 		GF_end_zion_secrets_event_chain = yes
 
 		give_technology = { tech = GF_tech_elid_army }
-		GF_increase_zion_favor = { VALUE = 5 }
+		GF_change_zion_favor = { VALUE = 5 }
 	}
 }
 
@@ -203,7 +203,7 @@ country_event = {
 		GF_end_zion_secrets_event_chain = yes
 
 		give_technology = { tech = GF_tech_miniaturized_collapse_lance }
-		GF_increase_zion_favor = { VALUE = 10 }
+		GF_change_zion_favor = { VALUE = 10 }
 	}
 }
 
@@ -291,7 +291,7 @@ country_event = {
 		GF_end_zion_secrets_event_chain = yes
 
 		give_technology = { tech = GF_tech_collapse_slingshot_protocal }
-		GF_increase_zion_favor = { VALUE = 10 }
+		GF_change_zion_favor = { VALUE = 10 }
 	}
 }
 
@@ -393,7 +393,7 @@ country_event = {
 		custom_tooltip = GF_zion_deep_dive_enabled_tooltip
 		GF_end_zion_secrets_event_chain = yes
 		hidden_effect = { remove_modifier = GF_enhanced_OGAS_signal }
-		GF_increase_zion_favor = { VALUE = 15 }
+		GF_change_zion_favor = { VALUE = 15 }
 	}
 }
 
@@ -417,17 +417,10 @@ country_event = {
 	desc = GF_zion_project.30000.desc.c
 	desc = GF_zion_project.30000.desc.d
 
-	immediate = {
-		GF_get_monthly_income_and_stockpile = {
-			RES = energy
-			MIN = @GF_zion_project_energy_cost_1
-		}
-	}
-
 	option = {
 		name = GF_zion_project.30000.low_energy
 		custom_tooltip = GF_zion_project.30000.low_energy.tooltip
-		allow = { GF_require_energy_stockpile_1 = yes }
+		allow = { GF_zion_require_resource_stockpile = { RES = energy TIER = 1 } }
 		GF_zion_project_cost = { RES = energy TIER = 1 }
 
 		hidden_effect = {
@@ -439,7 +432,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.30000.mid_energy
 		custom_tooltip = GF_zion_project.30000.mid_energy.tooltip
-		allow = { GF_require_energy_stockpile_2 = yes }
+		allow = { GF_zion_require_resource_stockpile = { RES = energy TIER = 2 } }
 		GF_zion_project_cost = { RES = energy TIER = 2 }
 
 		hidden_effect = {
@@ -451,7 +444,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.30000.high_energy
 		custom_tooltip = GF_zion_project.30000.high_energy.tooltip
-		allow = { GF_require_energy_stockpile_3 = yes }
+		allow = { GF_zion_require_resource_stockpile = { RES = energy TIER = 3 } }
 		GF_zion_project_cost = { RES = energy TIER = 3 }
 
 		hidden_effect = {
@@ -1566,7 +1559,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33301.a
 		GF_enable_zion_project = { PROJECT = SP_GF_DATA_SINGULARITY_PROJECT }
-		GF_decrease_zion_favor = { VALUE = 5 }
+		GF_change_zion_favor = { VALUE = 5 }
 
 		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_inf
 		hidden_effect = {
@@ -1581,7 +1574,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33301.b
 		custom_tooltip = GF_zion_project.33301.b.tooltip
-		GF_decrease_zion_favor = { VALUE = 25 }
+		GF_change_zion_favor = { VALUE = 25 }
 		
 		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_10
 		hidden_effect = {
@@ -1632,7 +1625,7 @@ country_event = {
 
 	after = {
 		GF_end_zion_secrets_event_chain = yes
-		GF_increase_zion_favor = { VALUE = 5 }
+		GF_change_zion_favor = { VALUE = 5 }
 		hidden_effect = { remove_modifier = GF_zion_deep_dive_cooldown }
 		GF_set_zion_deep_dive_cooldown = yes
 	}

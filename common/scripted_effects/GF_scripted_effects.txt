@@ -125,50 +125,14 @@ GF_create_black_zone_deposit = {
 	}
 }
 
-# scope = country, 导出国家的$RES$月收入和库存，并将储存月收入的变量限制在$MIN$以上
-GF_get_monthly_income_and_stockpile = {
-	export_resource_income_to_variable = {
-		resource = $RES$
-		variable = v_GF_monthly_$RES$_income
-	}
-	export_resource_stockpile_to_variable = {
-		resource = $RES$
-		variable = v_GF_$RES$_stockpile
-	}
-	if = {
-		limit = {
-			check_variable = {
-				which = v_GF_monthly_$RES$_income
-				value < $MIN$
-			}
-		}
-		set_variable = {
-			which = v_GF_monthly_$RES$_income
-			value = $MIN$
-		}
-	}
-}
-
-# scope = country, 花费$TIER$ * $RES$月收入的$RES$资源，最高为@GF_zion_project_cost_max (1M)
+# 扣除锡安项目所需的资源
+# 需要$TIER$ * $RES$月收入的$RES$，最少为@GF_zion_project_$RES$_cost_$TIER$（定义于GF_scripted_variables.txt）
+# scope = country
+# scope = country
 GF_zion_project_cost = {
-	if = {
-		limit = {
-			check_variable_arithmetic = {
-				which = v_GF_monthly_$RES$_income
-				multiply = $TIER$
-				value >= @GF_zion_project_cost_max
-			}
-		}
-		add_resource = {
-			$RES$ = -1
-			mult = @GF_zion_project_cost_max
-		}
-	}
-	else = {
-		add_resource = {
-			$RES$ = @\[ -1 * $TIER$ ]
-			mult = v_GF_monthly_$RES$_income
-		}
+	add_resource = {
+		$RES$ = -1
+		mult = value:GF_monthly_resource_income|RES|$RES$|MULT|$TIER$|MIN|@GF_zion_project_$RES$_cost_$TIER$|
 	}
 }
 
@@ -197,6 +161,7 @@ GF_end_zion_secrets_event_chain = {
 				has_special_project = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT
 				has_special_project = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT
 				has_special_project = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT
+				has_special_project = SP_GF_DATA_SINGULARITY_PROJECT
 			}
 		}
 		end_event_chain = GF_secrets_of_zion_event_chain
@@ -205,18 +170,17 @@ GF_end_zion_secrets_event_chain = {
 
 @GF_zion_favor_upper_limit = 200
 
-# scope = country, 提升锡安的评价，最高为@GF_zion_favor_upper_limit
-GF_increase_zion_favor = {
+# 更改锡安的评价，上限为@GF_zion_favor_upper_limit，无下限
+# scope = country
+GF_change_zion_favor = {
 	custom_tooltip_with_params = {
-		description = GF_increase_zion_favor_tooltip
-		description_parameters = {
-			"VALUE" = @\[ | $VALUE$ | ]
-		}
+		description = GF_change_zion_favor_tooltip
+		description_parameters = { VALUE = $VALUE$ }
 	}
 	hidden_effect = {
 		change_variable = {
 			which = v_GF_zion_favor
-			value = @\[ | $VALUE$ | ]
+			value = $VALUE$
 		}
 		if = {
 			limit = {
@@ -229,22 +193,6 @@ GF_increase_zion_favor = {
 				which = v_GF_zion_favor
 				value = @GF_zion_favor_upper_limit
 			}
-		}
-	}
-}
-
-# scope = country, 降低锡安的评价
-GF_decrease_zion_favor = {
-	custom_tooltip_with_params = {
-		description = GF_decrease_zion_favor_tooltip
-		description_parameters = {
-			"VALUE" = @\[ -1 * | $VALUE$ | ]
-		}
-	}
-	hidden_effect = {
-		change_variable = {
-			which = v_GF_zion_favor
-			value = @\[ -1 * | $VALUE$ | ]
 		}
 	}
 }

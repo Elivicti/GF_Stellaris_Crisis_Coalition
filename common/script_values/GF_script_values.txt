@@ -59,14 +59,16 @@
 GF_monthly_resource_income = {
 	complex_trigger_modifier = {
 		trigger = resource_income_compare
-		trigger_scope = owner
 		parameters = {
 			resource = $RES$
 		}
 		mode = add
 	}
-	max = @GF_zion_project_cost_max
-	min = $MIN$
+	mult = $MULT|1$
+	max = $MAX|@GF_zion_project_cost_max$
+	min = $MIN|0$
+	# max = @GF_zion_project_cost_max
+	# min = $MIN$
 }
 
 # scope = country
