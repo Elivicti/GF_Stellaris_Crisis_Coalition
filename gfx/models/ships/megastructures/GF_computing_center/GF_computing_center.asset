@@ -44,7 +44,7 @@ entity = {
 	locator = { name = "ring"	position = { 0 0 0 } rotation = { 90 90 0 } }
 
 	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
-	attach = { "ring" = "GF_computing_center_rings_entity" }
+	attach = { "ring" = "GF_computing_center_rings_construction_entity" }
 
 	scale = 1.0
 	cull_radius = 500
@@ -59,3 +59,11 @@ entity = {
 	scale = 7.0
 }
 
+entity = {
+	name = "GF_computing_center_rings_construction_entity"
+	pdxmesh = "mammalian_01_colossus_rings_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	scale = 7.0
+}
