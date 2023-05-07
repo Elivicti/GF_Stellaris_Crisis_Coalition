@@ -15,7 +15,7 @@ GF_automated_city_construction = {
 			end = 60
 
 		}
-		stage_2= {
+		stage_2 = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_green
 			end = 90
@@ -45,13 +45,13 @@ GF_automated_city_construction = {
 				potential = {
 					target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
 				}
-				modifier = { GF_OGAS_threads_used_add = 3 }
+				modifier = { GF_OGAS_threads_used_add = 1 }
 			}
 			triggered_modifier = {
 				potential = {
 					target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
 				}
-				modifier = { GF_OGAS_threads_used_add = 4 }
+				modifier = { GF_OGAS_threads_used_add = 2 }
 			}
 			target_modifier = {
 				planet_districts_upkeep_mult = -0.20
@@ -80,11 +80,6 @@ GF_automated_city_construction = {
 			}
 			NOT = { current_situation_approach = GF_automated_city_construction_approach_cancel }
 			owner = { GF_OGAS_has_used_threads_over_cap = yes }
-		}
-		modifier = {
-			desc = XXX
-			set = 10
-			has_situation_flag = test
 		}
 	}
 
@@ -142,6 +137,7 @@ GF_automated_city_construction = {
 		name = GF_automated_city_construction_approach_normal
 		icon = GFX_situation_approach_balance_sheet
 		icon_background = GFX_situation_approach_bg_green
+		default = yes
 
 		on_select = {
 			custom_tooltip = GF_automated_city_construction_approach_normal_effect_desc
