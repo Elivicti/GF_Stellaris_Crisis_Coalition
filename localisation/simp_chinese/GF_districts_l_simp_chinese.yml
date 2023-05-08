@@ -89,4 +89,4 @@
  district_GF_automated_reverse_collapse:0 "自动化物质重构中心"
  district_GF_automated_reverse_collapse_desc:0 "这个大型自动化设施专注于利用逆向坍塌原理将坍塌液重构为各类物质。"
  district_GF_automated_reverse_collapse_plural:0 "自动化物质重构中心"
- district_GF_automated_reverse_collapse_desc_spec:0 "§H$district_GF_automated_reverse_collapse$§!：利用$GF_nyto_collapse_liquid$高效地合成各类物质。\n\n维护：£energy£ £exotic_gases£ £GF_nyto_collapse_liquid£ 生产：£alloys£ £consumer_goods£ £exotic_gases£ £volatile_motes£ £rare_crystals£"
+ district_GF_automated_reverse_collapse_desc_spec:0 "§H$district_GF_automated_reverse_collapse$§!：利用$GF_nyto_collapse_liquid$高效地合成各类物质。\n\n维护：£energy£ £gf_core_chip£ £GF_nyto_collapse_liquid£ 生产：£alloys£ £consumer_goods£ £exotic_gases£ £volatile_motes£ £rare_crystals£"

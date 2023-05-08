@@ -32,11 +32,15 @@
  GF_automated_city_specialist_type_desc:0 "[GF_GetAutomatedCitySpecialistTypeEBDesc]"
 
  GF_colony.5000.a:0 "$GFAutomatedCityBaseResource$"
+ GF_colony.5000.a.tooltip:0 "该类型产生的$mod_GF_OGAS_threads_used_add$：§R+2§!"
  GF_colony.5000.b:0 "$GFAutomatedCityAdvancedResource$"
+ GF_colony.5000.b.tooltip:0 "该类型产生的$mod_GF_OGAS_threads_used_add$：§R+3§!"
  GF_colony.5000.c:0 "$GFAutomatedCitySpecialResource$"
+ GF_colony.5000.c.tooltip:0 "该类型产生的$mod_GF_OGAS_threads_used_add$：§R+4§!"
  GF_colony.5000.sep:0 "----"
  GF_colony.5000.sep.tooltip:0 "分割线"
  GF_colony.5000.confirm_require:0 "至少选择一种资源生产的专精类别"
+ GF_colony.5000.confirm_warning:0 "§R开启局势后专精类别将无法修改！§!\n§R开启局势后专精类别将无法修改！§!\n§R开启局势后专精类别将无法修改！§!\n\n"
  GF_colony.5000.canceled:0 "建设计划已取消"
 
  GFAutomatedCityBaseResource:0 "基础资源生产专精"

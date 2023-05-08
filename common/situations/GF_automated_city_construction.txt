@@ -7,6 +7,19 @@ GF_automated_city_construction = {
 	complete_icon = GFX_situation_outcome_meh
 	complete_icon_frame = GFX_situation_outcome_frame_green
 
+	desc = {
+		text = GF_automated_city_construction_desc_base
+		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_base_resources } }
+	}
+	desc = {
+		text = GF_automated_city_construction_desc_advanced
+		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources } }
+	}
+	desc = {
+		text = GF_automated_city_construction_desc_special
+		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_special_resources } }
+	}
+
 	start_value = 0
 	stages = {
 		stage_1 = {

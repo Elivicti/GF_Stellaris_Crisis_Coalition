@@ -43,7 +43,7 @@ col_GF_automated_city = {
 	}
 	planet_modifier = {
 		planet_building_build_speed_mult = 0.20
-		planet_structures_upkeep_mult = -0.20
+		planet_structures_cost_mult = -0.20
 	}
 	weight_modifier = {
 		base = 10
@@ -258,7 +258,7 @@ col_GF_automated_city_factory = {
 		has_planet_flag = flag_p_GF_automated_city_special_resources
 	}
 	planet_modifier = {
-		planet_pop_assembly_mult = 0.25
+		GF_automated_city_districts_factory_assembly_speed_mult = 0.15
 		GF_automated_city_districts_physics_research_produces_mult = -0.50
 		GF_automated_city_districts_society_research_produces_mult = -0.50
 		GF_automated_city_districts_engineering_research_produces_mult = -0.50

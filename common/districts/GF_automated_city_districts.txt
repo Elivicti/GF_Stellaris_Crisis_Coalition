@@ -249,7 +249,7 @@ district_GF_automated_foundary = {
 			minerals = @material_upkeep_t1
 		}
 		produces = {
-			alloys = 27
+			alloys = 30
 		}
 	}
 
@@ -295,7 +295,7 @@ district_GF_automated_industry = {
 			minerals = @material_upkeep_t1
 		}
 		produces = {
-			consumer_goods = 36
+			consumer_goods = 45
 		}
 	}
 
@@ -355,9 +355,9 @@ district_GF_automated_refinery = {
 			minerals = @material_upkeep_t1
 		}
 		produces = {
-			exotic_gases = 4
-			volatile_motes = 4
-			rare_crystals = 4
+			exotic_gases = 5
+			volatile_motes = 5
+			rare_crystals = 5
 		}
 	}
 
@@ -450,18 +450,23 @@ district_GF_automated_factory = {
 		upkeep = {
 			energy = @base_upkeep_t2
 			alloys = 12
+			gf_core_chip = 3
 		}
 		upkeep = {
 			trigger = {
 				exists = assembling_species
 				assembling_species = { has_trait = GF_trait_doll }
 			}
-			gf_core_chip = 6
+			gf_core_chip = 3
 		}
 	}
 
+	triggered_planet_modifier = {
+		planet_pop_assembly_add = 6
+		mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_factory_assembly_speed_mult|
+	}
+
 	planet_modifier = {
-		planet_pop_assembly_add = 18
 		planet_housing_add = 8
 		
 		job_GF_maintenance_engineer_add = 1
@@ -541,15 +546,15 @@ district_GF_automated_reverse_collapse = {
 		}
 		upkeep = {
 			energy = @base_upkeep_t2
-			exotic_gases = @rare_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 			GF_nyto_collapse_liquid = @material_upkeep_t2
 		}
 		produces = {
-			alloys = 16.2
-			consumer_goods = 21.6
-			exotic_gases = 2.4
-			volatile_motes = 2.4
-			rare_crystals = 2.4
+			alloys = 15
+			consumer_goods = 22.5
+			exotic_gases = 2.5
+			volatile_motes = 2.5
+			rare_crystals = 2.5
 		}
 	}
 

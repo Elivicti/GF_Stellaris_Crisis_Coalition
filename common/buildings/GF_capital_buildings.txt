@@ -768,13 +768,19 @@ building_GF_connection_nexus = {
 	planet_modifier = {
 		planet_stability_add = 10
 		GF_system_maintenance = 0.20
-		job_GF_system_dispatcher_add = 1
-		job_GF_maintenance_engineer_add = 2
+		job_GF_system_dispatcher_add = 2
+		job_GF_maintenance_engineer_add = 1
 	}
 
 	triggered_planet_modifier = {
 		GF_automated_city_districts_produces_mult = 1
 		mult = value:GF_cal_system_maintenance_production_effect
+	}
+
+	triggered_planet_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		modifier = { GF_automated_city_districts_factory_assembly_speed_mult = 1 }
+		mult = value:GF_cal_system_maintenance_assembly_effect
 	}
 
 	triggered_planet_modifier = {
@@ -787,9 +793,18 @@ building_GF_connection_nexus = {
 			exists = owner
 			owner = { GF_OGAS_has_used_threads_over_cap = yes }
 		}
-		GF_automated_city_districts_produces_mult = -0.50
-		GF_automated_city_districts_upkeep_mult = 0.50
-		planet_building_build_speed_mult = -0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.75
+		GF_automated_city_districts_produces_mult = -0.75
+		GF_automated_city_districts_upkeep_mult = 0.75
+		planet_building_build_speed_mult = -0.75
+	}
+
+	triggered_desc = {
+		text = GF_OGAS_threads_over_cap
+		trigger = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
 	}
 
 	triggered_desc = {

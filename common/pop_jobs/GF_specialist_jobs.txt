@@ -841,7 +841,7 @@ GF_system_dispatcher = {
 
 	weight = {
 		weight = @specialist_job_weight
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -866,7 +866,7 @@ GF_maintenance_engineer = {
 	possible_precalc = can_fill_specialist_job
 
 	planet_modifier = {
-		GF_system_maintenance = 0.08
+		GF_system_maintenance = 0.06
 	}
 
 	resources = {
@@ -879,7 +879,7 @@ GF_maintenance_engineer = {
 
 	weight = {
 		weight = @specialist_job_weight
-		factor = 3.5
+		factor = 8
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no

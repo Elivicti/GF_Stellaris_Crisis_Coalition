@@ -128,9 +128,26 @@ GF_cal_system_maintenance_upkeep_effect = {
 }
 
 # scope = planet
+GF_cal_system_maintenance_assembly_effect = {
+	base = 2
+	mult = modifier:GF_system_maintenance
+	subtract = 1
+	modifier = {
+		factor = 0.25
+		check_modifier_value = {
+			modifier = GF_system_maintenance
+			value > 0.5
+		}
+	}
+	max = 0.25
+	min = -1
+}
+
+# scope = planet
 GF_get_system_maintenance_percentage = {
 	base = 100
 	mult = modifier:GF_system_maintenance
+	max = 100
 }
 
 # scope = country

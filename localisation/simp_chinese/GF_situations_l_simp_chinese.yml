@@ -65,7 +65,10 @@
 # 自动化星球建设
  GF_automated_city_construction:0 "$pc_GF_automated_city$建设"
  GF_automated_city_construction_type:0 "$pc_GF_automated_city$建设"
- GF_automated_city_construction_desc:0 "我们正在对[target.GetName]进行改造，完成后将转变为$pc_GF_automated_city$"
+ GF_automated_city_construction_desc:0 "我们正在对[target.GetName]进行改造，完成后将转变为$pc_GF_automated_city$。"
+ GF_automated_city_construction_desc_base:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityBaseResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+2§!"
+ GF_automated_city_construction_desc_advanced:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityAdvancedResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+3§!"
+ GF_automated_city_construction_desc_special:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCitySpecialResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+4§!"
 
  GF_automated_city_construction_fail_tooltip:0 "$pc_GF_automated_city$建设将被取消，所有已建设的设施将被拆除。"
  GF_automated_city_construction_complete_tooltip:0 "[target.GetName]将更改为§H$pc_GF_automated_city$§!"
