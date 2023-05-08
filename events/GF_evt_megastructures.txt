@@ -8,6 +8,8 @@ country_event = {
 	show_sound = event_dyson_sphere_build_start
 	location = from
 
+	picture = GFX_evt_megastructure_construction
+
 	is_triggered_only = yes
 
 	option = {
@@ -20,6 +22,8 @@ country_event = {
 	desc = GF_mega.101.desc
 	show_sound = event_dyson_sphere_build_upgrade_frame
 	location = from
+
+	picture = GFX_evt_megastructure_construction
 
 	is_triggered_only = yes
 
@@ -34,6 +38,8 @@ country_event = {
 	show_sound = event_dyson_sphere_build_upgrade_panel
 	location = from
 
+	picture = GFX_evt_megastructure_construction
+
 	is_triggered_only = yes
 
 	option = {
@@ -46,6 +52,8 @@ country_event = {
 	desc = GF_mega.103.desc
 	show_sound = event_think_tank_build_complete
 	location = from
+
+	picture = GFX_evt_megastructure_construction
 
 	is_triggered_only = yes
 

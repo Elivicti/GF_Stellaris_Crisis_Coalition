@@ -212,6 +212,7 @@ GF_computing_center_3 = {
 	entity = "GF_computing_center_phase_03_entity"
 	construction_entity = "GF_computing_center_phase_03_construction_entity"
 	portrait = "GFX_megastructure_construction_background"
+	show_in_outliner = no
 	build_time = 3600
 	resources = {
 		category = megastructures

@@ -195,4 +195,22 @@ spriteTypes = {
 		name = "GFX_district_GF_automated_reverse_collapse"
 		textureFile = "gfx/interface/icons/districts/district_GF_automated_reverse_collapse.dds"
 	}
+
+	# megastructures
+	spriteType = {
+		name = "GFX_GF_computing_center_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_computing_center_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_computing_center_2_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_computing_center_3_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
+	}
 }
