@@ -13,6 +13,7 @@
 
 @material_upkeep_t1 = 36	# 原料类维护费
 @material_upkeep_t2 = 45	# 包括矿物、坍塌液之类的资源生产原料
+@material_upkeep_t3 = 54	#
 
 @build_time = 600
 
@@ -246,10 +247,10 @@ district_GF_automated_foundary = {
 		upkeep = {
 			energy = @base_upkeep_t1
 			volatile_motes = @rare_upkeep_t1
-			minerals = @material_upkeep_t1
+			minerals = @material_upkeep_t2
 		}
 		produces = {
-			alloys = 30
+			alloys = 36
 		}
 	}
 
@@ -295,7 +296,7 @@ district_GF_automated_industry = {
 			minerals = @material_upkeep_t1
 		}
 		produces = {
-			consumer_goods = 45
+			consumer_goods = 54
 		}
 	}
 
@@ -352,12 +353,12 @@ district_GF_automated_refinery = {
 		}
 		upkeep = {
 			energy = @base_upkeep_t2
-			minerals = @material_upkeep_t1
+			minerals = @material_upkeep_t3
 		}
 		produces = {
-			exotic_gases = 5
-			volatile_motes = 5
-			rare_crystals = 5
+			exotic_gases = 7.2
+			volatile_motes = 7.2
+			rare_crystals = 7.2
 		}
 	}
 
@@ -547,14 +548,14 @@ district_GF_automated_reverse_collapse = {
 		upkeep = {
 			energy = @base_upkeep_t2
 			gf_core_chip = @rare_upkeep_t2
-			GF_nyto_collapse_liquid = @material_upkeep_t2
+			GF_nyto_collapse_liquid = @material_upkeep_t3
 		}
 		produces = {
-			alloys = 15
-			consumer_goods = 22.5
-			exotic_gases = 2.5
-			volatile_motes = 2.5
-			rare_crystals = 2.5
+			alloys = 18
+			consumer_goods = 27
+			exotic_gases = 3
+			volatile_motes = 3
+			rare_crystals = 3
 		}
 	}
 
