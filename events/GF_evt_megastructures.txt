@@ -254,6 +254,10 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		fromfrom = { GF_is_computing_center = yes }
+	}
+
 	immediate = {
 		remove_country_flag = flag_GF_has_built_computing_center
 		fromfrom.solar_system = {
