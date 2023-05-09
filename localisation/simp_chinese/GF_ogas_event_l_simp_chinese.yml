@@ -6,7 +6,7 @@
 ########
 
 ######## OGAS主通讯界面
- GF_quick_ogas_contact_tooltip:0 "接入OGAS管理系统"
+ GF_quick_ogas_contact_tooltip:0 "接入OGAS管理系统\n$GF_OGAS_threads_info_from$"
 
  contact:0 "通讯接入"
  GF_OGAS_connect:0 "[This.GF_Get_OGAS_Connection_Title]"
