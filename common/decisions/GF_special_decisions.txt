@@ -148,7 +148,7 @@ decision_GF_automated_city_project = {
 		}
 		has_upgraded_capital = yes
 		num_districts = {
-			type = any
+			type = district_city
 			value >= 10
 		}
 		num_uncleared_blockers < 1
