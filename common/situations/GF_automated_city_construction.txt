@@ -137,6 +137,7 @@ GF_automated_city_construction = {
 				}
 				add_building = building_GF_connection_nexus
 			}
+			destory_situation = this
 		}
 	}
 
