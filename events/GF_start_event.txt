@@ -79,6 +79,33 @@ country_event = {
 			planet_event = { id = GF_start.10 }
 		}
 
+		# Create OGAS country
+		create_country = {
+			name = "NAME_GF_OGAS"
+			type = GF_ogas_country_type
+			flag = {
+				icon = {
+					category = "griffin"
+					file = "country_gf_ogas.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors = {
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				set_country_flag = flag_GF_ogas_country
+				save_global_event_target_as = GF_ogas_country
+			}
+		}
+		event_target:GF_ogas_country = { establish_communications_no_message = prev }
+
 		# Set ruler basic characteristics
 		random_owned_species = {
 			limit = { is_archetype = GF_ANDROID }
@@ -87,7 +114,7 @@ country_event = {
 		ruler = {
 			save_event_target_as = old_ruler
 		}
-		event_target:global_event_country = {
+		event_target:GF_ogas_country = {
 			clone_leader = {
 				target = prev.ruler
 				species = event_target:GF_doll_species

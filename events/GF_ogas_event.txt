@@ -13,7 +13,7 @@ country_event = {
 	}
 
 	immediate = {
-		event_target:global_event_country = {
+		event_target:GF_ogas_country = {
 			clone_leader = {
 				target = from
 				event_leader = yes
@@ -49,48 +49,9 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_country = {
-			name = "NAME_GF_OGAS"
-			type = GF_ogas_country_type
-			flag = {
-				icon = {
-					category = "griffin"
-					file = "country_gf_ogas.dds"
-				}
-				background = {
-					category = "backgrounds"
-					file = "sinus.dds"
-				}
-				colors = {
-					"black"
-					"black"
-					"null"
-					"null"
-				}
-			}
-		}
-		last_created_country = {
-			establish_communications_no_message = root
-			set_country_flag = flag_GF_ogas_country
-			save_global_event_target_as = GF_ogas_country
-			# clone_leader = {
-			# 	target = prev.ruler
-			# 	effect = {
-			# 		save_global_event_target_as = GF_ogas_leader_clone
-			# 	}
-			# }
-		}
 		save_global_event_target_as = GF_ogas_owner
 		set_country_flag = flag_GF_can_contact_OGAS
 		set_country_flag = flag_GF_ogas_owner
-		set_variable = {
-			which = v_GF_ogas_threads_available
-			value = 1
-		}
-		set_variable = {
-			which = v_GF_ogas_threads_used
-			value = 0
-		}
 		country_event = { id = GF_ogas.110 }
 	}
 }
@@ -430,7 +391,6 @@ country_event = {
 				GF_require_OGAS_has_available_threads = { amount = 1 }
 			}
 		}
-		hidden_effect = { GF_update_OGAS_threads_variable = yes }
 		custom_tooltip = GF_ogas.11200.upkeep.tooltip
 		if = {
 			limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
