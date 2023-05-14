@@ -40,21 +40,6 @@ country_event = {
 	}
 }
 
-
-###建立OGAS国家
-country_event = {
-	id = GF_ogas.100
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		save_global_event_target_as = GF_ogas_owner
-		set_country_flag = flag_GF_can_contact_OGAS
-		set_country_flag = flag_GF_ogas_owner
-		country_event = { id = GF_ogas.110 }
-	}
-}
 ###OGAS开场白（问候）
 country_event = {
 	id = GF_ogas.110

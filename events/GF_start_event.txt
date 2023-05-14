@@ -105,6 +105,9 @@ country_event = {
 			}
 		}
 		event_target:GF_ogas_country = { establish_communications_no_message = prev }
+		save_global_event_target_as = GF_ogas_owner
+		set_country_flag = flag_GF_can_contact_OGAS
+		set_country_flag = flag_GF_ogas_owner
 
 		# Set ruler basic characteristics
 		random_owned_species = {
@@ -146,7 +149,7 @@ country_event = {
 		}
 
 		# events
-		country_event = { id = GF_ogas.100	 days =  5 }
+		country_event = { id = GF_ogas.110	 days =  5 }
 		country_event = { id = GF_elid.0	 days = 30 } # initialize elid attack events
 		country_event = { id = GF_factions.0 days = 16 }
 	}
