@@ -154,9 +154,10 @@ country_event = {
 				species = owner
 				skill = 3
 				set_age = 21
-				traits = {
-					trait = leader_trait_glory_seeker
-					trait = leader_trait_army_logistician
+				effect = {
+					remove_all_traits = yes
+					add_trait_no_notify = leader_trait_glory_seeker_2
+					add_trait_no_notify = leader_trait_army_logistician
 				}
 			}
 		}

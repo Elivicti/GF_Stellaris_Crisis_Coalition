@@ -202,7 +202,7 @@
  GF_elid.1.a:0 "已知晓。"
  GF_elid.1.tooltip:0 "若E.L.I.D感染者集群保持现有的活动趋势，它们可能会在§Y8-10月§!后抵近我们的城市。\n§H提示§!：星球决议§Y$decision_GF_doll_sercurity_on$§!允许我们在城市设立更多的§Y$job_GF_guard_doll$§!岗位，以增强防御能力。"
  GF_elid.1.b:0 "寻找一位优秀的将领。"
- GF_elid.1.b.tooltip:0 "花费一定的能量币和凝聚力雇佣一位§Y3级§!的陆军将领。\n§H提示§!：星球决议§Y$decision_GF_doll_sercurity_on$§!允许我们在城市设立更多的§Y$job_GF_guard_doll$§!岗位，以增强防御能力。"
+ GF_elid.1.b.tooltip:0 "\n\n花费一定的能量币和凝聚力雇佣一位§Y3级§!的陆军将领。"
 
  GF_elid.1001.name:0 "E.L.I.D入侵"
  GF_elid.1001.desc:0 "一股E.L.I.D感染者集群在城市外徘徊多日后，开始径直朝向我们的城市移动，现在它们正在冲击隔离墙，企图破坏隔离墙并冲进城市。"
