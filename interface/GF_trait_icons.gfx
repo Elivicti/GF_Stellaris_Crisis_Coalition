@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_leader_trait_GF_ogas"
+		textureFile = "gfx/interface/icons/traits/trait_machine_unit.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_ogas_2"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_ogas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_GF_16lab"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_16lab.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_GF_doll"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_doll.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_tactical_chip"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_doll_tactical_chip.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_zener"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_doll_zener.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_logic"
+		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_doll_logic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_GF_zion_enhanced"
+		textureFile = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
+	}
+}
