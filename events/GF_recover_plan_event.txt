@@ -47,7 +47,8 @@ country_event = {
 	immediate = {
 		set_country_flag = flag_GF_recover_plan_initiated
 		random_owned_leader = {
-			limit = { is_researching_area = society }
+			# limit = { is_researching_area = society }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = society_leader
 		}
 	}

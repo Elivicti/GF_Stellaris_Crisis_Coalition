@@ -24,13 +24,6 @@ tech_robomodding = {
 			factor = 0
 			has_policy_flag = robots_outlawed
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
 	}
 
 	ai_weight = {
@@ -47,13 +40,7 @@ tech_robomodding = {
 			factor = 2
 			has_ascension_perk = ap_synthetic_evolution
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
+
 		modifier = {
 			factor = @robots_ai_tech_factor
 			is_materialist = yes
@@ -87,14 +74,6 @@ tech_robomodding_points_1 = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-		modifier = {
-			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-				has_level > 2
-			}
-		}
 	}
 
 	ai_weight = {
@@ -111,13 +90,7 @@ tech_robomodding_points_1 = {
 			factor = 2
 			has_ascension_perk = ap_synthetic_evolution
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
+
 		modifier = {
 			factor = @robots_ai_tech_factor
 			is_materialist = yes
@@ -172,22 +145,13 @@ tech_robomodding_points_2 = {
 		modifier = {
 			factor = 0.50
 			NOR = {
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_maniacal"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_expertise_industry"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius_2 }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			}
 		}
 	}
@@ -206,13 +170,7 @@ tech_robomodding_points_2 = {
 			factor = 2
 			has_ascension_perk = ap_synthetic_evolution
 		}
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
+
 		modifier = {
 			factor = @robots_ai_tech_factor
 			is_materialist = yes

@@ -979,7 +979,7 @@ country_event = {
 				random_owned_leader = {
 					limit = {
 						species = { is_robotic = yes }
-						NOT = { leader_class = ruler }
+						NOT = { is_ruler = yes }
 						GF_is_enhanced_leader = no
 					}
 					save_event_target_as = enhancing_leader
@@ -1006,7 +1006,7 @@ country_event = {
 				random_owned_leader = {
 					limit = {
 						species = { is_robotic = yes }
-						NOT = { leader_class = ruler }
+						NOT = { is_ruler = yes }
 					}
 					save_event_target_as = glitching_leader
 				}
@@ -1017,7 +1017,7 @@ country_event = {
 				random_owned_leader = {
 					limit = {
 						species = { is_robotic = yes }
-						NOT = { leader_class = ruler }
+						NOT = { is_ruler = yes }
 					}
 					save_event_target_as = choosing_leader
 				}
@@ -1079,19 +1079,7 @@ country_event = {
 		name = GF_zion_project.32202.a
 		every_owned_leader = {
 			limit = { species = { is_robotic = yes } }
-			remove_trait = leader_trait_stubborn				# 顽固
-			remove_trait = leader_trait_rigid_programming		# 死板编程
-			remove_trait = leader_trait_erratic_morality_core	# 不稳定道德核心
-			remove_trait = leader_trait_unstable_code_base		# 不稳定代码库
-			remove_trait = leader_trait_substance_abuser		# 药物依赖
-			remove_trait = leader_trait_arrested_development	# 没有前途
-			remove_trait = leader_trait_nervous					# 神经质
-			remove_trait = leader_trait_lethargic				# 懒散
-			remove_trait = leader_trait_armchair_commander		# 纸上谈兵
-			remove_trait = leader_trait_paranoid				# 偏执
-			remove_trait = leader_trait_corrupt					# 腐败
-			remove_trait = leader_trait_traumatized				# 受挫
-			remove_trait = leader_trait_maimed					# 残废
+			remove_trait = all_negative
 		}
 		GF_set_zion_deep_dive_cooldown = yes
 	}
@@ -1153,26 +1141,17 @@ country_event = {
 				trigger = has_skill
 				variable = current_skill
 			}
-			# 读取当前领袖的等级上限
-			add_skill = 100
-			export_trigger_value_to_variable = {
-				trigger = has_skill
-				variable = max_skill
-			}
-			set_skill = current_skill
-
 			if = {
 				limit = {
 					check_variable = {
 						which = current_skill
-						value >= max_skill
+						value >= 10
 					}
 				}
 				set_leader_flag = skill_at_max
 			}
 			# 添加的经验的计算公式:
-			# skill <  10: -40 * skill + 900
-			# skill >= 10: -40 *    10 + 900
+			# -50 * skill + 1000
 			if = {
 				limit = {
 					check_variable = {
@@ -1187,11 +1166,11 @@ country_event = {
 			}
 			multiply_variable = {
 				which = current_skill
-				value = -40
+				value = -50
 			}
 			change_variable = {
 				which = current_skill
-				value = 900
+				value = 1000
 			}
 		}
 	}
@@ -1604,7 +1583,8 @@ country_event = {
 			type = SP_GF_DATA_SINGULARITY_PROJECT
 		}
 		random_owned_leader = {
-			limit = { is_researching_area = physics }
+			# limit = { is_researching_area = physics }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = physics_leader
 		}
 	}

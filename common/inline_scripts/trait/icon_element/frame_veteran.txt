@@ -1,0 +1,8 @@
+layer = {
+	icon = "GFX_trait_glow_veteran"
+	color = "trait_rarity_veteran"
+}
+layer = {
+	icon = "GFX_trait_frame_veteran"
+	color = "trait_rarity_veteran"
+}

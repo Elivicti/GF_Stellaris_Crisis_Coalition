@@ -86,7 +86,7 @@ GF_doll_rights_organization = {
 			factor = 0
 			OR = {
 				is_event_leader = yes
-				leader_class = ruler
+				is_ruler = yes
 			}
 		}
 	}

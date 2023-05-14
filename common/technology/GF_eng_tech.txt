@@ -50,22 +50,10 @@ GF_tech_doll_modding = {
 		modifier = {
 			factor = 0.25
 			NOR = {
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_maniacal"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_spark_of_genius"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_curator"
-				}
-				research_leader = {
-					area = engineering
-					has_trait = "leader_trait_expertise_industry"
-				}
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_spark_of_genius }
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			}
 		}
 	}
@@ -105,10 +93,7 @@ GF_tech_mind_upgrade_1 = {
 		}
 		modifier = {
 			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 		modifier = {
 			factor = 5
@@ -160,10 +145,7 @@ GF_tech_mind_upgrade_2 = {
 		}
 		modifier = {
 			factor = 1.5
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 		modifier = {
 			factor = 5
@@ -231,10 +213,7 @@ GF_tech_doll_modding_point_1 = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
@@ -340,20 +319,14 @@ GF_tech_maintain_process = {
 		factor = 1.5
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 	
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -384,20 +357,14 @@ GF_tech_collapse_plant_1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -421,20 +388,14 @@ GF_tech_collapse_plant_2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -458,20 +419,14 @@ GF_tech_reverse_collapse_plant = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 }
@@ -499,20 +454,14 @@ GF_tech_ship_collapse_armor = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_materials"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_materials }
 		}
 	}
 }

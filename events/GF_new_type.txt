@@ -16,7 +16,7 @@ country_event = {
 
 	immediate = {
 		from = {
-			set_is_female = yes
+			set_gender = female
 		}
 	}
 }

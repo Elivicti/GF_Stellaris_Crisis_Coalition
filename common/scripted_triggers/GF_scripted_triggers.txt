@@ -292,20 +292,9 @@ GF_is_enhanced_leader = {
 
 # scope = leader
 GF_leader_has_vanilla_negative_traits = {
-	OR = {
-		has_trait = leader_trait_stubborn				# 顽固
-		has_trait = leader_trait_rigid_programming		# 死板编程
-		has_trait = leader_trait_erratic_morality_core	# 不稳定道德核心
-		has_trait = leader_trait_unstable_code_base		# 不稳定代码库
-		has_trait = leader_trait_substance_abuser		# 药物依赖
-		has_trait = leader_trait_arrested_development	# 没有前途
-		has_trait = leader_trait_nervous				# 神经质
-		has_trait = leader_trait_lethargic				# 懒散
-		has_trait = leader_trait_armchair_commander		# 纸上谈兵
-		has_trait = leader_trait_paranoid				# 偏执
-		has_trait = leader_trait_corrupt				# 腐败
-		has_trait = leader_trait_traumatized			# 受挫
-		has_trait = leader_trait_maimed					# 残废
+	num_leader_traits = {
+		value > 0
+		negative = yes
 	}
 }
 

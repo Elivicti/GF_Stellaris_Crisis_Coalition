@@ -17,10 +17,7 @@ GF_tech_observe_reflection = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
@@ -29,10 +26,7 @@ GF_tech_observe_reflection = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -54,10 +48,7 @@ GF_tech_mass_rebuild_function = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 	gateway = GF_tech_gateway_collapse_tech
@@ -65,10 +56,7 @@ GF_tech_mass_rebuild_function = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -91,10 +79,7 @@ GF_tech_collapse = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 	gateway = GF_tech_gateway_collapse_tech
@@ -102,10 +87,7 @@ GF_tech_collapse = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -128,10 +110,7 @@ GF_tech_reverse_collapse = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 	gateway = GF_tech_gateway_collapse_tech
@@ -139,10 +118,7 @@ GF_tech_reverse_collapse = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -171,20 +147,14 @@ GF_tech_collapse_power_core = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
@@ -221,20 +191,14 @@ GF_tech_collapse_jump_drive = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
@@ -298,20 +262,14 @@ GF_tech_collapse_energy_lance = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -339,20 +297,14 @@ GF_tech_collapse_ending_flash = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_particles"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
 		}
 	}
 }
@@ -429,7 +381,7 @@ GF_tech_collapse_slingshot_protocal = {
 	}
 
 	modifier = {
-		country_mia_time_mult = -0.20
+		fleet_mia_time_mult = -0.20
 		catapult_spread_mult = 0.75
 		catapult_range_mult  = 0.50
 		ship_jumpdrive_cooldown_mult = -0.25

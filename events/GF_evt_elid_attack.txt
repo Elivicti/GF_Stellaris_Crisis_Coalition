@@ -158,14 +158,6 @@ country_event = {
 					trait = leader_trait_glory_seeker
 					trait = leader_trait_army_logistician
 				}
-
-				effect = {
-					if = {
-						limit = { is_species_class = GF_new_type gender = male }
-						set_is_female = yes
-						set_name = random
-					}
-				}
 			}
 		}
 	}

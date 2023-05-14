@@ -5,6 +5,9 @@ GF_auth_commonwealth = {
 	election_type = none
 	has_agendas = no
 	valid_for_released_vassal = no
+
+	ruler_council_position = GF_councilor_ruler_commonwealth
+
 	possible = {
 		ethics = {
 			NOR = {
@@ -41,6 +44,8 @@ GF_auth_OGAS_subnet = {
 	election_type = none
 	has_agendas = no
 	valid_for_released_vassal = yes
+
+	ruler_council_position = GF_councilor_ruler_subnet
 
 	playable = {
 		has_country_flag = flag_GF_commonwealth_vassal

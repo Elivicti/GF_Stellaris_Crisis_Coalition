@@ -13,21 +13,29 @@ country_event = {
 	}
 
 	immediate = {
-		clone_leader = {
-			target = from
-			gender = female
-			effect = {
-				remove_trait = GF_trait_leader_doll
-				save_global_event_target_as = GF_ogas_leader
-				set_leader_flag = has_gained_level_trait
-				set_leader_flag = flag_GF_ogas_leader
-				if = {
-					limit = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
-					GFEXT_remove_doll_leader_flags = yes
+		event_target:global_event_country = {
+			clone_leader = {
+				target = from
+				event_leader = yes
+
+				skip_background_generation = yes
+				background_ethic = ethic_materialist
+				custom_description = GF_ogas_leader_desc
+
+				effect = {
+					copy_flags_and_variables_from = from
+					remove_leader_flag = retirement_is_default
+					remove_trait = GF_trait_leader_doll
+					save_global_event_target_as = GF_ogas_leader
+					if = {
+						limit = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
+						GFEXT_remove_doll_leader_flags = yes
+					}
 				}
 			}
 		}
-		assign_leader = last_created_leader
+		event_target:GF_ogas_leader = { set_owner = prev }
+		assign_leader = event_target:GF_ogas_leader
 		clear_custom_ruler_and_heir_titles = yes
 	}
 }
@@ -576,15 +584,18 @@ country_event = {
 
 	immediate = {
 		random_owned_leader = {
-			limit = { is_researching_area = physics }
+			# limit = { is_researching_area = physics }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = physics_leader
 		}
 		random_owned_leader = {
-			limit = { is_researching_area = society }
+			# limit = { is_researching_area = society }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = society_leader
 		}
 		random_owned_leader = {
-			limit = { is_researching_area = engineering }
+			# limit = { is_researching_area = engineering }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = engineering_leader
 		}
 	}

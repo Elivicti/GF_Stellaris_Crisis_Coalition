@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+
+ GF_councilor_ruler_commonwealth:0 "自动化处理核心"
+ GF_councilor_ruler_commonwealth_desc:0 "由绝对智能的AI对国家进行管理。"
+
+ GF_councilor_ruler_subnet:0 "子网自动化处理核心"
+ GF_councilor_ruler_subnet_desc:0 "由隶属于宗主国的绝对智能AI的一个子节点对国家进行管理。"

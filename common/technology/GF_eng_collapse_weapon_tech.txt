@@ -23,10 +23,7 @@ GF_tech_collapse_missile = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -41,10 +38,7 @@ GF_tech_collapse_missile = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -82,10 +76,7 @@ GF_tech_collapse_torpedo = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -100,10 +91,7 @@ GF_tech_collapse_torpedo = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -141,10 +129,7 @@ GF_tech_collapse_mass_accelerator = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -159,10 +144,7 @@ GF_tech_collapse_mass_accelerator = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -200,10 +182,7 @@ GF_tech_collapse_artillery = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -218,10 +197,7 @@ GF_tech_collapse_artillery = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor
@@ -259,10 +235,7 @@ GF_tech_collapse_cannon = {
 		}
 		modifier = {
 			factor = value:tech_weight_likelihood
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 	}
 
@@ -277,10 +250,7 @@ GF_tech_collapse_cannon = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_propulsion"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_propulsion }
 		}
 		modifier = {
 			factor = @favored_weapon_ai_tech_factor

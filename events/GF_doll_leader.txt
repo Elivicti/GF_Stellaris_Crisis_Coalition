@@ -9,6 +9,7 @@ country_event = {
 	trigger = {
 		from = {
 			species = { has_trait = GF_trait_doll }
+			NOT = { has_leader_flag = flag_GF_ogas_leader }
 		}
 	}
 
@@ -90,6 +91,7 @@ country_event = {
 				is_same_species = from
 				leader_class = governor
 				NOT = { has_trait = GF_trait_leader_governor_plus }
+				NOT = { has_leader_flag = flag_GF_ogas_leader }
 			}
 			add_trait = GF_trait_leader_governor_plus
 		}
@@ -128,19 +130,7 @@ country_event = {
 
 			# remove_trait = leader_trait_armchair_gf_GK_commander	# what is this?
 
-			remove_trait = leader_trait_stubborn				# 顽固
-			remove_trait = leader_trait_rigid_programming		# 死板编程
-			remove_trait = leader_trait_erratic_morality_core	# 不稳定道德核心
-			remove_trait = leader_trait_unstable_code_base		# 不稳定代码库
-			remove_trait = leader_trait_substance_abuser		# 药物依赖
-			remove_trait = leader_trait_arrested_development	# 没有前途
-			remove_trait = leader_trait_nervous					# 神经质
-			remove_trait = leader_trait_lethargic				# 懒散
-			remove_trait = leader_trait_armchair_commander		# 纸上谈兵
-			remove_trait = leader_trait_paranoid				# 偏执
-			remove_trait = leader_trait_corrupt					# 腐败
-			remove_trait = leader_trait_traumatized				# 受挫
-			remove_trait = leader_trait_maimed					# 残废
+			remove_trait = all_negative
 		}
 	}
 }

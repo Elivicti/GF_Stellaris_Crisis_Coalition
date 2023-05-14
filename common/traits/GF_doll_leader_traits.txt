@@ -1,8 +1,15 @@
 GF_trait_leader_ogas = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = governor
+		ICON = GFX_leader_trait_GF_ogas
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
 	modifier = {
-		edict_length_mult = 0.50
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
 		GF_OGAS_threads_add = 1
@@ -10,32 +17,26 @@ GF_trait_leader_ogas = {
 	leader_potential_add = {
 		from = { has_authority = GF_auth_commonwealth }
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = { governor }
+	councilor_trait = yes
+	is_councilor_trait_for_ruler = yes
 	randomized = no
 	initial = no
 	immortal_leaders = yes
 	hide_age = yes
 }
-######
-GF_trait_leader_doll = {
-	cost = 0
-	icon = "gfx/interface/icons/traits/doll/doll.dds"
-	self_modifier = {
-		species_leader_exp_gain = 0.20
-		leader_skill_levels = 1
-	}
-	modifier = {
-	}
-	immortal_leaders = yes
-	hide_age = yes
-	randomized = no
-	leader_class = { scientist general governor admiral }
-	leader_trait = { scientist general governor admiral }
-}
+
+
 GF_trait_leader_scientist_16lab = {
 	cost = 1
-	icon = "gfx/interface/icons/traits/other/16lab.dds"
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = leader
+		ICON = GFX_leader_trait_GF_16lab
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
 	modifier = {
 	    all_technology_research_speed = 0.20
 	}
@@ -43,11 +44,43 @@ GF_trait_leader_scientist_16lab = {
 		from = { has_valid_civic = GF_civic_16LAB }
 	}
 	leader_class = { scientist }
-	leader_trait = { scientist }
+}
+
+
+######
+GF_trait_leader_doll = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = leader
+		ICON = GFX_leader_trait_GF_doll
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+		leader_skill_levels = 1
+	}
+	modifier = {
+	}
+	notify_on_gained = no
+	immortal_leaders = yes
+	hide_age = yes
+	randomized = no
+	leader_class = { scientist general governor admiral }
 }
 GF_trait_leader_admiral_plus = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
+	inline_script = {
+		script = trait/icon
+		CLASS = admiral
+		ICON = GFX_leader_trait_GF_tactical_chip
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
+
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
@@ -58,14 +91,20 @@ GF_trait_leader_admiral_plus = {
 		ship_weapon_damage = 0.20
 	}
 	leader_class = { admiral }
-	leader_trait = { admiral }
 	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
 GF_trait_leader_scientist_plus = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/doll/logic.dds"
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = GFX_leader_trait_GF_logic
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
@@ -73,14 +112,20 @@ GF_trait_leader_scientist_plus = {
 	    all_technology_research_speed = 0.15
 	}
 	leader_class = { scientist }
-	leader_trait = { scientist}
 	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
 GF_trait_leader_general_plus = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/doll/tacticalchip.dds"
+	inline_script = {
+		script = trait/icon
+		CLASS = general
+		ICON = GFX_leader_trait_GF_tactical_chip
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
@@ -88,14 +133,20 @@ GF_trait_leader_general_plus = {
 	    army_damage_mult = 0.4
 	}
 	leader_class = { general }
-	leader_trait = { general }
 	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
 GF_trait_leader_governor_plus = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/doll/zener.dds"
+	inline_script = {
+		script = trait/icon
+		CLASS = governor
+		ICON = GFX_leader_trait_GF_zener
+		RARITY = veteran
+		COUNCIL = no
+		TIER = none
+	}
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
@@ -103,7 +154,6 @@ GF_trait_leader_governor_plus = {
 	    planet_crime_add = -25
 	}
 	leader_class = { governor }
-	leader_trait = { governor }
 	immortal_leaders = yes
 	hide_age = yes
 	randomized = no

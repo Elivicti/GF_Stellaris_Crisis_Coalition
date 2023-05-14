@@ -159,7 +159,8 @@ country_event = {
 	immediate = {
 		# 用于本地化文件显示她/他
 		random_owned_leader = {
-			limit = { is_researching_area = physics }
+			# limit = { is_researching_area = physics }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = physics_research_leader
 		}
 	}
@@ -207,7 +208,8 @@ country_event = {
 	immediate = {
 		# 用于本地化文件显示她/他
 		random_owned_leader = {
-			limit = { is_researching_area = physics }
+			# limit = { is_researching_area = physics }
+			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = physics_research_leader
 		}
 		every_subject = {

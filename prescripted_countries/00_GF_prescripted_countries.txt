@@ -53,9 +53,9 @@ GF_EMPIRE_URNC = {
 		name = "PRESCRIPTED_GF_OGAS"
 		portrait = "griffin000"
 		texture = 0
-		hair = 0
 		clothes = 0
-		leader_class = "ruler"
+		trait = "leader_trait_principled"
+		leader_class = governor
 	}
 	room = "personality_hegemonic_imperialists_room"
 
@@ -144,9 +144,9 @@ GF_EMPIER_AU = {
 		name = "PRESCRIPTED_GF_OGAS"
 		portrait = "griffin000"
 		texture = 0
-		hair = 0
 		clothes = 0
-		leader_class = "ruler"
+		trait = "trait_ruler_logistic_understanding"
+		leader_class = governor
 	}
 	room = "personality_hegemonic_imperialists_room"
 
@@ -235,9 +235,9 @@ GF_EMPIER_GK = {
 		name = "PRESCRIPTED_GF_OGAS"
 		portrait = "griffin000"
 		texture = 0
-		hair = 0
 		clothes = 0
-		leader_class = "ruler"
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = governor
 	}
 	room = "personality_hegemonic_imperialists_room"
 

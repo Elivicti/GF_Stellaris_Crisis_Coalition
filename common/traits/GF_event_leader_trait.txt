@@ -1,14 +1,21 @@
 GF_trait_leader_ogas_glitch = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = no
+		TIER = none
+	}
+	leader_class = { governor }
 	randomized = no
 	leader_potential_add = { always = no }
 
+	councilor_trait = yes
+	is_councilor_trait_for_ruler = yes
+
 	modifier = {
-		empire_size_mult = 0.10
-		empire_size_penalty_mult = 0.10
+		empire_size_mult = 0.25
+		empire_size_penalty_mult = 0.25
 	}
 	self_modifier = {
 		leader_skill_levels = -2
@@ -18,10 +25,19 @@ GF_trait_leader_ogas_glitch = {
 
 GF_trait_leader_ogas_2 = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/ruler_trait_ogas.dds"
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = governor
+		ICON = GFX_leader_trait_GF_ogas_2
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
 
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = { governor }
+	councilor_trait = yes
+	is_councilor_trait_for_ruler = yes
 	randomized = no
 
 	initial = no
@@ -31,17 +47,26 @@ GF_trait_leader_ogas_2 = {
 	leader_potential_add = { always = no }
 	
 	modifier = {
-		edict_length_mult = 0.50
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
 		country_admin_cap_add = 50
 		GF_OGAS_threads_add = 2
 	}
+
+	replace_traits = { GF_trait_leader_ogas }
 }
 
 GF_trait_leader_ogas_subnet_core = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/trait_machine_unit.dds"
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = governor
+		ICON = GFX_leader_trait_GF_ogas
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
 	modifier = {
 		edict_length_mult = 0.25
 		country_unity_produces_mult = 0.25
@@ -50,8 +75,9 @@ GF_trait_leader_ogas_subnet_core = {
 	leader_potential_add = {
 		from = { has_authority = GF_auth_OGAS_subnet }
 	}
-	leader_trait = { ruler }
-	leader_class = { ruler }
+	leader_class = { governor }
+	councilor_trait = yes
+	is_councilor_trait_for_ruler = yes
 	randomized = no
 	initial = no
 	immortal_leaders = yes
@@ -60,8 +86,15 @@ GF_trait_leader_ogas_subnet_core = {
 
 GF_trait_leader_enhanced_governor = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
-	leader_trait = { governor }
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = governor
+		ICON = GFX_leader_trait_GF_zion_enhanced
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { governor }
 	initial = no
 	randomized = no
@@ -76,8 +109,15 @@ GF_trait_leader_enhanced_governor = {
 
 GF_trait_leader_enhanced_scientist = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
-	leader_trait = { scientist }
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = scientist
+		ICON = GFX_leader_trait_GF_zion_enhanced
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
@@ -105,8 +145,15 @@ GF_trait_leader_enhanced_scientist = {
 
 GF_trait_leader_enhanced_admiral = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
-	leader_trait = { admiral }
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = admiral
+		ICON = GFX_leader_trait_GF_zion_enhanced
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { admiral }
 	initial = no
 	randomized = no
@@ -122,8 +169,15 @@ GF_trait_leader_enhanced_admiral = {
 
 GF_trait_leader_enhanced_general = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
-	leader_trait = { general }
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = general
+		ICON = GFX_leader_trait_GF_zion_enhanced
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { general }
 	initial = no
 	randomized = no
@@ -141,8 +195,12 @@ GF_trait_leader_enhanced_general = {
 #####
 GF_trait_leader_core_glitch_governor = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
-	leader_trait = { governor }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { governor }
 	initial = no
 	randomized = no
@@ -161,8 +219,12 @@ GF_trait_leader_core_glitch_governor = {
 
 GF_trait_leader_core_glitch_scientist = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
-	leader_trait = { scientist }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
@@ -180,8 +242,12 @@ GF_trait_leader_core_glitch_scientist = {
 
 GF_trait_leader_core_glitch_admiral = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
-	leader_trait = { admiral }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { admiral }
 	initial = no
 	randomized = no
@@ -200,8 +266,12 @@ GF_trait_leader_core_glitch_admiral = {
 
 GF_trait_leader_core_glitch_general = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_erratic_morality_core.dds"
-	leader_trait = { general }
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { general }
 	initial = no
 	randomized = no
@@ -221,8 +291,14 @@ GF_trait_leader_core_glitch_general = {
 ###
 GF_trait_leader_inspired_governor = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
-	leader_trait = { governor }
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = governor
+		ICON = GFX_leader_trait_inspired
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { governor }
 	initial = no
 	randomized = no
@@ -239,8 +315,14 @@ GF_trait_leader_inspired_governor = {
 
 GF_trait_leader_inspired_scientist = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
-	leader_trait = { scientist }
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = scientist
+		ICON = GFX_leader_trait_inspired
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
@@ -257,8 +339,14 @@ GF_trait_leader_inspired_scientist = {
 
 GF_trait_leader_inspired_admiral = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
-	leader_trait = { admiral }
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = admiral
+		ICON = GFX_leader_trait_inspired
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { admiral }
 	initial = no
 	randomized = no
@@ -276,8 +364,14 @@ GF_trait_leader_inspired_admiral = {
 
 GF_trait_leader_inspired_general = {
 	cost = 0
-	icon = "gfx/interface/icons/traits/event_trait/leader_trait_inspired_leader.dds"
-	leader_trait = { general }
+	inline_script = {
+		script = trait/icon_specialist
+		CLASS = general
+		ICON = GFX_leader_trait_inspired
+		RARITY = paragon
+		COUNCIL = no
+		TIER = none
+	}
 	leader_class = { general }
 	initial = no
 	randomized = no

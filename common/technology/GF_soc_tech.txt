@@ -16,20 +16,14 @@ GF_tech_zener_network_1 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 }
@@ -49,10 +43,7 @@ GF_tech_zener_network_2 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 		modifier = {
 			factor = 0
@@ -67,10 +58,7 @@ GF_tech_zener_network_2 = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 }
@@ -90,20 +78,14 @@ GF_tech_zener_network_3 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 }
@@ -123,20 +105,14 @@ GF_tech_zener_network_4 = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_statecraft"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_statecraft }
 		}
 	}
 }
@@ -190,10 +166,7 @@ GF_tech_ecological_recovery = {
 		}
 		modifier = {
 			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
 		}
 	}
 
@@ -209,10 +182,7 @@ GF_tech_ecological_recovery = {
 		}
 		modifier = {
 			factor = 1.5
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_new_worlds"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_new_worlds }
 		}
 	}
 }
@@ -241,10 +211,7 @@ GF_tech_collapsetech_weaponize = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 		}
 		modifier = {
 			factor = 2
@@ -258,10 +225,7 @@ GF_tech_collapsetech_weaponize = {
 	ai_weight = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 		}
 	}
 
@@ -298,17 +262,11 @@ GF_tech_elid_army = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
 		}
 	}
 
@@ -319,17 +277,11 @@ GF_tech_elid_army = {
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 		}
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_biology"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_biology }
 		}
 	}
 }
@@ -362,10 +314,7 @@ GF_tech_collapse_bomb = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = society
-				has_trait = "leader_trait_expertise_military_theory"
-			}
+			has_trait_in_council = { TRAIT = leader_trait_expertise_military_theory }
 		}
 	}
 }

@@ -1,0 +1,45 @@
+# Councilor Documentation
+#
+# councilor_name_key = {
+#    civic = civic_imperial_cult		Civic that is required for this council position. Also used by UI. Default = none.
+#    leader_class = { }					Which leader classes can have this council position. Currently only used for the Recruit new Leader buttons. Default = none.
+#    is_leader_possible = { }			Can a leader have this council position. Used to filter leaders. Scope: THIS = Leader.
+#    modifier = { }						Country Modifier, that is multiplied by assigned Leader's level.
+#	 custom_tooltip = "LOC_KEY"			Custom tooltip text shown for the modifier of the council position.
+#	 conditional_tooltip = "LOC_KEY"	Custom tooltip text shown for the requirements of the council position.
+# }
+
+GF_councilor_ruler_commonwealth = {
+	leader_class = { governor }
+	possible = { always = no }
+	is_leader_possible = { always = yes }
+	modifier = {
+		country_edict_fund_add = 10
+		edict_length_mult = 0.10
+		country_leader_cap_add = 2
+	}
+	icon = "GFX_icon_councilor_ruler"
+}
+
+GF_councilor_ruler_subnet = {
+	leader_class = { governor }
+	possible = { always = no }
+	is_leader_possible = { always = yes }
+	modifier = {
+		country_edict_fund_add = 5
+		edict_length_mult = 0.05
+		country_leader_cap_add = 1
+	}
+	icon = "GFX_icon_councilor_ruler"
+}
+
+# GF_councilor_URNC = {
+# 	civic = GF_civic_URNC
+# 	leader_class = { governor scientist }
+# 	is_leader_possible = {
+# 		OR = {
+# 			leader_class = governor
+# 			leader_class = scientist
+# 		}
+# 	}
+# }
