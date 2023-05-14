@@ -230,8 +230,8 @@ GF_tech_collapsetech_weaponize = {
 	}
 
 	modifier = {
-		army_attack_damage_mult = 0.10
-		army_collateral_damage_mult = 0.25
+		army_damage_mult = 0.15
+		army_collateral_damage_mult = 0.10
 	}
 }
 
