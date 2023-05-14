@@ -107,10 +107,10 @@ country_event = {
 					set_leader_flag = flag_GF_ogas_leader
 					set_leader_flag = has_gained_level_trait
 					save_global_event_target_as = GF_ogas_leader
-					set_owner = prevprev
 				}
 			}
 		}
+		event_target:GF_ogas_leader = { set_owner = prev }
 
 		assign_leader = event_target:GF_ogas_leader
 		clear_custom_ruler_and_heir_titles = yes
