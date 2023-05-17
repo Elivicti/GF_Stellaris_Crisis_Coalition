@@ -5,6 +5,8 @@
  GF_start.1.a:0 "愿人类在星海之中永存。"
 ########
 
+ GF_ogas_leader_desc:0 "[This.GetName]是一位以仿生自律人形姿态活动，拥有阵列主机的超级人工智能，是[GF_ogas_owner.GetSpeciesName]最先进的遗迹技术结晶。"
+
 ######## OGAS主通讯界面
  GF_quick_ogas_contact_tooltip:0 "接入OGAS管理系统\n$GF_OGAS_threads_info_from$"
 
