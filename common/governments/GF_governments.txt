@@ -1,5 +1,6 @@
 GF_gov_commonwealth = {
 	ruler_title = GF_RT_OGAS
+	ruler_title_female = GF_RT_OGAS
 	possible = {
 		has_authority = GF_auth_commonwealth
 	}
@@ -11,6 +12,7 @@ GF_gov_commonwealth = {
 
 GF_gov_commonwealth_vassal = {
 	ruler_title = GF_RT_OGAS_VASSAL
+	ruler_title_female = GF_RT_OGAS_VASSAL
 	possible = {
 		has_authority = GF_auth_OGAS_subnet
 	}
