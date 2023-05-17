@@ -55,6 +55,13 @@ GF_auto_colony_capacity_add = {
 	max_decimals = 1
 }
 
+GF_planet_URNC_commissioner_stability_add = {
+	icon = mod_planet_stability_add
+	good = yes
+	percentage = no
+	category = pop
+}
+
 GF_system_maintenance = {
 	icon = mod_planet_stability_add
 	good = yes

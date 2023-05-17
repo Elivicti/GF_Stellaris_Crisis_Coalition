@@ -56,6 +56,22 @@ GF_planet_jobs_doll_programmers = {
 	}
 }
 
+GF_planet_URNC_commissioner = {
+	parent = planet_politicians
+	generate_add_modifiers = { produces }
+}
+
+GF_planet_AU_director = {
+	parent = planet_researchers
+	generate_mult_modifiers = { produces }
+	generate_add_modifiers = { produces }
+}
+
+GF_planet_GK_officer = {
+	parent = planet_executives
+	generate_add_modifiers = { produces }
+}
+
 GF_planet_collapser = {
 	icon = "job_GF_collapser"
 	parent = planet_jobs_productive

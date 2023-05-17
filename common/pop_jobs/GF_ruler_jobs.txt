@@ -21,7 +21,7 @@ GF_URNC_commissioner = {
 	# }
 
 	resources = {
-		category = planet_politicians
+		category = GF_planet_URNC_commissioner
 		produces = {
 			unity = 4
 		}
@@ -34,6 +34,11 @@ GF_URNC_commissioner = {
 	triggered_planet_modifier = {
 		planet_amenities_add = 8
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		planet_stability_add = 1
+		mult = modifier:GF_planet_URNC_commissioner_stability_add
 	}
 
 	weight = {
@@ -119,7 +124,7 @@ GF_AU_director = {
 	# }
 
 	resources = {
-		category = planet_researchers
+		category = GF_planet_AU_director
 		produces = {
 			physics_research = 4
 			engineering_research = 4
@@ -265,7 +270,7 @@ GF_GK_officer = {
 	# }
 
 	resources = {
-		category = planet_executives
+		category = GF_planet_GK_officer
 		produces = {
 			unity = 2
 		}

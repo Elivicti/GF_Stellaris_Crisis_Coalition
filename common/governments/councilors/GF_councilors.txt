@@ -33,13 +33,180 @@ GF_councilor_ruler_subnet = {
 	icon = "GFX_icon_councilor_ruler"
 }
 
-# GF_councilor_URNC = {
-# 	civic = GF_civic_URNC
-# 	leader_class = { governor scientist }
-# 	is_leader_possible = {
-# 		OR = {
-# 			leader_class = governor
-# 			leader_class = scientist
-# 		}
-# 	}
-# }
+ GF_councilor_URNC = {
+ 	civic = GF_civic_URNC
+ 	leader_class = { governor }
+ 	is_leader_possible = { leader_class = governor }
+
+	modifier = {
+		GF_planet_URNC_commissioner_unity_produces_add = 1
+		pop_job_amenities_mult = 0.05
+	}
+ }
+
+GF_councilor_FSB = {
+	civic = GF_civic_FSB
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	modifier = {
+		GF_planet_URNC_commissioner_stability_add = 0.5
+		espionage_hostile_operation_difficulty_mult = 0.05
+	}
+}
+
+GF_councilor_KCCO = {
+	civic = GF_civic_KCCO
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	modifier = {
+		country_war_exhaustion_mult = -0.01
+		country_naval_cap_mult = 0.05
+	}
+}
+
+GF_councilor_AU = {
+	civic = GF_civic_AU
+	leader_class = { scientist }
+	is_leader_possible = { leader_class = scientist }
+
+	modifier = {
+		GF_planet_AU_director_physics_research_produces_mult = 0.02
+		GF_planet_AU_director_society_research_produces_mult = 0.02
+		GF_planet_AU_director_engineering_research_produces_mult = 0.02
+		GF_planet_AU_director_gf_core_chip_produces_add = 0.2
+	}
+}
+
+GF_councilor_MID = {
+	civic = GF_civic_MID
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	modifier = {
+		espionage_operation_difficulty_mult = -0.05
+		intel_decryption_mult = 0.05
+		add_base_country_intel = 2
+	}
+}
+
+GF_councilor_TASA = {
+	civic = GF_civic_TASA
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+
+	modifier = {
+		ship_hull_mult = 0.015
+		ship_speed_mult = 0.02
+	}
+}
+
+GF_councilor_GK = {
+	civic = GF_civic_GK
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+
+	modifier = {
+		GF_planet_GK_officer_unity_produces_add = 1
+		pop_job_trade_mult = 0.025
+		diplo_weight_envoys_mult = 0.01
+	}
+}
+
+GF_councilor_16LAB = {
+	civic = GF_civic_16LAB
+	leader_class = { scientist }
+	is_leader_possible = { leader_class = scientist }
+
+	modifier = {
+		category_computing_draw_chance_mult = 0.05
+		category_industry_draw_chance_mult = 0.05
+		planet_researchers_produces_mult = 0.02
+	}
+}
+
+GF_councilor_90Wish = {
+	civic = GF_civic_90WISH
+	leader_class = { scientist }
+	is_leader_possible = { leader_class = scientist }
+
+	modifier = {
+		science_ship_survey_speed = 0.05
+		species_leader_exp_gain = 0.05
+	}
+}
+
+
+GF_councilor_IOP = {
+	civic = GF_civic_IOP
+	leader_class = { governor }
+	is_leader_possible = { leader_class = governor }
+
+	modifier = {
+		planet_building_GF_doll_factory_build_speed_mult = 0.025
+		GF_doll_produces_mult = 0.01
+	}
+}
+
+
+GF_councilor_GOSPLAN = {
+	civic = GF_civic_GOSPLAN
+	leader_class = { governor scientist admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+
+	modifier = {
+		planet_structures_alloys_upkeep_mult = -0.02
+		megastructures_alloys_upkeep_mult = -0.02
+	}
+}
+
+GF_councilor_NHC = {
+	civic = GF_civic_NHC
+	leader_class = { governor scientist admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+
+	modifier = {
+		pop_growth_speed = 0.02
+		modify_species_cost_mult = -0.025
+	}
+}

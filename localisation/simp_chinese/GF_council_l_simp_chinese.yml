@@ -5,3 +5,35 @@
 
  GF_councilor_ruler_subnet:0 "子网自动化处理核心"
  GF_councilor_ruler_subnet_desc:0 "由隶属于宗主国的绝对智能AI的一个子节点对国家进行管理。"
+
+
+ GF_councilor_URNC: "人民委员会主席"
+ GF_councilor_URNC_desc: "$TITLE$负责协调和处理地方与中央的沟通。"
+ GF_councilor_FSB: "内务部部长"
+ GF_councilor_FSB_desc: "$TITLE$负责保持政府官员的纪律与效率。"
+ GF_councilor_KCCO: "特种作战司令部部长"
+ GF_councilor_KCCO_desc: "$TITLE$促进新兴技术运用于实战。"
+
+
+ GF_councilor_AU: "科学理事会会长"
+ GF_councilor_AU_desc: "$TITLE$负责管理并促进地方理事会的发展。"
+ GF_councilor_MID: "情报局局长"
+ GF_councilor_MID_desc: "$TITLE$负责统筹对内情报管理工作和对外渗透任务。"
+ GF_councilor_TASA: "战术空降突击部队总司令"
+ GF_councilor_TASA_desc: "$TITLE$负责管理这支精锐快速反应部队。"
+
+
+ GF_councilor_GK: "首席指挥官"
+ GF_councilor_GK_desc: "$TITLE$负责协调地方代行官与指挥官的工作。"
+ GF_councilor_16LAB: "16LAB首席科学官"
+ GF_councilor_16LAB_desc: "$TITLE$负责尖端人形技术的研究。"
+ GF_councilor_90Wish: "90Wish首席负责人"
+ GF_councilor_90Wish_desc: "$TITLE$促进对未知的探索和新兴技术的发展。"
+ GF_councilor_IOP: "I.O.P首席执行官"
+ GF_councilor_IOP_desc: "$TITLE$负责统筹协调管理各地的人形制造任务。"
+
+ GF_councilor_GOSPLAN: "计划经济委员会主席"
+ GF_councilor_GOSPLAN_desc: "$TITLE$负责统筹各地的经济计划。"
+
+ GF_councilor_NHC: "卫生健康委员会主席"
+ GF_councilor_NHC_desc: "$TITLE$负责保障人民的基础卫生健康。"
