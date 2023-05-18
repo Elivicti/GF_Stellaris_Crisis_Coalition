@@ -128,6 +128,7 @@ country_event = {
 				custom_description = GF_ogas_leader_desc
 
 				effect = {
+					change_background_job = none
 					remove_trait = GF_trait_leader_doll
 					copy_flags_and_variables_from = prev.ruler
 					add_trait_no_notify = GF_trait_leader_ogas
@@ -137,6 +138,10 @@ country_event = {
 					set_leader_flag = flag_GF_ogas_leader
 					set_leader_flag = has_gained_level_trait
 					save_global_event_target_as = GF_ogas_leader
+					if = {
+						limit = { owner_main_species = { NOT = { is_species_class = GF_new_type } } }
+						change_leader_portrait = GF_doll_000
+					}
 				}
 			}
 		}
