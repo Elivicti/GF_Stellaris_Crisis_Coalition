@@ -3,7 +3,7 @@ GF_trait_leader_ogas_glitch = {
 	inline_script = {
 		script = trait/icon_negative
 		ICON = GFX_leader_trait_erratic_morality_core
-		COUNCIL = no
+		COUNCIL = yes
 		TIER = none
 	}
 	leader_class = { governor }
@@ -19,7 +19,7 @@ GF_trait_leader_ogas_glitch = {
 	}
 	self_modifier = {
 		leader_skill_levels = -2
-		species_leader_exp_gain = -0.20
+		species_leader_exp_gain = -0.50
 	}
 }
 
@@ -45,7 +45,10 @@ GF_trait_leader_ogas_2 = {
 	hide_age = yes
 
 	leader_potential_add = { always = no }
-	
+
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+	}
 	modifier = {
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25

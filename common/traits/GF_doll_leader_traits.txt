@@ -9,6 +9,9 @@ GF_trait_leader_ogas = {
 		COUNCIL = yes
 		TIER = none
 	}
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+	}
 	modifier = {
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
