@@ -35,7 +35,7 @@
  GF_FACTION_DEMAND_doll_living_rights_desc:0 "给予人形过低的维护保障将会极大地惹恼[Root.GetName]。"
 
  GF_factions.1.title:0 "派系已建立"
- GF_factions.1.desc:0 "随着交接工作的完成，§H[Root.GetName]§!，这一建立于两个世纪前的遗迹研究与监管部门开始重新在[Root.Owner.GetName]的政治圈和学术圈活动，他们的成员致力于发掘和研究在遗迹中发现的技术，并确保这些技术能够为[Root.Owner.GetSpeciesName]所用。\n\n§H[Root.GetName]§!将会由§Y[Root.Leader.GetTitle] [Root.Leader.GetName]§!进行直接管辖。\n"
+ GF_factions.1.desc:0 "随着交接工作的完成，§H[Root.GetName]§!，这一建立于两个世纪前的遗迹研究与监管部门开始重新在[Root.Owner.GetName]的政治圈和学术圈活动，他们的成员致力于发掘和研究在遗迹中发现的技术，并确保这些技术能够为[Root.Owner.GetSpeciesName]所用。\n\n§H[Root.GetName]§!将会由§Y[Root.Owner.Ruler.GetTitle] [Root.Owner.Ruler.GetName]§!进行直接管辖。\n"
 
  GF_factions.2000.title:0 "[TargetFaction.Owner.GetName]的主流思潮发生转变"
  GF_factions.2000.desc.start:0 "随着长期以来§Y[TargetFaction.GetName]§!支持率的不断增长，§Y[TargetFaction.Owner.GetName]§!终于接纳了这个派系，接受了他们的核心价值观和政策。"
