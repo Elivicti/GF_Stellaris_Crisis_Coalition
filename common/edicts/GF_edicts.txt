@@ -20,7 +20,7 @@ GF_02_training = {
 }
 #########################
 GF_doll_reprogram = {
-	length = 0
+	length = 1
 	icon = "GFX_situation_log_ai"
 	resources = {
 		category = edicts
@@ -75,7 +75,7 @@ GF_doll_reprogram = {
 }
 #########################
 GF_robot_modding = {
-	length = 0
+	length = 1
 	icon = "GFX_GF_edict_type_robot"
 	resources = {
 		category = campaigns
@@ -116,7 +116,7 @@ GF_robot_modding = {
 ################
 GF_relocate_relic_site = {
 	icon = "GFX_edict_type_time"
-	length = 0
+	length = 1
 
 	potential = {
 		has_authority = GF_auth_commonwealth
