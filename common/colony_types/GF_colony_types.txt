@@ -227,7 +227,7 @@ col_GF_automated_city_research = {
 		GF_automated_city_districts_society_research_produces_mult = 0.25
 		GF_automated_city_districts_engineering_research_produces_mult = 0.25
 		GF_automated_city_districts_gf_core_chip_produces_mult = 0.25
-		planet_pop_assembly_mult = -0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
 		GF_automated_city_districts_GF_nyto_collapse_liquid_produces_mult = -0.50
 		GF_automated_city_districts_alloys_produces_mult = -0.50
 		GF_automated_city_districts_consumer_goods_produces_mult = -0.50
@@ -298,7 +298,7 @@ col_GF_automated_city_collapse = {
 		GF_automated_city_districts_society_research_produces_mult = -0.50
 		GF_automated_city_districts_engineering_research_produces_mult = -0.50
 		GF_automated_city_districts_gf_core_chip_produces_mult = -0.50
-		planet_pop_assembly_mult = -0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
 		GF_automated_city_districts_alloys_produces_mult = -0.50
 		GF_automated_city_districts_consumer_goods_produces_mult = -0.50
 		GF_automated_city_districts_volatile_motes_produces_mult = -0.50
@@ -338,7 +338,7 @@ col_GF_automated_city_reverse_collapse = {
 		GF_automated_city_districts_society_research_produces_mult = -0.50
 		GF_automated_city_districts_engineering_research_produces_mult = -0.50
 		GF_automated_city_districts_gf_core_chip_produces_mult = -0.50
-		planet_pop_assembly_mult = -0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
 		GF_automated_city_districts_GF_nyto_collapse_liquid_produces_mult = -0.50
 	}
 
