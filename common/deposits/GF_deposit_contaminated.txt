@@ -86,6 +86,7 @@ d_GF_purify_wall = {
 		}
 	}
 	drop_weight = { weight = 0 }
+	custom_tooltip = d_GF_purify_wall_effect_desc
 
 	on_cleared = {
 		if = {

@@ -43,6 +43,7 @@
  d_GF_purify_wall_desc:0 "处于辐射污染区与可居住区之间的隔离净化墙，配置的大型净化器防止辐射污染向可居住区进一步扩大，同时还有相应的军事设施、部署了大量人类与人形部队以阻击EILD辐射感染者突破封锁的可能。"
 
  clear_d_GF_purify_wall_tooltip:0 "在§R坍塌辐射污染区§!仍然存在时移除$d_GF_purify_wall$将会提升E.L.I.D对城市的§R威胁§!！"
+ d_GF_purify_wall_effect_desc:0 "\t\t\t\t与§RE.L.I.D§!交战后的第§Y30§! £time£ 开始修复地表损伤：\n\t\t\t\t\t\t\t\t§H作战时期：§!每§Y10§! £time£ 修复§G0.2§!破坏度\n\t\t\t\t\t\t\t\t§H和平时期：§!每§Y10§! £time£ 修复§G2.0§!破坏度"
 
  d_GF_black_zone_extra:0 "$d_GF_black_zone$"
  d_GF_black_zone_extra_desc:0 "坍塌辐射源头所在地，大约为原爆造成的半径数公里的环形坑洞及周边数十公里地区。该地区坍塌辐射浓度极高，一旦进入，难以生还。"

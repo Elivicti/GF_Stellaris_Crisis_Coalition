@@ -196,6 +196,50 @@ planet_event = {
 	}
 }
 
+planet_event = {
+	id = GF_elid.20
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_deposit = d_GF_purify_wall
+		NOT = { has_planet_flag = flag_p_d_GF_purify_wall_effect }
+		from = { is_country_type = GF_elid_country }
+	}
+
+	immediate = {
+		set_planet_flag = flag_p_d_GF_purify_wall_effect
+		planet_event = {
+			id = GF_elid.21
+			days = 30
+		}
+	}
+}
+
+planet_event = {
+	id = GF_elid.21
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_deposit = d_GF_purify_wall
+		has_planet_flag = flag_p_d_GF_purify_wall_effect
+	}
+
+	immediate = {
+		if = {
+			limit = { has_ground_combat = yes }
+			add_planet_devastation = -0.2
+		}
+		else = { add_planet_devastation = -2 }
+
+		if = {
+			limit = { planet_devastation > 0 }
+			planet_event = { id = GF_elid.21 days = 10 }
+		}
+		else = { remove_planet_flag = flag_p_d_GF_purify_wall_effect }
+	}
+}
 
 ### 污染区存在时，刷新ELID进攻事件
 

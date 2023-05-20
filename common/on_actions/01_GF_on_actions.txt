@@ -162,3 +162,12 @@ on_aow_demolish_megastructure = {
 		GF_mega.195
 	}
 }
+
+# Triggers when ground combat starts
+# This = planet
+# From = country attacking
+on_ground_combat_started = {
+	events = {
+		GF_elid.20
+	}
+}
