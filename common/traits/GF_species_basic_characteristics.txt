@@ -10,7 +10,6 @@ GF_trait_doll = {
 	species_possible_remove = { always = no }
 	species_possible_merge_add = { always = no }
 
-	immortal_leaders = yes
 	improves_leaders = yes
 	advanced_trait = no
 	allowed_archetypes = {
@@ -52,6 +51,7 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_doll_right_full }
 		}
+		key = GF_doll_right_policy_full
 		planet_jobs_produces_mult = 0.10
 	}
 
@@ -59,6 +59,7 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_doll_right_limited }
 		}
+		key = GF_doll_right_policy_limited
 		planet_jobs_produces_mult = 0.05
 		planet_pops_consumer_goods_upkeep_mult = -0.10
 		pop_political_power = -0.25
@@ -68,6 +69,7 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_doll_right_servitude }
 		}
+		key = GF_doll_right_policy_servitude
 		planet_pops_consumer_goods_upkeep_mult = -0.15
 		pop_political_power = -0.50
 	}
@@ -76,6 +78,7 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_doll_right_low }
 		}
+		key = GF_doll_right_policy_low
 		planet_pops_consumer_goods_upkeep_mult = -10
 		pop_political_power = -0.80
 	}
@@ -92,6 +95,7 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_run_mode_policy_energy }
 		}
+		key = GF_run_mode_policy_energy
 		planet_pops_upkeep_mult = -0.05
 	}
 
@@ -99,14 +103,15 @@ GF_trait_doll = {
 		potential = {
 			owner = { has_policy_flag = GF_run_mode_policy_no_food }
 		}
+		key = GF_run_mode_policy_no_food
 		planet_pops_upkeep_mult = -0.05
-		planet_pops_food_upkeep_mult = -10
 	}
 
 	triggered_pop_modifier = {
 		potential = {
 			owner = { has_policy_flag = GF_run_mode_policy_overload }
 		}
+		key = GF_run_mode_policy_overload
 		planet_pops_upkeep_mult = -0.15
 	}
 }

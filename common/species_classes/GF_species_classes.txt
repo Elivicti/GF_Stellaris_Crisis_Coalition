@@ -24,8 +24,14 @@ GF_doll = {
 		category = planet_pops
 		upkeep = {
 			trigger = { is_being_purged = no }
+			gf_core_chip = 0.1
+		}
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				owner = { NOT = { has_policy_flag = GF_run_mode_policy_no_food } }
+			}
 			food = 0.5
-			gf_core_chip = 0.01
 		}
 	}
 }

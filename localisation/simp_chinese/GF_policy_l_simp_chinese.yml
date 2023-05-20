@@ -41,7 +41,7 @@
  GF_run_mode_policy_no_food:0 "纯电能运行供给"
  GF_run_mode_policy_no_food_desc:0 "旧时代遗留下来的一种维护方式，毕竟有机物的供给意义在于模仿人类进食行为与仿生表皮的维护，如果只是为了工作，一副会动的金属骨架也并不是不能完成，除了视觉上不是那么美观。\n\n$GF_run_mode_policy_no_food_effect$"
  GF_run_mode_policy_no_food_name:0 "人形维护：纯电能运行供给"
- GF_run_mode_policy_no_food_effect:0 "人形将不消耗生物质\n$GF_doll_upkeep$: §G-5%§!\n$GF_doll_food_upkeep$: §G-1000%§!"
+ GF_run_mode_policy_no_food_effect:0 "人形人口§G不再消耗§!£food£食物作为维护费\n$GF_doll_upkeep$: §G-5%§!"
 
  GF_run_mode_policy_overload:0 "超负荷运行标准"
  GF_run_mode_policy_overload_desc:0 "有经济学家研究发现消减人形维护时间带来的损耗损失要小于将让人形把节约出的时间用于工作所创造的价值，毕竟是工具，又有谁会关心一个洗碗机的命运呢？\n\n$GF_run_mode_policy_overload_effect$"
