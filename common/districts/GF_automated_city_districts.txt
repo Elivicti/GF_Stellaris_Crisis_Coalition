@@ -450,20 +450,20 @@ district_GF_automated_factory = {
 		}
 		upkeep = {
 			energy = @base_upkeep_t2
-			alloys = 12
-			gf_core_chip = 3
+			alloys = @base_upkeep_t2
+			gf_core_chip = 2
 		}
 		upkeep = {
 			trigger = {
 				exists = assembling_species
 				assembling_species = { has_trait = GF_trait_doll }
 			}
-			gf_core_chip = 3
+			gf_core_chip = 2
 		}
 	}
 
 	triggered_planet_modifier = {
-		planet_pop_assembly_add = 6
+		planet_pop_assembly_add = 4
 		mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_factory_assembly_speed_mult|
 	}
 
