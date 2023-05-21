@@ -33,19 +33,53 @@ GF_trait_leader_ogas = {
 GF_trait_leader_scientist_16lab = {
 	cost = 1
 	inline_script = {
-		script = trait/icon_specialist
-		CLASS = leader
+		script = trait/GF_traits_colored
+		CLASS = scientist
 		ICON = GFX_leader_trait_GF_16lab
-		RARITY = veteran
+		COLOR = trait_bg_specialist
+		FRAME = veteran_no_glow
+		RARITY  = veteran
 		COUNCIL = no
 		TIER = none
 	}
+	self_modifier = {
+		leader_trait_selection_options_add = 1
+	}
 	modifier = {
-	    all_technology_research_speed = 0.20
+	    science_ship_survey_speed = 0.20
+		ship_archaeological_site_excavation_speed_mult = 0.15
+		assist_research_mult = 0.10
 	}
 	leader_potential_add = {
 		from = { has_valid_civic = GF_civic_16LAB }
 	}
+	opposites = { GF_trait_leader_scientist_16lab_councilor }
+	leader_class = { scientist }
+}
+
+GF_trait_leader_scientist_16lab_councilor = {
+	cost = 1
+	inline_script = {
+		script = trait/GF_traits_colored
+		CLASS = scientist
+		ICON = GFX_leader_trait_GF_16lab
+		COLOR = trait_bg_specialist
+		FRAME = veteran_no_glow
+		RARITY  = veteran
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_trait = yes
+	self_modifier = {
+		leader_trait_selection_options_add = 1
+	}
+	modifier = {
+		all_technology_research_speed = 0.20
+	}
+	leader_potential_add = {
+		from = { has_valid_civic = GF_civic_16LAB }
+	}
+	opposites = { GF_trait_leader_scientist_16lab }
 	leader_class = { scientist }
 }
 
