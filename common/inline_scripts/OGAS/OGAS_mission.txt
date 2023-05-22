@@ -1,0 +1,17 @@
+option = {
+	name = GF_ogas.11200.$MISSION$
+	response_text = GF_ogas.11200.$MISSION$.response
+	is_dialog_only = yes
+	allow = {
+		if = {
+			limit = { NOT = { has_modifier = GF_ogas_mode_$MISSION$ } }
+			GF_require_OGAS_has_available_threads = { amount = $THREAD_COST$ }
+		}
+	}
+	custom_tooltip = GF_ogas.11200.$MISSION$.tooltip
+	if = {
+		limit = { NOT = { has_modifier = GF_ogas_mode_$MISSION$ } }
+		GF_set_ogas_mission = { modifier = GF_ogas_mode_$MISSION$ }
+	}
+	else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_$MISSION$ } }
+}
