@@ -36,7 +36,9 @@
 
  GF_planet_collapser:0 "坍塌反应技师岗位"
  GF_planet_reverse_collapser:0 "逆向坍塌技师岗位"
+ GF_planet_reverse_collapser_researcher:0 "$job_GF_reverse_collapser_research$岗位"
  mod_GF_planet_reverse_collapser_produces_mult:0 "$GF_planet_reverse_collapser$产出"
+ mod_GF_planet_reverse_collapser_researcher_produces_mult:0 "£job_GF_reverse_collapser_research£ $job_GF_reverse_collapser_research$产出"
 
  GF_automated_city_maintainer:0 "维护人员"
  mod_job_GF_maintenance_engineer_add:0 "$job_GF_maintenance_engineer$岗位"
@@ -60,16 +62,16 @@
  mod_GF_automated_city_districts_GF_nyto_collapse_liquid_produces_mult:0 "$GF_automated_city_districts$产出的 £GF_nyto_collapse_liquid£ $GF_nyto_collapse_liquid$"
 
  GF_planet_URNC_commissioner:0 "$job_GF_URNC_commissioner$"
- mod_GF_planet_URNC_commissioner_unity_produces_add:0 "$GF_planet_URNC_commissioner$产出的 £unity£ 凝聚力"
+ mod_GF_planet_URNC_commissioner_unity_produces_add:0 "£job_GF_URNC_commissioner£ $GF_planet_URNC_commissioner$产出的 £unity£ 凝聚力"
 
  GF_planet_AU_director:0 "$job_GF_AU_director$"
- mod_GF_planet_AU_director_physics_research_produces_mult:0 "$GF_planet_AU_director$产出的 £physics_research£ 物理学研究"
- mod_GF_planet_AU_director_society_research_produces_mult:0 "$GF_planet_AU_director$产出的 £society_research£ 社会学研究"
- mod_GF_planet_AU_director_engineering_research_produces_mult:0 "$GF_planet_AU_director$产出的 £engineering_research£ 工程学研究"
- mod_GF_planet_AU_director_gf_core_chip_produces_add:0 "$GF_planet_AU_director$产出的 £gf_core_chip£ 心智核心"
+ mod_GF_planet_AU_director_physics_research_produces_mult:0 "£job_GF_AU_director£ $GF_planet_AU_director$产出的 £physics_research£ 物理学研究"
+ mod_GF_planet_AU_director_society_research_produces_mult:0 "£job_GF_AU_director£ $GF_planet_AU_director$产出的 £society_research£ 社会学研究"
+ mod_GF_planet_AU_director_engineering_research_produces_mult:0 "£job_GF_AU_director£ $GF_planet_AU_director$产出的 £engineering_research£ 工程学研究"
+ mod_GF_planet_AU_director_gf_core_chip_produces_add:0 "£job_GF_AU_director£ $GF_planet_AU_director$产出的 £gf_core_chip£ 心智核心"
 
  GF_planet_GK_officer:0 "$job_GF_GK_officer$"
- mod_GF_planet_GK_officer_unity_produces_add:0 "$GF_planet_GK_officer$产出的 £unity£ 凝聚力"
+ mod_GF_planet_GK_officer_unity_produces_add:0 "£job_GF_GK_officer£ $GF_planet_GK_officer$产出的 £unity£ 凝聚力"
 
  mod_planet_building_GF_doll_factory_build_speed_mult:0 "$building_GF_doll_factory$建造速度"
 
@@ -101,6 +103,12 @@
  mod_job_GF_URNC_commissioner_add:0 "人民委员岗位"
  mod_job_GF_AU_director_add:0 "理事岗位"
  mod_job_GF_GK_officer_add:0 "代行官岗位"
+
+ pop_category_GF_freedom_class:0 "$job_GF_freedom_kingdom$"
+ mod_job_GF_freedom_kingdom_add:0 "$job_GF_freedom_kingdom$岗位"
+ mod_job_GF_freedom_kingdom_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_freedom_kingdom$岗位"
+ mod_job_GF_freedom_kingdom_per_pop_short:0 "每$VALUE$ £pop£ §G+1§! £job_GF_freedom_kingdom£"
+ mod_pop_cat_GF_freedom_class_happiness:0 "$pop_cat_GF_freedom_class$阶层幸福度"
 ############
  mod_job_GF_guard_doll_add:0 "警用人形岗位"
  mod_job_GF_guard_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_guard_doll$岗位"
@@ -134,7 +142,7 @@
 
  mod_GF_auto_colony_capacity_add:0 "自动化遥控殖民地协议承载力"
 
- mod_GF_planet_URNC_commissioner_stability_add:0 "$GF_planet_URNC_commissioner$产出的 £mod_planet_stability_add£ 稳定度"
+ mod_GF_planet_URNC_commissioner_stability_add:0 "£job_GF_URNC_commissioner£ $GF_planet_URNC_commissioner$产出的 £mod_planet_stability_add£ 稳定度"
 
  mod_GF_system_maintenance:0 "系统维护度"
  mod_GF_automated_city_districts_factory_assembly_speed_mult:0 "$district_GF_automated_factory$生产的 £mod_planet_pop_assembly_mult£ 人口组装"
