@@ -15,5 +15,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_tr_gf_automation_3" texturefile = "gfx/interface/icons/traditions/tr_gf_automation_3.dds" }
 	spriteType = { name = "GFX_tr_gf_automation_4" texturefile = "gfx/interface/icons/traditions/tr_gf_automation_4.dds" }
 	spriteType = { name = "GFX_tr_gf_automation_5" texturefile = "gfx/interface/icons/traditions/tr_gf_automation_5.dds" }
+	spriteType = { name = "GFX_tr_gf_automation_6" textureFile = "gfx/interface/icons/traditions/tr_gf_automation_6.dds" }
 
 }
