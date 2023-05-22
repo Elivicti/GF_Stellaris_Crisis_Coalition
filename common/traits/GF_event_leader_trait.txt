@@ -13,6 +13,16 @@ GF_trait_leader_ogas_glitch = {
 	councilor_trait = yes
 	is_councilor_trait_for_ruler = yes
 
+	triggered_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_gf_automation_finish }
+		}
+		GF_automated_city_districts_produces_mult = -0.50
+		GF_automated_city_districts_upkeep_mult = 0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
+	}
+
 	modifier = {
 		empire_size_mult = 0.25
 		empire_size_penalty_mult = 0.25

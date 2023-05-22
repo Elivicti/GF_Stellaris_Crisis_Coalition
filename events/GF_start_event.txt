@@ -128,7 +128,6 @@ country_event = {
 				custom_description = GF_ogas_leader_desc
 
 				effect = {
-					change_background_job = none
 					remove_trait = GF_trait_leader_doll
 					copy_flags_and_variables_from = prev.ruler
 					add_trait_no_notify = GF_trait_leader_ogas
@@ -174,6 +173,7 @@ country_event = {
 				}
 				else = { set_species_flag = flag_GF_GAVIRUL_species }
 			}
+			ruler = { change_background_job = none }
 		}
 	}
 }
@@ -195,7 +195,6 @@ country_event = {
 			portrait = random
 			homeworld = capital_scope
 			name = random
-			plural = random
 			adjective = random
 			name_list = HUMAN1
 			traits = {
