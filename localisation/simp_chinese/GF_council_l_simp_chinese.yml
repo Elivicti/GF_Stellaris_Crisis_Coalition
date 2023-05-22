@@ -49,3 +49,6 @@
  GF_councilor_NHC: "卫生健康委员会主席"
  GF_councilor_NHC_female: "$GF_councilor_NHC$"
  GF_councilor_NHC_desc: "$TITLE$负责保障人民的基础卫生健康。"
+
+ council_agenda_GF_agenda_automation_name: "$GF_tradition_automation$"
+ council_agenda_GF_agenda_automation_desc: "OGAS将增强一切智能机械的能力。"

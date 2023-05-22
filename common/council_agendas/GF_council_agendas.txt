@@ -1,0 +1,21 @@
+@base_agenda_cost = 7000
+# Remember to update initial progress for "agenda_infinite_opportunities" in game_start.60 if above is changed.
+
+GF_agenda_automation = {
+	agenda_cost = @base_agenda_cost
+	allow = {
+		has_tradition = tr_gf_automation_adopt
+		ruler = {
+			NOT = { has_trait = GF_trait_leader_ogas_glitch }
+		}
+	}
+	potential = {
+		has_technology = GF_tech_ogas_computing_center
+	}
+	modifiers = {
+		{
+			planet_pop_assembly_mult = 0.05
+		}
+	}
+	finish_modifier = GF_agenda_automation_finish
+}
