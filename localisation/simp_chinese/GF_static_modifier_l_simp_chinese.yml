@@ -10,6 +10,14 @@
  GF_ogas_mode_war_desc:0 "OGAS将分出部分算力辅助我们的军备发展与战略分析工作。"
  GF_ogas_mode_research:0 "科研辅助模式"
  GF_ogas_mode_research_desc:0 "OGAS将分出部分算力辅助我们的科研任务。"
+ GF_ogas_mode_produce_2:0 "生产调控模式"
+ GF_ogas_mode_produce_2_desc:0 "OGAS将分出部分算力调控、管理各地的生产工作。"
+ GF_ogas_mode_research_2:0 "科研强化模式"
+ GF_ogas_mode_research_2_desc:0 "OGAS将分出部分算力协助完成我们的科研项目。"
+ GF_ogas_mode_empire:0 "国家管理模式"
+ GF_ogas_mode_empire_desc:0 "OGAS将分出部分算力协调各级政府进行政务管理。"
+################################# 议程
+ GF_agenda_automation_finish:0 "$council_agenda_GF_agenda_automation_name$议程"
 ################################# 国家
  gf_core_chip_deficit:0 "芯片短缺"
  GF_gavirul_project_finished:0 "§YGAVIRUL计划§!已完成"

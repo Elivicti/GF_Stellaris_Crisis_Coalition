@@ -60,6 +60,38 @@ GF_ogas_mode_research = {
 	GF_OGAS_threads_used_add = 1
 }
 
+GF_ogas_mode_produce_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_produces_mult.dds"
+	planet_jobs_produces_mult = 0.15
+	megastructure_build_speed_mult = 0.50
+	country_base_energy_produces_add = -10
+	GF_OGAS_threads_used_add = 1
+}
+
+GF_ogas_mode_research_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_country_all_tech_research_speed.dds"
+	all_technology_research_speed = 0.15
+	planet_researchers_produces_mult = 0.10
+	country_base_energy_produces_add = -10
+	GF_OGAS_threads_used_add = 1
+}
+
+GF_ogas_mode_empire = {
+	icon = "gfx/interface/icons/modifiers/mod_country_admin_cap_add.dds"
+	empire_size_mult = -0.15
+	empire_size_penalty_mult = -0.20
+	country_base_energy_produces_add = -10
+	GF_OGAS_threads_used_add = 1
+}
+
+###### 议程
+GF_agenda_automation_finish = {
+	icon = "gfx/interface/icons/modifiers/mod_planet_building_build_speed_mult.dds"
+	planet_building_build_speed_mult = 0.10
+	planet_jobs_robotic_produces_mult = 0.15
+	planet_pops_robotics_upkeep_mult = -0.15
+}
+
 ######
 GF_gavirul_project_finished = {
 	BIOLOGICAL_species_trait_points_add = 2
