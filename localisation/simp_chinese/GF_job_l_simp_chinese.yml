@@ -54,7 +54,15 @@
  job_GF_maintenance_engineer_desc:0 "负责修缮、维护大型自动化设施，以确保各类自动化机械的正常运转。"
  job_GF_maintenance_engineer_effect_desc:0 "£job_GF_maintenance_engineer£ $job_GF_maintenance_engineer_plural$花费 £energy£ §Y能量§!和 £alloys£ §Y合金§!来维护§Y$GF_automated_city_districts$§!"
 
-
+############
+ pop_cat_GF_freedom_class:0 "自由国度"
+ pop_cat_GF_freedom_class_plural:0 "自由国度"
+ pop_cat_GF_freedom_class_desc:0 "自由国度DESC"
+ job_GF_freedom_kingdom:0 "自由王国"
+ job_GF_freedom_kingdom_plural:0 "自由王国"
+ job_GF_freedom_kingdom_desc:0 "自由王国DESC"
+ job_GF_freedom_kingdom_effect_desc:0 "自由王国EFFECT_DESC"
+ GF_freedom_kingdom_conditions:0 "仅有机生命和拥有公民权的机械生命才能享受如此的生活。"
 ############
  job_GF_GK_commander_effect_desc:0 "£job_GF_GK_commander£ $job_GF_GK_commander_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!和 £trade_value£ §Y贸易额§!"
  job_GF_GK_commander_plural:0 "指挥官"

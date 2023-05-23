@@ -731,7 +731,7 @@ building_GF_URNC_committee_3 = {
 	}
 }
 
-# 起这个名字(主要是_capitalz的部分)单纯为了建筑的排序
+# 自动化星球
 building_GF_connection_nexus = {
 	can_build = no
 	can_be_disabled = no
@@ -789,6 +789,11 @@ building_GF_connection_nexus = {
 	}
 
 	triggered_planet_modifier = {
+		job_GF_freedom_kingdom_add = 1
+		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|
+	}
+
+	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { GF_OGAS_has_used_threads_over_cap = yes }
@@ -797,6 +802,7 @@ building_GF_connection_nexus = {
 		GF_automated_city_districts_produces_mult = -0.75
 		GF_automated_city_districts_upkeep_mult = 0.75
 		planet_building_build_speed_mult = -0.75
+		pop_cat_GF_freedom_class_happiness = -0.50
 	}
 
 	triggered_desc = {
@@ -812,5 +818,12 @@ building_GF_connection_nexus = {
 	}
 	triggered_desc = {
 		text = job_GF_maintenance_engineer_effect_desc
+	}
+
+	triggered_desc = {
+		text = add_job_GF_freedom_kingdom_effect_desc
+	}
+	triggered_desc = {
+		text = job_GF_freedom_kingdom_effect_desc
 	}
 }

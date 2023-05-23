@@ -1,0 +1,117 @@
+GF_freedom_class = {
+	rank = 1
+	clothes_texture_index = 2
+
+	assign_to_pop = {
+		exists = planet
+		OR = {
+			is_unemployed = yes
+			is_pop_category = GF_freedom_class
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			can_generate_trade_value = yes
+		}
+		trade_value_add = @trade_value_very_high
+		mult = value:scripted_modifier_mult|MODIFIER|pop_lifestyle_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			can_assemble_budding_pop = yes
+		}
+		planet_pop_assembly_organic_add = @plantoid_budding_rate
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			NOT = { has_trait = trait_noxious }
+		}
+		key = trait_noxious
+		pop_happiness = 1
+		mult = modifier:pop_non_noxious_happiness
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			can_assemble_tiyanki_pop = yes
+		}
+		planet_pop_assembly_organic_add = @tiyanki_budding_rate
+	}
+
+	triggered_planet_modifier = {
+		potential = { has_trait = trait_noxious }
+		key = trait_noxious
+		pop_non_noxious_happiness = @noxious_happiness_penalty
+	}
+
+	resources = {
+		category = pop_category_GF_freedom_class
+		upkeep = { consumer_goods = 1 }
+
+		# Regular food, mineral and energy upkeep.
+		inline_script = "pop_categories/regular_upkeep"
+
+		# Additional energy upkeep for cyborgs.
+		inline_script = "pop_categories/cyborg_upkeep"
+
+		# Instrument of Desire Upkeep
+		inline_script = "pop_categories/instrument_upkeep"
+
+		# Exotic Metabolism Upkeep
+		upkeep = {
+			trigger = {
+				is_organic_species = yes
+				has_trait = trait_exotic_metabolism
+			}
+			exotic_gases = @exotic_metabolism
+		}
+
+		# Resource Production
+
+		# Lithoid Trait Output
+		inline_script = "pop_categories/trait_production"
+
+		produces = {
+			trigger = {
+				is_organic_species = yes
+				has_trait = trait_inorganic_breath
+			}
+			exotic_gases = @inorganic_breath
+		}
+
+		produces = {
+			trigger = {
+				has_trait = trait_drake_scaled
+			}
+			alloys = @drake_scaled_trait_resource_production
+		}
+	}
+
+	weight = {
+		weight = 1
+		modifier = {
+			set = 10000
+			is_unemployed = yes
+		}
+	}
+
+	# scope: pop to be resettled
+	allow_resettlement = {
+		always = yes
+	}
+
+	resettlement_cost = {
+		energy = 100
+	}
+
+	pop_modifier = {
+		pop_political_power = 2
+		pop_housing_usage_base = 1
+		pop_amenities_usage_base = 1
+		pop_happiness = 0.5
+		species_empire_size_mult = -0.25
+	}
+}
