@@ -3,11 +3,12 @@ GF_freedom_class = {
 	clothes_texture_index = 2
 
 	assign_to_pop = {
-		exists = planet
 		OR = {
 			is_unemployed = yes
 			is_pop_category = GF_freedom_class
 		}
+		exists = planet
+		planet = { is_planet_class = pc_GF_automated_city }
 	}
 
 	triggered_planet_modifier = {
