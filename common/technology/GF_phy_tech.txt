@@ -402,6 +402,22 @@ GF_tech_ternary_quantum_computing = {
 
 	modifier = {
 		GF_OGAS_threads_add = 1
+		all_technology_research_speed = 0.05
+	}
+}
+
+GF_tech_ogas_computing_center = {
+	area = physics
+	tier = 5
+	cost = @tier5cost2
+	weight = @tier3weight1
+	category = { computing }
+
+	is_rare = yes
+
+	prerequisites = {
+		tech_mega_engineering
+		GF_tech_ternary_quantum_computing
 	}
 
 	prereqfor_desc = {
@@ -410,18 +426,19 @@ GF_tech_ternary_quantum_computing = {
 			desc = GF_UNLOCK_TRADITION_AUTOMATION_DESC
 		}
 	}
-}
 
-GF_tech_ogas_computing_center = {
-	area = physics
-	tier = 5
-	cost = @tier5cost2
-	weight = 0
-	category = { computing }
-
-	is_rare = yes
-
-	potential = {
-		has_tradition = tr_gf_automation_1
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = {
+			factor = 5
+			years_passed >= 50
+		}
+		modifier = {
+			factor = 10
+			years_passed >= 75
+		}
 	}
 }
