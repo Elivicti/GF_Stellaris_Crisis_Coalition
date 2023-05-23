@@ -72,6 +72,12 @@ GF_automated_city_construction = {
 		}
 	}
 
+	on_monthly = {
+		events = {
+			GF_situations.100
+		}
+	}
+
 	monthly_progress = {
 		base = 1
 		modifier = {
@@ -137,7 +143,7 @@ GF_automated_city_construction = {
 				}
 				add_building = building_GF_connection_nexus
 			}
-			destory_situation = this
+			destroy_situation = this
 		}
 	}
 

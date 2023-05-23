@@ -90,6 +90,27 @@ country_event = {
 	}
 }
 
+###OGAS线程超上限
+country_event = {
+	id = GF_ogas.500
+	title = GF_ogas.500.name
+	desc = GF_ogas.500.desc
+
+	location = from
+
+	picture = GFX_evt_glitchy_matrix
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_ogas.500.a
+		custom_tooltip = GF_ogas.500.a.tooltip
+
+		GF_remove_all_ogas_mission_modifier = yes
+	}
+
+}
+
 ###主界面跳转事件
 country_event = {
 	id = GF_ogas.0
@@ -127,10 +148,6 @@ country_event = {
 	desc = {
 		text = GF_ogas.10000.desc.c
 		trigger = { has_authority = GF_auth_commonwealth }
-	}
-	desc = {
-		text = GF_ogas.10000.desc.d
-		trigger = { NOT = { has_authority = GF_auth_commonwealth } }
 	}
 	diplomatic = yes
 	custom_gui = "GF_OGAS_mission_system"
@@ -330,94 +347,53 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = GF_ogas.11200.governor
-		response_text = GF_ogas.11200.governor.response
-		is_dialog_only = yes
-		allow = {
-			if = {
-				limit = { NOT = { has_modifier = GF_ogas_mode_governor } }
-				GF_require_OGAS_has_available_threads = { amount = 1 }
-			}
-		}
-		custom_tooltip = GF_ogas.11200.governor.tooltip
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_governor } }
-			GF_set_ogas_mission = { modifier = GF_ogas_mode_governor }
-		}
-		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_governor } }
+
+	inline_script = {
+		script = OGAS/OGAS_mission
+		MISSION = governor
+		THREAD_COST = 1
 	}
-	
-	option = {
-		name = GF_ogas.11200.produce
-		response_text = GF_ogas.11200.produce.response
-		is_dialog_only = yes
-		allow = {
-			if = {
-				limit = { NOT = { has_modifier = GF_ogas_mode_produce } }
-				GF_require_OGAS_has_available_threads = { amount = 1 }
-			}
-		}
-		custom_tooltip = GF_ogas.11200.produce.tooltip
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_produce } }
-			GF_set_ogas_mission = { modifier = GF_ogas_mode_produce }
-		}
-		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_produce } }
+	inline_script = {
+		script = OGAS/OGAS_mission
+		MISSION = produce
+		THREAD_COST = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_mission
+		MISSION = upkeep
+		THREAD_COST = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_mission
+		MISSION = war
+		THREAD_COST = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_mission
+		MISSION = research
+		THREAD_COST = 1
 	}
 
-	option = {
-		name = GF_ogas.11200.upkeep
-		response_text = GF_ogas.11200.upkeep.response
-		is_dialog_only = yes
-		allow = {
-			if = {
-				limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
-				GF_require_OGAS_has_available_threads = { amount = 1 }
-			}
-		}
-		custom_tooltip = GF_ogas.11200.upkeep.tooltip
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_upkeep } }
-			GF_set_ogas_mission = { modifier = GF_ogas_mode_upkeep }
-		}
-		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_upkeep } }
+
+	inline_script = {
+		script = OGAS/OGAS_mission_tradition
+		TRADITION = tr_gf_automation_2
+		MISSION = produce_2
+		THREAD_COST = 1
 	}
 
-	option = {
-		name = GF_ogas.11200.war
-		response_text = GF_ogas.11200.war.response
-		is_dialog_only = yes
-		allow = {
-			if = {
-				limit = { NOT = { has_modifier = GF_ogas_mode_war } }
-				GF_require_OGAS_has_available_threads = { amount = 1 }
-			}
-		}
-		custom_tooltip = GF_ogas.11200.war.tooltip
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_war } }
-			GF_set_ogas_mission = { modifier = GF_ogas_mode_war }
-		}
-		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_war } }
+	inline_script = {
+		script = OGAS/OGAS_mission_tradition
+		TRADITION = tr_gf_automation_4
+		MISSION = research_2
+		THREAD_COST = 1
 	}
 
-	option = {
-		name = GF_ogas.11200.research
-		response_text = GF_ogas.11200.research.response
-		is_dialog_only = yes
-		allow = {
-			if = {
-				limit = { NOT = { has_modifier = GF_ogas_mode_research } }
-				GF_require_OGAS_has_available_threads = { amount = 1 }
-			}
-		}
-		custom_tooltip = GF_ogas.11200.research.tooltip
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_research } }
-			GF_set_ogas_mission = { modifier = GF_ogas_mode_research }
-		}
-		else = { GF_end_ogas_mission = { modifier = GF_ogas_mode_research } }
+	inline_script = {
+		script = OGAS/OGAS_mission_tradition
+		TRADITION = tr_gf_automation_6
+		MISSION = empire
+		THREAD_COST = 1
 	}
 	
 	

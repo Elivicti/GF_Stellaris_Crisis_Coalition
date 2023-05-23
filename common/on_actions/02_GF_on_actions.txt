@@ -103,3 +103,12 @@ on_planet_defenders_lose = {
 		GF_elid.2320 # 清理黄区：玩家失败
 	}
 }
+
+# 当OGAS线程占用超上限时触发
+# This = country
+# From = any		# 由发射源指定，通常为发射源的域或导致OGAS线程占用超上限的原因所在的域
+on_OGAS_used_threads_over_cap = {
+	events = {
+		GF_ogas.500
+	}
+}

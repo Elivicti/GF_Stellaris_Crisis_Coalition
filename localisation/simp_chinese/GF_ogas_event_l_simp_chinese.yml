@@ -23,6 +23,11 @@
  GF_ogas.111.a:0 "明白了。"
  GF_ogas.111.a.response:0 "§Y<你可以通过通讯菜单连接到OGAS系统。>§!\n\n为了使继任执政官明白自己所肩负的重大责任，根据《联合政府新任执政官规范》，本机接下来将自动播放《乔治王岛宣言》。\n\n§G鉴于日益严重的广域坍塌辐射污染与EILD活跃水平，我们这一代人将面临有史以来最为严重的危机，这不仅是个体、组织或者国家，而是作为一个种群的存亡问题。地球即将被坍塌辐射所占据，战争除了恶化这一糟糕的现状外无法带来任何改变，我们意识到是时候放下彼此之间的隔阂与差异，肩负起应该承担的历史责任，不是为了财富、土地、权力而是为了生存来战斗。\n\n人类的历史不该就此结束，人类的历史不能就此结束，因此，南极联邦与罗克萨特主义合众国联盟原则上同意结束一切敌对行为，并开始着手成立新的联合政府主导外太空探索活动，同时祝愿之后新政权的领导人能充分意识到自己的职责，引领整个种群在宇宙中延续下去。\n\n就此，在全体人类的见证下，我们宣告：自2030年1月17日北兰岛事件以来，发生在这颗蔚蓝星球长达2个世纪的暴力与混乱已经结束，新的秩序，一个从未有过的全球性质的统一政府初现曙光，在即将到来的第22个百年，历史朝着更加广袤的宇宙翻开了全新一页！§!"
 
+ GF_ogas.500.name:0 "§ROGAS线程占用溢出§!"
+ GF_ogas.500.desc:0 "由于规划不当等一系列原因，OGAS的线程占用已经超出了OGAS能够负荷的线程数上限。\n\n如果这种情况持续下去，将对§Y[Ruler.GetName]§!造成极大的负担，并且任何需要占用OGAS线程进行管理的项目都将因为缺少算力资源而难以进展。"
+ GF_ogas.500.a:0 "紧急事态！"
+ GF_ogas.500.a.tooltip:0 "若可能，OGAS将被迫§R终止§!一些§H政务管理§!项目以期降低线程占用\n\n"
+
 #  GF_ogas.4.title:0 "国家计算和信息处理自动化系统OGAS[event_target:ogas_leader.GetName]"
 #  GF_ogas.11000.title:0 "[event_target:has_ring_of_contract_leader.GetName]"
 #  GF_ogas.10000.title:0 "[event_target:has_ring_of_contract_leader.GetName]"
@@ -115,6 +120,25 @@
  GF_ogas.11200.research.tooltip:0 "[GF_Get_OGAS_Work_Research_Action]$GF_ogas.11200.research$\n\n"
  GF_OGAS_Work_Research_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
  GF_OGAS_Work_Research_Enable_Response:0 "了解，已接入科研数据库，正在统合并分析所有科研院所相关数据，并根据结果为相关科研人员提供建议，包括分配研究任务、可行性分析与跨学科合作指导等。"
+
+ GF_ogas.11200.produce_2:0 "生产调控辅助模式"
+ GF_ogas.11200.produce_2.response:0 "[GF_Get_OGAS_Work_Produce_2_Response]"
+ GF_ogas.11200.produce_2.tooltip:0 "[GF_Get_OGAS_Work_Produce_2_Action]$GF_ogas.11200.produce_2$\n\n"
+ GF_OGAS_Work_Produce_2_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
+ GF_OGAS_Work_Produce_2_Enable_Response:0 "任务确认，已接入生产系统，正在优化生产参数，调节并统筹各生产设施运作以最大化产能。"
+
+ GF_ogas.11200.research_2:0 "科研强化辅助模式"
+ GF_ogas.11200.research_2.response:0 "[GF_Get_OGAS_Work_Research_2_Response]"
+ GF_ogas.11200.research_2.tooltip:0 "[GF_Get_OGAS_Work_Research_2_Action]$GF_ogas.11200.research_2$\n\n"
+ GF_OGAS_Work_Research_2_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
+ GF_OGAS_Work_Research_2_Enable_Response:0 "任务接受，科研数据库已接入，正在统合分析数据以提供科研建议与指导，并为各级科研单位开放算力使用许可。"
+
+ GF_ogas.11200.empire:0 "国家管理辅助模式"
+ GF_ogas.11200.empire.response:0 "[GF_Get_OGAS_Work_Empire_Response]"
+ GF_ogas.11200.empire.tooltip:0 "[GF_Get_OGAS_Work_Empire_Action]$GF_ogas.11200.empire$\n\n"
+ GF_OGAS_Work_Empire_Disable_Response:0 "$GF_ogas.11200.cancel.response$"
+ GF_OGAS_Work_Empire_Enable_Response:0 "已确认，各级政府管理系统权限重定向完毕，本系统将协调并协助各级政府对地区进行统筹、规划与管理。"
+
 
  GF_ogas.11200.cancel.response:0 "该系统任务已取消，占用线程已释放。"
 

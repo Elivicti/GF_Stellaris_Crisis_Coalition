@@ -175,6 +175,8 @@ country_event = {
 	desc = GF_mega.184.desc
 	location = from.solar_system
 
+	picture = GFX_evt_megastructure_construction
+
 	is_triggered_only = yes
 	trigger = {
 		has_technology = GF_tech_ogas_computing_center
@@ -223,10 +225,15 @@ country_event = {
 	desc = GF_mega.190.desc
 	location = from.solar_system
 
+	picture = GFX_evt_megastructure_construction
+
 	is_triggered_only = yes
 
 	option = {
 		name = GF_mega.190.a
+		hidden_effect = {
+			GF_check_OGAS_threads_over_cap_effect = { from = from.solar_system }
+		}
 	}
 }
 
@@ -236,6 +243,8 @@ country_event = {
 	title = GF_mega.191.name
 	desc = GF_mega.191.desc
 	location = from
+
+	picture = GFX_evt_large_explosion
 
 	is_triggered_only = yes
 

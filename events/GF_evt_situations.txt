@@ -1,0 +1,52 @@
+namespace = GF_situations
+
+situation_event = {
+	id = GF_situations.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			current_stage = stage_2
+			current_stage = stage_3
+		}
+	}
+
+	immediate = {
+		situation_event = {
+			id = GF_situations.105
+			days = 1
+		}
+	}
+}
+
+situation_event = {
+	id = GF_situations.105
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		situation_event = { id = GF_situations.110 }
+		if = {
+			limit = { owner = { GF_OGAS_has_used_threads_over_cap = yes } }
+			set_situation_flag = flag_sit_GF_OGAS_used_threads_over_cap
+		}
+		else = { remove_situation_flag = flag_sit_GF_OGAS_used_threads_over_cap }
+	}
+}
+
+situation_event = {
+	id = GF_situations.110
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_situation_flag = flag_sit_GF_OGAS_used_threads_over_cap }
+	}
+
+	immediate = {
+		owner = { GF_check_OGAS_threads_over_cap_effect = { from = root.target } }
+	}
+}
+

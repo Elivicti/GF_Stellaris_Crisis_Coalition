@@ -395,31 +395,25 @@ GF_end_ogas_mission = {
 
 # scope = country
 GF_remove_all_ogas_mission_modifier = {
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_governor }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_produce }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_upkeep }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_war }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_research }
+
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_produce_2 }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_research_2 }
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_empire }
+}
+
+# scope = country
+GF_end_ogas_mission_if_threads_over_cap = {
 	if = {
-		limit = { has_modifier = GF_ogas_mode_governor }
-		remove_modifier = GF_ogas_mode_governor
-	}
-	if = {
-		limit = { has_modifier = GF_ogas_mode_produce }
-		remove_modifier = GF_ogas_mode_produce
-	}
-	if = {
-		limit = { has_modifier = GF_ogas_mode_upkeep }
-		remove_modifier = GF_ogas_mode_upkeep
-	}
-	if = {
-		limit = { has_modifier = GF_ogas_mode_war }
-		remove_modifier = GF_ogas_mode_war
-	}
-	if = {
-		limit = { has_modifier = GF_ogas_mode_research }
-		remove_modifier = GF_ogas_mode_research
-	}
-	hidden_effect = {
-		if = {
-			limit = { has_country_flag = flag_GF_ogas_owner }
-			GF_update_OGAS_threads_variable = yes
+		limit = {
+			GF_OGAS_has_used_threads_over_cap = yes
+			has_modifier = $modifier$
 		}
+		remove_modifier = $modifier$
 	}
 }
 
@@ -455,6 +449,15 @@ GF_change_ogas_threads = {
 				value = 1
 			}
 		}
+	}
+}
+
+# this = country, 必须指定from，5天后触发
+GF_check_OGAS_threads_over_cap_effect = {
+	country_event = {
+		id = GF_evt_misc.100
+		days = 5
+		scopes = { from = $from$ }
 	}
 }
 

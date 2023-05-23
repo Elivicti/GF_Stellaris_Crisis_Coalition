@@ -1,6 +1,23 @@
 # 一些杂项事件
 namespace = GF_evt_misc
 
+country_event = {
+	id = GF_evt_misc.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		GF_OGAS_has_used_threads_over_cap = yes
+	}
+
+	immediate = {
+		fire_on_action = {
+			on_action = on_OGAS_used_threads_over_cap
+			scopes = { from = from }
+		}
+	}
+}
+
 ### on_single_player_save_game_load
 # no scope
 
