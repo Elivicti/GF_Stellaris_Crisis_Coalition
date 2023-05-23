@@ -1,5 +1,5 @@
 GF_tradition_automation = {
-	tree_template = "tree_11_21"
+	tree_template = "tree_22_22_22"
 	adoption_bonus = "tr_gf_automation_adopt"
 	finish_bonus = "tr_gf_automation_finish"
 	traditions = {
@@ -8,10 +8,11 @@ GF_tradition_automation = {
 		"tr_gf_automation_3"
 		"tr_gf_automation_4"
 		"tr_gf_automation_5"
+		"tr_gf_automation_6"
 	}
 
 	potential = {
-		has_technology = GF_tech_ternary_quantum_computing
+		has_technology = GF_tech_ogas_computing_center
 	}
 
 	ai_weight = {

@@ -110,6 +110,7 @@ decision_GF_auto_colony_off = {
 }
 
 decision_GF_automated_city_project = {
+	icon = default
 	owned_planets_only = yes
 	resources = {
 		category = decisions
@@ -127,11 +128,12 @@ decision_GF_automated_city_project = {
 		}
 		is_artificial = no
 		exists = owner
-		owner = { has_tradition = tr_gf_automation_5 }
+		owner = { has_tradition = tr_gf_automation_finish }
 	}
 
 	allow = {
 		hidden:owner = {
+			hidden_trigger = { has_tradition = tr_gf_automation_finish }
 			GF_require_OGAS_has_available_threads_with_trigger_icon = { amount = 2 }
 			custom_tooltip = {
 				fail_text = GF_other_automated_city_terraform_ongoing
