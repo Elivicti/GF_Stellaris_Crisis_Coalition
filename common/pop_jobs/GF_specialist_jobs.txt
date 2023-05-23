@@ -787,7 +787,7 @@ GF_reverse_collapser_research = {
 	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = GF_planet_reverse_collapser
+		category = GF_planet_reverse_collapser_researcher
 
 		produces = {
 			physics_research = 6
@@ -831,6 +831,11 @@ GF_system_dispatcher = {
 		planet_stability_add = 2
 		planet_crime_add = -15
 	}
+	triggered_planet_modifier = {
+		planet_amenities_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
 	resources = {
 		category = GF_automated_city_maintainer
 		upkeep = {
@@ -867,6 +872,11 @@ GF_maintenance_engineer = {
 
 	planet_modifier = {
 		GF_system_maintenance = 0.06
+	}
+
+	triggered_planet_modifier = {
+		planet_amenities_add = 1
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
 	resources = {
