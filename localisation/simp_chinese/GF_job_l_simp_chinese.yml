@@ -55,12 +55,12 @@
  job_GF_maintenance_engineer_effect_desc:0 "£job_GF_maintenance_engineer£ $job_GF_maintenance_engineer_plural$花费 £energy£ §Y能量§!和 £alloys£ §Y合金§!来维护§Y$GF_automated_city_districts$§!"
 
 ############
- pop_cat_GF_freedom_class:0 "自由国度"
- pop_cat_GF_freedom_class_plural:0 "自由国度"
- pop_cat_GF_freedom_class_desc:0 "自由国度DESC"
- job_GF_freedom_kingdom:0 "自由王国"
- job_GF_freedom_kingdom_plural:0 "自由王国"
- job_GF_freedom_kingdom_desc:0 "自由王国DESC"
+ pop_cat_GF_freedom_class:0 "自由王国"
+ pop_cat_GF_freedom_class_plural:0 "自由王国"
+ pop_cat_GF_freedom_class_desc:0 "自由王国是一个哲学概念，它意味着人的发展成了目的，劳动和其他一切人类活动都是为了实现主体自身的内在需要。在生产力高度发达、按需分配的自动化星球上，物质生活极大丰富，人摆脱了生存的压力、劳动的异化，完全的成为了自己的主人"
+ job_GF_freedom_kingdom:0 "自我实现"
+ job_GF_freedom_kingdom_plural:0 "自我实现"
+ job_GF_freedom_kingdom_desc:0 "虽然没有社会层面上的工作，但该岗位上的人正随心的从事自己的爱好来为社会创造价值"
  job_GF_freedom_kingdom_effect_desc:0 "自由王国EFFECT_DESC"
  GF_freedom_kingdom_conditions:0 "仅有机生命和拥有公民权的机械生命才能享受如此的生活。"
 ############
