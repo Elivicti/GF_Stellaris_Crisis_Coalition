@@ -68,7 +68,7 @@ GF_army_hostile_elid = {
 	has_species = no
 	morale = 1.00
 	morale_damage = 1.00
-#	collateral_damage = 0.50
+	collateral_damage = 0
 	war_exhaustion = 3.00
 
 	
@@ -85,7 +85,7 @@ GF_army_hostile_elid_boss = {
 	has_species = no
 	morale = 1.50
 	morale_damage = 1.00
-#	collateral_damage = 0.80
+	collateral_damage = 0
 	war_exhaustion = 4.50
 
 
