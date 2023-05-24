@@ -6,6 +6,11 @@ tr_gf_automation_adopt = {
 		GF_doll_produces_mult = 0.10
 	}
 
+	on_enabled = {
+		hidden_effect = { country_event = { id = GF_tradition.100 } }
+	}
+
+
 	unlocks_agenda = GF_agenda_automation
 }
 
@@ -13,6 +18,10 @@ tr_gf_automation_finish = {
 	custom_tooltip_with_modifiers = tr_gf_automation_finish_effect_desc
 	modifier = {
 		ascension_perks_add = 1
+	}
+
+	on_enabled = {
+		hidden_effect = { country_event = { id = GF_tradition.110 } }
 	}
 }
 

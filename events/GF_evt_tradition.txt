@@ -1,0 +1,31 @@
+namespace = GF_tradition
+
+country_event = {
+	id = GF_tradition.100
+	title = GF_tradition.100.name
+	desc = GF_tradition.100.desc
+
+	picture = GFX_evt_announcement
+	show_sound = event_announcement
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_tradition.100.a
+	}
+}
+
+country_event = {
+	id = GF_tradition.110
+	title = GF_tradition.110.name
+	desc = GF_tradition.110.desc
+
+	picture = GFX_evt_city_planet
+	show_sound = event_cityscape
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_tradition.110.a
+	}
+}
