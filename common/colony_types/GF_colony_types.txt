@@ -69,7 +69,7 @@ col_GF_automated_city_energy = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_energy }
+			parameters = { type = district_GF_automated_energy }
 			mode = add
 			mult = 3
 		}
@@ -95,7 +95,7 @@ col_GF_automated_city_minerals = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_minerals }
+			parameters = { type = district_GF_automated_mining }
 			mode = add
 			mult = 3
 		}
@@ -121,7 +121,7 @@ col_GF_automated_city_food = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_food }
+			parameters = { type = district_GF_automated_farming }
 			mode = add
 			mult = 3
 		}
@@ -150,7 +150,7 @@ col_GF_automated_city_alloys = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_alloys }
+			parameters = { type = district_GF_automated_foundary }
 			mode = add
 			mult = 3
 		}
@@ -179,7 +179,7 @@ col_GF_automated_city_consumer_goods = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_consumer_goods }
+			parameters = { type = district_GF_automated_industry }
 			mode = add
 			mult = 3
 		}
@@ -208,7 +208,7 @@ col_GF_automated_city_refinery = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_refinery }
+			parameters = { type = district_GF_automated_refinery }
 			mode = add
 			mult = 3
 		}
@@ -243,7 +243,7 @@ col_GF_automated_city_research = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_research }
+			parameters = { type = district_GF_automated_research }
 			mode = add
 			mult = 3
 		}
@@ -278,7 +278,7 @@ col_GF_automated_city_factory = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_factory }
+			parameters = { type = district_GF_automated_factory }
 			mode = add
 			mult = 3
 		}
@@ -313,7 +313,7 @@ col_GF_automated_city_collapse = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_collapse }
+			parameters = { type = district_GF_automated_collapse }
 			mode = add
 			mult = 3
 		}
@@ -349,7 +349,7 @@ col_GF_automated_city_reverse_collapse = {
 		}
 		complex_trigger_modifier = {
 			trigger = num_districts
-			parameters = { type = col_GF_automated_city_reverse_collapse }
+			parameters = { type = district_GF_automated_reverse_collapse }
 			mode = add
 			mult = 3
 		}
