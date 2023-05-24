@@ -118,6 +118,7 @@ GF_automated_city_construction = {
 		hidden_effect = {
 			target = {
 				clear_deposits = yes
+				clear_planet_modifiers = yes
 				export_trigger_value_to_variable = {
 					trigger = num_districts
 					parameters = { type = district_city }
@@ -133,12 +134,11 @@ GF_automated_city_construction = {
 					count = city_cnt
 					add_district = district_GF_automated_nexus
 				}
+				clear_variable = city_cnt
 				planet_event = { id = GF_colony.5010 }
 				add_modifier = { modifier = GF_automated_city_status }
 				if = {
-					limit = {
-						free_building_slots < 1
-					}
+					limit = { free_building_slots < 1 }
 					remove_last_built_building = yes
 				}
 				add_building = building_GF_connection_nexus
