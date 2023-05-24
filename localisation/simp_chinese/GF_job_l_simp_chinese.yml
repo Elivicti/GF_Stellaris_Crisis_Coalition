@@ -55,13 +55,13 @@
  job_GF_maintenance_engineer_effect_desc:0 "£job_GF_maintenance_engineer£ $job_GF_maintenance_engineer_plural$花费 £energy£ §Y能量§!和 £alloys£ §Y合金§!来维护§Y$GF_automated_city_districts$§!"
 
 ############
- pop_cat_GF_freedom_class:0 "自由王国"
- pop_cat_GF_freedom_class_plural:0 "自由王国"
- pop_cat_GF_freedom_class_desc:0 "自由王国是一个哲学概念，它意味着人的发展成了目的，劳动和其他一切人类活动都是为了实现主体自身的内在需要。在生产力高度发达、按需分配的自动化星球上，物质生活极大丰富，人摆脱了生存的压力、劳动的异化，完全的成为了自己的主人"
- job_GF_freedom_kingdom:0 "自我实现"
- job_GF_freedom_kingdom_plural:0 "自我实现"
- job_GF_freedom_kingdom_desc:0 "虽然没有社会层面上的工作，但该岗位上的人正随心的从事自己的爱好来为社会创造价值"
- job_GF_freedom_kingdom_effect_desc:0 "自由王国EFFECT_DESC"
+ pop_cat_GF_freedom_class:0 "乌托邦"
+ pop_cat_GF_freedom_class_plural:0 "乌托邦"
+ pop_cat_GF_freedom_class_desc:0 "在这里，人的发展成为了目的，劳动和其他一切活动都是为了实现主体自身的内在需要，他们的物质生活极大丰富，摆脱了生存的压力、劳动的异化，完全地成为了自己的主人。"
+ job_GF_freedom_kingdom:0 "理想国"
+ job_GF_freedom_kingdom_plural:0 "理想国"
+ job_GF_freedom_kingdom_desc:0 "虽然没有社会层面上的工作，但这里的人们正随心所欲地从事自己的爱好来为社会创造价值。"
+ job_GF_freedom_kingdom_effect_desc:0 "£job_GF_freedom_kingdom£ $job_GF_freedom_kingdom$的人口享受着极大丰富的 £consumer_goods£ §Y物质生活§!，创造 £physics_research£ £society_research£ £engineering_research£ §Y价值§!并产出 £unity£ §Y凝聚力§!"
  GF_freedom_kingdom_conditions:0 "仅有机生命和拥有公民权的机械生命才能享受如此的生活。"
 ############
  job_GF_GK_commander_effect_desc:0 "£job_GF_GK_commander£ $job_GF_GK_commander_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!和 £trade_value£ §Y贸易额§!"
