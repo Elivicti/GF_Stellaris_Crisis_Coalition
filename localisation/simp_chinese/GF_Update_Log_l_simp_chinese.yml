@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230329$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230524$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+
+# 2023.5.24
+ GF_Stellaris_Log_20230524:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n1. 调整获得§Y$GF_relic_orb_mainframe_alpha$§!后的相关效果与事件\n2. 添加巨构§Y$GF_computing_center_3$§!\n3. 添加传统§Y$GF_tradition_automation$§!，完成后§H解锁决议：$decision_GF_automated_city_project$§!\n4. 为部分§Y国民理念§!添加对应的§Y内阁席位§!\n5. 所有领袖相关事件与特质适配3.8版本\n6. 多人联机游玩时，§Y多余的危机联合国家§!将被强制设置为§Y普通国家§!\n6. 人形物种的 £gf_core_chip£ §Y$gf_core_chip$§!维护费提高为§H0.1§!\n7. 优化部分杂项文本"
 
 # 2023.3.29
  GF_Stellaris_Log_20230329:0 "1. 添加§YOGAS作战中枢（鱼雷）§!\n2. 削弱§YOGAS作战中枢（自由）§!提供的效果，但现在所有军事舰船可用\n3. 优化了§YOGAS子网§!附庸相关的若干效果\n4. 优化§Y自动化遥控殖民地协议§!的负载计算和效果提示\n5. 轨道轰炸姿态§H坍塌液脏弹§!效果重做，提升了轰炸效率，开放兼容接口，详见§Y02_GF_on_actions.txt§!中的§Yon_planet_bombarded_to_collapse§!相关条目\n6. §Y逆向坍塌跃迁引擎§!范围提升至§G+70%§!\n7. 重新§H调整§!了国民理念§Y战术空降突击队§!的效果\n8. 建筑§Y$building_GF_collapse_2$§!和§Y$building_GF_reverse_collapse$§!现在需要§Y$building_capital$§!才能升级/建造"
