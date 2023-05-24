@@ -137,14 +137,16 @@ country_event = {
 					set_leader_flag = flag_GF_ogas_leader
 					set_leader_flag = has_gained_level_trait
 					save_global_event_target_as = GF_ogas_leader
-					if = {
-						limit = { owner_main_species = { NOT = { is_species_class = GF_new_type } } }
-						change_leader_portrait = GF_doll_000
-					}
 				}
 			}
 		}
-		event_target:GF_ogas_leader = { set_owner = prev }
+		event_target:GF_ogas_leader = {
+			set_owner = prev
+			if = {
+				limit = { prev.owner_main_species = { NOT = { is_species_class = GF_new_type } } }
+				change_leader_portrait = GF_doll_000
+			}
+		}
 
 		assign_leader = event_target:GF_ogas_leader
 		clear_custom_ruler_and_heir_titles = yes
