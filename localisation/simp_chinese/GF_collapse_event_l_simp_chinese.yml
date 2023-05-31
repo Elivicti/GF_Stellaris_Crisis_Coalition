@@ -8,7 +8,7 @@
  collapse_relic:0 "『遗迹』"
  
  GF_collapse_relic_site_0:0 "$collapse_relic$"
- GF_collapse_relic_site_0_desc:0 "准确来说是分布在[Root.Capital.GetName]各处的未知文明遗迹群。自从1905年开始，我们陆陆续续地在各处发现这些遗迹，当时还未形成统一政府的人类各国也在同时尝试进行遗迹的探索与研究。然而，对当时还不成熟的我们来说，一个高级的未知文明遗迹还是太过危险，最终，北兰岛事件爆发，并成为三战的导火索。此后就是一段十分动荡的历史了，遗迹的探索被搁置，对遗迹技术的研究也没有什么实质上的突破。\n\n不过，如今成立统一政府并且已经踏入星海的我们，已经有余力来安全地探索这些未知文明的遗迹了。"
+ GF_collapse_relic_site_0_desc:0 "准确来说是分布在[GF_home_world.GetName]各处的未知文明遗迹群。自从1905年开始，我们陆陆续续地在各处发现这些遗迹，当时还未形成统一政府的人类各国也在同时尝试进行遗迹的探索与研究。然而，对当时还不成熟的我们来说，一个高级的未知文明遗迹还是太过危险，最终，北兰岛事件爆发，并成为三战的导火索。此后就是一段十分动荡的历史了，遗迹的探索被搁置，对遗迹技术的研究也没有什么实质上的突破。\n\n不过，如今成立统一政府并且已经踏入星海的我们，已经有余力来安全地探索这些未知文明的遗迹了。"
  GF_collapse_relic_site_1:0 "$collapse_relic$"
  GF_collapse_relic_site_1_desc:0 "[GF_home_world.GetName]上的遗迹探索完成后，发现的三个“外星遗迹”之一。\n\n这是我们第一次知道在我们母星之外也有遗迹存在，这三个遗迹将会是我们获取遗迹技术和揭开遗迹文明神秘面纱的重要线索。"
  GF_collapse_relic_site_2:0 "$collapse_relic$"
@@ -31,12 +31,13 @@
  GF_relic.2.a:0 "继续前进。"
 
  GF_relic.3.name:0 "遗迹探索报告"
- GF_relic.3.desc:0 "探索小队稳步推进，最终在探索完全部中控室所在的可能区域后，有惊无险地找到了遗迹的中控室，并在一番努力后接管了这里的防御系统。\n\n一位成员在中控室的计算机中找到了遗迹的结构图，[Leader.GetName]表示，尽管结构图将对之后的探索提供极大的帮助，但也不可盲信，遗迹年代久远，不少结构都有相当程度的损坏，接下来仍然要小心才是，[Leader.GetSheHe]认为现在应该朝着结构图上标注着“资料室”的位置探索。"
- GF_relic.3.a:0 "立即前往资料室"
+ GF_relic.3.desc:0 "探索小队稳步推进，最终在探索完全部中控室所在的可能区域后，有惊无险地找到了遗迹的中控室，并在一番努力后接管了这里的防御系统。\n\n一位成员在中控室的计算机中找到了遗迹的结构图，[Leader.GetName]表示，尽管结构图将对之后的探索提供极大的帮助，但也不可盲信，遗迹年代久远，不少结构都有相当程度的损坏，接下来仍然需要小心。[Leader.GetSheHe]认为现在应该朝着结构图上标注着“资料室”的位置探索。"
+ GF_relic.3.a:0 "立即前往资料室。"
 
  GF_relic.4.name:0 "遗迹探索报告"
  GF_relic.4.desc:0 "在接管防御系统后和结构图的帮助下，探索小队十分轻松地来到了资料室。这里很显然是个存储这相当重要的资料的资料室，尽管外围结构均有着不同程度的损坏，资料室内部不仅十分牢固，连设备的能源供应都相当稳定。\n\n这里存储的资料数据量十分庞大，探索小队花了一番功夫才把数据提取出来，这些数据使用了我们完全没有见过的语言，详细的分析需要等探索小队返回后才能进行。不过，在简单的分析后，[Leader.GetName]在中枢计算机中找到了另外三个不在我们母星上的遗迹坐标。"
  GF_relic.4.a:0 "有意思，即刻派遣探索队前往这三个坐标。"
+ GF_relic.4.a.tooltip:0 "在以下地点各建立一个§Y$collapse_relic$§!考古站点：\n\t§H[relic_site_target_1.Solar_System.GetName]§!星系：§H[relic_site_target_1.GetName]§!\n\t§H[relic_site_target_2.Solar_System.GetName]§!星系：§H[relic_site_target_2.GetName]§!\n\t§H[relic_site_target_3.Solar_System.GetName]§!星系：§H[relic_site_target_3.GetName]§!"
 ##############
 
 #### 母星四跳内遗迹
@@ -92,7 +93,7 @@
  GF_collect_relic_device_event_chain_desc:0 "我们的科学家建议我们回收遗迹中尚能使用的设施来加强我们的生产。"
  c_GF_devices_collected:0 "遗迹设施已回收"
 
- SP_GF_COLLECT_RELIC_DEVICE:0 "回收§Y[collapse_relic_site.GetName]§!上的遗迹设施"
+ SP_GF_COLLECT_RELIC_DEVICE:0 "回收§Y[from.GetName]§!上的遗迹设施"
  SP_GF_COLLECT_RELIC_DEVICE_DESC:0 "这颗星球上的遗迹中还存在尚能使用的遗迹设施，派遣工程船来回收它们。"
 
  GF_alaya.001.name:0 "$GF_collect_relic_device_event_chain_title$"
