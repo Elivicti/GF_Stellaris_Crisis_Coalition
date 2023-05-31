@@ -1,8 +1,6 @@
 # This = Planet
 on_blocker_cleared = {
 	events = {
-		# GF_relic.1000
-		GF_elid.2001	# 隔离墙
 		GF_elid.2100	# 黑区
 		GF_elid.2200	# 红区
 		GF_elid.2300	# 黄区

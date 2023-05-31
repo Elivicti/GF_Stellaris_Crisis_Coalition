@@ -70,9 +70,9 @@ d_GF_yellow_zone = {
 
 d_GF_purify_wall = {
 	is_for_colonizable = yes
-	category = deposit_cat_blockers
+	category = deposit_cat_rare
 	icon = d_GF_purify_wall
-	time = 180
+	#time = 180
 	planet_modifier = {
 		planet_max_districts_add = -1
 		pop_environment_tolerance = 0.05
@@ -88,17 +88,17 @@ d_GF_purify_wall = {
 	drop_weight = { weight = 0 }
 	custom_tooltip = d_GF_purify_wall_effect_desc
 
-	on_cleared = {
-		if = {
-			limit = { GF_planet_has_contaminated_zone = yes }
-			custom_tooltip = clear_d_GF_purify_wall_tooltip
-
-			hidden_effect = {
-				change_variable = {
-					which = v_GF_elid_threat_level
-					value = 2
-				}
-			}
-		}
-	}
+	#on_cleared = {
+	#	if = {
+	#		limit = { GF_planet_has_contaminated_zone = yes }
+	#		custom_tooltip = clear_d_GF_purify_wall_tooltip
+	#
+	#		hidden_effect = {
+	#			change_variable = {
+	#				which = v_GF_elid_threat_level
+	#				value = 2
+	#			}
+	#		}
+	#	}
+	#}
 }

@@ -681,14 +681,16 @@ country_event = {
 
 	option = {
 		name = GF_elid.1031.a
-		event_target:GF_home_world = { add_modifier = { modifier = GF_pm_final_victory_in_defending_elid days = 1800 } }
 	}
 	option = {
 		name = GF_elid.1031.b
-		event_target:GF_home_world = { add_modifier = { modifier = GF_pm_final_victory_in_defending_elid days = 1800 } }
 	}
 
 	after = {
+		event_target:GF_home_world = {
+			remove_deposit = d_GF_purify_wall
+			add_modifier = { modifier = GF_pm_final_victory_in_defending_elid days = 1800 }
+		}
 		hidden_effect = { event_target:GF_home_world = { planet_event = { id = GF_relic.1000 days = 30 } } }
 	}
 }
