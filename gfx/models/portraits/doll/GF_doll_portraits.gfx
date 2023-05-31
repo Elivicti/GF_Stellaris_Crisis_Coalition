@@ -1,0 +1,55 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_leader_OGAS_mesh"
+		file = "gfx/models/portraits/GF_portrait_OGAS.mesh"
+		scale = 1
+
+		meshsettings = {
+			name = "leaderShape"
+			index = 0
+			shader = "PdxMeshPortrait"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "GF_leader_doll_mesh"
+		file = "gfx/models/portraits/GF_portrait_dolls.mesh"
+		scale = 1
+
+		meshsettings = {
+			name = "leaderShape"
+			index = 0
+			shader = "PdxMeshPortrait"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "GF_leader_new_type_mesh"
+		file = "gfx/models/portraits/GF_portrait_new_type.mesh"
+		scale = 1
+
+		meshsettings = {
+			name = "leaderShape"
+			index = 0
+			shader = "PdxMeshPortrait"
+		}
+	}
+}
+
+objectTypes = {
+	pdxmesh = {
+		name = "GF_leader_mesh_squared"
+		file = "gfx/models/portraits/GF_portrait_squared.mesh"
+		scale = 1
+
+		meshsettings = {
+			name = "leaderShape"
+			index = 0
+			shader = "PdxMeshPortrait"
+		}
+	}
+}

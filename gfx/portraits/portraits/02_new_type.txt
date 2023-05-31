@@ -1,1051 +1,469 @@
 portraits = {
-	new_type_1 = { texturefile = "gfx/models/portraits/new_type/1.dds" }
-	new_type_2 = { texturefile = "gfx/models/portraits/new_type/2.dds" }
-	new_type_3 = { texturefile = "gfx/models/portraits/new_type/3.dds" }
-	new_type_4 = { texturefile = "gfx/models/portraits/new_type/4.dds" }
-	new_type_5 = { texturefile = "gfx/models/portraits/new_type/5.dds" }
-	new_type_6 = { texturefile = "gfx/models/portraits/new_type/6.dds" }
-	new_type_7 = { texturefile = "gfx/models/portraits/new_type/7.dds" }
-	new_type_8 = { texturefile = "gfx/models/portraits/new_type/8.dds" }
-	new_type_9 = { texturefile = "gfx/models/portraits/new_type/9.dds" }
-	new_type_10 = { texturefile = "gfx/models/portraits/new_type/10.dds" }
-	new_type_11 = { texturefile = "gfx/models/portraits/new_type/11.dds" }
-	new_type_12 = { texturefile = "gfx/models/portraits/new_type/12.dds" }
-	new_type_13 = { texturefile = "gfx/models/portraits/new_type/13.dds" }
-	new_type_14 = { texturefile = "gfx/models/portraits/new_type/14.dds" }
-	new_type_15 = { texturefile = "gfx/models/portraits/new_type/15.dds" }
-	new_type_16 = { texturefile = "gfx/models/portraits/new_type/16.dds" }
-	# added unused potraits
-	new_type_17 = { texturefile = "gfx/models/portraits/new_type/D10-1.dds" }
-	new_type_18 = { texturefile = "gfx/models/portraits/new_type/D10-10.dds" }
-	new_type_19 = { texturefile = "gfx/models/portraits/new_type/D10-11.dds" }
-	new_type_20 = { texturefile = "gfx/models/portraits/new_type/D10-12.dds" }
-	new_type_21 = { texturefile = "gfx/models/portraits/new_type/D10-13.dds" }
-	new_type_22 = { texturefile = "gfx/models/portraits/new_type/D10-14.dds" }
-	new_type_23 = { texturefile = "gfx/models/portraits/new_type/D10-15.dds" }
-	new_type_24 = { texturefile = "gfx/models/portraits/new_type/D10-16.dds" }
-	new_type_25 = { texturefile = "gfx/models/portraits/new_type/D10-17.dds" }
-	new_type_26 = { texturefile = "gfx/models/portraits/new_type/D10-18.dds" }
-	new_type_27 = { texturefile = "gfx/models/portraits/new_type/D10-19.dds" }
-	new_type_28 = { texturefile = "gfx/models/portraits/new_type/D10-2.dds" }
-	new_type_29 = { texturefile = "gfx/models/portraits/new_type/D10-4.dds" }
-	new_type_30 = { texturefile = "gfx/models/portraits/new_type/D10-5.dds" }
-	new_type_31 = { texturefile = "gfx/models/portraits/new_type/D10-6.dds" }
-	new_type_32 = { texturefile = "gfx/models/portraits/new_type/D10-7.dds" }
-	new_type_33 = { texturefile = "gfx/models/portraits/new_type/D11-10.dds" }
-	new_type_34 = { texturefile = "gfx/models/portraits/new_type/D11-11.dds" }
-	new_type_35 = { texturefile = "gfx/models/portraits/new_type/D11-2.dds" }
-	new_type_36 = { texturefile = "gfx/models/portraits/new_type/D11-3.dds" }
-	new_type_37 = { texturefile = "gfx/models/portraits/new_type/D11-4.dds" }
-	new_type_38 = { texturefile = "gfx/models/portraits/new_type/D11-5.dds" }
-	new_type_39 = { texturefile = "gfx/models/portraits/new_type/D11-6.dds" }
-	new_type_40 = { texturefile = "gfx/models/portraits/new_type/D11-7.dds" }
-	new_type_41 = { texturefile = "gfx/models/portraits/new_type/D11-8.dds" }
-	new_type_42 = { texturefile = "gfx/models/portraits/new_type/D9-1.dds" }
-	new_type_43 = { texturefile = "gfx/models/portraits/new_type/D9-11.dds" }
-	new_type_44 = { texturefile = "gfx/models/portraits/new_type/D9-14.dds" }
-	new_type_45 = { texturefile = "gfx/models/portraits/new_type/D9-15.dds" }
-	new_type_46 = { texturefile = "gfx/models/portraits/new_type/D9-16.dds" }
-	new_type_47 = { texturefile = "gfx/models/portraits/new_type/D9-18.dds" }
-	new_type_48 = { texturefile = "gfx/models/portraits/new_type/D9-19.dds" }
-	new_type_49 = { texturefile = "gfx/models/portraits/new_type/D9-20.dds" }
-	new_type_50 = { texturefile = "gfx/models/portraits/new_type/D9-21.dds" }
-	new_type_51 = { texturefile = "gfx/models/portraits/new_type/D9-4.dds" }
-	new_type_52 = { texturefile = "gfx/models/portraits/new_type/D9-5.dds" }
-	new_type_53 = { texturefile = "gfx/models/portraits/new_type/D9-8.dds" }
-	new_type_54 = { texturefile = "gfx/models/portraits/new_type/D9-9.dds" }
-	
-
-	griffin000 = { texturefile = "gfx/models/portraits/doll/ogas.dds" }
-	griffin001 = { texturefile = "gfx/models/portraits/doll/pic_06typesmg.dds" }
-	griffin002 = { texturefile = "gfx/models/portraits/doll/pic_4type.dds" }
-	griffin003 = { texturefile = "gfx/models/portraits/doll/pic_56-1type.dds" }
-	griffin004 = { texturefile = "gfx/models/portraits/doll/pic_56typer.dds" }
-	griffin005 = { texturefile = "gfx/models/portraits/doll/pic_56typermod.dds" }
-	griffin006 = { texturefile = "gfx/models/portraits/doll/pic_59type.dds" }
-	griffin007 = { texturefile = "gfx/models/portraits/doll/pic_63type.dds" }
-	griffin008 = { texturefile = "gfx/models/portraits/doll/pic_64typemod.dds" }
-	griffin009 = { texturefile = "gfx/models/portraits/doll/pic_6p62.dds" }
-	griffin010 = { texturefile = "gfx/models/portraits/doll/pic_79type.dds" }
-	griffin011 = { texturefile = "gfx/models/portraits/doll/pic_80typemod.dds" }
-	griffin012 = { texturefile = "gfx/models/portraits/doll/pic_81typer.dds" }
-	griffin013 = { texturefile = "gfx/models/portraits/doll/pic_88typemod.dds" }
-	griffin014 = { texturefile = "gfx/models/portraits/doll/pic_92type.dds" }
-	griffin015 = { texturefile = "gfx/models/portraits/doll/pic_95type.dds" }
-	griffin016 = { texturefile = "gfx/models/portraits/doll/pic_97type.dds" }
-	griffin017 = { texturefile = "gfx/models/portraits/doll/pic_97types.dds" }
-	griffin018 = { texturefile = "gfx/models/portraits/doll/pic_97typesmod.dds" }
-	griffin019 = { texturefile = "gfx/models/portraits/doll/pic_98k.dds" }
-	griffin020 = { texturefile = "gfx/models/portraits/doll/pic_9a91.dds" }
-	griffin021 = { texturefile = "gfx/models/portraits/doll/pic_a545.dds" }
-	griffin022 = { texturefile = "gfx/models/portraits/doll/pic_a91.dds" }
-	griffin023 = { texturefile = "gfx/models/portraits/doll/pic_aa12.dds" }
-	griffin024 = { texturefile = "gfx/models/portraits/doll/pic_aat52.dds" }
-	griffin025 = { texturefile = "gfx/models/portraits/doll/pic_acr.dds" }
-	griffin026 = { texturefile = "gfx/models/portraits/doll/pic_ads.dds" }
-	griffin027 = { texturefile = "gfx/models/portraits/doll/pic_aek999.dds" }
-	griffin028 = { texturefile = "gfx/models/portraits/doll/pic_ak12.dds" }
-	griffin029 = { texturefile = "gfx/models/portraits/doll/pic_ak15mod.dds" }
-	griffin030 = { texturefile = "gfx/models/portraits/doll/pic_ak47.dds" }
-	griffin031 = { texturefile = "gfx/models/portraits/doll/pic_ak5.dds" }
-	griffin032 = { texturefile = "gfx/models/portraits/doll/pic_ak74m.dds" }
-	griffin033 = { texturefile = "gfx/models/portraits/doll/pic_ak74u.dds" }
-	griffin034 = { texturefile = "gfx/models/portraits/doll/pic_akalfa.dds" }
-	griffin035 = { texturefile = "gfx/models/portraits/doll/pic_ameli.dds" }
-	griffin036 = { texturefile = "gfx/models/portraits/doll/pic_an94mod.dds" }
-	griffin037 = { texturefile = "gfx/models/portraits/doll/pic_apc556.dds" }
-	griffin038 = { texturefile = "gfx/models/portraits/doll/pic_aps.dds" }
-	griffin039 = { texturefile = "gfx/models/portraits/doll/pic_apsmod.dds" }
-	griffin040 = { texturefile = "gfx/models/portraits/doll/pic_ar15mod.dds" }
-	griffin041 = { texturefile = "gfx/models/portraits/doll/pic_ar57.dds" }
-	griffin042 = { texturefile = "gfx/models/portraits/doll/pic_ar70.dds" }
-	griffin043 = { texturefile = "gfx/models/portraits/doll/pic_armod.dds" }
-	griffin044 = { texturefile = "gfx/models/portraits/doll/pic_art556.dds" }
-	griffin045 = { texturefile = "gfx/models/portraits/doll/pic_arx160.dds" }
-	griffin046 = { texturefile = "gfx/models/portraits/doll/pic_ash127.dds" }
-	griffin047 = { texturefile = "gfx/models/portraits/doll/pic_asvalmod.dds" }
-	griffin048 = { texturefile = "gfx/models/portraits/doll/pic_aug.dds" }
-	griffin049 = { texturefile = "gfx/models/portraits/doll/pic_augpara.dds" }
-	griffin050 = { texturefile = "gfx/models/portraits/doll/pic_ballista.dds" }
-	griffin051 = { texturefile = "gfx/models/portraits/doll/pic_bm59.dds" }
-	griffin052 = { texturefile = "gfx/models/portraits/doll/pic_brenmk.dds" }
-	griffin053 = { texturefile = "gfx/models/portraits/doll/pic_brenmkmod.dds" }
-	griffin054 = { texturefile = "gfx/models/portraits/doll/pic_brenten.dds" }
-	griffin055 = { texturefile = "gfx/models/portraits/doll/pic_browninghp.dds" }
-	griffin056 = { texturefile = "gfx/models/portraits/doll/pic_c14.dds" }
-	griffin057 = { texturefile = "gfx/models/portraits/doll/pic_c93.dds" }
-	griffin058 = { texturefile = "gfx/models/portraits/doll/pic_c96.dds" }
-	griffin059 = { texturefile = "gfx/models/portraits/doll/pic_c96mod.dds" }
-	griffin060 = { texturefile = "gfx/models/portraits/doll/pic_car.dds" }
-	griffin061 = { texturefile = "gfx/models/portraits/doll/pic_carcano1891.dds" }
-	griffin062 = { texturefile = "gfx/models/portraits/doll/pic_carcano1938.dds" }
-	griffin063 = { texturefile = "gfx/models/portraits/doll/pic_cbjms.dds" }
-	griffin064 = { texturefile = "gfx/models/portraits/doll/pic_cetme556.dds" }
-	griffin065 = { texturefile = "gfx/models/portraits/doll/pic_chauchatm1915.dds" }
-	griffin066 = { texturefile = "gfx/models/portraits/doll/pic_coltdefender.dds" }
-	griffin067 = { texturefile = "gfx/models/portraits/doll/pic_coltscw.dds" }
-	griffin068 = { texturefile = "gfx/models/portraits/doll/pic_contender.dds" }
-	griffin069 = { texturefile = "gfx/models/portraits/doll/pic_cr21.dds" }
-	griffin070 = { texturefile = "gfx/models/portraits/doll/pic_cx4storm.dds" }
-	griffin071 = { texturefile = "gfx/models/portraits/doll/pic_cz100.dds" }
-	griffin072 = { texturefile = "gfx/models/portraits/doll/pic_cz2000.dds" }
-	griffin073 = { texturefile = "gfx/models/portraits/doll/pic_cz52.dds" }
-	griffin074 = { texturefile = "gfx/models/portraits/doll/pic_cz75.dds" }
-	griffin075 = { texturefile = "gfx/models/portraits/doll/pic_cz805.dds" }
-	griffin076 = { texturefile = "gfx/models/portraits/doll/pic_danuvia43m.dds" }
-	griffin077 = { texturefile = "gfx/models/portraits/doll/pic_delisle.dds" }
-	griffin078 = { texturefile = "gfx/models/portraits/doll/pic_derringer.dds" }
-	griffin079 = { texturefile = "gfx/models/portraits/doll/pic_deserteagle.dds" }
-	griffin080 = { texturefile = "gfx/models/portraits/doll/pic_dp12.dds" }
-	griffin081 = { texturefile = "gfx/models/portraits/doll/pic_dp28.dds" }
-	griffin082 = { texturefile = "gfx/models/portraits/doll/pic_dsr50.dds" }
-	griffin083 = { texturefile = "gfx/models/portraits/doll/pic_dtasrs.dds" }
-	griffin084 = { texturefile = "gfx/models/portraits/doll/pic_em2.dds" }
-	griffin085 = { texturefile = "gfx/models/portraits/doll/pic_evo3.dds" }
-	griffin086 = { texturefile = "gfx/models/portraits/doll/pic_f1mod.dds" }
-	griffin087 = { texturefile = "gfx/models/portraits/doll/pic_f2000.dds" }
-	griffin088 = { texturefile = "gfx/models/portraits/doll/pic_falcon.dds" }
-	griffin089 = { texturefile = "gfx/models/portraits/doll/pic_famas.dds" }
-	griffin090 = { texturefile = "gfx/models/portraits/doll/pic_fara83.dds" }
-	griffin091 = { texturefile = "gfx/models/portraits/doll/pic_fedorov.dds" }
-	griffin092 = { texturefile = "gfx/models/portraits/doll/pic_fg42.dds" }
-	griffin093 = { texturefile = "gfx/models/portraits/doll/pic_fmg9.dds" }
-	griffin094 = { texturefile = "gfx/models/portraits/doll/pic_fn49mod.dds" }
-	griffin095 = { texturefile = "gfx/models/portraits/doll/pic_fn57.dds" }
-	griffin096 = { texturefile = "gfx/models/portraits/doll/pic_fnfal.dds" }
-	griffin097 = { texturefile = "gfx/models/portraits/doll/pic_fnfnc.dds" }
-	griffin098 = { texturefile = "gfx/models/portraits/doll/pic_fnp9.dds" }
-	griffin099 = { texturefile = "gfx/models/portraits/doll/pic_fnspr.dds" }
-	griffin100 = { texturefile = "gfx/models/portraits/doll/pic_fo12.dds" }
-	griffin101 = { texturefile = "gfx/models/portraits/doll/pic_fp6.dds" }
-	griffin102 = { texturefile = "gfx/models/portraits/doll/pic_fx05.dds" }
-	griffin103 = { texturefile = "gfx/models/portraits/doll/pic_g11mod.dds" }
-	griffin104 = { texturefile = "gfx/models/portraits/doll/pic_g28.dds" }
-	griffin105 = { texturefile = "gfx/models/portraits/doll/pic_g36cmod.dds" }
-	griffin106 = { texturefile = "gfx/models/portraits/doll/pic_g36mod.dds" }
-	griffin107 = { texturefile = "gfx/models/portraits/doll/pic_g3mod.dds" }
-	griffin108 = { texturefile = "gfx/models/portraits/doll/pic_g41.dds" }
-	griffin109 = { texturefile = "gfx/models/portraits/doll/pic_g43.dds" }
-	griffin110 = { texturefile = "gfx/models/portraits/doll/pic_generalliu.dds" }
-	griffin111 = { texturefile = "gfx/models/portraits/doll/pic_gepardm1mod.dds" }
-	griffin112 = { texturefile = "gfx/models/portraits/doll/pic_glock17.dds" }
-	griffin113 = { texturefile = "gfx/models/portraits/doll/pic_gm6lynx.dds" }
-	griffin114 = { texturefile = "gfx/models/portraits/doll/pic_grizzly.dds" }
-	griffin115 = { texturefile = "gfx/models/portraits/doll/pic_gsh18mod.dds" }
-	griffin116 = { texturefile = "gfx/models/portraits/doll/pic_hezism1.dds" }
-	griffin117 = { texturefile = "gfx/models/portraits/doll/pic_hk21.dds" }
-	griffin118 = { texturefile = "gfx/models/portraits/doll/pic_hk23.dds" }
-	griffin119 = { texturefile = "gfx/models/portraits/doll/pic_hk33.dds" }
-	griffin120 = { texturefile = "gfx/models/portraits/doll/pic_hk416mod.dds" }
-	griffin121 = { texturefile = "gfx/models/portraits/doll/pic_hk45.dds" }
-	griffin122 = { texturefile = "gfx/models/portraits/doll/pic_hk512.dds" }
-	griffin123 = { texturefile = "gfx/models/portraits/doll/pic_hkcaws.dds" }
-	griffin124 = { texturefile = "gfx/models/portraits/doll/pic_howatype89.dds" }
-	griffin125 = { texturefile = "gfx/models/portraits/doll/pic_hs2000.dds" }
-	griffin126 = { texturefile = "gfx/models/portraits/doll/pic_hs50.dds" }
-	griffin127 = { texturefile = "gfx/models/portraits/doll/pic_hsm10.dds" }
-	griffin128 = { texturefile = "gfx/models/portraits/doll/pic_idwmod.dds" }
-	griffin129 = { texturefile = "gfx/models/portraits/doll/pic_insas.dds" }
-	griffin130 = { texturefile = "gfx/models/portraits/doll/pic_ithaca37.dds" }
-	griffin131 = { texturefile = "gfx/models/portraits/doll/pic_iws2000.dds" }
-	griffin132 = { texturefile = "gfx/models/portraits/doll/pic_jericho.dds" }
-	griffin133 = { texturefile = "gfx/models/portraits/doll/pic_js-127.dds" }
-	griffin134 = { texturefile = "gfx/models/portraits/doll/pic_js9mm.dds" }
-	griffin135 = { texturefile = "gfx/models/portraits/doll/pic_k11.dds" }
-	griffin136 = { texturefile = "gfx/models/portraits/doll/pic_k2.dds" }
-	griffin137 = { texturefile = "gfx/models/portraits/doll/pic_k3.dds" }
-	griffin138 = { texturefile = "gfx/models/portraits/doll/pic_k31.dds" }
-	griffin139 = { texturefile = "gfx/models/portraits/doll/pic_k5.dds" }
-	griffin140 = { texturefile = "gfx/models/portraits/doll/pic_k7.dds" }
-	griffin141 = { texturefile = "gfx/models/portraits/doll/pic_kac.dds" }
-	griffin142 = { texturefile = "gfx/models/portraits/doll/pic_kgp9.dds" }
-	griffin143 = { texturefile = "gfx/models/portraits/doll/pic_kh2002.dds" }
-	griffin144 = { texturefile = "gfx/models/portraits/doll/pic_klin.dds" }
-	griffin145 = { texturefile = "gfx/models/portraits/doll/pic_kolibri.dds" }
-	griffin146 = { texturefile = "gfx/models/portraits/doll/pic_kord.dds" }
-	griffin147 = { texturefile = "gfx/models/portraits/doll/pic_kp31mod.dds" }
-	griffin148 = { texturefile = "gfx/models/portraits/doll/pic_ks23.dds" }
-	griffin149 = { texturefile = "gfx/models/portraits/doll/pic_ksg.dds" }
-	griffin150 = { texturefile = "gfx/models/portraits/doll/pic_ksvkmod.dds" }
-	griffin151 = { texturefile = "gfx/models/portraits/doll/pic_l85a1.dds" }
-	griffin152 = { texturefile = "gfx/models/portraits/doll/pic_lewis.dds" }
-	griffin153 = { texturefile = "gfx/models/portraits/doll/pic_liberator.dds" }
-	griffin154 = { texturefile = "gfx/models/portraits/doll/pic_ls26.dds" }
-	griffin155 = { texturefile = "gfx/models/portraits/doll/pic_ltlx7000.dds" }
-	griffin156 = { texturefile = "gfx/models/portraits/doll/pic_lusa.dds" }
-	griffin157 = { texturefile = "gfx/models/portraits/doll/pic_lwmmgmod.dds" }
-	griffin158 = { texturefile = "gfx/models/portraits/doll/pic_m1.dds" }
-	griffin159 = { texturefile = "gfx/models/portraits/doll/pic_m1014.dds" }
-	griffin160 = { texturefile = "gfx/models/portraits/doll/pic_m12.dds" }
-	griffin161 = { texturefile = "gfx/models/portraits/doll/pic_m14mod.dds" }
-	griffin162 = { texturefile = "gfx/models/portraits/doll/pic_m16a1.dds" }
-	griffin163 = { texturefile = "gfx/models/portraits/doll/pic_m16a1_boss.dds" }
-	griffin164 = { texturefile = "gfx/models/portraits/doll/pic_m1873mod.dds" }
-	griffin165 = { texturefile = "gfx/models/portraits/doll/pic_m1887.dds" }
-	griffin166 = { texturefile = "gfx/models/portraits/doll/pic_m1891.dds" }
-	griffin167 = { texturefile = "gfx/models/portraits/doll/pic_m1891mod.dds" }
-	griffin168 = { texturefile = "gfx/models/portraits/doll/pic_m1895.dds" }
-	griffin169 = { texturefile = "gfx/models/portraits/doll/pic_m1895mg.dds" }
-	griffin170 = { texturefile = "gfx/models/portraits/doll/pic_m1895mod.dds" }
-	griffin171 = { texturefile = "gfx/models/portraits/doll/pic_m1897mod.dds" }
-	griffin172 = { texturefile = "gfx/models/portraits/doll/pic_m1903.dds" }
-	griffin173 = { texturefile = "gfx/models/portraits/doll/pic_m1911mod.dds" }
-	griffin174 = { texturefile = "gfx/models/portraits/doll/pic_m1918mod.dds" }
-	griffin175 = { texturefile = "gfx/models/portraits/doll/pic_m1919a4.dds" }
-	griffin176 = { texturefile = "gfx/models/portraits/doll/pic_m1928a1.dds" }
-	griffin177 = { texturefile = "gfx/models/portraits/doll/pic_m1a1.dds" }
-	griffin178 = { texturefile = "gfx/models/portraits/doll/pic_m200.dds" }
-	griffin179 = { texturefile = "gfx/models/portraits/doll/pic_m21.dds" }
-	griffin180 = { texturefile = "gfx/models/portraits/doll/pic_m249saw.dds" }
-	griffin181 = { texturefile = "gfx/models/portraits/doll/pic_m26mass.dds" }
-	griffin182 = { texturefile = "gfx/models/portraits/doll/pic_m2hb.dds" }
-	griffin183 = { texturefile = "gfx/models/portraits/doll/pic_m3.dds" }
-	griffin184 = { texturefile = "gfx/models/portraits/doll/pic_m45.dds" }
-	griffin185 = { texturefile = "gfx/models/portraits/doll/pic_m4a1mod.dds" }
-	griffin186 = { texturefile = "gfx/models/portraits/doll/pic_m500.dds" }
-	
-	griffin188 = { texturefile = "gfx/models/portraits/doll/pic_m500mod.dds" }
-	griffin189 = { texturefile = "gfx/models/portraits/doll/pic_m590.dds" }
-	griffin190 = { texturefile = "gfx/models/portraits/doll/pic_m60.dds" }
-	griffin191 = { texturefile = "gfx/models/portraits/doll/pic_m6asw.dds" }
-	griffin192 = { texturefile = "gfx/models/portraits/doll/pic_m82.dds" }
-	griffin193 = { texturefile = "gfx/models/portraits/doll/pic_m82a1.dds" }
-	griffin194 = { texturefile = "gfx/models/portraits/doll/pic_m870p.dds" }
-	griffin195 = { texturefile = "gfx/models/portraits/doll/pic_m9.dds" }
-	griffin196 = { texturefile = "gfx/models/portraits/doll/pic_m950a.dds" }
-	griffin197 = { texturefile = "gfx/models/portraits/doll/pic_m950amod.dds" }
-	griffin198 = { texturefile = "gfx/models/portraits/doll/pic_m99.dds" }
-	griffin199 = { texturefile = "gfx/models/portraits/doll/pic_mab38.dds" }
-	griffin200 = { texturefile = "gfx/models/portraits/doll/pic_mab38mod.dds" }
-	griffin201 = { texturefile = "gfx/models/portraits/doll/pic_mac10.dds" }
-	griffin202 = { texturefile = "gfx/models/portraits/doll/pic_mag7.dds" }
-	griffin203 = { texturefile = "gfx/models/portraits/doll/pic_magal.dds" }
-	griffin204 = { texturefile = "gfx/models/portraits/doll/pic_mas38.dds" }
-	griffin205 = { texturefile = "gfx/models/portraits/doll/pic_mat49.dds" }
-	griffin206 = { texturefile = "gfx/models/portraits/doll/pic_mdr.dds" }
-	griffin207 = { texturefile = "gfx/models/portraits/doll/pic_mg338.dds" }
-	griffin208 = { texturefile = "gfx/models/portraits/doll/pic_mg34.dds" }
-	griffin209 = { texturefile = "gfx/models/portraits/doll/pic_mg36.dds" }
-	griffin210 = { texturefile = "gfx/models/portraits/doll/pic_mg3mod.dds" }
-	griffin211 = { texturefile = "gfx/models/portraits/doll/pic_mg42.dds" }
-	griffin212 = { texturefile = "gfx/models/portraits/doll/pic_mg4mod.dds" }
-	griffin213 = { texturefile = "gfx/models/portraits/doll/pic_mg5.dds" }
-	griffin214 = { texturefile = "gfx/models/portraits/doll/pic_microuzimod.dds" }
-	griffin215 = { texturefile = "gfx/models/portraits/doll/pic_mk12.dds" }
-	griffin216 = { texturefile = "gfx/models/portraits/doll/pic_mk23.dds" }
-	griffin217 = { texturefile = "gfx/models/portraits/doll/pic_mk46.dds" }
-	griffin218 = { texturefile = "gfx/models/portraits/doll/pic_mk48.dds" }
-	griffin219 = { texturefile = "gfx/models/portraits/doll/pic_mlemk1.dds" }
-	griffin220 = { texturefile = "gfx/models/portraits/doll/pic_mondragonm1908.dds" }
-	griffin221 = { texturefile = "gfx/models/portraits/doll/pic_mp40.dds" }
-	griffin222 = { texturefile = "gfx/models/portraits/doll/pic_mp41.dds" }
-	griffin223 = { texturefile = "gfx/models/portraits/doll/pic_mp443mod.dds" }
-	griffin224 = { texturefile = "gfx/models/portraits/doll/pic_mp446mod.dds" }
-	griffin225 = { texturefile = "gfx/models/portraits/doll/pic_mp448.dds" }
-	griffin226 = { texturefile = "gfx/models/portraits/doll/pic_mp5mod.dds" }
-	griffin227 = { texturefile = "gfx/models/portraits/doll/pic_mp7.dds" }
-	griffin228 = { texturefile = "gfx/models/portraits/doll/pic_mpk.dds" }
-	griffin229 = { texturefile = "gfx/models/portraits/doll/pic_mpl.dds" }
-	griffin230 = { texturefile = "gfx/models/portraits/doll/pic_mt9.dds" }
-	griffin231 = { texturefile = "gfx/models/portraits/doll/pic_negev.dds" }
-	griffin232 = { texturefile = "gfx/models/portraits/doll/pic_ns2000.dds" }
-	griffin233 = { texturefile = "gfx/models/portraits/doll/pic_ntw20mod.dds" }
-	griffin234 = { texturefile = "gfx/models/portraits/doll/pic_nz75.dds" }
-	griffin235 = { texturefile = "gfx/models/portraits/doll/pic_obrmod.dds" }
-	griffin236 = { texturefile = "gfx/models/portraits/doll/pic_oc44.dds" }
-	griffin237 = { texturefile = "gfx/models/portraits/doll/pic_ots12.dds" }
-	griffin238 = { texturefile = "gfx/models/portraits/doll/pic_ots14.dds" }
-	griffin239 = { texturefile = "gfx/models/portraits/doll/pic_ots39.dds" }
-	griffin240 = { texturefile = "gfx/models/portraits/doll/pic_p08.dds" }
-	griffin241 = { texturefile = "gfx/models/portraits/doll/pic_p22.dds" }
-	griffin242 = { texturefile = "gfx/models/portraits/doll/pic_p226.dds" }
-	griffin243 = { texturefile = "gfx/models/portraits/doll/pic_p30.dds" }
-	griffin244 = { texturefile = "gfx/models/portraits/doll/pic_p38.dds" }
-	griffin245 = { texturefile = "gfx/models/portraits/doll/pic_p7.dds" }
-	griffin246 = { texturefile = "gfx/models/portraits/doll/pic_p90.dds" }
-	griffin247 = { texturefile = "gfx/models/portraits/doll/pic_p99.dds" }
-	griffin248 = { texturefile = "gfx/models/portraits/doll/pic_pa15.dds" }
-	griffin249 = { texturefile = "gfx/models/portraits/doll/pic_pdw.dds" }
-	griffin250 = { texturefile = "gfx/models/portraits/doll/pic_pk.dds" }
-	griffin251 = { texturefile = "gfx/models/portraits/doll/pic_pkp.dds" }
-	griffin252 = { texturefile = "gfx/models/portraits/doll/pic_pm06.dds" }
-	griffin253 = { texturefile = "gfx/models/portraits/doll/pic_pm1910.dds" }
-	griffin254 = { texturefile = "gfx/models/portraits/doll/pic_pm9.dds" }
-	griffin255 = { texturefile = "gfx/models/portraits/doll/pic_pmmod.dds" }
-	griffin256 = { texturefile = "gfx/models/portraits/doll/pic_pp1901.dds" }
-	griffin257 = { texturefile = "gfx/models/portraits/doll/pic_pp19mod.dds" }
-	griffin258 = { texturefile = "gfx/models/portraits/doll/pic_pp2000.dds" }
-	griffin259 = { texturefile = "gfx/models/portraits/doll/pic_pp90.dds" }
-	griffin260 = { texturefile = "gfx/models/portraits/doll/pic_ppd40.dds" }
-	griffin261 = { texturefile = "gfx/models/portraits/doll/pic_ppkmod.dds" }
-	griffin262 = { texturefile = "gfx/models/portraits/doll/pic_ppq.dds" }
-	griffin263 = { texturefile = "gfx/models/portraits/doll/pic_pps43.dds" }
-	griffin264 = { texturefile = "gfx/models/portraits/doll/pic_ppsh41mod.dds" }
-	griffin265 = { texturefile = "gfx/models/portraits/doll/pic_psg1.dds" }
-	griffin266 = { texturefile = "gfx/models/portraits/doll/pic_psm.dds" }
-	griffin267 = { texturefile = "gfx/models/portraits/doll/pic_ptrd.dds" }
-	griffin268 = { texturefile = "gfx/models/portraits/doll/pic_px4storm.dds" }
-	griffin269 = { texturefile = "gfx/models/portraits/doll/pic_python.dds" }
-	griffin270 = { texturefile = "gfx/models/portraits/doll/pic_pzb39.dds" }
-	griffin271 = { texturefile = "gfx/models/portraits/doll/pic_qbu88.dds" }
-	griffin272 = { texturefile = "gfx/models/portraits/doll/pic_qbz191.dds" }
-	griffin273 = { texturefile = "gfx/models/portraits/doll/pic_qsb91.dds" }
-	griffin274 = { texturefile = "gfx/models/portraits/doll/pic_r5rgp.dds" }
-	griffin275 = { texturefile = "gfx/models/portraits/doll/pic_r93.dds" }
-	griffin276 = { texturefile = "gfx/models/portraits/doll/pic_rexzero1.dds" }
-	griffin277 = { texturefile = "gfx/models/portraits/doll/pic_rfb.dds" }
-	griffin278 = { texturefile = "gfx/models/portraits/doll/pic_rhino.dds" }
-	griffin279 = { texturefile = "gfx/models/portraits/doll/pic_ribeyrolles.dds" }
-	griffin280 = { texturefile = "gfx/models/portraits/doll/pic_rmb93mod.dds" }
-	griffin281 = { texturefile = "gfx/models/portraits/doll/pic_ro635mod.dds" }
-	griffin282 = { texturefile = "gfx/models/portraits/doll/pic_rpd.dds" }
-	griffin283 = { texturefile = "gfx/models/portraits/doll/pic_rpk16.dds" }
-	griffin284 = { texturefile = "gfx/models/portraits/doll/pic_rpk203.dds" }
-	griffin285 = { texturefile = "gfx/models/portraits/doll/pic_rt20.dds" }
-	griffin286 = { texturefile = "gfx/models/portraits/doll/pic_sacr.dds" }
-	griffin287 = { texturefile = "gfx/models/portraits/doll/pic_saf.dds" }
-	griffin288 = { texturefile = "gfx/models/portraits/doll/pic_saiga12.dds" }
-	griffin289 = { texturefile = "gfx/models/portraits/doll/pic_sar21.dds" }
-	griffin290 = { texturefile = "gfx/models/portraits/doll/pic_sat8.dds" }
-	griffin291 = { texturefile = "gfx/models/portraits/doll/pic_savage99.dds" }
-	griffin292 = { texturefile = "gfx/models/portraits/doll/pic_scout.dds" }
-	griffin293 = { texturefile = "gfx/models/portraits/doll/pic_scr.dds" }
-	griffin294 = { texturefile = "gfx/models/portraits/doll/pic_shipka.dds" }
-	griffin295 = { texturefile = "gfx/models/portraits/doll/pic_sig510.dds" }
-	griffin296 = { texturefile = "gfx/models/portraits/doll/pic_sig556.dds" }
-	griffin297 = { texturefile = "gfx/models/portraits/doll/pic_sigmcx.dds" }
-	griffin298 = { texturefile = "gfx/models/portraits/doll/pic_six12.dds" }
-	griffin299 = { texturefile = "gfx/models/portraits/doll/pic_sks.dds" }
-	griffin300 = { texturefile = "gfx/models/portraits/doll/pic_sl8.dds" }
-	griffin301 = { texturefile = "gfx/models/portraits/doll/pic_sp9.dds" }
-	griffin302 = { texturefile = "gfx/models/portraits/doll/pic_spas12.dds" }
-	griffin303 = { texturefile = "gfx/models/portraits/doll/pic_spectrem4.dds" }
-	griffin304 = { texturefile = "gfx/models/portraits/doll/pic_spitfire.dds" }
-	griffin305 = { texturefile = "gfx/models/portraits/doll/pic_spp1.dds" }
-	griffin306 = { texturefile = "gfx/models/portraits/doll/pic_sps.dds" }
-	griffin307 = { texturefile = "gfx/models/portraits/doll/pic_sr2.dds" }
-	griffin308 = { texturefile = "gfx/models/portraits/doll/pic_sr3mp.dds" }
-	griffin309 = { texturefile = "gfx/models/portraits/doll/pic_ssg3000.dds" }
-	griffin310 = { texturefile = "gfx/models/portraits/doll/pic_ssg69.dds" }
-	griffin311 = { texturefile = "gfx/models/portraits/doll/pic_stenmk2mod.dds" }
-	griffin312 = { texturefile = "gfx/models/portraits/doll/pic_sterling.dds" }
-	griffin313 = { texturefile = "gfx/models/portraits/doll/pic_stg44mod.dds" }
-	griffin314 = { texturefile = "gfx/models/portraits/doll/pic_stg940.dds" }
-	griffin315 = { texturefile = "gfx/models/portraits/doll/pic_sub2000.dds" }
-	griffin316 = { texturefile = "gfx/models/portraits/doll/pic_supersassmod.dds" }
-	griffin317 = { texturefile = "gfx/models/portraits/doll/pic_supershorty.dds" }
-	griffin318 = { texturefile = "gfx/models/portraits/doll/pic_sv98mod.dds" }
-	griffin319 = { texturefile = "gfx/models/portraits/doll/pic_svch.dds" }
-	griffin320 = { texturefile = "gfx/models/portraits/doll/pic_svd.dds" }
-	griffin321 = { texturefile = "gfx/models/portraits/doll/pic_svt38.dds" }
-	griffin322 = { texturefile = "gfx/models/portraits/doll/pic_t5000.dds" }
-	griffin323 = { texturefile = "gfx/models/portraits/doll/pic_t65.dds" }
-	griffin324 = { texturefile = "gfx/models/portraits/doll/pic_t77.dds" }
-	griffin325 = { texturefile = "gfx/models/portraits/doll/pic_t91.dds" }
-	griffin326 = { texturefile = "gfx/models/portraits/doll/pic_tabuk.dds" }
-	griffin327 = { texturefile = "gfx/models/portraits/doll/pic_tac50.dds" }
-	griffin328 = { texturefile = "gfx/models/portraits/doll/pic_tar21.dds" }
-	griffin329 = { texturefile = "gfx/models/portraits/doll/pic_tavorts12.dds" }
-	griffin330 = { texturefile = "gfx/models/portraits/doll/pic_tcms.dds" }
-	griffin331 = { texturefile = "gfx/models/portraits/doll/pic_tec9.dds" }
-	griffin332 = { texturefile = "gfx/models/portraits/doll/pic_tfq.dds" }
-	griffin333 = { texturefile = "gfx/models/portraits/doll/pic_thunder50.dds" }
-	griffin334 = { texturefile = "gfx/models/portraits/doll/pic_tkb408.dds" }
-	griffin335 = { texturefile = "gfx/models/portraits/doll/pic_tmp.dds" }
-	griffin336 = { texturefile = "gfx/models/portraits/doll/pic_tt33.dds" }
-	griffin337 = { texturefile = "gfx/models/portraits/doll/pic_type03.dds" }
-	griffin338 = { texturefile = "gfx/models/portraits/doll/pic_type100.dds" }
-	griffin339 = { texturefile = "gfx/models/portraits/doll/pic_type62.dds" }
-	griffin340 = { texturefile = "gfx/models/portraits/doll/pic_type64-ar.dds" }
-	griffin341 = { texturefile = "gfx/models/portraits/doll/pic_type88.dds" }
-	griffin342 = { texturefile = "gfx/models/portraits/doll/pic_ukm2000.dds" }
-	griffin343 = { texturefile = "gfx/models/portraits/doll/pic_ump40.dds" }
-	griffin344 = { texturefile = "gfx/models/portraits/doll/pic_ump45mod.dds" }
-	griffin345 = { texturefile = "gfx/models/portraits/doll/pic_ump9mod.dds" }
-	griffin346 = { texturefile = "gfx/models/portraits/doll/pic_usas12.dds" }
-	griffin347 = { texturefile = "gfx/models/portraits/doll/pic_uspcompact.dds" }
-	griffin348 = { texturefile = "gfx/models/portraits/doll/pic_vector.dds" }
-	griffin349 = { texturefile = "gfx/models/portraits/doll/pic_vepr.dds" }
-	griffin350 = { texturefile = "gfx/models/portraits/doll/pic_vhs.dds" }
-	griffin351 = { texturefile = "gfx/models/portraits/doll/pic_vigneronm2.dds" }
-	griffin352 = { texturefile = "gfx/models/portraits/doll/pic_vp1915.dds" }
-	griffin353 = { texturefile = "gfx/models/portraits/doll/pic_vp70.dds" }
-	griffin354 = { texturefile = "gfx/models/portraits/doll/pic_vpm5.dds" }
-	griffin355 = { texturefile = "gfx/models/portraits/doll/pic_vsk.dds" }
-	griffin356 = { texturefile = "gfx/models/portraits/doll/pic_vz61.dds" }
-	griffin357 = { texturefile = "gfx/models/portraits/doll/pic_wa2000.dds" }
-	griffin358 = { texturefile = "gfx/models/portraits/doll/pic_webley.dds" }
-	griffin359 = { texturefile = "gfx/models/portraits/doll/pic_welrodmod.dds" }
-	griffin360 = { texturefile = "gfx/models/portraits/doll/pic_wkp.dds" }
-	griffin361 = { texturefile = "gfx/models/portraits/doll/pic_wz29.dds" }
-	griffin362 = { texturefile = "gfx/models/portraits/doll/pic_x95.dds" }
-	griffin363 = { texturefile = "gfx/models/portraits/doll/pic_xm3mod.dds" }
-	griffin364 = { texturefile = "gfx/models/portraits/doll/pic_xm8mod.dds" }
-	griffin365 = { texturefile = "gfx/models/portraits/doll/pic_z62.dds" }
-	griffin366 = { texturefile = "gfx/models/portraits/doll/pic_zasm76.dds" }
-	griffin367 = { texturefile = "gfx/models/portraits/doll/pic_zastavam21.dds" }
-	griffin368 = { texturefile = "gfx/models/portraits/doll/pic_zb26.dds" }
-	griffin369 = { texturefile = "gfx/models/portraits/doll/pic_zip22.dds" }
+	new_type = {
+		entity = "GF_leader_new_type_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/new_type/1.dds"
+			"gfx/models/portraits/new_type/2.dds"
+			"gfx/models/portraits/new_type/3.dds"
+			"gfx/models/portraits/new_type/4.dds"
+			"gfx/models/portraits/new_type/5.dds"
+			"gfx/models/portraits/new_type/6.dds"
+			"gfx/models/portraits/new_type/7.dds"
+			"gfx/models/portraits/new_type/8.dds"
+			"gfx/models/portraits/new_type/9.dds"
+			"gfx/models/portraits/new_type/10.dds"
+			"gfx/models/portraits/new_type/11.dds"
+			"gfx/models/portraits/new_type/12.dds"
+			"gfx/models/portraits/new_type/13.dds"
+			"gfx/models/portraits/new_type/14.dds"
+			"gfx/models/portraits/new_type/15.dds"
+			"gfx/models/portraits/new_type/16.dds"
+			"gfx/models/portraits/new_type/D10-1.dds"
+			"gfx/models/portraits/new_type/D10-10.dds"
+			"gfx/models/portraits/new_type/D10-11.dds"
+			"gfx/models/portraits/new_type/D10-12.dds"
+			"gfx/models/portraits/new_type/D10-13.dds"
+			"gfx/models/portraits/new_type/D10-14.dds"
+			"gfx/models/portraits/new_type/D10-15.dds"
+			"gfx/models/portraits/new_type/D10-16.dds"
+			"gfx/models/portraits/new_type/D10-17.dds"
+			"gfx/models/portraits/new_type/D10-18.dds"
+			"gfx/models/portraits/new_type/D10-19.dds"
+			"gfx/models/portraits/new_type/D10-2.dds"
+			"gfx/models/portraits/new_type/D10-4.dds"
+			"gfx/models/portraits/new_type/D10-5.dds"
+			"gfx/models/portraits/new_type/D10-6.dds"
+			"gfx/models/portraits/new_type/D10-7.dds"
+			"gfx/models/portraits/new_type/D11-10.dds"
+			"gfx/models/portraits/new_type/D11-11.dds"
+			"gfx/models/portraits/new_type/D11-2.dds"
+			"gfx/models/portraits/new_type/D11-3.dds"
+			"gfx/models/portraits/new_type/D11-4.dds"
+			"gfx/models/portraits/new_type/D11-5.dds"
+			"gfx/models/portraits/new_type/D11-6.dds"
+			"gfx/models/portraits/new_type/D11-7.dds"
+			"gfx/models/portraits/new_type/D11-8.dds"
+			"gfx/models/portraits/new_type/D9-1.dds"
+			"gfx/models/portraits/new_type/D9-11.dds"
+			"gfx/models/portraits/new_type/D9-14.dds"
+			"gfx/models/portraits/new_type/D9-15.dds"
+			"gfx/models/portraits/new_type/D9-16.dds"
+			"gfx/models/portraits/new_type/D9-18.dds"
+			"gfx/models/portraits/new_type/D9-19.dds"
+			"gfx/models/portraits/new_type/D9-20.dds"
+			"gfx/models/portraits/new_type/D9-21.dds"
+			"gfx/models/portraits/new_type/D9-4.dds"
+			"gfx/models/portraits/new_type/D9-5.dds"
+			"gfx/models/portraits/new_type/D9-8.dds"
+			"gfx/models/portraits/new_type/D9-9.dds"
+		}
+	}
 }
 
 portrait_groups = {
 	GF_new_type = {
-		default = new_type_1
+		default = new_type
 		game_setup = {
 			add = {
 				portraits = {
-					griffin000
-					griffin001
-					griffin002
-					griffin003
-					griffin004
-					griffin005
-					griffin006
-					griffin007
-					griffin008
-					griffin009
-					griffin010
-					griffin011
-					griffin012
-					griffin013
-					griffin014
-					griffin015
-					griffin016
-					griffin017
-					griffin018
-					griffin019
-					griffin020
-					griffin021
-					griffin022
-					griffin023
-					griffin024
-					griffin025
-					griffin026
-					griffin027
-					griffin028
-					griffin029
-					griffin030
-					griffin031
-					griffin032
-					griffin033
-					griffin034
-					griffin035
-					griffin036
-					griffin037
-					griffin038
-					griffin039
-					griffin040
-					griffin041
-					griffin042
-					griffin043
-					griffin044
-					griffin045
-					griffin046
-					griffin047
-					griffin048
-					griffin049
-					griffin050
-					griffin051
-					griffin052
-					griffin053
-					griffin054
-					griffin055
-					griffin056
-					griffin057
-					griffin058
-					griffin059
-					griffin060
-					griffin061
-					griffin062
-					griffin063
-					griffin064
-					griffin065
-					griffin066
-					griffin067
-					griffin068
-					griffin069
-					griffin070
-					griffin071
-					griffin072
-					griffin073
-					griffin074
-					griffin075
-					griffin076
-					griffin077
-					griffin078
-					griffin079
-					griffin080
-					griffin081
-					griffin082
-					griffin083
-					griffin084
-					griffin085
-					griffin086
-					griffin087
-					griffin088
-					griffin089
-					griffin090
-					griffin091
-					griffin092
-					griffin093
-					griffin094
-					griffin095
-					griffin096
-					griffin097
-					griffin098
-					griffin099
-					griffin100
-					griffin101
-					griffin102
-					griffin103
-					griffin104
-					griffin105
-					griffin106
-					griffin107
-					griffin108
-					griffin109
-					griffin110
-					griffin111
-					griffin112
-					griffin113
-					griffin114
-					griffin115
-					griffin116
-					griffin117
-					griffin118
-					griffin119
-					griffin120
-					griffin121
-					griffin122
-					griffin123
-					griffin124
-					griffin125
-					griffin126
-					griffin127
-					griffin128
-					griffin129
-					griffin130
-					griffin131
-					griffin132
-					griffin133
-					griffin134
-					griffin135
-					griffin136
-					griffin137
-					griffin138
-					griffin139
-					griffin140
-					griffin141
-					griffin142
-					griffin143
-					griffin144
-					griffin145
-					griffin146
-					griffin147
-					griffin148
-					griffin149
-					griffin150
-					griffin151
-					griffin152
-					griffin153
-					griffin154
-					griffin155
-					griffin156
-					griffin157
-					griffin158
-					griffin159
-					griffin160
-					griffin161
-					griffin162
-					griffin163
-					griffin164
-					griffin165
-					griffin166
-					griffin167
-					griffin168
-					griffin169
-					griffin170
-					griffin171
-					griffin172
-					griffin173
-					griffin174
-					griffin175
-					griffin176
-					griffin177
-					griffin178
-					griffin179
-					griffin180
-					griffin181
-					griffin182
-					griffin183
-					griffin184
-					griffin185
-					griffin186
-					
-					griffin188
-					griffin189
-					griffin190
-					griffin191
-					griffin192
-					griffin193
-					griffin194
-					griffin195
-					griffin196
-					griffin197
-					griffin198
-					griffin199
-					griffin200
-					griffin201
-					griffin202
-					griffin203
-					griffin204
-					griffin205
-					griffin206
-					griffin207
-					griffin208
-					griffin209
-					griffin210
-					griffin211
-					griffin212
-					griffin213
-					griffin214
-					griffin215
-					griffin216
-					griffin217
-					griffin218
-					griffin219
-					griffin220
-					griffin221
-					griffin222
-					griffin223
-					griffin224
-					griffin225
-					griffin226
-					griffin227
-					griffin228
-					griffin229
-					griffin230
-					griffin231
-					griffin232
-					griffin233
-					griffin234
-					griffin235
-					griffin236
-					griffin237
-					griffin238
-					griffin239
-					griffin240
-					griffin241
-					griffin242
-					griffin243
-					griffin244
-					griffin245
-					griffin246
-					griffin247
-					griffin248
-					griffin249
-					griffin250
-					griffin251
-					griffin252
-					griffin253
-					griffin254
-					griffin255
-					griffin256
-					griffin257
-					griffin258
-					griffin259
-					griffin260
-					griffin261
-					griffin262
-					griffin263
-					griffin264
-					griffin265
-					griffin266
-					griffin267
-					griffin268
-					griffin269
-					griffin270
-					griffin271
-					griffin272
-					griffin273
-					griffin274
-					griffin275
-					griffin276
-					griffin277
-					griffin278
-					griffin279
-					griffin280
-					griffin281
-					griffin282
-					griffin283
-					griffin284
-					griffin285
-					griffin286
-					griffin287
-					griffin288
-					griffin289
-					griffin290
-					griffin291
-					griffin292
-					griffin293
-					griffin294
-					griffin295
-					griffin296
-					griffin297
-					griffin298
-					griffin299
-					griffin300
-					griffin301
-					griffin302
-					griffin303
-					griffin304
-					griffin305
-					griffin306
-					griffin307
-					griffin308
-					griffin309
-					griffin310
-					griffin311
-					griffin312
-					griffin313
-					griffin314
-					griffin315
-					griffin316
-					griffin317
-					griffin318
-					griffin319
-					griffin320
-					griffin321
-					griffin322
-					griffin323
-					griffin324
-					griffin325
-					griffin326
-					griffin327
-					griffin328
-					griffin329
-					griffin330
-					griffin331
-					griffin332
-					griffin333
-					griffin334
-					griffin335
-					griffin336
-					griffin337
-					griffin338
-					griffin339
-					griffin340
-					griffin341
-					griffin342
-					griffin343
-					griffin344
-					griffin345
-					griffin346
-					griffin347
-					griffin348
-					griffin349
-					griffin350
-					griffin351
-					griffin352
-					griffin353
-					griffin354
-					griffin355
-					griffin356
-					griffin357
-					griffin358
-					griffin359
-					griffin360
-					griffin361
-					griffin362
-					griffin363
-					griffin364
-					griffin365
-					griffin366
-					griffin367
-					griffin368
-					griffin369
+					GF_doll_000
+					GF_doll_001
+					GF_doll_002
+					GF_doll_003
+					GF_doll_004
+					GF_doll_005
+					GF_doll_006
+					GF_doll_007
+					GF_doll_008
+					GF_doll_009
+					GF_doll_010
+					GF_doll_011
+					GF_doll_012
+					GF_doll_013
+					GF_doll_014
+					GF_doll_015
+					GF_doll_016
+					GF_doll_017
+					GF_doll_018
+					GF_doll_019
+					GF_doll_020
+					GF_doll_021
+					GF_doll_022
+					GF_doll_023
+					GF_doll_024
+					GF_doll_025
+					GF_doll_026
+					GF_doll_027
+					GF_doll_028
+					GF_doll_029
+					GF_doll_030
+					GF_doll_031
+					GF_doll_032
+					GF_doll_033
+					GF_doll_034
+					GF_doll_035
+					GF_doll_036
+					GF_doll_037
+					GF_doll_038
+					GF_doll_039
+					GF_doll_040
+					GF_doll_041
+					GF_doll_042
+					GF_doll_043
+					GF_doll_044
+					GF_doll_045
+					GF_doll_046
+					GF_doll_047
+					GF_doll_048
+					GF_doll_049
+					GF_doll_050
+					GF_doll_051
+					GF_doll_052
+					GF_doll_053
+					GF_doll_054
+					GF_doll_055
+					GF_doll_056
+					GF_doll_057
+					GF_doll_058
+					GF_doll_059
+					GF_doll_060
+					GF_doll_061
+					GF_doll_062
+					GF_doll_063
+					GF_doll_064
+					GF_doll_065
+					GF_doll_066
+					GF_doll_067
+					GF_doll_068
+					GF_doll_069
+					GF_doll_070
+					GF_doll_071
+					GF_doll_072
+					GF_doll_073
+					GF_doll_074
+					GF_doll_075
+					GF_doll_076
+					GF_doll_077
+					GF_doll_078
+					GF_doll_079
+					GF_doll_080
+					GF_doll_081
+					GF_doll_082
+					GF_doll_083
+					GF_doll_084
+					GF_doll_085
+					GF_doll_086
+					GF_doll_087
+					GF_doll_088
+					GF_doll_089
+					GF_doll_090
+					GF_doll_091
+					GF_doll_092
+					GF_doll_093
+					GF_doll_094
+					GF_doll_095
+					GF_doll_096
+					GF_doll_097
+					GF_doll_098
+					GF_doll_099
+					GF_doll_100
+					GF_doll_101
+					GF_doll_102
+					GF_doll_103
+					GF_doll_104
+					GF_doll_105
+					GF_doll_106
+					GF_doll_107
+					GF_doll_108
+					GF_doll_109
+					GF_doll_110
+					GF_doll_111
+					GF_doll_112
+					GF_doll_113
+					GF_doll_114
+					GF_doll_115
+					GF_doll_116
+					GF_doll_117
+					GF_doll_118
+					GF_doll_119
+					GF_doll_120
+					GF_doll_121
+					GF_doll_122
+					GF_doll_123
+					GF_doll_124
+					GF_doll_125
+					GF_doll_126
+					GF_doll_127
+					GF_doll_128
+					GF_doll_129
+					GF_doll_130
+					GF_doll_131
+					GF_doll_132
+					GF_doll_133
+					GF_doll_134
+					GF_doll_135
+					GF_doll_136
+					GF_doll_137
+					GF_doll_138
+					GF_doll_139
+					GF_doll_140
+					GF_doll_141
+					GF_doll_142
+					GF_doll_143
+					GF_doll_144
+					GF_doll_145
+					GF_doll_146
+					GF_doll_147
+					GF_doll_148
+					GF_doll_149
+					GF_doll_150
+					GF_doll_151
+					GF_doll_152
+					GF_doll_153
+					GF_doll_154
+					GF_doll_155
+					GF_doll_156
+					GF_doll_157
+					GF_doll_158
+					GF_doll_159
+					GF_doll_160
+					GF_doll_161
+					GF_doll_162
+					GF_doll_163
+					GF_doll_164
+					GF_doll_165
+					GF_doll_166
+					GF_doll_167
+					GF_doll_168
+					GF_doll_169
+					GF_doll_170
+					GF_doll_171
+					GF_doll_172
+					GF_doll_173
+					GF_doll_174
+					GF_doll_175
+					GF_doll_176
+					GF_doll_177
+					GF_doll_178
+					GF_doll_179
+					GF_doll_180
+					GF_doll_181
+					GF_doll_182
+					GF_doll_183
+					GF_doll_184
+					GF_doll_185
+					GF_doll_186
+					GF_doll_187
+					GF_doll_188
+					GF_doll_189
+					GF_doll_190
+					GF_doll_191
+					GF_doll_192
+					GF_doll_193
+					GF_doll_194
+					GF_doll_195
+					GF_doll_196
+					GF_doll_197
+					GF_doll_198
+					GF_doll_199
+					GF_doll_200
+					GF_doll_201
+					GF_doll_202
+					GF_doll_203
+					GF_doll_204
+					GF_doll_205
+					GF_doll_206
+					GF_doll_207
+					GF_doll_208
+					GF_doll_209
+					GF_doll_210
+					GF_doll_211
+					GF_doll_212
+					GF_doll_213
+					GF_doll_214
+					GF_doll_215
+					GF_doll_216
+					GF_doll_217
+					GF_doll_218
+					GF_doll_219
+					GF_doll_220
+					GF_doll_221
+					GF_doll_222
+					GF_doll_223
+					GF_doll_224
+					GF_doll_225
+					GF_doll_226
+					GF_doll_227
+					GF_doll_228
+					GF_doll_229
+					GF_doll_230
+					GF_doll_231
+					GF_doll_232
+					GF_doll_233
+					GF_doll_234
+					GF_doll_235
+					GF_doll_236
+					GF_doll_237
+					GF_doll_238
+					GF_doll_239
+					GF_doll_240
+					GF_doll_241
+					GF_doll_242
+					GF_doll_243
+					GF_doll_244
+					GF_doll_245
+					GF_doll_246
+					GF_doll_247
+					GF_doll_248
+					GF_doll_249
+					GF_doll_250
+					GF_doll_251
+					GF_doll_252
+					GF_doll_253
+					GF_doll_254
+					GF_doll_255
+					GF_doll_256
+					GF_doll_257
+					GF_doll_258
+					GF_doll_259
+					GF_doll_260
+					GF_doll_261
+					GF_doll_262
+					GF_doll_263
+					GF_doll_264
+					GF_doll_265
+					GF_doll_266
+					GF_doll_267
+					GF_doll_268
+					GF_doll_269
+					GF_doll_270
+					GF_doll_271
+					GF_doll_272
+					GF_doll_273
+					GF_doll_274
+					GF_doll_275
+					GF_doll_276
+					GF_doll_277
+					GF_doll_278
+					GF_doll_279
+					GF_doll_280
+					GF_doll_281
+					GF_doll_282
+					GF_doll_283
+					GF_doll_284
+					GF_doll_285
+					GF_doll_286
+					GF_doll_287
+					GF_doll_288
+					GF_doll_289
+					GF_doll_290
+					GF_doll_291
+					GF_doll_292
+					GF_doll_293
+					GF_doll_294
+					GF_doll_295
+					GF_doll_296
+					GF_doll_297
+					GF_doll_298
+					GF_doll_299
+					GF_doll_300
+					GF_doll_301
+					GF_doll_302
+					GF_doll_303
+					GF_doll_304
+					GF_doll_305
+					GF_doll_306
+					GF_doll_307
+					GF_doll_308
+					GF_doll_309
+					GF_doll_310
+					GF_doll_311
+					GF_doll_312
+					GF_doll_313
+					GF_doll_314
+					GF_doll_315
+					GF_doll_316
+					GF_doll_317
+					GF_doll_318
+					GF_doll_319
+					GF_doll_320
+					GF_doll_321
+					GF_doll_322
+					GF_doll_323
+					GF_doll_324
+					GF_doll_325
+					GF_doll_326
+					GF_doll_327
+					GF_doll_328
+					GF_doll_329
+					GF_doll_330
+					GF_doll_331
+					GF_doll_332
+					GF_doll_333
+					GF_doll_334
+					GF_doll_335
+					GF_doll_336
+					GF_doll_337
+					GF_doll_338
+					GF_doll_339
+					GF_doll_340
+					GF_doll_341
+					GF_doll_342
+					GF_doll_343
+					GF_doll_344
+					GF_doll_345
+					GF_doll_346
+					GF_doll_347
+					GF_doll_348
+					GF_doll_349
+					GF_doll_350
+					GF_doll_351
+					GF_doll_352
+					GF_doll_353
+					GF_doll_354
+					GF_doll_355
+					GF_doll_356
+					GF_doll_357
+					GF_doll_358
+					GF_doll_359
+					GF_doll_360
+					GF_doll_361
+					GF_doll_362
+					GF_doll_363
+					GF_doll_364
+					GF_doll_365
+					GF_doll_366
+					GF_doll_367
+					GF_doll_368
+					GF_doll_369
+					GF_doll_370
+					GF_doll_371
+					GF_doll_372
+					GF_doll_373
+					GF_doll_374
+					GF_doll_375
+					GF_doll_376
+					GF_doll_377
+					GF_doll_378
+					GF_doll_379
+					GF_doll_380
+					GF_doll_381
+					GF_doll_382
+					GF_doll_383
 				}
 			}
 		}
 		species = {
-			add = {
-				portraits = {
-					new_type_1
-					new_type_2
-					new_type_3
-					new_type_4
-					new_type_5
-					new_type_6
-					new_type_7
-					new_type_8
-					new_type_9
-					new_type_10
-					new_type_11
-					new_type_12
-					new_type_13
-					new_type_14
-					new_type_15
-					new_type_16
-					new_type_17
-					new_type_18
-					new_type_19
-					new_type_20
-					new_type_21
-					new_type_22
-					new_type_23
-					new_type_24
-					new_type_25
-					new_type_26
-					new_type_27
-					new_type_28
-					new_type_29
-					new_type_30
-					new_type_31
-					new_type_32
-					new_type_33
-					new_type_34
-					new_type_35
-					new_type_36
-					new_type_37
-					new_type_38
-					new_type_39
-					new_type_40
-					new_type_41
-					new_type_42
-					new_type_43
-					new_type_44
-					new_type_45
-					new_type_46
-					new_type_47
-					new_type_48
-					new_type_49
-					new_type_50
-					new_type_51
-					new_type_52
-					new_type_53
-					new_type_54
-				}
-			}
+			add = { portraits = { new_type } }
 		}
 		pop = {
-			add = {
-				portraits = {
-					new_type_1
-					new_type_2
-					new_type_3
-					new_type_4
-					new_type_5
-					new_type_6
-					new_type_7
-					new_type_8
-					new_type_9
-					new_type_10
-					new_type_11
-					new_type_12
-					new_type_13
-					new_type_14
-					new_type_15
-					new_type_16
-					new_type_17
-					new_type_18
-					new_type_19
-					new_type_20
-					new_type_21
-					new_type_22
-					new_type_23
-					new_type_24
-					new_type_25
-					new_type_26
-					new_type_27
-					new_type_28
-					new_type_29
-					new_type_30
-					new_type_31
-					new_type_32
-					new_type_33
-					new_type_34
-					new_type_35
-					new_type_36
-					new_type_37
-					new_type_38
-					new_type_39
-					new_type_40
-					new_type_41
-					new_type_42
-					new_type_43
-					new_type_44
-					new_type_45
-					new_type_46
-					new_type_47
-					new_type_48
-					new_type_49
-					new_type_50
-					new_type_51
-					new_type_52
-					new_type_53
-					new_type_54
-				}
-			}
+			add = { portraits = { new_type } }
 		}
 		leader = {
-			add = {
-				portraits = {
-					new_type_1
-					new_type_2
-					new_type_3
-					new_type_4
-					new_type_5
-					new_type_6
-					new_type_7
-					new_type_8
-					new_type_9
-					new_type_10
-					new_type_11
-					new_type_12
-					new_type_13
-					new_type_14
-					new_type_15
-					new_type_16
-					new_type_17
-					new_type_18
-					new_type_19
-					new_type_20
-					new_type_21
-					new_type_22
-					new_type_23
-					new_type_24
-					new_type_25
-					new_type_26
-					new_type_27
-					new_type_28
-					new_type_29
-					new_type_30
-					new_type_31
-					new_type_32
-					new_type_33
-					new_type_34
-					new_type_35
-					new_type_36
-					new_type_37
-					new_type_38
-					new_type_39
-					new_type_40
-					new_type_41
-					new_type_42
-					new_type_43
-					new_type_44
-					new_type_45
-					new_type_46
-					new_type_47
-					new_type_48
-					new_type_49
-					new_type_50
-					new_type_51
-					new_type_52
-					new_type_53
-					new_type_54
-				}
-			}
+			add = { portraits = { new_type } }
 		}
 		ruler = {
-			add = {
-				portraits = {
-					new_type_1
-					new_type_2
-					new_type_3
-					new_type_4
-					new_type_5
-					new_type_6
-					new_type_7
-					new_type_8
-					new_type_9
-					new_type_10
-					new_type_11
-					new_type_12
-					new_type_13
-					new_type_14
-					new_type_15
-					new_type_16
-					new_type_17
-					new_type_18
-					new_type_19
-					new_type_20
-					new_type_21
-					new_type_22
-					new_type_23
-					new_type_24
-					new_type_25
-					new_type_26
-					new_type_27
-					new_type_28
-					new_type_29
-					new_type_30
-					new_type_31
-					new_type_32
-					new_type_33
-					new_type_34
-					new_type_35
-					new_type_36
-					new_type_37
-					new_type_38
-					new_type_39
-					new_type_40
-					new_type_41
-					new_type_42
-					new_type_43
-					new_type_44
-					new_type_45
-					new_type_46
-					new_type_47
-					new_type_48
-					new_type_49
-					new_type_50
-					new_type_51
-					new_type_52
-					new_type_53
-					new_type_54
-				}
-			}
+			add = { portraits = { new_type } }
 		}
 	}
 }

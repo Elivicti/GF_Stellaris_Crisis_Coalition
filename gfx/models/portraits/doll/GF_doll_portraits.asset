@@ -1,0 +1,47 @@
+entity = { #领袖头像
+	name = GF_leader_OGAS_entity
+	pdxmesh = "GF_leader_OGAS_mesh"
+	scale = 4
+
+	meshsettings = {
+		name = "pPlaneShape1"
+		index = 0
+		shader = "PdxMeshPortrait"
+	}
+}
+
+entity = { #领袖头像
+	name = GF_leader_doll_entity
+	pdxmesh = "GF_leader_doll_mesh"
+	scale = 4
+
+	meshsettings = {
+		name = "pPlaneShape1"
+		index = 0
+		shader = "PdxMeshPortrait"
+	}
+}
+
+entity = { #领袖头像
+	name = GF_leader_new_type_entity
+	pdxmesh = "GF_leader_new_type_mesh"
+	scale = 4
+
+	meshsettings = {
+		name = "pPlaneShape1"
+		index = 0
+		shader = "PdxMeshPortrait"
+	}
+}
+
+entity = { #领袖头像
+	name = GF_leader_entity_squared
+	pdxmesh = "GF_leader_mesh_squared"
+	scale = 4
+
+	meshsettings = {
+		name = "pPlaneShape1"
+		index = 0
+		shader = "PdxMeshPortrait"
+	}
+}
