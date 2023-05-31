@@ -71,6 +71,7 @@ on_planet_bombarded_to_collapse_victim = {
 	events = {
 		GF_bombardment.1102	# 非居住站
 		GF_bombardment.1302 # 居住站
+		GF_bombardment.1400 # 轰炸圣地
 	}
 }
 

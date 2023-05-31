@@ -50,8 +50,7 @@ planet_event = {
 
 		if = {
 			# 居住站不添加污染区，额外增加2破坏度
-			limit = { GF_is_habitat = yes }
-			add_planet_devastation = 2
+			limit = { GF_is_habitat= 2
 		}
 		else = {
 			# 非居住站（包括星球和环世界）添加污染区
@@ -328,5 +327,24 @@ country_event = {
 
 	option = {
 		name = GF_bombardment.1302.a
+	}
+}
+
+country_event = {
+	id = GF_bombardment.1400
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { has_modifier = holy_planet }
+	}
+
+	immediate = {
+		from = {
+			planet_event = {
+				id = planet_destruction.600
+				scopes = { from = prev.fromfrom }
+			}
+		}
 	}
 }
