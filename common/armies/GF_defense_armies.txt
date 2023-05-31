@@ -37,7 +37,7 @@ GF_army_defensive_armored_train = {
 	has_species = no
 	morale = 0.50
 	morale_damage = 1.00
-	collateral_damage = 1.20
+	collateral_damage = 0.0
 	war_exhaustion = 0.15
 	icon = GFX_GF_army_type_armored_train
 
