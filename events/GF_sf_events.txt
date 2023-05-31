@@ -11,7 +11,8 @@ country_event = {
 	immediate = {
 		country_event = {
 			id = GF_sf.1
-			days = 7200
+			days = 6480		# 18年
+			random = 2160	#  6年
 		}
 	}
 }
