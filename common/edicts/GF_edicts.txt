@@ -133,24 +133,9 @@ GF_relocate_relic_site = {
 					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_1 } }
 				}
 			}
-			home_planet = {
+			event_target:GF_home_world = {
 				solar_system = {
-					random_system = {
-						limit = {
-							distance = {
-								source = owner.home_planet.solar_system
-								max_jumps = 4
-								min_jumps = 1
-							}
-						}
-						GF_create_collapse_relic_site = {
-							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_2
-							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
-			
-							P_FLAG = flag_p_GF_has_collapse_relic_site_1
-							SITE = GF_collapse_relic_site_1
-						}
-					}
+					GF_create_collapse_relic_site = { index = 1 }
 				}
 			}
 		}
@@ -160,24 +145,9 @@ GF_relocate_relic_site = {
 					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 } } 
 				}
 			}
-			home_planet = {
+			event_target:GF_home_world = {
 				solar_system = {
-					random_system = {
-						limit = {
-							distance = {
-								source = owner.home_planet.solar_system
-								max_jumps = 4
-								min_jumps = 1
-							}
-						}
-						GF_create_collapse_relic_site = {
-							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
-							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
-			
-							P_FLAG = flag_p_GF_has_collapse_relic_site_2
-							SITE = GF_collapse_relic_site_2
-						}
-					}
+					GF_create_collapse_relic_site = { index = 2 }
 				}
 			}
 		}
@@ -187,24 +157,9 @@ GF_relocate_relic_site = {
 					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 } }
 				}
 			}
-			home_planet = {
+			event_target:GF_home_world = {
 				solar_system = {
-					random_system = {
-						limit = {
-							distance = {
-								source = owner.home_planet.solar_system
-								max_jumps = 4
-								min_jumps = 1
-							}
-						}
-						GF_create_collapse_relic_site = {
-							NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
-							NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_2
-			
-							P_FLAG = flag_p_GF_has_collapse_relic_site_3
-							SITE = GF_collapse_relic_site_3
-						}
-					}
+					GF_create_collapse_relic_site = { index = 3 }
 				}
 			}
 		}

@@ -125,6 +125,24 @@ can_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
 	#}
 }
 
+# this = planet
+GF_collapse_relic_site_requirements = {
+	OR = {
+		is_planet_class = pc_barren
+		is_planet_class = pc_barren_cold
+		is_planet_class = pc_molten
+		is_planet_class = pc_frozen
+		is_planet_class = pc_toxic
+		habitable_planet = yes
+	}
+	NOR = {
+		exists = archaeological_site
+		has_planet_flag = suppress_archaeological_sites
+		is_colony = yes
+		has_modifier = holy_planet
+	}
+}
+
 GF_default_zion_comm_trigger = {
 	AND = {
 		has_authority = GF_auth_commonwealth
