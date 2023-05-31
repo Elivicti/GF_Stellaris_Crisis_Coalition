@@ -115,7 +115,7 @@ fleet_event = {
 
 	option = {
 		name = GF_relic.2.a
-		large_artifact_reward = yes
+		medium_artifact_reward = yes
 	}
 }
 
@@ -170,6 +170,15 @@ fleet_event = {
 
 	immediate = {
 		from = { set_site_progress_locked = yes }
+		hidden_effect = {
+			event_target:GF_home_world = {
+				solar_system = {
+					GF_create_collapse_relic_site = { index = 1 }
+					GF_create_collapse_relic_site = { index = 2 }
+					GF_create_collapse_relic_site = { index = 3 }
+				}
+			}
+		}
 	}
 
 	after = {
@@ -184,99 +193,9 @@ fleet_event = {
 				physics_research = 10000
 				engineering_research = 10000
 			}
-
 			set_country_flag = flag_GF_foreign_relic_site_acknowledged
-
-			event_target:GF_home_world = {
-				solar_system = {
-					while = {
-						limit = {
-							NOT = {
-								any_system = {
-									any_system_planet = {
-										has_planet_flag = flag_p_GF_has_collapse_relic_site_1
-									}
-								}
-							}
-						}
-						random_system = {
-							limit = {
-								distance = {
-									source = prev
-									max_jumps = 4
-									min_jumps = 1
-								}
-							}
-							GF_create_collapse_relic_site = {
-								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_2
-								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
-					
-								P_FLAG = flag_p_GF_has_collapse_relic_site_1
-								SITE = GF_collapse_relic_site_1
-							}
-						}
-					}
-
-					while = {
-						limit = {
-							NOT = {
-								any_system = {
-									any_system_planet = {
-										has_planet_flag = flag_p_GF_has_collapse_relic_site_2
-									}
-								}
-							}
-						}
-						random_system = {
-							limit = {
-								distance = {
-									source = prev
-									max_jumps = 4
-									min_jumps = 1
-								}
-							}
-							GF_create_collapse_relic_site = {
-								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
-								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_3
-					
-								P_FLAG = flag_p_GF_has_collapse_relic_site_2
-								SITE = GF_collapse_relic_site_2
-							}
-						}
-					}
-
-					while = {
-						limit = {
-							NOT = {
-								any_system = {
-									any_system_planet = {
-										has_planet_flag = flag_p_GF_has_collapse_relic_site_3
-									}
-								}
-							}
-						}
-						random_system = {
-							limit = {
-								distance = {
-									source = prev
-									max_jumps = 4
-									min_jumps = 1
-								}
-							}
-							GF_create_collapse_relic_site = {
-								NO_P_FLAG_1 = flag_p_GF_has_collapse_relic_site_1
-								NO_P_FLAG_2 = flag_p_GF_has_collapse_relic_site_2
-					
-								P_FLAG = flag_p_GF_has_collapse_relic_site_3
-								SITE = GF_collapse_relic_site_3
-							}
-						}
-					}
-					
-					
-				}
-			}
 		}
+		custom_tooltip = GF_relic.4.a.tooltip
 	}
 }
 
