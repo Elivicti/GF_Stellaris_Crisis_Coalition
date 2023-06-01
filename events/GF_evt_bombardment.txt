@@ -50,7 +50,8 @@ planet_event = {
 
 		if = {
 			# 居住站不添加污染区，额外增加2破坏度
-			limit = { GF_is_habitat= 2
+			limit = { GF_is_habitat= 2 }
+			add_planet_devastation = 2
 		}
 		else = {
 			# 非居住站（包括星球和环世界）添加污染区
