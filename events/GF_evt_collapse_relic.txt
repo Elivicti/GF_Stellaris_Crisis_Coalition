@@ -35,11 +35,10 @@ country_event = {
 	desc = GF_relic.0.desc
 
 	picture = GFX_evt_GF_door
-
+	show_sound = event_laboratory_sound
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
-
 	trigger = {
 		has_authority = GF_auth_commonwealth
 		has_technology = GF_tech_ecological_recovery
@@ -67,13 +66,12 @@ fleet_event = {
 	desc = GF_relic.1.desc
 
 	picture = GFX_evt_GF_deep_well
-	# show_sound = 
+	show_sound = event_big_door_opening
 	location = from
 
 	archaeology = yes
 
 	is_triggered_only = yes
-
 	immediate = {
 		from = { set_site_progress_locked = yes }
 	}
@@ -98,7 +96,7 @@ fleet_event = {
 	desc = GF_relic.2.desc
 	
 	picture = GFX_evt_in_the_dark
-	# show_sound = 
+	show_sound = event_collapsing_ruins
 	location = from
 
 	archaeology = yes
@@ -129,7 +127,7 @@ fleet_event = {
 	desc = GF_relic.3.desc
 
 	picture = GFX_evt_GF_computer
-	# show_sound = 
+	show_sound = event_administrative_work
 	location = from
 
 	archaeology = yes
@@ -161,7 +159,7 @@ fleet_event = {
 	desc = GF_relic.4.desc
 
 	picture = GFX_evt_GF_core
-	# show_sound = 
+	show_sound = event_door_opening
 	location = from
 
 	archaeology = yes
@@ -208,8 +206,34 @@ fleet_event = {
 	title = GF_relic.5.name
 	desc = GF_relic.5.desc
 
-	picture = GFX_evt_archaeology_camp
-	# show_sound = 
+	picture = {
+		trigger = { from.planet = { habitable_planet = yes } }
+		picture = GFX_evt_habitable_dig_site
+	}
+	picture = {
+		trigger = {
+			from.planet = {
+				OR = {
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+				}
+			}
+		}
+		picture = GFX_evt_barren_dig_site
+	}
+	picture = {
+		trigger = {
+			from.planet = {
+				NOR = {
+					habitable_planet = yes
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_frozen
+				}
+			}
+		}
+		picture = GFX_evt_archaeology_camp
+	}
+	show_sound = event_dig_site
 	location = from
 
 	archaeology = yes
@@ -231,7 +255,7 @@ fleet_event = {
 	desc = GF_relic.6.desc
 
 	picture = GFX_evt_GF_tunnel
-	# show_sound = 
+	show_sound = event_vivisection
 	location = from
 
 	archaeology = yes
@@ -240,7 +264,6 @@ fleet_event = {
 	option = {
 		name = GF_relic.6.a
 		small_artifact_reward = yes
-		
 	}
 }
 
@@ -254,7 +277,7 @@ fleet_event = {
 	desc = GF_relic.701.desc
 
 	picture = GFX_evt_GF_computer
-	# show_sound = 
+	show_sound = event_mystic_reveal_light
 	location = from
 
 	archaeology = yes
@@ -288,7 +311,7 @@ fleet_event = {
 	desc = GF_relic.702.desc
 
 	picture = GFX_evt_GF_bio_tank
-	# show_sound = 
+	show_sound = event_bad_omen
 	location = from
 
 	archaeology = yes
@@ -322,7 +345,7 @@ fleet_event = {
 	desc = GF_relic.703.desc
 
 	picture = GFX_evt_GF_repair_room
-	# show_sound = 
+	show_sound = event_machinery
 	location = from
 
 	archaeology = yes
@@ -355,7 +378,7 @@ country_event = {
 	desc = GF_relic.8.desc
 
 	picture = GFX_evt_GF_door
-
+	show_sound = event_activating_unknown_technology
 	is_triggered_only = yes
 	
 	trigger = {

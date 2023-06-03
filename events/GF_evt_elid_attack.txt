@@ -13,7 +13,7 @@ country_event = {
 	desc = GF_elid.0.desc
 
 	picture = GFX_evt_GF_protected_purify_wall
-
+	show_sound = event_default
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -107,7 +107,7 @@ country_event = {
 	is_triggered_only = yes
 
 	picture = GFX_evt_GF_protected_purify_wall
-
+	show_sound = event_vivisection
 	location = event_target:GF_home_world
 
 	trigger = {
@@ -429,7 +429,7 @@ country_event = {
 	}
 
 	picture = GFX_evt_crisis_defeated
-
+	show_sound = event_celebration
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -496,7 +496,7 @@ country_event = {
 	desc = GF_elid.1020.desc
 
 	picture = GFX_evt_GF_collapsed_city
-
+	show_sound = event_burning_city
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -656,7 +656,7 @@ country_event = {
 	desc = GF_elid.1031.desc
 
 	picture = GFX_evt_crisis_defeated
-
+	show_sound = event_celebration
 	location = event_target:GF_home_world
 	
 	is_triggered_only = yes
@@ -813,7 +813,7 @@ country_event = {
 	desc = GF_elid.2110.desc
 
 	picture = GFX_evt_victorious_army
-
+	show_sound = event_celebration
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -854,18 +854,20 @@ country_event = {
 			remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
 			remove_planet_flag = flag_p_GF_battle_in_black_zone
 		}
-		if = {
-			limit = {
-				event_target:GF_home_world = {
-					check_variable = {
-						which = v_GF_elid_threat_level
-						value > 0
+		hidden_effect = {
+			if = {
+				limit = {
+					event_target:GF_home_world = {
+						check_variable = {
+							which = v_GF_elid_threat_level
+							value > 0
+						}
 					}
 				}
-			}
-			country_event = {
-				id = GF_elid.2111
-				days = 10
+				country_event = {
+					id = GF_elid.2111
+					days = 10
+				}
 			}
 		}
 	}
@@ -878,7 +880,7 @@ country_event = {
 	desc = GF_elid.2111.desc
 
 	picture = GFX_evt_undertaker
-
+	show_sound = event_default
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -895,7 +897,7 @@ country_event = {
 	desc = GF_elid.2120.desc
 
 	picture = GFX_evt_GF_broken_town
-
+	show_sound = event_burning_city
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -1023,7 +1025,7 @@ country_event = {
 	desc = GF_elid.2210.desc
 
 	picture = GFX_evt_victorious_army
-
+	show_sound = event_celebration
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -1071,7 +1073,7 @@ country_event = {
 	desc = GF_elid.2220.desc
 
 	picture = GFX_evt_GF_building_ruins
-
+	show_sound = event_burning_city
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -1186,7 +1188,7 @@ country_event = {
 	desc = GF_elid.2310.desc
 
 	picture = GFX_evt_victorious_army
-
+	show_sound = event_celebration
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes
@@ -1263,7 +1265,7 @@ country_event = {
 	desc = GF_elid.2320.desc
 
 	picture = GFX_evt_GF_damaged_slum
-
+	show_sound = event_burning_city
 	location = event_target:GF_home_world
 
 	is_triggered_only = yes

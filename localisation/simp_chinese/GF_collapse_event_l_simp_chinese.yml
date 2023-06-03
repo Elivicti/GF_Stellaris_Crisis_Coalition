@@ -19,7 +19,7 @@
 
 #### 母星遗迹
  GF_relic.0.name:0 "重启遗迹探索"
- GF_relic.0.desc:0 "[Root.Capital.GetName]上辐射黑区的清理工作结束后，我们的科学家报告说，鉴于我们已经有能力妥善处理坍塌辐射污染，并且原遗迹周边的黑区也已经清理干净，现在正是我们重新探索[Root.Capital.GetName]上遗迹的大好时机。"
+ GF_relic.0.desc:0 "[GF_home_world.GetName]上辐射黑区的清理工作结束后，我们的科学家报告说，鉴于我们已经有能力妥善处理坍塌辐射污染，并且原遗迹周边的黑区也已经清理干净，现在正是我们重新探索[GF_home_world.GetName]上遗迹的大好时机。"
  GF_relic.0.a:0 "那么事不宜迟，让我们开始吧。"
 
  GF_relic.1.name:0 "「阿佛纳斯」"
@@ -42,11 +42,11 @@
 
 #### 母星四跳内遗迹
  GF_relic.5.name:0 "遗迹探索报告"
- GF_relic.5.desc:0 "探索队到达之后便开始了一系列准备工作：[Leader.GetSheHe]们在遗迹附近扎下营地，随队的工程组清理好了遗迹的入口，并在周边区域做好了安全防护工作，探索队成员也做好了充分的准备。"
+ GF_relic.5.desc:0 "探索队到达[from.planet.GetName]之后便开始了一系列准备工作：[Leader.GetSheHe]们在遗迹附近扎下营地，随队的工程组清理好了遗迹的入口，并在周边区域做好了安全防护工作，探索队成员也做好了充分的准备。"
  GF_relic.5.a:0 "让我们开始吧。"
 
  GF_relic.6.name:0 "遗迹探索报告"
- GF_relic.6.desc:0 "探索队进入遗迹不久后就发现这里的遗迹结构与[Owner.Capital.GetName]上的十分相似，借助于之前的经验，[Leader.GetSheHe]们以极高的效率在遗迹中探索，尽管这里的甬道也是如同迷宫一般，但[Leader.GetSheHe]们的进展十分迅速。"
+ GF_relic.6.desc:0 "探索队进入遗迹不久后就发现这里的遗迹结构与[GF_home_world.GetName]上的十分相似，借助于之前的经验，[Leader.GetSheHe]们以极高的效率在遗迹中探索，尽管这里的甬道也是如同迷宫一般，但[Leader.GetSheHe]们的进展十分迅速。"
  GF_relic.6.a:0 "继续前进。"
 
  GF_relic.7.name:0 "遗迹探索报告"

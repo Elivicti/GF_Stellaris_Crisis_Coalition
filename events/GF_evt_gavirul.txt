@@ -9,7 +9,7 @@ country_event = {
 	desc = GF_gavirul.0.desc
 
 	picture = GFX_evt_GF_gavirul
-
+	show_sound = event_engineered_evolution
 	is_triggered_only = yes
 
 	trigger = {
@@ -33,7 +33,7 @@ country_event = {
 	desc = GF_gavirul.1.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_evolution_mastery
 	picture = GFX_evt_GF_gavirul
 
 	option = {

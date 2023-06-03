@@ -38,6 +38,7 @@ country_event = {
 		}
 	}
 	picture = GFX_evt_GF_protected_purify_wall
+	show_sound = event_construction
 	is_triggered_only = yes
 	trigger = {
 		has_authority = GF_auth_commonwealth
@@ -66,6 +67,7 @@ country_event = {
 	title = GF_recover_plan.2.name
 	desc = GF_recover_plan.2.desc
 	picture = GFX_evt_GF_protected_purify_wall
+	show_sound = event_default
 	is_triggered_only = yes
 	trigger = {
 		has_authority = GF_auth_commonwealth

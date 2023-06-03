@@ -27,7 +27,7 @@ country_event = {
 	desc = GF_alaya.001.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_scanner
 	picture = GFX_evt_physics_research
 
 	trigger = {
@@ -111,7 +111,7 @@ country_event = {
 	desc = GF_alaya.003.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_finding_loot
 	picture = GFX_evt_ancient_artifact
 
 	trigger = {
@@ -129,7 +129,8 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = GF_alaya.004
-				days = 60
+				days = 45
+				random = 30
 			}
 		}
 	}
@@ -142,7 +143,7 @@ country_event = {
 	desc = GF_alaya.004.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_construction
 	picture = GFX_evt_analyzing_artifacts
 
 	immediate = {
@@ -174,24 +175,25 @@ country_event = {
 			days = -1
 		}
 
-		# 十年后遗迹设施出现异常
+		# 4~8年后遗迹设施出现异常
 		hidden_effect = {
 			country_event = {
 				id = GF_alaya.100
-				days = 3600
+				days = 1440
+				random = 1440
 			}
 		}
 	}
 }
 
-# 五年后，遗迹设施出现异常，debuff
+# 4~8年后，遗迹设施出现异常，debuff
 country_event = {
 	id = GF_alaya.100
 	title = GF_alaya.100.name
 	desc = GF_alaya.100.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_red_alert
 	picture = GFX_evt_glitchy_matrix
 
 	immediate = {
@@ -236,7 +238,7 @@ country_event = {
 	desc = GF_alaya.101.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_yellow_alert
 	picture = GFX_evt_GF_net_world
 
 	trigger = {
@@ -268,7 +270,7 @@ country_event = {
 	desc = GF_alaya.102.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_slot_machine
 	picture = GFX_evt_GF_white_net
 
 	trigger = {
@@ -602,7 +604,7 @@ country_event = {
 	desc = GF_alaya.123.desc
 
 	is_triggered_only = yes
-
+	show_sound = event_synthetic_evolution
 	picture = GFX_evt_sapient_AI
 
 	trigger = {
