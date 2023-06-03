@@ -1,5 +1,5 @@
-@GF_relic_site_jump_distance_min = 2
-@GF_relic_site_jump_distance_max = 6
+@GF_relic_site_jump_distance_min = 1
+@GF_relic_site_jump_distance_max = 4
 
 # this = system (source)
 GF_create_collapse_relic_site = {
@@ -15,11 +15,15 @@ GF_create_collapse_relic_site = {
 				min_jumps = @GF_relic_site_jump_distance_min
 				max_jumps = @GF_relic_site_jump_distance_max
 			}
-			any_neighbor_system = {
-				NOT = { has_star_flag = flag_s_GF_has_collapse_relic_site_in_system }
-				if = {
-					limit = { exists = space_owner }
-					space_owner = { NOT = { has_ai_personality = fallen_empire_xenophobe } }
+			NOT = {
+				any_neighbor_system = {
+					OR = {
+						has_star_flag = flag_s_GF_has_collapse_relic_site_in_system
+						AND = {
+							exists = space_owner
+							space_owner = { is_fallen_empire_xenophobe = yes }
+						}
+					}
 				}
 			}
 			any_system_planet = { GF_collapse_relic_site_requirements = yes }
@@ -32,6 +36,7 @@ GF_create_collapse_relic_site = {
 			save_event_target_as = relic_site_target_$index$
 		}
 	}
+	space_owner = { set_visited = event_target:relic_site_target_$index$.solar_system }
 }
 
 # required scope: planet
