@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230524$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "更新日志：\n\n$GF_Stellaris_Log_20230604$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+
+# 2023.6.4
+ GF_Stellaris_Log_20230604:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n1. 为$GF_ANDROID$添加§H1K张立绘§!\n2. 优化物种肖像，现在应该不会歪得很离谱了\n3. 坍塌液脏弹轰炸§H圣地§!至§R坍塌§!时，现在会正确地§R激怒$personality_fallen_empire_spiritualist$§!了\n4. 部分会延迟触发的事件现在会在随机延迟后触发，而非固定延迟\n5. 移除了$GF_army_defensive_armored_train$的连带伤害\n6. 优化部分文本"
 
 # 2023.5.24
  GF_Stellaris_Log_20230524:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n1. 调整获得§Y$GF_relic_orb_mainframe_alpha$§!后的相关效果与事件\n2. 添加巨构§Y$GF_computing_center_3$§!\n3. 添加传统§Y$GF_tradition_automation$§!，完成后§H解锁决议：$decision_GF_automated_city_project$§!\n4. 为部分§Y国民理念§!添加对应的§Y内阁席位§!\n5. 所有领袖相关事件与特质适配3.8版本\n6. 多人联机游玩时，§Y多余的危机联合国家§!将被强制设置为§Y普通国家§!\n6. 人形物种的 £gf_core_chip£ §Y$gf_core_chip$§!维护费提高为§H0.1§!\n7. 优化部分杂项文本"
