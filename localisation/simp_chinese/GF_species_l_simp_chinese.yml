@@ -35,9 +35,8 @@ GIRLF:0 "少女前线"
 
 #GF New Type
  GF_new_type:0 "新人类"
- GF_new_type:0 "人型生物"
  GF_new_type_desc:1 "物种类别对你的帝国没有太大影响，但与其他类别相比，同是人形类的物种，双方认同感会更强。"
- GF_new_type_plural:0 "人型生物"
+ GF_new_type_plural:0 "新人类"
  GF_new_type_insult_01:0 "野兽"
  GF_new_type_insult_plural_01:0 "野兽"
  GF_new_type_insult_02:0 "巨魔"
