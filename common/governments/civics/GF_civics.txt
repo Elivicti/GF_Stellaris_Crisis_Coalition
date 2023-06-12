@@ -143,6 +143,7 @@ GF_civic_KCCO = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
+		command_limit_add = 20
 		starbase_shipyard_build_speed_mult = 0.2
 		starbase_shipyard_build_cost_mult = -0.2
 		ships_upkeep_mult = -0.2
@@ -163,6 +164,7 @@ GF_civic_TASA = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
+		command_limit_add = 20
 		ship_weapon_damage = 0.10
 		ship_fire_rate_mult = 0.15
 		ship_weapon_range_mult = 0.15
@@ -200,6 +202,8 @@ GF_civic_IOP = {
 	random_weight = { base = 0 }
 	description = "GF_civic_IOP_effects"
 	modifier = {
+		GF_automated_city_districts_factory_assembly_speed_mult = 0.10
+		planet_pops_robotics_upkeep_mult = -0.05
 	}
 }
 
@@ -214,12 +218,17 @@ GF_civic_16LAB = {
 	modifier = {
 		country_base_gf_core_chip_produces_add = 1
 		num_tech_alternatives_add = 1
+		GF_planet_jobs_doll_programmers_physics_research_produces_add = 2
+		GF_planet_jobs_doll_programmers_society_research_produces_add = 2
+		GF_planet_jobs_doll_programmers_engineering_research_produces_add = 2
+		GF_planet_jobs_doll_programmers_consumer_goods_upkeep_add = 1
 	}
 	description = "GF_civic_16LAB_effects"
 }
 
 GF_civic_GOSPLAN = {
 	icon = "gfx/interface/icons/governments/civics/gf_GOSPLAN.dds"
+	description = "GF_civic_GOSPLAN_effects"
 	potential = {
 		authority = {
 			value = GF_auth_commonwealth
@@ -257,6 +266,7 @@ GF_civic_NHC = {
 	random_weight = { base = 0 }
 	modifier = {
 		pop_growth_speed = 0.1
+		planet_pops_organics_upkeep_mult = -0.1
 	}
 }
 
@@ -270,6 +280,7 @@ GF_civic_90WISH = {
 	random_weight = { base = 0 }
 	description = "GF_civic_90WISH_effects"
 	modifier = {
+		leaders_upkeep_mult = 0.10
 	}
 }
 
