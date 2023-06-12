@@ -1,0 +1,264 @@
+GF_situation_GOSPLAN = {
+	picture = {
+		trigger = { target = { is_planet_class = pc_desert } }
+		picture = GFX_evt_desert
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_tropical } }
+		picture = GFX_evt_tropical
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_arid } }
+		picture = GFX_evt_arid
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_continental } }
+		picture = GFX_evt_continental
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_alpine } }
+		picture = GFX_evt_alpine_city
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_savannah } }
+		picture = GFX_evt_savannah
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_ocean } }
+		picture = GFX_evt_ocean
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_tundra } }
+		picture = GFX_evt_tundra
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_arctic } }
+		picture = GFX_evt_arctic
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_gaia } }
+		picture = GFX_evt_gaia
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_nuked } }
+		picture = GFX_evt_tomb_world
+	}
+	picture = {
+		trigger = {
+			target = {
+				OR = {
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_cybrex
+				}
+			}
+		}
+		picture = GFX_evt_ringworld
+	}
+	picture = {
+		trigger = { target = { GF_is_habitat = yes } }
+		picture = GFX_evt_habitat
+	}
+	picture = {
+		trigger = { target = { is_planet_class = pc_hive } }
+		picture = GFX_evt_infested
+	}
+	picture = {
+		trigger = {
+			target = {
+				OR = {
+					is_planet_class = pc_GF_sf_machine
+					is_planet_class = pc_machine
+				}
+			}
+		}
+		picture = GFX_evt_ai_planet
+	}
+	picture = {
+		trigger = {
+			target = {
+				OR = {
+					is_planet_class = pc_GF_automated_city
+					is_planet_class = pc_city
+				}
+			}
+		}
+		picture = GFX_evt_city_planet
+	}
+	category = positive
+
+	fail_icon = GFX_situation_outcome_negative
+	fail_icon_frame = GFX_situation_outcome_frame_red
+	complete_icon = GFX_situation_outcome_meh
+	complete_icon_frame = GFX_situation_outcome_frame_green
+
+	monthly_progress = {
+		base = 2
+	}
+
+	start_value = 0
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 40
+
+			triggered_target_modifier = {
+				potential = {
+					NOT = { target = { is_planet_class = pc_GF_automated_city } }
+				}
+				planet_jobs_produces_mult = 0.10
+				planet_jobs_upkeep_mult = -0.10
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			triggered_target_modifier = {
+				potential = {
+					target = { is_planet_class = pc_GF_automated_city }
+				}
+				GF_automated_city_districts_produces_mult = 0.10
+				GF_automated_city_districts_upkeep_mult = -0.10
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			target_modifier = {
+				trade_value_mult = -0.10
+			}
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			end = 80
+
+			triggered_target_modifier = {
+				potential = {
+					NOT = { target = { is_planet_class = pc_GF_automated_city } }
+				}
+				planet_jobs_produces_mult = 0.15
+				planet_jobs_upkeep_mult = -0.15
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			triggered_target_modifier = {
+				potential = {
+					target = { is_planet_class = pc_GF_automated_city }
+				}
+				GF_automated_city_districts_produces_mult = 0.15
+				GF_automated_city_districts_upkeep_mult = -0.15
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			target_modifier = {
+				trade_value_mult = -0.15
+			}
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			end = 120
+
+			triggered_target_modifier = {
+				potential = {
+					NOT = { target = { is_planet_class = pc_GF_automated_city } }
+				}
+				planet_jobs_produces_mult = 0.20
+				planet_jobs_upkeep_mult = -0.15
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			triggered_target_modifier = {
+				potential = {
+					target = { is_planet_class = pc_GF_automated_city }
+				}
+				GF_automated_city_districts_produces_mult = 0.20
+				GF_automated_city_districts_upkeep_mult = -0.15
+				mult = owner.value:scripted_modifier_mult|MODIFIER|GF_decision_GOSPLAN_effect_mult|
+			}
+			target_modifier = {
+				trade_value_mult = -0.20
+			}
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = GF_GOSPLAN_finish_tooltip
+		hidden_effect = {
+			create_message = {
+				type = MESSAGE_TYPE_GF_PLANET_GOSPLAN_ENDED
+				localization = MESSAGE_GF_PLANET_GOSPLAN_ENDED_DESC
+				days = 30
+				target = target
+				variable = {
+					type = name
+					localization = PLANET
+					scope = target
+				}
+			}
+			destroy_situation = this
+		}
+	}
+
+	approach = {
+		name = GF_situation_GOSPLAN_approach_slow
+		icon = GFX_situation_approach_energy_credits
+		icon_background = GFX_situation_approach_bg_yellow
+
+		on_select = {
+			custom_tooltip = GF_situation_GOSPLAN_approach_slow_tooltip
+		}
+
+		modifier = {
+			GF_decision_GOSPLAN_effect_mult = -0.6
+		}
+
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = { current_stage = stage_1 }
+				energy = 0.30
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				trigger = { current_stage = stage_2 }
+				energy = 0.60
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				trigger = { current_stage = stage_3 }
+				energy = 0.90
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				unity = 0.40
+				mult = target.trigger:planet_size
+			}
+		}
+		ai_weight = { base = 5 }
+	}
+
+	approach = {
+		name = GF_situation_GOSPLAN_approach_default
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		default = yes
+
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = { current_stage = stage_1 }
+				energy = 0.60
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				trigger = { current_stage = stage_2 }
+				energy = 1.20
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				trigger = { current_stage = stage_3 }
+				energy = 1.80
+				mult = target.trigger:planet_size
+			}
+			upkeep = {
+				unity = 0.80
+				mult = target.trigger:planet_size
+			}
+		}
+		ai_weight = { base = 10 }
+	}
+}

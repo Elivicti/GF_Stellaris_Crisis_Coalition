@@ -75,3 +75,10 @@ GF_automated_city_districts_factory_assembly_speed_mult = {
 	percentage = yes
 	category = planet
 }
+
+GF_decision_GOSPLAN_effect_mult = {
+	icon = mod_country_election_cost
+	good = yes
+	percentage = yes
+	category = country
+}
