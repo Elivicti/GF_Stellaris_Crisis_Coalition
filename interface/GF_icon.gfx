@@ -5,6 +5,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/icons/agenda_icons/GF_agenda_automation.dds"
 	}
 
+	# messages
+	spriteType = {
+		name = "GFX_message_GF_decision_started"
+		texturefile = "gfx/interface/icons/message/message_GF_decision_started.dds"
+	}
+
 	# armies
 	spriteType = {
 		name = "GFX_GF_army_type_armored_train"
