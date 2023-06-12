@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
 
- GF_councilor_ruler_commonwealth:0 "自动化处理核心"
+ GF_councilor_ruler_commonwealth:0 "$GF_RT_OGAS$"
  GF_councilor_ruler_commonwealth_desc:0 "由绝对智能的AI对国家进行管理。"
 
  GF_councilor_ruler_subnet:0 "子网自动化处理核心"
@@ -38,6 +38,7 @@
  GF_councilor_90Wish: "90Wish首席负责人"
  GF_councilor_90Wish_female: "$GF_councilor_90Wish$"
  GF_councilor_90Wish_desc: "$TITLE$促进对未知的探索和新兴技术的发展。"
+ GF_councilor_90Wish_effect: "每研究一个£physics£ £society£ £engineering£科技，所有与该席位领袖§Y类别相同§!的领袖立即获得§G50§!经验"
  GF_councilor_IOP: "I.O.P首席执行官"
  GF_councilor_IOP_female: "$GF_councilor_IOP$"
  GF_councilor_IOP_desc: "$TITLE$负责统筹协调管理各地的人形制造任务。"

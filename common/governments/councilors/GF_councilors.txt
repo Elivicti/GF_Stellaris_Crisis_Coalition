@@ -141,8 +141,13 @@ GF_councilor_GK = {
 
 GF_councilor_16LAB = {
 	civic = GF_civic_16LAB
-	leader_class = { scientist }
-	is_leader_possible = { leader_class = scientist }
+	leader_class = { scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
 
 	modifier = {
 		category_computing_draw_chance_mult = 0.05
@@ -153,13 +158,21 @@ GF_councilor_16LAB = {
 
 GF_councilor_90Wish = {
 	civic = GF_civic_90WISH
-	leader_class = { scientist }
-	is_leader_possible = { leader_class = scientist }
+	leader_class = { scientist governor }
+	is_leader_possible = {
+		OR = {
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
 
 	modifier = {
-		science_ship_survey_speed = 0.05
-		species_leader_exp_gain = 0.05
+		science_ship_survey_speed = 0.10
+		ship_anomaly_generation_chance_mult = 0.05
+		ship_anomaly_research_speed_mult = 0.05
 	}
+
+	custom_tooltip_with_modifiers = GF_councilor_90Wish_effect
 }
 
 
@@ -170,7 +183,7 @@ GF_councilor_IOP = {
 
 	modifier = {
 		planet_building_GF_doll_factory_build_speed_mult = 0.025
-		GF_doll_produces_mult = 0.01
+		GF_doll_produces_mult = 0.015
 	}
 }
 
@@ -188,8 +201,9 @@ GF_councilor_GOSPLAN = {
 	}
 
 	modifier = {
-		planet_structures_alloys_upkeep_mult = -0.02
+		megastructures_alloys_cost_mult = -0.02
 		megastructures_alloys_upkeep_mult = -0.02
+		GF_decision_GOSPLAN_effect_mult = 0.02
 	}
 }
 

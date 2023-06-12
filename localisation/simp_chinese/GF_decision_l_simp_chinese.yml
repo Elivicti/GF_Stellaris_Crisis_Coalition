@@ -21,6 +21,12 @@
  decision_GF_auto_colony_off_desc:0 "经过人形先遣队的不断建设与改造后，原本目标星球不适宜的环境已能满足我们的生存需要，我们将终止人形的自动化殖民协议并亲自殖民这个星球，向着星空的探索与扩张迈出胜利一步。"
  decision_GF_auto_colony_off_effect_tooltip:0 "移除§Y$col_GF_auto_colony$§!规划类型\n移除§Y$building_GF_auto_colony_capital$§!"
 
+ decision_GF_GOSPLAN:0 "五年计划"
+ decision_GF_GOSPLAN_desc:0 "为期五年的经济生产计划，通过对人力及物质资源的统一规划和对重大经济活动的调控来提高星球的生产效益。"
+ GF_GOSPLAN_ongoing:0 "£trigger_no£ $decision_GF_GOSPLAN$已在执行"
+ decision_GF_GOSPLAN_effect:0 "开始局势§Y$GF_situation_GOSPLAN$§!：在§Y五年§! £time£ 内分阶段获得§Y生产§!和§Y维护减免§!的增益效果\n基础维护费：\n\t\t第一阶段: £energy£§Y0.6§!  £unity£§Y0.8§!\n\t\t第二阶段: £energy£§Y1.2§!  £unity£§Y0.8§!\n\t\t第三阶段: £energy£§Y1.8§!  £unity£§Y0.8§!\n§E经济计划的维护费将随着§Y星球规模§! £planet£ 的增大而增大§!"
+ MESSAGE_GF_PLANET_GOSPLAN_STARTED:0 "五年经济计划已启动"
+ MESSAGE_GF_PLANET_GOSPLAN_STARTED_DESC:0 "五年经济计划已于§Y$PLANET$§!正式启动"
 
  decision_GF_rebuild_purify_wall:0 "重建隔离墙"
  decision_GF_rebuild_purify_wall_desc:0 "没有隔离墙的保护，E.L.I.D感染者集群将会对城市构成极大的威胁。"

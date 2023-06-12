@@ -59,3 +59,23 @@ message_type = {
 	sound = "event_air_raid_siren"
 	ping = "mixed_notification_red"
 }
+
+message_type = {
+	key = MESSAGE_TYPE_GF_PLANET_GOSPLAN_STARTED
+	icon = "GFX_message_GF_decision_started"
+	icon_frame = 1
+
+	name = "MESSAGE_GF_PLANET_GOSPLAN_STARTED"
+	sound = "notification"
+	ping = "mixed_notification_green"
+}
+
+message_type = {
+	key = MESSAGE_TYPE_GF_PLANET_GOSPLAN_ENDED
+	icon = "GFX_message_conditional_effect_lost"
+	icon_frame = 1
+
+	name = "MESSAGE_GF_PLANET_GOSPLAN_ENDED"
+	sound = "notification"
+	ping = "mixed_notification_yellow"
+}

@@ -12,6 +12,7 @@ on_blocker_cleared = {
 on_tech_increased = {
 	events = {
 		GF_alaya.0	# “遗迹技术”研究完成
+		GF_evt_misc.200
 	}
 }
 

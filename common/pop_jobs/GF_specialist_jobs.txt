@@ -72,27 +72,17 @@ GF_liaison = {
 		is_enslaved = no
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		OR = {
-			AND = {
-				NOT = { has_trait = GF_trait_doll }
-				complex_specialist_job_check_trigger = yes
-			}
-			GF_can_doll_fill_specialist_job = yes
-		}
-	}
 
 	planet_modifier = {
 		planet_administrators_produces_mult = 0.05
-		planet_jobs_produces_mult = 0.025
-		planet_jobs_robotic_produces_mult = 0.025
+		planet_jobs_robotic_produces_mult = 0.05
 	}
 
 	triggered_pop_modifier = {
 		potential = {
 			owner = { has_valid_civic = GF_civic_90WISH }
 		}
-		planet_jobs_produces_mult = 0.025
+		planet_jobs_produces_mult = 0.05
 	}
 
 	resources = {
@@ -130,15 +120,6 @@ GF_programmer = {
 		is_sapient = yes
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		OR = {
-			AND = {
-				NOT = { has_trait = GF_trait_doll }
-				complex_specialist_job_check_trigger = yes
-			}
-			GF_can_doll_fill_specialist_job = yes
-		}
-	}
 
 	resources = {
 		category = GF_planet_jobs_doll_programmers
@@ -176,15 +157,6 @@ GF_URNC_secretary = {
 		is_enslaved = no
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		OR = {
-			AND = {
-				NOT = { has_trait = GF_trait_doll }
-				complex_specialist_job_check_trigger = yes
-			}
-			GF_can_doll_fill_specialist_job = yes
-		}
-	}
 
 	resources = {
 		category = planet_administrators
@@ -272,15 +244,6 @@ GF_AU_consultant = {
 		is_enslaved = no
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		OR = {
-			AND = {
-				NOT = { has_trait = GF_trait_doll }
-				complex_specialist_job_check_trigger = yes
-			}
-			GF_can_doll_fill_specialist_job = yes
-		}
-	}
 
 	resources = {
 		category = planet_researchers
@@ -412,15 +375,6 @@ GF_GK_commander = {
 		is_enslaved = no
 	}
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		OR = {
-			AND = {
-				NOT = { has_trait = GF_trait_doll }
-				complex_specialist_job_check_trigger = yes
-			}
-			GF_can_doll_fill_specialist_job = yes
-		}
-	}
 
 	resources = {
 		category = planet_executives
@@ -504,9 +458,6 @@ GF_collapser = {
 	}
 
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		hidden_trigger = { exists = owner }
-	}
 
 	resources = {
 		category = GF_planet_collapser

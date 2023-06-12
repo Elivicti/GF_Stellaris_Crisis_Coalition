@@ -395,3 +395,53 @@ decision_GF_deploy_armored_train = {
 		}
 	}
 }
+
+decision_GF_GOSPLAN = {
+	owned_planets_only = yes
+	enactment_time = 30
+	resources = {
+		category = decisions
+		cost = {
+			unity = 10
+			mult = trigger:planet_size
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_valid_civic = GF_civic_GOSPLAN
+		}
+	}
+	allow = {
+		custom_tooltip = {
+			fail_text = GF_GOSPLAN_ongoing
+			NOT = { has_planet_flag = flag_p_GF_GOSPLAN_ongoing }
+		}
+	}
+	effect = {
+		custom_tooltip = decision_GF_GOSPLAN_effect
+		hidden_effect = {
+			owner = {
+				start_situation = {
+					type = GF_situation_GOSPLAN
+					target = prev
+				}
+			}
+			set_timed_planet_flag = {
+				flag = flag_p_GF_GOSPLAN_ongoing
+				months = 60
+			}
+			create_message = {
+				type = MESSAGE_TYPE_GF_PLANET_GOSPLAN_STARTED
+				localization = MESSAGE_GF_PLANET_GOSPLAN_STARTED_DESC
+				days = 30
+				target = this
+				variable = {
+					type = name
+					localization = PLANET
+					scope = this
+				}
+			}
+		}
+	}
+}

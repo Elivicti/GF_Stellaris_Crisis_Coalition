@@ -71,7 +71,7 @@
  GF_automated_city_construction_desc_special:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCitySpecialResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+4§!"
 
  GF_automated_city_construction_fail_tooltip:0 "$pc_GF_automated_city$建设将被取消，所有已建设的设施将被拆除。"
- GF_automated_city_construction_complete_tooltip:0 "[target.GetName]将更改为§H$pc_GF_automated_city$§!"
+ GF_automated_city_construction_complete_tooltip:0 "[target.GetName]将更改为§H$pc_GF_automated_city$§!。"
 
  GF_automated_city_construction_monthly_change_tooltip:0 "每月建设进度"
  GF_automated_city_construction_no_threads:0 "OGAS线程不足"
@@ -82,3 +82,16 @@
  GF_automated_city_construction_approach_normal_effect_desc:0 ""
  GF_automated_city_construction_approach_speed_up:0 "加快建设"
  GF_automated_city_construction_approach_speed_up_effect_desc:0 "每月建设进度: §G+1§!"
+
+
+# 五年经济计划
+ GF_situation_GOSPLAN:0 "经济计划"
+ GF_situation_GOSPLAN_type:0 "$GF_situation_GOSPLAN$"
+ GF_situation_GOSPLAN_desc:0 "为期五年的发展计划，对[target.GetName]的人力与物质资源进行统一规划，有计划地安排重大经济活动，引导和调节经济运行方向，以提高生产效益。"
+ GF_situation_GOSPLAN_approach_slow:0 "降低开支"
+ GF_situation_GOSPLAN_approach_slow_tooltip:0 "降低用于经济计划的预算以节省开支，但这同样会降低计划带来的增益。"
+ GF_situation_GOSPLAN_approach_default:0 "正常开支"
+ GF_GOSPLAN_finish_tooltip:0 "$GF_situation_GOSPLAN$完成。"
+
+ MESSAGE_GF_PLANET_GOSPLAN_ENDED:0 "五年经济计划已结束"
+ MESSAGE_GF_PLANET_GOSPLAN_ENDED_DESC:0 "§Y$PLANET$§!的五年经济计划已结束"

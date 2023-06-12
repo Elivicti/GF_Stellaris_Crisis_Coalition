@@ -59,7 +59,12 @@ building_GF_zener_network_center_1 = {
 	}
 
 	triggered_desc = {
+		trigger = { owner = { NOT = { has_valid_civic = GF_civic_90WISH } } }
 		text = job_GF_liaison_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { has_valid_civic = GF_civic_90WISH } }
+		text = job_GF_liaison_effect_90WISH_desc
 	}
 
 	ai_weight = {
@@ -133,7 +138,12 @@ building_GF_zener_network_center_2 = {
 	}
 
 	triggered_desc = {
+		trigger = { owner = { NOT = { has_valid_civic = GF_civic_90WISH } } }
 		text = job_GF_liaison_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { has_valid_civic = GF_civic_90WISH } }
+		text = job_GF_liaison_effect_90WISH_desc
 	}
 
 	ai_weight = {
@@ -207,7 +217,12 @@ building_GF_zener_network_center_3 = {
 	}
 
 	triggered_desc = {
+		trigger = { owner = { NOT = { has_valid_civic = GF_civic_90WISH } } }
 		text = job_GF_liaison_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { has_valid_civic = GF_civic_90WISH } }
+		text = job_GF_liaison_effect_90WISH_desc
 	}
 
 	ai_weight = {
@@ -304,7 +319,12 @@ building_GF_zener_network_center_4 = {
 	}
 
 	triggered_desc = {
+		trigger = { owner = { NOT = { has_valid_civic = GF_civic_90WISH } } }
 		text = job_GF_liaison_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { has_valid_civic = GF_civic_90WISH } }
+		text = job_GF_liaison_effect_90WISH_desc
 	}
 
 	ai_weight = {
