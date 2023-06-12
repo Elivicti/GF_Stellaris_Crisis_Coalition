@@ -104,23 +104,38 @@ country_event = {
 				save_global_event_target_as = GF_ogas_country
 			}
 		}
-		event_target:GF_ogas_country = { establish_communications_no_message = prev }
+		random_owned_species = {
+			limit = { is_archetype = GF_ANDROID }
+			save_event_target_as = GF_doll_species
+		}
+
+		event_target:GF_ogas_country = {
+			establish_communications_no_message = prev
+			create_species = {
+				class = event_target:GF_doll_species
+				name = "GF_ANDROID"
+				portrait = event_target:GF_doll_species
+				homeworld = event_target:GF_home_world
+				namelist = event_target:GF_doll_species
+				gender = event_target:GF_doll_species
+				traits = { trait = GF_trait_doll }
+				effect = {
+					save_event_target_as = GF_ogas_species
+				}
+			}
+		}
 		save_global_event_target_as = GF_ogas_owner
 		set_country_flag = flag_GF_can_contact_OGAS
 		set_country_flag = flag_GF_ogas_owner
 
 		# Set ruler basic characteristics
-		random_owned_species = {
-			limit = { is_archetype = GF_ANDROID }
-			save_event_target_as = GF_doll_species
-		}
 		ruler = {
 			save_event_target_as = old_ruler
 		}
 		event_target:GF_ogas_country = {
 			clone_leader = {
 				target = prev.ruler
-				species = event_target:GF_doll_species
+				species = event_target:GF_ogas_species
 				event_leader = yes
 
 				skip_background_generation = yes
@@ -199,11 +214,7 @@ country_event = {
 			name = random
 			adjective = random
 			name_list = HUMAN1
-			traits = {
-				trait = trait_adaptive
-				trait = trait_nomadic
-				trait = trait_wasteful
-			}
+			traits = random
 			effect = {
 				save_event_target_as = target_species
 			}
