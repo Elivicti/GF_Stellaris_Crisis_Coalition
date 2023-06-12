@@ -9,6 +9,9 @@
 
  mod_planet_structures_alloys_upkeep_mult:0 "建筑与区划 £alloys£ 合金维护费"
 
+ mod_leader_governors_unity_upkeep_mult:0 "总督 £unity£ $unity$维护费"
+ mod_leader_governors_gf_core_chip_upkeep_add:0 "总督 £gf_core_chip£ $gf_core_chip$维护费"
+
 ############ economics
  GF_ship_collapse_weapons:0 "坍塌武器"
  GF_ship_collapse_armors:0 "坍塌装甲"

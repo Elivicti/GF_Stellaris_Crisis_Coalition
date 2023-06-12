@@ -58,6 +58,8 @@ GF_trait_leader_ogas_2 = {
 
 	self_modifier = {
 		species_leader_exp_gain = 0.20
+		leader_governors_unity_upkeep_mult = -0.50
+		leader_governors_gf_core_chip_upkeep_add = 1.0
 	}
 	modifier = {
 		country_unity_produces_mult = 0.5
