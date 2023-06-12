@@ -4,6 +4,7 @@
  mod_megastructures_produces_mult:0 "巨型结构产出"
  mod_megastructures_upkeep_mult:0 "巨型结构维护费"
  mod_megastructures_cost_mult:0 "巨型结构花费"
+ mod_megastructures_alloys_cost_mult:0 "巨型结构 £alloys£ 合金花费"
  mod_megastructures_alloys_upkeep_mult:0 "巨型结构 £alloys£ 合金维护费"
 
  mod_planet_structures_alloys_upkeep_mult:0 "建筑与区划 £alloys£ 合金维护费"
@@ -25,8 +26,12 @@
  mod_GF_ship_collapse_weapons_energy_upkeep_mult:0 "$GF_ship_collapse_weapons$ £energy£ 能量币维护费"
 
  GF_planet_jobs_doll_programmers:0 "云图技术员"
- mod_GF_planet_jobs_doll_programmers_produces_mult:0 "$GF_planet_jobs_doll_programmers$产出"
- mod_GF_planet_jobs_doll_programmers_upkeep_mult:0 "$GF_planet_jobs_doll_programmers$维护费"
+ mod_GF_planet_jobs_doll_programmers_produces_mult:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$产出"
+ mod_GF_planet_jobs_doll_programmers_upkeep_mult:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$维护费"
+ mod_GF_planet_jobs_doll_programmers_physics_research_produces_add:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$产出的 £physics£ $physics_research$"
+ mod_GF_planet_jobs_doll_programmers_society_research_produces_add:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$产出的 £society£ $society_research$"
+ mod_GF_planet_jobs_doll_programmers_engineering_research_produces_add:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$产出的 £engineering£ $engineering_research$"
+ mod_GF_planet_jobs_doll_programmers_consumer_goods_upkeep_add:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$ £consumer_goods£ $consumer_goods$维护费"
 
 
  mod_job_GF_collapser_add:0 "坍塌反应技师岗位"
@@ -147,5 +152,6 @@
  mod_GF_system_maintenance:0 "系统维护度"
  mod_GF_automated_city_districts_factory_assembly_speed_mult:0 "$district_GF_automated_factory$生产的 £mod_planet_pop_assembly_mult£ 人口组装"
 
+ mod_GF_decision_GOSPLAN_effect_mult:0 "经济计划效果"
 #####
  mod_district_GF_assembly_max:0 "$district_GF_assembly$最大建造数量"

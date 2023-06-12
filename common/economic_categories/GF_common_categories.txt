@@ -54,6 +54,10 @@ GF_planet_jobs_doll_programmers = {
 		upkeep
 		produces
 	}
+	generate_add_modifiers = {
+		upkeep
+		produces
+	}
 }
 
 GF_planet_URNC_commissioner = {
