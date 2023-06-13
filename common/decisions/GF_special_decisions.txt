@@ -110,7 +110,7 @@ decision_GF_auto_colony_off = {
 }
 
 decision_GF_automated_city_project = {
-	icon = default
+	icon = decision_GF_automated_city_project
 	owned_planets_only = yes
 	resources = {
 		category = decisions
