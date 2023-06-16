@@ -247,6 +247,12 @@ GF_convert_to_OGAS_subnet = {
 	# 		copy_ethos_and_authority = event_target:GF_vassal_subnet
 	# 	}
 	# }
+	event_target:GF_ogas_owner = {
+		random_owned_species = {
+			limit = { has_trait = GF_trait_doll }
+			save_event_target_as = doll_species
+		}
+	}
 
 	store_country_backup_data = {
 		flag = yes
@@ -264,16 +270,30 @@ GF_convert_to_OGAS_subnet = {
 	ruler = {
 		exile_leader_as = GF_OGAS_subnet_previous_ruler
 	}
-	clone_leader = {
-		target = event_target:GF_ogas_leader
-		effect = {
-			set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
-			save_event_target_as = GF_ogas_leader_subnet
-			remove_trait = GF_trait_leader_doll
-			remove_trait = GF_trait_leader_ogas_2
-			remove_trait = GF_trait_leader_ogas
-			add_trait = GF_trait_leader_ogas_subnet_core
+	event_target:GF_ogas_country = {
+		clone_leader = {
+			target = event_target:GF_ogas_leader
+			event_leader = yes
+
+			skip_background_generation = yes
+			background_ethic = ethic_materialist
+			custom_description = GF_ogas_subnet_leader_desc
+			background_planet = event_target:GF_home_world
+
+			effect = {
+				set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
+				set_leader_flag = legendary_leader
+				save_event_target_as = GF_ogas_leader_subnet
+				remove_trait = GF_trait_leader_doll
+				remove_trait = GF_trait_leader_ogas_2
+				remove_trait = GF_trait_leader_ogas
+				add_trait = GF_trait_leader_ogas_subnet_core
+			}
 		}
+		establish_communications_no_message = prev
+	}
+	event_target:GF_ogas_leader_subnet = {
+		set_owner = prev
 	}
 	assign_leader = event_target:GF_ogas_leader_subnet
 	country_event = {
@@ -290,6 +310,13 @@ GF_convert_to_OGAS_subnet = {
 		gf_core_chip = 100
 		
 		unity = 1000
+	}
+	every_owned_pop = {
+		limit = {
+			is_robot_pop = yes
+			NOT = { has_trait = GF_trait_doll }
+		}
+		change_species = event_target:doll_species
 	}
 	every_owned_planet = {
 		# 添加42lab
@@ -324,15 +351,14 @@ GF_convert_to_OGAS_subnet = {
 		}
 		if = {
 			limit = {
-				NOT = {
-					any_owned_pop = { is_same_species_class = prev.ruler.species }
-				}
+				NOT = { any_owned_pop = { is_same_species_class = event_target:doll_species } }
 			}
-			create_pop = { species = prev.ruler.species }
+			create_pop = { species = event_target:doll_species }
 		}
 	}
+	set_country_flag = flag_GF_can_have_advanced_feature
 	give_technology = { tech = GF_tech_doll_assemble }
-	set_built_species = prev.ruler.species
+	set_built_species = event_target:doll_species
 }
 
 GF_deactivate_OGAS_subnet = {
@@ -345,15 +371,15 @@ GF_deactivate_OGAS_subnet = {
 	restore_country_backup_data = yes
 	if = {
 		limit = { ruler = { has_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet } }
-		kill_leader = {
-			type = ruler
-			show_notification = yes
+		ruler = {
+			kill_leader = { show_notification = yes }
 		}
 		set_leader = GF_OGAS_subnet_previous_ruler
 	}
 	remove_communications = event_target:GF_ogas_country
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
+	remove_country_flag = flag_GF_can_have_advanced_feature
 }
 
 @GF_OGAS_mission_duration = 3600

@@ -48,7 +48,7 @@ GF_auth_OGAS_subnet = {
 	ruler_council_position = GF_councilor_ruler_subnet
 
 	playable = {
-		has_country_flag = flag_GF_commonwealth_vassal
+		always = no
 	}
 	possible = {
 		ethics = {
@@ -66,6 +66,7 @@ GF_auth_OGAS_subnet = {
 	country_modifier = {
 		country_admin_cap_add = 50
 		planet_pops_robotics_upkeep_mult = -0.05
+		country_base_gf_core_chip_produces_add = 1
 	}
 
 	tags = {
