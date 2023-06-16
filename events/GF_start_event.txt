@@ -141,6 +141,7 @@ country_event = {
 				skip_background_generation = yes
 				background_ethic = ethic_materialist
 				custom_description = GF_ogas_leader_desc
+				background_planet = event_target:GF_home_world
 
 				effect = {
 					remove_trait = GF_trait_leader_doll
@@ -173,6 +174,12 @@ country_event = {
 		country_event = { id = GF_ogas.110	 days =  5 }
 		country_event = { id = GF_elid.0	 days = 30 } # initialize elid attack events
 		country_event = { id = GF_factions.0 days = 16 }
+
+		set_policy = {
+			policy = GF_doll_work_policy
+			option = GF_doll_work_policy_low
+			cooldown = yes
+		}
 	}
 
 	option = {
@@ -189,6 +196,13 @@ country_event = {
 					}
 				}
 				else = { set_species_flag = flag_GF_GAVIRUL_species }
+			}
+			every_owned_pop = {
+				limit = {
+					has_trait = GF_trait_doll
+					NOT = { is_pop_category = worker }
+				}
+				clear_pop_category = yes
 			}
 			ruler = { change_background_job = none }
 		}
