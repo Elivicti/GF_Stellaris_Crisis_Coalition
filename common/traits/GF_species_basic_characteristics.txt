@@ -21,98 +21,36 @@ GF_trait_doll = {
 		pop_demotion_time_mult = -2
 		army_damage_mult = 0.2
 		planet_jobs_worker_produces_mult = 0.10
+		planet_jobs_specialist_produces_mult = -0.50
+		planet_jobs_ruler_produces_mult = -0.50
 	}
 
 	custom_tooltip_with_modifiers = GF_trait_doll_tooltip
 
-	# triggered_pop_modifier = {
-	# 	potential = { always = yes }
-		
-	# 	# 核心维护
-	# 	pop_category_workers_gf_core_chip_upkeep_add = 0.01
-	# 	pop_category_specialists_gf_core_chip_upkeep_add = 0.01
-	# 	pop_category_rulers_gf_core_chip_upkeep_add = 0.01
-
-
-	# 	# 食物维护
-	# 	pop_category_workers_food_upkeep_add = 0.5
-	# 	pop_category_specialists_food_upkeep_add = 0.5
-	# 	pop_category_rulers_food_upkeep_add = 0.5
-	# }
-
 	triggered_pop_modifier = {
 		potential = { is_being_purged = no }
 		planet_jobs_produces_mult = 1
-		mult = modifier:GF_doll_produces_mult
-	}
-
-	## GF_doll_right_policy
-	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_doll_right_full }
-		}
-		key = GF_doll_right_policy_full
-		planet_jobs_produces_mult = 0.10
+		mult = value:GF_doll_produces_mult
 	}
 
 	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_doll_right_limited }
-		}
-		key = GF_doll_right_policy_limited
-		planet_jobs_produces_mult = 0.05
-		planet_pops_consumer_goods_upkeep_mult = -0.10
-		pop_political_power = -0.25
+		planet_pops_upkeep_mult = 1
+		mult = modifier:GF_doll_upkeep_mult
 	}
 
 	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_doll_right_servitude }
-		}
-		key = GF_doll_right_policy_servitude
-		planet_pops_consumer_goods_upkeep_mult = -0.15
-		pop_political_power = -0.50
+		planet_pops_consumer_goods_upkeep_mult = 1
+		mult = modifier:GF_doll_consumer_goods_upkeep_mult
 	}
 
 	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_doll_right_low }
-		}
-		key = GF_doll_right_policy_low
-		planet_pops_consumer_goods_upkeep_mult = -10
-		pop_political_power = -0.80
-	}
-
-	## GF_run_mode_policy
-	# triggered_pop_modifier = {
-	# 	potential = {
-	# 		owner = { has_policy_flag = GF_run_mode_policy_normal }
-	# 	}
-	# 	planet_jobs_produces_mult = 0.05
-	# }
-
-	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_run_mode_policy_energy }
-		}
-		key = GF_run_mode_policy_energy
-		planet_pops_upkeep_mult = -0.05
+		pop_political_power = 1
+		mult = modifier:GF_doll_political_power
 	}
 
 	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_run_mode_policy_no_food }
-		}
-		key = GF_run_mode_policy_no_food
-		planet_pops_upkeep_mult = -0.05
-	}
-
-	triggered_pop_modifier = {
-		potential = {
-			owner = { has_policy_flag = GF_run_mode_policy_overload }
-		}
-		key = GF_run_mode_policy_overload
-		planet_pops_upkeep_mult = -0.15
+		pop_resettlement_cost_mult = 1
+		mult = modifier:GF_doll_resettlement_cost_mult
 	}
 }
 

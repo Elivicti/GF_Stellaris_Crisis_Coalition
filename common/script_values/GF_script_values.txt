@@ -178,3 +178,21 @@ GF_generate_job_from_unemployed_pops = {
 		mode = add
 	}
 }
+
+# scope = pop
+GF_doll_produces_mult = {
+	base = 0
+	add = modifier:GF_doll_produces_mult
+	modifier = {
+		is_pop_category = ruler
+		add = modifier:GF_doll_cat_ruler_produces_mult
+	}
+	modifier = {
+		is_pop_category = specialist
+		add = modifier:GF_doll_cat_specialist_produces_mult
+	}
+	modifier = {
+		is_pop_category = worker
+		add = modifier:GF_doll_cat_worker_produces_mult
+	}
+}
