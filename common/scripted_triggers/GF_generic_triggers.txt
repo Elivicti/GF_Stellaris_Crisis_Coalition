@@ -41,7 +41,7 @@ GF_potential_trigger = {
 GF_potential_trigger_advanced = {
 	OR = {
 		has_authority = GF_auth_commonwealth
-		is_valid_GF_OGAS_subnet = yes
+		has_country_flag = flag_GF_can_have_advanced_feature
 	}
 }
 
