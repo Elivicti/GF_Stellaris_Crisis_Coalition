@@ -29,7 +29,12 @@ GF_doll = {
 		upkeep = {
 			trigger = {
 				is_being_purged = no
-				owner = { NOT = { has_policy_flag = GF_run_mode_policy_no_food } }
+				owner = {
+					NOR = {
+						has_policy_flag = GF_run_mode_policy_no_food
+						has_policy_flag = GF_run_mode_policy_overload
+					}
+				}
 			}
 			food = 0.5
 		}

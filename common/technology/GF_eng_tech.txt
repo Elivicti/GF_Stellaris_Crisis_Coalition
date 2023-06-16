@@ -82,6 +82,10 @@ GF_tech_mind_upgrade_1 = {
 		}
 	}
 
+	modifier = {
+		GF_doll_cat_specialist_produces_mult = 0.50
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0
@@ -126,12 +130,9 @@ GF_tech_mind_upgrade_2 = {
 		GF_potential_trigger_advanced = yes
 	}
 	gateway = GF_tech_gateway_doll_modding
-	
-	prereqfor_desc = {
-		custom = {
-			title = "feature_GF_doll_mind_upgrade"
-			desc = "feature_GF_doll_mind_upgrade_desc"
-		}
+
+	modifier = {
+		GF_doll_cat_ruler_produces_mult = 0.50
 	}
 
 	weight_modifier = {
