@@ -268,7 +268,8 @@ GF_convert_to_OGAS_subnet = {
 	}
 	add_intel = { amount = 100 who = from }
 	ruler = {
-		exile_leader_as = GF_OGAS_subnet_previous_ruler
+		save_event_target_as = GF_OGAS_subnet_previous_ruler
+		set_leader_flag = flag_GF_OGAS_subnet_previous_ruler
 	}
 	event_target:GF_ogas_country = {
 		clone_leader = {
@@ -282,7 +283,9 @@ GF_convert_to_OGAS_subnet = {
 
 			effect = {
 				set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
-				set_leader_flag = legendary_leader
+				set_leader_flag = legendary_leader				# 传奇领袖
+				set_leader_flag = immune_to_negative_traits		# 免疫负面特质
+				set_leader_flag = leader_death_events_blocked   # 禁止原版死亡事件
 				save_event_target_as = GF_ogas_leader_subnet
 				remove_trait = GF_trait_leader_doll
 				remove_trait = GF_trait_leader_ogas_2
@@ -359,6 +362,10 @@ GF_convert_to_OGAS_subnet = {
 	set_country_flag = flag_GF_can_have_advanced_feature
 	give_technology = { tech = GF_tech_doll_assemble }
 	set_built_species = event_target:doll_species
+	set_variable = {
+		which = v_GF_subnet_duration_months
+		value = 1
+	}
 }
 
 GF_deactivate_OGAS_subnet = {
@@ -368,15 +375,39 @@ GF_deactivate_OGAS_subnet = {
 	# 	civics = random
 	# }
 	save_event_target_as = GF_vassal_subnet
-	restore_country_backup_data = yes
-	if = {
-		limit = { ruler = { has_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet } }
-		ruler = {
-			kill_leader = { show_notification = yes }
-		}
-		set_leader = GF_OGAS_subnet_previous_ruler
+	ruler = {
+		save_event_target_as = GF_ogas_leader_subnet
 	}
+	if = {
+		limit = { NOT = { exists = event_target:GF_OGAS_subnet_previous_ruler } }
+		create_leader = {
+			class = governor
+			species = this
+			skill = 1
+			leader_age_max = 27
+
+			effect = {
+				remove_all_traits = yes
+				add_trait_no_notify = trait_ruler_eye_for_talent
+				save_event_target_as = GF_OGAS_subnet_previous_ruler
+				add_skill_without_trait_selection = 3
+			}
+		}
+	}
+	assign_leader = event_target:GF_OGAS_subnet_previous_ruler
+	event_target:GF_ogas_leader_subnet = {
+		kill_leader = { show_notification = no }
+	}
+	restore_country_backup_data = yes
 	remove_communications = event_target:GF_ogas_country
+
+	if = {
+		limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+		event_target:GF_ogas_owner = {
+			GF_check_OGAS_threads_over_cap_effect = { from	= prev }
+		}
+	}
+
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
 	remove_country_flag = flag_GF_can_have_advanced_feature

@@ -291,6 +291,10 @@ country_event = {
 			limit = {
 				any_agreement = { has_active_specialization = GF_specialist_OGAS_subnet }
 			}
+			change_variable = {
+				which = v_GF_subnet_duration_months
+				value = 1
+			}
 			country_event = {
 				id = GF_overlord.1000
 				days = 30
@@ -298,14 +302,6 @@ country_event = {
 		}
 		else = {
 			GF_deactivate_OGAS_subnet = yes
-			if = {
-				limit = {
-					has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
-				}
-				event_target:GF_ogas_owner = {
-					GF_update_OGAS_threads_variable = yes
-				}
-			}
 
 			if = {
 				limit = {
@@ -332,7 +328,19 @@ country_event = {
 country_event = {
 	id = GF_overlord.1010
 	title = GF_overlord.1010.name
-	desc = GF_overlord.1010.desc
+	desc = {
+		trigger = {
+			text = GF_overlord.1010.desc
+			success_text = {
+				text = GF_overlord.1010.desc.prev_ruler
+				ruler = { has_leader_flag = flag_GF_OGAS_subnet_previous_ruler }
+			}
+			fail_text = {
+				text = GF_overlord.1010.desc.no_prev_ruler
+				ruler = { has_leader_flag = flag_GF_OGAS_subnet_previous_ruler }
+			}
+		}
+	}
 
 	picture = GFX_evt_deficit
 	show_sound = evn_ove_briber
@@ -340,9 +348,11 @@ country_event = {
 
 	option = {
 		name = GF_overlord.1010.a
+		custom_tooltip = GF_overlord.1010.a.tooltip
 		add_modifier = {
 			modifier = GF_OGAS_subnet_disconnected
-			years = 5
+			months = 4
+			time_multiplier = v_GF_subnet_duration_months
 		}
 	}
 }

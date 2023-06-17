@@ -7,6 +7,7 @@
  GF_preset_OGAS_subnet:0 "$GF_specialist_OGAS_subnet$"
  GF_preset_OGAS_subnet_desc:0 "$GF_specialist_OGAS_subnet$是一种着重于科研和机器人制造的附属国特化类型，代价是削弱军事能力，且生存上严重依赖于宗主。\n\n§R拥有唯心思潮或巨企政体的国家将极度抗拒转化为此专家类型§!"
  GF_preset_OGAS_subnet_flavor_desc:0 "这个附属国将作为其宗主的大型人工智能网络的一个子节点，专注科研和机器人制造，并每隔固定的时间向宗主输送机械人口。\n\n相对应的，由于他们的核心政务管理严重依赖宗主的大型人工智能网络，且几乎全部的资源都用来为宗主服务，他们十分需要宗主的保护。"
+ GF_ogas_subnet_leader_desc:0 "[This.GetName]是基于[GF_ogas_owner.GetName]的大型计算机网络所研发的子网运算核心，其以仿生自律人形姿态活动，并协助管理帝国的各项事务。"
 
  GF_OGAS_subnet_1_modifier:0 "OGAS子网加成 I"
  GF_OGAS_subnet_1_penalties:0 "OGAS子网惩罚 I"
@@ -55,8 +56,11 @@
  GF_overlord.204.a:0 "已知晓。"
 
  GF_overlord.1010.name:0 "OGAS链接中断"
- GF_overlord.1010.desc:0 "由于我们脱离了原来的宗主[overlord.GetName]，他们断开了OGAS子网的链接，并且回收了许多重要科技，帝国境内的政务管理和科学研究都受到了影响。\n"
+ GF_overlord.1010.desc:0 "由于我们脱离了原来的宗主§Y[overlord.GetName]§!，他们断开了OGAS子网的链接，并且回收了许多重要科技，帝国境内的政务管理和科学研究都受到了影响。\n\n"
+ GF_overlord.1010.desc.prev_ruler:0 "曾担任§Y[ruler.GetTitle]§!一职的§Y[ruler.GetName]§!重新回到了[ruler.GetSheHe]的岗位上，担任管理国家的重任。"
+ GF_overlord.1010.desc.no_prev_ruler:0 "由于§Y前任[ruler.GetTitle]§!已不再为我们效力，一位新领袖，§Y[ruler.GetName]§!，已被选出担任§Y[ruler.GetTitle]§!的职位。"
  GF_overlord.1010.a:0 "唉……"
+ GF_overlord.1010.a.tooltip:0 "§YOGAS子网核心§!已被回收，无法再协助我们管理国家了。"
  GF_overlord.1011.name:0 "OGAS链接中断"
  GF_overlord.1011.desc:0 "由于OGAS子网§Y[from.GetName]§!脱离了掌控，我们已经断开了子网与OGAS的链接，并回收了重要科技，现在他们将不再受益于OGAS管理系统带来的优势。\n"
  GF_overlord.1011.a:0 "已知晓。"
