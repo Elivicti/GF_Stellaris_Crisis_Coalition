@@ -113,7 +113,7 @@ GF_doll_right_policy = {
 		modifier = {
 			GF_ANDROID_pop_happiness = -0.20
 			GF_doll_consumer_goods_upkeep_mult = -2
-			GF_doll_resettlement_cost_mult = -2
+			GF_doll_resettlement_cost_mult = -0.90
 			GF_doll_political_power = -2
 		}
 		policy_flags = { GF_doll_right_low ai_servitude }
