@@ -790,7 +790,7 @@ building_GF_connection_nexus = {
 
 	triggered_planet_modifier = {
 		job_GF_freedom_kingdom_add = 1
-		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|
+		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|append_condition|GF_can_pop_join_freedom_kindom|
 	}
 
 	triggered_planet_modifier = {

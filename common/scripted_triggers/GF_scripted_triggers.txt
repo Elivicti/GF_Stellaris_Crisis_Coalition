@@ -361,3 +361,8 @@ GF_is_computing_center = {
 		is_megastructure_type = GF_computing_center_3
 	}
 }
+
+# scope = pop
+GF_can_pop_join_freedom_kindom = {
+	has_citizenship_rights = yes
+}

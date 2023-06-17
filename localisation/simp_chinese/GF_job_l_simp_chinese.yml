@@ -51,8 +51,8 @@
  job_GF_freedom_kingdom:0 "理想国"
  job_GF_freedom_kingdom_plural:0 "理想国"
  job_GF_freedom_kingdom_desc:0 "虽然没有社会层面上的正式工作，但这里的人们正随心所欲地从事自己的爱好来为社会创造价值。"
- job_GF_freedom_kingdom_effect_desc:0 "£job_GF_freedom_kingdom£ $job_GF_freedom_kingdom$的人口享受着极大丰富的 £consumer_goods£ §Y物质生活§!，创造 £physics_research£ £society_research£ £engineering_research£ §Y价值§!并产出 £unity£ §Y凝聚力§!"
- GF_freedom_kingdom_conditions:0 "仅有机生命和拥有公民权的机械生命才能享受如此的生活。"
+ job_GF_freedom_kingdom_effect_desc:0 "£job_GF_freedom_kingdom£ $job_GF_freedom_kingdom$的人口享受着极大丰富的 £consumer_goods£ §Y 物质生活§!，创造 £physics_research£ £society_research£ £engineering_research£ §Y价值§!并产出 £unity£ §Y凝聚力§!；若 £consumer_goods£ §Y$consumer_goods$§!出现短缺，£job_GF_freedom_kingdom£ 人口将受到 £happiness£ §Y幸福度§!§R惩罚§!"
+ GF_freedom_kingdom_conditions:0 "仅拥有§Y$citizenship_full$§!的人口才能享受如此的生活。"
 ############
  job_GF_GK_commander_effect_desc:0 "£job_GF_GK_commander£ $job_GF_GK_commander_plural$生产 £unity£ §Y凝聚力§!，并提高星球的£amenities£ §Y舒适度§!和 £trade_value£ §Y贸易额§!"
  job_GF_GK_commander_plural:0 "指挥官"

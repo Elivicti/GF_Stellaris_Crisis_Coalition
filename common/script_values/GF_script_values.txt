@@ -173,6 +173,7 @@ GF_generate_job_from_unemployed_pops = {
 					is_unemployed = yes
 					has_job = $job$
 				}
+				$append_condition$ = yes
 			}
 		}
 		mode = add

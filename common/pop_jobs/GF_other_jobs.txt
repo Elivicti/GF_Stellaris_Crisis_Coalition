@@ -11,10 +11,7 @@ GF_freedom_kingdom = {
 	possible = {
 		hidden_trigger = { exists = owner }
 		exists = planet
-		if = {
-			limit = { is_robot_pop = yes }
-			has_citizenship_rights = yes
-		}
+		GF_can_pop_join_freedom_kindom = yes
 	}
 	
 	resources = {

@@ -7,6 +7,7 @@ GF_freedom_class = {
 			is_unemployed = yes
 			is_pop_category = GF_freedom_class
 		}
+		GF_can_pop_join_freedom_kindom = yes
 		exists = planet
 		planet = { is_planet_class = pc_GF_automated_city }
 	}
@@ -96,6 +97,7 @@ GF_freedom_class = {
 		modifier = {
 			set = 10000
 			is_unemployed = yes
+			GF_can_pop_join_freedom_kindom = yes
 		}
 	}
 
@@ -105,7 +107,16 @@ GF_freedom_class = {
 	}
 
 	resettlement_cost = {
-		energy = 100
+		energy = 500
+	}
+
+	resettlement_cost = {
+		trigger = {
+			owner = {
+				NOT = { has_valid_civic = civic_corvee_system }
+			}
+		}
+		unity = 50
 	}
 
 	pop_modifier = {
@@ -114,5 +125,15 @@ GF_freedom_class = {
 		pop_amenities_usage_base = 1
 		pop_happiness = 0.5
 		species_empire_size_mult = -0.25
+	}
+
+	triggered_pop_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_deficit = consumer_goods }
+		}
+		key = consumer_goods_deficit
+		pop_happiness = -0.5
+		planet_jobs_produces_mult = -0.50
 	}
 }
