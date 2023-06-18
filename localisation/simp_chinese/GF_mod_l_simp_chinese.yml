@@ -115,7 +115,7 @@
  mod_job_GF_freedom_kingdom_per_pop_short:0 "每$VALUE$ £pop£ §G+1§! £job_GF_freedom_kingdom£"
  mod_pop_cat_GF_freedom_class_happiness:0 "$pop_cat_GF_freedom_class$阶层幸福度"
 ############
- mod_job_GF_guard_doll_add:0 "警用人形岗位"
+ mod_job_GF_guard_doll_add:0 "安防人形岗位"
  mod_job_GF_guard_doll_per_pop:0 "每$VALUE$个人口提供§G+1§!个$job_GF_guard_doll$岗位"
  mod_job_GF_guard_doll_per_pop_short:0 "\n每$VALUE$ £pop£ §G+1§! £job_GF_guard_doll£\n"
  mod_job_GF_command_doll_add:0 "指挥人形岗位"
