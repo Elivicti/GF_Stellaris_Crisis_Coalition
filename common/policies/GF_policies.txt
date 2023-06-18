@@ -260,7 +260,7 @@ GF_run_mode_policy = {
 			GF_ANDROID_pop_happiness = -0.05
 			GF_doll_cat_ruler_produces_mult = -0.10
 			GF_doll_cat_specialist_produces_mult = -0.05
-			GF_doll_upkeep_mult = -0.05
+			GF_doll_upkeep_mult = -0.10
 		}
 		
 		policy_flags = { GF_run_mode_policy_energy }
@@ -278,7 +278,7 @@ GF_run_mode_policy = {
 			GF_ANDROID_pop_happiness = -0.10
 			GF_doll_cat_ruler_produces_mult = -0.15
 			GF_doll_cat_specialist_produces_mult = -0.10
-			GF_doll_upkeep_mult = -0.05
+			GF_doll_upkeep_mult = -0.20
 		}
 		
 		policy_flags = { GF_run_mode_policy_no_food }
@@ -293,7 +293,7 @@ GF_run_mode_policy = {
 			GF_ANDROID_pop_happiness = -0.20
 			GF_doll_cat_ruler_produces_mult = -0.20
 			GF_doll_cat_specialist_produces_mult = -0.15
-			GF_doll_upkeep_mult = -0.20
+			GF_doll_upkeep_mult = -0.40
 		}
 		
 		policy_flags = { GF_run_mode_policy_overload }
