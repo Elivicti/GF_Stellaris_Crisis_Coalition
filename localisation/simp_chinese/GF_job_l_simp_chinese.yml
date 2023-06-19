@@ -14,6 +14,8 @@
  job_GF_liaison_plural:0 "联络员"
  job_GF_liaison:0 "联络员"
  job_GF_liaison_desc:0 "负责收发、传递齐纳网络信号信息的职位。"
+ job_GF_liaison_effect_desc:0 "£job_GF_liaison£ $job_GF_liaison_plural$消耗£energy£ §Y$energy$§!生产 £unity£ §Y凝聚力§!和 £society£ §Y社会学点数§!，并提高 £mod_planet_jobs_robotic_produces_mult£ §Y$mod_planet_jobs_robotic_produces_mult$§!和§Y[GetAdministratorWithIcon]岗位产出§!"
+ job_GF_liaison_effect_90WISH_desc:0 "£job_GF_liaison£ $job_GF_liaison_plural$消耗£energy£ §Y$energy$§!生产 £unity£ §Y凝聚力§!和 £society£ §Y社会学点数§!，并提高 £mod_planet_jobs_robotic_produces_mult£ §Y$mod_planet_jobs_robotic_produces_mult$§!、§Y$mod_planet_jobs_produces_mult$§!和§Y[GetAdministratorWithIcon]岗位产出§!"
 
  job_GF_collapser:0 "坍塌反应技师"
  job_GF_collapser_plural:0 "坍塌反应技师"
