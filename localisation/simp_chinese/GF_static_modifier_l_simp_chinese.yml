@@ -23,7 +23,7 @@
  GF_gavirul_project_finished:0 "§YGAVIRUL计划§!已完成"
  GF_gavirul_project_finished_desc:0 "历经重重艰险，我们终于完成了物种的蜕变！"
 ################################# 星球
- GF_sercurity_protocol:0 "人形安保协议"
+ GF_sercurity_protocol:0 "人形安全防卫协议"
  GF_sercurity_protocol_desc:0 "§W$job_GF_guard_doll_effect_desc$§!\n\n暴力行为许可与基本战斗程序已下发，所有人形将接受来自政府的统一作战指令。"
  GF_sercurity_protocol_effect_tooltip:0 "£job_GF_guard_doll£ $job_GF_guard_doll_plural$生成的£defense_army£ 人形防御部队: §G+1§!\n$mod_job_GF_guard_doll_add$: §G+5§!\n$mod_planet_jobs_robotic_produces_mult$: §R-25%§!"
  GF_storage_protocol:0 "人形待机模式"

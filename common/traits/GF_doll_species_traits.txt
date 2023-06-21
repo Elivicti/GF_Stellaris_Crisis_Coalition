@@ -219,7 +219,7 @@ GF_trait_sercurity_program = {
 	}
 	modifier = {
 		pop_happiness = 0.2
-		pop_government_ethic_attraction = 0.30
+		pop_government_ethic_attraction = 0.50
 	}
 }
 ######(perk2)
