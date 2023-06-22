@@ -1,3 +1,4 @@
+###罗联相关
 GF_civic_URNC = {
 	icon = "gfx/interface/icons/governments/civics/gf_URNC.dds"
 	potential = {
@@ -30,6 +31,76 @@ GF_civic_URNC = {
 	random_weight = { base = 0 }
 }
 
+GF_civic_FSB = {
+	icon = "gfx/interface/icons/governments/civics/gf_FSB.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_URNC
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_administrators_produces_mult = 0.10
+		planet_stability_add = 5
+	}
+}
+
+GF_civic_KCCO = {
+	icon = "gfx/interface/icons/governments/civics/gf_KCCO.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	possible = {
+		civics = {
+			value = GF_civic_URNC
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		country_naval_cap_mult = 0.1
+		starbase_shipyard_build_speed_mult = 0.2
+		starbase_shipyard_build_cost_mult = -0.2
+		ships_upkeep_mult = -0.2
+	}
+}
+
+GF_civic_GOSPLAN = {
+	icon = "gfx/interface/icons/governments/civics/gf_GOSPLAN.dds"
+	description = "GF_civic_GOSPLAN_effects"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.1
+		planet_jobs_consumer_goods_produces_mult = 0.1
+	}
+}
+
+GF_civic_NHC = {
+	icon = "gfx/interface/icons/governments/civics/gf_NHC.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		pop_growth_speed = 0.1
+		planet_pops_organics_upkeep_mult = -0.1
+	}
+}
+
+###南联相关
 GF_civic_AU = {
 	icon = "gfx/interface/icons/governments/civics/gf_AU.dds"
 	potential = {
@@ -61,55 +132,6 @@ GF_civic_AU = {
 	}
 }
 
-GF_civic_GK = {
-	icon = "gfx/interface/icons/governments/civics/gf_GK.dds"
-	potential = {
-		origin = { value = GF_origin_commonwealth }
-	}
-	possible = {
-		ethics = {
-			NOR = {
-				value = ethic_xenophobe
-				value = ethic_fanatic_xenophobe
-			}
-		}
-		civics = {
-			NOR = {
-				value = GF_civic_AU
-				value = GF_civic_URNC
-			}
-		}
-	}
-	random_weight = { base = 0 }
-	description = "GF_civic_GK_effects"
-	modification = no
-	modifier = {
-		envoys_add = 2
-		trade_value_mult = 0.2
-		country_enclave_capacity_add = 2
-		planet_administrators_produces_mult = -0.05
-	}
-}
-
-GF_civic_FSB = {
-	icon = "gfx/interface/icons/governments/civics/gf_FSB.dds"
-	potential = {
-		authority = {
-			value = GF_auth_commonwealth
-		}
-	}
-	possible = {
-		civics = {
-			value = GF_civic_URNC
-		}
-	}
-	random_weight = { base = 0 }
-	modifier = {
-		planet_administrators_produces_mult = 0.10
-		planet_stability_add = 5
-	}
-}
-
 GF_civic_MID = {
 	icon = "gfx/interface/icons/governments/civics/gf_MID.dds"
 	potential = {
@@ -126,27 +148,6 @@ GF_civic_MID = {
 	modifier = {
 		planet_administrators_produces_mult = 0.10
 		planet_stability_add = 5
-	}
-}
-
-GF_civic_KCCO = {
-	icon = "gfx/interface/icons/governments/civics/gf_KCCO.dds"
-	potential = {
-		authority = {
-			value = GF_auth_commonwealth
-		}
-	}
-	possible = {
-		civics = {
-			value = GF_civic_URNC
-		}
-	}
-	random_weight = { base = 0 }
-	modifier = {
-		country_naval_cap_mult = 0.1
-		starbase_shipyard_build_speed_mult = 0.2
-		starbase_shipyard_build_cost_mult = -0.2
-		ships_upkeep_mult = -0.2
 	}
 }
 
@@ -190,6 +191,52 @@ GF_civic_driller = {
 	}
 }
 
+GF_civic_scanner = {
+	icon = "gfx/interface/icons/governments/civics/gf_scanner.dds"
+	potential = {
+		authority = {
+			value = GF_auth_commonwealth
+		}
+	}
+	random_weight = { base = 0 }
+	modifier = {
+		planet_jobs_rare_crystals_produces_mult = 0.3
+		planet_jobs_exotic_gases_produces_mult = 0.3
+		planet_jobs_volatile_motes_produces_mult = 0.3
+	}
+}
+
+###格里芬相关
+GF_civic_GK = {
+	icon = "gfx/interface/icons/governments/civics/gf_GK.dds"
+	potential = {
+		origin = { value = GF_origin_commonwealth }
+	}
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+		}
+		civics = {
+			NOR = {
+				value = GF_civic_AU
+				value = GF_civic_URNC
+			}
+		}
+	}
+	random_weight = { base = 0 }
+	description = "GF_civic_GK_effects"
+	modification = no
+	modifier = {
+		envoys_add = 2
+		trade_value_mult = 0.2
+		country_enclave_capacity_add = 2
+		planet_administrators_produces_mult = -0.05
+	}
+}
+
 GF_civic_IOP = {
 	icon = "gfx/interface/icons/governments/civics/gf_IOP.dds"
 	potential = {
@@ -202,7 +249,6 @@ GF_civic_IOP = {
 	description = "GF_civic_IOP_effects"
 	modifier = {
 		GF_automated_city_districts_factory_assembly_speed_mult = 0.10
-		planet_pops_robotics_upkeep_mult = -0.05
 	}
 }
 
@@ -225,50 +271,6 @@ GF_civic_16LAB = {
 	description = "GF_civic_16LAB_effects"
 }
 
-GF_civic_GOSPLAN = {
-	icon = "gfx/interface/icons/governments/civics/gf_GOSPLAN.dds"
-	description = "GF_civic_GOSPLAN_effects"
-	potential = {
-		authority = {
-			value = GF_auth_commonwealth
-		}
-	}
-	random_weight = { base = 0 }
-	modifier = {
-		planet_jobs_alloys_produces_mult = 0.1
-		planet_jobs_consumer_goods_produces_mult = 0.1
-	}
-}
-
-GF_civic_functional_architecture = {
-	icon = "gfx/interface/icons/governments/civics/gf_functional_architecture.dds"
-	description = "GF_civic_functional_architecture_effects"
-	potential = {
-		authority = {
-			value = GF_auth_commonwealth
-		}
-	}
-	random_weight = { base = 0 }
-	modifier = {
-		planet_structures_cost_mult = -0.1
-		planet_structures_upkeep_mult = -0.1
-	}
-}
-
-GF_civic_NHC = {
-	icon = "gfx/interface/icons/governments/civics/gf_NHC.dds"
-	potential = {
-		authority = {
-			value = GF_auth_commonwealth
-		}
-	}
-	random_weight = { base = 0 }
-	modifier = {
-		pop_growth_speed = 0.1
-		planet_pops_organics_upkeep_mult = -0.1
-	}
-}
-
 GF_civic_90WISH = {
 	icon = "gfx/interface/icons/governments/civics/gf_90WISH.dds"
 	potential = {
@@ -283,8 +285,10 @@ GF_civic_90WISH = {
 	}
 }
 
-GF_civic_scanner = {
-	icon = "gfx/interface/icons/governments/civics/gf_scanner.dds"
+###通用
+GF_civic_functional_architecture = {
+	icon = "gfx/interface/icons/governments/civics/gf_functional_architecture.dds"
+	description = "GF_civic_functional_architecture_effects"
 	potential = {
 		authority = {
 			value = GF_auth_commonwealth
@@ -292,8 +296,8 @@ GF_civic_scanner = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		planet_jobs_rare_crystals_produces_mult = 0.3
-		planet_jobs_exotic_gases_produces_mult = 0.3
-		planet_jobs_volatile_motes_produces_mult = 0.3
+		planet_structures_cost_mult = -0.20
+		planet_structures_upkeep_mult = -0.20
+		empire_size_districts_mult = -0.20
 	}
 }

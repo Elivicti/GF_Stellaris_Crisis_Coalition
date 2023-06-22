@@ -198,8 +198,8 @@ GF_trait_zener_protocol = {
 	}
 	custom_tooltip_with_modifiers = GF_trait_zener_protocol_effect
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.15
-		species_empire_size_mult = -0.15
+		planet_jobs_unity_produces_mult = 0.20
+		species_empire_size_mult = -0.10
 	}
 }
 GF_trait_sercurity_program = {
