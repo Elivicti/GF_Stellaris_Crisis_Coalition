@@ -110,19 +110,27 @@ GF_GK = {
 	
 	army_names = {
 		defense_army = {
-			sequential_name = "$O$ 自律小队"
+			sequential_name = "$O$ 安保部队"
 		}
 			
 		assault_army = {
 			sequential_name = "$O$ 战术小队"
 		}
-		
+
+		GF_army_arm_doll = {
+			sequential_name = "$O$ 自律人形梯队"
+		}		
+
+		GF_army_tactical_doll = {
+			sequential_name = "$O$ 战术人形梯队"
+		}
+
 		slave_army = {
-			sequential_name = "$O$ 契约小队"
+			sequential_name = "$O$ 契约资产小组"
 		}
 		
 		clone_army = { 
-			sequential_name = "克隆小组 $O$"
+			sequential_name = "$O$ 克隆资产小组"
 		}
 		
 		robotic_army = {
