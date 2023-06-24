@@ -12,7 +12,7 @@
  GF_doll_right_limited_name:0 "人形权利：有限公民权利"
  GF_doll_right_policy_limited:0 "有限公民权利"
  GF_doll_right_policy_limited_desc:0 "禁止私人或私人单位持有人形，所有人形最终权限设定为国家政权，她们由国家统一制造，并由国家统一安排工作与任务、为社会服务，正常情况下分配一定空间的维护室，同时在基本的能源供给上还提供适当的消费品以满足她们所谓的个性，允许她们依据自身工作与任务提出建议、参与社会管理。\n\n$GF_doll_right_limited_effect$"
- GF_doll_right_limited_effect:0 "的公民权将被锁定在§Y$citizenship_limited$§!\n§G允许§!人形产生领袖"
+ GF_doll_right_limited_effect:0 "人形的公民权将被锁定在§Y$citizenship_limited$§!\n§G允许§!人形产生领袖"
 
  GF_doll_right_servitude_name:0 "人形权利：侍从"
  GF_doll_right_policy_servitude:0 "侍从"

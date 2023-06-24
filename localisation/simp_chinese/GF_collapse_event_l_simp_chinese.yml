@@ -93,7 +93,7 @@
  GF_collect_relic_device_event_chain_desc:0 "我们的科学家建议我们回收遗迹中尚能使用的设施来加强我们的生产。"
  c_GF_devices_collected:0 "遗迹设施已回收"
 
- SP_GF_COLLECT_RELIC_DEVICE:0 "回收§Y[from.GetName]§!上的遗迹设施"
+ SP_GF_COLLECT_RELIC_DEVICE:0 "回收§Y[this.GetName]§!上的遗迹设施"
  SP_GF_COLLECT_RELIC_DEVICE_DESC:0 "这颗星球上的遗迹中还存在尚能使用的遗迹设施，派遣工程船来回收它们。"
 
  GF_alaya.001.name:0 "$GF_collect_relic_device_event_chain_title$"

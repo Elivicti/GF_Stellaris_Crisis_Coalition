@@ -35,7 +35,7 @@
  GF_councilor_16LAB: "16LAB首席科学官"
  GF_councilor_16LAB_female: "$GF_councilor_16LAB$"
  GF_councilor_16LAB_desc: "$TITLE$负责尖端人形技术的研究。"
- GF_councilor_90Wish: "90Wish首席负责人"
+ GF_councilor_90Wish: "90WISH首席负责人"
  GF_councilor_90Wish_female: "$GF_councilor_90Wish$"
  GF_councilor_90Wish_desc: "$TITLE$促进对未知的探索和新兴技术的发展。"
  GF_councilor_90Wish_effect: "\n§E固定效果：§!\n每研究一个£physics£ £society£ £engineering£科技，所有与该席位领袖§Y类别相同§!的领袖立即获得§G50§!经验"

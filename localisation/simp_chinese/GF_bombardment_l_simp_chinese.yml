@@ -3,7 +3,7 @@
 
 #### 坍塌液脏弹轨道轰炸
  bombardment_collapsebomb:0 "坍塌液脏弹"
- bombardment_collapsebomb_desc:0 "使用$bombardment_collapsebomb$进行轨道轰炸，对地面上的一切设施甚至地形造成巨大破坏。\n—对§Y军团§!造成§H巨大§!伤害\n—对§Y星球§!造成§H巨大§!伤害\n—对§Y人口§!造成§H巨大§!伤害\n—将会轰炸不设防的星球，轰炸时有一定概率向星球上添加§R坍塌辐射污染区§!\n—会§R消灭所有人口§!，并在星球破坏度达到§R100%§!时有一定概率使星球转化为§R$pc_GF_collapsed$§!"
+ bombardment_collapsebomb_desc:0 "使用$bombardment_collapsebomb$进行轨道轰炸，对地面上的一切设施甚至地形造成巨大破坏。\n—对§Y军团§!造成§H巨大§!伤害\n—对§Y星球§!造成§H巨大§!伤害\n—对§Y人口§!造成§H巨大§!伤害\n—将会轰炸不设防的星球，轰炸时有一定概率向星球上添加§R坍塌辐射污染区§!\n—会§R消灭所有人口§!，并在人口被§R完全消灭§!时，根据§H破坏度§!一定概率使星球转化为§R$pc_GF_collapsed$§!"
 
  MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE:0 "行星被摧毁"
  MESSAGE_GF_PLANET_BOMBARDED_TO_COLLAPSE_DESC:0 "§Y$PLANET$§!被§Y$BOMBARDER$§!的舰队轰炸摧毁"
