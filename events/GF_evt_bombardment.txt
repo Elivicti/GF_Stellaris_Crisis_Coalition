@@ -50,7 +50,7 @@ planet_event = {
 
 		if = {
 			# 居住站不添加污染区，额外增加2破坏度
-			limit = { GF_is_habitat= 2 }
+			limit = { GF_is_habitat = yes }
 			add_planet_devastation = 2
 		}
 		else = {
@@ -191,11 +191,21 @@ planet_event = {
 							who = fromfrom.owner
 							modifier = opinion_collapsed_my_world
 						}
+						add_static_war_exhaustion = {
+							attacker = fromfrom
+							location = prev
+							value_for_planet_destruction = 0.5
+						}
 					}
 					else = {
 						add_opinion_modifier = {
 							who = fromfrom.owner
 							modifier = opinion_collapse_bombarded_my_habitat
+						}
+						add_static_war_exhaustion = {
+							attacker = fromfrom
+							location = prev
+							value_for_planet_destruction = 0.25
 						}
 					}
 
