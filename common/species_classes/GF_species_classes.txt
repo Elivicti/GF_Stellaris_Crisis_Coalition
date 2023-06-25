@@ -16,7 +16,7 @@ GF_doll = {
 	}
 	leader_age_min = 1
 	leader_age_max = 5
-	graphical_culture = GF_doll_01
+	graphical_culture = GF_new_type_01
 	move_pop_sound_effect = "robot_pops_move"
 	trait = "GF_trait_doll"
 
