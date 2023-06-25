@@ -1,257 +1,260 @@
-﻿### 
+﻿### United Nations of Earth
+### Created by Henrik Thyrwall
 
-GF_URNC = {	
+GF_URNC = {
+	category = "GF_new_type"
 	randomized = no
-	
+#	alias = "Human"
+
 	ship_names = {
-		generic = {
-			萨奇 科洛斯特曼 密特雷克斯 筱原 岩本 墨德斯 斯卡拉思科 马克兰珂岚 寇德维尔 里特雅克 约格尔 马克卡贝尔 奥哈利 海狮 巴拉奥 加托 杜里特尔
-		}
-		
+#护卫舰
 		corvette = {
-			"冯格布泽" "冯弗里奇" "冯弗兰格尔" "冯哈尔克特" "冯博因" "冯法尔肯施泰因" 德雷尔 沃夫 克莱因 里克特 沙福尔
-			克利奥帕特拉 康斯坦丁 科黛拉 赛勒斯 达摩克利斯 代达罗斯 达留斯 代奥米德 森林女神 伊莱克特拉 恩底弥翁 埃里伯斯 芬瑞斯 芙蕾雅 吉尔伽美什 戈尔贡 翠鸟 赫卡特
-			豺狼 寒鸦 美洲虎 袋鼠 红隼 "眼镜王蛇" "王鱼" 瓢虫 豹 狮子 蜥蜴 天猫 疯丫头 猫鼬 蚊子 独角鲸 夜鹰 豹猫 逆戟鲸 
-			奥斯普里 潘瑟 皮科克 佩利肯 企鹅镇 彼得雷尔 鸭嘴兽 臭鼬 波丘派恩 普马 巨蟒 响尾蛇 雷文 火蜥蜴 沙丁鱼 天蝎 鲨鱼 伯劳
-			云雀 麻雀 蜘蛛 海星 魔鬼鱼 鹳 鲟鱼 剑鱼 貘 老虎 "虎鲨"秃鹰 海象 金刚狼 阿帕奇 阿兹特克 哥萨克 德尔维希
-			道格拉斯 基思 霍华德 罗素 克莱顿 李 史蒂夫 汤姆 科雷 奥利弗 肯尼思 拉夫 安迪 东尼 泰隆 劳伦斯 帕特里克 哈里 艾伦
-			加西亚 马缇内兹 罗德瑞格兹 弗南德兹 萨恩彻兹 罗普兹 马汀 皮雷兹 格恩扎雷兹 阿尔瓦雷兹 格梅兹 迪亚兹 多米恩格兹 何南德兹
-			火枪手 法老 蒙古 里肯巴克 "约翰保罗琼斯" 德布斯特伊 斯特古什弃尼 苏布拉兹特尔尼 "小罗杰" "疯马" 李希霍芬 博伊恩格顿 
-			弗欧迪果 弗欧加瓦斯 弗欧胡尼斯 弗欧奥利姆巴 弗欧伊瑞萨 弗欧布荷 弗欧瑟瓦 弗欧欧布恩 弗欧弗吉 弗欧阿纳斯 弗欧尤巴 弗欧阿维姆 弗欧欧布拉 弗欧伊娃姆 弗欧伊瑟 弗欧甘恩 弗欧弗雷维斯 弗欧加林 弗欧厄恩 弗欧阿拉布
+			GF_URNC_SHIP_Aardvark GF_URNC_SHIP_Accentor GF_URNC_SHIP_Adder GF_URNC_SHIP_Albatross GF_URNC_SHIP_Alligator GF_URNC_SHIP_Anaconda GF_URNC_SHIP_Antelope GF_URNC_SHIP_Armadillo GF_URNC_SHIP_Asp GF_URNC_SHIP_Badger GF_URNC_SHIP_Bass GF_URNC_SHIP_Beagle GF_URNC_SHIP_Bloodhound GF_URNC_SHIP_Buffalo GF_URNC_SHIP_Bulldog GF_URNC_SHIP_Buzzard GF_URNC_SHIP_Camel GF_URNC_SHIP_Cheetah GF_URNC_SHIP_Cobra GF_URNC_SHIP_Coyote GF_URNC_SHIP_Dingo GF_URNC_SHIP_Dolphin GF_URNC_SHIP_Dragonfly GF_URNC_SHIP_Dromedary GF_URNC_SHIP_Eagle GF_URNC_SHIP_Elephant GF_URNC_SHIP_Falcon GF_URNC_SHIP_Ferret GF_URNC_SHIP_Firefly GF_URNC_SHIP_Fox GF_URNC_SHIP_Gazelle GF_URNC_SHIP_Glowworm GF_URNC_SHIP_GreyWolf GF_URNC_SHIP_Greyhound GF_URNC_SHIP_Haddock GF_URNC_SHIP_Hawk GF_URNC_SHIP_Jackal GF_URNC_SHIP_Jackdaw GF_URNC_SHIP_Jaguar GF_URNC_SHIP_Kangaroo GF_URNC_SHIP_Kestrel GF_URNC_SHIP_KingCobra GF_URNC_SHIP_KingFish GF_URNC_SHIP_Ladybird GF_URNC_SHIP_Leopard GF_URNC_SHIP_Lion GF_URNC_SHIP_Lizard GF_URNC_SHIP_Lynx GF_URNC_SHIP_Mongoose GF_URNC_SHIP_Mosquito GF_URNC_SHIP_Narwhal GF_URNC_SHIP_Nighthawk GF_URNC_SHIP_Ocelot GF_URNC_SHIP_Orca GF_URNC_SHIP_Osprey GF_URNC_SHIP_Panther GF_URNC_SHIP_Peacock GF_URNC_SHIP_Pelican GF_URNC_SHIP_Penguin GF_URNC_SHIP_Petrel GF_URNC_SHIP_Platypus GF_URNC_SHIP_Polecat GF_URNC_SHIP_Porcupine GF_URNC_SHIP_Puma GF_URNC_SHIP_Python GF_URNC_SHIP_Rattlesnake GF_URNC_SHIP_Raven GF_URNC_SHIP_Salamander GF_URNC_SHIP_Sardine GF_URNC_SHIP_Scorpion GF_URNC_SHIP_Shark GF_URNC_SHIP_Shrike GF_URNC_SHIP_Skylark GF_URNC_SHIP_Sparrow GF_URNC_SHIP_Spider GF_URNC_SHIP_Starfish GF_URNC_SHIP_Stingray GF_URNC_SHIP_Barracuda GF_URNC_SHIP_Stork GF_URNC_SHIP_Sturgeon GF_URNC_SHIP_Swordfish GF_URNC_SHIP_Tapir GF_URNC_SHIP_Tiger GF_URNC_SHIP_TigerShark GF_URNC_SHIP_Vulture GF_URNC_SHIP_Walrus GF_URNC_SHIP_Wolverine GF_URNC_SHIP_Apache GF_URNC_SHIP_Aztec GF_URNC_SHIP_Cossack GF_URNC_SHIP_Dervish GF_URNC_SHIP_Druid GF_URNC_SHIP_Highlander GF_URNC_SHIP_Janissary GF_URNC_SHIP_Matador GF_URNC_SHIP_Papillon GF_URNC_SHIP_Parthian GF_URNC_SHIP_Patrician GF_URNC_SHIP_Saracen GF_URNC_SHIP_Sphinx GF_URNC_SHIP_Sultan GF_URNC_SHIP_Tomahawk GF_URNC_SHIP_Viking GF_URNC_SHIP_Zulu GF_URNC_SHIP_Abhay GF_URNC_SHIP_Akshay GF_URNC_SHIP_Akula GF_URNC_SHIP_Soyuz GF_URNC_SHIP_Harrier GF_URNC_SHIP_TomoeGozen GF_URNC_SHIP_Garuda GF_URNC_SHIP_Yangwei GF_URNC_SHIP_Datong GF_URNC_SHIP_Haifeng GF_URNC_SHIP_Hailong GF_URNC_SHIP_Yongcheng GF_URNC_SHIP_Yinghao GF_URNC_SHIP_Taiyang GF_URNC_SHIP_Chaoyang GF_URNC_SHIP_Qiuxing GF_URNC_SHIP_Guangxing GF_URNC_SHIP_Zhengsheng GF_URNC_SHIP_Taizhao GF_URNC_SHIP_Meihong GF_URNC_SHIP_Wulong GF_URNC_SHIP_Jiangkun GF_URNC_SHIP_Acorn GF_URNC_SHIP_Musketeer GF_URNC_SHIP_Pharaoh GF_URNC_SHIP_Mongol GF_URNC_SHIP_Rickenbacker GF_URNC_SHIP_JohnPaulJones GF_URNC_SHIP_Doblestnyi GF_URNC_SHIP_Steregushchiy GF_URNC_SHIP_Soobrazitelny GF_URNC_SHIP_RodgerYoung GF_URNC_SHIP_CrazyHorse GF_URNC_SHIP_Richthofen GF_URNC_SHIP_Boyington GF_URNC_SHIP_Fonck GF_URNC_SHIP_Mannock GF_URNC_SHIP_Bishop GF_URNC_SHIP_Kazakov GF_URNC_SHIP_Coppens GF_URNC_SHIP_Brumowski GF_URNC_SHIP_Baracca GF_URNC_SHIP_Hartmann GF_URNC_SHIP_Juutilainen GF_URNC_SHIP_Nishizawa GF_URNC_SHIP_Sakai GF_URNC_SHIP_Shestakov GF_URNC_SHIP_Kozhedub GF_URNC_SHIP_Cantacuzino GF_URNC_SHIP_VanLierde GF_URNC_SHIP_Bong GF_URNC_SHIP_Thach GF_URNC_SHIP_Clostermann GF_URNC_SHIP_Mitralexis GF_URNC_SHIP_Shinohara GF_URNC_SHIP_Iwamoto GF_URNC_SHIP_Molders GF_URNC_SHIP_Skalski GF_URNC_SHIP_MacLachlan GF_URNC_SHIP_Caldwell GF_URNC_SHIP_Litvyak GF_URNC_SHIP_Yeager GF_URNC_SHIP_McCampbell GF_URNC_SHIP_OHare GF_URNC_SHIP_Sealion GF_URNC_SHIP_Balao GF_URNC_SHIP_Gato GF_URNC_SHIP_Doolittle GF_URNC_SHIP_Novikov GF_URNC_SHIP_Uhlan GF_URNC_SHIP_Cataphract GF_URNC_SHIP_Soyokaze GF_URNC_SHIP_Orff GF_URNC_SHIP_Vandal GF_URNC_SHIP_Chameleon GF_URNC_SHIP_Grizzly GF_URNC_SHIP_Gurkha GF_URNC_SHIP_Hoplite GF_URNC_SHIP_Kodiak GF_URNC_SHIP_Piranha GF_URNC_SHIP_Wildcat GF_URNC_SHIP_Hellcat GF_URNC_SHIP_Bearcat GF_URNC_SHIP_Tomcat GF_URNC_SHIP_Kingfisher GF_URNC_SHIP_Cougar GF_URNC_SHIP_Mohawk GF_URNC_SHIP_Blackhawk GF_URNC_SHIP_ShootingStar GF_URNC_SHIP_Avocet GF_URNC_SHIP_Sparrowhawk GF_URNC_SHIP_Skua GF_URNC_SHIP_Firecrest GF_URNC_SHIP_Fulmar GF_URNC_SHIP_Arrowhead GF_URNC_SHIP_Condor GF_URNC_SHIP_Goshawk GF_URNC_SHIP_Nicator GF_URNC_SHIP_Samurai GF_URNC_SHIP_Smilodon GF_URNC_SHIP_Whippet GF_URNC_SHIP_Cormorant GF_URNC_SHIP_Ranvir GF_URNC_SHIP_Rajput GF_URNC_SHIP_Rana GF_URNC_SHIP_Toreador GF_URNC_SHIP_McAuliffe GF_URNC_SHIP_Cardinal GF_URNC_SHIP_Nightingale GF_URNC_SHIP_Adler GF_URNC_SHIP_Seahorse GF_URNC_SHIP_Ronin GF_URNC_SHIP_Iguana GF_URNC_SHIP_Redeemer GF_URNC_SHIP_WilliamTell GF_URNC_SHIP_SittingBull GF_URNC_SHIP_Hiawatha GF_URNC_SHIP_JohnHenry GF_URNC_SHIP_PaulBunyan GF_URNC_SHIP_Cangjie GF_URNC_SHIP_DakshinRai GF_URNC_SHIP_GuruBaaje GF_URNC_SHIP_Madoc GF_URNC_SHIP_Rostam GF_URNC_SHIP_Esfandiar GF_URNC_SHIP_JuanValdivia GF_URNC_SHIP_Yinxi GF_URNC_SHIP_Yennenga GF_URNC_SHIP_RunningEagle GF_URNC_SHIP_HuaMulan GF_URNC_SHIP_Yuenu GF_URNC_SHIP_Boudica GF_URNC_SHIP_Ethelfleda GF_URNC_SHIP_Gwenllian GF_URNC_SHIP_Gwendolen GF_URNC_SHIP_Cordelia GF_URNC_SHIP_Andraste GF_URNC_SHIP_Scathach GF_URNC_SHIP_Muirisc GF_URNC_SHIP_Morrigan GF_URNC_SHIP_Badb GF_URNC_SHIP_Macha GF_URNC_SHIP_Teuta GF_URNC_SHIP_JeanneHachette GF_URNC_SHIP_Atalanta GF_URNC_SHIP_Hippolyta GF_URNC_SHIP_Penthesilea GF_URNC_SHIP_Clorinda GF_URNC_SHIP_Tancred GF_URNC_SHIP_Brunhild GF_URNC_SHIP_Agustina GF_URNC_SHIP_Gordafarid GF_URNC_SHIP_Semiramis GF_URNC_SHIP_Malalai GF_URNC_SHIP_ShakaZulu GF_URNC_SHIP_Lafayette GF_URNC_SHIP_ReubenJames GF_URNC_SHIP_Nostromo GF_URNC_SHIP_Sulaco GF_URNC_SHIP_Costaguana GF_URNC_SHIP_Ribiera GF_URNC_SHIP_Shashka GF_URNC_SHIP_Sica GF_URNC_SHIP_Jian GF_URNC_SHIP_Dao GF_URNC_SHIP_Zhanmadao GF_URNC_SHIP_Makhaira GF_URNC_SHIP_Falcata GF_URNC_SHIP_Kopis GF_URNC_SHIP_Rhomphaia GF_URNC_SHIP_Kilij GF_URNC_SHIP_Shamshir GF_URNC_SHIP_Kaskara GF_URNC_SHIP_Flyssa GF_URNC_SHIP_Takoba GF_URNC_SHIP_Yatagan GF_URNC_SHIP_Urumi GF_URNC_SHIP_Liuyedao GF_URNC_SHIP_Tachi GF_URNC_SHIP_Khanda GF_URNC_SHIP_Wodao GF_URNC_SHIP_Changdao GF_URNC_SHIP_Yanmaodao GF_URNC_SHIP_Miaodao GF_URNC_SHIP_Chokuto GF_URNC_SHIP_Tsurugi GF_URNC_SHIP_Odachi GF_URNC_SHIP_Wakizashi GF_URNC_SHIP_Uchigatana GF_URNC_SHIP_Shikomizue GF_URNC_SHIP_Firangi GF_URNC_SHIP_Talwar GF_URNC_SHIP_Pata GF_URNC_SHIP_Kastane GF_URNC_SHIP_Macana GF_URNC_SHIP_Khopesh GF_URNC_SHIP_Acinaces GF_URNC_SHIP_Macuahuitl GF_URNC_SHIP_Belawa GF_URNC_SHIP_Nimcha GF_URNC_SHIP_Shotel GF_URNC_SHIP_Krabi GF_URNC_SHIP_Parang GF_URNC_SHIP_Klewang GF_URNC_SHIP_Surik GF_URNC_SHIP_Niabor GF_URNC_SHIP_Mandau GF_URNC_SHIP_Kampilan GF_URNC_SHIP_Gari GF_URNC_SHIP_Panabas GF_URNC_SHIP_Olds GF_URNC_SHIP_Kearsarge GF_URNC_SHIP_Dristigheten
 		}
-		
-		constructor = {
-			太平洋 大西洋 亚得里亚海 亚马逊 多瑙河 印度 非洲 伏尔加河 科罗拉多 恒河 约旦河 湄公河 "里奥格兰德" 卢比肯河 长江 密西西比河 育空河 印度河
-			莱茵 底格里斯 撒哈拉 孟加拉 梅里马克 波托马克 萨斯奎哈娜 奥里诺科 谢楠多亚
-		}
-		
-		colonizer = {
-			五月花 富饶 慷慨的 幸福 希望 机会 宁静 统一 命运 不列颠 拜占庭 苏格兰 "埃尔多拉多" 克诺索斯 孟菲斯 
-			奥林匹亚斯 波斯波利斯 "瑟拉·德·拉·普拉塔" 斯帕塔 瓦尔哈拉 "水晶宫殿" 阿拉斯加 安哥拉 澳大利亚 巴西 加拿大 刚果 几内亚 印度 印度尼西亚
-			牙买加 澳门 莫桑比克 菲律宾 索马里 "斯里兰卡" 台湾 
-		}
-
-		sponsored_colonizer = {
-			五月花 富饶 慷慨的 幸福 希望 机会 宁静 统一 命运 不列颠 拜占庭 苏格兰 "埃尔多拉多" 克诺索斯 孟菲斯 
-			奥林匹亚斯 波斯波利斯 "瑟拉·德·拉·普拉塔" 斯帕塔 瓦尔哈拉 "水晶宫殿" 阿拉斯加 安哥拉 澳大利亚 巴西 加拿大 刚果 几内亚 印度 印度尼西亚
-			牙买加 澳门 莫桑比克 菲律宾 索马里 "斯里兰卡" 台湾 
-		}
-		
-		science = {
-			爱布里茨 巴多利奥 卡佩洛 "迪·罗比蓝" "迪·萨沃亚" 加里波第 萨莱塔 帕拉维奇诺 皮亚内利 曼布雷蒂 马尔库齐 瓦勒里 佩紮利亚
-			"马可波罗" 牛顿 特斯拉 "冯·布朗" "瓦特·雷利" 阿西莫夫 克拉克 萨甘 "伊本·巴图塔" 开普勒 托勒密 皮西亚斯 阿佐菲 发现 航行者 信风 侦查 
-			先锋 开拓者 旅居者 "圣玛丽亚" 霍金 埃尔哈特 诺贝尔 开尔文 华伦海特 平分点 拉格朗日 齐奥尔科夫斯基
-		}
-		
+#驱逐舰
 		destroyer = {
-			亚马孙古陆 刚果 厄瓜多尔 雨 暴风雨 雨季 孟加拉 "新非洲" 猴王国 桑给巴尔 吉卜林
-			"开普敦" 芝加哥 哥本哈根 大马士革 "达累斯萨拉姆" 底特律 迪拜 都柏林 爱丁堡 直布罗陀 格拉斯哥 广州 河内 哈瓦那 赫尔辛基 "香港"
-			霍瑟瑞姆-塔 席尼斯克瑞姆-塔 哈格瑞尼姆-塔 席拉米恩-塔 霍巴吉姆-塔 萨拉斯卡门-塔 席恩多尼姆-塔 苏卡利姆-塔 索巴利姆-塔
-			巴黎 布拉格 "里约热内卢" 罗马 鹿特丹港 " 旧金山" "圣保罗"萨拉热窝 西雅图 首尔 萨瓦斯托波尔 上海 新加坡 "圣路易斯" 斯德哥尔摩 东京
-			多伦多 温哥华 维也纳 海参崴 华沙 悉尼 布里斯班 "墨西哥城" 慕尼黑 内罗毕 斯摩棱斯克 卡萨布兰卡 威尼斯 摩加迪休 蒙特利尔 伯明翰
-			利物浦 曼彻斯特 喀布尔 京都 伏尔加格勒 "圣彼得堡" 法兰克福 贝尔格莱德 马赛 布鲁塞尔 的黎波里 德黑兰 魁北克 佛罗伦萨 埃克塞特 达拉斯 丹佛
-			拉各斯 墨尔本 卡尔加里 渥太华 阿尔及尔 布拉柴维尔 圣地亚哥 蒙得维的亚 波哥大 成都 杭州 绍兴 横滨 匹兹堡 费城 迈阿密 里斯本
-			哈吉-阿斯-乌姆 伊塔-伊塔-达姆 萨姆-科恩-达姆 特拉-莱斯-伊特 伊拉-阿姆-伊瓦 威尔-提克-佐尔 库尔-扎德-丁 莫特-利姆-诺格 特尔-凡恩-提克 哈德-哈姆-海尔 伊尼-伊尼-沃尔
-			巴莱蒂 毕安可内利 安东内利 科尔西尼 德亚历山德罗 德阿戈斯蒂诺 "德罗萨" "德希利奥" "迪·奇亚拉" "迪·巴托洛梅" 德尔维奇奥
-			提华纳 特隆赫姆 
+			GF_URNC_SHIP_Amsterdam GF_URNC_SHIP_Austin GF_URNC_SHIP_Athens GF_URNC_SHIP_Atlanta GF_URNC_SHIP_Baghdad GF_URNC_SHIP_Baltimore GF_URNC_SHIP_Bangkok GF_URNC_SHIP_Barcelona GF_URNC_SHIP_Beijing GF_URNC_SHIP_Belfast GF_URNC_SHIP_Berlin GF_URNC_SHIP_Bombay GF_URNC_SHIP_Boston GF_URNC_SHIP_Hyderabad GF_URNC_SHIP_Budapest GF_URNC_SHIP_BuenosAires GF_URNC_SHIP_Cairo GF_URNC_SHIP_Calcutta GF_URNC_SHIP_CapeTown GF_URNC_SHIP_Chicago GF_URNC_SHIP_Copenhagen GF_URNC_SHIP_Damascus GF_URNC_SHIP_DaresSalaam GF_URNC_SHIP_Detroit GF_URNC_SHIP_Dubai GF_URNC_SHIP_Dublin GF_URNC_SHIP_Edinburgh GF_URNC_SHIP_Gibraltar GF_URNC_SHIP_Glasgow GF_URNC_SHIP_Guangzhou GF_URNC_SHIP_Hanoi GF_URNC_SHIP_Havana GF_URNC_SHIP_Helsinki GF_URNC_SHIP_HongKong GF_URNC_SHIP_Houston GF_URNC_SHIP_Istanbul GF_URNC_SHIP_Jakarta GF_URNC_SHIP_Jerusalem GF_URNC_SHIP_Johannesburg GF_URNC_SHIP_Kiev GF_URNC_SHIP_London GF_URNC_SHIP_LosAngeles GF_URNC_SHIP_Madrid GF_URNC_SHIP_Manila GF_URNC_SHIP_Minsk GF_URNC_SHIP_Moscow GF_URNC_SHIP_Mumbai GF_URNC_SHIP_NewYork GF_URNC_SHIP_NewOrleans GF_URNC_SHIP_Novgorod GF_URNC_SHIP_Osaka GF_URNC_SHIP_Oslo GF_URNC_SHIP_Paris GF_URNC_SHIP_Prague GF_URNC_SHIP_RiodeJaneiro GF_URNC_SHIP_Rome GF_URNC_SHIP_Rotterdam GF_URNC_SHIP_SanFrancisco GF_URNC_SHIP_SaoPaulo GF_URNC_SHIP_Sarajevo GF_URNC_SHIP_Seattle GF_URNC_SHIP_Seoul GF_URNC_SHIP_Sevastopol GF_URNC_SHIP_Shanghai GF_URNC_SHIP_Singapore GF_URNC_SHIP_StLouis GF_URNC_SHIP_Stockholm GF_URNC_SHIP_Tokyo GF_URNC_SHIP_Toronto GF_URNC_SHIP_Vancouver GF_URNC_SHIP_Vienna GF_URNC_SHIP_Vladivostok GF_URNC_SHIP_Warsaw GF_URNC_SHIP_Sydney GF_URNC_SHIP_Brisbane GF_URNC_SHIP_MexicoCity GF_URNC_SHIP_Munchen GF_URNC_SHIP_Nairobi GF_URNC_SHIP_Smolensk GF_URNC_SHIP_Casablanca GF_URNC_SHIP_Venice GF_URNC_SHIP_Mogadishu GF_URNC_SHIP_Montreal GF_URNC_SHIP_Birmingham GF_URNC_SHIP_Liverpool GF_URNC_SHIP_Manchester GF_URNC_SHIP_Kabul GF_URNC_SHIP_Kyoto GF_URNC_SHIP_Volgograd GF_URNC_SHIP_StPetersburg GF_URNC_SHIP_Frankfurt GF_URNC_SHIP_Belgrade GF_URNC_SHIP_Marseille GF_URNC_SHIP_Brussels GF_URNC_SHIP_Tripoli GF_URNC_SHIP_Tehran GF_URNC_SHIP_Quebec GF_URNC_SHIP_Florence GF_URNC_SHIP_Exeter GF_URNC_SHIP_Dallas GF_URNC_SHIP_Denver GF_URNC_SHIP_Lagos GF_URNC_SHIP_Melbourne GF_URNC_SHIP_Calgary GF_URNC_SHIP_Ottawa GF_URNC_SHIP_Algiers GF_URNC_SHIP_Brazzaville GF_URNC_SHIP_Santiago GF_URNC_SHIP_Montevideo GF_URNC_SHIP_Bogota GF_URNC_SHIP_Chengdu GF_URNC_SHIP_Hangzhou GF_URNC_SHIP_Shaoxing GF_URNC_SHIP_Yokohama GF_URNC_SHIP_Pittsburgh GF_URNC_SHIP_Philadelphia GF_URNC_SHIP_Miami GF_URNC_SHIP_Lisbon GF_URNC_SHIP_Hamburg GF_URNC_SHIP_Bremen GF_URNC_SHIP_Phoenix GF_URNC_SHIP_Indianapolis GF_URNC_SHIP_Minneapolis GF_URNC_SHIP_Milan GF_URNC_SHIP_Surabaya GF_URNC_SHIP_KualaLumpur GF_URNC_SHIP_AbuDhabi GF_URNC_SHIP_Ankara GF_URNC_SHIP_Beirut GF_URNC_SHIP_Kathmandu GF_URNC_SHIP_Tapei GF_URNC_SHIP_Islamabad GF_URNC_SHIP_Karachi GF_URNC_SHIP_Zurich GF_URNC_SHIP_Delhi GF_URNC_SHIP_Bangalore GF_URNC_SHIP_Dusseldorf GF_URNC_SHIP_TelAviv GF_URNC_SHIP_Lima GF_URNC_SHIP_Luxembourg GF_URNC_SHIP_Bucharest GF_URNC_SHIP_Geneva GF_URNC_SHIP_Gothenburg GF_URNC_SHIP_Lyon GF_URNC_SHIP_Bratislava GF_URNC_SHIP_Tunis GF_URNC_SHIP_Riyadh GF_URNC_SHIP_Riga GF_URNC_SHIP_Valencia GF_URNC_SHIP_Krakow GF_URNC_SHIP_Vilnius GF_URNC_SHIP_Tallinn GF_URNC_SHIP_Edmonton GF_URNC_SHIP_Tijuana GF_URNC_SHIP_Trondheim GF_URNC_SHIP_Dhaka GF_URNC_SHIP_Shenzhen GF_URNC_SHIP_Suzhou GF_URNC_SHIP_Kinshasa GF_URNC_SHIP_Lahore GF_URNC_SHIP_Dongguan GF_URNC_SHIP_Chongqing GF_URNC_SHIP_Chennai GF_URNC_SHIP_Changsha GF_URNC_SHIP_Wuhan GF_URNC_SHIP_Tianjin GF_URNC_SHIP_Faisalabad GF_URNC_SHIP_Foshan GF_URNC_SHIP_Zunyi GF_URNC_SHIP_Ahmedabad GF_URNC_SHIP_Shantou GF_URNC_SHIP_Rangoon GF_URNC_SHIP_Abidjan GF_URNC_SHIP_Alexandria GF_URNC_SHIP_Xian GF_URNC_SHIP_Surat GF_URNC_SHIP_Harbin GF_URNC_SHIP_Giza GF_URNC_SHIP_Izmir GF_URNC_SHIP_Zhengzhou GF_URNC_SHIP_Xiamen GF_URNC_SHIP_Quanzhou GF_URNC_SHIP_Busan GF_URNC_SHIP_Rawalpindi GF_URNC_SHIP_Guayaquil GF_URNC_SHIP_Jeddah GF_URNC_SHIP_Durban GF_URNC_SHIP_Hefei GF_URNC_SHIP_Pyongyang GF_URNC_SHIP_Peshawar GF_URNC_SHIP_Ekurhuleni GF_URNC_SHIP_Zhongshan GF_URNC_SHIP_Multan GF_URNC_SHIP_Pune GF_URNC_SHIP_AddisAbaba GF_URNC_SHIP_Jaipur GF_URNC_SHIP_Lucknow GF_URNC_SHIP_Wenzhou GF_URNC_SHIP_QuezonCity GF_URNC_SHIP_Salvador GF_URNC_SHIP_Luanda GF_URNC_SHIP_Kaohsiung GF_URNC_SHIP_Taichung GF_URNC_SHIP_Gujranwala GF_URNC_SHIP_Quito GF_URNC_SHIP_Chittagong GF_URNC_SHIP_Bandung GF_URNC_SHIP_Brasilia GF_URNC_SHIP_Daegu GF_URNC_SHIP_Nagpur GF_URNC_SHIP_Nagoya GF_URNC_SHIP_PhnomPenh GF_URNC_SHIP_Kochi GF_URNC_SHIP_Medan GF_URNC_SHIP_Perth GF_URNC_SHIP_Sapporo GF_URNC_SHIP_DavaoCity GF_URNC_SHIP_Caloocan GF_URNC_SHIP_Kobe GF_URNC_SHIP_Guadalajara GF_URNC_SHIP_Auckland GF_URNC_SHIP_Fukuoka GF_URNC_SHIP_Kawasaki GF_URNC_SHIP_Adelaide GF_URNC_SHIP_Ulsan GF_URNC_SHIP_Tbilisi GF_URNC_SHIP_Fez GF_URNC_SHIP_Yerevan GF_URNC_SHIP_Koln GF_URNC_SHIP_SanAntonio GF_URNC_SHIP_SanDiego GF_URNC_SHIP_SanJose GF_URNC_SHIP_Jacksonville GF_URNC_SHIP_FortWorth GF_URNC_SHIP_Charlotte GF_URNC_SHIP_ElPaso GF_URNC_SHIP_Nashville GF_URNC_SHIP_Portland GF_URNC_SHIP_OklahomaCity GF_URNC_SHIP_LasVegas GF_URNC_SHIP_Louisville GF_URNC_SHIP_Milwaukee GF_URNC_SHIP_Albuquerque GF_URNC_SHIP_Tucson GF_URNC_SHIP_Fresno GF_URNC_SHIP_Sacramento GF_URNC_SHIP_KansasCity GF_URNC_SHIP_Omaha GF_URNC_SHIP_Oakland GF_URNC_SHIP_Tulsa GF_URNC_SHIP_Wichita GF_URNC_SHIP_Arlington GF_URNC_SHIP_Cleveland GF_URNC_SHIP_Tampa GF_URNC_SHIP_Bakersfield GF_URNC_SHIP_Honolulu GF_URNC_SHIP_Anchorage GF_URNC_SHIP_Cincinnati GF_URNC_SHIP_Orlando GF_URNC_SHIP_Irvine GF_URNC_SHIP_Reno GF_URNC_SHIP_Richmond GF_URNC_SHIP_Spokane GF_URNC_SHIP_SaltLakeCity GF_URNC_SHIP_Tallahassee GF_URNC_SHIP_Huntsville GF_URNC_SHIP_Knoxville GF_URNC_SHIP_Springfield GF_URNC_SHIP_Savannah GF_URNC_SHIP_Hartford GF_URNC_SHIP_Fargo GF_URNC_SHIP_Winnipeg GF_URNC_SHIP_Hamilton GF_URNC_SHIP_Mississauga GF_URNC_SHIP_Halifax GF_URNC_SHIP_Bristol GF_URNC_SHIP_Sheffield GF_URNC_SHIP_Leeds GF_URNC_SHIP_Leicester GF_URNC_SHIP_Bradford GF_URNC_SHIP_Cardiff GF_URNC_SHIP_Coventry GF_URNC_SHIP_Nottingham GF_URNC_SHIP_Newcastle GF_URNC_SHIP_Wolverhampton GF_URNC_SHIP_Southampton GF_URNC_SHIP_Portsmouth GF_URNC_SHIP_Brighton GF_URNC_SHIP_Aberdeen GF_URNC_SHIP_Bolton GF_URNC_SHIP_Norwich GF_URNC_SHIP_Swansea GF_URNC_SHIP_Oxford GF_URNC_SHIP_York GF_URNC_SHIP_Blackpool GF_URNC_SHIP_Cambridge GF_URNC_SHIP_Ipswich GF_URNC_SHIP_Stuttgart GF_URNC_SHIP_Dortmund GF_URNC_SHIP_Essen GF_URNC_SHIP_Dresden GF_URNC_SHIP_Hannover GF_URNC_SHIP_Nurnberg GF_URNC_SHIP_Duisburg GF_URNC_SHIP_Bonn GF_URNC_SHIP_Munster GF_URNC_SHIP_Karlsruhe GF_URNC_SHIP_Mannheim GF_URNC_SHIP_Augsburg GF_URNC_SHIP_Freiburg GF_URNC_SHIP_Aachen GF_URNC_SHIP_Lubeck GF_URNC_SHIP_Mainz GF_URNC_SHIP_Rostock GF_URNC_SHIP_Potsdam GF_URNC_SHIP_Toulouse GF_URNC_SHIP_Nice GF_URNC_SHIP_Nantes GF_URNC_SHIP_Strasbourg GF_URNC_SHIP_Montpellier GF_URNC_SHIP_Bordeaux GF_URNC_SHIP_Lille GF_URNC_SHIP_Rennes GF_URNC_SHIP_Reims GF_URNC_SHIP_LeHavre GF_URNC_SHIP_Toulon GF_URNC_SHIP_Grenoble GF_URNC_SHIP_Dijon GF_URNC_SHIP_Brest GF_URNC_SHIP_Metz GF_URNC_SHIP_Novosibirsk GF_URNC_SHIP_Yekaterinburg GF_URNC_SHIP_Samara GF_URNC_SHIP_Omsk GF_URNC_SHIP_Kazan GF_URNC_SHIP_Chelyabinsk GF_URNC_SHIP_Rostov GF_URNC_SHIP_Ufa GF_URNC_SHIP_Perm GF_URNC_SHIP_Krasnoyarsk GF_URNC_SHIP_Voronezh GF_URNC_SHIP_Saratov GF_URNC_SHIP_Krasnodar GF_URNC_SHIP_Izhevsk GF_URNC_SHIP_Ulyanovsk GF_URNC_SHIP_Yaroslavl GF_URNC_SHIP_Irkutsk GF_URNC_SHIP_Khabarovsk GF_URNC_SHIP_Orenburg GF_URNC_SHIP_Ryazan GF_URNC_SHIP_Astrakhan GF_URNC_SHIP_Lipetsk GF_URNC_SHIP_Tula GF_URNC_SHIP_Kirov GF_URNC_SHIP_Bryansk GF_URNC_SHIP_Ivanovo GF_URNC_SHIP_Stavropol GF_URNC_SHIP_Tver GF_URNC_SHIP_Arkhangelsk GF_URNC_SHIP_Vladimir GF_URNC_SHIP_Murmansk GF_URNC_SHIP_Grozny GF_URNC_SHIP_Petrozavodsk GF_URNC_SHIP_Pskov GF_URNC_SHIP_Antwerp GF_URNC_SHIP_Utrecht GF_URNC_SHIP_TheHague GF_URNC_SHIP_Turin GF_URNC_SHIP_Palermo GF_URNC_SHIP_Genoa GF_URNC_SHIP_Seville GF_URNC_SHIP_Granada GF_URNC_SHIP_Aleppo GF_URNC_SHIP_KuwaitCity GF_URNC_SHIP_Amman GF_URNC_SHIP_Mashhad GF_URNC_SHIP_Isfahan GF_URNC_SHIP_Gaza GF_URNC_SHIP_Sanaa GF_URNC_SHIP_Mosul GF_URNC_SHIP_Khartoum GF_URNC_SHIP_Accra GF_URNC_SHIP_Kano GF_URNC_SHIP_Ibadan GF_URNC_SHIP_Dakar GF_URNC_SHIP_Pretoria GF_URNC_SHIP_Benghazi GF_URNC_SHIP_Rabat GF_URNC_SHIP_Freetown GF_URNC_SHIP_Djibouti GF_URNC_SHIP_Monrovia GF_URNC_SHIP_PortElizabeth GF_URNC_SHIP_NDjamena GF_URNC_SHIP_Lodz GF_URNC_SHIP_Canberra GF_URNC_SHIP_Baku GF_URNC_SHIP_Sofia GF_URNC_SHIP_Zagreb GF_URNC_SHIP_Astana GF_URNC_SHIP_Nouakchott GF_URNC_SHIP_UlanBator GF_URNC_SHIP_Abuja GF_URNC_SHIP_PortMoresby GF_URNC_SHIP_BanjaLuka GF_URNC_SHIP_Douala GF_URNC_SHIP_Nicosia GF_URNC_SHIP_SanSalvador GF_URNC_SHIP_Thessaloniki GF_URNC_SHIP_Guatemala GF_URNC_SHIP_Port-au-Prince GF_URNC_SHIP_Georgetown GF_URNC_SHIP_Reykjavik GF_URNC_SHIP_Basra GF_URNC_SHIP_Cork GF_URNC_SHIP_Kingston GF_URNC_SHIP_Mombasa GF_URNC_SHIP_Ecatepec GF_URNC_SHIP_Windhoek GF_URNC_SHIP_Wellington GF_URNC_SHIP_Hebron GF_URNC_SHIP_PanamaCity GF_URNC_SHIP_Porto GF_URNC_SHIP_Ljubljana GF_URNC_SHIP_Malmo GF_URNC_SHIP_Bern GF_URNC_SHIP_Donetsk GF_URNC_SHIP_Harare GF_URNC_SHIP_Aarhus GF_URNC_SHIP_Liege
 		}
-		
+#巡洋舰
 		cruiser = {
-			布卢姆 谢尔曼 谢里丹 比林斯利 比林斯 伯格曼 贝茨 贝克尔 贝尔 贝勒法尔 贝恩 比恩 卡特赖特 卡朋特 巴克兰
-			祖克-拖 山-拖 依米-雅思课 维德-忽尔 哈姆-可儿 信-尼克 阿尔克-拖 兹尔-兹尔 优妮-波克 拉丝-福柯 提尔-费杰 芒-拖 科斯-拉 维姆-德尔 波特-阿卡 塔克-乌尔乌
-			黎塞留 "珍巴特" 斯帕威洛 阿福德托雷 特罗普 "鲁伊特尔" 埃斯佩兰萨 佩拉约 维拉思科 朱诺 舍伍德 阿拉莫 班诺克本 博罗季诺 布莱腾菲尔德 坎尼 
-			"艾尔·阿拉梅恩" 高加米拉 加低斯 库什克 马萨达 诺曼底 萨拉米 色当 坦能堡 提康德罗加 塞莫皮莱 马伦戈 莱比锡 希洛 赫拉德茨 伊普尔 
-			索姆 苏奥姆斯萨米尔 哈尔科夫 瓜达康纳 "莱特湾" "迪恩 比安 普 "廷布拉 马纳萨斯 布伦海姆 独角兽 阿德尔菲 天使 北欧 赏金 解放者
-			"晨星" "施琅" 维克拉马蒂亚 维拉特 维克兰特 夏尔玛 拿破仑 刚果 奥里斯坎尼 "邦克山" 法拉格特 "小鹰" "皇家橡树" 霹雳
-			"皇冠" 马拉松 "腓特烈而是" 尼米兹 艾森豪威尔 罗兰 "陈兴道" 狄密斯托克利
+			GF_URNC_SHIP_Bolivar GF_URNC_SHIP_Brusilov GF_URNC_SHIP_Churchill GF_URNC_SHIP_Clausewitz GF_URNC_SHIP_Garibaldi GF_URNC_SHIP_GustavusAdolphus GF_URNC_SHIP_Hammurabi GF_URNC_SHIP_JuliusCaesar GF_URNC_SHIP_Justinian GF_URNC_SHIP_Lincoln GF_URNC_SHIP_Patton GF_URNC_SHIP_Rommel GF_URNC_SHIP_SunTzu GF_URNC_SHIP_Liberator GF_URNC_SHIP_Zhukov GF_URNC_SHIP_AlexanderNevsky GF_URNC_SHIP_Pyrrhus GF_URNC_SHIP_YiSun-sin GF_URNC_SHIP_Heihachiro GF_URNC_SHIP_Khalidibnal-Walid GF_URNC_SHIP_Vasa GF_URNC_SHIP_Hindenburg GF_URNC_SHIP_DeGaulle GF_URNC_SHIP_Subutai GF_URNC_SHIP_Nagato GF_URNC_SHIP_Scharnhorst GF_URNC_SHIP_Clemenceau GF_URNC_SHIP_Richelieu GF_URNC_SHIP_JeanBart GF_URNC_SHIP_Sparviero GF_URNC_SHIP_Affondatore GF_URNC_SHIP_Tromp GF_URNC_SHIP_DeRuyter GF_URNC_SHIP_Esperanza GF_URNC_SHIP_Pelayo GF_URNC_SHIP_Velasco GF_URNC_SHIP_Juneau GF_URNC_SHIP_Sherwood GF_URNC_SHIP_Alamo GF_URNC_SHIP_Bannockburn GF_URNC_SHIP_Borodino GF_URNC_SHIP_Breitenfeld GF_URNC_SHIP_Cannae GF_URNC_SHIP_ElAlamein GF_URNC_SHIP_Gaugamela GF_URNC_SHIP_Kadesh GF_URNC_SHIP_Kursk GF_URNC_SHIP_Masada GF_URNC_SHIP_Normandy GF_URNC_SHIP_Salamis GF_URNC_SHIP_Sedan GF_URNC_SHIP_Tannenberg GF_URNC_SHIP_Ticonderoga GF_URNC_SHIP_Thermopylae GF_URNC_SHIP_Marengo GF_URNC_SHIP_Leipzig GF_URNC_SHIP_Shiloh GF_URNC_SHIP_Koniggratz GF_URNC_SHIP_Ypres GF_URNC_SHIP_Somme GF_URNC_SHIP_Suomussalmi GF_URNC_SHIP_Kharkov GF_URNC_SHIP_Guadalcanal GF_URNC_SHIP_LeyteGulf GF_URNC_SHIP_DienBienPhu GF_URNC_SHIP_Thymbra GF_URNC_SHIP_Manassas GF_URNC_SHIP_Blenheim GF_URNC_SHIP_Adelphi GF_URNC_SHIP_Angel GF_URNC_SHIP_Borealis GF_URNC_SHIP_Bounty GF_URNC_SHIP_Emancipator GF_URNC_SHIP_MorningStar GF_URNC_SHIP_ShiLang GF_URNC_SHIP_Vikramaditya GF_URNC_SHIP_Viraat GF_URNC_SHIP_Vikrant GF_URNC_SHIP_Vishal GF_URNC_SHIP_Kongo GF_URNC_SHIP_Oriskany GF_URNC_SHIP_BunkerHill GF_URNC_SHIP_Farragut GF_URNC_SHIP_KittyHawk GF_URNC_SHIP_RoyalOak GF_URNC_SHIP_Thunderbolt GF_URNC_SHIP_Nimitz GF_URNC_SHIP_Eisenhower GF_URNC_SHIP_Roland GF_URNC_SHIP_TranHungDao GF_URNC_SHIP_Themistocles GF_URNC_SHIP_Cunaxa GF_URNC_SHIP_Uhuru GF_URNC_SHIP_Ramses GF_URNC_SHIP_Vauban GF_URNC_SHIP_Harpagos GF_URNC_SHIP_Anzio GF_URNC_SHIP_Caen GF_URNC_SHIP_Carentan GF_URNC_SHIP_Bastogne GF_URNC_SHIP_Arnhem GF_URNC_SHIP_Temeraire GF_URNC_SHIP_Vesuvius GF_URNC_SHIP_Etna GF_URNC_SHIP_StHelens GF_URNC_SHIP_OlympusMons GF_URNC_SHIP_Alcibiades GF_URNC_SHIP_Patrocles GF_URNC_SHIP_Santander GF_URNC_SHIP_Vega GF_URNC_SHIP_Rigel GF_URNC_SHIP_Sirius GF_URNC_SHIP_Canopus GF_URNC_SHIP_Arcturus GF_URNC_SHIP_Capella GF_URNC_SHIP_Procyon GF_URNC_SHIP_Altair GF_URNC_SHIP_Betelgeuse GF_URNC_SHIP_Antares GF_URNC_SHIP_Achernar GF_URNC_SHIP_Aldebaran GF_URNC_SHIP_Pollux GF_URNC_SHIP_Deneb GF_URNC_SHIP_Regulus GF_URNC_SHIP_Proxima GF_URNC_SHIP_RigilKentaurus GF_URNC_SHIP_Spica GF_URNC_SHIP_Polaris GF_URNC_SHIP_Bellatrix GF_URNC_SHIP_Capricorn GF_URNC_SHIP_Syracuse GF_URNC_SHIP_Metaurus GF_URNC_SHIP_Chalons GF_URNC_SHIP_Tours GF_URNC_SHIP_Hastings GF_URNC_SHIP_Orleans GF_URNC_SHIP_Valmy GF_URNC_SHIP_Mukden GF_URNC_SHIP_Narvik GF_URNC_SHIP_Narva GF_URNC_SHIP_Poltava GF_URNC_SHIP_LakePeipus GF_URNC_SHIP_Malta GF_URNC_SHIP_Antietam GF_URNC_SHIP_BatonRouge GF_URNC_SHIP_Beauport GF_URNC_SHIP_Abukir GF_URNC_SHIP_Lund GF_URNC_SHIP_Issus GF_URNC_SHIP_Changping GF_URNC_SHIP_TeutoburgForest GF_URNC_SHIP_WatlingStreet GF_URNC_SHIP_Yarmouk GF_URNC_SHIP_Salamanca GF_URNC_SHIP_Berezina GF_URNC_SHIP_Fredericksburg GF_URNC_SHIP_Chickamauga GF_URNC_SHIP_Caporetto GF_URNC_SHIP_KhalkhinGol GF_URNC_SHIP_Gazala GF_URNC_SHIP_MonteCassino GF_URNC_SHIP_Saipan GF_URNC_SHIP_Breslau GF_URNC_SHIP_Plataea GF_URNC_SHIP_Hydaspes GF_URNC_SHIP_Sentinum GF_URNC_SHIP_Heraclea GF_URNC_SHIP_Kalinga GF_URNC_SHIP_Magnesia GF_URNC_SHIP_Adrianople GF_URNC_SHIP_Ravenna GF_URNC_SHIP_Lutzen GF_URNC_SHIP_Cambrai GF_URNC_SHIP_Marne GF_URNC_SHIP_Chancellorsville GF_URNC_SHIP_PhilippineSea GF_URNC_SHIP_SavoIsland GF_URNC_SHIP_CapeEsperance GF_URNC_SHIP_Taranto GF_URNC_SHIP_CapeMatapan GF_URNC_SHIP_JavaSea GF_URNC_SHIP_Gallipoli GF_URNC_SHIP_DeValette GF_URNC_SHIP_Suleiman GF_URNC_SHIP_MacArthur GF_URNC_SHIP_Roosevelt GF_URNC_SHIP_Victoria GF_URNC_SHIP_Nebuchadnezzar GF_URNC_SHIP_Pachacuti GF_URNC_SHIP_CatherinetheGreat GF_URNC_SHIP_FredericktheGreat GF_URNC_SHIP_Ashoka GF_URNC_SHIP_QinShiHuang GF_URNC_SHIP_Tamerlane GF_URNC_SHIP_Marshall GF_URNC_SHIP_JoanofArc GF_URNC_SHIP_GenghisKhan GF_URNC_SHIP_Ataturk GF_URNC_SHIP_WilliamtheConqueror GF_URNC_SHIP_BonhommeRichard GF_URNC_SHIP_IronDuke
 		}
-		
+#战列舰
 		battleship = {
-			尤利西斯 塞诺芬 薛西斯 纳尔逊 大力神 伊卡洛斯 阿特拉斯 阿波罗 阿贾克斯 伯勒罗丰 王者之剑 阿古利巴 亚历山大 贝利撒留 汉尼拔 华盛顿 萨拉丁
-			比安卡 斯特凡妮 娜塔莎 莉迪亚 莫娜 梅雷迪思 琳达 埃里卡 海蒂 佩奇 卡门 海登 马洛里 梅塞德斯 马里昂 薇诺娜 吉尔
-			"黑暗王子" 兜帽号 波坦金号 武藏号 厌战号 胜利号 勇气号 无畏号 奋进号 精进号 无敌号 不屈号 骑士号 英勇号 监视者号 
-			布鲁诺 弗朗茨 鲁道夫 艾哈德 约尔格 阿谢尔 埃米尔 格哈特 戈特弗里德 奥尔赫 约阿希姆 康拉德 洛塔尔 卢德维格 马赛厄斯 莫里茨 莱因哈德 
-			埃内斯托 赫拉尔 吉列尔莫 耶稣 萨尔瓦多 塞尔吉奥 罗伯托 埃斯特万
-			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯
+			GF_URNC_SHIP_Ulysses GF_URNC_SHIP_Xenophon GF_URNC_SHIP_Xerxes GF_URNC_SHIP_Nelson GF_URNC_SHIP_Icarus GF_URNC_SHIP_Atlas GF_URNC_SHIP_Apollo GF_URNC_SHIP_Ajax GF_URNC_SHIP_Bellerophon GF_URNC_SHIP_Agrippa GF_URNC_SHIP_Alexander GF_URNC_SHIP_Belisarius GF_URNC_SHIP_Hannibal GF_URNC_SHIP_Washington GF_URNC_SHIP_Saladin GF_URNC_SHIP_Bismarck GF_URNC_SHIP_Yamato GF_URNC_SHIP_Actium GF_URNC_SHIP_Agincourt GF_URNC_SHIP_Austerlitz GF_URNC_SHIP_Gettysburg GF_URNC_SHIP_Jutland GF_URNC_SHIP_Trafalgar GF_URNC_SHIP_Tsushima GF_URNC_SHIP_ValleyForge GF_URNC_SHIP_Verdun GF_URNC_SHIP_Waterloo GF_URNC_SHIP_Granicus GF_URNC_SHIP_Pharsalus GF_URNC_SHIP_Akira GF_URNC_SHIP_Charlemagne GF_URNC_SHIP_BlackPrince GF_URNC_SHIP_Hood GF_URNC_SHIP_Potemkin GF_URNC_SHIP_Musashi GF_URNC_SHIP_Warspite GF_URNC_SHIP_Victory GF_URNC_SHIP_Courage GF_URNC_SHIP_Dauntless GF_URNC_SHIP_Endeavor GF_URNC_SHIP_Excelsior GF_URNC_SHIP_Indefatigable GF_URNC_SHIP_Chivalrous GF_URNC_SHIP_Valiant GF_URNC_SHIP_Monitor GF_URNC_SHIP_Bulwark GF_URNC_SHIP_Defender GF_URNC_SHIP_Endurance GF_URNC_SHIP_Vigilant GF_URNC_SHIP_Resolute GF_URNC_SHIP_Fortitude GF_URNC_SHIP_Yamamoto GF_URNC_SHIP_Lexington GF_URNC_SHIP_Midway GF_URNC_SHIP_Saratoga GF_URNC_SHIP_Yorktown GF_URNC_SHIP_CoralSea GF_URNC_SHIP_Hermes GF_URNC_SHIP_Wasp GF_URNC_SHIP_Hornet GF_URNC_SHIP_ArkRoyal GF_URNC_SHIP_Essex GF_URNC_SHIP_Akagi GF_URNC_SHIP_Kaga GF_URNC_SHIP_Illustrious GF_URNC_SHIP_Intrepid GF_URNC_SHIP_Constellation GF_URNC_SHIP_Constitution GF_URNC_SHIP_Ranger GF_URNC_SHIP_Andromeda GF_URNC_SHIP_Aquila GF_URNC_SHIP_Century GF_URNC_SHIP_Concord GF_URNC_SHIP_Defiant GF_URNC_SHIP_Galaxy GF_URNC_SHIP_Odyssey GF_URNC_SHIP_Orion GF_URNC_SHIP_Providence GF_URNC_SHIP_Reliant GF_URNC_SHIP_Freedom GF_URNC_SHIP_Solaris GF_URNC_SHIP_Independence GF_URNC_SHIP_Lionheart GF_URNC_SHIP_Unicorn GF_URNC_SHIP_Napoleon GF_URNC_SHIP_RoyalSovereign GF_URNC_SHIP_Marathon GF_URNC_SHIP_Imperieuse
 		}
-
+#泰坦
 		titan = {
-			尤利西斯 塞诺芬 薛西斯 纳尔逊 大力神 伊卡洛斯 阿特拉斯 阿波罗 阿贾克斯 伯勒罗丰 王者之剑 阿古利巴 亚历山大 贝利撒留 汉尼拔 华盛顿 萨拉丁
-			比安卡 斯特凡妮 娜塔莎 莉迪亚 莫娜 梅雷迪思 琳达 埃里卡 海蒂 佩奇 卡门 海登 马洛里 梅塞德斯 马里昂 薇诺娜 吉尔
-			"黑暗王子" 兜帽号 波坦金号 武藏号 厌战号 胜利号 勇气号 无畏号 奋进号 精进号 无敌号 不屈号 骑士号 英勇号 监视者号 
-			布鲁诺 弗朗茨 鲁道夫 艾哈德 约尔格 阿谢尔 埃米尔 格哈特 戈特弗里德 奥尔赫 约阿希姆 康拉德 洛塔尔 卢德维格 马赛厄斯 莫里茨 莱因哈德 
-			埃内斯托 赫拉尔 吉列尔莫 耶稣 萨尔瓦多 塞尔吉奥 罗伯托 埃斯特万
-			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯
+			GF_URNC_SHIP_Enterprise GF_URNC_SHIP_Invincible GF_URNC_SHIP_Pegasus GF_URNC_SHIP_Hercules GF_URNC_SHIP_Excalibur GF_URNC_SHIP_Formidable
 		}
-
+#巨像
 		colossus = {
-			尤利西斯 塞诺芬 薛西斯 纳尔逊 大力神 伊卡洛斯 阿特拉斯 阿波罗 阿贾克斯 伯勒罗丰 王者之剑 阿古利巴 亚历山大 贝利撒留 汉尼拔 华盛顿 萨拉丁
-			比安卡 斯特凡妮 娜塔莎 莉迪亚 莫娜 梅雷迪思 琳达 埃里卡 海蒂 佩奇 卡门 海登 马洛里 梅塞德斯 马里昂 薇诺娜 吉尔
-			"黑暗王子" 兜帽号 波坦金号 武藏号 厌战号 胜利号 勇气号 无畏号 奋进号 精进号 无敌号 不屈号 骑士号 英勇号 监视者号 
-			布鲁诺 弗朗茨 鲁道夫 艾哈德 约尔格 阿谢尔 埃米尔 格哈特 戈特弗里德 奥尔赫 约阿希姆 康拉德 洛塔尔 卢德维格 马赛厄斯 莫里茨 莱因哈德 
-			埃内斯托 赫拉尔 吉列尔莫 耶稣 萨尔瓦多 塞尔吉奥 罗伯托 埃斯特万
-			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯
+			GF_URNC_SHIP_SolInvictus GF_URNC_SHIP_Adjudicator GF_URNC_SHIP_Overlord GF_URNC_SHIP_Guardian GF_URNC_SHIP_Kingmaker
 		}
-		
+#主宰
 		juggernaut = {
-			阿勒山"世界之轴" "大改革家"昆仑山地壳
+			GF_URNC_SHIP_Ararat GF_URNC_SHIP_AxisMundi GF_URNC_SHIP_GreatReformer GF_URNC_SHIP_Kunlun GF_URNC_SHIP_Tectonic
 		}
-		
+#工程船
+		constructor = {
+			GF_URNC_SHIP_Pacific GF_URNC_SHIP_Atlantic GF_URNC_SHIP_Adriatic GF_URNC_SHIP_Amazon GF_URNC_SHIP_Danube GF_URNC_SHIP_India GF_URNC_SHIP_Africa GF_URNC_SHIP_Volga GF_URNC_SHIP_Colorado GF_URNC_SHIP_Ganges GF_URNC_SHIP_Jordan GF_URNC_SHIP_Mekong GF_URNC_SHIP_RioGrande GF_URNC_SHIP_Rubicon GF_URNC_SHIP_Yangtze GF_URNC_SHIP_Mississippi GF_URNC_SHIP_Yukon GF_URNC_SHIP_Indus
+			GF_URNC_SHIP_Rhine GF_URNC_SHIP_Tigris GF_URNC_SHIP_Sahara GF_URNC_SHIP_Bengal GF_URNC_SHIP_Merrimack GF_URNC_SHIP_Potomac GF_URNC_SHIP_Susquehanna GF_URNC_SHIP_Orinoco GF_URNC_SHIP_Shenandoah
+		}
+#殖民船
+		colonizer = {
+			GF_URNC_SHIP_Mayflower GF_URNC_SHIP_Abundance GF_URNC_SHIP_Bountiful GF_URNC_SHIP_Felicity GF_URNC_SHIP_Hope GF_URNC_SHIP_Opportunity GF_URNC_SHIP_Serenity GF_URNC_SHIP_Unity GF_URNC_SHIP_Destiny GF_URNC_SHIP_Britannia GF_URNC_SHIP_Byzantium GF_URNC_SHIP_Caledonia GF_URNC_SHIP_ElDorado GF_URNC_SHIP_Knossos GF_URNC_SHIP_Memphis
+			GF_URNC_SHIP_Olympus GF_URNC_SHIP_Persepolis GF_URNC_SHIP_SierradelaPlata GF_URNC_SHIP_Sparta GF_URNC_SHIP_Valhalla GF_URNC_SHIP_CrystalPalace GF_URNC_SHIP_Alaska GF_URNC_SHIP_Angola GF_URNC_SHIP_Australia GF_URNC_SHIP_Brazil GF_URNC_SHIP_Canada GF_URNC_SHIP_Congo GF_URNC_SHIP_Guinea GF_URNC_SHIP_India GF_URNC_SHIP_Indonesia
+			GF_URNC_SHIP_Jamaica GF_URNC_SHIP_Macau GF_URNC_SHIP_Mozambique GF_URNC_SHIP_Philippines GF_URNC_SHIP_Somalia GF_URNC_SHIP_SriLanka GF_URNC_SHIP_Taiwan
+		}
+#私人殖民船
+		sponsored_colonizer = { # needed when there are no generic names
+			GF_URNC_SHIP_Mayflower GF_URNC_SHIP_Abundance GF_URNC_SHIP_Bountiful GF_URNC_SHIP_Felicity GF_URNC_SHIP_Hope GF_URNC_SHIP_Opportunity GF_URNC_SHIP_Serenity GF_URNC_SHIP_Unity GF_URNC_SHIP_Destiny GF_URNC_SHIP_Britannia GF_URNC_SHIP_Byzantium GF_URNC_SHIP_Caledonia GF_URNC_SHIP_ElDorado GF_URNC_SHIP_Knossos GF_URNC_SHIP_Memphis
+			GF_URNC_SHIP_Olympus GF_URNC_SHIP_Persepolis GF_URNC_SHIP_SierradelaPlata GF_URNC_SHIP_Sparta GF_URNC_SHIP_Valhalla GF_URNC_SHIP_CrystalPalace GF_URNC_SHIP_Alaska GF_URNC_SHIP_Angola GF_URNC_SHIP_Australia GF_URNC_SHIP_Brazil GF_URNC_SHIP_Canada GF_URNC_SHIP_Congo GF_URNC_SHIP_Guinea GF_URNC_SHIP_India GF_URNC_SHIP_Indonesia
+			GF_URNC_SHIP_Jamaica GF_URNC_SHIP_Macau GF_URNC_SHIP_Mozambique GF_URNC_SHIP_Philippines GF_URNC_SHIP_Somalia GF_URNC_SHIP_SriLanka GF_URNC_SHIP_Taiwan
+		}
+#科研船
+		science = {
+			GF_URNC_SHIP_Aldrin GF_URNC_SHIP_Armstrong GF_URNC_SHIP_Columbus GF_URNC_SHIP_Copernicus GF_URNC_SHIP_Cortez GF_URNC_SHIP_Drake GF_URNC_SHIP_Hubble GF_URNC_SHIP_Goddard GF_URNC_SHIP_Galileo GF_URNC_SHIP_Einstein GF_URNC_SHIP_Gagarin GF_URNC_SHIP_Tereshkova GF_URNC_SHIP_ZhengHe GF_URNC_SHIP_LeifEricson GF_URNC_SHIP_Magellan GF_URNC_SHIP_JamesCook GF_URNC_SHIP_MarcoPolo GF_URNC_SHIP_Newton GF_URNC_SHIP_Tesla GF_URNC_SHIP_VonBraun GF_URNC_SHIP_WalterRaleigh GF_URNC_SHIP_Asimov GF_URNC_SHIP_Clarke GF_URNC_SHIP_Sagan GF_URNC_SHIP_IbnBattuta GF_URNC_SHIP_Kepler GF_URNC_SHIP_Ptolemy GF_URNC_SHIP_Pytheas GF_URNC_SHIP_Azophi GF_URNC_SHIP_Discovery GF_URNC_SHIP_Voyager GF_URNC_SHIP_Tradewind GF_URNC_SHIP_Scout GF_URNC_SHIP_Pioneer GF_URNC_SHIP_Explorer GF_URNC_SHIP_Sojourner GF_URNC_SHIP_SantaMaria GF_URNC_SHIP_Hawking GF_URNC_SHIP_Earhart GF_URNC_SHIP_Nobel GF_URNC_SHIP_Kelvin GF_URNC_SHIP_Fahrenheit GF_URNC_SHIP_Equinox GF_URNC_SHIP_Lagrange GF_URNC_SHIP_Tsiolkovsky GF_URNC_SHIP_Darwin GF_URNC_SHIP_Grissom GF_URNC_SHIP_Archimedes GF_URNC_SHIP_Cosmocrator
+		}
+#运输船
 		transport = {
-			探险者 女妖 女巫 根除者 折磨者 军团 报复 侵略者 突击 剁肉者 大将军 卓越 无敌 战神
-			马耳他 安蒂特姆 "巴吞鲁日 " 博波尔 阿布卡尔 隆德 伊苏斯 昌平 "条顿堡森林 " "贝尔街 " 穆克 萨拉曼卡 别列济纳 弗雷德里克斯堡 
-			沙内 舒玛 恩齐 法拉季 哈尼希 伊迪 伊萨 贾巴里 阿卡尼 阿鲁瓦尼 安叶达 斑斑那你 贝卡 贝奇腾巴 贝奇西威 布托雷思维 迪克斯
+			GF_URNC_SHIP_Cowpens GF_URNC_SHIP_BelleauWood GF_URNC_SHIP_Bataan GF_URNC_SHIP_Monterey GF_URNC_SHIP_Veracruz GF_URNC_SHIP_Tarawa GF_URNC_SHIP_IwoJima GF_URNC_SHIP_Okinawa GF_URNC_SHIP_Inchon GF_URNC_SHIP_GooseGreen GF_URNC_SHIP_Peleliu GF_URNC_SHIP_Guam GF_URNC_SHIP_Bougainville
 		}
-
-		military_station_small = { 
-			水星 金星 特拉 火星 木星 土星 天王星 海王星 月亮 火卫一 火卫二 谷神星
-			甘达拉 亚迪拉 米利达 贝阔恩达 皮尔达拉 艾尔德萨 阿加尼拉 阿斯萨 邦多加 欧达拉 毕尔加 加利达 特尔达加 提利姆巴 达恩塔瑞加 
-			欧博朗 安姆布雷尔 阿瑞尔 米兰达 崔顿 普鲁多 查伦
+#堡垒
+		military_station_small = {
+			GF_URNC_SHIP_Citadel GF_URNC_SHIP_Albacore GF_URNC_SHIP_Gateway GF_URNC_SHIP_Vincent GF_URNC_SHIP_Babylon GF_URNC_SHIP_Caernavon GF_URNC_SHIP_Acre GF_URNC_SHIP_Pembroke GF_URNC_SHIP_Acheron GF_URNC_SHIP_Spithead GF_URNC_SHIP_Halifax GF_URNC_SHIP_Victoria GF_URNC_SHIP_Chatham GF_URNC_SHIP_Anchorage GF_URNC_SHIP_ScapaFlow GF_URNC_SHIP_HamptonRoads GF_URNC_SHIP_Brooklyn GF_URNC_SHIP_Norfolk GF_URNC_SHIP_Newport GF_URNC_SHIP_Guam GF_URNC_SHIP_Pensacola GF_URNC_SHIP_Vesuvius GF_URNC_SHIP_McKinley GF_URNC_SHIP_Everest GF_URNC_SHIP_Kilimanjaro GF_URNC_SHIP_Aconcagua GF_URNC_SHIP_Elbrus GF_URNC_SHIP_StHelens GF_URNC_SHIP_Fuji GF_URNC_SHIP_Olympus GF_URNC_SHIP_Sinai GF_URNC_SHIP_Ambrose GF_URNC_SHIP_Bermuda GF_URNC_SHIP_Farpoint GF_URNC_SHIP_BlueStar GF_URNC_SHIP_OlympusMons GF_URNC_SHIP_Tharsis GF_URNC_SHIP_Syrtis GF_URNC_SHIP_Blackham GF_URNC_SHIP_Fletcher GF_URNC_SHIP_Perry GF_URNC_SHIP_Butakov GF_URNC_SHIP_Morris GF_URNC_SHIP_Moorsom GF_URNC_SHIP_Hart GF_URNC_SHIP_Hargood GF_URNC_SHIP_Spruance GF_URNC_SHIP_Tanaka GF_URNC_SHIP_Halsey GF_URNC_SHIP_Turner GF_URNC_SHIP_Doria GF_URNC_SHIP_Tirpitz GF_URNC_SHIP_Cunningham GF_URNC_SHIP_Jellicoe GF_URNC_SHIP_Hipper GF_URNC_SHIP_Beatty GF_URNC_SHIP_Potemkin GF_URNC_SHIP_Durham GF_URNC_SHIP_Codrington GF_URNC_SHIP_Milne GF_URNC_SHIP_Laforey GF_URNC_SHIP_Tyler GF_URNC_SHIP_Hawke GF_URNC_SHIP_Yonai GF_URNC_SHIP_Pound GF_URNC_SHIP_King GF_URNC_SHIP_Crutchley GF_URNC_SHIP_Mountbatten GF_URNC_SHIP_Kountouriotis GF_URNC_SHIP_Kuznetsov GF_URNC_SHIP_Essen GF_URNC_SHIP_Kornilov GF_URNC_SHIP_Suffren GF_URNC_SHIP_Treville GF_URNC_SHIP_Villeneuve GF_URNC_SHIP_Grasse GF_URNC_SHIP_Byng GF_URNC_SHIP_Lezo
 		}
-		
+#离子炮台
 		ion_cannon = {
-			水星 金星 特拉 火星 木星 土星 天王星 海王星 月亮 火卫一 火卫二 谷神星 
+			GF_URNC_SHIP_Bombard GF_URNC_SHIP_Ballista GF_URNC_SHIP_Catapult GF_URNC_SHIP_Harpoon GF_URNC_SHIP_Polybolos GF_URNC_SHIP_Culverin
 		}
 	}
 
 	fleet_names = {
-		random_names = {
-			"甲兵舰队" "方阵兵舰队" "百夫长舰队" "长生军舰队" "骑士舰队" "弓兵舰队" "骑兵舰队" "枪骑兵舰队" "国土佣仆舰队" "近卫骑兵舰队" "火绳枪兵舰队" "大方阵舰队" "火枪手舰队" "千禧舰队"
-		}
-		sequential_name = "联盟舰队 $O$"
+		sequential_name = GF_URNC_FLEET
 	}
-	
+
 	army_names = {
-	
+#少前新陆军
+		GF_army_arm_doll = {
+			sequential_name = GF_URNC_DOLL
+		}
+
+		GF_army_tactical_doll = {
+			sequential_name = GF_URNC_TACTICAL_DOLL
+		}
+
+		GF_army_defensive_auto_doll = {
+			sequential_name = GF_URNC_DEFENSIVE_DOLL
+		}
+
+		GF_army_occupation_doll = {
+			sequential_name = GF_URNC_OCCUPATION_DOLL
+		}
+#原版
+		machine_defense = {
+			sequential_name = GF_URNC_PLANETARYGUARD
+		}
+
+		machine_assault_1 = {
+			sequential_name = GF_URNC_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_2 = {
+			sequential_name = GF_URNC_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_3 = {
+			sequential_name = GF_URNC_EXPEDITIONARYFORCE
+		}
+
 		defense_army = {
-			sequential_name = "$O$ 民兵部队"
+			sequential_name = GF_URNC_PLANETARYGUARD
 		}
 
 		assault_army = {
-			sequential_name = "$O$ 正规部队"
+			sequential_name = GF_URNC_EXPEDITIONARYFORCE
 		}
-		
+
 		slave_army = {
-			sequential_name = "契约步枪 $O$"
+			sequential_name = GF_URNC_INDENTUREDRIFLES
 		}
-		
-		clone_army = { 
-			sequential_name = "克隆部队 $O$"
+
+		clone_army = {
+			sequential_name = GF_URNC_CLONEARMY
 		}
-		
+
+		undead_army = {
+			sequential_name = GF_URNC_DREADCOMMANDO
+		}
+
 		robotic_army = {
-			sequential_name = "猎杀小组 $O$"
+			sequential_name = GF_URNC_HUNTERKILLERGROUP
 		}
 
 		robotic_defense_army = {
-			sequential_name = "猎杀小组 $O$"
+			sequential_name = GF_URNC_GROUNDDEFENSEMATRIX
 		}
-		
-		psionic_army = { 
-			sequential_name = "灵能突击队 $O$"
+
+		psionic_army = {
+			sequential_name = GF_URNC_PSICOMMANDO
 		}
-		
+
 		xenomorph_army = {
-			sequential_name = "生物战争师 $O$"
+			sequential_name = GF_URNC_BIOWARFAREDIVISION
 		}
-		
+
 		gene_warrior_army = {
 			random_names = {
-				"SARC-A '角斗士'" "SARC-B '寡妇制造者'" "SARC-C '不朽'" "SARC-D '狂战士'" "SARC-E '刺客'"
-				"SARC-F '罗躲着'" "SARC-G '夜鹰'" "SARC-H '亡命徒'" "SARC-I '灰骑士" "SARC-J '暴徒'"  
+				GF_URNC_ARMY_SARC-AGladiators GF_URNC_ARMY_SARC-BWidowmakers GF_URNC_ARMY_SARC-CImmortals GF_URNC_ARMY_SARC-DBerserkers GF_URNC_ARMY_SARC-EAssassins
+				GF_URNC_ARMY_SARC-FReapers GF_URNC_ARMY_SARC-GNighthawks GF_URNC_ARMY_SARC-HDesperados GF_URNC_ARMY_SARC-IGreyKnights GF_URNC_ARMY_SARC-JRoughnecks
 			}
-			sequential_name = "生物工程空中小组 $O$"
+			sequential_name = GF_URNC_BIOENGINEEREDSQUADRON
 		}
+
 		occupation_army = {
-			sequential_name = "$O$ 加里森波德"
+			sequential_name = GF_URNC_GARRISONFORCE
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "$O$ 安卓 加里森波德"
+			sequential_name = GF_URNC_MECHANIZEDGARRISON
 		}
+
 		primitive_army = {
-			sequential_name = "原始军队 $O$"
+			sequential_name = GF_URNC_PRIMITIVEARMY
 		}
 		industrial_army = {
-			sequential_name = "工业军队 $O$"
+			sequential_name = GF_URNC_INDUSTRIALARMY
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 $O$"
+			sequential_name = GF_URNC_POSTATOMICARMY
 		}
 	}
 
 	planet_names = {
-
+#通用
 		generic = {
 			names = {
-				"纽耶路撒勒姆" 锚 迪斯 阿瓦隆 赏金 希望 奥里皮亚 瑟邓迪皮提 椿 提尼斯 萨拉姆 咸阳 康科德
-				忒伊亚 托斯卡纳 "新罗诺克" 温州 "新詹姆斯顿" "新特洛伊"德罗文尼亚 "王通" 吉萨家族 马达因家族 
-				爱 碧 莲 琳 美 娜 妮 秀 雪 燕 颖 玉 圆 
-				"波多 冈萨雷斯" 希美 晓 "埃瓦 加迪斯" "拉·伊莎贝拉" "新考文垂" "圣格洛夫" "圣波默罗伊"
-				"卡萨克索夫港"
+				GF_URNC_PLANET_01 GF_URNC_PLANET_02 GF_URNC_PLANET_03 GF_URNC_PLANET_04 GF_URNC_PLANET_05 
+				GF_URNC_PLANET_06 GF_URNC_PLANET_07 GF_URNC_PLANET_08 GF_URNC_PLANET_09 GF_URNC_PLANET_10 
+				GF_URNC_PLANET_11 GF_URNC_PLANET_12 GF_URNC_PLANET_13 GF_URNC_PLANET_14 GF_URNC_PLANET_15 
+				GF_URNC_PLANET_16 GF_URNC_PLANET_17 GF_URNC_PLANET_18 GF_URNC_PLANET_19 GF_URNC_PLANET_20 
+				GF_URNC_PLANET_21 GF_URNC_PLANET_22 GF_URNC_PLANET_23 GF_URNC_PLANET_24 GF_URNC_PLANET_25 
+				GF_URNC_PLANET_26 GF_URNC_PLANET_27 GF_URNC_PLANET_28 GF_URNC_PLANET_29 GF_URNC_PLANET_30 
+				GF_URNC_PLANET_31 GF_URNC_PLANET_32 GF_URNC_PLANET_33 GF_URNC_PLANET_34 GF_URNC_PLANET_35
+				GF_URNC_PLANET_36 GF_URNC_PLANET_37 GF_URNC_PLANET_38 GF_URNC_PLANET_39 GF_URNC_PLANET_40 
+				GF_URNC_PLANET_41 GF_URNC_PLANET_42 GF_URNC_PLANET_43 GF_URNC_PLANET_44 GF_URNC_PLANET_45 
+				GF_URNC_PLANET_46 GF_URNC_PLANET_47 GF_URNC_PLANET_48 GF_URNC_PLANET_49 GF_URNC_PLANET_50 
+				GF_URNC_PLANET_51 GF_URNC_PLANET_52 GF_URNC_PLANET_53 GF_URNC_PLANET_54 GF_URNC_PLANET_55 
+				GF_URNC_PLANET_56 GF_URNC_PLANET_57 GF_URNC_PLANET_58 GF_URNC_PLANET_59 GF_URNC_PLANET_60 
+				GF_URNC_PLANET_61 GF_URNC_PLANET_62 GF_URNC_PLANET_63 GF_URNC_PLANET_64 GF_URNC_PLANET_65 
+				GF_URNC_PLANET_66 GF_URNC_PLANET_67 GF_URNC_PLANET_68 GF_URNC_PLANET_69 GF_URNC_PLANET_70 
+				GF_URNC_PLANET_71 GF_URNC_PLANET_72 GF_URNC_PLANET_73 GF_URNC_PLANET_74 GF_URNC_PLANET_75
+				GF_URNC_PLANET_76 GF_URNC_PLANET_77 GF_URNC_PLANET_78 GF_URNC_PLANET_79 GF_URNC_PLANET_80 
+				GF_URNC_PLANET_81 GF_URNC_PLANET_82 GF_URNC_PLANET_83 GF_URNC_PLANET_84 GF_URNC_PLANET_85 
+				GF_URNC_PLANET_86 GF_URNC_PLANET_87 GF_URNC_PLANET_88 GF_URNC_PLANET_89 GF_URNC_PLANET_90 
+				GF_URNC_PLANET_91 GF_URNC_PLANET_92 GF_URNC_PLANET_93 GF_URNC_PLANET_94 GF_URNC_PLANET_95 
+				GF_URNC_PLANET_96 GF_URNC_PLANET_97 GF_URNC_PLANET_98 GF_URNC_PLANET_99 
 			}
 		}
-		
+#沙漠
 		pc_desert = {
 			names = {
-				"诺娃 阿拉比亚" 撒哈拉 戈壁 盐田 莫哈维 巴塔哥尼亚 叙利亚 吉娃娃 沙 "卡拉 库姆" 科罗拉多 索诺拉 
-				"科泽尔 库姆" 塔克拉玛干 塔尔 吉布森 纳米布 路特 盐沼 沙丘 迦梨 穆斯贝尔海姆 火神 邪神 迦太基 
+
 			}
 		}
-		
+#干旱
 		pc_arid = {
 			names = {
-				黎巴嫩 泰尔 安提阿 锡尔河 阿姆河 图兰 阿科恩娜 巴德纳斯 拉扎克 奥尔泰尼亚 贝尔纳斯 阿塔卡马 塔那米  
-				朗基普 "新火星" 乐土
+
 			}
 		}
-		
+#热带
 		pc_tropical = {
 			names = {
-				敖泊尔 乌茨拉斯 乌里斯 乌卡斯马 伊拉斯 欧多斯 西斯毛 破格拉 斯瓦斯卡 高茂斯 果酒 伊利斯 阿斯迦布
+
 			}
 		}
-		
+#陆地
 		pc_continental = {
 			names = {
-				阿尔比恩 阿莫尔 黎明 地平线 阿斯加德 "特拉诺瓦" 孔子 琐罗亚斯德 "天意" 
-				"武定" 郑 "高祖" 德川 织田 丰臣 罗摩 毗湿奴 苏摩 盘古
+
 			}
 		}
-		
+#盖亚
 		pc_gaia = {
 			names = {
-				津加伊 艾赛亚 航瓦尼 航比 卡贝罗 加土 昆布 库特雷瓦诺 关勒尼 冷思维 乐色博 乐斯瓦罗 卢腾铎 马陆班底 马卡洛 马勒卡
-			}
+
 		}
-		
+#海洋
 		pc_ocean = {
 			names = {
-				阿图拉 塔尔提索斯 阿加莎 "圣纳奇布尔" "圣卡斯帕" 特鲁特 "圣霍萨克" 弗莱辛顿 格德伍德 芬卡斯尔
-				阿克伦 阿喀琉斯 阿伽门农 安菲西恩 阿奎隆 阿耳戈 阿格斯 阿里尔 欧罗拉 阿佛纳斯 巴克斯 布西发拉斯 卡利奥普 卡利普索 卡斯托 卡里布迪斯 瑟茜
+
 			}
 		}
-		
+#苔原
 		pc_tundra = {
 			names = {
-				冰岛 加拿大 科拉河 斯坎德扎 外宫 罗斯 暴雪 太原 
+
 			}
 		}
-		
+#冰原
 		pc_arctic = {
 			names = {
-				图勒 北极大陆 格陵兰 阿拉斯加 巴芬岛 西伯利亚 尼姆海姆 北方乐土
+
+			}
+		}
+#草原
+		pc_savannah = {
+			names = {
+			}
+		}
+#高山
+		pc_alpine = {
+			names = {
 			}
 		}
 
-		pc_savannah = {
-			names = { }
-		}
-
-		pc_alpine = {
-			names = { }
-		}
-		
 	}
 
 
@@ -262,361 +265,367 @@ GF_URNC = {
 		names1 = {
 			weight = 40
 			first_names_male = {
-				杰姆-鲁罗德普 杰姆-普赫恩 杰姆-法尔奎格 杰姆-吉欧科杜尔 杰姆-贾尔梅德斯 杰姆-乔欧姆恩格 杰姆-格哈恩德瑞尔 杰姆-普霍尔特格 杰姆-普格伊斯恩
-				杰姆-卡哈罗卡格 杰姆-卡尔赫德 达维·迪哥 达维·加瓦斯 达维·休尼斯 达维·欧林巴 达维·一塔 达维·波尔 达维·塞娃 达维·欧本 达维·富计 达维·阿纳斯
-				达维·乌巴 达维·阿姆 达维·欧巴啦 达维·伊瓦姆 达维·伊提 达维·佳恩 达维·弗雷福 达维·佳林 达维·恩 达维·阿拉布
-				埃德加 克里斯平 纳尔逊 埃米特 特雷弗 特拉维斯 兰斯 阿德里安 德斯蒙德 布伦丹 布雷特 安布罗斯 巴希尔 基兰 柯南 德莫特 达德利 费利克斯
-				多梅尼科 布鲁诺 保罗 米歇尔 乔治 塞尔吉奥 卢西亚诺 亚历山德罗 阿方索 贝尼托 法布里奇奥 塞萨尔 恩里科 古斯塔沃 西尔维奥 翁贝托
-				埃塞克斯 赤城 加贺 杰出 强悍 无敌 企业 星座 宪法 游侠 仙女座 天鹰座 世纪 协和 反抗 银河
-				马里奥 路易吉 乔凡尼 曾 安东尼奥 罗伯托 安德莉亚 斯蒂法诺 马可 弗兰西斯科 安吉洛 文森佐 彼得罗 塞尔瓦托 卡洛 佛朗哥
-				豺狼 寒鸦 美洲虎 袋鼠 红隼 "眼镜王蛇" "王鱼" 瓢虫 豹 狮子 蜥蜴 天猫 疯丫头 猫鼬 蚊子 独角鲸 夜鹰 豹猫 逆戟鲸
-				布拉尼斯拉夫 伊利亚 雅罗斯拉夫 拉多米尔 基里尔 拉多斯拉夫 卢博米尔 拉蒂米尔 叶戈尔
-				玛蒂娜 朱莉 安托尼拉 雷娜塔 阿格斯缇娜 康斯坦察 菲比安娜 
-				津加伊 艾赛亚 航瓦尼 航比 卡贝罗 加土 昆布 库特雷瓦诺 关勒尼 冷思维 乐色博 乐斯瓦罗 卢腾铎 马陆班底 马卡洛 马勒卡
-				弗斯迪格 弗什加瓦斯 弗什胡尼斯 弗什欧里姆巴 弗什伊萨 弗什霍尔 弗什瑟瓦 弗什欧伯恩 弗什弗吉 弗什阿纳斯 弗什乌巴 弗什阿维姆 弗什欧巴拉 弗什伊娃姆尔 弗什伊瑟 弗什加恩 弗什弗雷瓦斯 弗什加里恩 弗什伊恩 弗什阿拉布
-				利亚姆 德克 "本杰明爵士" "杰姆斯爵士" "沃尔特爵士" "奈吉尔爵士" "蒙哥马利爵士" "道格拉斯爵士" "安得烈爵士" 万斯 凯尔 切斯特
+				GF_URNC_CHR_John GF_URNC_CHR_Brian GF_URNC_CHR_Peter GF_URNC_CHR_Adam GF_URNC_CHR_James GF_URNC_CHR_William GF_URNC_CHR_Jacob GF_URNC_CHR_Christopher GF_URNC_CHR_Joshua GF_URNC_CHR_Michael GF_URNC_CHR_Ethan GF_URNC_CHR_Joseph GF_URNC_CHR_Matthew GF_URNC_CHR_Anthony GF_URNC_CHR_Daniel GF_URNC_CHR_Ryan GF_URNC_CHR_Samuel GF_URNC_CHR_Kevin
+				GF_URNC_CHR_David GF_URNC_CHR_Logan GF_URNC_CHR_Carter GF_URNC_CHR_Benjamin GF_URNC_CHR_Andrew GF_URNC_CHR_Henry GF_URNC_CHR_Nicholas GF_URNC_CHR_Gavin GF_URNC_CHR_Owen GF_URNC_CHR_Jack GF_URNC_CHR_Wyatt GF_URNC_CHR_Wayne GF_URNC_CHR_Walter GF_URNC_CHR_Charles GF_URNC_CHR_Louis GF_URNC_CHR_Merritt GF_URNC_CHR_Earl GF_URNC_CHR_Alfred GF_URNC_CHR_Vernon
+				GF_URNC_CHR_Edward GF_URNC_CHR_Donald GF_URNC_CHR_George GF_URNC_CHR_Paul GF_URNC_CHR_Greg GF_URNC_CHR_Thomas GF_URNC_CHR_Robert GF_URNC_CHR_Gene GF_URNC_CHR_Glen GF_URNC_CHR_Hugh GF_URNC_CHR_Ronald GF_URNC_CHR_Francis GF_URNC_CHR_Stephen GF_URNC_CHR_Jon GF_URNC_CHR_Richard GF_URNC_CHR_Mark GF_URNC_CHR_Marcus GF_URNC_CHR_Scott GF_URNC_CHR_Duncan
+				GF_URNC_CHR_Douglas GF_URNC_CHR_Keith GF_URNC_CHR_Howard GF_URNC_CHR_Russell GF_URNC_CHR_Clayton GF_URNC_CHR_Lee GF_URNC_CHR_Steve GF_URNC_CHR_Tom GF_URNC_CHR_Clay GF_URNC_CHR_Oliver GF_URNC_CHR_Kenneth GF_URNC_CHR_Ralph GF_URNC_CHR_Andy GF_URNC_CHR_Tony GF_URNC_CHR_Tyrone GF_URNC_CHR_Lawrence GF_URNC_CHR_Patrick GF_URNC_CHR_Harry GF_URNC_CHR_Alan
+				GF_URNC_CHR_Eugene GF_URNC_CHR_Frank GF_URNC_CHR_Craig GF_URNC_CHR_Jason GF_URNC_CHR_Martin GF_URNC_CHR_Jonathan GF_URNC_CHR_Harrison GF_URNC_CHR_Connor GF_URNC_CHR_Gaylord GF_URNC_CHR_Sean GF_URNC_CHR_Cooper GF_URNC_CHR_Stanley GF_URNC_CHR_Calhoun GF_URNC_CHR_Neil GF_URNC_CHR_Jeffrey GF_URNC_CHR_Harold GF_URNC_CHR_Raymond GF_URNC_CHR_Fred
+				GF_URNC_CHR_Marshall GF_URNC_CHR_Silas GF_URNC_CHR_Roy GF_URNC_CHR_Jesse GF_URNC_CHR_Ken GF_URNC_CHR_Bruce GF_URNC_CHR_Norris GF_URNC_CHR_Horatio GF_URNC_CHR_Clarence GF_URNC_CHR_Lloyd GF_URNC_CHR_Duane GF_URNC_CHR_Mortimer GF_URNC_CHR_Ben GF_URNC_CHR_Ernest GF_URNC_CHR_Warren GF_URNC_CHR_Graham GF_URNC_CHR_Marvin GF_URNC_CHR_Orson GF_URNC_CHR_Dennis
+				GF_URNC_CHR_Jackson GF_URNC_CHR_Dwight GF_URNC_CHR_Harlan GF_URNC_CHR_Arthur GF_URNC_CHR_Percival GF_URNC_CHR_Montgomery GF_URNC_CHR_Clyde GF_URNC_CHR_Rodney GF_URNC_CHR_Gerald GF_URNC_CHR_Franklin GF_URNC_CHR_Jake GF_URNC_CHR_Horace GF_URNC_CHR_Irving GF_URNC_CHR_Seth GF_URNC_CHR_Randolph GF_URNC_CHR_Floyd GF_URNC_CHR_Carl
+				GF_URNC_CHR_Brent GF_URNC_CHR_Cliff GF_URNC_CHR_Malcolm GF_URNC_CHR_Timothy GF_URNC_CHR_Wallace GF_URNC_CHR_Pierce GF_URNC_CHR_Edmund GF_URNC_CHR_Gary GF_URNC_CHR_Tony GF_URNC_CHR_Nathan GF_URNC_CHR_Eric GF_URNC_CHR_Albert GF_URNC_CHR_Robin GF_URNC_CHR_Geoffrey GF_URNC_CHR_Larry GF_URNC_CHR_Ian GF_URNC_CHR_Leonard GF_URNC_CHR_Gordon GF_URNC_CHR_Derek
+				GF_URNC_CHR_Maxwell GF_URNC_CHR_Alec GF_URNC_CHR_Bernard GF_URNC_CHR_Stuart GF_URNC_CHR_Rupert GF_URNC_CHR_Dean GF_URNC_CHR_Philip GF_URNC_CHR_Ross GF_URNC_CHR_Colin GF_URNC_CHR_Darren GF_URNC_CHR_Melvin GF_URNC_CHR_Justin GF_URNC_CHR_Zack GF_URNC_CHR_Elliot GF_URNC_CHR_Simon GF_URNC_CHR_Morgan GF_URNC_CHR_Clark GF_URNC_CHR_Xavier GF_URNC_CHR_Jared
+				GF_URNC_CHR_Edgar GF_URNC_CHR_Crispin GF_URNC_CHR_Nelson GF_URNC_CHR_Emmett GF_URNC_CHR_Trevor GF_URNC_CHR_Travis GF_URNC_CHR_Lance GF_URNC_CHR_Adrian GF_URNC_CHR_Desmond GF_URNC_CHR_Brendan GF_URNC_CHR_Brett GF_URNC_CHR_Ambrose GF_URNC_CHR_Basil GF_URNC_CHR_Kieran GF_URNC_CHR_Conan GF_URNC_CHR_Dermot GF_URNC_CHR_Dudley GF_URNC_CHR_Felix
+				GF_URNC_CHR_Finn GF_URNC_CHR_Oscar GF_URNC_CHR_Sidney GF_URNC_CHR_Aaron GF_URNC_CHR_Vincent GF_URNC_CHR_Angus GF_URNC_CHR_Grant GF_URNC_CHR_Luke GF_URNC_CHR_Miles GF_URNC_CHR_Morton GF_URNC_CHR_Randall GF_URNC_CHR_Reginald GF_URNC_CHR_Herbert GF_URNC_CHR_Wesley GF_URNC_CHR_Nigel GF_URNC_CHR_Alexander GF_URNC_CHR_Dominic GF_URNC_CHR_Bradley
+				GF_URNC_CHR_Liam GF_URNC_CHR_Dirk GF_URNC_CHR_SirBenjamin GF_URNC_CHR_SirJames GF_URNC_CHR_SirWalter GF_URNC_CHR_SirNigel GF_URNC_CHR_SirMontgomery GF_URNC_CHR_SirDouglas GF_URNC_CHR_SirAndrew GF_URNC_CHR_Vance GF_URNC_CHR_Kyle GF_URNC_CHR_Chester
 			}
 			first_names_female = {
-				奥利维亚 艾米丽 索菲 杰西卡 爱丽丝 斯卡雷特 艾玛 黛西 伊芙 菲比 席恩 安娜 玛丽 梅根 伊丽莎白 艾米 达西 马提尔达 艾伦
-				露西 恩典 伊夫林 琥珀 哈丽特 凯特琳 茉莉 麦迪逊 凯特 埃利诺 亚历山德拉 莎拉 玛莎 伯大尼 丽贝卡 维多利亚 
-				加百拉 格雷泽达 马瑞亚 罗雷娜 马戈达勒娜 默西迪丝 米里亚姆 帕利娜 索菲亚 尤兰达 卡米拉 露西亚娜 瓦乐雷娜 马瑞亚娜 达尼拉
-				莱弗雷斯 格斯提斯 雷格里德 萨克特鲁姆 穆尔嘉德 赛尔飞斯 格尔莱弗 克尔德瑞尔斯 苏克莱恩 卡纳尔斯 斯欧拉尔 梅罗尔德 加勒德尔 萨索德姆 克拉萨尔 古尔顿 尤德古德 萨瑟姆恩 科罗特 迪萝姆
-				阿卜杜拉 阿巴斯 阿布德 艾哈迈德 艾哈默德 阿里 阿马尔 埃米尔 哈姆扎 哈桑 希达 易卜拉欣 贾马尔 卡里姆 卡腾姆 哈利勒 哈立德 马利克 马赫迪
-				鲍登 道格拉斯 马尔登 威克姆 米利根 布拉德利 芬德利 斯普纳 哈珀 谢泼德 金士顿 诺克斯 科尔贝克 希尔兹 伯恩斯 吉布森
-				丹尼斯 多洛雷丝 多琳 德鲁西拉 伊迪丝 埃德娜 埃莉诺 艾琳 埃德温娜 埃连 艾丝特尔 埃塞尔 费莉西蒂 菲奥娜 吉纳维夫 格蒂 格温
-				格雷什娜 弗多罗维 科欧马罗维 普什科夫 彼得连科 沙塔洛夫 伊万诺夫 卡缅斯基 瓦西里耶夫 乌兰诺 沃尔科夫 格里亚兹诺夫 杜德尼克 亚左夫 泽洛夫
-				朗维提亚姆 科罗尼亚姆 尼姆瑞姆 米坦尼亚姆 拉莫尼亚姆 赫努米亚姆 贾纳斯亚姆 弗加提亚姆 帕诺基瑞姆 维拉尼亚姆 维杜瑞姆 罗梅尼亚姆 罗诺比瑞姆 伯瑞克尼亚姆 科布恩诺瑞姆 欧莫狄瑞姆 伊比尼蒂姆 马达瑟尼亚姆 艾斯皮瑞姆 赫巴瑞姆 沃比瑞姆 吉托瑞姆 比沃瑞姆 瑞沃瑞姆 利姆瑞姆 德罗弗利姆 迪恩崔提亚姆 艾罗瑞姆 沃恩多瑞姆 塞普托瑞姆 斯提瑞姆 布罗瓦瑞姆 尼瑞姆 雷莫尔瑞姆 克托维利姆 克托瑞姆 格罗尼亚姆 雷维亚姆 赫尼米亚姆 娜瑞姆
-				佩里 帕森 帕克斯顿 佩恩 珀金斯 彼得斯 帕欣 菲利普斯 皮特 波特 雷诺兹 雷文斯 里斯 理查森 里弗斯 罗宾斯
-				特里萨 蒂芙尼 瓦内萨 梅丽莎 旺达 温迪 薇尼弗雷德 维多利亚 伊维特 贝拉 塞尔达 琼 帕梅拉 雪莉 艾德里安 莫妮卡 
-				井上 木村 清水 早志 佐藤 山崎 中岛 森 安倍 池田 桥本 石川 山下 小川 石井 长谷川 
-				芳克 马诺克 毕肖普 卡扎科沃 克朋斯 布鲁莫斯基 巴拉卡 哈特曼 尤蒂莱南 尼西扎瓦 萨凯 舍斯塔科夫 阔泽杜布 坎塔兹诺 "万·里尔德" 博恩戈
-				凯恩 纳汉森 詹宁斯 雅可布 杰夫里 欧文 吉尔伯特 玻璃 格洛弗 戈德堡 德斯坦 古德曼 古德温 格雷厄姆 格兰特 格雷夫
-				不那 塔拉达 咯克塔拉 尤路雷克 克罗体育 拉塔斯 西多 打那克 库特罗 特拉克 奇多 奇卡 杜雷特 克罗塔斯 塔步 柯提克 丽塔克 布拉卡斯 推勒得克 大洛克
-				莫加瑞姆-罗 马什加德姆-罗 乌德瑞姆-罗 乌加拉斯姆-罗 乌萨拉毕姆-罗 安达格利姆-罗 乌拉斯马蒂姆-罗 乌普拉吉姆-塔 赫斯塔丽姆-塔
+				GF_URNC_CHR_Olivia GF_URNC_CHR_Emily GF_URNC_CHR_Sophie GF_URNC_CHR_Jessica GF_URNC_CHR_Alice GF_URNC_CHR_Scarlett GF_URNC_CHR_Emma GF_URNC_CHR_Daisy GF_URNC_CHR_Eve GF_URNC_CHR_Phoebe GF_URNC_CHR_Sienna GF_URNC_CHR_Anna GF_URNC_CHR_Mary GF_URNC_CHR_Megan GF_URNC_CHR_Elizabeth GF_URNC_CHR_Amy GF_URNC_CHR_Darcy GF_URNC_CHR_Matilda GF_URNC_CHR_Erin
+				GF_URNC_CHR_Lucy GF_URNC_CHR_Grace GF_URNC_CHR_Evelyn GF_URNC_CHR_Amber GF_URNC_CHR_Harriet GF_URNC_CHR_Caitlyn GF_URNC_CHR_Jasmine GF_URNC_CHR_Madison GF_URNC_CHR_Kate GF_URNC_CHR_Eleanor GF_URNC_CHR_Alexandra GF_URNC_CHR_Sarah GF_URNC_CHR_Martha GF_URNC_CHR_Bethany GF_URNC_CHR_Rebecca GF_URNC_CHR_Victoria
+				GF_URNC_CHR_Gabriella GF_URNC_CHR_Naomi GF_URNC_CHR_Lauren GF_URNC_CHR_Clara GF_URNC_CHR_Laura GF_URNC_CHR_Kayla GF_URNC_CHR_Nicole GF_URNC_CHR_Skye GF_URNC_CHR_Eliza GF_URNC_CHR_Patricia GF_URNC_CHR_Linda GF_URNC_CHR_Barbara GF_URNC_CHR_Jennifer GF_URNC_CHR_Maria GF_URNC_CHR_Susan GF_URNC_CHR_Margaret GF_URNC_CHR_Dorothy
+				GF_URNC_CHR_Lisa GF_URNC_CHR_Nancy GF_URNC_CHR_Helen GF_URNC_CHR_Sandra GF_URNC_CHR_Donna GF_URNC_CHR_Carol GF_URNC_CHR_Ruth GF_URNC_CHR_Sharon GF_URNC_CHR_Michelle GF_URNC_CHR_Kimberly GF_URNC_CHR_Deborah GF_URNC_CHR_Amelia GF_URNC_CHR_Charlotte GF_URNC_CHR_Isabella GF_URNC_CHR_Ruby GF_URNC_CHR_Addison GF_URNC_CHR_Alyssa
+				GF_URNC_CHR_Abigail GF_URNC_CHR_Julia GF_URNC_CHR_Samantha GF_URNC_CHR_Brooklyn GF_URNC_CHR_Ashley GF_URNC_CHR_Natalie GF_URNC_CHR_Brianna GF_URNC_CHR_Chloe GF_URNC_CHR_Hailey GF_URNC_CHR_Lillian GF_URNC_CHR_Judith GF_URNC_CHR_Alison GF_URNC_CHR_Amanda GF_URNC_CHR_Angela GF_URNC_CHR_Audrey GF_URNC_CHR_Beatrice
+				GF_URNC_CHR_Brenda GF_URNC_CHR_Bridget GF_URNC_CHR_Caroline GF_URNC_CHR_Cassandra GF_URNC_CHR_Charity GF_URNC_CHR_Cecilia GF_URNC_CHR_Anne GF_URNC_CHR_Clarissa GF_URNC_CHR_Christabel GF_URNC_CHR_Cheryl GF_URNC_CHR_Cynthia GF_URNC_CHR_Cadence GF_URNC_CHR_Cordelia GF_URNC_CHR_Daphne GF_URNC_CHR_Deanna
+				GF_URNC_CHR_Denise GF_URNC_CHR_Dolores GF_URNC_CHR_Doreen GF_URNC_CHR_Drusilia GF_URNC_CHR_Edith GF_URNC_CHR_Edna GF_URNC_CHR_Eleonor GF_URNC_CHR_Eileen GF_URNC_CHR_Edwina GF_URNC_CHR_Ellen GF_URNC_CHR_Estelle GF_URNC_CHR_Ethel GF_URNC_CHR_Felicity GF_URNC_CHR_Fiona GF_URNC_CHR_Genevieve GF_URNC_CHR_Gertie GF_URNC_CHR_Gwen
+				GF_URNC_CHR_Gwendolyn GF_URNC_CHR_Henrietta GF_URNC_CHR_Imogen GF_URNC_CHR_Iris GF_URNC_CHR_Imelda GF_URNC_CHR_Jacqueline GF_URNC_CHR_Jane GF_URNC_CHR_Jenna GF_URNC_CHR_Joanna GF_URNC_CHR_Josephine GF_URNC_CHR_Julianne GF_URNC_CHR_Kathleen GF_URNC_CHR_Kierra GF_URNC_CHR_Kaylee GF_URNC_CHR_Leah GF_URNC_CHR_Lois
+				GF_URNC_CHR_Loretta GF_URNC_CHR_Lorna GF_URNC_CHR_Louisa GF_URNC_CHR_Lynnette GF_URNC_CHR_Lucinda GF_URNC_CHR_Mabel GF_URNC_CHR_Marcia GF_URNC_CHR_Marilyn GF_URNC_CHR_Marissa GF_URNC_CHR_Marjorie GF_URNC_CHR_Maud GF_URNC_CHR_Melanie GF_URNC_CHR_Myrna GF_URNC_CHR_Mavis GF_URNC_CHR_Nadine GF_URNC_CHR_Paula GF_URNC_CHR_Penelope
+				GF_URNC_CHR_Philippa GF_URNC_CHR_Priscilla GF_URNC_CHR_Rhonda GF_URNC_CHR_Rita GF_URNC_CHR_Roberta GF_URNC_CHR_Rosamund GF_URNC_CHR_Rosemary GF_URNC_CHR_Roxanne GF_URNC_CHR_Sabrina GF_URNC_CHR_Selma GF_URNC_CHR_Selina GF_URNC_CHR_Sibyl GF_URNC_CHR_Suzanne GF_URNC_CHR_Tara GF_URNC_CHR_Tabitha GF_URNC_CHR_Thelma
+				GF_URNC_CHR_Teresa GF_URNC_CHR_Tiffany GF_URNC_CHR_Vanessa GF_URNC_CHR_Vivian GF_URNC_CHR_Melissa GF_URNC_CHR_Wanda GF_URNC_CHR_Wendy GF_URNC_CHR_Winifred GF_URNC_CHR_Victoria GF_URNC_CHR_Yvette GF_URNC_CHR_Vera GF_URNC_CHR_Zelda GF_URNC_CHR_Joan GF_URNC_CHR_Pamela GF_URNC_CHR_Sherry GF_URNC_CHR_Adrienne GF_URNC_CHR_Monica
+				GF_URNC_CHR_Irene GF_URNC_CHR_Heather GF_URNC_CHR_Lindsay GF_URNC_CHR_Gillian GF_URNC_CHR_Kristen GF_URNC_CHR_Odette GF_URNC_CHR_Felicia GF_URNC_CHR_Christina GF_URNC_CHR_Candace GF_URNC_CHR_Arlene GF_URNC_CHR_Tisha GF_URNC_CHR_Majel GF_URNC_CHR_Fran GF_URNC_CHR_Doris GF_URNC_CHR_Julie GF_URNC_CHR_Courtney GF_URNC_CHR_Shelly
+				GF_URNC_CHR_Frances GF_URNC_CHR_Mandy GF_URNC_CHR_Mindy GF_URNC_CHR_Rachel GF_URNC_CHR_Miranda GF_URNC_CHR_Virginia GF_URNC_CHR_Gina GF_URNC_CHR_Karla GF_URNC_CHR_Tricia GF_URNC_CHR_Diane GF_URNC_CHR_Phyllis GF_URNC_CHR_Sally GF_URNC_CHR_Elaine GF_URNC_CHR_Kara GF_URNC_CHR_Shannon GF_URNC_CHR_Susie GF_URNC_CHR_Elle GF_URNC_CHR_Gail GF_URNC_CHR_Ann
+				GF_URNC_CHR_Kathryn GF_URNC_CHR_Tina GF_URNC_CHR_Carrie GF_URNC_CHR_Miriam GF_URNC_CHR_Vivica GF_URNC_CHR_Tamara GF_URNC_CHR_Judy GF_URNC_CHR_Willow GF_URNC_CHR_Hilary GF_URNC_CHR_Claire GF_URNC_CHR_Danielle GF_URNC_CHR_Teri GF_URNC_CHR_Jackie GF_URNC_CHR_Kelly GF_URNC_CHR_Bonnie GF_URNC_CHR_Holly GF_URNC_CHR_Janice GF_URNC_CHR_Brittney
+				GF_URNC_CHR_Bianca GF_URNC_CHR_Stephanie GF_URNC_CHR_Natasha GF_URNC_CHR_Lydia GF_URNC_CHR_Mona GF_URNC_CHR_Meredith GF_URNC_CHR_Lynda GF_URNC_CHR_Erica GF_URNC_CHR_Heidi GF_URNC_CHR_Paige GF_URNC_CHR_Carmen GF_URNC_CHR_Hayden GF_URNC_CHR_Mallory GF_URNC_CHR_Mercedes GF_URNC_CHR_Marion GF_URNC_CHR_Winona GF_URNC_CHR_Jill
+				GF_URNC_CHR_Molly GF_URNC_CHR_Constance GF_URNC_CHR_Jenny GF_URNC_CHR_Penny GF_URNC_CHR_Meryl GF_URNC_CHR_Jodie GF_URNC_CHR_Veronica GF_URNC_CHR_April GF_URNC_CHR_Sigourney GF_URNC_CHR_Jillian GF_URNC_CHR_Honor
 			}
 			second_names = {
-				史密斯 约翰 威廉姆斯 泰勒 布朗 戴维斯 伊凡斯 威尔逊 强森 罗宾逊 莱特 汤普逊 伊凡斯 沃克 怀特 罗伯特 格林 哈尔
-				伍德 杰克逊 克拉克 李维斯 梅森 米切尔 科克斯 坎贝尔 斯图尔特 奎恩 墨菲 汉密尔顿 莫尔 莫里 莫里麦克劳林 马丁 奥尼尔
-				安 宝 伯 蔡 诚 德 东 冯 刚 国 胡 徽 健 杰 康 李 梁 龙 猛 宁 彭 强 史 宋 涛 天 威 
-				辛克莱 辛普森 齐默尔曼 杨 约克 杨弗洛 维特斯 沃雷 沃达德 惠特利 威乐尔 温特沃斯 韦斯特 韦弗 韦伯 威尔士
-				斯帕克斯 斯宾塞 斯坦福 斯坦利 斯特尔 斯特林 斯蒂文 斯通 斯图尔特 沙利文 斯旺森 斯温尼 斯威夫特 赛克斯 特勒尔 桑顿 
-				蒂普顿 特纳 泰勒 安德伍德 文森特 沃伊特 韦德 华盛顿 瓦特 奥康纳 奥康奈 奥哈拉 欧文斯 帕赫 帕尔默 帕克 
-				佩里 帕森 帕克斯顿 佩恩 珀金斯 彼得斯 帕欣 菲利普斯 皮特 波特 雷诺兹 雷文斯 里斯 理查森 里弗斯 罗宾斯
-				罗伯森 罗斯威尔 瑞安 赛林杰 塞缪尔斯 桑德勒 萨维奇 萨克斯顿 施耐德 斯康利 赛克维克 沙仑 弗林特 希贝特 西尔弗曼
-				西尔弗斯通 斯玛特 斯诺 克鲁格 兰度 劳伦斯 罗森 李 莱昂纳德 利特尔 罗威尔 迈克 马克基尼 马克金诺 马克斯旺 马克寇伊
-				麦卡锡 麦考密克 麦克雷 马歇尔 林奇 米勒 蒙哥马利 莫里斯 纳什 纽曼 尼克尔斯 诺斯 马斯特森 梅菲尔德 麦考尔 
-				汉堡 不来梅 凤凰 印第安纳波利斯 明尼阿波利斯 米兰 泗水 "吉隆坡" "阿布扎比" 安卡拉 贝鲁特 加德满都 大埤 伊斯兰堡 卡拉奇 苏黎士 德里
-				凯恩 纳汉森 詹宁斯 雅可布 杰夫里 欧文 吉尔伯特 玻璃 格洛弗 戈德堡 德斯坦 古德曼 古德温 格雷厄姆 格兰特 格雷夫 
-				钩爪 铁锤 吸血鬼 极速 脉纹者 复仇 庄严 恶毒 沉默 至高无上 成功 碎击者 六翼天使 蟒蛇 喷火 跟踪者 阴谋
-				科特 迪拉德 坎宁安 迪斯泰法诺 芬克斯 弗莱彻 加洛韦 柯比 萨特 普雷斯顿 塔克 "小史密斯" "小威廉姆" "小伊万"
-				富兰克林 阿姆斯特朗 张伯伦 鲍威尔 阿伯特 布莱尔 "万·胡夫" "万·瑞金" 伯恩赛德 斯科菲尔德 法恩斯沃斯 弗德 瓦纳尔 波特
-				杜福斯 杜柞木 杜栎木 杜多福 杜阿林 杜欧布 杜尔 杜乌穆尔 杜阿卜哈 杜布拉 杜埃尔夫 杜欧弗
-				俾斯麦 大和 阿克提乌姆 阿金科特 奥斯特利茨 盖提斯堡 日德兰 特拉法加 对马 "福治谷" 凡尔登 滑铁卢 格拉尼库斯 法萨卢斯 光明 查理曼
-				壁垒 卫士 坚忍 警惕 果断 坚韧 山本 列克星敦 中途岛 萨拉托加 约克城 "珊瑚海" 竞技神 黄蜂 大黃蜂 "皇家方舟" 
-				夏普 多斯顿 豪威尔 米德 普尔 阿斯顿 布洛克班克 库伯 克沙曼 迪克逊 巴克斯特 德雷克 加兰 威尔斯 哈格里夫 霍顿 
-				哈斯克瓦尔加姆 哈斯克祖门 哈斯克特拉格 哈斯克索纳斯 哈斯克帕格拉姆 哈斯克乔纳特 哈斯克格恩特 哈斯克布利姆 哈斯克恩德克 哈斯克卡拉斯 拓拔伊恩拉布 拓拔克尔迪 拓拔瓦拉斯 拓拔纳姆塔 拓拔加恩达 拓拔达加斯 拓拔弗恩拉克 拓拔哈萨德拉 拓拔马拉斯 拓拔帕特
-				沃德 霍华德 劳埃德 塔纳 尼古拉斯 马修斯 埃里斯 惠尔鑫 惠特克 巴顿 霍金斯 加洛维克 斯佩克特 里弗斯 弗农 尼文
-				罗利 斯坦福 福西特 洛克哈特 郎 奥利芬特 威尔金斯 巴尔弗 阿普比 布坎南 亚德里 肖 斯托克斯 艾伦比 科伯恩 芒迪
-				弗朗西斯 曼迪 明迪 雷切尔 米兰达 维吉尼亚 吉娜 卡拉 特雷西亚 戴安 菲利斯 萨利 伊莱恩 卡拉 香农 苏瑟 艾利 盖尔 安
-				巴拉卡特 阿巴斯 "阿卜杜勒努尔" 阿布德 阿尔阿达尔 阿尔阿杰拉尼 阿尔巴利奇 阿尔穆巴拉克 阿瓦木 阿卡德 阿拉维 阿尔阿西里 阿尔阿特拉什 阿尔迪马斯其
-				波罗敏·罗 爬塔罗敏·罗 翁达林·罗 奥夫佳林·罗 亚尔新·罗 贝罗琴·罗 曼塔林·罗 麦多林·罗 穆佳林·罗
-				伯尼斯 伯内特 布什 巴特勒 弗兰奇 英格兰 卡罗尔 卡特尔 卡瓦诺 查芬 蔡斯 钱宁 查普曼 阿诺 弗赖伊 米尔顿
-				卡板度 金度 达拉斯度 迪翁度 阿帆度 阿提林度 阿斯卡林度 铱金度 翁度 特兰度 伊凡度 尹尼尔度 伊坎度 汀度 派甘度
-				玻利瓦尔 布鲁西洛夫 丘吉尔 克劳塞维茨 加里波第 "古斯塔夫·阿道夫" 汉穆拉比 "凯撒大帝" 查士丁尼 林肯 巴顿 隆美尔 "孙子" 解放者
-				法拉吉 伊玛姆 吉拉尼 吉恩果 巨马恩 克哈米斯 科万勒 勒恩斯维 勒斯博 勒特斯瓦罗 卢特恩多 马荷卢巴恩德尔 马卡罗 马勒卡
-				莱德劳 兰克希尔 莱萨德 罗弗 麦肯齐 麦克内文 麦克恩尼斯 马迪根 马洛尼 沼泽 麦考利斯特 班恩 梅尔斯 尼克尔森 奥尔森 
-				奥马利 皮考克 派克汉姆 默多克 普雷方丹 普拉特 波波维奇 普里查德 夸克恩布什 佩妮布斯考特 普法芬巴赫 拉姆齐 昆西
-				赖利 莱茵哈特 雷诺 罗尔斯顿 休巴特姆 斯金纳 斯隆 斯内尔 施耐德 索伦森 斯皮勒 斯波吉翁 斯坦菲尔德 斯塔克豪斯 斯泰尔斯
-				萨瑟兰 萨顿 塔格特 汤森 特雷纳 斯塔克 斯特拉德威克 麦克阿瑟 巴恩斯 阿特金斯 巴拉德 比格斯 贝尔德 弗雷德里克斯 汉弗莱 
-				眼镜蛇 郊狼 野狗 海豚 蜻蜓 单峰驼 老鹰 大象 猎鹰 雪貂 萤火虫 狐狸 瞪羚 萤火虫 "灰狼" 灰狗 黑线鳕 鹰
-				"斩首之屋" "病态之家" "隔离小巷" "大房子" "苍白之后" "探险者崛起" "邪恶教区" "探险者之坑" "探险者王庭" "探险者列兵"
-				蜡笔诺维茨 费尔德曼 卡茨 罗伊科克 德克尔
+				GF_URNC_CHR_Smith GF_URNC_CHR_Jones GF_URNC_CHR_Williams GF_URNC_CHR_Taylor GF_URNC_CHR_Brown GF_URNC_CHR_Davies GF_URNC_CHR_Evans GF_URNC_CHR_Wilson GF_URNC_CHR_Johnson GF_URNC_CHR_Robinson GF_URNC_CHR_Wright GF_URNC_CHR_Thompson GF_URNC_CHR_Evans GF_URNC_CHR_Walker GF_URNC_CHR_White GF_URNC_CHR_Roberts GF_URNC_CHR_Green GF_URNC_CHR_Hall
+				GF_URNC_CHR_Wood GF_URNC_CHR_Jackson GF_URNC_CHR_Clark GF_URNC_CHR_Lewis GF_URNC_CHR_Mason GF_URNC_CHR_Mitchell GF_URNC_CHR_Cox GF_URNC_CHR_Campbell GF_URNC_CHR_Stewart GF_URNC_CHR_Quinn GF_URNC_CHR_Murphy GF_URNC_CHR_Hamilton GF_URNC_CHR_Moore GF_URNC_CHR_Murray GF_URNC_CHR_McLaughlin GF_URNC_CHR_Martin GF_URNC_CHR_ONeill
+				GF_URNC_CHR_Anderson GF_URNC_CHR_Scott GF_URNC_CHR_MacDonald GF_URNC_CHR_Reid GF_URNC_CHR_Ross GF_URNC_CHR_Watson GF_URNC_CHR_Patterson GF_URNC_CHR_Morrison GF_URNC_CHR_Sanders GF_URNC_CHR_Harris GF_URNC_CHR_Hughes GF_URNC_CHR_Driscoll GF_URNC_CHR_Price GF_URNC_CHR_Jenkins GF_URNC_CHR_Morgan GF_URNC_CHR_Moss
+				GF_URNC_CHR_Sinclair GF_URNC_CHR_Simpson GF_URNC_CHR_Zimmerman GF_URNC_CHR_Young GF_URNC_CHR_York GF_URNC_CHR_Youngfellow GF_URNC_CHR_Winters GF_URNC_CHR_Worley GF_URNC_CHR_Woodard GF_URNC_CHR_Whitley GF_URNC_CHR_Wheeler GF_URNC_CHR_Wentworth GF_URNC_CHR_West GF_URNC_CHR_Weaver GF_URNC_CHR_Webb GF_URNC_CHR_Welsh
+				GF_URNC_CHR_Sparks GF_URNC_CHR_Spencer GF_URNC_CHR_Stafford GF_URNC_CHR_Stanley GF_URNC_CHR_Steel GF_URNC_CHR_Sterling GF_URNC_CHR_Stevens GF_URNC_CHR_Stone GF_URNC_CHR_Stewart GF_URNC_CHR_Sullivan GF_URNC_CHR_Swanson GF_URNC_CHR_Sweeney GF_URNC_CHR_Swift GF_URNC_CHR_Sykes GF_URNC_CHR_Terrell GF_URNC_CHR_Thornton
+				GF_URNC_CHR_Tipton GF_URNC_CHR_Turner GF_URNC_CHR_Tyler GF_URNC_CHR_Underwood GF_URNC_CHR_Vincent GF_URNC_CHR_Voight GF_URNC_CHR_Wade GF_URNC_CHR_Washington GF_URNC_CHR_Watts GF_URNC_CHR_OConnor GF_URNC_CHR_ODonnell GF_URNC_CHR_OHara GF_URNC_CHR_Owens GF_URNC_CHR_Page GF_URNC_CHR_Palmer GF_URNC_CHR_Parker
+				GF_URNC_CHR_Perry GF_URNC_CHR_Parson GF_URNC_CHR_Paxton GF_URNC_CHR_Payne GF_URNC_CHR_Perkins GF_URNC_CHR_Peters GF_URNC_CHR_Pershing GF_URNC_CHR_Phillips GF_URNC_CHR_Pitt GF_URNC_CHR_Potter GF_URNC_CHR_Reynolds GF_URNC_CHR_Reaves GF_URNC_CHR_Reese GF_URNC_CHR_Richardson GF_URNC_CHR_Rivers GF_URNC_CHR_Robbins
+				GF_URNC_CHR_Robertson GF_URNC_CHR_Roswell GF_URNC_CHR_Ryan GF_URNC_CHR_Salinger GF_URNC_CHR_Samuels GF_URNC_CHR_Sandler GF_URNC_CHR_Savage GF_URNC_CHR_Saxton GF_URNC_CHR_Schneider GF_URNC_CHR_Scowley GF_URNC_CHR_Sedgwick GF_URNC_CHR_Shannon GF_URNC_CHR_Flint GF_URNC_CHR_Sibbett GF_URNC_CHR_Silverman
+				GF_URNC_CHR_Silverstone GF_URNC_CHR_Smart GF_URNC_CHR_Snow GF_URNC_CHR_Kruger GF_URNC_CHR_Landau GF_URNC_CHR_Lawrence GF_URNC_CHR_Lawson GF_URNC_CHR_Lee GF_URNC_CHR_Leonard GF_URNC_CHR_Little GF_URNC_CHR_Lowell GF_URNC_CHR_Michaels GF_URNC_CHR_McGillis GF_URNC_CHR_McKinnon GF_URNC_CHR_McSwain GF_URNC_CHR_McCoy
+				GF_URNC_CHR_McCarthy GF_URNC_CHR_McCormick GF_URNC_CHR_McCreary GF_URNC_CHR_Marshall GF_URNC_CHR_Lynch GF_URNC_CHR_Miller GF_URNC_CHR_Montgomery GF_URNC_CHR_Morris GF_URNC_CHR_Nash GF_URNC_CHR_Newman GF_URNC_CHR_Nichols GF_URNC_CHR_North GF_URNC_CHR_Masterson GF_URNC_CHR_Mayfield GF_URNC_CHR_McCall
+				GF_URNC_CHR_Hansen GF_URNC_CHR_Harrington GF_URNC_CHR_Hart GF_URNC_CHR_Hendricks GF_URNC_CHR_Holmes GF_URNC_CHR_Higgins GF_URNC_CHR_Hoffman GF_URNC_CHR_Hood GF_URNC_CHR_Hutchinson GF_URNC_CHR_Hyland GF_URNC_CHR_Knight GF_URNC_CHR_Kirk GF_URNC_CHR_King GF_URNC_CHR_Kenway GF_URNC_CHR_Kennedy GF_URNC_CHR_Kelly
+				GF_URNC_CHR_Kane GF_URNC_CHR_Nathanson GF_URNC_CHR_Jennings GF_URNC_CHR_Jacobs GF_URNC_CHR_Jefferies GF_URNC_CHR_Irwin GF_URNC_CHR_Gilbert GF_URNC_CHR_Glass GF_URNC_CHR_Glover GF_URNC_CHR_Goldberg GF_URNC_CHR_Goldstein GF_URNC_CHR_Goodman GF_URNC_CHR_Goodwin GF_URNC_CHR_Graham GF_URNC_CHR_Grant GF_URNC_CHR_Graves
+				GF_URNC_CHR_Gray GF_URNC_CHR_Greenberg GF_URNC_CHR_Gorney GF_URNC_CHR_Griffin GF_URNC_CHR_Halley GF_URNC_CHR_Hunter GF_URNC_CHR_Holloway GF_URNC_CHR_Hoover GF_URNC_CHR_Hutchins GF_URNC_CHR_Hill GF_URNC_CHR_Hines GF_URNC_CHR_Holden GF_URNC_CHR_Harvey GF_URNC_CHR_Handler GF_URNC_CHR_Cohen GF_URNC_CHR_Collins GF_URNC_CHR_Conrad
+				GF_URNC_CHR_Conroy GF_URNC_CHR_Cook GF_URNC_CHR_Conley GF_URNC_CHR_Compton GF_URNC_CHR_Cody GF_URNC_CHR_Crouch GF_URNC_CHR_Crosby GF_URNC_CHR_Curtis GF_URNC_CHR_Fields GF_URNC_CHR_Farrell GF_URNC_CHR_Felton GF_URNC_CHR_Fisher GF_URNC_CHR_Fleming GF_URNC_CHR_Forrest GF_URNC_CHR_Foster GF_URNC_CHR_Fox GF_URNC_CHR_Freeman
+				GF_URNC_CHR_Futterman GF_URNC_CHR_Gardner GF_URNC_CHR_Garrett GF_URNC_CHR_Gates GF_URNC_CHR_Garfield GF_URNC_CHR_Gabriel GF_URNC_CHR_Daniels GF_URNC_CHR_Darling GF_URNC_CHR_Easterbrook GF_URNC_CHR_Edwards GF_URNC_CHR_Edelstein GF_URNC_CHR_Elliott GF_URNC_CHR_Emerson GF_URNC_CHR_Ericson
+				GF_URNC_CHR_Duncan GF_URNC_CHR_Dickinson GF_URNC_CHR_Alexander GF_URNC_CHR_Allen GF_URNC_CHR_Austin GF_URNC_CHR_Bauer GF_URNC_CHR_Bancroft GF_URNC_CHR_Baker GF_URNC_CHR_Bailey GF_URNC_CHR_Banks GF_URNC_CHR_Barks GF_URNC_CHR_Bassett GF_URNC_CHR_Brewster GF_URNC_CHR_Brooks GF_URNC_CHR_Breckenridge GF_URNC_CHR_Booth
+				GF_URNC_CHR_Bloom GF_URNC_CHR_Sherman GF_URNC_CHR_Sheridan GF_URNC_CHR_Billingsley GF_URNC_CHR_Billings GF_URNC_CHR_Bergman GF_URNC_CHR_Bates GF_URNC_CHR_Becker GF_URNC_CHR_Bell GF_URNC_CHR_Bellflower GF_URNC_CHR_Bains GF_URNC_CHR_Bean GF_URNC_CHR_Cartwright GF_URNC_CHR_Carpenter GF_URNC_CHR_Buckland
+				GF_URNC_CHR_Burness GF_URNC_CHR_Burnett GF_URNC_CHR_Bush GF_URNC_CHR_Butler GF_URNC_CHR_French GF_URNC_CHR_England GF_URNC_CHR_Carroll GF_URNC_CHR_Carter GF_URNC_CHR_Cavanaugh GF_URNC_CHR_Chaffin GF_URNC_CHR_Chase GF_URNC_CHR_Channing GF_URNC_CHR_Chapman GF_URNC_CHR_Arnold GF_URNC_CHR_Fry GF_URNC_CHR_Milton
+				GF_URNC_CHR_Sharp GF_URNC_CHR_Durston GF_URNC_CHR_Howell GF_URNC_CHR_Mead GF_URNC_CHR_Poole GF_URNC_CHR_Ashton GF_URNC_CHR_Brockbank GF_URNC_CHR_Cooper GF_URNC_CHR_Cursham GF_URNC_CHR_Dixon GF_URNC_CHR_Baxter GF_URNC_CHR_Drake GF_URNC_CHR_Garland GF_URNC_CHR_Wells GF_URNC_CHR_Hargreaves GF_URNC_CHR_Houghton
+				GF_URNC_CHR_Haygarth GF_URNC_CHR_Hurst GF_URNC_CHR_Kingsford GF_URNC_CHR_Lindsay GF_URNC_CHR_Rawson GF_URNC_CHR_Walden GF_URNC_CHR_Walters GF_URNC_CHR_Whitfield GF_URNC_CHR_Bennett GF_URNC_CHR_Cross GF_URNC_CHR_Buxton GF_URNC_CHR_Dyson GF_URNC_CHR_McMillan GF_URNC_CHR_Russell GF_URNC_CHR_Scott GF_URNC_CHR_Beauclerk
+				GF_URNC_CHR_Ward GF_URNC_CHR_Howard GF_URNC_CHR_Lloyd GF_URNC_CHR_Tanner GF_URNC_CHR_Nicholas GF_URNC_CHR_Matthews GF_URNC_CHR_Ellis GF_URNC_CHR_Whyting GF_URNC_CHR_Whittaker GF_URNC_CHR_Barton GF_URNC_CHR_Hawkins GF_URNC_CHR_Garrovick GF_URNC_CHR_Spector GF_URNC_CHR_Reeves GF_URNC_CHR_Vernon GF_URNC_CHR_McNiven
+				GF_URNC_CHR_Rowley GF_URNC_CHR_Sandford GF_URNC_CHR_Fawcett GF_URNC_CHR_Lockhart GF_URNC_CHR_Lang GF_URNC_CHR_Oliphant GF_URNC_CHR_Wilkins GF_URNC_CHR_Balfour GF_URNC_CHR_Appleby GF_URNC_CHR_Buchanan GF_URNC_CHR_Yardley GF_URNC_CHR_Shaw GF_URNC_CHR_Stokes GF_URNC_CHR_Allenby GF_URNC_CHR_Cockburn GF_URNC_CHR_Mundy
+				GF_URNC_CHR_Franklin GF_URNC_CHR_Armstrong GF_URNC_CHR_Chamberlain GF_URNC_CHR_Powell GF_URNC_CHR_Abbott GF_URNC_CHR_Blair GF_URNC_CHR_VanHoof GF_URNC_CHR_VanRijn GF_URNC_CHR_Burnside GF_URNC_CHR_Schofield GF_URNC_CHR_Farnsworth GF_URNC_CHR_Ford GF_URNC_CHR_Warner GF_URNC_CHR_Porter
+				GF_URNC_CHR_Barksdale GF_URNC_CHR_Polk GF_URNC_CHR_Gibbons GF_URNC_CHR_Archer GF_URNC_CHR_Pickett GF_URNC_CHR_Houston GF_URNC_CHR_Whitfield GF_URNC_CHR_Pearson GF_URNC_CHR_Lucas GF_URNC_CHR_Horner GF_URNC_CHR_Bainbridge GF_URNC_CHR_Rollins GF_URNC_CHR_Casey GF_URNC_CHR_Cochrane GF_URNC_CHR_Merchant
+				GF_URNC_CHR_Bowden GF_URNC_CHR_Douglas GF_URNC_CHR_Muldoon GF_URNC_CHR_Wickham GF_URNC_CHR_Milligan GF_URNC_CHR_Bradley GF_URNC_CHR_Findley GF_URNC_CHR_Spooner GF_URNC_CHR_Harper GF_URNC_CHR_Shepard GF_URNC_CHR_Kingston GF_URNC_CHR_Knox GF_URNC_CHR_Colbeck GF_URNC_CHR_Shields GF_URNC_CHR_Burns GF_URNC_CHR_Gibson
+				GF_URNC_CHR_Burton GF_URNC_CHR_Crutchley GF_URNC_CHR_Gilligan GF_URNC_CHR_Bridges GF_URNC_CHR_Richter GF_URNC_CHR_Fowler GF_URNC_CHR_Novak GF_URNC_CHR_Longfield GF_URNC_CHR_Seabrook GF_URNC_CHR_Hazelton GF_URNC_CHR_Kingsley GF_URNC_CHR_Doggart GF_URNC_CHR_Wilcox GF_URNC_CHR_Hudson GF_URNC_CHR_Hooks GF_URNC_CHR_Hicks
+				GF_URNC_CHR_Cameron GF_URNC_CHR_Hammond GF_URNC_CHR_Knotts GF_URNC_CHR_Jefferson GF_URNC_CHR_Coffey GF_URNC_CHR_Adams GF_URNC_CHR_Babcock GF_URNC_CHR_Baldwin GF_URNC_CHR_Bannister GF_URNC_CHR_Purcell GF_URNC_CHR_Baumgartner GF_URNC_CHR_Birch GF_URNC_CHR_Blackwood GF_URNC_CHR_Blake GF_URNC_CHR_Bolander
+				GF_URNC_CHR_Bolton GF_URNC_CHR_Brock GF_URNC_CHR_Brannigan GF_URNC_CHR_Burke GF_URNC_CHR_Weyland GF_URNC_CHR_Burrows GF_URNC_CHR_Cairns GF_URNC_CHR_Carlyle GF_URNC_CHR_Carson GF_URNC_CHR_Charlesworth GF_URNC_CHR_Church GF_URNC_CHR_Clancy GF_URNC_CHR_Cullen GF_URNC_CHR_Dufresne GF_URNC_CHR_Bixby GF_URNC_CHR_Featherstone
+				GF_URNC_CHR_Ferguson GF_URNC_CHR_Foley GF_URNC_CHR_Funk GF_URNC_CHR_Gorman GF_URNC_CHR_Haddock GF_URNC_CHR_Grisdale GF_URNC_CHR_Grimes GF_URNC_CHR_Hoffmeyer GF_URNC_CHR_Holt GF_URNC_CHR_Ingram GF_URNC_CHR_Kaiser GF_URNC_CHR_Kearns GF_URNC_CHR_Keeler GF_URNC_CHR_Kellerman GF_URNC_CHR_Kinnear GF_URNC_CHR_Kurtz GF_URNC_CHR_Kyle
+				GF_URNC_CHR_Laidlaw GF_URNC_CHR_Lankshear GF_URNC_CHR_Lessard GF_URNC_CHR_Lowe GF_URNC_CHR_MacKenzie GF_URNC_CHR_MacNevin GF_URNC_CHR_MacInnis GF_URNC_CHR_Madigan GF_URNC_CHR_Maloney GF_URNC_CHR_Marsh GF_URNC_CHR_McAllister GF_URNC_CHR_McBain GF_URNC_CHR_Myers GF_URNC_CHR_Nicholson GF_URNC_CHR_Olsen
+				GF_URNC_CHR_OMalley GF_URNC_CHR_Peacock GF_URNC_CHR_Peckham GF_URNC_CHR_Murdoch GF_URNC_CHR_Prefontaine GF_URNC_CHR_Pratt GF_URNC_CHR_Popovic GF_URNC_CHR_Pritchard GF_URNC_CHR_Quackenbush GF_URNC_CHR_Penebscott GF_URNC_CHR_Pfaffenbach GF_URNC_CHR_Ramsey GF_URNC_CHR_Quincey
+				GF_URNC_CHR_Reilly GF_URNC_CHR_Reinhart GF_URNC_CHR_Renaud GF_URNC_CHR_Rolston GF_URNC_CHR_Shoebottom GF_URNC_CHR_Skinner GF_URNC_CHR_Sloan GF_URNC_CHR_Snell GF_URNC_CHR_Snider GF_URNC_CHR_Sorensen GF_URNC_CHR_Spiller GF_URNC_CHR_Spurgeon GF_URNC_CHR_Stanfield GF_URNC_CHR_Stackhouse GF_URNC_CHR_Stiles
+				GF_URNC_CHR_Sutherland GF_URNC_CHR_Sutton GF_URNC_CHR_Taggart GF_URNC_CHR_Townsend GF_URNC_CHR_Traynor GF_URNC_CHR_Stark GF_URNC_CHR_Strudwick GF_URNC_CHR_MacArthur GF_URNC_CHR_Barnes GF_URNC_CHR_Atkins GF_URNC_CHR_Ballard GF_URNC_CHR_Biggs GF_URNC_CHR_Baird GF_URNC_CHR_Fredericks GF_URNC_CHR_Humphry
+				GF_URNC_CHR_Colt GF_URNC_CHR_Dillard GF_URNC_CHR_Cunningham GF_URNC_CHR_DeStefano GF_URNC_CHR_Finks GF_URNC_CHR_Fletcher GF_URNC_CHR_Galloway GF_URNC_CHR_Kirby GF_URNC_CHR_Sutter GF_URNC_CHR_Preston GF_URNC_CHR_Tucker GF_URNC_CHR_SmithJr GF_URNC_CHR_WilliamsJr GF_URNC_CHR_EvansJr
+				GF_URNC_CHR_WalkerJr GF_URNC_CHR_TaylorJr GF_URNC_CHR_ScottJr GF_URNC_CHR_MeriweatherII GF_URNC_CHR_BarksdaleIII GF_URNC_CHR_LeadbetterIV GF_URNC_CHR_PembertonII GF_URNC_CHR_TrapierIII GF_URNC_CHR_Kowalski
+				GF_URNC_CHR_Rabinowitz GF_URNC_CHR_Feldman GF_URNC_CHR_Katz GF_URNC_CHR_Roykirk GF_URNC_CHR_Decker
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_URNC_CHR_Alexander GF_URNC_CHR_Vladimir GF_URNC_CHR_Boris GF_URNC_CHR_Tiberius GF_URNC_CHR_Theobald GF_URNC_CHR_Valerian GF_URNC_CHR_Maximus GF_URNC_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_URNC_CHR_Theodora GF_URNC_CHR_Fatima GF_URNC_CHR_Miranda GF_URNC_CHR_Cordelia GF_URNC_CHR_Svetlana GF_URNC_CHR_Anastasia GF_URNC_CHR_Valentina GF_URNC_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_URNC_CHR_Habsburg GF_URNC_CHR_Romanov GF_URNC_CHR_Windsor GF_URNC_CHR_Mountbatten GF_URNC_CHR_Salazar GF_URNC_CHR_Nelson
 			}
 		}
-		
+
 		names2 = {
 			weight = 20
 			first_names_male = {
-				伊拉格 伊萨格 博德罗斯 毕斯克古勒 博斯格尔 索萨格 黑格拉 哈瓦格斯 瓦格拉斯 科加斯 斯克鲁门 帕萨格
-				威利迪 特尼尔 鲁本 卡利尼 乌斯 西乐洛 罗瑟 威斯托法尼 加里斯 提林 提洛美 卡里弗
-				波罗敏·罗 爬塔罗敏·罗 翁达林·罗 奥夫佳林·罗 亚尔新·罗 贝罗琴·罗 曼塔林·罗 麦多林·罗 穆佳林·罗
+				GF_URNC_CHR_Ivan GF_URNC_CHR_Nikolai GF_URNC_CHR_Boris GF_URNC_CHR_Vladimir GF_URNC_CHR_Pyotr GF_URNC_CHR_Alexei GF_URNC_CHR_Dmitri GF_URNC_CHR_Sergei GF_URNC_CHR_Viktor GF_URNC_CHR_Roman GF_URNC_CHR_Igor GF_URNC_CHR_Mikhail GF_URNC_CHR_Vasily GF_URNC_CHR_Pavel GF_URNC_CHR_Fyodor GF_URNC_CHR_Nikita GF_URNC_CHR_Valery
+				GF_URNC_CHR_Vladislav GF_URNC_CHR_Leonid GF_URNC_CHR_Maxim GF_URNC_CHR_Yuri GF_URNC_CHR_Oleg GF_URNC_CHR_Andrei GF_URNC_CHR_Konstantin GF_URNC_CHR_Vyacheslav GF_URNC_CHR_Aleksandr GF_URNC_CHR_Stanislav GF_URNC_CHR_Anatoli GF_URNC_CHR_Miroslav GF_URNC_CHR_Artyom GF_URNC_CHR_Bogdan
+				GF_URNC_CHR_Branislav GF_URNC_CHR_Ilya GF_URNC_CHR_Jaroslav GF_URNC_CHR_Radomir GF_URNC_CHR_Kirill GF_URNC_CHR_Radoslav GF_URNC_CHR_Lubomir GF_URNC_CHR_Ratimir GF_URNC_CHR_Yegor GF_URNC_CHR_Ijon
 			}
 			first_names_female = {
-				安德森 斯科特 麦克唐纳 里德 罗斯 沃森 帕特森 莫里森 桑德斯 哈里斯 休斯 斯科尔 普利斯 詹金斯 摩根 莫斯
-				麦斯威尔 亚历克 伯纳德 斯图尔特 鲁伯特 迪恩 菲利普 罗斯 柯林 戴伦 梅尔文 贾斯廷 扎克 埃利奥特 西蒙 摩根 克拉克 沙维尔 贾里德 
-				塔提亚娜 索尼亚 米拉
-				
+				GF_URNC_CHR_Anna GF_URNC_CHR_Yelena GF_URNC_CHR_Olga GF_URNC_CHR_Oksana GF_URNC_CHR_Tatyana GF_URNC_CHR_Svetlana GF_URNC_CHR_Nadya GF_URNC_CHR_Yekaterina GF_URNC_CHR_Irina GF_URNC_CHR_Galina GF_URNC_CHR_Miroslava GF_URNC_CHR_Anastasia GF_URNC_CHR_Vera GF_URNC_CHR_Polina GF_URNC_CHR_Lyudmila GF_URNC_CHR_Elena
+				GF_URNC_CHR_Marina GF_URNC_CHR_Darya GF_URNC_CHR_Irma GF_URNC_CHR_Ksenia GF_URNC_CHR_Alexandra GF_URNC_CHR_Nadesja GF_URNC_CHR_Valentina GF_URNC_CHR_Arina GF_URNC_CHR_Alya GF_URNC_CHR_Galenka GF_URNC_CHR_Katya GF_URNC_CHR_Ljuba GF_URNC_CHR_Radmila GF_URNC_CHR_Natacha GF_URNC_CHR_Vlada GF_URNC_CHR_Nadezhda
+				GF_URNC_CHR_Tatiana GF_URNC_CHR_Sonia GF_URNC_CHR_Mira
+
 			}
-			second_names = {
-				格雷 格林伯格 格尔内 格里芬 哈莉 亨特 霍洛威 呼沃尔 哈钦斯 黑尔 海恩斯 霍登 哈维 汉德勒 科恩 科林斯 康拉德
-				纳布 蕾哈娜 莫比那 纳格斯 马索迈 萨基内 阿雅 阿尔玛 阿玛尼 阿米拉
-				佐藤 铃木 高桥 田中 渡边 伊藤 中村 小林 山本 加藤 吉田 山田 佐佐木 山口 松本 
+			second_names_male = {
+				GF_URNC_CHR_Grishin GF_URNC_CHR_Fedorov GF_URNC_CHR_Komarov GF_URNC_CHR_Pushkov GF_URNC_CHR_Petrenko GF_URNC_CHR_Shatalov GF_URNC_CHR_Ivanov GF_URNC_CHR_Kamensky GF_URNC_CHR_Vasiliev GF_URNC_CHR_Ulanov GF_URNC_CHR_Volkov GF_URNC_CHR_Gryaznov GF_URNC_CHR_Dudnik GF_URNC_CHR_Yerzov GF_URNC_CHR_Zhirov
+				GF_URNC_CHR_Zhivenkov GF_URNC_CHR_Kazakov GF_URNC_CHR_Krutov GF_URNC_CHR_Ivannikov GF_URNC_CHR_Kolosov GF_URNC_CHR_Kuzin GF_URNC_CHR_Larionov GF_URNC_CHR_Maksimushkin GF_URNC_CHR_Markov GF_URNC_CHR_Ostrovsky GF_URNC_CHR_Polachev GF_URNC_CHR_Rychenkov GF_URNC_CHR_Romanov
+				GF_URNC_CHR_Sayanovich GF_URNC_CHR_Statnik GF_URNC_CHR_Sorokin GF_URNC_CHR_Turgenev GF_URNC_CHR_Titov GF_URNC_CHR_Tvardovsky GF_URNC_CHR_Antonov GF_URNC_CHR_Skobelev GF_URNC_CHR_Lazarev GF_URNC_CHR_Makarov GF_URNC_CHR_Dragomirov GF_URNC_CHR_Alekseyev GF_URNC_CHR_Tichy
+			}
+			second_names_female = {
+				GF_URNC_CHR_Grishina GF_URNC_CHR_Fedorova GF_URNC_CHR_Komarova GF_URNC_CHR_Pushkova GF_URNC_CHR_Petrenko GF_URNC_CHR_Shatalova GF_URNC_CHR_Ivanova GF_URNC_CHR_Kamenskaya GF_URNC_CHR_Vasilyeva GF_URNC_CHR_Ulanova GF_URNC_CHR_Volkova GF_URNC_CHR_Gryaznova GF_URNC_CHR_Dudnik GF_URNC_CHR_Yerzova
+				GF_URNC_CHR_Zhirova GF_URNC_CHR_Zhivenkova GF_URNC_CHR_Kazakova GF_URNC_CHR_Krutova GF_URNC_CHR_Ivannikova GF_URNC_CHR_Kolosova GF_URNC_CHR_Kuzina GF_URNC_CHR_Larionova GF_URNC_CHR_Maksimushkina GF_URNC_CHR_Markova GF_URNC_CHR_Ostrovskaya GF_URNC_CHR_Polacheva GF_URNC_CHR_Rychenkova
+				GF_URNC_CHR_Romanova GF_URNC_CHR_Statnik GF_URNC_CHR_Sorokina GF_URNC_CHR_Turgeneva GF_URNC_CHR_Titova GF_URNC_CHR_Tvardovskaya GF_URNC_CHR_Antonova GF_URNC_CHR_Skobeleva GF_URNC_CHR_Lazareva GF_URNC_CHR_Makarova GF_URNC_CHR_Dragomirova GF_URNC_CHR_Alekseyeva
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_URNC_CHR_Alexander GF_URNC_CHR_Vladimir GF_URNC_CHR_Boris GF_URNC_CHR_Tiberius GF_URNC_CHR_Theobald GF_URNC_CHR_Valerian GF_URNC_CHR_Maximus GF_URNC_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_URNC_CHR_Theodora GF_URNC_CHR_Fatima GF_URNC_CHR_Miranda GF_URNC_CHR_Cordelia GF_URNC_CHR_Svetlana GF_URNC_CHR_Anastasia GF_URNC_CHR_Valentina GF_URNC_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_URNC_CHR_Habsburg GF_URNC_CHR_Romanov GF_URNC_CHR_Windsor GF_URNC_CHR_Mountbatten GF_URNC_CHR_Salazar GF_URNC_CHR_Nelson
 			}
 		}
-		
+
 		names3 = {
 			weight = 40
 			first_names_male = {
-				亚马孙古陆 刚果 厄瓜多尔 雨 暴风雨 雨季 孟加拉 "新非洲" 猴王国 桑给巴尔 吉卜林
+				GF_URNC_CHR_An GF_URNC_CHR_Bao GF_URNC_CHR_Bo GF_URNC_CHR_Cai GF_URNC_CHR_Cheng GF_URNC_CHR_De GF_URNC_CHR_Dong GF_URNC_CHR_Feng GF_URNC_CHR_Gang GF_URNC_CHR_Guo GF_URNC_CHR_Hu GF_URNC_CHR_Hui GF_URNC_CHR_Jian GF_URNC_CHR_Jie GF_URNC_CHR_Kang GF_URNC_CHR_Li GF_URNC_CHR_Liang GF_URNC_CHR_Long GF_URNC_CHR_Meng GF_URNC_CHR_Ning GF_URNC_CHR_Peng GF_URNC_CHR_Qiang GF_URNC_CHR_Shi GF_URNC_CHR_Song GF_URNC_CHR_Tao GF_URNC_CHR_Tian GF_URNC_CHR_Wei
+				GF_URNC_CHR_You GF_URNC_CHR_Yong GF_URNC_CHR_Yi GF_URNC_CHR_Xiong GF_URNC_CHR_Wu
 			}
 			first_names_female = {
-				爱布里茨 巴多利奥 卡佩洛 "迪·罗比蓝" "迪·萨沃亚" 加里波第 萨莱塔 帕拉维奇诺 皮亚内利 曼布雷蒂 马尔库齐 瓦勒里 佩紮利亚
+				GF_URNC_CHR_Ai GF_URNC_CHR_Bi GF_URNC_CHR_Cui GF_URNC_CHR_Chan GF_URNC_CHR_Dai GF_URNC_CHR_Dan GF_URNC_CHR_Fang GF_URNC_CHR_Hong GF_URNC_CHR_Hua GF_URNC_CHR_Huan GF_URNC_CHR_Jiao GF_URNC_CHR_Ju GF_URNC_CHR_Juan GF_URNC_CHR_Lan GF_URNC_CHR_Lian GF_URNC_CHR_Lin GF_URNC_CHR_Mei GF_URNC_CHR_Na GF_URNC_CHR_Ni GF_URNC_CHR_Qian GF_URNC_CHR_Qiao GF_URNC_CHR_Qing GF_URNC_CHR_Shan GF_URNC_CHR_Shu GF_URNC_CHR_Ting GF_URNC_CHR_Wen GF_URNC_CHR_Xia GF_URNC_CHR_Xian
+				GF_URNC_CHR_Xiang GF_URNC_CHR_Xiu GF_URNC_CHR_Xue GF_URNC_CHR_Yan GF_URNC_CHR_Ying GF_URNC_CHR_Yu GF_URNC_CHR_Yuan GF_URNC_CHR_Yun GF_URNC_CHR_Zhen GF_URNC_CHR_Zhi GF_URNC_CHR_Zhu GF_URNC_CHR_Zi
 			}
 			second_names = {
-				雷瑞托 林迪维 利特索安尼罗 鲁拉码 马吉欧布 马里特萨特斯 马特瑟迪索 姆巴利 马博 姆尼瑟迪斯 莫哈乌 莫拉图欧 穆阿姆毕瓦 尼亚德泽尼 诺弗托
-				黄 赵 张
+				GF_URNC_CHR_Liang GF_URNC_CHR_Luo GF_URNC_CHR_Kuang GF_URNC_CHR_Lu GF_URNC_CHR_Zheng GF_URNC_CHR_Lin GF_URNC_CHR_Xu GF_URNC_CHR_Xie GF_URNC_CHR_Wang GF_URNC_CHR_Zhu GF_URNC_CHR_Yang GF_URNC_CHR_Mao GF_URNC_CHR_Shen GF_URNC_CHR_Hu GF_URNC_CHR_Tan GF_URNC_CHR_He GF_URNC_CHR_Deng GF_URNC_CHR_Wu GF_URNC_CHR_Cheng GF_URNC_CHR_Gao GF_URNC_CHR_Wan GF_URNC_CHR_Kong GF_URNC_CHR_Pan GF_URNC_CHR_Sima GF_URNC_CHR_Zhuge GF_URNC_CHR_Ouyang GF_URNC_CHR_Situ
+				GF_URNC_CHR_Huang GF_URNC_CHR_Zhao GF_URNC_CHR_Zhang
 			}
 			regnal_first_names_male = {
-				游 永 义 雄 吴 风 刚 果 胡 辉 
+				GF_URNC_CHR_You GF_URNC_CHR_Yong GF_URNC_CHR_Yi GF_URNC_CHR_Xiong GF_URNC_CHR_Wu GF_URNC_CHR_Feng GF_URNC_CHR_Gang GF_URNC_CHR_Guo GF_URNC_CHR_Hu GF_URNC_CHR_Hui
 			}
 			regnal_first_names_female = {
-				敏捷 弓箭手 箭矢 拳击家 小天使 奇美拉 双刃大砍刀 阔刀 战斧 弩弓 短刀 威慑 漂泊 虔诚 凶猛 短剑 长弓 
+				GF_URNC_CHR_Ai GF_URNC_CHR_Bi GF_URNC_CHR_Lian GF_URNC_CHR_Lin GF_URNC_CHR_Mei GF_URNC_CHR_Na GF_URNC_CHR_Ni GF_URNC_CHR_Xiu GF_URNC_CHR_Xue GF_URNC_CHR_Yan GF_URNC_CHR_Ying GF_URNC_CHR_Yu GF_URNC_CHR_Yuan
 			}
 			regnal_second_names = {
-				王 祝 杨
+				GF_URNC_CHR_Wang GF_URNC_CHR_Zhu GF_URNC_CHR_Yang
 			}
 		}
-		
+
 		names4 = {
 			weight = 15
 			first_names_male = {
-				卡尔 威廉 奥托 海因里希 弗里德里希 保罗 汉斯 古斯塔夫 马克斯 厄恩斯特 赫尔曼 沃尔特 沃纳 金特 沃尔夫冈 赫尔穆特 库尔特 罗尔夫
-				彼特 克劳斯 格哈德 海茵茨 霍斯特 曼弗雷德 乌维 尤尔根 迪特尔 安德里亚斯 托马斯 斯蒂芬 卢卡斯 菲利克斯 马丁 弗里兹 约翰 埃里克 阿诺德
-				青铜色 蜜瓜色 薰衣草色 栗色 橄榄色
-				西吉斯蒙德 乌里奇 乌多
+				GF_URNC_CHR_Karl GF_URNC_CHR_Wilhelm GF_URNC_CHR_Otto GF_URNC_CHR_Heinrich GF_URNC_CHR_Friedrich GF_URNC_CHR_Paul GF_URNC_CHR_Hans GF_URNC_CHR_Gustav GF_URNC_CHR_Max GF_URNC_CHR_Ernst GF_URNC_CHR_Hermann GF_URNC_CHR_Walter GF_URNC_CHR_Werner GF_URNC_CHR_Gunther GF_URNC_CHR_Wolfgang GF_URNC_CHR_Helmuth GF_URNC_CHR_Kurt GF_URNC_CHR_Rolf
+				GF_URNC_CHR_Peter GF_URNC_CHR_Klaus GF_URNC_CHR_Gerhard GF_URNC_CHR_Heinz GF_URNC_CHR_Horst GF_URNC_CHR_Manfred GF_URNC_CHR_Uwe GF_URNC_CHR_Jurgen GF_URNC_CHR_Dieter GF_URNC_CHR_Andreas GF_URNC_CHR_Thomas GF_URNC_CHR_Stefan GF_URNC_CHR_Lukas GF_URNC_CHR_Felix GF_URNC_CHR_Martin GF_URNC_CHR_Fritz GF_URNC_CHR_Johann GF_URNC_CHR_Erich GF_URNC_CHR_Arnold
+				GF_URNC_CHR_Bruno GF_URNC_CHR_Franz GF_URNC_CHR_Rudolf GF_URNC_CHR_Erhard GF_URNC_CHR_Jorg GF_URNC_CHR_Axel GF_URNC_CHR_Emil GF_URNC_CHR_Gerhardt GF_URNC_CHR_Gottfried GF_URNC_CHR_Holger GF_URNC_CHR_Joachim GF_URNC_CHR_Konrad GF_URNC_CHR_Lothar GF_URNC_CHR_Ludwig GF_URNC_CHR_Matthias GF_URNC_CHR_Moritz GF_URNC_CHR_Reinhard
+				GF_URNC_CHR_Sigismund GF_URNC_CHR_Ulrich GF_URNC_CHR_Udo GF_URNC_CHR_Hravn
 			}
 			first_names_female = {
-				安德森 斯科特 麦克唐纳 里德 罗斯 沃森 帕特森 莫里森 桑德斯 哈里斯 休斯 斯科尔 普利斯 詹金斯 摩根 莫斯
-				埃德加 克里斯平 纳尔逊 埃米特 特雷弗 特拉维斯 兰斯 阿德里安 德斯蒙德 布伦丹 布雷特 安布罗斯 巴希尔 基兰 柯南 德莫特 达德利 费利克斯
-				格雷 格林伯格 格尔内 格里芬 哈莉 亨特 霍洛威 呼沃尔 哈钦斯 黑尔 海恩斯 霍登 哈维 汉德勒 科恩 科林斯 康拉德
+				GF_URNC_CHR_Anna GF_URNC_CHR_Elsa GF_URNC_CHR_Emma GF_URNC_CHR_Helga GF_URNC_CHR_Ursula GF_URNC_CHR_Gisela GF_URNC_CHR_Ingrid GF_URNC_CHR_Ilse GF_URNC_CHR_Jessika GF_URNC_CHR_Sandra GF_URNC_CHR_Stefanie GF_URNC_CHR_Andrea GF_URNC_CHR_Anja GF_URNC_CHR_Katrin GF_URNC_CHR_Birgit GF_URNC_CHR_Martina GF_URNC_CHR_Heike GF_URNC_CHR_Sabine GF_URNC_CHR_Erika
+				GF_URNC_CHR_Edith GF_URNC_CHR_Lena GF_URNC_CHR_Lisa GF_URNC_CHR_Katharina GF_URNC_CHR_Claudia GF_URNC_CHR_Silvia GF_URNC_CHR_Tina GF_URNC_CHR_Annike GF_URNC_CHR_Renate GF_URNC_CHR_Bettina GF_URNC_CHR_Wibke GF_URNC_CHR_Sara GF_URNC_CHR_Lina GF_URNC_CHR_Julia GF_URNC_CHR_Marith GF_URNC_CHR_Heidi GF_URNC_CHR_Angelika GF_URNC_CHR_Christel
+				GF_URNC_CHR_Gretchen GF_URNC_CHR_Hilde GF_URNC_CHR_Hildegard GF_URNC_CHR_Gertrude GF_URNC_CHR_Wilhelmina GF_URNC_CHR_Lisbeth GF_URNC_CHR_Kerstin GF_URNC_CHR_Johanna GF_URNC_CHR_Anita
 			}
 			second_names = {
-				穆勒尔 斯茨米特 斯茨内德尔 弗斯彻尔 韦伯尔 梅尔 瓦格内尔 斯茨乌尔兹 贝克尔 霍夫曼 巴奥尔 布林克曼 布瑞尔 迪特瑞驰 伊哈德 格拉斯尔
-				"卡卢培" "卡福禄门" "卡裴娜" "卡佩特" "卡维文" "卡皮纳特" "卡路梅西" "卡威力姆" "卡奈福" "卡希尔" "卡利泽姆" "卡加特" "卡贝利玛" "卡伊沃拉" "卡于斯托" 
-				尼曼 布拉恩 斯茨瓦特 库鲁格 斯特恩 凯勒尔 斯初博特 布奥曼 兹格勒尔 布拉恩德 索尔 克莱特兹 布尔格米斯特 安德博特
+				GF_URNC_CHR_Muller GF_URNC_CHR_Schmidt GF_URNC_CHR_Schneider GF_URNC_CHR_Fischer GF_URNC_CHR_Weber GF_URNC_CHR_Meyer GF_URNC_CHR_Wagner GF_URNC_CHR_Schulz GF_URNC_CHR_Becker GF_URNC_CHR_Hoffmann GF_URNC_CHR_Bauer GF_URNC_CHR_Brinkmann GF_URNC_CHR_Brill GF_URNC_CHR_Dietrich GF_URNC_CHR_Erhard GF_URNC_CHR_Grasser
+				GF_URNC_CHR_vonGebser GF_URNC_CHR_vonFritsch GF_URNC_CHR_vonWrangel GF_URNC_CHR_vonHalkett GF_URNC_CHR_vonBoyen GF_URNC_CHR_vonFalkenstein GF_URNC_CHR_Dreyer GF_URNC_CHR_Wolf GF_URNC_CHR_Klein GF_URNC_CHR_Richter GF_URNC_CHR_Schafer
+				GF_URNC_CHR_Neumann GF_URNC_CHR_Braun GF_URNC_CHR_Schwarz GF_URNC_CHR_Kruger GF_URNC_CHR_Stein GF_URNC_CHR_Keller GF_URNC_CHR_Schubert GF_URNC_CHR_Baumann GF_URNC_CHR_Ziegler GF_URNC_CHR_Brandt GF_URNC_CHR_Sauer GF_URNC_CHR_Kreutz GF_URNC_CHR_Bergmeister GF_URNC_CHR_Andbert
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_URNC_CHR_Alexander GF_URNC_CHR_Vladimir GF_URNC_CHR_Boris GF_URNC_CHR_Tiberius GF_URNC_CHR_Theobald GF_URNC_CHR_Valerian GF_URNC_CHR_Maximus GF_URNC_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_URNC_CHR_Theodora GF_URNC_CHR_Fatima GF_URNC_CHR_Miranda GF_URNC_CHR_Cordelia GF_URNC_CHR_Svetlana GF_URNC_CHR_Anastasia GF_URNC_CHR_Valentina GF_URNC_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_URNC_CHR_Habsburg GF_URNC_CHR_Romanov GF_URNC_CHR_Windsor GF_URNC_CHR_Mountbatten GF_URNC_CHR_Salazar GF_URNC_CHR_Nelson
 			}
 		}
-		
+
 		names5 = {
 			weight = 15
 			first_names_male = {
-				菲利普 皮埃尔 让马里 马塞尔 弗朗索瓦 休伯特 保罗 安东尼 迈克 亨利 马克 约翰 莫里斯 雷恩 克劳德 伊凡斯 雅克
-				西蒙 奥利弗 强森 罗伯特 乔治 安德鲁 雷蒙德 加斯顿 查理斯 希瑞 盖伊 帕特思 马蒂厄 让弗朗西斯科 卢西安 让保罗
-				丹尼尔 蒂博 吕克 多米尼克 塞巴斯蒂安 雨果
+				GF_URNC_CHR_Philippe GF_URNC_CHR_Pierre GF_URNC_CHR_Jean-Marie GF_URNC_CHR_Marcel GF_URNC_CHR_Francois GF_URNC_CHR_Hubert GF_URNC_CHR_Paul GF_URNC_CHR_Antoine GF_URNC_CHR_Michel GF_URNC_CHR_Henri GF_URNC_CHR_Marc GF_URNC_CHR_Jean GF_URNC_CHR_Maurice GF_URNC_CHR_Rene GF_URNC_CHR_Claude GF_URNC_CHR_Yves GF_URNC_CHR_Jacques
+				GF_URNC_CHR_Simon GF_URNC_CHR_Olivier GF_URNC_CHR_Joseph GF_URNC_CHR_Robert GF_URNC_CHR_Georges GF_URNC_CHR_Andre GF_URNC_CHR_Raymond GF_URNC_CHR_Gaston GF_URNC_CHR_Charles GF_URNC_CHR_Thierry GF_URNC_CHR_Guy GF_URNC_CHR_Patrice GF_URNC_CHR_Mathieu GF_URNC_CHR_Jean-Francois GF_URNC_CHR_Lucien GF_URNC_CHR_Jean-Paul
+				GF_URNC_CHR_Daniel GF_URNC_CHR_Thibault GF_URNC_CHR_Luc GF_URNC_CHR_Dominic GF_URNC_CHR_Sebastien GF_URNC_CHR_Hugo GF_URNC_CHR_Jamie
 			}
 			first_names_female = {
-				奇克莫加 卡波雷托 "诺门罕" 加查拉 "蒙特卡西诺" 塞班 布雷斯劳
-				爱德华 唐纳德 乔治 保罗 格雷格 汤姆斯 罗伯特 基因 格伦 休 罗纳德 弗朗西斯 斯蒂芬 乔恩 理查德 马克 马克思 斯科特 邓肯
-				圣徒薇薇安·珍妮特
+				GF_URNC_CHR_Chloe GF_URNC_CHR_Ines GF_URNC_CHR_Manon GF_URNC_CHR_Camille GF_URNC_CHR_Clara GF_URNC_CHR_Juliette GF_URNC_CHR_Clemence GF_URNC_CHR_Jeanne GF_URNC_CHR_Charlotte GF_URNC_CHR_Marie GF_URNC_CHR_Nina GF_URNC_CHR_Julia GF_URNC_CHR_Elise GF_URNC_CHR_Justine GF_URNC_CHR_Yasmine GF_URNC_CHR_Elina GF_URNC_CHR_Andrea
+				GF_URNC_CHR_Eleonore GF_URNC_CHR_Clarisse GF_URNC_CHR_Fanny GF_URNC_CHR_Selma GF_URNC_CHR_Leila GF_URNC_CHR_Veronique GF_URNC_CHR_Sophie GF_URNC_CHR_Helena GF_URNC_CHR_Daphne GF_URNC_CHR_Suzanne GF_URNC_CHR_Melanie GF_URNC_CHR_Bernadette GF_URNC_CHR_Maud GF_URNC_CHR_Angeline GF_URNC_CHR_Celine GF_URNC_CHR_Jessica
+				GF_URNC_CHR_Pauline GF_URNC_CHR_Viviane GF_URNC_CHR_Jeanette
 			}
 			second_names = {
-				马丁 伯纳德 杜布瓦 杜兰德 勒鲁瓦 莫罗 兰伯特 杜邦 勒克莱尔 劳伦特 雷纳 特拉姆布雷 加格恩 罗伊 布沙尔 加斯尔 
-				莫林 拉沃伊 福廷 加涅 杜瓦尔 赫伯特 "勒格尔 " "勒罗克斯 " 德维尔 热拉尔 迪谢纳 贾文 吉尔伯特 博格伦 帕克特 
-				佩尔蒂埃 雷米 吉鲁 博斯凯 "卡斯特诺" "蒙泰尼亚特" 乐伯夫 佩里斯尔 德瓦拉奥克
+				GF_URNC_CHR_Martin GF_URNC_CHR_Bernard GF_URNC_CHR_Dubois GF_URNC_CHR_Durand GF_URNC_CHR_Leroy GF_URNC_CHR_Moreau GF_URNC_CHR_Lambert GF_URNC_CHR_Dupont GF_URNC_CHR_Leclerc GF_URNC_CHR_Laurent GF_URNC_CHR_Renard GF_URNC_CHR_Tremblay GF_URNC_CHR_Gagnon GF_URNC_CHR_Roy GF_URNC_CHR_Bouchard GF_URNC_CHR_Gauthier
+				GF_URNC_CHR_Morin GF_URNC_CHR_Lavoie GF_URNC_CHR_Fortin GF_URNC_CHR_Gagne GF_URNC_CHR_Duval GF_URNC_CHR_Hebert GF_URNC_CHR_LeGall GF_URNC_CHR_LeRoux GF_URNC_CHR_Deville GF_URNC_CHR_Gerard GF_URNC_CHR_Duchaine GF_URNC_CHR_Jauvin GF_URNC_CHR_Gilbert GF_URNC_CHR_Bergeron GF_URNC_CHR_Paquette
+				GF_URNC_CHR_Pelletier GF_URNC_CHR_Remy GF_URNC_CHR_Giroud GF_URNC_CHR_Bosquet GF_URNC_CHR_deCastelnau GF_URNC_CHR_deMontaignac GF_URNC_CHR_Lebouef GF_URNC_CHR_Pellissier GF_URNC_CHR_Deveraux
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_URNC_CHR_Alexander GF_URNC_CHR_Vladimir GF_URNC_CHR_Boris GF_URNC_CHR_Tiberius GF_URNC_CHR_Theobald GF_URNC_CHR_Valerian GF_URNC_CHR_Maximus GF_URNC_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_URNC_CHR_Theodora GF_URNC_CHR_Fatima GF_URNC_CHR_Miranda GF_URNC_CHR_Cordelia GF_URNC_CHR_Svetlana GF_URNC_CHR_Anastasia GF_URNC_CHR_Valentina GF_URNC_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_URNC_CHR_Habsburg GF_URNC_CHR_Romanov GF_URNC_CHR_Windsor GF_URNC_CHR_Mountbatten GF_URNC_CHR_Salazar GF_URNC_CHR_Nelson
 			}
 		}
-		
+
 		names6 = {
 			weight = 15
 			first_names_male = {
-				赫克托 骇斯普鲁斯 杰纳斯 杰森 朱诺 朱比特 兰斯洛特 拉撒路 利安德 列奥尼达 拉山德 梅娜德 马斯 美狄亚 美杜莎 梅尼萨斯 摩酷瑞 梅林 米勒娃
-				次郎 浩志 吉田 满江 奎介 萨布罗 纯一 耀西 松本 健太郎 一郎 
+				GF_URNC_CHR_Hiroto GF_URNC_CHR_Hikaru GF_URNC_CHR_Takumi GF_URNC_CHR_Tsubasa GF_URNC_CHR_Ren GF_URNC_CHR_Minato GF_URNC_CHR_Shota GF_URNC_CHR_Yuuto GF_URNC_CHR_Sota GF_URNC_CHR_Yuma GF_URNC_CHR_Takeru GF_URNC_CHR_Rikuto GF_URNC_CHR_Tatsuki GF_URNC_CHR_Ryuto GF_URNC_CHR_Haru GF_URNC_CHR_Yushin GF_URNC_CHR_Kosei GF_URNC_CHR_Yoshinobu
+				GF_URNC_CHR_Jiro GF_URNC_CHR_Hiroshi GF_URNC_CHR_Yoshida GF_URNC_CHR_Mitsue GF_URNC_CHR_Keisuke GF_URNC_CHR_Saburo GF_URNC_CHR_Junichi GF_URNC_CHR_Yoshi GF_URNC_CHR_Koshiro GF_URNC_CHR_Kentaro GF_URNC_CHR_Koichiro
 			}
 			first_names_female = {
-				 汉森 哈林顿 哈特 亨德里克斯 福尔摩斯 希金斯 霍夫曼 胡德 哈钦森 海兰 骑士 柯克 科恩 肯威 甘乃迪 凯莉 
-				诗织 夏树 彩音 夏帆 花 百华 阳鞠 梦 青豆 法子 一美 希美子 
+				GF_URNC_CHR_Haruna GF_URNC_CHR_Sakura GF_URNC_CHR_Misaki GF_URNC_CHR_Aoi GF_URNC_CHR_Mihane GF_URNC_CHR_Miyu GF_URNC_CHR_Rin GF_URNC_CHR_Nanami GF_URNC_CHR_Yui GF_URNC_CHR_Hina GF_URNC_CHR_Honoka GF_URNC_CHR_Riko GF_URNC_CHR_Yuna GF_URNC_CHR_Koharu GF_URNC_CHR_Hinata GF_URNC_CHR_Mei GF_URNC_CHR_Saki GF_URNC_CHR_Ichika GF_URNC_CHR_Hiyori GF_URNC_CHR_Yusuki
+				GF_URNC_CHR_Shiori GF_URNC_CHR_Natsuki GF_URNC_CHR_Ayane GF_URNC_CHR_Kaho GF_URNC_CHR_Hana GF_URNC_CHR_Momoka GF_URNC_CHR_Himari GF_URNC_CHR_Yume GF_URNC_CHR_Aomame GF_URNC_CHR_Noriko GF_URNC_CHR_Kazumi GF_URNC_CHR_Kimiko
 			}
 			second_names = {
-				佐藤 铃木 高桥 田中 渡边 伊藤 中村 小林 山本 加藤 吉田 山田 佐佐木 山口 松本 
-				井上 木村 清水 早志 佐藤 山崎 中岛 森 安倍 池田 桥本 石川 山下 小川 石井 长谷川 
-				格伊斯 格局姆 格赫瓦 格哈拉 格赫索 格赫雷比 格赫罗格 格赫斯罗维 格赫德维 格赫姆尼 格赫瓦尔 格赫姆尔
+				GF_URNC_CHR_Sato GF_URNC_CHR_Suzuki GF_URNC_CHR_Takahashi GF_URNC_CHR_Tanaka GF_URNC_CHR_Watanabe GF_URNC_CHR_Ito GF_URNC_CHR_Nakamura GF_URNC_CHR_Kobayashi GF_URNC_CHR_Yamamoto GF_URNC_CHR_Kato GF_URNC_CHR_Yoshida GF_URNC_CHR_Yamada GF_URNC_CHR_Sasaki GF_URNC_CHR_Yamaguchi GF_URNC_CHR_Matsumoto
+				GF_URNC_CHR_Inoue GF_URNC_CHR_Kimura GF_URNC_CHR_Shimizu GF_URNC_CHR_Hayashi GF_URNC_CHR_Saito GF_URNC_CHR_Yamazaki GF_URNC_CHR_Nakajima GF_URNC_CHR_Mori GF_URNC_CHR_Abe GF_URNC_CHR_Ikeda GF_URNC_CHR_Hashimoto GF_URNC_CHR_Ishikawa GF_URNC_CHR_Yamashita GF_URNC_CHR_Ogawa GF_URNC_CHR_Ishii GF_URNC_CHR_Hasegawa
+				GF_URNC_CHR_Goto GF_URNC_CHR_Okada GF_URNC_CHR_Fujita GF_URNC_CHR_Sakamoto GF_URNC_CHR_Murakami GF_URNC_CHR_Nishimura GF_URNC_CHR_Nakagawa GF_URNC_CHR_Harada GF_URNC_CHR_Okamoto GF_URNC_CHR_Miura GF_URNC_CHR_Takaya GF_URNC_CHR_Amano GF_URNC_CHR_Higuchi GF_URNC_CHR_Ota
 			}
 			regnal_first_names_male = {
-				辉人 涅库西格 密麻兹西科 穴穗 广业 义良
+				GF_URNC_CHR_Teruhito GF_URNC_CHR_Nekuhiko GF_URNC_CHR_Mimatsuhiko GF_URNC_CHR_Anaho GF_URNC_CHR_Hironari GF_URNC_CHR_Norinaga
 			}
 			regnal_first_names_female = {
-				奴卡特博 托耶麦克 塔卡拉 尼诺米 海达卡 塔卡马 欧凯科 托什科
+				GF_URNC_CHR_Nukatabe GF_URNC_CHR_Toyomike GF_URNC_CHR_Takara GF_URNC_CHR_Niinomi GF_URNC_CHR_Hidaka GF_URNC_CHR_Takama GF_URNC_CHR_Okiko GF_URNC_CHR_Toshiko
 			}
 			regnal_second_names = {
-				"大物主神" 天照 乙母 水神 物部 大和
+				GF_URNC_CHR_noMikoto GF_URNC_CHR_Sumeramikoto GF_URNC_CHR_Otomo GF_URNC_CHR_Suijin GF_URNC_CHR_Mononobe GF_URNC_CHR_Yamato
 			}
 		}
-		
+
 		names7 = {
 			weight = 15
 			first_names_male = {
-				阿拉弗 维瓦安 阿迪亚 阿俊 雷炎斯 阿纳福 克里斯那 伊莎安 邵亚 阿塔弗 艾维克 普拉那 阿威弗 德鲁弗 卡比 利伟克 阿鲁斯
-				卡亚恩 达什 威尔 拉胡 马赫什 什亚姆 雷吉 库马尔 帕拉什 拉科什 尼闪特 尼雷吉 普拉萨美斯 舒波哈姆
+				GF_URNC_CHR_Aarav GF_URNC_CHR_Vivaan GF_URNC_CHR_Aditya GF_URNC_CHR_Arjun GF_URNC_CHR_Reyansh GF_URNC_CHR_Arnav GF_URNC_CHR_Krishna GF_URNC_CHR_Ishaan GF_URNC_CHR_Shaurya GF_URNC_CHR_Atharv GF_URNC_CHR_Advik GF_URNC_CHR_Pranav GF_URNC_CHR_Advaith GF_URNC_CHR_Dhruv GF_URNC_CHR_Kabir GF_URNC_CHR_Ritvik GF_URNC_CHR_Aarush
+				GF_URNC_CHR_Kayaan GF_URNC_CHR_Darsh GF_URNC_CHR_Veer GF_URNC_CHR_Rahul GF_URNC_CHR_Mahesh GF_URNC_CHR_Shyam GF_URNC_CHR_Raj GF_URNC_CHR_Kumar GF_URNC_CHR_Palash GF_URNC_CHR_Rakesh GF_URNC_CHR_Nishant GF_URNC_CHR_Neeraj GF_URNC_CHR_Prathamesh GF_URNC_CHR_Shubham
 			}
 			first_names_female = {
-				萨尼薇 安雅 阿达哈雅 阿拉德哈 安妮娅 帕里 阿尼卡 娜雅 迪亚 阿瓦尼 米拉 伊拉 阿哈娜 安薇 普丽沙 莉亚 阿罗哈 安雅 阿珂沙拉
-				莎娜亚 凯拉 希亚 普利杨卡 迪薇亚 玛海玛 希万伊 容维娜 安诺斯卡 安努施莉 阿普拉瓦 桑吉娜
+				GF_URNC_CHR_Saanvi GF_URNC_CHR_Aanya GF_URNC_CHR_Aadhya GF_URNC_CHR_Aaradhya GF_URNC_CHR_Ananya GF_URNC_CHR_Pari GF_URNC_CHR_Anika GF_URNC_CHR_Navya GF_URNC_CHR_Diya GF_URNC_CHR_Avani GF_URNC_CHR_Myra GF_URNC_CHR_Ira GF_URNC_CHR_Aahana GF_URNC_CHR_Anvi GF_URNC_CHR_Prisha GF_URNC_CHR_Riya GF_URNC_CHR_Aarohi GF_URNC_CHR_Anaya GF_URNC_CHR_Akshara
+				GF_URNC_CHR_Shanaya GF_URNC_CHR_Kyra GF_URNC_CHR_Siya GF_URNC_CHR_Priyanka GF_URNC_CHR_Divya GF_URNC_CHR_Mahima GF_URNC_CHR_Shivangi GF_URNC_CHR_Juvina GF_URNC_CHR_Anoushka GF_URNC_CHR_Anushri GF_URNC_CHR_Apoorva GF_URNC_CHR_Sanjana
 			}
 			second_names = {
-				古玛 穆瑞斯 夏斯特里 普拉萨德 阿查里雅 斯瓦米 皮莱 高德 纳亚克 戴斯穆克 布哈特 班达里 普贾里 乌帕德哈亚 茨沃塔 奈克
-				库卡尼 道达玛尼 帕蒂尔 古普塔 夏尔马 纳姆波迪尔 潘尼卡 波蒂 库蒂 瓦马 索恩德哈拉姆 索里亚普拉卡什 查恩德兰 维杰 
-				温克塔桑 普塔帕
+				GF_URNC_CHR_Kumar GF_URNC_CHR_Moorthi GF_URNC_CHR_Shastri GF_URNC_CHR_Prasad GF_URNC_CHR_Acharya GF_URNC_CHR_Swamy GF_URNC_CHR_Pillai GF_URNC_CHR_Gowda GF_URNC_CHR_Nayak GF_URNC_CHR_Desmukh GF_URNC_CHR_Bhat GF_URNC_CHR_Bhandary GF_URNC_CHR_Poojary GF_URNC_CHR_Upadhyay GF_URNC_CHR_Chowta GF_URNC_CHR_Naik
+				GF_URNC_CHR_Kulkarni GF_URNC_CHR_Dodamani GF_URNC_CHR_Patil GF_URNC_CHR_Gupta GF_URNC_CHR_Sharma GF_URNC_CHR_Namboodiri GF_URNC_CHR_Pannikar GF_URNC_CHR_Potti GF_URNC_CHR_Kutty GF_URNC_CHR_Varma GF_URNC_CHR_Sondharam GF_URNC_CHR_Sooriyaprakash GF_URNC_CHR_Chandran GF_URNC_CHR_Vijay
+				GF_URNC_CHR_Venktaesan GF_URNC_CHR_Puttappa
 			}
 			regnal_first_names_male = {
-				卡亚恩 达什 威尔 拉胡 马赫什 邵亚 阿瑟亚弗 阿德维克 普拉纳弗
+				GF_URNC_CHR_Kayaan GF_URNC_CHR_Darsh GF_URNC_CHR_Veer GF_URNC_CHR_Rahul GF_URNC_CHR_Mahesh GF_URNC_CHR_Shaurya GF_URNC_CHR_Atharv GF_URNC_CHR_Advik GF_URNC_CHR_Pranav
 			}
 			regnal_first_names_female = {
-				萨尼薇 安雅 阿达哈雅 阿拉德哈 安妮娅 普林卡 迪亚 玛海玛 希梵格
+				GF_URNC_CHR_Saanvi GF_URNC_CHR_Aanya GF_URNC_CHR_Aadhya GF_URNC_CHR_Aaradhya GF_URNC_CHR_Ananya GF_URNC_CHR_Priyanka GF_URNC_CHR_Divya GF_URNC_CHR_Mahima GF_URNC_CHR_Shivangi
 			}
 			regnal_second_names = {
-				古玛 穆瑞斯 夏斯特里 普拉萨德 阿查里雅 帕蒂尔 古普塔 夏尔马 纳姆布迪瑞 潘尼卡 波蒂 库蒂 沃尔马 桑德哈拉姆 
+				GF_URNC_CHR_Kumar GF_URNC_CHR_Moorthi GF_URNC_CHR_Shastri GF_URNC_CHR_Prasad GF_URNC_CHR_Acharya GF_URNC_CHR_Patil GF_URNC_CHR_Gupta GF_URNC_CHR_Sharma GF_URNC_CHR_Namboodiri GF_URNC_CHR_Pannikar GF_URNC_CHR_Potti GF_URNC_CHR_Kutty GF_URNC_CHR_Varma GF_URNC_CHR_Sondharam
 			}
 		}
-		
+
 		names8 = {
 			weight = 25
 			first_names_male = {
-				迭戈 路易斯 佩德罗 华金 何塞 埃米利奥 爱德华多 亚历杭德罗 卡洛斯 费尔南多 弗朗西斯科 朱利奥 "何塞·安东尼奥" "何塞·曼努埃尔" 胡安
-				"荷塞马里" 伊格纳西噢 曼纽尔 帕布罗 米格尔 拉蒙 莱蒙多 圣地亚哥 里卡多 马塞洛 哈维尔 加斯帕 阿方索 洛伦佐 恩里克
-				埃莱奥诺雷 克拉丽丝 法妮 塞尔玛 莱拉 维罗尼卡 苏菲 海伦娜 达芙妮 苏珊 梅兰妮 贝尔纳黛特 莫德 安琪琳 席琳 杰西卡
+				GF_URNC_CHR_Diego GF_URNC_CHR_Luis GF_URNC_CHR_Pedro GF_URNC_CHR_Joaquin GF_URNC_CHR_Jose GF_URNC_CHR_Emilio GF_URNC_CHR_Eduardo GF_URNC_CHR_Alejandro GF_URNC_CHR_Carlos GF_URNC_CHR_Fernando GF_URNC_CHR_Francisco GF_URNC_CHR_Julio GF_URNC_CHR_JoseAntonio GF_URNC_CHR_JoseManuel GF_URNC_CHR_Juan
+				GF_URNC_CHR_JoseMaria GF_URNC_CHR_Ignacio GF_URNC_CHR_Manuel GF_URNC_CHR_Pablo GF_URNC_CHR_Miguel GF_URNC_CHR_Ramon GF_URNC_CHR_Raimundo GF_URNC_CHR_Santiago GF_URNC_CHR_Ricardo GF_URNC_CHR_Marcelo GF_URNC_CHR_Javier GF_URNC_CHR_Gaspar GF_URNC_CHR_Alfonso GF_URNC_CHR_Lorenzo GF_URNC_CHR_Enrique
+				GF_URNC_CHR_Ernesto GF_URNC_CHR_Gerardo GF_URNC_CHR_Guillermo GF_URNC_CHR_Jesus GF_URNC_CHR_Salvadore GF_URNC_CHR_Sergio GF_URNC_CHR_Roberto GF_URNC_CHR_Esteban
 			}
 			first_names_female = {
-				阳斗 宇多田光 宅美 翼 任 水门 绍塔 悠斗 索达 尤马 建 陆多 龙木 柳兎 李夏露 有信 湖西 吉信 
-				加百拉 格雷泽达 马瑞亚 罗雷娜 马戈达勒娜 默西迪丝 米里亚姆 帕利娜 索菲亚 尤兰达 卡米拉 露西亚娜 瓦乐雷娜 马瑞亚娜 达尼拉
-				玛蒂娜 朱莉 安托尼拉 雷娜塔 阿格斯缇娜 康斯坦察 菲比安娜 
+				GF_URNC_CHR_Hortensia GF_URNC_CHR_Isabel GF_URNC_CHR_Valentina GF_URNC_CHR_Alejandra GF_URNC_CHR_Alicia GF_URNC_CHR_Antonia GF_URNC_CHR_Carla GF_URNC_CHR_Carmen GF_URNC_CHR_Catalina GF_URNC_CHR_Dolores GF_URNC_CHR_Estefania GF_URNC_CHR_Eva GF_URNC_CHR_Fernanda GF_URNC_CHR_Florencia
+				GF_URNC_CHR_Gabriela GF_URNC_CHR_Grizelda GF_URNC_CHR_Maria GF_URNC_CHR_Lorena GF_URNC_CHR_Magdalena GF_URNC_CHR_Mercedes GF_URNC_CHR_Miriam GF_URNC_CHR_Paulina GF_URNC_CHR_Sofia GF_URNC_CHR_Yolanda GF_URNC_CHR_Camila GF_URNC_CHR_Luciana GF_URNC_CHR_Valeria GF_URNC_CHR_Mariana GF_URNC_CHR_Daniela
+				GF_URNC_CHR_Martina GF_URNC_CHR_Julieta GF_URNC_CHR_Antonella GF_URNC_CHR_Renata GF_URNC_CHR_Agustina GF_URNC_CHR_Constanza GF_URNC_CHR_Fabiana
 			}
 			second_names = {
-				加尼梅德 卡利斯托 罗 尤罗帕 泰坦 瑞亚 拉普特斯 迪欧尼 特西斯 恩瑟拉达斯 弥玛斯 缇塔尼亚
-				拉米雷兹 门德斯 佩雷斯 瓦斯凯 鲁伊斯 阿格拉 阿隆索 巴蒂斯塔 埃斯古拉 弗洛雷斯 拉加迪亚 克鲁兹 维加
-				"左磊菲拉攻击群" "古藤无攻击群" "格老梅沃攻击群" "罗拉青翼攻击群" "李昆瑟旗攻击群" "恩利租卡攻击群" "破雾帕攻击群" "莫新罗攻击群" 
+				GF_URNC_CHR_Garcia GF_URNC_CHR_Martinez GF_URNC_CHR_Rodriguez GF_URNC_CHR_Fernandez GF_URNC_CHR_Sanchez GF_URNC_CHR_Lopez GF_URNC_CHR_Martin GF_URNC_CHR_Perez GF_URNC_CHR_Gonzalez GF_URNC_CHR_Alvarez GF_URNC_CHR_Gomez GF_URNC_CHR_Diaz GF_URNC_CHR_Dominguez GF_URNC_CHR_Hernandez
+				GF_URNC_CHR_Ramirez GF_URNC_CHR_Mendez GF_URNC_CHR_Perez GF_URNC_CHR_Vasquez GF_URNC_CHR_Ruiz GF_URNC_CHR_Aguera GF_URNC_CHR_Alonso GF_URNC_CHR_Batista GF_URNC_CHR_Esguerra GF_URNC_CHR_Flores GF_URNC_CHR_delaGuardia GF_URNC_CHR_delaCruz GF_URNC_CHR_delaVega
+				GF_URNC_CHR_deVargas GF_URNC_CHR_Ibanez GF_URNC_CHR_Moralez GF_URNC_CHR_Riveros GF_URNC_CHR_Rosario GF_URNC_CHR_Velazco GF_URNC_CHR_Torres GF_URNC_CHR_Quesada GF_URNC_CHR_Saldana GF_URNC_CHR_Salazar GF_URNC_CHR_Ortega GF_URNC_CHR_Ortiz GF_URNC_CHR_Solano GF_URNC_CHR_Romero
 			}
 			regnal_first_names_male = {
-				圣地亚哥 里卡多 马塞洛 哈维尔 欧内斯托 热拉尔多 吉列尔默
+				GF_URNC_CHR_Santiago GF_URNC_CHR_Ricardo GF_URNC_CHR_Marcelo GF_URNC_CHR_Javier GF_URNC_CHR_Ernesto GF_URNC_CHR_Gerardo GF_URNC_CHR_Guillermo
 			}
 			regnal_first_names_female = {
-				亚历山大 弗拉基米尔 鲍里斯 泰比里厄斯 西奥博尔德 巴里安 马克西姆斯 卢修斯
+				GF_URNC_CHR_Alicia GF_URNC_CHR_Antonia GF_URNC_CHR_Carla GF_URNC_CHR_Carmen GF_URNC_CHR_Catalina GF_URNC_CHR_Dolores GF_URNC_CHR_Martina GF_URNC_CHR_Julieta GF_URNC_CHR_Antonella GF_URNC_CHR_Renata
 			}
 			regnal_second_names = {
-				弗恩荷斯 果尔 戈乌泥 奴瓦斯 杜瑟瓦尔 斯勒弗吉 斯萨琳 弗斯 弗恩尤尼 格布 戈胡斯 格瓦斯 杜瑟尔 斯勒尤尼 弗罗恩弗吉 斯勒胡斯 弗萨琳 斯利特 多弗艾斯 弗斯琳 奴沃尔 纳荷尔
+				GF_URNC_CHR_Fernandez GF_URNC_CHR_Sanchez GF_URNC_CHR_Lopez GF_URNC_CHR_Martin GF_URNC_CHR_Perez GF_URNC_CHR_Gonzalez GF_URNC_CHR_Alvarez GF_URNC_CHR_Gomez GF_URNC_CHR_Diaz
 			}
 		}
-		
+
 		names9 = {
 			weight = 15
 			first_names_male = {
-				土豚 鸣禽 蝰蛇 信天翁 短吻鳄 蟒蛇 羚羊 犰狳 角蝰 獾 鲈 小猎犬 侦探犬 水牛 牛蛙 秃鹰 骆驼 美洲豹 
-				侯赛因 默罕默德 穆罕默德 穆罕默德 穆罕默德 穆罕默德 纳西尔 奥玛尔 拉沙德 拉希德 萨米尔 塔里克 亚黑尔 雅欣 优素福 巴拉克 
+				GF_URNC_CHR_Abdullah GF_URNC_CHR_Abbas GF_URNC_CHR_Abed GF_URNC_CHR_Ahmad GF_URNC_CHR_Ahmed GF_URNC_CHR_Ali GF_URNC_CHR_Ammar GF_URNC_CHR_Amir GF_URNC_CHR_Hamza GF_URNC_CHR_Hassan GF_URNC_CHR_Hydar GF_URNC_CHR_Ibrahim GF_URNC_CHR_Jamal GF_URNC_CHR_Kareem GF_URNC_CHR_Khathem GF_URNC_CHR_Khalil GF_URNC_CHR_Khalid GF_URNC_CHR_Malik GF_URNC_CHR_Mahdi
+				GF_URNC_CHR_Hussein GF_URNC_CHR_Mohamed GF_URNC_CHR_Mohammad GF_URNC_CHR_Mohammed GF_URNC_CHR_Muhammad GF_URNC_CHR_Muhammed GF_URNC_CHR_Nasir GF_URNC_CHR_Omar GF_URNC_CHR_Rashad GF_URNC_CHR_Rashid GF_URNC_CHR_Samir GF_URNC_CHR_Tariq GF_URNC_CHR_Yahir GF_URNC_CHR_Yasin GF_URNC_CHR_Yusuf GF_URNC_CHR_Barak
 			}
 			first_names_female = {
-				艾利西亚 安东尼娅 卡拉 卡门 卡特琳娜 多洛雷斯 马丁娜 茹列塔 安东内拉 雷娜塔 
-				马里查 米娜 奈马 努尔 萨尔玛 萨米拉 萨那 叶塞尼亚 萨拉 萨塔耶什 则伊纳布 雷哈纳 莫比纳 纳格斯 马索梅 萨奇恩 阿亚
+				GF_URNC_CHR_Alma GF_URNC_CHR_Amani GF_URNC_CHR_Amira GF_URNC_CHR_Aisha GF_URNC_CHR_Fatima GF_URNC_CHR_Hala GF_URNC_CHR_Hana GF_URNC_CHR_Hasti GF_URNC_CHR_Imani GF_URNC_CHR_Jana GF_URNC_CHR_Jaliyah GF_URNC_CHR_Jazmin GF_URNC_CHR_Jenna GF_URNC_CHR_Kaliyah GF_URNC_CHR_Layan GF_URNC_CHR_Leen GF_URNC_CHR_Leila GF_URNC_CHR_Lydia GF_URNC_CHR_Malak GF_URNC_CHR_Maryam
+				GF_URNC_CHR_Maritza GF_URNC_CHR_Mina GF_URNC_CHR_Naima GF_URNC_CHR_Noor GF_URNC_CHR_Salma GF_URNC_CHR_Samira GF_URNC_CHR_Sanaa GF_URNC_CHR_Yesenia GF_URNC_CHR_Zahra GF_URNC_CHR_Satayesh GF_URNC_CHR_Zeinab GF_URNC_CHR_Reihaneh GF_URNC_CHR_Mobina GF_URNC_CHR_Narges GF_URNC_CHR_Masoumeh GF_URNC_CHR_Sakineh GF_URNC_CHR_Aya
 			}
 			second_names = {
-				班达里翁 贝吉那里翁 瓦达那里翁 伊迪刹里翁 朵拉里翁 残八达里翁 法德瓦里翁 宁八达里翁 杂达里翁 贝瑟杜尔 迦南杜尔 维卡索杜尔
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀 欧奇奇 欧坎我 粑粑吉达 布哈里 蒂姆卡 伊博利 左膜薄膜 义乌 般波切 贝八库
-				阿拉卡特 阿巴斯 "阿伯戴尔·淖尔" 阿伯邦德 阿-艾哈戴尔 阿-加咋里 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼
+				GF_URNC_CHR_Barakat GF_URNC_CHR_Abbas GF_URNC_CHR_AbdelNour GF_URNC_CHR_Abboud GF_URNC_CHR_al-Ahdal GF_URNC_CHR_al-Ajlani GF_URNC_CHR_al-Bariqi GF_URNC_CHR_al-Mubarak GF_URNC_CHR_Adwam GF_URNC_CHR_Akkad GF_URNC_CHR_Alawi GF_URNC_CHR_al-Asiri GF_URNC_CHR_al-Atrash GF_URNC_CHR_al-Dimashqi
+				GF_URNC_CHR_Bakir GF_URNC_CHR_Hussein GF_URNC_CHR_al-Hazmi GF_URNC_CHR_al-Bishi GF_URNC_CHR_El-Baz GF_URNC_CHR_Ibrahim GF_URNC_CHR_Ishak GF_URNC_CHR_Ismail GF_URNC_CHR_El-Farouk GF_URNC_CHR_Hassan GF_URNC_CHR_El-Ghazali GF_URNC_CHR_Bilal GF_URNC_CHR_Nadir GF_URNC_CHR_Juhani GF_URNC_CHR_Jawahir GF_URNC_CHR_Hamidi
+				GF_URNC_CHR_al-Jazari GF_URNC_CHR_al-Samarrai GF_URNC_CHR_Salman GF_URNC_CHR_Qasim GF_URNC_CHR_Qudsi GF_URNC_CHR_Qaderi GF_URNC_CHR_al-Qadi GF_URNC_CHR_Farrokhzad GF_URNC_CHR_Madani GF_URNC_CHR_Sassani GF_URNC_CHR_Turani GF_URNC_CHR_Khadem GF_URNC_CHR_Ghorbani GF_URNC_CHR_Jamshidi GF_URNC_CHR_Rahimi
 			}
 			regnal_first_names_male = {
-				阿巴瓦 恰瓦 阿达夫 帕达瓦 阿瓦分 瓦法德 阿芬 阿瓦瓦 希分 茨坝夫 胡阿瓦 拉拉福 维纳夫 乌拉福 乌瓦分 阿达 芬纳达 廓瓦 瓦达布 埃里瓦 雷威尔 杜拉瓦 亚弯 乌分 伊芙 欧板瓦 佩萨瓦 阿斯果瓦 萨逼那 达华奋 佛普瓦 加巴特 哈达 祖父 洛芬 切瓦巴 瓦达亚 卜八德 纳夫巴德 麦瓦瓦
+				GF_URNC_CHR_Abdullah GF_URNC_CHR_Abbas GF_URNC_CHR_Abed GF_URNC_CHR_Khalil GF_URNC_CHR_Khalid GF_URNC_CHR_Malik GF_URNC_CHR_Mahdi GF_URNC_CHR_Nasir GF_URNC_CHR_Omar GF_URNC_CHR_Rashad GF_URNC_CHR_Rashid GF_URNC_CHR_Samir
 			}
 			regnal_first_names_female = {
-				日夫科夫 卡札科夫 克鲁托福 伊万尼科夫 克鲁索夫 拉里诺夫 马可斯姆斯基 马科夫 奥斯特洛夫斯基 葆拉车夫 里陈可夫 罗曼诺夫
+				GF_URNC_CHR_Zeinab GF_URNC_CHR_Reihaneh GF_URNC_CHR_Mobina GF_URNC_CHR_Narges GF_URNC_CHR_Masoumeh GF_URNC_CHR_Sakineh GF_URNC_CHR_Aya GF_URNC_CHR_Alma GF_URNC_CHR_Amani GF_URNC_CHR_Amira
 			}
 			regnal_second_names = {
-				阿拉卡特 阿巴斯 "阿伯戴尔·淖尔" 阿伯邦德 阿-艾哈戴尔 阿-加咋里 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼
+				GF_URNC_CHR_arakat GF_URNC_CHR_Abbas GF_URNC_CHR_AbdelNour GF_URNC_CHR_Abboud GF_URNC_CHR_al-Ahdal GF_URNC_CHR_al-Jazari GF_URNC_CHR_al-Samarrai GF_URNC_CHR_Salman GF_URNC_CHR_Qasim GF_URNC_CHR_Qudsi GF_URNC_CHR_Qaderi GF_URNC_CHR_al-Qadi GF_URNC_CHR_Farrokhzad GF_URNC_CHR_Madani
 			}
 		}
-		
+
 		names10 = {
 			weight = 15
 			first_names_male = {
-				法拉古勒克 克兰德拉克斯 库勒戈弗 卢德利梅克斯 马克思多克 特拉达吉克 卢卡吉克斯 特罗卡克斯格 特洛德姆 罗克斯欧德尔 罗帕德夫 弗雷拉克斯德 艾克瑟梅卡特 弗罗拉克斯恩 达卡勒耐克斯 德隆纳弗格 米克斯罗德姆 提达鲁勒克 拉克苏克德 克欧克苏勒姆 古弗瑞尔
-				卡梅伦 哈蒙德 诺茨 杰斐逊 科菲 亚当斯 巴布科克 鲍德温 班尼斯特 柏塞尔 鲍姆加特纳 桦树 布莱克伍德 布莱克 博兰德 
-				迪朗达尔 蒂乔 利拉
-				马斯恩格塔 莫克特斯 莫拉迫 莫斯莫特萨恩 莫特拉兰特瓦 莫特胡斯 姆斯兹 穆兹瓦马多达 恩索菲拉 欧亚吉尔 帕瑟卡 帕哈默 普罗克 奎克扎 瑞菲尔维
-				萨尼勒 萨布 塞荷洛 塞克隆哈尼 西布西索 西子维 特波荷 泰比索 席巴 休索 特斯巴 特修拉 特肖伟 乌娜提 旺迪勒 穆布图 科夫
+				GF_URNC_CHR_Faraji GF_URNC_CHR_Imamu GF_URNC_CHR_Jelani GF_URNC_CHR_Jengo GF_URNC_CHR_Jumaane GF_URNC_CHR_Khamisi GF_URNC_CHR_Kibwe GF_URNC_CHR_Mosi GF_URNC_CHR_Mwenye GF_URNC_CHR_Sefu GF_URNC_CHR_Simba GF_URNC_CHR_Tendaji GF_URNC_CHR_Zuberi GF_URNC_CHR_Abasi GF_URNC_CHR_Annan GF_URNC_CHR_Azizi GF_URNC_CHR_Badru GF_URNC_CHR_Bakari GF_URNC_CHR_Bwana
+				GF_URNC_CHR_Chane GF_URNC_CHR_Chuma GF_URNC_CHR_Enzi GF_URNC_CHR_Faraji GF_URNC_CHR_Hanisi GF_URNC_CHR_Idi GF_URNC_CHR_Issa GF_URNC_CHR_Jabari GF_URNC_CHR_Akani GF_URNC_CHR_Aluwanip GF_URNC_CHR_Ayanda GF_URNC_CHR_Bambanani GF_URNC_CHR_Bheka GF_URNC_CHR_Bhekithemba GF_URNC_CHR_Bhekizizwe GF_URNC_CHR_Butholezwe GF_URNC_CHR_Dikotsi
+				GF_URNC_CHR_Dzingai GF_URNC_CHR_Esaia GF_URNC_CHR_Hangwani GF_URNC_CHR_Humbe GF_URNC_CHR_Kabelo GF_URNC_CHR_Khathu GF_URNC_CHR_Khumbu GF_URNC_CHR_Kutlwano GF_URNC_CHR_Kwanele GF_URNC_CHR_Lentswe GF_URNC_CHR_Lesebo GF_URNC_CHR_Letswalo GF_URNC_CHR_Lutendo GF_URNC_CHR_Mahlubandile GF_URNC_CHR_Makalo GF_URNC_CHR_Mareka
+				GF_URNC_CHR_Masingita GF_URNC_CHR_Moeketsi GF_URNC_CHR_Molapo GF_URNC_CHR_Mosemotsane GF_URNC_CHR_Motlalentwa GF_URNC_CHR_Mothusi GF_URNC_CHR_Msizi GF_URNC_CHR_Mzwamadoda GF_URNC_CHR_Nthofeela GF_URNC_CHR_Oagile GF_URNC_CHR_Paseka GF_URNC_CHR_Phahamo GF_URNC_CHR_Poloko GF_URNC_CHR_Qukeza GF_URNC_CHR_Refilwe
+				GF_URNC_CHR_Sanele GF_URNC_CHR_Sbu GF_URNC_CHR_Sehlolo GF_URNC_CHR_Sekgolokhane GF_URNC_CHR_Sibusiso GF_URNC_CHR_Sizwe GF_URNC_CHR_Teboho GF_URNC_CHR_Thabiso GF_URNC_CHR_Themba GF_URNC_CHR_Thuso GF_URNC_CHR_Tsebo GF_URNC_CHR_Tsehla GF_URNC_CHR_Tshawe GF_URNC_CHR_Unathi GF_URNC_CHR_Wandile GF_URNC_CHR_Mbutu GF_URNC_CHR_Kofi
 			}
 			first_names_female = {
-				安踏吉翁 贝瑟马吉翁 维拉吉翁 司马吉翁 塔里翁 贝乐卡里翁 康普吉翁 塞呢吉翁 卡鲁斯提翁 海特尼翁 大佛吉翁 尼法吉翁
-				阿-拉扎利 阿-萨马拉伊 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼 萨萨尼 图拉尼 卡代姆 哥巴尼 佳木斯地
-				雷瑞托 林迪维 利特索安尼罗 鲁拉码 马吉欧布 马里特萨特斯 马特瑟迪索 姆巴利 马博 姆尼瑟迪斯 莫哈乌 莫拉图欧 穆阿姆毕瓦 尼亚德泽尼 诺弗托
-				纳萨提 纳瑟博 纳特瓦克 法特卢 雷内尔维 卢德扎尼 闪杜 斯尼瑟姆巴 斯扎尼 萨恩杜克斯罗 特沙恩杜科 顿古 兹恩赫尔
-			} 
+				GF_URNC_CHR_Asha GF_URNC_CHR_Abla GF_URNC_CHR_Adhra GF_URNC_CHR_Adila GF_URNC_CHR_Aeeshah GF_URNC_CHR_Afiya GF_URNC_CHR_Chausiku GF_URNC_CHR_Eshe GF_URNC_CHR_Furaha GF_URNC_CHR_Imani GF_URNC_CHR_Kamaria GF_URNC_CHR_Marjani GF_URNC_CHR_Mchumba GF_URNC_CHR_Mwanajuma GF_URNC_CHR_Nia GF_URNC_CHR_Nuru GF_URNC_CHR_Sanaa GF_URNC_CHR_Sauda GF_URNC_CHR_Subira
+				GF_URNC_CHR_Zuri GF_URNC_CHR_Aizivaishe GF_URNC_CHR_Anatswanashe GF_URNC_CHR_Anodiwa GF_URNC_CHR_Anokosha GF_URNC_CHR_Awande GF_URNC_CHR_Bokang GF_URNC_CHR_Bongani GF_URNC_CHR_Dikeledi GF_URNC_CHR_Edzai GF_URNC_CHR_Fikile GF_URNC_CHR_Gugu GF_URNC_CHR_Kagiso GF_URNC_CHR_Keneuwe GF_URNC_CHR_Koketso GF_URNC_CHR_Langalibalele
+				GF_URNC_CHR_Lerato GF_URNC_CHR_Lindidwe GF_URNC_CHR_Litsoanelo GF_URNC_CHR_Lulama GF_URNC_CHR_Majobo GF_URNC_CHR_Maletsatsi GF_URNC_CHR_Matshediso GF_URNC_CHR_Mbali GF_URNC_CHR_Mmaabo GF_URNC_CHR_Mncedisi GF_URNC_CHR_Mohau GF_URNC_CHR_Moratuoa GF_URNC_CHR_Muambiwa GF_URNC_CHR_Nnyadzeni GF_URNC_CHR_Nofoto
+				GF_URNC_CHR_Nthati GF_URNC_CHR_Ntsebo GF_URNC_CHR_Ntswaki GF_URNC_CHR_Phathu GF_URNC_CHR_Reneilwe GF_URNC_CHR_Rudzani GF_URNC_CHR_Shandu GF_URNC_CHR_Sinethemba GF_URNC_CHR_Sizani GF_URNC_CHR_Thanduxolo GF_URNC_CHR_Tshanduko GF_URNC_CHR_Tungu GF_URNC_CHR_Zinhle
+			}
 			second_names = {
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀
-				提尼布 阿金基德 阿奇罗伊 阿德伊米 瑟奇波 班科尔 纳玛尼 奥卡迪波 伊洛斯 奥容科夫 恰克弗梅里 伊维兰 奥孔容 加巴达摩斯 奥兰里瓦荣
-				马达可 欧伊恩罗拉 欧恩耶杰克维 贾卡恩德 恩基格 乌巴 欧哈克姆 阿拉克加 欧诺巴恩吉欧 姆巴内弗 姆巴迪努狙 艾克文斯 格温 萨罗-维瓦 纳伊多 斯瓦尼普尔
-				穆斯比 恩格比斯 恩格玛 马苏库 克霍恩瓦雨 胡马罗 克瓦伊 马姆比 姆巴恩贾瓦 姆克瓦姆特 姆塔克瓦恩达 恩格瓦恩亚 纳克瓦力 特瓦恩 斯克霍萨娜 特萨恩格萨 
-				希约尼 克哈米拉 克寇 赞格瓦 努德格瓦尼 巴哈瓦纳 但泽那 加特利 加西哈 卡乌塔
+				GF_URNC_CHR_Azikiwe GF_URNC_CHR_Awolowo GF_URNC_CHR_Balewa GF_URNC_CHR_Akintola GF_URNC_CHR_Nzeogwu GF_URNC_CHR_Onwuatuegwu GF_URNC_CHR_Okeke GF_URNC_CHR_Okonkwo GF_URNC_CHR_Babangida GF_URNC_CHR_Buhari GF_URNC_CHR_Dimka GF_URNC_CHR_Ibori GF_URNC_CHR_Jomo-Gbomo GF_URNC_CHR_Iwu GF_URNC_CHR_Bamgboshe GF_URNC_CHR_Biobaku
+				GF_URNC_CHR_Tinibu GF_URNC_CHR_Akinjide GF_URNC_CHR_Akiloye GF_URNC_CHR_Adeyemi GF_URNC_CHR_Sekibo GF_URNC_CHR_Bankole GF_URNC_CHR_Nnamani GF_URNC_CHR_Okadigbo GF_URNC_CHR_Ironsi GF_URNC_CHR_Ojukwu GF_URNC_CHR_Chukwumereije GF_URNC_CHR_Iweala GF_URNC_CHR_Okonjo GF_URNC_CHR_Gbadamosi GF_URNC_CHR_Olanrewaju
+				GF_URNC_CHR_Madaki GF_URNC_CHR_Oyinlola GF_URNC_CHR_Onyejekwe GF_URNC_CHR_Jakande GF_URNC_CHR_Ngige GF_URNC_CHR_Uba GF_URNC_CHR_Ohakim GF_URNC_CHR_Alakija GF_URNC_CHR_Onobanjo GF_URNC_CHR_Mbanefo GF_URNC_CHR_Mbadinuju GF_URNC_CHR_Ekwensi GF_URNC_CHR_Gowon GF_URNC_CHR_Saro-Wiwa GF_URNC_CHR_Naidoo GF_URNC_CHR_Swanepoel
+				GF_URNC_CHR_Msibi GF_URNC_CHR_Ngobese GF_URNC_CHR_Ngema GF_URNC_CHR_Masuku GF_URNC_CHR_Khonjwayo GF_URNC_CHR_Khumalo GF_URNC_CHR_Kwayi GF_URNC_CHR_Mambi GF_URNC_CHR_Mbanjwa GF_URNC_CHR_Mkhwemte GF_URNC_CHR_Mtakwenda GF_URNC_CHR_Ngwanya GF_URNC_CHR_Nkwali GF_URNC_CHR_Thwane GF_URNC_CHR_Skhosana GF_URNC_CHR_Tshangisa
+				GF_URNC_CHR_Tshonyane GF_URNC_CHR_Xhamela GF_URNC_CHR_Xoko GF_URNC_CHR_Zangwa GF_URNC_CHR_Ndungwane GF_URNC_CHR_Bhukhwana GF_URNC_CHR_Dzana GF_URNC_CHR_Gatyeni GF_URNC_CHR_Gxarha GF_URNC_CHR_Jwarha GF_URNC_CHR_Khawuta
 			}
 			regnal_first_names_male = {
-				法拉吉 伊玛姆 吉拉尼 吉恩果 巨马恩 克哈米斯 科布维 莫斯 姆温叶 瑟苏 西姆巴 特恩达吉 组博瑞 阿巴斯 阿娜恩 阿兹兹 巴德鲁 巴卡瑞 巴瓦娜
+				GF_URNC_CHR_Faraji GF_URNC_CHR_Imamu GF_URNC_CHR_Jelani GF_URNC_CHR_Jengo GF_URNC_CHR_Jumaane GF_URNC_CHR_Khamisi GF_URNC_CHR_Kwanele GF_URNC_CHR_Lentswe GF_URNC_CHR_Lesebo GF_URNC_CHR_Letswalo GF_URNC_CHR_Lutendo GF_URNC_CHR_Mahlubandile GF_URNC_CHR_Makalo GF_URNC_CHR_Mareka
 			}
 			regnal_first_names_female = {
-				卡格索 克内乌维 克库特索 兰格里巴勒 恩特瑟博 恩特斯瓦基 帕图胡 雷尼尔维 卢德扎尼 沙恩杜
+				GF_URNC_CHR_Kagiso GF_URNC_CHR_Keneuwe GF_URNC_CHR_Koketso GF_URNC_CHR_Langalibalele GF_URNC_CHR_Ntsebo GF_URNC_CHR_Ntswaki GF_URNC_CHR_Phathu GF_URNC_CHR_Reneilwe GF_URNC_CHR_Rudzani GF_URNC_CHR_Shandu
 			}
 			regnal_second_names = {
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀
+				GF_URNC_CHR_Azikiwe GF_URNC_CHR_Awolowo GF_URNC_CHR_Balewa GF_URNC_CHR_Akintola GF_URNC_CHR_Nzeogwu GF_URNC_CHR_Onwuatuegwu
 			}
 		}
-		
+
 		names11 = {
 			weight = 15
 			first_names_male = {
-				马里奥 路易吉 乔凡尼 曾 安东尼奥 罗伯托 安德莉亚 斯蒂法诺 马可 弗兰西斯科 安吉洛 文森佐 彼得罗 塞尔瓦托 卡洛 佛朗哥 
-				杜兰波 维斯维克 破哈加 菲达易马 费翁错 詹达伊拉 金钟站 皮佐措 特拉诺 席多碧 艾提德安
-				尼古拉 马特欧 伊格纳兹 卡米略 达妮埃莱 克里斯蒂安 阿尔贝托 吉伊多 洛伦佐 托马索 法维奥 
+				GF_URNC_CHR_Mario GF_URNC_CHR_Luigi GF_URNC_CHR_Giovanni GF_URNC_CHR_Giuseppe GF_URNC_CHR_Antonio GF_URNC_CHR_Roberto GF_URNC_CHR_Andrea GF_URNC_CHR_Stefano GF_URNC_CHR_Marco GF_URNC_CHR_Franscesco GF_URNC_CHR_Angelo GF_URNC_CHR_Vincenzo GF_URNC_CHR_Pietro GF_URNC_CHR_Salvatore GF_URNC_CHR_Carlo GF_URNC_CHR_Franco
+				GF_URNC_CHR_Domenico GF_URNC_CHR_Bruno GF_URNC_CHR_Paulo GF_URNC_CHR_Michele GF_URNC_CHR_Giorgio GF_URNC_CHR_Sergio GF_URNC_CHR_Luciano GF_URNC_CHR_Alessandro GF_URNC_CHR_Alfonso GF_URNC_CHR_Benito GF_URNC_CHR_Fabrizio GF_URNC_CHR_Cesare GF_URNC_CHR_Enrico GF_URNC_CHR_Gustavo GF_URNC_CHR_Silvio GF_URNC_CHR_Umberto
+				GF_URNC_CHR_Nicola GF_URNC_CHR_Matteo GF_URNC_CHR_Ignazio GF_URNC_CHR_Camillo GF_URNC_CHR_Daniele GF_URNC_CHR_Cristian GF_URNC_CHR_Alberto GF_URNC_CHR_Guido GF_URNC_CHR_Lorenzo GF_URNC_CHR_Tommaso GF_URNC_CHR_Fabio
 			}
 			first_names_female = {
-				玛丽亚 安娜 古瑟皮娜 罗萨 安吉拉 吉奥瓦娜 特蕾莎 露西亚 卡蜜拉 卡泰丽娜 弗朗西丝卡 安东尼塔 卡拉 埃琳娜 孔切塔 丽塔
-				玛格丽塔 弗兰卡 保罗 维多利亚 阿里安娜 奥莉艾塔 尼科雷塔 克拉拉 斯迪法尼亚 吉塞拉 克劳蒂亚 洛伦扎 加布里埃 伊莎贝拉 瓦雷瑞亚 
-				鲁库瑞泽雅 蒂娜 贝纳德塔 皮耶特拉
+				GF_URNC_CHR_Maria GF_URNC_CHR_Anna GF_URNC_CHR_Giuseppina GF_URNC_CHR_Rosa GF_URNC_CHR_Angela GF_URNC_CHR_Giovanna GF_URNC_CHR_Teresa GF_URNC_CHR_Lucia GF_URNC_CHR_Carmela GF_URNC_CHR_Caterina GF_URNC_CHR_Francesca GF_URNC_CHR_Antonietta GF_URNC_CHR_Carla GF_URNC_CHR_Elena GF_URNC_CHR_Concetta GF_URNC_CHR_Rita
+				GF_URNC_CHR_Margherita GF_URNC_CHR_Franca GF_URNC_CHR_Paola GF_URNC_CHR_Vittoria GF_URNC_CHR_Arianna GF_URNC_CHR_Orietta GF_URNC_CHR_Nicoletta GF_URNC_CHR_Clara GF_URNC_CHR_Stefania GF_URNC_CHR_Gisella GF_URNC_CHR_Claudia GF_URNC_CHR_Lorenza GF_URNC_CHR_Gabriella GF_URNC_CHR_Isabella GF_URNC_CHR_Valeria
+				GF_URNC_CHR_Lucrezia GF_URNC_CHR_Dina GF_URNC_CHR_Benedetta GF_URNC_CHR_Pietra
 			}
 			second_names = {
-				罗斯 拉索 法拉利 比安奇 马里诺 "德鲁卡" 科斯塔 焦尔达诺 曼奇尼 里佐 隆巴蒂 莫雷蒂 拉伟利 康迪 加洛 贝罗 
-				阿尔比恩 阿莫尔 黎明 地平线 阿斯加德 "特拉诺瓦" 孔子 琐罗亚斯德 "天意" 
-				巴克尔 胡塞翁 阿尔哈兹米 阿尔比西 阿尔巴兹 易卜拉欣 伊沙克 伊斯梅尔 阿法鲁克 哈山 阿加扎利 比拉尔 那迪尔 尤哈尼 爪哇希尔 哈米迪
-				"德尔格罗索" 德安东尼·法齐奥 "迪·贝拉" "迪·格纳罗" 法布里尼 冈巴多里 加瓦尼 马切蒂 马奇特利 奥利弗里 帕奇尼 夸德里尼
+				GF_URNC_CHR_Rossi GF_URNC_CHR_Russo GF_URNC_CHR_Ferrari GF_URNC_CHR_Bianchi GF_URNC_CHR_Ricci GF_URNC_CHR_Marino GF_URNC_CHR_DeLuca GF_URNC_CHR_Costa GF_URNC_CHR_Giordano GF_URNC_CHR_Mancini GF_URNC_CHR_Rizzo GF_URNC_CHR_Lombardi GF_URNC_CHR_Moretti GF_URNC_CHR_Ravelli GF_URNC_CHR_Conti GF_URNC_CHR_Gallo GF_URNC_CHR_Bello
+				GF_URNC_CHR_Albricci GF_URNC_CHR_Badoglio GF_URNC_CHR_Cappello GF_URNC_CHR_DiRobilant GF_URNC_CHR_DiSavoia GF_URNC_CHR_Garibaldi GF_URNC_CHR_Saletta GF_URNC_CHR_Pallavicino GF_URNC_CHR_Pianelli GF_URNC_CHR_Mambretti GF_URNC_CHR_Marcuzzi GF_URNC_CHR_Valeri GF_URNC_CHR_Pezzaglia
+				GF_URNC_CHR_Balletti GF_URNC_CHR_Bianconelli GF_URNC_CHR_Antonelli GF_URNC_CHR_Corsini GF_URNC_CHR_DAlessandro GF_URNC_CHR_DAgostino GF_URNC_CHR_DeRosa GF_URNC_CHR_DeSciglio GF_URNC_CHR_DiChiara GF_URNC_CHR_DiBartolomei GF_URNC_CHR_Delvecchio
+				GF_URNC_CHR_DelGrosso GF_URNC_CHR_DAntoni GF_URNC_CHR_Fazio GF_URNC_CHR_DiBella GF_URNC_CHR_DiGennaro GF_URNC_CHR_Fabbrini GF_URNC_CHR_Gambadori GF_URNC_CHR_Galvani GF_URNC_CHR_Marchetti GF_URNC_CHR_Mazzitelli GF_URNC_CHR_Olivieri GF_URNC_CHR_Pacini GF_URNC_CHR_Quadrini
 			}
 			regnal_first_names_male = {
-				马里奥 路易吉 乔凡尼 恩里科 古斯塔沃 西尔维奥 翁贝托
+				GF_URNC_CHR_Mario GF_URNC_CHR_Luigi GF_URNC_CHR_Giovanni GF_URNC_CHR_Enrico GF_URNC_CHR_Gustavo GF_URNC_CHR_Silvio GF_URNC_CHR_Umberto
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_URNC_CHR_Theodora GF_URNC_CHR_Fatima GF_URNC_CHR_Miranda GF_URNC_CHR_Cordelia GF_URNC_CHR_Svetlana GF_URNC_CHR_Anastasia GF_URNC_CHR_Valentina GF_URNC_CHR_Henrietta
 			}
 			regnal_second_names = {
-				弗南德兹 萨恩彻兹 罗泊兹 马汀 普罗兹 格恩扎勒兹 阿尔瓦瑞兹 格美兹 迪阿兹
+				GF_URNC_CHR_Ferrari GF_URNC_CHR_Bianchi GF_URNC_CHR_Ricci GF_URNC_CHR_Marino GF_URNC_CHR_DeLuca GF_URNC_CHR_Costa GF_URNC_CHR_Giordano
 			}
 		}
 	}

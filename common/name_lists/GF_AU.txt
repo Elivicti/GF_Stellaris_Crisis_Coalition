@@ -1,575 +1,632 @@
-﻿### 
- 
+﻿### United Nations of Earth
+### Created by Henrik Thyrwall
 
 GF_AU = {
+	category = "GF_new_type"
 	randomized = no
+#	alias = "Human"
+
 	ship_names = {
-		generic = {
-			冰穹a 冰穹b 冰穹c 冰穹d 冰穹e 冰穹f 冰穹g 冰穹h 冰穹i 冰穹j 冰穹k 冰穹l 冰穹m 冰穹n 冰穹o 冰穹p 冰穹q 冰穹r 冰穹s 冰穹t 冰穹u 冰穹v 冰穹w 冰穹x 冰穹y 冰穹z
-		} 
-		
+#护卫舰
 		corvette = {
-			罗伯森湾 马德湾 塔克湾 库克湾 巴克利湾 戴维斯湾 麦夸里湾 维森湾 普利兹湾 爱德华七世湾 鲁兹湾 阿蒙森湾 歌德湾 阿德莱德岛 彼得一世岛 亚历山大岛 瑟斯顿岛 熊岛 
-			塞普尔岛 伯克纳岛 罗斯福岛 罗斯岛 斯科特岛 扬岛 斯特奇岛 德里加尔斯基岛 白岛 南乔治岛 海象岛 埃尔斯沃思地 玛丽伯德地 科茨地 毛德皇后地 维多利亚地 威尔克斯地 
-			恩德比地 麦克罗伯特森地 阿德利地 富士圆顶 瑞穗高原 埃茨海岸 玛塔公主海岸 阿斯特里德公主海岸 朗希尔德公主海岸 奥茨海岸 玛丽皇后海岸 班扎雷海岸 乔治五世海岸
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Aardvark GF_AU_SHIP_Accentor GF_AU_SHIP_Adder GF_AU_SHIP_Albatross GF_AU_SHIP_Alligator GF_AU_SHIP_Anaconda GF_AU_SHIP_Antelope GF_AU_SHIP_Armadillo GF_AU_SHIP_Asp GF_AU_SHIP_Badger GF_AU_SHIP_Bass GF_AU_SHIP_Beagle GF_AU_SHIP_Bloodhound GF_AU_SHIP_Buffalo GF_AU_SHIP_Bulldog GF_AU_SHIP_Buzzard GF_AU_SHIP_Camel GF_AU_SHIP_Cheetah GF_AU_SHIP_Cobra GF_AU_SHIP_Coyote GF_AU_SHIP_Dingo GF_AU_SHIP_Dolphin GF_AU_SHIP_Dragonfly GF_AU_SHIP_Dromedary GF_AU_SHIP_Eagle GF_AU_SHIP_Elephant GF_AU_SHIP_Falcon GF_AU_SHIP_Ferret GF_AU_SHIP_Firefly GF_AU_SHIP_Fox GF_AU_SHIP_Gazelle GF_AU_SHIP_Glowworm GF_AU_SHIP_GreyWolf GF_AU_SHIP_Greyhound GF_AU_SHIP_Haddock GF_AU_SHIP_Hawk GF_AU_SHIP_Jackal GF_AU_SHIP_Jackdaw GF_AU_SHIP_Jaguar GF_AU_SHIP_Kangaroo GF_AU_SHIP_Kestrel GF_AU_SHIP_KingCobra GF_AU_SHIP_KingFish GF_AU_SHIP_Ladybird GF_AU_SHIP_Leopard GF_AU_SHIP_Lion GF_AU_SHIP_Lizard GF_AU_SHIP_Lynx GF_AU_SHIP_Mongoose GF_AU_SHIP_Mosquito GF_AU_SHIP_Narwhal GF_AU_SHIP_Nighthawk GF_AU_SHIP_Ocelot GF_AU_SHIP_Orca GF_AU_SHIP_Osprey GF_AU_SHIP_Panther GF_AU_SHIP_Peacock GF_AU_SHIP_Pelican GF_AU_SHIP_Penguin GF_AU_SHIP_Petrel GF_AU_SHIP_Platypus GF_AU_SHIP_Polecat GF_AU_SHIP_Porcupine GF_AU_SHIP_Puma GF_AU_SHIP_Python GF_AU_SHIP_Rattlesnake GF_AU_SHIP_Raven GF_AU_SHIP_Salamander GF_AU_SHIP_Sardine GF_AU_SHIP_Scorpion GF_AU_SHIP_Shark GF_AU_SHIP_Shrike GF_AU_SHIP_Skylark GF_AU_SHIP_Sparrow GF_AU_SHIP_Spider GF_AU_SHIP_Starfish GF_AU_SHIP_Stingray GF_AU_SHIP_Barracuda GF_AU_SHIP_Stork GF_AU_SHIP_Sturgeon GF_AU_SHIP_Swordfish GF_AU_SHIP_Tapir GF_AU_SHIP_Tiger GF_AU_SHIP_TigerShark GF_AU_SHIP_Vulture GF_AU_SHIP_Walrus GF_AU_SHIP_Wolverine GF_AU_SHIP_Apache GF_AU_SHIP_Aztec GF_AU_SHIP_Cossack GF_AU_SHIP_Dervish GF_AU_SHIP_Druid GF_AU_SHIP_Highlander GF_AU_SHIP_Janissary GF_AU_SHIP_Matador GF_AU_SHIP_Papillon GF_AU_SHIP_Parthian GF_AU_SHIP_Patrician GF_AU_SHIP_Saracen GF_AU_SHIP_Sphinx GF_AU_SHIP_Sultan GF_AU_SHIP_Tomahawk GF_AU_SHIP_Viking GF_AU_SHIP_Zulu GF_AU_SHIP_Abhay GF_AU_SHIP_Akshay GF_AU_SHIP_Akula GF_AU_SHIP_Soyuz GF_AU_SHIP_Harrier GF_AU_SHIP_TomoeGozen GF_AU_SHIP_Garuda GF_AU_SHIP_Yangwei GF_AU_SHIP_Datong GF_AU_SHIP_Haifeng GF_AU_SHIP_Hailong GF_AU_SHIP_Yongcheng GF_AU_SHIP_Yinghao GF_AU_SHIP_Taiyang GF_AU_SHIP_Chaoyang GF_AU_SHIP_Qiuxing GF_AU_SHIP_Guangxing GF_AU_SHIP_Zhengsheng GF_AU_SHIP_Taizhao GF_AU_SHIP_Meihong GF_AU_SHIP_Wulong GF_AU_SHIP_Jiangkun GF_AU_SHIP_Acorn GF_AU_SHIP_Musketeer GF_AU_SHIP_Pharaoh GF_AU_SHIP_Mongol GF_AU_SHIP_Rickenbacker GF_AU_SHIP_JohnPaulJones GF_AU_SHIP_Doblestnyi GF_AU_SHIP_Steregushchiy GF_AU_SHIP_Soobrazitelny GF_AU_SHIP_RodgerYoung GF_AU_SHIP_CrazyHorse GF_AU_SHIP_Richthofen GF_AU_SHIP_Boyington GF_AU_SHIP_Fonck GF_AU_SHIP_Mannock GF_AU_SHIP_Bishop GF_AU_SHIP_Kazakov GF_AU_SHIP_Coppens GF_AU_SHIP_Brumowski GF_AU_SHIP_Baracca GF_AU_SHIP_Hartmann GF_AU_SHIP_Juutilainen GF_AU_SHIP_Nishizawa GF_AU_SHIP_Sakai GF_AU_SHIP_Shestakov GF_AU_SHIP_Kozhedub GF_AU_SHIP_Cantacuzino GF_AU_SHIP_VanLierde GF_AU_SHIP_Bong GF_AU_SHIP_Thach GF_AU_SHIP_Clostermann GF_AU_SHIP_Mitralexis GF_AU_SHIP_Shinohara GF_AU_SHIP_Iwamoto GF_AU_SHIP_Molders GF_AU_SHIP_Skalski GF_AU_SHIP_MacLachlan GF_AU_SHIP_Caldwell GF_AU_SHIP_Litvyak GF_AU_SHIP_Yeager GF_AU_SHIP_McCampbell GF_AU_SHIP_OHare GF_AU_SHIP_Sealion GF_AU_SHIP_Balao GF_AU_SHIP_Gato GF_AU_SHIP_Doolittle GF_AU_SHIP_Novikov GF_AU_SHIP_Uhlan GF_AU_SHIP_Cataphract GF_AU_SHIP_Soyokaze GF_AU_SHIP_Orff GF_AU_SHIP_Vandal GF_AU_SHIP_Chameleon GF_AU_SHIP_Grizzly GF_AU_SHIP_Gurkha GF_AU_SHIP_Hoplite GF_AU_SHIP_Kodiak GF_AU_SHIP_Piranha GF_AU_SHIP_Wildcat GF_AU_SHIP_Hellcat GF_AU_SHIP_Bearcat GF_AU_SHIP_Tomcat GF_AU_SHIP_Kingfisher GF_AU_SHIP_Cougar GF_AU_SHIP_Mohawk GF_AU_SHIP_Blackhawk GF_AU_SHIP_ShootingStar GF_AU_SHIP_Avocet GF_AU_SHIP_Sparrowhawk GF_AU_SHIP_Skua GF_AU_SHIP_Firecrest GF_AU_SHIP_Fulmar GF_AU_SHIP_Arrowhead GF_AU_SHIP_Condor GF_AU_SHIP_Goshawk GF_AU_SHIP_Nicator GF_AU_SHIP_Samurai GF_AU_SHIP_Smilodon GF_AU_SHIP_Whippet GF_AU_SHIP_Cormorant GF_AU_SHIP_Ranvir GF_AU_SHIP_Rajput GF_AU_SHIP_Rana GF_AU_SHIP_Toreador GF_AU_SHIP_McAuliffe GF_AU_SHIP_Cardinal GF_AU_SHIP_Nightingale GF_AU_SHIP_Adler GF_AU_SHIP_Seahorse GF_AU_SHIP_Ronin GF_AU_SHIP_Iguana GF_AU_SHIP_Redeemer GF_AU_SHIP_WilliamTell GF_AU_SHIP_SittingBull GF_AU_SHIP_Hiawatha GF_AU_SHIP_JohnHenry GF_AU_SHIP_PaulBunyan GF_AU_SHIP_Cangjie GF_AU_SHIP_DakshinRai GF_AU_SHIP_GuruBaaje GF_AU_SHIP_Madoc GF_AU_SHIP_Rostam GF_AU_SHIP_Esfandiar GF_AU_SHIP_JuanValdivia GF_AU_SHIP_Yinxi GF_AU_SHIP_Yennenga GF_AU_SHIP_RunningEagle GF_AU_SHIP_HuaMulan GF_AU_SHIP_Yuenu GF_AU_SHIP_Boudica GF_AU_SHIP_Ethelfleda GF_AU_SHIP_Gwenllian GF_AU_SHIP_Gwendolen GF_AU_SHIP_Cordelia GF_AU_SHIP_Andraste GF_AU_SHIP_Scathach GF_AU_SHIP_Muirisc GF_AU_SHIP_Morrigan GF_AU_SHIP_Badb GF_AU_SHIP_Macha GF_AU_SHIP_Teuta GF_AU_SHIP_JeanneHachette GF_AU_SHIP_Atalanta GF_AU_SHIP_Hippolyta GF_AU_SHIP_Penthesilea GF_AU_SHIP_Clorinda GF_AU_SHIP_Tancred GF_AU_SHIP_Brunhild GF_AU_SHIP_Agustina GF_AU_SHIP_Gordafarid GF_AU_SHIP_Semiramis GF_AU_SHIP_Malalai GF_AU_SHIP_ShakaZulu GF_AU_SHIP_Lafayette GF_AU_SHIP_ReubenJames GF_AU_SHIP_Nostromo GF_AU_SHIP_Sulaco GF_AU_SHIP_Costaguana GF_AU_SHIP_Ribiera GF_AU_SHIP_Shashka GF_AU_SHIP_Sica GF_AU_SHIP_Jian GF_AU_SHIP_Dao GF_AU_SHIP_Zhanmadao GF_AU_SHIP_Makhaira GF_AU_SHIP_Falcata GF_AU_SHIP_Kopis GF_AU_SHIP_Rhomphaia GF_AU_SHIP_Kilij GF_AU_SHIP_Shamshir GF_AU_SHIP_Kaskara GF_AU_SHIP_Flyssa GF_AU_SHIP_Takoba GF_AU_SHIP_Yatagan GF_AU_SHIP_Urumi GF_AU_SHIP_Liuyedao GF_AU_SHIP_Tachi GF_AU_SHIP_Khanda GF_AU_SHIP_Wodao GF_AU_SHIP_Changdao GF_AU_SHIP_Yanmaodao GF_AU_SHIP_Miaodao GF_AU_SHIP_Chokuto GF_AU_SHIP_Tsurugi GF_AU_SHIP_Odachi GF_AU_SHIP_Wakizashi GF_AU_SHIP_Uchigatana GF_AU_SHIP_Shikomizue GF_AU_SHIP_Firangi GF_AU_SHIP_Talwar GF_AU_SHIP_Pata GF_AU_SHIP_Kastane GF_AU_SHIP_Macana GF_AU_SHIP_Khopesh GF_AU_SHIP_Acinaces GF_AU_SHIP_Macuahuitl GF_AU_SHIP_Belawa GF_AU_SHIP_Nimcha GF_AU_SHIP_Shotel GF_AU_SHIP_Krabi GF_AU_SHIP_Parang GF_AU_SHIP_Klewang GF_AU_SHIP_Surik GF_AU_SHIP_Niabor GF_AU_SHIP_Mandau GF_AU_SHIP_Kampilan GF_AU_SHIP_Gari GF_AU_SHIP_Panabas GF_AU_SHIP_Olds GF_AU_SHIP_Kearsarge GF_AU_SHIP_Dristigheten
 		}
-		
-		constructor = {
-			罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
-		}
-		
-		colonizer = {
-			阿蒙森 斯科特 库克 莫森 沙克尔顿 李占生 秦大河 丽芙 南森 索拉斯 班克罗夫特 塞西莉 别林斯高晋 迪蒙·迪尔维尔 纳撒内尔·帕尔默 詹姆斯·罗斯 詹姆斯·威德尔 威廉·史密斯
-		}
-
-		sponsored_colonizer = {
-			阿蒙森 斯科特 库克 莫森 沙克尔顿 李占生 秦大河 丽芙 南森 索拉斯 班克罗夫特 塞西莉 别林斯高晋 迪蒙·迪尔维尔 纳撒内尔·帕尔默 詹姆斯·罗斯 詹姆斯·威德尔 威廉·史密斯
-		}
-		
-		science = {
-			阿蒙森 斯科特 库克 莫森 沙克尔顿 李占生 秦大河 丽芙 南森 索拉斯 班克罗夫特 塞西莉 别林斯高晋 迪蒙·迪尔维尔 纳撒内尔·帕尔默 詹姆斯·罗斯 詹姆斯·威德尔 威廉·史密斯
-		}
-		
+#驱逐舰
 		destroyer = {
-			罗伯森湾 马德湾 塔克湾 库克湾 巴克利湾 戴维斯湾 麦夸里湾 维森湾 普利兹湾 爱德华七世湾 鲁兹湾 阿蒙森湾 歌德湾 阿德莱德岛 彼得一世岛 亚历山大岛 瑟斯顿岛 熊岛 
-			塞普尔岛 伯克纳岛 罗斯福岛 罗斯岛 斯科特岛 扬岛 斯特奇岛 德里加尔斯基岛 白岛 南乔治岛 海象岛 埃尔斯沃思地 玛丽伯德地 科茨地 毛德皇后地 维多利亚地 威尔克斯地 
-			恩德比地 麦克罗伯特森地 阿德利地 富士圆顶 瑞穗高原 埃茨海岸 玛塔公主海岸 阿斯特里德公主海岸 朗希尔德公主海岸 奥茨海岸 玛丽皇后海岸 班扎雷海岸 乔治五世海岸
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Amsterdam GF_AU_SHIP_Austin GF_AU_SHIP_Athens GF_AU_SHIP_Atlanta GF_AU_SHIP_Baghdad GF_AU_SHIP_Baltimore GF_AU_SHIP_Bangkok GF_AU_SHIP_Barcelona GF_AU_SHIP_Beijing GF_AU_SHIP_Belfast GF_AU_SHIP_Berlin GF_AU_SHIP_Bombay GF_AU_SHIP_Boston GF_AU_SHIP_Hyderabad GF_AU_SHIP_Budapest GF_AU_SHIP_BuenosAires GF_AU_SHIP_Cairo GF_AU_SHIP_Calcutta GF_AU_SHIP_CapeTown GF_AU_SHIP_Chicago GF_AU_SHIP_Copenhagen GF_AU_SHIP_Damascus GF_AU_SHIP_DaresSalaam GF_AU_SHIP_Detroit GF_AU_SHIP_Dubai GF_AU_SHIP_Dublin GF_AU_SHIP_Edinburgh GF_AU_SHIP_Gibraltar GF_AU_SHIP_Glasgow GF_AU_SHIP_Guangzhou GF_AU_SHIP_Hanoi GF_AU_SHIP_Havana GF_AU_SHIP_Helsinki GF_AU_SHIP_HongKong GF_AU_SHIP_Houston GF_AU_SHIP_Istanbul GF_AU_SHIP_Jakarta GF_AU_SHIP_Jerusalem GF_AU_SHIP_Johannesburg GF_AU_SHIP_Kiev GF_AU_SHIP_London GF_AU_SHIP_LosAngeles GF_AU_SHIP_Madrid GF_AU_SHIP_Manila GF_AU_SHIP_Minsk GF_AU_SHIP_Moscow GF_AU_SHIP_Mumbai GF_AU_SHIP_NewYork GF_AU_SHIP_NewOrleans GF_AU_SHIP_Novgorod GF_AU_SHIP_Osaka GF_AU_SHIP_Oslo GF_AU_SHIP_Paris GF_AU_SHIP_Prague GF_AU_SHIP_RiodeJaneiro GF_AU_SHIP_Rome GF_AU_SHIP_Rotterdam GF_AU_SHIP_SanFrancisco GF_AU_SHIP_SaoPaulo GF_AU_SHIP_Sarajevo GF_AU_SHIP_Seattle GF_AU_SHIP_Seoul GF_AU_SHIP_Sevastopol GF_AU_SHIP_Shanghai GF_AU_SHIP_Singapore GF_AU_SHIP_StLouis GF_AU_SHIP_Stockholm GF_AU_SHIP_Tokyo GF_AU_SHIP_Toronto GF_AU_SHIP_Vancouver GF_AU_SHIP_Vienna GF_AU_SHIP_Vladivostok GF_AU_SHIP_Warsaw GF_AU_SHIP_Sydney GF_AU_SHIP_Brisbane GF_AU_SHIP_MexicoCity GF_AU_SHIP_Munchen GF_AU_SHIP_Nairobi GF_AU_SHIP_Smolensk GF_AU_SHIP_Casablanca GF_AU_SHIP_Venice GF_AU_SHIP_Mogadishu GF_AU_SHIP_Montreal GF_AU_SHIP_Birmingham GF_AU_SHIP_Liverpool GF_AU_SHIP_Manchester GF_AU_SHIP_Kabul GF_AU_SHIP_Kyoto GF_AU_SHIP_Volgograd GF_AU_SHIP_StPetersburg GF_AU_SHIP_Frankfurt GF_AU_SHIP_Belgrade GF_AU_SHIP_Marseille GF_AU_SHIP_Brussels GF_AU_SHIP_Tripoli GF_AU_SHIP_Tehran GF_AU_SHIP_Quebec GF_AU_SHIP_Florence GF_AU_SHIP_Exeter GF_AU_SHIP_Dallas GF_AU_SHIP_Denver GF_AU_SHIP_Lagos GF_AU_SHIP_Melbourne GF_AU_SHIP_Calgary GF_AU_SHIP_Ottawa GF_AU_SHIP_Algiers GF_AU_SHIP_Brazzaville GF_AU_SHIP_Santiago GF_AU_SHIP_Montevideo GF_AU_SHIP_Bogota GF_AU_SHIP_Chengdu GF_AU_SHIP_Hangzhou GF_AU_SHIP_Shaoxing GF_AU_SHIP_Yokohama GF_AU_SHIP_Pittsburgh GF_AU_SHIP_Philadelphia GF_AU_SHIP_Miami GF_AU_SHIP_Lisbon GF_AU_SHIP_Hamburg GF_AU_SHIP_Bremen GF_AU_SHIP_Phoenix GF_AU_SHIP_Indianapolis GF_AU_SHIP_Minneapolis GF_AU_SHIP_Milan GF_AU_SHIP_Surabaya GF_AU_SHIP_KualaLumpur GF_AU_SHIP_AbuDhabi GF_AU_SHIP_Ankara GF_AU_SHIP_Beirut GF_AU_SHIP_Kathmandu GF_AU_SHIP_Tapei GF_AU_SHIP_Islamabad GF_AU_SHIP_Karachi GF_AU_SHIP_Zurich GF_AU_SHIP_Delhi GF_AU_SHIP_Bangalore GF_AU_SHIP_Dusseldorf GF_AU_SHIP_TelAviv GF_AU_SHIP_Lima GF_AU_SHIP_Luxembourg GF_AU_SHIP_Bucharest GF_AU_SHIP_Geneva GF_AU_SHIP_Gothenburg GF_AU_SHIP_Lyon GF_AU_SHIP_Bratislava GF_AU_SHIP_Tunis GF_AU_SHIP_Riyadh GF_AU_SHIP_Riga GF_AU_SHIP_Valencia GF_AU_SHIP_Krakow GF_AU_SHIP_Vilnius GF_AU_SHIP_Tallinn GF_AU_SHIP_Edmonton GF_AU_SHIP_Tijuana GF_AU_SHIP_Trondheim GF_AU_SHIP_Dhaka GF_AU_SHIP_Shenzhen GF_AU_SHIP_Suzhou GF_AU_SHIP_Kinshasa GF_AU_SHIP_Lahore GF_AU_SHIP_Dongguan GF_AU_SHIP_Chongqing GF_AU_SHIP_Chennai GF_AU_SHIP_Changsha GF_AU_SHIP_Wuhan GF_AU_SHIP_Tianjin GF_AU_SHIP_Faisalabad GF_AU_SHIP_Foshan GF_AU_SHIP_Zunyi GF_AU_SHIP_Ahmedabad GF_AU_SHIP_Shantou GF_AU_SHIP_Rangoon GF_AU_SHIP_Abidjan GF_AU_SHIP_Alexandria GF_AU_SHIP_Xian GF_AU_SHIP_Surat GF_AU_SHIP_Harbin GF_AU_SHIP_Giza GF_AU_SHIP_Izmir GF_AU_SHIP_Zhengzhou GF_AU_SHIP_Xiamen GF_AU_SHIP_Quanzhou GF_AU_SHIP_Busan GF_AU_SHIP_Rawalpindi GF_AU_SHIP_Guayaquil GF_AU_SHIP_Jeddah GF_AU_SHIP_Durban GF_AU_SHIP_Hefei GF_AU_SHIP_Pyongyang GF_AU_SHIP_Peshawar GF_AU_SHIP_Ekurhuleni GF_AU_SHIP_Zhongshan GF_AU_SHIP_Multan GF_AU_SHIP_Pune GF_AU_SHIP_AddisAbaba GF_AU_SHIP_Jaipur GF_AU_SHIP_Lucknow GF_AU_SHIP_Wenzhou GF_AU_SHIP_QuezonCity GF_AU_SHIP_Salvador GF_AU_SHIP_Luanda GF_AU_SHIP_Kaohsiung GF_AU_SHIP_Taichung GF_AU_SHIP_Gujranwala GF_AU_SHIP_Quito GF_AU_SHIP_Chittagong GF_AU_SHIP_Bandung GF_AU_SHIP_Brasilia GF_AU_SHIP_Daegu GF_AU_SHIP_Nagpur GF_AU_SHIP_Nagoya GF_AU_SHIP_PhnomPenh GF_AU_SHIP_Kochi GF_AU_SHIP_Medan GF_AU_SHIP_Perth GF_AU_SHIP_Sapporo GF_AU_SHIP_DavaoCity GF_AU_SHIP_Caloocan GF_AU_SHIP_Kobe GF_AU_SHIP_Guadalajara GF_AU_SHIP_Auckland GF_AU_SHIP_Fukuoka GF_AU_SHIP_Kawasaki GF_AU_SHIP_Adelaide GF_AU_SHIP_Ulsan GF_AU_SHIP_Tbilisi GF_AU_SHIP_Fez GF_AU_SHIP_Yerevan GF_AU_SHIP_Koln GF_AU_SHIP_SanAntonio GF_AU_SHIP_SanDiego GF_AU_SHIP_SanJose GF_AU_SHIP_Jacksonville GF_AU_SHIP_FortWorth GF_AU_SHIP_Charlotte GF_AU_SHIP_ElPaso GF_AU_SHIP_Nashville GF_AU_SHIP_Portland GF_AU_SHIP_OklahomaCity GF_AU_SHIP_LasVegas GF_AU_SHIP_Louisville GF_AU_SHIP_Milwaukee GF_AU_SHIP_Albuquerque GF_AU_SHIP_Tucson GF_AU_SHIP_Fresno GF_AU_SHIP_Sacramento GF_AU_SHIP_KansasCity GF_AU_SHIP_Omaha GF_AU_SHIP_Oakland GF_AU_SHIP_Tulsa GF_AU_SHIP_Wichita GF_AU_SHIP_Arlington GF_AU_SHIP_Cleveland GF_AU_SHIP_Tampa GF_AU_SHIP_Bakersfield GF_AU_SHIP_Honolulu GF_AU_SHIP_Anchorage GF_AU_SHIP_Cincinnati GF_AU_SHIP_Orlando GF_AU_SHIP_Irvine GF_AU_SHIP_Reno GF_AU_SHIP_Richmond GF_AU_SHIP_Spokane GF_AU_SHIP_SaltLakeCity GF_AU_SHIP_Tallahassee GF_AU_SHIP_Huntsville GF_AU_SHIP_Knoxville GF_AU_SHIP_Springfield GF_AU_SHIP_Savannah GF_AU_SHIP_Hartford GF_AU_SHIP_Fargo GF_AU_SHIP_Winnipeg GF_AU_SHIP_Hamilton GF_AU_SHIP_Mississauga GF_AU_SHIP_Halifax GF_AU_SHIP_Bristol GF_AU_SHIP_Sheffield GF_AU_SHIP_Leeds GF_AU_SHIP_Leicester GF_AU_SHIP_Bradford GF_AU_SHIP_Cardiff GF_AU_SHIP_Coventry GF_AU_SHIP_Nottingham GF_AU_SHIP_Newcastle GF_AU_SHIP_Wolverhampton GF_AU_SHIP_Southampton GF_AU_SHIP_Portsmouth GF_AU_SHIP_Brighton GF_AU_SHIP_Aberdeen GF_AU_SHIP_Bolton GF_AU_SHIP_Norwich GF_AU_SHIP_Swansea GF_AU_SHIP_Oxford GF_AU_SHIP_York GF_AU_SHIP_Blackpool GF_AU_SHIP_Cambridge GF_AU_SHIP_Ipswich GF_AU_SHIP_Stuttgart GF_AU_SHIP_Dortmund GF_AU_SHIP_Essen GF_AU_SHIP_Dresden GF_AU_SHIP_Hannover GF_AU_SHIP_Nurnberg GF_AU_SHIP_Duisburg GF_AU_SHIP_Bonn GF_AU_SHIP_Munster GF_AU_SHIP_Karlsruhe GF_AU_SHIP_Mannheim GF_AU_SHIP_Augsburg GF_AU_SHIP_Freiburg GF_AU_SHIP_Aachen GF_AU_SHIP_Lubeck GF_AU_SHIP_Mainz GF_AU_SHIP_Rostock GF_AU_SHIP_Potsdam GF_AU_SHIP_Toulouse GF_AU_SHIP_Nice GF_AU_SHIP_Nantes GF_AU_SHIP_Strasbourg GF_AU_SHIP_Montpellier GF_AU_SHIP_Bordeaux GF_AU_SHIP_Lille GF_AU_SHIP_Rennes GF_AU_SHIP_Reims GF_AU_SHIP_LeHavre GF_AU_SHIP_Toulon GF_AU_SHIP_Grenoble GF_AU_SHIP_Dijon GF_AU_SHIP_Brest GF_AU_SHIP_Metz GF_AU_SHIP_Novosibirsk GF_AU_SHIP_Yekaterinburg GF_AU_SHIP_Samara GF_AU_SHIP_Omsk GF_AU_SHIP_Kazan GF_AU_SHIP_Chelyabinsk GF_AU_SHIP_Rostov GF_AU_SHIP_Ufa GF_AU_SHIP_Perm GF_AU_SHIP_Krasnoyarsk GF_AU_SHIP_Voronezh GF_AU_SHIP_Saratov GF_AU_SHIP_Krasnodar GF_AU_SHIP_Izhevsk GF_AU_SHIP_Ulyanovsk GF_AU_SHIP_Yaroslavl GF_AU_SHIP_Irkutsk GF_AU_SHIP_Khabarovsk GF_AU_SHIP_Orenburg GF_AU_SHIP_Ryazan GF_AU_SHIP_Astrakhan GF_AU_SHIP_Lipetsk GF_AU_SHIP_Tula GF_AU_SHIP_Kirov GF_AU_SHIP_Bryansk GF_AU_SHIP_Ivanovo GF_AU_SHIP_Stavropol GF_AU_SHIP_Tver GF_AU_SHIP_Arkhangelsk GF_AU_SHIP_Vladimir GF_AU_SHIP_Murmansk GF_AU_SHIP_Grozny GF_AU_SHIP_Petrozavodsk GF_AU_SHIP_Pskov GF_AU_SHIP_Antwerp GF_AU_SHIP_Utrecht GF_AU_SHIP_TheHague GF_AU_SHIP_Turin GF_AU_SHIP_Palermo GF_AU_SHIP_Genoa GF_AU_SHIP_Seville GF_AU_SHIP_Granada GF_AU_SHIP_Aleppo GF_AU_SHIP_KuwaitCity GF_AU_SHIP_Amman GF_AU_SHIP_Mashhad GF_AU_SHIP_Isfahan GF_AU_SHIP_Gaza GF_AU_SHIP_Sanaa GF_AU_SHIP_Mosul GF_AU_SHIP_Khartoum GF_AU_SHIP_Accra GF_AU_SHIP_Kano GF_AU_SHIP_Ibadan GF_AU_SHIP_Dakar GF_AU_SHIP_Pretoria GF_AU_SHIP_Benghazi GF_AU_SHIP_Rabat GF_AU_SHIP_Freetown GF_AU_SHIP_Djibouti GF_AU_SHIP_Monrovia GF_AU_SHIP_PortElizabeth GF_AU_SHIP_NDjamena GF_AU_SHIP_Lodz GF_AU_SHIP_Canberra GF_AU_SHIP_Baku GF_AU_SHIP_Sofia GF_AU_SHIP_Zagreb GF_AU_SHIP_Astana GF_AU_SHIP_Nouakchott GF_AU_SHIP_UlanBator GF_AU_SHIP_Abuja GF_AU_SHIP_PortMoresby GF_AU_SHIP_BanjaLuka GF_AU_SHIP_Douala GF_AU_SHIP_Nicosia GF_AU_SHIP_SanSalvador GF_AU_SHIP_Thessaloniki GF_AU_SHIP_Guatemala GF_AU_SHIP_Port-au-Prince GF_AU_SHIP_Georgetown GF_AU_SHIP_Reykjavik GF_AU_SHIP_Basra GF_AU_SHIP_Cork GF_AU_SHIP_Kingston GF_AU_SHIP_Mombasa GF_AU_SHIP_Ecatepec GF_AU_SHIP_Windhoek GF_AU_SHIP_Wellington GF_AU_SHIP_Hebron GF_AU_SHIP_PanamaCity GF_AU_SHIP_Porto GF_AU_SHIP_Ljubljana GF_AU_SHIP_Malmo GF_AU_SHIP_Bern GF_AU_SHIP_Donetsk GF_AU_SHIP_Harare GF_AU_SHIP_Aarhus GF_AU_SHIP_Liege
 		}
-		
+#巡洋舰
 		cruiser = {
-			罗伯森湾 马德湾 塔克湾 库克湾 巴克利湾 戴维斯湾 麦夸里湾 维森湾 普利兹湾 爱德华七世湾 鲁兹湾 阿蒙森湾 歌德湾 阿德莱德岛 彼得一世岛 亚历山大岛 瑟斯顿岛 熊岛 
-			塞普尔岛 伯克纳岛 罗斯福岛 罗斯岛 斯科特岛 扬岛 斯特奇岛 德里加尔斯基岛 白岛 南乔治岛 海象岛 埃尔斯沃思地 玛丽伯德地 科茨地 毛德皇后地 维多利亚地 威尔克斯地 
-			恩德比地 麦克罗伯特森地 阿德利地 富士圆顶 瑞穗高原 埃茨海岸 玛塔公主海岸 阿斯特里德公主海岸 朗希尔德公主海岸 奥茨海岸 玛丽皇后海岸 班扎雷海岸 乔治五世海岸
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Bolivar GF_AU_SHIP_Brusilov GF_AU_SHIP_Churchill GF_AU_SHIP_Clausewitz GF_AU_SHIP_Garibaldi GF_AU_SHIP_GustavusAdolphus GF_AU_SHIP_Hammurabi GF_AU_SHIP_JuliusCaesar GF_AU_SHIP_Justinian GF_AU_SHIP_Lincoln GF_AU_SHIP_Patton GF_AU_SHIP_Rommel GF_AU_SHIP_SunTzu GF_AU_SHIP_Liberator GF_AU_SHIP_Zhukov GF_AU_SHIP_AlexanderNevsky GF_AU_SHIP_Pyrrhus GF_AU_SHIP_YiSun-sin GF_AU_SHIP_Heihachiro GF_AU_SHIP_Khalidibnal-Walid GF_AU_SHIP_Vasa GF_AU_SHIP_Hindenburg GF_AU_SHIP_DeGaulle GF_AU_SHIP_Subutai GF_AU_SHIP_Nagato GF_AU_SHIP_Scharnhorst GF_AU_SHIP_Clemenceau GF_AU_SHIP_Richelieu GF_AU_SHIP_JeanBart GF_AU_SHIP_Sparviero GF_AU_SHIP_Affondatore GF_AU_SHIP_Tromp GF_AU_SHIP_DeRuyter GF_AU_SHIP_Esperanza GF_AU_SHIP_Pelayo GF_AU_SHIP_Velasco GF_AU_SHIP_Juneau GF_AU_SHIP_Sherwood GF_AU_SHIP_Alamo GF_AU_SHIP_Bannockburn GF_AU_SHIP_Borodino GF_AU_SHIP_Breitenfeld GF_AU_SHIP_Cannae GF_AU_SHIP_ElAlamein GF_AU_SHIP_Gaugamela GF_AU_SHIP_Kadesh GF_AU_SHIP_Kursk GF_AU_SHIP_Masada GF_AU_SHIP_Normandy GF_AU_SHIP_Salamis GF_AU_SHIP_Sedan GF_AU_SHIP_Tannenberg GF_AU_SHIP_Ticonderoga GF_AU_SHIP_Thermopylae GF_AU_SHIP_Marengo GF_AU_SHIP_Leipzig GF_AU_SHIP_Shiloh GF_AU_SHIP_Koniggratz GF_AU_SHIP_Ypres GF_AU_SHIP_Somme GF_AU_SHIP_Suomussalmi GF_AU_SHIP_Kharkov GF_AU_SHIP_Guadalcanal GF_AU_SHIP_LeyteGulf GF_AU_SHIP_DienBienPhu GF_AU_SHIP_Thymbra GF_AU_SHIP_Manassas GF_AU_SHIP_Blenheim GF_AU_SHIP_Adelphi GF_AU_SHIP_Angel GF_AU_SHIP_Borealis GF_AU_SHIP_Bounty GF_AU_SHIP_Emancipator GF_AU_SHIP_MorningStar GF_AU_SHIP_ShiLang GF_AU_SHIP_Vikramaditya GF_AU_SHIP_Viraat GF_AU_SHIP_Vikrant GF_AU_SHIP_Vishal GF_AU_SHIP_Kongo GF_AU_SHIP_Oriskany GF_AU_SHIP_BunkerHill GF_AU_SHIP_Farragut GF_AU_SHIP_KittyHawk GF_AU_SHIP_RoyalOak GF_AU_SHIP_Thunderbolt GF_AU_SHIP_Nimitz GF_AU_SHIP_Eisenhower GF_AU_SHIP_Roland GF_AU_SHIP_TranHungDao GF_AU_SHIP_Themistocles GF_AU_SHIP_Cunaxa GF_AU_SHIP_Uhuru GF_AU_SHIP_Ramses GF_AU_SHIP_Vauban GF_AU_SHIP_Harpagos GF_AU_SHIP_Anzio GF_AU_SHIP_Caen GF_AU_SHIP_Carentan GF_AU_SHIP_Bastogne GF_AU_SHIP_Arnhem GF_AU_SHIP_Temeraire GF_AU_SHIP_Vesuvius GF_AU_SHIP_Etna GF_AU_SHIP_StHelens GF_AU_SHIP_OlympusMons GF_AU_SHIP_Alcibiades GF_AU_SHIP_Patrocles GF_AU_SHIP_Santander GF_AU_SHIP_Vega GF_AU_SHIP_Rigel GF_AU_SHIP_Sirius GF_AU_SHIP_Canopus GF_AU_SHIP_Arcturus GF_AU_SHIP_Capella GF_AU_SHIP_Procyon GF_AU_SHIP_Altair GF_AU_SHIP_Betelgeuse GF_AU_SHIP_Antares GF_AU_SHIP_Achernar GF_AU_SHIP_Aldebaran GF_AU_SHIP_Pollux GF_AU_SHIP_Deneb GF_AU_SHIP_Regulus GF_AU_SHIP_Proxima GF_AU_SHIP_RigilKentaurus GF_AU_SHIP_Spica GF_AU_SHIP_Polaris GF_AU_SHIP_Bellatrix GF_AU_SHIP_Capricorn GF_AU_SHIP_Syracuse GF_AU_SHIP_Metaurus GF_AU_SHIP_Chalons GF_AU_SHIP_Tours GF_AU_SHIP_Hastings GF_AU_SHIP_Orleans GF_AU_SHIP_Valmy GF_AU_SHIP_Mukden GF_AU_SHIP_Narvik GF_AU_SHIP_Narva GF_AU_SHIP_Poltava GF_AU_SHIP_LakePeipus GF_AU_SHIP_Malta GF_AU_SHIP_Antietam GF_AU_SHIP_BatonRouge GF_AU_SHIP_Beauport GF_AU_SHIP_Abukir GF_AU_SHIP_Lund GF_AU_SHIP_Issus GF_AU_SHIP_Changping GF_AU_SHIP_TeutoburgForest GF_AU_SHIP_WatlingStreet GF_AU_SHIP_Yarmouk GF_AU_SHIP_Salamanca GF_AU_SHIP_Berezina GF_AU_SHIP_Fredericksburg GF_AU_SHIP_Chickamauga GF_AU_SHIP_Caporetto GF_AU_SHIP_KhalkhinGol GF_AU_SHIP_Gazala GF_AU_SHIP_MonteCassino GF_AU_SHIP_Saipan GF_AU_SHIP_Breslau GF_AU_SHIP_Plataea GF_AU_SHIP_Hydaspes GF_AU_SHIP_Sentinum GF_AU_SHIP_Heraclea GF_AU_SHIP_Kalinga GF_AU_SHIP_Magnesia GF_AU_SHIP_Adrianople GF_AU_SHIP_Ravenna GF_AU_SHIP_Lutzen GF_AU_SHIP_Cambrai GF_AU_SHIP_Marne GF_AU_SHIP_Chancellorsville GF_AU_SHIP_PhilippineSea GF_AU_SHIP_SavoIsland GF_AU_SHIP_CapeEsperance GF_AU_SHIP_Taranto GF_AU_SHIP_CapeMatapan GF_AU_SHIP_JavaSea GF_AU_SHIP_Gallipoli GF_AU_SHIP_DeValette GF_AU_SHIP_Suleiman GF_AU_SHIP_MacArthur GF_AU_SHIP_Roosevelt GF_AU_SHIP_Victoria GF_AU_SHIP_Nebuchadnezzar GF_AU_SHIP_Pachacuti GF_AU_SHIP_CatherinetheGreat GF_AU_SHIP_FredericktheGreat GF_AU_SHIP_Ashoka GF_AU_SHIP_QinShiHuang GF_AU_SHIP_Tamerlane GF_AU_SHIP_Marshall GF_AU_SHIP_JoanofArc GF_AU_SHIP_GenghisKhan GF_AU_SHIP_Ataturk GF_AU_SHIP_WilliamtheConqueror GF_AU_SHIP_BonhommeRichard GF_AU_SHIP_IronDuke
 		}
-		
+#战列舰
 		battleship = {
-			罗伯森湾 马德湾 塔克湾 库克湾 巴克利湾 戴维斯湾 麦夸里湾 维森湾 普利兹湾 爱德华七世湾 鲁兹湾 阿蒙森湾 歌德湾 阿德莱德岛 彼得一世岛 亚历山大岛 瑟斯顿岛 熊岛 
-			塞普尔岛 伯克纳岛 罗斯福岛 罗斯岛 斯科特岛 扬岛 斯特奇岛 德里加尔斯基岛 白岛 南乔治岛 海象岛 埃尔斯沃思地 玛丽伯德地 科茨地 毛德皇后地 维多利亚地 威尔克斯地 
-			恩德比地 麦克罗伯特森地 阿德利地 富士圆顶 瑞穗高原 埃茨海岸 玛塔公主海岸 阿斯特里德公主海岸 朗希尔德公主海岸 奥茨海岸 玛丽皇后海岸 班扎雷海岸 乔治五世海岸
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Ulysses GF_AU_SHIP_Xenophon GF_AU_SHIP_Xerxes GF_AU_SHIP_Nelson GF_AU_SHIP_Icarus GF_AU_SHIP_Atlas GF_AU_SHIP_Apollo GF_AU_SHIP_Ajax GF_AU_SHIP_Bellerophon GF_AU_SHIP_Agrippa GF_AU_SHIP_Alexander GF_AU_SHIP_Belisarius GF_AU_SHIP_Hannibal GF_AU_SHIP_Washington GF_AU_SHIP_Saladin GF_AU_SHIP_Bismarck GF_AU_SHIP_Yamato GF_AU_SHIP_Actium GF_AU_SHIP_Agincourt GF_AU_SHIP_Austerlitz GF_AU_SHIP_Gettysburg GF_AU_SHIP_Jutland GF_AU_SHIP_Trafalgar GF_AU_SHIP_Tsushima GF_AU_SHIP_ValleyForge GF_AU_SHIP_Verdun GF_AU_SHIP_Waterloo GF_AU_SHIP_Granicus GF_AU_SHIP_Pharsalus GF_AU_SHIP_Akira GF_AU_SHIP_Charlemagne GF_AU_SHIP_BlackPrince GF_AU_SHIP_Hood GF_AU_SHIP_Potemkin GF_AU_SHIP_Musashi GF_AU_SHIP_Warspite GF_AU_SHIP_Victory GF_AU_SHIP_Courage GF_AU_SHIP_Dauntless GF_AU_SHIP_Endeavor GF_AU_SHIP_Excelsior GF_AU_SHIP_Indefatigable GF_AU_SHIP_Chivalrous GF_AU_SHIP_Valiant GF_AU_SHIP_Monitor GF_AU_SHIP_Bulwark GF_AU_SHIP_Defender GF_AU_SHIP_Endurance GF_AU_SHIP_Vigilant GF_AU_SHIP_Resolute GF_AU_SHIP_Fortitude GF_AU_SHIP_Yamamoto GF_AU_SHIP_Lexington GF_AU_SHIP_Midway GF_AU_SHIP_Saratoga GF_AU_SHIP_Yorktown GF_AU_SHIP_CoralSea GF_AU_SHIP_Hermes GF_AU_SHIP_Wasp GF_AU_SHIP_Hornet GF_AU_SHIP_ArkRoyal GF_AU_SHIP_Essex GF_AU_SHIP_Akagi GF_AU_SHIP_Kaga GF_AU_SHIP_Illustrious GF_AU_SHIP_Intrepid GF_AU_SHIP_Constellation GF_AU_SHIP_Constitution GF_AU_SHIP_Ranger GF_AU_SHIP_Andromeda GF_AU_SHIP_Aquila GF_AU_SHIP_Century GF_AU_SHIP_Concord GF_AU_SHIP_Defiant GF_AU_SHIP_Galaxy GF_AU_SHIP_Odyssey GF_AU_SHIP_Orion GF_AU_SHIP_Providence GF_AU_SHIP_Reliant GF_AU_SHIP_Freedom GF_AU_SHIP_Solaris GF_AU_SHIP_Independence GF_AU_SHIP_Lionheart GF_AU_SHIP_Unicorn GF_AU_SHIP_Napoleon GF_AU_SHIP_RoyalSovereign GF_AU_SHIP_Marathon GF_AU_SHIP_Imperieuse
 		}
-
+#泰坦
 		titan = {
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Enterprise GF_AU_SHIP_Invincible GF_AU_SHIP_Pegasus GF_AU_SHIP_Hercules GF_AU_SHIP_Excalibur GF_AU_SHIP_Formidable
 		}
-
+#巨像
 		colossus = {
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_SolInvictus GF_AU_SHIP_Adjudicator GF_AU_SHIP_Overlord GF_AU_SHIP_Guardian GF_AU_SHIP_Kingmaker
 		}
-		
+#主宰
 		juggernaut = {
-			威德尔海 别林斯高晋海 阿蒙森海 罗斯海 迪蒙迪维尔海 威德尔海 戴维斯海 麦夸里海 文森山 马科姆峰 埃里伯斯火山 横贯山 罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 
-			阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Ararat GF_AU_SHIP_AxisMundi GF_AU_SHIP_GreatReformer GF_AU_SHIP_Kunlun GF_AU_SHIP_Tectonic
 		}
-		
+#工程船
+		constructor = {
+			GF_AU_SHIP_Pacific GF_AU_SHIP_Atlantic GF_AU_SHIP_Adriatic GF_AU_SHIP_Amazon GF_AU_SHIP_Danube GF_AU_SHIP_India GF_AU_SHIP_Africa GF_AU_SHIP_Volga GF_AU_SHIP_Colorado GF_AU_SHIP_Ganges GF_AU_SHIP_Jordan GF_AU_SHIP_Mekong GF_AU_SHIP_RioGrande GF_AU_SHIP_Rubicon GF_AU_SHIP_Yangtze GF_AU_SHIP_Mississippi GF_AU_SHIP_Yukon GF_AU_SHIP_Indus
+			GF_AU_SHIP_Rhine GF_AU_SHIP_Tigris GF_AU_SHIP_Sahara GF_AU_SHIP_Bengal GF_AU_SHIP_Merrimack GF_AU_SHIP_Potomac GF_AU_SHIP_Susquehanna GF_AU_SHIP_Orinoco GF_AU_SHIP_Shenandoah
+		}
+#殖民船
+		colonizer = {
+			GF_AU_SHIP_Mayflower GF_AU_SHIP_Abundance GF_AU_SHIP_Bountiful GF_AU_SHIP_Felicity GF_AU_SHIP_Hope GF_AU_SHIP_Opportunity GF_AU_SHIP_Serenity GF_AU_SHIP_Unity GF_AU_SHIP_Destiny GF_AU_SHIP_Britannia GF_AU_SHIP_Byzantium GF_AU_SHIP_Caledonia GF_AU_SHIP_ElDorado GF_AU_SHIP_Knossos GF_AU_SHIP_Memphis
+			GF_AU_SHIP_Olympus GF_AU_SHIP_Persepolis GF_AU_SHIP_SierradelaPlata GF_AU_SHIP_Sparta GF_AU_SHIP_Valhalla GF_AU_SHIP_CrystalPalace GF_AU_SHIP_Alaska GF_AU_SHIP_Angola GF_AU_SHIP_Australia GF_AU_SHIP_Brazil GF_AU_SHIP_Canada GF_AU_SHIP_Congo GF_AU_SHIP_Guinea GF_AU_SHIP_India GF_AU_SHIP_Indonesia
+			GF_AU_SHIP_Jamaica GF_AU_SHIP_Macau GF_AU_SHIP_Mozambique GF_AU_SHIP_Philippines GF_AU_SHIP_Somalia GF_AU_SHIP_SriLanka GF_AU_SHIP_Taiwan
+		}
+#私人殖民船
+		sponsored_colonizer = { # needed when there are no generic names
+			GF_AU_SHIP_Mayflower GF_AU_SHIP_Abundance GF_AU_SHIP_Bountiful GF_AU_SHIP_Felicity GF_AU_SHIP_Hope GF_AU_SHIP_Opportunity GF_AU_SHIP_Serenity GF_AU_SHIP_Unity GF_AU_SHIP_Destiny GF_AU_SHIP_Britannia GF_AU_SHIP_Byzantium GF_AU_SHIP_Caledonia GF_AU_SHIP_ElDorado GF_AU_SHIP_Knossos GF_AU_SHIP_Memphis
+			GF_AU_SHIP_Olympus GF_AU_SHIP_Persepolis GF_AU_SHIP_SierradelaPlata GF_AU_SHIP_Sparta GF_AU_SHIP_Valhalla GF_AU_SHIP_CrystalPalace GF_AU_SHIP_Alaska GF_AU_SHIP_Angola GF_AU_SHIP_Australia GF_AU_SHIP_Brazil GF_AU_SHIP_Canada GF_AU_SHIP_Congo GF_AU_SHIP_Guinea GF_AU_SHIP_India GF_AU_SHIP_Indonesia
+			GF_AU_SHIP_Jamaica GF_AU_SHIP_Macau GF_AU_SHIP_Mozambique GF_AU_SHIP_Philippines GF_AU_SHIP_Somalia GF_AU_SHIP_SriLanka GF_AU_SHIP_Taiwan
+		}
+#科研船
+		science = {
+			GF_AU_SHIP_Aldrin GF_AU_SHIP_Armstrong GF_AU_SHIP_Columbus GF_AU_SHIP_Copernicus GF_AU_SHIP_Cortez GF_AU_SHIP_Drake GF_AU_SHIP_Hubble GF_AU_SHIP_Goddard GF_AU_SHIP_Galileo GF_AU_SHIP_Einstein GF_AU_SHIP_Gagarin GF_AU_SHIP_Tereshkova GF_AU_SHIP_ZhengHe GF_AU_SHIP_LeifEricson GF_AU_SHIP_Magellan GF_AU_SHIP_JamesCook GF_AU_SHIP_MarcoPolo GF_AU_SHIP_Newton GF_AU_SHIP_Tesla GF_AU_SHIP_VonBraun GF_AU_SHIP_WalterRaleigh GF_AU_SHIP_Asimov GF_AU_SHIP_Clarke GF_AU_SHIP_Sagan GF_AU_SHIP_IbnBattuta GF_AU_SHIP_Kepler GF_AU_SHIP_Ptolemy GF_AU_SHIP_Pytheas GF_AU_SHIP_Azophi GF_AU_SHIP_Discovery GF_AU_SHIP_Voyager GF_AU_SHIP_Tradewind GF_AU_SHIP_Scout GF_AU_SHIP_Pioneer GF_AU_SHIP_Explorer GF_AU_SHIP_Sojourner GF_AU_SHIP_SantaMaria GF_AU_SHIP_Hawking GF_AU_SHIP_Earhart GF_AU_SHIP_Nobel GF_AU_SHIP_Kelvin GF_AU_SHIP_Fahrenheit GF_AU_SHIP_Equinox GF_AU_SHIP_Lagrange GF_AU_SHIP_Tsiolkovsky GF_AU_SHIP_Darwin GF_AU_SHIP_Grissom GF_AU_SHIP_Archimedes GF_AU_SHIP_Cosmocrator
+		}
+#运输船
 		transport = {
-			罗斯冰架 龙尼冰架 菲尔希纳冰架 沙克尔顿冰架 阿梅里冰架 阿森冰架 科尔贝克角 挪威角 阿代尔角 克罗斯角 达恩利角 波因塞特角 古迪纳夫角
+			GF_AU_SHIP_Cowpens GF_AU_SHIP_BelleauWood GF_AU_SHIP_Bataan GF_AU_SHIP_Monterey GF_AU_SHIP_Veracruz GF_AU_SHIP_Tarawa GF_AU_SHIP_IwoJima GF_AU_SHIP_Okinawa GF_AU_SHIP_Inchon GF_AU_SHIP_GooseGreen GF_AU_SHIP_Peleliu GF_AU_SHIP_Guam GF_AU_SHIP_Bougainville
 		}
-
-		military_station_small = { 
-			站点1 站点2 站点3 站点4 站点5 站点6 站点7 站点8 站点9 站点10 站点11 站点12 站点13 站点14 站点15 站点16 站点17 站点18 站点19 站点20 站点21
+#堡垒
+		military_station_small = {
+			GF_AU_SHIP_Citadel GF_AU_SHIP_Albacore GF_AU_SHIP_Gateway GF_AU_SHIP_Vincent GF_AU_SHIP_Babylon GF_AU_SHIP_Caernavon GF_AU_SHIP_Acre GF_AU_SHIP_Pembroke GF_AU_SHIP_Acheron GF_AU_SHIP_Spithead GF_AU_SHIP_Halifax GF_AU_SHIP_Victoria GF_AU_SHIP_Chatham GF_AU_SHIP_Anchorage GF_AU_SHIP_ScapaFlow GF_AU_SHIP_HamptonRoads GF_AU_SHIP_Brooklyn GF_AU_SHIP_Norfolk GF_AU_SHIP_Newport GF_AU_SHIP_Guam GF_AU_SHIP_Pensacola GF_AU_SHIP_Vesuvius GF_AU_SHIP_McKinley GF_AU_SHIP_Everest GF_AU_SHIP_Kilimanjaro GF_AU_SHIP_Aconcagua GF_AU_SHIP_Elbrus GF_AU_SHIP_StHelens GF_AU_SHIP_Fuji GF_AU_SHIP_Olympus GF_AU_SHIP_Sinai GF_AU_SHIP_Ambrose GF_AU_SHIP_Bermuda GF_AU_SHIP_Farpoint GF_AU_SHIP_BlueStar GF_AU_SHIP_OlympusMons GF_AU_SHIP_Tharsis GF_AU_SHIP_Syrtis GF_AU_SHIP_Blackham GF_AU_SHIP_Fletcher GF_AU_SHIP_Perry GF_AU_SHIP_Butakov GF_AU_SHIP_Morris GF_AU_SHIP_Moorsom GF_AU_SHIP_Hart GF_AU_SHIP_Hargood GF_AU_SHIP_Spruance GF_AU_SHIP_Tanaka GF_AU_SHIP_Halsey GF_AU_SHIP_Turner GF_AU_SHIP_Doria GF_AU_SHIP_Tirpitz GF_AU_SHIP_Cunningham GF_AU_SHIP_Jellicoe GF_AU_SHIP_Hipper GF_AU_SHIP_Beatty GF_AU_SHIP_Potemkin GF_AU_SHIP_Durham GF_AU_SHIP_Codrington GF_AU_SHIP_Milne GF_AU_SHIP_Laforey GF_AU_SHIP_Tyler GF_AU_SHIP_Hawke GF_AU_SHIP_Yonai GF_AU_SHIP_Pound GF_AU_SHIP_King GF_AU_SHIP_Crutchley GF_AU_SHIP_Mountbatten GF_AU_SHIP_Kountouriotis GF_AU_SHIP_Kuznetsov GF_AU_SHIP_Essen GF_AU_SHIP_Kornilov GF_AU_SHIP_Suffren GF_AU_SHIP_Treville GF_AU_SHIP_Villeneuve GF_AU_SHIP_Grasse GF_AU_SHIP_Byng GF_AU_SHIP_Lezo
 		}
-		
+#离子炮台
 		ion_cannon = {
-			勘探点1 勘探点2 勘探点3 勘探点4 勘探点5 勘探点6 勘探点7 勘探点8 勘探点9 勘探点0
+			GF_AU_SHIP_Bombard GF_AU_SHIP_Ballista GF_AU_SHIP_Catapult GF_AU_SHIP_Harpoon GF_AU_SHIP_Polybolos GF_AU_SHIP_Culverin
 		}
 	}
 
 	fleet_names = {
-		random_names = {
-			"守备舰队" "近卫舰队" "攻击舰队" "联合舰队"
-		}
-		sequential_name = "联邦舰队 $O$"
+		sequential_name = GF_AU_FLEET
 	}
-	
+
 	army_names = {
+#少前新陆军
+		GF_army_arm_doll = {
+			sequential_name = GF_AU_DOLL
+		}
+
+		GF_army_tactical_doll = {
+			sequential_name = GF_AU_TACTICAL_DOLL
+		}
+
+		GF_army_defensive_auto_doll = {
+			sequential_name = GF_AU_DEFENSIVE_DOLL
+		}
+
+		GF_army_occupation_doll = {
+			sequential_name = GF_AU_OCCUPATION_DOLL
+		}
+#原版
+		machine_defense = {
+			sequential_name = GF_AU_PLANETARYGUARD
+		}
+
+		machine_assault_1 = {
+			sequential_name = GF_AU_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_2 = {
+			sequential_name = GF_AU_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_3 = {
+			sequential_name = GF_AU_EXPEDITIONARYFORCE
+		}
+
 		defense_army = {
-			sequential_name = "$O$ 自卫部队"
+			sequential_name = GF_AU_PLANETARYGUARD
 		}
-			
+
 		assault_army = {
-			sequential_name = "$O$ 先锋部队"
+			sequential_name = GF_AU_EXPEDITIONARYFORCE
 		}
-		
+
 		slave_army = {
-			sequential_name = "$O$ 辅助部队"
+			sequential_name = GF_AU_INDENTUREDRIFLES
 		}
-		
-		clone_army = { 
-			sequential_name = "$O$ 克隆部队"
+
+		clone_army = {
+			sequential_name = GF_AU_CLONEARMY
 		}
-		
+
+		undead_army = {
+			sequential_name = GF_AU_DREADCOMMANDO
+		}
+
 		robotic_army = {
-			sequential_name = "$O$ 猎杀小组"
+			sequential_name = GF_AU_HUNTERKILLERGROUP
 		}
 
 		robotic_defense_army = {
-			sequential_name = "$O$ 猎杀小组"
+			sequential_name = GF_AU_GROUNDDEFENSEMATRIX
 		}
-		
-		psionic_army = { 
-			sequential_name = "$O$ 灵能部队"
+
+		psionic_army = {
+			sequential_name = GF_AU_PSICOMMANDO
 		}
-		
+
 		xenomorph_army = {
-			sequential_name = "$O$ 异形部队"
+			sequential_name = GF_AU_BIOWARFAREDIVISION
 		}
-		
+
 		gene_warrior_army = {
-			sequential_name = "$O$ 强化部队"
+			random_names = {
+				GF_AU_ARMY_SARC-AGladiators GF_AU_ARMY_SARC-BWidowmakers GF_AU_ARMY_SARC-CImmortals GF_AU_ARMY_SARC-DBerserkers GF_AU_ARMY_SARC-EAssassins
+				GF_AU_ARMY_SARC-FReapers GF_AU_ARMY_SARC-GNighthawks GF_AU_ARMY_SARC-HDesperados GF_AU_ARMY_SARC-IGreyKnights GF_AU_ARMY_SARC-JRoughnecks
+			}
+			sequential_name = GF_AU_BIOENGINEEREDSQUADRON
 		}
 
 		occupation_army = {
-			sequential_name = "$O$ 治安部队"
+			sequential_name = GF_AU_GARRISONFORCE
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "$O$ 安卓"
+			sequential_name = GF_AU_MECHANIZEDGARRISON
 		}
 
 		primitive_army = {
-			sequential_name = "原始军队 $O$"
+			sequential_name = GF_AU_PRIMITIVEARMY
 		}
 		industrial_army = {
-			sequential_name = "工业军队 $O$"
+			sequential_name = GF_AU_INDUSTRIALARMY
 		}
 		postatomic_army = {
-			sequential_name = "后原子军 $O$"
+			sequential_name = GF_AU_POSTATOMICARMY
 		}
 	}
 
 	planet_names = {
-
+#通用
 		generic = {
 			names = {
-				1号科考站 2号科考站 3号科考站 4号科考站 5号科考站 6号科考站 7号科考站 8号科考站 9号科考站
+				GF_AU_PLANET_01 GF_AU_PLANET_02 GF_AU_PLANET_03 GF_AU_PLANET_04 GF_AU_PLANET_05 
+				GF_AU_PLANET_06 GF_AU_PLANET_07 GF_AU_PLANET_08 GF_AU_PLANET_09 GF_AU_PLANET_10 
+				GF_AU_PLANET_11 GF_AU_PLANET_12 GF_AU_PLANET_13 GF_AU_PLANET_14 GF_AU_PLANET_15 
+				GF_AU_PLANET_16 GF_AU_PLANET_17 GF_AU_PLANET_18 GF_AU_PLANET_19 GF_AU_PLANET_20 
+				GF_AU_PLANET_21 GF_AU_PLANET_22 GF_AU_PLANET_23 GF_AU_PLANET_24 GF_AU_PLANET_25 
+				GF_AU_PLANET_26 GF_AU_PLANET_27 GF_AU_PLANET_28 GF_AU_PLANET_29 GF_AU_PLANET_30 
+				GF_AU_PLANET_31 GF_AU_PLANET_32 GF_AU_PLANET_33 GF_AU_PLANET_34 GF_AU_PLANET_35
+				GF_AU_PLANET_36 GF_AU_PLANET_37 GF_AU_PLANET_38 GF_AU_PLANET_39 GF_AU_PLANET_40 
+				GF_AU_PLANET_41 GF_AU_PLANET_42 GF_AU_PLANET_43 GF_AU_PLANET_44 GF_AU_PLANET_45 
+				GF_AU_PLANET_46 GF_AU_PLANET_47 GF_AU_PLANET_48 GF_AU_PLANET_49 GF_AU_PLANET_50 
+				GF_AU_PLANET_51 GF_AU_PLANET_52 GF_AU_PLANET_53 GF_AU_PLANET_54 GF_AU_PLANET_55 
+				GF_AU_PLANET_56 GF_AU_PLANET_57 GF_AU_PLANET_58 GF_AU_PLANET_59 GF_AU_PLANET_60 
+				GF_AU_PLANET_61 GF_AU_PLANET_62 GF_AU_PLANET_63 GF_AU_PLANET_64 GF_AU_PLANET_65 
+				GF_AU_PLANET_66 GF_AU_PLANET_67 GF_AU_PLANET_68 GF_AU_PLANET_69 GF_AU_PLANET_70 
+				GF_AU_PLANET_71 GF_AU_PLANET_72 GF_AU_PLANET_73 GF_AU_PLANET_74 GF_AU_PLANET_75
+				GF_AU_PLANET_76 GF_AU_PLANET_77 GF_AU_PLANET_78 GF_AU_PLANET_79 GF_AU_PLANET_80 
+				GF_AU_PLANET_81 GF_AU_PLANET_82 GF_AU_PLANET_83 GF_AU_PLANET_84 GF_AU_PLANET_85 
+				GF_AU_PLANET_86 GF_AU_PLANET_87 GF_AU_PLANET_88 GF_AU_PLANET_89 GF_AU_PLANET_90 
+				GF_AU_PLANET_91 GF_AU_PLANET_92 GF_AU_PLANET_93 GF_AU_PLANET_94 GF_AU_PLANET_95 
+				GF_AU_PLANET_96 GF_AU_PLANET_97 GF_AU_PLANET_98 GF_AU_PLANET_99 
 			}
 		}
-		
+#沙漠
 		pc_desert = {
 			names = {
-				萨纳埃站 马丘比丘站 马尔多纳多站 真纳站 胡里奥·埃斯库德罗教授站 费拉斯少校南极站
+
 			}
 		}
-		
+#干旱
 		pc_arid = {
 			names = {
-				贝纳尔多.奥伊金斯将军站 冈萨雷斯.魏德拉站 布朗海军上将站 卡里尼站 阿蒂加斯站 爱德华多·弗雷·蒙塔尔瓦总统站  
+
 			}
 		}
-		
+#热带
 		pc_tropical = {
 			names = {
-				奥卡达斯站 弗雷总统站 圣马丁将军站 贝尔格拉诺将军站 普里马韦拉站 埃斯佩兰萨站 阿图罗.普拉特舰长站
+
 			}
 		}
-		
+#陆地
 		pc_continental = {
 			names = {
-				长城站 昆仑站 东方站 瑞穗站 昭和站 中山站 世宗大王站 达克辛·甘戈特里站 迈特里站 富士冰穹站 张保皋站 泰山站 飞鸟站 巴拉提站
+
 			}
 		}
-		
+#盖亚
 		pc_gaia = {
 			names = {
-				 生态圈1号 生态圈2号 生态圈3号 生态圈4号 生态圈5号 生态圈6号 生态圈7号 生态圈8号 生态圈9号
+
 			}
 		}
-		
+#海洋
 		pc_ocean = {
 			names = {
-				莫森站 戴维斯站 凯西站 麦夸里岛站 斯科特站 鲁佩尔托·艾利切利贝尔蒂站
+
 			}
 		}
-		
+#苔原
 		pc_tundra = {
 			names = {
-				帕默站 塞普珥站  阿蒙森-斯科特站 麦克默多站 伯德站 塞普尔站
+
 			}
 		}
-		
+#冰原
 		pc_arctic = {
 			names = {
-				俄罗斯站 进度站 新拉扎列夫站 青年站 和平站 米尔尼站 沃斯托克站 列宁格勒站 斯维站 奥布站 瓦萨站 特罗尔站 托尔站
+
+			}
+		}
+#草原
+		pc_savannah = {
+			names = {
+			}
+		}
+#高山
+		pc_alpine = {
+			names = {
 			}
 		}
 
-		pc_savannah = {
-			names = { 劳-拉科维泽站 亨里克·阿克托夫斯基站 圣克莱门特·奥赫里德站 沃纳德斯基站 门德尔站 }
-		}
-
-		pc_alpine = {
-			names = { 伯德岛站 锡格尼站 法拉第站 罗瑟拉站 格.冯.诺伊迈尔站 迪蒙.迪维尔站 哈雷站  马里奥·祖切利站 胡安·卡洛斯一世站 加布里埃尔·卡斯蒂利亚站 科嫩站 伊丽莎白公主站 }
-		}
-		
 	}
 
+
+	### CHARACTERS
+
 	character_names = {
+
 		names1 = {
 			weight = 40
 			first_names_male = {
-				杰姆-鲁罗德普 杰姆-普赫恩 杰姆-法尔奎格 杰姆-吉欧科杜尔 杰姆-贾尔梅德斯 杰姆-乔欧姆恩格 杰姆-格哈恩德瑞尔 杰姆-普霍尔特格 杰姆-普格伊斯恩 杰姆-卡哈罗卡格 杰姆-卡尔赫德
-				达维·迪哥 达维·加瓦斯 达维·休尼斯 达维·欧林巴 达维·一塔 达维·波尔 达维·塞娃 达维·欧本 达维·富计 达维·阿纳斯 达维·乌巴 达维·阿姆 达维·欧巴啦 达维·伊瓦姆 达维·伊提 达维·佳恩 达维·弗雷福 达维·佳林 达维·恩 达维·阿拉布
-				埃德加 克里斯平 纳尔逊 埃米特 特雷弗 特拉维斯 兰斯 阿德里安 德斯蒙德 布伦丹 布雷特 安布罗斯 巴希尔 基兰 柯南 德莫特 达德利 费利克斯
-				多梅尼科 布鲁诺 保罗 米歇尔 乔治 塞尔吉奥 卢西亚诺 亚历山德罗 阿方索 贝尼托 法布里奇奥 塞萨尔 恩里科 古斯塔沃 西尔维奥 翁贝托
-				埃塞克斯 赤城 加贺 杰出 强悍 无敌 企业 星座 宪法 游侠 仙女座 天鹰座 世纪 协和 反抗 银河 
-				马里奥 路易吉 乔凡尼 曾 安东尼奥 罗伯托 安德莉亚 斯蒂法诺 马可 弗兰西斯科 安吉洛 文森佐 彼得罗 塞尔瓦托 卡洛 佛朗哥
-				豺狼 寒鸦 美洲虎 袋鼠 红隼 "眼镜王蛇" "王鱼" 瓢虫 豹 狮子 蜥蜴 天猫 疯丫头 猫鼬 蚊子 独角鲸 夜鹰 豹猫 逆戟鲸 
-				布拉尼斯拉夫 伊利亚 雅罗斯拉夫 拉多米尔 基里尔 拉多斯拉夫 卢博米尔 拉蒂米尔 叶戈尔
-				玛蒂娜 朱莉 安托尼拉 雷娜塔 阿格斯缇娜 康斯坦察 菲比安娜 
-				津加伊 艾赛亚 航瓦尼 航比 卡贝罗 加土 昆布 库特雷瓦诺 关勒尼 冷思维 乐色博 乐斯瓦罗 卢腾铎 马陆班底 马卡洛 马勒卡
-				弗斯迪格 弗什加瓦斯 弗什胡尼斯 弗什欧里姆巴 弗什伊萨 弗什霍尔 弗什瑟瓦 弗什欧伯恩 弗什弗吉 弗什阿纳斯 弗什乌巴 弗什阿维姆 弗什欧巴拉 弗什伊娃姆尔 弗什伊瑟 弗什加恩 弗什弗雷瓦斯 弗什加里恩 弗什伊恩 弗什阿拉布
-				利亚姆 德克 "本杰明爵士" "杰姆斯爵士" "沃尔特爵士" "奈吉尔爵士" "蒙哥马利爵士" "道格拉斯爵士" "安得烈爵士" 万斯 凯尔 切斯特
+				GF_AU_CHR_John GF_AU_CHR_Brian GF_AU_CHR_Peter GF_AU_CHR_Adam GF_AU_CHR_James GF_AU_CHR_William GF_AU_CHR_Jacob GF_AU_CHR_Christopher GF_AU_CHR_Joshua GF_AU_CHR_Michael GF_AU_CHR_Ethan GF_AU_CHR_Joseph GF_AU_CHR_Matthew GF_AU_CHR_Anthony GF_AU_CHR_Daniel GF_AU_CHR_Ryan GF_AU_CHR_Samuel GF_AU_CHR_Kevin
+				GF_AU_CHR_David GF_AU_CHR_Logan GF_AU_CHR_Carter GF_AU_CHR_Benjamin GF_AU_CHR_Andrew GF_AU_CHR_Henry GF_AU_CHR_Nicholas GF_AU_CHR_Gavin GF_AU_CHR_Owen GF_AU_CHR_Jack GF_AU_CHR_Wyatt GF_AU_CHR_Wayne GF_AU_CHR_Walter GF_AU_CHR_Charles GF_AU_CHR_Louis GF_AU_CHR_Merritt GF_AU_CHR_Earl GF_AU_CHR_Alfred GF_AU_CHR_Vernon
+				GF_AU_CHR_Edward GF_AU_CHR_Donald GF_AU_CHR_George GF_AU_CHR_Paul GF_AU_CHR_Greg GF_AU_CHR_Thomas GF_AU_CHR_Robert GF_AU_CHR_Gene GF_AU_CHR_Glen GF_AU_CHR_Hugh GF_AU_CHR_Ronald GF_AU_CHR_Francis GF_AU_CHR_Stephen GF_AU_CHR_Jon GF_AU_CHR_Richard GF_AU_CHR_Mark GF_AU_CHR_Marcus GF_AU_CHR_Scott GF_AU_CHR_Duncan
+				GF_AU_CHR_Douglas GF_AU_CHR_Keith GF_AU_CHR_Howard GF_AU_CHR_Russell GF_AU_CHR_Clayton GF_AU_CHR_Lee GF_AU_CHR_Steve GF_AU_CHR_Tom GF_AU_CHR_Clay GF_AU_CHR_Oliver GF_AU_CHR_Kenneth GF_AU_CHR_Ralph GF_AU_CHR_Andy GF_AU_CHR_Tony GF_AU_CHR_Tyrone GF_AU_CHR_Lawrence GF_AU_CHR_Patrick GF_AU_CHR_Harry GF_AU_CHR_Alan
+				GF_AU_CHR_Eugene GF_AU_CHR_Frank GF_AU_CHR_Craig GF_AU_CHR_Jason GF_AU_CHR_Martin GF_AU_CHR_Jonathan GF_AU_CHR_Harrison GF_AU_CHR_Connor GF_AU_CHR_Gaylord GF_AU_CHR_Sean GF_AU_CHR_Cooper GF_AU_CHR_Stanley GF_AU_CHR_Calhoun GF_AU_CHR_Neil GF_AU_CHR_Jeffrey GF_AU_CHR_Harold GF_AU_CHR_Raymond GF_AU_CHR_Fred
+				GF_AU_CHR_Marshall GF_AU_CHR_Silas GF_AU_CHR_Roy GF_AU_CHR_Jesse GF_AU_CHR_Ken GF_AU_CHR_Bruce GF_AU_CHR_Norris GF_AU_CHR_Horatio GF_AU_CHR_Clarence GF_AU_CHR_Lloyd GF_AU_CHR_Duane GF_AU_CHR_Mortimer GF_AU_CHR_Ben GF_AU_CHR_Ernest GF_AU_CHR_Warren GF_AU_CHR_Graham GF_AU_CHR_Marvin GF_AU_CHR_Orson GF_AU_CHR_Dennis
+				GF_AU_CHR_Jackson GF_AU_CHR_Dwight GF_AU_CHR_Harlan GF_AU_CHR_Arthur GF_AU_CHR_Percival GF_AU_CHR_Montgomery GF_AU_CHR_Clyde GF_AU_CHR_Rodney GF_AU_CHR_Gerald GF_AU_CHR_Franklin GF_AU_CHR_Jake GF_AU_CHR_Horace GF_AU_CHR_Irving GF_AU_CHR_Seth GF_AU_CHR_Randolph GF_AU_CHR_Floyd GF_AU_CHR_Carl
+				GF_AU_CHR_Brent GF_AU_CHR_Cliff GF_AU_CHR_Malcolm GF_AU_CHR_Timothy GF_AU_CHR_Wallace GF_AU_CHR_Pierce GF_AU_CHR_Edmund GF_AU_CHR_Gary GF_AU_CHR_Tony GF_AU_CHR_Nathan GF_AU_CHR_Eric GF_AU_CHR_Albert GF_AU_CHR_Robin GF_AU_CHR_Geoffrey GF_AU_CHR_Larry GF_AU_CHR_Ian GF_AU_CHR_Leonard GF_AU_CHR_Gordon GF_AU_CHR_Derek
+				GF_AU_CHR_Maxwell GF_AU_CHR_Alec GF_AU_CHR_Bernard GF_AU_CHR_Stuart GF_AU_CHR_Rupert GF_AU_CHR_Dean GF_AU_CHR_Philip GF_AU_CHR_Ross GF_AU_CHR_Colin GF_AU_CHR_Darren GF_AU_CHR_Melvin GF_AU_CHR_Justin GF_AU_CHR_Zack GF_AU_CHR_Elliot GF_AU_CHR_Simon GF_AU_CHR_Morgan GF_AU_CHR_Clark GF_AU_CHR_Xavier GF_AU_CHR_Jared
+				GF_AU_CHR_Edgar GF_AU_CHR_Crispin GF_AU_CHR_Nelson GF_AU_CHR_Emmett GF_AU_CHR_Trevor GF_AU_CHR_Travis GF_AU_CHR_Lance GF_AU_CHR_Adrian GF_AU_CHR_Desmond GF_AU_CHR_Brendan GF_AU_CHR_Brett GF_AU_CHR_Ambrose GF_AU_CHR_Basil GF_AU_CHR_Kieran GF_AU_CHR_Conan GF_AU_CHR_Dermot GF_AU_CHR_Dudley GF_AU_CHR_Felix
+				GF_AU_CHR_Finn GF_AU_CHR_Oscar GF_AU_CHR_Sidney GF_AU_CHR_Aaron GF_AU_CHR_Vincent GF_AU_CHR_Angus GF_AU_CHR_Grant GF_AU_CHR_Luke GF_AU_CHR_Miles GF_AU_CHR_Morton GF_AU_CHR_Randall GF_AU_CHR_Reginald GF_AU_CHR_Herbert GF_AU_CHR_Wesley GF_AU_CHR_Nigel GF_AU_CHR_Alexander GF_AU_CHR_Dominic GF_AU_CHR_Bradley
+				GF_AU_CHR_Liam GF_AU_CHR_Dirk GF_AU_CHR_SirBenjamin GF_AU_CHR_SirJames GF_AU_CHR_SirWalter GF_AU_CHR_SirNigel GF_AU_CHR_SirMontgomery GF_AU_CHR_SirDouglas GF_AU_CHR_SirAndrew GF_AU_CHR_Vance GF_AU_CHR_Kyle GF_AU_CHR_Chester
 			}
 			first_names_female = {
-				奥利维亚 艾米丽 索菲 杰西卡 爱丽丝 斯卡雷特 艾玛 黛西 伊芙 菲比 席恩 安娜 玛丽 梅根 伊丽莎白 艾米 达西 马提尔达 艾伦
-				露西 恩典 伊夫林 琥珀 哈丽特 凯特琳 茉莉 麦迪逊 凯特 埃利诺 亚历山德拉 莎拉 玛莎 伯大尼 丽贝卡 维多利亚 
-				加百拉 格雷泽达 马瑞亚 罗雷娜 马戈达勒娜 默西迪丝 米里亚姆 帕利娜 索菲亚 尤兰达 卡米拉 露西亚娜 瓦乐雷娜 马瑞亚娜 达尼拉
-				莱弗雷斯 格斯提斯 雷格里德 萨克特鲁姆 穆尔嘉德 赛尔飞斯 格尔莱弗 克尔德瑞尔斯 苏克莱恩 卡纳尔斯 斯欧拉尔 梅罗尔德 加勒德尔 萨索德姆 克拉萨尔 古尔顿 尤德古德 萨瑟姆恩 科罗特 迪萝姆
-				阿卜杜拉 阿巴斯 阿布德 艾哈迈德 艾哈默德 阿里 阿马尔 埃米尔 哈姆扎 哈桑 希达 易卜拉欣 贾马尔 卡里姆 卡腾姆 哈利勒 哈立德 马利克 马赫迪
-				鲍登 道格拉斯 马尔登 威克姆 米利根 布拉德利 芬德利 斯普纳 哈珀 谢泼德 金士顿 诺克斯 科尔贝克 希尔兹 伯恩斯 吉布森
-				丹尼斯 多洛雷丝 多琳 德鲁西拉 伊迪丝 埃德娜 埃莉诺 艾琳 埃德温娜 埃连 艾丝特尔 埃塞尔 费莉西蒂 菲奥娜 吉纳维夫 格蒂 格温
-				格雷什娜 弗多罗维 科欧马罗维 普什科夫 彼得连科 沙塔洛夫 伊万诺夫 卡缅斯基 瓦西里耶夫 乌兰诺 沃尔科夫 格里亚兹诺夫 杜德尼克 亚左夫 泽洛夫
-				朗维提亚姆 科罗尼亚姆 尼姆瑞姆 米坦尼亚姆 拉莫尼亚姆 赫努米亚姆 贾纳斯亚姆 弗加提亚姆 帕诺基瑞姆 维拉尼亚姆 维杜瑞姆 罗梅尼亚姆 罗诺比瑞姆 伯瑞克尼亚姆 科布恩诺瑞姆 欧莫狄瑞姆 伊比尼蒂姆 马达瑟尼亚姆 艾斯皮瑞姆 赫巴瑞姆 沃比瑞姆 吉托瑞姆 比沃瑞姆 瑞沃瑞姆 利姆瑞姆 德罗弗利姆 迪恩崔提亚姆 艾罗瑞姆 沃恩多瑞姆 塞普托瑞姆 斯提瑞姆 布罗瓦瑞姆 尼瑞姆 雷莫尔瑞姆 克托维利姆 克托瑞姆 格罗尼亚姆 雷维亚姆 赫尼米亚姆 娜瑞姆
-				佩里 帕森 帕克斯顿 佩恩 珀金斯 彼得斯 帕欣 菲利普斯 皮特 波特 雷诺兹 雷文斯 里斯 理查森 里弗斯 罗宾斯
-				特里萨 蒂芙尼 瓦内萨 梅丽莎 旺达 温迪 薇尼弗雷德 维多利亚 伊维特 贝拉 塞尔达 琼 帕梅拉 雪莉 艾德里安 莫妮卡 
-				井上 木村 清水 早志 佐藤 山崎 中岛 森 安倍 池田 桥本 石川 山下 小川 石井 长谷川 
-				芳克 马诺克 毕肖普 卡扎科沃 克朋斯 布鲁莫斯基 巴拉卡 哈特曼 尤蒂莱南 尼西扎瓦 萨凯 舍斯塔科夫 阔泽杜布 坎塔兹诺 "万·里尔德" 博恩戈
-				凯恩 纳汉森 詹宁斯 雅可布 杰夫里 欧文 吉尔伯特 玻璃 格洛弗 戈德堡 德斯坦 古德曼 古德温 格雷厄姆 格兰特 格雷夫
-				不那 塔拉达 咯克塔拉 尤路雷克 克罗体育 拉塔斯 西多 打那克 库特罗 特拉克 奇多 奇卡 杜雷特 克罗塔斯 塔步 柯提克 丽塔克 布拉卡斯 推勒得克 大洛克
-				莫加瑞姆-罗 马什加德姆-罗 乌德瑞姆-罗 乌加拉斯姆-罗 乌萨拉毕姆-罗 安达格利姆-罗 乌拉斯马蒂姆-罗 乌普拉吉姆-塔 赫斯塔丽姆-塔
+				GF_AU_CHR_Olivia GF_AU_CHR_Emily GF_AU_CHR_Sophie GF_AU_CHR_Jessica GF_AU_CHR_Alice GF_AU_CHR_Scarlett GF_AU_CHR_Emma GF_AU_CHR_Daisy GF_AU_CHR_Eve GF_AU_CHR_Phoebe GF_AU_CHR_Sienna GF_AU_CHR_Anna GF_AU_CHR_Mary GF_AU_CHR_Megan GF_AU_CHR_Elizabeth GF_AU_CHR_Amy GF_AU_CHR_Darcy GF_AU_CHR_Matilda GF_AU_CHR_Erin
+				GF_AU_CHR_Lucy GF_AU_CHR_Grace GF_AU_CHR_Evelyn GF_AU_CHR_Amber GF_AU_CHR_Harriet GF_AU_CHR_Caitlyn GF_AU_CHR_Jasmine GF_AU_CHR_Madison GF_AU_CHR_Kate GF_AU_CHR_Eleanor GF_AU_CHR_Alexandra GF_AU_CHR_Sarah GF_AU_CHR_Martha GF_AU_CHR_Bethany GF_AU_CHR_Rebecca GF_AU_CHR_Victoria
+				GF_AU_CHR_Gabriella GF_AU_CHR_Naomi GF_AU_CHR_Lauren GF_AU_CHR_Clara GF_AU_CHR_Laura GF_AU_CHR_Kayla GF_AU_CHR_Nicole GF_AU_CHR_Skye GF_AU_CHR_Eliza GF_AU_CHR_Patricia GF_AU_CHR_Linda GF_AU_CHR_Barbara GF_AU_CHR_Jennifer GF_AU_CHR_Maria GF_AU_CHR_Susan GF_AU_CHR_Margaret GF_AU_CHR_Dorothy
+				GF_AU_CHR_Lisa GF_AU_CHR_Nancy GF_AU_CHR_Helen GF_AU_CHR_Sandra GF_AU_CHR_Donna GF_AU_CHR_Carol GF_AU_CHR_Ruth GF_AU_CHR_Sharon GF_AU_CHR_Michelle GF_AU_CHR_Kimberly GF_AU_CHR_Deborah GF_AU_CHR_Amelia GF_AU_CHR_Charlotte GF_AU_CHR_Isabella GF_AU_CHR_Ruby GF_AU_CHR_Addison GF_AU_CHR_Alyssa
+				GF_AU_CHR_Abigail GF_AU_CHR_Julia GF_AU_CHR_Samantha GF_AU_CHR_Brooklyn GF_AU_CHR_Ashley GF_AU_CHR_Natalie GF_AU_CHR_Brianna GF_AU_CHR_Chloe GF_AU_CHR_Hailey GF_AU_CHR_Lillian GF_AU_CHR_Judith GF_AU_CHR_Alison GF_AU_CHR_Amanda GF_AU_CHR_Angela GF_AU_CHR_Audrey GF_AU_CHR_Beatrice
+				GF_AU_CHR_Brenda GF_AU_CHR_Bridget GF_AU_CHR_Caroline GF_AU_CHR_Cassandra GF_AU_CHR_Charity GF_AU_CHR_Cecilia GF_AU_CHR_Anne GF_AU_CHR_Clarissa GF_AU_CHR_Christabel GF_AU_CHR_Cheryl GF_AU_CHR_Cynthia GF_AU_CHR_Cadence GF_AU_CHR_Cordelia GF_AU_CHR_Daphne GF_AU_CHR_Deanna
+				GF_AU_CHR_Denise GF_AU_CHR_Dolores GF_AU_CHR_Doreen GF_AU_CHR_Drusilia GF_AU_CHR_Edith GF_AU_CHR_Edna GF_AU_CHR_Eleonor GF_AU_CHR_Eileen GF_AU_CHR_Edwina GF_AU_CHR_Ellen GF_AU_CHR_Estelle GF_AU_CHR_Ethel GF_AU_CHR_Felicity GF_AU_CHR_Fiona GF_AU_CHR_Genevieve GF_AU_CHR_Gertie GF_AU_CHR_Gwen
+				GF_AU_CHR_Gwendolyn GF_AU_CHR_Henrietta GF_AU_CHR_Imogen GF_AU_CHR_Iris GF_AU_CHR_Imelda GF_AU_CHR_Jacqueline GF_AU_CHR_Jane GF_AU_CHR_Jenna GF_AU_CHR_Joanna GF_AU_CHR_Josephine GF_AU_CHR_Julianne GF_AU_CHR_Kathleen GF_AU_CHR_Kierra GF_AU_CHR_Kaylee GF_AU_CHR_Leah GF_AU_CHR_Lois
+				GF_AU_CHR_Loretta GF_AU_CHR_Lorna GF_AU_CHR_Louisa GF_AU_CHR_Lynnette GF_AU_CHR_Lucinda GF_AU_CHR_Mabel GF_AU_CHR_Marcia GF_AU_CHR_Marilyn GF_AU_CHR_Marissa GF_AU_CHR_Marjorie GF_AU_CHR_Maud GF_AU_CHR_Melanie GF_AU_CHR_Myrna GF_AU_CHR_Mavis GF_AU_CHR_Nadine GF_AU_CHR_Paula GF_AU_CHR_Penelope
+				GF_AU_CHR_Philippa GF_AU_CHR_Priscilla GF_AU_CHR_Rhonda GF_AU_CHR_Rita GF_AU_CHR_Roberta GF_AU_CHR_Rosamund GF_AU_CHR_Rosemary GF_AU_CHR_Roxanne GF_AU_CHR_Sabrina GF_AU_CHR_Selma GF_AU_CHR_Selina GF_AU_CHR_Sibyl GF_AU_CHR_Suzanne GF_AU_CHR_Tara GF_AU_CHR_Tabitha GF_AU_CHR_Thelma
+				GF_AU_CHR_Teresa GF_AU_CHR_Tiffany GF_AU_CHR_Vanessa GF_AU_CHR_Vivian GF_AU_CHR_Melissa GF_AU_CHR_Wanda GF_AU_CHR_Wendy GF_AU_CHR_Winifred GF_AU_CHR_Victoria GF_AU_CHR_Yvette GF_AU_CHR_Vera GF_AU_CHR_Zelda GF_AU_CHR_Joan GF_AU_CHR_Pamela GF_AU_CHR_Sherry GF_AU_CHR_Adrienne GF_AU_CHR_Monica
+				GF_AU_CHR_Irene GF_AU_CHR_Heather GF_AU_CHR_Lindsay GF_AU_CHR_Gillian GF_AU_CHR_Kristen GF_AU_CHR_Odette GF_AU_CHR_Felicia GF_AU_CHR_Christina GF_AU_CHR_Candace GF_AU_CHR_Arlene GF_AU_CHR_Tisha GF_AU_CHR_Majel GF_AU_CHR_Fran GF_AU_CHR_Doris GF_AU_CHR_Julie GF_AU_CHR_Courtney GF_AU_CHR_Shelly
+				GF_AU_CHR_Frances GF_AU_CHR_Mandy GF_AU_CHR_Mindy GF_AU_CHR_Rachel GF_AU_CHR_Miranda GF_AU_CHR_Virginia GF_AU_CHR_Gina GF_AU_CHR_Karla GF_AU_CHR_Tricia GF_AU_CHR_Diane GF_AU_CHR_Phyllis GF_AU_CHR_Sally GF_AU_CHR_Elaine GF_AU_CHR_Kara GF_AU_CHR_Shannon GF_AU_CHR_Susie GF_AU_CHR_Elle GF_AU_CHR_Gail GF_AU_CHR_Ann
+				GF_AU_CHR_Kathryn GF_AU_CHR_Tina GF_AU_CHR_Carrie GF_AU_CHR_Miriam GF_AU_CHR_Vivica GF_AU_CHR_Tamara GF_AU_CHR_Judy GF_AU_CHR_Willow GF_AU_CHR_Hilary GF_AU_CHR_Claire GF_AU_CHR_Danielle GF_AU_CHR_Teri GF_AU_CHR_Jackie GF_AU_CHR_Kelly GF_AU_CHR_Bonnie GF_AU_CHR_Holly GF_AU_CHR_Janice GF_AU_CHR_Brittney
+				GF_AU_CHR_Bianca GF_AU_CHR_Stephanie GF_AU_CHR_Natasha GF_AU_CHR_Lydia GF_AU_CHR_Mona GF_AU_CHR_Meredith GF_AU_CHR_Lynda GF_AU_CHR_Erica GF_AU_CHR_Heidi GF_AU_CHR_Paige GF_AU_CHR_Carmen GF_AU_CHR_Hayden GF_AU_CHR_Mallory GF_AU_CHR_Mercedes GF_AU_CHR_Marion GF_AU_CHR_Winona GF_AU_CHR_Jill
+				GF_AU_CHR_Molly GF_AU_CHR_Constance GF_AU_CHR_Jenny GF_AU_CHR_Penny GF_AU_CHR_Meryl GF_AU_CHR_Jodie GF_AU_CHR_Veronica GF_AU_CHR_April GF_AU_CHR_Sigourney GF_AU_CHR_Jillian GF_AU_CHR_Honor
 			}
 			second_names = {
-				史密斯 约翰 威廉姆斯 泰勒 布朗 戴维斯 伊凡斯 威尔逊 强森 罗宾逊 莱特 汤普逊 伊凡斯 沃克 怀特 罗伯特 格林 哈尔
-				伍德 杰克逊 克拉克 李维斯 梅森 米切尔 科克斯 坎贝尔 斯图尔特 奎恩 墨菲 汉密尔顿 莫尔 莫里 莫里麦克劳林 马丁 奥尼尔
-				安 宝 伯 蔡 诚 德 东 冯 刚 国 胡 徽 健 杰 康 李 梁 龙 猛 宁 彭 强 史 宋 涛 天 威 
-				辛克莱 辛普森 齐默尔曼 杨 约克 杨弗洛 维特斯 沃雷 沃达德 惠特利 威乐尔 温特沃斯 韦斯特 韦弗 韦伯 威尔士
-				斯帕克斯 斯宾塞 斯坦福 斯坦利 斯特尔 斯特林 斯蒂文 斯通 斯图尔特 沙利文 斯旺森 斯温尼 斯威夫特 赛克斯 特勒尔 桑顿 
-				蒂普顿 特纳 泰勒 安德伍德 文森特 沃伊特 韦德 华盛顿 瓦特 奥康纳 奥康奈 奥哈拉 欧文斯 帕赫 帕尔默 帕克 
-				佩里 帕森 帕克斯顿 佩恩 珀金斯 彼得斯 帕欣 菲利普斯 皮特 波特 雷诺兹 雷文斯 里斯 理查森 里弗斯 罗宾斯
-				罗伯森 罗斯威尔 瑞安 赛林杰 塞缪尔斯 桑德勒 萨维奇 萨克斯顿 施耐德 斯康利 赛克维克 沙仑 弗林特 希贝特 西尔弗曼
-				西尔弗斯通 斯玛特 斯诺 克鲁格 兰度 劳伦斯 罗森 李 莱昂纳德 利特尔 罗威尔 迈克 马克基尼 马克金诺 马克斯旺 马克寇伊
-				麦卡锡 麦考密克 麦克雷 马歇尔 林奇 米勒 蒙哥马利 莫里斯 纳什 纽曼 尼克尔斯 诺斯 马斯特森 梅菲尔德 麦考尔 
-				汉堡 不来梅 凤凰 印第安纳波利斯 明尼阿波利斯 米兰 泗水 "吉隆坡" "阿布扎比" 安卡拉 贝鲁特 加德满都 大埤 伊斯兰堡 卡拉奇 苏黎士 德里
-				凯恩 纳汉森 詹宁斯 雅可布 杰夫里 欧文 吉尔伯特 玻璃 格洛弗 戈德堡 德斯坦 古德曼 古德温 格雷厄姆 格兰特 格雷夫 
-				钩爪 铁锤 吸血鬼 极速 脉纹者 复仇 庄严 恶毒 沉默 至高无上 成功 碎击者 六翼天使 蟒蛇 喷火 跟踪者 阴谋
-				科特 迪拉德 坎宁安 迪斯泰法诺 芬克斯 弗莱彻 加洛韦 柯比 萨特 普雷斯顿 塔克 "小史密斯" "小威廉姆" "小伊万"
-				富兰克林 阿姆斯特朗 张伯伦 鲍威尔 阿伯特 布莱尔 "万·胡夫" "万·瑞金" 伯恩赛德 斯科菲尔德 法恩斯沃斯 弗德 瓦纳尔 波特
-				杜福斯 杜柞木 杜栎木 杜多福 杜阿林 杜欧布 杜尔 杜乌穆尔 杜阿卜哈 杜布拉 杜埃尔夫 杜欧弗
-				俾斯麦 大和 阿克提乌姆 阿金科特 奥斯特利茨 盖提斯堡 日德兰 特拉法加 对马 "福治谷" 凡尔登 滑铁卢 格拉尼库斯 法萨卢斯 光明 查理曼
-				壁垒 卫士 坚忍 警惕 果断 坚韧 山本 列克星敦 中途岛 萨拉托加 约克城 "珊瑚海" 竞技神 黄蜂 大黃蜂 "皇家方舟" 
-				夏普 多斯顿 豪威尔 米德 普尔 阿斯顿 布洛克班克 库伯 克沙曼 迪克逊 巴克斯特 德雷克 加兰 威尔斯 哈格里夫 霍顿 
-				哈斯克瓦尔加姆 哈斯克祖门 哈斯克特拉格 哈斯克索纳斯 哈斯克帕格拉姆 哈斯克乔纳特 哈斯克格恩特 哈斯克布利姆 哈斯克恩德克 哈斯克卡拉斯 拓拔伊恩拉布 拓拔克尔迪 拓拔瓦拉斯 拓拔纳姆塔 拓拔加恩达 拓拔达加斯 拓拔弗恩拉克 拓拔哈萨德拉 拓拔马拉斯 拓拔帕特
-				沃德 霍华德 劳埃德 塔纳 尼古拉斯 马修斯 埃里斯 惠尔鑫 惠特克 巴顿 霍金斯 加洛维克 斯佩克特 里弗斯 弗农 尼文
-				罗利 斯坦福 福西特 洛克哈特 郎 奥利芬特 威尔金斯 巴尔弗 阿普比 布坎南 亚德里 肖 斯托克斯 艾伦比 科伯恩 芒迪
-				弗朗西斯 曼迪 明迪 雷切尔 米兰达 维吉尼亚 吉娜 卡拉 特雷西亚 戴安 菲利斯 萨利 伊莱恩 卡拉 香农 苏瑟 艾利 盖尔 安
-				巴拉卡特 阿巴斯 "阿卜杜勒努尔" 阿布德 阿尔阿达尔 阿尔阿杰拉尼 阿尔巴利奇 阿尔穆巴拉克 阿瓦木 阿卡德 阿拉维 阿尔阿西里 阿尔阿特拉什 阿尔迪马斯其
-				波罗敏·罗 爬塔罗敏·罗 翁达林·罗 奥夫佳林·罗 亚尔新·罗 贝罗琴·罗 曼塔林·罗 麦多林·罗 穆佳林·罗
-				伯尼斯 伯内特 布什 巴特勒 弗兰奇 英格兰 卡罗尔 卡特尔 卡瓦诺 查芬 蔡斯 钱宁 查普曼 阿诺 弗赖伊 米尔顿
-				卡板度 金度 达拉斯度 迪翁度 阿帆度 阿提林度 阿斯卡林度 铱金度 翁度 特兰度 伊凡度 尹尼尔度 伊坎度 汀度 派甘度
-				玻利瓦尔 布鲁西洛夫 丘吉尔 克劳塞维茨 加里波第 "古斯塔夫·阿道夫" 汉穆拉比 "凯撒大帝" 查士丁尼 林肯 巴顿 隆美尔 "孙子" 解放者
-				法拉吉 伊玛姆 吉拉尼 吉恩果 巨马恩 克哈米斯 科万勒 勒恩斯维 勒斯博 勒特斯瓦罗 卢特恩多 马荷卢巴恩德尔 马卡罗 马勒卡
-				莱德劳 兰克希尔 莱萨德 罗弗 麦肯齐 麦克内文 麦克恩尼斯 马迪根 马洛尼 沼泽 麦考利斯特 班恩 梅尔斯 尼克尔森 奥尔森 
-				奥马利 皮考克 派克汉姆 默多克 普雷方丹 普拉特 波波维奇 普里查德 夸克恩布什 佩妮布斯考特 普法芬巴赫 拉姆齐 昆西
-				赖利 莱茵哈特 雷诺 罗尔斯顿 休巴特姆 斯金纳 斯隆 斯内尔 施耐德 索伦森 斯皮勒 斯波吉翁 斯坦菲尔德 斯塔克豪斯 斯泰尔斯
-				萨瑟兰 萨顿 塔格特 汤森 特雷纳 斯塔克 斯特拉德威克 麦克阿瑟 巴恩斯 阿特金斯 巴拉德 比格斯 贝尔德 弗雷德里克斯 汉弗莱 
-				眼镜蛇 郊狼 野狗 海豚 蜻蜓 单峰驼 老鹰 大象 猎鹰 雪貂 萤火虫 狐狸 瞪羚 萤火虫 "灰狼" 灰狗 黑线鳕 鹰
-				"斩首之屋" "病态之家" "隔离小巷" "大房子" "苍白之后" "探险者崛起" "邪恶教区" "探险者之坑" "探险者王庭" "探险者列兵"
-				蜡笔诺维茨 费尔德曼 卡茨 罗伊科克 德克尔
+				GF_AU_CHR_Smith GF_AU_CHR_Jones GF_AU_CHR_Williams GF_AU_CHR_Taylor GF_AU_CHR_Brown GF_AU_CHR_Davies GF_AU_CHR_Evans GF_AU_CHR_Wilson GF_AU_CHR_Johnson GF_AU_CHR_Robinson GF_AU_CHR_Wright GF_AU_CHR_Thompson GF_AU_CHR_Evans GF_AU_CHR_Walker GF_AU_CHR_White GF_AU_CHR_Roberts GF_AU_CHR_Green GF_AU_CHR_Hall
+				GF_AU_CHR_Wood GF_AU_CHR_Jackson GF_AU_CHR_Clark GF_AU_CHR_Lewis GF_AU_CHR_Mason GF_AU_CHR_Mitchell GF_AU_CHR_Cox GF_AU_CHR_Campbell GF_AU_CHR_Stewart GF_AU_CHR_Quinn GF_AU_CHR_Murphy GF_AU_CHR_Hamilton GF_AU_CHR_Moore GF_AU_CHR_Murray GF_AU_CHR_McLaughlin GF_AU_CHR_Martin GF_AU_CHR_ONeill
+				GF_AU_CHR_Anderson GF_AU_CHR_Scott GF_AU_CHR_MacDonald GF_AU_CHR_Reid GF_AU_CHR_Ross GF_AU_CHR_Watson GF_AU_CHR_Patterson GF_AU_CHR_Morrison GF_AU_CHR_Sanders GF_AU_CHR_Harris GF_AU_CHR_Hughes GF_AU_CHR_Driscoll GF_AU_CHR_Price GF_AU_CHR_Jenkins GF_AU_CHR_Morgan GF_AU_CHR_Moss
+				GF_AU_CHR_Sinclair GF_AU_CHR_Simpson GF_AU_CHR_Zimmerman GF_AU_CHR_Young GF_AU_CHR_York GF_AU_CHR_Youngfellow GF_AU_CHR_Winters GF_AU_CHR_Worley GF_AU_CHR_Woodard GF_AU_CHR_Whitley GF_AU_CHR_Wheeler GF_AU_CHR_Wentworth GF_AU_CHR_West GF_AU_CHR_Weaver GF_AU_CHR_Webb GF_AU_CHR_Welsh
+				GF_AU_CHR_Sparks GF_AU_CHR_Spencer GF_AU_CHR_Stafford GF_AU_CHR_Stanley GF_AU_CHR_Steel GF_AU_CHR_Sterling GF_AU_CHR_Stevens GF_AU_CHR_Stone GF_AU_CHR_Stewart GF_AU_CHR_Sullivan GF_AU_CHR_Swanson GF_AU_CHR_Sweeney GF_AU_CHR_Swift GF_AU_CHR_Sykes GF_AU_CHR_Terrell GF_AU_CHR_Thornton
+				GF_AU_CHR_Tipton GF_AU_CHR_Turner GF_AU_CHR_Tyler GF_AU_CHR_Underwood GF_AU_CHR_Vincent GF_AU_CHR_Voight GF_AU_CHR_Wade GF_AU_CHR_Washington GF_AU_CHR_Watts GF_AU_CHR_OConnor GF_AU_CHR_ODonnell GF_AU_CHR_OHara GF_AU_CHR_Owens GF_AU_CHR_Page GF_AU_CHR_Palmer GF_AU_CHR_Parker
+				GF_AU_CHR_Perry GF_AU_CHR_Parson GF_AU_CHR_Paxton GF_AU_CHR_Payne GF_AU_CHR_Perkins GF_AU_CHR_Peters GF_AU_CHR_Pershing GF_AU_CHR_Phillips GF_AU_CHR_Pitt GF_AU_CHR_Potter GF_AU_CHR_Reynolds GF_AU_CHR_Reaves GF_AU_CHR_Reese GF_AU_CHR_Richardson GF_AU_CHR_Rivers GF_AU_CHR_Robbins
+				GF_AU_CHR_Robertson GF_AU_CHR_Roswell GF_AU_CHR_Ryan GF_AU_CHR_Salinger GF_AU_CHR_Samuels GF_AU_CHR_Sandler GF_AU_CHR_Savage GF_AU_CHR_Saxton GF_AU_CHR_Schneider GF_AU_CHR_Scowley GF_AU_CHR_Sedgwick GF_AU_CHR_Shannon GF_AU_CHR_Flint GF_AU_CHR_Sibbett GF_AU_CHR_Silverman
+				GF_AU_CHR_Silverstone GF_AU_CHR_Smart GF_AU_CHR_Snow GF_AU_CHR_Kruger GF_AU_CHR_Landau GF_AU_CHR_Lawrence GF_AU_CHR_Lawson GF_AU_CHR_Lee GF_AU_CHR_Leonard GF_AU_CHR_Little GF_AU_CHR_Lowell GF_AU_CHR_Michaels GF_AU_CHR_McGillis GF_AU_CHR_McKinnon GF_AU_CHR_McSwain GF_AU_CHR_McCoy
+				GF_AU_CHR_McCarthy GF_AU_CHR_McCormick GF_AU_CHR_McCreary GF_AU_CHR_Marshall GF_AU_CHR_Lynch GF_AU_CHR_Miller GF_AU_CHR_Montgomery GF_AU_CHR_Morris GF_AU_CHR_Nash GF_AU_CHR_Newman GF_AU_CHR_Nichols GF_AU_CHR_North GF_AU_CHR_Masterson GF_AU_CHR_Mayfield GF_AU_CHR_McCall
+				GF_AU_CHR_Hansen GF_AU_CHR_Harrington GF_AU_CHR_Hart GF_AU_CHR_Hendricks GF_AU_CHR_Holmes GF_AU_CHR_Higgins GF_AU_CHR_Hoffman GF_AU_CHR_Hood GF_AU_CHR_Hutchinson GF_AU_CHR_Hyland GF_AU_CHR_Knight GF_AU_CHR_Kirk GF_AU_CHR_King GF_AU_CHR_Kenway GF_AU_CHR_Kennedy GF_AU_CHR_Kelly
+				GF_AU_CHR_Kane GF_AU_CHR_Nathanson GF_AU_CHR_Jennings GF_AU_CHR_Jacobs GF_AU_CHR_Jefferies GF_AU_CHR_Irwin GF_AU_CHR_Gilbert GF_AU_CHR_Glass GF_AU_CHR_Glover GF_AU_CHR_Goldberg GF_AU_CHR_Goldstein GF_AU_CHR_Goodman GF_AU_CHR_Goodwin GF_AU_CHR_Graham GF_AU_CHR_Grant GF_AU_CHR_Graves
+				GF_AU_CHR_Gray GF_AU_CHR_Greenberg GF_AU_CHR_Gorney GF_AU_CHR_Griffin GF_AU_CHR_Halley GF_AU_CHR_Hunter GF_AU_CHR_Holloway GF_AU_CHR_Hoover GF_AU_CHR_Hutchins GF_AU_CHR_Hill GF_AU_CHR_Hines GF_AU_CHR_Holden GF_AU_CHR_Harvey GF_AU_CHR_Handler GF_AU_CHR_Cohen GF_AU_CHR_Collins GF_AU_CHR_Conrad
+				GF_AU_CHR_Conroy GF_AU_CHR_Cook GF_AU_CHR_Conley GF_AU_CHR_Compton GF_AU_CHR_Cody GF_AU_CHR_Crouch GF_AU_CHR_Crosby GF_AU_CHR_Curtis GF_AU_CHR_Fields GF_AU_CHR_Farrell GF_AU_CHR_Felton GF_AU_CHR_Fisher GF_AU_CHR_Fleming GF_AU_CHR_Forrest GF_AU_CHR_Foster GF_AU_CHR_Fox GF_AU_CHR_Freeman
+				GF_AU_CHR_Futterman GF_AU_CHR_Gardner GF_AU_CHR_Garrett GF_AU_CHR_Gates GF_AU_CHR_Garfield GF_AU_CHR_Gabriel GF_AU_CHR_Daniels GF_AU_CHR_Darling GF_AU_CHR_Easterbrook GF_AU_CHR_Edwards GF_AU_CHR_Edelstein GF_AU_CHR_Elliott GF_AU_CHR_Emerson GF_AU_CHR_Ericson
+				GF_AU_CHR_Duncan GF_AU_CHR_Dickinson GF_AU_CHR_Alexander GF_AU_CHR_Allen GF_AU_CHR_Austin GF_AU_CHR_Bauer GF_AU_CHR_Bancroft GF_AU_CHR_Baker GF_AU_CHR_Bailey GF_AU_CHR_Banks GF_AU_CHR_Barks GF_AU_CHR_Bassett GF_AU_CHR_Brewster GF_AU_CHR_Brooks GF_AU_CHR_Breckenridge GF_AU_CHR_Booth
+				GF_AU_CHR_Bloom GF_AU_CHR_Sherman GF_AU_CHR_Sheridan GF_AU_CHR_Billingsley GF_AU_CHR_Billings GF_AU_CHR_Bergman GF_AU_CHR_Bates GF_AU_CHR_Becker GF_AU_CHR_Bell GF_AU_CHR_Bellflower GF_AU_CHR_Bains GF_AU_CHR_Bean GF_AU_CHR_Cartwright GF_AU_CHR_Carpenter GF_AU_CHR_Buckland
+				GF_AU_CHR_Burness GF_AU_CHR_Burnett GF_AU_CHR_Bush GF_AU_CHR_Butler GF_AU_CHR_French GF_AU_CHR_England GF_AU_CHR_Carroll GF_AU_CHR_Carter GF_AU_CHR_Cavanaugh GF_AU_CHR_Chaffin GF_AU_CHR_Chase GF_AU_CHR_Channing GF_AU_CHR_Chapman GF_AU_CHR_Arnold GF_AU_CHR_Fry GF_AU_CHR_Milton
+				GF_AU_CHR_Sharp GF_AU_CHR_Durston GF_AU_CHR_Howell GF_AU_CHR_Mead GF_AU_CHR_Poole GF_AU_CHR_Ashton GF_AU_CHR_Brockbank GF_AU_CHR_Cooper GF_AU_CHR_Cursham GF_AU_CHR_Dixon GF_AU_CHR_Baxter GF_AU_CHR_Drake GF_AU_CHR_Garland GF_AU_CHR_Wells GF_AU_CHR_Hargreaves GF_AU_CHR_Houghton
+				GF_AU_CHR_Haygarth GF_AU_CHR_Hurst GF_AU_CHR_Kingsford GF_AU_CHR_Lindsay GF_AU_CHR_Rawson GF_AU_CHR_Walden GF_AU_CHR_Walters GF_AU_CHR_Whitfield GF_AU_CHR_Bennett GF_AU_CHR_Cross GF_AU_CHR_Buxton GF_AU_CHR_Dyson GF_AU_CHR_McMillan GF_AU_CHR_Russell GF_AU_CHR_Scott GF_AU_CHR_Beauclerk
+				GF_AU_CHR_Ward GF_AU_CHR_Howard GF_AU_CHR_Lloyd GF_AU_CHR_Tanner GF_AU_CHR_Nicholas GF_AU_CHR_Matthews GF_AU_CHR_Ellis GF_AU_CHR_Whyting GF_AU_CHR_Whittaker GF_AU_CHR_Barton GF_AU_CHR_Hawkins GF_AU_CHR_Garrovick GF_AU_CHR_Spector GF_AU_CHR_Reeves GF_AU_CHR_Vernon GF_AU_CHR_McNiven
+				GF_AU_CHR_Rowley GF_AU_CHR_Sandford GF_AU_CHR_Fawcett GF_AU_CHR_Lockhart GF_AU_CHR_Lang GF_AU_CHR_Oliphant GF_AU_CHR_Wilkins GF_AU_CHR_Balfour GF_AU_CHR_Appleby GF_AU_CHR_Buchanan GF_AU_CHR_Yardley GF_AU_CHR_Shaw GF_AU_CHR_Stokes GF_AU_CHR_Allenby GF_AU_CHR_Cockburn GF_AU_CHR_Mundy
+				GF_AU_CHR_Franklin GF_AU_CHR_Armstrong GF_AU_CHR_Chamberlain GF_AU_CHR_Powell GF_AU_CHR_Abbott GF_AU_CHR_Blair GF_AU_CHR_VanHoof GF_AU_CHR_VanRijn GF_AU_CHR_Burnside GF_AU_CHR_Schofield GF_AU_CHR_Farnsworth GF_AU_CHR_Ford GF_AU_CHR_Warner GF_AU_CHR_Porter
+				GF_AU_CHR_Barksdale GF_AU_CHR_Polk GF_AU_CHR_Gibbons GF_AU_CHR_Archer GF_AU_CHR_Pickett GF_AU_CHR_Houston GF_AU_CHR_Whitfield GF_AU_CHR_Pearson GF_AU_CHR_Lucas GF_AU_CHR_Horner GF_AU_CHR_Bainbridge GF_AU_CHR_Rollins GF_AU_CHR_Casey GF_AU_CHR_Cochrane GF_AU_CHR_Merchant
+				GF_AU_CHR_Bowden GF_AU_CHR_Douglas GF_AU_CHR_Muldoon GF_AU_CHR_Wickham GF_AU_CHR_Milligan GF_AU_CHR_Bradley GF_AU_CHR_Findley GF_AU_CHR_Spooner GF_AU_CHR_Harper GF_AU_CHR_Shepard GF_AU_CHR_Kingston GF_AU_CHR_Knox GF_AU_CHR_Colbeck GF_AU_CHR_Shields GF_AU_CHR_Burns GF_AU_CHR_Gibson
+				GF_AU_CHR_Burton GF_AU_CHR_Crutchley GF_AU_CHR_Gilligan GF_AU_CHR_Bridges GF_AU_CHR_Richter GF_AU_CHR_Fowler GF_AU_CHR_Novak GF_AU_CHR_Longfield GF_AU_CHR_Seabrook GF_AU_CHR_Hazelton GF_AU_CHR_Kingsley GF_AU_CHR_Doggart GF_AU_CHR_Wilcox GF_AU_CHR_Hudson GF_AU_CHR_Hooks GF_AU_CHR_Hicks
+				GF_AU_CHR_Cameron GF_AU_CHR_Hammond GF_AU_CHR_Knotts GF_AU_CHR_Jefferson GF_AU_CHR_Coffey GF_AU_CHR_Adams GF_AU_CHR_Babcock GF_AU_CHR_Baldwin GF_AU_CHR_Bannister GF_AU_CHR_Purcell GF_AU_CHR_Baumgartner GF_AU_CHR_Birch GF_AU_CHR_Blackwood GF_AU_CHR_Blake GF_AU_CHR_Bolander
+				GF_AU_CHR_Bolton GF_AU_CHR_Brock GF_AU_CHR_Brannigan GF_AU_CHR_Burke GF_AU_CHR_Weyland GF_AU_CHR_Burrows GF_AU_CHR_Cairns GF_AU_CHR_Carlyle GF_AU_CHR_Carson GF_AU_CHR_Charlesworth GF_AU_CHR_Church GF_AU_CHR_Clancy GF_AU_CHR_Cullen GF_AU_CHR_Dufresne GF_AU_CHR_Bixby GF_AU_CHR_Featherstone
+				GF_AU_CHR_Ferguson GF_AU_CHR_Foley GF_AU_CHR_Funk GF_AU_CHR_Gorman GF_AU_CHR_Haddock GF_AU_CHR_Grisdale GF_AU_CHR_Grimes GF_AU_CHR_Hoffmeyer GF_AU_CHR_Holt GF_AU_CHR_Ingram GF_AU_CHR_Kaiser GF_AU_CHR_Kearns GF_AU_CHR_Keeler GF_AU_CHR_Kellerman GF_AU_CHR_Kinnear GF_AU_CHR_Kurtz GF_AU_CHR_Kyle
+				GF_AU_CHR_Laidlaw GF_AU_CHR_Lankshear GF_AU_CHR_Lessard GF_AU_CHR_Lowe GF_AU_CHR_MacKenzie GF_AU_CHR_MacNevin GF_AU_CHR_MacInnis GF_AU_CHR_Madigan GF_AU_CHR_Maloney GF_AU_CHR_Marsh GF_AU_CHR_McAllister GF_AU_CHR_McBain GF_AU_CHR_Myers GF_AU_CHR_Nicholson GF_AU_CHR_Olsen
+				GF_AU_CHR_OMalley GF_AU_CHR_Peacock GF_AU_CHR_Peckham GF_AU_CHR_Murdoch GF_AU_CHR_Prefontaine GF_AU_CHR_Pratt GF_AU_CHR_Popovic GF_AU_CHR_Pritchard GF_AU_CHR_Quackenbush GF_AU_CHR_Penebscott GF_AU_CHR_Pfaffenbach GF_AU_CHR_Ramsey GF_AU_CHR_Quincey
+				GF_AU_CHR_Reilly GF_AU_CHR_Reinhart GF_AU_CHR_Renaud GF_AU_CHR_Rolston GF_AU_CHR_Shoebottom GF_AU_CHR_Skinner GF_AU_CHR_Sloan GF_AU_CHR_Snell GF_AU_CHR_Snider GF_AU_CHR_Sorensen GF_AU_CHR_Spiller GF_AU_CHR_Spurgeon GF_AU_CHR_Stanfield GF_AU_CHR_Stackhouse GF_AU_CHR_Stiles
+				GF_AU_CHR_Sutherland GF_AU_CHR_Sutton GF_AU_CHR_Taggart GF_AU_CHR_Townsend GF_AU_CHR_Traynor GF_AU_CHR_Stark GF_AU_CHR_Strudwick GF_AU_CHR_MacArthur GF_AU_CHR_Barnes GF_AU_CHR_Atkins GF_AU_CHR_Ballard GF_AU_CHR_Biggs GF_AU_CHR_Baird GF_AU_CHR_Fredericks GF_AU_CHR_Humphry
+				GF_AU_CHR_Colt GF_AU_CHR_Dillard GF_AU_CHR_Cunningham GF_AU_CHR_DeStefano GF_AU_CHR_Finks GF_AU_CHR_Fletcher GF_AU_CHR_Galloway GF_AU_CHR_Kirby GF_AU_CHR_Sutter GF_AU_CHR_Preston GF_AU_CHR_Tucker GF_AU_CHR_SmithJr GF_AU_CHR_WilliamsJr GF_AU_CHR_EvansJr
+				GF_AU_CHR_WalkerJr GF_AU_CHR_TaylorJr GF_AU_CHR_ScottJr GF_AU_CHR_MeriweatherII GF_AU_CHR_BarksdaleIII GF_AU_CHR_LeadbetterIV GF_AU_CHR_PembertonII GF_AU_CHR_TrapierIII GF_AU_CHR_Kowalski
+				GF_AU_CHR_Rabinowitz GF_AU_CHR_Feldman GF_AU_CHR_Katz GF_AU_CHR_Roykirk GF_AU_CHR_Decker
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_AU_CHR_Alexander GF_AU_CHR_Vladimir GF_AU_CHR_Boris GF_AU_CHR_Tiberius GF_AU_CHR_Theobald GF_AU_CHR_Valerian GF_AU_CHR_Maximus GF_AU_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_AU_CHR_Theodora GF_AU_CHR_Fatima GF_AU_CHR_Miranda GF_AU_CHR_Cordelia GF_AU_CHR_Svetlana GF_AU_CHR_Anastasia GF_AU_CHR_Valentina GF_AU_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_AU_CHR_Habsburg GF_AU_CHR_Romanov GF_AU_CHR_Windsor GF_AU_CHR_Mountbatten GF_AU_CHR_Salazar GF_AU_CHR_Nelson
 			}
 		}
+
 		names2 = {
 			weight = 20
 			first_names_male = {
-				伊拉格 伊萨格 博德罗斯 毕斯克古勒 博斯格尔 索萨格 黑格拉 哈瓦格斯 瓦格拉斯 科加斯 斯克鲁门 帕萨格
-				威利迪 特尼尔 鲁本 卡利尼 乌斯 西乐洛 罗瑟 威斯托法尼 加里斯 提林 提洛美 卡里弗
-				波罗敏·罗 爬塔罗敏·罗 翁达林·罗 奥夫佳林·罗 亚尔新·罗 贝罗琴·罗 曼塔林·罗 麦多林·罗 穆佳林·罗
+				GF_AU_CHR_Ivan GF_AU_CHR_Nikolai GF_AU_CHR_Boris GF_AU_CHR_Vladimir GF_AU_CHR_Pyotr GF_AU_CHR_Alexei GF_AU_CHR_Dmitri GF_AU_CHR_Sergei GF_AU_CHR_Viktor GF_AU_CHR_Roman GF_AU_CHR_Igor GF_AU_CHR_Mikhail GF_AU_CHR_Vasily GF_AU_CHR_Pavel GF_AU_CHR_Fyodor GF_AU_CHR_Nikita GF_AU_CHR_Valery
+				GF_AU_CHR_Vladislav GF_AU_CHR_Leonid GF_AU_CHR_Maxim GF_AU_CHR_Yuri GF_AU_CHR_Oleg GF_AU_CHR_Andrei GF_AU_CHR_Konstantin GF_AU_CHR_Vyacheslav GF_AU_CHR_Aleksandr GF_AU_CHR_Stanislav GF_AU_CHR_Anatoli GF_AU_CHR_Miroslav GF_AU_CHR_Artyom GF_AU_CHR_Bogdan
+				GF_AU_CHR_Branislav GF_AU_CHR_Ilya GF_AU_CHR_Jaroslav GF_AU_CHR_Radomir GF_AU_CHR_Kirill GF_AU_CHR_Radoslav GF_AU_CHR_Lubomir GF_AU_CHR_Ratimir GF_AU_CHR_Yegor GF_AU_CHR_Ijon
 			}
 			first_names_female = {
-				安德森 斯科特 麦克唐纳 里德 罗斯 沃森 帕特森 莫里森 桑德斯 哈里斯 休斯 斯科尔 普利斯 詹金斯 摩根 莫斯
-				麦斯威尔 亚历克 伯纳德 斯图尔特 鲁伯特 迪恩 菲利普 罗斯 柯林 戴伦 梅尔文 贾斯廷 扎克 埃利奥特 西蒙 摩根 克拉克 沙维尔 贾里德 
-				塔提亚娜 索尼亚 米拉
-				
+				GF_AU_CHR_Anna GF_AU_CHR_Yelena GF_AU_CHR_Olga GF_AU_CHR_Oksana GF_AU_CHR_Tatyana GF_AU_CHR_Svetlana GF_AU_CHR_Nadya GF_AU_CHR_Yekaterina GF_AU_CHR_Irina GF_AU_CHR_Galina GF_AU_CHR_Miroslava GF_AU_CHR_Anastasia GF_AU_CHR_Vera GF_AU_CHR_Polina GF_AU_CHR_Lyudmila GF_AU_CHR_Elena
+				GF_AU_CHR_Marina GF_AU_CHR_Darya GF_AU_CHR_Irma GF_AU_CHR_Ksenia GF_AU_CHR_Alexandra GF_AU_CHR_Nadesja GF_AU_CHR_Valentina GF_AU_CHR_Arina GF_AU_CHR_Alya GF_AU_CHR_Galenka GF_AU_CHR_Katya GF_AU_CHR_Ljuba GF_AU_CHR_Radmila GF_AU_CHR_Natacha GF_AU_CHR_Vlada GF_AU_CHR_Nadezhda
+				GF_AU_CHR_Tatiana GF_AU_CHR_Sonia GF_AU_CHR_Mira
+
 			}
-			second_names = {
-				格雷 格林伯格 格尔内 格里芬 哈莉 亨特 霍洛威 呼沃尔 哈钦斯 黑尔 海恩斯 霍登 哈维 汉德勒 科恩 科林斯 康拉德
-				纳布 蕾哈娜 莫比那 纳格斯 马索迈 萨基内 阿雅 阿尔玛 阿玛尼 阿米拉
-				佐藤 铃木 高桥 田中 渡边 伊藤 中村 小林 山本 加藤 吉田 山田 佐佐木 山口 松本 
+			second_names_male = {
+				GF_AU_CHR_Grishin GF_AU_CHR_Fedorov GF_AU_CHR_Komarov GF_AU_CHR_Pushkov GF_AU_CHR_Petrenko GF_AU_CHR_Shatalov GF_AU_CHR_Ivanov GF_AU_CHR_Kamensky GF_AU_CHR_Vasiliev GF_AU_CHR_Ulanov GF_AU_CHR_Volkov GF_AU_CHR_Gryaznov GF_AU_CHR_Dudnik GF_AU_CHR_Yerzov GF_AU_CHR_Zhirov
+				GF_AU_CHR_Zhivenkov GF_AU_CHR_Kazakov GF_AU_CHR_Krutov GF_AU_CHR_Ivannikov GF_AU_CHR_Kolosov GF_AU_CHR_Kuzin GF_AU_CHR_Larionov GF_AU_CHR_Maksimushkin GF_AU_CHR_Markov GF_AU_CHR_Ostrovsky GF_AU_CHR_Polachev GF_AU_CHR_Rychenkov GF_AU_CHR_Romanov
+				GF_AU_CHR_Sayanovich GF_AU_CHR_Statnik GF_AU_CHR_Sorokin GF_AU_CHR_Turgenev GF_AU_CHR_Titov GF_AU_CHR_Tvardovsky GF_AU_CHR_Antonov GF_AU_CHR_Skobelev GF_AU_CHR_Lazarev GF_AU_CHR_Makarov GF_AU_CHR_Dragomirov GF_AU_CHR_Alekseyev GF_AU_CHR_Tichy
+			}
+			second_names_female = {
+				GF_AU_CHR_Grishina GF_AU_CHR_Fedorova GF_AU_CHR_Komarova GF_AU_CHR_Pushkova GF_AU_CHR_Petrenko GF_AU_CHR_Shatalova GF_AU_CHR_Ivanova GF_AU_CHR_Kamenskaya GF_AU_CHR_Vasilyeva GF_AU_CHR_Ulanova GF_AU_CHR_Volkova GF_AU_CHR_Gryaznova GF_AU_CHR_Dudnik GF_AU_CHR_Yerzova
+				GF_AU_CHR_Zhirova GF_AU_CHR_Zhivenkova GF_AU_CHR_Kazakova GF_AU_CHR_Krutova GF_AU_CHR_Ivannikova GF_AU_CHR_Kolosova GF_AU_CHR_Kuzina GF_AU_CHR_Larionova GF_AU_CHR_Maksimushkina GF_AU_CHR_Markova GF_AU_CHR_Ostrovskaya GF_AU_CHR_Polacheva GF_AU_CHR_Rychenkova
+				GF_AU_CHR_Romanova GF_AU_CHR_Statnik GF_AU_CHR_Sorokina GF_AU_CHR_Turgeneva GF_AU_CHR_Titova GF_AU_CHR_Tvardovskaya GF_AU_CHR_Antonova GF_AU_CHR_Skobeleva GF_AU_CHR_Lazareva GF_AU_CHR_Makarova GF_AU_CHR_Dragomirova GF_AU_CHR_Alekseyeva
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_AU_CHR_Alexander GF_AU_CHR_Vladimir GF_AU_CHR_Boris GF_AU_CHR_Tiberius GF_AU_CHR_Theobald GF_AU_CHR_Valerian GF_AU_CHR_Maximus GF_AU_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_AU_CHR_Theodora GF_AU_CHR_Fatima GF_AU_CHR_Miranda GF_AU_CHR_Cordelia GF_AU_CHR_Svetlana GF_AU_CHR_Anastasia GF_AU_CHR_Valentina GF_AU_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_AU_CHR_Habsburg GF_AU_CHR_Romanov GF_AU_CHR_Windsor GF_AU_CHR_Mountbatten GF_AU_CHR_Salazar GF_AU_CHR_Nelson
 			}
 		}
-		
+
 		names3 = {
 			weight = 40
 			first_names_male = {
-				亚马孙古陆 刚果 厄瓜多尔 雨 暴风雨 雨季 孟加拉 "新非洲" 猴王国 桑给巴尔 吉卜林
+				GF_AU_CHR_An GF_AU_CHR_Bao GF_AU_CHR_Bo GF_AU_CHR_Cai GF_AU_CHR_Cheng GF_AU_CHR_De GF_AU_CHR_Dong GF_AU_CHR_Feng GF_AU_CHR_Gang GF_AU_CHR_Guo GF_AU_CHR_Hu GF_AU_CHR_Hui GF_AU_CHR_Jian GF_AU_CHR_Jie GF_AU_CHR_Kang GF_AU_CHR_Li GF_AU_CHR_Liang GF_AU_CHR_Long GF_AU_CHR_Meng GF_AU_CHR_Ning GF_AU_CHR_Peng GF_AU_CHR_Qiang GF_AU_CHR_Shi GF_AU_CHR_Song GF_AU_CHR_Tao GF_AU_CHR_Tian GF_AU_CHR_Wei
+				GF_AU_CHR_You GF_AU_CHR_Yong GF_AU_CHR_Yi GF_AU_CHR_Xiong GF_AU_CHR_Wu
 			}
 			first_names_female = {
-				爱布里茨 巴多利奥 卡佩洛 "迪·罗比蓝" "迪·萨沃亚" 加里波第 萨莱塔 帕拉维奇诺 皮亚内利 曼布雷蒂 马尔库齐 瓦勒里 佩紮利亚
+				GF_AU_CHR_Ai GF_AU_CHR_Bi GF_AU_CHR_Cui GF_AU_CHR_Chan GF_AU_CHR_Dai GF_AU_CHR_Dan GF_AU_CHR_Fang GF_AU_CHR_Hong GF_AU_CHR_Hua GF_AU_CHR_Huan GF_AU_CHR_Jiao GF_AU_CHR_Ju GF_AU_CHR_Juan GF_AU_CHR_Lan GF_AU_CHR_Lian GF_AU_CHR_Lin GF_AU_CHR_Mei GF_AU_CHR_Na GF_AU_CHR_Ni GF_AU_CHR_Qian GF_AU_CHR_Qiao GF_AU_CHR_Qing GF_AU_CHR_Shan GF_AU_CHR_Shu GF_AU_CHR_Ting GF_AU_CHR_Wen GF_AU_CHR_Xia GF_AU_CHR_Xian
+				GF_AU_CHR_Xiang GF_AU_CHR_Xiu GF_AU_CHR_Xue GF_AU_CHR_Yan GF_AU_CHR_Ying GF_AU_CHR_Yu GF_AU_CHR_Yuan GF_AU_CHR_Yun GF_AU_CHR_Zhen GF_AU_CHR_Zhi GF_AU_CHR_Zhu GF_AU_CHR_Zi
 			}
 			second_names = {
-				雷瑞托 林迪维 利特索安尼罗 鲁拉码 马吉欧布 马里特萨特斯 马特瑟迪索 姆巴利 马博 姆尼瑟迪斯 莫哈乌 莫拉图欧 穆阿姆毕瓦 尼亚德泽尼 诺弗托
-				黄 赵 张
+				GF_AU_CHR_Liang GF_AU_CHR_Luo GF_AU_CHR_Kuang GF_AU_CHR_Lu GF_AU_CHR_Zheng GF_AU_CHR_Lin GF_AU_CHR_Xu GF_AU_CHR_Xie GF_AU_CHR_Wang GF_AU_CHR_Zhu GF_AU_CHR_Yang GF_AU_CHR_Mao GF_AU_CHR_Shen GF_AU_CHR_Hu GF_AU_CHR_Tan GF_AU_CHR_He GF_AU_CHR_Deng GF_AU_CHR_Wu GF_AU_CHR_Cheng GF_AU_CHR_Gao GF_AU_CHR_Wan GF_AU_CHR_Kong GF_AU_CHR_Pan GF_AU_CHR_Sima GF_AU_CHR_Zhuge GF_AU_CHR_Ouyang GF_AU_CHR_Situ
+				GF_AU_CHR_Huang GF_AU_CHR_Zhao GF_AU_CHR_Zhang
 			}
 			regnal_first_names_male = {
-				游 永 义 雄 吴 风 刚 果 胡 辉 
+				GF_AU_CHR_You GF_AU_CHR_Yong GF_AU_CHR_Yi GF_AU_CHR_Xiong GF_AU_CHR_Wu GF_AU_CHR_Feng GF_AU_CHR_Gang GF_AU_CHR_Guo GF_AU_CHR_Hu GF_AU_CHR_Hui
 			}
 			regnal_first_names_female = {
-				敏捷 弓箭手 箭矢 拳击家 小天使 奇美拉 双刃大砍刀 阔刀 战斧 弩弓 短刀 威慑 漂泊 虔诚 凶猛 短剑 长弓 
+				GF_AU_CHR_Ai GF_AU_CHR_Bi GF_AU_CHR_Lian GF_AU_CHR_Lin GF_AU_CHR_Mei GF_AU_CHR_Na GF_AU_CHR_Ni GF_AU_CHR_Xiu GF_AU_CHR_Xue GF_AU_CHR_Yan GF_AU_CHR_Ying GF_AU_CHR_Yu GF_AU_CHR_Yuan
 			}
 			regnal_second_names = {
-				王 祝 杨
+				GF_AU_CHR_Wang GF_AU_CHR_Zhu GF_AU_CHR_Yang
 			}
 		}
-		
+
 		names4 = {
 			weight = 15
 			first_names_male = {
-				卡尔 威廉 奥托 海因里希 弗里德里希 保罗 汉斯 古斯塔夫 马克斯 厄恩斯特 赫尔曼 沃尔特 沃纳 金特 沃尔夫冈 赫尔穆特 库尔特 罗尔夫
-				彼特 克劳斯 格哈德 海茵茨 霍斯特 曼弗雷德 乌维 尤尔根 迪特尔 安德里亚斯 托马斯 斯蒂芬 卢卡斯 菲利克斯 马丁 弗里兹 约翰 埃里克 阿诺德
-				青铜色 蜜瓜色 薰衣草色 栗色 橄榄色
-				西吉斯蒙德 乌里奇 乌多
+				GF_AU_CHR_Karl GF_AU_CHR_Wilhelm GF_AU_CHR_Otto GF_AU_CHR_Heinrich GF_AU_CHR_Friedrich GF_AU_CHR_Paul GF_AU_CHR_Hans GF_AU_CHR_Gustav GF_AU_CHR_Max GF_AU_CHR_Ernst GF_AU_CHR_Hermann GF_AU_CHR_Walter GF_AU_CHR_Werner GF_AU_CHR_Gunther GF_AU_CHR_Wolfgang GF_AU_CHR_Helmuth GF_AU_CHR_Kurt GF_AU_CHR_Rolf
+				GF_AU_CHR_Peter GF_AU_CHR_Klaus GF_AU_CHR_Gerhard GF_AU_CHR_Heinz GF_AU_CHR_Horst GF_AU_CHR_Manfred GF_AU_CHR_Uwe GF_AU_CHR_Jurgen GF_AU_CHR_Dieter GF_AU_CHR_Andreas GF_AU_CHR_Thomas GF_AU_CHR_Stefan GF_AU_CHR_Lukas GF_AU_CHR_Felix GF_AU_CHR_Martin GF_AU_CHR_Fritz GF_AU_CHR_Johann GF_AU_CHR_Erich GF_AU_CHR_Arnold
+				GF_AU_CHR_Bruno GF_AU_CHR_Franz GF_AU_CHR_Rudolf GF_AU_CHR_Erhard GF_AU_CHR_Jorg GF_AU_CHR_Axel GF_AU_CHR_Emil GF_AU_CHR_Gerhardt GF_AU_CHR_Gottfried GF_AU_CHR_Holger GF_AU_CHR_Joachim GF_AU_CHR_Konrad GF_AU_CHR_Lothar GF_AU_CHR_Ludwig GF_AU_CHR_Matthias GF_AU_CHR_Moritz GF_AU_CHR_Reinhard
+				GF_AU_CHR_Sigismund GF_AU_CHR_Ulrich GF_AU_CHR_Udo GF_AU_CHR_Hravn
 			}
 			first_names_female = {
-				安德森 斯科特 麦克唐纳 里德 罗斯 沃森 帕特森 莫里森 桑德斯 哈里斯 休斯 斯科尔 普利斯 詹金斯 摩根 莫斯
-				埃德加 克里斯平 纳尔逊 埃米特 特雷弗 特拉维斯 兰斯 阿德里安 德斯蒙德 布伦丹 布雷特 安布罗斯 巴希尔 基兰 柯南 德莫特 达德利 费利克斯
-				格雷 格林伯格 格尔内 格里芬 哈莉 亨特 霍洛威 呼沃尔 哈钦斯 黑尔 海恩斯 霍登 哈维 汉德勒 科恩 科林斯 康拉德
+				GF_AU_CHR_Anna GF_AU_CHR_Elsa GF_AU_CHR_Emma GF_AU_CHR_Helga GF_AU_CHR_Ursula GF_AU_CHR_Gisela GF_AU_CHR_Ingrid GF_AU_CHR_Ilse GF_AU_CHR_Jessika GF_AU_CHR_Sandra GF_AU_CHR_Stefanie GF_AU_CHR_Andrea GF_AU_CHR_Anja GF_AU_CHR_Katrin GF_AU_CHR_Birgit GF_AU_CHR_Martina GF_AU_CHR_Heike GF_AU_CHR_Sabine GF_AU_CHR_Erika
+				GF_AU_CHR_Edith GF_AU_CHR_Lena GF_AU_CHR_Lisa GF_AU_CHR_Katharina GF_AU_CHR_Claudia GF_AU_CHR_Silvia GF_AU_CHR_Tina GF_AU_CHR_Annike GF_AU_CHR_Renate GF_AU_CHR_Bettina GF_AU_CHR_Wibke GF_AU_CHR_Sara GF_AU_CHR_Lina GF_AU_CHR_Julia GF_AU_CHR_Marith GF_AU_CHR_Heidi GF_AU_CHR_Angelika GF_AU_CHR_Christel
+				GF_AU_CHR_Gretchen GF_AU_CHR_Hilde GF_AU_CHR_Hildegard GF_AU_CHR_Gertrude GF_AU_CHR_Wilhelmina GF_AU_CHR_Lisbeth GF_AU_CHR_Kerstin GF_AU_CHR_Johanna GF_AU_CHR_Anita
 			}
 			second_names = {
-				穆勒尔 斯茨米特 斯茨内德尔 弗斯彻尔 韦伯尔 梅尔 瓦格内尔 斯茨乌尔兹 贝克尔 霍夫曼 巴奥尔 布林克曼 布瑞尔 迪特瑞驰 伊哈德 格拉斯尔
-				"卡卢培" "卡福禄门" "卡裴娜" "卡佩特" "卡维文" "卡皮纳特" "卡路梅西" "卡威力姆" "卡奈福" "卡希尔" "卡利泽姆" "卡加特" "卡贝利玛" "卡伊沃拉" "卡于斯托" 
-				尼曼 布拉恩 斯茨瓦特 库鲁格 斯特恩 凯勒尔 斯初博特 布奥曼 兹格勒尔 布拉恩德 索尔 克莱特兹 布尔格米斯特 安德博特
+				GF_AU_CHR_Muller GF_AU_CHR_Schmidt GF_AU_CHR_Schneider GF_AU_CHR_Fischer GF_AU_CHR_Weber GF_AU_CHR_Meyer GF_AU_CHR_Wagner GF_AU_CHR_Schulz GF_AU_CHR_Becker GF_AU_CHR_Hoffmann GF_AU_CHR_Bauer GF_AU_CHR_Brinkmann GF_AU_CHR_Brill GF_AU_CHR_Dietrich GF_AU_CHR_Erhard GF_AU_CHR_Grasser
+				GF_AU_CHR_vonGebser GF_AU_CHR_vonFritsch GF_AU_CHR_vonWrangel GF_AU_CHR_vonHalkett GF_AU_CHR_vonBoyen GF_AU_CHR_vonFalkenstein GF_AU_CHR_Dreyer GF_AU_CHR_Wolf GF_AU_CHR_Klein GF_AU_CHR_Richter GF_AU_CHR_Schafer
+				GF_AU_CHR_Neumann GF_AU_CHR_Braun GF_AU_CHR_Schwarz GF_AU_CHR_Kruger GF_AU_CHR_Stein GF_AU_CHR_Keller GF_AU_CHR_Schubert GF_AU_CHR_Baumann GF_AU_CHR_Ziegler GF_AU_CHR_Brandt GF_AU_CHR_Sauer GF_AU_CHR_Kreutz GF_AU_CHR_Bergmeister GF_AU_CHR_Andbert
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_AU_CHR_Alexander GF_AU_CHR_Vladimir GF_AU_CHR_Boris GF_AU_CHR_Tiberius GF_AU_CHR_Theobald GF_AU_CHR_Valerian GF_AU_CHR_Maximus GF_AU_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_AU_CHR_Theodora GF_AU_CHR_Fatima GF_AU_CHR_Miranda GF_AU_CHR_Cordelia GF_AU_CHR_Svetlana GF_AU_CHR_Anastasia GF_AU_CHR_Valentina GF_AU_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_AU_CHR_Habsburg GF_AU_CHR_Romanov GF_AU_CHR_Windsor GF_AU_CHR_Mountbatten GF_AU_CHR_Salazar GF_AU_CHR_Nelson
 			}
 		}
-		
+
 		names5 = {
 			weight = 15
 			first_names_male = {
-				菲利普 皮埃尔 让马里 马塞尔 弗朗索瓦 休伯特 保罗 安东尼 迈克 亨利 马克 约翰 莫里斯 雷恩 克劳德 伊凡斯 雅克
-				西蒙 奥利弗 强森 罗伯特 乔治 安德鲁 雷蒙德 加斯顿 查理斯 希瑞 盖伊 帕特思 马蒂厄 让弗朗西斯科 卢西安 让保罗
-				丹尼尔 蒂博 吕克 多米尼克 塞巴斯蒂安 雨果
+				GF_AU_CHR_Philippe GF_AU_CHR_Pierre GF_AU_CHR_Jean-Marie GF_AU_CHR_Marcel GF_AU_CHR_Francois GF_AU_CHR_Hubert GF_AU_CHR_Paul GF_AU_CHR_Antoine GF_AU_CHR_Michel GF_AU_CHR_Henri GF_AU_CHR_Marc GF_AU_CHR_Jean GF_AU_CHR_Maurice GF_AU_CHR_Rene GF_AU_CHR_Claude GF_AU_CHR_Yves GF_AU_CHR_Jacques
+				GF_AU_CHR_Simon GF_AU_CHR_Olivier GF_AU_CHR_Joseph GF_AU_CHR_Robert GF_AU_CHR_Georges GF_AU_CHR_Andre GF_AU_CHR_Raymond GF_AU_CHR_Gaston GF_AU_CHR_Charles GF_AU_CHR_Thierry GF_AU_CHR_Guy GF_AU_CHR_Patrice GF_AU_CHR_Mathieu GF_AU_CHR_Jean-Francois GF_AU_CHR_Lucien GF_AU_CHR_Jean-Paul
+				GF_AU_CHR_Daniel GF_AU_CHR_Thibault GF_AU_CHR_Luc GF_AU_CHR_Dominic GF_AU_CHR_Sebastien GF_AU_CHR_Hugo GF_AU_CHR_Jamie
 			}
 			first_names_female = {
-				奇克莫加 卡波雷托 "诺门罕" 加查拉 "蒙特卡西诺" 塞班 布雷斯劳
-				爱德华 唐纳德 乔治 保罗 格雷格 汤姆斯 罗伯特 基因 格伦 休 罗纳德 弗朗西斯 斯蒂芬 乔恩 理查德 马克 马克思 斯科特 邓肯
-				圣徒薇薇安·珍妮特
+				GF_AU_CHR_Chloe GF_AU_CHR_Ines GF_AU_CHR_Manon GF_AU_CHR_Camille GF_AU_CHR_Clara GF_AU_CHR_Juliette GF_AU_CHR_Clemence GF_AU_CHR_Jeanne GF_AU_CHR_Charlotte GF_AU_CHR_Marie GF_AU_CHR_Nina GF_AU_CHR_Julia GF_AU_CHR_Elise GF_AU_CHR_Justine GF_AU_CHR_Yasmine GF_AU_CHR_Elina GF_AU_CHR_Andrea
+				GF_AU_CHR_Eleonore GF_AU_CHR_Clarisse GF_AU_CHR_Fanny GF_AU_CHR_Selma GF_AU_CHR_Leila GF_AU_CHR_Veronique GF_AU_CHR_Sophie GF_AU_CHR_Helena GF_AU_CHR_Daphne GF_AU_CHR_Suzanne GF_AU_CHR_Melanie GF_AU_CHR_Bernadette GF_AU_CHR_Maud GF_AU_CHR_Angeline GF_AU_CHR_Celine GF_AU_CHR_Jessica
+				GF_AU_CHR_Pauline GF_AU_CHR_Viviane GF_AU_CHR_Jeanette
 			}
 			second_names = {
-				马丁 伯纳德 杜布瓦 杜兰德 勒鲁瓦 莫罗 兰伯特 杜邦 勒克莱尔 劳伦特 雷纳 特拉姆布雷 加格恩 罗伊 布沙尔 加斯尔 
-				莫林 拉沃伊 福廷 加涅 杜瓦尔 赫伯特 "勒格尔 " "勒罗克斯 " 德维尔 热拉尔 迪谢纳 贾文 吉尔伯特 博格伦 帕克特 
-				佩尔蒂埃 雷米 吉鲁 博斯凯 "卡斯特诺" "蒙泰尼亚特" 乐伯夫 佩里斯尔 德瓦拉奥克
+				GF_AU_CHR_Martin GF_AU_CHR_Bernard GF_AU_CHR_Dubois GF_AU_CHR_Durand GF_AU_CHR_Leroy GF_AU_CHR_Moreau GF_AU_CHR_Lambert GF_AU_CHR_Dupont GF_AU_CHR_Leclerc GF_AU_CHR_Laurent GF_AU_CHR_Renard GF_AU_CHR_Tremblay GF_AU_CHR_Gagnon GF_AU_CHR_Roy GF_AU_CHR_Bouchard GF_AU_CHR_Gauthier
+				GF_AU_CHR_Morin GF_AU_CHR_Lavoie GF_AU_CHR_Fortin GF_AU_CHR_Gagne GF_AU_CHR_Duval GF_AU_CHR_Hebert GF_AU_CHR_LeGall GF_AU_CHR_LeRoux GF_AU_CHR_Deville GF_AU_CHR_Gerard GF_AU_CHR_Duchaine GF_AU_CHR_Jauvin GF_AU_CHR_Gilbert GF_AU_CHR_Bergeron GF_AU_CHR_Paquette
+				GF_AU_CHR_Pelletier GF_AU_CHR_Remy GF_AU_CHR_Giroud GF_AU_CHR_Bosquet GF_AU_CHR_deCastelnau GF_AU_CHR_deMontaignac GF_AU_CHR_Lebouef GF_AU_CHR_Pellissier GF_AU_CHR_Deveraux
 			}
 			regnal_first_names_male = {
-				阿尔德林 阿姆斯特朗 哥伦布 哥白尼 科特斯 德雷克 哈勃 戈达德 伽利略 爱因斯坦 加加林 捷列什科娃 "郑和" "莱弗·艾瑞克森" 麦哲伦 "詹姆斯·库克"
+				GF_AU_CHR_Alexander GF_AU_CHR_Vladimir GF_AU_CHR_Boris GF_AU_CHR_Tiberius GF_AU_CHR_Theobald GF_AU_CHR_Valerian GF_AU_CHR_Maximus GF_AU_CHR_Lucius
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_AU_CHR_Theodora GF_AU_CHR_Fatima GF_AU_CHR_Miranda GF_AU_CHR_Cordelia GF_AU_CHR_Svetlana GF_AU_CHR_Anastasia GF_AU_CHR_Valentina GF_AU_CHR_Henrietta
 			}
 			regnal_second_names = {
-				古温多林 亨丽埃塔 伊莫金 虹膜 伊梅尔达 杰奎琳 简 珍娜 乔安娜 约瑟芬 朱丽安 凯思琳 基拉 凯利 利亚 洛伊丝
+				GF_AU_CHR_Habsburg GF_AU_CHR_Romanov GF_AU_CHR_Windsor GF_AU_CHR_Mountbatten GF_AU_CHR_Salazar GF_AU_CHR_Nelson
 			}
 		}
-		
+
 		names6 = {
 			weight = 15
 			first_names_male = {
-				赫克托 骇斯普鲁斯 杰纳斯 杰森 朱诺 朱比特 兰斯洛特 拉撒路 利安德 列奥尼达 拉山德 梅娜德 马斯 美狄亚 美杜莎 梅尼萨斯 摩酷瑞 梅林 米勒娃
-				次郎 浩志 吉田 满江 奎介 萨布罗 纯一 耀西 松本 健太郎 一郎 
+				GF_AU_CHR_Hiroto GF_AU_CHR_Hikaru GF_AU_CHR_Takumi GF_AU_CHR_Tsubasa GF_AU_CHR_Ren GF_AU_CHR_Minato GF_AU_CHR_Shota GF_AU_CHR_Yuuto GF_AU_CHR_Sota GF_AU_CHR_Yuma GF_AU_CHR_Takeru GF_AU_CHR_Rikuto GF_AU_CHR_Tatsuki GF_AU_CHR_Ryuto GF_AU_CHR_Haru GF_AU_CHR_Yushin GF_AU_CHR_Kosei GF_AU_CHR_Yoshinobu
+				GF_AU_CHR_Jiro GF_AU_CHR_Hiroshi GF_AU_CHR_Yoshida GF_AU_CHR_Mitsue GF_AU_CHR_Keisuke GF_AU_CHR_Saburo GF_AU_CHR_Junichi GF_AU_CHR_Yoshi GF_AU_CHR_Koshiro GF_AU_CHR_Kentaro GF_AU_CHR_Koichiro
 			}
 			first_names_female = {
-				 汉森 哈林顿 哈特 亨德里克斯 福尔摩斯 希金斯 霍夫曼 胡德 哈钦森 海兰 骑士 柯克 科恩 肯威 甘乃迪 凯莉 
-				诗织 夏树 彩音 夏帆 花 百华 阳鞠 梦 青豆 法子 一美 希美子 
+				GF_AU_CHR_Haruna GF_AU_CHR_Sakura GF_AU_CHR_Misaki GF_AU_CHR_Aoi GF_AU_CHR_Mihane GF_AU_CHR_Miyu GF_AU_CHR_Rin GF_AU_CHR_Nanami GF_AU_CHR_Yui GF_AU_CHR_Hina GF_AU_CHR_Honoka GF_AU_CHR_Riko GF_AU_CHR_Yuna GF_AU_CHR_Koharu GF_AU_CHR_Hinata GF_AU_CHR_Mei GF_AU_CHR_Saki GF_AU_CHR_Ichika GF_AU_CHR_Hiyori GF_AU_CHR_Yusuki
+				GF_AU_CHR_Shiori GF_AU_CHR_Natsuki GF_AU_CHR_Ayane GF_AU_CHR_Kaho GF_AU_CHR_Hana GF_AU_CHR_Momoka GF_AU_CHR_Himari GF_AU_CHR_Yume GF_AU_CHR_Aomame GF_AU_CHR_Noriko GF_AU_CHR_Kazumi GF_AU_CHR_Kimiko
 			}
 			second_names = {
-				佐藤 铃木 高桥 田中 渡边 伊藤 中村 小林 山本 加藤 吉田 山田 佐佐木 山口 松本 
-				井上 木村 清水 早志 佐藤 山崎 中岛 森 安倍 池田 桥本 石川 山下 小川 石井 长谷川 
-				格伊斯 格局姆 格赫瓦 格哈拉 格赫索 格赫雷比 格赫罗格 格赫斯罗维 格赫德维 格赫姆尼 格赫瓦尔 格赫姆尔
+				GF_AU_CHR_Sato GF_AU_CHR_Suzuki GF_AU_CHR_Takahashi GF_AU_CHR_Tanaka GF_AU_CHR_Watanabe GF_AU_CHR_Ito GF_AU_CHR_Nakamura GF_AU_CHR_Kobayashi GF_AU_CHR_Yamamoto GF_AU_CHR_Kato GF_AU_CHR_Yoshida GF_AU_CHR_Yamada GF_AU_CHR_Sasaki GF_AU_CHR_Yamaguchi GF_AU_CHR_Matsumoto
+				GF_AU_CHR_Inoue GF_AU_CHR_Kimura GF_AU_CHR_Shimizu GF_AU_CHR_Hayashi GF_AU_CHR_Saito GF_AU_CHR_Yamazaki GF_AU_CHR_Nakajima GF_AU_CHR_Mori GF_AU_CHR_Abe GF_AU_CHR_Ikeda GF_AU_CHR_Hashimoto GF_AU_CHR_Ishikawa GF_AU_CHR_Yamashita GF_AU_CHR_Ogawa GF_AU_CHR_Ishii GF_AU_CHR_Hasegawa
+				GF_AU_CHR_Goto GF_AU_CHR_Okada GF_AU_CHR_Fujita GF_AU_CHR_Sakamoto GF_AU_CHR_Murakami GF_AU_CHR_Nishimura GF_AU_CHR_Nakagawa GF_AU_CHR_Harada GF_AU_CHR_Okamoto GF_AU_CHR_Miura GF_AU_CHR_Takaya GF_AU_CHR_Amano GF_AU_CHR_Higuchi GF_AU_CHR_Ota
 			}
 			regnal_first_names_male = {
-				辉人 涅库西格 密麻兹西科 穴穗 广业 义良
+				GF_AU_CHR_Teruhito GF_AU_CHR_Nekuhiko GF_AU_CHR_Mimatsuhiko GF_AU_CHR_Anaho GF_AU_CHR_Hironari GF_AU_CHR_Norinaga
 			}
 			regnal_first_names_female = {
-				奴卡特博 托耶麦克 塔卡拉 尼诺米 海达卡 塔卡马 欧凯科 托什科
+				GF_AU_CHR_Nukatabe GF_AU_CHR_Toyomike GF_AU_CHR_Takara GF_AU_CHR_Niinomi GF_AU_CHR_Hidaka GF_AU_CHR_Takama GF_AU_CHR_Okiko GF_AU_CHR_Toshiko
 			}
 			regnal_second_names = {
-				"大物主神" 天照 乙母 水神 物部 大和
+				GF_AU_CHR_noMikoto GF_AU_CHR_Sumeramikoto GF_AU_CHR_Otomo GF_AU_CHR_Suijin GF_AU_CHR_Mononobe GF_AU_CHR_Yamato
 			}
 		}
-		
+
 		names7 = {
 			weight = 15
 			first_names_male = {
-				阿拉弗 维瓦安 阿迪亚 阿俊 雷炎斯 阿纳福 克里斯那 伊莎安 邵亚 阿塔弗 艾维克 普拉那 阿威弗 德鲁弗 卡比 利伟克 阿鲁斯
-				卡亚恩 达什 威尔 拉胡 马赫什 什亚姆 雷吉 库马尔 帕拉什 拉科什 尼闪特 尼雷吉 普拉萨美斯 舒波哈姆
+				GF_AU_CHR_Aarav GF_AU_CHR_Vivaan GF_AU_CHR_Aditya GF_AU_CHR_Arjun GF_AU_CHR_Reyansh GF_AU_CHR_Arnav GF_AU_CHR_Krishna GF_AU_CHR_Ishaan GF_AU_CHR_Shaurya GF_AU_CHR_Atharv GF_AU_CHR_Advik GF_AU_CHR_Pranav GF_AU_CHR_Advaith GF_AU_CHR_Dhruv GF_AU_CHR_Kabir GF_AU_CHR_Ritvik GF_AU_CHR_Aarush
+				GF_AU_CHR_Kayaan GF_AU_CHR_Darsh GF_AU_CHR_Veer GF_AU_CHR_Rahul GF_AU_CHR_Mahesh GF_AU_CHR_Shyam GF_AU_CHR_Raj GF_AU_CHR_Kumar GF_AU_CHR_Palash GF_AU_CHR_Rakesh GF_AU_CHR_Nishant GF_AU_CHR_Neeraj GF_AU_CHR_Prathamesh GF_AU_CHR_Shubham
 			}
 			first_names_female = {
-				萨尼薇 安雅 阿达哈雅 阿拉德哈 安妮娅 帕里 阿尼卡 娜雅 迪亚 阿瓦尼 米拉 伊拉 阿哈娜 安薇 普丽沙 莉亚 阿罗哈 安雅 阿珂沙拉
-				莎娜亚 凯拉 希亚 普利杨卡 迪薇亚 玛海玛 希万伊 容维娜 安诺斯卡 安努施莉 阿普拉瓦 桑吉娜
+				GF_AU_CHR_Saanvi GF_AU_CHR_Aanya GF_AU_CHR_Aadhya GF_AU_CHR_Aaradhya GF_AU_CHR_Ananya GF_AU_CHR_Pari GF_AU_CHR_Anika GF_AU_CHR_Navya GF_AU_CHR_Diya GF_AU_CHR_Avani GF_AU_CHR_Myra GF_AU_CHR_Ira GF_AU_CHR_Aahana GF_AU_CHR_Anvi GF_AU_CHR_Prisha GF_AU_CHR_Riya GF_AU_CHR_Aarohi GF_AU_CHR_Anaya GF_AU_CHR_Akshara
+				GF_AU_CHR_Shanaya GF_AU_CHR_Kyra GF_AU_CHR_Siya GF_AU_CHR_Priyanka GF_AU_CHR_Divya GF_AU_CHR_Mahima GF_AU_CHR_Shivangi GF_AU_CHR_Juvina GF_AU_CHR_Anoushka GF_AU_CHR_Anushri GF_AU_CHR_Apoorva GF_AU_CHR_Sanjana
 			}
 			second_names = {
-				古玛 穆瑞斯 夏斯特里 普拉萨德 阿查里雅 斯瓦米 皮莱 高德 纳亚克 戴斯穆克 布哈特 班达里 普贾里 乌帕德哈亚 茨沃塔 奈克
-				库卡尼 道达玛尼 帕蒂尔 古普塔 夏尔马 纳姆波迪尔 潘尼卡 波蒂 库蒂 瓦马 索恩德哈拉姆 索里亚普拉卡什 查恩德兰 维杰 
-				温克塔桑 普塔帕
+				GF_AU_CHR_Kumar GF_AU_CHR_Moorthi GF_AU_CHR_Shastri GF_AU_CHR_Prasad GF_AU_CHR_Acharya GF_AU_CHR_Swamy GF_AU_CHR_Pillai GF_AU_CHR_Gowda GF_AU_CHR_Nayak GF_AU_CHR_Desmukh GF_AU_CHR_Bhat GF_AU_CHR_Bhandary GF_AU_CHR_Poojary GF_AU_CHR_Upadhyay GF_AU_CHR_Chowta GF_AU_CHR_Naik
+				GF_AU_CHR_Kulkarni GF_AU_CHR_Dodamani GF_AU_CHR_Patil GF_AU_CHR_Gupta GF_AU_CHR_Sharma GF_AU_CHR_Namboodiri GF_AU_CHR_Pannikar GF_AU_CHR_Potti GF_AU_CHR_Kutty GF_AU_CHR_Varma GF_AU_CHR_Sondharam GF_AU_CHR_Sooriyaprakash GF_AU_CHR_Chandran GF_AU_CHR_Vijay
+				GF_AU_CHR_Venktaesan GF_AU_CHR_Puttappa
 			}
 			regnal_first_names_male = {
-				卡亚恩 达什 威尔 拉胡 马赫什 邵亚 阿瑟亚弗 阿德维克 普拉纳弗
+				GF_AU_CHR_Kayaan GF_AU_CHR_Darsh GF_AU_CHR_Veer GF_AU_CHR_Rahul GF_AU_CHR_Mahesh GF_AU_CHR_Shaurya GF_AU_CHR_Atharv GF_AU_CHR_Advik GF_AU_CHR_Pranav
 			}
 			regnal_first_names_female = {
-				萨尼薇 安雅 阿达哈雅 阿拉德哈 安妮娅 普林卡 迪亚 玛海玛 希梵格
+				GF_AU_CHR_Saanvi GF_AU_CHR_Aanya GF_AU_CHR_Aadhya GF_AU_CHR_Aaradhya GF_AU_CHR_Ananya GF_AU_CHR_Priyanka GF_AU_CHR_Divya GF_AU_CHR_Mahima GF_AU_CHR_Shivangi
 			}
 			regnal_second_names = {
-				古玛 穆瑞斯 夏斯特里 普拉萨德 阿查里雅 帕蒂尔 古普塔 夏尔马 纳姆布迪瑞 潘尼卡 波蒂 库蒂 沃尔马 桑德哈拉姆 
+				GF_AU_CHR_Kumar GF_AU_CHR_Moorthi GF_AU_CHR_Shastri GF_AU_CHR_Prasad GF_AU_CHR_Acharya GF_AU_CHR_Patil GF_AU_CHR_Gupta GF_AU_CHR_Sharma GF_AU_CHR_Namboodiri GF_AU_CHR_Pannikar GF_AU_CHR_Potti GF_AU_CHR_Kutty GF_AU_CHR_Varma GF_AU_CHR_Sondharam
 			}
 		}
-		
+
 		names8 = {
 			weight = 25
 			first_names_male = {
-				迭戈 路易斯 佩德罗 华金 何塞 埃米利奥 爱德华多 亚历杭德罗 卡洛斯 费尔南多 弗朗西斯科 朱利奥 "何塞·安东尼奥" "何塞·曼努埃尔" 胡安
-				"荷塞马里" 伊格纳西噢 曼纽尔 帕布罗 米格尔 拉蒙 莱蒙多 圣地亚哥 里卡多 马塞洛 哈维尔 加斯帕 阿方索 洛伦佐 恩里克
-				埃莱奥诺雷 克拉丽丝 法妮 塞尔玛 莱拉 维罗尼卡 苏菲 海伦娜 达芙妮 苏珊 梅兰妮 贝尔纳黛特 莫德 安琪琳 席琳 杰西卡
+				GF_AU_CHR_Diego GF_AU_CHR_Luis GF_AU_CHR_Pedro GF_AU_CHR_Joaquin GF_AU_CHR_Jose GF_AU_CHR_Emilio GF_AU_CHR_Eduardo GF_AU_CHR_Alejandro GF_AU_CHR_Carlos GF_AU_CHR_Fernando GF_AU_CHR_Francisco GF_AU_CHR_Julio GF_AU_CHR_JoseAntonio GF_AU_CHR_JoseManuel GF_AU_CHR_Juan
+				GF_AU_CHR_JoseMaria GF_AU_CHR_Ignacio GF_AU_CHR_Manuel GF_AU_CHR_Pablo GF_AU_CHR_Miguel GF_AU_CHR_Ramon GF_AU_CHR_Raimundo GF_AU_CHR_Santiago GF_AU_CHR_Ricardo GF_AU_CHR_Marcelo GF_AU_CHR_Javier GF_AU_CHR_Gaspar GF_AU_CHR_Alfonso GF_AU_CHR_Lorenzo GF_AU_CHR_Enrique
+				GF_AU_CHR_Ernesto GF_AU_CHR_Gerardo GF_AU_CHR_Guillermo GF_AU_CHR_Jesus GF_AU_CHR_Salvadore GF_AU_CHR_Sergio GF_AU_CHR_Roberto GF_AU_CHR_Esteban
 			}
 			first_names_female = {
-				阳斗 宇多田光 宅美 翼 任 水门 绍塔 悠斗 索达 尤马 建 陆多 龙木 柳兎 李夏露 有信 湖西 吉信 
-				加百拉 格雷泽达 马瑞亚 罗雷娜 马戈达勒娜 默西迪丝 米里亚姆 帕利娜 索菲亚 尤兰达 卡米拉 露西亚娜 瓦乐雷娜 马瑞亚娜 达尼拉
-				玛蒂娜 朱莉 安托尼拉 雷娜塔 阿格斯缇娜 康斯坦察 菲比安娜 
+				GF_AU_CHR_Hortensia GF_AU_CHR_Isabel GF_AU_CHR_Valentina GF_AU_CHR_Alejandra GF_AU_CHR_Alicia GF_AU_CHR_Antonia GF_AU_CHR_Carla GF_AU_CHR_Carmen GF_AU_CHR_Catalina GF_AU_CHR_Dolores GF_AU_CHR_Estefania GF_AU_CHR_Eva GF_AU_CHR_Fernanda GF_AU_CHR_Florencia
+				GF_AU_CHR_Gabriela GF_AU_CHR_Grizelda GF_AU_CHR_Maria GF_AU_CHR_Lorena GF_AU_CHR_Magdalena GF_AU_CHR_Mercedes GF_AU_CHR_Miriam GF_AU_CHR_Paulina GF_AU_CHR_Sofia GF_AU_CHR_Yolanda GF_AU_CHR_Camila GF_AU_CHR_Luciana GF_AU_CHR_Valeria GF_AU_CHR_Mariana GF_AU_CHR_Daniela
+				GF_AU_CHR_Martina GF_AU_CHR_Julieta GF_AU_CHR_Antonella GF_AU_CHR_Renata GF_AU_CHR_Agustina GF_AU_CHR_Constanza GF_AU_CHR_Fabiana
 			}
 			second_names = {
-				加尼梅德 卡利斯托 罗 尤罗帕 泰坦 瑞亚 拉普特斯 迪欧尼 特西斯 恩瑟拉达斯 弥玛斯 缇塔尼亚
-				拉米雷兹 门德斯 佩雷斯 瓦斯凯 鲁伊斯 阿格拉 阿隆索 巴蒂斯塔 埃斯古拉 弗洛雷斯 拉加迪亚 克鲁兹 维加
-				"左磊菲拉攻击群" "古藤无攻击群" "格老梅沃攻击群" "罗拉青翼攻击群" "李昆瑟旗攻击群" "恩利租卡攻击群" "破雾帕攻击群" "莫新罗攻击群" 
+				GF_AU_CHR_Garcia GF_AU_CHR_Martinez GF_AU_CHR_Rodriguez GF_AU_CHR_Fernandez GF_AU_CHR_Sanchez GF_AU_CHR_Lopez GF_AU_CHR_Martin GF_AU_CHR_Perez GF_AU_CHR_Gonzalez GF_AU_CHR_Alvarez GF_AU_CHR_Gomez GF_AU_CHR_Diaz GF_AU_CHR_Dominguez GF_AU_CHR_Hernandez
+				GF_AU_CHR_Ramirez GF_AU_CHR_Mendez GF_AU_CHR_Perez GF_AU_CHR_Vasquez GF_AU_CHR_Ruiz GF_AU_CHR_Aguera GF_AU_CHR_Alonso GF_AU_CHR_Batista GF_AU_CHR_Esguerra GF_AU_CHR_Flores GF_AU_CHR_delaGuardia GF_AU_CHR_delaCruz GF_AU_CHR_delaVega
+				GF_AU_CHR_deVargas GF_AU_CHR_Ibanez GF_AU_CHR_Moralez GF_AU_CHR_Riveros GF_AU_CHR_Rosario GF_AU_CHR_Velazco GF_AU_CHR_Torres GF_AU_CHR_Quesada GF_AU_CHR_Saldana GF_AU_CHR_Salazar GF_AU_CHR_Ortega GF_AU_CHR_Ortiz GF_AU_CHR_Solano GF_AU_CHR_Romero
 			}
 			regnal_first_names_male = {
-				圣地亚哥 里卡多 马塞洛 哈维尔 欧内斯托 热拉尔多 吉列尔默
+				GF_AU_CHR_Santiago GF_AU_CHR_Ricardo GF_AU_CHR_Marcelo GF_AU_CHR_Javier GF_AU_CHR_Ernesto GF_AU_CHR_Gerardo GF_AU_CHR_Guillermo
 			}
 			regnal_first_names_female = {
-				亚历山大 弗拉基米尔 鲍里斯 泰比里厄斯 西奥博尔德 巴里安 马克西姆斯 卢修斯
+				GF_AU_CHR_Alicia GF_AU_CHR_Antonia GF_AU_CHR_Carla GF_AU_CHR_Carmen GF_AU_CHR_Catalina GF_AU_CHR_Dolores GF_AU_CHR_Martina GF_AU_CHR_Julieta GF_AU_CHR_Antonella GF_AU_CHR_Renata
 			}
 			regnal_second_names = {
-				弗恩荷斯 果尔 戈乌泥 奴瓦斯 杜瑟瓦尔 斯勒弗吉 斯萨琳 弗斯 弗恩尤尼 格布 戈胡斯 格瓦斯 杜瑟尔 斯勒尤尼 弗罗恩弗吉 斯勒胡斯 弗萨琳 斯利特 多弗艾斯 弗斯琳 奴沃尔 纳荷尔
+				GF_AU_CHR_Fernandez GF_AU_CHR_Sanchez GF_AU_CHR_Lopez GF_AU_CHR_Martin GF_AU_CHR_Perez GF_AU_CHR_Gonzalez GF_AU_CHR_Alvarez GF_AU_CHR_Gomez GF_AU_CHR_Diaz
 			}
 		}
-		
+
 		names9 = {
 			weight = 15
 			first_names_male = {
-				土豚 鸣禽 蝰蛇 信天翁 短吻鳄 蟒蛇 羚羊 犰狳 角蝰 獾 鲈 小猎犬 侦探犬 水牛 牛蛙 秃鹰 骆驼 美洲豹 
-				侯赛因 默罕默德 穆罕默德 穆罕默德 穆罕默德 穆罕默德 纳西尔 奥玛尔 拉沙德 拉希德 萨米尔 塔里克 亚黑尔 雅欣 优素福 巴拉克 
+				GF_AU_CHR_Abdullah GF_AU_CHR_Abbas GF_AU_CHR_Abed GF_AU_CHR_Ahmad GF_AU_CHR_Ahmed GF_AU_CHR_Ali GF_AU_CHR_Ammar GF_AU_CHR_Amir GF_AU_CHR_Hamza GF_AU_CHR_Hassan GF_AU_CHR_Hydar GF_AU_CHR_Ibrahim GF_AU_CHR_Jamal GF_AU_CHR_Kareem GF_AU_CHR_Khathem GF_AU_CHR_Khalil GF_AU_CHR_Khalid GF_AU_CHR_Malik GF_AU_CHR_Mahdi
+				GF_AU_CHR_Hussein GF_AU_CHR_Mohamed GF_AU_CHR_Mohammad GF_AU_CHR_Mohammed GF_AU_CHR_Muhammad GF_AU_CHR_Muhammed GF_AU_CHR_Nasir GF_AU_CHR_Omar GF_AU_CHR_Rashad GF_AU_CHR_Rashid GF_AU_CHR_Samir GF_AU_CHR_Tariq GF_AU_CHR_Yahir GF_AU_CHR_Yasin GF_AU_CHR_Yusuf GF_AU_CHR_Barak
 			}
 			first_names_female = {
-				艾利西亚 安东尼娅 卡拉 卡门 卡特琳娜 多洛雷斯 马丁娜 茹列塔 安东内拉 雷娜塔 
-				马里查 米娜 奈马 努尔 萨尔玛 萨米拉 萨那 叶塞尼亚 萨拉 萨塔耶什 则伊纳布 雷哈纳 莫比纳 纳格斯 马索梅 萨奇恩 阿亚
+				GF_AU_CHR_Alma GF_AU_CHR_Amani GF_AU_CHR_Amira GF_AU_CHR_Aisha GF_AU_CHR_Fatima GF_AU_CHR_Hala GF_AU_CHR_Hana GF_AU_CHR_Hasti GF_AU_CHR_Imani GF_AU_CHR_Jana GF_AU_CHR_Jaliyah GF_AU_CHR_Jazmin GF_AU_CHR_Jenna GF_AU_CHR_Kaliyah GF_AU_CHR_Layan GF_AU_CHR_Leen GF_AU_CHR_Leila GF_AU_CHR_Lydia GF_AU_CHR_Malak GF_AU_CHR_Maryam
+				GF_AU_CHR_Maritza GF_AU_CHR_Mina GF_AU_CHR_Naima GF_AU_CHR_Noor GF_AU_CHR_Salma GF_AU_CHR_Samira GF_AU_CHR_Sanaa GF_AU_CHR_Yesenia GF_AU_CHR_Zahra GF_AU_CHR_Satayesh GF_AU_CHR_Zeinab GF_AU_CHR_Reihaneh GF_AU_CHR_Mobina GF_AU_CHR_Narges GF_AU_CHR_Masoumeh GF_AU_CHR_Sakineh GF_AU_CHR_Aya
 			}
 			second_names = {
-				班达里翁 贝吉那里翁 瓦达那里翁 伊迪刹里翁 朵拉里翁 残八达里翁 法德瓦里翁 宁八达里翁 杂达里翁 贝瑟杜尔 迦南杜尔 维卡索杜尔
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀 欧奇奇 欧坎我 粑粑吉达 布哈里 蒂姆卡 伊博利 左膜薄膜 义乌 般波切 贝八库
-				阿拉卡特 阿巴斯 "阿伯戴尔·淖尔" 阿伯邦德 阿-艾哈戴尔 阿-加咋里 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼
+				GF_AU_CHR_Barakat GF_AU_CHR_Abbas GF_AU_CHR_AbdelNour GF_AU_CHR_Abboud GF_AU_CHR_al-Ahdal GF_AU_CHR_al-Ajlani GF_AU_CHR_al-Bariqi GF_AU_CHR_al-Mubarak GF_AU_CHR_Adwam GF_AU_CHR_Akkad GF_AU_CHR_Alawi GF_AU_CHR_al-Asiri GF_AU_CHR_al-Atrash GF_AU_CHR_al-Dimashqi
+				GF_AU_CHR_Bakir GF_AU_CHR_Hussein GF_AU_CHR_al-Hazmi GF_AU_CHR_al-Bishi GF_AU_CHR_El-Baz GF_AU_CHR_Ibrahim GF_AU_CHR_Ishak GF_AU_CHR_Ismail GF_AU_CHR_El-Farouk GF_AU_CHR_Hassan GF_AU_CHR_El-Ghazali GF_AU_CHR_Bilal GF_AU_CHR_Nadir GF_AU_CHR_Juhani GF_AU_CHR_Jawahir GF_AU_CHR_Hamidi
+				GF_AU_CHR_al-Jazari GF_AU_CHR_al-Samarrai GF_AU_CHR_Salman GF_AU_CHR_Qasim GF_AU_CHR_Qudsi GF_AU_CHR_Qaderi GF_AU_CHR_al-Qadi GF_AU_CHR_Farrokhzad GF_AU_CHR_Madani GF_AU_CHR_Sassani GF_AU_CHR_Turani GF_AU_CHR_Khadem GF_AU_CHR_Ghorbani GF_AU_CHR_Jamshidi GF_AU_CHR_Rahimi
 			}
 			regnal_first_names_male = {
-				阿巴瓦 恰瓦 阿达夫 帕达瓦 阿瓦分 瓦法德 阿芬 阿瓦瓦 希分 茨坝夫 胡阿瓦 拉拉福 维纳夫 乌拉福 乌瓦分 阿达 芬纳达 廓瓦 瓦达布 埃里瓦 雷威尔 杜拉瓦 亚弯 乌分 伊芙 欧板瓦 佩萨瓦 阿斯果瓦 萨逼那 达华奋 佛普瓦 加巴特 哈达 祖父 洛芬 切瓦巴 瓦达亚 卜八德 纳夫巴德 麦瓦瓦
+				GF_AU_CHR_Abdullah GF_AU_CHR_Abbas GF_AU_CHR_Abed GF_AU_CHR_Khalil GF_AU_CHR_Khalid GF_AU_CHR_Malik GF_AU_CHR_Mahdi GF_AU_CHR_Nasir GF_AU_CHR_Omar GF_AU_CHR_Rashad GF_AU_CHR_Rashid GF_AU_CHR_Samir
 			}
 			regnal_first_names_female = {
-				日夫科夫 卡札科夫 克鲁托福 伊万尼科夫 克鲁索夫 拉里诺夫 马可斯姆斯基 马科夫 奥斯特洛夫斯基 葆拉车夫 里陈可夫 罗曼诺夫
+				GF_AU_CHR_Zeinab GF_AU_CHR_Reihaneh GF_AU_CHR_Mobina GF_AU_CHR_Narges GF_AU_CHR_Masoumeh GF_AU_CHR_Sakineh GF_AU_CHR_Aya GF_AU_CHR_Alma GF_AU_CHR_Amani GF_AU_CHR_Amira
 			}
 			regnal_second_names = {
-				阿拉卡特 阿巴斯 "阿伯戴尔·淖尔" 阿伯邦德 阿-艾哈戴尔 阿-加咋里 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼
+				GF_AU_CHR_arakat GF_AU_CHR_Abbas GF_AU_CHR_AbdelNour GF_AU_CHR_Abboud GF_AU_CHR_al-Ahdal GF_AU_CHR_al-Jazari GF_AU_CHR_al-Samarrai GF_AU_CHR_Salman GF_AU_CHR_Qasim GF_AU_CHR_Qudsi GF_AU_CHR_Qaderi GF_AU_CHR_al-Qadi GF_AU_CHR_Farrokhzad GF_AU_CHR_Madani
 			}
 		}
-		
+
 		names10 = {
 			weight = 15
 			first_names_male = {
-				法拉古勒克 克兰德拉克斯 库勒戈弗 卢德利梅克斯 马克思多克 特拉达吉克 卢卡吉克斯 特罗卡克斯格 特洛德姆 罗克斯欧德尔 罗帕德夫 弗雷拉克斯德 艾克瑟梅卡特 弗罗拉克斯恩 达卡勒耐克斯 德隆纳弗格 米克斯罗德姆 提达鲁勒克 拉克苏克德 克欧克苏勒姆 古弗瑞尔
-				卡梅伦 哈蒙德 诺茨 杰斐逊 科菲 亚当斯 巴布科克 鲍德温 班尼斯特 柏塞尔 鲍姆加特纳 桦树 布莱克伍德 布莱克 博兰德 
-				迪朗达尔 蒂乔 利拉
-				马斯恩格塔 莫克特斯 莫拉迫 莫斯莫特萨恩 莫特拉兰特瓦 莫特胡斯 姆斯兹 穆兹瓦马多达 恩索菲拉 欧亚吉尔 帕瑟卡 帕哈默 普罗克 奎克扎 瑞菲尔维
-				萨尼勒 萨布 塞荷洛 塞克隆哈尼 西布西索 西子维 特波荷 泰比索 席巴 休索 特斯巴 特修拉 特肖伟 乌娜提 旺迪勒 穆布图 科夫
+				GF_AU_CHR_Faraji GF_AU_CHR_Imamu GF_AU_CHR_Jelani GF_AU_CHR_Jengo GF_AU_CHR_Jumaane GF_AU_CHR_Khamisi GF_AU_CHR_Kibwe GF_AU_CHR_Mosi GF_AU_CHR_Mwenye GF_AU_CHR_Sefu GF_AU_CHR_Simba GF_AU_CHR_Tendaji GF_AU_CHR_Zuberi GF_AU_CHR_Abasi GF_AU_CHR_Annan GF_AU_CHR_Azizi GF_AU_CHR_Badru GF_AU_CHR_Bakari GF_AU_CHR_Bwana
+				GF_AU_CHR_Chane GF_AU_CHR_Chuma GF_AU_CHR_Enzi GF_AU_CHR_Faraji GF_AU_CHR_Hanisi GF_AU_CHR_Idi GF_AU_CHR_Issa GF_AU_CHR_Jabari GF_AU_CHR_Akani GF_AU_CHR_Aluwanip GF_AU_CHR_Ayanda GF_AU_CHR_Bambanani GF_AU_CHR_Bheka GF_AU_CHR_Bhekithemba GF_AU_CHR_Bhekizizwe GF_AU_CHR_Butholezwe GF_AU_CHR_Dikotsi
+				GF_AU_CHR_Dzingai GF_AU_CHR_Esaia GF_AU_CHR_Hangwani GF_AU_CHR_Humbe GF_AU_CHR_Kabelo GF_AU_CHR_Khathu GF_AU_CHR_Khumbu GF_AU_CHR_Kutlwano GF_AU_CHR_Kwanele GF_AU_CHR_Lentswe GF_AU_CHR_Lesebo GF_AU_CHR_Letswalo GF_AU_CHR_Lutendo GF_AU_CHR_Mahlubandile GF_AU_CHR_Makalo GF_AU_CHR_Mareka
+				GF_AU_CHR_Masingita GF_AU_CHR_Moeketsi GF_AU_CHR_Molapo GF_AU_CHR_Mosemotsane GF_AU_CHR_Motlalentwa GF_AU_CHR_Mothusi GF_AU_CHR_Msizi GF_AU_CHR_Mzwamadoda GF_AU_CHR_Nthofeela GF_AU_CHR_Oagile GF_AU_CHR_Paseka GF_AU_CHR_Phahamo GF_AU_CHR_Poloko GF_AU_CHR_Qukeza GF_AU_CHR_Refilwe
+				GF_AU_CHR_Sanele GF_AU_CHR_Sbu GF_AU_CHR_Sehlolo GF_AU_CHR_Sekgolokhane GF_AU_CHR_Sibusiso GF_AU_CHR_Sizwe GF_AU_CHR_Teboho GF_AU_CHR_Thabiso GF_AU_CHR_Themba GF_AU_CHR_Thuso GF_AU_CHR_Tsebo GF_AU_CHR_Tsehla GF_AU_CHR_Tshawe GF_AU_CHR_Unathi GF_AU_CHR_Wandile GF_AU_CHR_Mbutu GF_AU_CHR_Kofi
 			}
 			first_names_female = {
-				安踏吉翁 贝瑟马吉翁 维拉吉翁 司马吉翁 塔里翁 贝乐卡里翁 康普吉翁 塞呢吉翁 卡鲁斯提翁 海特尼翁 大佛吉翁 尼法吉翁
-				阿-拉扎利 阿-萨马拉伊 阿-萨马拉依 萨尔曼 卡西姆 库德斯 凯得利 阿-卡迪 飞洛哈扎德 马达尼 萨萨尼 图拉尼 卡代姆 哥巴尼 佳木斯地
-				雷瑞托 林迪维 利特索安尼罗 鲁拉码 马吉欧布 马里特萨特斯 马特瑟迪索 姆巴利 马博 姆尼瑟迪斯 莫哈乌 莫拉图欧 穆阿姆毕瓦 尼亚德泽尼 诺弗托
-				纳萨提 纳瑟博 纳特瓦克 法特卢 雷内尔维 卢德扎尼 闪杜 斯尼瑟姆巴 斯扎尼 萨恩杜克斯罗 特沙恩杜科 顿古 兹恩赫尔
-			} 
+				GF_AU_CHR_Asha GF_AU_CHR_Abla GF_AU_CHR_Adhra GF_AU_CHR_Adila GF_AU_CHR_Aeeshah GF_AU_CHR_Afiya GF_AU_CHR_Chausiku GF_AU_CHR_Eshe GF_AU_CHR_Furaha GF_AU_CHR_Imani GF_AU_CHR_Kamaria GF_AU_CHR_Marjani GF_AU_CHR_Mchumba GF_AU_CHR_Mwanajuma GF_AU_CHR_Nia GF_AU_CHR_Nuru GF_AU_CHR_Sanaa GF_AU_CHR_Sauda GF_AU_CHR_Subira
+				GF_AU_CHR_Zuri GF_AU_CHR_Aizivaishe GF_AU_CHR_Anatswanashe GF_AU_CHR_Anodiwa GF_AU_CHR_Anokosha GF_AU_CHR_Awande GF_AU_CHR_Bokang GF_AU_CHR_Bongani GF_AU_CHR_Dikeledi GF_AU_CHR_Edzai GF_AU_CHR_Fikile GF_AU_CHR_Gugu GF_AU_CHR_Kagiso GF_AU_CHR_Keneuwe GF_AU_CHR_Koketso GF_AU_CHR_Langalibalele
+				GF_AU_CHR_Lerato GF_AU_CHR_Lindidwe GF_AU_CHR_Litsoanelo GF_AU_CHR_Lulama GF_AU_CHR_Majobo GF_AU_CHR_Maletsatsi GF_AU_CHR_Matshediso GF_AU_CHR_Mbali GF_AU_CHR_Mmaabo GF_AU_CHR_Mncedisi GF_AU_CHR_Mohau GF_AU_CHR_Moratuoa GF_AU_CHR_Muambiwa GF_AU_CHR_Nnyadzeni GF_AU_CHR_Nofoto
+				GF_AU_CHR_Nthati GF_AU_CHR_Ntsebo GF_AU_CHR_Ntswaki GF_AU_CHR_Phathu GF_AU_CHR_Reneilwe GF_AU_CHR_Rudzani GF_AU_CHR_Shandu GF_AU_CHR_Sinethemba GF_AU_CHR_Sizani GF_AU_CHR_Thanduxolo GF_AU_CHR_Tshanduko GF_AU_CHR_Tungu GF_AU_CHR_Zinhle
+			}
 			second_names = {
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀
-				提尼布 阿金基德 阿奇罗伊 阿德伊米 瑟奇波 班科尔 纳玛尼 奥卡迪波 伊洛斯 奥容科夫 恰克弗梅里 伊维兰 奥孔容 加巴达摩斯 奥兰里瓦荣
-				马达可 欧伊恩罗拉 欧恩耶杰克维 贾卡恩德 恩基格 乌巴 欧哈克姆 阿拉克加 欧诺巴恩吉欧 姆巴内弗 姆巴迪努狙 艾克文斯 格温 萨罗-维瓦 纳伊多 斯瓦尼普尔
-				穆斯比 恩格比斯 恩格玛 马苏库 克霍恩瓦雨 胡马罗 克瓦伊 马姆比 姆巴恩贾瓦 姆克瓦姆特 姆塔克瓦恩达 恩格瓦恩亚 纳克瓦力 特瓦恩 斯克霍萨娜 特萨恩格萨 
-				希约尼 克哈米拉 克寇 赞格瓦 努德格瓦尼 巴哈瓦纳 但泽那 加特利 加西哈 卡乌塔
+				GF_AU_CHR_Azikiwe GF_AU_CHR_Awolowo GF_AU_CHR_Balewa GF_AU_CHR_Akintola GF_AU_CHR_Nzeogwu GF_AU_CHR_Onwuatuegwu GF_AU_CHR_Okeke GF_AU_CHR_Okonkwo GF_AU_CHR_Babangida GF_AU_CHR_Buhari GF_AU_CHR_Dimka GF_AU_CHR_Ibori GF_AU_CHR_Jomo-Gbomo GF_AU_CHR_Iwu GF_AU_CHR_Bamgboshe GF_AU_CHR_Biobaku
+				GF_AU_CHR_Tinibu GF_AU_CHR_Akinjide GF_AU_CHR_Akiloye GF_AU_CHR_Adeyemi GF_AU_CHR_Sekibo GF_AU_CHR_Bankole GF_AU_CHR_Nnamani GF_AU_CHR_Okadigbo GF_AU_CHR_Ironsi GF_AU_CHR_Ojukwu GF_AU_CHR_Chukwumereije GF_AU_CHR_Iweala GF_AU_CHR_Okonjo GF_AU_CHR_Gbadamosi GF_AU_CHR_Olanrewaju
+				GF_AU_CHR_Madaki GF_AU_CHR_Oyinlola GF_AU_CHR_Onyejekwe GF_AU_CHR_Jakande GF_AU_CHR_Ngige GF_AU_CHR_Uba GF_AU_CHR_Ohakim GF_AU_CHR_Alakija GF_AU_CHR_Onobanjo GF_AU_CHR_Mbanefo GF_AU_CHR_Mbadinuju GF_AU_CHR_Ekwensi GF_AU_CHR_Gowon GF_AU_CHR_Saro-Wiwa GF_AU_CHR_Naidoo GF_AU_CHR_Swanepoel
+				GF_AU_CHR_Msibi GF_AU_CHR_Ngobese GF_AU_CHR_Ngema GF_AU_CHR_Masuku GF_AU_CHR_Khonjwayo GF_AU_CHR_Khumalo GF_AU_CHR_Kwayi GF_AU_CHR_Mambi GF_AU_CHR_Mbanjwa GF_AU_CHR_Mkhwemte GF_AU_CHR_Mtakwenda GF_AU_CHR_Ngwanya GF_AU_CHR_Nkwali GF_AU_CHR_Thwane GF_AU_CHR_Skhosana GF_AU_CHR_Tshangisa
+				GF_AU_CHR_Tshonyane GF_AU_CHR_Xhamela GF_AU_CHR_Xoko GF_AU_CHR_Zangwa GF_AU_CHR_Ndungwane GF_AU_CHR_Bhukhwana GF_AU_CHR_Dzana GF_AU_CHR_Gatyeni GF_AU_CHR_Gxarha GF_AU_CHR_Jwarha GF_AU_CHR_Khawuta
 			}
 			regnal_first_names_male = {
-				法拉吉 伊玛姆 吉拉尼 吉恩果 巨马恩 克哈米斯 科布维 莫斯 姆温叶 瑟苏 西姆巴 特恩达吉 组博瑞 阿巴斯 阿娜恩 阿兹兹 巴德鲁 巴卡瑞 巴瓦娜
+				GF_AU_CHR_Faraji GF_AU_CHR_Imamu GF_AU_CHR_Jelani GF_AU_CHR_Jengo GF_AU_CHR_Jumaane GF_AU_CHR_Khamisi GF_AU_CHR_Kwanele GF_AU_CHR_Lentswe GF_AU_CHR_Lesebo GF_AU_CHR_Letswalo GF_AU_CHR_Lutendo GF_AU_CHR_Mahlubandile GF_AU_CHR_Makalo GF_AU_CHR_Mareka
 			}
 			regnal_first_names_female = {
-				卡格索 克内乌维 克库特索 兰格里巴勒 恩特瑟博 恩特斯瓦基 帕图胡 雷尼尔维 卢德扎尼 沙恩杜
+				GF_AU_CHR_Kagiso GF_AU_CHR_Keneuwe GF_AU_CHR_Koketso GF_AU_CHR_Langalibalele GF_AU_CHR_Ntsebo GF_AU_CHR_Ntswaki GF_AU_CHR_Phathu GF_AU_CHR_Reneilwe GF_AU_CHR_Rudzani GF_AU_CHR_Shandu
 			}
 			regnal_second_names = {
-				阿齐克韦 阿沃洛沃 巴莱瓦 阿金托拉 恩泽奥古 翁瓦突兀
+				GF_AU_CHR_Azikiwe GF_AU_CHR_Awolowo GF_AU_CHR_Balewa GF_AU_CHR_Akintola GF_AU_CHR_Nzeogwu GF_AU_CHR_Onwuatuegwu
 			}
 		}
-		
+
 		names11 = {
 			weight = 15
 			first_names_male = {
-				马里奥 路易吉 乔凡尼 曾 安东尼奥 罗伯托 安德莉亚 斯蒂法诺 马可 弗兰西斯科 安吉洛 文森佐 彼得罗 塞尔瓦托 卡洛 佛朗哥 
-				杜兰波 维斯维克 破哈加 菲达易马 费翁错 詹达伊拉 金钟站 皮佐措 特拉诺 席多碧 艾提德安
-				尼古拉 马特欧 伊格纳兹 卡米略 达妮埃莱 克里斯蒂安 阿尔贝托 吉伊多 洛伦佐 托马索 法维奥 
+				GF_AU_CHR_Mario GF_AU_CHR_Luigi GF_AU_CHR_Giovanni GF_AU_CHR_Giuseppe GF_AU_CHR_Antonio GF_AU_CHR_Roberto GF_AU_CHR_Andrea GF_AU_CHR_Stefano GF_AU_CHR_Marco GF_AU_CHR_Franscesco GF_AU_CHR_Angelo GF_AU_CHR_Vincenzo GF_AU_CHR_Pietro GF_AU_CHR_Salvatore GF_AU_CHR_Carlo GF_AU_CHR_Franco
+				GF_AU_CHR_Domenico GF_AU_CHR_Bruno GF_AU_CHR_Paulo GF_AU_CHR_Michele GF_AU_CHR_Giorgio GF_AU_CHR_Sergio GF_AU_CHR_Luciano GF_AU_CHR_Alessandro GF_AU_CHR_Alfonso GF_AU_CHR_Benito GF_AU_CHR_Fabrizio GF_AU_CHR_Cesare GF_AU_CHR_Enrico GF_AU_CHR_Gustavo GF_AU_CHR_Silvio GF_AU_CHR_Umberto
+				GF_AU_CHR_Nicola GF_AU_CHR_Matteo GF_AU_CHR_Ignazio GF_AU_CHR_Camillo GF_AU_CHR_Daniele GF_AU_CHR_Cristian GF_AU_CHR_Alberto GF_AU_CHR_Guido GF_AU_CHR_Lorenzo GF_AU_CHR_Tommaso GF_AU_CHR_Fabio
 			}
 			first_names_female = {
-				玛丽亚 安娜 古瑟皮娜 罗萨 安吉拉 吉奥瓦娜 特蕾莎 露西亚 卡蜜拉 卡泰丽娜 弗朗西丝卡 安东尼塔 卡拉 埃琳娜 孔切塔 丽塔
-				玛格丽塔 弗兰卡 保罗 维多利亚 阿里安娜 奥莉艾塔 尼科雷塔 克拉拉 斯迪法尼亚 吉塞拉 克劳蒂亚 洛伦扎 加布里埃 伊莎贝拉 瓦雷瑞亚 
-				鲁库瑞泽雅 蒂娜 贝纳德塔 皮耶特拉
+				GF_AU_CHR_Maria GF_AU_CHR_Anna GF_AU_CHR_Giuseppina GF_AU_CHR_Rosa GF_AU_CHR_Angela GF_AU_CHR_Giovanna GF_AU_CHR_Teresa GF_AU_CHR_Lucia GF_AU_CHR_Carmela GF_AU_CHR_Caterina GF_AU_CHR_Francesca GF_AU_CHR_Antonietta GF_AU_CHR_Carla GF_AU_CHR_Elena GF_AU_CHR_Concetta GF_AU_CHR_Rita
+				GF_AU_CHR_Margherita GF_AU_CHR_Franca GF_AU_CHR_Paola GF_AU_CHR_Vittoria GF_AU_CHR_Arianna GF_AU_CHR_Orietta GF_AU_CHR_Nicoletta GF_AU_CHR_Clara GF_AU_CHR_Stefania GF_AU_CHR_Gisella GF_AU_CHR_Claudia GF_AU_CHR_Lorenza GF_AU_CHR_Gabriella GF_AU_CHR_Isabella GF_AU_CHR_Valeria
+				GF_AU_CHR_Lucrezia GF_AU_CHR_Dina GF_AU_CHR_Benedetta GF_AU_CHR_Pietra
 			}
 			second_names = {
-				罗斯 拉索 法拉利 比安奇 马里诺 "德鲁卡" 科斯塔 焦尔达诺 曼奇尼 里佐 隆巴蒂 莫雷蒂 拉伟利 康迪 加洛 贝罗 
-				阿尔比恩 阿莫尔 黎明 地平线 阿斯加德 "特拉诺瓦" 孔子 琐罗亚斯德 "天意" 
-				巴克尔 胡塞翁 阿尔哈兹米 阿尔比西 阿尔巴兹 易卜拉欣 伊沙克 伊斯梅尔 阿法鲁克 哈山 阿加扎利 比拉尔 那迪尔 尤哈尼 爪哇希尔 哈米迪
-				"德尔格罗索" 德安东尼·法齐奥 "迪·贝拉" "迪·格纳罗" 法布里尼 冈巴多里 加瓦尼 马切蒂 马奇特利 奥利弗里 帕奇尼 夸德里尼
+				GF_AU_CHR_Rossi GF_AU_CHR_Russo GF_AU_CHR_Ferrari GF_AU_CHR_Bianchi GF_AU_CHR_Ricci GF_AU_CHR_Marino GF_AU_CHR_DeLuca GF_AU_CHR_Costa GF_AU_CHR_Giordano GF_AU_CHR_Mancini GF_AU_CHR_Rizzo GF_AU_CHR_Lombardi GF_AU_CHR_Moretti GF_AU_CHR_Ravelli GF_AU_CHR_Conti GF_AU_CHR_Gallo GF_AU_CHR_Bello
+				GF_AU_CHR_Albricci GF_AU_CHR_Badoglio GF_AU_CHR_Cappello GF_AU_CHR_DiRobilant GF_AU_CHR_DiSavoia GF_AU_CHR_Garibaldi GF_AU_CHR_Saletta GF_AU_CHR_Pallavicino GF_AU_CHR_Pianelli GF_AU_CHR_Mambretti GF_AU_CHR_Marcuzzi GF_AU_CHR_Valeri GF_AU_CHR_Pezzaglia
+				GF_AU_CHR_Balletti GF_AU_CHR_Bianconelli GF_AU_CHR_Antonelli GF_AU_CHR_Corsini GF_AU_CHR_DAlessandro GF_AU_CHR_DAgostino GF_AU_CHR_DeRosa GF_AU_CHR_DeSciglio GF_AU_CHR_DiChiara GF_AU_CHR_DiBartolomei GF_AU_CHR_Delvecchio
+				GF_AU_CHR_DelGrosso GF_AU_CHR_DAntoni GF_AU_CHR_Fazio GF_AU_CHR_DiBella GF_AU_CHR_DiGennaro GF_AU_CHR_Fabbrini GF_AU_CHR_Gambadori GF_AU_CHR_Galvani GF_AU_CHR_Marchetti GF_AU_CHR_Mazzitelli GF_AU_CHR_Olivieri GF_AU_CHR_Pacini GF_AU_CHR_Quadrini
 			}
 			regnal_first_names_male = {
-				马里奥 路易吉 乔凡尼 恩里科 古斯塔沃 西尔维奥 翁贝托
+				GF_AU_CHR_Mario GF_AU_CHR_Luigi GF_AU_CHR_Giovanni GF_AU_CHR_Enrico GF_AU_CHR_Gustavo GF_AU_CHR_Silvio GF_AU_CHR_Umberto
 			}
 			regnal_first_names_female = {
-				西奥多拉 法提玛 米兰达 科迪莉亚 斯维特拉娜 阿纳斯塔西亚 瓦伦蒂娜 汉丽埃塔
+				GF_AU_CHR_Theodora GF_AU_CHR_Fatima GF_AU_CHR_Miranda GF_AU_CHR_Cordelia GF_AU_CHR_Svetlana GF_AU_CHR_Anastasia GF_AU_CHR_Valentina GF_AU_CHR_Henrietta
 			}
 			regnal_second_names = {
-				弗南德兹 萨恩彻兹 罗泊兹 马汀 普罗兹 格恩扎勒兹 阿尔瓦瑞兹 格美兹 迪阿兹
+				GF_AU_CHR_Ferrari GF_AU_CHR_Bianchi GF_AU_CHR_Ricci GF_AU_CHR_Marino GF_AU_CHR_DeLuca GF_AU_CHR_Costa GF_AU_CHR_Giordano
 			}
 		}
 	}

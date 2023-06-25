@@ -1,267 +1,632 @@
-﻿### Humanoid 1
+﻿### United Nations of Earth
 ### Created by Henrik Thyrwall
 
 GF_GK = {
+	category = "GF_new_type"
 	randomized = no
+#	alias = "Human"
+
 	ship_names = {
-
-		generic = {
-			步枪 科洛斯特曼 密特雷克斯 岩本 墨德斯 斯卡拉思科 马克兰珂岚 寇德维尔 里特雅克 约格尔 马克卡贝尔 奥哈利 海狮 巴拉奥 加托 杜里特尔
-		}
-
+#护卫舰
 		corvette = {
-			"冯格布泽" "冯弗里奇" "冯弗兰格尔" "冯哈尔克特" "冯博因" "冯法尔肯施泰因" 德雷尔 沃夫 克莱因 里克特 沙福尔
-			克利奥帕特拉 康斯坦丁 科黛拉 赛勒斯 达摩克利斯 代达罗斯 达留斯 代奥米德 森林女神 伊莱克特拉 恩底弥翁 埃里伯斯 芬瑞斯 芙蕾雅 吉尔伽美什 戈尔贡 翠鸟 赫卡特
-			豺狼 寒鸦 美洲虎 袋鼠 红隼 "眼镜王蛇" "王鱼" 瓢虫 豹 狮子 蜥蜴 天猫 疯丫头 猫鼬 蚊子 独角鲸 夜鹰 豹猫 逆戟鲸 
-			奥斯普里 潘瑟 皮科克 佩利肯 企鹅镇 彼得雷尔 鸭嘴兽 臭鼬 波丘派恩 普马 巨蟒 响尾蛇 雷文 火蜥蜴 沙丁鱼 天蝎 鲨鱼 伯劳
-			云雀 麻雀 蜘蛛 海星 魔鬼鱼 鹳 鲟鱼 剑鱼 貘 老虎 "虎鲨"秃鹰 海象 金刚狼 阿帕奇 阿兹特克 哥萨克 德尔维希
-			道格拉斯 基思 霍华德 罗素 克莱顿 李 史蒂夫 汤姆 科雷 奥利弗 肯尼思 拉夫 安迪 东尼 泰隆 劳伦斯 帕特里克 哈里 艾伦
-			加西亚 马缇内兹 罗德瑞格兹 弗南德兹 萨恩彻兹 罗普兹 马汀 皮雷兹 格恩扎雷兹 阿尔瓦雷兹 格梅兹 迪亚兹 多米恩格兹 何南德兹
-			火枪手 法老 蒙古 里肯巴克 "约翰保罗琼斯" 德布斯特伊 斯特古什弃尼 苏布拉兹特尔尼 "小罗杰" "疯马" 李希霍芬 博伊恩格顿 
-			弗欧迪果 弗欧加瓦斯 弗欧胡尼斯 弗欧奥利姆巴 弗欧伊瑞萨 弗欧布荷 弗欧瑟瓦 弗欧欧布恩 弗欧弗吉 弗欧阿纳斯 弗欧尤巴 弗欧阿维姆 弗欧欧布拉 弗欧伊娃姆 弗欧伊瑟 弗欧甘恩 弗欧弗雷维斯 弗欧加林 弗欧厄恩 弗欧阿拉布
+			GF_GK_SHIP_Aardvark GF_GK_SHIP_Accentor GF_GK_SHIP_Adder GF_GK_SHIP_Albatross GF_GK_SHIP_Alligator GF_GK_SHIP_Anaconda GF_GK_SHIP_Antelope GF_GK_SHIP_Armadillo GF_GK_SHIP_Asp GF_GK_SHIP_Badger GF_GK_SHIP_Bass GF_GK_SHIP_Beagle GF_GK_SHIP_Bloodhound GF_GK_SHIP_Buffalo GF_GK_SHIP_Bulldog GF_GK_SHIP_Buzzard GF_GK_SHIP_Camel GF_GK_SHIP_Cheetah GF_GK_SHIP_Cobra GF_GK_SHIP_Coyote GF_GK_SHIP_Dingo GF_GK_SHIP_Dolphin GF_GK_SHIP_Dragonfly GF_GK_SHIP_Dromedary GF_GK_SHIP_Eagle GF_GK_SHIP_Elephant GF_GK_SHIP_Falcon GF_GK_SHIP_Ferret GF_GK_SHIP_Firefly GF_GK_SHIP_Fox GF_GK_SHIP_Gazelle GF_GK_SHIP_Glowworm GF_GK_SHIP_GreyWolf GF_GK_SHIP_Greyhound GF_GK_SHIP_Haddock GF_GK_SHIP_Hawk GF_GK_SHIP_Jackal GF_GK_SHIP_Jackdaw GF_GK_SHIP_Jaguar GF_GK_SHIP_Kangaroo GF_GK_SHIP_Kestrel GF_GK_SHIP_KingCobra GF_GK_SHIP_KingFish GF_GK_SHIP_Ladybird GF_GK_SHIP_Leopard GF_GK_SHIP_Lion GF_GK_SHIP_Lizard GF_GK_SHIP_Lynx GF_GK_SHIP_Mongoose GF_GK_SHIP_Mosquito GF_GK_SHIP_Narwhal GF_GK_SHIP_Nighthawk GF_GK_SHIP_Ocelot GF_GK_SHIP_Orca GF_GK_SHIP_Osprey GF_GK_SHIP_Panther GF_GK_SHIP_Peacock GF_GK_SHIP_Pelican GF_GK_SHIP_Penguin GF_GK_SHIP_Petrel GF_GK_SHIP_Platypus GF_GK_SHIP_Polecat GF_GK_SHIP_Porcupine GF_GK_SHIP_Puma GF_GK_SHIP_Python GF_GK_SHIP_Rattlesnake GF_GK_SHIP_Raven GF_GK_SHIP_Salamander GF_GK_SHIP_Sardine GF_GK_SHIP_Scorpion GF_GK_SHIP_Shark GF_GK_SHIP_Shrike GF_GK_SHIP_Skylark GF_GK_SHIP_Sparrow GF_GK_SHIP_Spider GF_GK_SHIP_Starfish GF_GK_SHIP_Stingray GF_GK_SHIP_Barracuda GF_GK_SHIP_Stork GF_GK_SHIP_Sturgeon GF_GK_SHIP_Swordfish GF_GK_SHIP_Tapir GF_GK_SHIP_Tiger GF_GK_SHIP_TigerShark GF_GK_SHIP_Vulture GF_GK_SHIP_Walrus GF_GK_SHIP_Wolverine GF_GK_SHIP_Apache GF_GK_SHIP_Aztec GF_GK_SHIP_Cossack GF_GK_SHIP_Dervish GF_GK_SHIP_Druid GF_GK_SHIP_Highlander GF_GK_SHIP_Janissary GF_GK_SHIP_Matador GF_GK_SHIP_Papillon GF_GK_SHIP_Parthian GF_GK_SHIP_Patrician GF_GK_SHIP_Saracen GF_GK_SHIP_Sphinx GF_GK_SHIP_Sultan GF_GK_SHIP_Tomahawk GF_GK_SHIP_Viking GF_GK_SHIP_Zulu GF_GK_SHIP_Abhay GF_GK_SHIP_Akshay GF_GK_SHIP_Akula GF_GK_SHIP_Soyuz GF_GK_SHIP_Harrier GF_GK_SHIP_TomoeGozen GF_GK_SHIP_Garuda GF_GK_SHIP_Yangwei GF_GK_SHIP_Datong GF_GK_SHIP_Haifeng GF_GK_SHIP_Hailong GF_GK_SHIP_Yongcheng GF_GK_SHIP_Yinghao GF_GK_SHIP_Taiyang GF_GK_SHIP_Chaoyang GF_GK_SHIP_Qiuxing GF_GK_SHIP_Guangxing GF_GK_SHIP_Zhengsheng GF_GK_SHIP_Taizhao GF_GK_SHIP_Meihong GF_GK_SHIP_Wulong GF_GK_SHIP_Jiangkun GF_GK_SHIP_Acorn GF_GK_SHIP_Musketeer GF_GK_SHIP_Pharaoh GF_GK_SHIP_Mongol GF_GK_SHIP_Rickenbacker GF_GK_SHIP_JohnPaulJones GF_GK_SHIP_Doblestnyi GF_GK_SHIP_Steregushchiy GF_GK_SHIP_Soobrazitelny GF_GK_SHIP_RodgerYoung GF_GK_SHIP_CrazyHorse GF_GK_SHIP_Richthofen GF_GK_SHIP_Boyington GF_GK_SHIP_Fonck GF_GK_SHIP_Mannock GF_GK_SHIP_Bishop GF_GK_SHIP_Kazakov GF_GK_SHIP_Coppens GF_GK_SHIP_Brumowski GF_GK_SHIP_Baracca GF_GK_SHIP_Hartmann GF_GK_SHIP_Juutilainen GF_GK_SHIP_Nishizawa GF_GK_SHIP_Sakai GF_GK_SHIP_Shestakov GF_GK_SHIP_Kozhedub GF_GK_SHIP_Cantacuzino GF_GK_SHIP_VanLierde GF_GK_SHIP_Bong GF_GK_SHIP_Thach GF_GK_SHIP_Clostermann GF_GK_SHIP_Mitralexis GF_GK_SHIP_Shinohara GF_GK_SHIP_Iwamoto GF_GK_SHIP_Molders GF_GK_SHIP_Skalski GF_GK_SHIP_MacLachlan GF_GK_SHIP_Caldwell GF_GK_SHIP_Litvyak GF_GK_SHIP_Yeager GF_GK_SHIP_McCampbell GF_GK_SHIP_OHare GF_GK_SHIP_Sealion GF_GK_SHIP_Balao GF_GK_SHIP_Gato GF_GK_SHIP_Doolittle GF_GK_SHIP_Novikov GF_GK_SHIP_Uhlan GF_GK_SHIP_Cataphract GF_GK_SHIP_Soyokaze GF_GK_SHIP_Orff GF_GK_SHIP_Vandal GF_GK_SHIP_Chameleon GF_GK_SHIP_Grizzly GF_GK_SHIP_Gurkha GF_GK_SHIP_Hoplite GF_GK_SHIP_Kodiak GF_GK_SHIP_Piranha GF_GK_SHIP_Wildcat GF_GK_SHIP_Hellcat GF_GK_SHIP_Bearcat GF_GK_SHIP_Tomcat GF_GK_SHIP_Kingfisher GF_GK_SHIP_Cougar GF_GK_SHIP_Mohawk GF_GK_SHIP_Blackhawk GF_GK_SHIP_ShootingStar GF_GK_SHIP_Avocet GF_GK_SHIP_Sparrowhawk GF_GK_SHIP_Skua GF_GK_SHIP_Firecrest GF_GK_SHIP_Fulmar GF_GK_SHIP_Arrowhead GF_GK_SHIP_Condor GF_GK_SHIP_Goshawk GF_GK_SHIP_Nicator GF_GK_SHIP_Samurai GF_GK_SHIP_Smilodon GF_GK_SHIP_Whippet GF_GK_SHIP_Cormorant GF_GK_SHIP_Ranvir GF_GK_SHIP_Rajput GF_GK_SHIP_Rana GF_GK_SHIP_Toreador GF_GK_SHIP_McAuliffe GF_GK_SHIP_Cardinal GF_GK_SHIP_Nightingale GF_GK_SHIP_Adler GF_GK_SHIP_Seahorse GF_GK_SHIP_Ronin GF_GK_SHIP_Iguana GF_GK_SHIP_Redeemer GF_GK_SHIP_WilliamTell GF_GK_SHIP_SittingBull GF_GK_SHIP_Hiawatha GF_GK_SHIP_JohnHenry GF_GK_SHIP_PaulBunyan GF_GK_SHIP_Cangjie GF_GK_SHIP_DakshinRai GF_GK_SHIP_GuruBaaje GF_GK_SHIP_Madoc GF_GK_SHIP_Rostam GF_GK_SHIP_Esfandiar GF_GK_SHIP_JuanValdivia GF_GK_SHIP_Yinxi GF_GK_SHIP_Yennenga GF_GK_SHIP_RunningEagle GF_GK_SHIP_HuaMulan GF_GK_SHIP_Yuenu GF_GK_SHIP_Boudica GF_GK_SHIP_Ethelfleda GF_GK_SHIP_Gwenllian GF_GK_SHIP_Gwendolen GF_GK_SHIP_Cordelia GF_GK_SHIP_Andraste GF_GK_SHIP_Scathach GF_GK_SHIP_Muirisc GF_GK_SHIP_Morrigan GF_GK_SHIP_Badb GF_GK_SHIP_Macha GF_GK_SHIP_Teuta GF_GK_SHIP_JeanneHachette GF_GK_SHIP_Atalanta GF_GK_SHIP_Hippolyta GF_GK_SHIP_Penthesilea GF_GK_SHIP_Clorinda GF_GK_SHIP_Tancred GF_GK_SHIP_Brunhild GF_GK_SHIP_Agustina GF_GK_SHIP_Gordafarid GF_GK_SHIP_Semiramis GF_GK_SHIP_Malalai GF_GK_SHIP_ShakaZulu GF_GK_SHIP_Lafayette GF_GK_SHIP_ReubenJames GF_GK_SHIP_Nostromo GF_GK_SHIP_Sulaco GF_GK_SHIP_Costaguana GF_GK_SHIP_Ribiera GF_GK_SHIP_Shashka GF_GK_SHIP_Sica GF_GK_SHIP_Jian GF_GK_SHIP_Dao GF_GK_SHIP_Zhanmadao GF_GK_SHIP_Makhaira GF_GK_SHIP_Falcata GF_GK_SHIP_Kopis GF_GK_SHIP_Rhomphaia GF_GK_SHIP_Kilij GF_GK_SHIP_Shamshir GF_GK_SHIP_Kaskara GF_GK_SHIP_Flyssa GF_GK_SHIP_Takoba GF_GK_SHIP_Yatagan GF_GK_SHIP_Urumi GF_GK_SHIP_Liuyedao GF_GK_SHIP_Tachi GF_GK_SHIP_Khanda GF_GK_SHIP_Wodao GF_GK_SHIP_Changdao GF_GK_SHIP_Yanmaodao GF_GK_SHIP_Miaodao GF_GK_SHIP_Chokuto GF_GK_SHIP_Tsurugi GF_GK_SHIP_Odachi GF_GK_SHIP_Wakizashi GF_GK_SHIP_Uchigatana GF_GK_SHIP_Shikomizue GF_GK_SHIP_Firangi GF_GK_SHIP_Talwar GF_GK_SHIP_Pata GF_GK_SHIP_Kastane GF_GK_SHIP_Macana GF_GK_SHIP_Khopesh GF_GK_SHIP_Acinaces GF_GK_SHIP_Macuahuitl GF_GK_SHIP_Belawa GF_GK_SHIP_Nimcha GF_GK_SHIP_Shotel GF_GK_SHIP_Krabi GF_GK_SHIP_Parang GF_GK_SHIP_Klewang GF_GK_SHIP_Surik GF_GK_SHIP_Niabor GF_GK_SHIP_Mandau GF_GK_SHIP_Kampilan GF_GK_SHIP_Gari GF_GK_SHIP_Panabas GF_GK_SHIP_Olds GF_GK_SHIP_Kearsarge GF_GK_SHIP_Dristigheten
 		}
-		
+#驱逐舰
 		destroyer = {
-			亚马孙古陆 刚果 厄瓜多尔 雪雨 暴风雨 雨季 孟加拉 "新非洲" 猴王国 桑给巴尔 吉卜林
-			"开普敦" 芝加哥 哥本哈根 大马士革 "达累斯萨拉姆" 底特律 迪拜 都柏林 爱丁堡 直布罗陀 格拉斯哥 广州 河内 哈瓦那 赫尔辛基 "香港"
-			霍瑟瑞姆-塔 席尼斯克瑞姆-塔 哈格瑞尼姆-塔 席拉米恩-塔 霍巴吉姆-塔 萨拉斯卡门-塔 席恩多尼姆-塔 苏卡利姆-塔 索巴利姆-塔
-			巴黎 布拉格 "里约热内卢" 罗马 鹿特丹港 " 旧金山" "圣保罗"萨拉热窝 西雅图 首尔 萨瓦斯托波尔 上海 新加坡 "圣路易斯" 斯德哥尔摩 东京
-			多伦多 温哥华 维也纳 海参崴 华沙 悉尼 布里斯班 "墨西哥城" 慕尼黑 内罗毕 斯摩棱斯克 卡萨布兰卡 威尼斯 摩加迪休 蒙特利尔 伯明翰
-			利物浦 曼彻斯特 喀布尔 京都 伏尔加格勒 "圣彼得堡" 法兰克福 贝尔格莱德 马赛 布鲁塞尔 的黎波里 德黑兰 魁北克 佛罗伦萨 埃克塞特 达拉斯 丹佛
-			拉各斯 墨尔本 卡尔加里 渥太华 阿尔及尔 布拉柴维尔 圣地亚哥 蒙得维的亚 波哥大 成都 杭州 绍兴 横滨 匹兹堡 费城 迈阿密 里斯本
-			哈吉-阿斯-乌姆 伊塔-伊塔-达姆 萨姆-科恩-达姆 特拉-莱斯-伊特 伊拉-阿姆-伊瓦 威尔-提克-佐尔 库尔-扎德-丁 莫特-利姆-诺格 特尔-凡恩-提克 哈德-哈姆-海尔 伊尼-伊尼-沃尔
-			巴莱蒂 毕安可内利 安东内利 科尔西尼 德亚历山德罗 德阿戈斯蒂诺 "德罗萨" "德希利奥" "迪·奇亚拉" "迪·巴托洛梅" 德尔维奇奥
-			提华纳 特隆赫姆 阿兰特斯 立春 惊蛰 清明 立夏 芒种 小暑 立秋 白露 寒露 立冬 大雪
+			GF_GK_SHIP_Amsterdam GF_GK_SHIP_Austin GF_GK_SHIP_Athens GF_GK_SHIP_Atlanta GF_GK_SHIP_Baghdad GF_GK_SHIP_Baltimore GF_GK_SHIP_Bangkok GF_GK_SHIP_Barcelona GF_GK_SHIP_Beijing GF_GK_SHIP_Belfast GF_GK_SHIP_Berlin GF_GK_SHIP_Bombay GF_GK_SHIP_Boston GF_GK_SHIP_Hyderabad GF_GK_SHIP_Budapest GF_GK_SHIP_BuenosAires GF_GK_SHIP_Cairo GF_GK_SHIP_Calcutta GF_GK_SHIP_CapeTown GF_GK_SHIP_Chicago GF_GK_SHIP_Copenhagen GF_GK_SHIP_Damascus GF_GK_SHIP_DaresSalaam GF_GK_SHIP_Detroit GF_GK_SHIP_Dubai GF_GK_SHIP_Dublin GF_GK_SHIP_Edinburgh GF_GK_SHIP_Gibraltar GF_GK_SHIP_Glasgow GF_GK_SHIP_Guangzhou GF_GK_SHIP_Hanoi GF_GK_SHIP_Havana GF_GK_SHIP_Helsinki GF_GK_SHIP_HongKong GF_GK_SHIP_Houston GF_GK_SHIP_Istanbul GF_GK_SHIP_Jakarta GF_GK_SHIP_Jerusalem GF_GK_SHIP_Johannesburg GF_GK_SHIP_Kiev GF_GK_SHIP_London GF_GK_SHIP_LosAngeles GF_GK_SHIP_Madrid GF_GK_SHIP_Manila GF_GK_SHIP_Minsk GF_GK_SHIP_Moscow GF_GK_SHIP_Mumbai GF_GK_SHIP_NewYork GF_GK_SHIP_NewOrleans GF_GK_SHIP_Novgorod GF_GK_SHIP_Osaka GF_GK_SHIP_Oslo GF_GK_SHIP_Paris GF_GK_SHIP_Prague GF_GK_SHIP_RiodeJaneiro GF_GK_SHIP_Rome GF_GK_SHIP_Rotterdam GF_GK_SHIP_SanFrancisco GF_GK_SHIP_SaoPaulo GF_GK_SHIP_Sarajevo GF_GK_SHIP_Seattle GF_GK_SHIP_Seoul GF_GK_SHIP_Sevastopol GF_GK_SHIP_Shanghai GF_GK_SHIP_Singapore GF_GK_SHIP_StLouis GF_GK_SHIP_Stockholm GF_GK_SHIP_Tokyo GF_GK_SHIP_Toronto GF_GK_SHIP_Vancouver GF_GK_SHIP_Vienna GF_GK_SHIP_Vladivostok GF_GK_SHIP_Warsaw GF_GK_SHIP_Sydney GF_GK_SHIP_Brisbane GF_GK_SHIP_MexicoCity GF_GK_SHIP_Munchen GF_GK_SHIP_Nairobi GF_GK_SHIP_Smolensk GF_GK_SHIP_Casablanca GF_GK_SHIP_Venice GF_GK_SHIP_Mogadishu GF_GK_SHIP_Montreal GF_GK_SHIP_Birmingham GF_GK_SHIP_Liverpool GF_GK_SHIP_Manchester GF_GK_SHIP_Kabul GF_GK_SHIP_Kyoto GF_GK_SHIP_Volgograd GF_GK_SHIP_StPetersburg GF_GK_SHIP_Frankfurt GF_GK_SHIP_Belgrade GF_GK_SHIP_Marseille GF_GK_SHIP_Brussels GF_GK_SHIP_Tripoli GF_GK_SHIP_Tehran GF_GK_SHIP_Quebec GF_GK_SHIP_Florence GF_GK_SHIP_Exeter GF_GK_SHIP_Dallas GF_GK_SHIP_Denver GF_GK_SHIP_Lagos GF_GK_SHIP_Melbourne GF_GK_SHIP_Calgary GF_GK_SHIP_Ottawa GF_GK_SHIP_Algiers GF_GK_SHIP_Brazzaville GF_GK_SHIP_Santiago GF_GK_SHIP_Montevideo GF_GK_SHIP_Bogota GF_GK_SHIP_Chengdu GF_GK_SHIP_Hangzhou GF_GK_SHIP_Shaoxing GF_GK_SHIP_Yokohama GF_GK_SHIP_Pittsburgh GF_GK_SHIP_Philadelphia GF_GK_SHIP_Miami GF_GK_SHIP_Lisbon GF_GK_SHIP_Hamburg GF_GK_SHIP_Bremen GF_GK_SHIP_Phoenix GF_GK_SHIP_Indianapolis GF_GK_SHIP_Minneapolis GF_GK_SHIP_Milan GF_GK_SHIP_Surabaya GF_GK_SHIP_KualaLumpur GF_GK_SHIP_AbuDhabi GF_GK_SHIP_Ankara GF_GK_SHIP_Beirut GF_GK_SHIP_Kathmandu GF_GK_SHIP_Tapei GF_GK_SHIP_Islamabad GF_GK_SHIP_Karachi GF_GK_SHIP_Zurich GF_GK_SHIP_Delhi GF_GK_SHIP_Bangalore GF_GK_SHIP_Dusseldorf GF_GK_SHIP_TelAviv GF_GK_SHIP_Lima GF_GK_SHIP_Luxembourg GF_GK_SHIP_Bucharest GF_GK_SHIP_Geneva GF_GK_SHIP_Gothenburg GF_GK_SHIP_Lyon GF_GK_SHIP_Bratislava GF_GK_SHIP_Tunis GF_GK_SHIP_Riyadh GF_GK_SHIP_Riga GF_GK_SHIP_Valencia GF_GK_SHIP_Krakow GF_GK_SHIP_Vilnius GF_GK_SHIP_Tallinn GF_GK_SHIP_Edmonton GF_GK_SHIP_Tijuana GF_GK_SHIP_Trondheim GF_GK_SHIP_Dhaka GF_GK_SHIP_Shenzhen GF_GK_SHIP_Suzhou GF_GK_SHIP_Kinshasa GF_GK_SHIP_Lahore GF_GK_SHIP_Dongguan GF_GK_SHIP_Chongqing GF_GK_SHIP_Chennai GF_GK_SHIP_Changsha GF_GK_SHIP_Wuhan GF_GK_SHIP_Tianjin GF_GK_SHIP_Faisalabad GF_GK_SHIP_Foshan GF_GK_SHIP_Zunyi GF_GK_SHIP_Ahmedabad GF_GK_SHIP_Shantou GF_GK_SHIP_Rangoon GF_GK_SHIP_Abidjan GF_GK_SHIP_Alexandria GF_GK_SHIP_Xian GF_GK_SHIP_Surat GF_GK_SHIP_Harbin GF_GK_SHIP_Giza GF_GK_SHIP_Izmir GF_GK_SHIP_Zhengzhou GF_GK_SHIP_Xiamen GF_GK_SHIP_Quanzhou GF_GK_SHIP_Busan GF_GK_SHIP_Rawalpindi GF_GK_SHIP_Guayaquil GF_GK_SHIP_Jeddah GF_GK_SHIP_Durban GF_GK_SHIP_Hefei GF_GK_SHIP_Pyongyang GF_GK_SHIP_Peshawar GF_GK_SHIP_Ekurhuleni GF_GK_SHIP_Zhongshan GF_GK_SHIP_Multan GF_GK_SHIP_Pune GF_GK_SHIP_AddisAbaba GF_GK_SHIP_Jaipur GF_GK_SHIP_Lucknow GF_GK_SHIP_Wenzhou GF_GK_SHIP_QuezonCity GF_GK_SHIP_Salvador GF_GK_SHIP_Luanda GF_GK_SHIP_Kaohsiung GF_GK_SHIP_Taichung GF_GK_SHIP_Gujranwala GF_GK_SHIP_Quito GF_GK_SHIP_Chittagong GF_GK_SHIP_Bandung GF_GK_SHIP_Brasilia GF_GK_SHIP_Daegu GF_GK_SHIP_Nagpur GF_GK_SHIP_Nagoya GF_GK_SHIP_PhnomPenh GF_GK_SHIP_Kochi GF_GK_SHIP_Medan GF_GK_SHIP_Perth GF_GK_SHIP_Sapporo GF_GK_SHIP_DavaoCity GF_GK_SHIP_Caloocan GF_GK_SHIP_Kobe GF_GK_SHIP_Guadalajara GF_GK_SHIP_Auckland GF_GK_SHIP_Fukuoka GF_GK_SHIP_Kawasaki GF_GK_SHIP_Adelaide GF_GK_SHIP_Ulsan GF_GK_SHIP_Tbilisi GF_GK_SHIP_Fez GF_GK_SHIP_Yerevan GF_GK_SHIP_Koln GF_GK_SHIP_SanAntonio GF_GK_SHIP_SanDiego GF_GK_SHIP_SanJose GF_GK_SHIP_Jacksonville GF_GK_SHIP_FortWorth GF_GK_SHIP_Charlotte GF_GK_SHIP_ElPaso GF_GK_SHIP_Nashville GF_GK_SHIP_Portland GF_GK_SHIP_OklahomaCity GF_GK_SHIP_LasVegas GF_GK_SHIP_Louisville GF_GK_SHIP_Milwaukee GF_GK_SHIP_Albuquerque GF_GK_SHIP_Tucson GF_GK_SHIP_Fresno GF_GK_SHIP_Sacramento GF_GK_SHIP_KansasCity GF_GK_SHIP_Omaha GF_GK_SHIP_Oakland GF_GK_SHIP_Tulsa GF_GK_SHIP_Wichita GF_GK_SHIP_Arlington GF_GK_SHIP_Cleveland GF_GK_SHIP_Tampa GF_GK_SHIP_Bakersfield GF_GK_SHIP_Honolulu GF_GK_SHIP_Anchorage GF_GK_SHIP_Cincinnati GF_GK_SHIP_Orlando GF_GK_SHIP_Irvine GF_GK_SHIP_Reno GF_GK_SHIP_Richmond GF_GK_SHIP_Spokane GF_GK_SHIP_SaltLakeCity GF_GK_SHIP_Tallahassee GF_GK_SHIP_Huntsville GF_GK_SHIP_Knoxville GF_GK_SHIP_Springfield GF_GK_SHIP_Savannah GF_GK_SHIP_Hartford GF_GK_SHIP_Fargo GF_GK_SHIP_Winnipeg GF_GK_SHIP_Hamilton GF_GK_SHIP_Mississauga GF_GK_SHIP_Halifax GF_GK_SHIP_Bristol GF_GK_SHIP_Sheffield GF_GK_SHIP_Leeds GF_GK_SHIP_Leicester GF_GK_SHIP_Bradford GF_GK_SHIP_Cardiff GF_GK_SHIP_Coventry GF_GK_SHIP_Nottingham GF_GK_SHIP_Newcastle GF_GK_SHIP_Wolverhampton GF_GK_SHIP_Southampton GF_GK_SHIP_Portsmouth GF_GK_SHIP_Brighton GF_GK_SHIP_Aberdeen GF_GK_SHIP_Bolton GF_GK_SHIP_Norwich GF_GK_SHIP_Swansea GF_GK_SHIP_Oxford GF_GK_SHIP_York GF_GK_SHIP_Blackpool GF_GK_SHIP_Cambridge GF_GK_SHIP_Ipswich GF_GK_SHIP_Stuttgart GF_GK_SHIP_Dortmund GF_GK_SHIP_Essen GF_GK_SHIP_Dresden GF_GK_SHIP_Hannover GF_GK_SHIP_Nurnberg GF_GK_SHIP_Duisburg GF_GK_SHIP_Bonn GF_GK_SHIP_Munster GF_GK_SHIP_Karlsruhe GF_GK_SHIP_Mannheim GF_GK_SHIP_Augsburg GF_GK_SHIP_Freiburg GF_GK_SHIP_Aachen GF_GK_SHIP_Lubeck GF_GK_SHIP_Mainz GF_GK_SHIP_Rostock GF_GK_SHIP_Potsdam GF_GK_SHIP_Toulouse GF_GK_SHIP_Nice GF_GK_SHIP_Nantes GF_GK_SHIP_Strasbourg GF_GK_SHIP_Montpellier GF_GK_SHIP_Bordeaux GF_GK_SHIP_Lille GF_GK_SHIP_Rennes GF_GK_SHIP_Reims GF_GK_SHIP_LeHavre GF_GK_SHIP_Toulon GF_GK_SHIP_Grenoble GF_GK_SHIP_Dijon GF_GK_SHIP_Brest GF_GK_SHIP_Metz GF_GK_SHIP_Novosibirsk GF_GK_SHIP_Yekaterinburg GF_GK_SHIP_Samara GF_GK_SHIP_Omsk GF_GK_SHIP_Kazan GF_GK_SHIP_Chelyabinsk GF_GK_SHIP_Rostov GF_GK_SHIP_Ufa GF_GK_SHIP_Perm GF_GK_SHIP_Krasnoyarsk GF_GK_SHIP_Voronezh GF_GK_SHIP_Saratov GF_GK_SHIP_Krasnodar GF_GK_SHIP_Izhevsk GF_GK_SHIP_Ulyanovsk GF_GK_SHIP_Yaroslavl GF_GK_SHIP_Irkutsk GF_GK_SHIP_Khabarovsk GF_GK_SHIP_Orenburg GF_GK_SHIP_Ryazan GF_GK_SHIP_Astrakhan GF_GK_SHIP_Lipetsk GF_GK_SHIP_Tula GF_GK_SHIP_Kirov GF_GK_SHIP_Bryansk GF_GK_SHIP_Ivanovo GF_GK_SHIP_Stavropol GF_GK_SHIP_Tver GF_GK_SHIP_Arkhangelsk GF_GK_SHIP_Vladimir GF_GK_SHIP_Murmansk GF_GK_SHIP_Grozny GF_GK_SHIP_Petrozavodsk GF_GK_SHIP_Pskov GF_GK_SHIP_Antwerp GF_GK_SHIP_Utrecht GF_GK_SHIP_TheHague GF_GK_SHIP_Turin GF_GK_SHIP_Palermo GF_GK_SHIP_Genoa GF_GK_SHIP_Seville GF_GK_SHIP_Granada GF_GK_SHIP_Aleppo GF_GK_SHIP_KuwaitCity GF_GK_SHIP_Amman GF_GK_SHIP_Mashhad GF_GK_SHIP_Isfahan GF_GK_SHIP_Gaza GF_GK_SHIP_Sanaa GF_GK_SHIP_Mosul GF_GK_SHIP_Khartoum GF_GK_SHIP_Accra GF_GK_SHIP_Kano GF_GK_SHIP_Ibadan GF_GK_SHIP_Dakar GF_GK_SHIP_Pretoria GF_GK_SHIP_Benghazi GF_GK_SHIP_Rabat GF_GK_SHIP_Freetown GF_GK_SHIP_Djibouti GF_GK_SHIP_Monrovia GF_GK_SHIP_PortElizabeth GF_GK_SHIP_NDjamena GF_GK_SHIP_Lodz GF_GK_SHIP_Canberra GF_GK_SHIP_Baku GF_GK_SHIP_Sofia GF_GK_SHIP_Zagreb GF_GK_SHIP_Astana GF_GK_SHIP_Nouakchott GF_GK_SHIP_UlanBator GF_GK_SHIP_Abuja GF_GK_SHIP_PortMoresby GF_GK_SHIP_BanjaLuka GF_GK_SHIP_Douala GF_GK_SHIP_Nicosia GF_GK_SHIP_SanSalvador GF_GK_SHIP_Thessaloniki GF_GK_SHIP_Guatemala GF_GK_SHIP_Port-au-Prince GF_GK_SHIP_Georgetown GF_GK_SHIP_Reykjavik GF_GK_SHIP_Basra GF_GK_SHIP_Cork GF_GK_SHIP_Kingston GF_GK_SHIP_Mombasa GF_GK_SHIP_Ecatepec GF_GK_SHIP_Windhoek GF_GK_SHIP_Wellington GF_GK_SHIP_Hebron GF_GK_SHIP_PanamaCity GF_GK_SHIP_Porto GF_GK_SHIP_Ljubljana GF_GK_SHIP_Malmo GF_GK_SHIP_Bern GF_GK_SHIP_Donetsk GF_GK_SHIP_Harare GF_GK_SHIP_Aarhus GF_GK_SHIP_Liege
 		}
-		
+#巡洋舰
 		cruiser = {
-			布卢姆 谢尔曼 谢里丹 比林斯利 比林斯 伯格曼 贝茨 贝克尔 贝尔 贝勒法尔 贝恩 比恩 卡特赖特 卡朋特 巴克兰
-			祖克-拖 山-拖 依米-雅思课 维德-忽尔 哈姆-可儿 信-尼克 阿尔克-拖 兹尔-兹尔 优妮-波克 拉丝-福柯 提尔-费杰 芒-拖 科斯-拉 维姆-德尔 波特-阿卡 塔克-乌尔乌
-			黎塞留 "珍巴特" 斯帕威洛 阿福德托雷 特罗普 "鲁伊特尔" 埃斯佩兰萨 佩拉约 维拉思科 朱诺 舍伍德 阿拉莫 班诺克本 博罗季诺 布莱腾菲尔德 坎尼 
-			"艾尔·阿拉梅恩" 高加米拉 加低斯 库什克 马萨达 诺曼底 萨拉米 色当 坦能堡 提康德罗加 塞莫皮莱 马伦戈 莱比锡 希洛 赫拉德茨 伊普尔 
-			肯特 贝里克 坎伯兰 康沃尔 萨福克廷布拉 马纳萨斯 布伦海姆 独角兽 阿德尔菲 天使 北欧 赏金 解放者
-			"晨星" "施琅" 维克拉马蒂亚 维拉特 维克兰特 夏尔玛 拿破仑 刚果 奥里斯坎尼 "邦克山" 法拉格特 霹雳
-			"皇冠" 马拉松 "腓特烈而是" 加的夫 色列斯 考文垂 库拉索号 柯卢号罗兰 "陈兴道" 狄密斯托克利 仙林 加拉提 佩内洛普 曙光女神 
-			蓬莱阁 黄鹤楼 岳阳楼 滕王阁
+			GF_GK_SHIP_Bolivar GF_GK_SHIP_Brusilov GF_GK_SHIP_Churchill GF_GK_SHIP_Clausewitz GF_GK_SHIP_Garibaldi GF_GK_SHIP_GustavusAdolphus GF_GK_SHIP_Hammurabi GF_GK_SHIP_JuliusCaesar GF_GK_SHIP_Justinian GF_GK_SHIP_Lincoln GF_GK_SHIP_Patton GF_GK_SHIP_Rommel GF_GK_SHIP_SunTzu GF_GK_SHIP_Liberator GF_GK_SHIP_Zhukov GF_GK_SHIP_AlexanderNevsky GF_GK_SHIP_Pyrrhus GF_GK_SHIP_YiSun-sin GF_GK_SHIP_Heihachiro GF_GK_SHIP_Khalidibnal-Walid GF_GK_SHIP_Vasa GF_GK_SHIP_Hindenburg GF_GK_SHIP_DeGaulle GF_GK_SHIP_Subutai GF_GK_SHIP_Nagato GF_GK_SHIP_Scharnhorst GF_GK_SHIP_Clemenceau GF_GK_SHIP_Richelieu GF_GK_SHIP_JeanBart GF_GK_SHIP_Sparviero GF_GK_SHIP_Affondatore GF_GK_SHIP_Tromp GF_GK_SHIP_DeRuyter GF_GK_SHIP_Esperanza GF_GK_SHIP_Pelayo GF_GK_SHIP_Velasco GF_GK_SHIP_Juneau GF_GK_SHIP_Sherwood GF_GK_SHIP_Alamo GF_GK_SHIP_Bannockburn GF_GK_SHIP_Borodino GF_GK_SHIP_Breitenfeld GF_GK_SHIP_Cannae GF_GK_SHIP_ElAlamein GF_GK_SHIP_Gaugamela GF_GK_SHIP_Kadesh GF_GK_SHIP_Kursk GF_GK_SHIP_Masada GF_GK_SHIP_Normandy GF_GK_SHIP_Salamis GF_GK_SHIP_Sedan GF_GK_SHIP_Tannenberg GF_GK_SHIP_Ticonderoga GF_GK_SHIP_Thermopylae GF_GK_SHIP_Marengo GF_GK_SHIP_Leipzig GF_GK_SHIP_Shiloh GF_GK_SHIP_Koniggratz GF_GK_SHIP_Ypres GF_GK_SHIP_Somme GF_GK_SHIP_Suomussalmi GF_GK_SHIP_Kharkov GF_GK_SHIP_Guadalcanal GF_GK_SHIP_LeyteGulf GF_GK_SHIP_DienBienPhu GF_GK_SHIP_Thymbra GF_GK_SHIP_Manassas GF_GK_SHIP_Blenheim GF_GK_SHIP_Adelphi GF_GK_SHIP_Angel GF_GK_SHIP_Borealis GF_GK_SHIP_Bounty GF_GK_SHIP_Emancipator GF_GK_SHIP_MorningStar GF_GK_SHIP_ShiLang GF_GK_SHIP_Vikramaditya GF_GK_SHIP_Viraat GF_GK_SHIP_Vikrant GF_GK_SHIP_Vishal GF_GK_SHIP_Kongo GF_GK_SHIP_Oriskany GF_GK_SHIP_BunkerHill GF_GK_SHIP_Farragut GF_GK_SHIP_KittyHawk GF_GK_SHIP_RoyalOak GF_GK_SHIP_Thunderbolt GF_GK_SHIP_Nimitz GF_GK_SHIP_Eisenhower GF_GK_SHIP_Roland GF_GK_SHIP_TranHungDao GF_GK_SHIP_Themistocles GF_GK_SHIP_Cunaxa GF_GK_SHIP_Uhuru GF_GK_SHIP_Ramses GF_GK_SHIP_Vauban GF_GK_SHIP_Harpagos GF_GK_SHIP_Anzio GF_GK_SHIP_Caen GF_GK_SHIP_Carentan GF_GK_SHIP_Bastogne GF_GK_SHIP_Arnhem GF_GK_SHIP_Temeraire GF_GK_SHIP_Vesuvius GF_GK_SHIP_Etna GF_GK_SHIP_StHelens GF_GK_SHIP_OlympusMons GF_GK_SHIP_Alcibiades GF_GK_SHIP_Patrocles GF_GK_SHIP_Santander GF_GK_SHIP_Vega GF_GK_SHIP_Rigel GF_GK_SHIP_Sirius GF_GK_SHIP_Canopus GF_GK_SHIP_Arcturus GF_GK_SHIP_Capella GF_GK_SHIP_Procyon GF_GK_SHIP_Altair GF_GK_SHIP_Betelgeuse GF_GK_SHIP_Antares GF_GK_SHIP_Achernar GF_GK_SHIP_Aldebaran GF_GK_SHIP_Pollux GF_GK_SHIP_Deneb GF_GK_SHIP_Regulus GF_GK_SHIP_Proxima GF_GK_SHIP_RigilKentaurus GF_GK_SHIP_Spica GF_GK_SHIP_Polaris GF_GK_SHIP_Bellatrix GF_GK_SHIP_Capricorn GF_GK_SHIP_Syracuse GF_GK_SHIP_Metaurus GF_GK_SHIP_Chalons GF_GK_SHIP_Tours GF_GK_SHIP_Hastings GF_GK_SHIP_Orleans GF_GK_SHIP_Valmy GF_GK_SHIP_Mukden GF_GK_SHIP_Narvik GF_GK_SHIP_Narva GF_GK_SHIP_Poltava GF_GK_SHIP_LakePeipus GF_GK_SHIP_Malta GF_GK_SHIP_Antietam GF_GK_SHIP_BatonRouge GF_GK_SHIP_Beauport GF_GK_SHIP_Abukir GF_GK_SHIP_Lund GF_GK_SHIP_Issus GF_GK_SHIP_Changping GF_GK_SHIP_TeutoburgForest GF_GK_SHIP_WatlingStreet GF_GK_SHIP_Yarmouk GF_GK_SHIP_Salamanca GF_GK_SHIP_Berezina GF_GK_SHIP_Fredericksburg GF_GK_SHIP_Chickamauga GF_GK_SHIP_Caporetto GF_GK_SHIP_KhalkhinGol GF_GK_SHIP_Gazala GF_GK_SHIP_MonteCassino GF_GK_SHIP_Saipan GF_GK_SHIP_Breslau GF_GK_SHIP_Plataea GF_GK_SHIP_Hydaspes GF_GK_SHIP_Sentinum GF_GK_SHIP_Heraclea GF_GK_SHIP_Kalinga GF_GK_SHIP_Magnesia GF_GK_SHIP_Adrianople GF_GK_SHIP_Ravenna GF_GK_SHIP_Lutzen GF_GK_SHIP_Cambrai GF_GK_SHIP_Marne GF_GK_SHIP_Chancellorsville GF_GK_SHIP_PhilippineSea GF_GK_SHIP_SavoIsland GF_GK_SHIP_CapeEsperance GF_GK_SHIP_Taranto GF_GK_SHIP_CapeMatapan GF_GK_SHIP_JavaSea GF_GK_SHIP_Gallipoli GF_GK_SHIP_DeValette GF_GK_SHIP_Suleiman GF_GK_SHIP_MacArthur GF_GK_SHIP_Roosevelt GF_GK_SHIP_Victoria GF_GK_SHIP_Nebuchadnezzar GF_GK_SHIP_Pachacuti GF_GK_SHIP_CatherinetheGreat GF_GK_SHIP_FredericktheGreat GF_GK_SHIP_Ashoka GF_GK_SHIP_QinShiHuang GF_GK_SHIP_Tamerlane GF_GK_SHIP_Marshall GF_GK_SHIP_JoanofArc GF_GK_SHIP_GenghisKhan GF_GK_SHIP_Ataturk GF_GK_SHIP_WilliamtheConqueror GF_GK_SHIP_BonhommeRichard GF_GK_SHIP_IronDuke
 		}
-		
+#战列舰
 		battleship = {
-			尤利西斯 塞诺芬 薛西斯 纳尔逊 大力神 伊卡洛斯 阿特拉斯 阿波罗 阿贾克斯 伯勒罗丰 王者之剑 阿古利巴 亚历山大 贝利撒留 汉尼拔 华盛顿 萨拉丁
-			比安卡 斯特凡妮 娜塔莎 莉迪亚 莫娜 梅雷迪思 琳达 埃里卡 海蒂 佩奇 卡门 海登 马洛里 梅塞德斯 马里昂 薇诺娜 吉尔
-			"黑暗王子" 兜帽号 波坦金号 武藏号 厌战号 胜利号 勇气号 无畏号 奋进号 精进号 无敌号 不屈号 骑士号 英勇号 监视者号 
-			布鲁诺 弗朗茨 鲁道夫 艾哈德 约尔格 阿谢尔 埃米尔 格哈特 戈特弗里德 奥尔赫 约阿希姆 康拉德 洛塔尔 卢德维格 马赛厄斯 莫里茨 莱因哈德 
-			埃内斯托 赫拉尔 吉列尔莫 耶稣 萨尔瓦多 塞尔吉奥 罗伯托 埃斯特万 克里顿 特拉姆 企业号 天一阁 天心阁 阅江楼
-			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯 鹳雀楼 田纳西 加利福尼亚 科罗拉多 马里兰 西弗吉尼亚 
+			GF_GK_SHIP_Ulysses GF_GK_SHIP_Xenophon GF_GK_SHIP_Xerxes GF_GK_SHIP_Nelson GF_GK_SHIP_Icarus GF_GK_SHIP_Atlas GF_GK_SHIP_Apollo GF_GK_SHIP_Ajax GF_GK_SHIP_Bellerophon GF_GK_SHIP_Agrippa GF_GK_SHIP_Alexander GF_GK_SHIP_Belisarius GF_GK_SHIP_Hannibal GF_GK_SHIP_Washington GF_GK_SHIP_Saladin GF_GK_SHIP_Bismarck GF_GK_SHIP_Yamato GF_GK_SHIP_Actium GF_GK_SHIP_Agincourt GF_GK_SHIP_Austerlitz GF_GK_SHIP_Gettysburg GF_GK_SHIP_Jutland GF_GK_SHIP_Trafalgar GF_GK_SHIP_Tsushima GF_GK_SHIP_ValleyForge GF_GK_SHIP_Verdun GF_GK_SHIP_Waterloo GF_GK_SHIP_Granicus GF_GK_SHIP_Pharsalus GF_GK_SHIP_Akira GF_GK_SHIP_Charlemagne GF_GK_SHIP_BlackPrince GF_GK_SHIP_Hood GF_GK_SHIP_Potemkin GF_GK_SHIP_Musashi GF_GK_SHIP_Warspite GF_GK_SHIP_Victory GF_GK_SHIP_Courage GF_GK_SHIP_Dauntless GF_GK_SHIP_Endeavor GF_GK_SHIP_Excelsior GF_GK_SHIP_Indefatigable GF_GK_SHIP_Chivalrous GF_GK_SHIP_Valiant GF_GK_SHIP_Monitor GF_GK_SHIP_Bulwark GF_GK_SHIP_Defender GF_GK_SHIP_Endurance GF_GK_SHIP_Vigilant GF_GK_SHIP_Resolute GF_GK_SHIP_Fortitude GF_GK_SHIP_Yamamoto GF_GK_SHIP_Lexington GF_GK_SHIP_Midway GF_GK_SHIP_Saratoga GF_GK_SHIP_Yorktown GF_GK_SHIP_CoralSea GF_GK_SHIP_Hermes GF_GK_SHIP_Wasp GF_GK_SHIP_Hornet GF_GK_SHIP_ArkRoyal GF_GK_SHIP_Essex GF_GK_SHIP_Akagi GF_GK_SHIP_Kaga GF_GK_SHIP_Illustrious GF_GK_SHIP_Intrepid GF_GK_SHIP_Constellation GF_GK_SHIP_Constitution GF_GK_SHIP_Ranger GF_GK_SHIP_Andromeda GF_GK_SHIP_Aquila GF_GK_SHIP_Century GF_GK_SHIP_Concord GF_GK_SHIP_Defiant GF_GK_SHIP_Galaxy GF_GK_SHIP_Odyssey GF_GK_SHIP_Orion GF_GK_SHIP_Providence GF_GK_SHIP_Reliant GF_GK_SHIP_Freedom GF_GK_SHIP_Solaris GF_GK_SHIP_Independence GF_GK_SHIP_Lionheart GF_GK_SHIP_Unicorn GF_GK_SHIP_Napoleon GF_GK_SHIP_RoyalSovereign GF_GK_SHIP_Marathon GF_GK_SHIP_Imperieuse
 		}
-
+#泰坦
 		titan = {
-			尤利西斯 塞诺芬 薛西斯 纳尔逊 大力神 伊卡洛斯 阿特拉斯 阿波罗 阿贾克斯 伯勒罗丰 王者之剑 阿古利巴 亚历山大 贝利撒留 汉尼拔 华盛顿 萨拉丁
-			比安卡 斯特凡妮 娜塔莎 莉迪亚 莫娜 梅雷迪思 琳达 埃里卡 海蒂 佩奇 卡门 海登 马洛里 梅塞德斯 马里昂 薇诺娜 吉尔
-			"黑暗王子" 兜帽号 波坦金号 武藏号 厌战号 胜利号 勇气号 无畏号 奋进号 精进号 无敌号 不屈号 骑士号 英勇号 监视者号 
-			布鲁诺 弗朗茨 鲁道夫 艾哈德 约尔格 阿谢尔 埃米尔 格哈特 戈特弗里德 奥尔赫 约阿希姆 康拉德 洛塔尔 卢德维格 马赛厄斯 莫里茨 莱因哈德 
-			埃内斯托 赫拉尔 吉列尔莫 耶稣 萨尔瓦多 塞尔吉奥 罗伯托 埃斯特万
-			欧迪斯 奥瑞恩 普罗维登斯 雷利恩特 佩格萨斯
+			GF_GK_SHIP_Enterprise GF_GK_SHIP_Invincible GF_GK_SHIP_Pegasus GF_GK_SHIP_Hercules GF_GK_SHIP_Excalibur GF_GK_SHIP_Formidable
 		}
-
+#巨像
 		colossus = {
-		     毁灭者 地狱使者 灭星者 净化者 冲击者 武帝 天门桥 阎王 圣女贞德
+			GF_GK_SHIP_SolInvictus GF_GK_SHIP_Adjudicator GF_GK_SHIP_Overlord GF_GK_SHIP_Guardian GF_GK_SHIP_Kingmaker
 		}
-		
-		science = {
-		爱布里茨 巴多利奥 卡佩洛 "迪·罗比蓝" "迪·萨沃亚" 加里波第 萨莱塔 帕拉维奇诺 皮亚内利 曼布雷蒂 马尔库齐 瓦勒里 佩紮利亚
-			"马可波罗" 牛顿 特斯拉 "冯·布朗" "瓦特·雷利" 阿西莫夫 克拉克 萨甘 "伊本·巴图塔" 开普勒 托勒密 皮西亚斯 阿佐菲 发现 航行者 信风 侦查 
-			先锋 开拓者 旅居者 "圣玛丽亚" 霍金 埃尔哈特 诺贝尔 开尔文 华伦海特 平分点 拉格朗日 齐奥尔科夫斯基 哥伦布 郑和
+#主宰
+		juggernaut = {
+			GF_GK_SHIP_Ararat GF_GK_SHIP_AxisMundi GF_GK_SHIP_GreatReformer GF_GK_SHIP_Kunlun GF_GK_SHIP_Tectonic
 		}
-		
-		colonizer = {
-			五月花 富饶 慷慨的 幸福 希望 机会 宁静 统一 命运 不列颠 拜占庭 苏格兰 "埃尔多拉多" 克诺索斯 孟菲斯 
-			奥林匹亚斯 波斯波利斯 "瑟拉·德·拉·普拉塔" 斯帕塔 瓦尔哈拉 "水晶宫殿" 阿拉斯加 安哥拉 澳大利亚 巴西 加拿大 刚果 几内亚 印度 印度尼西亚
-			牙买加 澳门 莫桑比克 菲律宾 索马里 "斯里兰卡" 台湾 
-		}
-		
+#工程船
 		constructor = {
-			太平洋 大西洋 亚得里亚海 亚马逊 多瑙河 印度 非洲 伏尔加河 科罗拉多 恒河 约旦河 湄公河 "里奥格兰德" 卢比肯河 长江 密西西比河 育空河 印度河
-			莱茵 底格里斯 撒哈拉 孟加拉 梅里马克 波托马克 萨斯奎哈娜 奥里诺科 谢楠多亚
+			GF_GK_SHIP_Pacific GF_GK_SHIP_Atlantic GF_GK_SHIP_Adriatic GF_GK_SHIP_Amazon GF_GK_SHIP_Danube GF_GK_SHIP_India GF_GK_SHIP_Africa GF_GK_SHIP_Volga GF_GK_SHIP_Colorado GF_GK_SHIP_Ganges GF_GK_SHIP_Jordan GF_GK_SHIP_Mekong GF_GK_SHIP_RioGrande GF_GK_SHIP_Rubicon GF_GK_SHIP_Yangtze GF_GK_SHIP_Mississippi GF_GK_SHIP_Yukon GF_GK_SHIP_Indus
+			GF_GK_SHIP_Rhine GF_GK_SHIP_Tigris GF_GK_SHIP_Sahara GF_GK_SHIP_Bengal GF_GK_SHIP_Merrimack GF_GK_SHIP_Potomac GF_GK_SHIP_Susquehanna GF_GK_SHIP_Orinoco GF_GK_SHIP_Shenandoah
 		}
-
+#殖民船
+		colonizer = {
+			GF_GK_SHIP_Mayflower GF_GK_SHIP_Abundance GF_GK_SHIP_Bountiful GF_GK_SHIP_Felicity GF_GK_SHIP_Hope GF_GK_SHIP_Opportunity GF_GK_SHIP_Serenity GF_GK_SHIP_Unity GF_GK_SHIP_Destiny GF_GK_SHIP_Britannia GF_GK_SHIP_Byzantium GF_GK_SHIP_Caledonia GF_GK_SHIP_ElDorado GF_GK_SHIP_Knossos GF_GK_SHIP_Memphis
+			GF_GK_SHIP_Olympus GF_GK_SHIP_Persepolis GF_GK_SHIP_SierradelaPlata GF_GK_SHIP_Sparta GF_GK_SHIP_Valhalla GF_GK_SHIP_CrystalPalace GF_GK_SHIP_Alaska GF_GK_SHIP_Angola GF_GK_SHIP_Australia GF_GK_SHIP_Brazil GF_GK_SHIP_Canada GF_GK_SHIP_Congo GF_GK_SHIP_Guinea GF_GK_SHIP_India GF_GK_SHIP_Indonesia
+			GF_GK_SHIP_Jamaica GF_GK_SHIP_Macau GF_GK_SHIP_Mozambique GF_GK_SHIP_Philippines GF_GK_SHIP_Somalia GF_GK_SHIP_SriLanka GF_GK_SHIP_Taiwan
+		}
+#私人殖民船
+		sponsored_colonizer = { # needed when there are no generic names
+			GF_GK_SHIP_Mayflower GF_GK_SHIP_Abundance GF_GK_SHIP_Bountiful GF_GK_SHIP_Felicity GF_GK_SHIP_Hope GF_GK_SHIP_Opportunity GF_GK_SHIP_Serenity GF_GK_SHIP_Unity GF_GK_SHIP_Destiny GF_GK_SHIP_Britannia GF_GK_SHIP_Byzantium GF_GK_SHIP_Caledonia GF_GK_SHIP_ElDorado GF_GK_SHIP_Knossos GF_GK_SHIP_Memphis
+			GF_GK_SHIP_Olympus GF_GK_SHIP_Persepolis GF_GK_SHIP_SierradelaPlata GF_GK_SHIP_Sparta GF_GK_SHIP_Valhalla GF_GK_SHIP_CrystalPalace GF_GK_SHIP_Alaska GF_GK_SHIP_Angola GF_GK_SHIP_Australia GF_GK_SHIP_Brazil GF_GK_SHIP_Canada GF_GK_SHIP_Congo GF_GK_SHIP_Guinea GF_GK_SHIP_India GF_GK_SHIP_Indonesia
+			GF_GK_SHIP_Jamaica GF_GK_SHIP_Macau GF_GK_SHIP_Mozambique GF_GK_SHIP_Philippines GF_GK_SHIP_Somalia GF_GK_SHIP_SriLanka GF_GK_SHIP_Taiwan
+		}
+#科研船
+		science = {
+			GF_GK_SHIP_Aldrin GF_GK_SHIP_Armstrong GF_GK_SHIP_Columbus GF_GK_SHIP_Copernicus GF_GK_SHIP_Cortez GF_GK_SHIP_Drake GF_GK_SHIP_Hubble GF_GK_SHIP_Goddard GF_GK_SHIP_Galileo GF_GK_SHIP_Einstein GF_GK_SHIP_Gagarin GF_GK_SHIP_Tereshkova GF_GK_SHIP_ZhengHe GF_GK_SHIP_LeifEricson GF_GK_SHIP_Magellan GF_GK_SHIP_JamesCook GF_GK_SHIP_MarcoPolo GF_GK_SHIP_Newton GF_GK_SHIP_Tesla GF_GK_SHIP_VonBraun GF_GK_SHIP_WalterRaleigh GF_GK_SHIP_Asimov GF_GK_SHIP_Clarke GF_GK_SHIP_Sagan GF_GK_SHIP_IbnBattuta GF_GK_SHIP_Kepler GF_GK_SHIP_Ptolemy GF_GK_SHIP_Pytheas GF_GK_SHIP_Azophi GF_GK_SHIP_Discovery GF_GK_SHIP_Voyager GF_GK_SHIP_Tradewind GF_GK_SHIP_Scout GF_GK_SHIP_Pioneer GF_GK_SHIP_Explorer GF_GK_SHIP_Sojourner GF_GK_SHIP_SantaMaria GF_GK_SHIP_Hawking GF_GK_SHIP_Earhart GF_GK_SHIP_Nobel GF_GK_SHIP_Kelvin GF_GK_SHIP_Fahrenheit GF_GK_SHIP_Equinox GF_GK_SHIP_Lagrange GF_GK_SHIP_Tsiolkovsky GF_GK_SHIP_Darwin GF_GK_SHIP_Grissom GF_GK_SHIP_Archimedes GF_GK_SHIP_Cosmocrator
+		}
+#运输船
 		transport = {
-		    探险者 女妖 女巫 根除者 折磨者 军团 报复 侵略者 突击 剁肉者 大将军 卓越 无敌 战神
-			马耳他 安蒂特姆 "巴吞鲁日 " 博波尔 阿布卡尔 隆德 伊苏斯 昌平 "条顿堡森林 " "贝尔街 " 穆克 萨拉曼卡 别列济纳 弗雷德里克斯堡 
-			沙内 舒玛 恩齐 法拉季 哈尼希 伊迪 伊萨 贾巴里 阿卡尼 阿鲁瓦尼 安叶达 斑斑那你 贝卡 贝奇腾巴 贝奇西威 布托雷思维 迪克斯
+			GF_GK_SHIP_Cowpens GF_GK_SHIP_BelleauWood GF_GK_SHIP_Bataan GF_GK_SHIP_Monterey GF_GK_SHIP_Veracruz GF_GK_SHIP_Tarawa GF_GK_SHIP_IwoJima GF_GK_SHIP_Okinawa GF_GK_SHIP_Inchon GF_GK_SHIP_GooseGreen GF_GK_SHIP_Peleliu GF_GK_SHIP_Guam GF_GK_SHIP_Bougainville
 		}
-	
-		military_station_small = { 
-			水星 金星 特拉 火星 木星 土星 天王星 海王星 月亮 火卫一 火卫二 谷神星
-			甘达拉 亚迪拉 米利达 贝阔恩达 皮尔达拉 艾尔德萨 阿加尼拉 阿斯萨 邦多加 欧达拉 毕尔加 加利达 特尔达加 提利姆巴 达恩塔瑞加 
-			欧博朗 安姆布雷尔 阿瑞尔 米兰达 崔顿 普鲁多 查伦
+#堡垒
+		military_station_small = {
+			GF_GK_SHIP_Citadel GF_GK_SHIP_Albacore GF_GK_SHIP_Gateway GF_GK_SHIP_Vincent GF_GK_SHIP_Babylon GF_GK_SHIP_Caernavon GF_GK_SHIP_Acre GF_GK_SHIP_Pembroke GF_GK_SHIP_Acheron GF_GK_SHIP_Spithead GF_GK_SHIP_Halifax GF_GK_SHIP_Victoria GF_GK_SHIP_Chatham GF_GK_SHIP_Anchorage GF_GK_SHIP_ScapaFlow GF_GK_SHIP_HamptonRoads GF_GK_SHIP_Brooklyn GF_GK_SHIP_Norfolk GF_GK_SHIP_Newport GF_GK_SHIP_Guam GF_GK_SHIP_Pensacola GF_GK_SHIP_Vesuvius GF_GK_SHIP_McKinley GF_GK_SHIP_Everest GF_GK_SHIP_Kilimanjaro GF_GK_SHIP_Aconcagua GF_GK_SHIP_Elbrus GF_GK_SHIP_StHelens GF_GK_SHIP_Fuji GF_GK_SHIP_Olympus GF_GK_SHIP_Sinai GF_GK_SHIP_Ambrose GF_GK_SHIP_Bermuda GF_GK_SHIP_Farpoint GF_GK_SHIP_BlueStar GF_GK_SHIP_OlympusMons GF_GK_SHIP_Tharsis GF_GK_SHIP_Syrtis GF_GK_SHIP_Blackham GF_GK_SHIP_Fletcher GF_GK_SHIP_Perry GF_GK_SHIP_Butakov GF_GK_SHIP_Morris GF_GK_SHIP_Moorsom GF_GK_SHIP_Hart GF_GK_SHIP_Hargood GF_GK_SHIP_Spruance GF_GK_SHIP_Tanaka GF_GK_SHIP_Halsey GF_GK_SHIP_Turner GF_GK_SHIP_Doria GF_GK_SHIP_Tirpitz GF_GK_SHIP_Cunningham GF_GK_SHIP_Jellicoe GF_GK_SHIP_Hipper GF_GK_SHIP_Beatty GF_GK_SHIP_Potemkin GF_GK_SHIP_Durham GF_GK_SHIP_Codrington GF_GK_SHIP_Milne GF_GK_SHIP_Laforey GF_GK_SHIP_Tyler GF_GK_SHIP_Hawke GF_GK_SHIP_Yonai GF_GK_SHIP_Pound GF_GK_SHIP_King GF_GK_SHIP_Crutchley GF_GK_SHIP_Mountbatten GF_GK_SHIP_Kountouriotis GF_GK_SHIP_Kuznetsov GF_GK_SHIP_Essen GF_GK_SHIP_Kornilov GF_GK_SHIP_Suffren GF_GK_SHIP_Treville GF_GK_SHIP_Villeneuve GF_GK_SHIP_Grasse GF_GK_SHIP_Byng GF_GK_SHIP_Lezo
 		}
-
+#离子炮台
 		ion_cannon = {
-		    水星 金星 特拉 火星 木星 土星 天王星 海王星 月亮 火卫一 火卫二 谷神星 泰坦 织女星 天狼星 比邻星 露娜 宙斯
+			GF_GK_SHIP_Bombard GF_GK_SHIP_Ballista GF_GK_SHIP_Catapult GF_GK_SHIP_Harpoon GF_GK_SHIP_Polybolos GF_GK_SHIP_Culverin
 		}
 	}
 
 	fleet_names = {
-		random_names = {
-			"战术舰队" "自律舰队" "格里芬舰队" "AR舰队" "忤逆舰队" "佣兵舰队" "联合舰队"
-		}
-		sequential_name = "安保舰队 $O$"
+		sequential_name = GF_GK_FLEET
 	}
-	
-	army_names = {
-		defense_army = {
-			sequential_name = "$O$ 安保部队"
-		}
-			
-		assault_army = {
-			sequential_name = "$O$ 战术小队"
-		}
 
+	army_names = {
+#少前新陆军
 		GF_army_arm_doll = {
-			sequential_name = "$O$ 自律人形梯队"
-		}		
+			sequential_name = GF_GK_DOLL
+		}
 
 		GF_army_tactical_doll = {
-			sequential_name = "$O$ 战术人形梯队"
+			sequential_name = GF_GK_TACTICAL_DOLL
+		}
+
+		GF_army_defensive_auto_doll = {
+			sequential_name = GF_GK_DEFENSIVE_DOLL
+		}
+
+		GF_army_occupation_doll = {
+			sequential_name = GF_GK_OCCUPATION_DOLL
+		}
+#原版
+		machine_defense = {
+			sequential_name = GF_GK_PLANETARYGUARD
+		}
+
+		machine_assault_1 = {
+			sequential_name = GF_GK_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_2 = {
+			sequential_name = GF_GK_EXPEDITIONARYFORCE
+		}
+
+		machine_assault_3 = {
+			sequential_name = GF_GK_EXPEDITIONARYFORCE
+		}
+
+		defense_army = {
+			sequential_name = GF_GK_PLANETARYGUARD
+		}
+
+		assault_army = {
+			sequential_name = GF_GK_EXPEDITIONARYFORCE
 		}
 
 		slave_army = {
-			sequential_name = "$O$ 契约资产小组"
+			sequential_name = GF_GK_INDENTUREDRIFLES
 		}
-		
-		clone_army = { 
-			sequential_name = "$O$ 克隆资产小组"
+
+		clone_army = {
+			sequential_name = GF_GK_CLONEARMY
 		}
-		
+
+		undead_army = {
+			sequential_name = GF_GK_DREADCOMMANDO
+		}
+
 		robotic_army = {
-			sequential_name = "猎杀小组 $O$"
+			sequential_name = GF_GK_HUNTERKILLERGROUP
 		}
 
 		robotic_defense_army = {
-			sequential_name = "猎杀小组 $O$"
+			sequential_name = GF_GK_GROUNDDEFENSEMATRIX
 		}
-		
-		psionic_army = { 
-			sequential_name = "灵能小队 $O$"
+
+		psionic_army = {
+			sequential_name = GF_GK_PSICOMMANDO
 		}
-		
+
 		xenomorph_army = {
-			sequential_name = "生物小队 $O$"
+			sequential_name = GF_GK_BIOWARFAREDIVISION
 		}
-		
+
 		gene_warrior_army = {
-			sequential_name = "$O$ 异形小队"
+			random_names = {
+				GF_GK_ARMY_SARC-AGladiators GF_GK_ARMY_SARC-BWidowmakers GF_GK_ARMY_SARC-CImmortals GF_GK_ARMY_SARC-DBerserkers GF_GK_ARMY_SARC-EAssassins
+				GF_GK_ARMY_SARC-FReapers GF_GK_ARMY_SARC-GNighthawks GF_GK_ARMY_SARC-HDesperados GF_GK_ARMY_SARC-IGreyKnights GF_GK_ARMY_SARC-JRoughnecks
+			}
+			sequential_name = GF_GK_BIOENGINEEREDSQUADRON
 		}
 
 		occupation_army = {
-			sequential_name = "$O$ 加里森波德"
+			sequential_name = GF_GK_GARRISONFORCE
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "$O$ 安卓 加里森波德"
+			sequential_name = GF_GK_MECHANIZEDGARRISON
 		}
 
 		primitive_army = {
-			sequential_name = "Primitive Army $O$"
+			sequential_name = GF_GK_PRIMITIVEARMY
 		}
 		industrial_army = {
-			sequential_name = "Industrial Army $O$"
+			sequential_name = GF_GK_INDUSTRIALARMY
 		}
 		postatomic_army = {
-			sequential_name = "Post-Atomic Army $O$"
+			sequential_name = GF_GK_POSTATOMICARMY
 		}
 	}
 
 	planet_names = {
-
+#通用
 		generic = {
 			names = {
-				"纽耶路撒勒姆" 锚 迪斯 阿瓦隆 赏金 希望 奥里皮亚 瑟邓迪皮提 椿 提尼斯 萨拉姆 咸阳 康科德
-				忒伊亚 托斯卡纳 "新罗诺克" 温州 "新詹姆斯顿" "新特洛伊"德罗文尼亚 "王通" 吉萨家族 马达因  
-				"波多 冈萨雷斯" 希美 晓 "埃瓦 加迪斯" "拉·伊莎贝拉" "新考文垂" "圣格洛夫" "圣波默罗伊"
-				"卡萨克索夫港"
+				GF_GK_PLANET_01 GF_GK_PLANET_02 GF_GK_PLANET_03 GF_GK_PLANET_04 GF_GK_PLANET_05 
+				GF_GK_PLANET_06 GF_GK_PLANET_07 GF_GK_PLANET_08 GF_GK_PLANET_09 GF_GK_PLANET_10 
+				GF_GK_PLANET_11 GF_GK_PLANET_12 GF_GK_PLANET_13 GF_GK_PLANET_14 GF_GK_PLANET_15 
+				GF_GK_PLANET_16 GF_GK_PLANET_17 GF_GK_PLANET_18 GF_GK_PLANET_19 GF_GK_PLANET_20 
+				GF_GK_PLANET_21 GF_GK_PLANET_22 GF_GK_PLANET_23 GF_GK_PLANET_24 GF_GK_PLANET_25 
+				GF_GK_PLANET_26 GF_GK_PLANET_27 GF_GK_PLANET_28 GF_GK_PLANET_29 GF_GK_PLANET_30 
+				GF_GK_PLANET_31 GF_GK_PLANET_32 GF_GK_PLANET_33 GF_GK_PLANET_34 GF_GK_PLANET_35
+				GF_GK_PLANET_36 GF_GK_PLANET_37 GF_GK_PLANET_38 GF_GK_PLANET_39 GF_GK_PLANET_40 
+				GF_GK_PLANET_41 GF_GK_PLANET_42 GF_GK_PLANET_43 GF_GK_PLANET_44 GF_GK_PLANET_45 
+				GF_GK_PLANET_46 GF_GK_PLANET_47 GF_GK_PLANET_48 GF_GK_PLANET_49 GF_GK_PLANET_50 
+				GF_GK_PLANET_51 GF_GK_PLANET_52 GF_GK_PLANET_53 GF_GK_PLANET_54 GF_GK_PLANET_55 
+				GF_GK_PLANET_56 GF_GK_PLANET_57 GF_GK_PLANET_58 GF_GK_PLANET_59 GF_GK_PLANET_60 
+				GF_GK_PLANET_61 GF_GK_PLANET_62 GF_GK_PLANET_63 GF_GK_PLANET_64 GF_GK_PLANET_65 
+				GF_GK_PLANET_66 GF_GK_PLANET_67 GF_GK_PLANET_68 GF_GK_PLANET_69 GF_GK_PLANET_70 
+				GF_GK_PLANET_71 GF_GK_PLANET_72 GF_GK_PLANET_73 GF_GK_PLANET_74 GF_GK_PLANET_75
+				GF_GK_PLANET_76 GF_GK_PLANET_77 GF_GK_PLANET_78 GF_GK_PLANET_79 GF_GK_PLANET_80 
+				GF_GK_PLANET_81 GF_GK_PLANET_82 GF_GK_PLANET_83 GF_GK_PLANET_84 GF_GK_PLANET_85 
+				GF_GK_PLANET_86 GF_GK_PLANET_87 GF_GK_PLANET_88 GF_GK_PLANET_89 GF_GK_PLANET_90 
+				GF_GK_PLANET_91 GF_GK_PLANET_92 GF_GK_PLANET_93 GF_GK_PLANET_94 GF_GK_PLANET_95 
+				GF_GK_PLANET_96 GF_GK_PLANET_97 GF_GK_PLANET_98 GF_GK_PLANET_99 
 			}
 		}
-		
+#沙漠
 		pc_desert = {
 			names = {
-				"诺娃 阿拉比亚" 撒哈拉 戈壁 盐田 莫哈维 巴塔哥尼亚 叙利亚 吉娃娃 沙 "卡拉 库姆" 科罗拉多 索诺拉 
-				"科泽尔 库姆" 塔克拉玛干 塔尔 吉布森 纳米布 路特 盐沼 沙丘 迦梨 穆斯贝尔海姆 火神 邪神 迦太基 
+
 			}
 		}
-		
+#干旱
 		pc_arid = {
 			names = {
-				黎巴嫩 泰尔 安提阿 锡尔河 阿姆河 图兰 阿科恩娜 巴德纳斯 拉扎克 奥尔泰尼亚 贝尔纳斯 阿塔卡马 塔那米  
-				朗基普 "新火星" 乐土
+
 			}
 		}
-		
+#热带
 		pc_tropical = {
 			names = {
-				敖泊尔 乌茨拉斯 乌里斯 乌卡斯马 伊拉斯 欧多斯 西斯毛 破格拉 斯瓦斯卡 高茂斯 果酒 伊利斯 阿斯迦布
+
 			}
 		}
-		
+#陆地
 		pc_continental = {
 			names = {
-				阿尔比恩 阿莫尔 德瓦尼兰 地平线 阿斯加德 "特拉诺瓦" 新地球 琐罗亚斯德 "天意" 
-				南洲 毗湿奴 苏摩 盘古 乔尔丹 拉特拉 泰兰尔
+
 			}
 		}
-		
+#盖亚
 		pc_gaia = {
 			names = {
-				津加伊 艾赛亚 航瓦尼 航比 卡贝罗 加土 昆布 库特雷瓦诺 关勒尼 冷思维 乐色博 乐斯瓦罗 卢腾铎 马陆班底 马卡洛 马勒卡
+
 			}
 		}
-		
+#海洋
 		pc_ocean = {
 			names = {
-				阿图拉 塔尔提索斯 阿加莎 "圣纳奇布尔" "圣卡斯帕" 特鲁特 "圣霍萨克" 弗莱辛顿 格德伍德 芬卡斯尔
-				阿克伦 阿喀琉斯 阿伽门农 安菲西恩 阿奎隆 阿耳戈 阿格斯 阿里尔 欧罗拉 阿佛纳斯 巴克斯 布西发拉斯 卡利奥普 卡利普索 卡斯托 卡里布迪斯 瑟茜
+
 			}
 		}
-		
+#苔原
 		pc_tundra = {
 			names = {
-				新冰岛 新加拿大 月宫 斯坎德扎 外宫 新罗斯 暴雪 新太原 
+
 			}
 		}
-		
+#冰原
 		pc_arctic = {
 			names = {
-				图勒 北极大陆 格陵兰 阿拉斯加 巴芬岛 西伯利亚 尼姆海姆 北方乐土 新大庆
+
+			}
+		}
+#草原
+		pc_savannah = {
+			names = {
+			}
+		}
+#高山
+		pc_alpine = {
+			names = {
 			}
 		}
 
-		pc_savannah = {
-			names = { }
-		}
-
-		pc_alpine = {
-			names = { }
-		}
-		
 	}
 
+
+	### CHARACTERS
+
 	character_names = {
-		names2 = {
-			weight = 50
-			first_names = {
-			    "自律人形"
+
+		names1 = {
+			weight = 40
+			first_names_male = {
+				GF_GK_CHR_John GF_GK_CHR_Brian GF_GK_CHR_Peter GF_GK_CHR_Adam GF_GK_CHR_James GF_GK_CHR_William GF_GK_CHR_Jacob GF_GK_CHR_Christopher GF_GK_CHR_Joshua GF_GK_CHR_Michael GF_GK_CHR_Ethan GF_GK_CHR_Joseph GF_GK_CHR_Matthew GF_GK_CHR_Anthony GF_GK_CHR_Daniel GF_GK_CHR_Ryan GF_GK_CHR_Samuel GF_GK_CHR_Kevin
+				GF_GK_CHR_David GF_GK_CHR_Logan GF_GK_CHR_Carter GF_GK_CHR_Benjamin GF_GK_CHR_Andrew GF_GK_CHR_Henry GF_GK_CHR_Nicholas GF_GK_CHR_Gavin GF_GK_CHR_Owen GF_GK_CHR_Jack GF_GK_CHR_Wyatt GF_GK_CHR_Wayne GF_GK_CHR_Walter GF_GK_CHR_Charles GF_GK_CHR_Louis GF_GK_CHR_Merritt GF_GK_CHR_Earl GF_GK_CHR_Alfred GF_GK_CHR_Vernon
+				GF_GK_CHR_Edward GF_GK_CHR_Donald GF_GK_CHR_George GF_GK_CHR_Paul GF_GK_CHR_Greg GF_GK_CHR_Thomas GF_GK_CHR_Robert GF_GK_CHR_Gene GF_GK_CHR_Glen GF_GK_CHR_Hugh GF_GK_CHR_Ronald GF_GK_CHR_Francis GF_GK_CHR_Stephen GF_GK_CHR_Jon GF_GK_CHR_Richard GF_GK_CHR_Mark GF_GK_CHR_Marcus GF_GK_CHR_Scott GF_GK_CHR_Duncan
+				GF_GK_CHR_Douglas GF_GK_CHR_Keith GF_GK_CHR_Howard GF_GK_CHR_Russell GF_GK_CHR_Clayton GF_GK_CHR_Lee GF_GK_CHR_Steve GF_GK_CHR_Tom GF_GK_CHR_Clay GF_GK_CHR_Oliver GF_GK_CHR_Kenneth GF_GK_CHR_Ralph GF_GK_CHR_Andy GF_GK_CHR_Tony GF_GK_CHR_Tyrone GF_GK_CHR_Lawrence GF_GK_CHR_Patrick GF_GK_CHR_Harry GF_GK_CHR_Alan
+				GF_GK_CHR_Eugene GF_GK_CHR_Frank GF_GK_CHR_Craig GF_GK_CHR_Jason GF_GK_CHR_Martin GF_GK_CHR_Jonathan GF_GK_CHR_Harrison GF_GK_CHR_Connor GF_GK_CHR_Gaylord GF_GK_CHR_Sean GF_GK_CHR_Cooper GF_GK_CHR_Stanley GF_GK_CHR_Calhoun GF_GK_CHR_Neil GF_GK_CHR_Jeffrey GF_GK_CHR_Harold GF_GK_CHR_Raymond GF_GK_CHR_Fred
+				GF_GK_CHR_Marshall GF_GK_CHR_Silas GF_GK_CHR_Roy GF_GK_CHR_Jesse GF_GK_CHR_Ken GF_GK_CHR_Bruce GF_GK_CHR_Norris GF_GK_CHR_Horatio GF_GK_CHR_Clarence GF_GK_CHR_Lloyd GF_GK_CHR_Duane GF_GK_CHR_Mortimer GF_GK_CHR_Ben GF_GK_CHR_Ernest GF_GK_CHR_Warren GF_GK_CHR_Graham GF_GK_CHR_Marvin GF_GK_CHR_Orson GF_GK_CHR_Dennis
+				GF_GK_CHR_Jackson GF_GK_CHR_Dwight GF_GK_CHR_Harlan GF_GK_CHR_Arthur GF_GK_CHR_Percival GF_GK_CHR_Montgomery GF_GK_CHR_Clyde GF_GK_CHR_Rodney GF_GK_CHR_Gerald GF_GK_CHR_Franklin GF_GK_CHR_Jake GF_GK_CHR_Horace GF_GK_CHR_Irving GF_GK_CHR_Seth GF_GK_CHR_Randolph GF_GK_CHR_Floyd GF_GK_CHR_Carl
+				GF_GK_CHR_Brent GF_GK_CHR_Cliff GF_GK_CHR_Malcolm GF_GK_CHR_Timothy GF_GK_CHR_Wallace GF_GK_CHR_Pierce GF_GK_CHR_Edmund GF_GK_CHR_Gary GF_GK_CHR_Tony GF_GK_CHR_Nathan GF_GK_CHR_Eric GF_GK_CHR_Albert GF_GK_CHR_Robin GF_GK_CHR_Geoffrey GF_GK_CHR_Larry GF_GK_CHR_Ian GF_GK_CHR_Leonard GF_GK_CHR_Gordon GF_GK_CHR_Derek
+				GF_GK_CHR_Maxwell GF_GK_CHR_Alec GF_GK_CHR_Bernard GF_GK_CHR_Stuart GF_GK_CHR_Rupert GF_GK_CHR_Dean GF_GK_CHR_Philip GF_GK_CHR_Ross GF_GK_CHR_Colin GF_GK_CHR_Darren GF_GK_CHR_Melvin GF_GK_CHR_Justin GF_GK_CHR_Zack GF_GK_CHR_Elliot GF_GK_CHR_Simon GF_GK_CHR_Morgan GF_GK_CHR_Clark GF_GK_CHR_Xavier GF_GK_CHR_Jared
+				GF_GK_CHR_Edgar GF_GK_CHR_Crispin GF_GK_CHR_Nelson GF_GK_CHR_Emmett GF_GK_CHR_Trevor GF_GK_CHR_Travis GF_GK_CHR_Lance GF_GK_CHR_Adrian GF_GK_CHR_Desmond GF_GK_CHR_Brendan GF_GK_CHR_Brett GF_GK_CHR_Ambrose GF_GK_CHR_Basil GF_GK_CHR_Kieran GF_GK_CHR_Conan GF_GK_CHR_Dermot GF_GK_CHR_Dudley GF_GK_CHR_Felix
+				GF_GK_CHR_Finn GF_GK_CHR_Oscar GF_GK_CHR_Sidney GF_GK_CHR_Aaron GF_GK_CHR_Vincent GF_GK_CHR_Angus GF_GK_CHR_Grant GF_GK_CHR_Luke GF_GK_CHR_Miles GF_GK_CHR_Morton GF_GK_CHR_Randall GF_GK_CHR_Reginald GF_GK_CHR_Herbert GF_GK_CHR_Wesley GF_GK_CHR_Nigel GF_GK_CHR_Alexander GF_GK_CHR_Dominic GF_GK_CHR_Bradley
+				GF_GK_CHR_Liam GF_GK_CHR_Dirk GF_GK_CHR_SirBenjamin GF_GK_CHR_SirJames GF_GK_CHR_SirWalter GF_GK_CHR_SirNigel GF_GK_CHR_SirMontgomery GF_GK_CHR_SirDouglas GF_GK_CHR_SirAndrew GF_GK_CHR_Vance GF_GK_CHR_Kyle GF_GK_CHR_Chester
+			}
+			first_names_female = {
+				GF_GK_CHR_Olivia GF_GK_CHR_Emily GF_GK_CHR_Sophie GF_GK_CHR_Jessica GF_GK_CHR_Alice GF_GK_CHR_Scarlett GF_GK_CHR_Emma GF_GK_CHR_Daisy GF_GK_CHR_Eve GF_GK_CHR_Phoebe GF_GK_CHR_Sienna GF_GK_CHR_Anna GF_GK_CHR_Mary GF_GK_CHR_Megan GF_GK_CHR_Elizabeth GF_GK_CHR_Amy GF_GK_CHR_Darcy GF_GK_CHR_Matilda GF_GK_CHR_Erin
+				GF_GK_CHR_Lucy GF_GK_CHR_Grace GF_GK_CHR_Evelyn GF_GK_CHR_Amber GF_GK_CHR_Harriet GF_GK_CHR_Caitlyn GF_GK_CHR_Jasmine GF_GK_CHR_Madison GF_GK_CHR_Kate GF_GK_CHR_Eleanor GF_GK_CHR_Alexandra GF_GK_CHR_Sarah GF_GK_CHR_Martha GF_GK_CHR_Bethany GF_GK_CHR_Rebecca GF_GK_CHR_Victoria
+				GF_GK_CHR_Gabriella GF_GK_CHR_Naomi GF_GK_CHR_Lauren GF_GK_CHR_Clara GF_GK_CHR_Laura GF_GK_CHR_Kayla GF_GK_CHR_Nicole GF_GK_CHR_Skye GF_GK_CHR_Eliza GF_GK_CHR_Patricia GF_GK_CHR_Linda GF_GK_CHR_Barbara GF_GK_CHR_Jennifer GF_GK_CHR_Maria GF_GK_CHR_Susan GF_GK_CHR_Margaret GF_GK_CHR_Dorothy
+				GF_GK_CHR_Lisa GF_GK_CHR_Nancy GF_GK_CHR_Helen GF_GK_CHR_Sandra GF_GK_CHR_Donna GF_GK_CHR_Carol GF_GK_CHR_Ruth GF_GK_CHR_Sharon GF_GK_CHR_Michelle GF_GK_CHR_Kimberly GF_GK_CHR_Deborah GF_GK_CHR_Amelia GF_GK_CHR_Charlotte GF_GK_CHR_Isabella GF_GK_CHR_Ruby GF_GK_CHR_Addison GF_GK_CHR_Alyssa
+				GF_GK_CHR_Abigail GF_GK_CHR_Julia GF_GK_CHR_Samantha GF_GK_CHR_Brooklyn GF_GK_CHR_Ashley GF_GK_CHR_Natalie GF_GK_CHR_Brianna GF_GK_CHR_Chloe GF_GK_CHR_Hailey GF_GK_CHR_Lillian GF_GK_CHR_Judith GF_GK_CHR_Alison GF_GK_CHR_Amanda GF_GK_CHR_Angela GF_GK_CHR_Audrey GF_GK_CHR_Beatrice
+				GF_GK_CHR_Brenda GF_GK_CHR_Bridget GF_GK_CHR_Caroline GF_GK_CHR_Cassandra GF_GK_CHR_Charity GF_GK_CHR_Cecilia GF_GK_CHR_Anne GF_GK_CHR_Clarissa GF_GK_CHR_Christabel GF_GK_CHR_Cheryl GF_GK_CHR_Cynthia GF_GK_CHR_Cadence GF_GK_CHR_Cordelia GF_GK_CHR_Daphne GF_GK_CHR_Deanna
+				GF_GK_CHR_Denise GF_GK_CHR_Dolores GF_GK_CHR_Doreen GF_GK_CHR_Drusilia GF_GK_CHR_Edith GF_GK_CHR_Edna GF_GK_CHR_Eleonor GF_GK_CHR_Eileen GF_GK_CHR_Edwina GF_GK_CHR_Ellen GF_GK_CHR_Estelle GF_GK_CHR_Ethel GF_GK_CHR_Felicity GF_GK_CHR_Fiona GF_GK_CHR_Genevieve GF_GK_CHR_Gertie GF_GK_CHR_Gwen
+				GF_GK_CHR_Gwendolyn GF_GK_CHR_Henrietta GF_GK_CHR_Imogen GF_GK_CHR_Iris GF_GK_CHR_Imelda GF_GK_CHR_Jacqueline GF_GK_CHR_Jane GF_GK_CHR_Jenna GF_GK_CHR_Joanna GF_GK_CHR_Josephine GF_GK_CHR_Julianne GF_GK_CHR_Kathleen GF_GK_CHR_Kierra GF_GK_CHR_Kaylee GF_GK_CHR_Leah GF_GK_CHR_Lois
+				GF_GK_CHR_Loretta GF_GK_CHR_Lorna GF_GK_CHR_Louisa GF_GK_CHR_Lynnette GF_GK_CHR_Lucinda GF_GK_CHR_Mabel GF_GK_CHR_Marcia GF_GK_CHR_Marilyn GF_GK_CHR_Marissa GF_GK_CHR_Marjorie GF_GK_CHR_Maud GF_GK_CHR_Melanie GF_GK_CHR_Myrna GF_GK_CHR_Mavis GF_GK_CHR_Nadine GF_GK_CHR_Paula GF_GK_CHR_Penelope
+				GF_GK_CHR_Philippa GF_GK_CHR_Priscilla GF_GK_CHR_Rhonda GF_GK_CHR_Rita GF_GK_CHR_Roberta GF_GK_CHR_Rosamund GF_GK_CHR_Rosemary GF_GK_CHR_Roxanne GF_GK_CHR_Sabrina GF_GK_CHR_Selma GF_GK_CHR_Selina GF_GK_CHR_Sibyl GF_GK_CHR_Suzanne GF_GK_CHR_Tara GF_GK_CHR_Tabitha GF_GK_CHR_Thelma
+				GF_GK_CHR_Teresa GF_GK_CHR_Tiffany GF_GK_CHR_Vanessa GF_GK_CHR_Vivian GF_GK_CHR_Melissa GF_GK_CHR_Wanda GF_GK_CHR_Wendy GF_GK_CHR_Winifred GF_GK_CHR_Victoria GF_GK_CHR_Yvette GF_GK_CHR_Vera GF_GK_CHR_Zelda GF_GK_CHR_Joan GF_GK_CHR_Pamela GF_GK_CHR_Sherry GF_GK_CHR_Adrienne GF_GK_CHR_Monica
+				GF_GK_CHR_Irene GF_GK_CHR_Heather GF_GK_CHR_Lindsay GF_GK_CHR_Gillian GF_GK_CHR_Kristen GF_GK_CHR_Odette GF_GK_CHR_Felicia GF_GK_CHR_Christina GF_GK_CHR_Candace GF_GK_CHR_Arlene GF_GK_CHR_Tisha GF_GK_CHR_Majel GF_GK_CHR_Fran GF_GK_CHR_Doris GF_GK_CHR_Julie GF_GK_CHR_Courtney GF_GK_CHR_Shelly
+				GF_GK_CHR_Frances GF_GK_CHR_Mandy GF_GK_CHR_Mindy GF_GK_CHR_Rachel GF_GK_CHR_Miranda GF_GK_CHR_Virginia GF_GK_CHR_Gina GF_GK_CHR_Karla GF_GK_CHR_Tricia GF_GK_CHR_Diane GF_GK_CHR_Phyllis GF_GK_CHR_Sally GF_GK_CHR_Elaine GF_GK_CHR_Kara GF_GK_CHR_Shannon GF_GK_CHR_Susie GF_GK_CHR_Elle GF_GK_CHR_Gail GF_GK_CHR_Ann
+				GF_GK_CHR_Kathryn GF_GK_CHR_Tina GF_GK_CHR_Carrie GF_GK_CHR_Miriam GF_GK_CHR_Vivica GF_GK_CHR_Tamara GF_GK_CHR_Judy GF_GK_CHR_Willow GF_GK_CHR_Hilary GF_GK_CHR_Claire GF_GK_CHR_Danielle GF_GK_CHR_Teri GF_GK_CHR_Jackie GF_GK_CHR_Kelly GF_GK_CHR_Bonnie GF_GK_CHR_Holly GF_GK_CHR_Janice GF_GK_CHR_Brittney
+				GF_GK_CHR_Bianca GF_GK_CHR_Stephanie GF_GK_CHR_Natasha GF_GK_CHR_Lydia GF_GK_CHR_Mona GF_GK_CHR_Meredith GF_GK_CHR_Lynda GF_GK_CHR_Erica GF_GK_CHR_Heidi GF_GK_CHR_Paige GF_GK_CHR_Carmen GF_GK_CHR_Hayden GF_GK_CHR_Mallory GF_GK_CHR_Mercedes GF_GK_CHR_Marion GF_GK_CHR_Winona GF_GK_CHR_Jill
+				GF_GK_CHR_Molly GF_GK_CHR_Constance GF_GK_CHR_Jenny GF_GK_CHR_Penny GF_GK_CHR_Meryl GF_GK_CHR_Jodie GF_GK_CHR_Veronica GF_GK_CHR_April GF_GK_CHR_Sigourney GF_GK_CHR_Jillian GF_GK_CHR_Honor
 			}
 			second_names = {
-				"M1911" "M9" "P38" "PPK" "AR-15" "M4A1" "MAC-10" "FMG-9" "Vector" "MP5" "MP4" "MP7" "司登MkII" "M1加兰德" "MP-40" "M1A1" "M14" "M45" "SVD" "SVT-38" "莫辛纳甘" "PTRD" "M21" "Kar98K" "FN-49" "G34" "WA2000" "95式" "97式" "AK-47" "AK-12" "AN94" "Stg44" "HK416" "G36" "FNC" "M1918" "AUG" "64式" "UMP9" "UMP45" "UMP40" "FG42" "MG5" "索米" "OTs-14" "MK48" "Super SASS" "IWS 2000" "HK45" "SCW" "八一式马" "RFB" "雷电"  "卡尔卡诺M91"  "CZ2000" "A-91"  "Mk12"
+				GF_GK_CHR_Smith GF_GK_CHR_Jones GF_GK_CHR_Williams GF_GK_CHR_Taylor GF_GK_CHR_Brown GF_GK_CHR_Davies GF_GK_CHR_Evans GF_GK_CHR_Wilson GF_GK_CHR_Johnson GF_GK_CHR_Robinson GF_GK_CHR_Wright GF_GK_CHR_Thompson GF_GK_CHR_Evans GF_GK_CHR_Walker GF_GK_CHR_White GF_GK_CHR_Roberts GF_GK_CHR_Green GF_GK_CHR_Hall
+				GF_GK_CHR_Wood GF_GK_CHR_Jackson GF_GK_CHR_Clark GF_GK_CHR_Lewis GF_GK_CHR_Mason GF_GK_CHR_Mitchell GF_GK_CHR_Cox GF_GK_CHR_Campbell GF_GK_CHR_Stewart GF_GK_CHR_Quinn GF_GK_CHR_Murphy GF_GK_CHR_Hamilton GF_GK_CHR_Moore GF_GK_CHR_Murray GF_GK_CHR_McLaughlin GF_GK_CHR_Martin GF_GK_CHR_ONeill
+				GF_GK_CHR_Anderson GF_GK_CHR_Scott GF_GK_CHR_MacDonald GF_GK_CHR_Reid GF_GK_CHR_Ross GF_GK_CHR_Watson GF_GK_CHR_Patterson GF_GK_CHR_Morrison GF_GK_CHR_Sanders GF_GK_CHR_Harris GF_GK_CHR_Hughes GF_GK_CHR_Driscoll GF_GK_CHR_Price GF_GK_CHR_Jenkins GF_GK_CHR_Morgan GF_GK_CHR_Moss
+				GF_GK_CHR_Sinclair GF_GK_CHR_Simpson GF_GK_CHR_Zimmerman GF_GK_CHR_Young GF_GK_CHR_York GF_GK_CHR_Youngfellow GF_GK_CHR_Winters GF_GK_CHR_Worley GF_GK_CHR_Woodard GF_GK_CHR_Whitley GF_GK_CHR_Wheeler GF_GK_CHR_Wentworth GF_GK_CHR_West GF_GK_CHR_Weaver GF_GK_CHR_Webb GF_GK_CHR_Welsh
+				GF_GK_CHR_Sparks GF_GK_CHR_Spencer GF_GK_CHR_Stafford GF_GK_CHR_Stanley GF_GK_CHR_Steel GF_GK_CHR_Sterling GF_GK_CHR_Stevens GF_GK_CHR_Stone GF_GK_CHR_Stewart GF_GK_CHR_Sullivan GF_GK_CHR_Swanson GF_GK_CHR_Sweeney GF_GK_CHR_Swift GF_GK_CHR_Sykes GF_GK_CHR_Terrell GF_GK_CHR_Thornton
+				GF_GK_CHR_Tipton GF_GK_CHR_Turner GF_GK_CHR_Tyler GF_GK_CHR_Underwood GF_GK_CHR_Vincent GF_GK_CHR_Voight GF_GK_CHR_Wade GF_GK_CHR_Washington GF_GK_CHR_Watts GF_GK_CHR_OConnor GF_GK_CHR_ODonnell GF_GK_CHR_OHara GF_GK_CHR_Owens GF_GK_CHR_Page GF_GK_CHR_Palmer GF_GK_CHR_Parker
+				GF_GK_CHR_Perry GF_GK_CHR_Parson GF_GK_CHR_Paxton GF_GK_CHR_Payne GF_GK_CHR_Perkins GF_GK_CHR_Peters GF_GK_CHR_Pershing GF_GK_CHR_Phillips GF_GK_CHR_Pitt GF_GK_CHR_Potter GF_GK_CHR_Reynolds GF_GK_CHR_Reaves GF_GK_CHR_Reese GF_GK_CHR_Richardson GF_GK_CHR_Rivers GF_GK_CHR_Robbins
+				GF_GK_CHR_Robertson GF_GK_CHR_Roswell GF_GK_CHR_Ryan GF_GK_CHR_Salinger GF_GK_CHR_Samuels GF_GK_CHR_Sandler GF_GK_CHR_Savage GF_GK_CHR_Saxton GF_GK_CHR_Schneider GF_GK_CHR_Scowley GF_GK_CHR_Sedgwick GF_GK_CHR_Shannon GF_GK_CHR_Flint GF_GK_CHR_Sibbett GF_GK_CHR_Silverman
+				GF_GK_CHR_Silverstone GF_GK_CHR_Smart GF_GK_CHR_Snow GF_GK_CHR_Kruger GF_GK_CHR_Landau GF_GK_CHR_Lawrence GF_GK_CHR_Lawson GF_GK_CHR_Lee GF_GK_CHR_Leonard GF_GK_CHR_Little GF_GK_CHR_Lowell GF_GK_CHR_Michaels GF_GK_CHR_McGillis GF_GK_CHR_McKinnon GF_GK_CHR_McSwain GF_GK_CHR_McCoy
+				GF_GK_CHR_McCarthy GF_GK_CHR_McCormick GF_GK_CHR_McCreary GF_GK_CHR_Marshall GF_GK_CHR_Lynch GF_GK_CHR_Miller GF_GK_CHR_Montgomery GF_GK_CHR_Morris GF_GK_CHR_Nash GF_GK_CHR_Newman GF_GK_CHR_Nichols GF_GK_CHR_North GF_GK_CHR_Masterson GF_GK_CHR_Mayfield GF_GK_CHR_McCall
+				GF_GK_CHR_Hansen GF_GK_CHR_Harrington GF_GK_CHR_Hart GF_GK_CHR_Hendricks GF_GK_CHR_Holmes GF_GK_CHR_Higgins GF_GK_CHR_Hoffman GF_GK_CHR_Hood GF_GK_CHR_Hutchinson GF_GK_CHR_Hyland GF_GK_CHR_Knight GF_GK_CHR_Kirk GF_GK_CHR_King GF_GK_CHR_Kenway GF_GK_CHR_Kennedy GF_GK_CHR_Kelly
+				GF_GK_CHR_Kane GF_GK_CHR_Nathanson GF_GK_CHR_Jennings GF_GK_CHR_Jacobs GF_GK_CHR_Jefferies GF_GK_CHR_Irwin GF_GK_CHR_Gilbert GF_GK_CHR_Glass GF_GK_CHR_Glover GF_GK_CHR_Goldberg GF_GK_CHR_Goldstein GF_GK_CHR_Goodman GF_GK_CHR_Goodwin GF_GK_CHR_Graham GF_GK_CHR_Grant GF_GK_CHR_Graves
+				GF_GK_CHR_Gray GF_GK_CHR_Greenberg GF_GK_CHR_Gorney GF_GK_CHR_Griffin GF_GK_CHR_Halley GF_GK_CHR_Hunter GF_GK_CHR_Holloway GF_GK_CHR_Hoover GF_GK_CHR_Hutchins GF_GK_CHR_Hill GF_GK_CHR_Hines GF_GK_CHR_Holden GF_GK_CHR_Harvey GF_GK_CHR_Handler GF_GK_CHR_Cohen GF_GK_CHR_Collins GF_GK_CHR_Conrad
+				GF_GK_CHR_Conroy GF_GK_CHR_Cook GF_GK_CHR_Conley GF_GK_CHR_Compton GF_GK_CHR_Cody GF_GK_CHR_Crouch GF_GK_CHR_Crosby GF_GK_CHR_Curtis GF_GK_CHR_Fields GF_GK_CHR_Farrell GF_GK_CHR_Felton GF_GK_CHR_Fisher GF_GK_CHR_Fleming GF_GK_CHR_Forrest GF_GK_CHR_Foster GF_GK_CHR_Fox GF_GK_CHR_Freeman
+				GF_GK_CHR_Futterman GF_GK_CHR_Gardner GF_GK_CHR_Garrett GF_GK_CHR_Gates GF_GK_CHR_Garfield GF_GK_CHR_Gabriel GF_GK_CHR_Daniels GF_GK_CHR_Darling GF_GK_CHR_Easterbrook GF_GK_CHR_Edwards GF_GK_CHR_Edelstein GF_GK_CHR_Elliott GF_GK_CHR_Emerson GF_GK_CHR_Ericson
+				GF_GK_CHR_Duncan GF_GK_CHR_Dickinson GF_GK_CHR_Alexander GF_GK_CHR_Allen GF_GK_CHR_Austin GF_GK_CHR_Bauer GF_GK_CHR_Bancroft GF_GK_CHR_Baker GF_GK_CHR_Bailey GF_GK_CHR_Banks GF_GK_CHR_Barks GF_GK_CHR_Bassett GF_GK_CHR_Brewster GF_GK_CHR_Brooks GF_GK_CHR_Breckenridge GF_GK_CHR_Booth
+				GF_GK_CHR_Bloom GF_GK_CHR_Sherman GF_GK_CHR_Sheridan GF_GK_CHR_Billingsley GF_GK_CHR_Billings GF_GK_CHR_Bergman GF_GK_CHR_Bates GF_GK_CHR_Becker GF_GK_CHR_Bell GF_GK_CHR_Bellflower GF_GK_CHR_Bains GF_GK_CHR_Bean GF_GK_CHR_Cartwright GF_GK_CHR_Carpenter GF_GK_CHR_Buckland
+				GF_GK_CHR_Burness GF_GK_CHR_Burnett GF_GK_CHR_Bush GF_GK_CHR_Butler GF_GK_CHR_French GF_GK_CHR_England GF_GK_CHR_Carroll GF_GK_CHR_Carter GF_GK_CHR_Cavanaugh GF_GK_CHR_Chaffin GF_GK_CHR_Chase GF_GK_CHR_Channing GF_GK_CHR_Chapman GF_GK_CHR_Arnold GF_GK_CHR_Fry GF_GK_CHR_Milton
+				GF_GK_CHR_Sharp GF_GK_CHR_Durston GF_GK_CHR_Howell GF_GK_CHR_Mead GF_GK_CHR_Poole GF_GK_CHR_Ashton GF_GK_CHR_Brockbank GF_GK_CHR_Cooper GF_GK_CHR_Cursham GF_GK_CHR_Dixon GF_GK_CHR_Baxter GF_GK_CHR_Drake GF_GK_CHR_Garland GF_GK_CHR_Wells GF_GK_CHR_Hargreaves GF_GK_CHR_Houghton
+				GF_GK_CHR_Haygarth GF_GK_CHR_Hurst GF_GK_CHR_Kingsford GF_GK_CHR_Lindsay GF_GK_CHR_Rawson GF_GK_CHR_Walden GF_GK_CHR_Walters GF_GK_CHR_Whitfield GF_GK_CHR_Bennett GF_GK_CHR_Cross GF_GK_CHR_Buxton GF_GK_CHR_Dyson GF_GK_CHR_McMillan GF_GK_CHR_Russell GF_GK_CHR_Scott GF_GK_CHR_Beauclerk
+				GF_GK_CHR_Ward GF_GK_CHR_Howard GF_GK_CHR_Lloyd GF_GK_CHR_Tanner GF_GK_CHR_Nicholas GF_GK_CHR_Matthews GF_GK_CHR_Ellis GF_GK_CHR_Whyting GF_GK_CHR_Whittaker GF_GK_CHR_Barton GF_GK_CHR_Hawkins GF_GK_CHR_Garrovick GF_GK_CHR_Spector GF_GK_CHR_Reeves GF_GK_CHR_Vernon GF_GK_CHR_McNiven
+				GF_GK_CHR_Rowley GF_GK_CHR_Sandford GF_GK_CHR_Fawcett GF_GK_CHR_Lockhart GF_GK_CHR_Lang GF_GK_CHR_Oliphant GF_GK_CHR_Wilkins GF_GK_CHR_Balfour GF_GK_CHR_Appleby GF_GK_CHR_Buchanan GF_GK_CHR_Yardley GF_GK_CHR_Shaw GF_GK_CHR_Stokes GF_GK_CHR_Allenby GF_GK_CHR_Cockburn GF_GK_CHR_Mundy
+				GF_GK_CHR_Franklin GF_GK_CHR_Armstrong GF_GK_CHR_Chamberlain GF_GK_CHR_Powell GF_GK_CHR_Abbott GF_GK_CHR_Blair GF_GK_CHR_VanHoof GF_GK_CHR_VanRijn GF_GK_CHR_Burnside GF_GK_CHR_Schofield GF_GK_CHR_Farnsworth GF_GK_CHR_Ford GF_GK_CHR_Warner GF_GK_CHR_Porter
+				GF_GK_CHR_Barksdale GF_GK_CHR_Polk GF_GK_CHR_Gibbons GF_GK_CHR_Archer GF_GK_CHR_Pickett GF_GK_CHR_Houston GF_GK_CHR_Whitfield GF_GK_CHR_Pearson GF_GK_CHR_Lucas GF_GK_CHR_Horner GF_GK_CHR_Bainbridge GF_GK_CHR_Rollins GF_GK_CHR_Casey GF_GK_CHR_Cochrane GF_GK_CHR_Merchant
+				GF_GK_CHR_Bowden GF_GK_CHR_Douglas GF_GK_CHR_Muldoon GF_GK_CHR_Wickham GF_GK_CHR_Milligan GF_GK_CHR_Bradley GF_GK_CHR_Findley GF_GK_CHR_Spooner GF_GK_CHR_Harper GF_GK_CHR_Shepard GF_GK_CHR_Kingston GF_GK_CHR_Knox GF_GK_CHR_Colbeck GF_GK_CHR_Shields GF_GK_CHR_Burns GF_GK_CHR_Gibson
+				GF_GK_CHR_Burton GF_GK_CHR_Crutchley GF_GK_CHR_Gilligan GF_GK_CHR_Bridges GF_GK_CHR_Richter GF_GK_CHR_Fowler GF_GK_CHR_Novak GF_GK_CHR_Longfield GF_GK_CHR_Seabrook GF_GK_CHR_Hazelton GF_GK_CHR_Kingsley GF_GK_CHR_Doggart GF_GK_CHR_Wilcox GF_GK_CHR_Hudson GF_GK_CHR_Hooks GF_GK_CHR_Hicks
+				GF_GK_CHR_Cameron GF_GK_CHR_Hammond GF_GK_CHR_Knotts GF_GK_CHR_Jefferson GF_GK_CHR_Coffey GF_GK_CHR_Adams GF_GK_CHR_Babcock GF_GK_CHR_Baldwin GF_GK_CHR_Bannister GF_GK_CHR_Purcell GF_GK_CHR_Baumgartner GF_GK_CHR_Birch GF_GK_CHR_Blackwood GF_GK_CHR_Blake GF_GK_CHR_Bolander
+				GF_GK_CHR_Bolton GF_GK_CHR_Brock GF_GK_CHR_Brannigan GF_GK_CHR_Burke GF_GK_CHR_Weyland GF_GK_CHR_Burrows GF_GK_CHR_Cairns GF_GK_CHR_Carlyle GF_GK_CHR_Carson GF_GK_CHR_Charlesworth GF_GK_CHR_Church GF_GK_CHR_Clancy GF_GK_CHR_Cullen GF_GK_CHR_Dufresne GF_GK_CHR_Bixby GF_GK_CHR_Featherstone
+				GF_GK_CHR_Ferguson GF_GK_CHR_Foley GF_GK_CHR_Funk GF_GK_CHR_Gorman GF_GK_CHR_Haddock GF_GK_CHR_Grisdale GF_GK_CHR_Grimes GF_GK_CHR_Hoffmeyer GF_GK_CHR_Holt GF_GK_CHR_Ingram GF_GK_CHR_Kaiser GF_GK_CHR_Kearns GF_GK_CHR_Keeler GF_GK_CHR_Kellerman GF_GK_CHR_Kinnear GF_GK_CHR_Kurtz GF_GK_CHR_Kyle
+				GF_GK_CHR_Laidlaw GF_GK_CHR_Lankshear GF_GK_CHR_Lessard GF_GK_CHR_Lowe GF_GK_CHR_MacKenzie GF_GK_CHR_MacNevin GF_GK_CHR_MacInnis GF_GK_CHR_Madigan GF_GK_CHR_Maloney GF_GK_CHR_Marsh GF_GK_CHR_McAllister GF_GK_CHR_McBain GF_GK_CHR_Myers GF_GK_CHR_Nicholson GF_GK_CHR_Olsen
+				GF_GK_CHR_OMalley GF_GK_CHR_Peacock GF_GK_CHR_Peckham GF_GK_CHR_Murdoch GF_GK_CHR_Prefontaine GF_GK_CHR_Pratt GF_GK_CHR_Popovic GF_GK_CHR_Pritchard GF_GK_CHR_Quackenbush GF_GK_CHR_Penebscott GF_GK_CHR_Pfaffenbach GF_GK_CHR_Ramsey GF_GK_CHR_Quincey
+				GF_GK_CHR_Reilly GF_GK_CHR_Reinhart GF_GK_CHR_Renaud GF_GK_CHR_Rolston GF_GK_CHR_Shoebottom GF_GK_CHR_Skinner GF_GK_CHR_Sloan GF_GK_CHR_Snell GF_GK_CHR_Snider GF_GK_CHR_Sorensen GF_GK_CHR_Spiller GF_GK_CHR_Spurgeon GF_GK_CHR_Stanfield GF_GK_CHR_Stackhouse GF_GK_CHR_Stiles
+				GF_GK_CHR_Sutherland GF_GK_CHR_Sutton GF_GK_CHR_Taggart GF_GK_CHR_Townsend GF_GK_CHR_Traynor GF_GK_CHR_Stark GF_GK_CHR_Strudwick GF_GK_CHR_MacArthur GF_GK_CHR_Barnes GF_GK_CHR_Atkins GF_GK_CHR_Ballard GF_GK_CHR_Biggs GF_GK_CHR_Baird GF_GK_CHR_Fredericks GF_GK_CHR_Humphry
+				GF_GK_CHR_Colt GF_GK_CHR_Dillard GF_GK_CHR_Cunningham GF_GK_CHR_DeStefano GF_GK_CHR_Finks GF_GK_CHR_Fletcher GF_GK_CHR_Galloway GF_GK_CHR_Kirby GF_GK_CHR_Sutter GF_GK_CHR_Preston GF_GK_CHR_Tucker GF_GK_CHR_SmithJr GF_GK_CHR_WilliamsJr GF_GK_CHR_EvansJr
+				GF_GK_CHR_WalkerJr GF_GK_CHR_TaylorJr GF_GK_CHR_ScottJr GF_GK_CHR_MeriweatherII GF_GK_CHR_BarksdaleIII GF_GK_CHR_LeadbetterIV GF_GK_CHR_PembertonII GF_GK_CHR_TrapierIII GF_GK_CHR_Kowalski
+				GF_GK_CHR_Rabinowitz GF_GK_CHR_Feldman GF_GK_CHR_Katz GF_GK_CHR_Roykirk GF_GK_CHR_Decker
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Alexander GF_GK_CHR_Vladimir GF_GK_CHR_Boris GF_GK_CHR_Tiberius GF_GK_CHR_Theobald GF_GK_CHR_Valerian GF_GK_CHR_Maximus GF_GK_CHR_Lucius
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Theodora GF_GK_CHR_Fatima GF_GK_CHR_Miranda GF_GK_CHR_Cordelia GF_GK_CHR_Svetlana GF_GK_CHR_Anastasia GF_GK_CHR_Valentina GF_GK_CHR_Henrietta
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Habsburg GF_GK_CHR_Romanov GF_GK_CHR_Windsor GF_GK_CHR_Mountbatten GF_GK_CHR_Salazar GF_GK_CHR_Nelson
 			}
 		}
-		names1 = {
-			weight = 50
-			first_names = {
-			    "战术人形"
+
+		names2 = {
+			weight = 20
+			first_names_male = {
+				GF_GK_CHR_Ivan GF_GK_CHR_Nikolai GF_GK_CHR_Boris GF_GK_CHR_Vladimir GF_GK_CHR_Pyotr GF_GK_CHR_Alexei GF_GK_CHR_Dmitri GF_GK_CHR_Sergei GF_GK_CHR_Viktor GF_GK_CHR_Roman GF_GK_CHR_Igor GF_GK_CHR_Mikhail GF_GK_CHR_Vasily GF_GK_CHR_Pavel GF_GK_CHR_Fyodor GF_GK_CHR_Nikita GF_GK_CHR_Valery
+				GF_GK_CHR_Vladislav GF_GK_CHR_Leonid GF_GK_CHR_Maxim GF_GK_CHR_Yuri GF_GK_CHR_Oleg GF_GK_CHR_Andrei GF_GK_CHR_Konstantin GF_GK_CHR_Vyacheslav GF_GK_CHR_Aleksandr GF_GK_CHR_Stanislav GF_GK_CHR_Anatoli GF_GK_CHR_Miroslav GF_GK_CHR_Artyom GF_GK_CHR_Bogdan
+				GF_GK_CHR_Branislav GF_GK_CHR_Ilya GF_GK_CHR_Jaroslav GF_GK_CHR_Radomir GF_GK_CHR_Kirill GF_GK_CHR_Radoslav GF_GK_CHR_Lubomir GF_GK_CHR_Ratimir GF_GK_CHR_Yegor GF_GK_CHR_Ijon
+			}
+			first_names_female = {
+				GF_GK_CHR_Anna GF_GK_CHR_Yelena GF_GK_CHR_Olga GF_GK_CHR_Oksana GF_GK_CHR_Tatyana GF_GK_CHR_Svetlana GF_GK_CHR_Nadya GF_GK_CHR_Yekaterina GF_GK_CHR_Irina GF_GK_CHR_Galina GF_GK_CHR_Miroslava GF_GK_CHR_Anastasia GF_GK_CHR_Vera GF_GK_CHR_Polina GF_GK_CHR_Lyudmila GF_GK_CHR_Elena
+				GF_GK_CHR_Marina GF_GK_CHR_Darya GF_GK_CHR_Irma GF_GK_CHR_Ksenia GF_GK_CHR_Alexandra GF_GK_CHR_Nadesja GF_GK_CHR_Valentina GF_GK_CHR_Arina GF_GK_CHR_Alya GF_GK_CHR_Galenka GF_GK_CHR_Katya GF_GK_CHR_Ljuba GF_GK_CHR_Radmila GF_GK_CHR_Natacha GF_GK_CHR_Vlada GF_GK_CHR_Nadezhda
+				GF_GK_CHR_Tatiana GF_GK_CHR_Sonia GF_GK_CHR_Mira
+
+			}
+			second_names_male = {
+				GF_GK_CHR_Grishin GF_GK_CHR_Fedorov GF_GK_CHR_Komarov GF_GK_CHR_Pushkov GF_GK_CHR_Petrenko GF_GK_CHR_Shatalov GF_GK_CHR_Ivanov GF_GK_CHR_Kamensky GF_GK_CHR_Vasiliev GF_GK_CHR_Ulanov GF_GK_CHR_Volkov GF_GK_CHR_Gryaznov GF_GK_CHR_Dudnik GF_GK_CHR_Yerzov GF_GK_CHR_Zhirov
+				GF_GK_CHR_Zhivenkov GF_GK_CHR_Kazakov GF_GK_CHR_Krutov GF_GK_CHR_Ivannikov GF_GK_CHR_Kolosov GF_GK_CHR_Kuzin GF_GK_CHR_Larionov GF_GK_CHR_Maksimushkin GF_GK_CHR_Markov GF_GK_CHR_Ostrovsky GF_GK_CHR_Polachev GF_GK_CHR_Rychenkov GF_GK_CHR_Romanov
+				GF_GK_CHR_Sayanovich GF_GK_CHR_Statnik GF_GK_CHR_Sorokin GF_GK_CHR_Turgenev GF_GK_CHR_Titov GF_GK_CHR_Tvardovsky GF_GK_CHR_Antonov GF_GK_CHR_Skobelev GF_GK_CHR_Lazarev GF_GK_CHR_Makarov GF_GK_CHR_Dragomirov GF_GK_CHR_Alekseyev GF_GK_CHR_Tichy
+			}
+			second_names_female = {
+				GF_GK_CHR_Grishina GF_GK_CHR_Fedorova GF_GK_CHR_Komarova GF_GK_CHR_Pushkova GF_GK_CHR_Petrenko GF_GK_CHR_Shatalova GF_GK_CHR_Ivanova GF_GK_CHR_Kamenskaya GF_GK_CHR_Vasilyeva GF_GK_CHR_Ulanova GF_GK_CHR_Volkova GF_GK_CHR_Gryaznova GF_GK_CHR_Dudnik GF_GK_CHR_Yerzova
+				GF_GK_CHR_Zhirova GF_GK_CHR_Zhivenkova GF_GK_CHR_Kazakova GF_GK_CHR_Krutova GF_GK_CHR_Ivannikova GF_GK_CHR_Kolosova GF_GK_CHR_Kuzina GF_GK_CHR_Larionova GF_GK_CHR_Maksimushkina GF_GK_CHR_Markova GF_GK_CHR_Ostrovskaya GF_GK_CHR_Polacheva GF_GK_CHR_Rychenkova
+				GF_GK_CHR_Romanova GF_GK_CHR_Statnik GF_GK_CHR_Sorokina GF_GK_CHR_Turgeneva GF_GK_CHR_Titova GF_GK_CHR_Tvardovskaya GF_GK_CHR_Antonova GF_GK_CHR_Skobeleva GF_GK_CHR_Lazareva GF_GK_CHR_Makarova GF_GK_CHR_Dragomirova GF_GK_CHR_Alekseyeva
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Alexander GF_GK_CHR_Vladimir GF_GK_CHR_Boris GF_GK_CHR_Tiberius GF_GK_CHR_Theobald GF_GK_CHR_Valerian GF_GK_CHR_Maximus GF_GK_CHR_Lucius
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Theodora GF_GK_CHR_Fatima GF_GK_CHR_Miranda GF_GK_CHR_Cordelia GF_GK_CHR_Svetlana GF_GK_CHR_Anastasia GF_GK_CHR_Valentina GF_GK_CHR_Henrietta
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Habsburg GF_GK_CHR_Romanov GF_GK_CHR_Windsor GF_GK_CHR_Mountbatten GF_GK_CHR_Salazar GF_GK_CHR_Nelson
+			}
+		}
+
+		names3 = {
+			weight = 40
+			first_names_male = {
+				GF_GK_CHR_An GF_GK_CHR_Bao GF_GK_CHR_Bo GF_GK_CHR_Cai GF_GK_CHR_Cheng GF_GK_CHR_De GF_GK_CHR_Dong GF_GK_CHR_Feng GF_GK_CHR_Gang GF_GK_CHR_Guo GF_GK_CHR_Hu GF_GK_CHR_Hui GF_GK_CHR_Jian GF_GK_CHR_Jie GF_GK_CHR_Kang GF_GK_CHR_Li GF_GK_CHR_Liang GF_GK_CHR_Long GF_GK_CHR_Meng GF_GK_CHR_Ning GF_GK_CHR_Peng GF_GK_CHR_Qiang GF_GK_CHR_Shi GF_GK_CHR_Song GF_GK_CHR_Tao GF_GK_CHR_Tian GF_GK_CHR_Wei
+				GF_GK_CHR_You GF_GK_CHR_Yong GF_GK_CHR_Yi GF_GK_CHR_Xiong GF_GK_CHR_Wu
+			}
+			first_names_female = {
+				GF_GK_CHR_Ai GF_GK_CHR_Bi GF_GK_CHR_Cui GF_GK_CHR_Chan GF_GK_CHR_Dai GF_GK_CHR_Dan GF_GK_CHR_Fang GF_GK_CHR_Hong GF_GK_CHR_Hua GF_GK_CHR_Huan GF_GK_CHR_Jiao GF_GK_CHR_Ju GF_GK_CHR_Juan GF_GK_CHR_Lan GF_GK_CHR_Lian GF_GK_CHR_Lin GF_GK_CHR_Mei GF_GK_CHR_Na GF_GK_CHR_Ni GF_GK_CHR_Qian GF_GK_CHR_Qiao GF_GK_CHR_Qing GF_GK_CHR_Shan GF_GK_CHR_Shu GF_GK_CHR_Ting GF_GK_CHR_Wen GF_GK_CHR_Xia GF_GK_CHR_Xian
+				GF_GK_CHR_Xiang GF_GK_CHR_Xiu GF_GK_CHR_Xue GF_GK_CHR_Yan GF_GK_CHR_Ying GF_GK_CHR_Yu GF_GK_CHR_Yuan GF_GK_CHR_Yun GF_GK_CHR_Zhen GF_GK_CHR_Zhi GF_GK_CHR_Zhu GF_GK_CHR_Zi
 			}
 			second_names = {
-				"M1911" "M9" "P38" "PPK" "AR-15" "M4A1" "MAC-10" "FMG-9" "Vector" "MP5" "MP4" "MP7" "司登MkII" "M1加兰德" "MP-40" "M1A1" "M14" "M45" "SVD" "SVT-38" "莫辛纳甘" "PTRD" "M21" "Kar98K" "FN-49" "G34" "WA2000" "95式" "97式" "AK-47" "AK-12" "AN94" "Stg44" "HK416" "G36" "FNC" "M1918" "AUG" "64式" "UMP9" "UMP45" "UMP40" "FG42" "MG5" "索米" "OTs-14" "MK48" "Super SASS" "IWS 2000" "HK45" "SCW" "八一式马" "RFB" "雷电"  "卡尔卡诺M91"  "CZ2000" "A-91"  "Mk12"
+				GF_GK_CHR_Liang GF_GK_CHR_Luo GF_GK_CHR_Kuang GF_GK_CHR_Lu GF_GK_CHR_Zheng GF_GK_CHR_Lin GF_GK_CHR_Xu GF_GK_CHR_Xie GF_GK_CHR_Wang GF_GK_CHR_Zhu GF_GK_CHR_Yang GF_GK_CHR_Mao GF_GK_CHR_Shen GF_GK_CHR_Hu GF_GK_CHR_Tan GF_GK_CHR_He GF_GK_CHR_Deng GF_GK_CHR_Wu GF_GK_CHR_Cheng GF_GK_CHR_Gao GF_GK_CHR_Wan GF_GK_CHR_Kong GF_GK_CHR_Pan GF_GK_CHR_Sima GF_GK_CHR_Zhuge GF_GK_CHR_Ouyang GF_GK_CHR_Situ
+				GF_GK_CHR_Huang GF_GK_CHR_Zhao GF_GK_CHR_Zhang
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_You GF_GK_CHR_Yong GF_GK_CHR_Yi GF_GK_CHR_Xiong GF_GK_CHR_Wu GF_GK_CHR_Feng GF_GK_CHR_Gang GF_GK_CHR_Guo GF_GK_CHR_Hu GF_GK_CHR_Hui
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Ai GF_GK_CHR_Bi GF_GK_CHR_Lian GF_GK_CHR_Lin GF_GK_CHR_Mei GF_GK_CHR_Na GF_GK_CHR_Ni GF_GK_CHR_Xiu GF_GK_CHR_Xue GF_GK_CHR_Yan GF_GK_CHR_Ying GF_GK_CHR_Yu GF_GK_CHR_Yuan
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Wang GF_GK_CHR_Zhu GF_GK_CHR_Yang
+			}
+		}
+
+		names4 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Karl GF_GK_CHR_Wilhelm GF_GK_CHR_Otto GF_GK_CHR_Heinrich GF_GK_CHR_Friedrich GF_GK_CHR_Paul GF_GK_CHR_Hans GF_GK_CHR_Gustav GF_GK_CHR_Max GF_GK_CHR_Ernst GF_GK_CHR_Hermann GF_GK_CHR_Walter GF_GK_CHR_Werner GF_GK_CHR_Gunther GF_GK_CHR_Wolfgang GF_GK_CHR_Helmuth GF_GK_CHR_Kurt GF_GK_CHR_Rolf
+				GF_GK_CHR_Peter GF_GK_CHR_Klaus GF_GK_CHR_Gerhard GF_GK_CHR_Heinz GF_GK_CHR_Horst GF_GK_CHR_Manfred GF_GK_CHR_Uwe GF_GK_CHR_Jurgen GF_GK_CHR_Dieter GF_GK_CHR_Andreas GF_GK_CHR_Thomas GF_GK_CHR_Stefan GF_GK_CHR_Lukas GF_GK_CHR_Felix GF_GK_CHR_Martin GF_GK_CHR_Fritz GF_GK_CHR_Johann GF_GK_CHR_Erich GF_GK_CHR_Arnold
+				GF_GK_CHR_Bruno GF_GK_CHR_Franz GF_GK_CHR_Rudolf GF_GK_CHR_Erhard GF_GK_CHR_Jorg GF_GK_CHR_Axel GF_GK_CHR_Emil GF_GK_CHR_Gerhardt GF_GK_CHR_Gottfried GF_GK_CHR_Holger GF_GK_CHR_Joachim GF_GK_CHR_Konrad GF_GK_CHR_Lothar GF_GK_CHR_Ludwig GF_GK_CHR_Matthias GF_GK_CHR_Moritz GF_GK_CHR_Reinhard
+				GF_GK_CHR_Sigismund GF_GK_CHR_Ulrich GF_GK_CHR_Udo GF_GK_CHR_Hravn
+			}
+			first_names_female = {
+				GF_GK_CHR_Anna GF_GK_CHR_Elsa GF_GK_CHR_Emma GF_GK_CHR_Helga GF_GK_CHR_Ursula GF_GK_CHR_Gisela GF_GK_CHR_Ingrid GF_GK_CHR_Ilse GF_GK_CHR_Jessika GF_GK_CHR_Sandra GF_GK_CHR_Stefanie GF_GK_CHR_Andrea GF_GK_CHR_Anja GF_GK_CHR_Katrin GF_GK_CHR_Birgit GF_GK_CHR_Martina GF_GK_CHR_Heike GF_GK_CHR_Sabine GF_GK_CHR_Erika
+				GF_GK_CHR_Edith GF_GK_CHR_Lena GF_GK_CHR_Lisa GF_GK_CHR_Katharina GF_GK_CHR_Claudia GF_GK_CHR_Silvia GF_GK_CHR_Tina GF_GK_CHR_Annike GF_GK_CHR_Renate GF_GK_CHR_Bettina GF_GK_CHR_Wibke GF_GK_CHR_Sara GF_GK_CHR_Lina GF_GK_CHR_Julia GF_GK_CHR_Marith GF_GK_CHR_Heidi GF_GK_CHR_Angelika GF_GK_CHR_Christel
+				GF_GK_CHR_Gretchen GF_GK_CHR_Hilde GF_GK_CHR_Hildegard GF_GK_CHR_Gertrude GF_GK_CHR_Wilhelmina GF_GK_CHR_Lisbeth GF_GK_CHR_Kerstin GF_GK_CHR_Johanna GF_GK_CHR_Anita
+			}
+			second_names = {
+				GF_GK_CHR_Muller GF_GK_CHR_Schmidt GF_GK_CHR_Schneider GF_GK_CHR_Fischer GF_GK_CHR_Weber GF_GK_CHR_Meyer GF_GK_CHR_Wagner GF_GK_CHR_Schulz GF_GK_CHR_Becker GF_GK_CHR_Hoffmann GF_GK_CHR_Bauer GF_GK_CHR_Brinkmann GF_GK_CHR_Brill GF_GK_CHR_Dietrich GF_GK_CHR_Erhard GF_GK_CHR_Grasser
+				GF_GK_CHR_vonGebser GF_GK_CHR_vonFritsch GF_GK_CHR_vonWrangel GF_GK_CHR_vonHalkett GF_GK_CHR_vonBoyen GF_GK_CHR_vonFalkenstein GF_GK_CHR_Dreyer GF_GK_CHR_Wolf GF_GK_CHR_Klein GF_GK_CHR_Richter GF_GK_CHR_Schafer
+				GF_GK_CHR_Neumann GF_GK_CHR_Braun GF_GK_CHR_Schwarz GF_GK_CHR_Kruger GF_GK_CHR_Stein GF_GK_CHR_Keller GF_GK_CHR_Schubert GF_GK_CHR_Baumann GF_GK_CHR_Ziegler GF_GK_CHR_Brandt GF_GK_CHR_Sauer GF_GK_CHR_Kreutz GF_GK_CHR_Bergmeister GF_GK_CHR_Andbert
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Alexander GF_GK_CHR_Vladimir GF_GK_CHR_Boris GF_GK_CHR_Tiberius GF_GK_CHR_Theobald GF_GK_CHR_Valerian GF_GK_CHR_Maximus GF_GK_CHR_Lucius
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Theodora GF_GK_CHR_Fatima GF_GK_CHR_Miranda GF_GK_CHR_Cordelia GF_GK_CHR_Svetlana GF_GK_CHR_Anastasia GF_GK_CHR_Valentina GF_GK_CHR_Henrietta
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Habsburg GF_GK_CHR_Romanov GF_GK_CHR_Windsor GF_GK_CHR_Mountbatten GF_GK_CHR_Salazar GF_GK_CHR_Nelson
+			}
+		}
+
+		names5 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Philippe GF_GK_CHR_Pierre GF_GK_CHR_Jean-Marie GF_GK_CHR_Marcel GF_GK_CHR_Francois GF_GK_CHR_Hubert GF_GK_CHR_Paul GF_GK_CHR_Antoine GF_GK_CHR_Michel GF_GK_CHR_Henri GF_GK_CHR_Marc GF_GK_CHR_Jean GF_GK_CHR_Maurice GF_GK_CHR_Rene GF_GK_CHR_Claude GF_GK_CHR_Yves GF_GK_CHR_Jacques
+				GF_GK_CHR_Simon GF_GK_CHR_Olivier GF_GK_CHR_Joseph GF_GK_CHR_Robert GF_GK_CHR_Georges GF_GK_CHR_Andre GF_GK_CHR_Raymond GF_GK_CHR_Gaston GF_GK_CHR_Charles GF_GK_CHR_Thierry GF_GK_CHR_Guy GF_GK_CHR_Patrice GF_GK_CHR_Mathieu GF_GK_CHR_Jean-Francois GF_GK_CHR_Lucien GF_GK_CHR_Jean-Paul
+				GF_GK_CHR_Daniel GF_GK_CHR_Thibault GF_GK_CHR_Luc GF_GK_CHR_Dominic GF_GK_CHR_Sebastien GF_GK_CHR_Hugo GF_GK_CHR_Jamie
+			}
+			first_names_female = {
+				GF_GK_CHR_Chloe GF_GK_CHR_Ines GF_GK_CHR_Manon GF_GK_CHR_Camille GF_GK_CHR_Clara GF_GK_CHR_Juliette GF_GK_CHR_Clemence GF_GK_CHR_Jeanne GF_GK_CHR_Charlotte GF_GK_CHR_Marie GF_GK_CHR_Nina GF_GK_CHR_Julia GF_GK_CHR_Elise GF_GK_CHR_Justine GF_GK_CHR_Yasmine GF_GK_CHR_Elina GF_GK_CHR_Andrea
+				GF_GK_CHR_Eleonore GF_GK_CHR_Clarisse GF_GK_CHR_Fanny GF_GK_CHR_Selma GF_GK_CHR_Leila GF_GK_CHR_Veronique GF_GK_CHR_Sophie GF_GK_CHR_Helena GF_GK_CHR_Daphne GF_GK_CHR_Suzanne GF_GK_CHR_Melanie GF_GK_CHR_Bernadette GF_GK_CHR_Maud GF_GK_CHR_Angeline GF_GK_CHR_Celine GF_GK_CHR_Jessica
+				GF_GK_CHR_Pauline GF_GK_CHR_Viviane GF_GK_CHR_Jeanette
+			}
+			second_names = {
+				GF_GK_CHR_Martin GF_GK_CHR_Bernard GF_GK_CHR_Dubois GF_GK_CHR_Durand GF_GK_CHR_Leroy GF_GK_CHR_Moreau GF_GK_CHR_Lambert GF_GK_CHR_Dupont GF_GK_CHR_Leclerc GF_GK_CHR_Laurent GF_GK_CHR_Renard GF_GK_CHR_Tremblay GF_GK_CHR_Gagnon GF_GK_CHR_Roy GF_GK_CHR_Bouchard GF_GK_CHR_Gauthier
+				GF_GK_CHR_Morin GF_GK_CHR_Lavoie GF_GK_CHR_Fortin GF_GK_CHR_Gagne GF_GK_CHR_Duval GF_GK_CHR_Hebert GF_GK_CHR_LeGall GF_GK_CHR_LeRoux GF_GK_CHR_Deville GF_GK_CHR_Gerard GF_GK_CHR_Duchaine GF_GK_CHR_Jauvin GF_GK_CHR_Gilbert GF_GK_CHR_Bergeron GF_GK_CHR_Paquette
+				GF_GK_CHR_Pelletier GF_GK_CHR_Remy GF_GK_CHR_Giroud GF_GK_CHR_Bosquet GF_GK_CHR_deCastelnau GF_GK_CHR_deMontaignac GF_GK_CHR_Lebouef GF_GK_CHR_Pellissier GF_GK_CHR_Deveraux
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Alexander GF_GK_CHR_Vladimir GF_GK_CHR_Boris GF_GK_CHR_Tiberius GF_GK_CHR_Theobald GF_GK_CHR_Valerian GF_GK_CHR_Maximus GF_GK_CHR_Lucius
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Theodora GF_GK_CHR_Fatima GF_GK_CHR_Miranda GF_GK_CHR_Cordelia GF_GK_CHR_Svetlana GF_GK_CHR_Anastasia GF_GK_CHR_Valentina GF_GK_CHR_Henrietta
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Habsburg GF_GK_CHR_Romanov GF_GK_CHR_Windsor GF_GK_CHR_Mountbatten GF_GK_CHR_Salazar GF_GK_CHR_Nelson
+			}
+		}
+
+		names6 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Hiroto GF_GK_CHR_Hikaru GF_GK_CHR_Takumi GF_GK_CHR_Tsubasa GF_GK_CHR_Ren GF_GK_CHR_Minato GF_GK_CHR_Shota GF_GK_CHR_Yuuto GF_GK_CHR_Sota GF_GK_CHR_Yuma GF_GK_CHR_Takeru GF_GK_CHR_Rikuto GF_GK_CHR_Tatsuki GF_GK_CHR_Ryuto GF_GK_CHR_Haru GF_GK_CHR_Yushin GF_GK_CHR_Kosei GF_GK_CHR_Yoshinobu
+				GF_GK_CHR_Jiro GF_GK_CHR_Hiroshi GF_GK_CHR_Yoshida GF_GK_CHR_Mitsue GF_GK_CHR_Keisuke GF_GK_CHR_Saburo GF_GK_CHR_Junichi GF_GK_CHR_Yoshi GF_GK_CHR_Koshiro GF_GK_CHR_Kentaro GF_GK_CHR_Koichiro
+			}
+			first_names_female = {
+				GF_GK_CHR_Haruna GF_GK_CHR_Sakura GF_GK_CHR_Misaki GF_GK_CHR_Aoi GF_GK_CHR_Mihane GF_GK_CHR_Miyu GF_GK_CHR_Rin GF_GK_CHR_Nanami GF_GK_CHR_Yui GF_GK_CHR_Hina GF_GK_CHR_Honoka GF_GK_CHR_Riko GF_GK_CHR_Yuna GF_GK_CHR_Koharu GF_GK_CHR_Hinata GF_GK_CHR_Mei GF_GK_CHR_Saki GF_GK_CHR_Ichika GF_GK_CHR_Hiyori GF_GK_CHR_Yusuki
+				GF_GK_CHR_Shiori GF_GK_CHR_Natsuki GF_GK_CHR_Ayane GF_GK_CHR_Kaho GF_GK_CHR_Hana GF_GK_CHR_Momoka GF_GK_CHR_Himari GF_GK_CHR_Yume GF_GK_CHR_Aomame GF_GK_CHR_Noriko GF_GK_CHR_Kazumi GF_GK_CHR_Kimiko
+			}
+			second_names = {
+				GF_GK_CHR_Sato GF_GK_CHR_Suzuki GF_GK_CHR_Takahashi GF_GK_CHR_Tanaka GF_GK_CHR_Watanabe GF_GK_CHR_Ito GF_GK_CHR_Nakamura GF_GK_CHR_Kobayashi GF_GK_CHR_Yamamoto GF_GK_CHR_Kato GF_GK_CHR_Yoshida GF_GK_CHR_Yamada GF_GK_CHR_Sasaki GF_GK_CHR_Yamaguchi GF_GK_CHR_Matsumoto
+				GF_GK_CHR_Inoue GF_GK_CHR_Kimura GF_GK_CHR_Shimizu GF_GK_CHR_Hayashi GF_GK_CHR_Saito GF_GK_CHR_Yamazaki GF_GK_CHR_Nakajima GF_GK_CHR_Mori GF_GK_CHR_Abe GF_GK_CHR_Ikeda GF_GK_CHR_Hashimoto GF_GK_CHR_Ishikawa GF_GK_CHR_Yamashita GF_GK_CHR_Ogawa GF_GK_CHR_Ishii GF_GK_CHR_Hasegawa
+				GF_GK_CHR_Goto GF_GK_CHR_Okada GF_GK_CHR_Fujita GF_GK_CHR_Sakamoto GF_GK_CHR_Murakami GF_GK_CHR_Nishimura GF_GK_CHR_Nakagawa GF_GK_CHR_Harada GF_GK_CHR_Okamoto GF_GK_CHR_Miura GF_GK_CHR_Takaya GF_GK_CHR_Amano GF_GK_CHR_Higuchi GF_GK_CHR_Ota
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Teruhito GF_GK_CHR_Nekuhiko GF_GK_CHR_Mimatsuhiko GF_GK_CHR_Anaho GF_GK_CHR_Hironari GF_GK_CHR_Norinaga
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Nukatabe GF_GK_CHR_Toyomike GF_GK_CHR_Takara GF_GK_CHR_Niinomi GF_GK_CHR_Hidaka GF_GK_CHR_Takama GF_GK_CHR_Okiko GF_GK_CHR_Toshiko
+			}
+			regnal_second_names = {
+				GF_GK_CHR_noMikoto GF_GK_CHR_Sumeramikoto GF_GK_CHR_Otomo GF_GK_CHR_Suijin GF_GK_CHR_Mononobe GF_GK_CHR_Yamato
+			}
+		}
+
+		names7 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Aarav GF_GK_CHR_Vivaan GF_GK_CHR_Aditya GF_GK_CHR_Arjun GF_GK_CHR_Reyansh GF_GK_CHR_Arnav GF_GK_CHR_Krishna GF_GK_CHR_Ishaan GF_GK_CHR_Shaurya GF_GK_CHR_Atharv GF_GK_CHR_Advik GF_GK_CHR_Pranav GF_GK_CHR_Advaith GF_GK_CHR_Dhruv GF_GK_CHR_Kabir GF_GK_CHR_Ritvik GF_GK_CHR_Aarush
+				GF_GK_CHR_Kayaan GF_GK_CHR_Darsh GF_GK_CHR_Veer GF_GK_CHR_Rahul GF_GK_CHR_Mahesh GF_GK_CHR_Shyam GF_GK_CHR_Raj GF_GK_CHR_Kumar GF_GK_CHR_Palash GF_GK_CHR_Rakesh GF_GK_CHR_Nishant GF_GK_CHR_Neeraj GF_GK_CHR_Prathamesh GF_GK_CHR_Shubham
+			}
+			first_names_female = {
+				GF_GK_CHR_Saanvi GF_GK_CHR_Aanya GF_GK_CHR_Aadhya GF_GK_CHR_Aaradhya GF_GK_CHR_Ananya GF_GK_CHR_Pari GF_GK_CHR_Anika GF_GK_CHR_Navya GF_GK_CHR_Diya GF_GK_CHR_Avani GF_GK_CHR_Myra GF_GK_CHR_Ira GF_GK_CHR_Aahana GF_GK_CHR_Anvi GF_GK_CHR_Prisha GF_GK_CHR_Riya GF_GK_CHR_Aarohi GF_GK_CHR_Anaya GF_GK_CHR_Akshara
+				GF_GK_CHR_Shanaya GF_GK_CHR_Kyra GF_GK_CHR_Siya GF_GK_CHR_Priyanka GF_GK_CHR_Divya GF_GK_CHR_Mahima GF_GK_CHR_Shivangi GF_GK_CHR_Juvina GF_GK_CHR_Anoushka GF_GK_CHR_Anushri GF_GK_CHR_Apoorva GF_GK_CHR_Sanjana
+			}
+			second_names = {
+				GF_GK_CHR_Kumar GF_GK_CHR_Moorthi GF_GK_CHR_Shastri GF_GK_CHR_Prasad GF_GK_CHR_Acharya GF_GK_CHR_Swamy GF_GK_CHR_Pillai GF_GK_CHR_Gowda GF_GK_CHR_Nayak GF_GK_CHR_Desmukh GF_GK_CHR_Bhat GF_GK_CHR_Bhandary GF_GK_CHR_Poojary GF_GK_CHR_Upadhyay GF_GK_CHR_Chowta GF_GK_CHR_Naik
+				GF_GK_CHR_Kulkarni GF_GK_CHR_Dodamani GF_GK_CHR_Patil GF_GK_CHR_Gupta GF_GK_CHR_Sharma GF_GK_CHR_Namboodiri GF_GK_CHR_Pannikar GF_GK_CHR_Potti GF_GK_CHR_Kutty GF_GK_CHR_Varma GF_GK_CHR_Sondharam GF_GK_CHR_Sooriyaprakash GF_GK_CHR_Chandran GF_GK_CHR_Vijay
+				GF_GK_CHR_Venktaesan GF_GK_CHR_Puttappa
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Kayaan GF_GK_CHR_Darsh GF_GK_CHR_Veer GF_GK_CHR_Rahul GF_GK_CHR_Mahesh GF_GK_CHR_Shaurya GF_GK_CHR_Atharv GF_GK_CHR_Advik GF_GK_CHR_Pranav
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Saanvi GF_GK_CHR_Aanya GF_GK_CHR_Aadhya GF_GK_CHR_Aaradhya GF_GK_CHR_Ananya GF_GK_CHR_Priyanka GF_GK_CHR_Divya GF_GK_CHR_Mahima GF_GK_CHR_Shivangi
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Kumar GF_GK_CHR_Moorthi GF_GK_CHR_Shastri GF_GK_CHR_Prasad GF_GK_CHR_Acharya GF_GK_CHR_Patil GF_GK_CHR_Gupta GF_GK_CHR_Sharma GF_GK_CHR_Namboodiri GF_GK_CHR_Pannikar GF_GK_CHR_Potti GF_GK_CHR_Kutty GF_GK_CHR_Varma GF_GK_CHR_Sondharam
+			}
+		}
+
+		names8 = {
+			weight = 25
+			first_names_male = {
+				GF_GK_CHR_Diego GF_GK_CHR_Luis GF_GK_CHR_Pedro GF_GK_CHR_Joaquin GF_GK_CHR_Jose GF_GK_CHR_Emilio GF_GK_CHR_Eduardo GF_GK_CHR_Alejandro GF_GK_CHR_Carlos GF_GK_CHR_Fernando GF_GK_CHR_Francisco GF_GK_CHR_Julio GF_GK_CHR_JoseAntonio GF_GK_CHR_JoseManuel GF_GK_CHR_Juan
+				GF_GK_CHR_JoseMaria GF_GK_CHR_Ignacio GF_GK_CHR_Manuel GF_GK_CHR_Pablo GF_GK_CHR_Miguel GF_GK_CHR_Ramon GF_GK_CHR_Raimundo GF_GK_CHR_Santiago GF_GK_CHR_Ricardo GF_GK_CHR_Marcelo GF_GK_CHR_Javier GF_GK_CHR_Gaspar GF_GK_CHR_Alfonso GF_GK_CHR_Lorenzo GF_GK_CHR_Enrique
+				GF_GK_CHR_Ernesto GF_GK_CHR_Gerardo GF_GK_CHR_Guillermo GF_GK_CHR_Jesus GF_GK_CHR_Salvadore GF_GK_CHR_Sergio GF_GK_CHR_Roberto GF_GK_CHR_Esteban
+			}
+			first_names_female = {
+				GF_GK_CHR_Hortensia GF_GK_CHR_Isabel GF_GK_CHR_Valentina GF_GK_CHR_Alejandra GF_GK_CHR_Alicia GF_GK_CHR_Antonia GF_GK_CHR_Carla GF_GK_CHR_Carmen GF_GK_CHR_Catalina GF_GK_CHR_Dolores GF_GK_CHR_Estefania GF_GK_CHR_Eva GF_GK_CHR_Fernanda GF_GK_CHR_Florencia
+				GF_GK_CHR_Gabriela GF_GK_CHR_Grizelda GF_GK_CHR_Maria GF_GK_CHR_Lorena GF_GK_CHR_Magdalena GF_GK_CHR_Mercedes GF_GK_CHR_Miriam GF_GK_CHR_Paulina GF_GK_CHR_Sofia GF_GK_CHR_Yolanda GF_GK_CHR_Camila GF_GK_CHR_Luciana GF_GK_CHR_Valeria GF_GK_CHR_Mariana GF_GK_CHR_Daniela
+				GF_GK_CHR_Martina GF_GK_CHR_Julieta GF_GK_CHR_Antonella GF_GK_CHR_Renata GF_GK_CHR_Agustina GF_GK_CHR_Constanza GF_GK_CHR_Fabiana
+			}
+			second_names = {
+				GF_GK_CHR_Garcia GF_GK_CHR_Martinez GF_GK_CHR_Rodriguez GF_GK_CHR_Fernandez GF_GK_CHR_Sanchez GF_GK_CHR_Lopez GF_GK_CHR_Martin GF_GK_CHR_Perez GF_GK_CHR_Gonzalez GF_GK_CHR_Alvarez GF_GK_CHR_Gomez GF_GK_CHR_Diaz GF_GK_CHR_Dominguez GF_GK_CHR_Hernandez
+				GF_GK_CHR_Ramirez GF_GK_CHR_Mendez GF_GK_CHR_Perez GF_GK_CHR_Vasquez GF_GK_CHR_Ruiz GF_GK_CHR_Aguera GF_GK_CHR_Alonso GF_GK_CHR_Batista GF_GK_CHR_Esguerra GF_GK_CHR_Flores GF_GK_CHR_delaGuardia GF_GK_CHR_delaCruz GF_GK_CHR_delaVega
+				GF_GK_CHR_deVargas GF_GK_CHR_Ibanez GF_GK_CHR_Moralez GF_GK_CHR_Riveros GF_GK_CHR_Rosario GF_GK_CHR_Velazco GF_GK_CHR_Torres GF_GK_CHR_Quesada GF_GK_CHR_Saldana GF_GK_CHR_Salazar GF_GK_CHR_Ortega GF_GK_CHR_Ortiz GF_GK_CHR_Solano GF_GK_CHR_Romero
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Santiago GF_GK_CHR_Ricardo GF_GK_CHR_Marcelo GF_GK_CHR_Javier GF_GK_CHR_Ernesto GF_GK_CHR_Gerardo GF_GK_CHR_Guillermo
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Alicia GF_GK_CHR_Antonia GF_GK_CHR_Carla GF_GK_CHR_Carmen GF_GK_CHR_Catalina GF_GK_CHR_Dolores GF_GK_CHR_Martina GF_GK_CHR_Julieta GF_GK_CHR_Antonella GF_GK_CHR_Renata
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Fernandez GF_GK_CHR_Sanchez GF_GK_CHR_Lopez GF_GK_CHR_Martin GF_GK_CHR_Perez GF_GK_CHR_Gonzalez GF_GK_CHR_Alvarez GF_GK_CHR_Gomez GF_GK_CHR_Diaz
+			}
+		}
+
+		names9 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Abdullah GF_GK_CHR_Abbas GF_GK_CHR_Abed GF_GK_CHR_Ahmad GF_GK_CHR_Ahmed GF_GK_CHR_Ali GF_GK_CHR_Ammar GF_GK_CHR_Amir GF_GK_CHR_Hamza GF_GK_CHR_Hassan GF_GK_CHR_Hydar GF_GK_CHR_Ibrahim GF_GK_CHR_Jamal GF_GK_CHR_Kareem GF_GK_CHR_Khathem GF_GK_CHR_Khalil GF_GK_CHR_Khalid GF_GK_CHR_Malik GF_GK_CHR_Mahdi
+				GF_GK_CHR_Hussein GF_GK_CHR_Mohamed GF_GK_CHR_Mohammad GF_GK_CHR_Mohammed GF_GK_CHR_Muhammad GF_GK_CHR_Muhammed GF_GK_CHR_Nasir GF_GK_CHR_Omar GF_GK_CHR_Rashad GF_GK_CHR_Rashid GF_GK_CHR_Samir GF_GK_CHR_Tariq GF_GK_CHR_Yahir GF_GK_CHR_Yasin GF_GK_CHR_Yusuf GF_GK_CHR_Barak
+			}
+			first_names_female = {
+				GF_GK_CHR_Alma GF_GK_CHR_Amani GF_GK_CHR_Amira GF_GK_CHR_Aisha GF_GK_CHR_Fatima GF_GK_CHR_Hala GF_GK_CHR_Hana GF_GK_CHR_Hasti GF_GK_CHR_Imani GF_GK_CHR_Jana GF_GK_CHR_Jaliyah GF_GK_CHR_Jazmin GF_GK_CHR_Jenna GF_GK_CHR_Kaliyah GF_GK_CHR_Layan GF_GK_CHR_Leen GF_GK_CHR_Leila GF_GK_CHR_Lydia GF_GK_CHR_Malak GF_GK_CHR_Maryam
+				GF_GK_CHR_Maritza GF_GK_CHR_Mina GF_GK_CHR_Naima GF_GK_CHR_Noor GF_GK_CHR_Salma GF_GK_CHR_Samira GF_GK_CHR_Sanaa GF_GK_CHR_Yesenia GF_GK_CHR_Zahra GF_GK_CHR_Satayesh GF_GK_CHR_Zeinab GF_GK_CHR_Reihaneh GF_GK_CHR_Mobina GF_GK_CHR_Narges GF_GK_CHR_Masoumeh GF_GK_CHR_Sakineh GF_GK_CHR_Aya
+			}
+			second_names = {
+				GF_GK_CHR_Barakat GF_GK_CHR_Abbas GF_GK_CHR_AbdelNour GF_GK_CHR_Abboud GF_GK_CHR_al-Ahdal GF_GK_CHR_al-Ajlani GF_GK_CHR_al-Bariqi GF_GK_CHR_al-Mubarak GF_GK_CHR_Adwam GF_GK_CHR_Akkad GF_GK_CHR_Alawi GF_GK_CHR_al-Asiri GF_GK_CHR_al-Atrash GF_GK_CHR_al-Dimashqi
+				GF_GK_CHR_Bakir GF_GK_CHR_Hussein GF_GK_CHR_al-Hazmi GF_GK_CHR_al-Bishi GF_GK_CHR_El-Baz GF_GK_CHR_Ibrahim GF_GK_CHR_Ishak GF_GK_CHR_Ismail GF_GK_CHR_El-Farouk GF_GK_CHR_Hassan GF_GK_CHR_El-Ghazali GF_GK_CHR_Bilal GF_GK_CHR_Nadir GF_GK_CHR_Juhani GF_GK_CHR_Jawahir GF_GK_CHR_Hamidi
+				GF_GK_CHR_al-Jazari GF_GK_CHR_al-Samarrai GF_GK_CHR_Salman GF_GK_CHR_Qasim GF_GK_CHR_Qudsi GF_GK_CHR_Qaderi GF_GK_CHR_al-Qadi GF_GK_CHR_Farrokhzad GF_GK_CHR_Madani GF_GK_CHR_Sassani GF_GK_CHR_Turani GF_GK_CHR_Khadem GF_GK_CHR_Ghorbani GF_GK_CHR_Jamshidi GF_GK_CHR_Rahimi
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Abdullah GF_GK_CHR_Abbas GF_GK_CHR_Abed GF_GK_CHR_Khalil GF_GK_CHR_Khalid GF_GK_CHR_Malik GF_GK_CHR_Mahdi GF_GK_CHR_Nasir GF_GK_CHR_Omar GF_GK_CHR_Rashad GF_GK_CHR_Rashid GF_GK_CHR_Samir
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Zeinab GF_GK_CHR_Reihaneh GF_GK_CHR_Mobina GF_GK_CHR_Narges GF_GK_CHR_Masoumeh GF_GK_CHR_Sakineh GF_GK_CHR_Aya GF_GK_CHR_Alma GF_GK_CHR_Amani GF_GK_CHR_Amira
+			}
+			regnal_second_names = {
+				GF_GK_CHR_arakat GF_GK_CHR_Abbas GF_GK_CHR_AbdelNour GF_GK_CHR_Abboud GF_GK_CHR_al-Ahdal GF_GK_CHR_al-Jazari GF_GK_CHR_al-Samarrai GF_GK_CHR_Salman GF_GK_CHR_Qasim GF_GK_CHR_Qudsi GF_GK_CHR_Qaderi GF_GK_CHR_al-Qadi GF_GK_CHR_Farrokhzad GF_GK_CHR_Madani
+			}
+		}
+
+		names10 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Faraji GF_GK_CHR_Imamu GF_GK_CHR_Jelani GF_GK_CHR_Jengo GF_GK_CHR_Jumaane GF_GK_CHR_Khamisi GF_GK_CHR_Kibwe GF_GK_CHR_Mosi GF_GK_CHR_Mwenye GF_GK_CHR_Sefu GF_GK_CHR_Simba GF_GK_CHR_Tendaji GF_GK_CHR_Zuberi GF_GK_CHR_Abasi GF_GK_CHR_Annan GF_GK_CHR_Azizi GF_GK_CHR_Badru GF_GK_CHR_Bakari GF_GK_CHR_Bwana
+				GF_GK_CHR_Chane GF_GK_CHR_Chuma GF_GK_CHR_Enzi GF_GK_CHR_Faraji GF_GK_CHR_Hanisi GF_GK_CHR_Idi GF_GK_CHR_Issa GF_GK_CHR_Jabari GF_GK_CHR_Akani GF_GK_CHR_Aluwanip GF_GK_CHR_Ayanda GF_GK_CHR_Bambanani GF_GK_CHR_Bheka GF_GK_CHR_Bhekithemba GF_GK_CHR_Bhekizizwe GF_GK_CHR_Butholezwe GF_GK_CHR_Dikotsi
+				GF_GK_CHR_Dzingai GF_GK_CHR_Esaia GF_GK_CHR_Hangwani GF_GK_CHR_Humbe GF_GK_CHR_Kabelo GF_GK_CHR_Khathu GF_GK_CHR_Khumbu GF_GK_CHR_Kutlwano GF_GK_CHR_Kwanele GF_GK_CHR_Lentswe GF_GK_CHR_Lesebo GF_GK_CHR_Letswalo GF_GK_CHR_Lutendo GF_GK_CHR_Mahlubandile GF_GK_CHR_Makalo GF_GK_CHR_Mareka
+				GF_GK_CHR_Masingita GF_GK_CHR_Moeketsi GF_GK_CHR_Molapo GF_GK_CHR_Mosemotsane GF_GK_CHR_Motlalentwa GF_GK_CHR_Mothusi GF_GK_CHR_Msizi GF_GK_CHR_Mzwamadoda GF_GK_CHR_Nthofeela GF_GK_CHR_Oagile GF_GK_CHR_Paseka GF_GK_CHR_Phahamo GF_GK_CHR_Poloko GF_GK_CHR_Qukeza GF_GK_CHR_Refilwe
+				GF_GK_CHR_Sanele GF_GK_CHR_Sbu GF_GK_CHR_Sehlolo GF_GK_CHR_Sekgolokhane GF_GK_CHR_Sibusiso GF_GK_CHR_Sizwe GF_GK_CHR_Teboho GF_GK_CHR_Thabiso GF_GK_CHR_Themba GF_GK_CHR_Thuso GF_GK_CHR_Tsebo GF_GK_CHR_Tsehla GF_GK_CHR_Tshawe GF_GK_CHR_Unathi GF_GK_CHR_Wandile GF_GK_CHR_Mbutu GF_GK_CHR_Kofi
+			}
+			first_names_female = {
+				GF_GK_CHR_Asha GF_GK_CHR_Abla GF_GK_CHR_Adhra GF_GK_CHR_Adila GF_GK_CHR_Aeeshah GF_GK_CHR_Afiya GF_GK_CHR_Chausiku GF_GK_CHR_Eshe GF_GK_CHR_Furaha GF_GK_CHR_Imani GF_GK_CHR_Kamaria GF_GK_CHR_Marjani GF_GK_CHR_Mchumba GF_GK_CHR_Mwanajuma GF_GK_CHR_Nia GF_GK_CHR_Nuru GF_GK_CHR_Sanaa GF_GK_CHR_Sauda GF_GK_CHR_Subira
+				GF_GK_CHR_Zuri GF_GK_CHR_Aizivaishe GF_GK_CHR_Anatswanashe GF_GK_CHR_Anodiwa GF_GK_CHR_Anokosha GF_GK_CHR_Awande GF_GK_CHR_Bokang GF_GK_CHR_Bongani GF_GK_CHR_Dikeledi GF_GK_CHR_Edzai GF_GK_CHR_Fikile GF_GK_CHR_Gugu GF_GK_CHR_Kagiso GF_GK_CHR_Keneuwe GF_GK_CHR_Koketso GF_GK_CHR_Langalibalele
+				GF_GK_CHR_Lerato GF_GK_CHR_Lindidwe GF_GK_CHR_Litsoanelo GF_GK_CHR_Lulama GF_GK_CHR_Majobo GF_GK_CHR_Maletsatsi GF_GK_CHR_Matshediso GF_GK_CHR_Mbali GF_GK_CHR_Mmaabo GF_GK_CHR_Mncedisi GF_GK_CHR_Mohau GF_GK_CHR_Moratuoa GF_GK_CHR_Muambiwa GF_GK_CHR_Nnyadzeni GF_GK_CHR_Nofoto
+				GF_GK_CHR_Nthati GF_GK_CHR_Ntsebo GF_GK_CHR_Ntswaki GF_GK_CHR_Phathu GF_GK_CHR_Reneilwe GF_GK_CHR_Rudzani GF_GK_CHR_Shandu GF_GK_CHR_Sinethemba GF_GK_CHR_Sizani GF_GK_CHR_Thanduxolo GF_GK_CHR_Tshanduko GF_GK_CHR_Tungu GF_GK_CHR_Zinhle
+			}
+			second_names = {
+				GF_GK_CHR_Azikiwe GF_GK_CHR_Awolowo GF_GK_CHR_Balewa GF_GK_CHR_Akintola GF_GK_CHR_Nzeogwu GF_GK_CHR_Onwuatuegwu GF_GK_CHR_Okeke GF_GK_CHR_Okonkwo GF_GK_CHR_Babangida GF_GK_CHR_Buhari GF_GK_CHR_Dimka GF_GK_CHR_Ibori GF_GK_CHR_Jomo-Gbomo GF_GK_CHR_Iwu GF_GK_CHR_Bamgboshe GF_GK_CHR_Biobaku
+				GF_GK_CHR_Tinibu GF_GK_CHR_Akinjide GF_GK_CHR_Akiloye GF_GK_CHR_Adeyemi GF_GK_CHR_Sekibo GF_GK_CHR_Bankole GF_GK_CHR_Nnamani GF_GK_CHR_Okadigbo GF_GK_CHR_Ironsi GF_GK_CHR_Ojukwu GF_GK_CHR_Chukwumereije GF_GK_CHR_Iweala GF_GK_CHR_Okonjo GF_GK_CHR_Gbadamosi GF_GK_CHR_Olanrewaju
+				GF_GK_CHR_Madaki GF_GK_CHR_Oyinlola GF_GK_CHR_Onyejekwe GF_GK_CHR_Jakande GF_GK_CHR_Ngige GF_GK_CHR_Uba GF_GK_CHR_Ohakim GF_GK_CHR_Alakija GF_GK_CHR_Onobanjo GF_GK_CHR_Mbanefo GF_GK_CHR_Mbadinuju GF_GK_CHR_Ekwensi GF_GK_CHR_Gowon GF_GK_CHR_Saro-Wiwa GF_GK_CHR_Naidoo GF_GK_CHR_Swanepoel
+				GF_GK_CHR_Msibi GF_GK_CHR_Ngobese GF_GK_CHR_Ngema GF_GK_CHR_Masuku GF_GK_CHR_Khonjwayo GF_GK_CHR_Khumalo GF_GK_CHR_Kwayi GF_GK_CHR_Mambi GF_GK_CHR_Mbanjwa GF_GK_CHR_Mkhwemte GF_GK_CHR_Mtakwenda GF_GK_CHR_Ngwanya GF_GK_CHR_Nkwali GF_GK_CHR_Thwane GF_GK_CHR_Skhosana GF_GK_CHR_Tshangisa
+				GF_GK_CHR_Tshonyane GF_GK_CHR_Xhamela GF_GK_CHR_Xoko GF_GK_CHR_Zangwa GF_GK_CHR_Ndungwane GF_GK_CHR_Bhukhwana GF_GK_CHR_Dzana GF_GK_CHR_Gatyeni GF_GK_CHR_Gxarha GF_GK_CHR_Jwarha GF_GK_CHR_Khawuta
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Faraji GF_GK_CHR_Imamu GF_GK_CHR_Jelani GF_GK_CHR_Jengo GF_GK_CHR_Jumaane GF_GK_CHR_Khamisi GF_GK_CHR_Kwanele GF_GK_CHR_Lentswe GF_GK_CHR_Lesebo GF_GK_CHR_Letswalo GF_GK_CHR_Lutendo GF_GK_CHR_Mahlubandile GF_GK_CHR_Makalo GF_GK_CHR_Mareka
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Kagiso GF_GK_CHR_Keneuwe GF_GK_CHR_Koketso GF_GK_CHR_Langalibalele GF_GK_CHR_Ntsebo GF_GK_CHR_Ntswaki GF_GK_CHR_Phathu GF_GK_CHR_Reneilwe GF_GK_CHR_Rudzani GF_GK_CHR_Shandu
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Azikiwe GF_GK_CHR_Awolowo GF_GK_CHR_Balewa GF_GK_CHR_Akintola GF_GK_CHR_Nzeogwu GF_GK_CHR_Onwuatuegwu
+			}
+		}
+
+		names11 = {
+			weight = 15
+			first_names_male = {
+				GF_GK_CHR_Mario GF_GK_CHR_Luigi GF_GK_CHR_Giovanni GF_GK_CHR_Giuseppe GF_GK_CHR_Antonio GF_GK_CHR_Roberto GF_GK_CHR_Andrea GF_GK_CHR_Stefano GF_GK_CHR_Marco GF_GK_CHR_Franscesco GF_GK_CHR_Angelo GF_GK_CHR_Vincenzo GF_GK_CHR_Pietro GF_GK_CHR_Salvatore GF_GK_CHR_Carlo GF_GK_CHR_Franco
+				GF_GK_CHR_Domenico GF_GK_CHR_Bruno GF_GK_CHR_Paulo GF_GK_CHR_Michele GF_GK_CHR_Giorgio GF_GK_CHR_Sergio GF_GK_CHR_Luciano GF_GK_CHR_Alessandro GF_GK_CHR_Alfonso GF_GK_CHR_Benito GF_GK_CHR_Fabrizio GF_GK_CHR_Cesare GF_GK_CHR_Enrico GF_GK_CHR_Gustavo GF_GK_CHR_Silvio GF_GK_CHR_Umberto
+				GF_GK_CHR_Nicola GF_GK_CHR_Matteo GF_GK_CHR_Ignazio GF_GK_CHR_Camillo GF_GK_CHR_Daniele GF_GK_CHR_Cristian GF_GK_CHR_Alberto GF_GK_CHR_Guido GF_GK_CHR_Lorenzo GF_GK_CHR_Tommaso GF_GK_CHR_Fabio
+			}
+			first_names_female = {
+				GF_GK_CHR_Maria GF_GK_CHR_Anna GF_GK_CHR_Giuseppina GF_GK_CHR_Rosa GF_GK_CHR_Angela GF_GK_CHR_Giovanna GF_GK_CHR_Teresa GF_GK_CHR_Lucia GF_GK_CHR_Carmela GF_GK_CHR_Caterina GF_GK_CHR_Francesca GF_GK_CHR_Antonietta GF_GK_CHR_Carla GF_GK_CHR_Elena GF_GK_CHR_Concetta GF_GK_CHR_Rita
+				GF_GK_CHR_Margherita GF_GK_CHR_Franca GF_GK_CHR_Paola GF_GK_CHR_Vittoria GF_GK_CHR_Arianna GF_GK_CHR_Orietta GF_GK_CHR_Nicoletta GF_GK_CHR_Clara GF_GK_CHR_Stefania GF_GK_CHR_Gisella GF_GK_CHR_Claudia GF_GK_CHR_Lorenza GF_GK_CHR_Gabriella GF_GK_CHR_Isabella GF_GK_CHR_Valeria
+				GF_GK_CHR_Lucrezia GF_GK_CHR_Dina GF_GK_CHR_Benedetta GF_GK_CHR_Pietra
+			}
+			second_names = {
+				GF_GK_CHR_Rossi GF_GK_CHR_Russo GF_GK_CHR_Ferrari GF_GK_CHR_Bianchi GF_GK_CHR_Ricci GF_GK_CHR_Marino GF_GK_CHR_DeLuca GF_GK_CHR_Costa GF_GK_CHR_Giordano GF_GK_CHR_Mancini GF_GK_CHR_Rizzo GF_GK_CHR_Lombardi GF_GK_CHR_Moretti GF_GK_CHR_Ravelli GF_GK_CHR_Conti GF_GK_CHR_Gallo GF_GK_CHR_Bello
+				GF_GK_CHR_Albricci GF_GK_CHR_Badoglio GF_GK_CHR_Cappello GF_GK_CHR_DiRobilant GF_GK_CHR_DiSavoia GF_GK_CHR_Garibaldi GF_GK_CHR_Saletta GF_GK_CHR_Pallavicino GF_GK_CHR_Pianelli GF_GK_CHR_Mambretti GF_GK_CHR_Marcuzzi GF_GK_CHR_Valeri GF_GK_CHR_Pezzaglia
+				GF_GK_CHR_Balletti GF_GK_CHR_Bianconelli GF_GK_CHR_Antonelli GF_GK_CHR_Corsini GF_GK_CHR_DAlessandro GF_GK_CHR_DAgostino GF_GK_CHR_DeRosa GF_GK_CHR_DeSciglio GF_GK_CHR_DiChiara GF_GK_CHR_DiBartolomei GF_GK_CHR_Delvecchio
+				GF_GK_CHR_DelGrosso GF_GK_CHR_DAntoni GF_GK_CHR_Fazio GF_GK_CHR_DiBella GF_GK_CHR_DiGennaro GF_GK_CHR_Fabbrini GF_GK_CHR_Gambadori GF_GK_CHR_Galvani GF_GK_CHR_Marchetti GF_GK_CHR_Mazzitelli GF_GK_CHR_Olivieri GF_GK_CHR_Pacini GF_GK_CHR_Quadrini
+			}
+			regnal_first_names_male = {
+				GF_GK_CHR_Mario GF_GK_CHR_Luigi GF_GK_CHR_Giovanni GF_GK_CHR_Enrico GF_GK_CHR_Gustavo GF_GK_CHR_Silvio GF_GK_CHR_Umberto
+			}
+			regnal_first_names_female = {
+				GF_GK_CHR_Theodora GF_GK_CHR_Fatima GF_GK_CHR_Miranda GF_GK_CHR_Cordelia GF_GK_CHR_Svetlana GF_GK_CHR_Anastasia GF_GK_CHR_Valentina GF_GK_CHR_Henrietta
+			}
+			regnal_second_names = {
+				GF_GK_CHR_Ferrari GF_GK_CHR_Bianchi GF_GK_CHR_Ricci GF_GK_CHR_Marino GF_GK_CHR_DeLuca GF_GK_CHR_Costa GF_GK_CHR_Giordano
 			}
 		}
 	}
