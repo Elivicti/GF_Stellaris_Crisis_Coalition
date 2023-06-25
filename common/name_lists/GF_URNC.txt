@@ -225,6 +225,7 @@ GF_URNC = {
 		pc_gaia = {
 			names = {
 
+			}
 		}
 #海洋
 		pc_ocean = {
