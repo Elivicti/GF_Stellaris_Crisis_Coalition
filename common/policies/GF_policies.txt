@@ -52,7 +52,7 @@ GF_doll_right_policy = {
 		modifier = {
 			GF_doll_consumer_goods_upkeep_mult = -0.30
 			GF_doll_resettlement_cost_mult = -0.30
-			GF_doll_political_power = -0.30
+			#GF_doll_political_power = 0.20
 		}
 		policy_flags = { GF_doll_right_limited ai_full_rights }
 
@@ -89,7 +89,7 @@ GF_doll_right_policy = {
 			GF_ANDROID_pop_happiness = -0.10
 			GF_doll_consumer_goods_upkeep_mult = -0.60
 			GF_doll_resettlement_cost_mult = -0.60
-			GF_doll_political_power = -0.60
+			GF_doll_political_power = -0.75
 		}
 
 		on_enabled = {

@@ -6,23 +6,23 @@
  GF_doll_right_full_name:0 "人形权利：完整公民权利"
  GF_doll_right_policy_full:0 "完整公民权利"
  GF_doll_right_policy_full_desc:0 "人形将被视为我们社会中平等的一员，她们的诉求必须得到尊重，享有一个自由公民应享有的一切。\n\n$GF_doll_right_full_effect$"
- GF_doll_right_full_effect:0 "人形的公民权将被锁定在§Y$citizenship_full$§!\n§G允许§!人形产生领袖"
+ GF_doll_right_full_effect:0 "人形的公民权将被锁定在§Y$citizenship_full$§!（§Y100% £mod_pop_political_power£§!）\n§G允许§!人形产生领袖"
  GF_require_no_xenophobe_and_fxxk_you_paradox:0 "$TRIGGER_FAIL$§R总之蠢驴觉得排外的主物种就应该认为第二物种很异端§!"
 
  GF_doll_right_limited_name:0 "人形权利：有限公民权利"
  GF_doll_right_policy_limited:0 "有限公民权利"
  GF_doll_right_policy_limited_desc:0 "禁止私人或私人单位持有人形，所有人形最终权限设定为国家政权，她们由国家统一制造，并由国家统一安排工作与任务、为社会服务，正常情况下分配一定空间的维护室，同时在基本的能源供给上还提供适当的消费品以满足她们所谓的个性，允许她们依据自身工作与任务提出建议、参与社会管理。\n\n$GF_doll_right_limited_effect$"
- GF_doll_right_limited_effect:0 "人形的公民权将被锁定在§Y$citizenship_limited$§!\n§G允许§!人形产生领袖"
+ GF_doll_right_limited_effect:0 "人形的公民权将被锁定在§Y$citizenship_limited$§!（§Y50% £mod_pop_political_power£§!）\n§G允许§!人形产生领袖"
 
  GF_doll_right_servitude_name:0 "人形权利：侍从"
  GF_doll_right_policy_servitude:0 "侍从"
  GF_doll_right_policy_servitude_desc:0 "人形将作为人类的仆从而活动。尽管在同理心的作用下，一个类似于动物保护法的粗糙的人形保护体系建立了起来，过分地“虐待”人形将被视为违背道德、公序良俗而受到谴责，但私底下被如何对待依旧取决于所有者的意愿。\n\n$GF_doll_right_servitude_effect$"
- GF_doll_right_servitude_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!\n§R禁止§!人形产生领袖"
+ GF_doll_right_servitude_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!（§Y75% £mod_pop_political_power£§!）\n§R禁止§!人形产生领袖"
 
  GF_doll_right_low_name:0 "人形权利：商品"
  GF_doll_right_policy_low:0 "商品"
  GF_doll_right_policy_low_desc:0 "她们是面向社会销售的商品、工具，只要不违背人形管理法律，人形将任所有者使用，这种情况下，人形将依靠类似棺材的维护仓进行维护、储存与运输，受到何种程度的维护将有所有者决定，希望她们都能有个好主人吧。\n\n$GF_doll_right_low_effect$"
- GF_doll_right_low_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!\n§R禁止§!人形产生领袖\n人形将被禁止进入£job_entertainer£§Y娱乐业§!或£job_enforcer£§Y国家暴力机关§!"
+ GF_doll_right_low_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!（§Y0% £mod_pop_political_power£§!）\n§R禁止§!人形产生领袖\n人形将被禁止进入£job_entertainer£§Y娱乐业§!或£job_enforcer£§Y国家暴力机关§!"
 
 
  policy_GF_run_mode_policy:0 "人形维护政策"
