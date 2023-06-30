@@ -1,21 +1,22 @@
 ﻿l_simp_chinese:
 #################################
- NAME_GF_OGAS:0 "$GF_RT_OGAS$"
+ NAME_GF_OGAS:0 "国家管理自动化系统"
+ NAME_GF_OGAS_adjective:0 "国家管理自动化系统"
 # Ruler Title
- RT_MILITARYGL:0 "负责人"
- RT_FERRI:0 "副总指挥"
+ GF_RT_MILITARYGL:0 "负责人"
+ GF_RT_FERRI:0 "副总指挥"
 # 名称组
- name_list_GF_doll_1:0 "仿生自律人形 1"
- name_list_GF_doll_2:0 "仿生自律人形 2"
- name_list_GF_doll_3:0 "仿生自律人形 3"
- name_list_GF_GK:0 "格里芬与克鲁格安全承包商"
- name_list_GF_AU:0 "南极联邦"
- name_list_GF_URNC:0 "罗克萨特主义合众国联盟"
-
+ name_list_GF_DOLL:0 "$GF_ANDROID$"
+ name_list_GF_GK:0 "新人类（格里芬与克鲁格安全承包商）"
+ name_list_GF_AU:0 "新人类（南联）"
+ name_list_GF_URNC:0 "新人类（罗联）"
 
 # SF events
  NAME_GF_sf_via_dolorosa:0 "受难之路"
  NAME_GF_sf_the_great_sepulchre:0 "圣墓"
+
+# Species
+ NAME_GF_ANDROID:0 "$GF_ANDROID$"
 
 # 预设国家
  PRESCRIPTED_GF_OGAS:0 "OGAS"
@@ -25,14 +26,17 @@
 
  EMPIRE_DESIGN_GF_URNC:0 "罗克萨特主义合众国联盟"
  PRESCRIPTED_adjective_GF_URNC:0 "罗联"
+ PRESCRIPTED_ship_prefix_GF_URNC:0 "RNS"
 #  EMPIRE_DESIGN_GF_EMPIRE_URNC_desc:0 "这是罗联的介绍"
 
  EMPIRE_DESIGN_GF_AU:0 "南极联邦"
  PRESCRIPTED_adjective_GF_AU:0 "南联"
+ PRESCRIPTED_ship_prefix_GF_AU:0 "AUS"
 #  EMPIRE_DESIGN_GF_EMPIRE_AU_desc:0 "这是南联的介绍"
 
  EMPIRE_DESIGN_GF_GK:0 "格里芬与克鲁格安全承包商"
  PRESCRIPTED_adjective_GF_GK:0 "格里芬"
+ PRESCRIPTED_ship_prefix_GF_GK:0 "GKS"
 #  EMPIRE_DESIGN_GF_EMPIRE_GK_desc:0 "这是格里芬的介绍"
 
 ###

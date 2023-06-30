@@ -6,8 +6,7 @@
  GF_gov_commonwealth:0 "联合政府"
  GF_gov_commonwealth_desc:0 "联合政府"
  GF_AUTH_TAG_RULED_BY_OGAS:0 "§E无换届选举§!\n国家领袖为拥有阵列主机的超级人工智能§YOGAS§!"
- GF_RT_OGAS:0 "国家管理自动化系统"
- GF_RT_FERRI:0 "副总指挥"
+ GF_RT_OGAS:0 "$NAME_GF_OGAS$"
 
 
  GF_RT_OGAS_VASSAL:0 "OGAS子网核心"
