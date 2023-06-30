@@ -30,11 +30,14 @@ event = {
 	immediate = {
 		every_country = {
 			limit = { has_authority = GF_auth_commonwealth }
+			# 禁用原版派系
 			if = {
 				limit = { NOT = { has_country_flag = suppress_vanilla_factions } }
 				set_country_flag = suppress_vanilla_factions
 			}
+			# 更新日志提醒
 			country_event = { id = GF_evt_misc.1001 days = 1 }
+			# 自动化遥控殖民地效果
 			every_owned_planet = {
 				limit = {
 					has_modifier = GF_auto_colony
@@ -42,6 +45,8 @@ event = {
 				}
 				planet_event = { id = GF_colony.10 }
 			}
+			# 人形领袖立绘
+			country_event = { id = GF_doll_leader.18 }
 		}
 	}
 }

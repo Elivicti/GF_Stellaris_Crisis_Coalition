@@ -1,0 +1,307 @@
+﻿GF_DOLL = {
+	category = "GF_doll"
+	randomized = no
+	ship_names = {
+		corvette = {
+			HUMAN1_SHIP_Aardvark HUMAN1_SHIP_Accentor HUMAN1_SHIP_Adder HUMAN1_SHIP_Albatross HUMAN1_SHIP_Alligator HUMAN1_SHIP_Anaconda HUMAN1_SHIP_Antelope HUMAN1_SHIP_Armadillo HUMAN1_SHIP_Asp HUMAN1_SHIP_Badger HUMAN1_SHIP_Bass HUMAN1_SHIP_Beagle HUMAN1_SHIP_Bloodhound HUMAN1_SHIP_Buffalo HUMAN1_SHIP_Bulldog HUMAN1_SHIP_Buzzard HUMAN1_SHIP_Camel HUMAN1_SHIP_Cheetah HUMAN1_SHIP_Cobra HUMAN1_SHIP_Coyote HUMAN1_SHIP_Dingo HUMAN1_SHIP_Dolphin HUMAN1_SHIP_Dragonfly HUMAN1_SHIP_Dromedary HUMAN1_SHIP_Eagle HUMAN1_SHIP_Elephant HUMAN1_SHIP_Falcon HUMAN1_SHIP_Ferret HUMAN1_SHIP_Firefly HUMAN1_SHIP_Fox HUMAN1_SHIP_Gazelle HUMAN1_SHIP_Glowworm HUMAN1_SHIP_GreyWolf HUMAN1_SHIP_Greyhound HUMAN1_SHIP_Haddock HUMAN1_SHIP_Hawk HUMAN1_SHIP_Jackal HUMAN1_SHIP_Jackdaw HUMAN1_SHIP_Jaguar HUMAN1_SHIP_Kangaroo HUMAN1_SHIP_Kestrel HUMAN1_SHIP_KingCobra HUMAN1_SHIP_KingFish HUMAN1_SHIP_Ladybird HUMAN1_SHIP_Leopard HUMAN1_SHIP_Lion HUMAN1_SHIP_Lizard HUMAN1_SHIP_Lynx HUMAN1_SHIP_Mongoose HUMAN1_SHIP_Mosquito HUMAN1_SHIP_Narwhal HUMAN1_SHIP_Nighthawk HUMAN1_SHIP_Ocelot HUMAN1_SHIP_Orca HUMAN1_SHIP_Osprey HUMAN1_SHIP_Panther HUMAN1_SHIP_Peacock HUMAN1_SHIP_Pelican HUMAN1_SHIP_Penguin HUMAN1_SHIP_Petrel HUMAN1_SHIP_Platypus HUMAN1_SHIP_Polecat HUMAN1_SHIP_Porcupine HUMAN1_SHIP_Puma HUMAN1_SHIP_Python HUMAN1_SHIP_Rattlesnake HUMAN1_SHIP_Raven HUMAN1_SHIP_Salamander HUMAN1_SHIP_Sardine HUMAN1_SHIP_Scorpion HUMAN1_SHIP_Shark HUMAN1_SHIP_Shrike HUMAN1_SHIP_Skylark HUMAN1_SHIP_Sparrow HUMAN1_SHIP_Spider HUMAN1_SHIP_Starfish HUMAN1_SHIP_Stingray HUMAN1_SHIP_Barracuda HUMAN1_SHIP_Stork HUMAN1_SHIP_Sturgeon HUMAN1_SHIP_Swordfish HUMAN1_SHIP_Tapir HUMAN1_SHIP_Tiger HUMAN1_SHIP_TigerShark HUMAN1_SHIP_Vulture HUMAN1_SHIP_Walrus HUMAN1_SHIP_Wolverine HUMAN1_SHIP_Apache HUMAN1_SHIP_Aztec HUMAN1_SHIP_Cossack HUMAN1_SHIP_Dervish HUMAN1_SHIP_Druid HUMAN1_SHIP_Highlander HUMAN1_SHIP_Janissary HUMAN1_SHIP_Matador HUMAN1_SHIP_Papillon HUMAN1_SHIP_Parthian HUMAN1_SHIP_Patrician HUMAN1_SHIP_Saracen HUMAN1_SHIP_Sphinx HUMAN1_SHIP_Sultan HUMAN1_SHIP_Tomahawk HUMAN1_SHIP_Viking HUMAN1_SHIP_Zulu HUMAN1_SHIP_Abhay HUMAN1_SHIP_Akshay HUMAN1_SHIP_Akula HUMAN1_SHIP_Soyuz HUMAN1_SHIP_Harrier HUMAN1_SHIP_TomoeGozen HUMAN1_SHIP_Garuda HUMAN1_SHIP_Yangwei HUMAN1_SHIP_Datong HUMAN1_SHIP_Haifeng HUMAN1_SHIP_Hailong HUMAN1_SHIP_Yongcheng HUMAN1_SHIP_Yinghao HUMAN1_SHIP_Taiyang HUMAN1_SHIP_Chaoyang HUMAN1_SHIP_Qiuxing HUMAN1_SHIP_Guangxing HUMAN1_SHIP_Zhengsheng HUMAN1_SHIP_Taizhao HUMAN1_SHIP_Meihong HUMAN1_SHIP_Wulong HUMAN1_SHIP_Jiangkun HUMAN1_SHIP_Acorn HUMAN1_SHIP_Musketeer HUMAN1_SHIP_Pharaoh HUMAN1_SHIP_Mongol HUMAN1_SHIP_Rickenbacker HUMAN1_SHIP_JohnPaulJones HUMAN1_SHIP_Doblestnyi HUMAN1_SHIP_Steregushchiy HUMAN1_SHIP_Soobrazitelny HUMAN1_SHIP_RodgerYoung HUMAN1_SHIP_CrazyHorse HUMAN1_SHIP_Richthofen HUMAN1_SHIP_Boyington HUMAN1_SHIP_Fonck HUMAN1_SHIP_Mannock HUMAN1_SHIP_Bishop HUMAN1_SHIP_Kazakov HUMAN1_SHIP_Coppens HUMAN1_SHIP_Brumowski HUMAN1_SHIP_Baracca HUMAN1_SHIP_Hartmann HUMAN1_SHIP_Juutilainen HUMAN1_SHIP_Nishizawa HUMAN1_SHIP_Sakai HUMAN1_SHIP_Shestakov HUMAN1_SHIP_Kozhedub HUMAN1_SHIP_Cantacuzino HUMAN1_SHIP_VanLierde HUMAN1_SHIP_Bong HUMAN1_SHIP_Thach HUMAN1_SHIP_Clostermann HUMAN1_SHIP_Mitralexis HUMAN1_SHIP_Shinohara HUMAN1_SHIP_Iwamoto HUMAN1_SHIP_Molders HUMAN1_SHIP_Skalski HUMAN1_SHIP_MacLachlan HUMAN1_SHIP_Caldwell HUMAN1_SHIP_Litvyak HUMAN1_SHIP_Yeager HUMAN1_SHIP_McCampbell HUMAN1_SHIP_OHare HUMAN1_SHIP_Sealion HUMAN1_SHIP_Balao HUMAN1_SHIP_Gato HUMAN1_SHIP_Doolittle HUMAN1_SHIP_Novikov HUMAN1_SHIP_Uhlan HUMAN1_SHIP_Cataphract HUMAN1_SHIP_Soyokaze HUMAN1_SHIP_Orff HUMAN1_SHIP_Vandal HUMAN1_SHIP_Chameleon HUMAN1_SHIP_Grizzly HUMAN1_SHIP_Gurkha HUMAN1_SHIP_Hoplite HUMAN1_SHIP_Kodiak HUMAN1_SHIP_Piranha HUMAN1_SHIP_Wildcat HUMAN1_SHIP_Hellcat HUMAN1_SHIP_Bearcat HUMAN1_SHIP_Tomcat HUMAN1_SHIP_Kingfisher HUMAN1_SHIP_Cougar HUMAN1_SHIP_Mohawk HUMAN1_SHIP_Blackhawk HUMAN1_SHIP_ShootingStar HUMAN1_SHIP_Avocet HUMAN1_SHIP_Sparrowhawk HUMAN1_SHIP_Skua HUMAN1_SHIP_Firecrest HUMAN1_SHIP_Fulmar HUMAN1_SHIP_Arrowhead HUMAN1_SHIP_Condor HUMAN1_SHIP_Goshawk HUMAN1_SHIP_Nicator HUMAN1_SHIP_Samurai HUMAN1_SHIP_Smilodon HUMAN1_SHIP_Whippet HUMAN1_SHIP_Cormorant HUMAN1_SHIP_Ranvir HUMAN1_SHIP_Rajput HUMAN1_SHIP_Rana HUMAN1_SHIP_Toreador HUMAN1_SHIP_McAuliffe HUMAN1_SHIP_Cardinal HUMAN1_SHIP_Nightingale HUMAN1_SHIP_Adler HUMAN1_SHIP_Seahorse HUMAN1_SHIP_Ronin HUMAN1_SHIP_Iguana HUMAN1_SHIP_Redeemer HUMAN1_SHIP_WilliamTell HUMAN1_SHIP_SittingBull HUMAN1_SHIP_Hiawatha HUMAN1_SHIP_JohnHenry HUMAN1_SHIP_PaulBunyan HUMAN1_SHIP_Cangjie HUMAN1_SHIP_DakshinRai HUMAN1_SHIP_GuruBaaje HUMAN1_SHIP_Madoc HUMAN1_SHIP_Rostam HUMAN1_SHIP_Esfandiar HUMAN1_SHIP_JuanValdivia HUMAN1_SHIP_Yinxi HUMAN1_SHIP_Yennenga HUMAN1_SHIP_RunningEagle HUMAN1_SHIP_HuaMulan HUMAN1_SHIP_Yuenu HUMAN1_SHIP_Boudica HUMAN1_SHIP_Ethelfleda HUMAN1_SHIP_Gwenllian HUMAN1_SHIP_Gwendolen HUMAN1_SHIP_Cordelia HUMAN1_SHIP_Andraste HUMAN1_SHIP_Scathach HUMAN1_SHIP_Muirisc HUMAN1_SHIP_Morrigan HUMAN1_SHIP_Badb HUMAN1_SHIP_Macha HUMAN1_SHIP_Teuta HUMAN1_SHIP_JeanneHachette HUMAN1_SHIP_Atalanta HUMAN1_SHIP_Hippolyta HUMAN1_SHIP_Penthesilea HUMAN1_SHIP_Clorinda HUMAN1_SHIP_Tancred HUMAN1_SHIP_Brunhild HUMAN1_SHIP_Agustina HUMAN1_SHIP_Gordafarid HUMAN1_SHIP_Semiramis HUMAN1_SHIP_Malalai HUMAN1_SHIP_ShakaZulu HUMAN1_SHIP_Lafayette HUMAN1_SHIP_ReubenJames HUMAN1_SHIP_Nostromo HUMAN1_SHIP_Sulaco HUMAN1_SHIP_Costaguana HUMAN1_SHIP_Ribiera HUMAN1_SHIP_Shashka HUMAN1_SHIP_Sica HUMAN1_SHIP_Jian HUMAN1_SHIP_Dao HUMAN1_SHIP_Zhanmadao HUMAN1_SHIP_Makhaira HUMAN1_SHIP_Falcata HUMAN1_SHIP_Kopis HUMAN1_SHIP_Rhomphaia HUMAN1_SHIP_Kilij HUMAN1_SHIP_Shamshir HUMAN1_SHIP_Kaskara HUMAN1_SHIP_Flyssa HUMAN1_SHIP_Takoba HUMAN1_SHIP_Yatagan HUMAN1_SHIP_Urumi HUMAN1_SHIP_Liuyedao HUMAN1_SHIP_Tachi HUMAN1_SHIP_Khanda HUMAN1_SHIP_Wodao HUMAN1_SHIP_Changdao HUMAN1_SHIP_Yanmaodao HUMAN1_SHIP_Miaodao HUMAN1_SHIP_Chokuto HUMAN1_SHIP_Tsurugi HUMAN1_SHIP_Odachi HUMAN1_SHIP_Wakizashi HUMAN1_SHIP_Uchigatana HUMAN1_SHIP_Shikomizue HUMAN1_SHIP_Firangi HUMAN1_SHIP_Talwar HUMAN1_SHIP_Pata HUMAN1_SHIP_Kastane HUMAN1_SHIP_Macana HUMAN1_SHIP_Khopesh HUMAN1_SHIP_Acinaces HUMAN1_SHIP_Macuahuitl HUMAN1_SHIP_Belawa HUMAN1_SHIP_Nimcha HUMAN1_SHIP_Shotel HUMAN1_SHIP_Krabi HUMAN1_SHIP_Parang HUMAN1_SHIP_Klewang HUMAN1_SHIP_Surik HUMAN1_SHIP_Niabor HUMAN1_SHIP_Mandau HUMAN1_SHIP_Kampilan HUMAN1_SHIP_Gari HUMAN1_SHIP_Panabas HUMAN1_SHIP_Olds HUMAN1_SHIP_Kearsarge HUMAN1_SHIP_Dristigheten
+		}
+
+		destroyer = {
+			HUMAN1_SHIP_Amsterdam HUMAN1_SHIP_Austin HUMAN1_SHIP_Athens HUMAN1_SHIP_Atlanta HUMAN1_SHIP_Baghdad HUMAN1_SHIP_Baltimore HUMAN1_SHIP_Bangkok HUMAN1_SHIP_Barcelona HUMAN1_SHIP_Beijing HUMAN1_SHIP_Belfast HUMAN1_SHIP_Berlin HUMAN1_SHIP_Bombay HUMAN1_SHIP_Boston HUMAN1_SHIP_Hyderabad HUMAN1_SHIP_Budapest HUMAN1_SHIP_BuenosAires HUMAN1_SHIP_Cairo HUMAN1_SHIP_Calcutta HUMAN1_SHIP_CapeTown HUMAN1_SHIP_Chicago HUMAN1_SHIP_Copenhagen HUMAN1_SHIP_Damascus HUMAN1_SHIP_DaresSalaam HUMAN1_SHIP_Detroit HUMAN1_SHIP_Dubai HUMAN1_SHIP_Dublin HUMAN1_SHIP_Edinburgh HUMAN1_SHIP_Gibraltar HUMAN1_SHIP_Glasgow HUMAN1_SHIP_Guangzhou HUMAN1_SHIP_Hanoi HUMAN1_SHIP_Havana HUMAN1_SHIP_Helsinki HUMAN1_SHIP_HongKong HUMAN1_SHIP_Houston HUMAN1_SHIP_Istanbul HUMAN1_SHIP_Jakarta HUMAN1_SHIP_Jerusalem HUMAN1_SHIP_Johannesburg HUMAN1_SHIP_Kiev HUMAN1_SHIP_London HUMAN1_SHIP_LosAngeles HUMAN1_SHIP_Madrid HUMAN1_SHIP_Manila HUMAN1_SHIP_Minsk HUMAN1_SHIP_Moscow HUMAN1_SHIP_Mumbai HUMAN1_SHIP_NewYork HUMAN1_SHIP_NewOrleans HUMAN1_SHIP_Novgorod HUMAN1_SHIP_Osaka HUMAN1_SHIP_Oslo HUMAN1_SHIP_Paris HUMAN1_SHIP_Prague HUMAN1_SHIP_RiodeJaneiro HUMAN1_SHIP_Rome HUMAN1_SHIP_Rotterdam HUMAN1_SHIP_SanFrancisco HUMAN1_SHIP_SaoPaulo HUMAN1_SHIP_Sarajevo HUMAN1_SHIP_Seattle HUMAN1_SHIP_Seoul HUMAN1_SHIP_Sevastopol HUMAN1_SHIP_Shanghai HUMAN1_SHIP_Singapore HUMAN1_SHIP_StLouis HUMAN1_SHIP_Stockholm HUMAN1_SHIP_Tokyo HUMAN1_SHIP_Toronto HUMAN1_SHIP_Vancouver HUMAN1_SHIP_Vienna HUMAN1_SHIP_Vladivostok HUMAN1_SHIP_Warsaw HUMAN1_SHIP_Sydney HUMAN1_SHIP_Brisbane HUMAN1_SHIP_MexicoCity HUMAN1_SHIP_Munchen HUMAN1_SHIP_Nairobi HUMAN1_SHIP_Smolensk HUMAN1_SHIP_Casablanca HUMAN1_SHIP_Venice HUMAN1_SHIP_Mogadishu HUMAN1_SHIP_Montreal HUMAN1_SHIP_Birmingham HUMAN1_SHIP_Liverpool HUMAN1_SHIP_Manchester HUMAN1_SHIP_Kabul HUMAN1_SHIP_Kyoto HUMAN1_SHIP_Volgograd HUMAN1_SHIP_StPetersburg HUMAN1_SHIP_Frankfurt HUMAN1_SHIP_Belgrade HUMAN1_SHIP_Marseille HUMAN1_SHIP_Brussels HUMAN1_SHIP_Tripoli HUMAN1_SHIP_Tehran HUMAN1_SHIP_Quebec HUMAN1_SHIP_Florence HUMAN1_SHIP_Exeter HUMAN1_SHIP_Dallas HUMAN1_SHIP_Denver HUMAN1_SHIP_Lagos HUMAN1_SHIP_Melbourne HUMAN1_SHIP_Calgary HUMAN1_SHIP_Ottawa HUMAN1_SHIP_Algiers HUMAN1_SHIP_Brazzaville HUMAN1_SHIP_Santiago HUMAN1_SHIP_Montevideo HUMAN1_SHIP_Bogota HUMAN1_SHIP_Chengdu HUMAN1_SHIP_Hangzhou HUMAN1_SHIP_Shaoxing HUMAN1_SHIP_Yokohama HUMAN1_SHIP_Pittsburgh HUMAN1_SHIP_Philadelphia HUMAN1_SHIP_Miami HUMAN1_SHIP_Lisbon HUMAN1_SHIP_Hamburg HUMAN1_SHIP_Bremen HUMAN1_SHIP_Phoenix HUMAN1_SHIP_Indianapolis HUMAN1_SHIP_Minneapolis HUMAN1_SHIP_Milan HUMAN1_SHIP_Surabaya HUMAN1_SHIP_KualaLumpur HUMAN1_SHIP_AbuDhabi HUMAN1_SHIP_Ankara HUMAN1_SHIP_Beirut HUMAN1_SHIP_Kathmandu HUMAN1_SHIP_Tapei HUMAN1_SHIP_Islamabad HUMAN1_SHIP_Karachi HUMAN1_SHIP_Zurich HUMAN1_SHIP_Delhi HUMAN1_SHIP_Bangalore HUMAN1_SHIP_Dusseldorf HUMAN1_SHIP_TelAviv HUMAN1_SHIP_Lima HUMAN1_SHIP_Luxembourg HUMAN1_SHIP_Bucharest HUMAN1_SHIP_Geneva HUMAN1_SHIP_Gothenburg HUMAN1_SHIP_Lyon HUMAN1_SHIP_Bratislava HUMAN1_SHIP_Tunis HUMAN1_SHIP_Riyadh HUMAN1_SHIP_Riga HUMAN1_SHIP_Valencia HUMAN1_SHIP_Krakow HUMAN1_SHIP_Vilnius HUMAN1_SHIP_Tallinn HUMAN1_SHIP_Edmonton HUMAN1_SHIP_Tijuana HUMAN1_SHIP_Trondheim HUMAN1_SHIP_Dhaka HUMAN1_SHIP_Shenzhen HUMAN1_SHIP_Suzhou HUMAN1_SHIP_Kinshasa HUMAN1_SHIP_Lahore HUMAN1_SHIP_Dongguan HUMAN1_SHIP_Chongqing HUMAN1_SHIP_Chennai HUMAN1_SHIP_Changsha HUMAN1_SHIP_Wuhan HUMAN1_SHIP_Tianjin HUMAN1_SHIP_Faisalabad HUMAN1_SHIP_Foshan HUMAN1_SHIP_Zunyi HUMAN1_SHIP_Ahmedabad HUMAN1_SHIP_Shantou HUMAN1_SHIP_Rangoon HUMAN1_SHIP_Abidjan HUMAN1_SHIP_Alexandria HUMAN1_SHIP_Xian HUMAN1_SHIP_Surat HUMAN1_SHIP_Harbin HUMAN1_SHIP_Giza HUMAN1_SHIP_Izmir HUMAN1_SHIP_Zhengzhou HUMAN1_SHIP_Xiamen HUMAN1_SHIP_Quanzhou HUMAN1_SHIP_Busan HUMAN1_SHIP_Rawalpindi HUMAN1_SHIP_Guayaquil HUMAN1_SHIP_Jeddah HUMAN1_SHIP_Durban HUMAN1_SHIP_Hefei HUMAN1_SHIP_Pyongyang HUMAN1_SHIP_Peshawar HUMAN1_SHIP_Ekurhuleni HUMAN1_SHIP_Zhongshan HUMAN1_SHIP_Multan HUMAN1_SHIP_Pune HUMAN1_SHIP_AddisAbaba HUMAN1_SHIP_Jaipur HUMAN1_SHIP_Lucknow HUMAN1_SHIP_Wenzhou HUMAN1_SHIP_QuezonCity HUMAN1_SHIP_Salvador HUMAN1_SHIP_Luanda HUMAN1_SHIP_Kaohsiung HUMAN1_SHIP_Taichung HUMAN1_SHIP_Gujranwala HUMAN1_SHIP_Quito HUMAN1_SHIP_Chittagong HUMAN1_SHIP_Bandung HUMAN1_SHIP_Brasilia HUMAN1_SHIP_Daegu HUMAN1_SHIP_Nagpur HUMAN1_SHIP_Nagoya HUMAN1_SHIP_PhnomPenh HUMAN1_SHIP_Kochi HUMAN1_SHIP_Medan HUMAN1_SHIP_Perth HUMAN1_SHIP_Sapporo HUMAN1_SHIP_DavaoCity HUMAN1_SHIP_Caloocan HUMAN1_SHIP_Kobe HUMAN1_SHIP_Guadalajara HUMAN1_SHIP_Auckland HUMAN1_SHIP_Fukuoka HUMAN1_SHIP_Kawasaki HUMAN1_SHIP_Adelaide HUMAN1_SHIP_Ulsan HUMAN1_SHIP_Tbilisi HUMAN1_SHIP_Fez HUMAN1_SHIP_Yerevan HUMAN1_SHIP_Koln HUMAN1_SHIP_SanAntonio HUMAN1_SHIP_SanDiego HUMAN1_SHIP_SanJose HUMAN1_SHIP_Jacksonville HUMAN1_SHIP_FortWorth HUMAN1_SHIP_Charlotte HUMAN1_SHIP_ElPaso HUMAN1_SHIP_Nashville HUMAN1_SHIP_Portland HUMAN1_SHIP_OklahomaCity HUMAN1_SHIP_LasVegas HUMAN1_SHIP_Louisville HUMAN1_SHIP_Milwaukee HUMAN1_SHIP_Albuquerque HUMAN1_SHIP_Tucson HUMAN1_SHIP_Fresno HUMAN1_SHIP_Sacramento HUMAN1_SHIP_KansasCity HUMAN1_SHIP_Omaha HUMAN1_SHIP_Oakland HUMAN1_SHIP_Tulsa HUMAN1_SHIP_Wichita HUMAN1_SHIP_Arlington HUMAN1_SHIP_Cleveland HUMAN1_SHIP_Tampa HUMAN1_SHIP_Bakersfield HUMAN1_SHIP_Honolulu HUMAN1_SHIP_Anchorage HUMAN1_SHIP_Cincinnati HUMAN1_SHIP_Orlando HUMAN1_SHIP_Irvine HUMAN1_SHIP_Reno HUMAN1_SHIP_Richmond HUMAN1_SHIP_Spokane HUMAN1_SHIP_SaltLakeCity HUMAN1_SHIP_Tallahassee HUMAN1_SHIP_Huntsville HUMAN1_SHIP_Knoxville HUMAN1_SHIP_Springfield HUMAN1_SHIP_Savannah HUMAN1_SHIP_Hartford HUMAN1_SHIP_Fargo HUMAN1_SHIP_Winnipeg HUMAN1_SHIP_Hamilton HUMAN1_SHIP_Mississauga HUMAN1_SHIP_Halifax HUMAN1_SHIP_Bristol HUMAN1_SHIP_Sheffield HUMAN1_SHIP_Leeds HUMAN1_SHIP_Leicester HUMAN1_SHIP_Bradford HUMAN1_SHIP_Cardiff HUMAN1_SHIP_Coventry HUMAN1_SHIP_Nottingham HUMAN1_SHIP_Newcastle HUMAN1_SHIP_Wolverhampton HUMAN1_SHIP_Southampton HUMAN1_SHIP_Portsmouth HUMAN1_SHIP_Brighton HUMAN1_SHIP_Aberdeen HUMAN1_SHIP_Bolton HUMAN1_SHIP_Norwich HUMAN1_SHIP_Swansea HUMAN1_SHIP_Oxford HUMAN1_SHIP_York HUMAN1_SHIP_Blackpool HUMAN1_SHIP_Cambridge HUMAN1_SHIP_Ipswich HUMAN1_SHIP_Stuttgart HUMAN1_SHIP_Dortmund HUMAN1_SHIP_Essen HUMAN1_SHIP_Dresden HUMAN1_SHIP_Hannover HUMAN1_SHIP_Nurnberg HUMAN1_SHIP_Duisburg HUMAN1_SHIP_Bonn HUMAN1_SHIP_Munster HUMAN1_SHIP_Karlsruhe HUMAN1_SHIP_Mannheim HUMAN1_SHIP_Augsburg HUMAN1_SHIP_Freiburg HUMAN1_SHIP_Aachen HUMAN1_SHIP_Lubeck HUMAN1_SHIP_Mainz HUMAN1_SHIP_Rostock HUMAN1_SHIP_Potsdam HUMAN1_SHIP_Toulouse HUMAN1_SHIP_Nice HUMAN1_SHIP_Nantes HUMAN1_SHIP_Strasbourg HUMAN1_SHIP_Montpellier HUMAN1_SHIP_Bordeaux HUMAN1_SHIP_Lille HUMAN1_SHIP_Rennes HUMAN1_SHIP_Reims HUMAN1_SHIP_LeHavre HUMAN1_SHIP_Toulon HUMAN1_SHIP_Grenoble HUMAN1_SHIP_Dijon HUMAN1_SHIP_Brest HUMAN1_SHIP_Metz HUMAN1_SHIP_Novosibirsk HUMAN1_SHIP_Yekaterinburg HUMAN1_SHIP_Samara HUMAN1_SHIP_Omsk HUMAN1_SHIP_Kazan HUMAN1_SHIP_Chelyabinsk HUMAN1_SHIP_Rostov HUMAN1_SHIP_Ufa HUMAN1_SHIP_Perm HUMAN1_SHIP_Krasnoyarsk HUMAN1_SHIP_Voronezh HUMAN1_SHIP_Saratov HUMAN1_SHIP_Krasnodar HUMAN1_SHIP_Izhevsk HUMAN1_SHIP_Ulyanovsk HUMAN1_SHIP_Yaroslavl HUMAN1_SHIP_Irkutsk HUMAN1_SHIP_Khabarovsk HUMAN1_SHIP_Orenburg HUMAN1_SHIP_Ryazan HUMAN1_SHIP_Astrakhan HUMAN1_SHIP_Lipetsk HUMAN1_SHIP_Tula HUMAN1_SHIP_Kirov HUMAN1_SHIP_Bryansk HUMAN1_SHIP_Ivanovo HUMAN1_SHIP_Stavropol HUMAN1_SHIP_Tver HUMAN1_SHIP_Arkhangelsk HUMAN1_SHIP_Vladimir HUMAN1_SHIP_Murmansk HUMAN1_SHIP_Grozny HUMAN1_SHIP_Petrozavodsk HUMAN1_SHIP_Pskov HUMAN1_SHIP_Antwerp HUMAN1_SHIP_Utrecht HUMAN1_SHIP_TheHague HUMAN1_SHIP_Turin HUMAN1_SHIP_Palermo HUMAN1_SHIP_Genoa HUMAN1_SHIP_Seville HUMAN1_SHIP_Granada HUMAN1_SHIP_Aleppo HUMAN1_SHIP_KuwaitCity HUMAN1_SHIP_Amman HUMAN1_SHIP_Mashhad HUMAN1_SHIP_Isfahan HUMAN1_SHIP_Gaza HUMAN1_SHIP_Sanaa HUMAN1_SHIP_Mosul HUMAN1_SHIP_Khartoum HUMAN1_SHIP_Accra HUMAN1_SHIP_Kano HUMAN1_SHIP_Ibadan HUMAN1_SHIP_Dakar HUMAN1_SHIP_Pretoria HUMAN1_SHIP_Benghazi HUMAN1_SHIP_Rabat HUMAN1_SHIP_Freetown HUMAN1_SHIP_Djibouti HUMAN1_SHIP_Monrovia HUMAN1_SHIP_PortElizabeth HUMAN1_SHIP_NDjamena HUMAN1_SHIP_Lodz HUMAN1_SHIP_Canberra HUMAN1_SHIP_Baku HUMAN1_SHIP_Sofia HUMAN1_SHIP_Zagreb HUMAN1_SHIP_Astana HUMAN1_SHIP_Nouakchott HUMAN1_SHIP_UlanBator HUMAN1_SHIP_Abuja HUMAN1_SHIP_PortMoresby HUMAN1_SHIP_BanjaLuka HUMAN1_SHIP_Douala HUMAN1_SHIP_Nicosia HUMAN1_SHIP_SanSalvador HUMAN1_SHIP_Thessaloniki HUMAN1_SHIP_Guatemala HUMAN1_SHIP_Port-au-Prince HUMAN1_SHIP_Georgetown HUMAN1_SHIP_Reykjavik HUMAN1_SHIP_Basra HUMAN1_SHIP_Cork HUMAN1_SHIP_Kingston HUMAN1_SHIP_Mombasa HUMAN1_SHIP_Ecatepec HUMAN1_SHIP_Windhoek HUMAN1_SHIP_Wellington HUMAN1_SHIP_Hebron HUMAN1_SHIP_PanamaCity HUMAN1_SHIP_Porto HUMAN1_SHIP_Ljubljana HUMAN1_SHIP_Malmo HUMAN1_SHIP_Bern HUMAN1_SHIP_Donetsk HUMAN1_SHIP_Harare HUMAN1_SHIP_Aarhus HUMAN1_SHIP_Liege
+		}
+
+		cruiser = {
+			HUMAN1_SHIP_Bolivar HUMAN1_SHIP_Brusilov HUMAN1_SHIP_Churchill HUMAN1_SHIP_Clausewitz HUMAN1_SHIP_Garibaldi HUMAN1_SHIP_GustavusAdolphus HUMAN1_SHIP_Hammurabi HUMAN1_SHIP_JuliusCaesar HUMAN1_SHIP_Justinian HUMAN1_SHIP_Lincoln HUMAN1_SHIP_Patton HUMAN1_SHIP_Rommel HUMAN1_SHIP_SunTzu HUMAN1_SHIP_Liberator HUMAN1_SHIP_Zhukov HUMAN1_SHIP_AlexanderNevsky HUMAN1_SHIP_Pyrrhus HUMAN1_SHIP_YiSun-sin HUMAN1_SHIP_Heihachiro HUMAN1_SHIP_Khalidibnal-Walid HUMAN1_SHIP_Vasa HUMAN1_SHIP_Hindenburg HUMAN1_SHIP_DeGaulle HUMAN1_SHIP_Subutai HUMAN1_SHIP_Nagato HUMAN1_SHIP_Scharnhorst HUMAN1_SHIP_Clemenceau HUMAN1_SHIP_Richelieu HUMAN1_SHIP_JeanBart HUMAN1_SHIP_Sparviero HUMAN1_SHIP_Affondatore HUMAN1_SHIP_Tromp HUMAN1_SHIP_DeRuyter HUMAN1_SHIP_Esperanza HUMAN1_SHIP_Pelayo HUMAN1_SHIP_Velasco HUMAN1_SHIP_Juneau HUMAN1_SHIP_Sherwood HUMAN1_SHIP_Alamo HUMAN1_SHIP_Bannockburn HUMAN1_SHIP_Borodino HUMAN1_SHIP_Breitenfeld HUMAN1_SHIP_Cannae HUMAN1_SHIP_ElAlamein HUMAN1_SHIP_Gaugamela HUMAN1_SHIP_Kadesh HUMAN1_SHIP_Kursk HUMAN1_SHIP_Masada HUMAN1_SHIP_Normandy HUMAN1_SHIP_Salamis HUMAN1_SHIP_Sedan HUMAN1_SHIP_Tannenberg HUMAN1_SHIP_Ticonderoga HUMAN1_SHIP_Thermopylae HUMAN1_SHIP_Marengo HUMAN1_SHIP_Leipzig HUMAN1_SHIP_Shiloh HUMAN1_SHIP_Koniggratz HUMAN1_SHIP_Ypres HUMAN1_SHIP_Somme HUMAN1_SHIP_Suomussalmi HUMAN1_SHIP_Kharkov HUMAN1_SHIP_Guadalcanal HUMAN1_SHIP_LeyteGulf HUMAN1_SHIP_DienBienPhu HUMAN1_SHIP_Thymbra HUMAN1_SHIP_Manassas HUMAN1_SHIP_Blenheim HUMAN1_SHIP_Adelphi HUMAN1_SHIP_Angel HUMAN1_SHIP_Borealis HUMAN1_SHIP_Bounty HUMAN1_SHIP_Emancipator HUMAN1_SHIP_MorningStar HUMAN1_SHIP_ShiLang HUMAN1_SHIP_Vikramaditya HUMAN1_SHIP_Viraat HUMAN1_SHIP_Vikrant HUMAN1_SHIP_Vishal HUMAN1_SHIP_Kongo HUMAN1_SHIP_Oriskany HUMAN1_SHIP_BunkerHill HUMAN1_SHIP_Farragut HUMAN1_SHIP_KittyHawk HUMAN1_SHIP_RoyalOak HUMAN1_SHIP_Thunderbolt HUMAN1_SHIP_Nimitz HUMAN1_SHIP_Eisenhower HUMAN1_SHIP_Roland HUMAN1_SHIP_TranHungDao HUMAN1_SHIP_Themistocles HUMAN1_SHIP_Cunaxa HUMAN1_SHIP_Uhuru HUMAN1_SHIP_Ramses HUMAN1_SHIP_Vauban HUMAN1_SHIP_Harpagos HUMAN1_SHIP_Anzio HUMAN1_SHIP_Caen HUMAN1_SHIP_Carentan HUMAN1_SHIP_Bastogne HUMAN1_SHIP_Arnhem HUMAN1_SHIP_Temeraire HUMAN1_SHIP_Vesuvius HUMAN1_SHIP_Etna HUMAN1_SHIP_StHelens HUMAN1_SHIP_OlympusMons HUMAN1_SHIP_Alcibiades HUMAN1_SHIP_Patrocles HUMAN1_SHIP_Santander HUMAN1_SHIP_Vega HUMAN1_SHIP_Rigel HUMAN1_SHIP_Sirius HUMAN1_SHIP_Canopus HUMAN1_SHIP_Arcturus HUMAN1_SHIP_Capella HUMAN1_SHIP_Procyon HUMAN1_SHIP_Altair HUMAN1_SHIP_Betelgeuse HUMAN1_SHIP_Antares HUMAN1_SHIP_Achernar HUMAN1_SHIP_Aldebaran HUMAN1_SHIP_Pollux HUMAN1_SHIP_Deneb HUMAN1_SHIP_Regulus HUMAN1_SHIP_Proxima HUMAN1_SHIP_RigilKentaurus HUMAN1_SHIP_Spica HUMAN1_SHIP_Polaris HUMAN1_SHIP_Bellatrix HUMAN1_SHIP_Capricorn HUMAN1_SHIP_Syracuse HUMAN1_SHIP_Metaurus HUMAN1_SHIP_Chalons HUMAN1_SHIP_Tours HUMAN1_SHIP_Hastings HUMAN1_SHIP_Orleans HUMAN1_SHIP_Valmy HUMAN1_SHIP_Mukden HUMAN1_SHIP_Narvik HUMAN1_SHIP_Narva HUMAN1_SHIP_Poltava HUMAN1_SHIP_LakePeipus HUMAN1_SHIP_Malta HUMAN1_SHIP_Antietam HUMAN1_SHIP_BatonRouge HUMAN1_SHIP_Beauport HUMAN1_SHIP_Abukir HUMAN1_SHIP_Lund HUMAN1_SHIP_Issus HUMAN1_SHIP_Changping HUMAN1_SHIP_TeutoburgForest HUMAN1_SHIP_WatlingStreet HUMAN1_SHIP_Yarmouk HUMAN1_SHIP_Salamanca HUMAN1_SHIP_Berezina HUMAN1_SHIP_Fredericksburg HUMAN1_SHIP_Chickamauga HUMAN1_SHIP_Caporetto HUMAN1_SHIP_KhalkhinGol HUMAN1_SHIP_Gazala HUMAN1_SHIP_MonteCassino HUMAN1_SHIP_Saipan HUMAN1_SHIP_Breslau HUMAN1_SHIP_Plataea HUMAN1_SHIP_Hydaspes HUMAN1_SHIP_Sentinum HUMAN1_SHIP_Heraclea HUMAN1_SHIP_Kalinga HUMAN1_SHIP_Magnesia HUMAN1_SHIP_Adrianople HUMAN1_SHIP_Ravenna HUMAN1_SHIP_Lutzen HUMAN1_SHIP_Cambrai HUMAN1_SHIP_Marne HUMAN1_SHIP_Chancellorsville HUMAN1_SHIP_PhilippineSea HUMAN1_SHIP_SavoIsland HUMAN1_SHIP_CapeEsperance HUMAN1_SHIP_Taranto HUMAN1_SHIP_CapeMatapan HUMAN1_SHIP_JavaSea HUMAN1_SHIP_Gallipoli HUMAN1_SHIP_DeValette HUMAN1_SHIP_Suleiman HUMAN1_SHIP_MacArthur HUMAN1_SHIP_Roosevelt HUMAN1_SHIP_Victoria HUMAN1_SHIP_Nebuchadnezzar HUMAN1_SHIP_Pachacuti HUMAN1_SHIP_CatherinetheGreat HUMAN1_SHIP_FredericktheGreat HUMAN1_SHIP_Ashoka HUMAN1_SHIP_QinShiHuang HUMAN1_SHIP_Tamerlane HUMAN1_SHIP_Marshall HUMAN1_SHIP_JoanofArc HUMAN1_SHIP_GenghisKhan HUMAN1_SHIP_Ataturk HUMAN1_SHIP_WilliamtheConqueror HUMAN1_SHIP_BonhommeRichard HUMAN1_SHIP_IronDuke
+		}
+
+		battleship = {
+			HUMAN1_SHIP_Ulysses HUMAN1_SHIP_Xenophon HUMAN1_SHIP_Xerxes HUMAN1_SHIP_Nelson HUMAN1_SHIP_Icarus HUMAN1_SHIP_Atlas HUMAN1_SHIP_Apollo HUMAN1_SHIP_Ajax HUMAN1_SHIP_Bellerophon HUMAN1_SHIP_Agrippa HUMAN1_SHIP_Alexander HUMAN1_SHIP_Belisarius HUMAN1_SHIP_Hannibal HUMAN1_SHIP_Washington HUMAN1_SHIP_Saladin HUMAN1_SHIP_Bismarck HUMAN1_SHIP_Yamato HUMAN1_SHIP_Actium HUMAN1_SHIP_Agincourt HUMAN1_SHIP_Austerlitz HUMAN1_SHIP_Gettysburg HUMAN1_SHIP_Jutland HUMAN1_SHIP_Trafalgar HUMAN1_SHIP_Tsushima HUMAN1_SHIP_ValleyForge HUMAN1_SHIP_Verdun HUMAN1_SHIP_Waterloo HUMAN1_SHIP_Granicus HUMAN1_SHIP_Pharsalus HUMAN1_SHIP_Akira HUMAN1_SHIP_Charlemagne HUMAN1_SHIP_BlackPrince HUMAN1_SHIP_Hood HUMAN1_SHIP_Potemkin HUMAN1_SHIP_Musashi HUMAN1_SHIP_Warspite HUMAN1_SHIP_Victory HUMAN1_SHIP_Courage HUMAN1_SHIP_Dauntless HUMAN1_SHIP_Endeavor HUMAN1_SHIP_Excelsior HUMAN1_SHIP_Indefatigable HUMAN1_SHIP_Chivalrous HUMAN1_SHIP_Valiant HUMAN1_SHIP_Monitor HUMAN1_SHIP_Bulwark HUMAN1_SHIP_Defender HUMAN1_SHIP_Endurance HUMAN1_SHIP_Vigilant HUMAN1_SHIP_Resolute HUMAN1_SHIP_Fortitude HUMAN1_SHIP_Yamamoto HUMAN1_SHIP_Lexington HUMAN1_SHIP_Midway HUMAN1_SHIP_Saratoga HUMAN1_SHIP_Yorktown HUMAN1_SHIP_CoralSea HUMAN1_SHIP_Hermes HUMAN1_SHIP_Wasp HUMAN1_SHIP_Hornet HUMAN1_SHIP_ArkRoyal HUMAN1_SHIP_Essex HUMAN1_SHIP_Akagi HUMAN1_SHIP_Kaga HUMAN1_SHIP_Illustrious HUMAN1_SHIP_Intrepid HUMAN1_SHIP_Constellation HUMAN1_SHIP_Constitution HUMAN1_SHIP_Ranger HUMAN1_SHIP_Andromeda HUMAN1_SHIP_Aquila HUMAN1_SHIP_Century HUMAN1_SHIP_Concord HUMAN1_SHIP_Defiant HUMAN1_SHIP_Galaxy HUMAN1_SHIP_Odyssey HUMAN1_SHIP_Orion HUMAN1_SHIP_Providence HUMAN1_SHIP_Reliant HUMAN1_SHIP_Freedom HUMAN1_SHIP_Solaris HUMAN1_SHIP_Independence HUMAN1_SHIP_Lionheart HUMAN1_SHIP_Unicorn HUMAN1_SHIP_Napoleon HUMAN1_SHIP_RoyalSovereign HUMAN1_SHIP_Marathon HUMAN1_SHIP_Imperieuse
+		}
+
+		titan = {
+			HUMAN1_SHIP_Enterprise HUMAN1_SHIP_Invincible HUMAN1_SHIP_Pegasus HUMAN1_SHIP_Hercules HUMAN1_SHIP_Excalibur HUMAN1_SHIP_Formidable
+		}
+
+		colossus = {
+			HUMAN1_SHIP_SolInvictus HUMAN1_SHIP_Adjudicator HUMAN1_SHIP_Overlord HUMAN1_SHIP_Guardian HUMAN1_SHIP_Kingmaker
+		}
+
+		juggernaut = {
+			HUMAN1_SHIP_Ararat HUMAN1_SHIP_AxisMundi HUMAN1_SHIP_GreatReformer HUMAN1_SHIP_Kunlun HUMAN1_SHIP_Tectonic
+		}
+
+		constructor = {
+			HUMAN1_SHIP_Pacific HUMAN1_SHIP_Atlantic HUMAN1_SHIP_Adriatic HUMAN1_SHIP_Amazon HUMAN1_SHIP_Danube HUMAN1_SHIP_India HUMAN1_SHIP_Africa HUMAN1_SHIP_Volga HUMAN1_SHIP_Colorado HUMAN1_SHIP_Ganges HUMAN1_SHIP_Jordan HUMAN1_SHIP_Mekong HUMAN1_SHIP_RioGrande HUMAN1_SHIP_Rubicon HUMAN1_SHIP_Yangtze HUMAN1_SHIP_Mississippi HUMAN1_SHIP_Yukon HUMAN1_SHIP_Indus
+			HUMAN1_SHIP_Rhine HUMAN1_SHIP_Tigris HUMAN1_SHIP_Sahara HUMAN1_SHIP_Bengal HUMAN1_SHIP_Merrimack HUMAN1_SHIP_Potomac HUMAN1_SHIP_Susquehanna HUMAN1_SHIP_Orinoco HUMAN1_SHIP_Shenandoah
+		}
+
+		colonizer = {
+			HUMAN1_SHIP_Mayflower HUMAN1_SHIP_Abundance HUMAN1_SHIP_Bountiful HUMAN1_SHIP_Felicity HUMAN1_SHIP_Hope HUMAN1_SHIP_Opportunity HUMAN1_SHIP_Serenity HUMAN1_SHIP_Unity HUMAN1_SHIP_Destiny HUMAN1_SHIP_Britannia HUMAN1_SHIP_Byzantium HUMAN1_SHIP_Caledonia HUMAN1_SHIP_ElDorado HUMAN1_SHIP_Knossos HUMAN1_SHIP_Memphis
+			HUMAN1_SHIP_Olympus HUMAN1_SHIP_Persepolis HUMAN1_SHIP_SierradelaPlata HUMAN1_SHIP_Sparta HUMAN1_SHIP_Valhalla HUMAN1_SHIP_CrystalPalace HUMAN1_SHIP_Alaska HUMAN1_SHIP_Angola HUMAN1_SHIP_Australia HUMAN1_SHIP_Brazil HUMAN1_SHIP_Canada HUMAN1_SHIP_Congo HUMAN1_SHIP_Guinea HUMAN1_SHIP_India HUMAN1_SHIP_Indonesia
+			HUMAN1_SHIP_Jamaica HUMAN1_SHIP_Macau HUMAN1_SHIP_Mozambique HUMAN1_SHIP_Philippines HUMAN1_SHIP_Somalia HUMAN1_SHIP_SriLanka HUMAN1_SHIP_Taiwan
+		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			HUMAN1_SHIP_Mayflower HUMAN1_SHIP_Abundance HUMAN1_SHIP_Bountiful HUMAN1_SHIP_Felicity HUMAN1_SHIP_Hope HUMAN1_SHIP_Opportunity HUMAN1_SHIP_Serenity HUMAN1_SHIP_Unity HUMAN1_SHIP_Destiny HUMAN1_SHIP_Britannia HUMAN1_SHIP_Byzantium HUMAN1_SHIP_Caledonia HUMAN1_SHIP_ElDorado HUMAN1_SHIP_Knossos HUMAN1_SHIP_Memphis
+			HUMAN1_SHIP_Olympus HUMAN1_SHIP_Persepolis HUMAN1_SHIP_SierradelaPlata HUMAN1_SHIP_Sparta HUMAN1_SHIP_Valhalla HUMAN1_SHIP_CrystalPalace HUMAN1_SHIP_Alaska HUMAN1_SHIP_Angola HUMAN1_SHIP_Australia HUMAN1_SHIP_Brazil HUMAN1_SHIP_Canada HUMAN1_SHIP_Congo HUMAN1_SHIP_Guinea HUMAN1_SHIP_India HUMAN1_SHIP_Indonesia
+			HUMAN1_SHIP_Jamaica HUMAN1_SHIP_Macau HUMAN1_SHIP_Mozambique HUMAN1_SHIP_Philippines HUMAN1_SHIP_Somalia HUMAN1_SHIP_SriLanka HUMAN1_SHIP_Taiwan
+		}
+
+		science = {
+			HUMAN1_SHIP_Aldrin HUMAN1_SHIP_Armstrong HUMAN1_SHIP_Columbus HUMAN1_SHIP_Copernicus HUMAN1_SHIP_Cortez HUMAN1_SHIP_Drake HUMAN1_SHIP_Hubble HUMAN1_SHIP_Goddard HUMAN1_SHIP_Galileo HUMAN1_SHIP_Einstein HUMAN1_SHIP_Gagarin HUMAN1_SHIP_Tereshkova HUMAN1_SHIP_ZhengHe HUMAN1_SHIP_LeifEricson HUMAN1_SHIP_Magellan HUMAN1_SHIP_JamesCook HUMAN1_SHIP_MarcoPolo HUMAN1_SHIP_Newton HUMAN1_SHIP_Tesla HUMAN1_SHIP_VonBraun HUMAN1_SHIP_WalterRaleigh HUMAN1_SHIP_Asimov HUMAN1_SHIP_Clarke HUMAN1_SHIP_Sagan HUMAN1_SHIP_IbnBattuta HUMAN1_SHIP_Kepler HUMAN1_SHIP_Ptolemy HUMAN1_SHIP_Pytheas HUMAN1_SHIP_Azophi HUMAN1_SHIP_Discovery HUMAN1_SHIP_Voyager HUMAN1_SHIP_Tradewind HUMAN1_SHIP_Scout HUMAN1_SHIP_Pioneer HUMAN1_SHIP_Explorer HUMAN1_SHIP_Sojourner HUMAN1_SHIP_SantaMaria HUMAN1_SHIP_Hawking HUMAN1_SHIP_Earhart HUMAN1_SHIP_Nobel HUMAN1_SHIP_Kelvin HUMAN1_SHIP_Fahrenheit HUMAN1_SHIP_Equinox HUMAN1_SHIP_Lagrange HUMAN1_SHIP_Tsiolkovsky HUMAN1_SHIP_Darwin HUMAN1_SHIP_Grissom HUMAN1_SHIP_Archimedes HUMAN1_SHIP_Cosmocrator
+		}
+
+		transport = {
+			HUMAN1_SHIP_Cowpens HUMAN1_SHIP_BelleauWood HUMAN1_SHIP_Bataan HUMAN1_SHIP_Monterey HUMAN1_SHIP_Veracruz HUMAN1_SHIP_Tarawa HUMAN1_SHIP_IwoJima HUMAN1_SHIP_Okinawa HUMAN1_SHIP_Inchon HUMAN1_SHIP_GooseGreen HUMAN1_SHIP_Peleliu HUMAN1_SHIP_Guam HUMAN1_SHIP_Bougainville
+		}
+
+		military_station_small = {
+			HUMAN1_SHIP_Citadel HUMAN1_SHIP_Albacore HUMAN1_SHIP_Gateway HUMAN1_SHIP_Vincent HUMAN1_SHIP_Babylon HUMAN1_SHIP_Caernavon HUMAN1_SHIP_Acre HUMAN1_SHIP_Pembroke HUMAN1_SHIP_Acheron HUMAN1_SHIP_Spithead HUMAN1_SHIP_Halifax HUMAN1_SHIP_Victoria HUMAN1_SHIP_Chatham HUMAN1_SHIP_Anchorage HUMAN1_SHIP_ScapaFlow HUMAN1_SHIP_HamptonRoads HUMAN1_SHIP_Brooklyn HUMAN1_SHIP_Norfolk HUMAN1_SHIP_Newport HUMAN1_SHIP_Guam HUMAN1_SHIP_Pensacola HUMAN1_SHIP_Vesuvius HUMAN1_SHIP_McKinley HUMAN1_SHIP_Everest HUMAN1_SHIP_Kilimanjaro HUMAN1_SHIP_Aconcagua HUMAN1_SHIP_Elbrus HUMAN1_SHIP_StHelens HUMAN1_SHIP_Fuji HUMAN1_SHIP_Olympus HUMAN1_SHIP_Sinai HUMAN1_SHIP_Ambrose HUMAN1_SHIP_Bermuda HUMAN1_SHIP_Farpoint HUMAN1_SHIP_BlueStar HUMAN1_SHIP_OlympusMons HUMAN1_SHIP_Tharsis HUMAN1_SHIP_Syrtis HUMAN1_SHIP_Blackham HUMAN1_SHIP_Fletcher HUMAN1_SHIP_Perry HUMAN1_SHIP_Butakov HUMAN1_SHIP_Morris HUMAN1_SHIP_Moorsom HUMAN1_SHIP_Hart HUMAN1_SHIP_Hargood HUMAN1_SHIP_Spruance HUMAN1_SHIP_Tanaka HUMAN1_SHIP_Halsey HUMAN1_SHIP_Turner HUMAN1_SHIP_Doria HUMAN1_SHIP_Tirpitz HUMAN1_SHIP_Cunningham HUMAN1_SHIP_Jellicoe HUMAN1_SHIP_Hipper HUMAN1_SHIP_Beatty HUMAN1_SHIP_Potemkin HUMAN1_SHIP_Durham HUMAN1_SHIP_Codrington HUMAN1_SHIP_Milne HUMAN1_SHIP_Laforey HUMAN1_SHIP_Tyler HUMAN1_SHIP_Hawke HUMAN1_SHIP_Yonai HUMAN1_SHIP_Pound HUMAN1_SHIP_King HUMAN1_SHIP_Crutchley HUMAN1_SHIP_Mountbatten HUMAN1_SHIP_Kountouriotis HUMAN1_SHIP_Kuznetsov HUMAN1_SHIP_Essen HUMAN1_SHIP_Kornilov HUMAN1_SHIP_Suffren HUMAN1_SHIP_Treville HUMAN1_SHIP_Villeneuve HUMAN1_SHIP_Grasse HUMAN1_SHIP_Byng HUMAN1_SHIP_Lezo
+		}
+
+		ion_cannon = {
+			HUMAN1_SHIP_Bombard HUMAN1_SHIP_Ballista HUMAN1_SHIP_Catapult HUMAN1_SHIP_Harpoon HUMAN1_SHIP_Polybolos HUMAN1_SHIP_Culverin
+		}
+	}
+
+	fleet_names = {
+		random_names = {
+			"战术舰队" "自律舰队" "格里芬舰队" "AR舰队" "忤逆舰队" "佣兵舰队" "联合舰队"
+		}
+		sequential_name = "舰队 $O$"
+	}
+
+	army_names = {
+		# 少前新陆军
+		GF_army_arm_doll = {
+			sequential_name = GF_GK_DOLL
+		}
+
+		GF_army_tactical_doll = {
+			sequential_name = GF_GK_TACTICAL_DOLL
+		}
+
+		GF_army_defensive_auto_doll = {
+			sequential_name = GF_GK_DEFENSIVE_DOLL
+		}
+
+		GF_army_occupation_doll = {
+			sequential_name = GF_GK_OCCUPATION_DOLL
+		}
+
+		defense_army = {
+			sequential_name = GF_DOLL_auto_army
+		}
+
+		assault_army = {
+			sequential_name = GF_DOLL_tatical_army
+		}
+
+		slave_army = {
+			sequential_name = GF_DOLL_SLAVEARMY
+		}
+
+		clone_army = {
+			sequential_name = GF_DOLL_CLONEARMY
+		}
+
+		robotic_army = {
+			sequential_name = GF_DOLL_ROBOTICARMY
+		}
+
+		robotic_defense_army = {
+			sequential_name = GF_DOLL_ROBOTICARMY
+		}
+
+		psionic_army = {
+			sequential_name = GF_DOLL_PSIONICARMY
+		}
+
+		xenomorph_army = {
+			sequential_name = GF_DOLL_XENOMORPHARMYv
+		}
+
+		gene_warrior_army = {
+			sequential_name = GF_DOLL_GENEWARRIORARMY
+		}
+
+		occupation_army = {
+			sequential_name = GF_DOLL_OCCUPATIONARMY
+		}
+
+		robotic_occupation_army = {
+			sequential_name = GF_DOLL_OCCUPATIONARMY
+		}
+
+		primitive_army = {
+			sequential_name = GF_DOLL_PRIMITIVEARMY
+		}
+		industrial_army = {
+			sequential_name = GF_DOLL_INDUSTRIALARMY
+		}
+		postatomic_army = {
+			sequential_name = GF_DOLL_POSTATOMICARMY
+		}
+	}
+
+	planet_names = {
+		generic = {
+			names = {
+				HUMAN1_PLANET_NewJerusalem HUMAN1_PLANET_Anchor HUMAN1_PLANET_Dis HUMAN1_PLANET_Avalon HUMAN1_PLANET_Bounty HUMAN1_PLANET_Hope HUMAN1_PLANET_Olympia HUMAN1_PLANET_Serendipity HUMAN1_PLANET_Spring HUMAN1_PLANET_Thinis HUMAN1_PLANET_Salaam HUMAN1_PLANET_Xianyang HUMAN1_PLANET_Concord
+				HUMAN1_PLANET_Theia HUMAN1_PLANET_Tuscany HUMAN1_PLANET_NewRoanoke HUMAN1_PLANET_Wenzhou HUMAN1_PLANET_NewJamestown HUMAN1_PLANET_NewTroy HUMAN1_PLANET_Delgovicia HUMAN1_PLANET_WangTong HUMAN1_PLANET_Al-Jissa HUMAN1_PLANET_Al-Madain
+				HUMAN1_PLANET_Al-Nuqayrah HUMAN1_PLANET_Al-Karak HUMAN1_PLANET_Al-Matabbah HUMAN1_PLANET_LasVeredas HUMAN1_PLANET_SanLucas HUMAN1_PLANET_SanFernando HUMAN1_PLANET_SanCristobal HUMAN1_PLANET_NuevaSonora
+				HUMAN1_PLANET_PuertoGonzalez HUMAN1_PLANET_Nozomi HUMAN1_PLANET_Akatsuki HUMAN1_PLANET_NuevaCadiz HUMAN1_PLANET_LaIsabela HUMAN1_PLANET_NewCoventry HUMAN1_PLANET_StYegorov HUMAN1_PLANET_StPomeroy
+				HUMAN1_PLANET_PortKarakosov
+			}
+		}
+
+		pc_desert = {
+			names = {
+				HUMAN1_PLANET_NovaArabia HUMAN1_PLANET_Sahara HUMAN1_PLANET_Gobi HUMAN1_PLANET_Kalahari HUMAN1_PLANET_Mojave HUMAN1_PLANET_Patagonia HUMAN1_PLANET_Syria HUMAN1_PLANET_Chihuahua HUMAN1_PLANET_Sand HUMAN1_PLANET_KaraKum HUMAN1_PLANET_Colorado HUMAN1_PLANET_Sonora
+				HUMAN1_PLANET_KyzylKum HUMAN1_PLANET_Taklamakan HUMAN1_PLANET_Thar HUMAN1_PLANET_Gibson HUMAN1_PLANET_Namib HUMAN1_PLANET_Lut HUMAN1_PLANET_Kavir HUMAN1_PLANET_Dune HUMAN1_PLANET_Kali HUMAN1_PLANET_Muspelheim HUMAN1_PLANET_Vulcan HUMAN1_PLANET_Baal HUMAN1_PLANET_Carthage
+				HUMAN1_PLANET_Ordos HUMAN1_PLANET_Khara HUMAN1_PLANET_Lop HUMAN1_PLANET_Maranjab HUMAN1_PLANET_Negev HUMAN1_PLANET_Sinai HUMAN1_PLANET_Atacama HUMAN1_PLANET_Simpson
+			}
+		}
+
+		pc_arid = {
+			names = {
+				HUMAN1_PLANET_Lebanon HUMAN1_PLANET_Tyre HUMAN1_PLANET_Antioch HUMAN1_PLANET_Jaxartes HUMAN1_PLANET_Oxus HUMAN1_PLANET_Turan HUMAN1_PLANET_Accona HUMAN1_PLANET_Bardenas HUMAN1_PLANET_Larzac HUMAN1_PLANET_Oltenia HUMAN1_PLANET_Tabernas HUMAN1_PLANET_Atacama HUMAN1_PLANET_Tanami
+				HUMAN1_PLANET_Rangipo HUMAN1_PLANET_NewMars HUMAN1_PLANET_Canaan
+			}
+		}
+
+		pc_tropical = {
+			names = {
+				HUMAN1_PLANET_Amazonia HUMAN1_PLANET_Congo HUMAN1_PLANET_Ecuador HUMAN1_PLANET_Rain HUMAN1_PLANET_Storm HUMAN1_PLANET_Monsoon HUMAN1_PLANET_Bengal HUMAN1_PLANET_NewAfrica HUMAN1_PLANET_Kishkindha HUMAN1_PLANET_Zanzibar HUMAN1_PLANET_Kipling
+			}
+		}
+
+		pc_continental = {
+			names = {
+				HUMAN1_PLANET_Albion HUMAN1_PLANET_Amor HUMAN1_PLANET_Dawn HUMAN1_PLANET_Horizon HUMAN1_PLANET_Asgard HUMAN1_PLANET_TerraNova HUMAN1_PLANET_Kongzi HUMAN1_PLANET_Zoroaster HUMAN1_PLANET_TianYi
+				HUMAN1_PLANET_WuDing HUMAN1_PLANET_Zheng HUMAN1_PLANET_GaoZu HUMAN1_PLANET_Tokugawa HUMAN1_PLANET_Oda HUMAN1_PLANET_Toyotomi HUMAN1_PLANET_Rama HUMAN1_PLANET_Vishnu HUMAN1_PLANET_Soma HUMAN1_PLANET_Pangea
+			}
+		}
+
+		pc_gaia = {
+			names = {
+				HUMAN1_PLANET_Eden HUMAN1_PLANET_Elysium HUMAN1_PLANET_Cornucopia HUMAN1_PLANET_Utopia HUMAN1_PLANET_Shambhala HUMAN1_PLANET_Xanadu HUMAN1_PLANET_Shangri-La
+			}
+		}
+
+		pc_ocean = {
+			names = {
+				HUMAN1_PLANET_Atlantis HUMAN1_PLANET_Oceania HUMAN1_PLANET_Pacifica HUMAN1_PLANET_Atlantica HUMAN1_PLANET_Euxina HUMAN1_PLANET_Hyrcania HUMAN1_PLANET_Rubrica HUMAN1_PLANET_Erythraea HUMAN1_PLANET_Baltica HUMAN1_PLANET_Rlyeh HUMAN1_PLANET_Dagon HUMAN1_PLANET_Kraken HUMAN1_PLANET_Aegea
+				HUMAN1_PLANET_Adriatica HUMAN1_PLANET_Tyrrhenia HUMAN1_PLANET_Mediterranea HUMAN1_PLANET_Mare HUMAN1_PLANET_PortRabcewicz HUMAN1_PLANET_Ningbo
+			}
+		}
+
+		pc_tundra = {
+			names = {
+				HUMAN1_PLANET_Iceland HUMAN1_PLANET_Canada HUMAN1_PLANET_Kola HUMAN1_PLANET_Scandza HUMAN1_PLANET_Utgard HUMAN1_PLANET_Rus HUMAN1_PLANET_Blizzard HUMAN1_PLANET_Taiyuan
+			}
+		}
+
+		pc_arctic = {
+			names = {
+				HUMAN1_PLANET_Thule HUMAN1_PLANET_Arctica HUMAN1_PLANET_Greenland HUMAN1_PLANET_Alaska HUMAN1_PLANET_Baffin HUMAN1_PLANET_Siberia HUMAN1_PLANET_Niflheim HUMAN1_PLANET_Hyperborea
+			}
+		}
+
+		pc_savannah = { names = {} }
+		pc_alpine   = { names = {} }
+	}
+
+	character_names = {
+		names2 = {
+			weight = 50
+			first_names = {  GF_DOLL_CHR_auto_doll }
+			second_names = {
+				NAME_06typesmg      NAME_357            NAME_4type          NAME_56_1type       NAME_56typer        NAME_59type         NAME_63type         NAME_64type         NAME_6p62           NAME_79type
+				NAME_80type         NAME_81typer        NAME_88type         NAME_92type         NAME_95type         NAME_97type         NAME_97types        NAME_98k            NAME_9a91           NAME_a545
+				NAME_a91            NAME_aa12           NAME_aat52          NAME_acr            NAME_ads            NAME_aek999         NAME_ak12           NAME_ak15           NAME_ak47           NAME_ak5
+				NAME_ak74m          NAME_ak74u          NAME_akalfa         NAME_ameli          NAME_an94           NAME_apc556         NAME_apc9k          NAME_aps            NAME_ar             NAME_ar15
+				NAME_ar18           NAME_ar57           NAME_ar70           NAME_art556         NAME_arx160         NAME_ash127         NAME_asval          NAME_aug            NAME_augpara        NAME_ballista
+				NAME_bm59           NAME_brenmk         NAME_brenten        NAME_browninghp     NAME_c14            NAME_c93            NAME_c96            NAME_car            NAME_carcano1891    NAME_carcano1938
+				NAME_cbjms          NAME_cetme556       NAME_chauchatm1915  NAME_cmr30          NAME_coltdefender   NAME_coltscw        NAME_coltwalker     NAME_contender      NAME_cr21           NAME_cx4storm
+				NAME_cz100          NAME_cz2000         NAME_cz52           NAME_cz75           NAME_cz805          NAME_danuvia43m     NAME_delisle        NAME_derringer      NAME_deserteagle    NAME_dp12
+				NAME_dp28           NAME_dsr50          NAME_dtasrs         NAME_em2            NAME_erma           NAME_evo3           NAME_f1             NAME_f2000          NAME_falcon         NAME_famas
+				NAME_fara83         NAME_fedorov        NAME_fg42           NAME_fmg9           NAME_fn49           NAME_fn57           NAME_fnfal          NAME_fnfnc          NAME_fnp9           NAME_fnspr
+				NAME_fo12           NAME_fp6            NAME_fx05           NAME_g11            NAME_g28            NAME_g3             NAME_g36            NAME_g36c           NAME_g41            NAME_g43
+				NAME_generalliu     NAME_gepardm1       NAME_glock17        NAME_gm6lynx        NAME_grizzly        NAME_gsh18          NAME_hezism1        NAME_hk21           NAME_hk23           NAME_hk33
+				NAME_hk416          NAME_hk45           NAME_hk512          NAME_hkcaws         NAME_howatype89     NAME_hs2000         NAME_hs50           NAME_hsm10          NAME_idw            NAME_insas
+				NAME_ithaca37       NAME_iws2000        NAME_jatimatic      NAME_jericho        NAME_js_127         NAME_js9mm          NAME_k11            NAME_k2             NAME_k3             NAME_k31
+				NAME_k5             NAME_k7             NAME_kac            NAME_kgp9           NAME_kh2002         NAME_klin           NAME_kolibri        NAME_kord           NAME_kp31           NAME_ks23
+				NAME_ksg            NAME_ksvk           NAME_l85a1          NAME_lamg           NAME_lewis          NAME_liberator      NAME_ls26           NAME_ltlx7000       NAME_lusa           NAME_lwmmg
+				NAME_m1             NAME_m1014          NAME_m110           NAME_m12            NAME_m14            NAME_m16a1          NAME_m1873          NAME_m1887          NAME_m1891          NAME_m1895
+				NAME_m1895mg        NAME_m1897          NAME_m1903          NAME_m1911          NAME_m1918          NAME_m1919a4        NAME_m1928a1        NAME_m1a1           NAME_m200           NAME_m21
+				NAME_m240l          NAME_m249saw        NAME_m26mass        NAME_m2hb           NAME_m3             NAME_m327           NAME_m4_sopmod_ii   NAME_m45            NAME_m4a1           NAME_m500
+				NAME_m590           NAME_m60            NAME_m6asw          NAME_m82            NAME_m82a1          NAME_m870p          NAME_m9             NAME_m950a          NAME_m99            NAME_mab38
+				NAME_mac10          NAME_mag7           NAME_magal          NAME_mas38          NAME_mat49          NAME_mdr            NAME_mg3            NAME_mg338          NAME_mg34           NAME_mg36
+				NAME_mg4            NAME_mg42           NAME_mg5            NAME_microuzi       NAME_mk12           NAME_mk23           NAME_mk3a1          NAME_mk46           NAME_mk48           NAME_mlemk1
+				NAME_mondragonm1908 NAME_mp40           NAME_mp41           NAME_mp443          NAME_mp446          NAME_mp448          NAME_mp5            NAME_mp7            NAME_mpk            NAME_mpl
+				NAME_msbs           NAME_mt9            NAME_negev          NAME_nova           NAME_ns2000         NAME_ntw20          NAME_nz75           NAME_obr            NAME_oc44           NAME_ots12
+				NAME_ots14          NAME_ots39          NAME_p08            NAME_p10c           NAME_p22            NAME_p226           NAME_p290           NAME_p30            NAME_p38            NAME_p7
+				NAME_p90            NAME_p99            NAME_pa15           NAME_pdw            NAME_pk             NAME_pkp            NAME_pm             NAME_pm06           NAME_pm1910         NAME_pm9
+				NAME_pp19           NAME_pp1901         NAME_pp2000         NAME_pp90           NAME_ppd40          NAME_ppk            NAME_ppq            NAME_pps43          NAME_ppsh41         NAME_psg1
+				NAME_psm            NAME_ptrd           NAME_px4storm       NAME_python         NAME_pzb39          NAME_qbu_191        NAME_qbu88          NAME_qbz191         NAME_qsb91          NAME_r5rgp
+				NAME_r93            NAME_rexzero1       NAME_rfb            NAME_rhino          NAME_ribeyrolles    NAME_rmb93          NAME_ro635          NAME_rpd            NAME_rpk16          NAME_rpk203
+				NAME_rt20           NAME_sacr           NAME_saf            NAME_saiga12        NAME_saiga308       NAME_sar21          NAME_sat8           NAME_savage99       NAME_scarh          NAME_scarl
+				NAME_scout          NAME_scr            NAME_shipka         NAME_sig510         NAME_sig556         NAME_sigmcx         NAME_six12          NAME_sks            NAME_sl8            NAME_sp9
+				NAME_spas12         NAME_spas15         NAME_spectrem4      NAME_spitfire       NAME_spp1           NAME_sps            NAME_sr2            NAME_sr3mp          NAME_ssg3000        NAME_ssg69
+				NAME_stenmk2        NAME_sterling       NAME_stg44          NAME_stg940         NAME_sub2000        NAME_supersass      NAME_supershorty    NAME_sv98           NAME_svch           NAME_svd
+				NAME_svt38          NAME_t5000          NAME_t65            NAME_t77            NAME_t91            NAME_tabuk          NAME_tac50          NAME_tar21          NAME_tavorts12      NAME_tcms
+				NAME_tec9           NAME_tfq            NAME_thunder50      NAME_tkb408         NAME_tmp            NAME_tps            NAME_tt33           NAME_type03         NAME_type100        NAME_type62
+				NAME_type64_ar      NAME_type88         NAME_ukm2000        NAME_ump40          NAME_ump45          NAME_ump9           NAME_usas12         NAME_uspcompact     NAME_uts15          NAME_vector
+				NAME_vepr           NAME_vhs            NAME_vigneronm2     NAME_vp1915         NAME_vp70           NAME_vp9            NAME_vpm5           NAME_vrb            NAME_vsk            NAME_vz61
+				NAME_wa2000         NAME_webley         NAME_welrod         NAME_wkp            NAME_wz29           NAME_x95            NAME_xm3            NAME_xm8            NAME_z62            NAME_zasm76
+				NAME_zastavam21     NAME_zb26           NAME_zip22
+			}
+		}
+		names1 = {
+			weight = 50
+			first_names = { GF_DOLL_CHR_tatical_doll }
+			second_names = {
+				NAME_06typesmg      NAME_357            NAME_4type          NAME_56_1type       NAME_56typer        NAME_59type         NAME_63type         NAME_64type         NAME_6p62           NAME_79type
+				NAME_80type         NAME_81typer        NAME_88type         NAME_92type         NAME_95type         NAME_97type         NAME_97types        NAME_98k            NAME_9a91           NAME_a545
+				NAME_a91            NAME_aa12           NAME_aat52          NAME_acr            NAME_ads            NAME_aek999         NAME_ak12           NAME_ak15           NAME_ak47           NAME_ak5
+				NAME_ak74m          NAME_ak74u          NAME_akalfa         NAME_ameli          NAME_an94           NAME_apc556         NAME_apc9k          NAME_aps            NAME_ar             NAME_ar15
+				NAME_ar18           NAME_ar57           NAME_ar70           NAME_art556         NAME_arx160         NAME_ash127         NAME_asval          NAME_aug            NAME_augpara        NAME_ballista
+				NAME_bm59           NAME_brenmk         NAME_brenten        NAME_browninghp     NAME_c14            NAME_c93            NAME_c96            NAME_car            NAME_carcano1891    NAME_carcano1938
+				NAME_cbjms          NAME_cetme556       NAME_chauchatm1915  NAME_cmr30          NAME_coltdefender   NAME_coltscw        NAME_coltwalker     NAME_contender      NAME_cr21           NAME_cx4storm
+				NAME_cz100          NAME_cz2000         NAME_cz52           NAME_cz75           NAME_cz805          NAME_danuvia43m     NAME_delisle        NAME_derringer      NAME_deserteagle    NAME_dp12
+				NAME_dp28           NAME_dsr50          NAME_dtasrs         NAME_em2            NAME_erma           NAME_evo3           NAME_f1             NAME_f2000          NAME_falcon         NAME_famas
+				NAME_fara83         NAME_fedorov        NAME_fg42           NAME_fmg9           NAME_fn49           NAME_fn57           NAME_fnfal          NAME_fnfnc          NAME_fnp9           NAME_fnspr
+				NAME_fo12           NAME_fp6            NAME_fx05           NAME_g11            NAME_g28            NAME_g3             NAME_g36            NAME_g36c           NAME_g41            NAME_g43
+				NAME_generalliu     NAME_gepardm1       NAME_glock17        NAME_gm6lynx        NAME_grizzly        NAME_gsh18          NAME_hezism1        NAME_hk21           NAME_hk23           NAME_hk33
+				NAME_hk416          NAME_hk45           NAME_hk512          NAME_hkcaws         NAME_howatype89     NAME_hs2000         NAME_hs50           NAME_hsm10          NAME_idw            NAME_insas
+				NAME_ithaca37       NAME_iws2000        NAME_jatimatic      NAME_jericho        NAME_js_127         NAME_js9mm          NAME_k11            NAME_k2             NAME_k3             NAME_k31
+				NAME_k5             NAME_k7             NAME_kac            NAME_kgp9           NAME_kh2002         NAME_klin           NAME_kolibri        NAME_kord           NAME_kp31           NAME_ks23
+				NAME_ksg            NAME_ksvk           NAME_l85a1          NAME_lamg           NAME_lewis          NAME_liberator      NAME_ls26           NAME_ltlx7000       NAME_lusa           NAME_lwmmg
+				NAME_m1             NAME_m1014          NAME_m110           NAME_m12            NAME_m14            NAME_m16a1          NAME_m1873          NAME_m1887          NAME_m1891          NAME_m1895
+				NAME_m1895mg        NAME_m1897          NAME_m1903          NAME_m1911          NAME_m1918          NAME_m1919a4        NAME_m1928a1        NAME_m1a1           NAME_m200           NAME_m21
+				NAME_m240l          NAME_m249saw        NAME_m26mass        NAME_m2hb           NAME_m3             NAME_m327           NAME_m4_sopmod_ii   NAME_m45            NAME_m4a1           NAME_m500
+				NAME_m590           NAME_m60            NAME_m6asw          NAME_m82            NAME_m82a1          NAME_m870p          NAME_m9             NAME_m950a          NAME_m99            NAME_mab38
+				NAME_mac10          NAME_mag7           NAME_magal          NAME_mas38          NAME_mat49          NAME_mdr            NAME_mg3            NAME_mg338          NAME_mg34           NAME_mg36
+				NAME_mg4            NAME_mg42           NAME_mg5            NAME_microuzi       NAME_mk12           NAME_mk23           NAME_mk3a1          NAME_mk46           NAME_mk48           NAME_mlemk1
+				NAME_mondragonm1908 NAME_mp40           NAME_mp41           NAME_mp443          NAME_mp446          NAME_mp448          NAME_mp5            NAME_mp7            NAME_mpk            NAME_mpl
+				NAME_msbs           NAME_mt9            NAME_negev          NAME_nova           NAME_ns2000         NAME_ntw20          NAME_nz75           NAME_obr            NAME_oc44           NAME_ots12
+				NAME_ots14          NAME_ots39          NAME_p08            NAME_p10c           NAME_p22            NAME_p226           NAME_p290           NAME_p30            NAME_p38            NAME_p7
+				NAME_p90            NAME_p99            NAME_pa15           NAME_pdw            NAME_pk             NAME_pkp            NAME_pm             NAME_pm06           NAME_pm1910         NAME_pm9
+				NAME_pp19           NAME_pp1901         NAME_pp2000         NAME_pp90           NAME_ppd40          NAME_ppk            NAME_ppq            NAME_pps43          NAME_ppsh41         NAME_psg1
+				NAME_psm            NAME_ptrd           NAME_px4storm       NAME_python         NAME_pzb39          NAME_qbu_191        NAME_qbu88          NAME_qbz191         NAME_qsb91          NAME_r5rgp
+				NAME_r93            NAME_rexzero1       NAME_rfb            NAME_rhino          NAME_ribeyrolles    NAME_rmb93          NAME_ro635          NAME_rpd            NAME_rpk16          NAME_rpk203
+				NAME_rt20           NAME_sacr           NAME_saf            NAME_saiga12        NAME_saiga308       NAME_sar21          NAME_sat8           NAME_savage99       NAME_scarh          NAME_scarl
+				NAME_scout          NAME_scr            NAME_shipka         NAME_sig510         NAME_sig556         NAME_sigmcx         NAME_six12          NAME_sks            NAME_sl8            NAME_sp9
+				NAME_spas12         NAME_spas15         NAME_spectrem4      NAME_spitfire       NAME_spp1           NAME_sps            NAME_sr2            NAME_sr3mp          NAME_ssg3000        NAME_ssg69
+				NAME_stenmk2        NAME_sterling       NAME_stg44          NAME_stg940         NAME_sub2000        NAME_supersass      NAME_supershorty    NAME_sv98           NAME_svch           NAME_svd
+				NAME_svt38          NAME_t5000          NAME_t65            NAME_t77            NAME_t91            NAME_tabuk          NAME_tac50          NAME_tar21          NAME_tavorts12      NAME_tcms
+				NAME_tec9           NAME_tfq            NAME_thunder50      NAME_tkb408         NAME_tmp            NAME_tps            NAME_tt33           NAME_type03         NAME_type100        NAME_type62
+				NAME_type64_ar      NAME_type88         NAME_ukm2000        NAME_ump40          NAME_ump45          NAME_ump9           NAME_usas12         NAME_uspcompact     NAME_uts15          NAME_vector
+				NAME_vepr           NAME_vhs            NAME_vigneronm2     NAME_vp1915         NAME_vp70           NAME_vp9            NAME_vpm5           NAME_vrb            NAME_vsk            NAME_vz61
+				NAME_wa2000         NAME_webley         NAME_welrod         NAME_wkp            NAME_wz29           NAME_x95            NAME_xm3            NAME_xm8            NAME_z62            NAME_zasm76
+				NAME_zastavam21     NAME_zb26           NAME_zip22
+			}
+		}
+	}
+}

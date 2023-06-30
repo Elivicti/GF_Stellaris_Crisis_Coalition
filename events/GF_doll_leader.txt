@@ -1,5 +1,8 @@
 namespace = GF_doll_leader
 
+# on_leader_spawned
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
 country_event = {
 	id = GF_doll_leader.0
 	hide_window = yes
@@ -9,7 +12,7 @@ country_event = {
 	trigger = {
 		from = {
 			species = { has_trait = GF_trait_doll }
-			NOT = { has_leader_flag = flag_GF_ogas_leader }
+			GF_is_ogas_leader = no
 		}
 	}
 
@@ -60,7 +63,7 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				is_same_species = from
+				is_exact_same_species = from
 				NOR = {
 					has_trait = GF_trait_leader_admiral_plus
 					has_trait = GF_trait_leader_general_plus
@@ -88,7 +91,7 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				is_same_species = from
+				is_exact_same_species = from
 				leader_class = governor
 				NOT = { has_trait = GF_trait_leader_governor_plus }
 				NOT = { has_leader_flag = flag_GF_ogas_leader }
@@ -111,12 +114,73 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = {
-				is_same_species = from
+				is_exact_same_species = from
 				leader_class = scientist
 				NOT = { has_trait = GF_trait_leader_scientist_plus }
 			}
 			add_trait = GF_trait_leader_scientist_plus
 		}
+	}
+}
+
+# on_leader_spawned
+# from = leader
+country_event = {
+	id = GF_doll_leader.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { GF_portrait_correction_allowed = yes }
+	}
+
+	immediate = {
+		from = { GF_set_random_doll_leader_portrait_and_name = yes }
+	}
+}
+
+country_event = {
+	id = GF_doll_leader.15
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = { has_trait = GF_trait_doll }
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				is_exact_same_species = from
+				GF_has_doll_leader_flag = yes
+			}
+			GF_correct_doll_leader_portrait_and_name = yes
+		}
+		every_envoy = {
+			limit = {
+				is_exact_same_species = from
+				GF_has_doll_leader_flag = yes
+			}
+			GF_correct_doll_leader_portrait_and_name = yes
+		}
+	}
+}
+
+country_event = {
+	id = GF_doll_leader.18
+	hide_window = yes
+
+	is_triggered_only = yes
+	immediate = {
+		every_owned_leader = {
+			limit = { GF_has_doll_leader_flag = yes }
+			GF_correct_doll_leader_portrait_and_name = yes
+		}
+		every_envoy = {
+			limit = { GF_has_doll_leader_flag = yes }
+			GF_correct_doll_leader_portrait_and_name = yes
+		}
+
 	}
 }
 
@@ -127,9 +191,6 @@ country_event = {
 	immediate = {
 		every_owned_leader = {
 			limit = { has_trait = GF_trait_leader_doll }
-
-			# remove_trait = leader_trait_armchair_gf_GK_commander	# what is this?
-
 			remove_trait = all_negative
 		}
 	}

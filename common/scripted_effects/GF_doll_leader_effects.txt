@@ -1,0 +1,1167 @@
+
+## !!!!! BE CAREFUL WHEN USE
+# scope = leader
+GF_remove_doll_leader_flags = {
+	remove_leader_flag = leader_GF_06typesmg
+	remove_leader_flag = leader_GF_357
+	remove_leader_flag = leader_GF_4type
+	remove_leader_flag = leader_GF_56_1type
+	remove_leader_flag = leader_GF_56typer
+	remove_leader_flag = leader_GF_59type
+	remove_leader_flag = leader_GF_63type
+	remove_leader_flag = leader_GF_64type
+	remove_leader_flag = leader_GF_6p62
+	remove_leader_flag = leader_GF_79type
+	remove_leader_flag = leader_GF_80type
+	remove_leader_flag = leader_GF_81typer
+	remove_leader_flag = leader_GF_88type
+	remove_leader_flag = leader_GF_92type
+	remove_leader_flag = leader_GF_95type
+	remove_leader_flag = leader_GF_97type
+	remove_leader_flag = leader_GF_97types
+	remove_leader_flag = leader_GF_98k
+	remove_leader_flag = leader_GF_9a91
+	remove_leader_flag = leader_GF_a545
+	remove_leader_flag = leader_GF_a91
+	remove_leader_flag = leader_GF_aa12
+	remove_leader_flag = leader_GF_aat52
+	remove_leader_flag = leader_GF_acr
+	remove_leader_flag = leader_GF_ads
+	remove_leader_flag = leader_GF_aek999
+	remove_leader_flag = leader_GF_ak12
+	remove_leader_flag = leader_GF_ak15
+	remove_leader_flag = leader_GF_ak47
+	remove_leader_flag = leader_GF_ak5
+	remove_leader_flag = leader_GF_ak74m
+	remove_leader_flag = leader_GF_ak74u
+	remove_leader_flag = leader_GF_akalfa
+	remove_leader_flag = leader_GF_ameli
+	remove_leader_flag = leader_GF_an94
+	remove_leader_flag = leader_GF_apc556
+	remove_leader_flag = leader_GF_apc9k
+	remove_leader_flag = leader_GF_aps
+	remove_leader_flag = leader_GF_ar
+	remove_leader_flag = leader_GF_ar15
+	remove_leader_flag = leader_GF_ar18
+	remove_leader_flag = leader_GF_ar57
+	remove_leader_flag = leader_GF_ar70
+	remove_leader_flag = leader_GF_art556
+	remove_leader_flag = leader_GF_arx160
+	remove_leader_flag = leader_GF_ash127
+	remove_leader_flag = leader_GF_asval
+	remove_leader_flag = leader_GF_aug
+	remove_leader_flag = leader_GF_augpara
+	remove_leader_flag = leader_GF_ballista
+	remove_leader_flag = leader_GF_bm59
+	remove_leader_flag = leader_GF_brenmk
+	remove_leader_flag = leader_GF_brenten
+	remove_leader_flag = leader_GF_browninghp
+	remove_leader_flag = leader_GF_c14
+	remove_leader_flag = leader_GF_c93
+	remove_leader_flag = leader_GF_c96
+	remove_leader_flag = leader_GF_car
+	remove_leader_flag = leader_GF_carcano1891
+	remove_leader_flag = leader_GF_carcano1938
+	remove_leader_flag = leader_GF_cbjms
+	remove_leader_flag = leader_GF_cetme556
+	remove_leader_flag = leader_GF_chauchatm1915
+	remove_leader_flag = leader_GF_cmr30
+	remove_leader_flag = leader_GF_coltdefender
+	remove_leader_flag = leader_GF_coltscw
+	remove_leader_flag = leader_GF_coltwalker
+	remove_leader_flag = leader_GF_contender
+	remove_leader_flag = leader_GF_cr21
+	remove_leader_flag = leader_GF_cx4storm
+	remove_leader_flag = leader_GF_cz100
+	remove_leader_flag = leader_GF_cz2000
+	remove_leader_flag = leader_GF_cz52
+	remove_leader_flag = leader_GF_cz75
+	remove_leader_flag = leader_GF_cz805
+	remove_leader_flag = leader_GF_danuvia43m
+	remove_leader_flag = leader_GF_delisle
+	remove_leader_flag = leader_GF_derringer
+	remove_leader_flag = leader_GF_deserteagle
+	remove_leader_flag = leader_GF_dp12
+	remove_leader_flag = leader_GF_dp28
+	remove_leader_flag = leader_GF_dsr50
+	remove_leader_flag = leader_GF_dtasrs
+	remove_leader_flag = leader_GF_em2
+	remove_leader_flag = leader_GF_erma
+	remove_leader_flag = leader_GF_evo3
+	remove_leader_flag = leader_GF_f1
+	remove_leader_flag = leader_GF_f2000
+	remove_leader_flag = leader_GF_falcon
+	remove_leader_flag = leader_GF_famas
+	remove_leader_flag = leader_GF_fara83
+	remove_leader_flag = leader_GF_fedorov
+	remove_leader_flag = leader_GF_fg42
+	remove_leader_flag = leader_GF_fmg9
+	remove_leader_flag = leader_GF_fn49
+	remove_leader_flag = leader_GF_fn57
+	remove_leader_flag = leader_GF_fnfal
+	remove_leader_flag = leader_GF_fnfnc
+	remove_leader_flag = leader_GF_fnp9
+	remove_leader_flag = leader_GF_fnspr
+	remove_leader_flag = leader_GF_fo12
+	remove_leader_flag = leader_GF_fp6
+	remove_leader_flag = leader_GF_fx05
+	remove_leader_flag = leader_GF_g11
+	remove_leader_flag = leader_GF_g28
+	remove_leader_flag = leader_GF_g3
+	remove_leader_flag = leader_GF_g36
+	remove_leader_flag = leader_GF_g36c
+	remove_leader_flag = leader_GF_g41
+	remove_leader_flag = leader_GF_g43
+	remove_leader_flag = leader_GF_generalliu
+	remove_leader_flag = leader_GF_gepardm1
+	remove_leader_flag = leader_GF_glock17
+	remove_leader_flag = leader_GF_gm6lynx
+	remove_leader_flag = leader_GF_grizzly
+	remove_leader_flag = leader_GF_gsh18
+	remove_leader_flag = leader_GF_hezism1
+	remove_leader_flag = leader_GF_hk21
+	remove_leader_flag = leader_GF_hk23
+	remove_leader_flag = leader_GF_hk33
+	remove_leader_flag = leader_GF_hk416
+	remove_leader_flag = leader_GF_hk45
+	remove_leader_flag = leader_GF_hk512
+	remove_leader_flag = leader_GF_hkcaws
+	remove_leader_flag = leader_GF_howatype89
+	remove_leader_flag = leader_GF_hs2000
+	remove_leader_flag = leader_GF_hs50
+	remove_leader_flag = leader_GF_hsm10
+	remove_leader_flag = leader_GF_idw
+	remove_leader_flag = leader_GF_insas
+	remove_leader_flag = leader_GF_ithaca37
+	remove_leader_flag = leader_GF_iws2000
+	remove_leader_flag = leader_GF_jatimatic
+	remove_leader_flag = leader_GF_jericho
+	remove_leader_flag = leader_GF_js_127
+	remove_leader_flag = leader_GF_js9mm
+	remove_leader_flag = leader_GF_k11
+	remove_leader_flag = leader_GF_k2
+	remove_leader_flag = leader_GF_k3
+	remove_leader_flag = leader_GF_k31
+	remove_leader_flag = leader_GF_k5
+	remove_leader_flag = leader_GF_k7
+	remove_leader_flag = leader_GF_kac
+	remove_leader_flag = leader_GF_kgp9
+	remove_leader_flag = leader_GF_kh2002
+	remove_leader_flag = leader_GF_klin
+	remove_leader_flag = leader_GF_kolibri
+	remove_leader_flag = leader_GF_kord
+	remove_leader_flag = leader_GF_kp31
+	remove_leader_flag = leader_GF_ks23
+	remove_leader_flag = leader_GF_ksg
+	remove_leader_flag = leader_GF_ksvk
+	remove_leader_flag = leader_GF_l85a1
+	remove_leader_flag = leader_GF_lamg
+	remove_leader_flag = leader_GF_lewis
+	remove_leader_flag = leader_GF_liberator
+	remove_leader_flag = leader_GF_ls26
+	remove_leader_flag = leader_GF_ltlx7000
+	remove_leader_flag = leader_GF_lusa
+	remove_leader_flag = leader_GF_lwmmg
+	remove_leader_flag = leader_GF_m1
+	remove_leader_flag = leader_GF_m1014
+	remove_leader_flag = leader_GF_m110
+	remove_leader_flag = leader_GF_m12
+	remove_leader_flag = leader_GF_m14
+	remove_leader_flag = leader_GF_m16a1
+	remove_leader_flag = leader_GF_m1873
+	remove_leader_flag = leader_GF_m1887
+	remove_leader_flag = leader_GF_m1891
+	remove_leader_flag = leader_GF_m1895
+	remove_leader_flag = leader_GF_m1895mg
+	remove_leader_flag = leader_GF_m1897
+	remove_leader_flag = leader_GF_m1903
+	remove_leader_flag = leader_GF_m1911
+	remove_leader_flag = leader_GF_m1918
+	remove_leader_flag = leader_GF_m1919a4
+	remove_leader_flag = leader_GF_m1928a1
+	remove_leader_flag = leader_GF_m1a1
+	remove_leader_flag = leader_GF_m200
+	remove_leader_flag = leader_GF_m21
+	remove_leader_flag = leader_GF_m240l
+	remove_leader_flag = leader_GF_m249saw
+	remove_leader_flag = leader_GF_m26mass
+	remove_leader_flag = leader_GF_m2hb
+	remove_leader_flag = leader_GF_m3
+	remove_leader_flag = leader_GF_m327
+	remove_leader_flag = leader_GF_m4_sopmod_ii
+	remove_leader_flag = leader_GF_m45
+	remove_leader_flag = leader_GF_m4a1
+	remove_leader_flag = leader_GF_m500
+	remove_leader_flag = leader_GF_m590
+	remove_leader_flag = leader_GF_m60
+	remove_leader_flag = leader_GF_m6asw
+	remove_leader_flag = leader_GF_m82
+	remove_leader_flag = leader_GF_m82a1
+	remove_leader_flag = leader_GF_m870p
+	remove_leader_flag = leader_GF_m9
+	remove_leader_flag = leader_GF_m950a
+	remove_leader_flag = leader_GF_m99
+	remove_leader_flag = leader_GF_mab38
+	remove_leader_flag = leader_GF_mac10
+	remove_leader_flag = leader_GF_mag7
+	remove_leader_flag = leader_GF_magal
+	remove_leader_flag = leader_GF_mas38
+	remove_leader_flag = leader_GF_mat49
+	remove_leader_flag = leader_GF_mdr
+	remove_leader_flag = leader_GF_mg3
+	remove_leader_flag = leader_GF_mg338
+	remove_leader_flag = leader_GF_mg34
+	remove_leader_flag = leader_GF_mg36
+	remove_leader_flag = leader_GF_mg4
+	remove_leader_flag = leader_GF_mg42
+	remove_leader_flag = leader_GF_mg5
+	remove_leader_flag = leader_GF_microuzi
+	remove_leader_flag = leader_GF_mk12
+	remove_leader_flag = leader_GF_mk23
+	remove_leader_flag = leader_GF_mk3a1
+	remove_leader_flag = leader_GF_mk46
+	remove_leader_flag = leader_GF_mk48
+	remove_leader_flag = leader_GF_mlemk1
+	remove_leader_flag = leader_GF_mondragonm1908
+	remove_leader_flag = leader_GF_mp40
+	remove_leader_flag = leader_GF_mp41
+	remove_leader_flag = leader_GF_mp443
+	remove_leader_flag = leader_GF_mp446
+	remove_leader_flag = leader_GF_mp448
+	remove_leader_flag = leader_GF_mp5
+	remove_leader_flag = leader_GF_mp7
+	remove_leader_flag = leader_GF_mpk
+	remove_leader_flag = leader_GF_mpl
+	remove_leader_flag = leader_GF_msbs
+	remove_leader_flag = leader_GF_mt9
+	remove_leader_flag = leader_GF_negev
+	remove_leader_flag = leader_GF_nova
+	remove_leader_flag = leader_GF_ns2000
+	remove_leader_flag = leader_GF_ntw20
+	remove_leader_flag = leader_GF_nz75
+	remove_leader_flag = leader_GF_obr
+	remove_leader_flag = leader_GF_oc44
+	remove_leader_flag = leader_GF_ots12
+	remove_leader_flag = leader_GF_ots14
+	remove_leader_flag = leader_GF_ots39
+	remove_leader_flag = leader_GF_p08
+	remove_leader_flag = leader_GF_p10c
+	remove_leader_flag = leader_GF_p22
+	remove_leader_flag = leader_GF_p226
+	remove_leader_flag = leader_GF_p290
+	remove_leader_flag = leader_GF_p30
+	remove_leader_flag = leader_GF_p38
+	remove_leader_flag = leader_GF_p7
+	remove_leader_flag = leader_GF_p90
+	remove_leader_flag = leader_GF_p99
+	remove_leader_flag = leader_GF_pa15
+	remove_leader_flag = leader_GF_pdw
+	remove_leader_flag = leader_GF_pk
+	remove_leader_flag = leader_GF_pkp
+	remove_leader_flag = leader_GF_pm
+	remove_leader_flag = leader_GF_pm06
+	remove_leader_flag = leader_GF_pm1910
+	remove_leader_flag = leader_GF_pm9
+	remove_leader_flag = leader_GF_pp19
+	remove_leader_flag = leader_GF_pp1901
+	remove_leader_flag = leader_GF_pp2000
+	remove_leader_flag = leader_GF_pp90
+	remove_leader_flag = leader_GF_ppd40
+	remove_leader_flag = leader_GF_ppk
+	remove_leader_flag = leader_GF_ppq
+	remove_leader_flag = leader_GF_pps43
+	remove_leader_flag = leader_GF_ppsh41
+	remove_leader_flag = leader_GF_psg1
+	remove_leader_flag = leader_GF_psm
+	remove_leader_flag = leader_GF_ptrd
+	remove_leader_flag = leader_GF_px4storm
+	remove_leader_flag = leader_GF_python
+	remove_leader_flag = leader_GF_pzb39
+	remove_leader_flag = leader_GF_qbu_191
+	remove_leader_flag = leader_GF_qbu88
+	remove_leader_flag = leader_GF_qbz191
+	remove_leader_flag = leader_GF_qsb91
+	remove_leader_flag = leader_GF_r5rgp
+	remove_leader_flag = leader_GF_r93
+	remove_leader_flag = leader_GF_rexzero1
+	remove_leader_flag = leader_GF_rfb
+	remove_leader_flag = leader_GF_rhino
+	remove_leader_flag = leader_GF_ribeyrolles
+	remove_leader_flag = leader_GF_rmb93
+	remove_leader_flag = leader_GF_ro635
+	remove_leader_flag = leader_GF_rpd
+	remove_leader_flag = leader_GF_rpk16
+	remove_leader_flag = leader_GF_rpk203
+	remove_leader_flag = leader_GF_rt20
+	remove_leader_flag = leader_GF_sacr
+	remove_leader_flag = leader_GF_saf
+	remove_leader_flag = leader_GF_saiga12
+	remove_leader_flag = leader_GF_saiga308
+	remove_leader_flag = leader_GF_sar21
+	remove_leader_flag = leader_GF_sat8
+	remove_leader_flag = leader_GF_savage99
+	remove_leader_flag = leader_GF_scarh
+	remove_leader_flag = leader_GF_scarl
+	remove_leader_flag = leader_GF_scout
+	remove_leader_flag = leader_GF_scr
+	remove_leader_flag = leader_GF_shipka
+	remove_leader_flag = leader_GF_sig510
+	remove_leader_flag = leader_GF_sig556
+	remove_leader_flag = leader_GF_sigmcx
+	remove_leader_flag = leader_GF_six12
+	remove_leader_flag = leader_GF_sks
+	remove_leader_flag = leader_GF_sl8
+	remove_leader_flag = leader_GF_sp9
+	remove_leader_flag = leader_GF_spas12
+	remove_leader_flag = leader_GF_spas15
+	remove_leader_flag = leader_GF_spectrem4
+	remove_leader_flag = leader_GF_spitfire
+	remove_leader_flag = leader_GF_spp1
+	remove_leader_flag = leader_GF_sps
+	remove_leader_flag = leader_GF_sr2
+	remove_leader_flag = leader_GF_sr3mp
+	remove_leader_flag = leader_GF_ssg3000
+	remove_leader_flag = leader_GF_ssg69
+	remove_leader_flag = leader_GF_stenmk2
+	remove_leader_flag = leader_GF_sterling
+	remove_leader_flag = leader_GF_stg44
+	remove_leader_flag = leader_GF_stg940
+	remove_leader_flag = leader_GF_sub2000
+	remove_leader_flag = leader_GF_supersass
+	remove_leader_flag = leader_GF_supershorty
+	remove_leader_flag = leader_GF_sv98
+	remove_leader_flag = leader_GF_svch
+	remove_leader_flag = leader_GF_svd
+	remove_leader_flag = leader_GF_svt38
+	remove_leader_flag = leader_GF_t5000
+	remove_leader_flag = leader_GF_t65
+	remove_leader_flag = leader_GF_t77
+	remove_leader_flag = leader_GF_t91
+	remove_leader_flag = leader_GF_tabuk
+	remove_leader_flag = leader_GF_tac50
+	remove_leader_flag = leader_GF_tar21
+	remove_leader_flag = leader_GF_tavorts12
+	remove_leader_flag = leader_GF_tcms
+	remove_leader_flag = leader_GF_tec9
+	remove_leader_flag = leader_GF_tfq
+	remove_leader_flag = leader_GF_thunder50
+	remove_leader_flag = leader_GF_tkb408
+	remove_leader_flag = leader_GF_tmp
+	remove_leader_flag = leader_GF_tps
+	remove_leader_flag = leader_GF_tt33
+	remove_leader_flag = leader_GF_type03
+	remove_leader_flag = leader_GF_type100
+	remove_leader_flag = leader_GF_type62
+	remove_leader_flag = leader_GF_type64_ar
+	remove_leader_flag = leader_GF_type88
+	remove_leader_flag = leader_GF_ukm2000
+	remove_leader_flag = leader_GF_ump40
+	remove_leader_flag = leader_GF_ump45
+	remove_leader_flag = leader_GF_ump9
+	remove_leader_flag = leader_GF_usas12
+	remove_leader_flag = leader_GF_uspcompact
+	remove_leader_flag = leader_GF_uts15
+	remove_leader_flag = leader_GF_vector
+	remove_leader_flag = leader_GF_vepr
+	remove_leader_flag = leader_GF_vhs
+	remove_leader_flag = leader_GF_vigneronm2
+	remove_leader_flag = leader_GF_vp1915
+	remove_leader_flag = leader_GF_vp70
+	remove_leader_flag = leader_GF_vp9
+	remove_leader_flag = leader_GF_vpm5
+	remove_leader_flag = leader_GF_vrb
+	remove_leader_flag = leader_GF_vsk
+	remove_leader_flag = leader_GF_vz61
+	remove_leader_flag = leader_GF_wa2000
+	remove_leader_flag = leader_GF_webley
+	remove_leader_flag = leader_GF_welrod
+	remove_leader_flag = leader_GF_wkp
+	remove_leader_flag = leader_GF_wz29
+	remove_leader_flag = leader_GF_x95
+	remove_leader_flag = leader_GF_xm3
+	remove_leader_flag = leader_GF_xm8
+	remove_leader_flag = leader_GF_z62
+	remove_leader_flag = leader_GF_zasm76
+	remove_leader_flag = leader_GF_zastavam21
+	remove_leader_flag = leader_GF_zb26
+	remove_leader_flag = leader_GF_zip22
+}
+
+# scope = leader/envoy
+GF_set_random_doll_leader_portrait_and_name = {
+	random_list = {
+		1 = { change_leader_portrait = GF_doll_001  set_leader_flag = leader_GF_06typesmg      set_name = NAME_06typesmg      }
+		1 = { change_leader_portrait = GF_doll_002  set_leader_flag = leader_GF_357            set_name = NAME_357            }
+		1 = { change_leader_portrait = GF_doll_003  set_leader_flag = leader_GF_4type          set_name = NAME_4type          }
+		1 = { change_leader_portrait = GF_doll_004  set_leader_flag = leader_GF_56_1type       set_name = NAME_56_1type       }
+		1 = { change_leader_portrait = GF_doll_005  set_leader_flag = leader_GF_56typer        set_name = NAME_56typer        }
+		1 = { change_leader_portrait = GF_doll_006  set_leader_flag = leader_GF_59type         set_name = NAME_59type         }
+		1 = { change_leader_portrait = GF_doll_007  set_leader_flag = leader_GF_63type         set_name = NAME_63type         }
+		1 = { change_leader_portrait = GF_doll_008  set_leader_flag = leader_GF_64type         set_name = NAME_64type         }
+		1 = { change_leader_portrait = GF_doll_009  set_leader_flag = leader_GF_6p62           set_name = NAME_6p62           }
+		1 = { change_leader_portrait = GF_doll_010  set_leader_flag = leader_GF_79type         set_name = NAME_79type         }
+		1 = { change_leader_portrait = GF_doll_011  set_leader_flag = leader_GF_80type         set_name = NAME_80type         }
+		1 = { change_leader_portrait = GF_doll_012  set_leader_flag = leader_GF_81typer        set_name = NAME_81typer        }
+		1 = { change_leader_portrait = GF_doll_013  set_leader_flag = leader_GF_88type         set_name = NAME_88type         }
+		1 = { change_leader_portrait = GF_doll_014  set_leader_flag = leader_GF_92type         set_name = NAME_92type         }
+		1 = { change_leader_portrait = GF_doll_015  set_leader_flag = leader_GF_95type         set_name = NAME_95type         }
+		1 = { change_leader_portrait = GF_doll_016  set_leader_flag = leader_GF_97type         set_name = NAME_97type         }
+		1 = { change_leader_portrait = GF_doll_017  set_leader_flag = leader_GF_97types        set_name = NAME_97types        }
+		1 = { change_leader_portrait = GF_doll_018  set_leader_flag = leader_GF_98k            set_name = NAME_98k            }
+		1 = { change_leader_portrait = GF_doll_019  set_leader_flag = leader_GF_9a91           set_name = NAME_9a91           }
+		1 = { change_leader_portrait = GF_doll_020  set_leader_flag = leader_GF_a545           set_name = NAME_a545           }
+		1 = { change_leader_portrait = GF_doll_021  set_leader_flag = leader_GF_a91            set_name = NAME_a91            }
+		1 = { change_leader_portrait = GF_doll_022  set_leader_flag = leader_GF_aa12           set_name = NAME_aa12           }
+		1 = { change_leader_portrait = GF_doll_023  set_leader_flag = leader_GF_aat52          set_name = NAME_aat52          }
+		1 = { change_leader_portrait = GF_doll_024  set_leader_flag = leader_GF_acr            set_name = NAME_acr            }
+		1 = { change_leader_portrait = GF_doll_025  set_leader_flag = leader_GF_ads            set_name = NAME_ads            }
+		1 = { change_leader_portrait = GF_doll_026  set_leader_flag = leader_GF_aek999         set_name = NAME_aek999         }
+		1 = { change_leader_portrait = GF_doll_027  set_leader_flag = leader_GF_ak12           set_name = NAME_ak12           }
+		1 = { change_leader_portrait = GF_doll_028  set_leader_flag = leader_GF_ak15           set_name = NAME_ak15           }
+		1 = { change_leader_portrait = GF_doll_029  set_leader_flag = leader_GF_ak47           set_name = NAME_ak47           }
+		1 = { change_leader_portrait = GF_doll_030  set_leader_flag = leader_GF_ak5            set_name = NAME_ak5            }
+		1 = { change_leader_portrait = GF_doll_031  set_leader_flag = leader_GF_ak74m          set_name = NAME_ak74m          }
+		1 = { change_leader_portrait = GF_doll_032  set_leader_flag = leader_GF_ak74u          set_name = NAME_ak74u          }
+		1 = { change_leader_portrait = GF_doll_033  set_leader_flag = leader_GF_akalfa         set_name = NAME_akalfa         }
+		1 = { change_leader_portrait = GF_doll_034  set_leader_flag = leader_GF_ameli          set_name = NAME_ameli          }
+		1 = { change_leader_portrait = GF_doll_035  set_leader_flag = leader_GF_an94           set_name = NAME_an94           }
+		1 = { change_leader_portrait = GF_doll_036  set_leader_flag = leader_GF_apc556         set_name = NAME_apc556         }
+		1 = { change_leader_portrait = GF_doll_037  set_leader_flag = leader_GF_apc9k          set_name = NAME_apc9k          }
+		1 = { change_leader_portrait = GF_doll_038  set_leader_flag = leader_GF_aps            set_name = NAME_aps            }
+		1 = { change_leader_portrait = GF_doll_039  set_leader_flag = leader_GF_ar             set_name = NAME_ar             }
+		1 = { change_leader_portrait = GF_doll_040  set_leader_flag = leader_GF_ar15           set_name = NAME_ar15           }
+		1 = { change_leader_portrait = GF_doll_041  set_leader_flag = leader_GF_ar18           set_name = NAME_ar18           }
+		1 = { change_leader_portrait = GF_doll_042  set_leader_flag = leader_GF_ar57           set_name = NAME_ar57           }
+		1 = { change_leader_portrait = GF_doll_043  set_leader_flag = leader_GF_ar70           set_name = NAME_ar70           }
+		1 = { change_leader_portrait = GF_doll_044  set_leader_flag = leader_GF_art556         set_name = NAME_art556         }
+		1 = { change_leader_portrait = GF_doll_045  set_leader_flag = leader_GF_arx160         set_name = NAME_arx160         }
+		1 = { change_leader_portrait = GF_doll_046  set_leader_flag = leader_GF_ash127         set_name = NAME_ash127         }
+		1 = { change_leader_portrait = GF_doll_047  set_leader_flag = leader_GF_asval          set_name = NAME_asval          }
+		1 = { change_leader_portrait = GF_doll_048  set_leader_flag = leader_GF_aug            set_name = NAME_aug            }
+		1 = { change_leader_portrait = GF_doll_049  set_leader_flag = leader_GF_augpara        set_name = NAME_augpara        }
+		1 = { change_leader_portrait = GF_doll_050  set_leader_flag = leader_GF_ballista       set_name = NAME_ballista       }
+		1 = { change_leader_portrait = GF_doll_051  set_leader_flag = leader_GF_bm59           set_name = NAME_bm59           }
+		1 = { change_leader_portrait = GF_doll_052  set_leader_flag = leader_GF_brenmk         set_name = NAME_brenmk         }
+		1 = { change_leader_portrait = GF_doll_053  set_leader_flag = leader_GF_brenten        set_name = NAME_brenten        }
+		1 = { change_leader_portrait = GF_doll_054  set_leader_flag = leader_GF_browninghp     set_name = NAME_browninghp     }
+		1 = { change_leader_portrait = GF_doll_055  set_leader_flag = leader_GF_c14            set_name = NAME_c14            }
+		1 = { change_leader_portrait = GF_doll_056  set_leader_flag = leader_GF_c93            set_name = NAME_c93            }
+		1 = { change_leader_portrait = GF_doll_057  set_leader_flag = leader_GF_c96            set_name = NAME_c96            }
+		1 = { change_leader_portrait = GF_doll_058  set_leader_flag = leader_GF_car            set_name = NAME_car            }
+		1 = { change_leader_portrait = GF_doll_059  set_leader_flag = leader_GF_carcano1891    set_name = NAME_carcano1891    }
+		1 = { change_leader_portrait = GF_doll_060  set_leader_flag = leader_GF_carcano1938    set_name = NAME_carcano1938    }
+		1 = { change_leader_portrait = GF_doll_061  set_leader_flag = leader_GF_cbjms          set_name = NAME_cbjms          }
+		1 = { change_leader_portrait = GF_doll_062  set_leader_flag = leader_GF_cetme556       set_name = NAME_cetme556       }
+		1 = { change_leader_portrait = GF_doll_063  set_leader_flag = leader_GF_chauchatm1915  set_name = NAME_chauchatm1915  }
+		1 = { change_leader_portrait = GF_doll_064  set_leader_flag = leader_GF_cmr30          set_name = NAME_cmr30          }
+		1 = { change_leader_portrait = GF_doll_065  set_leader_flag = leader_GF_coltdefender   set_name = NAME_coltdefender   }
+		1 = { change_leader_portrait = GF_doll_066  set_leader_flag = leader_GF_coltscw        set_name = NAME_coltscw        }
+		1 = { change_leader_portrait = GF_doll_067  set_leader_flag = leader_GF_coltwalker     set_name = NAME_coltwalker     }
+		1 = { change_leader_portrait = GF_doll_068  set_leader_flag = leader_GF_contender      set_name = NAME_contender      }
+		1 = { change_leader_portrait = GF_doll_069  set_leader_flag = leader_GF_cr21           set_name = NAME_cr21           }
+		1 = { change_leader_portrait = GF_doll_070  set_leader_flag = leader_GF_cx4storm       set_name = NAME_cx4storm       }
+		1 = { change_leader_portrait = GF_doll_071  set_leader_flag = leader_GF_cz100          set_name = NAME_cz100          }
+		1 = { change_leader_portrait = GF_doll_072  set_leader_flag = leader_GF_cz2000         set_name = NAME_cz2000         }
+		1 = { change_leader_portrait = GF_doll_073  set_leader_flag = leader_GF_cz52           set_name = NAME_cz52           }
+		1 = { change_leader_portrait = GF_doll_074  set_leader_flag = leader_GF_cz75           set_name = NAME_cz75           }
+		1 = { change_leader_portrait = GF_doll_075  set_leader_flag = leader_GF_cz805          set_name = NAME_cz805          }
+		1 = { change_leader_portrait = GF_doll_076  set_leader_flag = leader_GF_danuvia43m     set_name = NAME_danuvia43m     }
+		1 = { change_leader_portrait = GF_doll_077  set_leader_flag = leader_GF_delisle        set_name = NAME_delisle        }
+		1 = { change_leader_portrait = GF_doll_078  set_leader_flag = leader_GF_derringer      set_name = NAME_derringer      }
+		1 = { change_leader_portrait = GF_doll_079  set_leader_flag = leader_GF_deserteagle    set_name = NAME_deserteagle    }
+		1 = { change_leader_portrait = GF_doll_080  set_leader_flag = leader_GF_dp12           set_name = NAME_dp12           }
+		1 = { change_leader_portrait = GF_doll_081  set_leader_flag = leader_GF_dp28           set_name = NAME_dp28           }
+		1 = { change_leader_portrait = GF_doll_082  set_leader_flag = leader_GF_dsr50          set_name = NAME_dsr50          }
+		1 = { change_leader_portrait = GF_doll_083  set_leader_flag = leader_GF_dtasrs         set_name = NAME_dtasrs         }
+		1 = { change_leader_portrait = GF_doll_084  set_leader_flag = leader_GF_em2            set_name = NAME_em2            }
+		1 = { change_leader_portrait = GF_doll_085  set_leader_flag = leader_GF_erma           set_name = NAME_erma           }
+		1 = { change_leader_portrait = GF_doll_086  set_leader_flag = leader_GF_evo3           set_name = NAME_evo3           }
+		1 = { change_leader_portrait = GF_doll_087  set_leader_flag = leader_GF_f1             set_name = NAME_f1             }
+		1 = { change_leader_portrait = GF_doll_088  set_leader_flag = leader_GF_f2000          set_name = NAME_f2000          }
+		1 = { change_leader_portrait = GF_doll_089  set_leader_flag = leader_GF_falcon         set_name = NAME_falcon         }
+		1 = { change_leader_portrait = GF_doll_090  set_leader_flag = leader_GF_famas          set_name = NAME_famas          }
+		1 = { change_leader_portrait = GF_doll_091  set_leader_flag = leader_GF_fara83         set_name = NAME_fara83         }
+		1 = { change_leader_portrait = GF_doll_092  set_leader_flag = leader_GF_fedorov        set_name = NAME_fedorov        }
+		1 = { change_leader_portrait = GF_doll_093  set_leader_flag = leader_GF_fg42           set_name = NAME_fg42           }
+		1 = { change_leader_portrait = GF_doll_094  set_leader_flag = leader_GF_fmg9           set_name = NAME_fmg9           }
+		1 = { change_leader_portrait = GF_doll_095  set_leader_flag = leader_GF_fn49           set_name = NAME_fn49           }
+		1 = { change_leader_portrait = GF_doll_096  set_leader_flag = leader_GF_fn57           set_name = NAME_fn57           }
+		1 = { change_leader_portrait = GF_doll_097  set_leader_flag = leader_GF_fnfal          set_name = NAME_fnfal          }
+		1 = { change_leader_portrait = GF_doll_098  set_leader_flag = leader_GF_fnfnc          set_name = NAME_fnfnc          }
+		1 = { change_leader_portrait = GF_doll_099  set_leader_flag = leader_GF_fnp9           set_name = NAME_fnp9           }
+		1 = { change_leader_portrait = GF_doll_100  set_leader_flag = leader_GF_fnspr          set_name = NAME_fnspr          }
+		1 = { change_leader_portrait = GF_doll_101  set_leader_flag = leader_GF_fo12           set_name = NAME_fo12           }
+		1 = { change_leader_portrait = GF_doll_102  set_leader_flag = leader_GF_fp6            set_name = NAME_fp6            }
+		1 = { change_leader_portrait = GF_doll_103  set_leader_flag = leader_GF_fx05           set_name = NAME_fx05           }
+		1 = { change_leader_portrait = GF_doll_104  set_leader_flag = leader_GF_g11            set_name = NAME_g11            }
+		1 = { change_leader_portrait = GF_doll_105  set_leader_flag = leader_GF_g28            set_name = NAME_g28            }
+		1 = { change_leader_portrait = GF_doll_106  set_leader_flag = leader_GF_g3             set_name = NAME_g3             }
+		1 = { change_leader_portrait = GF_doll_107  set_leader_flag = leader_GF_g36            set_name = NAME_g36            }
+		1 = { change_leader_portrait = GF_doll_108  set_leader_flag = leader_GF_g36c           set_name = NAME_g36c           }
+		1 = { change_leader_portrait = GF_doll_109  set_leader_flag = leader_GF_g41            set_name = NAME_g41            }
+		1 = { change_leader_portrait = GF_doll_110  set_leader_flag = leader_GF_g43            set_name = NAME_g43            }
+		1 = { change_leader_portrait = GF_doll_111  set_leader_flag = leader_GF_generalliu     set_name = NAME_generalliu     }
+		1 = { change_leader_portrait = GF_doll_112  set_leader_flag = leader_GF_gepardm1       set_name = NAME_gepardm1       }
+		1 = { change_leader_portrait = GF_doll_113  set_leader_flag = leader_GF_glock17        set_name = NAME_glock17        }
+		1 = { change_leader_portrait = GF_doll_114  set_leader_flag = leader_GF_gm6lynx        set_name = NAME_gm6lynx        }
+		1 = { change_leader_portrait = GF_doll_115  set_leader_flag = leader_GF_grizzly        set_name = NAME_grizzly        }
+		1 = { change_leader_portrait = GF_doll_116  set_leader_flag = leader_GF_gsh18          set_name = NAME_gsh18          }
+		1 = { change_leader_portrait = GF_doll_117  set_leader_flag = leader_GF_hezism1        set_name = NAME_hezism1        }
+		1 = { change_leader_portrait = GF_doll_118  set_leader_flag = leader_GF_hk21           set_name = NAME_hk21           }
+		1 = { change_leader_portrait = GF_doll_119  set_leader_flag = leader_GF_hk23           set_name = NAME_hk23           }
+		1 = { change_leader_portrait = GF_doll_120  set_leader_flag = leader_GF_hk33           set_name = NAME_hk33           }
+		1 = { change_leader_portrait = GF_doll_121  set_leader_flag = leader_GF_hk416          set_name = NAME_hk416          }
+		1 = { change_leader_portrait = GF_doll_122  set_leader_flag = leader_GF_hk45           set_name = NAME_hk45           }
+		1 = { change_leader_portrait = GF_doll_123  set_leader_flag = leader_GF_hk512          set_name = NAME_hk512          }
+		1 = { change_leader_portrait = GF_doll_124  set_leader_flag = leader_GF_hkcaws         set_name = NAME_hkcaws         }
+		1 = { change_leader_portrait = GF_doll_125  set_leader_flag = leader_GF_howatype89     set_name = NAME_howatype89     }
+		1 = { change_leader_portrait = GF_doll_126  set_leader_flag = leader_GF_hs2000         set_name = NAME_hs2000         }
+		1 = { change_leader_portrait = GF_doll_127  set_leader_flag = leader_GF_hs50           set_name = NAME_hs50           }
+		1 = { change_leader_portrait = GF_doll_128  set_leader_flag = leader_GF_hsm10          set_name = NAME_hsm10          }
+		1 = { change_leader_portrait = GF_doll_129  set_leader_flag = leader_GF_idw            set_name = NAME_idw            }
+		1 = { change_leader_portrait = GF_doll_130  set_leader_flag = leader_GF_insas          set_name = NAME_insas          }
+		1 = { change_leader_portrait = GF_doll_131  set_leader_flag = leader_GF_ithaca37       set_name = NAME_ithaca37       }
+		1 = { change_leader_portrait = GF_doll_132  set_leader_flag = leader_GF_iws2000        set_name = NAME_iws2000        }
+		1 = { change_leader_portrait = GF_doll_133  set_leader_flag = leader_GF_jatimatic      set_name = NAME_jatimatic      }
+		1 = { change_leader_portrait = GF_doll_134  set_leader_flag = leader_GF_jericho        set_name = NAME_jericho        }
+		1 = { change_leader_portrait = GF_doll_135  set_leader_flag = leader_GF_js_127         set_name = NAME_js_127         }
+		1 = { change_leader_portrait = GF_doll_136  set_leader_flag = leader_GF_js9mm          set_name = NAME_js9mm          }
+		1 = { change_leader_portrait = GF_doll_137  set_leader_flag = leader_GF_k11            set_name = NAME_k11            }
+		1 = { change_leader_portrait = GF_doll_138  set_leader_flag = leader_GF_k2             set_name = NAME_k2             }
+		1 = { change_leader_portrait = GF_doll_139  set_leader_flag = leader_GF_k3             set_name = NAME_k3             }
+		1 = { change_leader_portrait = GF_doll_140  set_leader_flag = leader_GF_k31            set_name = NAME_k31            }
+		1 = { change_leader_portrait = GF_doll_141  set_leader_flag = leader_GF_k5             set_name = NAME_k5             }
+		1 = { change_leader_portrait = GF_doll_142  set_leader_flag = leader_GF_k7             set_name = NAME_k7             }
+		1 = { change_leader_portrait = GF_doll_143  set_leader_flag = leader_GF_kac            set_name = NAME_kac            }
+		1 = { change_leader_portrait = GF_doll_144  set_leader_flag = leader_GF_kgp9           set_name = NAME_kgp9           }
+		1 = { change_leader_portrait = GF_doll_145  set_leader_flag = leader_GF_kh2002         set_name = NAME_kh2002         }
+		1 = { change_leader_portrait = GF_doll_146  set_leader_flag = leader_GF_klin           set_name = NAME_klin           }
+		1 = { change_leader_portrait = GF_doll_147  set_leader_flag = leader_GF_kolibri        set_name = NAME_kolibri        }
+		1 = { change_leader_portrait = GF_doll_148  set_leader_flag = leader_GF_kord           set_name = NAME_kord           }
+		1 = { change_leader_portrait = GF_doll_149  set_leader_flag = leader_GF_kp31           set_name = NAME_kp31           }
+		1 = { change_leader_portrait = GF_doll_150  set_leader_flag = leader_GF_ks23           set_name = NAME_ks23           }
+		1 = { change_leader_portrait = GF_doll_151  set_leader_flag = leader_GF_ksg            set_name = NAME_ksg            }
+		1 = { change_leader_portrait = GF_doll_152  set_leader_flag = leader_GF_ksvk           set_name = NAME_ksvk           }
+		1 = { change_leader_portrait = GF_doll_153  set_leader_flag = leader_GF_l85a1          set_name = NAME_l85a1          }
+		1 = { change_leader_portrait = GF_doll_154  set_leader_flag = leader_GF_lamg           set_name = NAME_lamg           }
+		1 = { change_leader_portrait = GF_doll_155  set_leader_flag = leader_GF_lewis          set_name = NAME_lewis          }
+		1 = { change_leader_portrait = GF_doll_156  set_leader_flag = leader_GF_liberator      set_name = NAME_liberator      }
+		1 = { change_leader_portrait = GF_doll_157  set_leader_flag = leader_GF_ls26           set_name = NAME_ls26           }
+		1 = { change_leader_portrait = GF_doll_158  set_leader_flag = leader_GF_ltlx7000       set_name = NAME_ltlx7000       }
+		1 = { change_leader_portrait = GF_doll_159  set_leader_flag = leader_GF_lusa           set_name = NAME_lusa           }
+		1 = { change_leader_portrait = GF_doll_160  set_leader_flag = leader_GF_lwmmg          set_name = NAME_lwmmg          }
+		1 = { change_leader_portrait = GF_doll_161  set_leader_flag = leader_GF_m1             set_name = NAME_m1             }
+		1 = { change_leader_portrait = GF_doll_162  set_leader_flag = leader_GF_m1014          set_name = NAME_m1014          }
+		1 = { change_leader_portrait = GF_doll_163  set_leader_flag = leader_GF_m110           set_name = NAME_m110           }
+		1 = { change_leader_portrait = GF_doll_164  set_leader_flag = leader_GF_m12            set_name = NAME_m12            }
+		1 = { change_leader_portrait = GF_doll_165  set_leader_flag = leader_GF_m14            set_name = NAME_m14            }
+		1 = { change_leader_portrait = GF_doll_166  set_leader_flag = leader_GF_m16a1          set_name = NAME_m16a1          }
+		1 = { change_leader_portrait = GF_doll_167  set_leader_flag = leader_GF_m1873          set_name = NAME_m1873          }
+		1 = { change_leader_portrait = GF_doll_168  set_leader_flag = leader_GF_m1887          set_name = NAME_m1887          }
+		1 = { change_leader_portrait = GF_doll_169  set_leader_flag = leader_GF_m1891          set_name = NAME_m1891          }
+		1 = { change_leader_portrait = GF_doll_170  set_leader_flag = leader_GF_m1895          set_name = NAME_m1895          }
+		1 = { change_leader_portrait = GF_doll_171  set_leader_flag = leader_GF_m1895mg        set_name = NAME_m1895mg        }
+		1 = { change_leader_portrait = GF_doll_172  set_leader_flag = leader_GF_m1897          set_name = NAME_m1897          }
+		1 = { change_leader_portrait = GF_doll_173  set_leader_flag = leader_GF_m1903          set_name = NAME_m1903          }
+		1 = { change_leader_portrait = GF_doll_174  set_leader_flag = leader_GF_m1911          set_name = NAME_m1911          }
+		1 = { change_leader_portrait = GF_doll_175  set_leader_flag = leader_GF_m1918          set_name = NAME_m1918          }
+		1 = { change_leader_portrait = GF_doll_176  set_leader_flag = leader_GF_m1919a4        set_name = NAME_m1919a4        }
+		1 = { change_leader_portrait = GF_doll_177  set_leader_flag = leader_GF_m1928a1        set_name = NAME_m1928a1        }
+		1 = { change_leader_portrait = GF_doll_178  set_leader_flag = leader_GF_m1a1           set_name = NAME_m1a1           }
+		1 = { change_leader_portrait = GF_doll_179  set_leader_flag = leader_GF_m200           set_name = NAME_m200           }
+		1 = { change_leader_portrait = GF_doll_180  set_leader_flag = leader_GF_m21            set_name = NAME_m21            }
+		1 = { change_leader_portrait = GF_doll_181  set_leader_flag = leader_GF_m240l          set_name = NAME_m240l          }
+		1 = { change_leader_portrait = GF_doll_182  set_leader_flag = leader_GF_m249saw        set_name = NAME_m249saw        }
+		1 = { change_leader_portrait = GF_doll_183  set_leader_flag = leader_GF_m26mass        set_name = NAME_m26mass        }
+		1 = { change_leader_portrait = GF_doll_184  set_leader_flag = leader_GF_m2hb           set_name = NAME_m2hb           }
+		1 = { change_leader_portrait = GF_doll_185  set_leader_flag = leader_GF_m3             set_name = NAME_m3             }
+		1 = { change_leader_portrait = GF_doll_186  set_leader_flag = leader_GF_m327           set_name = NAME_m327           }
+		1 = { change_leader_portrait = GF_doll_187  set_leader_flag = leader_GF_m4_sopmod_ii   set_name = NAME_m4_sopmod_ii   }
+		1 = { change_leader_portrait = GF_doll_188  set_leader_flag = leader_GF_m45            set_name = NAME_m45            }
+		1 = { change_leader_portrait = GF_doll_189  set_leader_flag = leader_GF_m4a1           set_name = NAME_m4a1           }
+		1 = { change_leader_portrait = GF_doll_190  set_leader_flag = leader_GF_m500           set_name = NAME_m500           }
+		1 = { change_leader_portrait = GF_doll_191  set_leader_flag = leader_GF_m590           set_name = NAME_m590           }
+		1 = { change_leader_portrait = GF_doll_192  set_leader_flag = leader_GF_m60            set_name = NAME_m60            }
+		1 = { change_leader_portrait = GF_doll_193  set_leader_flag = leader_GF_m6asw          set_name = NAME_m6asw          }
+		1 = { change_leader_portrait = GF_doll_194  set_leader_flag = leader_GF_m82            set_name = NAME_m82            }
+		1 = { change_leader_portrait = GF_doll_195  set_leader_flag = leader_GF_m82a1          set_name = NAME_m82a1          }
+		1 = { change_leader_portrait = GF_doll_196  set_leader_flag = leader_GF_m870p          set_name = NAME_m870p          }
+		1 = { change_leader_portrait = GF_doll_197  set_leader_flag = leader_GF_m9             set_name = NAME_m9             }
+		1 = { change_leader_portrait = GF_doll_198  set_leader_flag = leader_GF_m950a          set_name = NAME_m950a          }
+		1 = { change_leader_portrait = GF_doll_199  set_leader_flag = leader_GF_m99            set_name = NAME_m99            }
+		1 = { change_leader_portrait = GF_doll_200  set_leader_flag = leader_GF_mab38          set_name = NAME_mab38          }
+		1 = { change_leader_portrait = GF_doll_201  set_leader_flag = leader_GF_mac10          set_name = NAME_mac10          }
+		1 = { change_leader_portrait = GF_doll_202  set_leader_flag = leader_GF_mag7           set_name = NAME_mag7           }
+		1 = { change_leader_portrait = GF_doll_203  set_leader_flag = leader_GF_magal          set_name = NAME_magal          }
+		1 = { change_leader_portrait = GF_doll_204  set_leader_flag = leader_GF_mas38          set_name = NAME_mas38          }
+		1 = { change_leader_portrait = GF_doll_205  set_leader_flag = leader_GF_mat49          set_name = NAME_mat49          }
+		1 = { change_leader_portrait = GF_doll_206  set_leader_flag = leader_GF_mdr            set_name = NAME_mdr            }
+		1 = { change_leader_portrait = GF_doll_207  set_leader_flag = leader_GF_mg3            set_name = NAME_mg3            }
+		1 = { change_leader_portrait = GF_doll_208  set_leader_flag = leader_GF_mg338          set_name = NAME_mg338          }
+		1 = { change_leader_portrait = GF_doll_209  set_leader_flag = leader_GF_mg34           set_name = NAME_mg34           }
+		1 = { change_leader_portrait = GF_doll_210  set_leader_flag = leader_GF_mg36           set_name = NAME_mg36           }
+		1 = { change_leader_portrait = GF_doll_211  set_leader_flag = leader_GF_mg4            set_name = NAME_mg4            }
+		1 = { change_leader_portrait = GF_doll_212  set_leader_flag = leader_GF_mg42           set_name = NAME_mg42           }
+		1 = { change_leader_portrait = GF_doll_213  set_leader_flag = leader_GF_mg5            set_name = NAME_mg5            }
+		1 = { change_leader_portrait = GF_doll_214  set_leader_flag = leader_GF_microuzi       set_name = NAME_microuzi       }
+		1 = { change_leader_portrait = GF_doll_215  set_leader_flag = leader_GF_mk12           set_name = NAME_mk12           }
+		1 = { change_leader_portrait = GF_doll_216  set_leader_flag = leader_GF_mk23           set_name = NAME_mk23           }
+		1 = { change_leader_portrait = GF_doll_217  set_leader_flag = leader_GF_mk3a1          set_name = NAME_mk3a1          }
+		1 = { change_leader_portrait = GF_doll_218  set_leader_flag = leader_GF_mk46           set_name = NAME_mk46           }
+		1 = { change_leader_portrait = GF_doll_219  set_leader_flag = leader_GF_mk48           set_name = NAME_mk48           }
+		1 = { change_leader_portrait = GF_doll_220  set_leader_flag = leader_GF_mlemk1         set_name = NAME_mlemk1         }
+		1 = { change_leader_portrait = GF_doll_221  set_leader_flag = leader_GF_mondragonm1908 set_name = NAME_mondragonm1908 }
+		1 = { change_leader_portrait = GF_doll_222  set_leader_flag = leader_GF_mp40           set_name = NAME_mp40           }
+		1 = { change_leader_portrait = GF_doll_223  set_leader_flag = leader_GF_mp41           set_name = NAME_mp41           }
+		1 = { change_leader_portrait = GF_doll_224  set_leader_flag = leader_GF_mp443          set_name = NAME_mp443          }
+		1 = { change_leader_portrait = GF_doll_225  set_leader_flag = leader_GF_mp446          set_name = NAME_mp446          }
+		1 = { change_leader_portrait = GF_doll_226  set_leader_flag = leader_GF_mp448          set_name = NAME_mp448          }
+		1 = { change_leader_portrait = GF_doll_227  set_leader_flag = leader_GF_mp5            set_name = NAME_mp5            }
+		1 = { change_leader_portrait = GF_doll_228  set_leader_flag = leader_GF_mp7            set_name = NAME_mp7            }
+		1 = { change_leader_portrait = GF_doll_229  set_leader_flag = leader_GF_mpk            set_name = NAME_mpk            }
+		1 = { change_leader_portrait = GF_doll_230  set_leader_flag = leader_GF_mpl            set_name = NAME_mpl            }
+		1 = { change_leader_portrait = GF_doll_231  set_leader_flag = leader_GF_msbs           set_name = NAME_msbs           }
+		1 = { change_leader_portrait = GF_doll_232  set_leader_flag = leader_GF_mt9            set_name = NAME_mt9            }
+		1 = { change_leader_portrait = GF_doll_233  set_leader_flag = leader_GF_negev          set_name = NAME_negev          }
+		1 = { change_leader_portrait = GF_doll_234  set_leader_flag = leader_GF_nova           set_name = NAME_nova           }
+		1 = { change_leader_portrait = GF_doll_235  set_leader_flag = leader_GF_ns2000         set_name = NAME_ns2000         }
+		1 = { change_leader_portrait = GF_doll_236  set_leader_flag = leader_GF_ntw20          set_name = NAME_ntw20          }
+		1 = { change_leader_portrait = GF_doll_237  set_leader_flag = leader_GF_nz75           set_name = NAME_nz75           }
+		1 = { change_leader_portrait = GF_doll_238  set_leader_flag = leader_GF_obr            set_name = NAME_obr            }
+		1 = { change_leader_portrait = GF_doll_239  set_leader_flag = leader_GF_oc44           set_name = NAME_oc44           }
+		1 = { change_leader_portrait = GF_doll_240  set_leader_flag = leader_GF_ots12          set_name = NAME_ots12          }
+		1 = { change_leader_portrait = GF_doll_241  set_leader_flag = leader_GF_ots14          set_name = NAME_ots14          }
+		1 = { change_leader_portrait = GF_doll_242  set_leader_flag = leader_GF_ots39          set_name = NAME_ots39          }
+		1 = { change_leader_portrait = GF_doll_243  set_leader_flag = leader_GF_p08            set_name = NAME_p08            }
+		1 = { change_leader_portrait = GF_doll_244  set_leader_flag = leader_GF_p10c           set_name = NAME_p10c           }
+		1 = { change_leader_portrait = GF_doll_245  set_leader_flag = leader_GF_p22            set_name = NAME_p22            }
+		1 = { change_leader_portrait = GF_doll_246  set_leader_flag = leader_GF_p226           set_name = NAME_p226           }
+		1 = { change_leader_portrait = GF_doll_247  set_leader_flag = leader_GF_p290           set_name = NAME_p290           }
+		1 = { change_leader_portrait = GF_doll_248  set_leader_flag = leader_GF_p30            set_name = NAME_p30            }
+		1 = { change_leader_portrait = GF_doll_249  set_leader_flag = leader_GF_p38            set_name = NAME_p38            }
+		1 = { change_leader_portrait = GF_doll_250  set_leader_flag = leader_GF_p7             set_name = NAME_p7             }
+		1 = { change_leader_portrait = GF_doll_251  set_leader_flag = leader_GF_p90            set_name = NAME_p90            }
+		1 = { change_leader_portrait = GF_doll_252  set_leader_flag = leader_GF_p99            set_name = NAME_p99            }
+		1 = { change_leader_portrait = GF_doll_253  set_leader_flag = leader_GF_pa15           set_name = NAME_pa15           }
+		1 = { change_leader_portrait = GF_doll_254  set_leader_flag = leader_GF_pdw            set_name = NAME_pdw            }
+		1 = { change_leader_portrait = GF_doll_255  set_leader_flag = leader_GF_pk             set_name = NAME_pk             }
+		1 = { change_leader_portrait = GF_doll_256  set_leader_flag = leader_GF_pkp            set_name = NAME_pkp            }
+		1 = { change_leader_portrait = GF_doll_257  set_leader_flag = leader_GF_pm             set_name = NAME_pm             }
+		1 = { change_leader_portrait = GF_doll_258  set_leader_flag = leader_GF_pm06           set_name = NAME_pm06           }
+		1 = { change_leader_portrait = GF_doll_259  set_leader_flag = leader_GF_pm1910         set_name = NAME_pm1910         }
+		1 = { change_leader_portrait = GF_doll_260  set_leader_flag = leader_GF_pm9            set_name = NAME_pm9            }
+		1 = { change_leader_portrait = GF_doll_261  set_leader_flag = leader_GF_pp19           set_name = NAME_pp19           }
+		1 = { change_leader_portrait = GF_doll_262  set_leader_flag = leader_GF_pp1901         set_name = NAME_pp1901         }
+		1 = { change_leader_portrait = GF_doll_263  set_leader_flag = leader_GF_pp2000         set_name = NAME_pp2000         }
+		1 = { change_leader_portrait = GF_doll_264  set_leader_flag = leader_GF_pp90           set_name = NAME_pp90           }
+		1 = { change_leader_portrait = GF_doll_265  set_leader_flag = leader_GF_ppd40          set_name = NAME_ppd40          }
+		1 = { change_leader_portrait = GF_doll_266  set_leader_flag = leader_GF_ppk            set_name = NAME_ppk            }
+		1 = { change_leader_portrait = GF_doll_267  set_leader_flag = leader_GF_ppq            set_name = NAME_ppq            }
+		1 = { change_leader_portrait = GF_doll_268  set_leader_flag = leader_GF_pps43          set_name = NAME_pps43          }
+		1 = { change_leader_portrait = GF_doll_269  set_leader_flag = leader_GF_ppsh41         set_name = NAME_ppsh41         }
+		1 = { change_leader_portrait = GF_doll_270  set_leader_flag = leader_GF_psg1           set_name = NAME_psg1           }
+		1 = { change_leader_portrait = GF_doll_271  set_leader_flag = leader_GF_psm            set_name = NAME_psm            }
+		1 = { change_leader_portrait = GF_doll_272  set_leader_flag = leader_GF_ptrd           set_name = NAME_ptrd           }
+		1 = { change_leader_portrait = GF_doll_273  set_leader_flag = leader_GF_px4storm       set_name = NAME_px4storm       }
+		1 = { change_leader_portrait = GF_doll_274  set_leader_flag = leader_GF_python         set_name = NAME_python         }
+		1 = { change_leader_portrait = GF_doll_275  set_leader_flag = leader_GF_pzb39          set_name = NAME_pzb39          }
+		1 = { change_leader_portrait = GF_doll_276  set_leader_flag = leader_GF_qbu_191        set_name = NAME_qbu_191        }
+		1 = { change_leader_portrait = GF_doll_277  set_leader_flag = leader_GF_qbu88          set_name = NAME_qbu88          }
+		1 = { change_leader_portrait = GF_doll_278  set_leader_flag = leader_GF_qbz191         set_name = NAME_qbz191         }
+		1 = { change_leader_portrait = GF_doll_279  set_leader_flag = leader_GF_qsb91          set_name = NAME_qsb91          }
+		1 = { change_leader_portrait = GF_doll_280  set_leader_flag = leader_GF_r5rgp          set_name = NAME_r5rgp          }
+		1 = { change_leader_portrait = GF_doll_281  set_leader_flag = leader_GF_r93            set_name = NAME_r93            }
+		1 = { change_leader_portrait = GF_doll_282  set_leader_flag = leader_GF_rexzero1       set_name = NAME_rexzero1       }
+		1 = { change_leader_portrait = GF_doll_283  set_leader_flag = leader_GF_rfb            set_name = NAME_rfb            }
+		1 = { change_leader_portrait = GF_doll_284  set_leader_flag = leader_GF_rhino          set_name = NAME_rhino          }
+		1 = { change_leader_portrait = GF_doll_285  set_leader_flag = leader_GF_ribeyrolles    set_name = NAME_ribeyrolles    }
+		1 = { change_leader_portrait = GF_doll_286  set_leader_flag = leader_GF_rmb93          set_name = NAME_rmb93          }
+		1 = { change_leader_portrait = GF_doll_287  set_leader_flag = leader_GF_ro635          set_name = NAME_ro635          }
+		1 = { change_leader_portrait = GF_doll_288  set_leader_flag = leader_GF_rpd            set_name = NAME_rpd            }
+		1 = { change_leader_portrait = GF_doll_289  set_leader_flag = leader_GF_rpk16          set_name = NAME_rpk16          }
+		1 = { change_leader_portrait = GF_doll_290  set_leader_flag = leader_GF_rpk203         set_name = NAME_rpk203         }
+		1 = { change_leader_portrait = GF_doll_291  set_leader_flag = leader_GF_rt20           set_name = NAME_rt20           }
+		1 = { change_leader_portrait = GF_doll_292  set_leader_flag = leader_GF_sacr           set_name = NAME_sacr           }
+		1 = { change_leader_portrait = GF_doll_293  set_leader_flag = leader_GF_saf            set_name = NAME_saf            }
+		1 = { change_leader_portrait = GF_doll_294  set_leader_flag = leader_GF_saiga12        set_name = NAME_saiga12        }
+		1 = { change_leader_portrait = GF_doll_295  set_leader_flag = leader_GF_saiga308       set_name = NAME_saiga308       }
+		1 = { change_leader_portrait = GF_doll_296  set_leader_flag = leader_GF_sar21          set_name = NAME_sar21          }
+		1 = { change_leader_portrait = GF_doll_297  set_leader_flag = leader_GF_sat8           set_name = NAME_sat8           }
+		1 = { change_leader_portrait = GF_doll_298  set_leader_flag = leader_GF_savage99       set_name = NAME_savage99       }
+		1 = { change_leader_portrait = GF_doll_299  set_leader_flag = leader_GF_scarh          set_name = NAME_scarh          }
+		1 = { change_leader_portrait = GF_doll_300  set_leader_flag = leader_GF_scarl          set_name = NAME_scarl          }
+		1 = { change_leader_portrait = GF_doll_301  set_leader_flag = leader_GF_scout          set_name = NAME_scout          }
+		1 = { change_leader_portrait = GF_doll_302  set_leader_flag = leader_GF_scr            set_name = NAME_scr            }
+		1 = { change_leader_portrait = GF_doll_303  set_leader_flag = leader_GF_shipka         set_name = NAME_shipka         }
+		1 = { change_leader_portrait = GF_doll_304  set_leader_flag = leader_GF_sig510         set_name = NAME_sig510         }
+		1 = { change_leader_portrait = GF_doll_305  set_leader_flag = leader_GF_sig556         set_name = NAME_sig556         }
+		1 = { change_leader_portrait = GF_doll_306  set_leader_flag = leader_GF_sigmcx         set_name = NAME_sigmcx         }
+		1 = { change_leader_portrait = GF_doll_307  set_leader_flag = leader_GF_six12          set_name = NAME_six12          }
+		1 = { change_leader_portrait = GF_doll_308  set_leader_flag = leader_GF_sks            set_name = NAME_sks            }
+		1 = { change_leader_portrait = GF_doll_309  set_leader_flag = leader_GF_sl8            set_name = NAME_sl8            }
+		1 = { change_leader_portrait = GF_doll_310  set_leader_flag = leader_GF_sp9            set_name = NAME_sp9            }
+		1 = { change_leader_portrait = GF_doll_311  set_leader_flag = leader_GF_spas12         set_name = NAME_spas12         }
+		1 = { change_leader_portrait = GF_doll_312  set_leader_flag = leader_GF_spas15         set_name = NAME_spas15         }
+		1 = { change_leader_portrait = GF_doll_313  set_leader_flag = leader_GF_spectrem4      set_name = NAME_spectrem4      }
+		1 = { change_leader_portrait = GF_doll_314  set_leader_flag = leader_GF_spitfire       set_name = NAME_spitfire       }
+		1 = { change_leader_portrait = GF_doll_315  set_leader_flag = leader_GF_spp1           set_name = NAME_spp1           }
+		1 = { change_leader_portrait = GF_doll_316  set_leader_flag = leader_GF_sps            set_name = NAME_sps            }
+		1 = { change_leader_portrait = GF_doll_317  set_leader_flag = leader_GF_sr2            set_name = NAME_sr2            }
+		1 = { change_leader_portrait = GF_doll_318  set_leader_flag = leader_GF_sr3mp          set_name = NAME_sr3mp          }
+		1 = { change_leader_portrait = GF_doll_319  set_leader_flag = leader_GF_ssg3000        set_name = NAME_ssg3000        }
+		1 = { change_leader_portrait = GF_doll_320  set_leader_flag = leader_GF_ssg69          set_name = NAME_ssg69          }
+		1 = { change_leader_portrait = GF_doll_321  set_leader_flag = leader_GF_stenmk2        set_name = NAME_stenmk2        }
+		1 = { change_leader_portrait = GF_doll_322  set_leader_flag = leader_GF_sterling       set_name = NAME_sterling       }
+		1 = { change_leader_portrait = GF_doll_323  set_leader_flag = leader_GF_stg44          set_name = NAME_stg44          }
+		1 = { change_leader_portrait = GF_doll_324  set_leader_flag = leader_GF_stg940         set_name = NAME_stg940         }
+		1 = { change_leader_portrait = GF_doll_325  set_leader_flag = leader_GF_sub2000        set_name = NAME_sub2000        }
+		1 = { change_leader_portrait = GF_doll_326  set_leader_flag = leader_GF_supersass      set_name = NAME_supersass      }
+		1 = { change_leader_portrait = GF_doll_327  set_leader_flag = leader_GF_supershorty    set_name = NAME_supershorty    }
+		1 = { change_leader_portrait = GF_doll_328  set_leader_flag = leader_GF_sv98           set_name = NAME_sv98           }
+		1 = { change_leader_portrait = GF_doll_329  set_leader_flag = leader_GF_svch           set_name = NAME_svch           }
+		1 = { change_leader_portrait = GF_doll_330  set_leader_flag = leader_GF_svd            set_name = NAME_svd            }
+		1 = { change_leader_portrait = GF_doll_331  set_leader_flag = leader_GF_svt38          set_name = NAME_svt38          }
+		1 = { change_leader_portrait = GF_doll_332  set_leader_flag = leader_GF_t5000          set_name = NAME_t5000          }
+		1 = { change_leader_portrait = GF_doll_333  set_leader_flag = leader_GF_t65            set_name = NAME_t65            }
+		1 = { change_leader_portrait = GF_doll_334  set_leader_flag = leader_GF_t77            set_name = NAME_t77            }
+		1 = { change_leader_portrait = GF_doll_335  set_leader_flag = leader_GF_t91            set_name = NAME_t91            }
+		1 = { change_leader_portrait = GF_doll_336  set_leader_flag = leader_GF_tabuk          set_name = NAME_tabuk          }
+		1 = { change_leader_portrait = GF_doll_337  set_leader_flag = leader_GF_tac50          set_name = NAME_tac50          }
+		1 = { change_leader_portrait = GF_doll_338  set_leader_flag = leader_GF_tar21          set_name = NAME_tar21          }
+		1 = { change_leader_portrait = GF_doll_339  set_leader_flag = leader_GF_tavorts12      set_name = NAME_tavorts12      }
+		1 = { change_leader_portrait = GF_doll_340  set_leader_flag = leader_GF_tcms           set_name = NAME_tcms           }
+		1 = { change_leader_portrait = GF_doll_341  set_leader_flag = leader_GF_tec9           set_name = NAME_tec9           }
+		1 = { change_leader_portrait = GF_doll_342  set_leader_flag = leader_GF_tfq            set_name = NAME_tfq            }
+		1 = { change_leader_portrait = GF_doll_343  set_leader_flag = leader_GF_thunder50      set_name = NAME_thunder50      }
+		1 = { change_leader_portrait = GF_doll_344  set_leader_flag = leader_GF_tkb408         set_name = NAME_tkb408         }
+		1 = { change_leader_portrait = GF_doll_345  set_leader_flag = leader_GF_tmp            set_name = NAME_tmp            }
+		1 = { change_leader_portrait = GF_doll_346  set_leader_flag = leader_GF_tps            set_name = NAME_tps            }
+		1 = { change_leader_portrait = GF_doll_347  set_leader_flag = leader_GF_tt33           set_name = NAME_tt33           }
+		1 = { change_leader_portrait = GF_doll_348  set_leader_flag = leader_GF_type03         set_name = NAME_type03         }
+		1 = { change_leader_portrait = GF_doll_349  set_leader_flag = leader_GF_type100        set_name = NAME_type100        }
+		1 = { change_leader_portrait = GF_doll_350  set_leader_flag = leader_GF_type62         set_name = NAME_type62         }
+		1 = { change_leader_portrait = GF_doll_351  set_leader_flag = leader_GF_type64_ar      set_name = NAME_type64_ar      }
+		1 = { change_leader_portrait = GF_doll_352  set_leader_flag = leader_GF_type88         set_name = NAME_type88         }
+		1 = { change_leader_portrait = GF_doll_353  set_leader_flag = leader_GF_ukm2000        set_name = NAME_ukm2000        }
+		1 = { change_leader_portrait = GF_doll_354  set_leader_flag = leader_GF_ump40          set_name = NAME_ump40          }
+		1 = { change_leader_portrait = GF_doll_355  set_leader_flag = leader_GF_ump45          set_name = NAME_ump45          }
+		1 = { change_leader_portrait = GF_doll_356  set_leader_flag = leader_GF_ump9           set_name = NAME_ump9           }
+		1 = { change_leader_portrait = GF_doll_357  set_leader_flag = leader_GF_usas12         set_name = NAME_usas12         }
+		1 = { change_leader_portrait = GF_doll_358  set_leader_flag = leader_GF_uspcompact     set_name = NAME_uspcompact     }
+		1 = { change_leader_portrait = GF_doll_359  set_leader_flag = leader_GF_uts15          set_name = NAME_uts15          }
+		1 = { change_leader_portrait = GF_doll_360  set_leader_flag = leader_GF_vector         set_name = NAME_vector         }
+		1 = { change_leader_portrait = GF_doll_361  set_leader_flag = leader_GF_vepr           set_name = NAME_vepr           }
+		1 = { change_leader_portrait = GF_doll_362  set_leader_flag = leader_GF_vhs            set_name = NAME_vhs            }
+		1 = { change_leader_portrait = GF_doll_363  set_leader_flag = leader_GF_vigneronm2     set_name = NAME_vigneronm2     }
+		1 = { change_leader_portrait = GF_doll_364  set_leader_flag = leader_GF_vp1915         set_name = NAME_vp1915         }
+		1 = { change_leader_portrait = GF_doll_365  set_leader_flag = leader_GF_vp70           set_name = NAME_vp70           }
+		1 = { change_leader_portrait = GF_doll_366  set_leader_flag = leader_GF_vp9            set_name = NAME_vp9            }
+		1 = { change_leader_portrait = GF_doll_367  set_leader_flag = leader_GF_vpm5           set_name = NAME_vpm5           }
+		1 = { change_leader_portrait = GF_doll_368  set_leader_flag = leader_GF_vrb            set_name = NAME_vrb            }
+		1 = { change_leader_portrait = GF_doll_369  set_leader_flag = leader_GF_vsk            set_name = NAME_vsk            }
+		1 = { change_leader_portrait = GF_doll_370  set_leader_flag = leader_GF_vz61           set_name = NAME_vz61           }
+		1 = { change_leader_portrait = GF_doll_371  set_leader_flag = leader_GF_wa2000         set_name = NAME_wa2000         }
+		1 = { change_leader_portrait = GF_doll_372  set_leader_flag = leader_GF_webley         set_name = NAME_webley         }
+		1 = { change_leader_portrait = GF_doll_373  set_leader_flag = leader_GF_welrod         set_name = NAME_welrod         }
+		1 = { change_leader_portrait = GF_doll_374  set_leader_flag = leader_GF_wkp            set_name = NAME_wkp            }
+		1 = { change_leader_portrait = GF_doll_375  set_leader_flag = leader_GF_wz29           set_name = NAME_wz29           }
+		1 = { change_leader_portrait = GF_doll_376  set_leader_flag = leader_GF_x95            set_name = NAME_x95            }
+		1 = { change_leader_portrait = GF_doll_377  set_leader_flag = leader_GF_xm3            set_name = NAME_xm3            }
+		1 = { change_leader_portrait = GF_doll_378  set_leader_flag = leader_GF_xm8            set_name = NAME_xm8            }
+		1 = { change_leader_portrait = GF_doll_379  set_leader_flag = leader_GF_z62            set_name = NAME_z62            }
+		1 = { change_leader_portrait = GF_doll_380  set_leader_flag = leader_GF_zasm76         set_name = NAME_zasm76         }
+		1 = { change_leader_portrait = GF_doll_381  set_leader_flag = leader_GF_zastavam21     set_name = NAME_zastavam21     }
+		1 = { change_leader_portrait = GF_doll_382  set_leader_flag = leader_GF_zb26           set_name = NAME_zb26           }
+		1 = { change_leader_portrait = GF_doll_383  set_leader_flag = leader_GF_zip22          set_name = NAME_zip22          }
+	}
+}
+
+# scope = leader/envoy
+GF_correct_doll_leader_portrait_and_name = {
+	switch = {
+		trigger = has_leader_flag
+		leader_GF_06typesmg      = { change_leader_portrait = GF_doll_001  set_name = NAME_06typesmg      }
+		leader_GF_357            = { change_leader_portrait = GF_doll_002  set_name = NAME_357            }
+		leader_GF_4type          = { change_leader_portrait = GF_doll_003  set_name = NAME_4type          }
+		leader_GF_56_1type       = { change_leader_portrait = GF_doll_004  set_name = NAME_56_1type       }
+		leader_GF_56typer        = { change_leader_portrait = GF_doll_005  set_name = NAME_56typer        }
+		leader_GF_59type         = { change_leader_portrait = GF_doll_006  set_name = NAME_59type         }
+		leader_GF_63type         = { change_leader_portrait = GF_doll_007  set_name = NAME_63type         }
+		leader_GF_64type         = { change_leader_portrait = GF_doll_008  set_name = NAME_64type         }
+		leader_GF_6p62           = { change_leader_portrait = GF_doll_009  set_name = NAME_6p62           }
+		leader_GF_79type         = { change_leader_portrait = GF_doll_010  set_name = NAME_79type         }
+		leader_GF_80type         = { change_leader_portrait = GF_doll_011  set_name = NAME_80type         }
+		leader_GF_81typer        = { change_leader_portrait = GF_doll_012  set_name = NAME_81typer        }
+		leader_GF_88type         = { change_leader_portrait = GF_doll_013  set_name = NAME_88type         }
+		leader_GF_92type         = { change_leader_portrait = GF_doll_014  set_name = NAME_92type         }
+		leader_GF_95type         = { change_leader_portrait = GF_doll_015  set_name = NAME_95type         }
+		leader_GF_97type         = { change_leader_portrait = GF_doll_016  set_name = NAME_97type         }
+		leader_GF_97types        = { change_leader_portrait = GF_doll_017  set_name = NAME_97types        }
+		leader_GF_98k            = { change_leader_portrait = GF_doll_018  set_name = NAME_98k            }
+		leader_GF_9a91           = { change_leader_portrait = GF_doll_019  set_name = NAME_9a91           }
+		leader_GF_a545           = { change_leader_portrait = GF_doll_020  set_name = NAME_a545           }
+		leader_GF_a91            = { change_leader_portrait = GF_doll_021  set_name = NAME_a91            }
+		leader_GF_aa12           = { change_leader_portrait = GF_doll_022  set_name = NAME_aa12           }
+		leader_GF_aat52          = { change_leader_portrait = GF_doll_023  set_name = NAME_aat52          }
+		leader_GF_acr            = { change_leader_portrait = GF_doll_024  set_name = NAME_acr            }
+		leader_GF_ads            = { change_leader_portrait = GF_doll_025  set_name = NAME_ads            }
+		leader_GF_aek999         = { change_leader_portrait = GF_doll_026  set_name = NAME_aek999         }
+		leader_GF_ak12           = { change_leader_portrait = GF_doll_027  set_name = NAME_ak12           }
+		leader_GF_ak15           = { change_leader_portrait = GF_doll_028  set_name = NAME_ak15           }
+		leader_GF_ak47           = { change_leader_portrait = GF_doll_029  set_name = NAME_ak47           }
+		leader_GF_ak5            = { change_leader_portrait = GF_doll_030  set_name = NAME_ak5            }
+		leader_GF_ak74m          = { change_leader_portrait = GF_doll_031  set_name = NAME_ak74m          }
+		leader_GF_ak74u          = { change_leader_portrait = GF_doll_032  set_name = NAME_ak74u          }
+		leader_GF_akalfa         = { change_leader_portrait = GF_doll_033  set_name = NAME_akalfa         }
+		leader_GF_ameli          = { change_leader_portrait = GF_doll_034  set_name = NAME_ameli          }
+		leader_GF_an94           = { change_leader_portrait = GF_doll_035  set_name = NAME_an94           }
+		leader_GF_apc556         = { change_leader_portrait = GF_doll_036  set_name = NAME_apc556         }
+		leader_GF_apc9k          = { change_leader_portrait = GF_doll_037  set_name = NAME_apc9k          }
+		leader_GF_aps            = { change_leader_portrait = GF_doll_038  set_name = NAME_aps            }
+		leader_GF_ar             = { change_leader_portrait = GF_doll_039  set_name = NAME_ar             }
+		leader_GF_ar15           = { change_leader_portrait = GF_doll_040  set_name = NAME_ar15           }
+		leader_GF_ar18           = { change_leader_portrait = GF_doll_041  set_name = NAME_ar18           }
+		leader_GF_ar57           = { change_leader_portrait = GF_doll_042  set_name = NAME_ar57           }
+		leader_GF_ar70           = { change_leader_portrait = GF_doll_043  set_name = NAME_ar70           }
+		leader_GF_art556         = { change_leader_portrait = GF_doll_044  set_name = NAME_art556         }
+		leader_GF_arx160         = { change_leader_portrait = GF_doll_045  set_name = NAME_arx160         }
+		leader_GF_ash127         = { change_leader_portrait = GF_doll_046  set_name = NAME_ash127         }
+		leader_GF_asval          = { change_leader_portrait = GF_doll_047  set_name = NAME_asval          }
+		leader_GF_aug            = { change_leader_portrait = GF_doll_048  set_name = NAME_aug            }
+		leader_GF_augpara        = { change_leader_portrait = GF_doll_049  set_name = NAME_augpara        }
+		leader_GF_ballista       = { change_leader_portrait = GF_doll_050  set_name = NAME_ballista       }
+		leader_GF_bm59           = { change_leader_portrait = GF_doll_051  set_name = NAME_bm59           }
+		leader_GF_brenmk         = { change_leader_portrait = GF_doll_052  set_name = NAME_brenmk         }
+		leader_GF_brenten        = { change_leader_portrait = GF_doll_053  set_name = NAME_brenten        }
+		leader_GF_browninghp     = { change_leader_portrait = GF_doll_054  set_name = NAME_browninghp     }
+		leader_GF_c14            = { change_leader_portrait = GF_doll_055  set_name = NAME_c14            }
+		leader_GF_c93            = { change_leader_portrait = GF_doll_056  set_name = NAME_c93            }
+		leader_GF_c96            = { change_leader_portrait = GF_doll_057  set_name = NAME_c96            }
+		leader_GF_car            = { change_leader_portrait = GF_doll_058  set_name = NAME_car            }
+		leader_GF_carcano1891    = { change_leader_portrait = GF_doll_059  set_name = NAME_carcano1891    }
+		leader_GF_carcano1938    = { change_leader_portrait = GF_doll_060  set_name = NAME_carcano1938    }
+		leader_GF_cbjms          = { change_leader_portrait = GF_doll_061  set_name = NAME_cbjms          }
+		leader_GF_cetme556       = { change_leader_portrait = GF_doll_062  set_name = NAME_cetme556       }
+		leader_GF_chauchatm1915  = { change_leader_portrait = GF_doll_063  set_name = NAME_chauchatm1915  }
+		leader_GF_cmr30          = { change_leader_portrait = GF_doll_064  set_name = NAME_cmr30          }
+		leader_GF_coltdefender   = { change_leader_portrait = GF_doll_065  set_name = NAME_coltdefender   }
+		leader_GF_coltscw        = { change_leader_portrait = GF_doll_066  set_name = NAME_coltscw        }
+		leader_GF_coltwalker     = { change_leader_portrait = GF_doll_067  set_name = NAME_coltwalker     }
+		leader_GF_contender      = { change_leader_portrait = GF_doll_068  set_name = NAME_contender      }
+		leader_GF_cr21           = { change_leader_portrait = GF_doll_069  set_name = NAME_cr21           }
+		leader_GF_cx4storm       = { change_leader_portrait = GF_doll_070  set_name = NAME_cx4storm       }
+		leader_GF_cz100          = { change_leader_portrait = GF_doll_071  set_name = NAME_cz100          }
+		leader_GF_cz2000         = { change_leader_portrait = GF_doll_072  set_name = NAME_cz2000         }
+		leader_GF_cz52           = { change_leader_portrait = GF_doll_073  set_name = NAME_cz52           }
+		leader_GF_cz75           = { change_leader_portrait = GF_doll_074  set_name = NAME_cz75           }
+		leader_GF_cz805          = { change_leader_portrait = GF_doll_075  set_name = NAME_cz805          }
+		leader_GF_danuvia43m     = { change_leader_portrait = GF_doll_076  set_name = NAME_danuvia43m     }
+		leader_GF_delisle        = { change_leader_portrait = GF_doll_077  set_name = NAME_delisle        }
+		leader_GF_derringer      = { change_leader_portrait = GF_doll_078  set_name = NAME_derringer      }
+		leader_GF_deserteagle    = { change_leader_portrait = GF_doll_079  set_name = NAME_deserteagle    }
+		leader_GF_dp12           = { change_leader_portrait = GF_doll_080  set_name = NAME_dp12           }
+		leader_GF_dp28           = { change_leader_portrait = GF_doll_081  set_name = NAME_dp28           }
+		leader_GF_dsr50          = { change_leader_portrait = GF_doll_082  set_name = NAME_dsr50          }
+		leader_GF_dtasrs         = { change_leader_portrait = GF_doll_083  set_name = NAME_dtasrs         }
+		leader_GF_em2            = { change_leader_portrait = GF_doll_084  set_name = NAME_em2            }
+		leader_GF_erma           = { change_leader_portrait = GF_doll_085  set_name = NAME_erma           }
+		leader_GF_evo3           = { change_leader_portrait = GF_doll_086  set_name = NAME_evo3           }
+		leader_GF_f1             = { change_leader_portrait = GF_doll_087  set_name = NAME_f1             }
+		leader_GF_f2000          = { change_leader_portrait = GF_doll_088  set_name = NAME_f2000          }
+		leader_GF_falcon         = { change_leader_portrait = GF_doll_089  set_name = NAME_falcon         }
+		leader_GF_famas          = { change_leader_portrait = GF_doll_090  set_name = NAME_famas          }
+		leader_GF_fara83         = { change_leader_portrait = GF_doll_091  set_name = NAME_fara83         }
+		leader_GF_fedorov        = { change_leader_portrait = GF_doll_092  set_name = NAME_fedorov        }
+		leader_GF_fg42           = { change_leader_portrait = GF_doll_093  set_name = NAME_fg42           }
+		leader_GF_fmg9           = { change_leader_portrait = GF_doll_094  set_name = NAME_fmg9           }
+		leader_GF_fn49           = { change_leader_portrait = GF_doll_095  set_name = NAME_fn49           }
+		leader_GF_fn57           = { change_leader_portrait = GF_doll_096  set_name = NAME_fn57           }
+		leader_GF_fnfal          = { change_leader_portrait = GF_doll_097  set_name = NAME_fnfal          }
+		leader_GF_fnfnc          = { change_leader_portrait = GF_doll_098  set_name = NAME_fnfnc          }
+		leader_GF_fnp9           = { change_leader_portrait = GF_doll_099  set_name = NAME_fnp9           }
+		leader_GF_fnspr          = { change_leader_portrait = GF_doll_100  set_name = NAME_fnspr          }
+		leader_GF_fo12           = { change_leader_portrait = GF_doll_101  set_name = NAME_fo12           }
+		leader_GF_fp6            = { change_leader_portrait = GF_doll_102  set_name = NAME_fp6            }
+		leader_GF_fx05           = { change_leader_portrait = GF_doll_103  set_name = NAME_fx05           }
+		leader_GF_g11            = { change_leader_portrait = GF_doll_104  set_name = NAME_g11            }
+		leader_GF_g28            = { change_leader_portrait = GF_doll_105  set_name = NAME_g28            }
+		leader_GF_g3             = { change_leader_portrait = GF_doll_106  set_name = NAME_g3             }
+		leader_GF_g36            = { change_leader_portrait = GF_doll_107  set_name = NAME_g36            }
+		leader_GF_g36c           = { change_leader_portrait = GF_doll_108  set_name = NAME_g36c           }
+		leader_GF_g41            = { change_leader_portrait = GF_doll_109  set_name = NAME_g41            }
+		leader_GF_g43            = { change_leader_portrait = GF_doll_110  set_name = NAME_g43            }
+		leader_GF_generalliu     = { change_leader_portrait = GF_doll_111  set_name = NAME_generalliu     }
+		leader_GF_gepardm1       = { change_leader_portrait = GF_doll_112  set_name = NAME_gepardm1       }
+		leader_GF_glock17        = { change_leader_portrait = GF_doll_113  set_name = NAME_glock17        }
+		leader_GF_gm6lynx        = { change_leader_portrait = GF_doll_114  set_name = NAME_gm6lynx        }
+		leader_GF_grizzly        = { change_leader_portrait = GF_doll_115  set_name = NAME_grizzly        }
+		leader_GF_gsh18          = { change_leader_portrait = GF_doll_116  set_name = NAME_gsh18          }
+		leader_GF_hezism1        = { change_leader_portrait = GF_doll_117  set_name = NAME_hezism1        }
+		leader_GF_hk21           = { change_leader_portrait = GF_doll_118  set_name = NAME_hk21           }
+		leader_GF_hk23           = { change_leader_portrait = GF_doll_119  set_name = NAME_hk23           }
+		leader_GF_hk33           = { change_leader_portrait = GF_doll_120  set_name = NAME_hk33           }
+		leader_GF_hk416          = { change_leader_portrait = GF_doll_121  set_name = NAME_hk416          }
+		leader_GF_hk45           = { change_leader_portrait = GF_doll_122  set_name = NAME_hk45           }
+		leader_GF_hk512          = { change_leader_portrait = GF_doll_123  set_name = NAME_hk512          }
+		leader_GF_hkcaws         = { change_leader_portrait = GF_doll_124  set_name = NAME_hkcaws         }
+		leader_GF_howatype89     = { change_leader_portrait = GF_doll_125  set_name = NAME_howatype89     }
+		leader_GF_hs2000         = { change_leader_portrait = GF_doll_126  set_name = NAME_hs2000         }
+		leader_GF_hs50           = { change_leader_portrait = GF_doll_127  set_name = NAME_hs50           }
+		leader_GF_hsm10          = { change_leader_portrait = GF_doll_128  set_name = NAME_hsm10          }
+		leader_GF_idw            = { change_leader_portrait = GF_doll_129  set_name = NAME_idw            }
+		leader_GF_insas          = { change_leader_portrait = GF_doll_130  set_name = NAME_insas          }
+		leader_GF_ithaca37       = { change_leader_portrait = GF_doll_131  set_name = NAME_ithaca37       }
+		leader_GF_iws2000        = { change_leader_portrait = GF_doll_132  set_name = NAME_iws2000        }
+		leader_GF_jatimatic      = { change_leader_portrait = GF_doll_133  set_name = NAME_jatimatic      }
+		leader_GF_jericho        = { change_leader_portrait = GF_doll_134  set_name = NAME_jericho        }
+		leader_GF_js_127         = { change_leader_portrait = GF_doll_135  set_name = NAME_js_127         }
+		leader_GF_js9mm          = { change_leader_portrait = GF_doll_136  set_name = NAME_js9mm          }
+		leader_GF_k11            = { change_leader_portrait = GF_doll_137  set_name = NAME_k11            }
+		leader_GF_k2             = { change_leader_portrait = GF_doll_138  set_name = NAME_k2             }
+		leader_GF_k3             = { change_leader_portrait = GF_doll_139  set_name = NAME_k3             }
+		leader_GF_k31            = { change_leader_portrait = GF_doll_140  set_name = NAME_k31            }
+		leader_GF_k5             = { change_leader_portrait = GF_doll_141  set_name = NAME_k5             }
+		leader_GF_k7             = { change_leader_portrait = GF_doll_142  set_name = NAME_k7             }
+		leader_GF_kac            = { change_leader_portrait = GF_doll_143  set_name = NAME_kac            }
+		leader_GF_kgp9           = { change_leader_portrait = GF_doll_144  set_name = NAME_kgp9           }
+		leader_GF_kh2002         = { change_leader_portrait = GF_doll_145  set_name = NAME_kh2002         }
+		leader_GF_klin           = { change_leader_portrait = GF_doll_146  set_name = NAME_klin           }
+		leader_GF_kolibri        = { change_leader_portrait = GF_doll_147  set_name = NAME_kolibri        }
+		leader_GF_kord           = { change_leader_portrait = GF_doll_148  set_name = NAME_kord           }
+		leader_GF_kp31           = { change_leader_portrait = GF_doll_149  set_name = NAME_kp31           }
+		leader_GF_ks23           = { change_leader_portrait = GF_doll_150  set_name = NAME_ks23           }
+		leader_GF_ksg            = { change_leader_portrait = GF_doll_151  set_name = NAME_ksg            }
+		leader_GF_ksvk           = { change_leader_portrait = GF_doll_152  set_name = NAME_ksvk           }
+		leader_GF_l85a1          = { change_leader_portrait = GF_doll_153  set_name = NAME_l85a1          }
+		leader_GF_lamg           = { change_leader_portrait = GF_doll_154  set_name = NAME_lamg           }
+		leader_GF_lewis          = { change_leader_portrait = GF_doll_155  set_name = NAME_lewis          }
+		leader_GF_liberator      = { change_leader_portrait = GF_doll_156  set_name = NAME_liberator      }
+		leader_GF_ls26           = { change_leader_portrait = GF_doll_157  set_name = NAME_ls26           }
+		leader_GF_ltlx7000       = { change_leader_portrait = GF_doll_158  set_name = NAME_ltlx7000       }
+		leader_GF_lusa           = { change_leader_portrait = GF_doll_159  set_name = NAME_lusa           }
+		leader_GF_lwmmg          = { change_leader_portrait = GF_doll_160  set_name = NAME_lwmmg          }
+		leader_GF_m1             = { change_leader_portrait = GF_doll_161  set_name = NAME_m1             }
+		leader_GF_m1014          = { change_leader_portrait = GF_doll_162  set_name = NAME_m1014          }
+		leader_GF_m110           = { change_leader_portrait = GF_doll_163  set_name = NAME_m110           }
+		leader_GF_m12            = { change_leader_portrait = GF_doll_164  set_name = NAME_m12            }
+		leader_GF_m14            = { change_leader_portrait = GF_doll_165  set_name = NAME_m14            }
+		leader_GF_m16a1          = { change_leader_portrait = GF_doll_166  set_name = NAME_m16a1          }
+		leader_GF_m1873          = { change_leader_portrait = GF_doll_167  set_name = NAME_m1873          }
+		leader_GF_m1887          = { change_leader_portrait = GF_doll_168  set_name = NAME_m1887          }
+		leader_GF_m1891          = { change_leader_portrait = GF_doll_169  set_name = NAME_m1891          }
+		leader_GF_m1895          = { change_leader_portrait = GF_doll_170  set_name = NAME_m1895          }
+		leader_GF_m1895mg        = { change_leader_portrait = GF_doll_171  set_name = NAME_m1895mg        }
+		leader_GF_m1897          = { change_leader_portrait = GF_doll_172  set_name = NAME_m1897          }
+		leader_GF_m1903          = { change_leader_portrait = GF_doll_173  set_name = NAME_m1903          }
+		leader_GF_m1911          = { change_leader_portrait = GF_doll_174  set_name = NAME_m1911          }
+		leader_GF_m1918          = { change_leader_portrait = GF_doll_175  set_name = NAME_m1918          }
+		leader_GF_m1919a4        = { change_leader_portrait = GF_doll_176  set_name = NAME_m1919a4        }
+		leader_GF_m1928a1        = { change_leader_portrait = GF_doll_177  set_name = NAME_m1928a1        }
+		leader_GF_m1a1           = { change_leader_portrait = GF_doll_178  set_name = NAME_m1a1           }
+		leader_GF_m200           = { change_leader_portrait = GF_doll_179  set_name = NAME_m200           }
+		leader_GF_m21            = { change_leader_portrait = GF_doll_180  set_name = NAME_m21            }
+		leader_GF_m240l          = { change_leader_portrait = GF_doll_181  set_name = NAME_m240l          }
+		leader_GF_m249saw        = { change_leader_portrait = GF_doll_182  set_name = NAME_m249saw        }
+		leader_GF_m26mass        = { change_leader_portrait = GF_doll_183  set_name = NAME_m26mass        }
+		leader_GF_m2hb           = { change_leader_portrait = GF_doll_184  set_name = NAME_m2hb           }
+		leader_GF_m3             = { change_leader_portrait = GF_doll_185  set_name = NAME_m3             }
+		leader_GF_m327           = { change_leader_portrait = GF_doll_186  set_name = NAME_m327           }
+		leader_GF_m4_sopmod_ii   = { change_leader_portrait = GF_doll_187  set_name = NAME_m4_sopmod_ii   }
+		leader_GF_m45            = { change_leader_portrait = GF_doll_188  set_name = NAME_m45            }
+		leader_GF_m4a1           = { change_leader_portrait = GF_doll_189  set_name = NAME_m4a1           }
+		leader_GF_m500           = { change_leader_portrait = GF_doll_190  set_name = NAME_m500           }
+		leader_GF_m590           = { change_leader_portrait = GF_doll_191  set_name = NAME_m590           }
+		leader_GF_m60            = { change_leader_portrait = GF_doll_192  set_name = NAME_m60            }
+		leader_GF_m6asw          = { change_leader_portrait = GF_doll_193  set_name = NAME_m6asw          }
+		leader_GF_m82            = { change_leader_portrait = GF_doll_194  set_name = NAME_m82            }
+		leader_GF_m82a1          = { change_leader_portrait = GF_doll_195  set_name = NAME_m82a1          }
+		leader_GF_m870p          = { change_leader_portrait = GF_doll_196  set_name = NAME_m870p          }
+		leader_GF_m9             = { change_leader_portrait = GF_doll_197  set_name = NAME_m9             }
+		leader_GF_m950a          = { change_leader_portrait = GF_doll_198  set_name = NAME_m950a          }
+		leader_GF_m99            = { change_leader_portrait = GF_doll_199  set_name = NAME_m99            }
+		leader_GF_mab38          = { change_leader_portrait = GF_doll_200  set_name = NAME_mab38          }
+		leader_GF_mac10          = { change_leader_portrait = GF_doll_201  set_name = NAME_mac10          }
+		leader_GF_mag7           = { change_leader_portrait = GF_doll_202  set_name = NAME_mag7           }
+		leader_GF_magal          = { change_leader_portrait = GF_doll_203  set_name = NAME_magal          }
+		leader_GF_mas38          = { change_leader_portrait = GF_doll_204  set_name = NAME_mas38          }
+		leader_GF_mat49          = { change_leader_portrait = GF_doll_205  set_name = NAME_mat49          }
+		leader_GF_mdr            = { change_leader_portrait = GF_doll_206  set_name = NAME_mdr            }
+		leader_GF_mg3            = { change_leader_portrait = GF_doll_207  set_name = NAME_mg3            }
+		leader_GF_mg338          = { change_leader_portrait = GF_doll_208  set_name = NAME_mg338          }
+		leader_GF_mg34           = { change_leader_portrait = GF_doll_209  set_name = NAME_mg34           }
+		leader_GF_mg36           = { change_leader_portrait = GF_doll_210  set_name = NAME_mg36           }
+		leader_GF_mg4            = { change_leader_portrait = GF_doll_211  set_name = NAME_mg4            }
+		leader_GF_mg42           = { change_leader_portrait = GF_doll_212  set_name = NAME_mg42           }
+		leader_GF_mg5            = { change_leader_portrait = GF_doll_213  set_name = NAME_mg5            }
+		leader_GF_microuzi       = { change_leader_portrait = GF_doll_214  set_name = NAME_microuzi       }
+		leader_GF_mk12           = { change_leader_portrait = GF_doll_215  set_name = NAME_mk12           }
+		leader_GF_mk23           = { change_leader_portrait = GF_doll_216  set_name = NAME_mk23           }
+		leader_GF_mk3a1          = { change_leader_portrait = GF_doll_217  set_name = NAME_mk3a1          }
+		leader_GF_mk46           = { change_leader_portrait = GF_doll_218  set_name = NAME_mk46           }
+		leader_GF_mk48           = { change_leader_portrait = GF_doll_219  set_name = NAME_mk48           }
+		leader_GF_mlemk1         = { change_leader_portrait = GF_doll_220  set_name = NAME_mlemk1         }
+		leader_GF_mondragonm1908 = { change_leader_portrait = GF_doll_221  set_name = NAME_mondragonm1908 }
+		leader_GF_mp40           = { change_leader_portrait = GF_doll_222  set_name = NAME_mp40           }
+		leader_GF_mp41           = { change_leader_portrait = GF_doll_223  set_name = NAME_mp41           }
+		leader_GF_mp443          = { change_leader_portrait = GF_doll_224  set_name = NAME_mp443          }
+		leader_GF_mp446          = { change_leader_portrait = GF_doll_225  set_name = NAME_mp446          }
+		leader_GF_mp448          = { change_leader_portrait = GF_doll_226  set_name = NAME_mp448          }
+		leader_GF_mp5            = { change_leader_portrait = GF_doll_227  set_name = NAME_mp5            }
+		leader_GF_mp7            = { change_leader_portrait = GF_doll_228  set_name = NAME_mp7            }
+		leader_GF_mpk            = { change_leader_portrait = GF_doll_229  set_name = NAME_mpk            }
+		leader_GF_mpl            = { change_leader_portrait = GF_doll_230  set_name = NAME_mpl            }
+		leader_GF_msbs           = { change_leader_portrait = GF_doll_231  set_name = NAME_msbs           }
+		leader_GF_mt9            = { change_leader_portrait = GF_doll_232  set_name = NAME_mt9            }
+		leader_GF_negev          = { change_leader_portrait = GF_doll_233  set_name = NAME_negev          }
+		leader_GF_nova           = { change_leader_portrait = GF_doll_234  set_name = NAME_nova           }
+		leader_GF_ns2000         = { change_leader_portrait = GF_doll_235  set_name = NAME_ns2000         }
+		leader_GF_ntw20          = { change_leader_portrait = GF_doll_236  set_name = NAME_ntw20          }
+		leader_GF_nz75           = { change_leader_portrait = GF_doll_237  set_name = NAME_nz75           }
+		leader_GF_obr            = { change_leader_portrait = GF_doll_238  set_name = NAME_obr            }
+		leader_GF_oc44           = { change_leader_portrait = GF_doll_239  set_name = NAME_oc44           }
+		leader_GF_ots12          = { change_leader_portrait = GF_doll_240  set_name = NAME_ots12          }
+		leader_GF_ots14          = { change_leader_portrait = GF_doll_241  set_name = NAME_ots14          }
+		leader_GF_ots39          = { change_leader_portrait = GF_doll_242  set_name = NAME_ots39          }
+		leader_GF_p08            = { change_leader_portrait = GF_doll_243  set_name = NAME_p08            }
+		leader_GF_p10c           = { change_leader_portrait = GF_doll_244  set_name = NAME_p10c           }
+		leader_GF_p22            = { change_leader_portrait = GF_doll_245  set_name = NAME_p22            }
+		leader_GF_p226           = { change_leader_portrait = GF_doll_246  set_name = NAME_p226           }
+		leader_GF_p290           = { change_leader_portrait = GF_doll_247  set_name = NAME_p290           }
+		leader_GF_p30            = { change_leader_portrait = GF_doll_248  set_name = NAME_p30            }
+		leader_GF_p38            = { change_leader_portrait = GF_doll_249  set_name = NAME_p38            }
+		leader_GF_p7             = { change_leader_portrait = GF_doll_250  set_name = NAME_p7             }
+		leader_GF_p90            = { change_leader_portrait = GF_doll_251  set_name = NAME_p90            }
+		leader_GF_p99            = { change_leader_portrait = GF_doll_252  set_name = NAME_p99            }
+		leader_GF_pa15           = { change_leader_portrait = GF_doll_253  set_name = NAME_pa15           }
+		leader_GF_pdw            = { change_leader_portrait = GF_doll_254  set_name = NAME_pdw            }
+		leader_GF_pk             = { change_leader_portrait = GF_doll_255  set_name = NAME_pk             }
+		leader_GF_pkp            = { change_leader_portrait = GF_doll_256  set_name = NAME_pkp            }
+		leader_GF_pm             = { change_leader_portrait = GF_doll_257  set_name = NAME_pm             }
+		leader_GF_pm06           = { change_leader_portrait = GF_doll_258  set_name = NAME_pm06           }
+		leader_GF_pm1910         = { change_leader_portrait = GF_doll_259  set_name = NAME_pm1910         }
+		leader_GF_pm9            = { change_leader_portrait = GF_doll_260  set_name = NAME_pm9            }
+		leader_GF_pp19           = { change_leader_portrait = GF_doll_261  set_name = NAME_pp19           }
+		leader_GF_pp1901         = { change_leader_portrait = GF_doll_262  set_name = NAME_pp1901         }
+		leader_GF_pp2000         = { change_leader_portrait = GF_doll_263  set_name = NAME_pp2000         }
+		leader_GF_pp90           = { change_leader_portrait = GF_doll_264  set_name = NAME_pp90           }
+		leader_GF_ppd40          = { change_leader_portrait = GF_doll_265  set_name = NAME_ppd40          }
+		leader_GF_ppk            = { change_leader_portrait = GF_doll_266  set_name = NAME_ppk            }
+		leader_GF_ppq            = { change_leader_portrait = GF_doll_267  set_name = NAME_ppq            }
+		leader_GF_pps43          = { change_leader_portrait = GF_doll_268  set_name = NAME_pps43          }
+		leader_GF_ppsh41         = { change_leader_portrait = GF_doll_269  set_name = NAME_ppsh41         }
+		leader_GF_psg1           = { change_leader_portrait = GF_doll_270  set_name = NAME_psg1           }
+		leader_GF_psm            = { change_leader_portrait = GF_doll_271  set_name = NAME_psm            }
+		leader_GF_ptrd           = { change_leader_portrait = GF_doll_272  set_name = NAME_ptrd           }
+		leader_GF_px4storm       = { change_leader_portrait = GF_doll_273  set_name = NAME_px4storm       }
+		leader_GF_python         = { change_leader_portrait = GF_doll_274  set_name = NAME_python         }
+		leader_GF_pzb39          = { change_leader_portrait = GF_doll_275  set_name = NAME_pzb39          }
+		leader_GF_qbu_191        = { change_leader_portrait = GF_doll_276  set_name = NAME_qbu_191        }
+		leader_GF_qbu88          = { change_leader_portrait = GF_doll_277  set_name = NAME_qbu88          }
+		leader_GF_qbz191         = { change_leader_portrait = GF_doll_278  set_name = NAME_qbz191         }
+		leader_GF_qsb91          = { change_leader_portrait = GF_doll_279  set_name = NAME_qsb91          }
+		leader_GF_r5rgp          = { change_leader_portrait = GF_doll_280  set_name = NAME_r5rgp          }
+		leader_GF_r93            = { change_leader_portrait = GF_doll_281  set_name = NAME_r93            }
+		leader_GF_rexzero1       = { change_leader_portrait = GF_doll_282  set_name = NAME_rexzero1       }
+		leader_GF_rfb            = { change_leader_portrait = GF_doll_283  set_name = NAME_rfb            }
+		leader_GF_rhino          = { change_leader_portrait = GF_doll_284  set_name = NAME_rhino          }
+		leader_GF_ribeyrolles    = { change_leader_portrait = GF_doll_285  set_name = NAME_ribeyrolles    }
+		leader_GF_rmb93          = { change_leader_portrait = GF_doll_286  set_name = NAME_rmb93          }
+		leader_GF_ro635          = { change_leader_portrait = GF_doll_287  set_name = NAME_ro635          }
+		leader_GF_rpd            = { change_leader_portrait = GF_doll_288  set_name = NAME_rpd            }
+		leader_GF_rpk16          = { change_leader_portrait = GF_doll_289  set_name = NAME_rpk16          }
+		leader_GF_rpk203         = { change_leader_portrait = GF_doll_290  set_name = NAME_rpk203         }
+		leader_GF_rt20           = { change_leader_portrait = GF_doll_291  set_name = NAME_rt20           }
+		leader_GF_sacr           = { change_leader_portrait = GF_doll_292  set_name = NAME_sacr           }
+		leader_GF_saf            = { change_leader_portrait = GF_doll_293  set_name = NAME_saf            }
+		leader_GF_saiga12        = { change_leader_portrait = GF_doll_294  set_name = NAME_saiga12        }
+		leader_GF_saiga308       = { change_leader_portrait = GF_doll_295  set_name = NAME_saiga308       }
+		leader_GF_sar21          = { change_leader_portrait = GF_doll_296  set_name = NAME_sar21          }
+		leader_GF_sat8           = { change_leader_portrait = GF_doll_297  set_name = NAME_sat8           }
+		leader_GF_savage99       = { change_leader_portrait = GF_doll_298  set_name = NAME_savage99       }
+		leader_GF_scarh          = { change_leader_portrait = GF_doll_299  set_name = NAME_scarh          }
+		leader_GF_scarl          = { change_leader_portrait = GF_doll_300  set_name = NAME_scarl          }
+		leader_GF_scout          = { change_leader_portrait = GF_doll_301  set_name = NAME_scout          }
+		leader_GF_scr            = { change_leader_portrait = GF_doll_302  set_name = NAME_scr            }
+		leader_GF_shipka         = { change_leader_portrait = GF_doll_303  set_name = NAME_shipka         }
+		leader_GF_sig510         = { change_leader_portrait = GF_doll_304  set_name = NAME_sig510         }
+		leader_GF_sig556         = { change_leader_portrait = GF_doll_305  set_name = NAME_sig556         }
+		leader_GF_sigmcx         = { change_leader_portrait = GF_doll_306  set_name = NAME_sigmcx         }
+		leader_GF_six12          = { change_leader_portrait = GF_doll_307  set_name = NAME_six12          }
+		leader_GF_sks            = { change_leader_portrait = GF_doll_308  set_name = NAME_sks            }
+		leader_GF_sl8            = { change_leader_portrait = GF_doll_309  set_name = NAME_sl8            }
+		leader_GF_sp9            = { change_leader_portrait = GF_doll_310  set_name = NAME_sp9            }
+		leader_GF_spas12         = { change_leader_portrait = GF_doll_311  set_name = NAME_spas12         }
+		leader_GF_spas15         = { change_leader_portrait = GF_doll_312  set_name = NAME_spas15         }
+		leader_GF_spectrem4      = { change_leader_portrait = GF_doll_313  set_name = NAME_spectrem4      }
+		leader_GF_spitfire       = { change_leader_portrait = GF_doll_314  set_name = NAME_spitfire       }
+		leader_GF_spp1           = { change_leader_portrait = GF_doll_315  set_name = NAME_spp1           }
+		leader_GF_sps            = { change_leader_portrait = GF_doll_316  set_name = NAME_sps            }
+		leader_GF_sr2            = { change_leader_portrait = GF_doll_317  set_name = NAME_sr2            }
+		leader_GF_sr3mp          = { change_leader_portrait = GF_doll_318  set_name = NAME_sr3mp          }
+		leader_GF_ssg3000        = { change_leader_portrait = GF_doll_319  set_name = NAME_ssg3000        }
+		leader_GF_ssg69          = { change_leader_portrait = GF_doll_320  set_name = NAME_ssg69          }
+		leader_GF_stenmk2        = { change_leader_portrait = GF_doll_321  set_name = NAME_stenmk2        }
+		leader_GF_sterling       = { change_leader_portrait = GF_doll_322  set_name = NAME_sterling       }
+		leader_GF_stg44          = { change_leader_portrait = GF_doll_323  set_name = NAME_stg44          }
+		leader_GF_stg940         = { change_leader_portrait = GF_doll_324  set_name = NAME_stg940         }
+		leader_GF_sub2000        = { change_leader_portrait = GF_doll_325  set_name = NAME_sub2000        }
+		leader_GF_supersass      = { change_leader_portrait = GF_doll_326  set_name = NAME_supersass      }
+		leader_GF_supershorty    = { change_leader_portrait = GF_doll_327  set_name = NAME_supershorty    }
+		leader_GF_sv98           = { change_leader_portrait = GF_doll_328  set_name = NAME_sv98           }
+		leader_GF_svch           = { change_leader_portrait = GF_doll_329  set_name = NAME_svch           }
+		leader_GF_svd            = { change_leader_portrait = GF_doll_330  set_name = NAME_svd            }
+		leader_GF_svt38          = { change_leader_portrait = GF_doll_331  set_name = NAME_svt38          }
+		leader_GF_t5000          = { change_leader_portrait = GF_doll_332  set_name = NAME_t5000          }
+		leader_GF_t65            = { change_leader_portrait = GF_doll_333  set_name = NAME_t65            }
+		leader_GF_t77            = { change_leader_portrait = GF_doll_334  set_name = NAME_t77            }
+		leader_GF_t91            = { change_leader_portrait = GF_doll_335  set_name = NAME_t91            }
+		leader_GF_tabuk          = { change_leader_portrait = GF_doll_336  set_name = NAME_tabuk          }
+		leader_GF_tac50          = { change_leader_portrait = GF_doll_337  set_name = NAME_tac50          }
+		leader_GF_tar21          = { change_leader_portrait = GF_doll_338  set_name = NAME_tar21          }
+		leader_GF_tavorts12      = { change_leader_portrait = GF_doll_339  set_name = NAME_tavorts12      }
+		leader_GF_tcms           = { change_leader_portrait = GF_doll_340  set_name = NAME_tcms           }
+		leader_GF_tec9           = { change_leader_portrait = GF_doll_341  set_name = NAME_tec9           }
+		leader_GF_tfq            = { change_leader_portrait = GF_doll_342  set_name = NAME_tfq            }
+		leader_GF_thunder50      = { change_leader_portrait = GF_doll_343  set_name = NAME_thunder50      }
+		leader_GF_tkb408         = { change_leader_portrait = GF_doll_344  set_name = NAME_tkb408         }
+		leader_GF_tmp            = { change_leader_portrait = GF_doll_345  set_name = NAME_tmp            }
+		leader_GF_tps            = { change_leader_portrait = GF_doll_346  set_name = NAME_tps            }
+		leader_GF_tt33           = { change_leader_portrait = GF_doll_347  set_name = NAME_tt33           }
+		leader_GF_type03         = { change_leader_portrait = GF_doll_348  set_name = NAME_type03         }
+		leader_GF_type100        = { change_leader_portrait = GF_doll_349  set_name = NAME_type100        }
+		leader_GF_type62         = { change_leader_portrait = GF_doll_350  set_name = NAME_type62         }
+		leader_GF_type64_ar      = { change_leader_portrait = GF_doll_351  set_name = NAME_type64_ar      }
+		leader_GF_type88         = { change_leader_portrait = GF_doll_352  set_name = NAME_type88         }
+		leader_GF_ukm2000        = { change_leader_portrait = GF_doll_353  set_name = NAME_ukm2000        }
+		leader_GF_ump40          = { change_leader_portrait = GF_doll_354  set_name = NAME_ump40          }
+		leader_GF_ump45          = { change_leader_portrait = GF_doll_355  set_name = NAME_ump45          }
+		leader_GF_ump9           = { change_leader_portrait = GF_doll_356  set_name = NAME_ump9           }
+		leader_GF_usas12         = { change_leader_portrait = GF_doll_357  set_name = NAME_usas12         }
+		leader_GF_uspcompact     = { change_leader_portrait = GF_doll_358  set_name = NAME_uspcompact     }
+		leader_GF_uts15          = { change_leader_portrait = GF_doll_359  set_name = NAME_uts15          }
+		leader_GF_vector         = { change_leader_portrait = GF_doll_360  set_name = NAME_vector         }
+		leader_GF_vepr           = { change_leader_portrait = GF_doll_361  set_name = NAME_vepr           }
+		leader_GF_vhs            = { change_leader_portrait = GF_doll_362  set_name = NAME_vhs            }
+		leader_GF_vigneronm2     = { change_leader_portrait = GF_doll_363  set_name = NAME_vigneronm2     }
+		leader_GF_vp1915         = { change_leader_portrait = GF_doll_364  set_name = NAME_vp1915         }
+		leader_GF_vp70           = { change_leader_portrait = GF_doll_365  set_name = NAME_vp70           }
+		leader_GF_vp9            = { change_leader_portrait = GF_doll_366  set_name = NAME_vp9            }
+		leader_GF_vpm5           = { change_leader_portrait = GF_doll_367  set_name = NAME_vpm5           }
+		leader_GF_vrb            = { change_leader_portrait = GF_doll_368  set_name = NAME_vrb            }
+		leader_GF_vsk            = { change_leader_portrait = GF_doll_369  set_name = NAME_vsk            }
+		leader_GF_vz61           = { change_leader_portrait = GF_doll_370  set_name = NAME_vz61           }
+		leader_GF_wa2000         = { change_leader_portrait = GF_doll_371  set_name = NAME_wa2000         }
+		leader_GF_webley         = { change_leader_portrait = GF_doll_372  set_name = NAME_webley         }
+		leader_GF_welrod         = { change_leader_portrait = GF_doll_373  set_name = NAME_welrod         }
+		leader_GF_wkp            = { change_leader_portrait = GF_doll_374  set_name = NAME_wkp            }
+		leader_GF_wz29           = { change_leader_portrait = GF_doll_375  set_name = NAME_wz29           }
+		leader_GF_x95            = { change_leader_portrait = GF_doll_376  set_name = NAME_x95            }
+		leader_GF_xm3            = { change_leader_portrait = GF_doll_377  set_name = NAME_xm3            }
+		leader_GF_xm8            = { change_leader_portrait = GF_doll_378  set_name = NAME_xm8            }
+		leader_GF_z62            = { change_leader_portrait = GF_doll_379  set_name = NAME_z62            }
+		leader_GF_zasm76         = { change_leader_portrait = GF_doll_380  set_name = NAME_zasm76         }
+		leader_GF_zastavam21     = { change_leader_portrait = GF_doll_381  set_name = NAME_zastavam21     }
+		leader_GF_zb26           = { change_leader_portrait = GF_doll_382  set_name = NAME_zb26           }
+		leader_GF_zip22          = { change_leader_portrait = GF_doll_383  set_name = NAME_zip22          }
+	}
+}

@@ -326,15 +326,6 @@ GF_leader_has_core_glitch = {
 	}
 }
 
-# scope = leader
-GF_is_doll_leader = {
-	NOR = {
-		has_leader_flag = flag_GF_ogas_leader
-		has_leader_flag = GF_OGAS_subnet_leader_@owner
-	}
-	species = { has_trait = GF_trait_doll }
-}
-
 # scope = country
 GF_should_country_has_collapse_liquid_deficit_debuff = {
 	OR = {
