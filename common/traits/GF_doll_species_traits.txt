@@ -17,7 +17,7 @@ GF_trait_delicious_food = {
 	icon="gfx/interface/icons/traits/doll/food.dds"
 	modifier = {
 		pop_happiness = 0.20
-		planet_pops_robotics_food_upkeep_mult = 0.25
+		planet_pops_robotics_food_upkeep_mult = 1.0
 	}
 }
 GF_trait_doll_expand = {
@@ -151,7 +151,6 @@ GF_trait_mind_cloud = {
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
-	improves_leaders = yes
 	icon = "gfx/interface/icons/traits/doll/mindcloud.dds"
 	species_potential_add = {
 		exists = from
@@ -161,7 +160,7 @@ GF_trait_mind_cloud = {
 	}
 	modifier = {
 		species_leader_exp_gain = 0.25
-		leader_skill_levels = 2
+		negative_leader_traits_species = -2
 	}
 }
 GF_trait_tacticalchip = {
@@ -210,7 +209,6 @@ GF_trait_sercurity_program = {
 	randomized = no
 	
 	icon = "gfx/interface/icons/traits/doll/defense.dds"
-	improves_leaders = yes
 	species_potential_add = {
 		exists = from
 		from = {
