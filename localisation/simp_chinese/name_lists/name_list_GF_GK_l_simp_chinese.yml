@@ -3586,11 +3586,11 @@
  GF_GK_CHR_Quadrini:0 "奎得里尼"
 
 # Sequential name formats
- GF_GK_FLEET:0 "$ORD$舰队"
- GF_URNC_PLANETARYGUARD:0 "$C$安保干员梯队"
- GF_URNC_EXPEDITIONARYFORCE:0 "$ORD$外勤干员梯队"
- GF_URNC_INDENTUREDRIFLES:0 "$ORD$契约资产梯队"
- GF_URNC_CLONEARMY:0 "$ORD$克隆资产梯队"
+ GF_GK_FLEET:0 "$ORD$远征舰队"
+ GF_GK_PLANETARYGUARD:0 "$C$安保干员梯队"
+ GF_GK_EXPEDITIONARYFORCE:0 "$ORD$外勤干员梯队"
+ GF_GK_INDENTUREDRIFLES:0 "$ORD$契约资产梯队"
+ GF_GK_CLONEARMY:0 "$ORD$克隆资产梯队"
  GF_GK_DREADCOMMANDO:0 "$ORD$恐怖突击队"
  GF_GK_HUNTERKILLERGROUP:0 "$ORD$猎歼战斗群"
  GF_GK_GROUNDDEFENSEMATRIX:0 "$ORD$地面防御矩阵"
@@ -3609,7 +3609,7 @@
  GF_GK_OCCUPATION_DOLL:0 "$ORD$镇爆人形梯队"
 
 # Obsolete sequentials (for backwards compatibility)
- GF_GK_xxFLEET_ORD:1 "$O$舰队"
+ GF_GK_xxFLEET_ORD:1 "$O$远征舰队"
  GF_GK_xxPLANETARYGUARD_ORD:1 "$C$行星护卫"
  GF_GK_xxEXPEDITIONARYFORCE_ORD:1 "$CARD$远征部队 "
  GF_GK_xxINDENTUREDRIFLES_ORD:1 "$O$契约步枪手"
