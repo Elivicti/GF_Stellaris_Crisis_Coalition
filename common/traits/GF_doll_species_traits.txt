@@ -161,6 +161,7 @@ GF_trait_mind_cloud = {
 	modifier = {
 		species_leader_exp_gain = 0.25
 		negative_leader_traits_species = -2
+		GF_ANDROID_species_trait_picks_add = 1
 	}
 }
 GF_trait_tacticalchip = {
