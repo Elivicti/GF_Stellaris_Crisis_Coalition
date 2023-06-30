@@ -54,7 +54,7 @@ country_event = {
 		set_global_flag = GF_Stellairs_Crisis_Coalition_Enabled
 		add_resource = { gf_core_chip = 100 }
 
-		# Inititalize country's basic characteristics
+		# Initialize country's basic characteristics
 		set_country_flag = suppress_vanilla_factions	# 禁用原版派系
 		give_technology = { message = no tech = tech_powered_exoskeletons }
 		give_technology = { message = no tech = GF_tech_doll_assemble }
@@ -81,8 +81,10 @@ country_event = {
 
 		# Create OGAS country
 		create_country = {
-			name = "NAME_GF_OGAS"
 			type = GF_ogas_country_type
+			name = "NAME_GF_OGAS"
+			adjective = "NAME_GF_OGAS_adjective"
+			species = prev.owner_main_species
 			flag = {
 				icon = {
 					category = "griffin"
@@ -109,30 +111,26 @@ country_event = {
 			save_event_target_as = GF_doll_species
 		}
 
-		event_target:GF_ogas_country = {
-			establish_communications_no_message = prev
-			create_species = {
-				class = event_target:GF_doll_species
-				name = "GF_ANDROID"
-				portrait = event_target:GF_doll_species
-				homeworld = event_target:GF_home_world
-				namelist = event_target:GF_doll_species
-				gender = event_target:GF_doll_species
-				traits = { trait = GF_trait_doll }
-				effect = {
-					save_event_target_as = GF_ogas_species
-				}
-			}
-		}
-		save_global_event_target_as = GF_ogas_owner
-		set_country_flag = flag_GF_can_contact_OGAS
-		set_country_flag = flag_GF_ogas_owner
-
 		# Set ruler basic characteristics
 		ruler = {
 			save_event_target_as = old_ruler
 		}
 		event_target:GF_ogas_country = {
+			establish_communications_no_message = prev
+			create_species = {
+				class = GF_doll
+				name = NAME_GF_ANDROID
+				portrait = event_target:GF_doll_species
+				homeworld = event_target:GF_home_world
+				namelist = GF_DOLL
+				gender = female
+				traits = { trait = GF_trait_doll }
+				effect = {
+					save_event_target_as = GF_ogas_species
+					set_species_flag = flag_GF_doll_species_@root
+					set_species_flag = is_secondary_species_of@root
+				}
+			}
 			clone_leader = {
 				target = prev.ruler
 				species = event_target:GF_ogas_species
@@ -170,6 +168,10 @@ country_event = {
 			kill_leader = { show_notification = no }
 		}
 
+		save_global_event_target_as = GF_ogas_owner
+		set_country_flag = flag_GF_can_contact_OGAS
+		set_country_flag = flag_GF_ogas_owner
+
 		# events
 		country_event = { id = GF_ogas.110	 days =  5 }
 		country_event = { id = GF_elid.0	 days = 30 } # initialize elid attack events
@@ -186,16 +188,8 @@ country_event = {
 		name = GF_start.1.a
 		hidden_effect = {
 			every_owned_species = {
-				if = {
-					limit = { has_trait = GF_trait_doll }
-					# 设置人形权利
-					set_citizenship_type = {
-						country = root
-						type = citizenship_robot_servitude
-						cooldown = yes
-					}
-				}
-				else = { set_species_flag = flag_GF_GAVIRUL_species }
+				limit = { has_trait = GF_trait_sequela }
+				set_species_flag = flag_GF_GAVIRUL_species
 			}
 			every_owned_pop = {
 				limit = {
@@ -311,8 +305,24 @@ planet_event = {
 
 	immediate = {
 		# Add second species
-		last_created_species = {
-			set_species_flag = flag_GF_doll_species_@root.owner
+		create_species = {
+			name = GF_doll
+			plural = GF_doll_plural
+			name_list = GF_DOLL
+			class = GF_doll
+			portrait = GF_doll
+			homeworld = root
+			gender = female
+			traits = {
+				trait = GF_trait_doll
+				trait = GF_trait_strange_cloth
+				trait = GF_trait_delicious_food
+				trait = GF_trait_doll_expand
+			}
+			effect = {
+				set_species_flag = flag_GF_doll_species_@root.owner
+				set_species_flag = is_secondary_species_of@root.owner
+			}
 		}
 		while = {
 			count = 14
@@ -325,6 +335,25 @@ planet_event = {
 		while = {
 			count = 2
 			create_pop = { species = owner_main_species }
+		}
+
+		owner = { country_event = { id = GF_start.25 days = 1 } }
+	}
+}
+
+country_event = {
+	id = GF_start.25
+	hide_window = yes
+
+	is_triggered_only = yes
+	immediate = {
+		every_owned_species = {
+			limit = { is_archetype = GF_ANDROID }
+			set_citizenship_type = {
+				type = citizenship_robot_servitude
+				country = prev
+				cooldown = yes
+			}
 		}
 	}
 }

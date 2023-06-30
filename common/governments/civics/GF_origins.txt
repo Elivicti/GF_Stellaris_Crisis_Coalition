@@ -10,12 +10,6 @@ GF_origin_commonwealth = {
 	}
 	description = "GF_origin_commonwealth_effects_tooltip"
 
-	has_secondary_species = {
-		title = GF_origin_commonwealth_second_species_title
-		traits = {
-			trait = GF_trait_doll
-		}
-	}
 	traits = {
 		trait = GF_trait_sequela
 	}
@@ -24,5 +18,5 @@ GF_origin_commonwealth = {
 	advanced_start = yes
 	max_once_global = yes
 
-	random_weight = { base = 0 	}
+	random_weight = { base = 0 }
 }
