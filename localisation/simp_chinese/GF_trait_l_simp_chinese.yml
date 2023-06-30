@@ -69,6 +69,7 @@
  GF_trait_leader_scientist_16lab_desc:0 "该领袖隶属于16LAB实验室，是一名资深的科研人员。"
  GF_trait_leader_scientist_16lab_councilor:0 "$GF_trait_leader_scientist_16lab$"
  GF_trait_leader_scientist_16lab_councilor_desc:0 "$GF_trait_leader_scientist_16lab_desc$"
+ GF_trait_leader_scientist_16lab_councilor_effect:0 "\n§E特质的效果将会根据领袖等级的提升而增强§!"
  GF_trait_leader_general_plus:0 "陆军战术模块"
  GF_trait_leader_general_plus_desc:0 "这个人形加装了陆军指挥与规划模块，这将允许其接入陆军指挥网络，精通各种陆军战术的她十分轻松的就可以将敌人玩弄于股掌之间。"
  GF_trait_leader_scientist_plus:0 "科研模块"

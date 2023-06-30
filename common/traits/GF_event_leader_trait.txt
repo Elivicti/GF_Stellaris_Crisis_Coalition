@@ -28,7 +28,7 @@ GF_trait_leader_ogas_glitch = {
 		empire_size_penalty_mult = 0.25
 	}
 	self_modifier = {
-		leader_skill_levels = -2
+		leaders_upkeep_mult = 1.0
 		species_leader_exp_gain = -0.50
 	}
 }
@@ -324,7 +324,7 @@ GF_trait_leader_inspired_governor = {
 		planet_stability_add = 10
 	}
 	self_modifier = {
-		leader_skill_levels = 2
+		council_agenda_progress_speed = 0.25
 	}
 }
 
@@ -335,20 +335,22 @@ GF_trait_leader_inspired_scientist = {
 		CLASS = scientist
 		ICON = GFX_leader_trait_inspired
 		RARITY = paragon
-		COUNCIL = no
+		COUNCIL = yes
 		TIER = none
 	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 
+	councilor_trait = yes
+
 	leader_potential_add = { always = no }
 
 	modifier = {
-		all_technology_research_speed = 0.10
+		all_technology_research_speed = 0.15
 	}
 	self_modifier = {
-		leader_skill_levels = 2
+		council_agenda_progress_speed = 0.25
 	}
 }
 
@@ -373,7 +375,7 @@ GF_trait_leader_inspired_admiral = {
 		ship_speed_mult = 0.05
 	}
 	self_modifier = {
-		leader_skill_levels = 2
+		council_agenda_progress_speed = 0.25
 	}
 }
 
@@ -398,6 +400,6 @@ GF_trait_leader_inspired_general = {
 		army_experience_gain_mult = 0.10
 	}
 	self_modifier = {
-		leader_skill_levels = 2
+		council_agenda_progress_speed = 0.25
 	}
 }

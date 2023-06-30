@@ -75,9 +75,11 @@ GF_trait_leader_scientist_16lab_councilor = {
 	self_modifier = {
 		leader_trait_selection_options_add = 1
 	}
-	modifier = {
-		all_technology_research_speed = 0.20
+	triggered_modifier = {
+		all_technology_research_speed = 0.025
+		multiplier = trigger:has_skill
 	}
+	custom_tooltip_with_modifiers = GF_trait_leader_scientist_16lab_councilor_effect
 	leader_potential_add = {
 		from = { has_valid_civic = GF_civic_16LAB }
 	}
@@ -99,7 +101,6 @@ GF_trait_leader_doll = {
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.20
-		leader_skill_levels = 1
 	}
 	modifier = {
 	}
@@ -130,7 +131,6 @@ GF_trait_leader_admiral_plus = {
 		ship_weapon_damage = 0.20
 	}
 	leader_class = { admiral }
-	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
@@ -148,10 +148,11 @@ GF_trait_leader_scientist_plus = {
 		species_leader_exp_gain = 0.2
 	}
 	modifier = {
-	    all_technology_research_speed = 0.15
+	    science_ship_survey_speed = 0.20
+		ship_anomaly_research_speed_mult = 0.20
+		ship_anomaly_generation_chance_mult = 0.15
 	}
 	leader_class = { scientist }
-	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
@@ -172,7 +173,6 @@ GF_trait_leader_general_plus = {
 	    army_damage_mult = 0.4
 	}
 	leader_class = { general }
-	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
@@ -193,7 +193,6 @@ GF_trait_leader_governor_plus = {
 	    planet_crime_add = -25
 	}
 	leader_class = { governor }
-	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
 }
