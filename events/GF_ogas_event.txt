@@ -198,9 +198,11 @@ country_event = {
 		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
 		# trigger = { NOT = { has_country_flag = gf_at_chat } }
 
-		is_dialog_only = yes						# 临时
-		response_text = GF_ogas.10000.emotion.response	# 临时
-
+#		is_dialog_only = yes						# 临时
+#		response_text = GF_ogas.10000.emotion.response	# 临时
+		hidden_effect = {
+			country_event = { id = GF_ogas.13000 }
+		}
 		# hidden_effect = {
 		# 	country_event = { id = event_gf_ogas.8 }
 		# }
@@ -604,6 +606,40 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_ogas.12000 }
 		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
+##私人通讯频道
+country_event = {
+	id = GF_ogas.13000
+	title = GF_OGAS_connect
+	desc = GF_ogas.13000.desc.a
+	desc = GF_ogas.13000.desc.b
+	desc = GF_ogas.13000.desc.c
+	diplomatic = yes
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+		room = ethic_griffin_room
+	}
+
+	custom_gui = "GF_OGAS_archive_system"
+	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	is_triggered_only = yes
+	option = {
+		name = GF_ogas.13000.a
+		response_text = GF_ogas.13000.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = GF_ogas.13000.b
+		response_text = GF_ogas.13000.b.response
+		is_dialog_only = yes
 	}
 	option = {
 		name = GF_ogas.main_menu
