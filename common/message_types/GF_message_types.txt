@@ -79,3 +79,12 @@ message_type = {
 	sound = "notification"
 	ping = "mixed_notification_yellow"
 }
+
+message_type = {
+	key = MESSAGE_TYPE_GF_EDICT_COOLDOWN_FINISHED
+	icon = "GFX_message_GF_decision_started"
+
+	name = "MESSAGE_GF_EDICT_COOLDOWN_FINISHED"
+	sound = "notification"
+	ping = "mixed_notification_green"
+}
