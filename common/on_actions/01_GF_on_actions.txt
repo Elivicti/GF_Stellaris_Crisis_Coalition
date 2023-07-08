@@ -75,12 +75,11 @@ on_leader_spawned = {
 }
 
 # this = country
-on_monthly_pulse_country = {
+on_yearly_pulse_country = {
 	events = {
-		GF_doll.3000		# 月检事件 锁定人形的公民权
+		GF_doll.3000 # 锁定人形的公民权
 	}
 }
-
 
 # fires when a country releases a sector as a vassal
 # This = released vassal
