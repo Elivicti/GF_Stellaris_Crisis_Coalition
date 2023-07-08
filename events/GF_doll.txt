@@ -9,13 +9,66 @@ country_event = {
 
 	immediate = {
 		random_owned_species = {
-			limit = { has_species_flag = flag_GF_doll_species_@root }
+			limit = { has_trait = GF_trait_doll }
 			save_event_target_as = GF_doll_species
+			weights = {
+				base = 1
+				mult = trigger:num_traits
+			}
 		}
 		every_owned_pop = {
 			limit = { GF_is_non_doll_robot_pop = yes }
 			change_species = event_target:GF_doll_species
 		}
+	}
+}
+
+@edict_GF_robot_modding_cost = 1000
+country_event = {
+	id = GF_doll.2005
+	title = GF_doll.2005.name
+	desc = GF_doll.2005.desc
+
+	picture = GFX_evt_cybernetics
+
+	is_triggered_only = yes
+
+	option = {
+		name = GF_doll.2005.confirm
+		allow = {
+			custom_tooltip = {
+				text = GF_edict_robot_modding_require_non_doll_robot
+				any_owned_pop = { GF_is_non_doll_robot_pop = yes }
+			}
+			resource_stockpile_compare = {
+				resource = unity
+				value >= @edict_GF_robot_modding_cost
+			}
+			resource_stockpile_compare = {
+				resource = energy
+				value >= @edict_GF_robot_modding_cost
+			}
+			resource_stockpile_compare = {
+				resource = alloys
+				value >= @edict_GF_robot_modding_cost
+			}
+		}
+		custom_tooltip = GF_robot_modding_effect
+		add_resource = {
+			unity = @edict_GF_robot_modding_cost
+			energy = @edict_GF_robot_modding_cost
+			alloys = @edict_GF_robot_modding_cost
+			mult = -1
+		}
+		hidden_effect = {
+			enable_special_project = {
+				name = SP_GF_ROBOT_MODDING
+			}
+		}
+	}
+
+	option = {
+		name = CANCEL
 	}
 }
 

@@ -104,7 +104,9 @@ GF_edict_robot_modding_cooldown = {
 }
 
 GF_edict_doll_reprogram_cooldown = {
-	icon = "gfx/interface/icons/modifiers/mod_upkeep_mult.dds"
+	icon = "gfx/interface/icons/situation_log/situation_log_ai.dds"
+	custom_tooltip = GF_edict_doll_reprogram_cooldown_effect
+	show_only_custom_tooltip = no
 	leaders_upkeep_mult = 0.10
 }
 

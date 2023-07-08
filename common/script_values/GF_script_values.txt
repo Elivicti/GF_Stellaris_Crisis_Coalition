@@ -90,7 +90,7 @@ GF_count_robotic_leader_with_vanilla_negative_traits = {
 		trigger_scope = owner
 		parameters = {
 			limit = {
-				species = { is_robotic = yes }
+				has_trait = GF_trait_leader_doll
 				GF_leader_has_vanilla_negative_traits = yes
 			}
 		}

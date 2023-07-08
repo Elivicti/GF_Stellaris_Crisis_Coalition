@@ -55,8 +55,9 @@
  collapsed_terraforming_candidate_tooltip:0 "在我们研究了£society£ §Y$tech_climate_restoration$§!科技之后，我们能在一定程度上对这颗星球进行环境改造，让其再次适宜居住。\n改造这颗星球的代价十分昂贵，也许我们需要一些§Y特殊§!的技术？"
 ############
 
- GF_edict_robot_modding_cooldown:0 "$edict_GF_robot_modding$"
- GF_edict_doll_reprogram_cooldown:0 "$edict_GF_doll_reprogram$"
+ GF_edict_robot_modding_cooldown:0 "$edict_GF_robot_modding$冷却"
+ GF_edict_doll_reprogram_cooldown:0 "$edict_GF_doll_reprogram$冷却"
+ GF_edict_doll_reprogram_cooldown_effect:0 "持续期间§R无法§!启动§Y$edict_GF_doll_reprogram$§!法令"
 
 ############
 

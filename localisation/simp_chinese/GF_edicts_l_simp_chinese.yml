@@ -4,18 +4,31 @@
  edict_GF_02_training:0 "0-2加速学习运动"
  edict_GF_02_training_desc:0 "0-2学习运动来源是旧时代一位乐于助人的人形，代号MX6XX（数据丢失），她经常不分昼夜带着刚出厂的战术人形进行演练，来丰富她们的战场经验，有新兵教头的美誉而广受人形与指挥官的尊敬。"
 
+
+ MESSAGE_GF_EDICT_COOLDOWN_FINISHED:0 "法令冷却完成"
+ MESSAGE_GF_EDICT_COOLDOWN_FINISHED_DESC:0 "法令§Y$EDICT$§!已完成冷却"
+
  edict_GF_doll_reprogram:0 "心智云图数据修正"
  edict_GF_doll_reprogram_desc:0 "我们已掌握的心智云图技术允许我们在不使人形人格模型崩溃的情况下对其部分负面特质进行清除来使其更加满足任务需求。"
- GF_doll_reprogram_effect:0 "获得修正§Y$edict_GF_doll_reprogram$§!，持续§Y1年§!，期间$mod_leaders_upkeep_mult$§R+10%§!，且无法再次启动此法令。\n§G清除§!所有人形领袖的负面特质，§Y每个§!带有§H负面特质§!的人形领袖花费§Y1000§! £energy£ 能量币。"
- GF_require_any_doll_leader_has_vanilla_negative_traits:0 "\n£trigger_no£我们§G没有§!人形领袖拥有负面特质"
+ GF_doll_reprogram_effect:0 "§G清除§!所有人形领袖的负面特质，§Y每个§!带有§H负面特质§!的人形领袖花费£energy£§Y1000§!能量币"
+ GF_doll_reprogram_cooldown_tooltip:0 "冷却完成时间：§Y[this.GF_doll_reprogram_cooldown_finish]§!"
+ GF_require_any_doll_leader_has_vanilla_negative_traits:0 "拥有携带§R负面特质§!的人形领袖"
+
+ GF_doll_leader.100.name:0 "$edict_GF_doll_reprogram$"
+ GF_doll_leader.100.desc:0 "$edict_GF_doll_reprogram_desc$\n\n基础花费：£unity£ §Y1000§!\n每个带有§H负面特质§!的人形领袖：£energy£ §Y1000§!"
+ GF_doll_leader.100.confirm:0 "确认执行"
+ GF_doll_reprogram_effect_leader_list_tooltip:0 "\n§G移除§!以下领袖的所有负面特质："
 
  edict_GF_robot_modding:0 "智能机械体同化协议"
  edict_GF_robot_modding_desc:0 "银河当中部分文明也发展了跟我们类似的智能机械体技术，但这些机械体过于落后且无法接入齐纳协议。我们需要将这些机械体的数据导入心智云图、改造为仿生自律人形并重新设定控制权限来保证它们忠实的为我们的文明服务。"
  GF_robot_modding_effect:0 "发起特殊项目：§Y$edict_GF_robot_modding$§!\n完成后将所有§Y非人形§!的 £pop£ §Y机械人口§!改造为§Y人形§!"
- GF_edict_robot_modding_require_non_doll_robot:0 "\n£trigger_no£我们帝国境内§R没有§!§Y非人形§!的 £pop£ §Y机械人口§!"
+ GF_edict_robot_modding_require_non_doll_robot:0 "拥有任一§Y非人形§!的 £pop£ §Y机械人口§!"
  GF_edict_robot_modding_is_ongoing:0 "£trigger_no£这个项目已经在执行了"
  SP_GF_ROBOT_MODDING:0 "$edict_GF_robot_modding$"
  SP_GF_ROBOT_MODDING_DESC:0 "$edict_GF_robot_modding_desc$"
+ GF_doll.2005.name:0 "$edict_GF_robot_modding$"
+ GF_doll.2005.desc:0 "$edict_GF_robot_modding_desc$\n"
+ GF_doll.2005.confirm:0 "确认执行"
 
  edict_GF_relocate_relic_site:0 "重定位$collapse_relic$"
  edict_GF_relocate_relic_site_desc:0 "即便我们不小心失去了$collapse_relic$的坐标，我们也能利用现有的数据再次定位它。"

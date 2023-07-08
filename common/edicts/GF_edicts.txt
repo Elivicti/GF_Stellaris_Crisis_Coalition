@@ -24,24 +24,9 @@ GF_doll_reprogram = {
 	icon = "GFX_situation_log_ai"
 	resources = {
 		category = edicts
-		cost = { unity = 1000 }
-		cost = {
-			energy = 1000
-			multiplier = value:GF_count_robotic_leader_with_vanilla_negative_traits
-		}
 	}
 
 	allow = {
-		custom_tooltip = {
-			fail_text = GF_require_any_doll_leader_has_vanilla_negative_traits
-			count_owned_leader = {
-				limit = {
-					species = { is_robotic = yes }
-					GF_leader_has_vanilla_negative_traits = yes
-				}
-				count > 0
-			}
-		}
 		NOT = { has_modifier = GF_edict_doll_reprogram_cooldown }
 	}
 
@@ -51,11 +36,11 @@ GF_doll_reprogram = {
 	}
 	effect = {
 		custom_tooltip = GF_doll_reprogram_effect
+		if = {
+			limit = { has_modifier = GF_edict_doll_reprogram_cooldown }
+			custom_tooltip = GF_doll_reprogram_cooldown_tooltip
+		}
 		hidden_effect = {
-			add_modifier = {
-				modifier = GF_edict_doll_reprogram_cooldown
-				years = 1
-			}
 			country_event = { id = GF_doll_leader.100 }
 		}
 	}
@@ -79,20 +64,11 @@ GF_robot_modding = {
 	icon = "GFX_GF_edict_type_robot"
 	resources = {
 		category = campaigns
-		cost = {
-			unity = 1000
-			energy = 1000
-			alloys = 1000
-		}
 	}
 
 	potential = { has_authority = GF_auth_commonwealth }
 
 	allow = {
-		custom_tooltip = {
-			fail_text = GF_edict_robot_modding_require_non_doll_robot
-			any_owned_pop = { GF_is_non_doll_robot_pop = yes }
-		}
 		custom_tooltip = {
 			fail_text = GF_edict_robot_modding_is_ongoing
 			NOT = { has_special_project = SP_GF_ROBOT_MODDING }
@@ -102,9 +78,7 @@ GF_robot_modding = {
 	effect = {
 		custom_tooltip = GF_robot_modding_effect
 		hidden_effect = {
-			enable_special_project = {
-				name = SP_GF_ROBOT_MODDING
-			}
+			country_event = { id = GF_doll.2005 }
 		}
 	}
 	
