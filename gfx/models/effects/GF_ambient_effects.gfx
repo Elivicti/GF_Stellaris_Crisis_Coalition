@@ -1,0 +1,14 @@
+objectTypes = {
+    pdxmesh = {
+        name = "GF_contingency_system_effect_mesh"
+        file = "gfx/models/effects/crisis/contingency_crisis_system_effect_5.mesh"
+
+        meshsettings = {
+            index = 0
+            shader = "PdxMeshAlphaAdditiveAnimateUVErosion"
+            texture_diffuse = "GF_contingency_lights_white.dds"
+            texture_normal = "nonormal.dds"
+            texture_specular = "nospec.dds"
+        }
+    }
+}

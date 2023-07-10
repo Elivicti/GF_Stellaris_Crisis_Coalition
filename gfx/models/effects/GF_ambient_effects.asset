@@ -23,4 +23,20 @@ entity = {
 	scale = 10
 
 	attach = { "root" = "nemesis_system_effect_part_2_entity" }
+	attach = { "root" = "GF_contingency_system_effect_entity" }
+}
+
+entity = {
+	name = "GF_contingency_system_effect_entity"
+	pdxmesh = "GF_contingency_system_effect_mesh"
+
+	scale = 1.5
+	erosion_out = 3
+	cull_radius = 20000
+
+	game_data = {
+		bloom_factor			= 1.1
+		uv_animation_speed 		= 0.1
+		uv_animation_direction 	= { 0 1.0 }
+	}
 }
