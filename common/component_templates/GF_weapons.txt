@@ -66,7 +66,7 @@ weapon_component_template = {
 		}
 	}
 
-	tags = { weapon_type_energy weapon_type_GF_collapsed }
+	tags = { weapon_type_energy weapon_type_GF_collapsed x_slot }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
@@ -134,7 +134,7 @@ weapon_component_template = {
 		}
 	}
 
-	tags = { weapon_type_energy weapon_type_GF_collapsed }
+	tags = { weapon_type_energy weapon_type_GF_collapsed t_slot }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 
@@ -228,7 +228,7 @@ weapon_component_template = {
 	icon = "GFX_GF_miniaturized_collapse_lance"
 	icon_frame = 1
 	projectile_gfx = "disruptor_3_small"
-	tags = { weapon_type_energy weapon_type_GF_collapsed }
+	tags = { weapon_type_energy weapon_type_GF_collapsed s_slot }
 	ai_tags = { weapon_role_anti_armor }
 
 	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
@@ -275,7 +275,7 @@ weapon_component_template = {
 	icon = "GFX_GF_miniaturized_collapse_lance"
 	icon_frame = 1
 	projectile_gfx = "disruptor_3_medium"
-	tags = { weapon_type_energy weapon_type_GF_collapsed }
+	tags = { weapon_type_energy weapon_type_GF_collapsed m_slot }
 	ai_tags = { weapon_role_anti_armor }
 
 	component_set = "MINIATURIZED_GF_COLLAPSE_LANCE"
@@ -325,7 +325,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_missile" }
 	component_set = "GF_COLLAPSE_MISSILE"
 	projectile_gfx = "GF_small_collapse_missile"
-	tags = { weapon_type_explosive weapon_type_GF_collapsed }
+	tags = { weapon_type_explosive weapon_type_GF_collapsed g_slot }
 	ai_tags = { weapon_role_artillery artillery energy_torpedoes }
 	ai_tag_weight = 0
 	resources = {
@@ -390,7 +390,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_torpedo" }
 	component_set = "GF_COLLAPSE_TORPEDO"
 	projectile_gfx = "GF_collapse_torpedo"
-	tags = { weapon_type_explosive weapon_type_GF_collapsed }
+	tags = { weapon_type_explosive weapon_type_GF_collapsed g_slot }
 	ai_tags = { weapon_role_anti_shield explosive }
 	resources = {
 		category = GF_ship_collapse_weapons
@@ -451,7 +451,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_artillery" }
 	component_set = "GF_COLLAPSE_ARTILLERY"
 	projectile_gfx = "GF_collapse_artillery_projectile"
-	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed l_slot }
 	ai_tags = { weapon_role_artillery artillery }
 	ai_tag_weight = 0
 	resources = {
@@ -509,7 +509,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_mass_accelerator" }
 	component_set = "GF_COLLAPSE_MASS_ACCELERATOR"
 	projectile_gfx = "GF_collapse_artillery_projectile"
-	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed x_slot }
 	ai_tags = { weapon_role_artillery artillery }
 	ai_tag_weight = 0
 	resources = {
@@ -569,7 +569,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_cannon" }
 	component_set = "GF_COLLAPSE_CANNON"
 	projectile_gfx = "GF_collapse_cannon_s"
-	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed s_slot }
 	ai_tags = { weapon_role_anti_shield brawler }
 	
 	resources = {
@@ -623,7 +623,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_cannon" }
 	component_set = "GF_COLLAPSE_CANNON"
 	projectile_gfx = "GF_collapse_cannon_m"
-	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed m_slot }
 	ai_tags = { weapon_role_anti_shield brawler }
 	
 	resources = {
@@ -678,7 +678,7 @@ weapon_component_template = {
 	prerequisites = { "GF_tech_collapse_cannon" }
 	component_set = "GF_COLLAPSE_CANNON"
 	projectile_gfx = "GF_collapse_cannon_l"
-	tags = { weapon_type_kinetic weapon_type_GF_collapsed }
+	tags = { weapon_type_kinetic weapon_type_GF_collapsed l_slot }
 	ai_tags = { weapon_role_anti_shield brawler }
 	
 	resources = {
