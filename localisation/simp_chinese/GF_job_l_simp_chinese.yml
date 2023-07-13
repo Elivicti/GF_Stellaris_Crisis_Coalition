@@ -107,3 +107,7 @@
  job_GF_purge:0 "$job_purge$"
  job_GF_purge_plural:0 "$job_purge_plural$"
  job_GF_purge_desc:0 "$job_purge_desc$"
+
+ job_GF_doll_assimilation:0 "同化协议"
+ job_GF_doll_assimilation_plural:0 "同化协议"
+ job_GF_doll_assimilation_desc:0 "这个机械体正在接入齐纳协议。"

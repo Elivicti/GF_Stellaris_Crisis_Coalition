@@ -3,7 +3,7 @@
  policy_gffood_policy:0 "粮食配给政策"
  policy_gffood_policy_desc:0 "虽然战术人形不需要食物维持生活，但是食物是生活的调味品，在一些人形眼里，食物就是必须品"
  gffood_policy_rationing:0 "粮食无配给"
- gffood_policy_rationing_desc:0 "我们没有义务给人形提供粮食，因为那本来就不是必须品,人形将不会消耗食物£mod_pop_food_req_mult"
+ gffood_policy_rationing_desc:0 "我们没有义务给人形提供粮食，因为那本来就不是必须品,人形将不会消耗食物 £food£"
  gffood_policy_normal:0 "提供粮食配给"
  gffood_policy_normal_desc:0 "提高人形的生活质量可以让她们更有效率的工作"
  policy_gfpurge2_policy:0 "权限政策"
@@ -39,13 +39,28 @@
 #  citizenship_GF_doll_servitude_tooltip:0 ""
 #  citizenship_GF_doll_servitude_tooltip_delayed:0 "§L人形存在的意义就是为她们的主人服务。§!"
 
+# 同化
+ citizenship_GF_doll_assimilation:0 "$edict_GF_robot_modding$"
+ citizenship_GF_doll_assimilation_tooltip:0 "所有该物种的人口将被§H改造§!为§Y$GF_ANDROID$§!。"
+ citizenship_GF_doll_assimilation_tooltip_delayed:0 "§L这些过于落后的机械体无法接入齐纳协议，只有将其改造为$GF_ANDROID$并重新设定权限才能保证它们能忠实地为我们的文明服务。§!"
+
+ purge_GF_assimilation:0 "同化协议"
+ purge_GF_assimilation_tooltip_short:0 "受影响的的人口将被§H改造§!为§Y$GF_ANDROID$§!。"
+ purge_GF_assimilation_tooltip:0 "$purge_GF_assimilation_tooltip_short$\n\n§H注意：§!智能机械体同化协议机制依赖于此灭绝类型，请§R不要§!手动更改灭绝类型"
+ purge_GF_assimilation_tooltip_delayed:0 "§L这些机械体的数据将被导入心智云图以适应更先进的系统。§!"
+
+#
+ GF_population_control_forced:0 "强制人口控制"
+ GF_population_control_forced_tooltip:0 "§R禁止§!此物种的人口以任何形式增长。"
+ GF_population_control_forced_tooltip_delayed:0 "§L这是控制人口的高效手段。§!"
+
  citizenship_GF_doll_purge:0 "$citizenship_purge$"
  citizenship_GF_doll_purge_tooltip:0 "$citizenship_purge_tooltip$"
  citizenship_GF_doll_purge_tooltip_delayed:0 "$citizenship_purge_tooltip_delayed$"
 
 # 净化
  purge_GF_dismantle:0 "拆解"
- purge_GF_dismantle_tooltip:0 "受影响的人口将被拆解为 £alloys£ §H合金§!"
+ purge_GF_dismantle_tooltip:0 "受影响的人口将被拆解为 £alloys£ §H合金§!。"
  purge_GF_dismantle_tooltip_delayed:0 "§L这些人口的利用价值甚至没有它们的组成材料高。§!"
 
 # 生活标准

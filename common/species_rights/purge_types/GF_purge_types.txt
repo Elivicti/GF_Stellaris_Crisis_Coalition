@@ -31,3 +31,36 @@ purge_GF_dismantle = {
 		factor = 1
 	}
 }
+
+purge_GF_assimilation = {
+	pop_escape_chance = 0.0
+	# 1 pop per 2 months, overrides BASE_POP_DECLINE, will only work on purge types
+	pop_decline_rate = 50
+
+	pop_modifier = {
+		pop_housing_usage_mult = -1.0
+		pop_amenities_usage_base = 0
+	}
+
+	pop_tooltip = purge_GF_assimilation_tooltip_short
+
+	potential = {
+		exists = from
+
+		is_robotic = yes
+		NOT = { has_trait = GF_trait_doll }
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+
+		has_citizenship_type = {
+			type = citizenship_GF_doll_assimilation
+			country = from
+		}
+	}
+
+	ai_will_do = {
+		factor = 100
+	}
+}

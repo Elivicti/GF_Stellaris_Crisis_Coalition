@@ -36,3 +36,39 @@ GF_freedom_kingdom = {
 		}
 	}
 }
+
+GF_doll_assimilation = {
+	category = assimilation
+	is_capped_by_modifier = no
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		is_sapient = yes
+	}
+
+	ignores_sapience = yes
+
+	possible = {
+		has_citizenship_type = { type = citizenship_GF_doll_assimilation country = owner }
+	}
+
+	resources = {
+		category = planet_jobs
+		upkeep = { gf_core_chip = 0.5 }
+		upkeep = {
+			trigger = {
+				is_robotic_or_voidspawn_species = yes
+			}
+			energy = @living_standard_energy_normal
+		}
+	}
+
+	weight = {
+		weight = @special_job_weight
+
+		modifier = {
+			factor = 2000 # brings @special_job_weight up to 20
+			is_being_assimilated = yes
+		}
+	}
+}

@@ -15,28 +15,3 @@ special_project = {
 	}
 	on_fail = {}
 }
-
-special_project = {
-	key = SP_GF_ROBOT_MODDING
-	event_scope = country_event
-
-	picture = GFX_situation_log_modification_picture
-	icon = "gfx/interface/icons/situation_log/situation_log_engineering.dds"
-
-	tech_department = engineering_technology
-	cost = {
-		base = 0
-		scaled_modifier = {
-			limit = {
-				GF_is_non_doll_robot_pop = yes
-			}
-			scope = this
-			add = 50
-			calc = pop_count
-		}
-	}
-
-	on_success = {
-		country_event = { id = GF_doll.2000 }
-	}
-}

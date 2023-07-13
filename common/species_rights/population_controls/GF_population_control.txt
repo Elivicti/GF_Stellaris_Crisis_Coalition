@@ -1,0 +1,23 @@
+
+GF_population_control_forced = {
+	can_reproduce = no
+	potential = {
+		exists = from
+
+		is_robotic = yes
+		NOT = { has_trait = GF_trait_doll }
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+
+		has_citizenship_type = {
+			type = citizenship_GF_doll_assimilation
+			country = from
+		}
+	}
+
+	ai_will_do = {
+		factor = 1000
+	}
+}

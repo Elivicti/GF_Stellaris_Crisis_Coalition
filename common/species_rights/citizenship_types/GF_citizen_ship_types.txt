@@ -87,6 +87,27 @@
 # 	}
 # }
 
+citizenship_GF_doll_assimilation = {
+	is_assimilation = yes
+	is_purge = yes
+
+	potential = {
+		#is_robotic = yes
+		NOT = { has_trait = GF_trait_doll }
+	}
+
+	allow = {
+		is_robotic = yes
+		NOT = { has_trait = GF_trait_doll }
+	}
+
+	pop_tooltip = purge_GF_assimilation_tooltip_short
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 citizenship_GF_doll_purge = {
 	is_purge = yes
 
