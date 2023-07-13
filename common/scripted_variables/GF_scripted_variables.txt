@@ -8,3 +8,15 @@
 @GF_zion_project_energy_cost_3 = 15000
 
 @GF_zion_project_cost_max = 1000000
+
+
+# doll ascension paths
+@GF_doll_upgrade_POINTS = 3
+@GF_doll_upgrade_COST_MULT = -0.25
+@GF_doll_upgrade_leader_negative_trait_points = -1
+@GF_doll_upgrade_leader_agenda_speed = 0.15
+
+@GF_doll_leader_core_chip_upkeep_add = 0.5
+@GF_doll_leader_unity_upkeep_mult = 0.20
+
+@GF_doll_leader_reprogram_interval = 180

@@ -17,4 +17,21 @@ spriteTypes = {
 	spriteType = { name = "GFX_tr_gf_automation_5" texturefile = "gfx/interface/icons/traditions/tr_gf_automation_5.dds" }
 	spriteType = { name = "GFX_tr_gf_automation_6" textureFile = "gfx/interface/icons/traditions/tr_gf_automation_6.dds" }
 
+	
+	# 人形飞升
+	spriteType = { name = "GFX_tradition_hex_bg_GF_tradition_mind_upgrade"        texturefile = "gfx/interface/icons/traditions/background/tradition_hex_bg_GF_mind_upgrade.dds" }
+	spriteType = { name = "GFX_tradition_category_icon_GF_tradition_mind_upgrade" texturefile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_GF_mind_upgrade.dds" }
+	spriteType = { name = "GFX_tradition_category_bg_GF_tradition_mind_upgrade"   texturefile = "gfx/interface/icons/traditions/background/tradition_category_tile_GF_mind_upgrade.dds" }
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_GF_tradition_mind_upgrade"
+		textureFile = "gfx/interface/icons/traditions/background/tradition_category_tile_GF_automation.dds"
+		borderSize = { x = 140 y = 140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = { name = "GFX_tr_gf_mind_upgrade_1" texturefile = "gfx/interface/icons/traditions/tr_gf_mind_upgrade_1.dds" }
+	spriteType = { name = "GFX_tr_gf_mind_upgrade_2" texturefile = "gfx/interface/icons/traditions/tr_gf_mind_upgrade_2.dds" }
+	spriteType = { name = "GFX_tr_gf_mind_upgrade_3" texturefile = "gfx/interface/icons/traditions/tr_gf_mind_upgrade_3.dds" }
+	spriteType = { name = "GFX_tr_gf_mind_upgrade_4" texturefile = "gfx/interface/icons/traditions/tr_gf_mind_upgrade_4.dds" }
+	spriteType = { name = "GFX_tr_gf_mind_upgrade_5" texturefile = "gfx/interface/icons/traditions/tr_gf_mind_upgrade_5.dds" }
+
 }

@@ -1,0 +1,106 @@
+tr_gf_mind_upgrade_adopt = {
+	possible = {
+		has_ascension_perk = ap_GF_mind_upgrade
+	}
+	modifier = {
+		GF_ANDROID_species_trait_points_add = @GF_doll_upgrade_POINTS
+	}
+
+	on_enabled = {
+		
+	}
+}
+
+tr_gf_mind_upgrade_finish = {
+	#custom_tooltip_with_modifiers = tr_gf_mind_upgrade_finish_effect_desc
+	modifier = {
+		ascension_perks_add = 1
+		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
+	}
+
+	on_enabled = {
+		
+	}
+}
+
+tr_gf_mind_upgrade_1 = {
+	possible = {
+		has_technology = GF_tech_mind_upgrade_2
+	}
+
+	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_1_effect_desc
+	modifier = {
+		
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_gf_mind_upgrade_2 = {
+	possible = {
+		has_technology = GF_tech_mind_upgrade_2
+	}
+
+
+	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_2_effect_desc
+	modifier = {
+		
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_gf_mind_upgrade_3 = {
+	possible = {
+		has_tradition = tr_gf_mind_upgrade_1
+		has_tradition = tr_gf_mind_upgrade_2
+	}
+
+	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_3_effect_desc
+	modifier = {
+		GF_ANDROID_species_trait_points_add = 2
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+tr_gf_mind_upgrade_4 = {
+	possible = {
+		has_technology = GF_tech_mind_upgrade_2
+	}
+
+	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_4_effect_desc
+	modifier = {
+		
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}
+
+# remember to change the same variable in scipted_variables/GF_scripted_variables.txt
+@GF_doll_upgrade_leader_agenda_speed = 0.15
+tr_gf_mind_upgrade_5 = {
+	possible = {
+		has_tradition = tr_gf_mind_upgrade_4
+	}
+
+	modifier = {
+		description = tr_gf_mind_upgrade_5_effect_desc
+		description_parameters = {
+			POINTS = @GF_doll_upgrade_leader_negative_trait_points
+			SPEED = @GF_doll_upgrade_leader_agenda_speed
+		}
+	}
+
+	ai_weight = {
+		factor = 5000
+	}
+}

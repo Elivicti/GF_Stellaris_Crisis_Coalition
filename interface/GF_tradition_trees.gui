@@ -19,6 +19,14 @@ guiTypes = {
 		name = "tree_22_22_22"
 		position = { x = 0 y = @two_layer_tree_h }
 
+		#####   #####   #####
+		# 1 #   # 3 #   # 5 #
+		#####   #####   #####
+
+		#####   #####   #####
+		# 2 #   # 4 #   # 6 #
+		#####   #####   #####
+
 		iconType = {
 			name = "arrow_1"
 			spriteType = "GFX_arrow_single"
@@ -67,6 +75,60 @@ guiTypes = {
 		 	name = "tree_11_12_tradition_6"
 		 	position = { x = 201 y = 125 }
 		 }
+		# Don't put any container windows above this comment that shouldn't contain a tradition.
+	}
+
+	containerWindowType = {
+		name = "GF_tree_21_11"
+		position = { x = 0 y = @two_layer_tree_h }
+
+		#####   #####   #####
+		# 1 #   # 2 #   # 4 #
+		#####   #####   #####
+
+		    #####       #####
+		    # 3 #       # 5 #
+		    #####       #####
+
+		iconType = {
+			name = "arrow_1"
+			spriteType = "GFX_arrow_merge"
+			position = { x = 82 y = 100 }
+			alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "arrow_2"
+			spriteType = "GFX_arrow_single"
+			position = { x = 217 y = 100 }
+			alwaysTransparent = yes
+		}
+
+		containerWindowType = {
+			name = "tree_21_11_tradition_1"
+			position = { x = 61 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_21_11_tradition_2"
+			position = { x = 131 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_21_11_tradition_3"
+			position = { x = 96 y = 125 }
+		}
+
+
+		containerWindowType = {
+			name = "tree_21_11_tradition_4"
+			position = { x = 201 y = 55 }
+		}
+
+		containerWindowType = {
+			name = "tree_21_11_tradition_5"
+			position = { x = 201 y = 125 }
+		}
 		# Don't put any container windows above this comment that shouldn't contain a tradition.
 	}
 }

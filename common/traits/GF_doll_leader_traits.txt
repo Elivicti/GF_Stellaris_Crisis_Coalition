@@ -102,8 +102,48 @@ GF_trait_leader_doll = {
 	self_modifier = {
 		species_leader_exp_gain = 0.20
 	}
-	modifier = {
+
+	triggered_self_modifier = {
+		potential = {
+			owner = { has_tradition = tr_gf_mind_upgrade_5 }
+		}
+		negative_traits_leader = @GF_doll_upgrade_leader_negative_trait_points
+		council_agenda_progress_speed = @GF_doll_upgrade_leader_agenda_speed
 	}
+
+	triggered_self_modifier = {
+		potential = {
+			owner = { has_edict = GF_doll_reprogram }
+			leader_class = governor
+		}
+		leader_governors_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
+	}
+	triggered_self_modifier = {
+		potential = {
+			owner = { has_edict = GF_doll_reprogram }
+			leader_class = scientist
+		}
+		leader_scientists_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
+	}
+	triggered_self_modifier = {
+		potential = {
+			owner = { has_edict = GF_doll_reprogram }
+			leader_class = admiral
+		}
+		leader_admirals_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
+	}
+	triggered_self_modifier = {
+		potential = {
+			owner = { has_edict = GF_doll_reprogram }
+			leader_class = general
+		}
+		leader_generals_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
+	}
+
 	notify_on_gained = no
 	immortal_leaders = yes
 	hide_age = yes

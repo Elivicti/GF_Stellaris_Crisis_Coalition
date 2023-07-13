@@ -136,7 +136,7 @@ GF_trait_logical_subroutine = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_mind_upgrade
+			has_tradition = tr_gf_mind_upgrade_1
 		}
 	}
 	custom_tooltip_with_modifiers = GF_trait_logical_subroutine_effect
@@ -155,13 +155,12 @@ GF_trait_mind_cloud = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_mind_upgrade
+			has_tradition = tr_gf_mind_upgrade_1
 		}
 	}
 	modifier = {
 		species_leader_exp_gain = 0.25
 		negative_leader_traits_species = -2
-		GF_ANDROID_species_trait_picks_add = 1
 	}
 }
 GF_trait_tacticalchip = {
@@ -174,7 +173,7 @@ GF_trait_tacticalchip = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_mind_upgrade
+			has_tradition = tr_gf_mind_upgrade_1
 		}
 	}
 	custom_tooltip_with_modifiers = GF_trait_tacticalchip_effect
@@ -193,7 +192,7 @@ GF_trait_zener_protocol = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_mind_upgrade
+			has_tradition = tr_gf_mind_upgrade_1
 		}
 	}
 	custom_tooltip_with_modifiers = GF_trait_zener_protocol_effect
@@ -213,7 +212,7 @@ GF_trait_sercurity_program = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_mind_upgrade
+			has_tradition = tr_gf_mind_upgrade_1
 		}
 	}
 	modifier = {
@@ -233,7 +232,7 @@ GF_trait_nanobot_hives = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_body_upgrade
+			has_tradition = tr_gf_mind_upgrade_2
 		}
 	}
 	modifier = {
@@ -249,7 +248,7 @@ GF_trait_quantum_processors = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_body_upgrade
+			has_tradition = tr_gf_mind_upgrade_2
 		}
 	}
 	modifier = {
@@ -267,7 +266,7 @@ GF_trait_overclock = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_body_upgrade
+			has_tradition = tr_gf_mind_upgrade_2
 		}
 	}
 	modifier = {
@@ -284,7 +283,7 @@ GF_trait_nuclear_engine = {
 	species_potential_add = {
 		exists = from
 		from = {
-			has_ascension_perk = ap_GF_body_upgrade
+			has_tradition = tr_gf_mind_upgrade_2
 		}
 	}
 	modifier = {

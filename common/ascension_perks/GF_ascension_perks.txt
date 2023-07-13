@@ -1,20 +1,13 @@
-
-@GF_doll_upgrade_POINTS = 3
-@GF_doll_upgrade_COST_MULT = -0.25
 ####GFperks
 #######doll upgrade
 ap_GF_mind_upgrade = {
 	modifier = {
-		description = ap_GF_mind_upgrade_modifier_desc
-		description_parameters = {
-			POINTS = @GF_doll_upgrade_POINTS
-			COST_MULT = @GF_doll_upgrade_COST_MULT
-		}
+		custom_tooltip = ap_GF_mind_upgrade_modifier_desc
+		show_only_custom_tooltip = no
 		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
-		GF_ANDROID_species_trait_points_add = @GF_doll_upgrade_POINTS
 	}
 	possible = {
-		has_technology = GF_tech_mind_upgrade_2
+		has_technology = GF_tech_mind_upgrade_1
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_1"
 			num_ascension_perks > 0
@@ -25,9 +18,15 @@ ap_GF_mind_upgrade = {
 		has_authority = GF_auth_commonwealth
 		NOT = { has_ascension_perk = ap_GF_mind_upgrade }
 	}
-	
+
+	on_enabled = {
+		add_research_option = GF_tech_mind_upgrade_2
+
+		custom_tooltip = ap_GF_mind_upgrade_tradition_tooltip
+	}
+
 	ai_weight = {
-		factor = 0
+		factor = 10
 	}
 }
 ap_GF_body_upgrade = {
@@ -37,13 +36,7 @@ ap_GF_body_upgrade = {
 		}
 	}
 	modifier = {
-		description = ap_GF_body_upgrade_modifier_desc
-		description_parameters = {
-			POINTS = 2
-			COST_MULT = @GF_doll_upgrade_COST_MULT
-		}
-		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
-		GF_ANDROID_species_trait_picks_add = 2
+		
 	}
 	possible = {
 		has_technology = GF_tech_doll_modding_point_3
@@ -55,8 +48,7 @@ ap_GF_body_upgrade = {
 	}
 	
 	potential = {
-		has_authority = GF_auth_commonwealth
-		NOT = { has_ascension_perk = ap_GF_body_upgrade }
+		always = no
 	}
 	
 	ai_weight = {

@@ -64,12 +64,12 @@ GF_tech_doll_modding = {
 }
 ## unlocks doll-leaders
 GF_tech_mind_upgrade_1 = {
-	cost = @tier2cost2
+	cost = @tier3cost1
 	area = engineering
-	tier = 2
+	tier = 3
 	category = { industry }
 	prerequisites = { "tech_self_aware_logic" }
-	weight = @tier2weight2
+	weight = @tier2weight3
 	potential = {
 		GF_potential_trigger_advanced = yes
 	}
@@ -127,7 +127,7 @@ GF_tech_mind_upgrade_2 = {
 	weight = @tier4weight3
 
 	potential = {
-		GF_potential_trigger_advanced = yes
+		has_ascension_perk = ap_GF_mind_upgrade
 	}
 	gateway = GF_tech_gateway_doll_modding
 
@@ -236,7 +236,7 @@ GF_tech_doll_modding_point_2 = {
 	}
 
 	potential = {
-		GF_potential_trigger_advanced = yes
+		has_ascension_perk = ap_GF_mind_upgrade
 	}
 
 	weight_modifier = {
@@ -275,10 +275,6 @@ GF_tech_doll_modding_point_3 = {
 	modifier = {
 		GF_ANDROID_species_trait_points_add = 1
 	}
-	
-	potential = {
-		has_authority = GF_auth_commonwealth
-	}
 
 	weight_modifier = {
 		factor = 0.5
@@ -294,7 +290,6 @@ GF_tech_doll_modding_point_3 = {
 			factor = 4
 			has_ascension_perk = ap_the_flesh_is_weak
 		}
-
 	}
 
 	ai_weight = {

@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################################
+ GF_vanilla_ascension_paths_banned:0 "$TRIGGER_FAIL$§Y$GF_auth_commonwealth$§!§R无法§!使用飞升路线。"
+
  ap_GF_mind_upgrade:0 "心智升级"
  ap_GF_mind_upgrade_desc:0 "新版心智升级不同于两个世纪之前的旧版升级，这是一种对心智算法的全面解析，有了前面的技术支持，我们已经可以让人形在独立担任领袖、独立完成任务上表现的更好。"
- ap_GF_mind_upgrade_modifier_desc:0 "解锁高级人形特质，可使人形领袖获得加成\n$mod_GF_ANDROID_species_trait_points_add$：$POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：$COST_MULT|%0=-$\n"
+ ap_GF_mind_upgrade_modifier_desc:0 "解锁§Y$GF_tradition_mind_upgrade$§!传统树"
+ ap_GF_mind_upgrade_tradition_tooltip:0 "\n§H注意：§!请确保留有§Y空的§!传统树槽位\n§H注意：§!请确保留有§Y空的§!传统树槽位\n§H注意：§!请确保留有§Y空的§!传统树槽位"
  ap_GF_body_upgrade:0 "机体升级"
  ap_GF_body_upgrade_desc:0 "生产仿生自律人形的科技是一个多世纪之前的古老科技，前面的工作只是简单修补改良，现在来看其基本设计已经落后于时代了，我们应利用现有先进技术对人形机体进行完全的重新设计。"
  ap_GF_body_upgrade_modifier_desc:0 "解锁高级人形特质\n$mod_GF_ANDROID_species_trait_picks_add$：$POINTS|0=+$\n$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$：$COST_MULT|%0=-$\n"
