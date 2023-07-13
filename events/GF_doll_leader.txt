@@ -185,89 +185,25 @@ country_event = {
 
 country_event = {
 	id = GF_doll_leader.100
-	title = GF_doll_leader.100.name
-	desc = GF_doll_leader.100.desc
-
-	picture = GFX_evt_circuitry_modification
-
-	is_triggered_only = yes
-
-	option = {
-		name = GF_doll_leader.100.confirm
-		allow = {
-			custom_tooltip = {
-				text = GF_require_any_doll_leader_has_vanilla_negative_traits
-				count_owned_leader = {
-					limit = {
-						has_trait = GF_trait_leader_doll
-						GF_leader_has_vanilla_negative_traits = yes
-					}
-					count > 0
-				}
-			}
-			resource_stockpile_compare = {
-				resource = energy
-				value >= 1000
-				mult = value:GF_count_robotic_leader_with_vanilla_negative_traits
-			}
-			resource_stockpile_compare = {
-				resource = unity
-				value >= 1000
-			}
-		}
-		add_resource = {
-			energy = -1000
-			mult = value:GF_count_robotic_leader_with_vanilla_negative_traits
-		}
-		add_resource = { unity = -1000 }
-		add_modifier = {
-			modifier = GF_edict_doll_reprogram_cooldown
-			years = 1
-		}
-		custom_tooltip =  GF_doll_reprogram_effect_leader_list_tooltip
-		owned_leader_list_tooltip = {
-			limit = {
-				has_trait = GF_trait_leader_doll
-				GF_leader_has_vanilla_negative_traits = yes
-			}
-		}
-		hidden_effect = {
-			every_owned_leader = {
-				limit = { has_trait = GF_trait_leader_doll }
-				remove_trait = all_negative
-			}
-			country_event = {
-				id = GF_doll_leader.105
-				days = 360
-			}
-			set_saved_date = {
-				key = GF_doll_reprogram_cooldown_finish
-				days_from_present = 360
-				expires = 360
-			}
-		}
-	}
-
-	option = {
-		name = CANCEL
-	}
-}
-
-country_event = {
-	id = GF_doll_leader.105
 	hide_window = yes
-	is_triggered_only = yes
 
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = flag_GF_doll_reprogram_interval }
+		has_edict = GF_doll_reprogram
+	}
 	immediate = {
-		create_message = {
-			type = MESSAGE_TYPE_GF_EDICT_COOLDOWN_FINISHED
-			days = 30
-			localization = "MESSAGE_GF_EDICT_COOLDOWN_FINISHED_DESC"
-			variable = {
-				type = key
-				localization = EDICT
-				value = edict_GF_doll_reprogram
-			}
+		set_timed_country_flag = {
+			flag = flag_GF_doll_reprogram_interval
+			days = @GF_doll_leader_reprogram_interval
+		}
+		every_owned_leader = {
+			limit = { has_trait = GF_trait_leader_doll }
+			remove_all_negative_traits = yes
+		}
+		country_event = {
+			id = GF_doll_leader.100
+			days = @GF_doll_leader_reprogram_interval
 		}
 	}
 }

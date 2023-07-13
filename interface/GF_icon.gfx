@@ -88,6 +88,14 @@ spriteTypes = {
 		name = "GFX_GF_edict_type_robot"
 		textureFile = "gfx/interface/icons/edicts/roboticist.dds"
 	}
+	spriteType = {
+		name = "GFX_GF_edict_type_leader_exp"
+		textureFile = "gfx/interface/icons/edicts/GF_edict_leader_exp.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_edict_type_ai"
+		textureFile = "gfx/interface/icons/edicts/GF_edict_ai.dds"
+	}
 
 	# factions
 	spriteType = {

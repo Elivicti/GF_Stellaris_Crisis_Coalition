@@ -1,47 +1,65 @@
 GF_02_training = {
 	length = 4800
-	icon = "GFX_edict_type_time"
+	icon = "GFX_GF_edict_type_leader_exp"
 	resources = {
 		category = campaigns
 		cost = {
-			energy = 1000
+			unity = 20
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			energy = 10
+			multiplier = value:edict_size_effect
 		}
 	}
 
+	potential = { has_authority = GF_auth_commonwealth }
+
 	modifier = {
-		
 		species_leader_exp_gain = 0.30
 	}
-	potential = { has_authority = GF_auth_commonwealth }
 	
 	ai_weight = {
 		weight = @EdictLowPrio
 	}
 }
 #########################
+@GF_doll_leader_reprogram_interval = 180
 GF_doll_reprogram = {
-	length = 1
-	icon = "GFX_situation_log_ai"
+	length = -1
+	icon = "GFX_GF_edict_type_ai"
 	resources = {
 		category = edicts
-	}
 
-	allow = {
-		NOT = { has_modifier = GF_edict_doll_reprogram_cooldown }
+		cost = {
+			unity = 50
+			multiplier = value:edict_size_effect
+		}
+
+		upkeep = {
+			energy = 50
+			multiplier = value:edict_size_effect
+		}
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_mind_upgrade_2
+		has_tradition = tr_gf_mind_upgrade_4
 	}
+
 	effect = {
-		custom_tooltip = GF_doll_reprogram_effect
-		if = {
-			limit = { has_modifier = GF_edict_doll_reprogram_cooldown }
-			custom_tooltip = GF_doll_reprogram_cooldown_tooltip
+		custom_tooltip_with_params = {
+			description = GF_doll_reprogram_effect_desc
+			description_parameters = {
+				INTERVAL = @GF_doll_leader_reprogram_interval
+				CHIP_ADD = @GF_doll_leader_core_chip_upkeep_add
+				UNITY_MULT = @GF_doll_leader_unity_upkeep_mult
+			}
 		}
 		hidden_effect = {
-			country_event = { id = GF_doll_leader.100 }
+			country_event = {
+				id = GF_doll_leader.100
+				days = 1
+			}
 		}
 	}
 
@@ -54,36 +72,6 @@ GF_doll_reprogram = {
 				count > 0
 			}
 		}
-	}
-
-	prerequisites = { "GF_tech_mind_upgrade_2" }
-}
-#########################
-GF_robot_modding = {
-	length = 1
-	icon = "GFX_GF_edict_type_robot"
-	resources = {
-		category = campaigns
-	}
-
-	potential = { has_authority = GF_auth_commonwealth }
-
-	allow = {
-		custom_tooltip = {
-			fail_text = GF_edict_robot_modding_is_ongoing
-			NOT = { has_special_project = SP_GF_ROBOT_MODDING }
-		}
-	}
-
-	effect = {
-		custom_tooltip = GF_robot_modding_effect
-		hidden_effect = {
-			country_event = { id = GF_doll.2005 }
-		}
-	}
-	
-	ai_weight = {
-		weight = 0
 	}
 }
 
