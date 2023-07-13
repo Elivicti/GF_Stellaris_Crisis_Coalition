@@ -129,6 +129,7 @@ country_event = {
 					save_event_target_as = GF_ogas_species
 					set_species_flag = flag_GF_doll_species_@root
 					set_species_flag = is_secondary_species_of@root
+					set_species_flag = flag_GF_ogas_doll
 				}
 			}
 			clone_leader = {
@@ -322,14 +323,15 @@ planet_event = {
 			effect = {
 				set_species_flag = flag_GF_doll_species_@root.owner
 				set_species_flag = is_secondary_species_of@root.owner
+				save_global_event_target_as = GF_doll_species_template
 			}
 		}
 		while = {
 			count = 14
 			# replace pops instead of create new pops
 			random_owned_pop = {
-				limit = { NOT = { is_same_species = last_created_species } }
-				change_species = last_created_species
+				limit = { NOT = { is_same_species = event_target:GF_doll_species_template } }
+				change_species = event_target:GF_doll_species_template
 			}
 		}
 		while = {
