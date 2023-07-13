@@ -1,3 +1,150 @@
+#################
+# ASCENSION PATHS
+#################
+
+ap_engineered_evolution = {
+	on_enabled = {
+		custom_tooltip = "engineered_evolution_tooltip"
+		add_research_option = tech_gene_seed_purification
+		if = {
+			limit = {
+				has_origin = origin_clone_army
+				OR = {
+					has_trait = trait_clone_soldier_infertile
+					has_trait = trait_clone_soldier_infertile_full_potential
+				}
+			}
+			custom_tooltip = clone_soldier_locked_genes
+		}
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_biological_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_gene_tailoring"
+			has_technology = tech_gene_tailoring
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_the_flesh_is_weak"
+			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_organo_machine_interfacing"
+			NOT = { has_ascension_perk = ap_organo_machine_interfacing }
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NOT = { has_ascension_perk = ap_mind_over_matter }
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_evolution"
+			NOT = { has_ascension_perk = ap_synthetic_evolution }
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+		custom_tooltip = {
+			fail_text = "GF_vanilla_ascension_paths_banned"
+			is_GF_authority = no
+		}
+	}
+
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_engineered_evolution
+			has_authority = "auth_machine_intelligence"
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_mechanical_empire = no
+		is_cyborg_empire = no
+	}
+
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 0
+			num_owned_planets < 6
+		}
+		modifier = {
+			factor = 3
+			has_authority = auth_hive_mind
+		}
+	}
+}
+
+ap_the_flesh_is_weak = {
+	on_enabled = {
+		custom_tooltip = "flesh_is_weak_tooltip"
+		add_research_option = tech_neuro_quantum_links
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "synthetic_empire_synthetic_ascension"
+			NOT = { has_trait = trait_mechanical }
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_integrated_cybernetics"
+			has_technology = tech_integrated_cybernetics
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_engineered_evolution"
+			NOT = { has_ascension_perk = ap_engineered_evolution }
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_mind_over_matter"
+			NOT = { has_ascension_perk = ap_mind_over_matter }
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_ap_synthetic_evolution"
+			NOT = { has_ascension_perk = ap_synthetic_evolution }
+		}
+		custom_tooltip = {
+			fail_text = "requires_free_tradition_tree"
+			num_tradition_categories < 7
+		}
+		custom_tooltip = {
+			fail_text = "GF_vanilla_ascension_paths_banned"
+			is_GF_authority = no
+		}
+	}
+
+	potential = {
+		has_utopia = yes
+		NOR = {
+			has_ascension_perk = ap_the_flesh_is_weak
+			has_origin = origin_shroudwalker_apprentice
+		}
+		is_gestalt = no
+	}
+
+	ai_weight = {
+		factor = 20
+		modifier = {
+			factor = 0.5
+			NOR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		modifier = {
+			factor = 0
+			num_owned_planets < 6
+		}
+	}
+}
+
 ap_synthetic_evolution = {
 	on_enabled = {
 		custom_tooltip = "synthetic_evolution_tooltip"
@@ -68,6 +215,10 @@ ap_synthetic_evolution = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < 7
 		}
+		custom_tooltip = {
+			fail_text = "GF_vanilla_ascension_paths_banned"
+			is_GF_authority = no
+		}
 	}
 
 	potential = {
@@ -76,9 +227,6 @@ ap_synthetic_evolution = {
 			has_ascension_perk = ap_synthetic_evolution
 			has_authority = "auth_machine_intelligence"
 			has_origin = origin_shroudwalker_apprentice
-
-			# GF
-			is_GF_authority = yes
 		}
 		is_gestalt = no
 		is_mechanical_empire = no
@@ -99,7 +247,10 @@ ap_synthetic_evolution = {
 		}
 		modifier = {
 			factor = 0
-			has_origin = origin_necrophage
+			OR = {
+				has_origin = origin_necrophage
+				has_origin = origin_slavers
+			}
 		}
 	}
 }
@@ -138,6 +289,10 @@ ap_mind_over_matter = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < 7
 		}
+		custom_tooltip = {
+			fail_text = "GF_vanilla_ascension_paths_banned"
+			is_GF_authority = no
+		}
 	}
 
 	potential = {
@@ -145,10 +300,6 @@ ap_mind_over_matter = {
 		NOR = {
 			has_ascension_perk = ap_mind_over_matter
 			has_origin = origin_shroudwalker_apprentice
-			has_authority = "auth_machine_intelligence"
-
-			# GF
-			is_GF_authority = yes
 		}
 		is_gestalt = no
 		is_mechanical_empire = no
@@ -171,149 +322,6 @@ ap_mind_over_matter = {
 		modifier = {
 			factor = 10
 			has_ascension_perk = ap_become_the_crisis
-		}
-	}
-}
-
-ap_the_flesh_is_weak = {
-	on_enabled = {
-		custom_tooltip = "flesh_is_weak_tooltip"
-		add_research_option = tech_neuro_quantum_links
-	}
-	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_synthetic_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-		custom_tooltip = {
-			fail_text = "requires_technology_integrated_cybernetics"
-			has_technology = tech_integrated_cybernetics
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_engineered_evolution"
-			NOT = { has_ascension_perk = ap_engineered_evolution }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_mind_over_matter"
-			NOT = { has_ascension_perk = ap_mind_over_matter }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_synthetic_evolution"
-			NOT = { has_ascension_perk = ap_synthetic_evolution }
-		}
-		custom_tooltip = {
-			fail_text = "requires_free_tradition_tree"
-			num_tradition_categories < 7
-		}
-	}
-
-	potential = {
-		has_utopia = yes
-		NOR = {
-			has_ascension_perk = ap_the_flesh_is_weak
-			has_origin = origin_shroudwalker_apprentice
-
-			# GF
-			is_GF_authority = yes
-		}
-		is_gestalt = no
-	}
-
-	ai_weight = {
-		factor = 20
-		modifier = {
-			factor = 0.5
-			NOR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
-		}
-		modifier = {
-			factor = 0
-			num_owned_planets < 6
-		}
-	}
-}
-
-@ap_engineered_evolution_POINTS = 3
-@ap_engineered_evolution_COST_MULT = -0.25
-ap_engineered_evolution = {
-	on_enabled = {
-		custom_tooltip = "engineered_evolution_tooltip"
-		add_research_option = tech_gene_seed_purification
-		if = {
-			limit = {
-				has_origin = origin_clone_army
-				OR = {
-					has_trait = trait_clone_soldier_infertile
-					has_trait = trait_clone_soldier_infertile_full_potential
-				}
-			}
-			custom_tooltip = clone_soldier_locked_genes
-		}
-	}
-	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_biological_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
-		custom_tooltip = {
-			fail_text = "requires_ascension_perks_1"
-			num_ascension_perks > 0
-		}
-		custom_tooltip = {
-			fail_text = "requires_technology_gene_tailoring"
-			has_technology = tech_gene_tailoring
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_the_flesh_is_weak"
-			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_organo_machine_interfacing"
-			NOT = { has_ascension_perk = ap_organo_machine_interfacing }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_mind_over_matter"
-			NOT = { has_ascension_perk = ap_mind_over_matter }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_synthetic_evolution"
-			NOT = { has_ascension_perk = ap_synthetic_evolution }
-		}
-		custom_tooltip = {
-			fail_text = "requires_free_tradition_tree"
-			num_tradition_categories < 7
-		}
-	}
-
-	potential = {
-		has_utopia = yes
-		NOR = {
-			has_ascension_perk = ap_engineered_evolution
-			has_authority = "auth_machine_intelligence"
-			has_origin = origin_shroudwalker_apprentice
-			
-			# GF
-			is_GF_authority = yes
-		}
-		is_mechanical_empire = no
-		is_cyborg_empire = no
-	}
-
-	ai_weight = {
-		factor = 15
-		modifier = {
-			factor = 0
-			num_owned_planets < 6
-		}
-		modifier = {
-			factor = 3
-			has_authority = auth_hive_mind
 		}
 	}
 }
