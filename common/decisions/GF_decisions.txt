@@ -390,6 +390,7 @@ decision_GF_deploy_armored_train = {
 				owner = this.owner
 				species = this.owner
 				name = "NAME_GF_armored_train"
+				land_army = yes
 				type = GF_army_defensive_armored_train
 			}
 		}
