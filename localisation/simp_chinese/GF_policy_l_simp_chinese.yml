@@ -17,7 +17,7 @@
  GF_doll_right_servitude_name:0 "人形权利：侍从"
  GF_doll_right_policy_servitude:0 "侍从"
  GF_doll_right_policy_servitude_desc:0 "人形将作为人类的仆从而活动。尽管在同理心的作用下，一个类似于动物保护法的粗糙的人形保护体系建立了起来，过分地“虐待”人形将被视为违背道德、公序良俗而受到谴责，但私底下被如何对待依旧取决于所有者的意愿。\n\n$GF_doll_right_servitude_effect$"
- GF_doll_right_servitude_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!（§Y75% £mod_pop_political_power£§!）\n§R禁止§!人形产生领袖"
+ GF_doll_right_servitude_effect:0 "人形的公民权将被锁定在§Y$citizenship_robot_servitude$§!（§Y25% £mod_pop_political_power£§!）\n§R禁止§!人形产生领袖"
 
  GF_doll_right_low_name:0 "人形权利：商品"
  GF_doll_right_policy_low:0 "商品"
