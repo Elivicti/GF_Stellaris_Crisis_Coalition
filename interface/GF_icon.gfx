@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_council_agenda_icon_GF_agenda_automation"
 		texturefile = "gfx/interface/icons/agenda_icons/GF_agenda_automation.dds"
 	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_GF_agenda_doll_cloud_network"
+		texturefile = "gfx/interface/icons/agenda_icons/GF_agenda_doll_cloud_network.dds"
+	}
 
 	# messages
 	spriteType = {

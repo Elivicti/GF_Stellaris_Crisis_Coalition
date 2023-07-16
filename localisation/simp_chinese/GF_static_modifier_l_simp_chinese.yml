@@ -18,6 +18,12 @@
  GF_ogas_mode_empire_desc:0 "OGAS将分出部分算力协调各级政府进行政务管理。"
 ################################# 议程
  GF_agenda_automation_finish:0 "$council_agenda_GF_agenda_automation_name$议程"
+
+ GF_agenda_doll_cloud_network_finish:0 "$council_agenda_GF_agenda_doll_cloud_network_name$议程"
+ GF_agenda_doll_cloud_network_governor_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$governor$"
+ GF_agenda_doll_cloud_network_scientist_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$scientist$"
+ GF_agenda_doll_cloud_network_admiral_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$admiral$"
+ GF_agenda_doll_cloud_network_general_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$general$"
 ################################# 国家
  gf_core_chip_deficit:0 "芯片短缺"
  GF_gavirul_project_finished:0 "§YGAVIRUL计划§!已完成"

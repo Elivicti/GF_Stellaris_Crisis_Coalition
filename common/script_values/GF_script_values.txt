@@ -98,6 +98,21 @@ GF_count_robotic_leader_with_vanilla_negative_traits = {
 	}
 }
 
+# scope = country
+GF_count_doll_leader = {
+	complex_trigger_modifier = {
+		trigger = count_owned_leader
+		parameters = {
+			limit = {
+				GF_is_doll_leader = yes
+				leader_class = $CLASS$
+			}
+		}
+		mode = add
+	}
+	max = $MAX|100$
+}
+
 GF_count_district = {
 	base = 0
 	complex_trigger_modifier = {

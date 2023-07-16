@@ -53,3 +53,13 @@
 
  council_agenda_GF_agenda_automation_name: "$GF_tradition_automation$"
  council_agenda_GF_agenda_automation_desc: "OGAS将增强一切智能机械的能力。"
+
+ council_agenda_GF_agenda_doll_cloud_network_name: "心智云图网络"
+ council_agenda_GF_agenda_doll_cloud_network_desc: "通过齐纳协议将人形的心智构成分布式网络，来辅助计算与协助完成任务。"
+ GF_is_doll_leader_tooltip:0 "是§Y$GF_ANDROID$§!领袖"
+ GF_agenda_doll_cloud_network_no_doll_leader_tooltip:0 "§H注意：§!帝国内§R没有§!人形领袖，此议程效果将被§R浪费§!\n§H注意：§!帝国内§R没有§!人形领袖，此议程效果将被§R浪费§!\n§H注意：§!帝国内§R没有§!人形领袖，此议程效果将被§R浪费§!\n\n"
+ GF_agenda_doll_cloud_network_effect_tooltip:0 "§H一次性§!链接已有的人形领袖，获得以下效果，持续§Y$@GF_agenda_doll_cloud_network_duration_years|0$年§!："
+ GF_agenda_doll_cloud_network_governor_effect_tooltip:0 "每个§Y人形$governor$§!提供：\n    $MOD_EMPIRE_SIZE_POPS_MULT$: $@GF_agenda_doll_cloud_network_pop_size_mult|%0=-$"
+ GF_agenda_doll_cloud_network_scientist_effect_tooltip:0 "每个§Y人形$scientist$§!提供：\n    $MOD_SHIP_ANOMALY_RESEARCH_SPEED$: $@GF_agenda_doll_cloud_network_anomaly_speed_mult|%0=+$"
+ GF_agenda_doll_cloud_network_admiral_effect_tooltip:0 "每个§Y人形$admiral$§!提供：\n    $MOD_SHIP_SPEED_MULT$: $@GF_agenda_doll_cloud_network_ship_speed|%0=+$"
+ GF_agenda_doll_cloud_network_general_effect_tooltip:0 "每个§Y人形$general$§!提供：\n    $MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §Y-5%§!"

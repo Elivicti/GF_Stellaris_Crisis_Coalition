@@ -10,8 +10,11 @@ GF_is_ogas_leader = {
 
 # scope = leader
 GF_is_doll_leader = {
-	GF_is_ogas_leader = no
-	species = { has_trait = GF_trait_doll }
+	custom_tooltip = {
+		fail_text = GF_is_doll_leader_tooltip
+		GF_is_ogas_leader = no
+		has_trait = GF_trait_leader_doll
+	}
 }
 
 ## normal

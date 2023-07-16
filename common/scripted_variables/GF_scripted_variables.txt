@@ -20,3 +20,10 @@
 @GF_doll_leader_unity_upkeep_mult = 0.20
 
 @GF_doll_leader_reprogram_interval = 180
+
+@GF_agenda_doll_cloud_network_duration_years = 10
+@GF_agenda_doll_cloud_network_pop_size_mult = -0.02
+@GF_agenda_doll_cloud_network_ship_speed = 0.05
+@GF_agenda_doll_cloud_network_anomaly_speed_mult = 0.05
+# 这个蠢驴犯病，本地化直接引用会不显示，修改后记得改`GF_agenda_doll_cloud_network_effect`的本地化
+@GF_agenda_doll_cloud_network_collateral_damage = -0.05

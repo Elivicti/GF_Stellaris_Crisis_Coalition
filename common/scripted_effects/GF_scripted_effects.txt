@@ -581,3 +581,29 @@ GF_remove_computing_center_effect = {
 	}
 	remove_megastructure = $target$
 }
+
+# this = country, add_modifier if mult > 0, otherwise do nothing/remove modifier if exists
+GF_add_effective_modifier = {
+	if = {
+		limit = {
+			check_variable = {
+				which = $MULT$
+				value > 0
+			}
+		}
+		add_modifier = {
+			modifier = $MODIFIER$
+			mult = $MULT$
+			$PERIOD$ = $DURATION$
+		}
+	}
+	else = {
+		if = {
+			limit = { has_modifier = $MODIFIER$ }
+			remove_modifier = $MODIFIER$
+		}
+	}
+}
+
+
+
