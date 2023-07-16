@@ -83,6 +83,8 @@ GF_doll_right_policy = {
 	option = {
 		name = "GF_doll_right_policy_servitude"
 
+		valid = { NOT = { has_tradition = tr_gf_mind_upgrade_finish } }
+
 		policy_flags = { GF_doll_right_servitude ai_servitude }
 
 		modifier = {
@@ -109,6 +111,10 @@ GF_doll_right_policy = {
 	}
 	option = {
 		name = "GF_doll_right_policy_low"
+
+		valid = {
+			NOT = { has_tradition = tr_gf_mind_upgrade_finish }
+		}
 
 		modifier = {
 			GF_ANDROID_pop_happiness = -0.20
@@ -215,6 +221,7 @@ GF_doll_work_policy = {
 				fail_text = GF_doll_work_policy_doll_has_full_right
 				NOT = { has_policy_flag = GF_doll_right_full }
 			}
+			NOT = { has_tradition = tr_gf_mind_upgrade_finish }
 		}
 
 		modifier = {
@@ -272,7 +279,10 @@ GF_run_mode_policy = {
 	}
 	option = {
 		name = "GF_run_mode_policy_no_food"
-		valid = { NOT = { has_policy_flag = GF_doll_right_full } }
+		valid = {
+			NOT = { has_policy_flag = GF_doll_right_full }
+			NOT = { has_tradition = tr_gf_mind_upgrade_finish }
+		}
 
 		modifier = {
 			GF_ANDROID_pop_happiness = -0.10
@@ -287,7 +297,10 @@ GF_run_mode_policy = {
 	}
 	option = {
 		name = "GF_run_mode_policy_overload"
-		valid = { NOT = { has_policy_flag = GF_doll_right_full } }
+		valid = {
+			NOT = { has_policy_flag = GF_doll_right_full }
+			NOT = { has_tradition = tr_gf_mind_upgrade_finish }
+		}
 
 		modifier = {
 			GF_ANDROID_pop_happiness = -0.20

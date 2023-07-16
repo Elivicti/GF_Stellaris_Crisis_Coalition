@@ -21,8 +21,6 @@
  GF_tech_mind_upgrade_2_desc:0 "人形心智的形成已对我们完全透明，我们能让人形更好的模拟人类，又有谁能分辨出99.9999999999999....%与100%的区别呢？"
  feature_GF_doll_mind_upgrade:0 "§H解锁特性：§!人形心智升级"
  feature_GF_doll_mind_upgrade_desc:0 "强化人形心智的算力，使她们可以担任更§H高级§!的岗位。"
- unlock_edict_GF_doll_reprogram:0 "§H解锁法令：§!$edict_GF_doll_reprogram$"
- unlock_edict_GF_doll_reprogram_desc:0 "$edict_GF_doll_reprogram_desc$"
  GF_tech_tactical_doll:0 "战术人形特化生产"
  GF_tech_tactical_doll_desc:0 "原有的普通人形加装火控核心的简单武装化流程已无法满足高强度星际战争需要，所有军用人形将单独设计并专门化生产，将采用最新材料与技术强化机体防御力与作战效能，同时特别编写对应的心智云图以抑制情绪表达来达到火控计算的最大化。"
  GF_tech_zener_network_1:0 "齐纳协议网络技术"
