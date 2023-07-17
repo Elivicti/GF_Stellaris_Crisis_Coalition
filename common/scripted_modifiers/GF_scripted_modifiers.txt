@@ -80,8 +80,8 @@ GF_doll_political_power = {
 	category = pop
 }
 
-GF_doll_resettlement_cost_mult = {
-	icon = mod_pop_resettlement_cost_mult
+GF_doll_amenities_usage_mult = {
+	icon = mod_pop_amenities_usage_mult
 	percentage = yes
 	good = no
 	category = pop

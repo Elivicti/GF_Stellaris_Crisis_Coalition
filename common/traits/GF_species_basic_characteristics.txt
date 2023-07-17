@@ -49,8 +49,8 @@ GF_trait_doll = {
 	}
 
 	triggered_pop_modifier = {
-		pop_resettlement_cost_mult = 1
-		mult = modifier:GF_doll_resettlement_cost_mult
+		pop_amenities_usage_mult = 1
+		mult = modifier:GF_doll_amenities_usage_mult
 	}
 }
 

@@ -158,7 +158,7 @@
  mod_GF_doll_consumer_goods_upkeep_mult:0 "$GF_ANDROID$ £consumer_goods£ $consumer_goods$维护费"
  mod_GF_doll_food_upkeep_mult:0 "$GF_ANDROID$ £food£ $food$维护费"
  mod_GF_doll_political_power:0 "$GF_ANDROID$政治权利"
-mod_GF_doll_resettlement_cost_mult:0 "$GF_ANDROID$强制迁移花费"
+mod_GF_doll_amenities_usage_mult:0 "$GF_ANDROID$舒适度使用"
 
  mod_GF_auto_colony_capacity_add:0 "自动化遥控殖民地协议承载力"
 
