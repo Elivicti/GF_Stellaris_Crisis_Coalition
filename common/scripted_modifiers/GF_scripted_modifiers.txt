@@ -129,3 +129,10 @@ GF_decision_GOSPLAN_effect_mult = {
 	percentage = yes
 	category = country
 }
+
+GF_pop_debuff_from_capture_mult = {
+	icon = mod_job_assimilation_add
+	good = no
+	percentage = yes
+	category = country
+}

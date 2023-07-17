@@ -224,3 +224,38 @@ GF_councilor_NHC = {
 		modify_species_cost_mult = -0.025
 	}
 }
+
+GF_councilor_svarog = {
+	civic = GF_civic_svarog
+	leader_class = { governor admiral }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = governor
+		}
+	}
+
+	modifier = {
+		GF_pop_debuff_from_capture_mult = -0.05
+		country_energy_produces_mult = 0.01
+		planet_building_build_speed_mult = 0.02
+	}
+}
+
+GF_councilor_wave_tech = {
+	civic = GF_civic_wave_tech
+	leader_class = { scientist general }
+	is_leader_possible = {
+		OR = {
+			leader_class = general
+			leader_class = scientist
+		}
+	}
+
+	modifier = {
+		add_base_country_intel = 2
+		country_physics_tech_research_speed = 0.02
+		monthly_loyalty_from_subjects = 0.1
+		espionage_hostile_operation_difficulty_mult = 0.05
+	}
+}

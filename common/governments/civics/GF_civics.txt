@@ -287,6 +287,35 @@ GF_civic_90WISH = {
 	}
 }
 
+GF_civic_svarog = {
+	icon = "gfx/interface/icons/governments/civics/gf_svarog.dds"
+	potential = {
+		civics = { value = GF_civic_GK }
+	}
+
+	random_weight = { base = 0 }
+	description = "GF_civic_svarog_effects"
+	modifier = {
+		shipclass_military_build_cost_mult = -0.15
+		shipclass_military_build_speed_mult = 0.15
+		country_power_projection_influence_produces_add = 0.5
+	}
+}
+
+GF_civic_wave_tech = {
+	icon = "gfx/interface/icons/governments/civics/gf_wave_tech.dds"
+	potential = {
+		civics = { value = GF_civic_GK }
+	}
+
+	random_weight = { base = 0 }
+	description = "GF_civic_wave_tech_effects"
+	modifier = {
+		envoy_improve_relations_mult = 0.15
+		planet_administrators_produces_mult = 0.10
+		planet_stability_add = 5
+	}
+}
 ###通用
 GF_civic_functional_architecture = {
 	icon = "gfx/interface/icons/governments/civics/gf_functional_architecture.dds"

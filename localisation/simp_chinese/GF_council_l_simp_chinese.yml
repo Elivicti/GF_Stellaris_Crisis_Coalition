@@ -51,6 +51,13 @@
  GF_councilor_NHC_female: "$GF_councilor_NHC$"
  GF_councilor_NHC_desc: "$TITLE$负责保障人民的基础卫生健康。"
 
+ GF_councilor_svarog: "火神重工首席执行官"
+ GF_councilor_svarog_female: "$GF_councilor_svarog$"
+ GF_councilor_svarog_desc: "$TITLE$负责监管和规划军工生产与能源建设。"
+ GF_councilor_wave_tech: "WAVE科技首席执行官"
+ GF_councilor_wave_tech_female: "$GF_councilor_wave_tech$"
+ GF_councilor_wave_tech_desc: "$TITLE$负责监管集团内各子公司的发展。"
+
  council_agenda_GF_agenda_automation_name: "$GF_tradition_automation$"
  council_agenda_GF_agenda_automation_desc: "OGAS将增强一切智能机械的能力。"
 
