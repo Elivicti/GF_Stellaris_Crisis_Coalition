@@ -45,10 +45,10 @@ purge_GF_assimilation = {
 	pop_tooltip = purge_GF_assimilation_tooltip_short
 
 	potential = {
-		exists = from
-
 		is_robotic = yes
 		NOT = { has_trait = GF_trait_doll }
+		exists = from
+		from = { has_tradition = tr_gf_mind_upgrade_3 }
 	}
 
 	allow = {

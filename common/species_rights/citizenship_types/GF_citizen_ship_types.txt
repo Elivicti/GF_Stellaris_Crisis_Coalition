@@ -92,8 +92,10 @@ citizenship_GF_doll_assimilation = {
 	is_purge = yes
 
 	potential = {
-		#is_robotic = yes
+		is_robotic = yes
 		NOT = { has_trait = GF_trait_doll }
+		exists = from
+		from = { has_tradition = tr_gf_mind_upgrade_3 }
 	}
 
 	allow = {
