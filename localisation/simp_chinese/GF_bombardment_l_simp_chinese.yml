@@ -40,3 +40,11 @@
  GF_bombardment.1302.name:0 "§R[from.GetName]被摧毁§!"
  GF_bombardment.1302.desc:0 "在§H[fromfrom.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[from.GetName]§!之后，这个居住站已经彻底损坏，化为太空中冰冷的残骸，所有的居民都痛苦地死去了。"
  GF_bombardment.1302.a:0 "可恶！"
+
+
+ ######## 协议同归轨道轰炸
+ bombardment_GF_bombardment_capture:0 "协议同归"
+ bombardment_GF_bombardment_capture_desc:0 "利用特殊的电磁脉冲弹对行星地表进行轰炸，可瘫痪并捕获星球上的机械人口。\n—对§Y军团§!和§Y星球§!造成§Y中度§!伤害\n—对§Y有机人口§!造成§E轻度§!伤害\n—将会轰炸不设防的星球，并捕获§Y机械人口§!\n—§R不会§!消灭/捕获最后的§Y3§!个人口\n—每§Y2天§!有§Y5%§!的概率发生捕获，且：\n——捕获§Y$pop_cat_worker$§!或§Y$pop_cat_simple_drone$§!的成功率：§Y100%§!\n——捕获§Y$pop_cat_specialist$§!或§Y$pop_cat_complex_drone$§!的成功率：§Y50%§!\n——捕获§Y$pop_cat_ruler$§!的成功率：§Y25%§!\n—§Y机械人口§!被捕获后将被同化为§Y$GF_ANDROID$§!，并获得§R$mod_planet_pops_upkeep_mult$+50%§!，持续§Y5年§!"
+
+ MESSAGE_GF_ROBOT_POP_CAPTURED_TITLE:0 "机械人口已捕获"
+ MESSAGE_GF_ROBOT_POP_CAPTURED_DESC:0 "§Y$PLANET$§!上的一个§Y机械人口§!已被捕获并同化，现已移送至$CAPITAL$"

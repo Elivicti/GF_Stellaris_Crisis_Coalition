@@ -51,6 +51,16 @@ message_type = {
 }
 
 message_type = {
+	key = MESSAGE_TYPE_GF_ROBOT_POP_CAPTURED
+	icon = "GFX_message_GF_robot_pop_assimilated"
+	icon_frame = 1
+
+	name = "MESSAGE_GF_ROBOT_POP_CAPTURED_TITLE"
+	sound = "notification"
+	ping = "ping_notification_green"
+}
+
+message_type = {
 	key = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
 	icon = "GFX_message_planet_destroyed"
 	icon_frame = 1

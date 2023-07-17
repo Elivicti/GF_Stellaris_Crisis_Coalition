@@ -65,6 +65,7 @@
  GF_edict_doll_reprogram_cooldown:0 "$edict_GF_doll_reprogram$冷却"
  GF_edict_doll_reprogram_cooldown_effect:0 "持续期间§R无法§!启动§Y$edict_GF_doll_reprogram$§!法令"
 
+ GF_captured_pop_debuff:0 "协议同归"
 ############
 
  GF_productive_relic_device:0 "遗迹设施投入生产"

@@ -40,3 +40,47 @@ collapsebomb = {
 		}
 	}
 }
+
+GF_bombardment_capture = {
+	default = no
+	trigger = {
+		owner = { has_civic = GF_civic_svarog }
+	}
+
+	stop_when_armies_dead = no
+	accept_surrender = yes
+	abduct_pops = no
+
+	planet_damage = 0.5
+	army_damage = 1.0
+
+	kill_pop_chance = {
+		base = 0.25
+		modifier = {
+			# do not kill robots
+			factor = 0
+			is_robot_pop = yes
+		}
+	}
+	min_pops_to_kill_pop = 3
+
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			factor = 0.01
+			exists = from
+			from = {
+				owner = { NOT = { is_hostile = root.owner } }
+			}
+		}
+		complex_trigger_modifier = {
+			trigger = count_owned_pop
+			trigger_scope = from
+			parameters = { limit = { is_robot_pop = yes } }
+			mult = 0.5
+			mode = factor
+		}
+	}
+}

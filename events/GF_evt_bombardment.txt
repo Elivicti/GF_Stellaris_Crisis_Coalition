@@ -359,3 +359,104 @@ country_event = {
 		}
 	}
 }
+
+
+#### 轰炸姿态：协议同归
+# This = Planet
+# From = Bombarder
+planet_event = {
+	id = GF_bombardment.3000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_orbital_bombardment_stance = GF_bombardment_capture
+		NOT = { has_planet_flag = flag_p_GF_capture_bombardment_capture_inhibitor }
+		num_pops > 3
+		any_owned_pop = { is_robot_pop = yes }
+	}
+
+	immediate = {
+		set_timed_planet_flag = {
+			flag = flag_p_GF_capture_bombardment_capture_inhibitor
+			days = 2
+		}
+		random_list = {
+			95 = { }
+			5 = {
+				reroll_random = yes
+				random_owned_pop = {
+					limit = { is_robot_pop = yes }
+					if = {
+						limit = {
+							OR = {
+								is_pop_category = worker
+								is_pop_category = simple_drone
+							}
+						}
+						set_pop_flag = flag_pop_GF_captured
+						log = "worker captured"
+					}
+					else_if = {
+						limit = {
+							OR = {
+								is_pop_category = specialist
+								is_pop_category = complex_drone
+							}
+						}
+						random_list = {
+							1 = { set_pop_flag = flag_pop_GF_captured log = "specialist captured" }
+							1 = { }
+						}
+					}
+					else = {
+						## ruler or any other
+						random_list = {
+							1 = { set_pop_flag = flag_pop_GF_captured log = "ruler captured" }
+							3 = { }
+						}
+					}
+					save_event_target_as = target_pop
+				}
+
+				event_target:target_pop = {
+					if = {
+						limit = { has_pop_flag = flag_pop_GF_captured }
+						prev.from.owner = {
+							capital_scope = {
+								create_pop = {
+									species = event_target:GF_doll_species_template
+									ethos = owner
+									effect = {
+										add_modifier = {
+											modifier = GF_captured_pop_debuff
+											mult = value:scripted_modifier_mult|MODIFIER|GF_pop_debuff_from_capture_mult|
+											years = 5
+										}
+									}
+								}
+							}
+							create_message = {
+								TYPE = MESSAGE_TYPE_GF_ROBOT_POP_CAPTURED
+								localization = MESSAGE_GF_ROBOT_POP_CAPTURED_DESC
+								days = 30
+								target = prev
+								variable = {
+									type = name
+									localization = PLANET
+									scope = root
+								}
+								variable = {
+									type = name
+									localization = CAPITAL
+									scope = capital_scope
+								}
+							}
+						}
+						kill_pop = yes
+					}
+				}
+			}
+		}
+	}
+}
