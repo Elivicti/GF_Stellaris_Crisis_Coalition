@@ -29,14 +29,13 @@ country_event = {
 					save_global_event_target_as = GF_ogas_leader
 					if = {
 						limit = { has_global_flag = GF_Stellairs_Crisis_Coalition_Extension_Enabled }
-						GFEXT_remove_doll_leader_flags = yes
+						GF_remove_doll_leader_flags = yes
 					}
 				}
 			}
 		}
 		event_target:GF_ogas_leader = { set_owner = prev }
 		assign_leader = event_target:GF_ogas_leader
-		clear_custom_ruler_and_heir_titles = yes
 	}
 }
 

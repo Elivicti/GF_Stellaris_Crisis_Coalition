@@ -84,7 +84,7 @@ country_event = {
 			type = GF_ogas_country_type
 			name = "NAME_GF_OGAS"
 			adjective = "NAME_GF_OGAS_adjective"
-			species = prev.owner_main_species
+			species = owner_main_species
 			flag = {
 				icon = {
 					category = "griffin"
@@ -106,10 +106,6 @@ country_event = {
 				save_global_event_target_as = GF_ogas_country
 			}
 		}
-		random_owned_species = {
-			limit = { is_archetype = GF_ANDROID }
-			save_event_target_as = GF_doll_species
-		}
 
 		# Set ruler basic characteristics
 		ruler = {
@@ -120,7 +116,7 @@ country_event = {
 			create_species = {
 				class = GF_doll
 				name = NAME_GF_ANDROID
-				portrait = event_target:GF_doll_species
+				portrait = event_target:GF_doll_species_template
 				homeworld = event_target:GF_home_world
 				namelist = GF_DOLL
 				gender = female
@@ -130,6 +126,7 @@ country_event = {
 					set_species_flag = flag_GF_doll_species_@root
 					set_species_flag = is_secondary_species_of@root
 					set_species_flag = flag_GF_ogas_doll
+					set_species_flag = nivlac_no_procreation
 				}
 			}
 			clone_leader = {
@@ -164,7 +161,6 @@ country_event = {
 		}
 
 		assign_leader = event_target:GF_ogas_leader
-		clear_custom_ruler_and_heir_titles = yes
 		event_target:old_ruler = {
 			kill_leader = { show_notification = no }
 		}
@@ -323,6 +319,7 @@ planet_event = {
 			effect = {
 				set_species_flag = flag_GF_doll_species_@root.owner
 				set_species_flag = is_secondary_species_of@root.owner
+				set_species_flag = nivlac_no_procreation
 				save_global_event_target_as = GF_doll_species_template
 			}
 		}
