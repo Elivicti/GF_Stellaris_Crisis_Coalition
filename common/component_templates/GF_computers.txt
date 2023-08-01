@@ -150,6 +150,35 @@ utility_component_template = {
 }
 
 utility_component_template = {
+	key = "GF_OGAS_COMPUTER_FREE_JUGGERNAUT"
+	size = small
+	icon = "GFX_GF_ogas_computer"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 35
+		}
+	}
+	size_restriction = { juggernaut }
+
+	component_set = "combat_computers"
+	ship_behavior = "GF_ogas_free"
+	prerequisites = { "GF_tech_combat_ogas_computers" }
+
+	ship_modifier = {
+		ship_engagement_range_mult = 0.5
+		ship_weapon_range_mult = 0.10
+		ship_fire_rate_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
 	key = "GF_OGAS_COMPUTER_PLATFORM"
 	size = small
 	icon = "GFX_GF_ogas_computer"
