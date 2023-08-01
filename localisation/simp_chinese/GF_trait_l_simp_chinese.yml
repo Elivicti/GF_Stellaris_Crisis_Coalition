@@ -11,7 +11,7 @@
  GF_trait_sequela:0 "辐射后遗症"
  GF_trait_sequela_desc:0 "§L广域辐射污染虽然已被隔离或清理，但它依旧对这一种族留下了难以忽略的影响，甚至从基因层面改变了这个种群。§!\n"
  GF_trait_leader_ogas:0 "OGAS系统"
- GF_trait_leader_ogas_desc:0 "是一个以仿生自律人形姿态活动，实质为拥有阵列主机的超级人工智能，是联合政府配给最高指挥的辅助AI。"
+ GF_trait_leader_ogas_desc:0 "[this.GetName]是一个以仿生自律人形姿态活动，实质为拥有阵列主机的超级人工智能，是联合政府配给最高指挥的辅助AI。"
  GF_trait_strange_cloth:0 "奇装异服"
  GF_trait_strange_cloth_desc:0 "§L为什么用于战场的战术人形会选择穿奇装异服而非军用制式装备的问题困扰了人们很久，这不经让人发问：“战术人形，就这？就这？”§!\n"
  GF_trait_delicious_food:0 "甜食成瘾"

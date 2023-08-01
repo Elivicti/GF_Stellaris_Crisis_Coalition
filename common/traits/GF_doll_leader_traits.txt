@@ -1,10 +1,9 @@
 GF_trait_leader_ogas = {
 	cost = 0
 	inline_script = {
-		script = trait/GF_traits
+		script = trait/icon
 		CLASS = governor
-		ICON = GFX_leader_trait_GF_ogas
-		FRAME = destiny_no_glow
+		ICON = GFX_leader_trait_machine_intelligence
 		RARITY = paragon
 		COUNCIL = yes
 		TIER = none
