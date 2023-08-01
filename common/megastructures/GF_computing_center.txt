@@ -22,6 +22,14 @@ GF_computing_center_0 = {
 
 	possible = {
 		exists = starbase
+		hidden_trigger = {
+			from = {
+				OR = {
+					is_ai = no
+					has_authority = GF_auth_commonwealth
+				}
+			}
+		}
 		custom_tooltip = {
 			fail_text = "GF_only_one_computing_center"
 			from = {
@@ -58,7 +66,11 @@ GF_computing_center_0 = {
 	# root = system
 	# from = country
 	ai_weight = {
-		factor = 15
+
+		modifier = {
+			factor = 0
+			from = { NOT = { has_authority = GF_auth_commonwealth } }
+		}
 
 		modifier = {
 			factor = 0.1
