@@ -17,8 +17,6 @@
  mod_leader_admirals_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"
  mod_leader_generals_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"
 
- mod_shipclass_military_build_cost_mult:0 "军用舰船建造花费"
-
 ############ economics
  GF_ship_collapse_weapons:0 "坍塌武器"
  GF_ship_collapse_armors:0 "坍塌装甲"
