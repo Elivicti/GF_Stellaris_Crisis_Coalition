@@ -2546,7 +2546,7 @@
 
 # Sequential name formats
  GF_AU_FLEET:0 "$ORD$南极空勤作战集群"
- GF_AU_PLANETARYGUARD:0 "$C$内防部队"
+ GF_AU_PLANETARYGUARD:0 "$ORD$内卫部队"
  GF_AU_EXPEDITIONARYFORCE:0 "$ORD$突击部队"
  GF_AU_INDENTUREDRIFLES:0 "$ORD$奴隶部队"
  GF_AU_CLONEARMY:0 "$ORD$克隆人部队"
