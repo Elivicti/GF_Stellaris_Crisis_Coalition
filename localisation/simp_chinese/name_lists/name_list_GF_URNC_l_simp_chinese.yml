@@ -3505,9 +3505,9 @@
  GF_URNC_INDUSTRIALARMY:0 "工业时代部队$C$"
  GF_URNC_POSTATOMICARMY:0 "后原子时代部队$C$"
 #少前新陆军
- GF_URNC_DOLL:0 "$ORD$自律兵器部队"
- GF_URNC_TACTICAL_DOLL:0 "$ORD$机械步兵部队"
- GF_URNC_DEFENSIVE_DOLL:0 "$ORD$自动防卫单元"
+ GF_URNC_DOLL:0 "$ORD$自律机兵部队"
+ GF_URNC_TACTICAL_DOLL:0 "$ORD$战术机兵部队"
+ GF_URNC_DEFENSIVE_DOLL:0 "$ORD$智能防卫单元"
  GF_URNC_OCCUPATION_DOLL:0 "$ORD$治安监管单元"
 
 # Obsolete sequentials (for backwards compatibility)

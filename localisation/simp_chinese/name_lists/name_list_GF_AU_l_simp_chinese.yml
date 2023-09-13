@@ -2545,7 +2545,7 @@
  GF_AU_CHR_Quadrini:0 "奎得里尼"
 
 # Sequential name formats
- GF_AU_FLEET:0 "$ORD$南极空勤作战集群"
+ GF_AU_FLEET:0 "$ORD$空勤作战集群"
  GF_AU_PLANETARYGUARD:0 "$ORD$内卫部队"
  GF_AU_EXPEDITIONARYFORCE:0 "$ORD$突击部队"
  GF_AU_INDENTUREDRIFLES:0 "$ORD$奴隶部队"
@@ -2562,13 +2562,13 @@
  GF_AU_INDUSTRIALARMY:0 "工业时代部队$C$"
  GF_AU_POSTATOMICARMY:0 "后原子时代部队$C$"
 #少前新陆军
- GF_AU_DOLL:0 "$ORD$自律兵器部队"
- GF_AU_TACTICAL_DOLL:0 "$ORD$机械步兵部队"
- GF_AU_DEFENSIVE_DOLL:0 "$ORD$自动防卫单元"
+ GF_AU_DOLL:0 "$ORD$自律机兵部队"
+ GF_AU_TACTICAL_DOLL:0 "$ORD$战术机兵部队"
+ GF_AU_DEFENSIVE_DOLL:0 "$ORD$智能防卫单元"
  GF_AU_OCCUPATION_DOLL:0 "$ORD$治安监管单元"
 
 # Obsolete sequentials (for backwards compatibility)
- GF_AU_xxFLEET_ORD:1 "$O$南极空勤作战集群"
+ GF_AU_xxFLEET_ORD:1 "$O$空勤作战集群"
  GF_AU_xxPLANETARYGUARD_ORD:1 "$C$行星护卫"
  GF_AU_xxEXPEDITIONARYFORCE_ORD:1 "$CARD$远征部队 "
  GF_AU_xxINDENTUREDRIFLES_ORD:1 "$O$契约步枪手"
