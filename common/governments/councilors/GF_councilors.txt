@@ -259,3 +259,39 @@ GF_councilor_wave_tech = {
 		espionage_hostile_operation_difficulty_mult = 0.05
 	}
 }
+
+GF_councilor_driller = {
+	civic = GF_civic_driller
+	leader_class = { governor scientist admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+
+	modifier = {
+		station_gatherers_produces_mult = 0.05
+	}
+}
+
+GF_councilor_scanner = {
+	civic = GF_civic_scanner
+	leader_class = { governor scientist admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = scientist
+			leader_class = governor
+		}
+	}
+
+	modifier = {
+		planet_structures_rare_crystals_cost_mult = -0.02
+		planet_structures_volatile_motes_cost_mult = -0.02
+		planet_structures_exotic_gases_cost_mult = -0.02
+	}
+}

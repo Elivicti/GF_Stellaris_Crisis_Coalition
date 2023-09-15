@@ -70,3 +70,11 @@
  GF_agenda_doll_cloud_network_scientist_effect_tooltip:0 "每个§Y人形$scientist$§!提供：\n    $MOD_SHIP_ANOMALY_RESEARCH_SPEED$: $@GF_agenda_doll_cloud_network_anomaly_speed_mult|%0=+$"
  GF_agenda_doll_cloud_network_admiral_effect_tooltip:0 "每个§Y人形$admiral$§!提供：\n    $MOD_SHIP_SPEED_MULT$: $@GF_agenda_doll_cloud_network_ship_speed|%0=+$"
  GF_agenda_doll_cloud_network_general_effect_tooltip:0 "每个§Y人形$general$§!提供：\n    $MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §Y-5%§!"
+
+ GF_councilor_scanner: "战略资源工程研究官"
+ GF_councilor_scanner_female: "$GF_councilor_scanner$"
+ GF_councilor_scanner_desc: "$TITLE$促进战略资源工业体系的发展。"
+
+ GF_councilor_driller: "资源开发委员会主席"
+ GF_councilor_driller_female: "$GF_councilor_driller$"
+ GF_councilor_driller_desc: "$TITLE$负责监管基础资源的生产与采掘。"
