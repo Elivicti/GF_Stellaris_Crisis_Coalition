@@ -12,11 +12,9 @@ GF_agenda_automation = {
 	potential = {
 		has_technology = GF_tech_ogas_computing_center
 	}
-	modifiers = {
-		{
-			planet_pop_assembly_mult = 0.10
-			planet_jobs_robotic_produces_mult = 0.10
-		}
+	modifier = {
+		planet_pop_assembly_mult = 0.10
+		planet_jobs_robotic_produces_mult = 0.10
 	}
 	finish_modifier = GF_agenda_automation_finish
 }
@@ -29,10 +27,8 @@ GF_agenda_doll_cloud_network = {
 	potential = {
 		has_ascension_perk = ap_GF_mind_upgrade
 	}
-	modifiers = {
-		{
-			leaders_upkeep_mult = -0.10
-		}
+	modifier = {
+		leaders_upkeep_mult = -0.10
 	}
 	finish_modifier = GF_agenda_doll_cloud_network_finish
 	effect = {
