@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n$GF_Stellaris_Log_20230717$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "更新日志：\n\n§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n$GF_Stellaris_Log_20230915$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+
+# 2023.9.15
+ GF_Stellaris_Log_20230915:0 "1. 为§Y$GF_civic_driller$§!和§Y$GF_civic_scanner$§!国策添加内阁席位\n2. 更新了 £gf_core_chip£ §Y$gf_core_chip$§!的图标\n3. 为§Y主宰§!添加丢失的§Y$GF_OGAS_COMPUTER_FREE_JUGGERNAUT$§!\n4. 调整了§Y$GF_computing_center_3$§!的AI权重"
 
 # 2023.7.17
  GF_Stellaris_Log_20230717:0 "1. 添加§Y$tr_gf_mind_upgrade_adopt$§!飞升路线\n2. 添加§H国民理念§!：§Y$GF_civic_svarog$§!与§Y$GF_civic_wave_tech$§!\n3. 添加§H轨道轰炸姿态§!：§Y$bombardment_GF_bombardment_capture$§!，允许捕获并同化机械人口\n4. 人形现在不再作为国家设计界面可见的第二物种，将在开局后直接添加（同§Y$origin_mechanists$§!起源）\n5. 添加§Y人形立绘与名称对应功能§!\n6. 略微上调§Y自动化区划§!的§Y产出§!与§Y维护§!\n7. 大量§Y法令§!、§Y特质§!调整，详见§Y创意工坊页面§!的§Y改动说明§!\n8. 大量§Y错误修正§!与§Y效果优化§!，详见§Y创意工坊页面§!的§Y改动说明§!\n9. 文本优化与错误修正"
