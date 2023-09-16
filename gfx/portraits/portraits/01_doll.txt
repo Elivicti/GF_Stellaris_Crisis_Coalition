@@ -2284,7 +2284,6 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_Savage99.dds"
-			"gfx/models/portraits/doll/pic_Savage99_7302.dds"
 			"gfx/models/portraits/doll/pic_Savage99_8004.dds"
 		}
 	}
