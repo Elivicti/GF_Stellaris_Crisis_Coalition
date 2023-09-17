@@ -871,9 +871,6 @@ GF_relic_researcher = {
 	}
 
 	possible_precalc = can_fill_specialist_job
-	possible = {
-		complex_specialist_job_check_trigger = yes
-	}
 
 	triggered_pop_modifier = {
 		potential = {
@@ -892,9 +889,9 @@ GF_relic_researcher = {
 	resources = {
 		category = planet_researchers
 		produces = {
-			physics_research = 5
-			engineering_research = 5
-			society_research = 5
+			physics_research = 10
+			engineering_research = 10
+			society_research = 10
 			minor_artifacts = 1
 		}
 		upkeep = {
@@ -926,7 +923,7 @@ GF_relic_researcher = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|researcher|
+		mult = 3
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -942,7 +939,7 @@ GF_relic_researcher = {
 		}
 		modifier = {
 			factor = 1.5
-			has_job = researcher
+			has_job = GF_relic_researcher
 		}
 		modifier = {
 			factor = 0.8
