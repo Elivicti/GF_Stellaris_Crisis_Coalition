@@ -263,11 +263,11 @@ GF_civic_16LAB = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		planet_jobs_gf_core_chip_produces_mult = 0.1
 		num_tech_alternatives_add = 1
 		GF_planet_jobs_doll_programmers_physics_research_produces_add = 2
 		GF_planet_jobs_doll_programmers_society_research_produces_add = 2
 		GF_planet_jobs_doll_programmers_engineering_research_produces_add = 2
+		GF_planet_jobs_doll_programmers_gf_core_chip_produces_add = 1
 		GF_planet_jobs_doll_programmers_consumer_goods_upkeep_add = 1
 	}
 	description = "GF_civic_16LAB_effects"
@@ -329,6 +329,6 @@ GF_civic_functional_architecture = {
 	modifier = {
 		planet_structures_cost_mult = -0.20
 		planet_structures_upkeep_mult = -0.20
-		empire_size_districts_mult = -0.20
+		empire_size_districts_mult = -0.50
 	}
 }
