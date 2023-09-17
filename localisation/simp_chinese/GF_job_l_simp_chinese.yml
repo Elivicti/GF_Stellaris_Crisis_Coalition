@@ -46,6 +46,9 @@
  job_GF_maintenance_engineer_desc:0 "负责修缮、维护大型自动化设施，以确保各类自动化机械的正常运转。"
  job_GF_maintenance_engineer_effect_desc:0 "£job_GF_maintenance_engineer£ $job_GF_maintenance_engineer_plural$花费 £energy£ §Y能量§!和 £alloys£ §Y合金§!来维护§Y$GF_automated_city_districts$§!"
 
+ job_GF_relic_researcher:0 "遗迹研究员"
+ job_GF_relic_researcher_plural:0 "遗迹研究员"
+ job_GF_relic_researcher_desc:0 "在北兰岛事件后，为了防止遗迹泄露的悲剧重演，任何对远古文明遗迹进行开发、研究的活动都必须由专业人士负责。"
 ############
  pop_cat_GF_freedom_class:0 "乌托邦"
  pop_cat_GF_freedom_class_plural:0 "乌托邦"
