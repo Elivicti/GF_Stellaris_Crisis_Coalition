@@ -263,7 +263,6 @@ GF_civic_16LAB = {
 	}
 	random_weight = { base = 0 }
 	modifier = {
-		country_base_gf_core_chip_produces_add = 1
 		planet_jobs_gf_core_chip_produces_mult = 0.1
 		num_tech_alternatives_add = 1
 		GF_planet_jobs_doll_programmers_physics_research_produces_add = 2

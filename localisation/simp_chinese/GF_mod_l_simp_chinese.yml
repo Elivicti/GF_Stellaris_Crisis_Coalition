@@ -99,6 +99,7 @@
  mod_GF_planet_dormancy_energy_upkeep_add:0 "人形休眠舱位 £energy£ 维护费"
  mod_country_base_gf_core_chip_produces_add:0 "每月£gf_core_chip£ $gf_core_chip$"
  mod_country_gf_core_chip_produces_mult:0 "每月核心芯片"
+ mod_planet_jobs_gf_core_chip_produces_mult:0 "£job_GF_programmer£ $GF_planet_jobs_doll_programmers$产出的心智核心"
  mod_GF_ANDROID_species_trait_points_add:0 "人形机体升级点数"
  mod_GF_ANDROID_species_trait_picks_add:0 "人形机体升级上限"
  mod_GF_ANDROID_pop_happiness:0 "人形幸福度"
