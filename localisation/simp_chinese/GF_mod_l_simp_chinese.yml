@@ -106,6 +106,7 @@
  mod_job_GF_assemble_mechanic_add:0 "人形技师岗位"
  mod_job_GF_programmer_add:0 "心智云图编辑员岗位"
  mod_job_GF_liaison_add:0 "联络员岗位"
+ mod_job_GF_relic_researcher_add:0 "遗迹研究员岗位"
  mod_job_GF_dormancy_doll_add:0 "人形休眠舱位"
  mod_job_GF_URNC_secretary_add:0 "书记岗位"
  mod_job_GF_AU_consultant_add:0 "顾问岗位"
