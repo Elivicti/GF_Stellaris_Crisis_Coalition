@@ -5,7 +5,7 @@ GF_trait_strange_cloth = {
 	randomized = no
 	icon = "gfx/interface/icons/traits/doll/cloth.dds"
 	modifier = {
-		planet_jobs_unity_produces_mult = 0.05
+		planet_jobs_unity_produces_mult = 0.1
 		planet_pops_consumer_goods_upkeep_mult = 0.10
 	}
 }
@@ -60,7 +60,7 @@ GF_trait_vanometriccell = {
 	opposites = { "GF_trait_nanobot_hives" }
 	icon = "gfx/interface/icons/traits/doll/battery.dds"
 	modifier = {
-		planet_pops_upkeep_mult = -0.05
+		planet_pops_upkeep_mult = -0.10
 	}
 }
 GF_trait_liquid_metal_skeleton = {
@@ -74,7 +74,7 @@ GF_trait_liquid_metal_skeleton = {
 	allowed_archetypes = { GF_ANDROID }
 	icon = "gfx/interface/icons/traits/doll/skeleton.dds"
 	modifier = {
-		planet_pop_assembly_mult = 0.15
+		planet_pop_assembly_mult = 0.10
 	}
 }
 GF_trait_adapted_skin = {
@@ -159,7 +159,7 @@ GF_trait_mind_cloud = {
 		}
 	}
 	modifier = {
-		species_leader_exp_gain = 0.25
+		species_leader_exp_gain = 0.20
 		negative_leader_traits_species = -2
 	}
 }
@@ -222,7 +222,7 @@ GF_trait_sercurity_program = {
 }
 ######(perk2)
 GF_trait_nanobot_hives = {
-	cost = 3
+	cost = 2
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
@@ -236,11 +236,11 @@ GF_trait_nanobot_hives = {
 		}
 	}
 	modifier = {
-		planet_pops_upkeep_mult = -0.10
+		planet_pops_upkeep_mult = -0.20
     }
 }
 GF_trait_quantum_processors = {
-	cost = 3
+	cost = 2
 	initial = no
 	randomized = no
 	icon ="gfx/interface/icons/traits/doll/quantum.dds"
@@ -270,11 +270,11 @@ GF_trait_overclock = {
 		}
 	}
 	modifier = {
-		planet_pops_upkeep_mult = 0.15
+		planet_pops_upkeep_mult = 0.10
 	}
 }
 GF_trait_nuclear_engine = {
-	cost = 3
+	cost = 2
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
