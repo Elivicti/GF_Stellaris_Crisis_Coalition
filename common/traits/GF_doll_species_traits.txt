@@ -92,7 +92,7 @@ GF_trait_adapted_skin = {
 	}
 }
 GF_trait_emotional_subroutine = {
-	cost = 2
+	cost = 1
 	allowed_archetypes = { GF_ANDROID }
 	initial = no
 	randomized = no
@@ -104,7 +104,6 @@ GF_trait_emotional_subroutine = {
 	icon="gfx/interface/icons/traits/doll/emotion.dds"
 	modifier = {
 		planet_jobs_unity_produces_mult = 0.1
-		species_empire_size_mult = -0.10
     }
 }
 GF_trait_analysis_model = {
