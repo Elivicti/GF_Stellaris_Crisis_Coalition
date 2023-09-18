@@ -108,6 +108,7 @@ GF_trait_leader_doll = {
 		}
 		negative_traits_leader = @GF_doll_upgrade_leader_negative_trait_points
 		council_agenda_progress_speed = @GF_doll_upgrade_leader_agenda_speed
+		leader_trait_selection_options_add = 2
 	}
 
 	triggered_self_modifier = {
