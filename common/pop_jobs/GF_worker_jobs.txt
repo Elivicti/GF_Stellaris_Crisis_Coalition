@@ -263,7 +263,7 @@ GF_assemble_doll = {
 					assembling_species = { has_trait = GF_trait_doll }
 				}
 			}
-			gf_core_chip = 1
+			gf_core_chip = 0.5
 		}
 	}
 	weight = {
