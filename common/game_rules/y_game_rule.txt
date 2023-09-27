@@ -32,12 +32,7 @@
 species_can_live_on_planet = {
 	exists = root #somehow this appeared in the error log. No idea how!
 	NAND = {
-		root = {
-			OR = {
-				is_planet_class = pc_machine
-				is_planet_class = pc_GF_sf_machine		# GF 神秘机械星球
-			}
-		}
+		root = { is_planet_class = pc_machine }
 		NOR = {
 			has_trait = GF_trait_doll					# GF 人形
 
@@ -52,6 +47,10 @@ species_can_live_on_planet = {
 				}
 			}
 		}
+	}
+	NAND = {
+		root = { is_planet_class = pc_GF_sf_machine }		# GF 神秘机械星球
+		is_robotic = no
 	}
 	if = {
 		limit = {
@@ -75,14 +74,9 @@ species_can_live_on_planet = {
 #Root = country
 #This = pop
 can_generate_leader_from_pop = {
-	if = {
-		limit = {
-			NAND = {
-				has_trait = GF_trait_doll
-				root = { has_authority = GF_auth_commonwealth }
-			}
-		}
+	OR = {
 		has_citizenship_rights = yes
+		species = { GF_allow_doll_species_generate_leader = yes }
 	}
 	NOT = { has_trait = trait_syncretic_proles }
 	can_think = yes
@@ -95,8 +89,7 @@ can_generate_leader_from_pop = {
 				is_mechanical_empire = yes
 
 				# GF
-				has_policy_flag = GF_doll_right_full
-				has_policy_flag = GF_doll_right_limited
+				GF_allow_doll_leaders = yes
 			}
 		}
 	}
@@ -124,8 +117,7 @@ can_generate_military_leader_from_pop = {
 				is_mechanical_empire = yes
 
 				# GF
-				has_policy_flag = GF_doll_right_full
-				has_policy_flag = GF_doll_right_limited
+				GF_allow_doll_leaders_military = yes
 			}
 		}
 	}
@@ -377,17 +369,7 @@ can_trade_leader = {
 		OR = {
 			has_specialist_subject_leader_trait = yes
 			# GF
-			AND = {
-				# 是机械领袖
-				species = { is_robotic = yes }
-				# 必须为少前政体附庸
-				ROOT = { is_valid_GF_OGAS_subnet = yes }
-				# 少前政体必须为宗主
-				FROM = {
-					is_overlord_to = ROOT
-					has_authority = GF_auth_commonwealth
-				}
-			}
+			GF_can_trade_robotic_leader = yes
 		}
 	}
 	# The subject and overlord must both be regular empires, machine intelligences or hive-minds.

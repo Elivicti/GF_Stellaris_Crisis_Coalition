@@ -95,3 +95,43 @@ GF_can_build_doll_species = {
 	NOT = { has_deficit = gf_core_chip }
 	GF_potential_trigger_advanced = yes
 }
+
+# this = country
+# prev = pop
+GF_allow_doll_leaders = {
+	OR = {
+		has_policy_flag = GF_doll_right_full
+		has_policy_flag = GF_doll_right_limited
+	}
+}
+GF_allow_doll_leaders_military = {
+	OR = {
+		has_policy_flag = GF_doll_right_full
+		has_policy_flag = GF_doll_right_limited
+	}
+}
+# this = species
+# prev = pop
+# root = country
+GF_allow_doll_species_generate_leader = {
+	root = {
+		GF_allow_doll_leaders = yes
+	}
+}
+
+# This = leader, leader we'd like to trade
+# Root = country, country that owns the leader currently
+# From = country, country that would receive the leader
+GF_can_trade_robotic_leader = {
+	AND = {
+		# 是机械领袖
+		species = { is_robotic = yes }
+		# 必须为少前政体附庸
+		ROOT = { is_valid_GF_OGAS_subnet = yes }
+		# 少前政体必须为宗主
+		FROM = {
+			is_overlord_to = ROOT
+			has_authority = GF_auth_commonwealth
+		}
+	}
+}
