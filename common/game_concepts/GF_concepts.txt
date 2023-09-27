@@ -1,0 +1,81 @@
+concept_GF_dolls = {
+	alias = { concept_GF_dolls concept_GF_dolls_short concept_GF_dolls_short_short }
+}
+
+concept_GF_neural_cloud = {
+	alias = { concept_GF_neural_cloud concept_GF_neural_cloud_system }
+}
+
+concept_GF_core_chip = {
+	alias = { concept_GF_core_chip }
+}
+
+concept_GF_OGAS = {
+	alias = { concept_GF_OGAS concept_GF_OGAS_full }
+}
+
+concept_GF_beilan_event = {
+	alias = { concept_GF_beilan_event }
+}
+
+concept_GF_beilan_island = {
+	alias = { concept_GF_beilan_island }
+}
+
+concept_GF_elid = {
+	alias = { concept_GF_elid concept_GF_elid_short }
+}
+
+concept_GF_elid_infected = {
+	alias = { concept_GF_elid_infected concept_GF_elid_husk concept_GF_elid_infected_alias }
+}
+
+concept_GF_siliconization = {
+	alias = { concept_GF_siliconization }
+}
+
+concept_GF_collapse_relic = {
+	alias = { concept_GF_collapse_relic }
+}
+
+concept_GF_gavirul = {
+	alias = { concept_GF_gavirul }
+}
+concept_GF_gavirul_project = {
+	alias = { concept_GF_gavirul_project }
+}
+concept_GF_collapse_immune = {
+	alias = { concept_GF_collapse_immune }
+}
+
+
+concept_GF_collapse_liquid = {
+	alias = { concept_GF_collapse_liquid }
+}
+
+concept_GF_collapse_radiation = {
+	alias = { concept_GF_collapse_radiation concept_GF_collapse_radiation_short }
+}
+
+concept_GF_contaminated_zone = {
+	alias = { concept_GF_contaminated_zone concept_GF_contaminated_zone_short }
+}
+concept_GF_contaminated_zone_yellow = {
+	alias = { concept_GF_contaminated_zone_yellow }
+}
+concept_GF_contaminated_zone_red = {
+	alias = { concept_GF_contaminated_zone_red }
+}
+concept_GF_contaminated_zone_black = {
+	alias = { concept_GF_contaminated_zone_black }
+}
+concept_GF_white_zone = {
+	alias = { concept_GF_white_zone }
+}
+concept_GF_green_zone= {
+	alias = { concept_GF_green_zone }
+}
+
+concept_GF_epiphyllum = {
+	alias = { concept_GF_epiphyllum concept_GF_radiated_epiphyllum }
+}
