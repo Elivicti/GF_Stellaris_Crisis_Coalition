@@ -1932,7 +1932,6 @@ portraits = {
 			"gfx/models/portraits/doll/pic_P90.dds"
 			"gfx/models/portraits/doll/pic_P90_2802.dds"
 			"gfx/models/portraits/doll/pic_P90_5701.dds"
-			"gfx/models/portraits/doll/pic_P90_nosunglasses.dds"
 		}
 	}
 	GF_doll_252 = {
