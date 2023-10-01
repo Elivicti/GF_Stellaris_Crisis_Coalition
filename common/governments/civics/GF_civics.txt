@@ -46,7 +46,7 @@ GF_civic_FSB = {
 	random_weight = { base = 0 }
 	modifier = {
 		intel_encryption_add = 5
-		planet_administrators_produces_mult = 0.10
+		planet_administrators_produces_mult = 0.20
 		planet_stability_add = 5
 	}
 }

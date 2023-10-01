@@ -17,6 +17,7 @@ GF_councilor_ruler_commonwealth = {
 		country_edict_fund_add = 10
 		edict_length_mult = 0.10
 		country_leader_cap_add = 2
+		GF_OGAS_threads_add = 1
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
