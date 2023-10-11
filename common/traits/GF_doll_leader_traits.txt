@@ -11,13 +11,18 @@ GF_trait_leader_ogas = {
 	self_modifier = {
 		species_leader_exp_gain = 0.20
 		leader_governors_unity_upkeep_mult = -0.50
-		leader_governors_gf_core_chip_upkeep_add = 0.5
 	}
 	modifier = {
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
 		GF_OGAS_threads_add = 1
 	}
+	inline_script = {
+		script = OGAS/OGAS_trait_leveled_modifier
+		CORE_UPKEEP = 0.5
+		TOOLTIP = GF_trait_leader_ogas_leveled_effect
+	}
+	
 	leader_potential_add = {
 		from = { has_authority = GF_auth_commonwealth }
 	}

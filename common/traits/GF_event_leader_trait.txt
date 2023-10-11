@@ -59,13 +59,18 @@ GF_trait_leader_ogas_2 = {
 	self_modifier = {
 		species_leader_exp_gain = 0.20
 		leader_governors_unity_upkeep_mult = -0.50
-		leader_governors_gf_core_chip_upkeep_add = 1.0
 	}
 	modifier = {
 		country_unity_produces_mult = 0.5
 		empire_size_colonies_mult = -0.25
 		country_admin_cap_add = 50
 		GF_OGAS_threads_add = 2
+	}
+
+	inline_script = {
+		script = OGAS/OGAS_trait_leveled_modifier
+		CORE_UPKEEP = 0.8
+		TOOLTIP = GF_trait_leader_ogas_leveled_effect_2
 	}
 
 	replace_traits = { GF_trait_leader_ogas }

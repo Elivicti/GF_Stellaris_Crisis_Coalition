@@ -212,3 +212,11 @@ GF_doll_produces_mult = {
 		add = modifier:GF_doll_cat_worker_produces_mult
 	}
 }
+
+# this = leader
+GF_OGAS_leveled_threads_add = {
+	base = 0
+	add = trigger:has_level
+	subtract = $START_AFTER_LEVEL$
+	min = 0
+}

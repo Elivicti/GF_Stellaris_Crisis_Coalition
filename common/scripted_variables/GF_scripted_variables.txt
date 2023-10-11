@@ -9,6 +9,8 @@
 
 @GF_zion_project_cost_max = 1000000
 
+# OGAS升级提升线程数的起始等级
+@GF_OGAS_leveled_thread_add_start_after_level = 5
 
 # doll ascension paths
 @GF_doll_upgrade_POINTS = 3
