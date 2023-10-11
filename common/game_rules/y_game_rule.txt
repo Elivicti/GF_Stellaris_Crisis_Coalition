@@ -34,7 +34,8 @@ species_can_live_on_planet = {
 	NAND = {
 		root = { is_planet_class = pc_machine }
 		NOR = {
-			has_trait = GF_trait_doll					# GF 人形
+			# GF 人形
+			has_trait = GF_trait_doll
 
 			has_trait = trait_machine_unit
 			has_trait = trait_mechanical
@@ -48,8 +49,9 @@ species_can_live_on_planet = {
 			}
 		}
 	}
+	# GF 神秘机械星球
 	NAND = {
-		root = { is_planet_class = pc_GF_sf_machine }		# GF 神秘机械星球
+		root = { is_planet_class = pc_GF_sf_machine }
 		is_robotic = no
 	}
 	if = {
@@ -74,10 +76,7 @@ species_can_live_on_planet = {
 #Root = country
 #This = pop
 can_generate_leader_from_pop = {
-	OR = {
-		has_citizenship_rights = yes
-		species = { GF_allow_doll_species_generate_leader = yes }
-	}
+	has_citizenship_rights = yes
 	NOT = { has_trait = trait_syncretic_proles }
 	can_think = yes
 	OR = {

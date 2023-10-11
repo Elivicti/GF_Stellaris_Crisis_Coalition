@@ -110,14 +110,6 @@ GF_allow_doll_leaders_military = {
 		has_policy_flag = GF_doll_right_limited
 	}
 }
-# this = species
-# prev = pop
-# root = country
-GF_allow_doll_species_generate_leader = {
-	root = {
-		GF_allow_doll_leaders = yes
-	}
-}
 
 # This = leader, leader we'd like to trade
 # Root = country, country that owns the leader currently
