@@ -14,6 +14,10 @@ concept_GF_OGAS = {
 	alias = { concept_GF_OGAS concept_GF_OGAS_full }
 }
 
+concept_GF_OGAS_threads = {
+	alias = { concept_GF_OGAS_threads concept_GF_OGAS_threads_short }
+}
+
 concept_GF_beilan_event = {
 	alias = { concept_GF_beilan_event }
 }
