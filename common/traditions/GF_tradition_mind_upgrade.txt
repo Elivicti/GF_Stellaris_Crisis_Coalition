@@ -28,6 +28,7 @@ tr_gf_mind_upgrade_finish = {
 
 tr_gf_mind_upgrade_1 = {
 	possible = {
+		has_technology = tech_sapient_ai
 		has_technology = GF_tech_mind_upgrade_2
 	}
 
@@ -41,9 +42,9 @@ tr_gf_mind_upgrade_1 = {
 
 tr_gf_mind_upgrade_2 = {
 	possible = {
+		has_technology = tech_sapient_ai
 		has_technology = GF_tech_mind_upgrade_2
 	}
-
 
 	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_2_effect_desc
 	modifier = { }
@@ -61,7 +62,7 @@ tr_gf_mind_upgrade_3 = {
 
 	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_3_effect_desc
 	modifier = {
-		GF_ANDROID_species_trait_picks_add = 2
+		GF_ANDROID_species_trait_picks_add = 3
 	}
 
 	ai_weight = {
@@ -71,6 +72,7 @@ tr_gf_mind_upgrade_3 = {
 
 tr_gf_mind_upgrade_4 = {
 	possible = {
+		has_technology = tech_sapient_ai
 		has_technology = GF_tech_mind_upgrade_2
 	}
 
@@ -82,21 +84,12 @@ tr_gf_mind_upgrade_4 = {
 	}
 }
 
-# remember to change the same variable in scipted_variables/GF_scripted_variables.txt
-@GF_doll_upgrade_leader_agenda_speed = 0.10
 tr_gf_mind_upgrade_5 = {
 	possible = {
 		has_tradition = tr_gf_mind_upgrade_4
 	}
 
-	modifier = {
-		description = tr_gf_mind_upgrade_5_effect_desc
-		description_parameters = {
-			POINTS = @GF_doll_upgrade_leader_negative_trait_points
-			SPEED = @GF_doll_upgrade_leader_agenda_speed
-		}
-		GF_ANDROID_species_trait_picks_add = 2
-	}
+	custom_tooltip_with_modifiers = tr_gf_mind_upgrade_5_effect_desc
 
 	ai_weight = {
 		factor = 5000

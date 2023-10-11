@@ -101,14 +101,29 @@ GF_trait_leader_doll = {
 	self_modifier = {
 		species_leader_exp_gain = 0.20
 	}
+	triggered_self_modifier = {
+		potential = { leader_class = governor }
+		leader_governors_gf_core_chip_upkeep_add = 1
+	}
+	triggered_self_modifier = {
+		potential = { leader_class = scientist }
+		leader_scientists_gf_core_chip_upkeep_add = 1
+	}
+	triggered_self_modifier = {
+		potential = { leader_class = admiral }
+		leader_admirals_gf_core_chip_upkeep_add = 1
+	}
+	triggered_self_modifier = {
+		potential = { leader_class = general }
+		leader_generals_gf_core_chip_upkeep_add = 1
+	}
 
 	triggered_self_modifier = {
 		potential = {
 			owner = { has_tradition = tr_gf_mind_upgrade_5 }
 		}
-		negative_traits_leader = @GF_doll_upgrade_leader_negative_trait_points
 		council_agenda_progress_speed = @GF_doll_upgrade_leader_agenda_speed
-		leader_trait_selection_options_add = 2
+		leader_trait_selection_options_add = @GF_doll_upgrade_leader_trait_selection_options
 	}
 
 	triggered_self_modifier = {

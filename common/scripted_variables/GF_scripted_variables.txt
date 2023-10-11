@@ -13,7 +13,7 @@
 # doll ascension paths
 @GF_doll_upgrade_POINTS = 3
 @GF_doll_upgrade_COST_MULT = -0.25
-@GF_doll_upgrade_leader_negative_trait_points = -1
+@GF_doll_upgrade_leader_trait_selection_options = 2
 @GF_doll_upgrade_leader_agenda_speed = 0.10
 
 @GF_doll_leader_core_chip_upkeep_add = 0.5

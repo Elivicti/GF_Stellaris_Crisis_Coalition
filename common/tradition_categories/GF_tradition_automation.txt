@@ -11,10 +11,6 @@ GF_tradition_automation = {
 		"tr_gf_automation_6"
 	}
 
-	potential = {
-		has_technology = GF_tech_ogas_computing_center
-	}
-
 	ai_weight = {
 		base = 0
 		modifier = {

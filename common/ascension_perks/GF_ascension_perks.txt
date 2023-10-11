@@ -13,13 +13,17 @@ ap_GF_mind_upgrade = {
 			num_ascension_perks > 0
 		}
 	}
-	
+
 	potential = {
 		has_authority = GF_auth_commonwealth
 		NOT = { has_ascension_perk = ap_GF_mind_upgrade }
 	}
 
 	on_enabled = {
+		if = {
+			limit = { NOT = { has_technology = tech_sapient_ai } }
+			add_research_option = tech_sapient_ai
+		}
 		add_research_option = GF_tech_mind_upgrade_2
 
 		custom_tooltip = ap_GF_mind_upgrade_tradition_tooltip
@@ -36,7 +40,7 @@ ap_GF_body_upgrade = {
 		}
 	}
 	modifier = {
-		
+
 	}
 	possible = {
 		has_technology = GF_tech_doll_modding_point_3
@@ -46,11 +50,11 @@ ap_GF_body_upgrade = {
 			num_ascension_perks > 2
 		}
 	}
-	
+
 	potential = {
 		always = no
 	}
-	
+
 	ai_weight = {
 		factor = 0
 	}
@@ -76,7 +80,7 @@ ap_GF_gavirul_project = {
 	possible = {
 		has_technology = tech_gene_tailoring
 		has_technology = GF_tech_collapse_relic_tech
-		
+
 		custom_tooltip = {
 			fail_text = "has_flag_GF_collapse_relic_surveyed"
 			has_country_flag = flag_GF_collapse_relic_surveyed
@@ -86,14 +90,14 @@ ap_GF_gavirul_project = {
 			num_ascension_perks > 2
 		}
 	}
-	
+
 	potential = {
 		has_authority = GF_auth_commonwealth
 		NOT = {
 			has_ascension_perk = ap_GF_gavirul_project
 		}
 	}
-	
+
 	ai_weight = {
 		factor = 0
 	}
