@@ -17,7 +17,6 @@ GF_councilor_ruler_commonwealth = {
 		country_edict_fund_add = 10
 		edict_length_mult = 0.10
 		country_leader_cap_add = 2
-		GF_OGAS_threads_add = 1
 	}
 	icon = "GFX_icon_councilor_ruler"
 }
@@ -183,8 +182,8 @@ GF_councilor_IOP = {
 	is_leader_possible = { leader_class = governor }
 
 	modifier = {
-		planet_building_GF_doll_factory_build_speed_mult = 0.025
-		GF_doll_produces_mult = 0.015
+		planet_building_GF_doll_factory_build_speed_mult = 0.05
+		GF_planet_jobs_pop_assemblers_upkeep_mult = -0.015
 	}
 }
 
