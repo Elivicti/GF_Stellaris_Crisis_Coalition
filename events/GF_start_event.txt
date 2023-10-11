@@ -336,23 +336,6 @@ planet_event = {
 			create_pop = { species = owner_main_species }
 		}
 
-		owner = { country_event = { id = GF_start.25 days = 1 } }
-	}
-}
-
-country_event = {
-	id = GF_start.25
-	hide_window = yes
-
-	is_triggered_only = yes
-	immediate = {
-		every_owned_species = {
-			limit = { is_archetype = GF_ANDROID }
-			set_citizenship_type = {
-				type = citizenship_robot_servitude
-				country = prev
-				cooldown = yes
-			}
-		}
+		owner = { country_event = { id = GF_doll.3000 days = 1 } }
 	}
 }

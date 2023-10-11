@@ -9,19 +9,13 @@ GF_doll_right_policy = {
 			GF_ANDROID_pop_happiness = 0.10
 		}
 		valid = {
-			custom_tooltip = {
-				fail_text = GF_require_no_xenophobe_and_fxxk_you_paradox
-				NOR = {
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_xenophobe
-				}
-			}
 			has_technology = GF_tech_mind_upgrade_2
 		}
 		policy_flags = { GF_doll_right_full ai_full_rights }
 
 		on_enabled = {
 			hidden_effect = {
+				country_event = { id = GF_doll.3000 }
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_military_service_type = {
@@ -58,6 +52,7 @@ GF_doll_right_policy = {
 
 		on_enabled = {
 			hidden_effect = {
+				country_event = { id = GF_doll.3000 }
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_military_service_type = {
@@ -96,6 +91,7 @@ GF_doll_right_policy = {
 
 		on_enabled = {
 			hidden_effect = {
+				country_event = { id = GF_doll.3000 }
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_military_service_type = {
@@ -126,6 +122,7 @@ GF_doll_right_policy = {
 
 		on_enabled = {
 			hidden_effect = {
+				country_event = { id = GF_doll.3000 }
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_military_service_type = {

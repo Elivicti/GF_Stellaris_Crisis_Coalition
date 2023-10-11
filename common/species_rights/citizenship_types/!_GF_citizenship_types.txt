@@ -1,0 +1,82 @@
+# 需要注意：
+# has_citizenship_rights = yes 不能在species域使用
+
+citizenship_GF_doll_full = {
+	is_full_citizenship = yes
+
+	potential = {
+		exists = from
+		from = { GF_potential_trigger_advanced = yes }
+		has_trait = GF_trait_doll
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		hidden:from = { has_policy_flag = GF_doll_right_full }
+	}
+	ai_will_do = { factor = 1 }
+}
+
+citizenship_GF_doll_limited = {
+	is_full_citizenship = yes
+
+	pop_modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.30
+		pop_amenities_usage_mult = -0.30
+		pop_political_power = -0.50
+	}
+
+	potential = {
+		exists = from
+		from = { GF_potential_trigger_advanced = yes }
+		has_trait = GF_trait_doll
+	}
+
+	allow = {
+		hidden_trigger = { exists = from }
+		hidden:from = { has_policy_flag = GF_doll_right_limited }
+	}
+	ai_will_do = { factor = 1 }
+}
+
+citizenship_GF_doll_servitude = {
+	is_robot_servant = yes
+
+	pop_modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -0.60
+		pop_amenities_usage_mult = -0.60
+		pop_political_power = -0.75
+	}
+
+	potential = {
+		exists = from
+		from = { GF_potential_trigger_advanced = yes }
+		has_trait = GF_trait_doll		# GF 人形特质
+	}
+	allow = {
+		hidden_trigger = { exists = from }
+		hidden:from = { has_policy_flag = GF_doll_right_servitude }
+	}
+	ai_will_do = { factor = 1 }
+}
+
+citizenship_GF_doll_commodity = {
+	is_robot_servant = yes
+
+	pop_modifier = {
+		planet_pops_consumer_goods_upkeep_mult = -2
+		pop_amenities_usage_mult = -0.9
+		pop_political_power = -2
+	}
+
+	potential = {
+		exists = from
+		from = { GF_potential_trigger_advanced = yes }
+		has_trait = GF_trait_doll		# GF 人形特质
+	}
+	allow = {
+		hidden_trigger = { exists = from }
+		hidden:from = { has_policy_flag = GF_doll_right_low }
+	}
+	ai_will_do = { factor = 1 }
+}

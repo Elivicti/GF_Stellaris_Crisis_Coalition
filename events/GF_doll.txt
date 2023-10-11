@@ -109,7 +109,7 @@ country_event = {
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_citizenship_type = {
-						type = citizenship_full
+						type = citizenship_GF_doll_full
 						country = root
 						cooldown = yes
 					}
@@ -119,7 +119,7 @@ country_event = {
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_citizenship_type = {
-						type = citizenship_limited
+						type = citizenship_GF_doll_limited
 						country = root
 						cooldown = yes
 					}
@@ -129,7 +129,7 @@ country_event = {
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_citizenship_type = {
-						type = citizenship_robot_servitude
+						type = citizenship_GF_doll_servitude
 						country = root
 						cooldown = yes
 					}
@@ -139,7 +139,7 @@ country_event = {
 				every_owned_species = {
 					limit = { has_trait = GF_trait_doll }
 					set_citizenship_type = {
-						type = citizenship_robot_servitude
+						type = citizenship_GF_doll_commodity
 						country = root
 						cooldown = yes
 					}

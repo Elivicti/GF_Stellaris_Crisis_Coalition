@@ -38,20 +38,20 @@ GF_trait_doll = {
 		mult = modifier:GF_doll_upkeep_mult
 	}
 
-	triggered_pop_modifier = {
-		planet_pops_consumer_goods_upkeep_mult = 1
-		mult = modifier:GF_doll_consumer_goods_upkeep_mult
-	}
-
-	triggered_pop_modifier = {
-		pop_political_power = 1
-		mult = modifier:GF_doll_political_power
-	}
-
-	triggered_pop_modifier = {
-		pop_amenities_usage_mult = 1
-		mult = modifier:GF_doll_amenities_usage_mult
-	}
+	#triggered_pop_modifier = {
+	#	planet_pops_consumer_goods_upkeep_mult = 1
+	#	mult = modifier:GF_doll_consumer_goods_upkeep_mult
+	#}
+	#
+	#triggered_pop_modifier = {
+	#	pop_political_power = 1
+	#	mult = modifier:GF_doll_political_power
+	#}
+	#
+	#triggered_pop_modifier = {
+	#	pop_amenities_usage_mult = 1
+	#	mult = modifier:GF_doll_amenities_usage_mult
+	#}
 }
 
 GF_trait_sequela = {
