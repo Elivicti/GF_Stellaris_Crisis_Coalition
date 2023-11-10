@@ -62,8 +62,32 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_GF_ogas_computer"
-		textureFile = "gfx/interface/icons/ship_parts/ship_part_computer_ogas.dds"
+		name = "GFX_GF_ogas_computer_default"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_default.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_picket"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_picket.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_swarm"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_swarm.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_line"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_line.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_artillery"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_carrier"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_ogas_computer_platform"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_ogas_platform.dds"
 	}
 
 	spriteType = {

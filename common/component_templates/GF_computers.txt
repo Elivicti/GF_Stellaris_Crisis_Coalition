@@ -1,7 +1,7 @@
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_TORPEDO"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_swarm"
 	icon_frame = 1
 	power = -25
 	resources = {
@@ -23,14 +23,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_PICKET"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_picket"
 	icon_frame = 1
 	power = -25
 	resources = {
@@ -54,14 +54,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_ARTILLERY"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_artillery"
 	icon_frame = 1
 	power = -30
 	resources = {
@@ -71,7 +71,7 @@ utility_component_template = {
 		}
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	size_restriction = { frigate destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_artillery"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -83,14 +83,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 4
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_CARRIER"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_carrier"
 	icon_frame = 1
 	power = -30
 	resources = {
@@ -116,14 +116,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 4
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_FREE"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_default"
 	icon_frame = 1
 	power = -25
 	resources = {
@@ -145,14 +145,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 4
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_FREE_JUGGERNAUT"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_default"
 	icon_frame = 1
 	power = -25
 	resources = {
@@ -174,14 +174,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 4
+		weight = 8
 	}
 }
 
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_PLATFORM"
 	size = small
-	icon = "GFX_GF_ogas_computer"
+	icon = "GFX_GF_ogas_computer_platform"
 	icon_frame = 1
 	power = -20
 	resources = {
@@ -203,6 +203,6 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 5
+		weight = 8
 	}
 }
