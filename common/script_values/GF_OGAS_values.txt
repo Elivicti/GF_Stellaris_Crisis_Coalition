@@ -1,0 +1,185 @@
+# this = country
+GF_get_thread_count_from_leader = {
+	base = 0
+	modifier = {
+		add = 1
+		ruler = { has_trait = GF_trait_leader_ogas }
+	}
+	modifier = {
+		add = 2
+		ruler = { has_trait = GF_trait_leader_ogas_2 }
+	}
+	add = ruler.value:GF_OGAS_leveled_threads_add|START_AFTER_LEVEL|@GF_OGAS_leveled_thread_add_start_after_level|
+}
+
+# this = country
+GF_get_thread_count_from_computing_center = {
+	base = 0
+	modifier = {
+		add = 10
+		any_owned_megastructure = {
+			is_megastructure_type = GF_computing_center_2
+		}
+	}
+	modifier = {
+		add = 15
+		any_owned_megastructure = {
+			is_megastructure_type = GF_computing_center_3
+		}
+	}
+}
+
+# this = country
+GF_get_thread_count_from_tech = {
+	base = 0
+	modifier = {
+		add = 1
+		has_technology = GF_tech_ternary_quantum_computing
+	}
+}
+
+# this = country
+GF_get_thread_count_from_subnet = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_subject
+		parameters = {
+			limit = {
+				has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
+			}
+		}
+		mode = add
+	}
+}
+
+# this = country
+GF_get_thread_usage_from_OGAS_mode = {
+	base = 0
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_governor
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_produce
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_upkeep
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_war
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_research
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_produce_2
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_research_2
+	}
+	modifier = {
+		add = 1
+		has_modifier = GF_ogas_mode_empire
+	}
+}
+
+# this = country
+GF_get_thread_usage_from_auto_city = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = { is_planet_class = pc_GF_automated_city }
+		}
+		mode = add
+		mult = 2
+	}
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = {
+				is_planet_class = pc_GF_automated_city
+				has_planet_flag = flag_p_GF_automated_city_advanced_resources
+			}
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = {
+				is_planet_class = pc_GF_automated_city
+				has_planet_flag = flag_p_GF_automated_city_special_resources
+			}
+		}
+		mode = add
+		mult = 2
+	}
+}
+
+# this = country
+GF_get_thread_usage_from_auto_city_construction = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = count_situation
+		parameters = {
+			limit = {
+				is_situation_type = GF_automated_city_construction
+				current_stage = stage_2
+			}
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_situation
+		parameters = {
+			limit = {
+				is_situation_type = GF_automated_city_construction
+				current_stage = stage_2
+				target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+			}
+		}
+		mode = add
+	}
+
+	complex_trigger_modifier = {
+		trigger = count_situation
+		parameters = {
+			limit = {
+				is_situation_type = GF_automated_city_construction
+				current_stage = stage_3
+			}
+		}
+		mode = add
+		mult = 2
+	}
+	complex_trigger_modifier = {
+		trigger = count_situation
+		parameters = {
+			limit = {
+				is_situation_type = GF_automated_city_construction
+				current_stage = stage_3
+				target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+			}
+		}
+		mode = add
+	}
+	complex_trigger_modifier = {
+		trigger = count_situation
+		parameters = {
+			limit = {
+				is_situation_type = GF_automated_city_construction
+				current_stage = stage_3
+				target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+			}
+		}
+		mode = add
+		mult = 2
+	}
+}
