@@ -1,19 +1,18 @@
-option = {
-	inline_script = {
-		script = OGAS/mission/OGAS_mission_core
-		MISSION = $MISSION$
-	}
-	allow = {
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_$MISSION$ } }
-			GF_require_OGAS_has_available_threads = { amount = $THREAD_COST$ }
-		}
-	}
+name = GF_ogas.mission.$MISSION$
+response_text = GF_ogas.mission.$MISSION$.response
+is_dialog_only = yes
+if = {
+	limit = { NOT = { has_modifier = GF_ogas_mode_$MISSION$ } }
+	custom_tooltip = GF_ogas.mission.$MISSION$.turn_on
+	GF_set_ogas_mission = { modifier = GF_ogas_mode_$MISSION$ }
+}
+else = {
+	custom_tooltip = GF_ogas.mission.$MISSION$.turn_off
+	GF_end_ogas_mission = { modifier = GF_ogas_mode_$MISSION$ }
 }
 
 # 参数说明：
 # MISSION      政务管理buff的名称后缀，见下方政务管理buff命名格式说明
-# THREAD_COST  该政务管理buff将会占用的线程数
 #
 # 所有OGAS政务管理buff必须命名为：
 # GF_ogas_mode_XXX
