@@ -606,4 +606,104 @@ GF_add_effective_modifier = {
 }
 
 
+# this = country
+GF_calculate_OGAS_threads_statistics = {
+	# threads source
+	set_variable = {
+		which = v_GF_threads_from_leader
+		value = value:GF_get_thread_count_from_leader
+	}
+	set_variable = {
+		which = v_GF_threads_from_computing_center
+		value = value:GF_get_thread_count_from_computing_center
+	}
+	set_variable = {
+		which = v_GF_threads_from_tech
+		value = value:GF_get_thread_count_from_tech
+	}
+	set_variable = {
+		which = v_GF_threads_from_subnet
+		value = value:GF_get_thread_count_from_subnet
+	}
 
+	# threads usage
+	set_variable = {
+		which = v_GF_threads_usage_from_OGAS_mode
+		value = value:GF_get_thread_usage_from_OGAS_mode
+	}
+	set_variable = {
+		which = v_GF_threads_usage_from_auto_city
+		value = value:GF_get_thread_usage_from_auto_city
+	}
+	set_variable = {
+		which = v_GF_threads_usage_from_auto_city_construction
+		value = value:GF_get_thread_usage_from_auto_city_construction
+	}
+}
+
+# this = country
+GF_show_OGAS_threads_statistics = {
+	custom_tooltip = GF_ogas.threads_source_tooltip
+	custom_tooltip = GF_ogas.threads_from_leader
+	if = {
+		limit = {
+			any_subject = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+		}
+		custom_tooltip = GF_ogas.threads_from_subnet
+	}
+	if = {
+		custom_tooltip = GF_ogas.threads_from_tech
+		limit = { has_technology = GF_tech_ternary_quantum_computing }
+	}
+	if = {
+		custom_tooltip = GF_ogas.threads_from_computing_center
+		limit = {
+			any_owned_megastructure = {
+				OR = {
+					is_megastructure_type = GF_computing_center_2
+					is_megastructure_type = GF_computing_center_3
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			check_modifier_value = {
+				modifier = GF_OGAS_threads_used_add
+				value > 0
+			}
+		}
+		custom_tooltip = GF_ogas.threads_usage_tooltip
+	}
+	if = {
+		custom_tooltip = GF_ogas.threads_usage_from_OGAS_mode
+		limit = {
+			OR = {
+				has_modifier = GF_ogas_mode_governor
+				has_modifier = GF_ogas_mode_produce
+				has_modifier = GF_ogas_mode_upkeep
+				has_modifier = GF_ogas_mode_war
+				has_modifier = GF_ogas_mode_research
+				has_modifier = GF_ogas_mode_produce_2
+				has_modifier = GF_ogas_mode_research_2
+				has_modifier = GF_ogas_mode_empire
+			}
+		}
+	}
+	if = {
+		custom_tooltip = GF_ogas.threads_usage_from_auto_city_construction
+		limit = {
+			any_situation = {
+				is_situation_type = GF_automated_city_construction
+				OR = {
+					current_stage = stage_2
+					current_stage = stage_3
+				}
+			}
+		}
+	}
+	if = {
+		custom_tooltip = GF_ogas.threads_usage_from_auto_city
+		limit = { any_owned_planet = { is_planet_class = pc_GF_automated_city } }
+	}
+}

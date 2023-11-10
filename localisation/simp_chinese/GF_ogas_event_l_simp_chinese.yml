@@ -45,6 +45,16 @@
  GF_ogas.10000.info:0 "机密档案库"
 
  GF_ogas.10000.statistics:0 "数据统计"
+ GF_ogas.threads_source_tooltip:0 "共计产生线程：§G[GF_GetOGASThreads]§!"
+ GF_ogas.threads_from_leader:0 "$t$来自领袖：§G+[this.v_GF_threads_from_leader]§!"
+ GF_ogas.threads_from_computing_center:0 "$t$$GF_computing_center_3$：§G+[this.v_GF_threads_from_computing_center]§!"
+ GF_ogas.threads_from_tech:0 "$t$来自科技：§G+[this.v_GF_threads_from_tech]§!"
+ GF_ogas.threads_from_subnet:0 "$t$来自子网：§G+[this.v_GF_threads_from_subnet]§!"
+ GF_ogas.threads_usage_tooltip:0 "共计消耗线程：§R-[GF_GetOGASThreadsUsed]§!"
+ GF_ogas.threads_usage_from_OGAS_mode:0 "$t$政务管理：§R-[this.v_GF_threads_usage_from_OGAS_mode]§!"
+ GF_ogas.threads_usage_from_auto_city:0 "$t$$pc_GF_automated_city$：§R-[this.v_GF_threads_usage_from_auto_city]§!"
+ GF_ogas.threads_usage_from_auto_city_construction:0 "$t$$GF_automated_city_construction$：§R-[this.v_GF_threads_usage_from_auto_city_construction]§!"
+ GF_ogas.10000.statistics.tooltip:0 "\n§E点击以刷新数据§!"
 
  GF_ogas.10000.emotion:0 "私人通讯频道"
  GF_ogas.10000.emotion.response:0 "私人通讯频道还在开发中，如有疑问，请联系OGAS维护与升级部门主管安娜.科穆宁，联系方式：QQ群1035699926"
@@ -66,16 +76,6 @@
  GF_ogas.11000.a:0 "OGAS数据统计"
  GF_ogas.11000.b:0 "OGAS任务管理"
  GF_require_OGAS_no_glitch:0 "OGAS故障时无法进行任务管理"
-##数据统计
- GF_ogas.14000.desc:0 "$GF_OGAS_threads_info$"
- GF_ogas.threads_from_leader:0 "$t$来自领袖：§G+[this.v_GF_threads_from_leader]§!"
- GF_ogas.threads_from_computing_center:0 "$t$$GF_computing_center_3$：§G+[this.v_GF_threads_from_computing_center]§!"
- GF_ogas.threads_from_tech:0 "$t$来自科技：§G+[this.v_GF_threads_from_tech]§!"
- GF_ogas.threads_from_subnet:0 "$t$来自子网：§G+[this.v_GF_threads_from_subnet]§!"
- GF_ogas.threads_usage_from_OGAS_mode:0 "$t$政务管理：§R-[this.v_GF_threads_usage_from_OGAS_mode]§!"
- GF_ogas.threads_usage_from_auto_city:0 "$t$$pc_GF_automated_city$：§R-[this.v_GF_threads_usage_from_auto_city]§!"
- GF_ogas.threads_usage_from_auto_city_construction:0 "$t$$GF_automated_city_construction$：§R-[this.v_GF_threads_usage_from_auto_city_construction]§!"
- GF_ogas.14000.refresh:0 "刷新数据"
 ##系统命令
  GF_ogas.11200.desc.a:0 "OGAS所有系统待命，等待执政官进一步指令。"
  GF_ogas.11200.desc.b:0 "当前系统有空余线程可供分配更多任务，请下达命令。"
