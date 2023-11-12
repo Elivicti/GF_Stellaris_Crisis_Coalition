@@ -4,6 +4,9 @@
  pft_GF_relic_department:0 "$GF_faction_name_relic_department$"
  pft_GF_relic_department_desc:0 "两个世纪前由联合国建立的遗迹及遗迹相关技术研究与监管部门，致力于让遗迹为人类所用。\n\n§L唯物主义思潮§!"
 
+ GF_FACTION_DEMAND_ogas_ruler_title:0 "由OGAS领导内阁"
+ GF_FACTION_DEMAND_ogas_ruler_desc:0  "必须由公正、理性的人工智能来领导内阁。\n\n§E该诉求仅影响$COUNCIL_LEGITIMACY$，不影响派系认可度§!"
+
  GF_FACTION_DEMAND_research_relic_title:0 "坍塌技术研究"
  GF_FACTION_DEMAND_research_relic_unfulfilled_title:0 "$GF_FACTION_DEMAND_research_relic_title$"
  GF_FACTION_DEMAND_research_relic_desc:0 "[Root.GetName]要求我们推进对坍塌技术的研究。"

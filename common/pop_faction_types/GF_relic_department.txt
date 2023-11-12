@@ -112,6 +112,24 @@ GF_relic_department = {
 		}
 	}
 
+	# 内阁正统性计算公式
+	# SUM(trigger=yes::fulfilled_effect) / (SUM(all::fulfilled_effect) + ABS(SUM(trigger=no::unfulfilled_effect)))
+	demand = {
+		title = "GF_FACTION_DEMAND_ogas_ruler_title"
+		unfulfilled_title = "LABEL_NA"
+		desc = "GF_FACTION_DEMAND_ogas_ruler_desc"
+
+		council_demand = yes
+		fulfilled_effect = 15
+		unfulfilled_effect = 0
+
+		trigger = {
+			always = yes
+			#exists = ruler
+			#ruler = { has_leader_flag = flag_GF_ogas_leader }
+		}
+	}
+
 	demand = {
 		title = "GF_FACTION_DEMAND_research_relic_title"
 		unfulfilled_title = "GF_FACTION_DEMAND_research_relic_unfulfilled_title"
@@ -122,7 +140,9 @@ GF_relic_department = {
 		}
 
 		trigger = {
-			always = yes
+			owner = {
+				has_technology = GF_tech_collapse
+			}
 		}
 
 		fulfilled_effect = 5
