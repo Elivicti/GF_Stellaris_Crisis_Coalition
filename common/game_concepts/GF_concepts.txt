@@ -83,3 +83,13 @@ concept_GF_green_zone= {
 concept_GF_epiphyllum = {
 	alias = { concept_GF_epiphyllum concept_GF_radiated_epiphyllum }
 }
+
+concept_GF_tech_observe_reflection = {
+	alias = { concept_GF_tech_observe_reflection concept_GF_tech_observe_reflection_with_icon }
+	icon = "gfx/interface/icons/resources/physics_research.dds"
+}
+
+concept_GF_tech_mass_rebuild_function = {
+	alias = { concept_GF_tech_mass_rebuild_function concept_GF_tech_mass_rebuild_function_with_icon }
+	icon = "gfx/interface/icons/resources/physics_research.dds"
+}

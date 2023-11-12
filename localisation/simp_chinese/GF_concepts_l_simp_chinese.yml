@@ -76,3 +76,10 @@
  concept_GF_epiphyllum: "昙花"
  concept_GF_radiated_epiphyllum: "辐射昙花"
  concept_GF_epiphyllum_desc: "一类仙人掌科、昙花属附生肉质灌木的变体，其特点是能够吸收大量的['concept_GF_collapse_radiation']，并在花期时将辐射释放出去。在['concept_GF_contaminated_zone_red']内时而可见大面积的昙花花海，花期时大面积盛开的花海十分壮观——也十分致命。"
+
+ concept_GF_tech_observe_reflection: "$GF_tech_observe_reflection$"
+ concept_GF_tech_observe_reflection_with_icon: "£physics£ $GF_tech_observe_reflection$"
+ concept_GF_tech_observe_reflection_desc: "$GF_tech_observe_reflection_desc$\n\n§E效果：§!\n$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$: §G+5%§!"
+ concept_GF_tech_mass_rebuild_function: "$GF_tech_mass_rebuild_function$"
+ concept_GF_tech_mass_rebuild_function_with_icon: "£physics£ $GF_tech_mass_rebuild_function$"
+ concept_GF_tech_mass_rebuild_function_desc: "$GF_tech_mass_rebuild_function_desc$\n\n§E效果：§!\n$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$: §G+5%§!"
