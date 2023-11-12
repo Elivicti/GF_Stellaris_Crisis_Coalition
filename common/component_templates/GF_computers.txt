@@ -1,3 +1,6 @@
+@core_chip_upkeep_t1 = 0.25
+@core_chip_upkeep_t2 = 0.5
+
 utility_component_template = {
 	key = "GF_OGAS_COMPUTER_TORPEDO"
 	size = small
@@ -7,19 +10,55 @@ utility_component_template = {
 	resources = {
 		category = GF_ship_computers
 		cost = {
-			alloys = -25
+			alloys = 25
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { frigate }
+	size_restriction = { frigate crisis_destroyer cruiser offspring_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 	ai_tags = { explosive explosive_stealth }
+	ai_tag_weight = 0
 
 	modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.20
 		ship_evasion_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_SWARM"
+	size = small
+	icon = "GFX_GF_ogas_computer_swarm"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 25
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette crisis_corvette offspring_corvette }
+	component_set = "combat_computers"
+	ship_behavior = "swarm"
+	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { gunship brawler brawler_stealth }
+	ai_tag_weight = 0
+
+	modifier = {
+		ship_evasion_mult = 0.50
+		ship_speed_mult = 0.20
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
 	}
 
 	ai_weight = {
@@ -36,21 +75,55 @@ utility_component_template = {
 	resources = {
 		category = GF_ship_computers
 		cost = {
-			alloys = -25
+			alloys = 25
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military }
 	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { screen }
+	ai_tag_weight = 0
 
 	modifier = {
-		ship_evasion_mult = 0.40
+		ship_evasion_mult = 0.25
 	}
 	ship_modifier = {
-		ship_fire_rate_mult = 0.15
+		ship_fire_rate_mult = 0.20
 		ship_tracking_add = 30
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_LINE"
+	size = small
+	icon = "GFX_GF_ogas_computer_line"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 30
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+	class_restriction = { shipclass_military shipclass_military_special }
+	size_restriction = { destroyer cruiser battleship crisis_destroyer crisis_cruiser star_eater offspring_destroyer offspring_cruiser offspring_battleship }
+	component_set = "combat_computers"
+	ship_behavior = "line"
+	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { gunship }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.30
+		ship_accuracy_add = 25
 	}
 
 	ai_weight = {
@@ -69,12 +142,15 @@ utility_component_template = {
 		cost = {
 			alloys = 30
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
 	size_restriction = { frigate destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_artillery"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.25
@@ -83,7 +159,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		weight = 9
 	}
 }
 
@@ -98,12 +174,15 @@ utility_component_template = {
 		cost = {
 			alloys = 30
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
 	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_carrier"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
+	ai_tags = { carrier }
+	ai_tag_weight = 0
 
 	modifier = {
 		weapon_type_strike_craft_weapon_damage_mult = 0.15
@@ -131,6 +210,7 @@ utility_component_template = {
 		cost = {
 			alloys = 35
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t2 }
 	}
 	class_restriction = { shipclass_military }
 
@@ -160,6 +240,7 @@ utility_component_template = {
 		cost = {
 			alloys = 35
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t2 }
 	}
 	size_restriction = { juggernaut }
 
@@ -174,7 +255,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		weight = 10
 	}
 }
 
@@ -189,6 +270,7 @@ utility_component_template = {
 		cost = {
 			alloys = 25
 		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military_station }
 	component_set = "combat_computers"
