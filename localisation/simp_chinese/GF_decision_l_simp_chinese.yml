@@ -55,3 +55,12 @@
  decision_GF_automated_city_project_effect:0 "开启一个事件窗口以选择特定的§Y专精类型§! (§R一次性§!)，完成后将星球改造为§Y$pc_GF_automated_city$§!，解锁特殊的 £district£ §Y自动化区划§!，这些区划只需§Y少量§! £pop£ 人口进行维护即可高效运作。"
  GF_other_automated_city_terraform_ongoing:0 "£trigger_no£ 另一处$pc_GF_automated_city$建设决策中"
  GF_automated_city_terraform_ongoing:0 "£trigger_no£ $pc_GF_automated_city$建设进行中"
+
+ decision_GF_automated_city_supress: "!!-提高自动化程序休眠等级-!!"
+ decision_GF_automated_city_supress_desc: "休眠部分用于管控自动化设备的程序，以减少占用的OGAS线程。"
+ decision_GF_automated_city_supress_allow_tooltip: "$TRIGGER_FAIL$ 必须至少保留 §R1§! 线程用于维持最基础的设备运转"
+ decision_GF_automated_city_supress_effect_tooltip: "\n§E占用最后 §Y1§! 线程的程序无法被休眠§!"
+ decision_GF_automated_city_supress_level_down: "!!-降低自动化程序休眠等级-!!"
+ decision_GF_automated_city_supress_level_down_desc: "降低休眠等级以唤醒部分程序，使其重新投入自动化设备的管控。"
+ decision_GF_automated_city_supress_cancel: "!-终止自动化程序休眠-!"
+ decision_GF_automated_city_supress_cancel_desc: "唤醒所有程序并使其重新开始管控自动化设备。"

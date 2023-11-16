@@ -29,6 +29,18 @@ GF_automated_city_status = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_GF_automated_city_status.dds"
 }
 
+GF_automated_city_supressed = {
+	icon = "gfx/interface/icons/planet_modifiers/pm_factory.dds"
+	planet_stability_add = -5
+	planet_districts_upkeep_mult = 0.20
+	planet_building_build_speed_mult = -0.20
+	pop_happiness = -0.05
+	pop_cat_GF_freedom_class_happiness = -0.10
+	GF_freedom_kingdom_amenities_usage_mult = 1
+	GF_system_maintenance = -0.15
+	GF_OGAS_threads_used_add = -1
+}
+
 ###
 GF_auto_colony = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_GF_auto_colony.dds"

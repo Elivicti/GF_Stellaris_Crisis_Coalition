@@ -51,6 +51,7 @@
  GFSystemMaintenanceMid:0 "§Y+[this.GF_GetSystemMaintenancePercentage]%§!"
  GFSystemMaintenanceLow:0 "§R+[this.GF_GetSystemMaintenancePercentage]%§!"
  GFSystemMaintenanceLowNeg:0 "§R[this.GF_GetSystemMaintenancePercentage]%§!"
+ GF_automated_city_supressed:0 "自动化程序已休眠"
 ################################# 遗珍
  GF_enhanced_OGAS_signal:0 "被放大的OGAS信号"
  GF_enhanced_OGAS_signal_desc:0 "OGAS系统的信号在经过这个主机的处理后会被强化与放大，这极大的改善了我们国家信息网络的运行效率。"

@@ -161,3 +161,177 @@ decision_GF_automated_city_project = {
 		hidden_effect = { planet_event = { id = GF_colony.5000 } }
 	}
 }
+
+decision_GF_automated_city_supress = {
+	enactment_time = 0
+	owned_planets_only = yes
+	icon = decision_automated_city_supress_level_up
+
+	resources = {
+		category = decisions
+		cost = {
+			unity = 100
+		}
+		cost = {
+			unity = 100
+			mult = this.v_GF_automated_city_supress_level
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_GF_automated_city
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = decision_GF_automated_city_supress_allow_tooltip
+			switch = {
+				trigger = has_planet_flag
+				flag_p_GF_automated_city_base_resources = {
+					check_variable = {
+						which = v_GF_automated_city_supress_level
+						value < 1
+					}
+				}
+				flag_p_GF_automated_city_advanced_resources = {
+					check_variable = {
+						which = v_GF_automated_city_supress_level
+						value < 2
+					}
+				}
+				flag_p_GF_automated_city_special_resources = {
+					check_variable = {
+						which = v_GF_automated_city_supress_level
+						value < 3
+					}
+				}
+				default = { always = no } # should not fallback to this
+			}
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_variable_set = v_GF_automated_city_supress_level }
+				}
+				set_variable = {
+					which = v_GF_automated_city_supress_level
+					value = 0
+				}
+			}
+		}
+		if = {
+			limit = {
+				switch = {
+					trigger = has_planet_flag
+					flag_p_GF_automated_city_base_resources = {
+						check_variable = {
+							which = v_GF_automated_city_supress_level
+							value < 1
+						}
+					}
+					flag_p_GF_automated_city_advanced_resources = {
+						check_variable = {
+							which = v_GF_automated_city_supress_level
+							value < 2
+						}
+					}
+					flag_p_GF_automated_city_special_resources = {
+						check_variable = {
+							which = v_GF_automated_city_supress_level
+							value < 3
+						}
+					}
+					default = { always = no } # should not fallback to this
+				}
+			}
+			add_modifier = {
+				modifier = GF_automated_city_supressed
+				mult = value:GF_variable_operate|VAR|v_GF_automated_city_supress_level|OP|add|VALUE|1|
+			}
+			custom_tooltip = decision_GF_automated_city_supress_effect_tooltip
+		}
+
+		hidden_effect = {
+			change_variable = {
+				which = v_GF_automated_city_supress_level
+				value = 1
+			}
+		}
+	}
+}
+
+decision_GF_automated_city_supress_level_down = {
+	enactment_time = 0
+	owned_planets_only = yes
+	icon = decision_automated_city_supress_level_down
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = GF_automated_city_supressed
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+	}
+
+	effect = {
+		hidden_effect = { remove_modifier = GF_automated_city_supressed }
+		if = {
+			limit = {
+				check_variable = {
+					which = v_GF_automated_city_supress_level
+					value > 1
+				}
+			}
+			add_modifier = {
+				modifier = GF_automated_city_supressed
+				mult = value:GF_variable_operate|VAR|v_GF_automated_city_supress_level|OP|subtract|VALUE|1|
+			}
+		}
+		else = {
+			tooltip = { remove_modifier = GF_automated_city_supressed }
+		}
+		hidden_effect = {
+			change_variable = {
+				which = v_GF_automated_city_supress_level
+				value = -1
+			}
+		}
+	}
+}
+
+decision_GF_automated_city_supress_cancel = {
+	enactment_time = 0
+	owned_planets_only = yes
+	icon = decision_automated_city_supress_level_down
+
+	resources = {
+		category = decisions
+	}
+
+	potential = {
+		has_modifier = GF_automated_city_supressed
+		exists = from
+		from = { has_authority = GF_auth_commonwealth }
+		check_variable = {
+			which = v_GF_automated_city_supress_level
+			value > 1
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			set_variable = {
+				which = v_GF_automated_city_supress_level
+				value = 0
+			}
+		}
+		remove_modifier = GF_automated_city_supressed
+	}
+}

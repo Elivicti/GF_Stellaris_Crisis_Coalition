@@ -13,6 +13,16 @@ GF_freedom_kingdom = {
 		exists = planet
 		GF_can_pop_join_freedom_kindom = yes
 	}
+
+	triggered_pop_modifier = {
+		potential = {
+			exists = planet
+			planet = { has_modifier = GF_automated_city_supressed }
+		}
+		description = GF_automated_city_supressed
+		pop_amenities_usage_mult = 1
+		mult = modifier:GF_freedom_kingdom_amenities_usage_mult
+	}
 	
 	resources = {
 		category = planet_jobs

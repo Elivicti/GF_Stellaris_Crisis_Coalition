@@ -136,3 +136,10 @@ GF_pop_debuff_from_capture_mult = {
 	percentage = yes
 	category = country
 }
+
+GF_freedom_kingdom_amenities_usage_mult = {
+	icon = mod_pop_amenities_usage_add
+	good = no
+	percentage = yes
+	category = pop
+}

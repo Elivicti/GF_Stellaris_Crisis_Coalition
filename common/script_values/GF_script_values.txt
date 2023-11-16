@@ -220,3 +220,10 @@ GF_OGAS_leveled_threads_add = {
 	subtract = $START_AFTER_LEVEL$
 	min = 0
 }
+
+# this = any
+GF_variable_operate = {
+	base = 0
+	add = $VAR$
+	$OP$ = $VALUE$
+}

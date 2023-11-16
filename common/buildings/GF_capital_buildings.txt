@@ -793,6 +793,12 @@ building_GF_connection_nexus = {
 		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|append_condition|GF_can_pop_join_freedom_kindom|
 	}
 
+	triggered_country_modifier = {
+		potential = { has_modifier = GF_automated_city_supressed }
+		GF_OGAS_threads_used_add = -1
+		mult = this.v_GF_automated_city_supress_level
+	}
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
