@@ -335,6 +335,13 @@ planet_event = {
 			count = 2
 			create_pop = { species = owner_main_species }
 		}
+		if = {
+			limit = { owner_main_species = { has_trait = GF_trait_self_dependence } }
+			while = {
+				count = 2
+				create_pop = { species = owner_main_species }
+			}
+		}
 
 		owner = { country_event = { id = GF_doll.3000 days = 1 } }
 	}
