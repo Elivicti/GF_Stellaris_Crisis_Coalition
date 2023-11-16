@@ -265,4 +265,10 @@ spriteTypes = {
 		name = "GFX_GF_computing_center_3_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
 	}
+
+	# text icon
+	spriteType = {
+		name = "GFX_text_invisible"
+		textureFile = "gfx/interface/icons/text_icons/invisible.dds"
+	}
 }

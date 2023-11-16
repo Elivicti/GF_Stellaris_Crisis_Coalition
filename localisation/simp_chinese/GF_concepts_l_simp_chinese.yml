@@ -1,80 +1,80 @@
 ﻿l_simp_chinese:
 
 
- concept_GF_dolls: "仿生自律人形"
- concept_GF_dolls_short: "自律人形"
- concept_GF_dolls_short_short: "人形"
+ concept_GF_dolls: "£invisible£仿生自律人形£invisible£"
+ concept_GF_dolls_short: "£invisible£自律人形£invisible£"
+ concept_GF_dolls_short_short: "£invisible£人形£invisible£"
  concept_GF_dolls_desc: "指外表与人类极为相似、同时AI极高的机器人，可以从事日常服务或简单的作战辅助，又称“自律人形”或“人形”，于2033年进入试验阶段。\n\n2054年，I.0.P.推出第一代战术人形；2092年，绝大多数存量人形已经普遍升级到第六代人形技术，装备碳基仿生皮肤、碳纤维骨架和第四代齐纳协议下依靠联网AI进化树系统的第五代['concept_GF_neural_cloud_system']。\n\n为实现人形的高级智能，人形人口需要消耗 ['concept_GF_core_chip']作为维护费。"
- concept_GF_neural_cloud: "心智云图"
- concept_GF_neural_cloud_system: "云图系统"
+ concept_GF_neural_cloud: "£invisible£心智云图£invisible£"
+ concept_GF_neural_cloud_system: "£invisible£云图系统£invisible£"
  concept_GF_neural_cloud_desc: "又称“心智”，指一项实现['concept_GF_dolls_short']心智数据备份的技术。\n\n2057年，16LAB研究所成立，由I.0.P.提供资金，名义上隶属于42Lab。\n\n同年，42Lab立项研发“心智云图”项目,目标是将自律人形的心智数据进行云备份，从而保证在人形素体损伤的情况下，心智数据仍得以保留，人形在重新制造时可以继承备份心智，降低损失成本。\n\n2060年底，“心智云图”技术开发成功。"
  concept_GF_core_chip: "£gf_core_chip£ $gf_core_chip$"
  concept_GF_core_chip_desc: "生产人形必须的主控芯片，用于搭载人形的['concept_GF_neural_cloud']。"
 
- concept_GF_OGAS: "OGAS"
- concept_GF_OGAS_full: "国家信息自动化管理系统"
+ concept_GF_OGAS: "£invisible£OGAS£invisible£"
+ concept_GF_OGAS_full: "£invisible£国家信息自动化管理系统£invisible£"
  concept_GF_OGAS_desc: "指由联合政府打造的拥有阵列主机的超级人工智能，平时以['concept_GF_dolls']的姿态活动，用于收集、分析和管理全国的经济和政治。\n\n在游戏开始后，可在§Y通讯§!中接入§Y国家信息自动化管理系统§!。\n\n$GF_OGAS_trait_effect$"
 
- concept_GF_OGAS_threads: "OGAS可用线程"
- concept_GF_OGAS_threads_short: "OGAS线程"
+ concept_GF_OGAS_threads: "£invisible£OGAS可用线程£invisible£"
+ concept_GF_OGAS_threads_short: "£invisible£OGAS线程£invisible£"
  concept_GF_OGAS_threads_desc: "指['concept_GF_OGAS']可使用的一系列计算资源，可用于计算和管理政治、经济等多方面的长远规划，并分配和调度相应的物质资源来确保规划得到有效实施。"
 
  GF_OGAS_trait_effect: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$MOD_LEADER_AGE$：§G不朽§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$：§G+20%§!$TABBED_NEW_LINE$—$mod_leader_governors_unity_upkeep_mult$：§G-50%§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$—$mod_country_unity_produces_mult$：§G+50%§!$TABBED_NEW_LINE$—$MOD_EMPIRE_SIZE_MULT$：§G-25%§!$TABBED_NEW_LINE$—['concept_GF_OGAS_threads']数：§G+1§!\n\n§E每§Y技能等级§!的§Y领袖§!效应§!：$TABBED_NEW_LINE$—['concept_GF_core_chip']维护费：§R+0.5§!\n\n§E高于§Y$@GF_OGAS_leveled_thread_add_start_after_level|0$级§!时每§Y技能等级§!的£empire£ §Y帝国§!效应§!：$TABBED_NEW_LINE$—$mod_GF_OGAS_threads_add$: §G+1§!"
 
- concept_GF_beilan_event: "北兰岛事件"
+ concept_GF_beilan_event: "£invisible£北兰岛事件£invisible£"
  concept_GF_beilan_event_desc: "指在2030年1月17发生于中国上海北兰岛['concept_GF_collapse_relic']的不明原因的爆炸，以及爆炸所带来的一系列后续影响的总称。\n\n该事件导致全球各地均遭受不同程度的['concept_GF_collapse_radiation']污染，深刻地影响了世界的格局，并彻底改变了整个人类文明的命运。"
 
- concept_GF_beilan_island: "北兰岛"
+ concept_GF_beilan_island: "£invisible£北兰岛£invisible£"
  concept_GF_beilan_island_desc: "位于中国上海，此处于1962年发现遗迹遗址，并在其中发现了未知生命体['concept_GF_gavirul']，北兰岛同样也是发生于2030年的['concept_GF_beilan_event']的起点。"
 
- concept_GF_elid: "广域性低辐射感染症"
- concept_GF_elid_short: "E.L.I.D"
+ concept_GF_elid: "£invisible£广域性低辐射感染症£invisible£"
+ concept_GF_elid_short: "£invisible£E.L.I.D£invisible£"
  concept_GF_elid_desc: "指长期暴露于['concept_GF_collapse_radiation']后产生的病症，患者会开始咳嗽，身体疼痛、疲劳，皮肤上出现焦斑，此种病症无法治疗且死亡率极高。\n\n部分患者在感染后却并没有死亡，其身体组织发生变化，丧失理智，成为['concept_GF_elid_infected_alias']。"
 
- concept_GF_elid_infected: "E.L.I.D感染者"
- concept_GF_elid_husk: "生骸"
- concept_GF_elid_infected_alias: "ED Infected"
+ concept_GF_elid_infected: "£invisible£E.L.I.D感染者£invisible£"
+ concept_GF_elid_husk: "£invisible£生骸£invisible£"
+ concept_GF_elid_infected_alias: "£invisible£ED Infected£invisible£"
  concept_GF_elid_infected_desc: "ED Infected，即特殊的E.L.I.D感染者，也被称为“生骸”。\n\n指那些感染['concept_GF_elid_short']后没有死亡，发生了基因链重组的感染者。他们的身体组织['concept_GF_siliconization']，丧失理智，且攻击性极强。\n\n因为个体不同，基因链重组的方式也不同，这也导致了ED Infected之间的个体差异。"
 
- concept_GF_siliconization: "硅化"
+ concept_GF_siliconization: "£invisible£硅化£invisible£"
  concept_GF_siliconization_desc: "指生物或植物感染了['concept_GF_elid_short']之后，变异细胞代谢时从自然环境中汲取硅元素并在体内堆积所导致的现象。\n\n研究证明，感染E.L.I.D后，生物体内的蛋白质会被吞噬，蛋白质分子键断裂,同时骨骼结构改变，钙质富集加剧，骨骼硬度高速增加。\n\n硅化过程总体来说，就是由碳基生物逐渐向硅基生物转变的过程。虽然大部分生物会在分子键断裂后早早死去，但也有部分感染生物最终基因链发生重组，成为丧失理智、攻击性极强的['concept_GF_elid_infected_alias']。"
 
- concept_GF_collapse_relic: "遗迹"
+ concept_GF_collapse_relic: "£invisible£遗迹£invisible£"
  concept_GF_collapse_relic_desc: "指在存在于全球各处的一系列未知文明遗迹，最早发现于1905年。\n\n在后续对遗迹的发掘中，发现了成分不明的特殊物质（现称为['concept_GF_collapse_liquid']）和一种能够自我进化和修复的计算机系统，并于1962年在['concept_GF_beilan_island']遗迹发现了未知生命体['concept_GF_gavirul']。\n\n自从遗迹被发现以后，人类的命运就不可避免地走上了另一条道路。"
 
- concept_GF_gavirul: "GAVIRUL"
+ concept_GF_gavirul: "£invisible£GAVIRUL£invisible£"
  concept_GF_gavirul_desc: "又称为“尉”，是在['concept_GF_collapse_relic']中发现的未知文明生命体遗骸，人类曾发起过多次['concept_GF_gavirul_project']来研究这种生命体。"
 
- concept_GF_gavirul_project: "GAVIRUL重现计划"
+ concept_GF_gavirul_project: "£invisible£GAVIRUL重现计划£invisible£"
  concept_GF_gavirul_project_desc: "是人类研究['concept_GF_gavirul']基因与遗迹物质配链方式，试图制造出['concept_GF_collapse_immune']的计划，该计划旨在寻找由['concept_GF_collapse_radiation']照射所导致的['concept_GF_elid']的治疗和免疫方法，第二次$concept_GF_gavirul_project$又称“三女神计划”，是第一次，也是仅有的一次南罗两边科学家所共同合作研究的遗迹项目。\n\n人类历史上的两次$concept_GF_gavirul_project$均以失败告终。"
 
- concept_GF_collapse_immune: "完全免疫个体"
+ concept_GF_collapse_immune: "£invisible£完全免疫个体£invisible£"
  concept_GF_collapse_immune_desc: "指完全免疫['concept_GF_elid']的个体，这些个体不会在接触高剂量的['concept_GF_collapse_radiation']后感染$concept_GF_elid_short$。\n\n人类历史上曾出现过数名自然产生的$concept_GF_collapse_immune$，但这些个体却只能生存于存在$concept_GF_collapse_radiation$的环境，一旦离开这种环境，就会在短时间内因器官衰竭而亡。\n\n人类试图通过研究['concept_GF_gavirul']来人为地制造出完全免疫个体，以求能够治愈或免疫$concept_GF_elid$。"
 
- concept_GF_collapse_liquid: "坍塌液"
+ concept_GF_collapse_liquid: "£invisible£坍塌液£invisible£"
  concept_GF_collapse_liquid_desc: "指一种不可视的成分不明的物质，可观测到的仅有底夸克与光子，能放出['concept_GF_collapse_radiation_short']，密封存贮于遗迹的晶体胶囊中，此种储存方式使坍塌物质呈现出液态，因此被称为“坍塌液”。\n\n坍塌液本身是不可视的，通过加入识别化合物，并用密封环向偏振装置才使其成为可视的状态。\n\n坍塌液可制成武器，暴露在坍塌辐射下的生物会感染被称作['concept_GF_elid']的特殊病症。"
 
- concept_GF_collapse_radiation: "坍塌辐射"
- concept_GF_collapse_radiation_short: "辐射"
+ concept_GF_collapse_radiation: "£invisible£坍塌辐射£invisible£"
+ concept_GF_collapse_radiation_short: "£invisible£辐射£invisible£"
  concept_GF_collapse_radiation_desc: "指由于['concept_GF_collapse_relic']外部阻隔层被破坏，遗迹内特殊物质（多为['concept_GF_collapse_liquid']）所发出的粒子流。\n\n此种辐射使人类开始出现['concept_GF_elid']（即E.L.I.D），由于其无法治疗、死亡率极高，因此对社会秩序产生了极大冲击，各国对E.L.I.D病症的研究紧急启动。"
 
- concept_GF_contaminated_zone: "坍塌辐射污染区"
- concept_GF_contaminated_zone_short: "污染区"
+ concept_GF_contaminated_zone: "£invisible£坍塌辐射污染区£invisible£"
+ concept_GF_contaminated_zone_short: "£invisible£污染区£invisible£"
  concept_GF_contaminated_zone_desc: "指由于['concept_GF_collapse_relic']外部阻隔层被破坏，受到遗迹内特殊物质（多为['concept_GF_collapse_liquid']）泄露的['concept_GF_collapse_radiation']污染的地区，由于少部分污染区已被净化，目前污染区主要是指在《坍塌辐射污染恢复及振兴联合开拓协议》中，需要被净化收复，但净化工程尚未完成的地区。\n\n《开拓协议》将污染区分为“['concept_GF_white_zone']”、“['concept_GF_green_zone']”、“['concept_GF_contaminated_zone_yellow']”、“['concept_GF_contaminated_zone_red']”和“['concept_GF_contaminated_zone_black']”五种类型，其辐射污染等级递增。"
- concept_GF_contaminated_zone_yellow: "黄区"
+ concept_GF_contaminated_zone_yellow: "£invisible£黄区£invisible£"
  concept_GF_contaminated_zone_yellow_desc: "指在《开拓协议》的规划中，双方计划在第一第二阶段收复，但目前还未被收复的土地。拥有高于安全值的辐射浓度，人类在此行动需要周密的防辐射保护，['concept_GF_dolls_short_short']可以自由行动。"
- concept_GF_contaminated_zone_red: "红区"
+ concept_GF_contaminated_zone_red: "£invisible£红区£invisible£"
  concept_GF_contaminated_zone_red_desc: "指在《开拓协议》的规划中，在第三阶段需要推进治理的重污染地区。红区内几乎没有生命体，只有['concept_GF_elid_infected']会在此行动，且会出现“['concept_GF_epiphyllum']”景观。"
- concept_GF_contaminated_zone_black: "黑区"
+ concept_GF_contaminated_zone_black: "£invisible£黑区£invisible£"
  concept_GF_contaminated_zone_black_desc: "指在《开拓协议》的规划中，最后阶段将要攻克的地区，多为['concept_GF_collapse_radiation']源头的所在地区。黑区内的辐射浓度超过现有仪器上限，一旦进入，难以生还。"
 
- concept_GF_white_zone: "$d_GF_white_zone$"
+ concept_GF_white_zone: "£invisible£$d_GF_white_zone$£invisible£"
  concept_GF_white_zone_desc: "该区域是被包围在绿区之中的安全区，区域内辐射浓度为0。此类区域大多是曾经的经济、政治或军事重地，即便曾经遭受过一定的['concept_GF_collapse_radiation_short']污染，也已经被完全净化，坍塌辐射所能造成的直接和间接伤害已被完全消除。"
- concept_GF_green_zone: "$d_GF_green_zone$"
+ concept_GF_green_zone: "£invisible£$d_GF_green_zone$£invisible£"
  concept_GF_green_zone_desc: "该区域是本身受到的['concept_GF_collapse_radiation_short']污染比较轻微，或在净化工程推行过程中，污染等级降低，能够被正常利用的地区，在绿区范围内，基本不存在坍塌辐射。人类及人形在绿区中都能够自由行动。"
 
- concept_GF_epiphyllum: "昙花"
- concept_GF_radiated_epiphyllum: "辐射昙花"
+ concept_GF_epiphyllum: "£invisible£昙花£invisible£"
+ concept_GF_radiated_epiphyllum: "£invisible£辐射昙花£invisible£"
  concept_GF_epiphyllum_desc: "一类仙人掌科、昙花属附生肉质灌木的变体，其特点是能够吸收大量的['concept_GF_collapse_radiation']，并在花期时将辐射释放出去。在['concept_GF_contaminated_zone_red']内时而可见大面积的昙花花海，花期时大面积盛开的花海十分壮观——也十分致命。"
 
  concept_GF_tech_observe_reflection: "$GF_tech_observe_reflection$"
