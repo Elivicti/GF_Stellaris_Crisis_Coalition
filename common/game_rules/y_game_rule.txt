@@ -44,7 +44,10 @@ species_can_live_on_planet = {
 				exists = root.owner
 				root.owner = {
 					has_authority = auth_machine_intelligence
-					has_civic = civic_machine_assimilator # Assimilator empire
+					OR = {
+						has_civic = civic_machine_assimilator # Assimilator empire
+						has_ascension_perk = ap_mechromancy
+					}
 				}
 			}
 		}
@@ -136,6 +139,9 @@ can_generate_military_leader_from_pop = {
 # Root = Planet
 can_species_be_assembled = {
 	is_sapient = yes
+	NOT = {
+		has_trait = trait_exd
+	}
 	OR = {
 		AND = {
 			is_robotic = yes
@@ -285,10 +291,42 @@ can_crossbreed_species = {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #this/root = pop
 #checked if job's possible_precalc = can_fill_specialist_job
 can_fill_specialist_job = {
-	can_fill_specialist_job = yes
+	can_fill_specialist_job_trigger = yes
+	# Defined in 01_scripted_triggers_jobs.txt
 
 	if = { # GF
 		limit = { has_trait = GF_trait_doll }
@@ -302,6 +340,7 @@ can_fill_specialist_job = {
 		}
 	}
 }
+
 #this/root = pop
 #checked if job's possible_precalc = can_fill_ruler_job
 can_fill_ruler_job = {
@@ -366,7 +405,10 @@ can_trade_leader = {
 	# The leader must have a trait from a specialist subject type.
 	this = {
 		OR = {
-			has_specialist_subject_leader_trait = yes
+			AND = {
+				has_specialist_subject_leader_trait = yes
+				is_heir = no
+			}
 			# GF
 			GF_can_trade_robotic_leader = yes
 		}
@@ -410,6 +452,6 @@ can_trade_leader = {
 	}
 	NOR = {
 		has_trait = leader_trait_fotd_scientist
-		has_trait = leader_trait_fotd_admiral
+		has_trait = leader_trait_fotd_commander
 	}
 }
