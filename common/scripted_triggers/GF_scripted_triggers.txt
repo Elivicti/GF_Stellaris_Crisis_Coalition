@@ -301,10 +301,9 @@ GF_has_robotic_leaders = {
 # scope = leader
 GF_is_enhanced_leader = {
 	OR = {
-		has_trait = GF_trait_leader_enhanced_governor
+		has_trait = GF_trait_leader_enhanced_official
 		has_trait = GF_trait_leader_enhanced_scientist
-		has_trait = GF_trait_leader_enhanced_admiral
-		has_trait = GF_trait_leader_enhanced_general
+		has_trait = GF_trait_leader_enhanced_commander
 	}
 }
 
@@ -319,10 +318,9 @@ GF_leader_has_vanilla_negative_traits = {
 # scope = leader
 GF_leader_has_core_glitch = {
 	OR = {
-		has_trait = GF_trait_leader_core_glitch_governor
+		has_trait = GF_trait_leader_core_glitch_official
 		has_trait = GF_trait_leader_core_glitch_scientist
-		has_trait = GF_trait_leader_core_glitch_admiral
-		has_trait = GF_trait_leader_core_glitch_general
+		has_trait = GF_trait_leader_core_glitch_commander
 	}
 }
 

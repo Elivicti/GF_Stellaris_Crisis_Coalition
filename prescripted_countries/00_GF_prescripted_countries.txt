@@ -57,7 +57,7 @@ GF_EMPIRE_URNC = {
 		texture = 0
 		clothes = 0
 		trait = "leader_trait_principled"
-		leader_class = governor
+		leader_class = official
 	}
 	room = "personality_democratic_crusaders_room"
 
@@ -137,7 +137,7 @@ GF_EMPIER_AU = {
 		texture = 0
 		clothes = 0
 		trait = "trait_ruler_logistic_understanding"
-		leader_class = governor
+		leader_class = official
 	}
 	room = "personality_hegemonic_imperialists_room"
 
@@ -217,7 +217,7 @@ GF_EMPIER_GK = {
 		texture = 0
 		clothes = 0
 		trait = "trait_ruler_eye_for_talent"
-		leader_class = governor
+		leader_class = official
 	}
 	room = "personality_erudite_explorers_room"
 

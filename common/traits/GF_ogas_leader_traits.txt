@@ -1,0 +1,132 @@
+GF_trait_leader_ogas = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = GFX_leader_trait_machine_intelligence
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+		leader_officials_unity_upkeep_mult = -0.50
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.5
+		empire_size_colonies_mult = -0.25
+		GF_OGAS_threads_add = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_trait_leveled_modifier
+		CORE_UPKEEP = 0.5
+		TOOLTIP = GF_trait_leader_ogas_leveled_effect
+	}
+	
+	leader_potential_add = {
+		from = { has_authority = GF_auth_commonwealth }
+	}
+	leader_class = { official }
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
+}
+
+GF_trait_leader_ogas_glitch = {
+	cost = 0
+	inline_script = {
+		script = trait/icon_negative
+		ICON = GFX_leader_trait_erratic_morality_core
+		COUNCIL = yes
+		TIER = none
+	}
+	leader_class = { official }
+	randomized = no
+	# leader_potential_add = { always = no }
+
+	triggered_councilor_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_gf_automation_finish }
+		}
+		GF_automated_city_districts_produces_mult = -0.50
+		GF_automated_city_districts_upkeep_mult = 0.50
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
+	}
+
+	councilor_modifier = {
+		empire_size_mult = 0.25
+		empire_size_penalty_mult = 0.25
+	}
+	self_modifier = {
+		leaders_upkeep_mult = 1.0
+		species_leader_exp_gain = -0.50
+	}
+}
+
+GF_trait_leader_ogas_2 = {
+	cost = 0
+	inline_script = {
+		script = trait/GF_traits
+		CLASS = official
+		ICON = GFX_leader_trait_GF_ogas_2
+		FRAME = destiny_no_glow
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+
+	leader_class = { official }
+	randomized = no
+
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
+
+	# leader_potential_add = { always = no }
+
+	self_modifier = {
+		species_leader_exp_gain = 0.20
+		leader_officials_unity_upkeep_mult = -0.50
+	}
+	councilor_modifier = {
+		country_unity_produces_mult = 0.5
+		empire_size_colonies_mult = -0.25
+		country_admin_cap_add = 50
+		GF_OGAS_threads_add = 2
+	}
+
+	inline_script = {
+		script = OGAS/OGAS_trait_leveled_modifier
+		CORE_UPKEEP = 0.8
+		TOOLTIP = GF_trait_leader_ogas_leveled_effect_2
+	}
+
+	replace_traits = { GF_trait_leader_ogas }
+}
+
+GF_trait_leader_ogas_subnet_core = {
+	cost = 0
+	inline_script = {
+		script = trait/icon
+		CLASS = official
+		ICON = GFX_leader_trait_machine_intelligence
+		RARITY = paragon
+		COUNCIL = yes
+		TIER = none
+	}
+	councilor_modifier = {
+		edict_length_mult = 0.25
+		country_unity_produces_mult = 0.25
+		empire_size_colonies_mult = -0.25
+	}
+	leader_potential_add = {
+		from = { has_authority = GF_auth_OGAS_subnet }
+	}
+	leader_class = { official }
+	randomized = no
+	initial = no
+	immortal_leaders = yes
+	hide_age = yes
+}

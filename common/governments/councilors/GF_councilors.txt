@@ -10,7 +10,7 @@
 # }
 
 GF_councilor_ruler_commonwealth = {
-	leader_class = { governor }
+	leader_class = { official }
 	possible = { always = no }
 	is_leader_possible = { always = yes }
 	modifier = {
@@ -22,7 +22,7 @@ GF_councilor_ruler_commonwealth = {
 }
 
 GF_councilor_ruler_subnet = {
-	leader_class = { governor }
+	leader_class = { official }
 	possible = { always = no }
 	is_leader_possible = { always = yes }
 	modifier = {
@@ -35,8 +35,8 @@ GF_councilor_ruler_subnet = {
 
  GF_councilor_URNC = {
  	civic = GF_civic_URNC
- 	leader_class = { governor }
- 	is_leader_possible = { leader_class = governor }
+ 	leader_class = { official }
+ 	is_leader_possible = { leader_class = official }
 
 	modifier = {
 		GF_planet_URNC_commissioner_unity_produces_add = 1
@@ -46,12 +46,9 @@ GF_councilor_ruler_subnet = {
 
 GF_councilor_FSB = {
 	civic = GF_civic_FSB
-	leader_class = { admiral general }
+	leader_class = { commander }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-		}
+		leader_class = commander
 	}
 
 	modifier = {
@@ -62,12 +59,9 @@ GF_councilor_FSB = {
 
 GF_councilor_KCCO = {
 	civic = GF_civic_KCCO
-	leader_class = { admiral general }
+	leader_class = { commander }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-		}
+		leader_class = commander
 	}
 
 	modifier = {
@@ -91,12 +85,9 @@ GF_councilor_AU = {
 
 GF_councilor_MID = {
 	civic = GF_civic_MID
-	leader_class = { admiral general }
+	leader_class = { commander }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-		}
+		leader_class = commander
 	}
 
 	modifier = {
@@ -108,12 +99,9 @@ GF_councilor_MID = {
 
 GF_councilor_TASA = {
 	civic = GF_civic_TASA
-	leader_class = { admiral general }
+	leader_class = { commander }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-		}
+		leader_class = commander
 	}
 
 	modifier = {
@@ -124,10 +112,10 @@ GF_councilor_TASA = {
 
 GF_councilor_GK = {
 	civic = GF_civic_GK
-	leader_class = { governor scientist }
+	leader_class = { official scientist }
 	is_leader_possible = {
 		OR = {
-			leader_class = governor
+			leader_class = official
 			leader_class = scientist
 		}
 	}
@@ -141,11 +129,11 @@ GF_councilor_GK = {
 
 GF_councilor_16LAB = {
 	civic = GF_civic_16LAB
-	leader_class = { scientist governor }
+	leader_class = { scientist official }
 	is_leader_possible = {
 		OR = {
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 
@@ -158,11 +146,11 @@ GF_councilor_16LAB = {
 
 GF_councilor_90Wish = {
 	civic = GF_civic_90WISH
-	leader_class = { scientist governor }
+	leader_class = { scientist official }
 	is_leader_possible = {
 		OR = {
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 
@@ -178,8 +166,8 @@ GF_councilor_90Wish = {
 
 GF_councilor_IOP = {
 	civic = GF_civic_IOP
-	leader_class = { governor }
-	is_leader_possible = { leader_class = governor }
+	leader_class = { official }
+	is_leader_possible = { leader_class = official }
 
 	modifier = {
 		planet_building_GF_doll_factory_build_speed_mult = 0.05
@@ -190,13 +178,12 @@ GF_councilor_IOP = {
 
 GF_councilor_GOSPLAN = {
 	civic = GF_civic_GOSPLAN
-	leader_class = { governor scientist admiral general }
+	leader_class = { official scientist commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 
@@ -209,13 +196,12 @@ GF_councilor_GOSPLAN = {
 
 GF_councilor_NHC = {
 	civic = GF_civic_NHC
-	leader_class = { governor scientist admiral general }
+	leader_class = { official scientist commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 
@@ -227,11 +213,11 @@ GF_councilor_NHC = {
 
 GF_councilor_svarog = {
 	civic = GF_civic_svarog
-	leader_class = { governor admiral }
+	leader_class = { official commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = governor
+			leader_class = commander
+			leader_class = official
 		}
 	}
 
@@ -244,10 +230,10 @@ GF_councilor_svarog = {
 
 GF_councilor_wave_tech = {
 	civic = GF_civic_wave_tech
-	leader_class = { scientist general }
+	leader_class = { scientist commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
 		}
 	}
@@ -262,13 +248,12 @@ GF_councilor_wave_tech = {
 
 GF_councilor_driller = {
 	civic = GF_civic_driller
-	leader_class = { governor scientist admiral general }
+	leader_class = { official scientist commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 
@@ -279,13 +264,12 @@ GF_councilor_driller = {
 
 GF_councilor_scanner = {
 	civic = GF_civic_scanner
-	leader_class = { governor scientist admiral general }
+	leader_class = { official scientist commander }
 	is_leader_possible = {
 		OR = {
-			leader_class = admiral
-			leader_class = general
+			leader_class = commander
 			leader_class = scientist
-			leader_class = governor
+			leader_class = official
 		}
 	}
 

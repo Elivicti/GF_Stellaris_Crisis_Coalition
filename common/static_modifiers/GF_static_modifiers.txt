@@ -103,10 +103,8 @@ GF_agenda_doll_cloud_network_governor_effect = {
 GF_agenda_doll_cloud_network_scientist_effect = {
 	ship_anomaly_research_speed_mult = @GF_agenda_doll_cloud_network_anomaly_speed_mult
 }
-GF_agenda_doll_cloud_network_admiral_effect = {
+GF_agenda_doll_cloud_network_commander_effect = {
 	ship_speed_mult = @GF_agenda_doll_cloud_network_ship_speed
-}
-GF_agenda_doll_cloud_network_general_effect = {
 	army_collateral_damage_mult = @GF_agenda_doll_cloud_network_collateral_damage
 }
 

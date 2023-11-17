@@ -106,10 +106,10 @@ country_event = {
 			limit = { is_councilor_type = GF_councilor_90Wish }
 			switch = {
 				trigger = leader_class
-				governor = {
+				official = {
 					prev = {
 						every_owned_leader = {
-							limit = { leader_class = governor }
+							limit = { leader_class = official }
 							add_experience = 50
 						}
 					}

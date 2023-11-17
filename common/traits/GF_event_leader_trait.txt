@@ -1,124 +1,19 @@
-GF_trait_leader_ogas_glitch = {
-	cost = 0
-	inline_script = {
-		script = trait/icon_negative
-		ICON = GFX_leader_trait_erratic_morality_core
-		COUNCIL = yes
-		TIER = none
-	}
-	leader_class = { governor }
-	randomized = no
-	leader_potential_add = { always = no }
-
-	councilor_trait = yes
-	is_councilor_trait_for_ruler = yes
-
-	triggered_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_tradition = tr_gf_automation_finish }
-		}
-		GF_automated_city_districts_produces_mult = -0.50
-		GF_automated_city_districts_upkeep_mult = 0.50
-		GF_automated_city_districts_factory_assembly_speed_mult = -0.50
-	}
-
-	modifier = {
-		empire_size_mult = 0.25
-		empire_size_penalty_mult = 0.25
-	}
-	self_modifier = {
-		leaders_upkeep_mult = 1.0
-		species_leader_exp_gain = -0.50
-	}
-}
-
-GF_trait_leader_ogas_2 = {
+GF_trait_leader_enhanced_official = {
 	cost = 0
 	inline_script = {
 		script = trait/GF_traits
-		CLASS = governor
-		ICON = GFX_leader_trait_GF_ogas_2
-		FRAME = destiny_no_glow
-		RARITY = paragon
-		COUNCIL = yes
-		TIER = none
-	}
-
-	leader_class = { governor }
-	councilor_trait = yes
-	is_councilor_trait_for_ruler = yes
-	randomized = no
-
-	initial = no
-	immortal_leaders = yes
-	hide_age = yes
-
-	leader_potential_add = { always = no }
-
-	self_modifier = {
-		species_leader_exp_gain = 0.20
-		leader_governors_unity_upkeep_mult = -0.50
-	}
-	modifier = {
-		country_unity_produces_mult = 0.5
-		empire_size_colonies_mult = -0.25
-		country_admin_cap_add = 50
-		GF_OGAS_threads_add = 2
-	}
-
-	inline_script = {
-		script = OGAS/OGAS_trait_leveled_modifier
-		CORE_UPKEEP = 0.8
-		TOOLTIP = GF_trait_leader_ogas_leveled_effect_2
-	}
-
-	replace_traits = { GF_trait_leader_ogas }
-}
-
-GF_trait_leader_ogas_subnet_core = {
-	cost = 0
-	inline_script = {
-		script = trait/icon
-		CLASS = governor
-		ICON = GFX_leader_trait_machine_intelligence
-		RARITY = paragon
-		COUNCIL = yes
-		TIER = none
-	}
-	modifier = {
-		edict_length_mult = 0.25
-		country_unity_produces_mult = 0.25
-		empire_size_colonies_mult = -0.25
-	}
-	leader_potential_add = {
-		from = { has_authority = GF_auth_OGAS_subnet }
-	}
-	leader_class = { governor }
-	councilor_trait = yes
-	is_councilor_trait_for_ruler = yes
-	randomized = no
-	initial = no
-	immortal_leaders = yes
-	hide_age = yes
-}
-
-GF_trait_leader_enhanced_governor = {
-	cost = 0
-	inline_script = {
-		script = trait/GF_traits
-		CLASS = governor
+		CLASS = official
 		ICON = GFX_leader_trait_GF_zion_enhanced
 		FRAME = destiny_no_glow
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { governor }
+	leader_class = { official }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
 	modifier = {
 		planet_stability_add = 10
@@ -134,27 +29,22 @@ GF_trait_leader_enhanced_scientist = {
 		ICON = GFX_leader_trait_GF_zion_enhanced
 		FRAME = destiny_no_glow
 		RARITY = paragon
-		COUNCIL = no
+		COUNCIL = yes
 		TIER = none
 	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
 	modifier = {
-		all_technology_research_speed = 0.10
 		science_ship_survey_speed = 0.50
 		ship_archaeological_site_clues_add = 3
 		shipclass_science_ship_disengage_mult = 0.25
 	}
-
-	ai_categories = {
-		survey
-		physics
-		society
-		engineering
+	councilor_modifier = {
+		all_technology_research_speed = 0.10
 	}
 
 	ai_weight = {
@@ -162,57 +52,37 @@ GF_trait_leader_enhanced_scientist = {
 	}
 }
 
-GF_trait_leader_enhanced_admiral = {
+GF_trait_leader_enhanced_commander = {
 	cost = 0
 	inline_script = {
 		script = trait/GF_traits
-		CLASS = admiral
+		CLASS = commander
 		ICON = GFX_leader_trait_GF_zion_enhanced
 		FRAME = destiny_no_glow
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
-	modifier = {
+	fleet_modifier = {
 		ship_weapon_damage = 0.15
 		ship_hull_damage_mult = 0.15
 		ship_evasion_mult = 0.25
 	}
-}
-
-GF_trait_leader_enhanced_general = {
-	cost = 0
-	inline_script = {
-		script = trait/GF_traits
-		CLASS = general
-		ICON = GFX_leader_trait_GF_zion_enhanced
-		FRAME = destiny_no_glow
-		RARITY = paragon
-		COUNCIL = no
-		TIER = none
-	}
-	leader_class = { general }
-	initial = no
-	randomized = no
-
-	leader_potential_add = { always = no }
-
-	modifier = {
+	army_modifier = {
 		army_morale = 0.30
 		army_morale_damage_mult = 0.30
 		army_damage_mult = 0.20
 	}
 }
 
-
 #####
-GF_trait_leader_core_glitch_governor = {
+GF_trait_leader_core_glitch_official = {
 	cost = 0
 	inline_script = {
 		script = trait/icon_negative
@@ -220,11 +90,11 @@ GF_trait_leader_core_glitch_governor = {
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { governor }
+	leader_class = { official }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
 	modifier = {
 		planet_stability_add = -10
@@ -241,25 +111,27 @@ GF_trait_leader_core_glitch_scientist = {
 	inline_script = {
 		script = trait/icon_negative
 		ICON = GFX_leader_trait_erratic_morality_core
-		COUNCIL = no
+		COUNCIL = yes
 		TIER = none
 	}
 	leader_class = { scientist }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
 	modifier = {
-		all_technology_research_speed = -0.10
 		science_ship_survey_speed = -0.20
+	}
+	councilor_modifier = {
+		all_technology_research_speed = -0.10
 	}
 	self_modifier = {
 		species_leader_exp_gain = -0.10
 	}
 }
 
-GF_trait_leader_core_glitch_admiral = {
+GF_trait_leader_core_glitch_commander = {
 	cost = 0
 	inline_script = {
 		script = trait/icon_negative
@@ -267,37 +139,18 @@ GF_trait_leader_core_glitch_admiral = {
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 	
-	modifier = {
+	fleet_modifier = {
 		ship_evasion_mult = -0.10
 		ship_accuracy_mult = -0.10
 		ship_tracking_mult = -0.10
 	}
-	self_modifier = {
-		species_leader_exp_gain = -0.10
-	}
-}
-
-GF_trait_leader_core_glitch_general = {
-	cost = 0
-	inline_script = {
-		script = trait/icon_negative
-		ICON = GFX_leader_trait_erratic_morality_core
-		COUNCIL = no
-		TIER = none
-	}
-	leader_class = { general }
-	initial = no
-	randomized = no
-
-	leader_potential_add = { always = no }
-	
-	modifier = {
+	army_modifier = {
 		army_morale = -0.2
 		army_damage_mult = -0.2
 	}
@@ -306,23 +159,22 @@ GF_trait_leader_core_glitch_general = {
 	}
 }
 
-
 ###
-GF_trait_leader_inspired_governor = {
+GF_trait_leader_inspired_official = {
 	cost = 0
 	inline_script = {
 		script = trait/icon_specialist
-		CLASS = governor
+		CLASS = official
 		ICON = GFX_leader_trait_inspired
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { governor }
+	leader_class = { official }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
 	modifier = {
 		planet_stability_add = 10
@@ -346,11 +198,9 @@ GF_trait_leader_inspired_scientist = {
 	initial = no
 	randomized = no
 
-	councilor_trait = yes
+	# leader_potential_add = { always = no }
 
-	leader_potential_add = { always = no }
-
-	modifier = {
+	councilor_modifier = {
 		all_technology_research_speed = 0.15
 	}
 	self_modifier = {
@@ -358,48 +208,27 @@ GF_trait_leader_inspired_scientist = {
 	}
 }
 
-GF_trait_leader_inspired_admiral = {
+GF_trait_leader_inspired_commander = {
 	cost = 0
 	inline_script = {
 		script = trait/icon_specialist
-		CLASS = admiral
+		CLASS = commander
 		ICON = GFX_leader_trait_inspired
 		RARITY = paragon
 		COUNCIL = no
 		TIER = none
 	}
-	leader_class = { admiral }
+	leader_class = { commander }
 	initial = no
 	randomized = no
 
-	leader_potential_add = { always = no }
+	# leader_potential_add = { always = no }
 
-	modifier = {
+	fleet_modifier = {
 		ship_sensor_range_add = 1
 		ship_speed_mult = 0.05
 	}
-	self_modifier = {
-		council_agenda_progress_speed = 0.25
-	}
-}
-
-GF_trait_leader_inspired_general = {
-	cost = 0
-	inline_script = {
-		script = trait/icon_specialist
-		CLASS = general
-		ICON = GFX_leader_trait_inspired
-		RARITY = paragon
-		COUNCIL = no
-		TIER = none
-	}
-	leader_class = { general }
-	initial = no
-	randomized = no
-
-	leader_potential_add = { always = no }
-
-	modifier = {
+	army_modifier = {
 		armies_upkeep_mult = -0.10
 		army_experience_gain_mult = 0.10
 	}

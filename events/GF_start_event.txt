@@ -331,15 +331,15 @@ planet_event = {
 				change_species = event_target:GF_doll_species_template
 			}
 		}
-		while = {
+		create_pop = {
+			species = owner_main_species
 			count = 2
-			create_pop = { species = owner_main_species }
 		}
 		if = {
 			limit = { owner_main_species = { has_trait = GF_trait_self_dependence } }
-			while = {
+			create_pop = {
+				species = owner_main_species
 				count = 2
-				create_pop = { species = owner_main_species }
 			}
 		}
 

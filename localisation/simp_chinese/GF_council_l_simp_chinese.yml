@@ -68,8 +68,7 @@
  GF_agenda_doll_cloud_network_effect_tooltip:0 "§H一次性§!链接已有的人形领袖，获得以下效果，持续§Y$@GF_agenda_doll_cloud_network_duration_years|0$年§!："
  GF_agenda_doll_cloud_network_governor_effect_tooltip:0 "每个§Y人形$governor$§!提供：\n    $MOD_EMPIRE_SIZE_POPS_MULT$: $@GF_agenda_doll_cloud_network_pop_size_mult|%0=-$"
  GF_agenda_doll_cloud_network_scientist_effect_tooltip:0 "每个§Y人形$scientist$§!提供：\n    $MOD_SHIP_ANOMALY_RESEARCH_SPEED$: $@GF_agenda_doll_cloud_network_anomaly_speed_mult|%0=+$"
- GF_agenda_doll_cloud_network_admiral_effect_tooltip:0 "每个§Y人形$admiral$§!提供：\n    $MOD_SHIP_SPEED_MULT$: $@GF_agenda_doll_cloud_network_ship_speed|%0=+$"
- GF_agenda_doll_cloud_network_general_effect_tooltip:0 "每个§Y人形$general$§!提供：\n    $MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §Y-5%§!"
+ GF_agenda_doll_cloud_network_commander_effect_tooltip:0 "每个§Y人形$commander$§!提供：\n    $MOD_SHIP_SPEED_MULT$: $@GF_agenda_doll_cloud_network_ship_speed|%0=+$\n    $MOD_ARMY_COLLATERAL_DAMAGE_MULT$: §Y-5%§!"
 
  GF_councilor_scanner: "战略资源工程研究官"
  GF_councilor_scanner_female: "$GF_councilor_scanner$"

@@ -132,18 +132,6 @@ GF_specialist_OGAS_subnet_loyalty_effect = {
 			}
 		}
 		if = {
-			limit = { owner = { has_civic = civic_feudal_realm } }
-			target = {
-				add_modifier = { modifier = feudal_lord }
-			}
-		}
-		else_if = {
-			limit = { owner = { has_civic = civic_franchising } }
-			target = {
-				add_modifier = { modifier = corporate_franchise }
-			}
-		}
-		if = {
 			limit = {
 				target = { is_galactic_community_member = yes }
 				OR = {
@@ -171,8 +159,7 @@ GF_specialist_OGAS_subnet_loyalty_effect = {
 				limit = { target = { is_same_value = event_target:current_overlord } }
 				erase_modifier = { MOD = domestic_intelligence }
 			}
-			erase_modifier = { MOD = corporate_franchise }
-			erase_modifier = { MOD = feudal_lord }
+			erase_modifier = { MOD = commanding_presence }
 			erase_modifier = { MOD = divided_patronage }
 			erase_modifier = { MOD = overlord_ethics_compatibility }
 			erase_modifier = { MOD = newly_released_sector_loyalty }

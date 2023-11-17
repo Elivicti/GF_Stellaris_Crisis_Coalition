@@ -1,39 +1,4 @@
-GF_trait_leader_ogas = {
-	cost = 0
-	inline_script = {
-		script = trait/icon
-		CLASS = governor
-		ICON = GFX_leader_trait_machine_intelligence
-		RARITY = paragon
-		COUNCIL = yes
-		TIER = none
-	}
-	self_modifier = {
-		species_leader_exp_gain = 0.20
-		leader_governors_unity_upkeep_mult = -0.50
-	}
-	modifier = {
-		country_unity_produces_mult = 0.5
-		empire_size_colonies_mult = -0.25
-		GF_OGAS_threads_add = 1
-	}
-	inline_script = {
-		script = OGAS/OGAS_trait_leveled_modifier
-		CORE_UPKEEP = 0.5
-		TOOLTIP = GF_trait_leader_ogas_leveled_effect
-	}
-	
-	leader_potential_add = {
-		from = { has_authority = GF_auth_commonwealth }
-	}
-	leader_class = { governor }
-	councilor_trait = yes
-	is_councilor_trait_for_ruler = yes
-	randomized = no
-	initial = no
-	immortal_leaders = yes
-	hide_age = yes
-}
+
 
 
 GF_trait_leader_scientist_16lab = {
@@ -45,7 +10,7 @@ GF_trait_leader_scientist_16lab = {
 		COLOR = trait_bg_specialist
 		FRAME = veteran_no_glow
 		RARITY  = veteran
-		COUNCIL = no
+		COUNCIL = yes
 		TIER = none
 	}
 	self_modifier = {
@@ -56,30 +21,7 @@ GF_trait_leader_scientist_16lab = {
 		ship_archaeological_site_excavation_speed_mult = 0.15
 		assist_research_mult = 0.10
 	}
-	leader_potential_add = {
-		from = { has_valid_civic = GF_civic_16LAB }
-	}
-	opposites = { GF_trait_leader_scientist_16lab_councilor }
-	leader_class = { scientist }
-}
-
-GF_trait_leader_scientist_16lab_councilor = {
-	cost = 1
-	inline_script = {
-		script = trait/GF_traits_colored
-		CLASS = scientist
-		ICON = GFX_leader_trait_GF_16lab
-		COLOR = trait_bg_specialist
-		FRAME = veteran_no_glow
-		RARITY  = veteran
-		COUNCIL = yes
-		TIER = none
-	}
-	councilor_trait = yes
-	self_modifier = {
-		leader_trait_selection_options_add = 1
-	}
-	triggered_modifier = {
+	triggered_councilor_modifier = {
 		all_technology_research_speed = 0.025
 		multiplier = trigger:has_skill
 	}
@@ -87,10 +29,9 @@ GF_trait_leader_scientist_16lab_councilor = {
 	leader_potential_add = {
 		from = { has_valid_civic = GF_civic_16LAB }
 	}
-	opposites = { GF_trait_leader_scientist_16lab }
+	opposites = { GF_trait_leader_scientist_16lab_councilor }
 	leader_class = { scientist }
 }
-
 
 ######
 GF_trait_leader_doll = {
@@ -107,20 +48,16 @@ GF_trait_leader_doll = {
 		species_leader_exp_gain = 0.20
 	}
 	triggered_self_modifier = {
-		potential = { leader_class = governor }
-		leader_governors_gf_core_chip_upkeep_add = 1
+		potential = { leader_class = official }
+		leader_officials_gf_core_chip_upkeep_add = 1
 	}
 	triggered_self_modifier = {
 		potential = { leader_class = scientist }
 		leader_scientists_gf_core_chip_upkeep_add = 1
 	}
 	triggered_self_modifier = {
-		potential = { leader_class = admiral }
-		leader_admirals_gf_core_chip_upkeep_add = 1
-	}
-	triggered_self_modifier = {
-		potential = { leader_class = general }
-		leader_generals_gf_core_chip_upkeep_add = 1
+		potential = { leader_class = commanders }
+		leader_commanders_gf_core_chip_upkeep_add = 1
 	}
 
 	triggered_self_modifier = {
@@ -134,9 +71,9 @@ GF_trait_leader_doll = {
 	triggered_self_modifier = {
 		potential = {
 			owner = { has_edict = GF_doll_reprogram }
-			leader_class = governor
+			leader_class = official
 		}
-		leader_governors_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leader_officials_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
 		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
 	}
 	triggered_self_modifier = {
@@ -150,17 +87,9 @@ GF_trait_leader_doll = {
 	triggered_self_modifier = {
 		potential = {
 			owner = { has_edict = GF_doll_reprogram }
-			leader_class = admiral
+			leader_class = commander
 		}
-		leader_admirals_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
-		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
-	}
-	triggered_self_modifier = {
-		potential = {
-			owner = { has_edict = GF_doll_reprogram }
-			leader_class = general
-		}
-		leader_generals_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
+		leader_commanders_gf_core_chip_upkeep_add = @GF_doll_leader_core_chip_upkeep_add
 		leaders_unity_upkeep_mult = @GF_doll_leader_unity_upkeep_mult
 	}
 
@@ -168,13 +97,13 @@ GF_trait_leader_doll = {
 	immortal_leaders = yes
 	hide_age = yes
 	randomized = no
-	leader_class = { scientist general governor admiral }
+	leader_class = { scientist commander official }
 }
-GF_trait_leader_admiral_plus = {
+GF_trait_leader_commander_plus = {
 	cost = 0
 	inline_script = {
 		script = trait/icon
-		CLASS = admiral
+		CLASS = commander
 		ICON = GFX_leader_trait_GF_tactical_chip
 		RARITY = veteran
 		COUNCIL = no
@@ -184,13 +113,17 @@ GF_trait_leader_admiral_plus = {
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
-	modifier = {
+	fleet_modifier = {
 		ships_upkeep_mult = -0.2
 		ship_speed_mult = 0.20
 		ship_fire_rate_mult = 0.20
 		ship_weapon_damage = 0.20
 	}
-	leader_class = { admiral }
+	army_modifier = {
+		army_damage_mult = 0.4
+	}
+
+	leader_class = { commander }
 	hide_age = yes
 	randomized = no
 }
@@ -216,31 +149,11 @@ GF_trait_leader_scientist_plus = {
 	hide_age = yes
 	randomized = no
 }
-GF_trait_leader_general_plus = {
+GF_trait_leader_official_plus = {
 	cost = 0
 	inline_script = {
 		script = trait/icon
-		CLASS = general
-		ICON = GFX_leader_trait_GF_tactical_chip
-		RARITY = veteran
-		COUNCIL = no
-		TIER = none
-	}
-	self_modifier = {
-		species_leader_exp_gain = 0.2
-	}
-	modifier = {
-	    army_damage_mult = 0.4
-	}
-	leader_class = { general }
-	hide_age = yes
-	randomized = no
-}
-GF_trait_leader_governor_plus = {
-	cost = 0
-	inline_script = {
-		script = trait/icon
-		CLASS = governor
+		CLASS = official
 		ICON = GFX_leader_trait_GF_zener
 		RARITY = veteran
 		COUNCIL = no
@@ -252,7 +165,7 @@ GF_trait_leader_governor_plus = {
 	modifier = {
 	    planet_crime_add = -25
 	}
-	leader_class = { governor }
+	leader_class = { official }
 	hide_age = yes
 	randomized = no
 }

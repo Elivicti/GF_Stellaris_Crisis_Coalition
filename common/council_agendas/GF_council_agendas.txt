@@ -60,19 +60,10 @@ GF_agenda_doll_cloud_network = {
 				}
 				set_variable = {
 					which = v_mult
-					value = value:GF_count_doll_leader|CLASS|admiral|MAX|25|
+					value = value:GF_count_doll_leader|CLASS|commander|MAX|25|
 				}
 				GF_add_effective_modifier = {
-					MODIFIER = GF_agenda_doll_cloud_network_admiral_effect
-					MULT = v_mult
-					PERIOD = years DURATION = @GF_agenda_doll_cloud_network_duration_years
-				}
-				set_variable = {
-					which = v_mult
-					value = value:GF_count_doll_leader|CLASS|general|MAX|25|
-				}
-				GF_add_effective_modifier = {
-					MODIFIER = GF_agenda_doll_cloud_network_general_effect
+					MODIFIER = GF_agenda_doll_cloud_network_commander_effect
 					MULT = v_mult
 					PERIOD = years DURATION = @GF_agenda_doll_cloud_network_duration_years
 				}
@@ -103,7 +94,6 @@ GF_agenda_doll_cloud_network = {
 		custom_tooltip = GF_agenda_doll_cloud_network_effect_tooltip
 		custom_tooltip = GF_agenda_doll_cloud_network_governor_effect_tooltip
 		custom_tooltip = GF_agenda_doll_cloud_network_scientist_effect_tooltip
-		custom_tooltip = GF_agenda_doll_cloud_network_admiral_effect_tooltip
-		custom_tooltip = GF_agenda_doll_cloud_network_general_effect_tooltip
+		custom_tooltip = GF_agenda_doll_cloud_network_commander_effect_tooltip
 	}
 }

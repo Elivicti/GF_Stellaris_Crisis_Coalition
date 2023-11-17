@@ -1,11 +1,11 @@
-triggered_modifier = {
+triggered_councilor_modifier = {
 	potential = { has_level >= @GF_OGAS_leveled_thread_add_start_after_level }
 	custom_tooltip = GF_trait_leader_ogas_leveled_effect_place_holder
 	GF_OGAS_threads_add = 1
 	mult = value:GF_OGAS_leveled_threads_add|START_AFTER_LEVEL|@GF_OGAS_leveled_thread_add_start_after_level|
 }
 triggered_self_modifier = {
-	leader_governors_gf_core_chip_upkeep_add = $CORE_UPKEEP$
+	leader_officials_gf_core_chip_upkeep_add = $CORE_UPKEEP$
 	mult = trigger:has_level
 }
 custom_tooltip_with_modifiers = $TOOLTIP$

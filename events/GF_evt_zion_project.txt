@@ -1032,20 +1032,16 @@ country_event = {
 	title = GF_ZION_DEEP_DIVE
 
 	desc = {
-		text = GF_zion_project.32201.desc.governor
-		trigger = { event_target:enhancing_leader = { leader_class = governor } }
+		text = GF_zion_project.32201.desc.official
+		trigger = { event_target:enhancing_leader = { leader_class = official } }
 	}
 	desc = {
 		text = GF_zion_project.32201.desc.scientist
 		trigger = { event_target:enhancing_leader = { leader_class = scientist } }
 	}
 	desc = {
-		text = GF_zion_project.32201.desc.admiral
-		trigger = { event_target:enhancing_leader = { leader_class = admiral } }
-	}
-	desc = {
-		text = GF_zion_project.32201.desc.general
-		trigger = { event_target:enhancing_leader = { leader_class = general } }
+		text = GF_zion_project.32201.desc.commander
+		trigger = { event_target:enhancing_leader = { leader_class = commander } }
 	}
 
 	picture = GFX_evt_GF_white_net
@@ -1057,10 +1053,9 @@ country_event = {
 		event_target:enhancing_leader = {
 			switch = {
 				trigger = leader_class
-				governor = { add_trait = GF_trait_leader_enhanced_governor }
+				official  = { add_trait = GF_trait_leader_enhanced_official }
 				scientist = { add_trait = GF_trait_leader_enhanced_scientist }
-				admiral = { add_trait = GF_trait_leader_enhanced_admiral }
-				general = { add_trait = GF_trait_leader_enhanced_general }
+				commander = { add_trait = GF_trait_leader_enhanced_commander }
 			}
 		}
 		GF_set_zion_deep_dive_cooldown = yes
@@ -1090,20 +1085,16 @@ country_event = {
 	title = GF_ZION_DEEP_DIVE
 
 	desc = {
-		text = GF_zion_project.32203.desc.governor
-		trigger = { event_target:glitching_leader = { leader_class = governor } }
+		text = GF_zion_project.32203.desc.official
+		trigger = { event_target:glitching_leader = { leader_class = official } }
 	}
 	desc = {
 		text = GF_zion_project.32203.desc.scientist
 		trigger = { event_target:glitching_leader = { leader_class = scientist } }
 	}
 	desc = {
-		text = GF_zion_project.32203.desc.admiral
-		trigger = { event_target:glitching_leader = { leader_class = admiral } }
-	}
-	desc = {
-		text = GF_zion_project.32203.desc.general
-		trigger = { event_target:glitching_leader = { leader_class = general } }
+		text = GF_zion_project.32203.desc.commander
+		trigger = { event_target:glitching_leader = { leader_class = commander } }
 	}
 
 	picture = GFX_evt_GF_white_net
@@ -1116,10 +1107,9 @@ country_event = {
 		event_target:glitching_leader = {
 			switch = {
 				trigger = leader_class
-				governor = { add_trait = GF_trait_leader_core_glitch_governor }
+				official = { add_trait = GF_trait_leader_core_glitch_official }
 				scientist = { add_trait = GF_trait_leader_core_glitch_scientist }
-				admiral = { add_trait = GF_trait_leader_core_glitch_admiral }
-				general = { add_trait = GF_trait_leader_core_glitch_general }
+				commander = { add_trait = GF_trait_leader_core_glitch_commander }
 			}
 			hidden_effect = { set_leader_flag = flag_l_GF_glitching_leader }
 		}
@@ -1183,17 +1173,17 @@ country_event = {
 				limit = {
 					has_leader_flag = skill_at_max
 					NOR = {
-						has_trait = GF_trait_leader_inspired_governor
+						has_trait = GF_trait_leader_inspired_official
 						has_trait = GF_trait_leader_inspired_scientist
-						has_trait = GF_trait_leader_inspired_admiral
+						has_trait = GF_trait_leader_inspired_commander
 						has_trait = GF_trait_leader_inspired_general
 					}
 				}
 				switch = {
 					trigger = leader_class
-					governor = { add_trait = GF_trait_leader_inspired_governor }
+					governor = { add_trait = GF_trait_leader_inspired_official }
 					scientist = { add_trait = GF_trait_leader_inspired_scientist }
-					admiral = { add_trait = GF_trait_leader_inspired_admiral }
+					admiral = { add_trait = GF_trait_leader_inspired_commander }
 					general = { add_trait = GF_trait_leader_inspired_general }
 				}
 			}
@@ -1652,9 +1642,9 @@ country_event = {
 			event_target:glitching_leader = {
 				switch = {
 					trigger = leader_class
-					governor = { remove_trait = GF_trait_leader_core_glitch_governor }
+					governor = { remove_trait = GF_trait_leader_core_glitch_official }
 					scientist = { remove_trait = GF_trait_leader_core_glitch_scientist }
-					admiral = { remove_trait = GF_trait_leader_core_glitch_admiral }
+					admiral = { remove_trait = GF_trait_leader_core_glitch_commander }
 					general = { remove_trait = GF_trait_leader_core_glitch_general }
 				}
 			}

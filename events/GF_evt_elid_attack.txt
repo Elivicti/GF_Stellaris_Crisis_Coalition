@@ -150,7 +150,7 @@ country_event = {
 
 		hidden_effect = {
 			create_leader = {
-				class = general
+				class = commander
 				species = owner
 				skill = 3
 				set_age = 21

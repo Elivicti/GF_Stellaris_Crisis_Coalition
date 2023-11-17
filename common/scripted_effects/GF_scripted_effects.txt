@@ -381,7 +381,7 @@ GF_deactivate_OGAS_subnet = {
 	if = {
 		limit = { NOT = { exists = event_target:GF_OGAS_subnet_previous_ruler } }
 		create_leader = {
-			class = governor
+			class = official
 			species = this
 			skill = 1
 			leader_age_max = 27

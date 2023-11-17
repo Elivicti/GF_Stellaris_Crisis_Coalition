@@ -21,16 +21,10 @@ country_event = {
 			add_trait = GF_trait_leader_doll
 			switch = {
 				trigger = leader_class
-				admiral = {
+				commander = {
 					if = {
 						limit = { species = { has_trait = GF_trait_tacticalchip } }
-						add_trait = GF_trait_leader_admiral_plus
-					}
-				}
-				general = {
-					if = {
-						limit = { species = { has_trait = GF_trait_tacticalchip } }
-						add_trait = GF_trait_leader_general_plus
+						add_trait = GF_trait_leader_commander_plus
 					}
 				}
 				scientist = {
@@ -39,10 +33,10 @@ country_event = {
 						add_trait = GF_trait_leader_scientist_plus
 					}
 				}
-				governor = {
+				official = {
 					if = {
 						limit = { species = { has_trait = GF_trait_zener_protocol } }
-						add_trait = GF_trait_leader_governor_plus
+						add_trait = GF_trait_leader_official_plus
 					}
 				}
 			}
@@ -64,16 +58,10 @@ country_event = {
 		every_owned_leader = {
 			limit = {
 				is_exact_same_species = from
-				NOR = {
-					has_trait = GF_trait_leader_admiral_plus
-					has_trait = GF_trait_leader_general_plus
-				}
+				leader_class = commander
+				NOT = { has_trait = GF_trait_leader_commander_plus }
 			}
-			switch = {
-				trigger = leader_class
-				admiral = { add_trait = GF_trait_leader_admiral_plus }
-				general = { add_trait = GF_trait_leader_general_plus }
-			}
+			add_trait = GF_trait_leader_commander_plus
 		}
 	}
 }
@@ -92,11 +80,11 @@ country_event = {
 		every_owned_leader = {
 			limit = {
 				is_exact_same_species = from
-				leader_class = governor
-				NOT = { has_trait = GF_trait_leader_governor_plus }
+				leader_class = official
+				NOT = { has_trait = GF_trait_leader_official_plus }
 				NOT = { has_leader_flag = flag_GF_ogas_leader }
 			}
-			add_trait = GF_trait_leader_governor_plus
+			add_trait = GF_trait_leader_official_plus
 		}
 	}
 }

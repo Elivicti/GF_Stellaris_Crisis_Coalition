@@ -19,7 +19,7 @@
  concept_GF_OGAS_threads_short: "£invisible£OGAS线程£invisible£"
  concept_GF_OGAS_threads_desc: "指['concept_GF_OGAS']可使用的一系列计算资源，可用于计算和管理政治、经济等多方面的长远规划，并分配和调度相应的物质资源来确保规划得到有效实施。"
 
- GF_OGAS_trait_effect: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$MOD_LEADER_AGE$：§G不朽§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$：§G+20%§!$TABBED_NEW_LINE$—$mod_leader_governors_unity_upkeep_mult$：§G-50%§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$—$mod_country_unity_produces_mult$：§G+50%§!$TABBED_NEW_LINE$—$MOD_EMPIRE_SIZE_MULT$：§G-25%§!$TABBED_NEW_LINE$—['concept_GF_OGAS_threads']数：§G+1§!\n\n§E每§Y技能等级§!的§Y领袖§!效应§!：$TABBED_NEW_LINE$—['concept_GF_core_chip']维护费：§R+0.5§!\n\n§E高于§Y$@GF_OGAS_leveled_thread_add_start_after_level|0$级§!时每§Y技能等级§!的£empire£ §Y帝国§!效应§!：$TABBED_NEW_LINE$—$mod_GF_OGAS_threads_add$: §G+1§!"
+ GF_OGAS_trait_effect: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$MOD_LEADER_AGE$：§G不朽§!$TABBED_NEW_LINE$—$MOD_LEADER_SPECIES_EXP_GAIN$：§G+20%§!$TABBED_NEW_LINE$—$mod_leader_officials_unity_upkeep_mult$：§G-50%§!\n\n$EMPIRE_EFFECTS_TXT$$TABBED_NEW_LINE$—$mod_country_unity_produces_mult$：§G+50%§!$TABBED_NEW_LINE$—$MOD_EMPIRE_SIZE_MULT$：§G-25%§!$TABBED_NEW_LINE$—['concept_GF_OGAS_threads']数：§G+1§!\n\n§E每§Y技能等级§!的§Y领袖§!效应§!：$TABBED_NEW_LINE$—['concept_GF_core_chip']维护费：§R+0.5§!\n\n§E高于§Y$@GF_OGAS_leveled_thread_add_start_after_level|0$级§!时每§Y技能等级§!的£empire£ §Y帝国§!效应§!：$TABBED_NEW_LINE$—$mod_GF_OGAS_threads_add$: §G+1§!"
 
  concept_GF_beilan_event: "£invisible£北兰岛事件£invisible£"
  concept_GF_beilan_event_desc: "指在2030年1月17发生于中国上海北兰岛['concept_GF_collapse_relic']的不明原因的爆炸，以及爆炸所带来的一系列后续影响的总称。\n\n该事件导致全球各地均遭受不同程度的['concept_GF_collapse_radiation']污染，深刻地影响了世界的格局，并彻底改变了整个人类文明的命运。"
