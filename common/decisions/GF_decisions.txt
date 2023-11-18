@@ -446,3 +446,31 @@ decision_GF_GOSPLAN = {
 		}
 	}
 }
+
+decision_GF_analyse_orb_mainframe_alpha = {
+	icon = decision_engineering_research
+	owned_planets_only = yes
+
+	resources = {
+		category = artifact_actions
+		cost = { unity = 5000 }
+	}
+
+	potential = {
+		is_capital = yes
+		owner = {
+			has_country_flag = flag_GF_analyse_orb_mainframe_alpha_decision_at_capital
+			NOR = {
+				has_special_project = GF_sf_event_project_7
+				has_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_finished
+			}
+		}
+	}
+
+	effect = {
+		enable_special_project = {
+			name = GF_sf_event_project_7
+			location = this
+		}
+	}
+}

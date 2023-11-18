@@ -10,14 +10,7 @@ GF_artifact_analyse_orb_mainframe_alpha = {
 
 	resources = {
 		category = artifact_actions
-		cost = {
-			trigger = { has_ancrel = yes }
-			minor_artifacts = 500
-		}
-		cost = {
-			trigger = { has_ancrel = no }
-			unity = 5000
-		}
+		cost = { minor_artifacts = 500 }
 	}
 
 	effect = {

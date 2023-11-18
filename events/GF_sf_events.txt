@@ -386,10 +386,18 @@ country_event = {
 	option = {
 		name = "GF_sf.7.a"
 		add_relic = GF_relic_orb_mainframe_alpha
-		hidden_effect = {
-			set_country_flag = flag_GF_relic_orb_mainframe_alpha_get
+		hidden_effect = { set_country_flag = flag_GF_relic_orb_mainframe_alpha_get }
+		if = {
+			limit = { has_ancrel = yes }
+			custom_tooltip = "GF_sf.7.a.tooltip"
 		}
-		custom_tooltip = "GF_sf.7.a.tooltip"
+		else = {
+			hidden_effect = {
+				set_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_started
+				set_country_flag = flag_GF_analyse_orb_mainframe_alpha_decision_at_capital
+			}
+			custom_tooltip = "GF_sf.7.a.tooltip.no_ancrel"
+		}
 	}
 }
 
