@@ -15,7 +15,7 @@ GF_trait_leader_enhanced_official = {
 
 	# leader_potential_add = { always = no }
 
-	modifier = {
+	planet_modifier = {
 		planet_stability_add = 10
 		planet_jobs_produces_mult = 0.15
 	}
@@ -96,7 +96,7 @@ GF_trait_leader_core_glitch_official = {
 
 	# leader_potential_add = { always = no }
 
-	modifier = {
+	planet_modifier = {
 		planet_stability_add = -10
 		planet_jobs_unity_produces_mult = -0.10
 		planet_jobs_upkeep_mult = 0.05
@@ -176,7 +176,7 @@ GF_trait_leader_inspired_official = {
 
 	# leader_potential_add = { always = no }
 
-	modifier = {
+	planet_modifier = {
 		planet_stability_add = 10
 	}
 	self_modifier = {

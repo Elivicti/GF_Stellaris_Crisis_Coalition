@@ -9,8 +9,8 @@
 
  mod_planet_structures_alloys_upkeep_mult:0 "建筑与区划 £alloys£ 合金维护费"
 
- mod_leaders_unity_upkeep_mult:0 "£unity£ §Y$unity$§!维护费"
- mod_leaders_gf_core_chip_upkeep_mult:0 "£gf_core_chip£ §Y$gf_core_chip$§!维护费"
+ mod_leaders_unity_upkeep_mult:0 "领袖£unity£ §Y$unity$§!维护费"
+ mod_leaders_gf_core_chip_upkeep_mult:0 "领袖£gf_core_chip£ §Y$gf_core_chip$§!维护费"
  mod_leader_officials_unity_upkeep_mult:0 "$mod_leaders_unity_upkeep_mult$"
  mod_leader_officials_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"
  mod_leader_scientists_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"

@@ -56,7 +56,7 @@ GF_trait_leader_doll = {
 		leader_scientists_gf_core_chip_upkeep_add = 1
 	}
 	triggered_self_modifier = {
-		potential = { leader_class = commanders }
+		potential = { leader_class = commander }
 		leader_commanders_gf_core_chip_upkeep_add = 1
 	}
 
@@ -162,7 +162,7 @@ GF_trait_leader_official_plus = {
 	self_modifier = {
 		species_leader_exp_gain = 0.2
 	}
-	modifier = {
+	planet_modifier = {
 	    planet_crime_add = -25
 	}
 	leader_class = { official }

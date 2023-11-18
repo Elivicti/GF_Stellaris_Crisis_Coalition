@@ -10,7 +10,7 @@ GF_trait_leader_ogas = {
 	}
 	self_modifier = {
 		species_leader_exp_gain = 0.20
-		leader_officials_unity_upkeep_mult = -0.50
+		leaders_unity_upkeep_mult = -0.50
 	}
 	councilor_modifier = {
 		country_unity_produces_mult = 0.5
@@ -88,7 +88,7 @@ GF_trait_leader_ogas_2 = {
 
 	self_modifier = {
 		species_leader_exp_gain = 0.20
-		leader_officials_unity_upkeep_mult = -0.50
+		leaders_unity_upkeep_mult = -0.50
 	}
 	councilor_modifier = {
 		country_unity_produces_mult = 0.5
