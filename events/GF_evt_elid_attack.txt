@@ -152,12 +152,13 @@ country_event = {
 			create_leader = {
 				class = commander
 				species = owner
-				skill = 3
+				skill = 4
 				set_age = 21
 				effect = {
 					remove_all_traits = yes
-					add_trait_no_notify = leader_trait_glory_seeker_2
-					add_trait_no_notify = leader_trait_army_logistician
+					add_trait_no_notify = subclass_commander_general
+					add_trait_no_notify = leader_trait_heavy_hitter
+					add_trait_no_notify = leader_trait_restrained_2
 				}
 			}
 		}
