@@ -47,17 +47,29 @@
 
    _* 在游玩时请注意MOD中政体与各国民理念的选择条件_
 
-2. 主种族选任意有机种族皆可（建议选择新人类），副种族选择仿生人形。
+2. 主种族选**任意有机**种族皆可（建议选择**新人类**），副种族**仿生自律人形**将在开局后自动添加。
 
 3. 其余国策、思潮、特质可自由搭配。
 
 
 
+## 关于所需的DLC
 
-## 关于前置
+并非所有列出的DLC都是必需的，但拥有全部能够获得更好的游戏体验。
+
++ **智械黎明**：**必需**，提供**仿生自律人形**所需的机械物种机制
++ **巨型企业**：**必需**，提供国民理念**格里芬**所需的企业分部机制
++ **末日劫难**：非必需，提供巨像相关内容
++ **四海皆臣**：非必需，提供附庸相关内容
++ **上古之遗**：非必需，提供考古遗迹相关内容
++ **银河典范**：非必需，提供内阁相关机制
+
+
+
+
+## 关于必需物品
 
 + 在之前的版本中使用的前置模组Stellaris Universal Gamerule Lib已被弃用，此后兼容性将会依赖于兼容补丁
-+ 前置模组为兼容性补丁，为可选项，如果你开启的模组较多，建议使用，同时请检查兼容补丁所支持的模组
 
 
 
@@ -70,7 +82,9 @@
 	
 		_* 此外，**暗蓝科技UI**内置的快速联系已支持OGAS_
 	
-+ [扩展模组](https://steamcommunity.com/sharedfiles/filedetails/?id=2752229316)
++ [少女前线群星故事集：危机联合扩展](https://steamcommunity.com/sharedfiles/filedetails/?id=2752229316)
+
+	_* 该扩展绝大部分内容已合并至本体，现阶段仅提供部分试验与尝鲜内容_
 
 
 
@@ -87,16 +101,19 @@
 
 目前这个MOD并未制作其他语言的本地化文本，若你愿意为本MOD的翻译工作提供帮助，请联系我们。
 
+联系方式：加入上方的讨论群，或前往Github仓库。
+
 Currently this MOD has NOT been translated into other languages, but if you are willing to help us translate this MOD, please contact us.
+
+CONTACT: Join our QQ group, or submit Issues, start a pull request at this repository.
 
 + Girls' Frontline Wiki:
 	+ [EN Wiki](https://iopwiki.com/wiki/Girls'_Frontline_Wiki)
 	+ [中文Wiki](http://www.gfwiki.org/)
-
 + Girls' Frontline Home Page:
 	+ [EN Home Page](http://gf.sunborngame.com/)
 	+ [中文官网](https://gf-cn.sunborngame.com/)
-
++ An EN MTL made by others: [[EN Localized] Chinese Mods Compilation](https://steamcommunity.com/sharedfiles/filedetails/?id=2832498831)
 
 #ドールズフロントライン　#ドルフロ　#少女前線　#少女前线　#Girls'Frontline  #소녀전선 모드. 트레잇, 시빅, 특수종족(인형) 포함
 
