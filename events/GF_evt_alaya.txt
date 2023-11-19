@@ -113,6 +113,8 @@ country_event = {
 	is_triggered_only = yes
 	show_sound = event_finding_loot
 	picture = GFX_evt_ancient_artifact
+	event_chain = GF_collect_relic_device_event_chain
+
 
 	trigger = {
 		has_authority = GF_auth_commonwealth
@@ -145,6 +147,7 @@ country_event = {
 	is_triggered_only = yes
 	show_sound = event_construction
 	picture = GFX_evt_analyzing_artifacts
+	event_chain = GF_collect_relic_device_event_chain
 
 	immediate = {
 		# 用于本地化文件显示她/他
@@ -272,6 +275,7 @@ country_event = {
 	is_triggered_only = yes
 	show_sound = event_slot_machine
 	picture = GFX_evt_GF_white_net
+	event_chain = GF_alaya_event_chain
 
 	trigger = {
 		has_authority = GF_auth_commonwealth

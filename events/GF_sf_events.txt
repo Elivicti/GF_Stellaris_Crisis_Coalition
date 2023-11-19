@@ -61,6 +61,7 @@ planet_event = {
 	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 
 	immediate = {
 		closest_system = {
@@ -114,6 +115,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_2
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 
 	option = {
 		name = "GF_sf.21.a"
@@ -133,6 +135,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_3
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 	
 	immediate = {
 		closest_system = {
@@ -184,6 +187,7 @@ ship_event = {
 	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 	
 	immediate = {
 		closest_system = {
@@ -236,6 +240,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_4
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 	
 	
 	option = {
@@ -256,6 +261,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_5
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 
 	immediate = {
 		closest_system = {
@@ -307,6 +313,7 @@ ship_event = {
 	location = event_target:GF_sf_site_target_6
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 	immediate = {
 		hidden_effect = {
 			closest_system = {
@@ -362,6 +369,7 @@ country_event = {
 	location = event_target:GF_sf_site_target_6
 	trackable = yes
 	is_triggered_only = yes
+	event_chain = GF_sf_event_chain
 
 	
 	option = {
@@ -380,6 +388,7 @@ country_event = {
 	picture = GFX_evt_GF_core
 	show_sound = event_activating_unknown_technology
 	location = capital_scope
+	event_chain = GF_sf_event_chain
 
 	is_triggered_only = yes
 	
@@ -408,6 +417,7 @@ country_event = {
 	desc = "GF_sf.8.desc"
 	picture = GFX_evt_GF_net_world
 	show_sound = event_door_opening
+	event_chain = GF_sf_event_chain
 	
 	is_triggered_only = yes
 
