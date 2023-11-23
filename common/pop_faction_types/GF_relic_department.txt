@@ -120,7 +120,7 @@ GF_relic_department = {
 		desc = "GF_FACTION_DEMAND_ogas_ruler_desc"
 
 		council_demand = yes
-		fulfilled_effect = 15
+		fulfilled_effect = 10
 		unfulfilled_effect = 0
 
 		trigger = {
