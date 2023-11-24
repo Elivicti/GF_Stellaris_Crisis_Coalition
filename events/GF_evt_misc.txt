@@ -53,7 +53,7 @@ event = {
 
 country_event = {
 	id = GF_evt_misc.1001
-	title = contact
+	title = GF_evt_misc.1001.name
 	desc = GF_evt_misc.1001.desc
 
 	diplomatic = yes
