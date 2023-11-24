@@ -132,7 +132,7 @@ spriteTypes = {
 	# factions
 	spriteType = {
 		name = "GFX_faction_icon_GF_relic_department"
-		textureFile = "gfx/interface/icons/faction_icons/faction_icons_technologists.dds"
+		textureFile = "gfx/interface/icons/faction_icons/GF_relic_department.dds"
 		noOfFrames = 1
 	}
 
