@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "更新日志：\n\n§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n$GF_Stellaris_Log_20230915$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n\n$GF_Stellaris_Log_20231124$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926"
+
+# 2023.11.24
+ GF_Stellaris_Log_20231124:0 "1. 调整地球上§Y特殊区划§!的效果\n2. 大幅调整人类特质§Y$GF_trait_doll_master$§!与§Y$GF_trait_self_dependence$§!的效果，现在更加风格分明\n3. 添加§Y蜂拥§!与§Y线列§!OGAS作战电脑\n4. 添加舰载机$GF_STRIKE_CRAFT_NB200$\n5. 现在§Y人形领袖§!与§YOGAS作战电脑§!都需要消耗 £gf_core_chip£ §Y$gf_core_chip$§!作为维护费\n6. 在没有§Y上古之遗DLC§!时，$GF_relic_orb_mainframe_alpha$的解密将从§Y文物行动§!替换为§Y首都星球决议§!\n7. 修复人形物种部分立绘丢失的问题"
 
 # 2023.9.15
  GF_Stellaris_Log_20230915:0 "1. 为§Y$GF_civic_driller$§!和§Y$GF_civic_scanner$§!国策添加内阁席位\n2. 更新了 £gf_core_chip£ §Y$gf_core_chip$§!的图标\n3. 为§Y主宰§!添加丢失的§Y$GF_OGAS_COMPUTER_FREE_JUGGERNAUT$§!\n4. 调整了§Y$GF_computing_center_3$§!的AI权重"
