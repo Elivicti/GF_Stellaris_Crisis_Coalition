@@ -81,3 +81,7 @@
  GF_COLLAPSE_MISSILE_DESC:0 "$GF_tech_collapse_missile_desc$"
  GF_COLLAPSE_TORPEDO:0 "$GF_tech_collapse_torpedo$"
  GF_COLLAPSE_TORPEDO_DESC:0 "$GF_tech_collapse_torpedo_desc$"
+
+
+ GF_STRIKE_CRAFT_NB200:0 "物质穿梭舰NB-200"
+ GF_STRIKE_CRAFT_NB200_DESC:0 "$GF_tech_strike_craft_nb200_desc$"

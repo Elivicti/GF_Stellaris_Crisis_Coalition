@@ -115,6 +115,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapse_torpedo.dds"
 	}
 
+	spriteType = {
+		name = "GFX_GF_strike_craft_nb200"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_nb200.dds"
+	}
+
 	# edicts
 	spriteType = {
 		name = "GFX_GF_edict_type_robot"

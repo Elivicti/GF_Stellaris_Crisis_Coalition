@@ -118,6 +118,9 @@
  GF_tech_collapse_cannon:0 "高爆坍塌机炮"
  GF_tech_collapse_cannon_desc:0 "特化改进过的自动火炮，采用特制的高爆型坍塌晶格装药炮弹，能够向目标倾泻一片致命的弹幕。"
 
+ GF_tech_strike_craft_nb200:0 "物质穿梭舰AR.Cop NB-200"
+ GF_tech_strike_craft_nb200_desc:0 "这种舰载机是基于一个世纪前南联的近地大气战斗航天器AR.Cop NB-90开发而来，专注于在太空作战的改进型号，能够利用坍塌与逆向坍塌技术进行瞬时移动，实现对敌方防空网的快速突防。"
+
  GF_tech_ternary_quantum_computing:0 "三进制量子计算"
  GF_tech_ternary_quantum_computing_desc:0 "采用三进制并利用量子力学规律调控量子信息单元进行计算的计算机系统架构，其运算效率远超传统的计算机系统。"
  GF_UNLOCK_TRADITION_AUTOMATION_TITLE:0 "§H解锁传统：§!$GF_tradition_automation$"

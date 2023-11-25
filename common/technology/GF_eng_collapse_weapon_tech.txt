@@ -262,3 +262,36 @@ GF_tech_collapse_cannon = {
 		}
 	}
 }
+
+GF_tech_strike_craft_nb200 = {
+	cost = @tier5cost3
+	area = engineering
+	tier = 5
+	ai_update_type = military
+	category = { voidcraft }
+	prerequisites = { GF_tech_collapsetech_weaponize tech_strike_craft_3 }
+	weight = @tier5weight1
+
+	ai_weight = {
+		modifier = {
+			factor = 1.2
+			has_civic = GF_civic_AU
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = @favored_weapon_ai_tech_factor
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+		modifier = {
+			factor = @disfavored_weapon_ai_tech_factor
+			NOT = { is_preferred_weapons = weapon_type_strike_craft }
+		}
+	}
+}

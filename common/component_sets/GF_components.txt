@@ -57,3 +57,9 @@ component_set = {
 	icon = GFX_GF_collapse_torpedo
 	icon_frame = 1
 }
+
+component_set = {
+	key = "GF_STRIKE_CRAFT_NB200"
+	icon = GFX_GF_strike_craft_nb200
+	icon_frame = 1
+}

@@ -33,6 +33,7 @@
 @GF_weapon_l_power = -200
 @GF_weapon_xl_power = -500
 @GF_weapon_t_power = -800
+@GF_weapon_strike_craft_power = -100
 
 weapon_component_template = {
 
@@ -719,4 +720,68 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
 	}
+}
+
+@attack_range = 10
+@engagement_range = 180
+@launch_time = 2
+@speed5 = 1000
+@count = 8
+@regen = 0.5
+
+strike_craft_component_template = {
+	key = "GF_STRIKE_CRAFT_NB200"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = point_defence
+	projectile_gfx = "techno_strike_craft_laser_3"
+
+	power = @GF_weapon_strike_craft_power
+	resources = {
+		category = GF_ship_collapse_weapons
+		cost = {
+			alloys = @GF_weapon_l_cost
+		}
+		upkeep = {
+			energy = @GF_weapon_l_upkeep_energy
+			alloys = @GF_weapon_l_upkeep_alloys
+			GF_nyto_collapse_liquid = @GF_weapon_l_upkeep_liquid
+		}
+	}
+
+	count = @count
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+
+	damage = { min = 8 max = 20 }
+	cooldown = 2
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 1.00
+	tracking = 1.00
+
+	health = 15
+	armor = 5
+	shield = 25
+	evasion = 1.5
+
+	speed = @speed5
+	rotation_speed = 0.8
+	acceleration = 1.25
+
+	shield_penetration = 0.8
+	armor_damage = 1.5
+	hull_damage = 1.2
+
+	ship_behavior = "fighters_behavior"
+
+	icon = "GFX_GF_strike_craft_nb200"
+	icon_frame = 1
+	component_set = "GF_STRIKE_CRAFT_NB200"
+	prerequisites = { "GF_tech_strike_craft_nb200" }
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { weapon_role_point_defense carrier }
+	point_defence_targets = { "strike_craft" "missile" }
 }
