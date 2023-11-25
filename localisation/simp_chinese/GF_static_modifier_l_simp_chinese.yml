@@ -22,6 +22,7 @@
  GF_agenda_doll_cloud_network_finish:0 "$council_agenda_GF_agenda_doll_cloud_network_name$议程"
  GF_agenda_doll_cloud_network_governor_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$governor$"
  GF_agenda_doll_cloud_network_scientist_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$scientist$"
+ GF_agenda_doll_cloud_network_commander_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$commander$"
  GF_agenda_doll_cloud_network_admiral_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$admiral$"
  GF_agenda_doll_cloud_network_general_effect:0 "$council_agenda_GF_agenda_doll_cloud_network_name$：$general$"
 ################################# 国家
