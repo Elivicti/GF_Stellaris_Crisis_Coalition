@@ -1139,21 +1139,13 @@ country_event = {
 					}
 				}
 				set_leader_flag = skill_at_max
-			}
-			# 添加的经验的计算公式:
-			# -50 * skill + 1000
-			if = {
-				limit = {
-					check_variable = {
-						which = current_skill
-						value >= 10
-					}
-				}
 				set_variable = {
 					which = current_skill
 					value = 10
 				}
 			}
+			# 添加的经验的计算公式:
+			# -50 * skill + 1000
 			multiply_variable = {
 				which = current_skill
 				value = -50
@@ -1176,15 +1168,13 @@ country_event = {
 						has_trait = GF_trait_leader_inspired_official
 						has_trait = GF_trait_leader_inspired_scientist
 						has_trait = GF_trait_leader_inspired_commander
-						has_trait = GF_trait_leader_inspired_general
 					}
 				}
 				switch = {
 					trigger = leader_class
 					governor = { add_trait = GF_trait_leader_inspired_official }
 					scientist = { add_trait = GF_trait_leader_inspired_scientist }
-					admiral = { add_trait = GF_trait_leader_inspired_commander }
-					general = { add_trait = GF_trait_leader_inspired_general }
+					commander = { add_trait = GF_trait_leader_inspired_commander }
 				}
 			}
 			else = {
@@ -1644,8 +1634,7 @@ country_event = {
 					trigger = leader_class
 					governor = { remove_trait = GF_trait_leader_core_glitch_official }
 					scientist = { remove_trait = GF_trait_leader_core_glitch_scientist }
-					admiral = { remove_trait = GF_trait_leader_core_glitch_commander }
-					general = { remove_trait = GF_trait_leader_core_glitch_general }
+					commander = { remove_trait = GF_trait_leader_core_glitch_commander }
 				}
 			}
 		}
