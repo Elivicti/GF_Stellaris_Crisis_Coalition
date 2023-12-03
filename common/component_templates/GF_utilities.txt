@@ -198,7 +198,35 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	# 恒星基地/主宰反应堆
+	# 主宰反应堆
+	key = "JUGGERNAUT_GF_COLLAPSE_REACTOR"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 16000
+	resources = {
+		category = GF_ship_collapse_utilities
+		cost = {
+			alloys = 1800
+		}
+		upkeep = {
+			energy = 16
+			alloys = 2
+			GF_nyto_collapse_liquid = 1
+		}
+	}
+
+	prerequisites = { "GF_tech_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = { juggernaut }
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	# 恒星基地反应堆
 	key = "STARBASE_GF_COLLAPSE_REACTOR"
 	size = large
 	icon = "GFX_GF_collapse_power_core"
@@ -222,7 +250,13 @@ utility_component_template = {
 		starbase_starhold
 		starbase_starfortress
 		starbase_citadel
-		juggernaut
+		orbital_ring_tier_1
+		orbital_ring_tier_2
+		orbital_ring_tier_3
+	}
+
+	ai_weight = {
+		weight = 8
 	}
 }
 
