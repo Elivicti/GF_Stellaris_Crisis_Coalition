@@ -11,6 +11,8 @@ GF_tradition_automation = {
 		"tr_gf_automation_6"
 	}
 
+	potential = { has_authority = GF_auth_commonwealth }
+
 	ai_weight = {
 		base = 0
 		modifier = {
