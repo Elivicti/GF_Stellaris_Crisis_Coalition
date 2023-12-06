@@ -11,7 +11,7 @@ gf_core_chip = {
 		weight = 0
 		modifier = {
 			add = 10
-			GF_potential_trigger_advanced = yes
+			GF_can_research_basic_doll_tech_trigger = yes
 		}
 	}
 
@@ -19,7 +19,7 @@ gf_core_chip = {
 		base = 0
 		modifier = {
 			add = 20
-			GF_potential_trigger_advanced = yes
+			GF_can_research_basic_doll_tech_trigger = yes
 		}
 	}
 }

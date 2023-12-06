@@ -9,7 +9,7 @@ GF_tech_observe_reflection = {
 
 	# unlocks upgraded labs
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_observe_reflection }
 	}
 	modifier = {
 		all_technology_research_speed = 0.05
@@ -40,7 +40,7 @@ GF_tech_mass_rebuild_function = {
 
 	# unlocks upgraded labs
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_mass_rebuild_function }
 	}
 	modifier = {
 		all_technology_research_speed = 0.05
@@ -71,7 +71,7 @@ GF_tech_collapse = {
 
 	# unlocks upgraded labs
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse }
 	}
 	modifier = {
 		all_technology_research_speed = 0.05
@@ -102,7 +102,7 @@ GF_tech_reverse_collapse = {
 
 	# unlocks upgraded labs
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse }
 	}
 	modifier = {
 		all_technology_research_speed = 0.05
@@ -134,7 +134,7 @@ GF_tech_collapse_power_core = {
 	weight = @tier5weight1
 	ai_update_type = all
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_power_core }
 	}
 	is_reverse_engineerable = no
 	is_rare = yes
@@ -177,7 +177,7 @@ GF_tech_collapse_jump_drive = {
 	weight = @tier5weight2
 	ai_update_type = all
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_jump_drive }
 	}
 	is_reverse_engineerable = no
 	is_rare = yes
@@ -224,7 +224,7 @@ GF_tech_collapse_relic_tech = {
 	is_dangerous = yes
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_relic_tech }
 		has_country_flag = flag_GF_collapse_relic_surveyed
 	}
 
@@ -249,8 +249,7 @@ GF_tech_collapse_energy_lance = {
 	is_rare = yes
 
 	potential = {
-		has_authority = GF_auth_commonwealth
-		has_country_flag = flag_GF_collapse_relic_surveyed
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_energy_lance }
 	}
 
 	prerequisites = {
@@ -284,8 +283,7 @@ GF_tech_collapse_ending_flash = {
 	is_rare = yes
 
 	potential = {
-		has_authority = GF_auth_commonwealth
-		has_country_flag = flag_GF_collapse_relic_surveyed
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_ending_flash }
 		has_country_flag = colossus_project
 	}
 
@@ -316,7 +314,7 @@ GF_tech_combat_ogas_computers = {
 	category = { computing }
 	ai_update_type = military
 	is_rare = yes
-	
+
 	prerequisites = {
 		"GF_tech_collapse_relic_tech"
 	}
@@ -328,7 +326,7 @@ GF_tech_combat_ogas_computers = {
 	# unlocks ogas combat computers
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_combat_ogas_computers }
 		has_country_flag = flag_GF_first_zion_comm_completed
 	}
 }
@@ -352,7 +350,7 @@ GF_tech_miniaturized_collapse_lance = {
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_miniaturized_collapse_lance }
 	}
 }
 
@@ -377,7 +375,7 @@ GF_tech_collapse_slingshot_protocal = {
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_slingshot_protocal }
 	}
 
 	modifier = {
@@ -397,6 +395,7 @@ GF_tech_ternary_quantum_computing = {
 	is_rare = yes
 
 	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_ternary_quantum_computing }
 		has_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_finished
 	}
 
@@ -414,6 +413,10 @@ GF_tech_ogas_computing_center = {
 	category = { computing }
 
 	is_rare = yes
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_ogas_computing_center }
+	}
 
 	prerequisites = {
 		tech_mega_engineering

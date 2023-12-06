@@ -22,9 +22,9 @@ GF_army_arm_doll = {
 			energy = 1
 		}
 	}
-	show_tech_unlock_if = { GF_potential_trigger_advanced = yes }
+	show_tech_unlock_if = { GF_can_research_basic_doll_tech_trigger = yes }
 	potential = { from = { has_trait = GF_trait_doll } }
-	potential_country = { GF_potential_trigger_advanced = yes }
+	potential_country = { GF_can_research_basic_doll_tech_trigger = yes }
 }
 
 GF_army_tactical_doll = {

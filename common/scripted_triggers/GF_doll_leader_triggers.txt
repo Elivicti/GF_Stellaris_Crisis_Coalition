@@ -4,7 +4,7 @@
 GF_is_ogas_leader = {
 	OR = {
 		has_leader_flag = flag_GF_ogas_leader
-		has_leader_flag = GF_OGAS_subnet_leader_@owner
+		has_leader_flag = flag_GF_ogas_subnet_leader_@owner
 	}
 }
 

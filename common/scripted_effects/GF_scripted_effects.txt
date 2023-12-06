@@ -1,3 +1,28 @@
+
+# this = country
+GF_set_can_research_tech = {
+	set_country_flag = flag_can_research_$TECH$
+}
+
+# this = country
+GF_set_cannot_research_tech = {
+	remove_country_flag = flag_can_research_$TECH$
+}
+
+# this = country
+GF_set_can_research_basic_doll_tech = {
+	set_country_flag = flag_can_research_GF_tech_doll_assemble
+	set_country_flag = flag_can_research_GF_tech_mind_upgrade_1
+	set_country_flag = flag_can_research_GF_tech_doll_modding_point_1
+}
+
+# this = country
+GF_set_cannot_research_basic_doll_tech = {
+	remove_country_flag = flag_can_research_GF_tech_doll_assemble
+	remove_country_flag = flag_can_research_GF_tech_mind_upgrade_1
+	remove_country_flag = flag_can_research_GF_tech_doll_modding_point_1
+}
+
 @GF_relic_site_jump_distance_min = 1
 @GF_relic_site_jump_distance_max = 4
 
@@ -282,7 +307,7 @@ GF_convert_to_OGAS_subnet = {
 			background_planet = event_target:GF_home_world
 
 			effect = {
-				set_leader_flag = GF_OGAS_subnet_leader_@event_target:GF_vassal_subnet
+				set_leader_flag = flag_GF_ogas_subnet_leader_@event_target:GF_vassal_subnet
 				set_leader_flag = legendary_leader				# 传奇领袖
 				set_leader_flag = immune_to_negative_traits		# 免疫负面特质
 				set_leader_flag = leader_death_events_blocked   # 禁止原版死亡事件
@@ -360,6 +385,7 @@ GF_convert_to_OGAS_subnet = {
 		}
 	}
 	set_country_flag = flag_GF_can_have_advanced_feature
+	GF_set_can_research_basic_doll_tech = yes
 	give_technology = { tech = GF_tech_doll_assemble }
 	set_built_species = event_target:doll_species
 	set_variable = {
@@ -411,6 +437,7 @@ GF_deactivate_OGAS_subnet = {
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2
 	remove_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
 	remove_country_flag = flag_GF_can_have_advanced_feature
+	GF_set_cannot_research_basic_doll_tech = yes
 }
 
 @GF_OGAS_mission_duration = 3600

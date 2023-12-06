@@ -7,6 +7,10 @@ GF_tech_collapse_missile = {
 	cost = @tier5cost3
 	weight = @tier5weight1
 
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_missile }
+	}
+
 	prerequisites = {
 		"GF_tech_collapse_bomb"
 		"tech_missiles_5"
@@ -59,6 +63,10 @@ GF_tech_collapse_torpedo = {
 
 	cost = @tier5cost3
 	weight = @tier5weight1
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_torpedo }
+	}
 
 	prerequisites = {
 		"GF_tech_collapse_bomb"
@@ -113,6 +121,10 @@ GF_tech_collapse_mass_accelerator = {
 	cost = @tier5cost3
 	weight = @tier5weight1
 
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_mass_accelerator }
+	}
+
 	prerequisites = {
 		"GF_tech_collapse_bomb"
 		"tech_mass_accelerator_2"
@@ -165,6 +177,10 @@ GF_tech_collapse_artillery = {
 
 	cost = @tier5cost3
 	weight = @tier5weight1
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_artillery }
+	}
 
 	prerequisites = {
 		"GF_tech_collapse_bomb"
@@ -219,6 +235,10 @@ GF_tech_collapse_cannon = {
 	cost = @tier5cost3
 	weight = @tier5weight1
 
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_cannon }
+	}
+
 	prerequisites = {
 		"GF_tech_collapse_bomb"
 		"tech_autocannons_3"
@@ -264,13 +284,22 @@ GF_tech_collapse_cannon = {
 }
 
 GF_tech_strike_craft_nb200 = {
-	cost = @tier5cost3
 	area = engineering
 	tier = 5
-	ai_update_type = military
 	category = { voidcraft }
-	prerequisites = { GF_tech_collapsetech_weaponize tech_strike_craft_3 }
+	ai_update_type = military
+
+	cost = @tier5cost3
 	weight = @tier5weight1
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_strike_craft_nb200 }
+	}
+
+	prerequisites = {
+		GF_tech_collapsetech_weaponize
+		tech_strike_craft_3
+	}
 
 	ai_weight = {
 		modifier = {

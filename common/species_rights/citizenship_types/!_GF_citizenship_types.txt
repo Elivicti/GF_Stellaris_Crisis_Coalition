@@ -6,7 +6,7 @@ citizenship_GF_doll_full = {
 
 	potential = {
 		exists = from
-		from = { GF_potential_trigger_advanced = yes }
+		from = { GF_can_research_basic_doll_tech_trigger = yes }
 		has_trait = GF_trait_doll
 	}
 
@@ -28,7 +28,7 @@ citizenship_GF_doll_limited = {
 
 	potential = {
 		exists = from
-		from = { GF_potential_trigger_advanced = yes }
+		from = { GF_can_research_basic_doll_tech_trigger = yes }
 		has_trait = GF_trait_doll
 	}
 
@@ -50,7 +50,7 @@ citizenship_GF_doll_servitude = {
 
 	potential = {
 		exists = from
-		from = { GF_potential_trigger_advanced = yes }
+		from = { GF_can_research_basic_doll_tech_trigger = yes }
 		has_trait = GF_trait_doll		# GF 人形特质
 	}
 	allow = {
@@ -71,7 +71,7 @@ citizenship_GF_doll_commodity = {
 
 	potential = {
 		exists = from
-		from = { GF_potential_trigger_advanced = yes }
+		from = { GF_can_research_basic_doll_tech_trigger = yes }
 		has_trait = GF_trait_doll		# GF 人形特质
 	}
 	allow = {

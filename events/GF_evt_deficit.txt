@@ -225,7 +225,7 @@ situation_event = {
 	is_triggered_only = yes
 	trigger = {
 		current_situation_approach = GF_deficit_core_chip_approach_ignore
-		owner = { GF_potential_trigger_advanced = no }
+		owner = { GF_can_research_basic_doll_tech_trigger = no }
 	}
 
 	immediate = {

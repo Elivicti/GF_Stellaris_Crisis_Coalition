@@ -8,7 +8,7 @@ building_GF_doll_factory = {
 	category = pop_assembly
 	
 	potential = {
-		owner = { GF_potential_trigger_advanced = yes }
+		owner = { GF_can_research_basic_doll_tech_trigger = yes }
 	}
 	
 	planet_modifier = {
@@ -17,7 +17,7 @@ building_GF_doll_factory = {
 
 	destroy_trigger = {
 		exists = owner
-		owner = { GF_potential_trigger_advanced = no }
+		owner = { GF_can_research_basic_doll_tech_trigger = no }
 	}
 
 	convert_to = {

@@ -1,7 +1,7 @@
 ########## GF_policy
 
 GF_doll_right_policy = {
-	potential = { GF_potential_trigger_advanced = yes }
+	potential = { GF_can_research_basic_doll_tech_trigger = yes }
 
 	option = {
 		name = "GF_doll_right_policy_full"
@@ -139,7 +139,7 @@ GF_doll_right_policy = {
 }
 
 GF_doll_work_policy = {
-	potential = { GF_potential_trigger_advanced = yes }
+	potential = { GF_can_research_basic_doll_tech_trigger = yes }
 
 	option = {
 		name = "GF_doll_work_policy_free"
@@ -232,7 +232,7 @@ GF_doll_work_policy = {
 }
 
 GF_run_mode_policy = {
-	potential = { GF_potential_trigger_advanced = yes }
+	potential = { GF_can_research_basic_doll_tech_trigger = yes }
 
 	option = {
 		name = "GF_run_mode_policy_normal"

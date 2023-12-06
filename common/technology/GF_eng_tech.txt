@@ -9,7 +9,7 @@ GF_tech_doll_assemble = {
 	gateway = robotics
 
 	potential = {
-		GF_potential_trigger_advanced = yes
+		GF_can_research_tech_trigger = { TECH = GF_tech_doll_assemble }
 	}
 
 	prereqfor_desc = {
@@ -32,7 +32,7 @@ GF_tech_doll_modding = {
 	}
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_doll_modding }
 	}
 	
 	weight_modifier = {
@@ -71,7 +71,7 @@ GF_tech_mind_upgrade_1 = {
 	prerequisites = { "tech_self_aware_logic" }
 	weight = @tier2weight3
 	potential = {
-		GF_potential_trigger_advanced = yes
+		GF_can_research_tech_trigger = { TECH = GF_tech_mind_upgrade_1 }
 	}
 	gateway = GF_tech_gateway_doll_modding
 
@@ -124,9 +124,10 @@ GF_tech_mind_upgrade_2 = {
 	tier = 4
 	category = { industry }
 	prerequisites = { "tech_sapient_ai" "GF_tech_mind_upgrade_1" }
-	weight = @tier4weight3
+	weight = 0
 
 	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_mind_upgrade_2 }
 		has_ascension_perk = ap_GF_mind_upgrade
 	}
 	gateway = GF_tech_gateway_doll_modding
@@ -135,37 +136,9 @@ GF_tech_mind_upgrade_2 = {
 		GF_doll_cat_ruler_produces_mult = 0.50
 	}
 
-	weight_modifier = {
-		modifier = {
-			factor = 0
-			has_policy_flag = robots_outlawed
-		}
-		modifier = {
-			factor = 0
-			has_policy_flag = ai_outlawed
-		}
-		modifier = {
-			factor = 1.5
-			has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
-		}
-		modifier = {
-			factor = 5
-			years_passed > 20
-		}
-		modifier = {
-			factor = 10
-			years_passed > 25
-		}
-	}
+	weight_modifier = { factor = 0 }
 
-	ai_weight = {
-		weight = 200
-		modifier = {
-			factor = 0
-			NOT = { has_ai_personality_behaviour = robot_exploiter }
-			NOT = { has_ai_personality_behaviour = robot_liberator }
-		}
-	}
+	ai_weight = { weight = 200 }
 }
 GF_tech_tactical_doll = {
 	cost = @tier3cost3
@@ -178,7 +151,7 @@ GF_tech_tactical_doll = {
 	is_reverse_engineerable = no
 	
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_tactical_doll }
 	}
 	ai_weight = {
 		factor = 5
@@ -200,13 +173,13 @@ GF_tech_doll_modding_point_1 = {
 	}
 	
 	potential = {
-		GF_potential_trigger_advanced = yes
+		GF_can_research_tech_trigger = { TECH = GF_tech_doll_modding_point_1 }
 	}
 
 	weight_modifier = {
 		modifier = {
 			factor = 4
-			GF_potential_trigger_advanced = yes
+			GF_can_research_basic_doll_tech_trigger = yes
 		}
 		modifier = {
 			factor = 0
@@ -236,25 +209,25 @@ GF_tech_doll_modding_point_2 = {
 	}
 
 	potential = {
-		has_ascension_perk = ap_GF_mind_upgrade
+		GF_can_research_tech_trigger = { TECH = GF_tech_doll_modding_point_2 }
 	}
 
 	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = { has_ascension_perk = ap_GF_mind_upgrade }
+		}
+		modifier = {
+			factor = 1.5
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
 		modifier = {
 			factor = 0
 			has_policy_flag = robots_outlawed
 		}
 		modifier = {
-			factor = 2
-			GF_potential_trigger_advanced = yes
-		}
-		modifier = {
 			factor = 1.25
-			research_leader = {
-				area = engineering
-				has_trait = "leader_trait_expertise_industry"
-				has_level > 2
-			}
+			has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_industry }
 		}
 	}
 
@@ -271,7 +244,11 @@ GF_tech_doll_modding_point_3 = {
 	is_rare = yes
 	prerequisites = { "GF_tech_doll_modding_point_2"}
 	weight = @tier4weight1
-	
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_doll_modding_point_3 }
+	}
+
 	modifier = {
 		GF_ANDROID_species_trait_points_add = 1
 	}
@@ -308,7 +285,7 @@ GF_tech_maintain_process = {
 	}
 	
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_maintain_process }
 	}
 	
 	weight_modifier = {
@@ -335,7 +312,7 @@ GF_tech_collapse_plant_1 = {
 	weight = @tier3weight2
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_plant_1 }
 	}
 	is_rare = yes
 
@@ -373,7 +350,7 @@ GF_tech_collapse_plant_2 = {
 	weight = @tier4weight2
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_plant_2 }
 	}
 	is_rare = yes
 
@@ -404,7 +381,7 @@ GF_tech_reverse_collapse_plant = {
 	weight = @tier4weight2
 
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_plant }
 	}
 	is_rare = yes
 
@@ -437,7 +414,7 @@ GF_tech_ship_collapse_armor = {
 	weight = @tier5weight1
 	ai_update_type = all
 	potential = {
-		has_authority = GF_auth_commonwealth
+		GF_can_research_tech_trigger = { TECH = GF_tech_ship_collapse_armor }
 	}
 	is_reverse_engineerable = no
 	is_rare = yes

@@ -8,13 +8,11 @@ building_GF_42lab_1 = {
 	category = government
 	potential = {
 		exists = owner
-		owner = {
-			GF_potential_trigger_advanced = yes
-		}
+		owner = { GF_can_research_basic_doll_tech_trigger = yes }
 	}
 	destroy_trigger = {
 		exists = owner
-		owner = { GF_potential_trigger_advanced = no }
+		owner = { GF_can_research_basic_doll_tech_trigger = no }
 	}
 	convert_to = {
 		building_research_lab_1
@@ -73,7 +71,7 @@ building_GF_42lab_2 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		owner = { GF_potential_trigger_advanced = no }
+		owner = { GF_can_research_basic_doll_tech_trigger = no }
 	}
 	upgrades = {
 		"building_GF_42lab_3"
@@ -132,7 +130,7 @@ building_GF_42lab_3 = {
 	}
 	destroy_trigger = {
 		exists = owner
-		owner = { GF_potential_trigger_advanced = no }
+		owner = { GF_can_research_basic_doll_tech_trigger = no }
 	}
 	convert_to = {
 		building_research_lab_3
