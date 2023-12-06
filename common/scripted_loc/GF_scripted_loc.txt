@@ -352,3 +352,17 @@ defined_text = {
 	name = GF_GetSystemMaintenancePercentage
 	value = value:GF_get_system_maintenance_percentage
 }
+
+# this = country
+defined_text = {
+	name = GF_GetZionFavor
+	text = {
+		trigger = { GF_has_zion_favor_high = yes }
+		localization_key = GF_zion_favor_high
+	}
+	text = {
+		trigger = { GF_has_zion_favor_low = yes }
+		localization_key = GF_zion_favor_low
+	}
+	default = GF_zion_favor_mid
+}

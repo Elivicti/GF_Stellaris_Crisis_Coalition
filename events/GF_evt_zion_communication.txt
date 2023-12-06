@@ -55,14 +55,10 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { NOT = { has_country_flag = flag_GF_first_zion_comm_completed } }
-			country_event = {
-				id = GF_zion.10000
-			}
+			country_event = { id = GF_zion.10000 }
 		}
 		else = {
-			country_event = {
-				id = GF_zion.20000
-			}
+			country_event = { id = GF_zion.20000 }
 		}
 	}
 }
@@ -91,9 +87,7 @@ country_event = {
 	option = {
 		name = GF_zion.10000.a
 		hidden_effect = {
-			country_event = {
-				id = GF_zion.11000
-			}
+			country_event = { id = GF_zion.11000 }
 		}
 	}
 }
@@ -121,9 +115,7 @@ country_event = {
 	option = {
 		name = GF_zion.11000.a
 		hidden_effect = {
-			country_event = {
-				id = GF_zion.12000
-			}
+			country_event = { id = GF_zion.12000 }
 		}
 	}
 }
@@ -162,9 +154,7 @@ country_event = {
 		name = GF_zion.12000.c
 		custom_tooltip = GF_dialog_tooltip
 		hidden_effect = {
-			country_event = {
-				id = GF_zion.13000
-			}
+			country_event = { id = GF_zion.13000 }
 		}
 	}
 }
@@ -192,9 +182,7 @@ country_event = {
 	option = {
 		name = GF_zion.13000.a
 		hidden_effect = {
-			country_event = {
-				id = GF_zion.14000
-			}
+			country_event = { id = GF_zion.14000 }
 		}
 	}
 }

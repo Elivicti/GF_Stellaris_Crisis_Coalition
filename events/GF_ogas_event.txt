@@ -176,22 +176,12 @@ country_event = {
 
 	option = {
 		name = GF_ogas.10000.mission
-		trigger = {
-			hidden_trigger = {
-				has_authority = GF_auth_commonwealth
-			}
-		}
 		hidden_effect = {
-			if = {
-				limit = { has_country_flag = flag_GF_ogas_owner }
-				country_event = { id = GF_ogas.11000 }
-			}
-			else = { country_event = { id = GF_ogas.11100 } }
+			country_event = { id = GF_ogas.11000 }
 		}
 	}
 	option = {
 		name = GF_ogas.10000.info
-		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
 		hidden_effect = {
 			country_event = { id = GF_ogas.12000 }
 		}
@@ -207,11 +197,10 @@ country_event = {
 	}
 	option = {
 		name = GF_ogas.10000.emotion
-		trigger = { hidden_trigger = { has_authority = GF_auth_commonwealth } }
 		# trigger = { NOT = { has_country_flag = gf_at_chat } }
 
-#		is_dialog_only = yes						# 临时
-#		response_text = GF_ogas.10000.emotion.response	# 临时
+		# is_dialog_only = yes						# 临时
+		# response_text = GF_ogas.10000.emotion.response	# 临时
 		hidden_effect = {
 			country_event = { id = GF_ogas.13000 }
 		}
@@ -219,34 +208,15 @@ country_event = {
 		# 	country_event = { id = event_gf_ogas.8 }
 		# }
 	}
-	# option = {
-	# 	name = GF_ogas.10000.emotion
-	# 	trigger = { has_country_flag = gf_at_chat }
-
-	# 	is_dialog_only = yes
-	# 	response_text = GF_ogas.10000.emotion.response
-	# }
 
 	# 与锡安通讯
 	option = {
 		name = event_GF_zion_comm.option
 		trigger = { GF_default_zion_comm_trigger = yes }
-		if = {
-			limit = { GF_has_zion_favor_high = yes }
-			custom_tooltip = GF_zion_favor_high_tooltip
-		}
-		else_if = {
-			limit = { GF_has_zion_favor_low = yes }
-			custom_tooltip = GF_zion_favor_low_tooltip
-		}
-		else = {
-			custom_tooltip = GF_zion_favor_mid_tooltip
-		}
+		custom_tooltip = GF_zion_current_favor
 
 		hidden_effect = {
-			country_event = {
-				id = GF_zion.0
-			}
+			country_event = { id = GF_zion.0 }
 		}
 	}
 

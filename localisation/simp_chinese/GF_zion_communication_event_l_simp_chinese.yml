@@ -39,9 +39,10 @@
 
 ######### 正常通讯
  GF_zion_favor_tooltip:0 "$GF_ZION$对我们的评价：£opinion£"
- GF_zion_favor_high_tooltip:0 "当前$GF_zion_favor_tooltip$ §G+[this.v_GF_zion_favor]§!"
- GF_zion_favor_mid_tooltip:0 "当前$GF_zion_favor_tooltip$ §Y+[this.v_GF_zion_favor]§!"
- GF_zion_favor_low_tooltip:0 "当前$GF_zion_favor_tooltip$ §R[this.v_GF_zion_favor]§!"
+ GF_zion_favor_high:0 "§G+[this.v_GF_zion_favor]§!"
+ GF_zion_favor_mid:0 "§Y+[this.v_GF_zion_favor]§!"
+ GF_zion_favor_low:0 "§R[this.v_GF_zion_favor]§!"
+ GF_zion_current_favor:0 "当前$GF_zion_favor_tooltip$ [this.GF_GetZionFavor]"
  GF_zion.20000.desc:0 "没做完，在这里难产了。\n\n给大伙磕头了，咚咚咚"
 
  GF_change_zion_favor_tooltip:0 "$GF_ZION$对我们的评价改变了：£opinion£$VALUE|0=+$"

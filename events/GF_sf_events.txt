@@ -30,7 +30,7 @@ country_event = {
 
 	immediate = {
 		event_target:GF_home_world.solar_system = {
-			set_star_flag = flag_GF_sf_event_system
+			set_star_flag = flag_s_GF_sf_event_system
 		}
 	}
 
@@ -66,7 +66,7 @@ planet_event = {
 	immediate = {
 		closest_system = {
 			limit = {
-				NOT = { has_star_flag = flag_GF_sf_event_system }
+				NOT = { has_star_flag = flag_s_GF_sf_event_system }
 				any_system_planet = { is_planet_class = pc_barren }
 				OR = {
 					NOT = { exists = space_owner }
@@ -86,7 +86,7 @@ planet_event = {
 					}
 					save_event_target_as = GF_sf_site_target_2
 				}
-				set_star_flag = flag_GF_sf_event_system
+				set_star_flag = flag_s_GF_sf_event_system
 			}
 		}
 	}
@@ -140,7 +140,7 @@ country_event = {
 	immediate = {
 		closest_system = {
 			limit = {
-				NOT = { has_star_flag = flag_GF_sf_event_system }
+				NOT = { has_star_flag = flag_s_GF_sf_event_system }
 				any_system_planet = { is_asteroid = yes }
 				OR = {
 					NOT = { exists = space_owner }
@@ -160,7 +160,7 @@ country_event = {
 					}
 					save_event_target_as = GF_sf_site_target_3
 				}
-				set_star_flag = flag_GF_sf_event_system
+				set_star_flag = flag_s_GF_sf_event_system
 			}
 			
 		}
@@ -192,7 +192,7 @@ ship_event = {
 	immediate = {
 		closest_system = {
 			limit = {
-				NOT = { has_star_flag = flag_GF_sf_event_system }
+				NOT = { has_star_flag = flag_s_GF_sf_event_system }
 				any_system_planet = { is_planet_class = pc_barren }
 				OR = {
 					NOT = { exists = space_owner }
@@ -212,7 +212,7 @@ ship_event = {
 					}
 					save_event_target_as = GF_sf_site_target_4
 				}
-				set_star_flag = flag_GF_sf_event_system
+				set_star_flag = flag_s_GF_sf_event_system
 			}
 			
 		}
@@ -266,7 +266,7 @@ country_event = {
 	immediate = {
 		closest_system = {
 			limit = {
-				NOT = { has_star_flag = flag_GF_sf_event_system }
+				NOT = { has_star_flag = flag_s_GF_sf_event_system }
 				any_system_planet = { is_asteroid = yes }
 				OR = {
 					NOT = { exists = space_owner }
@@ -286,7 +286,7 @@ country_event = {
 					}
 					save_event_target_as = GF_sf_site_target_5
 				}
-				set_star_flag = flag_GF_sf_event_system
+				set_star_flag = flag_s_GF_sf_event_system
 			}
 		}
 	}
