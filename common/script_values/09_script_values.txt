@@ -1,5 +1,7 @@
 # 傻逼蠢驴能不能他妈的给用了幂运算的傻逼sv定个上限啊
 
+@max_job_weight = 99999
+
 job_weights_modifier = {
 	complex_trigger_modifier = {
 		trigger = check_economic_production_modifier_for_job
@@ -16,7 +18,6 @@ job_weights_modifier = {
 	add = 1
 	min = 0
 	pow = 3 #we need it to have a bit more impact
-	max = 999999	# SB蠢驴
 
 	modifier = {
 		owner = {
@@ -24,6 +25,7 @@ job_weights_modifier = {
 		}
 		mult = @\[ 10 * $FACTOR|1$ ]
 	}
+	max = @max_job_weight	# SB蠢驴
 }
 
 job_weights_multiple_resources_modifier = {
@@ -42,7 +44,6 @@ job_weights_multiple_resources_modifier = {
 	add = 1
 	min = 0
 	pow = 3 #we need it to have a bit more impact
-	max = 999999	# SB蠢驴
 
 	modifier = {
 		owner = {
@@ -56,6 +57,7 @@ job_weights_multiple_resources_modifier = {
 		}
 		mult = @\[ 10 * $WEIGHT2$ ]
 	}
+	max = @max_job_weight	# SB蠢驴
 }
 
 #This and job_weights_modifier account for all trait impacts (via trait modifier and trait triggered pop modifiers) on resource production.
@@ -76,7 +78,7 @@ job_weights_research_modifier = {
 	add = 1
 	min = 0
 	pow = 3 #we need it to have a bit more impact
-	max = 999999	# SB蠢驴
+	max = @max_job_weight	# SB蠢驴
 }
 
 scripted_modifier_job_weight_mult = {
@@ -84,5 +86,5 @@ scripted_modifier_job_weight_mult = {
 	add = modifier:$MODIFIER$
 	min = 0.1
 	pow = 3 #we need it to have a bit more impact
-	max = 999999	# SB蠢驴
+	max = @max_job_weight	# SB蠢驴
 }
