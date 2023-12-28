@@ -75,12 +75,6 @@ GF_tech_mind_upgrade_1 = {
 	}
 	gateway = GF_tech_gateway_doll_modding
 
-	prereqfor_desc = {
-		custom = {
-			title = "feature_GF_doll_mind_upgrade"
-			desc = "feature_GF_doll_mind_upgrade_desc"
-		}
-	}
 
 	modifier = {
 		GF_doll_cat_specialist_produces_mult = 0.50
@@ -131,6 +125,13 @@ GF_tech_mind_upgrade_2 = {
 		has_ascension_perk = ap_GF_mind_upgrade
 	}
 	gateway = GF_tech_gateway_doll_modding
+
+	prereqfor_desc = {
+		custom = {
+			title = "feature_GF_doll_mind_upgrade"
+			desc = "feature_GF_doll_mind_upgrade_desc"
+		}
+	}
 
 	modifier = {
 		GF_doll_cat_ruler_produces_mult = 0.50

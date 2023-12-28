@@ -163,7 +163,7 @@ GF_doll_work_policy = {
 				NOT = { has_policy_flag = GF_doll_right_full }
 			}
 			has_policy_flag = GF_doll_right_limited
-			has_technology = GF_tech_mind_upgrade_1
+			has_technology = GF_tech_mind_upgrade_2
 		}
 
 		modifier = {
