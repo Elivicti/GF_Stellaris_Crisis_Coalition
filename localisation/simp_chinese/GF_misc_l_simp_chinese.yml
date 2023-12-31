@@ -8,3 +8,10 @@
  GF_evt_misc.1001.name:0 "通知：系统已更新"
  GF_evt_misc.1001.desc:0 "$GF_Stellaris_Update_Log$"
  GF_evt_misc.1001.a:0 "了解"
+
+
+# 输入意识形态战争输了以后的补救
+ GF_evt_misc.112.name:0 "§H[From.GetName]战败§!"
+ GF_evt_misc.112.desc:0 "我们在[From.GetName]中输给了[FromFrom.GetName]，尽管对方要求我们施行[FromFrom.GetName]的主流思潮与政体，但为保证国家的完整性，我们必须保持为§Y$GF_auth_commonwealth$§!。\n\n作为替代，我们被对方狠狠地羞辱了。"
+ GF_evt_misc.112.a:0 "可恶……"
+ GF_evt_misc.112.a.tooltip:0 "§Y恢复§!原先的§Y主流思潮§!与§Y政体§!\n§Y$NAME_GF_OGAS$ [GF_ogas_leader.GetName]§!重新成为统治者\n\n"
