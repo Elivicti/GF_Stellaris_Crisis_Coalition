@@ -28,7 +28,7 @@ planet_event = {
 					modifier = { max = 75 }
 					modifier = {
 						add = 15
-						is_planet_class = pc_habitat
+						GF_is_habitat = yes
 					}
 					random_owned_pop = {
 						weights = {
