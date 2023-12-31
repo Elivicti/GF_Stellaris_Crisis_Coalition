@@ -110,9 +110,20 @@ on_planet_transfer = {
 	}
 }
 
+# Executed as a leader has died
+# This = Country
+# From = Leader
 on_leader_death = {
 	events = {
 		GF_ogas.50
+	}
+}
+# Executed as a leader has been fired
+# This = Country
+# From = Leader
+on_leader_fired = {
+	events = {
+		GF_ogas.50 # Remove Event Node Traits
 	}
 }
 
@@ -189,5 +200,24 @@ on_pop_rights_change = {
 on_pop_purged = {
 	events = {
 		GF_doll.1008
+	}
+}
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+		GF_evt_misc.110 # 阻止“输入意识形态”战争修改联合政府的政体
+	}
+}
+
+# A war has been lost
+# Root = Loser Warleader
+# From = Winner Warleader
+# FromFrom = War
+on_war_lost = {
+	events = {
+		GF_evt_misc.111 # 阻止“输入意识形态”战争修改联合政府的政体，实际事件延迟一天触发
 	}
 }
