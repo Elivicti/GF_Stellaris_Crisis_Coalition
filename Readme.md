@@ -85,6 +85,8 @@
 + [少女前线群星故事集：危机联合扩展](https://steamcommunity.com/sharedfiles/filedetails/?id=2752229316)
 
 	_* 该扩展绝大部分内容已合并至本体，现阶段仅提供部分试验与尝鲜内容_
+	
++ [少女前线扩展包：人形纪元](https://steamcommunity.com/sharedfiles/filedetails/?id=3094980501)
 
 
 
