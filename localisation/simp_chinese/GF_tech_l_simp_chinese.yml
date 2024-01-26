@@ -97,7 +97,7 @@
  GF_tech_collapse_bomb:0 "坍塌液脏弹"
  GF_tech_collapse_bomb_desc:0 "坍塌液能够造成灾难性的基建和生态破坏，将其作为脏弹的装药，并用于轨道轰炸将能有效瓦解敌方星球防御甚至毁灭整个星球。"
  GF_tech_collapse_bomb_title:0 "§H解锁轨道轰炸姿态：§!$bombardment_collapsebomb$"
- GF_tech_collapse_bomb_desc:0 "$bombardment_collapsebomb_desc$"
+ GF_tech_collapse_bomb_effect_desc:0 "$bombardment_collapsebomb_desc$"
  # GF_tech_collapse_bomb_desc:0 "我们的舰队将会装备$GF_tech_collapse_bomb$以备用于轨道轰炸，我们可以在政策中选择是否允许我们的舰队这样做。"
 
  GF_tech_collapse_slingshot_protocal:0 "逆向坍塌量子弹射协议"

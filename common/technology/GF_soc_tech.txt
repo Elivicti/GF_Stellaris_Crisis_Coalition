@@ -307,7 +307,7 @@ GF_tech_collapse_bomb = {
 	prereqfor_desc = {
 		custom = {
 			title = "GF_tech_collapse_bomb_title"
-			desc = "GF_tech_collapse_bomb_desc"
+			desc = "GF_tech_collapse_bomb_effect_desc"
 		}
 	}
 
