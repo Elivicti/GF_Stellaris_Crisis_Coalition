@@ -1,11 +1,11 @@
 ######gf tech
 GF_tech_doll_assemble = {
-	cost = @tier1cost3
+	cost = @GFTech_tier1cost3
 	area = engineering
 	tier = 1
 	category = { industry }
 	prerequisites = { "tech_powered_exoskeletons" }
-	weight = @tier1weight3
+	weight = @GFTech_tier1weight3
 	gateway = robotics
 
 	potential = {
@@ -17,12 +17,12 @@ GF_tech_doll_assemble = {
 	}
 }
 GF_tech_doll_modding = {
-	cost = @tier3cost1
+	cost = @GFTech_tier3cost1
 	area = engineering
 	tier = 2
 	category = { industry }
 	prerequisites = { "GF_tech_doll_assemble" }
-	weight = @tier2weight3
+	weight = @GFTech_tier2weight3
 	
 	gateway = robotics
 	
@@ -64,12 +64,12 @@ GF_tech_doll_modding = {
 }
 ## unlocks doll-leaders
 GF_tech_mind_upgrade_1 = {
-	cost = @tier3cost1
+	cost = @GFTech_tier3cost1
 	area = engineering
 	tier = 3
 	category = { industry }
 	prerequisites = { "tech_self_aware_logic" }
-	weight = @tier2weight3
+	weight = @GFTech_tier2weight3
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_mind_upgrade_1 }
 	}
@@ -113,7 +113,7 @@ GF_tech_mind_upgrade_1 = {
 	}
 }
 GF_tech_mind_upgrade_2 = {
-	cost = @tier4cost3
+	cost = @GFTech_tier4cost3
 	area = engineering
 	tier = 4
 	category = { industry }
@@ -142,13 +142,13 @@ GF_tech_mind_upgrade_2 = {
 	ai_weight = { weight = 200 }
 }
 GF_tech_tactical_doll = {
-	cost = @tier3cost3
+	cost = @GFTech_tier3cost3
 	area = engineering
 	tier = 3
 	category = { industry }
 	is_rare = yes
 	prerequisites = { "GF_tech_doll_modding" }
-	weight = @tier3weight3
+	weight = @GFTech_tier3weight3
 	is_reverse_engineerable = no
 	
 	potential = {
@@ -160,12 +160,12 @@ GF_tech_tactical_doll = {
 }
 ######gf tech
 GF_tech_doll_modding_point_1 = {
-	cost = @tier2cost1
+	cost = @GFTech_tier2cost1
 	area = engineering
 	tier = 2
 	category = { industry }
 	prerequisites = {"GF_tech_doll_modding" }
-	weight = @tier2weight1
+	weight = @GFTech_tier2weight1
 
 	gateway = GF_tech_gateway_doll_modding
 	
@@ -198,12 +198,12 @@ GF_tech_doll_modding_point_1 = {
 }
 
 GF_tech_doll_modding_point_2 = {
-	cost = @tier3cost1
+	cost = @GFTech_tier3cost1
 	area = engineering
 	tier = 2
 	category = { industry }
 	prerequisites = { "GF_tech_doll_modding_point_1" }
-	weight = @tier3weight1
+	weight = @GFTech_tier3weight1
 	
 	modifier = {
 		GF_ANDROID_species_trait_points_add = 1
@@ -238,13 +238,13 @@ GF_tech_doll_modding_point_2 = {
 }
 
 GF_tech_doll_modding_point_3 = {
-	cost = @tier4cost1
+	cost = @GFTech_tier4cost1
 	area = engineering
 	tier = 4
 	category = { industry }
 	is_rare = yes
 	prerequisites = { "GF_tech_doll_modding_point_2"}
-	weight = @tier4weight1
+	weight = @GFTech_tier4weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_doll_modding_point_3 }
@@ -257,16 +257,16 @@ GF_tech_doll_modding_point_3 = {
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
-			factor = 0
-			has_policy_flag = robots_outlawed
-		}
-		modifier = {
-			factor = 2
-			has_authority = GF_auth_commonwealth
+			factor = 0.25
+			NOT = { has_ascension_perk = ap_GF_mind_upgrade }
 		}
 		modifier = {
 			factor = 4
-			has_ascension_perk = ap_the_flesh_is_weak
+			has_ascension_perk = ap_GF_mind_upgrade
+		}
+		modifier = {
+			factor = 0
+			has_policy_flag = robots_outlawed
 		}
 	}
 
@@ -275,11 +275,11 @@ GF_tech_doll_modding_point_3 = {
 	}
 }
 GF_tech_maintain_process = {
-	cost = @tier2cost2
+	cost = @GFTech_tier2cost2
 	area = engineering
 	tier = 2
 	category = { industry }
-	weight = @tier2weight2
+	weight = @GFTech_tier2weight2
 	
 	modifier = {
 		planet_pop_assembly_mult = 0.10
@@ -309,8 +309,8 @@ GF_tech_collapse_plant_1 = {
 	area = engineering
 	category = { industry }
 	tier = 3
-	cost = @tier3cost3
-	weight = @tier3weight2
+	cost = @GFTech_tier3cost3
+	weight = @GFTech_tier3weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_plant_1 }
@@ -347,8 +347,8 @@ GF_tech_collapse_plant_2 = {
 	area = engineering
 	category = { industry }
 	tier = 4
-	cost = @tier4cost2
-	weight = @tier4weight2
+	cost = @GFTech_tier4cost2
+	weight = @GFTech_tier4weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_plant_2 }
@@ -378,8 +378,8 @@ GF_tech_reverse_collapse_plant = {
 	area = engineering
 	category = { industry }
 	tier = 4
-	cost = @tier4cost2
-	weight = @tier4weight2
+	cost = @GFTech_tier4cost2
+	weight = @GFTech_tier4weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_plant }
@@ -411,8 +411,8 @@ GF_tech_ship_collapse_armor = {
 	area = engineering
 	category = { materials }
 	tier = 4
-	cost   = @tier5cost1
-	weight = @tier5weight1
+	cost   = @GFTech_tier5cost1
+	weight = @GFTech_tier5weight1
 	ai_update_type = all
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_ship_collapse_armor }

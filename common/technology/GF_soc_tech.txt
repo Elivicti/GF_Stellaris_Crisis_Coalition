@@ -29,12 +29,12 @@ GF_tech_zener_network_1 = {
 }
 
 GF_tech_zener_network_2 = {
-	cost = @tier2cost2
+	cost = @GFTech_tier2cost2
 	area = society
 	category = { statecraft }
 	tier = 2
 	prerequisites = { "GF_tech_zener_network_1" }
-	weight = @tier2weight2
+	weight = @GFTech_tier2weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_zener_network_2 }
@@ -64,12 +64,12 @@ GF_tech_zener_network_2 = {
 }
 
 GF_tech_zener_network_3 = {
-	cost = @tier3cost2
+	cost = @GFTech_tier3cost2
 	area = society
 	category = { statecraft }
 	tier = 3
 	prerequisites = { "GF_tech_zener_network_2" "tech_colonial_centralization" }
-	weight = @tier3weight2
+	weight = @GFTech_tier3weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_zener_network_3 }
@@ -91,12 +91,12 @@ GF_tech_zener_network_3 = {
 }
 
 GF_tech_zener_network_4 = {
-	cost = @tier4cost2
+	cost = @GFTech_tier4cost2
 	area = society
 	category = { statecraft }
 	tier = 4
 	prerequisites = { "GF_tech_zener_network_3" "tech_administrative_ai" "tech_galactic_administration"}
-	weight = @tier4weight2
+	weight = @GFTech_tier4weight2
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_zener_network_4 }
@@ -118,7 +118,7 @@ GF_tech_zener_network_4 = {
 }
 
 GF_tech_ecological_recovery = {
-	cost = @tier3cost1
+	cost = @GFTech_tier3cost1
 	area = society
 	tier = 3
 	category = { new_worlds }
@@ -126,7 +126,7 @@ GF_tech_ecological_recovery = {
 		"GF_tech_collapse"
 		"GF_tech_recover_plan"
 	}
-	weight = @tier3weight3
+	weight = @GFTech_tier3weight3
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_ecological_recovery }
 	}
@@ -193,8 +193,8 @@ GF_tech_collapsetech_weaponize = {
 	area = society
 	category = { military_theory }
 	tier = 4
-	cost   = @tier4cost2
-	weight = @tier3weight3
+	cost   = @GFTech_tier4cost2
+	weight = @GFTech_tier3weight3
 
 	is_rare = yes
 
@@ -240,8 +240,8 @@ GF_tech_elid_army = {
 	area = society
 	category = { biology }
 	tier = 5
-	cost = @tier5cost1
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost1
+	weight = @GFTech_tier5weight1
 
 	is_rare = yes
 	
@@ -291,8 +291,8 @@ GF_tech_collapse_bomb = {
 	category = { military_theory }
 	tier = 5
 
-	cost = @tier5cost3
-	weight = @tier5weight3
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight3
 
 	is_rare = yes
 

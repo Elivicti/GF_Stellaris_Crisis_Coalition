@@ -4,8 +4,8 @@ GF_tech_collapse_missile = {
 	category = { propulsion }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_missile }
@@ -61,8 +61,8 @@ GF_tech_collapse_torpedo = {
 	category = { propulsion }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_torpedo }
@@ -118,8 +118,8 @@ GF_tech_collapse_mass_accelerator = {
 	category = { propulsion }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_mass_accelerator }
@@ -175,8 +175,8 @@ GF_tech_collapse_artillery = {
 	category = { propulsion }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_artillery }
@@ -232,8 +232,8 @@ GF_tech_collapse_cannon = {
 	category = { propulsion }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_cannon }
@@ -289,8 +289,8 @@ GF_tech_strike_craft_nb200 = {
 	category = { voidcraft }
 	ai_update_type = military
 
-	cost = @tier5cost3
-	weight = @tier5weight1
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight1
 
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_strike_craft_nb200 }

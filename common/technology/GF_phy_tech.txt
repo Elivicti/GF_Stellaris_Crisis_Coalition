@@ -3,9 +3,9 @@ GF_tech_observe_reflection = {
 	area = physics
 	category = { particles }
 	tier = 1
-	cost = @tier1cost1
+	cost = @GFTech_tier1cost1
 	prerequisites = { "tech_basic_science_lab_1" }
-	weight = @tier1weight1
+	weight = @GFTech_tier1weight1
 
 	# unlocks upgraded labs
 	potential = {
@@ -34,9 +34,9 @@ GF_tech_mass_rebuild_function = {
 	area = physics
 	category = { particles }
 	tier = 2
-	cost = @tier2cost3
+	cost = @GFTech_tier2cost3
 	prerequisites = { "GF_tech_observe_reflection" }
-	weight = @tier2weight3
+	weight = @GFTech_tier2weight3
 
 	# unlocks upgraded labs
 	potential = {
@@ -65,9 +65,9 @@ GF_tech_collapse = {
 	area = physics
 	category = { particles }
 	tier = 3
-	cost = @tier2cost3
+	cost = @GFTech_tier2cost3
 	prerequisites = { "GF_tech_mass_rebuild_function" }
-	weight = @tier2weight3
+	weight = @GFTech_tier2weight3
 
 	# unlocks upgraded labs
 	potential = {
@@ -95,9 +95,9 @@ GF_tech_reverse_collapse = {
 	area = physics
 	category = { particles }
 	tier = 4
-	cost = @tier4cost2
+	cost = @GFTech_tier4cost2
 	prerequisites = { "GF_tech_collapse" }
-	weight = @tier4weight2
+	weight = @GFTech_tier4weight2
 	is_rare = yes
 
 	# unlocks upgraded labs
@@ -130,8 +130,8 @@ GF_tech_collapse_power_core = {
 	area = physics
 	category = { particles }
 	tier = 4
-	cost   = @tier5cost2
-	weight = @tier5weight1
+	cost   = @GFTech_tier5cost2
+	weight = @GFTech_tier5weight1
 	ai_update_type = all
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_power_core }
@@ -173,8 +173,8 @@ GF_tech_collapse_jump_drive = {
 	area = physics
 	category = { particles }
 	tier = 5
-	cost   = @tier5cost3
-	weight = @tier5weight2
+	cost   = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight2
 	ai_update_type = all
 	potential = {
 		GF_can_research_tech_trigger = { TECH = GF_tech_collapse_jump_drive }
@@ -217,7 +217,7 @@ GF_tech_collapse_relic_tech = {
 	area = physics
 	category = { particles }
 	tier = 5
-	cost   = @tier5cost3
+	cost   = @GFTech_tier5cost3
 	weight = 0
 
 	is_rare = yes
@@ -244,8 +244,8 @@ GF_tech_collapse_energy_lance = {
 	category = { particles }
 	tier = 5
 
-	cost = @tier5cost3
-	weight = @tier5weight3
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight3
 	is_rare = yes
 
 	potential = {
@@ -278,8 +278,8 @@ GF_tech_collapse_ending_flash = {
 	category = { particles }
 	tier = 5
 
-	cost = @tier5cost3
-	weight = @tier5weight3
+	cost = @GFTech_tier5cost3
+	weight = @GFTech_tier5weight3
 	is_rare = yes
 
 	potential = {
@@ -310,7 +310,7 @@ GF_tech_collapse_ending_flash = {
 GF_tech_combat_ogas_computers = {
 	area = physics
 	tier = 5
-	cost = 54000
+	cost = @GFTech_tier5cost4
 	category = { computing }
 	ai_update_type = military
 	is_rare = yes
@@ -334,7 +334,7 @@ GF_tech_combat_ogas_computers = {
 GF_tech_miniaturized_collapse_lance = {
 	area = physics
 	tier = 5
-	cost = 50000
+	cost = @GFTech_tier5cost4
 	category = { particles }
 	ai_update_type = military
 	is_rare = yes
@@ -358,7 +358,7 @@ GF_tech_miniaturized_collapse_lance = {
 GF_tech_collapse_slingshot_protocal = {
 	area = physics
 	tier = 5
-	cost = 50000
+	cost = @GFTech_tier5cost4
 	category = { particles }
 	ai_update_type = military
 	is_rare = yes
@@ -389,7 +389,7 @@ GF_tech_collapse_slingshot_protocal = {
 GF_tech_ternary_quantum_computing = {
 	area = physics
 	tier = 5
-	cost = @tier5cost3
+	cost = @GFTech_tier5cost3
 	weight = 0
 	category = { computing }
 	is_rare = yes
@@ -408,8 +408,8 @@ GF_tech_ternary_quantum_computing = {
 GF_tech_ogas_computing_center = {
 	area = physics
 	tier = 5
-	cost = @tier5cost2
-	weight = @tier3weight1
+	cost = @GFTech_tier5cost2
+	weight = @GFTech_tier3weight1
 	category = { computing }
 
 	is_rare = yes
