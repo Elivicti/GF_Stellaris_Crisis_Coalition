@@ -1,5 +1,6 @@
 GF_trait_leader_ogas = {
 	cost = 0
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = official
@@ -67,6 +68,7 @@ GF_trait_leader_ogas_glitch = {
 
 GF_trait_leader_ogas_2 = {
 	cost = 0
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/GF_traits
 		CLASS = official
@@ -108,6 +110,7 @@ GF_trait_leader_ogas_2 = {
 
 GF_trait_leader_ogas_subnet_core = {
 	cost = 0
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = official
