@@ -19,7 +19,6 @@ GF_trait_leader_scientist_16lab = {
 	modifier = {
 	    science_ship_survey_speed = 0.20
 		ship_archaeological_site_excavation_speed_mult = 0.15
-		assist_research_mult = 0.10
 	}
 	triggered_councilor_modifier = {
 		all_technology_research_speed = 0.025
@@ -29,13 +28,12 @@ GF_trait_leader_scientist_16lab = {
 	leader_potential_add = {
 		from = { has_valid_civic = GF_civic_16LAB }
 	}
-	opposites = { GF_trait_leader_scientist_16lab_councilor }
 	leader_class = { scientist }
 }
 
 ######
 GF_trait_leader_doll = {
-	cost = 0
+	leader_trait_type = destiny
 	inline_script = {
 		script = trait/icon
 		CLASS = leader
@@ -164,6 +162,15 @@ GF_trait_leader_official_plus = {
 	}
 	planet_modifier = {
 	    planet_crime_add = -25
+	}
+	sector_modifier = {
+		planet_crime_add = -12.5
+	}
+	galcom_modifier = {
+		diplo_weight_mult = 0.10
+	}
+	federation_modifier = {
+		federation_experience_add = 0.25
 	}
 	leader_class = { official }
 	hide_age = yes
