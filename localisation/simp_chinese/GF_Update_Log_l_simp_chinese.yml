@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n\n$GF_Stellaris_Log_20240126$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n\n$GF_Stellaris_Log_20240228$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926\n其他开发者若要接入本机系统，请参阅§Y000_documentation§!目录。"
+
+# 2024.02.28
+ GF_Stellaris_Log_20240228:0 "1. §YOGAS§!升级后不再能获得总督特质选项\n2. §Y$GF_trait_leader_official_plus$§!现在拥有星区、星海共同体和联邦相关的修正\n3. 适配3.11"
 
 # 2024.01.26
  GF_Stellaris_Log_20240126:0 "1. §Y$policy_GF_doll_work_policy$§!中，§Y$GF_doll_work_policy_high$§!现在需要 £engineering£ §Y$GF_tech_mind_upgrade_2$§!\n2. §YOGAS§!被解雇后也会重新刷新了\n3. §Y主宰§!和§Y恒星基地§!使用的§Y$GF_COLLAPSE_REACTOR$§!不再是同一个了\n4. 在§Y输入意识形态§!战争中失败后，§Y联合政府§!不再会被强制改变政体"
