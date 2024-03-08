@@ -63,6 +63,10 @@
  building_GF_connection_nexus_desc:0 "连接星球各处设施的自动化系统网络根节点，除了实现基本的自动化管理，还负责与OGAS和国家中央数据库建立可靠的链接。"
  GF_OGAS_threads_over_cap:0 "§R占用OGAS线程数超过线程池上限§!\n\n"
  add_job_GF_freedom_kingdom_effect_desc:0 "\n当拥有§Y$citizenship_full$§!的 £pop£ 人口 £unemployment£ §Y失业§!时，自动为其提供 £job_GF_freedom_kingdom£ §Y$job_GF_freedom_kingdom_plural$§!岗位"
+ building_GF_subnet_communication_nexus: "子网链接枢纽"
+ building_GF_subnet_communication_nexus_desc: "来自数光年以外的大量数据流在这里汇聚，为OGAS提供算力。"
+ building_GF_subnet_communication_nexus_effect: "每一个通过§Y超空间中继器网道§!链接到首都的§YOGAS子网§!将会提供 £GF_OGAS_threads_add£ §HOGAS线程§!，并产生 £gf_core_chip£ §H$gf_core_chip$§!和 £energy£ §H$energy$§!维护费\n\n"
+ building_GF_subnet_communication_nexus_bug_tooltip: "\n§L中继器网道的修正生效有延迟，若发现修正未生效，请存读档。§!"
  ###
  building_GF_military_contractors:0 "人形佣兵事务所"
  building_GF_military_contractors_desc:0 "我们承诺会派出最精锐的人形来执行任务，给各国提供优秀的雇佣兵服务。"

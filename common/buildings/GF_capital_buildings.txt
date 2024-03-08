@@ -833,3 +833,70 @@ building_GF_connection_nexus = {
 		text = job_GF_freedom_kingdom_effect_desc
 	}
 }
+
+building_GF_subnet_communication_nexus = {
+	category = government
+	base_buildtime = 360
+
+	empire_limit = 1
+
+	potential = {
+		is_capital = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = {
+			NOT = { GF_can_research_tech_trigger = { TECH = GF_tech_distributed_subnet_computing } }
+		}
+	}
+
+	prerequisites = { GF_tech_distributed_subnet_computing }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			energy = 200
+		}
+		upkeep = {
+			energy = 10
+			gf_core_chip = 5
+		}
+		upkeep = {
+			gf_core_chip = 3
+			energy = 1
+			mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+		}
+	}
+
+	planet_modifier = {
+		job_GF_programmer_add = 2
+		job_GF_liaison_add = 2
+	}
+
+	triggered_country_modifier = {
+		GF_OGAS_threads_add = 1
+		mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+	}
+
+	triggered_desc = {
+		text = building_GF_subnet_communication_nexus_effect
+	}
+
+	triggered_desc = {
+		text = job_GF_programmer_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { NOT = { has_civic = GF_civic_90WISH } } }
+		text = job_GF_liaison_effect_desc
+	}
+	triggered_desc = {
+		trigger = { owner = { has_civic = GF_civic_90WISH } }
+		text = job_GF_liaison_effect_90WISH_desc
+	}
+
+	triggered_desc = {
+		text = building_GF_subnet_communication_nexus_bug_tooltip
+	}
+}
