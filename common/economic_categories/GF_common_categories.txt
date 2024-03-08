@@ -144,3 +144,9 @@ pop_category_GF_freedom_class = {
 	}
 	modifier_category = pop
 }
+
+GF_subnet_generate_threads_ec = {
+	generate_add_modifiers = {
+		produces
+	}
+}
