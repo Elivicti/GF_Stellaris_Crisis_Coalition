@@ -276,4 +276,8 @@ spriteTypes = {
 		name = "GFX_text_invisible"
 		textureFile = "gfx/interface/icons/text_icons/invisible.dds"
 	}
+	spriteType = {
+		name = "GFX_text_GF_OGAS_threads_add"
+		textureFile = "gfx/interface/icons/modifiers/mod_GF_OGAS_threads_add.dds"
+	}
 }
