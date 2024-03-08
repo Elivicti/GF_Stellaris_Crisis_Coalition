@@ -648,9 +648,24 @@ GF_calculate_OGAS_threads_statistics = {
 		which = v_GF_threads_from_tech
 		value = value:GF_get_thread_count_from_tech
 	}
-	set_variable = {
-		which = v_GF_threads_from_subnet
-		value = value:GF_get_thread_count_from_subnet
+	if = {
+		limit = {
+			any_owned_planet = {
+				has_building = building_GF_subnet_communication_nexus
+				check_modifier_value = {
+					modifier = GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+					value > 0
+				}
+			}
+		}
+		random_owned_planet = {
+			limit = { has_building = building_GF_subnet_communication_nexus }
+			save_event_target_as = GF_subnet_nexus
+		}
+		set_variable = {
+			which = v_GF_threads_from_subnet
+			value = event_target:GF_subnet_nexus.value:GF_get_thread_count_from_subnet
+		}
 	}
 
 	# threads usage
@@ -674,7 +689,13 @@ GF_show_OGAS_threads_statistics = {
 	custom_tooltip = GF_ogas.threads_from_leader
 	if = {
 		limit = {
-			any_subject = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3 }
+			any_owned_planet = {
+				has_building = building_GF_subnet_communication_nexus
+				check_modifier_value = {
+					modifier = GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+					value > 0
+				}
+			}
 		}
 		custom_tooltip = GF_ogas.threads_from_subnet
 	}

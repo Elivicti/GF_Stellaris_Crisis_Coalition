@@ -38,18 +38,10 @@ GF_get_thread_count_from_tech = {
 	}
 }
 
-# this = country
+# this = planet
 GF_get_thread_count_from_subnet = {
 	base = 0
-	complex_trigger_modifier = {
-		trigger = count_subject
-		parameters = {
-			limit = {
-				has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_3
-			}
-		}
-		mode = add
-	}
+	add = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
 }
 
 # this = country
