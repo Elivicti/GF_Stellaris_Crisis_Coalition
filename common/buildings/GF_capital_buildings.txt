@@ -851,6 +851,10 @@ building_GF_subnet_communication_nexus = {
 		}
 	}
 
+	on_built = {
+		calculate_modifier = yes
+	}
+
 	prerequisites = { GF_tech_distributed_subnet_computing }
 
 	resources = {
