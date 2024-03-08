@@ -445,3 +445,56 @@ GF_tech_ogas_computing_center = {
 		}
 	}
 }
+
+GF_tech_distributed_subnet_computing = {
+	area = physics
+	tier = 3
+	weight = @GFTech_tier2weight3
+	cost = @GFTech_tier3cost1
+	
+	category = { computing }
+	is_rare = yes
+
+	prerequisites = { tech_self_aware_logic }
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_distributed_subnet_computing }
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = GF_unlock_subnet_specialization
+			desc = GF_unlock_subnet_specialization_desc
+		}
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = {
+			factor = 5
+			years_passed > 10
+		}
+		modifier = {
+			factor = 10
+			years_passed > 15
+		}
+	}
+
+	ai_weight = {
+		mult = 2
+		modifier = {
+			factor = 1.25
+			has_trait_in_council = { TRAIT = leader_trait_expertise_computing }
+		}
+		modifier = {
+			factor = 5
+			years_passed > 10
+		}
+		modifier = {
+			factor = 10
+			years_passed > 15
+		}
+	}
+}

@@ -128,3 +128,8 @@
 
  GF_tech_ogas_computing_center:0 "$GF_computing_center_3$"
  GF_tech_ogas_computing_center_desc:0 "$GF_computing_center_3_desc$"
+
+ GF_tech_distributed_subnet_computing: "分布式子网计算技术"
+ GF_tech_distributed_subnet_computing_desc: "通过分布式的计算节点网络为OGAS提供更快速的数据处理能力。"
+ GF_unlock_subnet_specialization: "§H解锁附庸特化：§!$GF_specialist_OGAS_subnet$"
+ GF_unlock_subnet_specialization_desc: "$GF_preset_OGAS_subnet_desc$"
