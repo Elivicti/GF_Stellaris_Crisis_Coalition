@@ -105,9 +105,12 @@ GF_preset_OGAS_subnet = {
 	potential = {
 		has_country_flag = flag_GF_commonwealth_vassal
 		OR = {
-			tech_unlocked_ratio = {
-				who = from
-				ratio >= @protectorate_tech_threshold
+			AND = {
+				tech_unlocked_ratio = {
+					who = from
+					ratio >= @protectorate_tech_threshold
+				}
+				from = { has_technology = GF_tech_distributed_subnet_computing }
 			}
 			has_country_flag = specialistion_subject_conversion_flag
 			AND = {
@@ -117,7 +120,6 @@ GF_preset_OGAS_subnet = {
 		}
 		from = {
 			GF_can_research_tech_trigger = { TECH = GF_tech_distributed_subnet_computing }
-			has_technology = GF_tech_distributed_subnet_computing
 		}
 	}
 }
