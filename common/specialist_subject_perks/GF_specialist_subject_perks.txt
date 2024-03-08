@@ -166,10 +166,6 @@ GF_OGAS_subnet_3_connected_OGAS = {
 		country_physics_research_produces_mult = 0.2
 		country_engineering_research_produces_mult = 0.2
 	}
-
-	overlord_modifier = {
-		GF_OGAS_threads_add = 1
-	}
 }
 
 GF_OGAS_subnet_3_distributed_compute = {

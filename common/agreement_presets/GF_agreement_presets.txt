@@ -115,6 +115,9 @@ GF_preset_OGAS_subnet = {
 				any_agreement = { has_active_specialization = GF_specialist_OGAS_subnet }
 			}
 		}
-		from = { has_authority = GF_auth_commonwealth }
+		from = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_distributed_subnet_computing }
+			has_technology = GF_tech_distributed_subnet_computing
+		}
 	}
 }

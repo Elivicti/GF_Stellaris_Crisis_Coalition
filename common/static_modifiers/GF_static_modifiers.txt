@@ -165,6 +165,7 @@ GF_OGAS_subnet_distributed_compute = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_specialist_scholarium_neighbor.dds"
 	GF_planet_jobs_doll_programmers_produces_mult = 0.25
 	GF_planet_jobs_doll_programmers_upkeep_mult = -0.10
+	GF_subnet_generate_threads_ec_gf_core_chip_produces_add = 1
 }
 
 GF_OGAS_subnet_disconnected = {
