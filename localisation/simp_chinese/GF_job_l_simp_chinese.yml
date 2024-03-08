@@ -7,7 +7,7 @@
  job_GF_assemble_mechanic_plural:0 "人形技师"
  job_GF_assemble_mechanic:0 "人形技师"
  job_GF_assemble_mechanic_desc:0 "负责生产仿生自律人形的技术专家。"
- job_GF_programmer_effect_desc:0 "£job_GF_programmer£ $job_GF_programmer_plural$利用£energy£ §Y$energy$§!生产£gf_core_chip£ §Y$gf_core_chip$§!\n$job_researcher_effect_desc$"
+ job_GF_programmer_effect_desc:0 "£job_GF_programmer£ $job_GF_programmer_plural$利用£energy£ §Y$energy$§!生产£gf_core_chip£ §Y$gf_core_chip$§!"
  job_GF_programmer_plural:0 "心智云图编辑员"
  job_GF_programmer:0 "心智云图编辑员"
  job_GF_programmer_desc:0 "心智云图编辑员是最精英的技术人员，主要工作是生产、升级、创造心智云图。"

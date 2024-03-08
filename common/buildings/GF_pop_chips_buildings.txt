@@ -52,6 +52,9 @@ building_GF_42lab_1 = {
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
 	}
+	triggered_desc = {
+		text = job_researcher_effect_desc
+	}
 	prerequisites = {
 		"GF_tech_doll_assemble"
 	}
@@ -111,6 +114,9 @@ building_GF_42lab_2 = {
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
 	}
+	triggered_desc = {
+		text = job_researcher_effect_desc
+	}
 	prerequisites = {
 		"GF_tech_mind_upgrade_1"
 	}
@@ -167,6 +173,9 @@ building_GF_42lab_3 = {
 	}
 	triggered_desc = {
 		text = job_GF_programmer_effect_desc
+	}
+	triggered_desc = {
+		text = job_researcher_effect_desc
 	}
 	prerequisites = {
 		"GF_tech_mind_upgrade_2"
