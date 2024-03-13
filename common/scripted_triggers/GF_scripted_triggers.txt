@@ -185,6 +185,43 @@ GF_planet_has_contaminated_zone = {
 	}
 }
 
+# this = system
+GF_sf_event_system_candidate_trigger = {
+	any_country = {
+		has_origin = GF_origin_commonwealth
+		capital_scope.solar_system = {
+			distance = {
+				source = prevprev
+				max_jumps = 7
+				min_jumps = 2
+			}
+		}
+	}
+}
+
+# this = planet
+# TYPE: barren | asteroid
+GF_sf_event_planet_trigger = {
+	has_planet_flag = flag_p_GF_sf_event_$TYPE$_candidate
+}
+
+# this = system
+# TYPE: barren | asteroid
+GF_sf_event_system_trigger = {
+	has_star_flag = flag_s_GF_sf_event_system_candidate
+	NOT = { has_star_flag = flag_s_GF_sf_event_system }
+	any_system_planet = {
+		GF_sf_event_planet_trigger = { TYPE = $TYPE$ }
+	}
+	OR = {
+		NOT = { exists = space_owner }
+		AND = {
+			exists = space_owner
+			space_owner = { is_same_value = root.owner }
+		}
+	}
+}
+
 
 # scope = country
 

@@ -73,6 +73,63 @@ GF_create_collapse_relic_site = {
 	space_owner = { set_visited = event_target:relic_site_target_$index$.solar_system }
 }
 
+# this = system
+GF_ensure_sf_event_barren_planet = {
+	if = {
+		limit = {
+			NOT = { any_system_planet = { is_planet_class = pc_barren } }
+		}
+		random_system_planet = {
+			limit = {
+				NOR = {
+					is_star = yes
+					is_moon = yes
+					is_asteroid = yes
+					is_planet_class = pc_gas_giant
+					is_urban_planet = yes
+				}
+			}
+			change_pc = pc_barren
+			reroll_planet = yes
+			set_planet_flag = flag_p_GF_sf_event_barren_candidate
+			set_planet_flag = suppress_archaeological_sites
+			prevent_anomaly = yes
+		}
+	}
+	else = {
+		every_system_planet = {
+			limit = { is_planet_class = pc_barren }
+			set_planet_flag = flag_p_GF_sf_event_barren_candidate
+			set_planet_flag = suppress_archaeological_sites
+			prevent_anomaly = yes
+		}
+	}
+}
+
+# this = planet
+GF_randomize_sf_event_barren_planet = {
+	random_list = {
+		22 = {
+			modifier = {
+				factor = 0
+				OR = {
+					is_star = yes
+					is_moon = yes
+					is_asteroid = yes
+					is_planet_class = pc_gas_giant
+					is_urban_planet = yes
+				}
+			}
+			change_pc = pc_barren
+			reroll_planet = yes
+			set_planet_flag = flag_p_GF_sf_event_barren_candidate
+			set_planet_flag = suppress_archaeological_sites
+			prevent_anomaly = yes
+		}
+		78 = {}
+	}
+}
+
 # required scope: planet
 GF_create_black_zone_deposit = {
 	if = {
