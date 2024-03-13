@@ -25,7 +25,6 @@ country_event = {
 	picture = GFX_evt_announcement
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_home_world
-	trackable = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -59,31 +58,17 @@ planet_event = {
 	picture = GFX_evt_mysterious_signal
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_2
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
 	immediate = {
 		closest_system = {
-			limit = {
-				NOT = { has_star_flag = flag_s_GF_sf_event_system }
-				any_system_planet = { is_planet_class = pc_barren }
-				OR = {
-					NOT = { exists = space_owner }
-					AND = {
-						exists = space_owner
-						space_owner = { is_same_value = root.owner }
-					}
-				}
-			}
+			limit = { GF_sf_event_system_trigger = { TYPE = barren } }
 			min_steps = 2
 			max_steps = 10
 			hidden_effect = {
 				random_system_planet = {
-					limit = {
-						NOT = { exists = archaeological_site }
-						is_planet_class = pc_barren
-					}
+					limit = { GF_sf_event_planet_trigger = { TYPE = barren } }
 					save_event_target_as = GF_sf_site_target_2
 				}
 				set_star_flag = flag_s_GF_sf_event_system
@@ -113,7 +98,6 @@ country_event = {
 
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_2
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
@@ -133,31 +117,17 @@ country_event = {
 	picture = GFX_evt_exploding_ship
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_3
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 	
 	immediate = {
 		closest_system = {
-			limit = {
-				NOT = { has_star_flag = flag_s_GF_sf_event_system }
-				any_system_planet = { is_asteroid = yes }
-				OR = {
-					NOT = { exists = space_owner }
-					AND = {
-						exists = space_owner
-						space_owner = { is_same_value = root.owner }
-					}
-				}
-			}
+			limit = { GF_sf_event_system_trigger = { TYPE = asteroid } }
 			min_steps = 2
 			max_steps = 10
 			hidden_effect = {
 				random_system_planet = {
-					limit = {
-						is_asteroid = yes
-						NOT = { exists = archaeological_site }
-					}
+					limit = { GF_sf_event_planet_trigger = { TYPE = asteroid } }
 					save_event_target_as = GF_sf_site_target_3
 				}
 				set_star_flag = flag_s_GF_sf_event_system
@@ -185,36 +155,21 @@ ship_event = {
 	picture = GFX_evt_sabotaged_ship
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_4
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 	
 	immediate = {
 		closest_system = {
-			limit = {
-				NOT = { has_star_flag = flag_s_GF_sf_event_system }
-				any_system_planet = { is_planet_class = pc_barren }
-				OR = {
-					NOT = { exists = space_owner }
-					AND = {
-						exists = space_owner
-						space_owner = { is_same_value = root.owner }
-					}
-				}
-			}
+			limit = { GF_sf_event_system_trigger = { TYPE = barren } }
 			min_steps = 2
 			max_steps = 10
 			hidden_effect = {
 				random_system_planet = {
-					limit = {
-						NOT = { exists = archaeological_site }
-						is_planet_class = pc_barren
-					}
+					limit = { GF_sf_event_planet_trigger = { TYPE = barren } }
 					save_event_target_as = GF_sf_site_target_4
 				}
 				set_star_flag = flag_s_GF_sf_event_system
 			}
-			
 		}
 	}
 	option = {
@@ -238,7 +193,6 @@ country_event = {
 	show_sound = event_activating_unknown_technology
 
 	location = event_target:GF_sf_site_target_4
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 	
@@ -259,31 +213,17 @@ country_event = {
 	picture = GFX_evt_asteroid_field
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_5
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
 	immediate = {
 		closest_system = {
-			limit = {
-				NOT = { has_star_flag = flag_s_GF_sf_event_system }
-				any_system_planet = { is_asteroid = yes }
-				OR = {
-					NOT = { exists = space_owner }
-					AND = {
-						exists = space_owner
-						space_owner = { is_same_value = root.owner }
-					}
-				}
-			}
+			limit = { GF_sf_event_system_trigger = { TYPE = asteroid } }
 			min_steps = 2
 			max_steps = 10
 			hidden_effect = {
 				random_system_planet = {
-					limit = {
-						NOT = { exists = archaeological_site }
-						is_asteroid = yes
-					}
+					limit = { GF_sf_event_planet_trigger = { TYPE = asteroid } }
 					save_event_target_as = GF_sf_site_target_5
 				}
 				set_star_flag = flag_s_GF_sf_event_system
@@ -311,14 +251,13 @@ ship_event = {
 	picture = GFX_evt_ruined_system
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_6
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 	immediate = {
 		hidden_effect = {
 			closest_system = {
 				min_steps = 2
-				max_steps = 5
+				max_steps = 3
 				spawn_system = {
 					min_distance >= 29
 					max_distance <= 31
@@ -345,6 +284,7 @@ ship_event = {
 				}
 			}
 			add_extra_hyperlane_to_spawned_system_effect = yes
+			owner = { set_visited = last_created_system }
 		}
 	}
 	option = {
@@ -367,7 +307,6 @@ country_event = {
 	show_sound = event_activating_unknown_technology
 
 	location = event_target:GF_sf_site_target_6
-	trackable = yes
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
