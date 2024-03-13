@@ -73,5 +73,6 @@ GF_sf_system = {
 			add_deposit = d_GF_sf_battle_field
 			add_deposit = d_GF_sf_relic_entrance
 		}
+		flags = { colony_event }
 	}
 }
