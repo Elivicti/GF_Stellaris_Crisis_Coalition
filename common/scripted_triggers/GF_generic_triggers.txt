@@ -1,3 +1,48 @@
+# this = any
+GF_check_mod_version_lt = {
+	event_target:global_event_country = {
+		check_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value < $VALUE$
+		}
+	}
+}
+GF_check_mod_version_le = {
+	event_target:global_event_country = {
+		check_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value <= $VALUE$
+		}
+	}
+}
+GF_check_mod_version_eq = {
+	event_target:global_event_country = {
+		check_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value = $VALUE$
+		}
+	}
+}
+GF_check_mod_version_ge = {
+	event_target:global_event_country = {
+		check_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value >= $VALUE$
+		}
+	}
+}
+GF_check_mod_version_gt = {
+	event_target:global_event_country = {
+		check_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value > $VALUE$
+		}
+	}
+}
+# this = any
+GF_check_mod_version = {
+	GF_check_mod_version_$CMP$ = { VALUE = $VALUE$ }
+}
 
 # scope = country
 is_GF_authority = {

@@ -1,3 +1,12 @@
+# this = any
+GF_set_mod_version = {
+	event_target:global_event_country = {
+		set_variable = {
+			which = v_GF_Stellaris_MOD_VER
+			value = $VALUE$
+		}
+	}
+}
 
 # this = country
 GF_set_can_research_tech = {

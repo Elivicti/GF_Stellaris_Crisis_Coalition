@@ -222,22 +222,15 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		event_target:global_event_country = {
-			check_variable = {
-				which = v_GF_Stellaris_MOD_VER
-				value < @GF_Stellaris_MOD_VER
-			}
+		GF_check_mod_version = {
+			CMP = lt
+			VALUE = @GF_Stellaris_MOD_VER
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			event_target:global_event_country = {
-				set_variable = {
-					which = v_GF_Stellaris_MOD_VER
-					value = @GF_Stellaris_MOD_VER
-				}
-			}
+			GF_set_mod_version = { VALUE = @GF_Stellaris_MOD_VER }
 		}
 	}
 
