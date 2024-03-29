@@ -39,6 +39,114 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = GF_ogas.100
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		# OR = {
+		# 	GF_is_GK = yes
+		# 	GF_is_Crisis_Coalition = yes
+		# }
+	}
+
+	immediate = {
+		# Create OGAS country
+		create_country = {
+			type = GF_ogas_country_type
+			name = "NAME_GF_OGAS"
+			adjective = "NAME_GF_OGAS_adjective"
+			species = owner_main_species
+			flag = {
+				icon = {
+					category = "griffin"
+					file = "country_gf_ogas.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "sinus.dds"
+				}
+				colors = {
+					"black" "black"
+					"null"  "null"
+				}
+			}
+			effect = {
+				set_country_flag = flag_GF_ogas_country
+				save_global_event_target_as = GF_ogas_country
+			}
+		}
+
+		# Set ruler basic characteristics
+		ruler = {
+			save_event_target_as = old_ruler
+		}
+		event_target:GF_ogas_country = {
+			establish_communications_no_message = prev
+			# create separate doll species to prevent portrait changing after species modding
+			create_species = {
+				class = GF_doll
+				name = NAME_GF_ANDROID
+				portrait = event_target:GF_doll_species_template
+				homeworld = event_target:GF_home_world
+				namelist = GF_DOLL
+				gender = female
+				traits = { trait = GF_trait_doll }
+				effect = {
+					save_event_target_as = GF_ogas_species
+					set_species_flag = flag_GF_doll_species_@root
+					set_species_flag = is_secondary_species_of@root
+					set_species_flag = flag_GF_ogas_doll
+					set_species_flag = nivlac_no_procreation
+				}
+			}
+			clone_leader = {
+				target = prev.ruler
+				species = event_target:GF_ogas_species
+				event_leader = yes
+
+				skip_background_generation = yes
+				background_ethic = ethic_materialist
+				custom_description = GF_ogas_leader_desc
+				background_planet = event_target:GF_home_world
+
+				effect = {
+					remove_trait = GF_trait_leader_doll
+					copy_flags_and_variables_from = prev.ruler
+					add_trait_no_notify = GF_trait_leader_ogas
+					set_leader_flag = legendary_leader				# 传奇领袖
+					set_leader_flag = immune_to_negative_traits		# 免疫负面特质
+					set_leader_flag = leader_death_events_blocked	# 禁止原版死亡事件
+					set_leader_flag = flag_GF_ogas_leader
+					set_leader_flag = has_gained_level_trait
+					set_leader_flag = block_governor_traits
+					save_global_event_target_as = GF_ogas_leader
+					add_trait_no_notify = subclass_official_economy_councilor
+				}
+			}
+		}
+		event_target:GF_ogas_leader = {
+			set_owner = prev
+			if = {
+				limit = { prev.owner_main_species = { NOT = { is_species_class = GF_new_type } } }
+				change_leader_portrait = GF_doll_000
+			}
+		}
+
+		assign_leader = event_target:GF_ogas_leader
+		event_target:old_ruler = {
+			kill_leader = { show_notification = no }
+		}
+
+		save_global_event_target_as = GF_ogas_owner
+		set_country_flag = flag_GF_can_contact_OGAS
+		set_country_flag = flag_GF_ogas_owner
+
+		country_event = { id = GF_ogas.110 days =  5 }
+	}
+}
+
 ###OGAS开场白（问候）
 country_event = {
 	id = GF_ogas.110
