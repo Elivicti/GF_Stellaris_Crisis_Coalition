@@ -150,6 +150,7 @@ country_event = {
 					set_leader_flag = has_gained_level_trait
 					set_leader_flag = block_governor_traits
 					save_global_event_target_as = GF_ogas_leader
+					add_trait_no_notify = subclass_official_economy_councilor
 				}
 			}
 		}
