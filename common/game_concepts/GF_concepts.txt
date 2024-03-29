@@ -53,7 +53,7 @@ concept_GF_collapse_immune = {
 }
 
 concept_GF_collapse_liquid = {
-	# alias = { }
+	alias = { concept_GF_collapse_particle concept_GF_collapse_material }
 }
 
 concept_GF_collapse_radiation = {
