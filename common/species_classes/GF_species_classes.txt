@@ -1,9 +1,11 @@
 GF_doll = {
 	archetype = GF_ANDROID
-	possible = {
-		origin	  = { value = GF_origin_commonwealth }
-		authority = { value = GF_auth_commonwealth }
-	}
+	playable = { always = no }
+	# possible = {
+	# 	origin	  = { value = GF_origin_commonwealth }
+	# 	authority = { value = GF_auth_commonwealth }
+	# }
+	possible_secondary = { always = no }
 	gender = no
 	use_climate_preference = no
 	portrait_modding = yes
@@ -44,8 +46,7 @@ GF_doll = {
 GF_new_type = {
 	archetype = BIOLOGICAL
 	possible = {
-		origin 	  = { value = GF_origin_commonwealth }
-		authority = { value = GF_auth_commonwealth }
+		origin = { value = GF_origin_commonwealth }
 	}
 	portraits = {
 		"GF_new_type"
