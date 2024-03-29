@@ -25,19 +25,30 @@
  PRESCRIPTED_species_adjective_GF_doll:0 "自律人形"
 
  EMPIRE_DESIGN_GF_URNC:0 "罗克萨特主义合众国联盟"
+ EMPIRE_DESIGN_GF_URNC_short:0 "罗联"
  PRESCRIPTED_adjective_GF_URNC:0 "罗联"
  PRESCRIPTED_ship_prefix_GF_URNC:0 "RNS"
-#  EMPIRE_DESIGN_GF_EMPIRE_URNC_desc:0 "这是罗联的介绍"
+ EMPIRE_DESIGN_GF_EMPIRE_URNC_desc:0 "$GF_URNC_origin_desc$"
 
  EMPIRE_DESIGN_GF_AU:0 "南极联邦"
+ EMPIRE_DESIGN_GF_AU_short:0 "南联"
  PRESCRIPTED_adjective_GF_AU:0 "南联"
  PRESCRIPTED_ship_prefix_GF_AU:0 "AUS"
-#  EMPIRE_DESIGN_GF_EMPIRE_AU_desc:0 "这是南联的介绍"
+ EMPIRE_DESIGN_GF_EMPIRE_AU_desc:0 "$GF_AU_origin_desc$"
 
  EMPIRE_DESIGN_GF_GK:0 "格里芬与克鲁格安全承包商"
+ EMPIRE_DESIGN_GF_GK_short:0 "格里芬"
  PRESCRIPTED_adjective_GF_GK:0 "格里芬"
  PRESCRIPTED_ship_prefix_GF_GK:0 "GKS"
-#  EMPIRE_DESIGN_GF_EMPIRE_GK_desc:0 "这是格里芬的介绍"
+ EMPIRE_DESIGN_GF_EMPIRE_GK_desc:0 "$GF_GK_origin_desc$"
+
+ EMPIRE_DESIGN_GF_Crisis_Coalition: "$GF_auth_commonwealth$"
+ EMPIRE_DESIGN_GF_Crisis_Coalition_short: "联合政府"
 
 ###
  NAME_GF_armored_train:0 "§H钢铁巨兽§!"
+
+ LOC_GetGFCountryOriginDesc_default: " "
+ LOC_GetGFCountryName_default: "[This.GetName]"
+ LOC_GetGFCountryNameShort_default: "[This.GetAdj]"
+

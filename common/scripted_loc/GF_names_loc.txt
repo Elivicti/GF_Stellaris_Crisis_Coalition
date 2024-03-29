@@ -1,0 +1,72 @@
+
+# this = country
+defined_text = {
+	name = GetGFCountryOriginDesc
+	random = no
+	text = {
+		trigger = { GF_is_URNC = yes }
+		localization_key = GF_URNC_origin_desc
+	}
+	text = {
+		trigger = { GF_is_AU = yes }
+		localization_key = GF_AU_origin_desc
+	}
+	text = {
+		trigger = { GF_is_GK = yes }
+		localization_key = GF_GK_origin_desc
+	}
+	text = {
+		trigger = { GF_is_Crisis_Coalition = yes }
+		localization_key = GF_Crisis_Coalition_origin_desc
+	}
+
+	default = LOC_GetGFCountryOriginDesc_default
+}
+
+# this = country
+defined_text = {
+	name = GetGFCountryName
+	random = no
+	text = {
+		trigger = { GF_is_URNC = yes }
+		localization_key = EMPIRE_DESIGN_GF_URNC
+	}
+	text = {
+		trigger = { GF_is_AU = yes }
+		localization_key = EMPIRE_DESIGN_GF_AU
+	}
+	text = {
+		trigger = { GF_is_GK = yes }
+		localization_key = EMPIRE_DESIGN_GF_GK
+	}
+	text = {
+		trigger = { GF_is_Crisis_Coalition = yes }
+		localization_key = EMPIRE_DESIGN_GF_Crisis_Coalition
+	}
+
+	default = LOC_GetGFCountryName_default
+}
+
+# this = country
+defined_text = {
+	name = GetGFCountryNameShort
+	random = no
+	text = {
+		trigger = { GF_is_URNC = yes }
+		localization_key = EMPIRE_DESIGN_GF_URNC_short
+	}
+	text = {
+		trigger = { GF_is_AU = yes }
+		localization_key = EMPIRE_DESIGN_GF_AU_short
+	}
+	text = {
+		trigger = { GF_is_GK = yes }
+		localization_key = EMPIRE_DESIGN_GF_GK_short
+	}
+	text = {
+		trigger = { GF_is_Crisis_Coalition = yes }
+		localization_key = EMPIRE_DESIGN_GF_Crisis_Coalition_short
+	}
+
+	default = LOC_GetGFCountryNameShort_default
+}
