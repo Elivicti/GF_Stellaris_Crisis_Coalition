@@ -77,7 +77,7 @@ GF_EMPIRE_URNC = {
 	}
 }
 
-GF_EMPIER_AU = {
+GF_EMPIRE_AU = {
 	# Antarctic Union
 	name = "EMPIRE_DESIGN_GF_AU"
 	adjective = "PRESCRIPTED_adjective_GF_AU"
@@ -157,7 +157,7 @@ GF_EMPIER_AU = {
 	}
 }
 
-GF_EMPIER_GK = {
+GF_EMPIRE_GK = {
 	# Griffin & Kryuger Private Military Contractor
 	name = "EMPIRE_DESIGN_GF_GK"
 	adjective = "PRESCRIPTED_adjective_GF_GK"
