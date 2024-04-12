@@ -202,10 +202,22 @@ spriteTypes = {
 		alwaystransparent = yes 
 	}
 	spriteType = {
+		name = "GFX_evt_GF_yellow_zone_2"
+		textureFile = "gfx/event_pictures/GF_yellow_zone_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
 		name = "GFX_evt_GF_red_zone"
 		textureFile = "gfx/event_pictures/GF_red_zone.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes 
+	}
+	spriteType = {
+		name = "GFX_evt_GF_red_zone_2"
+		textureFile = "gfx/event_pictures/GF_red_zone_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_building_ruins"
@@ -244,5 +256,91 @@ spriteTypes = {
 		textureFile = "gfx/event_pictures/GF_barracuda_core.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes 
+	}
+
+
+	spriteType = {
+		name = "GFX_evt_GF_zion_dimm"
+		textureFile = "gfx/event_pictures/GF_zion_dimm.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_zion_active"
+		textureFile = "gfx/event_pictures/GF_zion_active.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_zion_red"
+		textureFile = "gfx/event_pictures/GF_zion_red.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_zion_hypercube"
+		textureFile = "gfx/event_pictures/GF_zion_hypercube.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_elid"
+		textureFile = "gfx/event_pictures/GF_elid.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_defensed_corridor"
+		textureFile = "gfx/event_pictures/GF_defensed_corridor.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_empty_hall"
+		textureFile = "gfx/event_pictures/GF_empty_hall.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_evt_GF_bio_laboratory"
+		textureFile = "gfx/event_pictures/GF_bio_laboratory.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_bio_laboratory_broken"
+		textureFile = "gfx/event_pictures/GF_bio_laboratory_broken.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_bio_laboratory_2"
+		textureFile = "gfx/event_pictures/GF_bio_laboratory_2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_bio_laboratory_2_with_subject"
+		textureFile = "gfx/event_pictures/GF_bio_laboratory_2_with_subject.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_evt_GF_command_room"
+		textureFile = "gfx/event_pictures/GF_command_room.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_command_room_broken"
+		textureFile = "gfx/event_pictures/GF_command_room_broken.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
 	}
 }
