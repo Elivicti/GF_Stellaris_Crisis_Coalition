@@ -70,3 +70,23 @@ defined_text = {
 
 	default = LOC_GetGFCountryNameShort_default
 }
+
+# this = leader
+defined_text = {
+	name = GetTheyCN
+	random = no
+	text = {
+		trigger = {
+			OR = {
+				gender = female
+				species = { is_archetype = GF_ANDROID }
+			}
+		}
+		localization_key = GF_GetTheyCN_female
+	}
+	text = {
+		trigger = { gender = male }
+		localization_key = GF_GetTheyCN_male
+	}
+	default = GF_GetTheyCN_default
+}

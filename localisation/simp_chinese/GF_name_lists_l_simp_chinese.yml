@@ -52,3 +52,6 @@
  LOC_GetGFCountryName_default: "[This.GetName]"
  LOC_GetGFCountryNameShort_default: "[This.GetAdj]"
 
+ GF_GetTheyCN_female: "她们"
+ GF_GetTheyCN_male: "他们"
+ GF_GetTheyCN_default: "它们"
