@@ -92,7 +92,7 @@ GF_relocate_relic_site = {
 		if = {
 			limit = {
 				NOT = {
-					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_1 } }
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_collapse_relic_site_1 } }
 				}
 			}
 			event_target:GF_home_world = {
@@ -104,7 +104,7 @@ GF_relocate_relic_site = {
 		if = {
 			limit = {
 				NOT = {
-					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 } } 
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_collapse_relic_site_2 } }
 				}
 			}
 			event_target:GF_home_world = {
@@ -116,7 +116,7 @@ GF_relocate_relic_site = {
 		if = {
 			limit = {
 				NOT = {
-					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 } }
+					any_system = { any_system_planet = { has_planet_flag = flag_p_GF_collapse_relic_site_3 } }
 				}
 			}
 			event_target:GF_home_world = {

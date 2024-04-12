@@ -143,6 +143,18 @@ GF_collapse_relic_site_requirements = {
 	}
 }
 
+## used in archaeology!
+# this = fleet
+# from = archaeological_site
+GF_collapse_relic_site_type = {
+	# INDEX == 1 --> physics
+	# INDEX == 2 --> society
+	# INDEX == 3 --> engineering
+	# others     --> invalid
+	from.planet = { has_planet_flag = flag_p_GF_collapse_relic_site_$INDEX$ }
+}
+
+
 GF_default_zion_comm_trigger = {
 	AND = {
 		has_authority = GF_auth_commonwealth

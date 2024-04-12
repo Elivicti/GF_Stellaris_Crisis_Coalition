@@ -65,8 +65,8 @@ GF_create_collapse_relic_site = {
 		set_star_flag = flag_s_GF_has_collapse_relic_site_in_system
 		random_system_planet = {
 			limit = { GF_collapse_relic_site_requirements = yes }
-			set_planet_flag = flag_p_GF_has_collapse_relic_site_$index$
-			create_archaeological_site = GF_collapse_relic_site_$index$
+			set_planet_flag = flag_p_GF_collapse_relic_site_$index$
+			create_archaeological_site = GF_collapse_relic_site
 			save_event_target_as = relic_site_target_$index$
 		}
 	}
