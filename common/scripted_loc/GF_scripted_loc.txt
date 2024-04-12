@@ -149,7 +149,7 @@ defined_text = {
 
 # scope = country
 defined_text = {
-	name = GF_GetOrbMainframeAlphaDesc
+	name = GetGFOrbMainframeAlphaDesc
 	text = {
 		localization_key = GF_relic_orb_mainframe_alpha_desc_can_activate
 		trigger = {
@@ -157,6 +157,18 @@ defined_text = {
 		}
 	}
 	default = GF_relic_orb_mainframe_alpha_desc_no_activation
+}
+
+# this = country
+defined_text = {
+	name = GetGFOrbMainframeSigmaDesc
+	text = {
+		localization_key = GF_relic_orb_mainframe_sigma_desc_can_activate
+		trigger = {
+			always = no
+		}
+	}
+	default = GF_relic_orb_mainframe_sigma_desc_no_activation
 }
 
 defined_text = {

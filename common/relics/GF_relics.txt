@@ -3,6 +3,43 @@
 @triumph_duration_short = 1800
 @triumph_duration_veryshort = 900
 
+GF_relic_orb_mainframe_sigma = {
+	activation_duration = @triumph_duration_short
+	portrait = "GFX_evt_GF_relic_orb_mainframe_alpha"
+	sound = "relic_activation_isolated_contingency_core"
+
+	resources = {
+		category = relics
+		# Activation cost
+		cost = {
+			energy = @activation_cost
+			unity  = 1000
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+
+	score = 5000
+
+	active_effect = {
+		custom_tooltip = GF_unkonwn_activate_effect_relic_orb_mainframe_alpha
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = GF_cannot_activate_relic_orb_mainframe_sigma_tooltip
+			always = no
+		}
+		# inline_script = {
+		# 	script = relics/activation_checks
+		# 	RELIC = GF_relic_orb_mainframe_alpha
+		# }
+	}
+}
+
 GF_relic_orb_mainframe_alpha = {
 	activation_duration = @triumph_duration_short
 	portrait = "GFX_evt_GF_relic_orb_mainframe_alpha"
