@@ -95,8 +95,8 @@ fleet_event = {
 	title = GF_relic.2.name
 	desc = GF_relic.2.desc
 	
-	picture = GFX_evt_in_the_dark
-	show_sound = event_collapsing_ruins
+	picture = GFX_evt_GF_defensed_corridor
+	show_sound = event_trap_laser
 	location = from
 
 	archaeology = yes
@@ -152,18 +152,63 @@ fleet_event = {
 
 	# 母星上的遗迹考古点
 	# 阶段4
-	# 完成后在母星四跳以内随机三个岩石行星上创建三个遗迹考古点
 
-	id = GF_relic.4
-	title = GF_relic.4.name
-	desc = GF_relic.4.desc
+	id = GF_relic.401
+	title = GF_relic.401.name
+	desc = GF_relic.401.desc
+
+	picture = GFX_evt_GF_empty_hall
+	show_sound = event_door_opening
+
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+
+	immediate = {
+		from = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		from = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = GF_relic.401.a
+		medium_artifact_reward = yes
+		from = { add_stage_clues = 5 } # next stage should be very quick
+	}
+}
+
+fleet_event = {
+	id = GF_relic.402
+	title = GF_relic.402.name
+	desc = GF_relic.402.desc
+
+	picture = GFX_evt_GF_zion_hypercube
+	show_sound = event_bad_omen
+
+	location = from
+	archaeology = yes
+	is_triggered_only = yes
+
+	option = {
+		name = GF_relic.402.a
+		owner = {
+			add_resource = { physics_research = 2000 }
+		}
+	}
+}
+
+fleet_event = {
+	id = GF_relic.403
+	title = GF_relic.403.name
+	desc = GF_relic.403.desc
 
 	picture = GFX_evt_GF_core
-	show_sound = event_door_opening
+	show_sound = event_bad_omen
+
 	location = from
-
 	archaeology = yes
-
 	is_triggered_only = yes
 
 	immediate = {
@@ -184,18 +229,28 @@ fleet_event = {
 	}
 
 	option = {
-		name = GF_relic.4.a
-		great_artifact_reward = yes
+		name = GF_relic.403.a
+		medium_artifact_reward = yes
 		owner = {
-			add_resource = {
-				physics_research = 10000
-				engineering_research = 10000
+			add_monthly_resource_mult = {
+				resource = physics_research
+				min = @tier4researchmin
+				max = @tier4researchmax
+				value = @tier4researchreward
 			}
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				min = @tier3researchmin
+				max = @tier3researchmax
+				value = @tier3researchreward
+			}
+			add_relic = GF_relic_orb_mainframe_sigma
 			set_country_flag = flag_GF_foreign_relic_site_acknowledged
 		}
-		custom_tooltip = GF_relic.4.a.tooltip
+		custom_tooltip = GF_relic.403.a.tooltip
 	}
 }
+
 
 fleet_event = {
 
@@ -236,6 +291,9 @@ fleet_event = {
 	show_sound = event_dig_site
 	location = from
 
+	immediate = { from = { set_site_progress_locked = yes } }
+	after     = { from = { set_site_progress_locked = no } }
+
 	archaeology = yes
 	is_triggered_only = yes
 
@@ -261,109 +319,92 @@ fleet_event = {
 	archaeology = yes
 	is_triggered_only = yes
 
+	immediate = { from = { set_site_progress_locked = yes } }
+	after     = { from = { set_site_progress_locked = no } }
+
 	option = {
 		name = GF_relic.6.a
 		small_artifact_reward = yes
 	}
 }
 
+
 fleet_event = {
-
-	# 母星四跳内的遗迹考古点
-	# 阶段3 - 1
-
-	id = GF_relic.701
+	id = GF_relic.7
 	title = GF_relic.7.name
-	desc = GF_relic.701.desc
 
-	picture = GFX_evt_GF_computer
-	show_sound = event_mystic_reveal_light
-	location = from
-
-	archaeology = yes
-	is_triggered_only = yes
-
-	option = {
-		name = GF_relic.7.a
-		large_artifact_reward = yes
-		owner = {
-			add_resource = {
-				physics_research = 10000
-			}
-
-			hidden_effect = {
-				set_country_flag = flag_GF_collapse_relic_1_surveyed
-				country_event = {
-					id = GF_relic.8
-				}
-			}
-		}
+	# phy
+	desc = {
+		text = GF_relic.7.desc.phy
+		trigger = { GF_collapse_relic_site_type = { INDEX = 1 } }
 	}
-}
-
-fleet_event = {
-
-	# 母星四跳内的遗迹考古点
-	# 阶段3 - 2
-
-	id = GF_relic.702
-	title = GF_relic.7.name
-	desc = GF_relic.702.desc
-
-	picture = GFX_evt_GF_bio_tank
-	show_sound = event_bad_omen
-	location = from
-
-	archaeology = yes
-	is_triggered_only = yes
-
-	option = {
-		name = GF_relic.7.a
-		large_artifact_reward = yes
-		owner = {
-			add_resource = {
-				society_research = 10000
-			}
-
-			hidden_effect = {
-				set_country_flag = flag_GF_collapse_relic_2_surveyed
-				country_event = {
-					id = GF_relic.8
-				}
-			}
-		}
+	show_sound = {
+		sound = event_mystic_reveal_light
+		trigger = { GF_collapse_relic_site_type = { INDEX = 1 } }
 	}
-}
+	picture = {
+		picture = GFX_evt_GF_command_room_broken
+		trigger = { GF_collapse_relic_site_type = { INDEX = 1 } }
+	}
 
-fleet_event = {
+	# soc
+	desc = {
+		text = GF_relic.7.desc.soc
+		trigger = { GF_collapse_relic_site_type = { INDEX = 2 } }
+	}
+	show_sound = {
+		sound = event_bad_omen
+		trigger = { GF_collapse_relic_site_type = { INDEX = 2 } }
+	}
+	picture = {
+		picture = GFX_evt_GF_bio_laboratory_broken
+		trigger = { GF_collapse_relic_site_type = { INDEX = 2 } }
+	}
 
-	# 母星四跳内的遗迹考古点
-	# 阶段3 - 3
+	# eng
+	desc = {
+		text = GF_relic.7.desc.eng
+		trigger = { GF_collapse_relic_site_type = { INDEX = 3 } }
+	}
+	show_sound = {
+		sound = event_machinery
+		trigger = { GF_collapse_relic_site_type = { INDEX = 3 } }
+	}
+	picture = {
+		picture = GFX_evt_GF_repair_room
+		trigger = { GF_collapse_relic_site_type = { INDEX = 3 } }
+	}
 
-	id = GF_relic.703
-	title = GF_relic.7.name
-	desc = GF_relic.703.desc
-
-	picture = GFX_evt_GF_repair_room
-	show_sound = event_machinery
 	location = from
-
 	archaeology = yes
 	is_triggered_only = yes
+
+	immediate = { from = { set_site_progress_locked = yes } }
+	after     = { from = { set_site_progress_locked = no } }
 
 	option = {
 		name = GF_relic.7.a
 		large_artifact_reward = yes
 		owner = {
-			add_resource = {
-				engineering_research = 10000
+			if = {      # phy
+				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_1 } }
+				add_resource = { physics_research = 10000 }
+				hidden_effect = { set_country_flag = flag_GF_collapse_relic_1_surveyed }
 			}
+			else_if = { # soc
+				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_2 } }
+				add_resource = { society_research = 10000 }
+				hidden_effect = { set_country_flag = flag_GF_collapse_relic_2_surveyed }
+			}
+			else_if = { # eng
+				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_3 } }
+				add_resource = { engineering_research = 10000 }
+				hidden_effect = { set_country_flag = flag_GF_collapse_relic_3_surveyed }
+			}
+			else = { log = "GF_relic.7 falls into an impossible if-else branch" }
 
 			hidden_effect = {
-				set_country_flag = flag_GF_collapse_relic_3_surveyed
-				country_event = {
-					id = GF_relic.8
-				}
+				country_event = { id = GF_relic.8 }
 			}
 		}
 	}

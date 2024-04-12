@@ -43,7 +43,7 @@ country_event = {
 				limit = { has_star_flag = flag_s_GF_has_collapse_relic_site_in_system }
 	
 				random_system_planet = {
-					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_1 }
+					limit = { has_planet_flag = flag_p_GF_collapse_relic_site_1 }
 					enable_special_project = {
 						name = SP_GF_COLLECT_RELIC_DEVICE
 						owner = root
@@ -52,7 +52,7 @@ country_event = {
 					
 				}
 				random_system_planet = {
-					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_2 }
+					limit = { has_planet_flag = flag_p_GF_collapse_relic_site_2 }
 					enable_special_project = {
 						name = SP_GF_COLLECT_RELIC_DEVICE
 						owner = root
@@ -61,7 +61,7 @@ country_event = {
 					
 				}
 				random_system_planet = {
-					limit = { has_planet_flag = flag_p_GF_has_collapse_relic_site_3 }
+					limit = { has_planet_flag = flag_p_GF_collapse_relic_site_3 }
 					enable_special_project = {
 						name = SP_GF_COLLECT_RELIC_DEVICE
 						owner = root
@@ -248,6 +248,14 @@ country_event = {
 		has_authority = GF_auth_commonwealth
 		has_technology = GF_tech_collapse_relic_tech
 		has_modifier = "GF_productive_relic_abnormal"
+	}
+
+	immediate = {
+		# 用于本地化文件显示她/他
+		random_owned_leader = {
+			limit = { is_councilor_type = councilor_research }
+			save_event_target_as = science_leader
+		}
 	}
 
 	option = {
