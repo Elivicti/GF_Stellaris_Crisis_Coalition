@@ -78,3 +78,88 @@ utility_component_template = {
 		}
 	}
 }
+
+
+utility_component_template = {
+	# 小型伯劳血肉装甲
+	key = "GF_SHRIKE_ARMOR_SMALL"
+	size = small
+	icon = "GFX_GF_shrike_armor"
+
+	icon_frame = 1
+	component_set = "GF_SHRIKE_ARMOR"
+	power = 0
+	prerequisites = { "GF_tech_shrike_armor" }
+	modifier = {
+		ship_hull_add = 20
+		ship_armor_add = 360
+		ship_armor_regen_add_perc = 0.025
+	}
+	resources = {
+		category = ships
+		cost = {
+			alloys = 25
+			food = 15
+		}
+		upkeep = {
+			energy = 0.5
+			food = 2
+		}
+	}
+}
+
+utility_component_template = {
+	# 中型伯劳血肉装甲
+	key = "GF_SHRIKE_ARMOR_MEDIUM"
+	size = medium
+	icon = "GFX_GF_shrike_armor"
+
+	icon_frame = 1
+	component_set = "GF_SHRIKE_ARMOR"
+	power = 0
+	prerequisites = { "GF_tech_shrike_armor" }
+	modifier = {
+		ship_hull_add = 150
+		ship_armor_add = 750
+		ship_armor_regen_add_perc = 0.025
+	}
+	resources = {
+		category = ships
+		cost = {
+			alloys = 50
+			food = 25
+		}
+		upkeep = {
+			energy = 1.0
+			food = 4
+		}
+	}
+}
+
+utility_component_template = {
+	# 大型伯劳血肉装甲
+	key = "GF_SHRIKE_ARMOR_LARGE"
+	size = large
+	icon = "GFX_GF_shrike_armor"
+
+	icon_frame = 1
+	component_set = "GF_SHRIKE_ARMOR"
+	power = 0
+	prerequisites = { "GF_tech_shrike_armor" }
+	modifier = {
+		ship_hull_add = 200
+		ship_armor_add = 1800
+		ship_armor_regen_add_perc = 0.025
+	}
+	resources = {
+		category = ships
+		cost = {
+			alloys = 100
+			food = 50
+		}
+		upkeep = {
+			energy = 2.0
+			food = 6
+		}
+	}
+}
