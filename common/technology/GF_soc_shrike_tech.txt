@@ -1,0 +1,85 @@
+GF_tech_shrike_cage = {
+	area = society
+	category = { biology }
+	is_rare = yes
+	is_dangerous = yes
+
+	cost = @GFTech_tier5cost5
+	weight = 0
+	tier = 5
+
+	potential = { GF_can_research_tech_trigger = { TECH = GF_tech_shrike_cage } }
+
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+	}
+}
+
+GF_tech_thorn_collar = {
+	area = society
+	category = { biology }
+	is_rare = yes
+	is_dangerous = yes
+
+	cost = @GFTech_tier5cost5
+	weight = 0
+	tier = 5
+
+	potential = { GF_can_research_tech_trigger = { TECH = GF_tech_thorn_collar } }
+	
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+	}
+}
+
+GF_tech_restart_cp57 = {
+	area = society
+	category = { biology }
+	is_rare = yes
+	is_dangerous = yes
+
+	cost = @GFTech_tier5cost6
+	weight = 0
+	tier = 5
+
+	potential = { GF_can_research_tech_trigger = { TECH = GF_tech_restart_cp57 } }
+
+	prerequisites = {
+		GF_tech_shrike_cage
+		GF_tech_thorn_collar
+	}
+
+	modifier = {
+		category_biology_research_speed_mult = 0.05
+	}
+}
+
+GF_tech_shrike_armor = {
+	area = society
+	category = { biology }
+	is_rare = yes
+	is_dangerous = yes
+
+	cost = @GFTech_tier5cost6
+	weight = 0
+	tier = 5
+
+	potential = { GF_can_research_tech_trigger = { TECH = GF_tech_shrike_armor } }
+
+	prerequisites = { GF_tech_restart_cp57 }
+}
+
+GF_tech_shrike_army = {
+	area = society
+	category = { biology }
+	is_rare = yes
+	is_dangerous = yes
+
+	cost = @GFTech_tier5cost6
+	weight = 0
+	tier = 5
+
+	potential = { GF_can_research_tech_trigger = { TECH = GF_tech_shrike_army } }
+
+	prerequisites = { GF_tech_restart_cp57 }
+}

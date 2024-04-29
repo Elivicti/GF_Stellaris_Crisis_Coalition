@@ -85,7 +85,7 @@
  GF_tech_collapse_energy_lance_desc:0 "坍塌粒子能够将物质打碎为最基本的状态，一束聚焦的高能坍塌粒子将成为几乎任何舰船装甲的噩梦。"
 
  GF_tech_collapse_ending_flash:0 "终末辉光"
- GF_tech_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
+ # GF_tech_collapse_ending_flash_desc:0 "$GF_COLLAPSE_LANCE$已经证明它是对敌人舰船的巨大威胁，但若是我们再进一步，让高能坍塌粒子完全发挥出它们本身就具有的对环境的巨大破坏能力呢？"
  GF_tech_collapse_ending_flash_desc:0 "以更大的功率向整个星球发射坍塌粒子，能够将地表的任何造物打碎为基本粒子，并彻底摧毁甚至重塑行星地表。"
 
  GF_tech_combat_ogas_computers:0 "OGAS作战中枢"
@@ -133,3 +133,20 @@
  GF_tech_distributed_subnet_computing_desc: "通过分布式的计算节点网络为OGAS提供更快速的数据处理能力。"
  GF_unlock_subnet_specialization: "§H解锁附庸特化：§!$GF_specialist_OGAS_subnet$"
  GF_unlock_subnet_specialization_desc: "$GF_preset_OGAS_subnet_desc$"
+
+#### 危险科技路线
+
+## 社会学线（伯劳+ELID）
+ GF_tech_shrike_cage: "鸟笼"
+ GF_tech_shrike_cage_desc: "针对“小型猛禽”而开发的收容与净化设备，用于失效保险。"
+ GF_tech_thorn_collar: "荆棘项圈"
+ GF_tech_thorn_collar_desc: "基于“梭鱼”的控制器开发而来的三进制电磁信号控制设备，用于“为锡人找到心”。"
+
+ GF_tech_restart_cp57: "重启干细胞57号"
+ GF_tech_restart_cp57_desc: "“虹光”实验部队最珍贵的资产之一，别称“伯劳”，屠夫之鸟。"
+
+ GF_tech_shrike_army: "作战型伯劳素体"
+ GF_tech_shrike_army_desc: "“小型猛禽”在百年之后的重生，高效、冷酷、无情的战争机器。"
+ GF_tech_shrike_armor: "伯劳血肉装甲"
+ GF_tech_shrike_armor_desc: "血肉与钢铁的完美结合，拥有强大的防护能力并能快速复原。"
+
