@@ -32,6 +32,14 @@ spriteTypes = {
 		name = "GFX_GF_army_type_doll"
 		texturefile = "gfx/interface/planetview/GF_doll_army.dds"
 	}
+	spriteType = {
+		name = "GFX_GF_army_type_shrike"
+		texturefile = "gfx/interface/planetview/GF_shrike_army.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_army_type_shrike_boss"
+		texturefile = "gfx/interface/planetview/GF_shrike_boss_army.dds"
+	}
 
 	# ship components
 	spriteType = {
@@ -118,6 +126,15 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GF_strike_craft_nb200"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_nb200.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_shrike_armor"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_armor.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_collapsed_silicon_armor"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapsed_silicon_armor.dds"
 	}
 
 	# edicts
