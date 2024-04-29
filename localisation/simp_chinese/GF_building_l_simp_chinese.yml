@@ -73,3 +73,9 @@
  building_GF_building_contractors:0 "人形制造分公司"
  building_GF_building_contractors_desc:0 "将一些不涉及核心技术的零件设计图分享给国外的公司，能够加快我们人形的组装速度。"
  GF_require_planet_owner_allowed_AI:0 "£trigger_no£ 这个国家已宣布§R人工智能非法§!"
+
+ building_GF_shrike_den: "伯劳母巢"
+ building_GF_shrike_den_desc: "小鸟在这里孵化，小鸟在这里学会歌唱，小鸟在这里开始飞翔。"
+
+ GF_allow_shrike_army: "允许建造§H$GF_tech_shrike_army$§!"
+ GF_shrike_den_effect: "每驻扎一支§H$GF_army_shrike$§!或§H$GF_army_shrike_boss$§!：\n$t$$MOD_PLANET_STABILITY_ADD$: $@GF_shrike_den_army_planet_stability_add|1=+$\n$t$$MOD_POP_AMENITIES_USAGE_MULT$: $@GF_shrike_den_army_amenities_usage_mult|%0=-$"

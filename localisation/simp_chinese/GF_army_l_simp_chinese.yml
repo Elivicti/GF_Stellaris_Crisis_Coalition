@@ -33,4 +33,11 @@
 ##
  GF_army_defensive_armored_train:0 "装甲列车"
  GF_army_defensive_armored_train_desc:0 "一种在铁路沿线对部队进行火力支援和独立作战的装甲铁路车辆，其行动受制于铁路线路，但在铁路网络发达的地区中进行防御作战时有得天独厚的优势。"
- 
+
+# shrike armies
+ GF_army_shrike: "伯劳分裂体"
+ GF_army_shrike_defect_desc: "在没有§Y$GF_army_shrike_boss$§!或§Y伯劳母巢§!的星球作战时：\n$t$$MOD_ARMY_HEALTH$: §R-50%§!\n$t$$MOD_ARMY_DAMAGE_MULT$: §R-50%§!\n§H注意：§!修正为最终乘算且仅在战斗开始和结束时计算。"
+ GF_army_shrike_desc: "§W基础花费：£energy£§Y100.0§! £food£§Y250.0§!§!\n\n描述待定"
+
+ GF_army_shrike_boss: "伯劳母体"
+ GF_army_shrike_boss_desc: "§W基础花费：£energy£§Y1000.0§! £food£§Y2000.0§!§!\n\n伯劳母体desc"

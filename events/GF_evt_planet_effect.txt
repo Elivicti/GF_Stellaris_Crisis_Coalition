@@ -1,0 +1,38 @@
+namespace = GF_planet_effect
+
+planet_event = {
+	id = GF_planet_effect.10
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_building = building_GF_shrike_den
+	}
+
+	immediate = {
+		export_trigger_value_to_variable = {
+			variable = v_GF_shrike_army_cnt
+			trigger = count_planet_army
+			parameters = {
+				limit = {
+					OR = {
+						army_type = GF_army_shrike
+						army_type = GF_army_shrike_boss
+					}
+				}
+			}
+		}
+		# set_variable = {
+		# 	which = v_GF_shrike_army_cnt
+		# 	value = value:GF_count_shrike_army
+		# }
+		set_timed_planet_flag = {
+			flag = flag_p_GF_shrike_den
+			days = 30
+		}
+		planet_event = {
+			id = GF_planet_effect.10
+			days = 30
+		}
+	}
+}

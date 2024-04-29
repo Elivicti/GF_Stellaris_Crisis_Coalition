@@ -1,0 +1,60 @@
+GF_army_shrike = {
+	damage = 2.0
+	health = 2.50
+	has_morale = no
+	has_species = no
+	morale = 0.00
+	morale_damage = 0.00
+	collateral_damage = 5.0
+	war_exhaustion = 0.05
+
+	time = 25
+	icon = GFX_GF_army_type_shrike
+
+	pop_limited = no
+	resources = {
+		category = armies
+		cost = {
+			energy = 100
+			food = 250
+		}
+		upkeep = {
+			energy = 2
+			food = 5
+		}
+	}
+
+	prerequisites = { GF_tech_shrike_army }
+	potential = { has_building = building_GF_shrike_den }
+}
+
+GF_army_shrike_boss = {
+	damage = 8.0
+	health = 10.00
+	has_morale = no
+	has_species = no
+	morale = 0
+	morale_damage = 0.00
+	collateral_damage = 10.0
+	war_exhaustion = 0.05
+
+	time = 720
+	icon = GFX_GF_army_type_shrike_boss
+
+	pop_limited = no
+	
+	resources = {
+		category = armies
+		cost = {
+			energy = 1000
+			food = 2000
+		}
+		upkeep = {
+			energy = 10
+			food = 20
+		}
+	}
+
+	prerequisites = { GF_tech_shrike_army }
+	potential = { has_building = building_GF_shrike_den }
+}

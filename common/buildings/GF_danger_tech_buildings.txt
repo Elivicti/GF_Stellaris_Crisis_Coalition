@@ -1,0 +1,59 @@
+building_GF_shrike_den = {
+	base_buildtime = 360
+	category = army
+	can_be_disabled = no
+	can_demolish = yes
+	can_be_ruined = no
+	can_build = yes
+
+	base_cap_amount = 1
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			food = 2000
+		}
+		upkeep = {
+			energy = 5
+			food = 10
+		}
+	}
+
+	prerequisites = { GF_tech_shrike_army }
+	potential = {
+		exists = owner
+		owner = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_shrike_army }
+		}
+	}
+
+	triggered_desc = {
+		text = GF_allow_shrike_army
+	}
+	triggered_desc = {
+		text = GF_shrike_den_effect
+	}
+
+	planet_modifier = {
+		pop_amenities_usage_add = 0.2
+	}
+
+	triggered_planet_modifier = {
+		pop_amenities_usage_mult = @GF_shrike_den_army_amenities_usage_mult
+		planet_stability_add = @GF_shrike_den_army_planet_stability_add
+
+		mult = v_GF_shrike_army_cnt
+	}
+
+	on_built = {
+		if = {
+			limit = { NOT = { has_planet_flag = flag_p_GF_shrike_den } }
+			set_timed_planet_flag = {
+				flag = flag_p_GF_shrike_den
+				days = 30
+			}
+			planet_event = { id = GF_planet_effect.10 }
+		}
+	}
+}
