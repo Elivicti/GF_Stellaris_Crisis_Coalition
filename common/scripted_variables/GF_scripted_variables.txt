@@ -30,7 +30,8 @@
 # 这个蠢驴犯病，本地化直接引用会不显示，修改后记得改`GF_agenda_doll_cloud_network_effect`的本地化
 @GF_agenda_doll_cloud_network_collateral_damage = -0.05
 
-
+@GF_shrike_den_army_amenities_usage_mult = 0.02
+@GF_shrike_den_army_planet_stability_add = 0.5
 
 # TECH COSTS
 @GFTech_tier0cost1 = 1000
@@ -60,6 +61,10 @@
 @GFTech_tier5cost4 = 56000
 @GFTech_tier5cost5 = 64000
 
+@GFTech_tier5cost6 = 72000
+@GFTech_tier5cost7 = 80000
+@GFTech_tier5cost8 = 88000
+
 # TECH WEIGHTS
 @GFTech_tier1weight1 = 100
 @GFTech_tier1weight2 = 95
@@ -75,7 +80,7 @@
 
 @GFTech_tier4weight1 = 45
 @GFTech_tier4weight2 = 40
-@GFTech_tier4weight3 = @tier4weight3
+@GFTech_tier4weight3 = 35
 
 @GFTech_tier5weight1 = 30
 @GFTech_tier5weight2 = 25
