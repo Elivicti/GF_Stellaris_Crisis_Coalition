@@ -40,3 +40,42 @@
  GF_mega.191.name:0 "§Y$GF_computing_center_3$§!已自毁"
  GF_mega.191.desc:0 "我们未能及时取得§Y[from.GetName]§!星系的控制权，§Y$GF_computing_center_3$§!的自毁程序已启动。\n\n"
  GF_mega.191.a:0 "看来得重新建造一座了……"
+
+
+ GF_mega_requires_not_habitable_planets: "$TRIGGER_FAIL$不能在宜居星球周围建造。"
+
+ GF_bio_warship_assembly_0: "伯劳生物战舰主巢基址"
+ GF_bio_warship_assembly_0_DESC: "REPLACE_ME"
+ GF_bio_warship_assembly_0_MEGASTRUCTURE_DETAILS: "REPLACE_ME"
+ GF_bio_warship_assembly_0_CONSTRUCTION_INFO_DELAYED: "REPLACE_ME"
+ GF_bio_warship_assembly_1: "伯劳生物战舰主巢：肉芽"
+ GF_bio_warship_assembly_1_DESC: "REPLACE_ME"
+ GF_bio_warship_assembly_2: "伯劳生物战舰主巢：发育"
+ GF_bio_warship_assembly_2_DESC: "即将发育成熟的伯劳生物个体。"
+ GF_bio_warship_assembly_3: "伯劳生物战舰主巢：繁育"
+ GF_bio_warship_assembly_3_DESC: "REPLACE_ME"
+ GF_bio_warship_assembly_4: "伯劳生物战舰主巢"
+ GF_bio_warship_assembly_4_DESC: "REPLACE_ME"
+
+ GF_bio_warship_queen_mega: "$GF_shrike_queen$"
+ GF_bio_warship_queen_mega_DESC: "REPLACE_ME"
+
+ GF_mega.200.name: "$GF_bio_warship_assembly_0$"
+ GF_mega.200.desc: "REPLACE_ME"
+ GF_mega.200.a: "REPLACE_ME"
+
+ GF_mega.201.name: "$GF_bio_warship_assembly_1$"
+ GF_mega.201.desc: "REPLACE_ME"
+ GF_mega.201.a: "REPLACE_ME"
+
+ GF_mega.202.name: "$GF_bio_warship_assembly_2$"
+ GF_mega.202.desc: "REPLACE_ME"
+ GF_mega.202.a: "REPLACE_ME"
+
+ GF_mega.203.name: "$GF_bio_warship_assembly_3$"
+ GF_mega.203.desc: "REPLACE_ME"
+ GF_mega.203.a: "REPLACE_ME"
+
+ GF_mega.204.name: "$GF_bio_warship_assembly_4$"
+ GF_mega.204.desc: "REPLACE_ME"
+ GF_mega.204.a: "REPLACE_ME"

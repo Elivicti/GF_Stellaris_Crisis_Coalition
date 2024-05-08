@@ -1,0 +1,24 @@
+﻿l_simp_chinese:
+ GF_shrike_warshiparge_key: "大型伯劳躯体"
+
+ GF_shrike_warship_large: "大型伯劳战舰"
+ GF_shrike_warship_large_plural: "$GF_shrike_warship_large$"
+ mod_shipsize_GF_shrike_warship_large_build_speed_mult: "$GF_shrike_warship_large$建造速度"
+ mod_shipsize_GF_shrike_warship_large_hull_mult: "$GF_shrike_warship_large$船体值"
+ mod_shipsize_GF_shrike_warship_large_hull_add: "$GF_shrike_warship_large$船体值"
+ mod_shipsize_GF_shrike_warship_large_evasion_mult: "$GF_shrike_warship_large$闪避"
+ mod_shipsize_GF_shrike_warship_large_disengage_chance_mult: "$GF_shrike_warship_large$脱离战斗几率"
+ mod_shipsize_GF_shrike_warship_large_tracking_mult: "$GF_shrike_warship_large$追踪"
+
+ GF_shrike_warship_small_key: "中型伯劳躯体"
+
+ GF_shrike_warship_small: "中型伯劳战舰"
+ GF_shrike_warship_small_plural: "$GF_shrike_warship_small$"
+ mod_shipsize_GF_shrike_warship_small_build_speed_mult: "$GF_shrike_warship_small$建造速度"
+ mod_shipsize_GF_shrike_warship_small_hull_mult: "$GF_shrike_warship_small$船体值"
+ mod_shipsize_GF_shrike_warship_small_hull_add: "$GF_shrike_warship_small$船体值"
+ mod_shipsize_GF_shrike_warship_small_evasion_mult: "$GF_shrike_warship_small$闪避"
+ mod_shipsize_GF_shrike_warship_small_disengage_chance_mult: "$GF_shrike_warship_small$脱离战斗几率"
+ mod_shipsize_GF_shrike_warship_small_tracking_mult: "$GF_shrike_warship_small$追踪"
+
+ GF_shrike_queen: "伯劳母舰"
