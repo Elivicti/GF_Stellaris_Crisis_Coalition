@@ -30,46 +30,66 @@
 #Root = planet
 #This = species
 species_can_live_on_planet = {
-	exists = root #somehow this appeared in the error log. No idea how!
-	NAND = {
-		root = { is_planet_class = pc_machine }
-		NOR = {
-			# GF 人形
-			has_trait = GF_trait_doll
+	hidden_trigger = {
+		exists = root #somehow this appeared in the error log. No idea how!
+		NAND = {
+			root = { is_planet_class = pc_machine }
+			NOR = {
+				# GF 人形
+				has_trait = GF_trait_doll
 
-			has_trait = trait_machine_unit
-			has_trait = trait_mechanical
-			AND = {
-				has_trait = trait_cybernetic
-				exists = root.owner
-				root.owner = {
-					has_authority = auth_machine_intelligence
-					OR = {
-						has_civic = civic_machine_assimilator # Assimilator empire
-						has_ascension_perk = ap_mechromancy
+				has_trait = trait_machine_unit
+				has_trait = trait_mechanical
+				AND = {
+					has_trait = trait_cybernetic
+					exists = root.owner
+					root.owner = {
+						has_authority = auth_machine_intelligence
+						OR = {
+							has_civic = civic_machine_assimilator # Assimilator empire
+							has_ascension_perk = ap_mechromancy
+						}
+					}
+				}
+			}
+		}
+		# GF 神秘机械星球
+		NAND = {
+			root = { is_planet_class = pc_GF_sf_machine }
+			is_robotic = no
+		}
+		if = {
+			limit = {
+				root = { is_planet_class = pc_hive }
+			}
+			OR = {
+				has_trait = trait_hive_mind
+				AND = { #Necrophage Hive Mind can have Necrophytes
+					exists = root.owner
+					root.owner = {
+						is_hive_empire = yes
+						has_origin = origin_necrophage
+						prev = { species_can_be_necrophaged = yes }
 					}
 				}
 			}
 		}
 	}
-	# GF 神秘机械星球
-	NAND = {
-		root = { is_planet_class = pc_GF_sf_machine }
-		is_robotic = no
-	}
 	if = {
 		limit = {
-			root = { is_planet_class = pc_hive }
+			exists = root.owner
+			root.owner = {
+				has_origin = origin_clone_army
+			}
+			OR = {
+				has_trait = trait_clone_soldier_infertile
+				has_trait = trait_clone_soldier_infertile_full_potential
+			}
 		}
-		OR = {
-			has_trait = trait_hive_mind
-			AND = { #Necrophage Hive Mind can have Necrophytes
-				exists = root.owner
-				root.owner = {
-					is_hive_empire = yes
-					has_origin = origin_necrophage
-					prev = { species_can_be_necrophaged = yes }
-				}
+		custom_tooltip = {
+			fail_text = CLONE_ARMY_FORCE_DECLINE
+			root = {
+				check_variable = { which = clone_pops_missing value >= 0 }
 			}
 		}
 	}
@@ -97,6 +117,21 @@ can_species_be_assembled = {
 	NOT = {
 		has_trait = trait_exd
 	}
+	NOT = {
+		AND = {
+			has_trait = trait_mechanical
+			root.owner = { is_individual_machine = yes }
+		}
+	}
+	NOT = {
+		AND = {
+			has_virtual_species_trait = yes
+			root.owner = {
+				is_fallen_empire = no
+				has_active_tradition = tr_virtuality_finish
+			}
+		}
+	}
 	OR = {
 		AND = {
 			is_robotic = yes
@@ -105,8 +140,10 @@ can_species_be_assembled = {
 					modifier = planet_pop_assembly_add
 					value > 0
 				}
+				owner = {
+					NOT = { has_country_flag = synth_assembly_stopped }
+				}
 			}
-
 			if = {	# GF
 				limit = { has_trait = GF_trait_doll }
 				root.owner = {
@@ -133,15 +170,6 @@ can_species_be_assembled = {
 				root = {
 					any_owned_species = { is_exact_same_species = prevprev }
 				}
-			}
-			else_if = {
-				limit = {
-					root.owner = {
-						has_tradition = tr_cybernetics_assembly_standards
-						has_policy_flag = roboticist_output_build_cyborgs
-					}
-				}
-				has_trait = trait_cybernetic
 			}
 			else_if = {
 				limit = {
@@ -323,8 +351,13 @@ can_fill_ruler_job = {
 			is_enslaved = no
 			is_being_purged = no
 			is_being_assimilated = no
-			NOT = { has_trait = trait_syncretic_proles }
-			can_think = yes
+			# Rule out Traits for servitude & lack of free will
+			NOR = {
+				has_trait = trait_syncretic_proles
+				has_trait = trait_zombie
+				has_trait = trait_nerve_stapled
+			}
+			# Rule out Machine Pops, unless they're rendered sapient
 			OR = {
 				NOT = { has_trait = trait_mechanical }
 				AND = {
@@ -332,7 +365,14 @@ can_fill_ruler_job = {
 					owner = { has_policy_flag = ai_full_rights }
 				}
 			}
-			NOT = { has_citizenship_type = { type = citizenship_organic_trophy country = owner } }
+			# Rule out Organic Trophies
+			NOT = {
+				has_citizenship_type = {
+					type = citizenship_organic_trophy
+					country = owner
+				}
+			}
+			# Rule out violations of the 'Right to Work' Resolution (prioritises organic workers)
 			if = {
 				limit = {
 					divinity_right_to_work_job_check_trigger_exempt = no
@@ -362,10 +402,33 @@ can_trade_leader = {
 		OR = {
 			AND = {
 				has_specialist_subject_leader_trait = yes
+				is_councilor = no
 				is_heir = no
 			}
 			# GF
 			GF_can_trade_robotic_leader = yes
+		}
+	}
+	OR = {
+		AND = { # Either from subject to Overlord
+			ROOT = {
+				is_subject = yes
+			}
+			FROM = {
+				is_overlord_to = ROOT
+			}
+		}
+		AND = { # Or from a tactical cogitator empire to a NON tactical cogitator empire
+			ROOT = { has_valid_civic = civic_machine_tactical_algorithms }
+			FROM = {
+				NOT = { has_valid_civic = civic_machine_tactical_algorithms }
+				is_fallen_empire = no
+				NOT = {
+					any_owned_leader = {
+						has_trait = leader_trait_tactical_algorithms
+					}
+				}
+			}
 		}
 	}
 	# The subject and overlord must both be regular empires, machine intelligences or hive-minds.
@@ -392,6 +455,24 @@ can_trade_leader = {
 			}
 			FROM = {
 				has_authority = auth_hive_mind
+			}
+		}
+		AND = { # Tactical Cogitator option
+			ROOT = {
+				has_valid_civic = civic_machine_tactical_algorithms
+			}
+			FROM = {
+				OR = {
+					is_regular_empire = yes
+					has_authority = auth_hive_mind
+					has_authority = auth_machine_intelligence
+				}
+				NOT = { has_country_flag = no_murdering_tactical_leaders }
+				NOT = {
+					any_owned_leader = {
+						has_trait = leader_trait_tactical_algorithms
+					}
+				}
 			}
 		}
 	}

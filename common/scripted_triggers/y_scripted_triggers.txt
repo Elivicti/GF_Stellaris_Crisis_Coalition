@@ -31,6 +31,7 @@ can_be_leader = {
 				has_technology = tech_synthetic_leaders
 				has_authority = auth_machine_intelligence
 				is_mechanical_empire = yes
+				is_individual_machine = yes
 
 				# GF
 				GF_allow_doll_leaders = yes
