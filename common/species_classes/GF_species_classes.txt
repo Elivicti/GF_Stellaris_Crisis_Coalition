@@ -10,12 +10,7 @@ GF_doll = {
 	use_climate_preference = no
 	portrait_modding = yes
 	randomized = no
-	portraits = {
-		"GF_doll"
-	}
-	non_randomized_portraits = {
-		"GF_doll"
-	}
+
 	leader_age_min = 1
 	leader_age_max = 5
 	graphical_culture = GF_new_type_01
@@ -48,12 +43,7 @@ GF_new_type = {
 	possible = {
 		origin = { value = GF_origin_commonwealth }
 	}
-	portraits = {
-		"GF_new_type"
-	}
-	non_randomized_portraits = {
-		"GF_new_type"
-	}
+	
 	graphical_culture = GF_new_type_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 	trait = "GF_trait_sequela"
@@ -69,13 +59,7 @@ ogas_consciousness = {
 	use_climate_preference = no
 	portrait_modding = no
 	randomized = no
-	# 暂时先用破界者的立绘
-	portraits = {
-		"exd1"
-	}
-	non_randomized_portraits = {
-		"exd1"
-	}
+	
 	leader_age_min = 100
 	leader_age_max = 500
 	graphical_culture = extra_dimensional_01
@@ -93,12 +77,6 @@ aggressive_elid = {
 	portrait_modding = no
 	randomized = no
 
-	portraits = {
-		"exd1"
-	}
-	non_randomized_portraits = {
-		"exd1"
-	}
 	leader_age_min = 100
 	leader_age_max = 500
 	graphical_culture = extra_dimensional_01
