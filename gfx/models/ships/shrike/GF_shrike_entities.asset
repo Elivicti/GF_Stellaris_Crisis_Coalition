@@ -1,0 +1,410 @@
+
+###################################################################################
+###																				###
+###									WEAPONS										###
+###																				###
+###################################################################################
+
+entity = {
+	name = "GF_shrike_turret_energy_torpedo_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_turret_torpedo_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_turret_missile_large_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_turret_missile_medium_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_turret_missile_small_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_large_kinetic_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_medium_kinetic_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_small_kinetic_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_turret_point_defence_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_large_laser_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_medium_laser_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_shrike_small_laser_gun_entity"
+	locator = { name = "turret_muzzle_01" 	position = { 0 0 0 } }
+}
+
+entity = {
+	name = "GF_bio_warship_entity"
+	pdxmesh = "GF_bio_spaceship_mesh"
+	scale = 1.0
+
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.45
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_small_warship_idle" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_generic_idle" } }
+	}
+}
+
+###################################################################################
+###																				###
+###									COMBAT SHIPS								###
+###																				###
+###################################################################################
+
+
+entity = {
+	name = "GF_shrike_warship_large_entity"
+	pdxmesh = "GF_shrike_warship_large_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.45 
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_large_warship_idle" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_generic_idle" } }
+	}
+	state = { name = "moving"		animation = "moving"	animation_blend_time = 0.45 animation_speed = 1 }
+	state = { name = "death"		animation = "death"		animation_blend_time = 0.45 looping = no 
+		event = { time = 0.0 node = "gib_locator_01"	particle = "swarm_gib_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0.4 node = "gib_locator_02"	particle = "swarm_gib_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0.1 node = "gib_locator_03"	particle = "swarm_gib_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0.4 node = "gib_locator_04"	particle = "swarm_gib_effect" keep_particle = yes trigger_once = yes }	
+		event = { trigger_once = yes sound = { soundeffect = "swarm_large_warship_death" } }
+	}
+	
+	# locator = { name = "large_gun_01" position = { 0 0 0 } }
+	# locator = { name = "large_gun_02" position = { 0 0 0 } }
+	# locator = { name = "large_gun_03" position = { 0 0 0 } }
+
+	scale = 1.0
+}
+
+entity = {
+	name = "GF_shrike_warship_small_entity"
+	pdxmesh = "GF_shrike_warship_small_mesh"
+	scale = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.45
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_small_warship_idle" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_generic_idle" } }
+	}
+	state = { name = "moving"		animation = "moving"	animation_blend_time = 0.45  }
+	state = { name = "death"		animation = "death"		animation_blend_time = 0.45
+		looping = no
+		event = { time = 1.26 node = "locator1"	particle = "amoeba_gib_squirt_effect" keep_particle = yes trigger_once = yes }
+		event = { trigger_once = yes sound = { soundeffect = "swarm_large_warship_death" } }
+	}	
+}
+
+entity = {
+	name = "GF_shrike_warship_small_dead_entity"
+	pdxmesh = "GF_shrike_warship_small_dead_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "GF_shrike_queen_entity"
+	pdxmesh = "GF_shrike_queen_mesh"
+	scale = 1.0
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.0 looping = no next_state = idle chance = 5
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_queen_idle_01" } }
+	}
+	state = { name = "idle"			animation = "idle2"		animation_blend_time = 0.0 looping = no next_state = idle chance = 1
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_queen_idle_02" } }
+	}
+	state = { name = "moving"		animation = "moving"		animation_blend_time = 0.45  
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+	}
+	state = { name = "death"		animation = "death"		animation_blend_time = 0.45 looping = no 
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { trigger_once = yes sound = { soundeffect = "swarm_queen_death" } }
+		
+		
+		event = { time = 0.0 node = "gib_locator_01"	particle = "amoeba_gib_squirt_effect" keep_particle = yes }	
+		event = { time = 0.4 node = "gib_locator_02"	particle = "amoeba_gib_squirt_effect" keep_particle = yes }	
+		event = { time = 1.9 node = "gib_locator_03"	particle = "amoeba_gib_squirt_effect" keep_particle = yes }	
+		event = { time = 1.0 node = "mouth_locator"		particle = "gib_vomit_effect" keep_particle = yes }	
+		event = { time = 4.0 node = "mouth_locator"		particle = "gib_vomit_effect" keep_particle = yes }	
+		
+	}
+}
+
+###################################################################################
+###																				###
+###								SMALL SHIPS										###
+###																				###
+###################################################################################
+
+entity = {
+	name = "GF_shrike_bomber_entity"
+	pdxmesh = "GF_shrike_fighter_mesh"
+	scale = 1.5
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.0 }
+	state = { name = "moving"		animation = "moving"		animation_blend_time = 0.0  }
+	state = { name = "death"		animation = "death"		animation_blend_time = 0.0 looping = no 
+		event = { time = 1.0 node = "root"	particle = "amoeba_gib_squirt_effect" keep_particle = yes trigger_once = yes }}
+}
+
+entity = {
+	name = "GF_shrike_droppod_entity"
+	pdxmesh = "GF_shrike_pod_mesh"
+	scale = 1.5
+}
+
+entity = {
+	name = "GF_shrike_fighter_entity"
+	pdxmesh = "GF_shrike_fighter_mesh"
+	scale = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.0 }
+	state = { name = "moving"		animation = "moving"		animation_blend_time = 0.0  }
+	state = { name = "death"		animation = "death"		animation_blend_time = 0.0 looping = no 
+		event = { time = 1.0 node = "root"	particle = "amoeba_gib_squirt_effect" keep_particle = yes trigger_once = yes }}
+}
+
+###################################################################################
+###																				###
+###								  STATIONS										###
+###																				###
+###################################################################################
+
+entity = {
+	name = "GF_shrike_staion_large_entity"
+	pdxmesh = "GF_shrike_station_large_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	locator = { name = "part3" 	position = { 0 0 0 } }
+	locator = { name = "part4" 	position = { 0 0 0 } }
+	locator = { name = "part5" 	position = { 0 0 0 } }
+	locator = { name = "part6" 	position = { 0 0 0 } }
+	locator = { name = "part7" 	position = { 0 0 0 } }
+	locator = { name = "part8" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.45 
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_013"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_014"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_015"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_016"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_big_station_idle" } }
+	}
+	state = { name = "death"			animation = "death"		animation_blend_time = 0.3 		looping = no
+		event = { time = 0 node = "smoke_locator_01"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 2 node = "smoke_locator_06"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 1 node = "smoke_locator_08"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 3 node = "smoke_locator_013"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 4 node = "smoke_locator_016"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+	
+		event = { time = 4.9 particle = "large_swarm_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_large" } }	
+	}
+}
+
+entity = {
+	name = "GF_shrike_staion_small_entity"
+	pdxmesh = "GF_shrike_station_small_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "part2" 	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle"			animation = "idle"		animation_blend_time = 0.45 
+		event = { time = 0 node = "smoke_locator_01"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_02"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_03"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_04"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_05"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_06"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_07"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_08"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_09"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_010"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_011"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_012"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_013"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "smoke_locator_014"	particle = "swarm_station_smoke_effect" keep_particle = yes trigger_once = yes }	
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "swarm_small_station_idle" } }
+	}
+	
+	state = { name = "death"			animation = "death"		animation_blend_time = 0.3 		looping = no
+		event = { time = 0 node = "smoke_locator_01"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 2 node = "smoke_locator_06"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 1 node = "smoke_locator_08"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 3 node = "smoke_locator_012"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+		event = { time = 4 node = "smoke_locator_014"	particle = "gib_vomit_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_small" } }	
+	
+		event = { time = 4.9 particle = "large_swarm_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "swarm_station_explosion_large" } }	
+	}
+}
+
+entity = {
+	name = "GF_shrike_queen_entity_scaled"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	attach = { root = GF_shrike_queen_entity }
+	scale = 2
+}
+
+entity = {
+	name = "GF_bio_warship_assembler_1_entity"
+	locator = { name = "root" position = { 0 0 0 } }
+	attach = { "root" = GF_shrike_staion_small_entity }
+}
+
+entity = {
+	name = "GF_bio_warship_assembler_2_entity"
+	locator = { name = "root" position = { 0 0 0 } }
+	attach = { "root" = GF_shrike_staion_large_entity }
+	scale = 2
+}
+
+entity = {
+	name = "GF_bio_warship_assembler_3_entity"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	# position = { 左 上 后 }
+	locator = { name = "side_3" position = {  50  25  20 } }
+	locator = { name = "side_6" position = { -30   5  50 } }
+
+	attach = { "root" = GF_shrike_queen_entity_scaled }
+	attach = { "side_3" = GF_shrike_staion_large_entity }
+	attach = { "side_6" = GF_shrike_staion_small_entity }
+	scale = 1.2
+}
+
+entity = {
+	name = "GF_bio_warship_assembler_4_entity"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	# position = { 左 上 后 }
+	locator = { name = "side_1" position = {  40   0 -45 } }
+	locator = { name = "side_2" position = { -40  20 -45 } }
+	locator = { name = "side_3" position = {  50  25  20 } }
+	locator = { name = "side_4" position = { -50 -15   8 } }
+	locator = { name = "side_5" position = {  20   0  65 } }
+	locator = { name = "side_6" position = { -30   5  50 } }
+
+	attach = { "root" = GF_shrike_queen_entity_scaled }
+	attach = { "side_1" = GF_shrike_staion_small_entity }
+	attach = { "side_2" = GF_shrike_staion_large_entity }
+	attach = { "side_3" = GF_shrike_staion_large_entity }
+	attach = { "side_4" = GF_shrike_staion_small_entity }
+	attach = { "side_5" = GF_shrike_staion_large_entity }
+	attach = { "side_6" = GF_shrike_staion_small_entity }
+
+	scale = 1.2
+}
+
+entity = {
+	name = "GF_bio_warship_assembler_4_construction_entity"
+	# position = { 左 上 后 }
+	locator = { name = "side_1" position = {  40   0 -45 } }
+	locator = { name = "side_2" position = { -40  20 -45 } }
+	locator = { name = "side_4" position = { -50 -15   8 } }
+	locator = { name = "side_5" position = {  20   0  65 } }
+
+	attach = { "side_1" = GF_shrike_staion_small_entity }
+	attach = { "side_2" = GF_shrike_staion_large_entity }
+	attach = { "side_4" = GF_shrike_staion_small_entity }
+	attach = { "side_5" = GF_shrike_staion_large_entity }
+	
+	scale = 1.2
+}
