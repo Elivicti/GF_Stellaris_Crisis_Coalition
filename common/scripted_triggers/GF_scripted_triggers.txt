@@ -404,3 +404,12 @@ GF_is_computing_center = {
 GF_can_pop_join_freedom_kindom = {
 	has_citizenship_rights = yes
 }
+
+# this = ship
+GF_has_shrike_heart = {
+	OR = {
+		has_component = GF_SHRIKE_HEART_SMALL
+		has_component = GF_SHRIKE_HEART_MEDIUM
+		has_component = GF_SHRIKE_HEART_LARGE
+	}
+}
