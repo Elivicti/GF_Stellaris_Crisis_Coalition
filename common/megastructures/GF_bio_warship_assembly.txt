@@ -1,0 +1,326 @@
+GF_bio_warship_assembly_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_time = 900
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 1000
+		}
+
+		upkeep = {
+			energy = 5
+		}
+	}
+
+	prerequisites = { "GF_tech_restart_cp57" }
+
+	possible = {
+		exists = starbase
+		hidden_trigger = {
+			from = {
+				OR = {
+					is_ai = no
+					has_authority = GF_auth_commonwealth
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				has_anomaly = no
+			}
+			custom_tooltip = {
+				fail_text = requires_not_star
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = GF_mega_requires_not_habitable_planets
+				habitable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				AOW_trgr_PLNT_existing_megastructure = no
+			}
+		}
+	}
+
+	# root = system
+	# from = country
+	ai_weight = {
+		modifier = {
+			factor = 0
+			from = { NOT = { has_authority = GF_auth_commonwealth } }
+		}
+
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = {
+					owner = { is_same_value = from }
+				}
+			}
+		}
+	}
+
+	# this = solar_system
+	# from = country
+	# fromfrom = megastructure
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			set_country_flag = flag_GF_has_built_bio_warship_assembly
+			country_event = {
+				id = GF_mega.200
+				scopes = { from = prev.fromfrom }
+			}
+		}
+		fromfrom = {
+			set_megastructure_flag = can_be_demolished_in_aow_mod
+		}
+	}
+}
+
+GF_bio_warship_assembly_1 = {
+	entity = "GF_bio_warship_assembler_1_entity"
+	construction_entity = "GF_bio_warship_assembler_1_entity"
+	place_entity_on_planet_plane = no
+
+	portrait = "GFX_megastructure_construction_background"
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			unity = 5000
+			food = 10000
+		}
+
+		upkeep = {
+			food = 10
+		}
+	}
+
+	upgrade_from = {
+		GF_bio_warship_assembly_0
+	}
+
+	prerequisites = { "GF_tech_restart_cp57" }
+
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = GF_mega.201
+				scopes = { from = prev.fromfrom }
+			}
+		}
+	}
+}
+
+GF_bio_warship_assembly_2 = {
+	entity = "GF_bio_warship_assembler_2_entity"
+	construction_entity = "GF_bio_warship_assembler_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			unity = 5000
+			food = 10000
+		}
+
+		upkeep = {
+			food = 20
+			energy = 5
+		}
+	}
+
+	upgrade_from = {
+		GF_bio_warship_assembly_1
+	}
+
+	prerequisites = { "GF_tech_restart_cp57" }
+
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = GF_mega.202
+				scopes = { from = prev.fromfrom }
+			}
+		}
+	}
+}
+
+GF_bio_warship_assembly_3 = {
+	entity = "GF_bio_warship_assembler_3_entity"
+	construction_entity = "GF_bio_warship_assembler_3_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	place_entity_on_planet_plane = no
+
+	show_in_outliner = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			food = 12000
+			unity = 5000
+		}
+
+		upkeep = {
+			food = 30
+			energy = 10
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_capacity_add = 20
+		starbase_shipyard_build_speed_mult = -10
+		shipsize_GF_shrike_queen_build_speed_mult = 10
+		shipsize_GF_shrike_warship_large_build_speed_mult = 10
+		shipsize_GF_shrike_warship_small_build_speed_mult = 10
+	}
+
+	upgrade_from = {
+		GF_bio_warship_assembly_2
+	}
+
+	prerequisites = { "GF_tech_restart_cp57" }
+
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = {
+				id = GF_mega.203
+				scopes = { from = prev.fromfrom }
+			}
+		}
+	}
+}
+
+
+GF_bio_warship_assembly_4 = {
+	entity = "GF_bio_warship_assembler_4_entity"
+	construction_entity = "GF_bio_warship_assembler_4_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	place_entity_on_planet_plane = no
+
+	show_in_outliner = yes
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			food = 15000
+		}
+		upkeep = {
+			food = 30
+			energy = 20
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_capacity_add = 40
+		starbase_shipyard_build_speed_mult = -10
+		shipsize_GF_shrike_queen_build_speed_mult = 10.5
+		shipsize_GF_shrike_warship_large_build_speed_mult = 10.5
+		shipsize_GF_shrike_warship_small_build_speed_mult = 10.5
+	}
+
+	upgrade_from = {
+		GF_bio_warship_assembly_3
+	}
+
+	prerequisites = { "GF_tech_restart_cp57" }
+	show_prereqs = yes
+
+	on_build_complete = {
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = {
+				id = GF_mega.204
+				scopes = { from = prev.fromfrom }
+			}
+		}
+	}
+}
+
+GF_bio_warship_queen_mega = {
+	entity = "GF_shrike_queen_entity"
+	construction_entity = "GF_shrike_queen_entity"
+	portrait = GFX_megastructure_construction_background
+
+	place_entity_on_planet_plane = no
+
+	show_in_outliner = no
+
+	prerequisites = { "GF_tech_restart_cp57" }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			food = 10000
+			energy = 5000
+		}
+	}
+
+	upgrade_from = {
+		GF_bio_warship_assembly_2
+	}
+
+	# this = solar_system
+	# from = country
+	# fromfrom = megastructure
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		from = {
+			random_owned_design = {
+				limit = { is_ship_size = GF_shrike_queen }
+				save_event_target_as = GF_shrike_queen_design
+			}
+			remove_country_flag = flag_GF_has_built_bio_warship_assembly
+		}
+		create_fleet = {
+			effect = {
+				set_owner = from
+				create_ship = {
+					design = event_target:GF_shrike_queen_design
+				}
+				set_location = fromfrom
+				save_event_target_as = GF_shrike_queen_fleet
+			}
+		}
+		fromfrom = {
+			remove_megastructure = this
+		}
+		from = {
+			country_event = {
+				id = GF_mega.210
+				scopes = { from = event_target:GF_shrike_queen_fleet }
+			}
+		}
+	}
+
+}
