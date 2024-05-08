@@ -11,12 +11,15 @@ tech_robomodding = {
 	}
 
 	modifier = {
-		ROBOT_species_trait_points_add = 2
+		pop_environment_tolerance = 0.05
 	}
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
@@ -24,6 +27,7 @@ tech_robomodding = {
 			factor = 0
 			has_policy_flag = robots_outlawed
 		}
+
 	}
 
 	ai_weight = {
@@ -57,12 +61,15 @@ tech_robomodding_points_1 = {
 	weight = @tier3weight1
 
 	modifier = {
-		ROBOT_species_trait_points_add = 1
+		ROBOT_species_trait_points_add = 3
 	}
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
@@ -74,6 +81,7 @@ tech_robomodding_points_1 = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
+
 	}
 
 	ai_weight = {
@@ -112,8 +120,11 @@ tech_robomodding_points_2 = {
 	}
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {

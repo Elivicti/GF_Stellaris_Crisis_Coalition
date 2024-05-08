@@ -12,8 +12,11 @@ tech_robotic_workers = {
 	feature_flags = { robots }
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
@@ -59,7 +62,10 @@ tech_robotic_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -77,8 +83,11 @@ tech_droid_workers = {
 	feature_flags = { droids }
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
@@ -104,7 +113,6 @@ tech_droid_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
 	}
 
 	ai_weight = {
@@ -127,7 +135,10 @@ tech_droid_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -151,8 +162,11 @@ tech_synthetic_workers = {
 	}
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
@@ -217,7 +231,10 @@ tech_synthetic_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -235,8 +252,11 @@ tech_synthetic_leaders = {
 	## unlocks robot-leaders
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
-		NOT = { has_authority = GF_auth_commonwealth }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+			has_authority = GF_auth_commonwealth
+		}
 	}
 
 	weight_modifier = {
