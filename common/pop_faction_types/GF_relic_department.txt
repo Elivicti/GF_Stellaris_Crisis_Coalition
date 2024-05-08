@@ -3,9 +3,13 @@ GF_relic_department = {
 	election_header = "GFX_faction_header_blue"
 	guiding_ethic = ethic_materialist
 	use_guiding_ethic_as_pop_filter = no
+	visual_ethic = "technologist_visual_ethic"
 
 	unique = yes
 	support_multiplier = 1
+
+	can_rename = no
+	persistent_faction = yes
 
 	resources = {
 		category = pop_factions
@@ -58,7 +62,7 @@ GF_relic_department = {
 	}
 
 	attraction = {
-		base = 200
+		base = 100
 		modifier = {
 			factor = 0.05
 			NOT = { pop_has_ethic = ethic_materialist }
@@ -68,26 +72,8 @@ GF_relic_department = {
 			owner = { has_country_flag = flag_GF_has_doll_rights_oganization }
 		}
 		modifier = {
-			factor = 0
-			pop_has_ethic = ethic_spiritualist
-		}
-		modifier = {
 			factor = 2
 			member_of_faction = manifesti
-		}
-		modifier = {
-			factor = 0
-			NOT = { member_of_faction = GF_relic_department }
-			owner = {
-				if = {
-					limit = { num_pops > 53 }
-					pop_percentage = {
-						percentage > 0.15
-						limit = { member_of_faction = GF_relic_department }
-					}
-				}
-				else = { always = no }
-			}
 		}
 	}
 
