@@ -1287,7 +1287,10 @@ country_event = {
 					factor = 0
 					event_target:chosen_planet = { NOT = { has_deposit_for = shipclass_mining_station } }
 				}
-				event_target:chosen_planet = { add_deposit = d_dark_matter_deposit_5 }
+				event_target:chosen_planet = {
+					add_deposit = d_dark_matter_deposit_3
+					add_deposit = d_dark_matter_deposit_2
+				}
 			}
 			# Zro
 			5 = {
