@@ -1,0 +1,202 @@
+#reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+@corvette_collision_radius = 2.0
+
+@destroyer_collision_radius = 2.5
+
+@cruiser_collision_radius = 3
+
+@battleship_collision_radius = 3
+
+@titan_collision_radius = 15
+
+@build_block_radius_none = 0
+@build_block_radius_civilian = 20
+@build_block_radius_military = 200
+
+@speed_very_slow = 80
+@speed_slow = 100
+@speed_default = 120
+@speed_fast = 140
+@speed_very_fast = 160
+
+@salvagecostsmall = 500
+@salvagecostmedium = 1000
+@salvagecostlarge = 2000
+
+#########
+# SWARM #
+#########
+
+# Swarm Small Ship
+GF_shrike_warship_small = {
+	graphical_culture = no
+	is_space_object = yes
+	entity = GF_bio_warship_entity
+	max_speed = @speed_fast
+	acceleration = 0.4
+	rotation_speed = 0.25
+	collision_radius = @destroyer_collision_radius
+	modifier = {
+		ship_evasion_add = 65
+		ship_armor_add = 1500
+	}
+	# possible_construction = { always = yes }
+	# potential_country = { has_authority = GF_auth_commonwealth }
+	base_buildtime = 1
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	can_have_federation_design = no
+	construction_type = starbase_shipyard
+	use_shipnames_from = cruiser
+
+	prerequisites = { GF_tech_restart_cp57 }
+
+	potential_construction = {
+		is_scope_type = megastructure
+		OR = {
+			is_megastructure_type = GF_bio_warship_assembly_3
+			is_megastructure_type = GF_bio_warship_assembly_4
+		}
+	}
+
+	max_hitpoints = @battleship_hp
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	icon = ship_size_military_2
+	is_space_station = no
+
+	class = shipclass_military
+	is_designable = yes
+
+	resources = {
+		category = ships
+		cost = {
+			energy = @salvagecostsmall
+			food = @salvagecostmedium
+		}
+		upkeep = {
+			food = 1
+		}
+	}
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "GF_bio_spaceship_sensor_components"
+	required_component_set = "GF_bio_spaceship_computer_components"
+}
+
+# Swarm Large Ship (Warrior)
+GF_shrike_warship_large = {
+	graphical_culture = no
+	# entity = GF_shrike_warship_large_entity
+	entity = GF_bio_warship_entity
+	max_speed = @speed_default
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @battleship_collision_radius
+	modifier = {
+		ship_evasion_add = 15
+		ship_armor_add = 5000
+	}
+
+	prerequisites = {
+		GF_tech_restart_cp57
+	}
+	# possible_construction = { always = yes }
+	# potential_country = { has_authority = GF_auth_commonwealth }
+	base_buildtime = 1
+	is_designable = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes
+	can_have_federation_design = no
+	default_behavior = artillery
+	construction_type = starbase_shipyard
+	use_shipnames_from = battleship
+
+	potential_construction = {
+		is_scope_type = megastructure
+		OR = {
+			is_megastructure_type = GF_bio_warship_assembly_3
+			is_megastructure_type = GF_bio_warship_assembly_4
+		}
+	}
+
+	max_hitpoints = @titan_hp
+	size_multiplier = 6
+	fleet_slot_size = 6
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_military_8
+
+	class = shipclass_military
+
+	resources = {
+		category = ships
+		cost = {
+			energy = @salvagecostsmall
+			food = @salvagecostlarge
+		}
+		upkeep = {
+			food = 2
+		}
+	}
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "GF_bio_spaceship_sensor_components"
+	required_component_set = "GF_bio_spaceship_computer_components"
+}
+
+# Swarm Queen
+GF_shrike_queen = {
+	graphical_culture = no
+	is_space_object = yes
+	entity = GF_bio_warship_entity
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = @titan_collision_radius
+	modifier = {
+		ship_evasion_add = 5
+		ship_armor_add = 8000
+	}
+
+	base_buildtime = 1
+	enable_default_design = yes
+	is_designable = yes
+	can_have_federation_design = no
+
+	max_hitpoints = @colossus_hp
+	size_multiplier = 32
+	fleet_slot_size = 32
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon = ship_size_military_32
+
+	prerequisites = { GF_tech_restart_cp57 }
+	
+	use_shipnames_from = colossus
+
+	class = shipclass_military
+
+	resources = {
+		category = ships
+		cost = {
+			food = @salvagecostlarge
+		}
+	}
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "GF_bio_spaceship_sensor_components"
+	required_component_set = "GF_bio_spaceship_computer_components"
+}

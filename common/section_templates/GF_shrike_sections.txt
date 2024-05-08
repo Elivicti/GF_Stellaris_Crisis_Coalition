@@ -1,0 +1,234 @@
+
+@cost_food_t1 = 600
+@cost_food_t2 = 1200
+@cost_food_t3 = 1800
+
+@upkeep_food_t1 = 1
+@upkeep_food_t2 = 2
+@upkeep_food_t3 = 3
+
+# Swarm Large Ship Section
+ship_section_template = {
+	key = "GF_shrike_warshiparge_key"
+	ship_size = GF_shrike_warship_large
+	fits_on_slot = mid
+	entity = "GF_shrike_warship_large_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	should_draw_components = no
+
+	resources = {
+		category = ships
+		cost = {
+			food = @cost_food_t2
+		}
+		upkeep = {
+			food = @upkeep_food_t1
+		}
+	}
+
+	component_slot = {
+		name = "XLARGE_GUN"
+		template = "invisible_extra_large_fixed"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+		# rotation = 180
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "large_gun_02"
+		is_side_slot = yes
+		# rotation = 180
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "large_gun_03"
+		is_side_slot = yes
+		# rotation = 180
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+		# rotation = 180
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+		# rotation = 180
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+		# rotation = 180
+	}
+
+	large_utility_slots = 10
+	aux_utility_slots = 2
+}
+
+# Swarm Small Ship Section
+ship_section_template = {
+	key = "GF_shrike_warship_small_key"
+	ship_size = GF_shrike_warship_small
+	fits_on_slot = mid
+	entity = "GF_shrike_warship_small_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	should_draw_components = no
+
+	resources = {
+		category = ships
+		cost = {
+			food = @cost_food_t1
+		}
+		upkeep = {
+			food = @upkeep_food_t1
+		}
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "invisible_missile_fixed"
+		locatorname = "medium_gun_01"
+		is_side_slot = yes
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+		is_side_slot = yes
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "medium_gun_03"
+		is_side_slot = yes
+	}
+
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+}
+
+# # Swarm Queen Section
+ship_section_template = {
+	key = "GF_shrike_queen_key"
+	ship_size = GF_shrike_queen
+	fits_on_slot = mid
+	entity = "GF_shrike_queen_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	resources = {
+		category = ships
+		cost = {
+			food = @cost_food_t3
+		}
+		upkeep = {
+			food = @upkeep_food_t3
+		}
+	}
+
+	component_slot = {
+		name = "XLARGE_GUN_01"
+		template = invisible_extra_large_fixed
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "XLARGE_GUN_02"
+		template = invisible_extra_large_fixed
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "root"
+	}
+
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "medium_turret"
+		locatorname = "root"
+	}
+
+	component_slot = {
+		name = "TORPEDO_01"
+		template = "large_missile_fixed"
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "TORPEDO_02"
+		template = "large_missile_fixed"
+		locatorname = "root"
+	}
+
+	large_utility_slots = 16
+	aux_utility_slots = 4
+}
