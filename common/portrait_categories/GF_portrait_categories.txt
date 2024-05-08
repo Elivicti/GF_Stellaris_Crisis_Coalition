@@ -1,0 +1,17 @@
+# Categories of portrait sets used in empire design view.
+# Portrait sets are listed in portrait_sets database.
+
+GF_new_types = {
+	name = GF_new_type
+
+	sets = {
+		GF_new_types
+	}
+}
+
+GF_dolls = {
+	name = GF_doll
+	sets = {
+		GF_androids
+	}
+}
