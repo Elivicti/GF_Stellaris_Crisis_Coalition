@@ -95,8 +95,16 @@ utility_component_template = {
 		ship_armor_add = 360
 		ship_armor_regen_add_perc = 0.025
 	}
+
+	triggered_ship_modifier = {
+		potential = { GF_has_shrike_heart = yes }
+		ship_hull_add = 80
+		ship_hull_regen_add_perc = 0.01
+	}
+	custom_tooltip = GF_SHRIKE_ARMOR_SMALL_HEART_TOOLTIP
+
 	resources = {
-		category = ships
+		category = ship_components
 		cost = {
 			alloys = 25
 			food = 15
@@ -123,8 +131,16 @@ utility_component_template = {
 		ship_armor_add = 750
 		ship_armor_regen_add_perc = 0.025
 	}
+
+	triggered_ship_modifier = {
+		potential = { GF_has_shrike_heart = yes }
+		ship_hull_add = 150
+		ship_hull_regen_add_perc = 0.01
+	}
+	custom_tooltip = GF_SHRIKE_ARMOR_MEDIUM_HEART_TOOLTIP
+
 	resources = {
-		category = ships
+		category = ship_components
 		cost = {
 			alloys = 50
 			food = 25
@@ -151,8 +167,14 @@ utility_component_template = {
 		ship_armor_add = 1800
 		ship_armor_regen_add_perc = 0.025
 	}
+	triggered_ship_modifier = {
+		potential = { GF_has_shrike_heart = yes }
+		ship_hull_add = 300
+		ship_hull_regen_add_perc = 0.01
+	}
+	custom_tooltip = GF_SHRIKE_ARMOR_LARGE_HEART_TOOLTIP
 	resources = {
-		category = ships
+		category = ship_components
 		cost = {
 			alloys = 100
 			food = 50
@@ -161,5 +183,9 @@ utility_component_template = {
 			energy = 2.0
 			food = 6
 		}
+	}
+
+	ai_weight = {
+		base = 5
 	}
 }
