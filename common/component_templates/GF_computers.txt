@@ -297,3 +297,182 @@ utility_component_template = {
 		weight = 8
 	}
 }
+
+######### 三进制电磁信号控制器 / 伯劳脑
+utility_component_template = {
+	key = "GF_THORN_COLLAR_SWARM"
+	size = small
+	icon = "GFX_GF_thorn_collar_swarm"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 12
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+	size_restriction = {
+		GF_shrike_warship_small
+	}
+	component_set = "GF_bio_spaceship_computer_components"
+	ship_behavior = "swarm"
+
+	ai_tags = { gunship brawler brawler_stealth }
+	ai_tag_weight = 0
+
+	modifier = {
+		ship_evasion_mult = 0.40
+		ship_speed_mult = 0.40
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "GF_THORN_COLLAR_PICKET"
+	size = small
+	icon = "GFX_GF_thorn_collar_picket"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 12
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+
+	size_restriction = {
+		GF_shrike_warship_small
+	}
+	component_set = "GF_bio_spaceship_computer_components"
+	ship_behavior = picket
+
+	ai_tags = { screen }
+	ai_tag_weight = 0
+
+	modifier = {
+		ship_evasion_mult = 0.30
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_tracking_add = 15
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "GF_THORN_COLLAR_ARTILLERY"
+	size = small
+	icon = "GFX_GF_thorn_collar_artillery"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 18
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+
+	size_restriction = {
+		GF_shrike_warship_large
+		GF_shrike_queen
+	}
+	component_set = "GF_bio_spaceship_computer_components"
+	ship_behavior = artillery
+
+	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 9
+	}
+}
+
+utility_component_template = {
+	key = "GF_THORN_COLLAR_CARRIER"
+	size = small
+	icon = "GFX_GF_thorn_collar_carrier"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 20
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+
+	size_restriction = {
+		GF_shrike_warship_large
+		GF_shrike_queen
+	}
+	component_set = "GF_bio_spaceship_computer_components"
+	ship_behavior = "carrier"
+
+	ai_tags = { carrier }
+	ai_tag_weight = 0
+
+	ship_modifier = {
+		ship_engagement_range_mult = 0.8
+		ship_weapon_range_mult = 0.15
+		ship_tracking_add = 10
+		weapon_type_strike_craft_weapon_damage_mult = 0.25
+		weapon_type_strike_craft_speed_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
+
+utility_component_template = {
+	key = "GF_THORN_COLLAR_FREE"
+	size = small
+	icon = "GFX_GF_thorn_collar_free"
+	icon_frame = 1
+	power = -25
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 25
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t2 }
+	}
+
+	size_restriction = {
+		GF_shrike_warship_small
+		GF_shrike_warship_large
+		GF_shrike_queen
+	}
+	component_set = GF_bio_spaceship_computer_components
+
+	ship_behavior = "GF_ogas_free"
+
+	ship_modifier = {
+		ship_evasion_mult = 0.15
+		ship_engagement_range_mult = 0.25
+		ship_weapon_range_mult = 0.05
+		ship_fire_rate_mult = 0.05
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}

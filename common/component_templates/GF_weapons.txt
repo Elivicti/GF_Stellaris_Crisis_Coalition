@@ -785,3 +785,63 @@ strike_craft_component_template = {
 	ai_tags = { weapon_role_point_defense carrier }
 	point_defence_targets = { "strike_craft" "missile" }
 }
+
+
+strike_craft_component_template = {
+	key = "GF_SHRIKE_BOMBER"
+	size = LARGE
+	entity = "GF_shrike_bomber_entity"
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 20
+			food = 100
+		}
+		upkeep = {
+			energy = 0.5
+			food = 2
+		}
+	}
+
+	power = -80
+
+	count = 10
+	regeneration_per_day = 0.75
+	launch_time = 1.0
+
+	damage = { min = 12 max = 24 }
+	cooldown = 2
+	range = 8
+	engagement_range = 150
+	accuracy = 1.0
+	tracking = 0.8
+
+	health = 40
+	armor = 20
+	shield = 0
+	evasion = 0.80
+
+	speed = 400
+	rotation_speed = 0.6
+	acceleration = 0.6
+
+	shield_damage = 1.0
+	shield_penetration = 1
+	armor_penetration = 0.25
+
+	ship_behavior = "bombers_behavior"
+
+	weapon_type = instant # Not PD, unlike normal strike craft
+	projectile_gfx = "small_space_amoeba_weapon"
+
+	size_restriction = {
+		GF_shrike_warship_large
+		GF_shrike_warship_small
+		GF_shrike_queen
+	}
+
+	component_set = "GF_SHRIKE_BOMBER"
+	icon = "GFX_GF_shrike_bomber"
+	icon_frame = 1
+	tags = { weapon_type_strike_craft weapon_swarm weapon_type_space_fauna }
+}

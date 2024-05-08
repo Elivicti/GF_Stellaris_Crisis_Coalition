@@ -294,3 +294,162 @@ utility_component_template = {
 	prerequisites = { "GF_tech_collapse_jump_drive" }
 	component_set = "ftl_components"
 }
+
+#####################
+# 伯劳部件
+#####################
+utility_component_template = {
+	key = "GF_SHRIKE_HEART_LARGE"
+	size = small
+	icon = "GFX_GF_shrike_heart"
+	icon_frame = 1
+	power = 2800
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 200
+			food = 100
+		}
+		upkeep = {
+			energy = 2.0
+			food = 3
+		}
+	}
+
+	component_set = "power_core"
+	size_restriction = {
+		GF_shrike_queen
+	}
+
+	ai_weight = {
+		base = 1000
+	}
+}
+
+
+utility_component_template = {
+	key = "GF_SHRIKE_HEART_MEDIUM"
+	size = small
+	icon = "GFX_GF_shrike_heart"
+	icon_frame = 1
+	power = 1800
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 100
+			food = 50
+		}
+		upkeep = {
+			energy = 1
+			food = 1.5
+		}
+	}
+
+	component_set = "power_core"
+	size_restriction = {
+		GF_shrike_warship_large
+	}
+
+	ai_weight = {
+		base = 1000
+	}
+}
+
+
+utility_component_template = {
+	key = "GF_SHRIKE_HEART_SMALL"
+	size = small
+	icon = "GFX_GF_shrike_heart"
+	icon_frame = 1
+	power = 1000
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 50
+			food = 25
+		}
+		upkeep = {
+			energy = 0.5
+			food = 0.75
+		}
+	}
+	size_restriction = {
+		GF_shrike_warship_small
+	}
+
+	component_set = "power_core"
+
+	ai_weight = {
+		base = 1000
+	}
+}
+
+utility_component_template = {
+	key = "GF_SHRIKE_THRUSTER"
+	size = small
+	icon = "GFX_GF_shrike_thruster"
+	icon_frame = 1
+	power = -200
+
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 30
+			food = 100
+		}
+		upkeep = {
+			energy = 1.5
+		}
+	}
+
+	modifier = {
+		ship_base_speed_mult = 1
+		ship_evasion_add = 25
+	}
+
+	component_set = "thruster_components"
+	size_restriction = {
+		GF_shrike_warship_large
+		GF_shrike_warship_small
+		GF_shrike_queen
+	}
+	ai_weight = {
+		base = 1000
+	}
+}
+
+
+utility_component_template = {
+	key = "GF_SHRIKE_SENSORS"
+	size = small
+	icon = "GFX_GF_shrike_sensor"
+	icon_frame = 1
+	power = -10
+	sensor_range = 2
+	hyperlane_range = 3
+
+	ship_modifier = {
+		ship_tracking_add = 12
+	}
+
+	resources = {
+		category = ship_components
+		cost = {
+			energy = 10
+			food = 50
+		}
+		upkeep = {
+			energy = 1.0
+		}
+	}
+
+	component_set = "GF_bio_spaceship_sensor_components"
+	size_restriction = {
+		GF_shrike_warship_large
+		GF_shrike_warship_small
+		GF_shrike_queen
+	}
+	ai_weight = {
+		base = 1000
+	}
+}

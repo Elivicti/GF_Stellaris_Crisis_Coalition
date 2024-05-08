@@ -69,3 +69,26 @@ component_set = {
 	icon = "GFX_GF_shrike_armor"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "GF_SHRIKE_BOMBER"
+
+	icon = "GFX_GF_shrike_bomber"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_bio_spaceship_sensor_components"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "GF_bio_spaceship_computer_components"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1
+}
