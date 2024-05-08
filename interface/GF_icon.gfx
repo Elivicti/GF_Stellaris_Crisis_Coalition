@@ -128,10 +128,49 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_nb200.dds"
 	}
 
+	## shrike
 	spriteType = {
 		name = "GFX_GF_shrike_armor"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_armor.dds"
 	}
+	spriteType = {
+		name = "GFX_GF_shrike_heart"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_heart.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_shrike_thruster"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_thruster.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_shrike_sensor"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_sensor.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_shrike_bomber"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_shrike_bomber.dds"
+	}
+	### shrike computer
+	spriteType = {
+		name = "GFX_GF_thorn_collar_free"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_thorn_collar_default.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_thorn_collar_picket"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_thorn_collar_picket.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_thorn_collar_swarm"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_thorn_collar_swarm.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_thorn_collar_artillery"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_thorn_collar_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_thorn_collar_carrier"
+		textureFile = "gfx/interface/icons/ship_parts/computers/ship_part_computer_thorn_collar_carrier.dds"
+	}
+
 	spriteType = {
 		name = "GFX_GF_collapsed_silicon_armor"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_collapsed_silicon_armor.dds"
