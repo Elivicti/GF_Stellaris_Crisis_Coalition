@@ -2,9 +2,12 @@
 GF_doll_rights_organization = {
 	election_header = "GFX_faction_header_blue"
 	guiding_ethic = ethic_egalitarian
+	visual_ethic = "progressive_visual_ethic"
 
 	unique = yes
 	support_multiplier = 1
+
+	can_rename = no
 
 	resources = {
 		category = pop_factions
