@@ -1,90 +1,9 @@
-# 傻逼蠢驴能不能他妈的给用了幂运算的傻逼sv定个上限啊
 
-@max_job_weight = 99999
+# 非常好蠢驴，使我岗位权重旋转
 
-job_weights_modifier = {
-	complex_trigger_modifier = {
-		trigger = check_economic_production_modifier_for_job
-		parameters = {
-			job = $JOB$
-			resource = $RESOURCE$
-		}
-		mode = add
-		[[FACTOR]
-			mult = $FACTOR$
-		]
-	}
-	add = value:job_weights_manual_corrections|JOB|$JOB$|
-	add = 1
-	min = 0
-	pow = 3 #we need it to have a bit more impact
-
-	modifier = {
-		owner = {
-			has_deficit = $RESOURCE$
-		}
-		mult = @\[ 10 * $FACTOR|1$ ]
-	}
-	max = @max_job_weight	# SB蠢驴
-}
-
-job_weights_multiple_resources_modifier = {
-	complex_trigger_modifier = {
-		trigger = check_economic_production_modifier_for_job
-		parameters = {
-			job = $JOB$
-			resource = {
-				$RESOURCE1$ = $WEIGHT1$
-				$RESOURCE2$ = $WEIGHT2$
-			}
-		}
-		mode = add
-	}
-	add = value:job_weights_manual_corrections|JOB|$JOB$|
-	add = 1
-	min = 0
-	pow = 3 #we need it to have a bit more impact
-
-	modifier = {
-		owner = {
-			has_deficit = $RESOURCE1$
-		}
-		mult = @\[ 10 * $WEIGHT1$ ]
-	}
-	modifier = {
-		owner = {
-			has_deficit = $RESOURCE2$
-		}
-		mult = @\[ 10 * $WEIGHT2$ ]
-	}
-	max = @max_job_weight	# SB蠢驴
-}
-
-#This and job_weights_modifier account for all trait impacts (via trait modifier and trait triggered pop modifiers) on resource production.
-job_weights_research_modifier = {
-	complex_trigger_modifier = {
-		trigger = check_economic_production_modifier_for_job
-		parameters = {
-			job = $JOB$
-			resource = {
-				physics_research = 0.33
-				society_research = 0.33
-				engineering_research = 0.34
-			}
-		}
-		mode = add
-	}
-	add = value:job_weights_manual_corrections|JOB|$JOB$|
-	add = 1
-	min = 0
-	pow = 3 #we need it to have a bit more impact
-	max = @max_job_weight	# SB蠢驴
-}
-
-scripted_modifier_job_weight_mult = {
-	base = 1
-	add = modifier:$MODIFIER$
-	min = 0.1
-	pow = 3 #we need it to have a bit more impact
-	max = @max_job_weight	# SB蠢驴
+species_job_modifiers_specialist = {
+	add = species.modifier:planet_jobs_complex_drone_produces_mult
+	add = species.modifier:planet_jobs_specialist_produces_mult
+	add = species.modifier:planet_jobs_specialist_only_produces_mult
+	add = modifier:GF_doll_cat_specialist_produces_mult
 }
