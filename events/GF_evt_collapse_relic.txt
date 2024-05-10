@@ -387,22 +387,23 @@ fleet_event = {
 		large_artifact_reward = yes
 		owner = {
 			if = {      # phy
-				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_1 } }
+				limit = { prev.from.planet = { has_planet_flag = flag_p_GF_collapse_relic_site_1 } }
 				add_resource = { physics_research = 10000 }
 				hidden_effect = { set_country_flag = flag_GF_collapse_relic_1_surveyed }
 			}
 			else_if = { # soc
-				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_2 } }
+				limit = { prev.from.planet = { has_planet_flag = flag_p_GF_collapse_relic_site_2 } }
 				add_resource = { society_research = 10000 }
 				hidden_effect = { set_country_flag = flag_GF_collapse_relic_2_surveyed }
 			}
 			else_if = { # eng
-				limit = { prev.from = { has_planet_flag = flag_p_GF_collapse_relic_site_3 } }
+				limit = { prev.from.planet = { has_planet_flag = flag_p_GF_collapse_relic_site_3 } }
 				add_resource = { engineering_research = 10000 }
 				hidden_effect = { set_country_flag = flag_GF_collapse_relic_3_surveyed }
 			}
 			else = { log = "GF_relic.7 falls into an impossible if-else branch" }
-
+			
+			
 			hidden_effect = {
 				country_event = { id = GF_relic.8 }
 			}
