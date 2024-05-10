@@ -33,6 +33,14 @@
  GF_bombardment.1102.desc.planet:0 "这颗星球的地表已经面目全非，昔日的城市化为废墟，所有的居民都在高浓度的辐射中痛苦地死去了。"
  GF_bombardment.1102.a:0 "可恶！"
 
+ GF_bombardment.1201.name: "§R[from.GetName]被摧毁§!"
+ GF_bombardment.1201.desc: "在长时间对[from.GetName]使用$GF_tech_collapse_bomb$进行轰炸之后，巨大的坍塌粒子结晶压垮了其结构，使其受到了永久性的损坏。"
+ GF_bombardment.1201.a: "确认"
+
+ GF_bombardment.1202.name: "§R[from.GetName]被摧毁§!"
+ GF_bombardment.1202.desc: "在§H[fromfrom.GetName]§!的舰队使用惨绝人寰的手段轰炸了我们的§Y[from.GetName]§!之后，§Y[from.GetName]§!的结构已经被彻底破坏，无法再使用了。"
+ GF_bombardment.1202.a: "可恶！"
+
  GF_bombardment.1301.name:0 "§R[from.GetName]被摧毁§!"
  GF_bombardment.1301.desc:0 "在长时间对[from.GetName]使用$GF_tech_collapse_bomb$进行轰炸以后，这个居住站被彻底地摧毁了。"
  GF_bombardment.1301.a:0 "确认"

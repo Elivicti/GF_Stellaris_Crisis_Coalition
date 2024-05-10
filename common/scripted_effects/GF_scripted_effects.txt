@@ -646,6 +646,10 @@ GF_collapse_planet_effect = {
 		change_pc = pc_ringworld_habitable_damaged
 	}
 	else_if = {
+		limit = { is_planet_class = pc_cosmogenesis_world }
+		spawn_lathe_cracker_effect = yes
+	}
+	else_if = {
 		limit = { habitable_planet = yes }
 		change_pc = pc_GF_collapsed
 		clear_deposits = yes

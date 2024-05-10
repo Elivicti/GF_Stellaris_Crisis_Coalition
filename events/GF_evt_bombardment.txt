@@ -49,8 +49,13 @@ planet_event = {
 		}
 
 		if = {
-			# 居住站不添加污染区，额外增加2破坏度
-			limit = { GF_is_habitat = yes }
+			# 居住站和凝练机不添加污染区，额外增加2破坏度
+			limit = {
+				OR = {
+					GF_is_habitat = yes
+					is_planet_class = pc_cosmogenesis_world
+				}
+			}
 			add_planet_devastation = 2
 		}
 		else = {
@@ -144,6 +149,7 @@ planet_event = {
 					planet_devastation >= 50
 				}
 
+				# 轰炸者消息
 				from.owner = {
 					create_message = {
 						type = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
@@ -167,6 +173,7 @@ planet_event = {
 						scopes = { from = prev }
 					}
 				}
+				# 受害者消息
 				owner = {
 					create_message = {
 						type = MESSAGE_TYPE_GF_PLANET_BOMBARDED_TO_COLLAPSE
@@ -250,7 +257,12 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
-		from = { GF_is_habitat = no }
+		from = {
+			NOR = {
+				GF_is_habitat = no
+				is_planet_class = pc_cosmogenesis_world
+			}
+		}
 	}
 
 	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
@@ -283,7 +295,12 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		NOT = { has_country_flag = GF_has_a_world_been_bombard_collapsed }
-		from = { GF_is_habitat = no }
+		from = {
+			NOR = {
+				GF_is_habitat = no
+				is_planet_class = pc_cosmogenesis_world
+			}
+		}
 	}
 
 	immediate = { set_country_flag = GF_has_a_world_been_bombard_collapsed }
@@ -293,6 +310,51 @@ country_event = {
 	}
 }
 
+### 突触凝练机被炸至摧毁
+# 轰炸者
+# from = planet
+country_event = {
+	id = GF_bombardment.1201
+	title = GF_bombardment.1201.name
+	desc = GF_bombardment.1201.desc
+
+	picture = GFX_evt_GF_black_zone
+	location = from.solar_system
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = GF_have_bombard_a_world_collapsed }
+		from = { is_planet_class = pc_cosmogenesis_world }
+	}
+	immediate = { set_country_flag = GF_have_bombard_a_world_collapsed }
+
+	option = {
+		name = GF_bombardment.1201.a
+	}
+}
+# 受害者
+# From = planet
+# FromFrom = bombarder (fleet)
+country_event = {
+	id = GF_bombardment.1202
+	title = GF_bombardment.1202.name
+	desc = GF_bombardment.1202.desc
+
+	picture = GFX_evt_GF_black_zone
+	location = from.solar_system
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = GF_has_a_world_been_bombard_collapsed }
+		from = { is_planet_class = pc_cosmogenesis_world }
+	}
+
+	immediate = { set_country_flag = GF_has_a_world_been_bombard_collapsed }
+
+	option = {
+		name = GF_bombardment.1202.a
+	}
+}
 
 ### 居住站被轰炸至摧毁
 
