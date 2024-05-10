@@ -150,7 +150,8 @@ GF_studying_zion = {
 
 	planet_jobs_produces_mult = 0.10
 	all_technology_research_speed = 0.10
-	country_energy_produces_mult = -0.10
+	country_base_energy_produces_add = -30
+	country_base_gf_core_chip_produces_add = -5
 }
 
 ## zion
