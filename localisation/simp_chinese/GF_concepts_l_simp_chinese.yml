@@ -4,10 +4,10 @@
  concept_GF_dolls: "仿生自律人形"
  concept_GF_dolls_short: "自律人形"
  concept_GF_dolls_short_short: "人形"
- concept_GF_dolls_desc: "指外表与人类极为相似、同时AI极高的机器人，可以从事日常服务或简单的作战辅助，又称“自律人形”或“人形”，于2033年进入试验阶段。\n\n2054年，I.0.P.推出第一代战术人形；2092年，绝大多数存量人形已经普遍升级到第六代人形技术，装备碳基仿生皮肤、碳纤维骨架和第四代齐纳协议下依靠联网AI进化树系统的第五代['concept_GF_neural_cloud_system']。\n\n为实现人形的高级智能，人形人口需要消耗 ['concept_GF_core_chip']作为维护费。"
+ concept_GF_dolls_desc: "指外表与人类极为相似、同时AI极高的机器人，可以从事日常服务或简单的作战辅助，又称“自律人形”或“人形”，于2033年进入试验阶段。\n\n2054年，I.0.P.推出第一代战术人形；2092年，绝大多数存量人形已经普遍升级到第六代人形技术，装备碳基仿生皮肤、碳纤维骨架和第四代齐纳协议下依靠联网AI进化树系统的第五代['concept_GF_neural_cloud_system']。\n\n为实现人形的高级智能，人形人口需要消耗['concept_GF_core_chip']作为维护费。"
  concept_GF_neural_cloud: "心智云图"
  concept_GF_neural_cloud_system: "云图系统"
- concept_GF_neural_cloud_desc: "又称“心智”，指一项实现['concept_GF_dolls_short']心智数据备份的技术。\n\n2057年，16LAB研究所成立，由I.0.P.提供资金，名义上隶属于42Lab。\n\n同年，42Lab立项研发“心智云图”项目,目标是将自律人形的心智数据进行云备份，从而保证在人形素体损伤的情况下，心智数据仍得以保留，人形在重新制造时可以继承备份心智，降低损失成本。\n\n2060年底，“心智云图”技术开发成功。"
+ concept_GF_neural_cloud_desc: "又称“心智”，指一项实现['concept_GF_dolls_short']心智数据备份的技术。\n\n2057年，16LAB研究所成立，由I.0.P.提供资金，名义上隶属于42Lab。\n\n同年，42Lab立项研发“心智云图”项目，目标是将自律人形的心智数据进行云备份，从而保证在人形素体损伤的情况下，心智数据仍得以保留，人形在重新制造时可以继承备份心智，降低损失成本。\n\n2060年底，“心智云图”技术开发成功。"
  concept_GF_core_chip: "£gf_core_chip£ $gf_core_chip$"
  concept_GF_core_chip_desc: "生产人形必须的主控芯片，用于搭载人形的['concept_GF_neural_cloud']。"
 
