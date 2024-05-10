@@ -82,7 +82,7 @@ planet_event = {
 			enable_special_project = {
 				name = "GF_sf_event_project_2"
 				location = this
-				owner = root.owner
+				owner = event_target:GF_ogas_owner
 			}
 		}
 	}
@@ -141,7 +141,7 @@ country_event = {
 			enable_special_project = {
 				name = "GF_sf_event_project_3"
 				location = this
-				owner = root.owner
+				owner = event_target:GF_ogas_owner
 			}
 		}
 	}
@@ -178,7 +178,7 @@ ship_event = {
 			enable_special_project = {
 				name = "GF_sf_event_project_4"
 				location = this
-				owner = root.owner
+				owner = event_target:GF_ogas_owner
 			}
 		}
 	}
@@ -237,7 +237,7 @@ country_event = {
 			enable_special_project = {
 				name = "GF_sf_event_project_5"
 				location = this
-				owner = root.owner
+				owner = event_target:GF_ogas_owner
 			}
 		}
 	}
@@ -293,7 +293,7 @@ ship_event = {
 			enable_special_project = {
 				name = "GF_sf_event_project_6"
 				location = this
-				owner = root.owner
+				owner = event_target:GF_ogas_owner
 			}
 		}
 	}

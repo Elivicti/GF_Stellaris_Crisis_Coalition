@@ -9,7 +9,7 @@ GF_misc_basic_init_01 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}
@@ -58,7 +58,7 @@ GF_misc_basic_init_02 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}
@@ -118,7 +118,7 @@ GF_misc_basic_init_03 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}
@@ -184,7 +184,7 @@ GF_misc_basic_init_04 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}
@@ -246,7 +246,7 @@ GF_misc_basic_init_05 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}
@@ -349,7 +349,7 @@ GF_misc_basic_init_06 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			add = 1000
+			add = 10000
 			GF_sf_event_system_candidate_trigger = yes
 		}
 	}

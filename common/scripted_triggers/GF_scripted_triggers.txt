@@ -209,27 +209,82 @@ GF_sf_event_system_candidate_trigger = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			has_star_flag = empire_cluster
+			any_country = {
+				NOT = { has_origin = GF_origin_commonwealth }
+				capital_scope.solar_system = {
+					any_system = {
+						distance = {
+							source = prev
+							max_jumps = 5
+							min_jumps = 1
+						}
+						is_same_value = prevprevprev
+					}
+				}
+			}
+		}
+		always = no
+	}
 }
 
 # this = planet
 # TYPE: barren | asteroid
 GF_sf_event_planet_trigger = {
-	has_planet_flag = flag_p_GF_sf_event_$TYPE$_candidate
+	GF_sf_event_$TYPE$ = yes
+}
+
+# this = planet
+GF_sf_event_barren = {
+	OR = {
+		has_planet_flag = flag_p_GF_sf_event_barren_candidate
+		is_planet_class = pc_barren
+	}
+}
+
+# this = planet
+GF_sf_event_asteroid = {
+	OR = {
+		has_planet_flag = flag_p_GF_sf_event_asteroid_candidate
+		is_asteroid = yes
+	}
 }
 
 # this = system
 # TYPE: barren | asteroid
 GF_sf_event_system_trigger = {
-	has_star_flag = flag_s_GF_sf_event_system_candidate
 	NOT = { has_star_flag = flag_s_GF_sf_event_system }
-	any_system_planet = {
-		GF_sf_event_planet_trigger = { TYPE = $TYPE$ }
+	OR = {
+		AND = {
+			has_star_flag = flag_s_GF_sf_event_system_candidate
+			any_system_planet = {
+				GF_sf_event_planet_trigger = { TYPE = $TYPE$ }
+			}
+		}
+		AND = {
+			NOT = { has_star_flag = flag_s_GF_sf_event_system_candidate }
+			any_system_planet = {
+				GF_sf_event_$TYPE$ = yes
+				has_anomaly = no
+				NOT = { exists = archaeological_site }
+			}
+		}
 	}
 	OR = {
 		NOT = { exists = space_owner }
 		AND = {
 			exists = space_owner
-			space_owner = { is_same_value = root.owner }
+			space_owner = {
+				OR = {
+					is_same_value = event_target:GF_ogas_owner
+					NOR = {
+						has_closed_borders = event_target:GF_ogas_owner
+						is_hostile = event_target:GF_ogas_owner
+					}
+				}
+			}
 		}
 	}
 }
