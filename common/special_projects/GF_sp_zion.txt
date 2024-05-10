@@ -14,7 +14,7 @@ special_project = {
 
 	on_success = {
 		country_event = {
-			id = GF_zion.14100
+			id = GF_zion.11010
 		}
 	}
 }

@@ -307,12 +307,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
-
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 
@@ -352,12 +346,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
-
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 
@@ -384,12 +372,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
-
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 
@@ -415,12 +397,6 @@ country_event = {
 	desc = GF_alaya.106.desc
 
 	is_triggered_only = yes
-
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -468,11 +444,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_country_flag = flag_GF_disconnect_with_zion
-	}
-
 	immediate = {
 		every_subject = {
 			limit = { has_country_flag = flag_GF_commonwealth_vassal_OGAS_subnet_2 }
@@ -503,12 +474,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
-
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 
@@ -535,12 +500,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
-
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
 
@@ -552,24 +511,7 @@ country_event = {
 
 	option = {
 		name = GF_alaya.121.a
-		response_text = GF_alaya.121.a.response
-		is_dialog_only = yes
 		hidden_effect = {
-			set_country_flag = flag_GF_dialog_1_completed
-		}
-	}
-	option = {
-		name = GF_alaya.121.b
-		custom_tooltip = GF_dialog_tooltip
-		allow = {
-			custom_tooltip = {
-				fail_text = GF_dialog_1_not_completed
-				has_country_flag = flag_GF_dialog_1_completed
-			}
-		}
-		
-		hidden_effect = {
-			remove_country_flag = flag_GF_dialog_1_completed
 			country_event = {
 				id = GF_alaya.122
 			}
@@ -583,12 +525,6 @@ country_event = {
 	desc = GF_alaya.122.desc
 
 	is_triggered_only = yes
-
-	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_technology = GF_tech_collapse_relic_tech
-		has_modifier = "GF_productive_relic_abnormal"
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
