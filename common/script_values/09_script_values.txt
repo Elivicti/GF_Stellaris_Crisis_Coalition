@@ -5,5 +5,17 @@ species_job_modifiers_specialist = {
 	add = species.modifier:planet_jobs_complex_drone_produces_mult
 	add = species.modifier:planet_jobs_specialist_produces_mult
 	add = species.modifier:planet_jobs_specialist_only_produces_mult
-	add = modifier:GF_doll_cat_specialist_produces_mult
+	modifier = {
+		add = modifier:GF_doll_cat_specialist_produces_mult
+		has_trait = GF_trait_doll
+	}
+}
+
+species_job_modifiers_worker = {
+	add = species.modifier:planet_jobs_worker_produces_mult
+	add = species.modifier:planet_jobs_worker_only_produces_mult
+	modifier = {
+		add = modifier:GF_doll_cat_worker_produces_mult
+		has_trait = GF_trait_doll
+	}
 }
