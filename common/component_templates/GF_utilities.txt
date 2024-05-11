@@ -73,7 +73,7 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser }
+	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer }
 
 }
 
@@ -98,7 +98,7 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { battleship }
+	size_restriction = { battleship cosmo_crisis_battlecruiser }
 }
 
 utility_component_template = {
@@ -122,7 +122,7 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { titan }
+	size_restriction = { titan cosmo_crisis_titan }
 }
 
 utility_component_template = {

@@ -24,7 +24,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { frigate crisis_destroyer cruiser offspring_cruiser }
+	size_restriction = { frigate crisis_destroyer cosmo_crisis_destroyer cruiser offspring_cruiser nanite_swarmer}
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -57,7 +57,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette crisis_corvette offspring_corvette }
+	size_restriction = { corvette crisis_corvette offspring_corvette nanite_swarmer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -91,7 +91,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military }
-	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer crisis_cruiser }
+	size_restriction = { corvette destroyer cruiser crisis_corvette crisis_destroyer cosmo_crisis_destroyer crisis_cruiser offspring_corvette offspring_destroyer offspring_cruiser nanite_swarmer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -125,7 +125,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military shipclass_military_special }
-	size_restriction = { destroyer cruiser battleship crisis_destroyer crisis_cruiser star_eater offspring_destroyer offspring_cruiser offspring_battleship }
+	size_restriction = { destroyer cruiser battleship crisis_destroyer cosmo_crisis_destroyer crisis_cruiser star_eater offspring_destroyer offspring_cruiser offspring_battleship cosmo_crisis_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -156,7 +156,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { frigate destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	size_restriction = { frigate destroyer cruiser battleship titan cosmo_crisis_titan juggernaut crisis_destroyer cosmo_crisis_destroyer crisis_cruiser star_eater offspring_destroyer offspring_cruiser offspring_battleship cosmo_crisis_battlecruiser }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_artillery"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
@@ -188,7 +188,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
 	class_restriction = { shipclass_military shipclass_starbase }
-	size_restriction = { destroyer cruiser battleship titan juggernaut crisis_destroyer crisis_cruiser }
+	size_restriction = { cruiser battleship juggernaut titan cosmo_crisis_titan star_eater offspring_cruiser offspring_battleship cosmo_crisis_battlecruiser nanite_swarmer }
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_carrier"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
