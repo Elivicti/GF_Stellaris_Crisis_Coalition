@@ -12,15 +12,12 @@ GF_planet_dormancy = {
 	}
 }
 
-GF_planet_jobs_pop_assemblers = {
+GF_doll_assemblers = {
 	parent = planet_pop_assemblers
-	# generate_add_modifiers = {
-	# 	produces
-	# }
 	generate_mult_modifiers = {
-		produces
 		upkeep
 	}
+	modifier_category = pop
 }
 
 GF_ship_collapse_weapons = {

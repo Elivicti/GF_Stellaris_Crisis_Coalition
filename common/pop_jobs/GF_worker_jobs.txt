@@ -240,7 +240,7 @@ GF_assemble_doll = {
 	
 	triggered_planet_modifier = {
 		planet_pop_assembly_add = 1
-		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
+		mult = value:scripted_modifier_mult|MODIFIER|GF_doll_assemblers_assembly_speed_mult|
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -249,10 +249,10 @@ GF_assemble_doll = {
 		modifier = {
 			planet_pop_assembly_add = 0.5
 		}
-		mult = value:scripted_modifier_mult|MODIFIER|GF_planet_jobs_pop_assemblers_produces_mult|
+		mult = value:scripted_modifier_mult|MODIFIER|GF_doll_assemblers_assembly_speed_mult|
 	}
 	resources = {
-		category = GF_planet_jobs_pop_assemblers
+		category = GF_doll_assemblers
 		upkeep = {
 			alloys = 1
 		}

@@ -171,7 +171,7 @@ GF_councilor_IOP = {
 
 	modifier = {
 		planet_building_GF_doll_factory_build_speed_mult = 0.05
-		GF_planet_jobs_pop_assemblers_upkeep_mult = -0.015
+		GF_doll_assemblers_upkeep_mult = -0.015
 	}
 }
 

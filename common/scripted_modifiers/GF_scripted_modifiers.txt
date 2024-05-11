@@ -143,3 +143,10 @@ GF_freedom_kingdom_amenities_usage_mult = {
 	percentage = yes
 	category = pop
 }
+
+GF_doll_assemblers_assembly_speed_mult = {
+	icon = mod_pop_assembly_speed
+	good = yes
+	percentage = yes
+	category = pop
+}

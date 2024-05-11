@@ -49,8 +49,8 @@ GF_auto_colony = {
 	planet_immigration_pull_mult = -10
 
 	planet_jobs_robotic_produces_mult = 0.15
-	GF_planet_jobs_pop_assemblers_produces_mult = 0.20
-	GF_planet_jobs_pop_assemblers_upkeep_mult = 0.20
+	GF_doll_assemblers_assembly_speed_mult = 0.20
+	GF_doll_assemblers_upkeep_mult = 0.20
 }
 
 GF_auto_colony_boundary_modifier = {

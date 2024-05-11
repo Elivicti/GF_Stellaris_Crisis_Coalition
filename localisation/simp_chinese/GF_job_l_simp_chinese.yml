@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
 #################################
- GF_planet_jobs_pop_assemblers:0 "人形组装岗位"
+ GF_doll_assemblers:0 "人形组装岗位"
  GF_planet_dormancy:0 "人形休眠舱"
 #################################
  job_GF_assemble_mechanic_effect_desc:0 "£job_GF_assemble_mechanic£ $job_GF_assemble_mechanic_plural$消耗 £alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!，组装§Y$GF_ANDROID$§!人口时额外消耗 £gf_core_chip£ §Y$gf_core_chip$§!"
