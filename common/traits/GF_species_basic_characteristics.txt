@@ -28,13 +28,28 @@ GF_trait_doll = {
 	custom_tooltip_with_modifiers = GF_trait_doll_tooltip
 
 	assembling_modifier = {
-		planet_pop_assemblers_gf_core_chip_upkeep_add = 2
+		planet_pop_assemblers_gf_core_chip_upkeep_add = 1
 	}
 
 	triggered_pop_modifier = {
 		potential = { is_being_purged = no }
 		planet_jobs_produces_mult = 1
-		mult = value:GF_doll_produces_mult
+		mult = modifier:GF_doll_produces_mult
+	}
+	triggered_pop_modifier = {
+		potential = { is_being_purged = no }
+		planet_jobs_worker_produces_mult = 1
+		mult = modifier:GF_doll_cat_worker_produces_mult
+	}
+	triggered_pop_modifier = {
+		potential = { is_being_purged = no }
+		planet_jobs_specialist_produces_mult = 1
+		mult = modifier:GF_doll_cat_specialist_produces_mult
+	}
+	triggered_pop_modifier = {
+		potential = { is_being_purged = no }
+		planet_jobs_ruler_produces_mult = 1
+		mult = modifier:GF_doll_cat_ruler_produces_mult
 	}
 
 	triggered_pop_modifier = {
