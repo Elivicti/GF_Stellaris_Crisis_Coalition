@@ -18,6 +18,7 @@
  mod_leader_admirals_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"
  mod_leader_generals_gf_core_chip_upkeep_add:0 "$mod_leaders_gf_core_chip_upkeep_mult$"
 
+ mod_planet_pop_assemblers_gf_core_chip_upkeep_add: "组装 £gf_core_chip£ $gf_core_chip$维护费"
 ############ economics
  GF_ship_collapse_weapons:0 "坍塌武器"
  GF_ship_collapse_armors:0 "坍塌装甲"

@@ -27,6 +27,10 @@ GF_trait_doll = {
 
 	custom_tooltip_with_modifiers = GF_trait_doll_tooltip
 
+	assembling_modifier = {
+		planet_pop_assemblers_gf_core_chip_upkeep_add = 2
+	}
+
 	triggered_pop_modifier = {
 		potential = { is_being_purged = no }
 		planet_jobs_produces_mult = 1
