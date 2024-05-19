@@ -8,6 +8,7 @@ GF_country_customization = {
 		default = "building_colony_shelter"
 		pc_habitat = "building_hab_capital"
 		pc_GF_sf_machine = "building_GF_colony_shelter"
+		pc_cosmogenesis_world = "building_lathe_capital"
 	}
 
 	weight = {									# scope = country
