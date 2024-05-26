@@ -1,0 +1,8 @@
+# 载入时的音乐固定为 maintheme + 数字
+# 数字必须小于28（牛魔，这上限也太随机了）
+
+music = {
+	name = "maintheme27"
+	file = "VS_one_hit_kill.ogg"
+	volume = 0.90
+}

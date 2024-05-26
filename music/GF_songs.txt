@@ -1,0 +1,7 @@
+# song = {
+# 	name = "VS_one_hit_kill"
+# }
+
+song = {
+	name = "maintheme27"
+}
