@@ -18,6 +18,14 @@ GF_computing_center_0 = {
 		}
 	}
 
+	inline_script = {
+		script = "GF_mega_dismantle"
+		TIME = 180
+		ENERGY = 200
+		TECH = GF_tech_ogas_computing_center
+		EVENT = GF_mega.195
+	}
+
 	prerequisites = { "GF_tech_ogas_computing_center" }
 
 	possible = {
@@ -95,18 +103,6 @@ GF_computing_center_0 = {
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
-		# set_star_flag = dyson_sphere_built
-		# remove_system_terraforming_candidates = yes
-		# from = {
-		# 	if = {
-		# 		limit = {
-		# 			has_relic = r_contingency_core
-		# 			has_country_flag = built_dyson_sphere
-		# 		}
-		# 		set_country_flag = built_dyson_sphere_contingency
-		# 	}
-		# 	set_country_flag = built_dyson_sphere
-		# }
 		from = {
 			set_country_flag = flag_GF_has_built_computing_center
 			country_event = {
@@ -115,7 +111,6 @@ GF_computing_center_0 = {
 			}
 		}
 		fromfrom = {
-			set_megastructure_flag = can_be_demolished_in_aow_mod
 			set_megastructure_flag = flag_mega_GF_computing_center_@prev.from
 			planet = {
 				if = {
@@ -156,6 +151,14 @@ GF_computing_center_1 = {
 			society_research = 50
 			engineering_research = 50
 		}
+	}
+
+	inline_script = {
+		script = "GF_mega_dismantle"
+		TIME = 360
+		ENERGY = 500
+		TECH = GF_tech_ogas_computing_center
+		EVENT = GF_mega.195
 	}
 
 	upgrade_from = {
@@ -203,6 +206,14 @@ GF_computing_center_2 = {
 		country_admin_cap_add = 25
 	}
 
+	inline_script = {
+		script = "GF_mega_dismantle"
+		TIME = 360
+		ENERGY = 500
+		TECH = GF_tech_ogas_computing_center
+		EVENT = GF_mega.195
+	}
+
 	upgrade_from = {
 		GF_computing_center_1
 	}
@@ -247,6 +258,14 @@ GF_computing_center_3 = {
 	country_modifier = {
 		GF_OGAS_threads_add = 15
 		country_admin_cap_add = 50
+	}
+
+	inline_script = {
+		script = "GF_mega_dismantle"
+		TIME = 360
+		ENERGY = 500
+		TECH = GF_tech_ogas_computing_center
+		EVENT = GF_mega.195
 	}
 
 	upgrade_from = {

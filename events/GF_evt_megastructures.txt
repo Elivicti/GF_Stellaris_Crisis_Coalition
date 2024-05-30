@@ -257,23 +257,20 @@ country_event = {
 	}
 }
 
-country_event = {
+# 拆除OGAS计算中心
+# from = country
+system_event = {
 	id = GF_mega.195
 	hide_window = yes
 
 	is_triggered_only = yes
-
-	trigger = {
-		fromfrom = { GF_is_computing_center = yes }
-	}
-
 	immediate = {
-		remove_country_flag = flag_GF_has_built_computing_center
-		fromfrom.solar_system = {
-			every_ambient_object = {
-				limit = { has_ambient_object_flag = GF_computing_center_ambient }
-				destroy_ambient_object = this
-			}
+		every_ambient_object = {
+			limit = { has_ambient_object_flag = GF_computing_center_ambient }
+			destroy_ambient_object = this
+		}
+		from = {
+			remove_country_flag = flag_GF_has_built_computing_center
 		}
 	}
 }

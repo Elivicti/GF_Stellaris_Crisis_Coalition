@@ -162,19 +162,6 @@ on_megastructure_ownerless = {
 	}
 }
 
-# 奇观拓展拆除兼容
-# root = country	国家
-# this = country	国家
-# from = country	国家
-# fromfrom = megastructure	巨构
-# fromfromfrom = country	国家
-# fromfrom.planet = planet	巨构下的星球(如果存在)
-# fromfrom.solar_system = system	星系
-on_aow_demolish_megastructure = {
-	events = {
-		GF_mega.195
-	}
-}
 
 # Triggers when ground combat starts
 # This = planet

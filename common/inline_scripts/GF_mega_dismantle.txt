@@ -1,0 +1,33 @@
+dismantle_time = $TIME$
+
+dismantle_cost = {
+	category = megastructures
+	cost = {
+		energy = $ENERGY$
+	}
+}
+
+dismantle_potential = {
+	always = yes
+}
+
+dismantle_possible = {
+	is_upgrading = no
+	can_dismantle_megastructure = {
+		TECH = $TECH$
+	}
+	hidden_trigger = {
+		from = {
+			if = {
+				limit = { is_fallen_empire = yes }
+				has_authority = GF_auth_commonwealth
+			}
+		}
+	}
+}
+
+on_dismantle_complete = {
+	hidden_effect = {
+		system_event = { id = $EVENT$ }
+	}
+}
