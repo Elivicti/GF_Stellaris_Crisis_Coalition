@@ -28,6 +28,9 @@ dismantle_possible = {
 
 on_dismantle_complete = {
 	hidden_effect = {
-		system_event = { id = $EVENT$ }
+		system_event = {
+			id = $EVENT$
+			scopes = { from = from }
+		}
 	}
 }

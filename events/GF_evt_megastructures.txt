@@ -271,7 +271,29 @@ system_event = {
 		}
 		from = {
 			remove_country_flag = flag_GF_has_built_computing_center
+			country_event = {
+				id = GF_mega.196
+				scopes = { from = prev }
+			}
 		}
+	}
+}
+# OGAS计算中心拆除完成通知
+# from = system
+country_event = {
+	id = GF_mega.196
+	title = GF_mega.196.name
+	desc = GF_mega.196.desc
+
+	location = from
+	show_sound = event_think_tank_build_start
+	picture = GFX_evt_megastructure_construction
+
+	is_triggered_only = yes
+	trigger = { has_technology = GF_tech_ogas_computing_center }
+
+	option = {
+		name = GF_mega.196.a
 	}
 }
 
