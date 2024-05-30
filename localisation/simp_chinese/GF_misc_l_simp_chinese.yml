@@ -3,6 +3,10 @@
  exotic_gases_icon:0 "£exotic_gases£"
  rare_crystals_icon:0 "£rare_crystals£"
 
+# 音乐
+ VS_one_hit_kill: "One Hit Kill - Vanguard Sound,赛博传媒-2064"
+ maintheme27: "$VS_one_hit_kill$"
+
 # 一些杂项事件
 
  GF_evt_misc.1001.name:0 "通知：系统已更新"
