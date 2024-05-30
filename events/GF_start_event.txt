@@ -259,6 +259,9 @@ planet_event = {
 			}
 		}
 
-		owner = { country_event = { id = GF_doll.3000 days = 1 } }
+		owner = {
+			set_built_species = event_target:GF_doll_species_template
+			country_event = { id = GF_doll.3000 days = 1 }
+		}
 	}
 }
