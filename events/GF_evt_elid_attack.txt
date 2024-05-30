@@ -111,8 +111,9 @@ country_event = {
 	location = event_target:GF_home_world
 
 	trigger = {
-		has_authority = GF_auth_commonwealth
-		has_origin = GF_origin_commonwealth
+		event_target:GF_home_world = {
+			GF_planet_has_contaminated_zone = yes
+		}
 	}
 
 	immediate = {
