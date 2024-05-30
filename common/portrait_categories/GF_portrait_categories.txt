@@ -6,6 +6,7 @@ GF_new_types = {
 
 	sets = {
 		GF_new_types
+		GF_new_types_robot
 	}
 }
 

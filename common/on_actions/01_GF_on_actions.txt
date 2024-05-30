@@ -208,3 +208,12 @@ on_war_lost = {
 		GF_evt_misc.111 # 阻止“输入意识形态”战争修改联合政府的政体，实际事件延迟一天触发
 	}
 }
+
+# Executed when a country picks any tradition (including starters and finishers)
+# THIS = country
+on_tradition_picked = {
+	events = {
+		GF_ascension_path.1000 # synthetics
+		GF_ascension_path.2000 # cybernetics
+	}
+}

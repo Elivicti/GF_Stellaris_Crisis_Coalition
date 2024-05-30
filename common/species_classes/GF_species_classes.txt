@@ -49,6 +49,24 @@ GF_new_type = {
 	trait = "GF_trait_sequela"
 }
 
+GF_new_type_robot = {
+	archetype = ROBOT
+
+	playable = {
+		has_global_flag = game_started
+	}
+	randomized = no
+
+	gender = yes
+	use_climate_preference = no
+	portrait_modding = yes
+	leader_age_min = 1
+	leader_age_max = 10
+	graphical_culture = ai_01
+	move_pop_sound_effect = "robot_pops_move"
+	resources = {}
+}
+
 
 ogas_consciousness = {
 	archetype = collective_consciousness

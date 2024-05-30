@@ -1,0 +1,245 @@
+
+
+### Digitization - Turning people into virtual minds
+
+GF_situation_digitization = {
+	category = neutral
+	picture = GFX_evt_synth_situation
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_ascension
+	on_progress_complete = {
+		custom_tooltip = "situation_digitization_outcome"
+		hidden_effect = {
+			situation_event = { id = synth.2 }
+		}
+		set_situation_locked = yes
+	}
+	on_start = {
+		hidden_effect = {
+			owner = {
+				GF_create_synthetic_mod = {
+					SAVE_TARGET_AS = temp
+				}
+			}
+			event_target:temp = {
+				save_global_event_target_as = synthspecies@root.owner
+			}
+		}
+	}
+	stages = {
+		stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 250
+			on_first_enter = {
+				situation_event = { id = synth.100 days = 1 }
+			}
+			custom_tooltip = "stage_digitization_effects"
+		}
+		stage_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 500
+			on_first_enter = {
+				situation_event = { id = synth.200 }
+			}
+			custom_tooltip = "stage_digitization_effects"
+		}
+		stage_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 750
+			on_first_enter = {
+				situation_event = { id = synth.300 }
+			}
+			custom_tooltip = "stage_digitization_effects"
+		}
+		stage_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 1000
+			on_first_enter = {
+				situation_event = { id = synth.400 }
+			}
+			custom_tooltip = "stage_digitization_effects"
+		}
+	}
+	approach = {
+		name = situation_digitization_errorcorrecting
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "approach_digitization_errorcorrecting_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.05
+		}
+	}
+	approach = {
+		name = situation_digitization_realtime
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			custom_tooltip = "approach_digitization_realtime_tt"
+		}
+		default = yes
+		ai_weight = {
+			base = 10
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.10
+		}
+	}
+	approach = {
+		name = situation_digitization_overclocked
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "approach_digitization_overclocked_tt"
+		}
+		ai_weight = {
+			base = 0
+		}
+		modifier = {
+			country_engineering_tech_research_speed = -0.15
+		}
+	}
+	on_monthly = {
+		events = {
+			synth.3 	# Full digitization of pops - situation is paused
+						# synth.3 is triggered by setting the digitization_ongoing flag
+			synth.5		# Random event pool
+			synth.105	# Stage 1 story event
+			synth.205	# Stage 2 story event
+			synth.305	# Stage 3 story event
+			synth.310	# Stage 3 story event
+			synth.405	# Stage 4 story event
+		}
+	}
+	monthly_progress = { #On average, the situation should take about 7 years to complete
+		base = 10
+		# Modifiers are defined in tooltip order, most important first
+		modifier = {
+			mult = 1.2
+			desc = "situation_digitization_overclocked_approach_tt"
+			current_situation_approach = situation_digitization_overclocked
+		}
+		modifier = {
+			mult = 0.8
+			desc = "situation_digitization_errorcorrecting_approach_tt"
+			current_situation_approach = situation_digitization_errorcorrecting
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_maintenance_protocols"
+			owner = { has_active_tradition = tr_synthetics_maintenance_protocols_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_optimization_algorithms"
+			owner = { has_active_tradition = tr_synthetics_optimization_algorithms_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_transubstatiation_synthesis"
+			owner = { has_active_tradition = tr_synthetics_transubstatiation_synthesis_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_power_systems"
+			owner = { has_active_tradition = tr_synthetics_power_systems_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_prefabricated_components"
+			owner = { has_active_tradition = tr_synthetics_prefabricated_components_situation }
+		}
+		modifier = {
+			mult = 1.05
+			desc = "tr_synthetics_solid_state_actuators"
+			owner = { has_active_tradition = tr_synthetics_solid_state_actuators_situation }
+		}
+		modifier = {
+			mult = 1.25
+			desc = "tr_synthetics_finish"
+			owner = { has_active_tradition = tr_synthetics_finish_situation }
+		}
+		modifier = {
+			mult = 0.5
+			desc = "situation_kinesthetic_microfusion_tt"
+			has_situation_flag = kinesthetic_microfusion
+		}
+		modifier = {
+			mult = 0.75
+			desc = "situation_test_subject_lottery_tt"
+			has_situation_flag = test_subject_lottery
+		}
+		modifier = {
+			mult = 0.7
+			desc = "synth_negative_media_coverage_tt"
+			has_situation_flag = synth_negative_media_coverage
+		}
+		modifier = {
+			mult = 1.3
+			desc = "synth_positive_media_coverage_tt"
+			has_situation_flag = synth_positive_media_coverage
+		}
+		modifier = {
+			mult = 1.25
+			desc = "synth_resistance_fight"
+			has_situation_flag = synth_resistance_fight
+		}
+		modifier = {
+			mult = 0.75
+			desc = "synth_resistance_diplomacy"
+			has_situation_flag = synth_resistance_diplomacy
+		}
+		modifier = {
+			mult = 0.01
+			desc = "situation_digitization_ongoing_desc"
+			has_situation_flag = digitization_ongoing
+			owner = {
+				any_owned_planet = {
+					has_active_building = building_identity_complex
+				}
+			}
+		}
+		modifier = {
+			mult = 0
+			desc = "situation_identity_complex_needed_desc"
+			owner = {
+				NOT = {
+					any_owned_planet = {
+						has_active_building = building_identity_complex
+					}
+				}
+			}
+		}
+		modifier = {
+			mult = 0
+			desc = "situation_digitization_pause_desc"
+			has_situation_flag = situation_digitization_pause
+		}
+	}
+	triggered_blocked_desc = {
+		trigger = {
+			owner = {
+				NOT = {
+					any_owned_planet = {
+						has_active_building = building_identity_complex
+					}
+				}
+			}
+		}
+		text = "situation_identity_complex_needed_desc"
+	}
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

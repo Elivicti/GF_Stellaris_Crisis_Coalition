@@ -1,0 +1,508 @@
+namespace = GF_ascension_path
+
+#### .1000 ~ .1999: 机械飞升
+#### .2000 ~ .2999: 义体飞升
+
+##########################
+# 机械飞升
+##########################
+
+# on_tradition_picked
+country_event = {
+	id = GF_ascension_path.1000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = flag_GF_synthetics_adopted }
+		has_tradition = tr_synthetics_adopt
+		has_authority = GF_auth_commonwealth
+	}
+
+	immediate = {
+		set_country_flag = flag_GF_synthetics_adopted
+		if = {
+			limit = { has_machine_age_dlc = yes }
+			every_situation = {
+				limit = { is_situation_type = situation_digitization }
+				abort_situation = this
+			}
+			# start my own situation
+			log = "[this.GetName]: Start GF digitization situation"
+			start_situation = {
+				type = GF_situation_digitization
+				target = this
+			}
+		}
+		else = {
+			country_event = {
+				id = GF_ascension_path.1001
+				days = 1
+			}
+		}
+	}
+}
+
+# triggered every day to abort special project
+country_event = {
+	id = GF_ascension_path.1001
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = flag_GF_vanilla_synthetics_project_aborted }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_special_project = SYNTHETIC_EVOLUTION_PROJECT }
+			abort_special_project = { type = SYNTHETIC_EVOLUTION_PROJECT }
+			set_country_flag = flag_GF_vanilla_synthetics_project_aborted
+
+			enable_special_project = {
+				name = SP_GF_SYNTHETIC_EVOLUTION
+				owner = this
+			}
+		}
+		country_event = {
+			id = GF_ascension_path.1001
+			days = 1
+		}
+	}
+}
+
+# SP_GF_SYNTHETIC_EVOLUTION completed
+country_event = {
+	id = GF_ascension_path.1010
+	title = "utopia.2551.name"
+	desc = "utopia.2551.desc"
+	picture = GFX_evt_robot_assembly_plant
+	show_sound = event_synthetic_evolution
+
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = synthetic_empire
+		GF_set_synthetic_empire_ai_policy_and_breached_evolution = yes
+
+		GF_create_synthetic_mod = {
+			SAVE_TARGET_AS = GF_new_type_synth
+		}
+		change_dominant_species = {
+			species = event_target:GF_new_type_synth
+		}
+
+		every_owned_pop = {
+			limit = {
+				is_being_purged = no
+				species = {
+					is_robotic = no
+					is_livestock = no
+				}
+			}
+			change_species = event_target:GF_new_type_synth
+		}
+
+		every_controlled_ship = {
+			limit = {
+				is_ship_class = shipclass_colonizer
+				species = {
+					is_robotic = no
+					is_livestock = no
+				}
+			}
+			change_species = event_target:GF_new_type_synth
+		}
+
+		every_owned_army = {
+			limit = {
+				exists = species
+				species = {
+					is_robotic = no
+					is_livestock = no
+				}
+				army_type = assault_army
+			}
+			modify_army = {
+				name = random
+				type = "robotic_army"
+				species = event_target:GF_new_type_synth
+			}
+		}
+
+		every_owned_army = {
+			limit = {
+				exists = species
+				exists = planet
+				species = {
+					is_robotic = no
+					is_livestock = no
+				}
+				army_type = defense_army
+			}
+			modify_army = {
+				name = random
+				type = "robotic_defense_army"
+				species = event_target:GF_new_type_synth
+			}
+		}
+
+		every_owned_leader = {
+			limit = {
+				OR = {
+					species = {
+						is_robotic = no
+						is_livestock = no
+					}
+					has_trait = leader_trait_synthetic
+				}
+				NOR = {
+					has_leader_flag = renowned_leader
+					has_leader_flag = legendary_leader
+				}
+			}
+			change_species = event_target:GF_new_type_synth
+			change_leader_portrait = species
+		}
+		every_pool_leader = {
+			limit = {
+				OR = {
+					species = {
+						is_robotic = no
+						is_livestock = no
+					}
+					has_trait = leader_trait_synthetic
+				}
+			}
+			change_species = event_target:GF_new_type_synth
+			change_leader_portrait = species
+		}
+		change_dominant_species = { species = event_target:GF_new_type_synth }
+
+		every_owned_leader = {
+			limit = {
+				species = { has_trait = trait_mechanical }
+				NOR = {
+					has_trait = leader_trait_synthetic
+					has_leader_flag = renowned_leader
+					has_leader_flag = legendary_leader
+					is_event_leader = yes
+				}
+			}
+			add_trait_no_notify = leader_trait_synthetic
+			remove_trait = leader_trait_cyborg
+		}
+
+		create_message = {
+			type = MESSAGE_ALL_GAINED_TRAIT
+			localization = MESSAGE_ALL_GAINED_TRAIT_DESC
+			days = @toast_message_days
+			variable = {
+				type = key
+				value = leader_trait_synthetic
+				localization = TRAIT
+			}
+			variable = {
+				key = TRAIT_KEY
+				value = leader_trait_synthetic
+			}
+			variable = {
+				key = "border"
+				value = "GFX_invisible"
+			}
+		}
+
+		every_envoy = {
+			limit = {
+				species = {
+					is_robotic = no
+					is_livestock = no
+				}
+			}
+			change_species = event_target:GF_new_type_synth
+			change_leader_portrait = species
+		}
+		every_pool_leader = {
+			limit = {
+				species = { has_trait = trait_mechanical }
+				NOT = { has_trait = leader_trait_synthetic }
+			}
+			add_trait_no_notify = leader_trait_synthetic
+			remove_trait = leader_trait_cyborg
+		}
+
+		observer_event = { id = observer.4 }
+		every_country = {
+			limit = {
+				is_ai = no
+				NOT = { is_same_value = root }
+				has_communications = root
+			}
+			country_event = { id = utopia.2555 days = 5 }
+			country_event = { id = utopia.2556 days = 10 }
+		}
+
+		random_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				has_ethic = ethic_fanatic_spiritualist
+				has_communications = root
+				NOT = { is_same_value = root }
+			}
+			weights = {
+				base = 1
+				modifier = {
+					add = 99999
+					OR = {
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire
+					}
+				}
+			}
+			country_event = { id = utopia.2557 days = 15 }
+		}
+	}
+
+	option = {
+		name = "utopia.2551.a"
+	}
+}
+
+##########################
+# 义体飞升
+##########################
+
+# on_tradition_picked
+country_event = {
+	id = GF_ascension_path.2000
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = flag_GF_cybernetics_adopted }
+		has_tradition = tr_cybernetics_adopt
+		has_authority = GF_auth_commonwealth
+	}
+
+	immediate = {
+		set_country_flag = flag_GF_cybernetics_adopted
+		if = {
+			limit = { has_machine_age_dlc = yes }
+			log = "may not need to change this situation?"
+			# every_situation = {
+			# 	limit = { is_situation_type = situation_cyberization }
+			# 	abort_situation = this
+			# }
+			# # start my own situation
+			# log = "[this.GetName]: Start GF cyberization situation"
+			# start_situation = {
+			# 	type = GF_situation_cyberization
+			# 	target = this
+			# }
+		}
+		else = {
+			country_event = { id = GF_ascension_path.2001 days = 1 }
+		}
+	}
+}
+
+# triggered every day to abort special project
+country_event = {
+	id = GF_ascension_path.2001
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = flag_GF_vanilla_cybernetics_project_aborted }
+	}
+
+	immediate = {
+		if = {
+			limit = { has_special_project = FLESH_IS_WEAK_PROJECT }
+			abort_special_project = { type = FLESH_IS_WEAK_PROJECT }
+			set_country_flag = flag_GF_vanilla_cybernetics_project_aborted
+
+			enable_special_project = {
+				name = SP_GF_FLESH_IS_WEAK
+				owner = this
+			}
+		}
+		country_event = { id = GF_ascension_path.2001 days = 1 }
+	}
+}
+
+# A Cybernetic Revolution
+country_event = {
+	id = GF_ascension_path.2010
+	title = "utopia.2501.name"
+	desc = "utopia.2501.desc"
+	picture = GFX_evt_cybernetics
+	show_sound = event_the_flesh_is_weak
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				is_sapient = yes
+				NOR = {
+					is_robotic = yes
+					has_trait = trait_cybernetic
+					has_trait = trait_hive_mind
+				}
+			}
+			if = {
+				limit = { is_exact_same_species = root }
+				set_species_flag = flag_main_species
+			}
+			save_event_target_as = changing_species
+			modify_species = {
+				remove_trait = trait_latent_psionic
+				remove_trait = trait_psionic
+				effect = {
+					create_species = {
+						is_mod = yes
+						name = this
+						plural = this
+						class = this
+						portrait = this
+						traits = this
+						can_be_modified = this
+						homeworld = this
+						namelist = this
+						gender = this
+						traits = {
+							ideal_planet_class = this
+							trait = trait_cybernetic
+						}
+						effect = {
+							copy_flags_and_variables_from = event_target:changing_species
+							save_event_target_as = cybernetic_species
+						}
+					}
+				}
+			}
+			prev = {
+				every_owned_pop = {
+					limit = { is_exact_same_species = event_target:changing_species }
+					change_species = event_target:cybernetic_species
+				}
+				every_owned_leader = {
+					limit = { is_exact_same_species = event_target:changing_species }
+					change_species = event_target:cybernetic_species
+				}
+				every_pool_leader = {
+					limit = { is_exact_same_species = event_target:changing_species }
+					change_species = event_target:cybernetic_species
+				}
+				every_envoy = {
+					limit = { is_exact_same_species = event_target:changing_species }
+					change_species = event_target:cybernetic_species
+				}
+				every_owned_army = {
+					limit = {
+						exists = species
+						is_exact_same_species = event_target:changing_species
+					}
+					change_species = event_target:cybernetic_species
+				}
+				every_controlled_ship = {
+					limit = {
+						is_ship_class = shipclass_colonizer
+						is_exact_same_species = event_target:changing_species
+					}
+					change_species = event_target:cybernetic_species
+				}
+			}
+		}
+		# 新创建的species要过一天才能在*_owned_species里遍历到，因此用random_owned_pop来取物种
+		# 相对更吃性能一点，因为傻逼蠢驴
+		random_owned_pop = {
+			limit = {
+				species = {
+					has_species_flag = flag_main_species
+					has_trait = trait_cybernetic
+				}
+			}
+			species = {
+				save_event_target_as = new_main_species
+				remove_species_flag = flag_main_species
+			}
+		}
+
+		# change_species = event_target:new_main_species
+		change_dominant_species = {
+			species = event_target:new_main_species
+			# change_all = yes
+		}
+
+		every_owned_leader = {
+			limit = {
+				species = { has_trait = trait_cybernetic }
+				NOR = {
+					has_trait = leader_trait_cyborg
+					has_leader_flag = renowned_leader
+					has_leader_flag = legendary_leader
+				}
+			}
+			add_trait_no_notify = leader_trait_cyborg
+		}
+
+		create_message = {
+			type = MESSAGE_ALL_GAINED_TRAIT
+			localization = MESSAGE_ALL_GAINED_TRAIT_DESC
+			days = @toast_message_days
+			variable = {
+				type = key
+				value = leader_trait_cyborg
+				localization = TRAIT
+			}
+			variable = {
+				key = TRAIT_KEY
+				value = leader_trait_cyborg
+			}
+			variable = {
+				key = "border"
+				value = "GFX_invisible"
+			}
+		}
+
+		every_pool_leader = {
+			limit = {
+				species = { has_trait = trait_cybernetic }
+				NOT = { has_trait = leader_trait_cyborg }
+			}
+			add_trait_no_notify = leader_trait_cyborg
+		}
+
+		observer_event = { id = observer.55 }
+		every_country = {
+			limit = {
+				is_ai = no
+				NOT = { is_same_value = root }
+				has_communications = root
+				root = { is_primitive = no }
+			}
+			country_event = { id = utopia.2505 days = 5 }
+		}
+		if = {
+			limit = {
+				any_planet_within_border = {
+					has_planet_flag = fotd_seperatist_planet@root
+					owner = {
+						has_country_flag = fotd_seperatist_country@root
+					}
+				}
+			}
+			country_event = { id = origin.6095 days = 5 random = 2 }
+		}
+
+	}
+
+	option = {
+		name = "utopia.2501.a"
+	}
+}

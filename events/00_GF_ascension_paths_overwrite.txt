@@ -1,0 +1,66 @@
+namespace = utopia
+# Synthetic Evolution
+country_event = {
+	id = utopia.2550
+	title = "utopia.2550.name"
+	desc = "utopia.2550.desc"
+	picture = GFX_evt_robot_assembly_plant
+	show_sound = event_laboratory_sound
+	trackable = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "utopia.2550.a"
+		hidden_effect = { save_event_target_as = synth_evo_owner }
+		if = {
+			limit = { has_authority = GF_auth_commonwealth }
+			enable_special_project = {
+				name = SP_GF_SYNTHETIC_EVOLUTION
+				owner = this
+			}
+		}
+		else = {
+			capital_scope = {
+				enable_special_project = {
+					name = "SYNTHETIC_EVOLUTION_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = utopia.2500
+	title = "utopia.2500.name"
+	desc = "utopia.2500.desc"
+	picture = GFX_evt_cybernetics
+	show_sound = event_laboratory_sound
+	trackable = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "utopia.2500.a"
+		hidden_effect = { save_event_target_as = flesh_weak_owner }
+
+		if = {
+			limit = { has_authority = GF_auth_commonwealth }
+			enable_special_project = {
+				name = SP_GF_FLESH_IS_WEAK
+				owner = this
+			}
+		}
+		else = {
+			capital_scope = {
+				enable_special_project = {
+					name = "FLESH_IS_WEAK_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+		}
+	}
+}

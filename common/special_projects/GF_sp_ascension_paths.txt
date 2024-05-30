@@ -1,0 +1,46 @@
+special_project = {
+	key = SP_GF_SYNTHETIC_EVOLUTION
+	cost = {
+		base = 1000
+		scaled_modifier = {
+			limit = {
+				is_robot_pop = no
+			}
+			scope = this
+			add = 200
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_robot_assembly_plant
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = { id = GF_ascension_path.1010 }
+	}
+}
+special_project = {
+	key = SP_GF_FLESH_IS_WEAK
+	cost = {
+		base = 500
+		scaled_modifier = {
+			limit = {
+				is_robot_pop = no
+			}
+			scope = this
+			add = 100
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_cybernetics
+
+	event_scope = country_event
+
+	on_success = {
+		country_event = { id = GF_ascension_path.2010 }
+	}
+}
