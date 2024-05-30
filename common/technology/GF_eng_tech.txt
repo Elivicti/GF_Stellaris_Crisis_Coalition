@@ -101,6 +101,14 @@ GF_tech_mind_upgrade_1 = {
 			factor = 10
 			years_passed > 15
 		}
+		modifier = {
+			factor = 10
+			has_technology = tech_synthetic_workers
+		}
+		modifier = {
+			factor = 20
+			has_technology = tech_synthetic_leaders
+		}
 	}
 
 	ai_weight = {
