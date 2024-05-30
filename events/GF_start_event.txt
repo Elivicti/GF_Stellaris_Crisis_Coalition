@@ -58,6 +58,10 @@ country_event = {
 		set_country_flag = suppress_vanilla_factions	# 禁用原版派系
 		give_technology = { message = no tech = tech_powered_exoskeletons }
 		give_technology = { message = no tech = GF_tech_doll_assemble }
+
+		give_technology = { message = no tech = tech_robotic_workers }
+		give_technology = { message = no tech = tech_droid_workers }
+
 		switch = {
 			trigger = has_valid_civic
 			GF_civic_URNC = {
