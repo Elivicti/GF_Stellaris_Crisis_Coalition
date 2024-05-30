@@ -1,13 +1,14 @@
 ﻿l_simp_chinese:
  SP_GF_SYNTHETIC_EVOLUTION: "$SYNTHETIC_EVOLUTION_PROJECT$"
- SP_GF_SYNTHETIC_EVOLUTION_DESC: "SP_GF_SYNTHETIC_EVOLUTION_DESC\n\n是时候抛弃我们有缺陷的血肉之躯了。我们必须为我们的所有人口准备先进的合成替身，然后开始意识传输过程。"
+ SP_GF_SYNTHETIC_EVOLUTION_DESC: "是时候抛弃我们有缺陷的血肉之躯了。我们必须为我们的所有人口准备先进的合成替身，然后开始意识传输过程。"
 
  SP_GF_FLESH_IS_WEAK: "$FLESH_IS_WEAK_PROJECT$"
- SP_GF_FLESH_IS_WEAK_DESC: "SP_GF_FLESH_IS_WEAK_DESC\n\n$FLESH_IS_WEAK_PROJECT_DESC$"
+ SP_GF_FLESH_IS_WEAK_DESC: "$FLESH_IS_WEAK_PROJECT_DESC$"
 
  GF_situation_digitization: "$situation_digitization$"
  GF_situation_digitization_desc: "$situation_digitization_desc$"
  GF_situation_digitization_type: "$situation_digitization_type$"
+ GF_situation_digitization_monthly_change_tooltip: "$situation_digitization_monthly_change_tooltip$"
 
  GF_new_type_robot: "$GF_new_type$（机械）"
  GF_new_type_robot_desc: "$ROBOT_desc$"
