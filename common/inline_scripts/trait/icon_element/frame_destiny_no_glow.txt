@@ -1,8 +1,0 @@
-# layer = {
-# 	icon = "GFX_trait_glow_destiny"
-# 	color = "trait_rarity_destiny"
-# }
-layer = {
-	icon = "GFX_trait_frame_destiny"
-	color = "trait_rarity_destiny"
-}

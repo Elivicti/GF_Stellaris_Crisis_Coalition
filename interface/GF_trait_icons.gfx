@@ -1,10 +1,56 @@
 spriteTypes = {
+	# 蠢驴小杯命名
 	spriteType = {
-		name = "GFX_leader_trait_GF_ogas"
-		textureFile = "gfx/interface/icons/traits/trait_machine_unit.dds"
+		name = "GFX_trait_frame_paragon"
+		texturefile = "gfx/interface/icons/traits/leader_traits/trait_rarity_destiny.dds"
 	}
 	spriteType = {
-		name = "GFX_leader_trait_GF_ogas_2"
+		name = "GFX_trait_glow_paragon"
+		texturefile = "gfx/interface/icons/traits/leader_traits/trait_glow_destiny.dds"
+		effectFile = "gfx/FX/buttonstate.shader"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/traits/leader_traits/trait_glow_destiny_mask.dds"
+			animationtexturefile = "gfx/interface/icons/traits/leader_traits/trait_glow_destiny_animated_texture.dds"  	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 7				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "rotating"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	# place holder
+	spriteType = {
+		name = "GFX_trait_glow_common"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_none.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_GF_bg_none"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_none.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_bg_black"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_black.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_bg_light_blue"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_light_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_bg_green"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_green.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_trait_GF_bg_yellow"
+		textureFile = "gfx/interface/icons/traits/leader_trait_bg/GF_leader_trait_bg_yellow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_leader_trait_GF_ogas"
 		textureFile = "gfx/interface/icons/traits/leader_trait_icons/GF_ogas.dds"
 	}
 

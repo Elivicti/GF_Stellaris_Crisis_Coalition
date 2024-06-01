@@ -2,13 +2,16 @@ GF_trait_leader_ogas = {
 	cost = 0
 	# leader_trait_type = destiny
 	inline_script = {
-		script = trait/icon
+		script = trait/GF_traits
 		CLASS = official
-		ICON = GFX_leader_trait_machine_intelligence
-		RARITY = paragon
 		COUNCIL = yes
+		ICON = GFX_leader_trait_machine_intelligence
+		BACKGROUND = light_blue
+		RARITY = paragon
+		GLOW = yes
 		TIER = none
 	}
+
 	self_modifier = {
 		species_leader_exp_gain = 0.20
 		leaders_unity_upkeep_mult = -0.50
@@ -72,10 +75,11 @@ GF_trait_leader_ogas_2 = {
 	inline_script = {
 		script = trait/GF_traits
 		CLASS = official
-		ICON = GFX_leader_trait_GF_ogas_2
-		FRAME = destiny_no_glow
-		RARITY = paragon
 		COUNCIL = yes
+		ICON = GFX_leader_trait_GF_ogas
+		BACKGROUND = black
+		RARITY = paragon
+		GLOW = no
 		TIER = none
 	}
 
@@ -112,13 +116,16 @@ GF_trait_leader_ogas_subnet_core = {
 	cost = 0
 	# leader_trait_type = destiny
 	inline_script = {
-		script = trait/icon
+		script = trait/GF_traits
 		CLASS = official
-		ICON = GFX_leader_trait_machine_intelligence
-		RARITY = paragon
 		COUNCIL = yes
+		ICON = GFX_leader_trait_machine_intelligence
+		BACKGROUND = light_blue
+		RARITY = paragon
+		GLOW = yes
 		TIER = none
 	}
+
 	councilor_modifier = {
 		edict_length_mult = 0.25
 		country_unity_produces_mult = 0.25

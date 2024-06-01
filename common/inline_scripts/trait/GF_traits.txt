@@ -5,9 +5,18 @@ inline_script = {
 }
 icon = {
 	layer = {
+		icon = GFX_leader_trait_GF_bg_$BACKGROUND$
+	}
+	inline_script = {
+		script = trait/icon_element/trait_glow_$GLOW$
+		RARITY = $RARITY$
+	}
+	layer = {
+		icon = GFX_trait_frame_$RARITY$
+	}
+	layer = {
 		icon = $ICON$
 	}
-	inline_script = trait/icon_element/frame_$FRAME$
 	inline_script = {
 		script = trait/icon_element/council_$COUNCIL$
 		CLASS = $CLASS$
@@ -16,3 +25,13 @@ icon = {
 }
 leader_trait_rarity = $RARITY$
 sorting_priority = @trait_sorting_priority_$RARITY$_$COUNCIL$_$TIER$
+
+## Parameters
+# CLASS:      leader | commander | general | scientist  | official
+# COUNCIL:    yes    | no
+# ICON:       <sprite>
+# BACKGROUND: none   | black     | yellow  | light_blue | green
+# RARITY:     common | veteran   | paragon
+# GLOW:       yes    | no
+# TIER:       none   | 1         | 2       | 3
+
