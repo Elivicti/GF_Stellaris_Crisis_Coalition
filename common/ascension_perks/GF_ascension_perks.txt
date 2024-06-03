@@ -1,11 +1,6 @@
 ####GFperks
 #######doll upgrade
 ap_GF_mind_upgrade = {
-	modifier = {
-		custom_tooltip = ap_GF_mind_upgrade_modifier_desc
-		show_only_custom_tooltip = no
-		modify_species_cost_mult = @GF_doll_upgrade_COST_MULT
-	}
 	possible = {
 		has_technology = GF_tech_mind_upgrade_1
 		custom_tooltip = {
@@ -20,6 +15,7 @@ ap_GF_mind_upgrade = {
 	}
 
 	on_enabled = {
+		custom_tooltip = ap_GF_mind_upgrade_modifier_desc
 		if = {
 			limit = { NOT = { has_technology = tech_sapient_ai } }
 			add_research_option = tech_sapient_ai
