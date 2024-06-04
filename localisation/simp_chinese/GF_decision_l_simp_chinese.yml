@@ -5,7 +5,7 @@
  decision_GF_doll_sercurity_off:0 "结束人形安全防卫协议"
  decision_GF_doll_sercurity_off_desc:0 "星球当前已恢复正常，政府将收回人形的暴力行为许可，并将她们重新分配回各自工作岗位，继续原先的生产任务。"
  decision_GF_doll_storage_on:0 "开启人形待机模式"
- decision_GF_doll_storage_on_desc:0 "允许星球上当前无任务的人形进入人形维护仓中休眠待机，与人形正常的运行状态相比，这将节省大部分的维护费用。\n\n§H提示：配合星球法令云计算协议可以使休眠人形在低消耗的情况下产出科研点。§!"
+ decision_GF_doll_storage_on_desc:0 "允许星球上当前无任务的人形进入人形维护仓中休眠待机，与人形正常的运行状态相比，这将节省大部分的维护费用。\n\n§H提示：在§Y星球决议§!中§Y$decision_GF_doll_cloud_computing_on$§!可以使休眠人形在低消耗的情况下产出研究点数。§!"
  decision_GF_doll_storage_off:0 "激活待机人形"
  decision_GF_doll_storage_off_desc:0 "将待机状态的人形全部激活，对她们分配新的任务。"
  decision_GF_doll_cloud_computing_on:0 "开启云计算协议"
