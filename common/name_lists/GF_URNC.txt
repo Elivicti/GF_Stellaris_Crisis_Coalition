@@ -90,6 +90,10 @@ GF_URNC = {
 		GF_army_occupation_doll = {
 			sequential_name = GF_URNC_OCCUPATION_DOLL
 		}
+		GF_army_gavirul = { sequential_name = GF_URNC_ARMY_GAVIRUL }
+		GF_army_elid_1 = { sequential_name = GF_URNC_ARMY_ELID }
+		GF_army_elid_2 = { sequential_name = GF_URNC_ARMY_ELID }
+
 		# 原版
 		machine_defense = {
 			sequential_name = GF_URNC_PLANETARYGUARD

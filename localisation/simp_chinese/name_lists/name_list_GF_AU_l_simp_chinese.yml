@@ -2566,6 +2566,8 @@
  GF_AU_TACTICAL_DOLL:0 "$ORD$战术机兵部队"
  GF_AU_DEFENSIVE_DOLL:0 "$ORD$智能防卫单元"
  GF_AU_OCCUPATION_DOLL:0 "$ORD$治安监管单元"
+ GF_URNC_ARMY_GAVIRUL: "$ORD$女武神军"
+ GF_URNC_ARMY_ELID: "$ORD$生骸军"
 
 # Obsolete sequentials (for backwards compatibility)
  GF_AU_xxFLEET_ORD:1 "$O$空勤作战集群"
