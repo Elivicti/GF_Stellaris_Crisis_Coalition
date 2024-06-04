@@ -22,6 +22,12 @@ GF_situation_digitization = {
 				}
 			}
 			event_target:temp = {
+				if = {
+					limit = { prev.owner = { GF_has_completed_gavirul_project = yes } }
+					change_species_characteristics = {
+						add_trait = GF_trait_robot_gavirul_potential
+					}
+				}
 				save_global_event_target_as = synthspecies@root.owner
 			}
 		}

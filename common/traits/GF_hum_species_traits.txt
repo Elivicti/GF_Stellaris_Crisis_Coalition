@@ -1,7 +1,7 @@
 ###
 GF_trait_doll_master = {
 	cost = 0
-	sorting_priority = 20
+	sorting_priority = 28
 	initial = yes
 	randomized = no
 	species_potential_add = { always = no }
@@ -39,7 +39,7 @@ GF_trait_doll_master = {
 
 GF_trait_self_dependence = {
 	cost = 0
-	sorting_priority = 20
+	sorting_priority = 28
 	initial = yes
 	randomized = no
 	
@@ -70,22 +70,12 @@ GF_trait_sequela_immune = {
 	
 	sorting_priority = 29
 	randomized = no
-	
-	species_potential_add = {
-		GF_is_gavirul_species = yes
-	}
-	species_possible_add = {
-		GF_is_gavirul_species = yes
-	}
-	species_possible_remove = {
-		GF_is_gavirul_species = yes
-	}
-	species_possible_merge_add = {
-		GF_is_gavirul_species = yes
-	}
-	species_possible_merge_remove = {
-		GF_is_gavirul_species = yes
-	}
+
+	species_potential_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_remove = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_remove = { from = { GF_has_completed_gavirul_project = yes } }
 
 	opposites = { "GF_trait_sequela" }
 	allowed_archetypes = { BIOLOGICAL }
@@ -93,9 +83,36 @@ GF_trait_sequela_immune = {
 	modifier = {
 		pop_environment_tolerance = 0.20
 		army_damage_mult = 0.15
-
 		pop_growth_speed = 0.10
+		planet_jobs_produces_mult = 0.10
+	}
 
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
+GF_trait_robot_gavirul_potential = {
+	icon = "gfx/interface/icons/traits/humankind/GF_trait_robot_gavirul_potential.dds"
+	cost = 0
+	initial = no
+
+	sorting_priority = 29
+	randomized = no
+
+	species_potential_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_remove = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_remove = { from = { GF_has_completed_gavirul_project = yes } }
+
+	allowed_archetypes = { ROBOT }
+
+	modifier = {
+		leader_lifespan_add = 25
+		species_empire_size_mult = -0.15
+		army_damage_mult = 0.15
 		planet_jobs_produces_mult = 0.10
 	}
 

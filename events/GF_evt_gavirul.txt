@@ -50,6 +50,31 @@ country_event = {
 				}
 			}
 		}
+		# 机飞局势兼容
+		hidden_effect = {
+			if = {
+				limit = { exists = event_target:synthspecies@this }
+				event_target:synthspecies@this = {
+					change_species_characteristics = {
+						add_trait = GF_trait_robot_gavirul_potential
+						add_traits_at_start_of_list = yes
+					}
+				}
+			}
+		}
+		every_owned_species = {
+			limit = {
+				is_species_class = GF_new_type_robot
+				NOT = { has_trait = GF_trait_robot_gavirul_potential }
+			}
+			custom_tooltip =  GF_gavirul.1.a.tooltip.robot
+			hidden_effect = {
+				change_species_characteristics = {
+					add_trait = GF_trait_robot_gavirul_potential
+					add_traits_at_start_of_list = yes
+				}
+			}
+		}
 		hidden_effect = {
 			remove_country_flag = flag_GF_gavirul_project_started
 			set_country_flag = flag_GF_gavirul_project_completed
