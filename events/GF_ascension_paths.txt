@@ -23,15 +23,17 @@ country_event = {
 		set_country_flag = flag_GF_synthetics_adopted
 		if = {
 			limit = { has_machine_age_dlc = yes }
-			every_situation = {
-				limit = { is_situation_type = situation_digitization }
-				abort_situation = this
+			GF_create_synthetic_mod = {
+				SAVE_TARGET_AS = temp
 			}
-			# start my own situation
-			log = "[this.GetName]: Start GF digitization situation"
-			start_situation = {
-				type = GF_situation_digitization
-				target = this
+			event_target:temp = {
+				if = {
+					limit = { prev = { GF_has_completed_gavirul_project = yes } }
+					change_species_characteristics = {
+						add_trait = GF_trait_robot_gavirul_potential
+					}
+				}
+				save_global_event_target_as = synthspecies@prev
 			}
 		}
 		else = {
@@ -86,6 +88,14 @@ country_event = {
 
 		GF_create_synthetic_mod = {
 			SAVE_TARGET_AS = GF_new_type_synth
+		}
+		if = {
+			limit = { GF_has_completed_gavirul_project = yes }
+			event_target:GF_new_type_synth = {
+				change_species_characteristics = {
+					add_trait = GF_trait_robot_gavirul_potential
+				}
+			}
 		}
 		change_dominant_species = {
 			species = event_target:GF_new_type_synth
@@ -291,7 +301,7 @@ country_event = {
 		set_country_flag = flag_GF_cybernetics_adopted
 		if = {
 			limit = { has_machine_age_dlc = yes }
-			log = "may not need to change this situation?"
+			# log = "may not need to change this situation?"
 			# every_situation = {
 			# 	limit = { is_situation_type = situation_cyberization }
 			# 	abort_situation = this
