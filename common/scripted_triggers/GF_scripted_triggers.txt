@@ -162,16 +162,19 @@ GF_default_zion_comm_trigger = {
 	}
 }
 
-# scope = species, from = country
-GF_is_gavirul_species = {
-	hidden_trigger = {
-		has_species_flag = flag_GF_GAVIRUL_species
+# this = species
+GF_is_gavirul_potential = {
+	OR = {
+		has_trait = GF_trait_sequela_immune
+		has_trait = GF_trait_robot_gavirul_potential
 	}
-	from = {
-		custom_tooltip = {
-			has_country_flag = flag_GF_gavirul_project_completed
-			fail_text = GF_require_gavirul_project_finished
-		}
+}
+
+# this = country
+GF_has_completed_gavirul_project = {
+	custom_tooltip = {
+		has_country_flag = flag_GF_gavirul_project_completed
+		fail_text = GF_gavirul_project_completed
 	}
 }
 

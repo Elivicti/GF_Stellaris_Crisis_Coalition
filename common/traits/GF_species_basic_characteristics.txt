@@ -1,9 +1,10 @@
 GF_trait_doll = {
 	cost = 0
-	sorting_priority = 20
+	sorting_priority = 29
 	potential_crossbreeding_chance = 0
 	initial = no
 	randomized = no
+	infertile = yes
 
 	species_potential_add = { always = no }
 	species_possible_add = { always = yes }
@@ -75,15 +76,15 @@ GF_trait_doll = {
 
 GF_trait_sequela = {
 	cost = 0
-	sorting_priority = 20
+	sorting_priority = 29
 	initial = no
 	randomized = no
 	
-	species_potential_add = { GF_is_gavirul_species = yes }
-	species_possible_add = { always = yes }
-	species_possible_remove = { GF_is_gavirul_species = yes }
-	species_possible_merge_add = { always = no }
-	species_possible_merge_remove = { GF_is_gavirul_species = yes }
+	species_potential_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_remove = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_add = { from = { GF_has_completed_gavirul_project = yes } }
+	species_possible_merge_remove = { from = { GF_has_completed_gavirul_project = yes } }
 	
 	advanced_trait = no
 	modifier = {
