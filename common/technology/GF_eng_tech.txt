@@ -48,6 +48,10 @@ GF_tech_doll_modding = {
 			}
 		}
 		modifier = {
+			factor = 20
+			has_technology = tech_robomodding
+		}
+		modifier = {
 			factor = 0.25
 			NOR = {
 				has_trait_in_council = { TRAIT = leader_trait_maniacal }
