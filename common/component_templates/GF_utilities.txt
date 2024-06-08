@@ -23,8 +23,17 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer constructor science transport crisis_corvette }
-
+	size_restriction = {
+		corvette
+		frigate
+		colonizer
+		lithoid_colonizer
+		sponsored_colonizer
+		constructor
+		science
+		transport
+		crisis_corvette
+	}
 }
 
 utility_component_template = {
@@ -49,7 +58,10 @@ utility_component_template = {
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
 	
-	size_restriction = { destroyer crisis_destroyer }
+	size_restriction = {
+		destroyer
+		crisis_destroyer
+	}
 }
 
 utility_component_template = {
@@ -73,8 +85,11 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer }
-
+	size_restriction = {
+		cruiser
+		crisis_cruiser
+		cosmo_crisis_destroyer
+	}
 }
 
 utility_component_template = {
@@ -98,7 +113,10 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { battleship cosmo_crisis_battlecruiser }
+	size_restriction = {
+		battleship
+		offspring_battleship
+	}
 }
 
 utility_component_template = {
@@ -122,7 +140,11 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan }
+	size_restriction = {
+		titan
+		payback_warship
+		cosmo_crisis_battlecruiser
+	}
 }
 
 utility_component_template = {
@@ -141,7 +163,10 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { colossus star_eater }
+	size_restriction = {
+		colossus
+		star_eater
+	}
 }
 
 utility_component_template = {
@@ -218,7 +243,10 @@ utility_component_template = {
 
 	prerequisites = { "GF_tech_collapse_power_core" }
 	component_set = "power_core"
-	size_restriction = { juggernaut }
+	size_restriction = {
+		juggernaut
+		cosmo_crisis_titan
+	}
 
 	ai_weight = {
 		weight = 8
