@@ -79,6 +79,7 @@ country_event = {
 			save_global_event_target_as = GF_home_world
 			set_planet_flag = flag_p_GF_home_world
 			set_planet_flag = suppress_archaeological_sites
+			set_planet_flag = legendary_leader_planet # 禁止环境改造
 			clear_deposits = yes
 			planet_event = { id = GF_start.10 }
 		}

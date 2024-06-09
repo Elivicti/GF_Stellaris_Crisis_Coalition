@@ -841,6 +841,7 @@ country_event = {
 		
 		hidden_effect = {
 			event_target:GF_home_world = {
+				remove_planet_flag = legendary_leader_planet
 				change_variable = {
 					which = v_GF_elid_threat_level
 					value = -2
