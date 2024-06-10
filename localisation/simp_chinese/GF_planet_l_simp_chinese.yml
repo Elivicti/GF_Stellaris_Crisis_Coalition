@@ -26,10 +26,22 @@
 
  GF_colony.5000.diplo_title:0 "$pc_GF_automated_city$建设"
  GF_colony.5000.name:0 "§H注意事项§!"
- GF_colony.5000.desc:0 "我们即将对[This.GetName]进行改造，将其建设为§Y$pc_GF_automated_city$§!，该星球的区划将由大型的自动化机械构成，只需要少量的人力对设施进行维护，即可全天候高效地进行生产作业。\n\n为了能够高效地统筹和管理遍布全球的自动化机械，$pc_GF_automated_city$将§R占用§!一定数量的§HOGAS线程§!。\n\n由于工程量庞大，我们只能在建设初期就规划好这些自动化设施所要专注从事的生产活动，建设完成后将§R无法§!再更改。\n\n请选择对应的§Y资源专精类型§!，若过长时间都未做出规划，则[This.GetName]将最终被改造为§H$GFAutomatedCityBaseResource$§!的$pc_GF_automated_city$。"
+ GF_colony.5000.desc: "我们需要选择一种资源生产的专精类别才能继续对[This.GetName]进行改造。"
 
  GF_automated_city_specialist_type_title:0 "[GF_GetAutomatedCitySpecialistTypeEB]"
- GF_automated_city_specialist_type_desc:0 "[GF_GetAutomatedCitySpecialistTypeEBDesc]"
+
+ GF_GetAutomatedCitySpecialistTypeEBNone:0 "专精类别未选择"
+ GFAutomatedCityBaseResource:0 "基础资源生产专精"
+ GFAutomatedCitySpecialResource:0 "特殊资源生产专精"
+ GFAutomatedCityAdvancedResource:0 "进阶资源生产专精"
+
+ GFAutomatedCityBaseResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于基础资源§!的生产，包括 £energy£ §Y能源§!、£minerals£ §Y矿物§!与 £food£ §Y食物§!，用以保证帝国内的基础民生与基本生产需求。\n\n该类型占用的OGAS线程数：§R+2§!"
+ GFAutomatedCityAdvancedResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于进阶资源§!的生产，包括 £alloys£ §Y合金§!、£consumer_goods£ §Y消费品§!与 £exotic_gases£ £volatile_motes£ £rare_crystals£ §Y稀有资源§!，以满足帝国内战略、民生与基建方面的需要。\n\n该类型占用的OGAS线程数：§R+3§!"
+ GFAutomatedCitySpecialResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于特殊资源§!，包括 £gf_core_chip£ §Y心智核心§!与 £GF_nyto_collapse_liquid£ §Y坍塌技术§!相关的资源生产与研究，并能够承担 £mod_planet_pop_assembly_add£ §Y人形制造§!的任务。\n\n该类型占用的OGAS线程数：§R+4§!"
+
+ GF_automated_city_constructin_tooltip:0 "我们即将对[auto_city.GetName]进行改造，将其建设为§Y$pc_GF_automated_city$§!，该星球的区划将由大型的自动化机械构成，只需要少量的人力对设施进行维护，即可全天候高效地进行生产作业。\n\n为了能够高效地统筹和管理遍布全球的自动化机械，$pc_GF_automated_city$将§R占用§!一定数量的§HOGAS线程§!。\n\n由于工程量庞大，我们只能在建设初期就规划好这些自动化设施所要专注从事的生产活动，建设完成后将§R无法§!再更改。\n\n请选择对应的§Y资源专精类型§!，若过长时间都未做出规划，则[auto_city.GetName]将最终被改造为§H$GFAutomatedCityBaseResource$§!的$pc_GF_automated_city$。"
+
+
 
  GF_colony.5000.a:0 "$GFAutomatedCityBaseResource$"
  GF_colony.5000.a.tooltip:0 "该类型产生的$mod_GF_OGAS_threads_used_add$：§R+2§!"
@@ -42,16 +54,6 @@
  GF_colony.5000.confirm_require:0 "至少选择一种资源生产的专精类别"
  GF_colony.5000.confirm_warning:0 "§R开启局势后专精类别将无法修改！§!\n§R开启局势后专精类别将无法修改！§!\n§R开启局势后专精类别将无法修改！§!\n\n"
  GF_colony.5000.canceled:0 "建设计划已取消"
-
- GFAutomatedCityBaseResource:0 "基础资源生产专精"
- GFAutomatedCityBaseResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于基础资源§!的生产，包括 £energy£ §Y能源§!、£minerals£ §Y矿物§!与 £food£ §Y食物§!，用以保证帝国内的基础民生与基本生产需求。\n\n该类型占用的OGAS线程数：§R+2§!"
- GFAutomatedCityAdvancedResource:0 "进阶资源生产专精"
- GFAutomatedCityAdvancedResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于进阶资源§!的生产，包括 £alloys£ §Y合金§!、£consumer_goods£ §Y消费品§!与 £exotic_gases£ £volatile_motes£ £rare_crystals£ §Y稀有资源§!，以满足帝国内战略、民生与基建方面的需要。\n\n该类型占用的OGAS线程数：§R+3§!"
- GFAutomatedCitySpecialResource:0 "特殊资源生产专精"
- GFAutomatedCitySpecialResourceDesc:0 "改造完成后的$pc_GF_automated_city$将§Y专注于特殊资源§!，包括 £gf_core_chip£ §Y心智核心§!与 £GF_nyto_collapse_liquid£ §Y坍塌技术§!相关的资源生产与研究，并能够承担 £mod_planet_pop_assembly_add£ §Y人形制造§!的任务。\n\n该类型占用的OGAS线程数：§R+4§!"
-
- GF_GetAutomatedCitySpecialistTypeEBNone:0 "专精类别未选择"
- GF_GetAutomatedCitySpecialistTypeEBNoneDesc:0 "我们需要选择一种资源生产的专精类别才能继续对目标星球进行改造。"
 
  GF_automated_city_district_0_desc:0 "$district_GF_automated_nexus_desc_spec$"
  GF_automated_city_district_1_desc:0 "[GF_GetAutomatedCityDistrict_1_Desc]"

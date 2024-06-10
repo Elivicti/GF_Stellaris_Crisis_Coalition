@@ -136,7 +136,7 @@ planet_event = {
 		city_level = this
 		planet_background = this
 		room = this.owner
-		portrait = event_target:project_leaer
+		portrait = event_target:project_leader
 	}
 
 	custom_gui = GF_automated_city_design_gui
@@ -147,13 +147,13 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = { exists = leader }
-			leader = { save_event_target_as = project_leaer }
+			leader = { save_event_target_as = project_leader }
 		}
 		else_if = {
 			limit = { exists = sector.sector_capital.leader }
-			sector.sector_capital.leader = { save_event_target_as = project_leaer }
+			sector.sector_capital.leader = { save_event_target_as = project_leader }
 		}
-		else = { owner.ruler = { save_event_target_as = project_leaer } }
+		else = { owner.ruler = { save_event_target_as = project_leader } }
 
 		remove_planet_flag = flag_p_GF_automated_city_base_resources
 		remove_planet_flag = flag_p_GF_automated_city_advanced_resources
@@ -166,7 +166,7 @@ planet_event = {
 	option = {
 		name = GF_colony.5000.a
 		is_dialog_only = yes
-		response_text = GF_colony.5000.desc
+		response_text = GFAutomatedCityBaseResourceDesc
 		allow = {
 			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 2 } }
 		}
@@ -179,7 +179,7 @@ planet_event = {
 	option = {
 		name = GF_colony.5000.b
 		is_dialog_only = yes
-		response_text = GF_colony.5000.desc
+		response_text = GFAutomatedCityAdvancedResourceDesc
 		allow = {
 			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 3 } }
 		}
@@ -192,7 +192,7 @@ planet_event = {
 	option = {
 		name = GF_colony.5000.c
 		is_dialog_only = yes
-		response_text = GF_colony.5000.desc
+		response_text = GFAutomatedCitySpecialResourceDesc
 		allow = {
 			hidden:owner = { GF_require_OGAS_has_available_threads = { amount = 4 } }
 		}
@@ -230,7 +230,7 @@ planet_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = CANCEL
 		remove_planet_flag = flag_p_GF_automated_city_base_resources
@@ -296,19 +296,19 @@ planet_event = {
 
 		change_pc = pc_GF_automated_city
 		while = {
-			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			count = value:GF_variable_operate|VAR|city_cnt|OP|mult|VALUE|0.8|
 			add_district = district_GF_automated_nexus
 		}
 		while = {
-			count = value:GF_variable_operate|VAR|generator_cnt|OP|factor|VALUE|0.6|
+			count = value:GF_variable_operate|VAR|generator_cnt|OP|mult|VALUE|0.6|
 			add_district = district_GF_automated_energy
 		}
 		while = {
-			count = value:GF_variable_operate|VAR|farming_cnt|OP|factor|VALUE|0.6|
+			count = value:GF_variable_operate|VAR|farming_cnt|OP|mult|VALUE|0.6|
 			add_district = district_GF_automated_farming
 		}
 		while = {
-			count = value:GF_variable_operate|VAR|mining_cnt|OP|factor|VALUE|0.6|
+			count = value:GF_variable_operate|VAR|mining_cnt|OP|mult|VALUE|0.6|
 			add_district = district_GF_automated_mining
 		}
 		clear_variable = city_cnt
@@ -349,37 +349,37 @@ planet_event = {
 
 		change_pc = pc_GF_automated_city
 		while = {
-			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			count = value:GF_variable_operate|VAR|city_cnt|OP|mult|VALUE|0.8|
 			add_district = district_GF_automated_nexus
 		}
 		if = {
 			limit = { GF_has_foundry_designation = yes }
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.6|
 				add_district = district_GF_automated_foundry
 			}
 		}
 		else_if = {
 			limit = { GF_has_factory_designation = yes }
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.6|
 				add_district = district_GF_automated_industry
 			}
 		}
 		else_if = {
 			limit = { GF_has_refinery_designation = yes }
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.6|
 				add_district = district_GF_automated_refinery
 			}
 		}
 		else = {
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.3|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.3|
 				add_district = district_GF_automated_foundry
 			}
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.3|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.3|
 				add_district = district_GF_automated_industry
 			}
 		}
@@ -419,7 +419,7 @@ planet_event = {
 
 		change_pc = pc_GF_automated_city
 		while = {
-			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			count = value:GF_variable_operate|VAR|city_cnt|OP|mult|VALUE|0.8|
 			add_district = district_GF_automated_nexus
 		}
 		if = {
@@ -430,35 +430,35 @@ planet_event = {
 				}
 			}
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.6|
 				add_district = district_GF_collapse
 			}
 		}
 		else_if = {
 			limit = { GF_has_refinery_designation = yes }
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.6|
 				add_district = district_GF_automated_reverse_collapse
 			}
 		}
 		else_if = {
 			limit = { has_research_designation = yes }
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.36|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.36|
 				add_district = district_GF_automated_research
 			}
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.24|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.24|
 				add_district = district_GF_automated_factory
 			}
 		}
 		else = {
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.36|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.36|
 				add_district = district_GF_automated_research
 			}
 			while = {
-				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.24|
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|mult|VALUE|0.24|
 				add_district = district_GF_automated_collapse
 			}
 		}

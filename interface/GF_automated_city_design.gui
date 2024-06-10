@@ -53,32 +53,16 @@ guiTypes = {
 			buttonType = {
 				name = "GF_automated_city_specialist_type_desc_bg"
 				position = { x = -10 y = 65 }
-				size = { width = 385 height = 190 }
+				size = { width = 385 height = 210 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
-			}
-			effectButtonType = {
-				name = "GF_automated_city_specialist_type_desc"
-				text = "GF_automated_city_specialist_type_desc"
-				size = { width = 365 height = 170 }
-				maxHeight = 200
-				orientation = "UPPER_LEFT"
-				position = { x = 0 y = 70 }
-				effect = GF_effect_button_always_on
-				spriteType = "GFX_invisible"
-				font = malgun_goth_24
-				alwaysTransparent = yes
-				multiline = yes
-				format = LEFT
-				vertical_alignment = top
-				
 			}
 
 			# 中央管理区划
 			buttonType = {
 				name = "GF_automated_city_district_bg0"
-				position = { x = 90 y = 270 }
+				position = { x = 90 y = 290 }
 				size = { width = 285 height = 87 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -88,7 +72,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "GF_automated_city_district_0_desc"
 				text = "GF_automated_city_district_0_desc"
-				position = { x = 95 y = 275 }
+				position = { x = 95 y = 295 }
 				maxWidth = 275
 				maxHeight = 72
 				font = "cg_16b"
@@ -96,7 +80,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_nexus_icon"
-				position = { x = 0 y = 270 }
+				position = { x = 0 y = 290 }
 				spriteType = "GFX_district_GF_automated_nexus"
 				orientation = "UPPER_LEFT"
 				effect = GF_effect_button_always_on
@@ -106,7 +90,7 @@ guiTypes = {
 			# 区划1
 			effectButtonType = {
 				name = "GF_automated_city_district_bg1"
-				position = { x = 90 y = 370 }
+				position = { x = 90 y = 390 }
 				size = { width = 285 height = 87 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -117,7 +101,7 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_1_desc"
 				text = "GF_automated_city_district_1_desc"
-				position = { x = 95 y = 375 }
+				position = { x = 95 y = 395 }
 				size = { width = 275 height = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
@@ -128,23 +112,23 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_energy_icon"
-				position = { x = 0 y = 370 }
+				position = { x = 0 y = 390 }
 				spriteType = "GFX_district_GF_automated_energy"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_base_res_district_icons
 				alwaysTransparent = yes
 			}
 			effectButtonType = {
-				name = "GF_automated_city_district_foundary_icon"
-				position = { x = 0 y = 370 }
-				spriteType = "GFX_district_GF_automated_foundary"
+				name = "GF_automated_city_district_foundry_icon"
+				position = { x = 0 y = 390 }
+				spriteType = "GFX_district_GF_automated_foundry"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_advanced_res_district_icons
 				alwaysTransparent = yes
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_research_icon"
-				position = { x = 0 y = 370 }
+				position = { x = 0 y = 390 }
 				spriteType = "GFX_district_GF_automated_research"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_special_res_district_icons
@@ -154,7 +138,7 @@ guiTypes = {
 			# 区划2
 			effectButtonType = {
 				name = "GF_automated_city_district_bg2"
-				position = { x = 90 y = 470 }
+				position = { x = 90 y = 490 }
 				size = { width = 285 height = 87 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -165,7 +149,7 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_2_desc"
 				text = "GF_automated_city_district_2_desc"
-				position = { x = 95 y = 475 }
+				position = { x = 95 y = 495 }
 				size = { width = 275 height = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
@@ -176,7 +160,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_mining_icon"
-				position = { x = 0 y = 470 }
+				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_mining"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_base_res_district_icons
@@ -184,7 +168,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_industry_icon"
-				position = { x = 0 y = 470 }
+				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_industry"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_advanced_res_district_icons
@@ -192,7 +176,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_factory_icon"
-				position = { x = 0 y = 470 }
+				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_factory"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_special_res_district_icons
@@ -202,7 +186,7 @@ guiTypes = {
 			# 区划3
 			effectButtonType = {
 				name = "GF_automated_city_district_bg3"
-				position = { x = 90 y = 570 }
+				position = { x = 90 y = 590 }
 				size = { width = 285 height = 87 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -213,7 +197,7 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_3_desc"
 				text = "GF_automated_city_district_3_desc"
-				position = { x = 95 y = 575 }
+				position = { x = 95 y = 595 }
 				size = { width = 275 height = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
@@ -224,7 +208,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_food_icon"
-				position = { x = 0 y = 570 }
+				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_farming"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_base_res_district_icons
@@ -232,7 +216,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_refinery_icon"
-				position = { x = 0 y = 570 }
+				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_refinery"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_advanced_res_district_icons
@@ -240,7 +224,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_collapse_icon"
-				position = { x = 0 y = 570 }
+				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_collapse"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_special_res_district_icons
@@ -250,7 +234,7 @@ guiTypes = {
 			# 区划4
 			effectButtonType = {
 				name = "GF_automated_city_district_bg4"
-				position = { x = 90 y = 670 }
+				position = { x = 90 y = 690 }
 				size = { width = 285 height = 87 }
 				orientation = "UPPER_LEFT"
 				spriteType = "GFX_tiles_dark_area_cut_8"
@@ -261,7 +245,7 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_4_desc"
 				text = "GF_automated_city_district_4_desc"
-				position = { x = 95 y = 675 }
+				position = { x = 95 y = 695 }
 				size = { width = 275 height = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
@@ -272,7 +256,7 @@ guiTypes = {
 			}
 			effectButtonType = {
 				name = "GF_automated_city_district_reverse_collapse_icon"
-				position = { x = 0 y = 670 }
+				position = { x = 0 y = 690 }
 				spriteType = "GFX_district_GF_automated_reverse_collapse"
 				orientation = "UPPER_LEFT"
 				effect = GF_show_special_res_district_icons
@@ -528,12 +512,32 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "alien_message"
-			font = cg_16b
-			position = { x = 30 y = 451 }
-			maxWidth = 460
-			maxHeight = 320
+			font = malgun_goth_24
+			# position = { x = 30 y = 451 }
+			# maxWidth = 460
+			# maxHeight = 320
+
+			position = { x = 1005 y = 70 }
+			maxWidth = 365
+			maxHeight = 200
 			format = left
 			scrollbartype = "standardtext_slider_small"
+		}
+		effectButtonType = {
+			name = "GF_automated_city_constructin_tooltip"
+			text = "GF_automated_city_constructin_tooltip"
+			position = { x = 30 y = 451 }
+			size = { width = 460 height = 320 }
+			maxWidth = 460
+			maxHeight = 320
+
+			effect = GF_effect_button_always_on
+			spriteType = "GFX_invisible"
+			font = cg_16b
+			alwaysTransparent = yes
+			multiline = yes
+			format = LEFT
+			vertical_alignment = top
 		}
 		
 		### EVENT DIPLO ###
