@@ -113,6 +113,13 @@ GF_get_thread_usage_from_auto_city = {
 		mode = add
 		mult = 2
 	}
+	complex_trigger_modifier = {
+		trigger = count_owned_planet
+		parameters = {
+			limit = { has_building = building_GF_automated_coordination_nexus }
+		}
+		mode = add
+	}
 }
 
 # this = country
