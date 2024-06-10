@@ -156,6 +156,8 @@ pc_GF_automated_city = {
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 
+	building_set = GF_automated_city
+
 	modifier = {
 		# 以下buff移动到deposit
 		# planet_jobs_produces_mult = 0.20

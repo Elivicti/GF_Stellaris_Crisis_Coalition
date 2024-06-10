@@ -55,10 +55,10 @@
  district_GF_automated_farming_plural:0 "自动化农业中心"
  district_GF_automated_farming_desc_spec:0 "§H$district_GF_automated_farming$§!：种植和繁育各类作物。\n\n\n维护：£energy£ £volatile_motes£ 生产：£food£"
 
- district_GF_automated_foundary:0 "自动化冶金中心"
- district_GF_automated_foundary_desc:0 "这个大型自动化设施专注于将矿物冶炼为各类合金。"
- district_GF_automated_foundary_plural:0 "自动化冶金中心"
- district_GF_automated_foundary_desc_spec:0 "§H$district_GF_automated_foundary$§!：锻造和生产各类合金。\n\n\n维护：£energy£ £volatile_motes£ £minerals£ 生产：£alloys£"
+ district_GF_automated_foundry:0 "自动化冶金中心"
+ district_GF_automated_foundry_desc:0 "这个大型自动化设施专注于将矿物冶炼为各类合金。"
+ district_GF_automated_foundry_plural:0 "自动化冶金中心"
+ district_GF_automated_foundry_desc_spec:0 "§H$district_GF_automated_foundry$§!：锻造和生产各类合金。\n\n\n维护：£energy£ £volatile_motes£ £minerals£ 生产：£alloys£"
 
  district_GF_automated_industry:0 "自动化工业中心"
  district_GF_automated_industry_desc:0 "这个大型自动化设施专注于将矿物制造成各类民用消费品。"

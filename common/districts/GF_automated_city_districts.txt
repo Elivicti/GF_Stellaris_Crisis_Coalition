@@ -39,7 +39,7 @@ district_GF_automated_nexus = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_nexus
 		cost = {
 			minerals = @base_cost_t1
 		}
@@ -109,7 +109,7 @@ district_GF_automated_energy = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_energy
 		cost = {
 			minerals = @base_cost_t1
 			rare_crystals = @rare_cost
@@ -120,6 +120,7 @@ district_GF_automated_energy = {
 		}
 		produces = {
 			energy = 100
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_energy_base_produces_mult|
 		}
 	}
 
@@ -154,7 +155,7 @@ district_GF_automated_mining = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_mining
 		cost = {
 			minerals = @base_cost_t2
 		}
@@ -163,6 +164,7 @@ district_GF_automated_mining = {
 		}
 		produces = {
 			minerals = 75
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_mining_base_produces_mult|
 		}
 	}
 
@@ -197,7 +199,7 @@ district_GF_automated_farming = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_farming
 		cost = {
 			minerals = @base_cost_t1
 			volatile_motes = @rare_cost
@@ -208,6 +210,7 @@ district_GF_automated_farming = {
 		}
 		produces = {
 			food = 100
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_farming_base_produces_mult|
 		}
 	}
 
@@ -225,7 +228,7 @@ district_GF_automated_farming = {
 
 
 
-district_GF_automated_foundary = {
+district_GF_automated_foundry = {
 	base_buildtime = @build_time
 	is_capped_by_modifier = no
 	icon = district_arcology_arms_industry
@@ -244,7 +247,7 @@ district_GF_automated_foundary = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_foundry
 		cost = {
 			minerals = @base_cost_t1
 			volatile_motes = @rare_cost
@@ -256,6 +259,7 @@ district_GF_automated_foundary = {
 		}
 		produces = {
 			alloys = 48
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_foundry_base_produces_mult|
 		}
 	}
 
@@ -290,7 +294,7 @@ district_GF_automated_industry = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_industry
 		cost = {
 			minerals = @base_cost_t1
 			rare_crystals = @rare_cost
@@ -302,6 +306,7 @@ district_GF_automated_industry = {
 		}
 		produces = {
 			consumer_goods = 90
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_industry_base_produces_mult|
 		}
 	}
 
@@ -352,7 +357,7 @@ district_GF_automated_refinery = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_refinery
 		cost = {
 			minerals = @base_cost_t3
 		}
@@ -364,6 +369,7 @@ district_GF_automated_refinery = {
 			exotic_gases = 8
 			volatile_motes = 8
 			rare_crystals = 8
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_refinery_base_produces_mult|
 		}
 	}
 
@@ -400,7 +406,7 @@ district_GF_automated_research = {
 	show_tech_unlock_if = { always = no }
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_research
 		cost = {
 			minerals = @base_cost_t1
 			exotic_gases = @rare_cost
@@ -414,6 +420,7 @@ district_GF_automated_research = {
 			society_research = 60
 			engineering_research = 60
 			gf_core_chip = 30
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_research_base_produces_mult|
 		}
 	}
 
@@ -448,7 +455,7 @@ district_GF_automated_factory = {
 	show_tech_unlock_if = { always = no }
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_factory
 		cost = {
 			minerals = @base_cost_t1
 			exotic_gases = @rare_cost
@@ -500,10 +507,10 @@ district_GF_automated_collapse = {
 	}
 
 	prerequisites = { "GF_tech_collapse_plant_1" }
-	show_tech_unlock_if = { has_tradition = tr_gf_automation_5 }
+	show_tech_unlock_if = { has_tradition = tr_gf_automation_finish }
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_collapse
 		cost = {
 			minerals = @base_cost_t3
 		}
@@ -513,6 +520,7 @@ district_GF_automated_collapse = {
 		}
 		produces = {
 			GF_nyto_collapse_liquid = 90
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_collapse_base_produces_mult|
 		}
 	}
 
@@ -543,10 +551,10 @@ district_GF_automated_reverse_collapse = {
 	}
 
 	prerequisites = { "GF_tech_reverse_collapse_plant" }
-	show_tech_unlock_if = { has_tradition = tr_gf_automation_5 }
+	show_tech_unlock_if = { has_tradition = tr_gf_automation_finish }
 
 	resources = {
-		category = GF_automated_city_districts
+		category = GF_automated_city_districts_reverse_collapse
 		cost = {
 			minerals = @base_cost_t3
 		}
@@ -561,6 +569,7 @@ district_GF_automated_reverse_collapse = {
 			exotic_gases = 4
 			volatile_motes = 4
 			rare_crystals = 4
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_reverse_collapse_base_produces_mult|
 		}
 	}
 

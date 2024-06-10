@@ -17,7 +17,7 @@ GF_freedom_class = {
 			can_generate_trade_value = yes
 		}
 		trade_value_add = @trade_value_very_high
-		mult = value:scripted_modifier_mult|MODIFIER|pop_lifestyle_trade_mult|
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
 	}
 
 	triggered_planet_modifier = {

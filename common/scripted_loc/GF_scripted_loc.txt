@@ -190,7 +190,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localization_key = district_GF_automated_foundary_desc_spec
+		localization_key = district_GF_automated_foundry_desc_spec
 		trigger = {
 			event_target:auto_city = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
 		}

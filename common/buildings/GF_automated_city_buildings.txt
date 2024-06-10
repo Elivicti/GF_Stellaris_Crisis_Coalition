@@ -1,0 +1,804 @@
+
+# 自动化星球
+building_GF_connection_nexus = {
+	capital = yes
+	can_build = no
+	can_be_disabled = no
+	can_be_ruined = no
+	can_demolish = no
+	position_priority = 0
+	category = government
+
+	building_sets = { GF_automated_city }
+
+	potential = {
+		is_planet_class = pc_GF_automated_city
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			energy = 5
+			gf_core_chip = 2.5
+		}
+	}
+
+
+	country_modifier = {
+		GF_OGAS_threads_used_add = 2
+	}
+	triggered_country_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+		GF_OGAS_threads_used_add = 1
+	}
+	triggered_country_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		GF_OGAS_threads_used_add = 2
+	}
+
+	planet_modifier = {
+		planet_stability_add = 10
+		GF_system_maintenance = 0.20
+		job_GF_system_dispatcher_add = 2
+		job_GF_maintenance_engineer_add = 1
+	}
+
+	triggered_planet_modifier = {
+		GF_automated_city_districts_produces_mult = 1
+		mult = value:GF_cal_system_maintenance_production_effect
+	}
+
+	triggered_planet_modifier = {
+		potential = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		GF_automated_city_districts_factory_assembly_speed_mult = 1
+		mult = value:GF_cal_system_maintenance_assembly_effect
+	}
+
+	triggered_planet_modifier = {
+		GF_automated_city_districts_upkeep_mult = 1
+		mult = value:GF_cal_system_maintenance_upkeep_effect
+	}
+
+	triggered_planet_modifier = {
+		job_GF_freedom_kingdom_add = 1
+		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|append_condition|GF_can_pop_join_freedom_kindom|
+	}
+
+	triggered_country_modifier = {
+		potential = { has_modifier = GF_automated_city_supressed }
+		GF_OGAS_threads_used_add = -1
+		mult = this.v_GF_automated_city_supress_level
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
+		GF_automated_city_districts_factory_assembly_speed_mult = -0.75
+		GF_automated_city_districts_produces_mult = -0.75
+		GF_automated_city_districts_upkeep_mult = 0.75
+		planet_building_build_speed_mult = -0.75
+		pop_cat_GF_freedom_class_happiness = -0.50
+	}
+
+	triggered_desc = {
+		text = GF_OGAS_threads_over_cap
+		trigger = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
+	}
+
+	triggered_desc = {
+		text = job_GF_system_dispatcher_effect_desc
+	}
+	triggered_desc = {
+		text = job_GF_maintenance_engineer_effect_desc
+	}
+
+	triggered_desc = {
+		text = add_job_GF_freedom_kingdom_effect_desc
+	}
+	triggered_desc = {
+		text = job_GF_freedom_kingdom_effect_desc
+	}
+}
+
+building_GF_automated_coordination_nexus = {
+	icon = building_sacred_nexus
+	base_buildtime = 720
+	position_priority = 1
+	building_sets = { GF_automated_city }
+
+	category = government
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = {
+				has_country_flag = building_GF_automated_coordination_nexus
+			}
+		}
+	}
+
+	base_cap_amount = 1
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 2000
+			gf_core_chip = 200
+		}
+		upkeep = {
+			energy = 50
+			gf_core_chip = 20
+		}
+	}
+
+	country_modifier = {
+		GF_OGAS_threads_used_add = 1
+	}
+
+	planet_modifier = {
+		GF_system_maintenance = -0.08
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			# exists = owner
+			root = { GF_OGAS_has_used_threads_over_cap = no }
+		}
+		GF_automated_city_districts_produces_mult = 0.8
+		GF_automated_city_districts_upkeep_mult = 0.2
+		mult = modifier:planet_jobs_produces_mult
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			# exists = owner
+			root = { GF_OGAS_has_used_threads_over_cap = no }
+		}
+		GF_automated_city_districts_upkeep_mult = 0.8
+		mult = modifier:planet_jobs_upkeep_mult
+	}
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
+		text = building_GF_automated_coordination_nexus_threads_overcap_tooltip
+	}
+
+	triggered_desc = {
+		text = building_GF_automated_coordination_nexus_produces_effect_tooltip
+	}
+	triggered_desc = {
+		text = building_GF_automated_coordination_nexus_upkeep_effect_tooltip
+	}
+}
+
+@building_time = 360
+@building_time_t2 = 540
+@mineral_cost = 1000
+@mineral_cost_t2 = 1500
+@energy_upkeep = 10
+@energy_upkeep_t2 = 15
+@core_chip_ukeep = 5
+@core_chip_ukeep_t2 = 10
+
+# 通用/特殊功能
+# 10 <= position_priority < 30
+building_GF_automated_maintenance_module = {
+	icon = building_production_center
+	base_buildtime = @building_time
+	building_sets = { GF_automated_city }
+	position_priority = 10
+
+	category = government
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		job_GF_maintenance_engineer_add = 2
+		GF_automated_city_districts_nexus_gf_core_chip_upkeep_add = 0.1
+		GF_system_maintenance = -0.04
+	}
+
+}
+building_GF_automated_defence_module = {
+	icon = building_fortress
+	base_buildtime = @building_time_t2
+	building_sets = { GF_automated_city }
+	position_priority = 11
+
+	category = army
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost_t2
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.25
+		job_soldier_add = 10
+		GF_system_maintenance = -0.08
+	}
+}
+building_GF_automated_politic_module = {
+	icon = building_bureaucratic_3
+	base_buildtime = @building_time_t2
+	position_priority = 12
+	building_sets = { GF_automated_city }
+
+	category = government
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+	base_cap_amount = 4
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost_t2
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep_t2
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			# exists = owner
+			root = { GF_OGAS_has_used_threads_over_cap = no }
+		}
+		country_admin_cap_add = 15
+	}
+	country_modifier = {
+		country_admin_cap_add = 10
+	}
+
+	planet_modifier = {
+		GF_system_maintenance = -0.15
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { GF_OGAS_has_used_threads_over_cap = yes }
+		}
+		text = building_GF_automated_politic_module_threads_overcap_tooltip
+	}
+}
+building_GF_underground_expansion_module = {
+	icon = building_mine_generic
+	base_buildtime = @building_time_t2
+	building_sets = { GF_automated_city }
+	position_priority = 13
+
+	category = government
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost_t2
+		}
+		upkeep = {
+			energy = @energy_upkeep_t2
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		planet_max_districts_add = 1
+		GF_system_maintenance = -0.04
+	}
+}
+building_GF_energy_management_module = {
+	icon = building_class_4_singularity
+	base_buildtime = @building_time
+	building_sets = { GF_automated_city }
+	position_priority = 14
+
+	category = resource
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost_t2
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep_t2
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_energy_upkeep_mult = -0.10
+		GF_system_maintenance = -0.02
+	}
+}
+building_GF_entertainment_module = {
+	icon = building_palace
+	base_buildtime = @building_time
+	building_sets = { GF_automated_city }
+	position_priority = 15
+
+	category = amenity
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		job_culture_worker_add = 10
+		job_entertainer_add = 5
+		GF_system_maintenance = -0.02
+	}
+}
+building_GF_residential_module = {
+	icon = building_paradise_dome
+	base_buildtime = @building_time
+	building_sets = { GF_automated_city }
+	position_priority = 16
+
+	category = amenity
+	potential = {
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost_t2
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 50
+		planet_amenities_add = 20
+		GF_system_maintenance = -0.02
+	}
+}
+
+# 基础资源
+# 30 <= position_priority < 50
+building_GF_automated_energy_module = {
+	icon = building_energy_grid
+	base_buildtime = @building_time
+	position_priority = 30
+	building_sets = { GF_automated_city }
+
+	category = resource
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_base_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_energy_base_produces_mult = 0.30
+		GF_automated_city_districts_energy_energy_upkeep_mult = 0.05
+		GF_system_maintenance = -0.06
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_mining_module = {
+	icon = building_mineral_purification_hub
+	base_buildtime = @building_time
+	position_priority = 31
+	building_sets = { GF_automated_city }
+
+	category = resource
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_base_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_mining_base_produces_mult = 0.30
+		GF_automated_city_districts_mining_energy_upkeep_mult = 0.05
+		GF_system_maintenance = -0.06
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_farming_module = {
+	icon = building_hydroponics_farm
+	base_buildtime = @building_time
+	position_priority = 32
+	building_sets = { GF_automated_city }
+
+	category = resource
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_base_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_farming_base_produces_mult = 0.30
+		GF_automated_city_districts_farming_energy_upkeep_mult = 0.05
+		GF_system_maintenance = -0.06
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+
+# 进阶资源
+# 50 <= position_priority < 70
+building_GF_automated_foundry_module = {
+	icon = building_foundry_3
+	base_buildtime = @building_time
+	position_priority = 50
+	building_sets = { GF_automated_city }
+
+	category = manufacturing
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_advanced_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_foundry_base_produces_mult = 0.20
+		GF_automated_city_districts_foundry_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_industry_module = {
+	icon = building_factory_3
+	base_buildtime = @building_time
+	position_priority = 51
+	building_sets = { GF_automated_city }
+
+	category = manufacturing
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_advanced_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_industry_base_produces_mult = 0.20
+		GF_automated_city_districts_industry_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_refinery_module = {
+	icon = building_archaeo_refinery
+	base_buildtime = @building_time
+	position_priority = 52
+	building_sets = { GF_automated_city }
+
+	category = manufacturing
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_advanced_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_refinery_base_produces_mult = 0.20
+		GF_automated_city_districts_refinery_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+
+# 特殊资源
+# position_priority >= 70
+building_GF_automated_research_module = {
+	icon = building_research_lab_3
+	base_buildtime = @building_time
+	position_priority = 70
+	building_sets = { GF_automated_city }
+
+	category = research
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_special_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_research_base_produces_mult = 0.20
+		GF_automated_city_districts_research_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_mind_upgrade_1
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_factory_module = {
+	icon = building_GF_doll_factory
+	base_buildtime = @building_time
+	position_priority = 71
+	building_sets = { GF_automated_city }
+
+	category = pop_assembly
+
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_special_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+	
+	planet_modifier = {
+		GF_automated_city_districts_factory_assembly_speed_mult = 0.05
+		GF_automated_city_districts_factory_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+	
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	prerequisites = {
+		GF_tech_doll_assemble
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_collapse_module = {
+	icon = building_GF_collapse_2
+	base_buildtime = @building_time
+	position_priority = 72
+	building_sets = { GF_automated_city }
+
+	category = manufacturing
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_special_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_collapse_base_produces_mult = 0.20
+		GF_automated_city_districts_collapse_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+
+	prerequisites = {
+		GF_tech_collapse_plant_2
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+building_GF_automated_reverse_collapse_module = {
+	icon = building_GF_reverse_collapse
+	base_buildtime = @building_time
+	position_priority = 73
+	building_sets = { GF_automated_city }
+
+	category = manufacturing
+
+	potential = {
+		has_planet_flag = flag_p_GF_automated_city_special_resources
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @mineral_cost
+		}
+		upkeep = {
+			energy = @energy_upkeep
+			gf_core_chip = @core_chip_ukeep
+		}
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_reverse_collapse_base_produces_mult = 0.20
+		GF_automated_city_districts_reverse_collapse_energy_upkeep_mult = 0.10
+		GF_system_maintenance = -0.08
+	}
+
+	prerequisites = {
+		GF_tech_reverse_collapse_plant
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}

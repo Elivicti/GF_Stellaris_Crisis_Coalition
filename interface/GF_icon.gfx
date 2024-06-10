@@ -281,7 +281,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/districts/district_rw_farming.dds"
 	}
 	spriteType = {
-		name = "GFX_district_GF_automated_foundary"
+		name = "GFX_district_GF_automated_foundry"
 		textureFile = "gfx/interface/icons/districts/district_arcology_arms_industry.dds"
 	}
 	spriteType = {
