@@ -21,7 +21,7 @@ GF_computing_center_0 = {
 	inline_script = {
 		script = "GF_mega_dismantle"
 		TIME = 180
-		ENERGY = 200
+		ENERGY = 5000
 		TECH = GF_tech_ogas_computing_center
 		EVENT = GF_mega.195
 	}
@@ -156,7 +156,7 @@ GF_computing_center_1 = {
 	inline_script = {
 		script = "GF_mega_dismantle"
 		TIME = 360
-		ENERGY = 500
+		ENERGY = 10000
 		TECH = GF_tech_ogas_computing_center
 		EVENT = GF_mega.195
 	}
@@ -209,7 +209,7 @@ GF_computing_center_2 = {
 	inline_script = {
 		script = "GF_mega_dismantle"
 		TIME = 360
-		ENERGY = 500
+		ENERGY = 10000
 		TECH = GF_tech_ogas_computing_center
 		EVENT = GF_mega.195
 	}
@@ -263,7 +263,7 @@ GF_computing_center_3 = {
 	inline_script = {
 		script = "GF_mega_dismantle"
 		TIME = 360
-		ENERGY = 500
+		ENERGY = 12000
 		TECH = GF_tech_ogas_computing_center
 		EVENT = GF_mega.195
 	}
