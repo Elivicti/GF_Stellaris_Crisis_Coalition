@@ -239,7 +239,7 @@ GF_export_district_count = {
 		mode = add
 	}
 	[[FACTOR]
-		factor = $FACTOR$
+		mult = $FACTOR$
 	]
 	floor = yes
 }
