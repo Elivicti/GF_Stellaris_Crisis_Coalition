@@ -117,31 +117,24 @@ GF_automated_city_construction = {
 		custom_tooltip = GF_automated_city_construction_complete_tooltip
 		hidden_effect = {
 			target = {
+				planet_event = { id = GF_colony.5005 }
+				planet_event = { id = GF_colony.5006 }
+				planet_event = { id = GF_colony.5007 }
+				# 通知
+				planet_event = { id = GF_colony.5010 }
+
 				clear_deposits = yes
 				clear_planet_modifiers = yes
-				export_trigger_value_to_variable = {
-					trigger = num_districts
-					parameters = { type = district_city }
-					variable = city_cnt
-				}
-				multiply_variable = {
-					which = city_cnt
-					value = 0.6
-				}
-				floor_variable = city_cnt
-				change_pc = pc_GF_automated_city
-				while = {
-					count = city_cnt
-					add_district = district_GF_automated_nexus
-				}
-				clear_variable = city_cnt
-				planet_event = { id = GF_colony.5010 }
 				add_modifier = { modifier = GF_automated_city_status }
-				if = {
-					limit = { free_building_slots < 1 }
-					remove_last_built_building = yes
-				}
+
+				remove_all_buildings = yes
 				add_building = building_GF_connection_nexus
+				if = {
+					limit = { exists = orbital_defence }
+					orbital_defence.starbase = {
+						set_starbase_size = orbital_ring_tier_3
+					}
+				}
 			}
 			destroy_situation = this
 		}

@@ -266,6 +266,208 @@ planet_event = {
 }
 
 planet_event = {
+	id = GF_colony.5005
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+
+	immediate = {
+		set_variable = {
+			which = city_cnt
+			value = value:GF_export_district_count|DISTRICT|district_city|FACTOR|0.6|
+		}
+		change_variable = {
+			which = city_cnt
+			value = value:GF_export_district_count|DISTRICT|district_industrial|FACTOR|0.4|
+		}
+		set_variable = {
+			which = generator_cnt
+			value = value:GF_export_district_count|DISTRICT|district_generator|
+		}
+		set_variable = {
+			which = farming_cnt
+			value = value:GF_export_district_count|DISTRICT|district_farming|
+		}
+		set_variable = {
+			which = mining_cnt
+			value = value:GF_export_district_count|DISTRICT|district_mining|
+		}
+
+		change_pc = pc_GF_automated_city
+		while = {
+			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			add_district = district_GF_automated_nexus
+		}
+		while = {
+			count = value:GF_variable_operate|VAR|generator_cnt|OP|factor|VALUE|0.6|
+			add_district = district_GF_automated_energy
+		}
+		while = {
+			count = value:GF_variable_operate|VAR|farming_cnt|OP|factor|VALUE|0.6|
+			add_district = district_GF_automated_farming
+		}
+		while = {
+			count = value:GF_variable_operate|VAR|mining_cnt|OP|factor|VALUE|0.6|
+			add_district = district_GF_automated_mining
+		}
+		clear_variable = city_cnt
+		clear_variable = generator_cnt
+		clear_variable = farming_cnt
+		clear_variable = mining_cnt
+	}
+}
+
+planet_event = {
+	id = GF_colony.5006
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+
+	immediate = {
+		set_variable = {
+			which = city_cnt
+			value = value:GF_export_district_count|DISTRICT|district_city|
+		}
+		set_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_industrial|FACTOR|0.7|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_generator|FACTOR|0.1|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_farming|FACTOR|0.1|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_mining|FACTOR|0.1|
+		}
+
+		change_pc = pc_GF_automated_city
+		while = {
+			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			add_district = district_GF_automated_nexus
+		}
+		if = {
+			limit = { GF_has_foundry_designation = yes }
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				add_district = district_GF_automated_foundry
+			}
+		}
+		else_if = {
+			limit = { GF_has_factory_designation = yes }
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				add_district = district_GF_automated_industry
+			}
+		}
+		else_if = {
+			limit = { GF_has_refinery_designation = yes }
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				add_district = district_GF_automated_refinery
+			}
+		}
+		else = {
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.3|
+				add_district = district_GF_automated_foundry
+			}
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.3|
+				add_district = district_GF_automated_industry
+			}
+		}
+		clear_variable = city_cnt
+		clear_variable = industrial_cnt
+	}
+}
+
+planet_event = {
+	id = GF_colony.5007
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+
+	immediate = {
+		set_variable = {
+			which = city_cnt
+			value = value:GF_export_district_count|DISTRICT|district_city|
+		}
+		set_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_industrial|FACTOR|0.55|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_generator|FACTOR|0.1|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_farming|FACTOR|0.1|
+		}
+		change_variable = {
+			which = industrial_cnt
+			value = value:GF_export_district_count|DISTRICT|district_mining|FACTOR|0.1|
+		}
+
+		change_pc = pc_GF_automated_city
+		while = {
+			count = value:GF_variable_operate|VAR|city_cnt|OP|factor|VALUE|0.8|
+			add_district = district_GF_automated_nexus
+		}
+		if = {
+			limit = {
+				OR = {
+					GF_has_foundry_designation = yes
+					GF_has_factory_designation = yes
+				}
+			}
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				add_district = district_GF_collapse
+			}
+		}
+		else_if = {
+			limit = { GF_has_refinery_designation = yes }
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.6|
+				add_district = district_GF_automated_reverse_collapse
+			}
+		}
+		else_if = {
+			limit = { has_research_designation = yes }
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.36|
+				add_district = district_GF_automated_research
+			}
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.24|
+				add_district = district_GF_automated_factory
+			}
+		}
+		else = {
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.36|
+				add_district = district_GF_automated_research
+			}
+			while = {
+				count = value:GF_variable_operate|VAR|industrial_cnt|OP|factor|VALUE|0.24|
+				add_district = district_GF_automated_collapse
+			}
+		}
+		clear_variable = city_cnt
+		clear_variable = industrial_cnt
+	}
+}
+
+planet_event = {
 	id = GF_colony.5010
 	title = GF_colony.5010.name
 	desc = GF_colony.5010.desc
