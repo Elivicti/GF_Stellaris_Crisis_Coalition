@@ -179,20 +179,31 @@ building_GF_automated_coordination_nexus = {
 	}
 }
 
-@building_time = 360
-@building_time_t2 = 540
-@mineral_cost = 1000
-@mineral_cost_t2 = 1500
-@energy_upkeep = 10
-@energy_upkeep_t2 = 15
-@core_chip_ukeep = 5
-@core_chip_ukeep_t2 = 10
+# 基础花费 一般为矿物
+@base_cost_t1 = 800
+@base_cost_t2 = 1000
+
+# 稀有资源花费
+@rare_cost = 60
+
+# 基础维护费
+@base_upkeep_t1 = 8
+@base_upkeep_t2 = 12
+@base_upkeep_t3 = 16
+
+# 稀有资源维护费
+@rare_upkeep_t1 = 3
+@rare_upkeep_t2 = 6
+@rare_upkeep_t3 = 9
+
+@build_time_t1 = 360
+@build_time_t2 = 720
 
 # 通用/特殊功能
 # 10 <= position_priority < 30
 building_GF_automated_maintenance_module = {
 	icon = building_production_center
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	building_sets = { GF_automated_city }
 	position_priority = 10
 
@@ -207,11 +218,11 @@ building_GF_automated_maintenance_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -224,7 +235,7 @@ building_GF_automated_maintenance_module = {
 }
 building_GF_automated_defence_module = {
 	icon = building_fortress
-	base_buildtime = @building_time_t2
+	base_buildtime = @build_time_t1
 	building_sets = { GF_automated_city }
 	position_priority = 11
 
@@ -239,11 +250,11 @@ building_GF_automated_defence_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost_t2
+			minerals = @base_cost_t2
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -255,7 +266,7 @@ building_GF_automated_defence_module = {
 }
 building_GF_automated_politic_module = {
 	icon = building_bureaucratic_3
-	base_buildtime = @building_time_t2
+	base_buildtime = @build_time_t1
 	position_priority = 12
 	building_sets = { GF_automated_city }
 
@@ -271,11 +282,11 @@ building_GF_automated_politic_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost_t2
+			minerals = @base_cost_t2
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep_t2
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -304,7 +315,7 @@ building_GF_automated_politic_module = {
 }
 building_GF_underground_expansion_module = {
 	icon = building_mine_generic
-	base_buildtime = @building_time_t2
+	base_buildtime = @build_time_t2
 	building_sets = { GF_automated_city }
 	position_priority = 13
 
@@ -319,22 +330,21 @@ building_GF_underground_expansion_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost_t2
+			minerals = @base_cost_t2
 		}
 		upkeep = {
-			energy = @energy_upkeep_t2
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t3
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
 	planet_modifier = {
 		planet_max_districts_add = 1
-		GF_system_maintenance = -0.04
 	}
 }
 building_GF_energy_management_module = {
 	icon = building_class_4_singularity
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	building_sets = { GF_automated_city }
 	position_priority = 14
 
@@ -349,11 +359,11 @@ building_GF_energy_management_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost_t2
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep_t2
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -364,7 +374,7 @@ building_GF_energy_management_module = {
 }
 building_GF_entertainment_module = {
 	icon = building_palace
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	building_sets = { GF_automated_city }
 	position_priority = 15
 
@@ -379,11 +389,11 @@ building_GF_entertainment_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -395,7 +405,7 @@ building_GF_entertainment_module = {
 }
 building_GF_residential_module = {
 	icon = building_paradise_dome
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	building_sets = { GF_automated_city }
 	position_priority = 16
 
@@ -410,11 +420,11 @@ building_GF_residential_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost_t2
+			minerals = @base_cost_t2
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -429,7 +439,7 @@ building_GF_residential_module = {
 # 30 <= position_priority < 50
 building_GF_automated_energy_module = {
 	icon = building_energy_grid
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 30
 	building_sets = { GF_automated_city }
 
@@ -450,11 +460,11 @@ building_GF_automated_energy_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -465,7 +475,7 @@ building_GF_automated_energy_module = {
 }
 building_GF_automated_mining_module = {
 	icon = building_mineral_purification_hub
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 31
 	building_sets = { GF_automated_city }
 
@@ -486,11 +496,11 @@ building_GF_automated_mining_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -501,7 +511,7 @@ building_GF_automated_mining_module = {
 }
 building_GF_automated_farming_module = {
 	icon = building_hydroponics_farm
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 32
 	building_sets = { GF_automated_city }
 
@@ -522,11 +532,11 @@ building_GF_automated_farming_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t1
+			gf_core_chip = @rare_upkeep_t1
 		}
 	}
 
@@ -540,7 +550,7 @@ building_GF_automated_farming_module = {
 # 50 <= position_priority < 70
 building_GF_automated_foundry_module = {
 	icon = building_foundry_3
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 50
 	building_sets = { GF_automated_city }
 
@@ -561,11 +571,11 @@ building_GF_automated_foundry_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -576,7 +586,7 @@ building_GF_automated_foundry_module = {
 }
 building_GF_automated_industry_module = {
 	icon = building_factory_3
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 51
 	building_sets = { GF_automated_city }
 
@@ -597,11 +607,11 @@ building_GF_automated_industry_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -612,7 +622,7 @@ building_GF_automated_industry_module = {
 }
 building_GF_automated_refinery_module = {
 	icon = building_archaeo_refinery
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 52
 	building_sets = { GF_automated_city }
 
@@ -633,11 +643,11 @@ building_GF_automated_refinery_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t2
 		}
 	}
 
@@ -651,7 +661,7 @@ building_GF_automated_refinery_module = {
 # position_priority >= 70
 building_GF_automated_research_module = {
 	icon = building_research_lab_3
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 70
 	building_sets = { GF_automated_city }
 
@@ -672,11 +682,11 @@ building_GF_automated_research_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t3
 		}
 	}
 
@@ -688,7 +698,7 @@ building_GF_automated_research_module = {
 }
 building_GF_automated_factory_module = {
 	icon = building_GF_doll_factory
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 71
 	building_sets = { GF_automated_city }
 
@@ -711,11 +721,11 @@ building_GF_automated_factory_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t3
 		}
 	}
 
@@ -727,7 +737,7 @@ building_GF_automated_factory_module = {
 }
 building_GF_automated_collapse_module = {
 	icon = building_GF_collapse_2
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 72
 	building_sets = { GF_automated_city }
 
@@ -743,11 +753,11 @@ building_GF_automated_collapse_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t3
 		}
 	}
 
@@ -765,7 +775,7 @@ building_GF_automated_collapse_module = {
 }
 building_GF_automated_reverse_collapse_module = {
 	icon = building_GF_reverse_collapse
-	base_buildtime = @building_time
+	base_buildtime = @build_time_t1
 	position_priority = 73
 	building_sets = { GF_automated_city }
 
@@ -782,11 +792,11 @@ building_GF_automated_reverse_collapse_module = {
 	resources = {
 		category = planet_buildings
 		cost = {
-			minerals = @mineral_cost
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @energy_upkeep
-			gf_core_chip = @core_chip_ukeep
+			energy = @base_upkeep_t2
+			gf_core_chip = @rare_upkeep_t3
 		}
 	}
 
