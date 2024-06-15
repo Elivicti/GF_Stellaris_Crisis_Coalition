@@ -454,7 +454,7 @@ building_GF_automated_energy_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_energy_base_produces_mult = 0.30
-		GF_automated_city_districts_energy_energy_upkeep_mult = 0.05
+		GF_automated_city_districts_generator_energy_upkeep_mult = 0.05
 		GF_system_maintenance = -0.06
 	}
 	resources = {
@@ -490,7 +490,7 @@ building_GF_automated_mining_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_mining_base_produces_mult = 0.30
-		GF_automated_city_districts_mining_energy_upkeep_mult = 0.05
+		GF_automated_city_districts_mining_upkeep_mult = 0.05
 		GF_system_maintenance = -0.06
 	}
 	resources = {
@@ -526,7 +526,7 @@ building_GF_automated_farming_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_farming_base_produces_mult = 0.30
-		GF_automated_city_districts_farming_energy_upkeep_mult = 0.05
+		GF_automated_city_districts_farming_upkeep_mult = 0.05
 		GF_system_maintenance = -0.06
 	}
 	resources = {
@@ -565,7 +565,7 @@ building_GF_automated_foundry_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_foundry_base_produces_mult = 0.20
-		GF_automated_city_districts_foundry_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_foundry_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 	resources = {
@@ -601,7 +601,7 @@ building_GF_automated_industry_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_industry_base_produces_mult = 0.20
-		GF_automated_city_districts_industry_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_industry_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 	resources = {
@@ -637,7 +637,7 @@ building_GF_automated_refinery_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_refinery_base_produces_mult = 0.20
-		GF_automated_city_districts_refinery_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_refinery_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 	resources = {
@@ -676,7 +676,7 @@ building_GF_automated_research_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_research_base_produces_mult = 0.20
-		GF_automated_city_districts_research_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_research_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 	resources = {
@@ -714,7 +714,7 @@ building_GF_automated_factory_module = {
 	
 	planet_modifier = {
 		GF_automated_city_districts_factory_assembly_speed_mult = 0.05
-		GF_automated_city_districts_factory_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_factory_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 	
@@ -763,7 +763,7 @@ building_GF_automated_collapse_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_collapse_base_produces_mult = 0.20
-		GF_automated_city_districts_collapse_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_collapse_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 
@@ -802,7 +802,7 @@ building_GF_automated_reverse_collapse_module = {
 
 	planet_modifier = {
 		GF_automated_city_districts_reverse_collapse_base_produces_mult = 0.20
-		GF_automated_city_districts_reverse_collapse_energy_upkeep_mult = 0.10
+		GF_automated_city_districts_reverse_collapse_upkeep_mult = 0.10
 		GF_system_maintenance = -0.08
 	}
 
