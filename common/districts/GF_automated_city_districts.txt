@@ -109,7 +109,7 @@ district_GF_automated_energy = {
 	}
 
 	resources = {
-		category = GF_automated_city_districts_energy
+		category = GF_automated_city_districts_generator
 		cost = {
 			minerals = @base_cost_t1
 			rare_crystals = @rare_cost
@@ -120,7 +120,7 @@ district_GF_automated_energy = {
 		}
 		produces = {
 			energy = 100
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_energy_base_produces_mult|
+			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_generator_base_produces_mult|
 		}
 	}
 

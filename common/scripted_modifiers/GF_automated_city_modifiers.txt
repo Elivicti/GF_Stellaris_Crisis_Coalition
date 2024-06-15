@@ -21,7 +21,7 @@ GF_freedom_kingdom_amenities_usage_mult = {
 }
 
 
-GF_automated_city_districts_energy_base_produces_mult = {
+GF_automated_city_districts_generator_base_produces_mult = {
 	percentage = yes
 	good = yes
 	category = planet

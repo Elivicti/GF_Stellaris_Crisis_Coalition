@@ -125,7 +125,7 @@ GF_automated_city_districts_nexus = {
 	modifier_category = planet
 	generate_add_modifiers = { upkeep }
 }
-GF_automated_city_districts_energy = {
+GF_automated_city_districts_generator = {
 	parent = GF_automated_city_districts
 	modifier_category = planet
 	generate_mult_modifiers = { upkeep }
