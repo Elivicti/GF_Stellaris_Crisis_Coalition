@@ -78,7 +78,7 @@
  GF_trait_leader_scientist_16lab_desc:0 "该领袖隶属于16LAB实验室，是一名资深的科研人员。"
  GF_trait_leader_scientist_16lab_councilor:0 "$GF_trait_leader_scientist_16lab$"
  GF_trait_leader_scientist_16lab_councilor_desc:0 "$GF_trait_leader_scientist_16lab_desc$"
- GF_trait_leader_scientist_16lab_councilor_effect:0 "§E§Y内阁修正§!的效果将会根据领袖等级的提升而增强§!"
+ GF_trait_leader_scientist_16lab_councilor_effect:0 "\n§E§Y内阁修正§!的效果将会根据领袖等级的提升而增强§!"
  GF_trait_leader_commander_plus:0 "战术模块"
  GF_trait_leader_commander_plus_desc:0 "这位人形领袖加装了高级战术指挥模块，这允许她实时接入军队的指挥网络，精准快速地调动部队与实施打击，令敌人闻风丧胆。"
  GF_trait_leader_scientist_plus:0 "科研模块"
