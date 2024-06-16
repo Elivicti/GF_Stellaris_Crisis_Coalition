@@ -203,6 +203,21 @@ event = {
 			}
 			# 人形领袖立绘
 			country_event = { id = GF_doll_leader.18 }
+			# 自动化星球建设
+			if = {
+				limit = { any_owned_planet = { is_planet_class = pc_GF_automated_city } }
+				set_country_flag = flag_GF_has_completed_autocity_construction
+				every_owned_planet = {
+					limit = {
+						is_planet_class = pc_GF_automated_city
+						exists = orbital_defence
+						orbital_defence.starbase = { has_starbase_size < orbital_ring_tier_3 }
+					}
+					orbital_defence.starbase = {
+						set_starbase_size = orbital_ring_tier_3
+					}
+				}
+			}
 		}
 	}
 }

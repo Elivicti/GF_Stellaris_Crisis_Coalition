@@ -1,0 +1,276 @@
+
+@build_time = 360
+
+@alloy_cost_t1 = 200
+@alloy_cost_t2 = 300
+
+@rare_cost_t1 = 160
+@rare_cost_t2 = 360
+
+@energy_upkeep_t1 = 3
+@energy_upkeep_t2 = 6
+@energy_upkeep_t3 = 10
+
+@rare_upkeep_t1 = 1
+@rare_upkeep_t2 = 2
+
+@core_chip_upkeep_t1 = 0.5
+@core_chip_upkeep_t2 = 1.0
+@core_chip_upkeep_t3 = 1.5
+
+GF_autocity_ring_energy_hub = {
+	icon = "GFX_orbitalring_energy_hub"
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_power_hub_2
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_energy_produces_mult = 0.15
+		GF_automated_city_districts_generator_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t1
+			exotic_gases = @rare_cost_t1
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t1
+			exotic_gases = @rare_upkeep_t1
+			gf_core_chip = @core_chip_upkeep_t1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+GF_autocity_ring_minerals_hub = {
+	icon = "GFX_orbitalring_mineral_hub"
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_mineral_purification_2
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_minerals_produces_mult = 0.15
+		GF_automated_city_districts_mining_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t1
+			volatile_motes = @rare_cost_t1
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t1
+			volatile_motes = @rare_upkeep_t1
+			gf_core_chip = @core_chip_upkeep_t1
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+GF_autocity_ring_food_hub = {
+	icon = "GFX_orbitalring_food_hub"
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_food_processing_2
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_base_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_food_produces_mult = 0.15
+		GF_automated_city_districts_farming_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t1
+			volatile_motes = @rare_cost_t1
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t1
+			volatile_motes = @rare_upkeep_t1
+			gf_core_chip = @core_chip_upkeep_t1
+		}
+	}
+
+	show_in_tech = "tech_food_processing_2"
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+
+
+GF_autocity_ring_alloys_hub = {
+	icon = "GFX_orbitalring_alloy_hub"
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_alloys_2
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_alloys_produces_mult = 0.10
+		GF_automated_city_districts_foundry_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t2
+			volatile_motes = @rare_cost_t2
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t2
+			volatile_motes = @rare_upkeep_t2
+			gf_core_chip = @core_chip_upkeep_t2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+GF_autocity_ring_consumer_goods_hub = {
+	icon = "GFX_orbitalring_consumer_hub"
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_luxuries_2
+			country_uses_consumer_goods = yes
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_consumer_goods_produces_mult = 0.10
+		GF_automated_city_districts_industry_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t2
+			rare_crystals = @rare_cost_t2
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t2
+			rare_crystals = @rare_upkeep_t2
+			gf_core_chip = @core_chip_upkeep_t2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+GF_autocity_ring_refinery_hub = {
+	icon = GFX_spaceport_module_resource_silo
+	construction_days = @build_time
+	starbase_type = orbital_ring
+
+	potential = {
+		exists = owner
+		owner = {
+			OR = {
+				has_technology = tech_exotic_gases
+				has_technology = tech_mine_exotic_gases
+				has_technology = tech_rare_crystals
+				has_technology = tech_mine_rare_crystals
+				has_technology = tech_volatile_motes
+				has_technology = tech_mine_volatile_motes
+			}
+			has_tradition = tr_gf_automation_finish
+		}
+		is_orbital_ring = yes
+		exists = orbit
+		orbit = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+	}
+
+	planet_modifier = {
+		GF_automated_city_districts_volatile_motes_produces_mult = 0.10
+		GF_automated_city_districts_exotic_gases_produces_mult = 0.10
+		GF_automated_city_districts_rare_crystals_produces_mult = 0.10
+		GF_automated_city_districts_refinery_upkeep_mult = 0.05
+		GF_system_maintenance = -0.01
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = @alloy_cost_t2
+			minerals = @rare_cost_t2
+		}
+
+		upkeep = {
+			energy = @energy_upkeep_t3
+			gf_core_chip = @core_chip_upkeep_t2
+		}
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}

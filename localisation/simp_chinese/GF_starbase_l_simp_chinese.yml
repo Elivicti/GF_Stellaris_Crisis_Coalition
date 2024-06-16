@@ -1,0 +1,23 @@
+﻿l_simp_chinese:
+ sm_GF_autocity_ring_energy_hub: "轨道电力网"
+ sm_GF_autocity_ring_energy_hub_desc: "$sm_ring_energy_hub_desc$"
+ sm_GF_autocity_ring_minerals_hub: "轨道低重力提炼器"
+ sm_GF_autocity_ring_minerals_hub_desc: "$sm_ring_minerals_hub_desc$"
+ sm_GF_autocity_ring_food_hub: "轨道气候优化器"
+ sm_GF_autocity_ring_food_hub_desc: "$sm_ring_food_hub_desc$"
+
+ sm_GF_autocity_ring_consumer_goods_hub: "轨道物流中转设施"
+ sm_GF_autocity_ring_consumer_goods_hub_desc: "$sm_ring_consumer_goods_hub_desc$"
+ sm_GF_autocity_ring_alloys_hub: "轨道合金处理器"
+ sm_GF_autocity_ring_alloys_hub_desc: "$sm_ring_alloys_hub_desc$"
+ sm_GF_autocity_ring_refinery_hub: "轨道精炼器"
+ sm_GF_autocity_ring_refinery_hub_desc: "利用太空环境中的宇宙射线与低重力环境，提高原料的利用率。"
+
+
+ GF_autocity_ring_dummy: "自动化$orbital_ring$"
+ GF_autocity_ring_dummy_DESC: "$orbital_ring_DESC$"
+ GF_autocity_ring_dummy_MEGASTRUCTURE_DETAILS: "$orbital_ring_MEGASTRUCTURE_DETAILS$"
+
+ GF_autocity_ring: "自动化$orbital_ring$"
+ GF_autocity_ring_DESC: "$orbital_ring_DESC$"
+ GF_autocity_ring_MEGASTRUCTURE_DETAILS: "$orbital_ring_MEGASTRUCTURE_DETAILS$"

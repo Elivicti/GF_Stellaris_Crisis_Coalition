@@ -474,3 +474,195 @@ decision_GF_analyse_orb_mainframe_alpha = {
 		}
 	}
 }
+
+decision_GF_autocity_ring_construction = {
+	owned_planets_only = yes
+
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 2000
+			influence = 150
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = flag_p_GF_has_autocity_ring_dummy }
+		is_planet_class = pc_GF_automated_city
+		from = { has_technology = tech_orbital_ring_tier_1 }
+		NOT = { exists = orbital_defence }
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "requires_no_existing_megastructure"
+			#can_build_megastructure_on_planet = yes
+			NOR = {
+				has_planet_flag = megastructure
+				AND = {
+					has_planet_flag = has_megastructure
+					# Special exception so you can build an orbital ring even if you have MSI's warship as a habitat.
+					NOT = {
+						has_planet_flag = has_payback_habitat
+					}
+				}
+				has_planet_flag = ruined_orbital_ring_planet
+				solar_system = {
+					has_star_flag = ring_world_built
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_orbital_debris"
+			NOR = {
+				has_planet_flag = has_orbital_debris
+			}
+		}
+		if = {
+			limit = { from = { is_ai = yes } }
+			num_pops >= 25
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_GF_autocity_ring_construction_effect
+		hidden_effect = {
+			solar_system = {
+				spawn_megastructure = {
+					graphical_culture = prev.from
+					type = GF_autocity_ring_dummy
+					planet = prev
+					owner = prev.from
+					init_effect = {
+						upgrade_megastructure_to = GF_autocity_ring
+					}
+				}
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 3
+			solar_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
+		}
+		modifier = {
+			factor = 2
+			solar_system = {
+				any_neighbor_system = {
+					exists = owner
+					is_same_value = owner.capital_scope.solar_system
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			solar_system = {
+				any_neighbor_system = {
+					exists = owner
+					owner = { NOT = { is_same_value = from } }
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			solar_system = {
+				any_system_colony = {
+					num_pops >= 50
+					NOT = { exists = orbital_defence }
+				}
+			}
+		}
+	}
+}
+decision_GF_autocity_ring_upgrade = {
+	icon = decision_GF_autocity_ring_construction
+	owned_planets_only = yes
+
+	enactment_time = 120
+
+	resources = {
+		category = starbase_stations
+		cost = {
+			alloys = 2500
+			influence = 200
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = flag_p_GF_has_autocity_ring_dummy }
+		is_planet_class = pc_GF_automated_city
+		from = { has_technology = tech_orbital_ring_tier_1 }
+		exists = orbital_defence
+		orbital_defence.starbase = {
+			is_orbital_ring = yes
+			has_starbase_size < orbital_ring_tier_3
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "requires_no_orbital_debris"
+			NOR = {
+				has_planet_flag = has_orbital_debris
+			}
+		}
+		if = {
+			limit = { from = { is_ai = yes } }
+			num_pops >= 25
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_GF_autocity_ring_construction_effect_upgrade
+		hidden_effect = {
+			orbital_defence.starbase = {
+				set_starbase_size = orbital_ring_tier_3
+			}
+		}
+	}
+
+	ai_weight = {
+		factor = 5
+		modifier = {
+			factor = 3
+			solar_system = {
+				exists = owner
+				is_same_value = owner.capital_scope.solar_system
+			}
+		}
+		modifier = {
+			factor = 2
+			solar_system = {
+				any_neighbor_system = {
+					exists = owner
+					is_same_value = owner.capital_scope.solar_system
+				}
+			}
+		}
+
+		modifier = {
+			factor = 0.1
+			solar_system = {
+				any_neighbor_system = {
+					exists = owner
+					owner = { NOT = { is_same_value = from } }
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			solar_system = {
+				any_system_colony = {
+					num_pops >= 50
+					NOT = { exists = orbital_defence }
+				}
+			}
+		}
+	}
+}

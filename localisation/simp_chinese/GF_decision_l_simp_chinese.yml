@@ -64,3 +64,10 @@
  decision_GF_automated_city_supress_level_down_desc: "降低休眠等级以唤醒部分程序，使其重新投入自动化设备的管控。"
  decision_GF_automated_city_supress_cancel: "!-终止自动化程序休眠-!"
  decision_GF_automated_city_supress_cancel_desc: "唤醒所有程序并使其重新开始管控自动化设备。"
+
+ decision_GF_autocity_ring_construction: "建设$orbital_ring$"
+ decision_GF_autocity_ring_construction_desc: "$orbital_ring_DESC$"
+ decision_GF_autocity_ring_construction_effect: "在[This.GetName]的轨道上建设一个§Y$orbital_ring_tier_3$§!"
+ decision_GF_autocity_ring_upgrade: "$orbital_ring$升级"
+ decision_GF_autocity_ring_upgrade_desc: "$orbital_ring_DESC$"
+ decision_GF_autocity_ring_construction_effect_upgrade: "§Y[orbital_defence.GetName]§!升级到§Y$orbital_ring_tier_3$§!"
