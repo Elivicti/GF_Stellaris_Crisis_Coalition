@@ -498,3 +498,25 @@ GF_tech_distributed_subnet_computing = {
 		}
 	}
 }
+
+GF_tech_automated_coordination = {
+	icon = tech_synchronized_work_patterns
+	area = physics
+	tier = 5
+	weight = 5
+	cost = @GFTech_tier5cost6
+
+	category = { computing }
+	is_rare = yes
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_automated_coordination }
+		has_country_flag = flag_GF_has_completed_autocity_construction
+	}
+
+	prerequisites = { GF_tech_ogas_computing_center }
+
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -126,6 +126,10 @@
  GF_UNLOCK_TRADITION_AUTOMATION_TITLE:0 "§H解锁传统：§!$GF_tradition_automation$"
  GF_UNLOCK_TRADITION_AUTOMATION_DESC:0 "$GF_tradition_automation_desc$"
 
+ GF_tech_automated_coordination: "效率协同算法"
+ GF_tech_automated_coordination_desc: "通过改进的调度算法，使一整个星球的自动化设施融合为
+一个有机整体成为可能。"
+
  GF_tech_ogas_computing_center:0 "$GF_computing_center_3$"
  GF_tech_ogas_computing_center_desc:0 "$GF_computing_center_3_desc$"
 

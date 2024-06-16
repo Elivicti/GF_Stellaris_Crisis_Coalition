@@ -125,6 +125,7 @@
 
  building_GF_automated_coordination_nexus: "效率协调中枢"
  building_GF_automated_coordination_nexus_desc: "该建筑能够极大地提升$GF_automated_city_districts$的生产效率。"
- building_GF_automated_coordination_nexus_produces_effect_tooltip: "$building_GF_automated_coordination_nexus$将§Y$mod_planet_jobs_produces_mult$§!修正按一定比例转化为§Y$mod_GF_automated_city_districts_produces_mult$§!修正和§Y$mod_GF_automated_city_districts_upkeep_mult$§!修正"
- building_GF_automated_coordination_nexus_upkeep_effect_tooltip: "$building_GF_automated_coordination_nexus$将§Y$mod_planet_jobs_upkeep_mult$§!修正按一定比例转化为§Y$mod_GF_automated_city_districts_upkeep_mult$§!修正"
+ building_GF_automated_coordination_nexus_effect_tooltip: "$building_GF_automated_coordination_nexus$按一定比例将§Y岗位修正§!转化为§Y自动化区划修正§!：\n$building_GF_automated_coordination_nexus_produces_effect_tooltip$\n$building_GF_automated_coordination_nexus_upkeep_effect_tooltip$"
+ building_GF_automated_coordination_nexus_produces_effect_tooltip: "-$mod_planet_jobs_produces_mult$：\n$tt$§G0.8§! * $mod_GF_automated_city_districts_produces_mult$\n$tt$§R0.6§! * $mod_GF_automated_city_districts_upkeep_mult$"
+ building_GF_automated_coordination_nexus_upkeep_effect_tooltip: "-$mod_planet_jobs_upkeep_mult$：\n$tt$§H0.4§! * $mod_GF_automated_city_districts_upkeep_mult$"
  building_GF_automated_coordination_nexus_threads_overcap_tooltip: "§R$mod_GF_OGAS_threads_used_add$溢出§!：修正转换§R失效§!"

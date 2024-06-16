@@ -106,7 +106,7 @@ building_GF_connection_nexus = {
 }
 
 building_GF_automated_coordination_nexus = {
-	icon = building_sacred_nexus
+	icon = building_vultaum_reality_computer
 	base_buildtime = 720
 	position_priority = 1
 	building_sets = { GF_automated_city }
@@ -116,7 +116,18 @@ building_GF_automated_coordination_nexus = {
 		OR = {
 			NOT = { exists = owner }
 			owner = {
-				has_country_flag = building_GF_automated_coordination_nexus
+				GF_can_research_tech_trigger = { TECH = GF_tech_automated_coordination }
+			}
+		}
+	}
+
+	prerequisites = { GF_tech_automated_coordination }
+
+	allow = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = {
+			GF_require_OGAS_has_available_threads = {
+				amount = 1
 			}
 		}
 	}
@@ -131,11 +142,11 @@ building_GF_automated_coordination_nexus = {
 		}
 		upkeep = {
 			energy = 50
-			gf_core_chip = 20
+			gf_core_chip = 15
 		}
 	}
 
-	country_modifier = {
+	triggered_country_modifier = {
 		GF_OGAS_threads_used_add = 1
 	}
 
@@ -149,7 +160,7 @@ building_GF_automated_coordination_nexus = {
 			root = { GF_OGAS_has_used_threads_over_cap = no }
 		}
 		GF_automated_city_districts_produces_mult = 0.8
-		GF_automated_city_districts_upkeep_mult = 0.2
+		GF_automated_city_districts_upkeep_mult = 0.6
 		mult = modifier:planet_jobs_produces_mult
 	}
 
@@ -158,7 +169,7 @@ building_GF_automated_coordination_nexus = {
 			# exists = owner
 			root = { GF_OGAS_has_used_threads_over_cap = no }
 		}
-		GF_automated_city_districts_upkeep_mult = 0.8
+		GF_automated_city_districts_upkeep_mult = 0.4
 		mult = modifier:planet_jobs_upkeep_mult
 	}
 
@@ -172,10 +183,15 @@ building_GF_automated_coordination_nexus = {
 	}
 
 	triggered_desc = {
-		text = building_GF_automated_coordination_nexus_produces_effect_tooltip
+		text = building_GF_automated_coordination_nexus_effect_tooltip
 	}
-	triggered_desc = {
-		text = building_GF_automated_coordination_nexus_upkeep_effect_tooltip
+
+	on_built = {
+		hidden_effect = {
+			GF_check_OGAS_threads_over_cap_effect = {
+				from = this
+			}
+		}
 	}
 }
 
@@ -228,7 +244,8 @@ building_GF_automated_maintenance_module = {
 
 	planet_modifier = {
 		job_GF_maintenance_engineer_add = 2
-		GF_automated_city_districts_nexus_gf_core_chip_upkeep_add = 0.1
+		GF_automated_city_districts_nexus_gf_core_chip_upkeep_add = 0.2
+		GF_automated_city_districts_upkeep_mult = -0.05
 		GF_system_maintenance = -0.04
 	}
 
@@ -453,8 +470,8 @@ building_GF_automated_energy_module = {
 	}
 
 	planet_modifier = {
-		GF_automated_city_districts_energy_base_produces_mult = 0.30
-		GF_automated_city_districts_generator_energy_upkeep_mult = 0.05
+		GF_automated_city_districts_generator_base_produces_mult = 0.30
+		GF_automated_city_districts_generator_upkeep_mult = 0.05
 		GF_system_maintenance = -0.06
 	}
 	resources = {
