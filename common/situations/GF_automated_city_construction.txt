@@ -116,6 +116,9 @@ GF_automated_city_construction = {
 	on_progress_complete = {
 		custom_tooltip = GF_automated_city_construction_complete_tooltip
 		hidden_effect = {
+			owner = {
+				set_country_flag = flag_GF_has_completed_autocity_construction
+			}
 			target = {
 				planet_event = { id = GF_colony.5005 }
 				planet_event = { id = GF_colony.5006 }
@@ -131,11 +134,9 @@ GF_automated_city_construction = {
 				add_building = building_GF_connection_nexus
 				if = {
 					limit = { exists = orbital_defence }
-					delete_fleet = orbital_defence
-				}
-				if = {
-					limit = { has_any_megastructure = no }
-					remove_planet_flag = has_megastructure
+					orbital_defence.starbase = {
+						set_starbase_size = orbital_ring_tier_3
+					}
 				}
 			}
 			destroy_situation = this
