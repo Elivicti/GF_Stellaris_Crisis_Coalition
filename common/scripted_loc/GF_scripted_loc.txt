@@ -44,38 +44,6 @@ defined_text = {
 	
 }
 
-
-defined_text = {
-	name = GF_Get_Archive_Title
-
-	text = {
-		localization_key = GF_ogas.12200.a.title
-		trigger = { has_country_flag = GF_history_archive_flag_a }
-	}
-	text = {
-		localization_key = GF_ogas.12200.b.title
-		trigger = { has_country_flag = GF_history_archive_flag_b }
-	}
-	text = {
-		localization_key = GF_ogas.12200.c.title
-		trigger = { has_country_flag = GF_history_archive_flag_c }
-	}
-	text = {
-		localization_key = GF_ogas.12200.d.title
-		trigger = { has_country_flag = GF_history_archive_flag_d }
-	}
-	text = {
-		localization_key = GF_ogas.12200.e.title
-		trigger = { has_country_flag = GF_history_archive_flag_e }
-	}
-	text = {
-		localization_key = GF_ogas.12200.f.title
-		trigger = { has_country_flag = GF_history_archive_flag_f }
-	}
-
-	default = BLANK_STRING
-}
-
 # scope = planet
 defined_text = {
 	name = GetVolatileMotesIconIfAvailable
