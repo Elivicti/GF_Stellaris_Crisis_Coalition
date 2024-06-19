@@ -1,0 +1,39 @@
+spriteTypes = {
+	portraitType = {
+		name = "GFX_GF_diplo_character_portrait_no_room"
+		texturefile = "gfx/interface/main/unselected_portrait.dds"
+		masking_texture = "gfx/interface/leaders/GF_OGAS_portrait_mask_fade.dds"
+		# masking_texture = "gfx/interface/leaders/GF_"
+		effectFile = "gfx/FX/buttonstate_rendertarget.shader"
+		type = character
+		character = yes
+		mid_close_up = yes
+		alternate_configurations = {
+			holographic
+		}
+	}
+	spriteType = {
+		name = "GFX_GF_leader_OGAS_bg"
+		texturefile = "gfx/interface/leaders/GF_leader_OGAS_bg.dds"
+	}
+	# event buttons
+	spriteType = {
+		name = "GFX_event_button_450_34"
+		textureFile = "gfx/ui_overhaul_qhd/buttons/event_button_450_34_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/ui_overhaul_qhd/buttons/event_button_450_34_mask.tga"
+			animationtextureFile = "gfx/interface/buttons/button_large_142_animated_texture.dds"
+			animationrotation = 180
+			animationlooping = yes
+			animationtime = 650
+			animationdelay = 0
+			animationblendmode = "overlay" #add, multiply, overlay
+			animationtype = "scrolling"    #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0 y = 0 }
+			animationtexturescale = { x = 1 y = 1 }
+			animationframes = { 1 2 3 }
+		}
+	}
+}

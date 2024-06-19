@@ -2,7 +2,7 @@ guiTypes = {
 	### EVENT OPTION ###
 
 	containerWindowType = {
-		name = "GF_OGAS_archive_system_option"
+		name = "GF_OGAS_standard_contact_event_option"
 		size = { width = 475 height = 42 }
 		buttonType = {
 			name = "option_button"
@@ -23,17 +23,17 @@ guiTypes = {
 	### EVENT WINDOW ###
 
 	containerWindowType = {
-		name = "GF_OGAS_archive_system"
+		name = "GF_OGAS_standard_contact_event"
 		orientation = center
 		origo = center
 		moveable = yes
-		size = { width = 1650 height = 800 }
+		size = { width = 900 height = 800 }
 		background = {
 			name = "background"
 			quadTextureSprite = "GFX_tile_large_bg_plain"
 		}
 
-		@event_picture_x = -1000
+		@event_picture_x = -250
 		@event_picture_y = 160
 		iconType = {
 			name = "header_line"
@@ -55,7 +55,7 @@ guiTypes = {
 			name = "heading"
 			font = "large_title_font"
 			text = "DIPLOMACY"
-			position = { x = -1200 y = 20 }
+			position = { x = -450 y = 20 }
 			orientation = upper_right
 			maxWidth = 400
 			maxHeight = 24
@@ -283,60 +283,6 @@ guiTypes = {
 			buttonFont = "cg_16b"
 			shortCut = "t"
 		}
-
-		### ARCHIVE ###
-		containerWindowType = {
-			name = "GF_OGAS_archive_title_container"
-			position = { x = 930 y = 30 }
-			size = { width = 705 height = 55 }
-			background = {
-				name = "description_frame"
-				spriteType = "GFX_tiles_frame_light"
-				alwaystransparent = yes
-			}
-			effectButtonType = {
-				name = "GF_OGAS_archive_title"
-				text = "GF_archive_title"
-				font = "large_title_font_28"
-				effect = GF_effect_button_always_on
-				position = { x = 10 y = 2 }
-				size = { x = 685 y = 50 }
-				format = left
-				alwaysTransparent = yes
-			}
-		}
-		containerWindowType = {
-			name = "description_container" # archive bg
-			position = { x = 930 y = 90 }
-			size = { width = 705 height = 692 }
-			background = {
-				name = "description_frame"
-				spriteType = "GFX_tiles_frame_light"
-				alwaystransparent = yes
-			}
-		}
-		instantTextBoxType = {
-			name = "alien_message" # archive desc
-			font = "malgun_goth_24"
-			position = { x = 940 y = 100 }
-			maxWidth  = 685 # -20
-			maxHeight = 672 # -20
-			format = left
-			scrollbartype = "standardtext_slider"
-			# text_color_code = ""
-		}
-
-		containerWindowType = {
-			name = "vertical_seperater"
-			position = { x = 905 y = 22 }
-			size = { width = 9 height = 768 }
-			background = {
-				name = "description_frame"
-				spriteType = "GFX_tiles_frame_light"
-				alwaystransparent = yes
-			}
-		}
-
 		### DESCRIPTION ###
 		containerWindowType = {
 			name = "alien_message_background"
@@ -349,7 +295,7 @@ guiTypes = {
 			}
 		}
 		containerWindowType = {
-			name = "GF_OGAS_archive_tip_container"
+			name = "description_container"
 			position = { x = 20 y = 360 }
 			size = { width = 390 height = 360 }
 			background = {
@@ -359,8 +305,7 @@ guiTypes = {
 			}
 		}
 		instantTextBoxType = {
-			name = "GF_OGAS_archive_tip"
-			text = GF_archive_system_desc
+			name = "alien_message"
 			font = "malgun_goth_24"
 			position = { x = 30 y = 370 }
 			maxWidth = 370
@@ -393,7 +338,7 @@ guiTypes = {
 		### EVENT DIPLO ###
 		containerWindowType = {
 			name = "EVENT_DIPLO"
-			position = { x = -750 y = 262 }
+			position = { x = 0 y = 262 }
 			orientation = upper_right
 			size = { width = 100%% height = 100%% }
 			instantTextBoxType = {
