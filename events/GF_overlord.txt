@@ -422,17 +422,14 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		from = { is_country_type = GF_ogas_country_type }
 		has_country_flag = flag_GF_can_contact_OGAS
-		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
+		GF_is_main_country = no
+		GF_is_in_OGAS_contact = no
 	}
 
-	immediate = {
-		set_country_flag = flag_GF_OGAS_contact_diplomacy_engaged
-	}
-
-	after = {
-		hidden_effect = { remove_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
-	}
+	immediate = { GF_OGAS_contact_begin = yes }
+	after = { GF_OGAS_contact_end = yes }
 
 	option = {
 		name = GF_overlord.10000.mission
@@ -479,6 +476,8 @@ country_event = {
 	}
 
 	is_triggered_only = yes
+	immediate = { GF_OGAS_contact_begin = yes }
+	after = { GF_OGAS_contact_end = yes }
 
 	option = { # un
 		name = GF_overlord.11000.governor
@@ -526,6 +525,8 @@ country_event = {
 	}
 
 	is_triggered_only = yes
+	immediate = { GF_OGAS_contact_begin = yes }
+	after = { GF_OGAS_contact_end = yes }
 
 	option = {
 		name = GF_overlord.10000.mission

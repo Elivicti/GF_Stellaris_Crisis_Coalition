@@ -220,22 +220,19 @@ country_event = {
 
 ###主界面跳转事件
 country_event = {
-	id = GF_ogas.0
+	id = GF_ogas.9999
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		from = { is_country_type = GF_ogas_country_type }
-		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
+		GF_is_in_OGAS_contact = no
 		has_country_flag = flag_GF_can_contact_OGAS
 	}
 
 	immediate = {
-		if = {
-			limit = { has_authority = GF_auth_commonwealth }
-			country_event = { id = GF_ogas.10000 }
-		}
-		else = {
-			country_event = { id = GF_overlord.10000 }
+		fire_on_action = {
+			on_action = on_GF_OGAS_contact_engaged
+			scopes = { from = from }
 		}
 	}
 }
@@ -257,8 +254,9 @@ country_event = {
 		trigger = { has_authority = GF_auth_commonwealth }
 	}
 	diplomatic = yes
-	custom_gui = "GF_OGAS_mission_system"
-	custom_gui_option = "GF_OGAS_mission_system_Option"
+	diplomatic_title = contact
+	custom_gui = "GF_OGAS_standard_contact_event"
+	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
@@ -268,18 +266,13 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_flag = flag_GF_can_contact_OGAS
-		NOT = { has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
+		GF_is_main_country = yes
 	}
 
 	immediate = {
-		set_country_flag = flag_GF_OGAS_contact_diplomacy_engaged
+		GF_OGAS_contact_begin = yes
 
 		GF_calculate_OGAS_threads_statistics = yes
-	}
-
-	after = {
-		hidden_effect = { remove_country_flag = flag_GF_OGAS_contact_diplomacy_engaged }
 	}
 
 	option = {
@@ -312,25 +305,29 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_ogas.13000 }
 		}
-		# hidden_effect = {
-		# 	country_event = { id = event_gf_ogas.8 }
-		# }
 	}
 
 	# 与锡安通讯
 	option = {
 		name = event_GF_zion_comm.option
-		trigger = { GF_default_zion_comm_trigger = yes }
+		trigger = {
+			hidden_trigger = { GF_default_zion_comm_trigger = yes }
+		}
+		allow = {
+			GF_is_in_zion_comm = no
+		}
 		custom_tooltip = GF_zion_current_favor
 
 		hidden_effect = {
 			country_event = { id = GF_zion.0 }
+			GF_OGAS_contact_end = yes
 		}
 	}
 
 	option = {
 		name = GF_ogas.10000.logout
 		response_text = GF_ogas.10000.logout.response
+		hidden_effect = { GF_OGAS_contact_end = yes }
 	}
 }
 ###政务工作
@@ -341,12 +338,14 @@ country_event = {
 #	desc = GF_ogas.11000.desc.b
 #	desc = GF_ogas.11000.desc.c
 	diplomatic = yes
-	custom_gui = "GF_OGAS_mission_system"
-	custom_gui_option = "GF_OGAS_mission_system_Option"
+	custom_gui = "GF_OGAS_standard_contact_event"
+	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
 	}
+
+	immediate = { GF_OGAS_contact_begin = yes }
 
 	is_triggered_only = yes
 	option = {
@@ -389,6 +388,8 @@ country_event = {
 		room = ethic_griffin_room
 	}
 
+	immediate = { GF_OGAS_contact_begin = yes }
+
 	is_triggered_only = yes
 #	option = {
 #		name = GF_ogas.11100.a
@@ -430,12 +431,14 @@ country_event = {
 		trigger = { GF_OGAS_has_any_available_threads = no }
 	}
 	diplomatic = yes
-	custom_gui = "GF_OGAS_mission_system"
-	custom_gui_option = "GF_OGAS_mission_system_Option"
+	custom_gui = "GF_OGAS_standard_contact_event"
+	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
 	}
+
+	immediate = { GF_OGAS_contact_begin = yes }
 
 	is_triggered_only = yes
 
@@ -508,11 +511,39 @@ country_event = {
 	desc = GF_ogas.12000.desc.b
 	desc = GF_ogas.12000.desc.c
 	diplomatic = yes
-	custom_gui = "GF_DiplomaticEventWindow"
-	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	custom_gui = "GF_OGAS_standard_contact_event"
+	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
+	}
+
+	immediate = {
+		GF_OGAS_contact_begin = yes
+		event_target:GF_ogas_country = {
+			if = {
+				limit = { NOT = { exists = event_target:GF_archive_title } }
+				create_leader = {
+					species = prev.ruler
+					class = random
+					name = GF_archive_title_default
+					event_leader = yes
+					immortal = yes
+					skill = 10
+					traits = { trait = leader_trait_chosen }
+					effect = {
+						remove_trait = GF_trait_leader_doll
+						set_leader_flag = flag_l_GF_archive_title
+						save_global_event_target_as = GF_archive_title
+					}
+				}
+			}
+			else = {
+				event_target:GF_archive_title = {
+					set_name = GF_archive_title_default
+				}
+			}
+		}
 	}
 
 	is_triggered_only = yes
@@ -556,6 +587,8 @@ country_event = {
 
 	custom_gui = "GF_OGAS_archive_system"
 	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	immediate = { GF_OGAS_contact_begin = yes }
 
 	is_triggered_only = yes
 	option = {
@@ -609,45 +642,41 @@ country_event = {
 			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = engineering_leader
 		}
+		GF_OGAS_contact_begin = yes
 	}
 
 	is_triggered_only = yes
-	option = {
-		name = GF_ogas.12200.a
-		response_text = GF_ogas.12200.a.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = a }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.a.title
+		ARCHIVE = GF_ogas.12200.a.archive
 	}
-	option = {
-		name = GF_ogas.12200.b
-		response_text = GF_ogas.12200.b.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = b }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.b.title
+		ARCHIVE = GF_ogas.12200.b.archive
 	}
-	option = {
-		name = GF_ogas.12200.c
-		response_text = GF_ogas.12200.c.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = c }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.c.title
+		ARCHIVE = GF_ogas.12200.c.archive
 	}
-	option = {
-		name = GF_ogas.12200.d
-		response_text = GF_ogas.12200.d.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = d }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.d.title
+		ARCHIVE = GF_ogas.12200.d.archive
 	}
-	option = {
-		name = GF_ogas.12200.e
-		response_text = GF_ogas.12200.e.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = e }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.e.title
+		ARCHIVE = GF_ogas.12200.e.archive
 	}
-	option = {
-		name = GF_ogas.12200.f
-		response_text = GF_ogas.12200.f.response
-		is_dialog_only = yes
-		GF_set_history_archive = { archive = f }
+	inline_script = {
+		script = OGAS/GF_archive
+		TITLE = GF_ogas.12200.f.title
+		ARCHIVE = GF_ogas.12200.f.archive
 	}
+
 
 	option = {
 		name = GF_ogas.return
@@ -660,10 +689,6 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_ogas.10000 }
 		}
-	}
-
-	after = {
-		GF_remove_history_archive_flag = yes
 	}
 }
 ##特殊事件档案
@@ -678,6 +703,8 @@ country_event = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
 	}
+
+	immediate = { GF_OGAS_contact_begin = yes }
 
 	custom_gui = "GF_OGAS_archive_system"
 	custom_gui_option = "GF_OGAS_archive_system_option"
@@ -717,6 +744,8 @@ country_event = {
 
 	custom_gui = "GF_OGAS_archive_system"
 	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	immediate = { GF_OGAS_contact_begin = yes }
 
 	is_triggered_only = yes
 	option = {

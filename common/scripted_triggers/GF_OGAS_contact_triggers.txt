@@ -1,0 +1,15 @@
+# this = country
+GF_is_in_OGAS_contact = {
+	custom_tooltip = {
+		success_text = GF_OGAS_contact_diplomacy_engaged
+		has_country_flag = flag_GF_OGAS_contact_diplomacy_engaged
+	}
+}
+
+# this = country
+GF_is_in_zion_comm = {
+	custom_tooltip = {
+		success_text = GF_zion_comm_engaged
+		has_country_flag = flag_GF_zion_comm_engaged
+	}
+}

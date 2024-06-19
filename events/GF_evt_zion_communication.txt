@@ -76,6 +76,8 @@ country_event = {
 		NOT = { has_country_flag = flag_GF_first_zion_comm_completed }
 	}
 
+	immediate = { GF_zion_comm_begin = yes }
+
 	diplomatic = yes
 	custom_gui = "GF_DiplomaticEventWindow"
 	custom_gui_option = "GF_DiplomaticEventWindow_Option"
@@ -174,6 +176,8 @@ country_event = {
 			set_country_flag = flag_GF_first_zion_comm_completed
 		}
 	}
+
+	after = { GF_zion_comm_end = yes }
 }
 
 country_event = {
@@ -236,6 +240,8 @@ country_event = {
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
 
+	immediate = { GF_zion_comm_begin = yes }
+
 	option = {
 		name = GF_zion.20000.secrets
 		allow = { GF_require_zion_favor_decent = yes }
@@ -275,13 +281,20 @@ country_event = {
 	
 	option = {
 		name = GF_zion.20000.ogas
+		allow = {
+			GF_is_in_OGAS_contact = no
+		}
 		hidden_effect = {
 			country_event = { id = GF_ogas.10000 }
+			GF_zion_comm_end = yes
 		}
 	}
 
 	option = {
 		name = GF_zion.20000.close
+		hidden_effect = {
+			GF_zion_comm_end = yes
+		}
 	}
 }
 
@@ -290,9 +303,6 @@ country_event = {
 	id = GF_zion.21000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	desc = GF_zion.21000.desc.a
 	desc = GF_zion.21000.desc.b
@@ -448,9 +458,6 @@ country_event = {
 	id = GF_zion.22000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	custom_gui = "GF_DiplomaticEventWindow"
@@ -475,6 +482,7 @@ country_event = {
 			GF_change_zion_favor = { VALUE = 5 }
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
+		GF_zion_comm_end = yes
 	}
 
 	option = {
@@ -492,6 +500,7 @@ country_event = {
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
 		else = { GF_change_zion_favor = { VALUE = 5 } }
+		GF_zion_comm_end = yes
 	}
 
 	option = {
@@ -509,6 +518,7 @@ country_event = {
 			hidden_effect = { set_country_flag = flag_GF_requested_zion_research }
 		}
 		else = { GF_change_zion_favor = { VALUE = 5 } }
+		GF_zion_comm_end = yes
 	}
 
 

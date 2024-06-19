@@ -35,7 +35,15 @@ empire_init_capital_planet = {
 # From = source country
 on_custom_diplomacy = {
 	events = {
-		GF_ogas.0	# 建立OGAS国家
+		GF_ogas.9999
+	}
+}
+
+on_GF_OGAS_contact_engaged = {
+	events = {
+		GF_ogas.10000
+		GF_overlord.10000
+
 	}
 }
 

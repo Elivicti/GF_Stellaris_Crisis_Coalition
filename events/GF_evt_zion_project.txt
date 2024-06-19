@@ -5,9 +5,6 @@ country_event = {
 	id = GF_zion_project.1000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -60,6 +57,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = flag_GF_requested_elid_army	# 标记
+			GF_zion_comm_end = yes
 		}
 		GF_enable_zion_project = { PROJECT = SP_GF_ZION_ELID_ARMY_PROJECT }
 	}
@@ -78,6 +76,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = flag_GF_requested_elid_army	# 标记
+			GF_zion_comm_end = yes
 		}
 		add_research_option = GF_tech_elid_army
 	}
@@ -124,9 +123,6 @@ country_event = {
 	id = GF_zion_project.2000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -167,6 +163,7 @@ country_event = {
 		GF_enable_zion_project = { PROJECT = SP_GF_ZION_MINI_COLLAPSE_WEAPON_PROJECT }
 		hidden_effect = {
 			set_country_flag = flag_GF_requested_collapse_weapon	# 标记
+			GF_zion_comm_end = yes
 		}
 	}
 
@@ -212,9 +209,6 @@ country_event = {
 	id = GF_zion_project.3000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -255,6 +249,7 @@ country_event = {
 		GF_enable_zion_project = { PROJECT = SP_GF_ZION_COLLAPSE_SLINGSHOT_PROJECT }
 		hidden_effect = {
 			set_country_flag = flag_GF_requested_collapse_singshot	# 标记
+			GF_zion_comm_end = yes
 		}
 	}
 
@@ -301,9 +296,6 @@ country_event = {
 	id = GF_zion_project.20000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -324,9 +316,6 @@ country_event = {
 	id = GF_zion_project.20001
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -347,9 +336,6 @@ country_event = {
 	id = GF_zion_project.20002
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -363,6 +349,7 @@ country_event = {
 		GF_enable_zion_project = { PROJECT = SP_GF_ZION_ORB_MAINFRAME_ALPHA_PROJECT }
 		hidden_effect = {
 			set_country_flag = flag_GF_requested_zion_deep_dive
+			GF_zion_comm_end = yes
 		}
 	}
 }
@@ -403,9 +390,6 @@ country_event = {
 	id = GF_zion_project.30000
 	title = GF_ZION
 	is_triggered_only = yes
-	trigger = {
-		GF_default_zion_comm_trigger = yes
-	}
 
 	diplomatic = yes
 	diplomatic_title = BLANK_STRING
@@ -426,6 +410,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion_project.31000 }
 			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_zion_comm_end = yes
 		}
 	}
 
@@ -438,6 +423,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion_project.32000 }
 			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_zion_comm_end = yes
 		}
 	}
 
@@ -450,6 +436,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion_project.33000 }
 			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_zion_comm_end = yes
 		}
 	}
 
