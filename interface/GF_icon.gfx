@@ -18,7 +18,10 @@ spriteTypes = {
 		name = "GFX_message_GF_robot_pop_assimilated"
 		texturefile = "gfx/interface/icons/message/message_GF_robot_pop_assimilated.dds"
 	}
-
+	spriteType = {
+		name = "GFX_toast_GF_archive_unlocked"
+		texturefile = "gfx/interface/icons/toasts/toast_GF_archive_unlocked.dds"
+	}
 	# armies
 	spriteType = {
 		name = "GFX_GF_army_type_armored_train"

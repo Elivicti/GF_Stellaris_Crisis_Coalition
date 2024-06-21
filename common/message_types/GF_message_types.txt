@@ -98,3 +98,43 @@ message_type = {
 	sound = "notification"
 	ping = "mixed_notification_green"
 }
+
+message_type = {
+	key = MESSAGE_TYPE_GF_UNLOCKED_KEYWORD
+	name = MESSAGE_TYPE_GF_UNLOCKED_KEYWORD
+	icon = "GFX_toast_GF_archive_unlocked"
+	icon_frame = 1
+
+	default_toast = yes
+
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	category = other
+}
+message_type = {
+	key = MESSAGE_TYPE_GF_UNLOCKED_HISTORY_ARCHIVE
+	name = MESSAGE_TYPE_GF_UNLOCKED_HISTORY_ARCHIVE
+	icon = "GFX_toast_GF_archive_unlocked"
+	icon_frame = 1
+
+	default_toast = yes
+
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	category = other
+}
+message_type = {
+	key = MESSAGE_TYPE_GF_UNLOCKED_EVENT_ARCHIVE
+	name = MESSAGE_TYPE_GF_UNLOCKED_EVENT_ARCHIVE
+	icon = "GFX_toast_GF_archive_unlocked"
+	icon_frame = 1
+
+	default_toast = yes
+
+	sound = "notification"
+	ping = "ping_notification_green"
+
+	category = other
+}
