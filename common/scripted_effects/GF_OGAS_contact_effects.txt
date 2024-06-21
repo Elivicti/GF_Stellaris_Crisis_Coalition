@@ -18,3 +18,90 @@ GF_zion_comm_begin = {
 GF_zion_comm_end = {
 	hidden_effect = { remove_country_flag = flag_GF_zion_comm_engaged }
 }
+
+# this = country
+GF_set_archive_title = {
+	event_target:GF_archive_title = {
+		set_name = $TITLE$
+	}
+}
+
+# this = country
+GF_unlock_keyword_notification_yes = {
+	create_message = {
+		type = MESSAGE_TYPE_GF_UNLOCKED_KEYWORD
+		localization = MESSAGE_TYPE_GF_UNLOCKED_KEYWORD_DESC
+		days = 30
+		variable = {
+			type = key
+			localization = VALUE
+			value = $VALUE$
+		}
+	}
+}
+GF_unlock_keyword_notification_no = {}
+GF_unlock_event_archive_notification_yes = {
+	create_message = {
+		type = MESSAGE_TYPE_GF_UNLOCKED_EVENT_ARCHIVE
+		localization = MESSAGE_TYPE_GF_UNLOCKED_ARCHIVE_DESC
+		days = 30
+		variable = {
+			type = key
+			localization = VALUE
+			value = $VALUE$
+		}
+	}
+}
+GF_unlock_event_archive_notification_no = {}
+GF_unlock_history_archive_notification_yes = {
+	create_message = {
+		type = MESSAGE_TYPE_GF_UNLOCKED_HISTORY_ARCHIVE
+		localization = MESSAGE_TYPE_GF_UNLOCKED_ARCHIVE_DESC
+		days = 30
+		variable = {
+			type = key
+			localization = VALUE
+			value = $VALUE$
+		}
+	}
+}
+GF_unlock_history_archive_notification_no = {}
+
+# this = country
+# @param NOTIFICATION: yes | no (default: no)
+# @param TYPE:  keyword | history_archive | event_archive
+# @param VALUE: concept | localisation
+GF_unlock_archive = {
+	if = {
+		limit = {
+			NOT = { GF_has_unlocked_archive = { TYPE = $TYPE$ VALUE = $VALUE$ } }
+		}
+		GF_unlock_$TYPE$_notification_$NOTIFICATION|yes$ = {
+			VALUE = $VALUE$
+		}
+		hidden_effect = {
+			event_target:GF_ogas_country = {
+				set_country_flag = flag_$TYPE$_$VALUE$
+			}
+		}
+	}
+	else = {
+		log = "$TYPE$: $VALUE$ already unlocked"
+	}
+}
+
+GF_unlock_inital_keywords = {
+	event_target:GF_ogas_country = {
+		set_country_flag = flag_keyword_concept_GF_dolls
+		set_country_flag = flag_keyword_concept_GF_neural_cloud
+		set_country_flag = flag_keyword_concept_GF_core_chip
+		set_country_flag = flag_keyword_concept_GF_beilan_event
+		set_country_flag = flag_keyword_concept_GF_collapse_relic
+		set_country_flag = flag_keyword_concept_GF_contaminated_zone
+		set_country_flag = flag_keyword_concept_GF_collapse_liquid
+		set_country_flag = flag_keyword_concept_GF_epiphyllum
+		set_country_flag = flag_keyword_concept_GF_elid
+		set_country_flag = flag_keyword_concept_GF_elid_infected
+		set_country_flag = flag_keyword_concept_GF_siliconization
+	}
+}

@@ -2,9 +2,7 @@ option = {
 	name = $TITLE$
 	response_text = $ARCHIVE$
 	hidden_effect = {
-		event_target:GF_archive_title = {
-			set_name = $TITLE$
-		}
+		GF_set_archive_title = { TITLE = $TITLE$ }
 	}
 
 	is_dialog_only = yes

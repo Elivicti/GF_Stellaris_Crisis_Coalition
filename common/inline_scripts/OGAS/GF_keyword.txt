@@ -1,0 +1,9 @@
+option = {
+	name = $KEYWORD$
+	response_text = $KEYWORD$_desc
+	is_dialog_only = yes
+	trigger = { GF_has_unlocked_archive = { TYPE = keyword VALUE = $KEYWORD$ } }
+	hidden_effect = {
+		GF_set_archive_title = { TITLE = $KEYWORD$ }
+	}
+}

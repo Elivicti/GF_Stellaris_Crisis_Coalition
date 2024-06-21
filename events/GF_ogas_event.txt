@@ -144,6 +144,9 @@ country_event = {
 		set_country_flag = flag_GF_ogas_owner
 
 		country_event = { id = GF_ogas.110 days =  5 }
+
+		# unlock initial key words
+		GF_unlock_inital_keywords = yes
 	}
 }
 
@@ -254,7 +257,6 @@ country_event = {
 		trigger = { has_authority = GF_auth_commonwealth }
 	}
 	diplomatic = yes
-	diplomatic_title = contact
 	custom_gui = "GF_OGAS_standard_contact_event"
 	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 
@@ -350,9 +352,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = GF_ogas.11000.a
-		hidden_effect = {
-			country_event = { id = GF_ogas.11100 }
-		}
+
+		is_dialog_only = yes
+		response_text = GF_OGAS_contact_feature_in_development
+		# hidden_effect = {
+		# 	country_event = { id = GF_ogas.11100 }
+		# }
 	}
 	option = {
 		name = GF_ogas.11000.b
@@ -511,6 +516,7 @@ country_event = {
 	desc = GF_ogas.12000.desc.b
 	desc = GF_ogas.12000.desc.c
 	diplomatic = yes
+	diplomatic_title = GF_ogas.10000.info
 	custom_gui = "GF_OGAS_standard_contact_event"
 	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
@@ -554,6 +560,12 @@ country_event = {
 		}
 	}
 	option = {
+		name = GF_ogas.12000.keyword
+		hidden_effect = {
+			country_event = { id = GF_ogas.12400 }
+		}
+	}
+	option = {
 		name = GF_ogas.12000.b
 		hidden_effect = {
 			country_event = { id = GF_ogas.12200 }
@@ -580,6 +592,7 @@ country_event = {
 #	desc = GF_ogas.12100.desc.b
 #	desc = GF_ogas.12100.desc.c
 	diplomatic = yes
+	diplomatic_title = GF_ogas.12000.a
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -610,6 +623,85 @@ country_event = {
 		}
 	}
 }
+##关键词档案
+country_event = {
+	id = GF_ogas.12400
+	title = GF_OGAS_connect
+	desc = GF_ogas.12400.desc.a
+
+	diplomatic = yes
+	diplomatic_title = GF_ogas.12000.keyword
+	picture_event_data = {
+		portrait = event_target:GF_ogas_leader
+	}
+
+	custom_gui = "GF_OGAS_archive_system"
+	custom_gui_option = "GF_OGAS_archive_system_option"
+
+	immediate = { GF_OGAS_contact_begin = yes }
+
+	is_triggered_only = yes
+
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_dolls
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_neural_cloud
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_core_chip
+	}
+
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_beilan_event
+	}
+
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_collapse_relic
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_contaminated_zone
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_collapse_liquid
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_epiphyllum
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_elid
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_elid_infected
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_siliconization
+	}
+
+	option = {
+		name = GF_ogas.return
+		hidden_effect = {
+			country_event = { id = GF_ogas.12000 }
+		}
+	}
+	option = {
+		name = GF_ogas.main_menu
+		hidden_effect = {
+			country_event = { id = GF_ogas.10000 }
+		}
+	}
+}
 ##历史文件记录
 country_event = {
 	id = GF_ogas.12200
@@ -618,6 +710,7 @@ country_event = {
 #	desc = GF_ogas.12200.desc.b
 #	desc = GF_ogas.12200.desc.c
 	diplomatic = yes
+	diplomatic_title = GF_ogas.12000.b
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -699,6 +792,7 @@ country_event = {
 #	desc = GF_ogas.12300.desc.b
 #	desc = GF_ogas.12300.desc.c
 	diplomatic = yes
+	diplomatic_title = GF_ogas.12000.c
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room

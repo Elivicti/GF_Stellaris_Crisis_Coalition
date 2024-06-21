@@ -13,3 +13,23 @@ GF_is_in_zion_comm = {
 		has_country_flag = flag_GF_zion_comm_engaged
 	}
 }
+
+# this = country
+GF_has_unlocked_keyword = {
+	hidden_trigger = {
+		event_target:GF_ogas_country = {
+			has_country_flag = flag_keyword_$KEYWORD$
+		}
+	}
+}
+
+# this = country
+# @param TYPE:  keyword | history_archive | event_archive
+# @param VALUE: concept | localisation
+GF_has_unlocked_archive = {
+	hidden_trigger = {
+		event_target:GF_ogas_country = {
+			has_country_flag = flag_$TYPE$_$VALUE$
+		}
+	}
+}

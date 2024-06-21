@@ -218,6 +218,8 @@ event = {
 					}
 				}
 			}
+			# 关键词档案库
+			GF_unlock_inital_keywords = yes
 		}
 	}
 }
