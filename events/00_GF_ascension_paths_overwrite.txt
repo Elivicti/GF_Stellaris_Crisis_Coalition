@@ -15,6 +15,7 @@ country_event = {
 		hidden_effect = { save_event_target_as = synth_evo_owner }
 		if = {
 			limit = { has_authority = GF_auth_commonwealth }
+			set_country_flag = flag_GF_vanilla_synthetics_project_aborted
 			enable_special_project = {
 				name = SP_GF_SYNTHETIC_EVOLUTION
 				owner = this
@@ -48,6 +49,7 @@ country_event = {
 
 		if = {
 			limit = { has_authority = GF_auth_commonwealth }
+			set_country_flag = flag_GF_vanilla_cybernetics_project_aborted
 			enable_special_project = {
 				name = SP_GF_FLESH_IS_WEAK
 				owner = this
