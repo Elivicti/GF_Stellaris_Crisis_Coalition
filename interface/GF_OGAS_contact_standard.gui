@@ -344,7 +344,7 @@ guiTypes = {
 			instantTextBoxType = {
 				name = "action_title"
 				font = "malgun_goth_24"
-				position = { x = -325 y = 60 }
+				position = { x = -325 y = 70 }
 				maxWidth = 300
 				format = right
 				alwaysTransparent = yes
@@ -370,8 +370,8 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "confirm_button"
-			quadTextureSprite = "GFX_standard_button_142_34_button"
-			position = { x = -175 y = -116 }
+			quadTextureSprite = "GFX_standard_button_230_34_button"
+			position = { x = -264 y = -112 }
 			orientation = lower_right
 			font = "cg_16b"
 			text = "MESSAGE_OK"
