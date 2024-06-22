@@ -157,8 +157,8 @@ country_event = {
 	desc = GF_ogas.110.desc
 
 	diplomatic = yes
-	custom_gui = "GF_DiplomaticEventWindow"
-	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	custom_gui = "GF_OGAS_standard_story_event"
+	custom_gui_option = "GF_OGAS_standard_story_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -166,6 +166,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		GF_set_OGAS_story_event_picture = {
+			PICTURE = GFX_evt_GF_command_room
+		}
+	}
 
 	option = {
 		name = GF_ogas.110.update_log
@@ -174,6 +179,7 @@ country_event = {
 	}
 	option = {
 		name = GF_ogas.110.a
+		default_hide_option = yes
 	}
 	after = {
 		hidden_effect = {
@@ -187,8 +193,8 @@ country_event = {
 	title = contact
 	desc = GF_ogas.111.desc
 	diplomatic = yes
-	custom_gui = "GF_DiplomaticEventWindow"
-	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	custom_gui = "GF_OGAS_standard_story_event"
+	custom_gui_option = "GF_OGAS_standard_story_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room
@@ -386,8 +392,8 @@ country_event = {
 #	desc = GF_ogas.11100.desc.b
 #	desc = GF_ogas.11100.desc.c
 	diplomatic = yes
-	custom_gui = "GF_DiplomaticEventWindow"
-	custom_gui_option = "GF_DiplomaticEventWindow_Option"
+	custom_gui = "GF_OGAS_standard_contact_event"
+	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
 		room = ethic_griffin_room

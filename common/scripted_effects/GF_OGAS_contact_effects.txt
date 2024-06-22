@@ -105,3 +105,48 @@ GF_unlock_inital_keywords = {
 		set_country_flag = flag_keyword_concept_GF_siliconization
 	}
 }
+
+# this = country
+GF_set_OGAS_story_event_picture = {
+	hidden_effect = {
+		if = {
+			limit = {
+				OR = {
+					# 当前没有设置图片
+					NOT = { exists = event_target:GF_ogas_story_event_picture@this }
+					# 设置的图片与当前领袖身上标记的图片不一致
+					event_target:GF_ogas_story_event_picture@this = {
+						NOT = { has_leader_flag = flag_$PICTURE$ }
+					}
+				}
+			}
+			GF_clear_OGAS_story_event_picture = yes
+			event_target:GF_ogas_country = {
+				create_leader = {
+					class = random
+					name = random
+					species = prev
+					event_leader = yes
+					skip_background_generation = yes
+					skill = 10
+					effect = {
+						save_global_event_target_as = GF_ogas_story_event_picture@prevprev
+						set_leader_flag = flag_$PICTURE$
+					}
+				}
+			}
+		}
+	}
+}
+
+# this = country
+GF_clear_OGAS_story_event_picture = {
+	hidden_effect = {
+		if = {
+			limit = { exists = event_target:GF_ogas_story_event_picture@this }
+			event_target:GF_ogas_story_event_picture@this = {
+				kill_leader = { show_notification = no }
+			}
+		}
+	}
+}

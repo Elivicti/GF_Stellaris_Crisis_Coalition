@@ -1,0 +1,860 @@
+guiTypes = {
+	### EVENT OPTION ###
+
+	containerWindowType = {
+		name = "GF_OGAS_standard_story_event_option"
+		size = { width = 475 height = 42 }
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_event_button_450_34"
+			position = { x = 0 y = 0 }
+			buttonFont = "cg_16b"
+			buttonText = "OPTION_TEXT"
+			borderSize = { x = 30 y = 0 }
+			multiline = yes
+		}
+		overlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = -4 y = 12 }
+			size = { x = 65 y = 28 }
+		}
+	}
+
+	### EVENT WINDOW ###
+
+	containerWindowType = {
+		name = "GF_OGAS_standard_story_event"
+		orientation = center
+		origo = center
+		moveable = yes
+		size = { width = 1200 height = 800 }
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tile_large_bg_plain"
+		}
+
+		# @event_picture_x = -250
+		@event_picture_x = 250
+		@event_picture_y = 160
+		iconType = {
+			name = "header_line"
+			position = { x = @event_picture_x y = 58 }
+			spriteType = "GFX_line_center"
+			orientation = center_up
+			centerPosition = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {
+			name = "focus_button"
+			position = { x = -45 y = 7 }
+			orientation = upper_right
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+			shortcut = "q"
+		}
+		instantTextBoxType = {
+			name = "heading"
+			font = "large_title_font"
+			text = "DIPLOMACY"
+			position = { x = 100 y = 20 }
+			orientation = center_up
+			maxWidth = 300
+			maxHeight = 24
+			fixedSize = yes
+			format = center
+			# alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "event_background_image"
+			spriteType = "GFX_GF_leader_OGAS_bg"
+			position = { x = 1 y = 1 }
+			alwaysTransparent = yes
+		}
+		### EVENT PICTURE ###
+		containerWindowType = {
+			name = "event_picture_container"
+			orientation = center_up
+			position = { x = @event_picture_x y = 200 }
+			# iconType = {
+			# 	name = "event_picture"
+			# 	scale = 1.4
+			# 	spriteType = "GFX_evt_GF_command_room"
+			# 	centerPosition = yes
+			# 	alwaystransparent = yes
+			# }
+###########################################################################
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_AU_flag"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_AU_flag
+				effect = GF_eb_pic_GFX_evt_GF_AU_flag
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_barracuda_core"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_barracuda_core
+				effect = GF_eb_pic_GFX_evt_GF_barracuda_core
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_bio_laboratory"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_bio_laboratory
+				effect = GF_eb_pic_GFX_evt_GF_bio_laboratory
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_bio_laboratory_2"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_bio_laboratory_2
+				effect = GF_eb_pic_GFX_evt_GF_bio_laboratory_2
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_bio_laboratory_2_with_subject"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_bio_laboratory_2_with_subject
+				effect = GF_eb_pic_GFX_evt_GF_bio_laboratory_2_with_subject
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_bio_laboratory_broken"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_bio_laboratory_broken
+				effect = GF_eb_pic_GFX_evt_GF_bio_laboratory_broken
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_bio_tank"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_bio_tank
+				effect = GF_eb_pic_GFX_evt_GF_bio_tank
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_black_zone"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_black_zone
+				effect = GF_eb_pic_GFX_evt_GF_black_zone
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_broken_town"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_broken_town
+				effect = GF_eb_pic_GFX_evt_GF_broken_town
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_building_ruins"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_building_ruins
+				effect = GF_eb_pic_GFX_evt_GF_building_ruins
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_burning_factory"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_burning_factory
+				effect = GF_eb_pic_GFX_evt_GF_burning_factory
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_collapsed_city"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_collapsed_city
+				effect = GF_eb_pic_GFX_evt_GF_collapsed_city
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_command_room"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_command_room
+				effect = GF_eb_pic_GFX_evt_GF_command_room
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_command_room_broken"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_command_room_broken
+				effect = GF_eb_pic_GFX_evt_GF_command_room_broken
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_computer"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_computer
+				effect = GF_eb_pic_GFX_evt_GF_computer
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_contaminated_area"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_contaminated_area
+				effect = GF_eb_pic_GFX_evt_GF_contaminated_area
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_control_room"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_control_room
+				effect = GF_eb_pic_GFX_evt_GF_control_room
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_core"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_core
+				effect = GF_eb_pic_GFX_evt_GF_core
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_core_with_body"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_core_with_body
+				effect = GF_eb_pic_GFX_evt_GF_core_with_body
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_core_with_butterfly"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_core_with_butterfly
+				effect = GF_eb_pic_GFX_evt_GF_core_with_butterfly
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_damaged_slum"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_damaged_slum
+				effect = GF_eb_pic_GFX_evt_GF_damaged_slum
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_dark_city_alley"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_dark_city_alley
+				effect = GF_eb_pic_GFX_evt_GF_dark_city_alley
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_deep_well"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_deep_well
+				effect = GF_eb_pic_GFX_evt_GF_deep_well
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_defensed_corridor"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_defensed_corridor
+				effect = GF_eb_pic_GFX_evt_GF_defensed_corridor
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_door"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_door
+				effect = GF_eb_pic_GFX_evt_GF_door
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_down_sf"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_down_sf
+				effect = GF_eb_pic_GFX_evt_GF_down_sf
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_elid"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_elid
+				effect = GF_eb_pic_GFX_evt_GF_elid
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_elid_in_tank"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_elid_in_tank
+				effect = GF_eb_pic_GFX_evt_GF_elid_in_tank
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_empty_hall"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_empty_hall
+				effect = GF_eb_pic_GFX_evt_GF_empty_hall
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_gavirul"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_gavirul
+				effect = GF_eb_pic_GFX_evt_GF_gavirul
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_gavirul_project"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_gavirul_project
+				effect = GF_eb_pic_GFX_evt_GF_gavirul_project
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_GK_flag"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_GK_flag
+				effect = GF_eb_pic_GFX_evt_GF_GK_flag
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_lab_tunnel"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_lab_tunnel
+				effect = GF_eb_pic_GFX_evt_GF_lab_tunnel
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_net_world"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_net_world
+				effect = GF_eb_pic_GFX_evt_GF_net_world
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_overhanging_forest"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_overhanging_forest
+				effect = GF_eb_pic_GFX_evt_GF_overhanging_forest
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_protected_purify_wall"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_protected_purify_wall
+				effect = GF_eb_pic_GFX_evt_GF_protected_purify_wall
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_red_net"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_red_net
+				effect = GF_eb_pic_GFX_evt_GF_red_net
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_red_zone"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_red_zone
+				effect = GF_eb_pic_GFX_evt_GF_red_zone
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_red_zone_2"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_red_zone_2
+				effect = GF_eb_pic_GFX_evt_GF_red_zone_2
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_repair_room"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_repair_room
+				effect = GF_eb_pic_GFX_evt_GF_repair_room
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_tunnel"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_tunnel
+				effect = GF_eb_pic_GFX_evt_GF_tunnel
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_URNC_flag"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_URNC_flag
+				effect = GF_eb_pic_GFX_evt_GF_URNC_flag
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_white_net"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_white_net
+				effect = GF_eb_pic_GFX_evt_GF_white_net
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_yellow_zone"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_yellow_zone
+				effect = GF_eb_pic_GFX_evt_GF_yellow_zone
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_yellow_zone_2"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_yellow_zone_2
+				effect = GF_eb_pic_GFX_evt_GF_yellow_zone_2
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_zion_active"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_zion_active
+				effect = GF_eb_pic_GFX_evt_GF_zion_active
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_zion_dimm"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_zion_dimm
+				effect = GF_eb_pic_GFX_evt_GF_zion_dimm
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_zion_hypercube"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_zion_hypercube
+				effect = GF_eb_pic_GFX_evt_GF_zion_hypercube
+				alwaysTransparent = yes
+			}
+			effectButtonType = {
+				name = "evt_pic_GFX_evt_GF_zion_red"
+				scale = 1.4
+				font = "cg_16b"
+				position = { x = -315 y = -105 }
+				orientation = center_up
+				spriteType = GFX_evt_GF_zion_red
+				effect = GF_eb_pic_GFX_evt_GF_zion_red
+				alwaysTransparent = yes
+			}
+###########################################################################
+			iconType = {
+				name = "picture_frame"
+				spriteType = "GFX_event_frame"
+				scale = 1.4
+				centerPosition = yes
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_event_stripes_1"
+				scale = 1.4
+				centerPosition = yes
+				alwaystransparent = yes
+			}
+		}
+
+		### PORTRAIT ###
+		# ？？？这玩意到底是干嘛的
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 10000 y = 56 }
+			size = { width = 964 height = 350 }
+			orientation = center_up
+			origo = center_up
+			clipping = yes
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+			}
+			iconType = {
+				name = "portrait"
+				position = { x = 256 y = 5 }
+				spriteType = "GFX_portrait_character"
+			}
+		}
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 0 y = 20 }
+			size = { width = 575 height = 500 } # not changable
+			clipping = yes
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_GF_diplo_character_portrait_no_room"
+				position = { x = -30 y = -40 }
+				alwaysTransparent = yes
+				scale = 1
+			}
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = 200000 y = 0 }
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				position = { x = 600000 y = 5 }
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "city_frame"
+				position = { x = 600000 y = 5 }
+				spriteType = "GFX_diplomacy_portrait_frame"
+				alwaysTransparent = yes
+			}
+		}
+
+		### EMPIRE INFO ###
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 360000 y = 75 }
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Kammarian Galactic Concordat"
+			position = { x = 480000 y = 81 }
+			maxWidth = 450
+			maxHeight = 24
+			format = left
+			text_color_code = "E"
+			fixedSize = yes
+		}
+		instantTextBoxType = {
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Autocracy"
+			position = { x = 480000 y = 106 }
+			maxWidth = 250
+			maxHeight = 16
+			format = left
+			fixedSize = yes
+			text_color_code = "Y"
+		}
+		instantTextBoxType = {
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Despicable Neutrals"
+			position = { x = 480000 y = 123 }
+			maxWidth = 250
+			maxHeight = 16
+			format = left
+			fixedSize = yes
+		}
+		overlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+			position = { x = 480000 y = 149 }
+			size = { x = 240 y = 30 }
+			spacing = 2.0
+			format = left
+		}
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128"
+			position = { x = 280000 y = 248 }
+		}
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 22500 y = 86 }
+			containerWindowType = {
+				name = "empire_traits_box"
+				position = { x = 0 y = -5 }
+				size = { width = 210 height = 75 }
+				background = {
+					name = "ethics_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 214 y = 37 }
+				font = "cg_16b"
+				maxWidth = 230
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 215 y = 55 }
+				size = { x = 125 y = 330 }
+			}
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 10 y = 0 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 10 y = 18 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+
+		### OPINION
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = 27000 y = 123 }
+			size = { width = 94 height = 30 }
+			# Use this for tooltip area, picture comes from somewhere else
+			background = {
+				name = "opinion_bg"
+				spriteType = "GFX_tiled_window_transparent"
+			}
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 7 y = 4 }
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+				maxWidth = 40
+				position = { x = 40 y = 7 }
+				format = left
+				text = "100"
+				alwaysTransparent = yes
+			}
+		}
+		buttonType = {
+			name = "tts_button"
+			position = { x = 461 y = 643 }
+			spriteType = "GFX_button_tts_start"
+			buttonFont = "cg_16b"
+			shortCut = "t"
+		}
+
+
+		### DESCRIPTION ###
+		containerWindowType = {
+			name = "description_container"
+			position = { x = 20 y = 360 }
+			size = { width = 655 height = 421 }
+			background = {
+				name = "description_frame"
+				spriteType = "GFX_tiles_frame_light"
+				alwaystransparent = yes
+			}
+		}
+		instantTextBoxType = {
+			name = "alien_message"
+			font = "malgun_goth_24"
+			position = { x = 30 y = 370 }
+			maxWidth = 635
+			maxHeight = 401
+			format = left
+			scrollbartype = "standardtext_slider"
+			# text_color_code = ""
+		}
+
+		containerWindowType = {
+			name = "vertical_seperator"
+			position = { x = -503 y = 345 }
+			size = { width = 9 height = 436 }
+			orientation = upper_right
+			background = {
+				name = "description_frame"
+				spriteType = "GFX_tiles_frame_light"
+				alwaystransparent = yes
+			}
+		}
+
+		### EVENT DIPLO ###
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 0 y = 262 }
+			orientation = upper_right
+			size = { width = 100%% height = 100%% }
+			instantTextBoxType = {
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = -325 y = 70 }
+				maxWidth = 300
+				format = right
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = { x = 510 y = 0 }
+				maxWidth = 480
+				maxHeight = 180
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+			listboxType = {
+				name = "option_list"
+				position = { x = -485 y = 90 }
+				size = { x = 475 y = 420 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+			}
+		}
+		buttonType = {
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_230_34_button"
+			position = { x = -264 y = -112 }
+			orientation = lower_right
+			font = "cg_16b"
+			text = "MESSAGE_OK"
+			clicksound = "confirmation"
+		}
+	}
+}

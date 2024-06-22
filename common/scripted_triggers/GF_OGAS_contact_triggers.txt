@@ -33,3 +33,13 @@ GF_has_unlocked_archive = {
 		}
 	}
 }
+
+# this = any
+GF_check_OGAS_story_event_picture = {
+	hidden_trigger = {
+		exists = event_target:GF_ogas_story_event_picture@$SCOPE$
+		event_target:GF_ogas_story_event_picture@$SCOPE$ = {
+			has_leader_flag = flag_$PICTURE$
+		}
+	}
+}

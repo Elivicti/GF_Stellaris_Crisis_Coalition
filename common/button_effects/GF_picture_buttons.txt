@@ -1,0 +1,490 @@
+
+GF_eb_pic_GFX_evt_GF_AU_flag = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_AU_flag
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_barracuda_core = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_barracuda_core
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_bio_laboratory = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_bio_laboratory
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_bio_laboratory_2 = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_bio_laboratory_2
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_bio_laboratory_2_with_subject = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_bio_laboratory_2_with_subject
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_bio_laboratory_broken = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_bio_laboratory_broken
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_bio_tank = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_bio_tank
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_black_zone = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_black_zone
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_broken_town = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_broken_town
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_building_ruins = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_building_ruins
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_burning_factory = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_burning_factory
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_collapsed_city = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_collapsed_city
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_command_room = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_command_room
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_command_room_broken = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_command_room_broken
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_computer = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_computer
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_contaminated_area = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_contaminated_area
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_control_room = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_control_room
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_core = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_core
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_core_with_body = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_core_with_body
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_core_with_butterfly = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_core_with_butterfly
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_damaged_slum = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_damaged_slum
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_dark_city_alley = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_dark_city_alley
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_deep_well = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_deep_well
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_defensed_corridor = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_defensed_corridor
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_door = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_door
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_down_sf = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_down_sf
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_elid = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_elid
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_elid_in_tank = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_elid_in_tank
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_empty_hall = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_empty_hall
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_gavirul = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_gavirul
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_gavirul_project = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_gavirul_project
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_GK_flag = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_GK_flag
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_lab_tunnel = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_lab_tunnel
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_net_world = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_net_world
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_overhanging_forest = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_overhanging_forest
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_protected_purify_wall = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_protected_purify_wall
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_red_net = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_red_net
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_red_zone = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_red_zone
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_red_zone_2 = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_red_zone_2
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_repair_room = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_repair_room
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_tunnel = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_tunnel
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_URNC_flag = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_URNC_flag
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_white_net = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_white_net
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_yellow_zone = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_yellow_zone
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_yellow_zone_2 = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_yellow_zone_2
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_zion_active = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_zion_active
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_zion_dimm = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_zion_dimm
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_zion_hypercube = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_zion_hypercube
+		}
+	}
+	allow = { always = yes }
+}
+
+GF_eb_pic_GFX_evt_GF_zion_red = {
+	potential = {
+		GF_check_OGAS_story_event_picture = {
+			SCOPE = from
+			PICTURE = GFX_evt_GF_zion_red
+		}
+	}
+	allow = { always = yes }
+}
