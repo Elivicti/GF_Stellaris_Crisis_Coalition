@@ -7,7 +7,6 @@ country_event = {
 	is_triggered_only = yes
 
 	diplomatic = yes
-	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
 
@@ -90,6 +89,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion.21000 }
 		}
+		default_hide_option = yes
 	}
 }
 
@@ -125,7 +125,6 @@ country_event = {
 	is_triggered_only = yes
 
 	diplomatic = yes
-	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
 
@@ -176,6 +175,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion.21000 }
 		}
+		default_hide_option = yes
 	}
 }
 
@@ -262,6 +262,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion.21000 }
 		}
+		default_hide_option = yes
 	}
 }
 
@@ -446,6 +447,7 @@ country_event = {
 		hidden_effect = {
 			country_event = { id = GF_zion.20000 }
 		}
+		default_hide_option = yes
 	}
 }
 
@@ -1159,7 +1161,7 @@ country_event = {
 				}
 				switch = {
 					trigger = leader_class
-					governor = { add_trait = GF_trait_leader_inspired_official }
+					official = { add_trait = GF_trait_leader_inspired_official }
 					scientist = { add_trait = GF_trait_leader_inspired_scientist }
 					commander = { add_trait = GF_trait_leader_inspired_commander }
 				}
@@ -1498,7 +1500,6 @@ country_event = {
 	id = GF_zion_project.33301
 	title = GF_ZION
 	diplomatic = yes
-	diplomatic_title = BLANK_STRING
 	force_open = yes
 	picture_event_data = { room = whitenet_room }
 
@@ -1537,6 +1538,7 @@ country_event = {
 				days = 3600
 			}
 		}
+		default_hide_option = yes
 	}
 }
 
@@ -1622,7 +1624,7 @@ country_event = {
 			event_target:glitching_leader = {
 				switch = {
 					trigger = leader_class
-					governor = { remove_trait = GF_trait_leader_core_glitch_official }
+					official = { remove_trait = GF_trait_leader_core_glitch_official }
 					scientist = { remove_trait = GF_trait_leader_core_glitch_scientist }
 					commander = { remove_trait = GF_trait_leader_core_glitch_commander }
 				}
