@@ -1,21 +1,21 @@
-spriteTypes = {	
+spriteTypes = {
 	# spriteType = {
 	# 	name = "GFX_evt_ring_of_contract"
 	# 	# texturefile = "gfx/event_pictures/GF_3gfevent.png"
 	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
-	# 	alwaystransparent = yes		
+	# 	alwaystransparent = yes
 	# }
 	# spriteType = {
 	# 	name = "GFX_evt_mind"
 	# 	# texturefile = "gfx/event_pictures/GF_2gfevent.png"
 	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
-	# 	alwaystransparent = yes		
+	# 	alwaystransparent = yes
 	# }
 	# spriteType = {
 	# 	name = "GFX_evt_gfevent"
 	# 	# texturefile = "gfx/event_pictures/GF_gfevent.png"
 	# 	masking_texture = "gfx/interface/situation_log/event_mask.dds"
-	# 	alwaystransparent = yes		
+	# 	alwaystransparent = yes
 	# }
 
 	## Start Events
@@ -62,7 +62,7 @@ spriteTypes = {
 		alwaystransparent = yes
 	}
 	spriteType = {
-		name = "GFX_evt_GF_sf_down"
+		name = "GFX_evt_GF_down_sf"
 
 		texturefile = "gfx/event_pictures/GF_down_sf.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
@@ -106,13 +106,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_evt_GF_deep_well"
-		texturefile = "gfx/event_pictures/GF_deep_well.dds"
-		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes
-	}
-
-	spriteType = {
 		name = "GFX_evt_GF_door"
 		texturefile = "gfx/event_pictures/GF_door.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
@@ -151,55 +144,55 @@ spriteTypes = {
 		name = "GFX_evt_GF_black_zone"
 		textureFile = "gfx/event_pictures/GF_black_zone.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_white_net"
 		textureFile = "gfx/event_pictures/GF_white_net.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_red_net"
 		textureFile = "gfx/event_pictures/GF_red_net.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
-	
+
 	spriteType = {
 		name = "GFX_evt_GF_overhanging_forest"
 		textureFile = "gfx/event_pictures/GF_overhanging_forest.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_collapsed_city"
 		textureFile = "gfx/event_pictures/GF_collapsed_city.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_contaminated_area"
 		textureFile = "gfx/event_pictures/GF_contaminated_area.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_protected_purify_wall"
 		textureFile = "gfx/event_pictures/GF_protected_purify_wall.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_yellow_zone"
 		textureFile = "gfx/event_pictures/GF_yellow_zone.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_yellow_zone_2"
@@ -211,7 +204,7 @@ spriteTypes = {
 		name = "GFX_evt_GF_red_zone"
 		textureFile = "gfx/event_pictures/GF_red_zone.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_red_zone_2"
@@ -223,39 +216,39 @@ spriteTypes = {
 		name = "GFX_evt_GF_building_ruins"
 		textureFile = "gfx/event_pictures/GF_building_ruins.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_broken_town"
 		textureFile = "gfx/event_pictures/GF_broken_town.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_damaged_slum"
 		textureFile = "gfx/event_pictures/GF_damaged_slum.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 	spriteType = {
 		name = "GFX_evt_GF_dark_city_alley"
 		textureFile = "gfx/event_pictures/GF_dark_city_alley.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_elid_in_tank"
 		textureFile = "gfx/event_pictures/GF_elid_in_tank.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 	spriteType = {
 		name = "GFX_evt_GF_barracuda_core"
 		textureFile = "gfx/event_pictures/GF_barracuda_core.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
-		alwaystransparent = yes 
+		alwaystransparent = yes
 	}
 
 
@@ -326,6 +319,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_GF_bio_laboratory_2_with_subject"
 		textureFile = "gfx/event_pictures/GF_bio_laboratory_2_with_subject.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_evt_GF_control_room"
+		textureFile = "gfx/event_pictures/GF_control_room.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_GF_lab_tunnel"
+		textureFile = "gfx/event_pictures/GF_lab_tunnel.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
