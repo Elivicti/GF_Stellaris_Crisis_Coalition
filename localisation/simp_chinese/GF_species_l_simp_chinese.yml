@@ -3,11 +3,12 @@
 GIRLF:0 "少女前线"
 ############
  GF_ANDROID:0 "仿生自律人形"
+ GF_ANDROID_plural:0 "$GF_ANDROID$"
 
  # GF Doll
- GF_doll:0 "仿生自律人形"
+ GF_doll:0 "$GF_ANDROID$"
  GF_doll_desc:0 "物种类别对你的帝国没有太大影响，但与其他类别相比，同是机械类的物种，双方认同感会更强。"
- GF_doll_plural:0 "仿生自律人形"
+ GF_doll_plural:0 "$GF_ANDROID_plural$"
  GF_doll_insult_01:0 "铁罐子"
  GF_doll_insult_plural_01:0 "烤面包机"
  GF_doll_compliment_01:0 "优雅的机器人"
