@@ -127,6 +127,11 @@
 
  mod_planet_building_GF_doll_factory_build_speed_mult:0 "$building_GF_doll_factory$建造速度"
 
+ GF_doll_pops: "$GF_ANDROID$"
+ mod_GF_doll_pops_physics_research_produces_add: "$GF_doll_pops$人口产出的 £physics_research£ $physics_research$"
+ mod_GF_doll_pops_society_research_produces_add: "$GF_doll_pops$人口产出的 £society_research£ $society_research$"
+ mod_GF_doll_pops_engineering_research_produces_add: "$GF_doll_pops$人口产出的 £engineering_research£ $engineering_research$"
+
 ############
  mod_planet_pops_robotics_consumer_goods_upkeep_mult:0 "机械人口$consumer_goods$ £consumer_goods£ 维护费"
  mod_planet_pops_robotics_food_upkeep_mult:0 "机械人口$food$ £food£ 维护费"

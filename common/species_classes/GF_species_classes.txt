@@ -18,7 +18,7 @@ GF_doll = {
 	trait = "GF_trait_doll"
 
 	resources = {
-		category = planet_pops
+		category = GF_doll_pops
 		upkeep = {
 			trigger = { is_being_purged = no }
 			gf_core_chip = 0.1

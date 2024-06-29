@@ -158,3 +158,41 @@ GF_trait_leader_ogas_subnet_core = {
 	immortal_leaders = yes
 	hide_age = yes
 }
+
+GF_trait_leader_doll_cloud_network = {
+	cost = 0
+	# @trait_sorting_priority_$RARITY$_$COUNCIL$_$TIER$
+	# @trait_sorting_priority_veteran_yes_none
+	inline_script = {
+		script = trait/GF_traits
+		ICON = GFX_leader_trait_erudite
+		CLASS = official
+		COUNCIL = yes
+		BACKGROUND = light_blue
+		RARITY = veteran
+		GLOW = yes
+		TIER = none
+		TIMED = yes
+	}
+	leader_class = { official }
+
+	triggered_self_modifier = {
+		leader_officials_gf_core_chip_upkeep_add = 1
+	}
+
+	triggered_councilor_modifier = {
+		empire_size_pops_mult = @GF_agenda_doll_cloud_network_pop_size_mult
+		mult = v_GF_official_doll
+	}
+	triggered_councilor_modifier = {
+		ship_anomaly_research_speed_mult = @GF_agenda_doll_cloud_network_anomaly_speed_mult
+		mult = v_GF_scientist_doll
+	}
+	triggered_councilor_modifier = {
+		ship_speed_mult = @GF_agenda_doll_cloud_network_ship_speed
+		army_collateral_damage_mult = @GF_agenda_doll_cloud_network_collateral_damage
+		mult = v_GF_commander_doll
+	}
+
+	randomized = no
+}

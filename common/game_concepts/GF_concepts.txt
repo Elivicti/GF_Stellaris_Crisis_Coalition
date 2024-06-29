@@ -92,3 +92,6 @@ concept_GF_tech_mass_rebuild_function = {
 	alias = { concept_GF_tech_mass_rebuild_function_with_icon }
 	icon = "gfx/interface/icons/resources/physics_research.dds"
 }
+
+concept_GF_trait_leader_doll_cloud_network = {}
+concept_GF_trait_leader_doll_cloud_network_node = {}

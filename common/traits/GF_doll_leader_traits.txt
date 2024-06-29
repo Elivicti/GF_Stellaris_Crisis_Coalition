@@ -182,3 +182,36 @@ GF_trait_leader_official_plus = {
 	hide_age = yes
 	randomized = no
 }
+
+GF_trait_leader_doll_cloud_network_node = {
+	cost = 0
+	# @trait_sorting_priority_$RARITY$_$COUNCIL$_$TIER$
+	# @trait_sorting_priority_veteran_no_none
+	inline_script = {
+		script = trait/GF_traits
+		ICON = GFX_leader_trait_erudite
+		CLASS = official
+		COUNCIL = no
+		BACKGROUND = light_blue
+		RARITY = veteran
+		GLOW = yes
+		TIER = none
+		TIMED = yes
+	}
+	leader_class = { official scientist commander }
+
+	triggered_self_modifier = {
+		potential = { leader_class = official }
+		leader_officials_gf_core_chip_upkeep_add = 1
+	}
+	triggered_self_modifier = {
+		potential = { leader_class = scientist }
+		leader_scientists_gf_core_chip_upkeep_add = 1
+	}
+	triggered_self_modifier = {
+		potential = { leader_class = commander }
+		leader_commanders_gf_core_chip_upkeep_add = 1
+	}
+
+	randomized = no
+}

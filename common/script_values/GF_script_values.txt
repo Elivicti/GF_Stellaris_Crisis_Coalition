@@ -243,3 +243,9 @@ GF_export_district_count = {
 	]
 	floor = yes
 }
+
+# this = leader
+GF_doll_cloud_network_trait_duration = {
+	base = @agenda_finish_modifier_duration
+	mult = value:scripted_modifier_mult|MODIFIER|council_agenda_finishing_effect_duration_mult|
+}

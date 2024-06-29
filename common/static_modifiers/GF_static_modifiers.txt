@@ -95,19 +95,11 @@ GF_agenda_automation_finish = {
 GF_agenda_doll_cloud_network_finish = {
 	icon = "gfx/interface/icons/modifiers/mod_leader_cost.dds"
 	leaders_upkeep_mult = 0.10
+	GF_doll_upkeep_mult = 0.10
+	GF_doll_pops_physics_research_produces_add = 1
+	GF_doll_pops_society_research_produces_add = 1
+	GF_doll_pops_engineering_research_produces_add = 1
 }
-
-GF_agenda_doll_cloud_network_governor_effect = {
-	empire_size_pops_mult = @GF_agenda_doll_cloud_network_pop_size_mult
-}
-GF_agenda_doll_cloud_network_scientist_effect = {
-	ship_anomaly_research_speed_mult = @GF_agenda_doll_cloud_network_anomaly_speed_mult
-}
-GF_agenda_doll_cloud_network_commander_effect = {
-	ship_speed_mult = @GF_agenda_doll_cloud_network_ship_speed
-	army_collateral_damage_mult = @GF_agenda_doll_cloud_network_collateral_damage
-}
-
 
 ######
 GF_gavirul_project_finished = {

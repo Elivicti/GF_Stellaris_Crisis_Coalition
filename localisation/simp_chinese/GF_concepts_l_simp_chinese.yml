@@ -85,3 +85,9 @@
  concept_GF_tech_mass_rebuild_function: "$GF_tech_mass_rebuild_function$"
  concept_GF_tech_mass_rebuild_function_with_icon: "£physics£ $GF_tech_mass_rebuild_function$"
  concept_GF_tech_mass_rebuild_function_desc: "$GF_tech_mass_rebuild_function_desc$\n\n§E效果：§!\n$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$: §G+5%§!"
+
+ concept_GF_trait_leader_doll_cloud_network: "$GF_trait_leader_doll_cloud_network$"
+ concept_GF_trait_leader_doll_cloud_network_desc: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$mod_leader_officials_gf_core_chip_upkeep_add$: §R+1§!\n\n$GF_agenda_doll_cloud_network_governor_effect_tooltip$\n\n$GF_agenda_doll_cloud_network_scientist_effect_tooltip$\n\n$GF_agenda_doll_cloud_network_commander_effect_tooltip$\n\n§L$GF_trait_leader_doll_cloud_network_desc$§!"
+
+ concept_GF_trait_leader_doll_cloud_network_node: "$GF_trait_leader_doll_cloud_network_node$"
+ concept_GF_trait_leader_doll_cloud_network_node_desc: "$THIS_LEADER_TXT$：$TABBED_NEW_LINE$—$mod_leader_officials_gf_core_chip_upkeep_add$: §R+1§!\n\n§L$GF_trait_leader_doll_cloud_network_node_desc$§!"

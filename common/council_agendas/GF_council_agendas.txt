@@ -40,60 +40,29 @@ GF_agenda_doll_cloud_network = {
 		}
 		else = {
 			hidden_effect = {
-				set_variable = {
-					which = v_mult
-					value = value:GF_count_doll_leader|CLASS|governor|MAX|25|
+				ruler = {
+					set_variable = {
+						which = v_GF_official_doll
+						value = prev.value:GF_count_doll_leader|CLASS|official|MAX|25|
+					}
+					set_variable = {
+						which = v_GF_scientist_doll
+						value = prev.value:GF_count_doll_leader|CLASS|scientist|MAX|25|
+					}
+					set_variable = {
+						which = v_GF_commander_doll
+						value = prev.value:GF_count_doll_leader|CLASS|commander|MAX|25|
+					}
+					add_timed_trait = {
+						trait = GF_trait_leader_doll_cloud_network
+						days = prev.value:GF_doll_cloud_network_trait_duration
+					}
 				}
-				GF_add_effective_modifier = {
-					MODIFIER = GF_agenda_doll_cloud_network_governor_effect
-					MULT = v_mult
-					PERIOD = years DURATION = @GF_agenda_doll_cloud_network_duration_years
-				}
-				set_variable = {
-					which = v_mult
-					value = value:GF_count_doll_leader|CLASS|scientist|MAX|25|
-				}
-				GF_add_effective_modifier = {
-					MODIFIER = GF_agenda_doll_cloud_network_scientist_effect
-					MULT = v_mult
-					PERIOD = years DURATION = @GF_agenda_doll_cloud_network_duration_years
-				}
-				set_variable = {
-					which = v_mult
-					value = value:GF_count_doll_leader|CLASS|commander|MAX|25|
-				}
-				GF_add_effective_modifier = {
-					MODIFIER = GF_agenda_doll_cloud_network_commander_effect
-					MULT = v_mult
-					PERIOD = years DURATION = @GF_agenda_doll_cloud_network_duration_years
-				}
-				clear_variable = v_mult
-
-				#add_modifier = {
-				#	modifier = GF_agenda_doll_cloud_network_governor_effect
-				#	mult = value:GF_count_doll_leader|CLASS|governor|MAX|25|
-				#	years = @GF_agenda_doll_cloud_network_duration_years
-				#}
-				#add_modifier = {
-				#	modifier = GF_agenda_doll_cloud_network_scientist_effect
-				#	mult = value:GF_count_doll_leader|CLASS|scientist|
-				#	years = @GF_agenda_doll_cloud_network_duration_years
-				#}
-				#add_modifier = {
-				#	modifier = GF_agenda_doll_cloud_network_admiral_effect
-				#	mult = value:GF_count_doll_leader|CLASS|admiral|MAX|20|
-				#	years = @GF_agenda_doll_cloud_network_duration_years
-				#}
-				#add_modifier = {
-				#	modifier = GF_agenda_doll_cloud_network_general_effect
-				#	mult = value:GF_count_doll_leader|CLASS|general|MAX|20|
-				#	years = @GF_agenda_doll_cloud_network_duration_years
-				#}
+				GF_add_doll_cloud_network_node_traits = { CLASS = official }
+				GF_add_doll_cloud_network_node_traits = { CLASS = scientist }
+				GF_add_doll_cloud_network_node_traits = { CLASS = commander }
 			}
 		}
 		custom_tooltip = GF_agenda_doll_cloud_network_effect_tooltip
-		custom_tooltip = GF_agenda_doll_cloud_network_governor_effect_tooltip
-		custom_tooltip = GF_agenda_doll_cloud_network_scientist_effect_tooltip
-		custom_tooltip = GF_agenda_doll_cloud_network_commander_effect_tooltip
 	}
 }

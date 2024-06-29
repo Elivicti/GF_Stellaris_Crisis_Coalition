@@ -201,3 +201,10 @@ GF_subnet_generate_threads_ec = {
 		produces
 	}
 }
+
+GF_doll_pops= {
+	parent = planet_pops
+	generate_add_modifiers = {
+		produces
+	}
+}

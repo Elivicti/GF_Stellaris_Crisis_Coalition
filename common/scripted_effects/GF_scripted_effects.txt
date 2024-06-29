@@ -691,7 +691,7 @@ GF_add_effective_modifier = {
 		add_modifier = {
 			modifier = $MODIFIER$
 			mult = $MULT$
-			$PERIOD$ = $DURATION$
+			[[PERIOD] $PERIOD$ = $DURATION$ ]
 		}
 	}
 	else = {
@@ -702,6 +702,23 @@ GF_add_effective_modifier = {
 	}
 }
 
+# this = country
+GF_add_doll_cloud_network_node_traits = {
+	while = {
+		count = ruler.v_GF_$CLASS$_doll
+		random_owned_leader = {
+			limit = {
+				GF_is_doll_leader = yes
+				leader_class = $CLASS$
+				NOT = { has_trait = GF_trait_leader_doll_cloud_network_node }
+			}
+			add_timed_trait = {
+				trait = GF_trait_leader_doll_cloud_network_node
+				days = prev.value:GF_doll_cloud_network_trait_duration
+			}
+		}
+	}
+}
 
 # this = country
 GF_calculate_OGAS_threads_statistics = {
