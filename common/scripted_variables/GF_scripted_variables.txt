@@ -3,6 +3,7 @@
 
 # for leader trait
 @trait_sorting_priority_veteran_always_none = 215
+@trait_sorting_priority_paragon_triggered_none = 240
 
 # projects from Zion
 @GF_zion_project_energy_cost_1 = 5000
