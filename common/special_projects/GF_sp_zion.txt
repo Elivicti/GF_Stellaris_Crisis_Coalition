@@ -89,7 +89,7 @@ special_project = {
 	location = no
 	event_chain = GF_secrets_of_zion_event_chain
 
-	picture = GFX_evt_GF_barracuda_core
+	picture = GFX_evt_GF_starfish_core
 
 	cost = 100000
 	tech_department = physics_technology

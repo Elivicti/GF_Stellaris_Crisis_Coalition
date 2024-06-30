@@ -245,8 +245,8 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_evt_GF_barracuda_core"
-		textureFile = "gfx/event_pictures/GF_barracuda_core.dds"
+		name = "GFX_evt_GF_starfish_core"
+		textureFile = "gfx/event_pictures/GF_starfish_core.dds"
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}

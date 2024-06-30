@@ -95,13 +95,13 @@ guiTypes = {
 				alwaysTransparent = yes
 			}
 			effectButtonType = {
-				name = "evt_pic_GFX_evt_GF_barracuda_core"
+				name = "evt_pic_GFX_evt_GF_starfish_core"
 				scale = 1.4
 				font = "cg_16b"
 				position = { x = -315 y = -105 }
 				orientation = center_up
-				spriteType = GFX_evt_GF_barracuda_core
-				effect = GF_eb_pic_GFX_evt_GF_barracuda_core
+				spriteType = GFX_evt_GF_starfish_core
+				effect = GF_eb_pic_GFX_evt_GF_starfish_core
 				alwaysTransparent = yes
 			}
 			effectButtonType = {

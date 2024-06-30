@@ -9,11 +9,11 @@ GF_eb_pic_GFX_evt_GF_AU_flag = {
 	allow = { always = yes }
 }
 
-GF_eb_pic_GFX_evt_GF_barracuda_core = {
+GF_eb_pic_GFX_evt_GF_starfish_core = {
 	potential = {
 		GF_check_OGAS_story_event_picture = {
 			SCOPE = from
-			PICTURE = GFX_evt_GF_barracuda_core
+			PICTURE = GFX_evt_GF_starfish_core
 		}
 	}
 	allow = { always = yes }
