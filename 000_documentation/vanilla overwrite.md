@@ -85,25 +85,6 @@
 
 
 
-## 科技
-
-|            `key`            |                   说明                   |
-| :-------------------------: | :--------------------------------------: |
-|   `tech_robotic_workers`    | 禁止拥有**联合政府**政体的帝国研究该科技 |
-|    `tech_droid_workers`     | 禁止拥有**联合政府**政体的帝国研究该科技 |
-|  `tech_synthetic_workers`   | 禁止拥有**联合政府**政体的帝国研究该科技 |
-|  `tech_synthetic_leaders`   | 禁止拥有**联合政府**政体的帝国研究该科技 |
-|     `tech_robomodding`      | 禁止拥有**联合政府**政体的帝国研究该科技 |
-| `tech_robomodding_points_1` | 禁止拥有**联合政府**政体的帝国研究该科技 |
-| `tech_robomodding_points_2` | 禁止拥有**联合政府**政体的帝国研究该科技 |
-
-文件：
-
-+ `common/technology/y_eng_tech.txt`
-+ `common/technology/y_synthetic_dawn_tech.txt`
-
-
-
 ## 其他
 
 |                      文件                       |             `key`             |               说明               |

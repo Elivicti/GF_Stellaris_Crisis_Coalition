@@ -56,3 +56,16 @@ GF_check_OGAS_threads_over_cap_effect = { from = <scope> }
 
 > 有关OGAS线程的说明，参阅[OGAS.md](OGAS.md)
 
+
+
+## 深入锡安行动
+
+当发起**深入锡安**行动时，根据选择注入的能量多少，触发以下三个`on_action`的其中之一。
+
+```pdx
+# this = country
+on_GF_Zion_project_low_energy = {}
+on_GF_Zion_project_mid_energy = {}
+on_GF_Zion_project_high_energy = {}
+```
+
