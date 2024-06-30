@@ -81,8 +81,29 @@ GF_automated_city_construction = {
 	monthly_progress = {
 		base = 1
 		modifier = {
+			desc = GF_automated_city_construction_districts_city
+			add = target.value:GF_count_district|TYPE|district_city|FACTOR|0.05|
+			NOT = {
+				current_situation_approach = GF_automated_city_construction_approach_cancel
+			}
+		}
+		modifier = {
+			desc = GF_automated_city_construction_districts_industrial
+			add = target.value:GF_count_district|TYPE|district_industrial|FACTOR|0.05|
+			NOT = {
+				current_situation_approach = GF_automated_city_construction_approach_cancel
+			}
+		}
+		modifier = {
+			desc = GF_automated_city_construction_districts_other
+			add = target.value:GF_count_district_non_urban|FACTOR|0.02|
+			NOT = {
+				current_situation_approach = GF_automated_city_construction_approach_cancel
+			}
+		}
+		modifier = {
 			desc = GF_automated_city_construction_approach_speed_up
-			add = 1
+			factor = 1.5
 			current_situation_approach = GF_automated_city_construction_approach_speed_up
 		}
 		modifier = {

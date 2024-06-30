@@ -123,6 +123,18 @@ GF_count_district = {
 		}
 		mode = add
 	}
+	[[FACTOR]
+		mult = $FACTOR$
+	]
+}
+# this = planet
+GF_count_district_non_urban = {
+	set = value:GF_count_district|TYPE|any|
+	subtract = value:GF_count_district|TYPE|district_city|
+	subtract = value:GF_count_district|TYPE|district_industrial|
+	[[FACTOR]
+		mult = $FACTOR$
+	]
 }
 
 # scope = planet
