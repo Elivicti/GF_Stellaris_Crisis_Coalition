@@ -10,7 +10,6 @@ GF_collapse_relic_site_0 = {
 	desc = GF_collapse_relic_site_0_desc
 	picture = GFX_evt_GF_door
 
-	stages = 4
 	max_instances = 1
 	allow = {
 		is_ship_class = shipclass_science_ship
@@ -32,6 +31,7 @@ GF_collapse_relic_site_0 = {
 		}
 	}
 
+	stages = 6
 	stage = {
 		difficulty = 5
 		icon = GFX_archaeology_runes_A1
