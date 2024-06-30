@@ -5,6 +5,7 @@
  GF_collapse_material_name_error:0 "§RÌ®ËúÎïÖÊ§!"
  GF_collapse_relic_name_error:0 "§RÒÅ¼££§!"
  GF_relic_civilization_name_error:0 "§R¾ÈÊÀÖ÷§!"
+ GF_zion_name_error: "§RÎý°²¿Õ¼ä§!"
 
  event_GF_zion_comm.option:0 "与$GF_ZION$通讯"
 

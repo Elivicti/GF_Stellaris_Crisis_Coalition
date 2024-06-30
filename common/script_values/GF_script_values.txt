@@ -71,6 +71,16 @@ GF_monthly_resource_income = {
 	# min = $MIN$
 }
 
+# this = leader
+GF_zion_inspired_leader_exp = {
+	# 添加的经验的计算公式:
+	# -100 * skill + 2000
+	set = trigger:has_skill
+	max = 10
+	mult = -100
+	add = 2000
+}
+
 # scope = country
 GF_count_non_doll_robot_pop = {
 	complex_trigger_modifier = {

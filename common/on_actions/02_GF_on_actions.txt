@@ -115,3 +115,62 @@ on_OGAS_used_threads_over_cap = {
 		GF_ogas.500
 	}
 }
+
+
+# 深入锡安，低能量
+# this = country
+on_GF_Zion_project_low_energy = {
+	random_events = {
+		10 = GF_zion_project.31100
+		40 = GF_zion_project.31200
+		50 = GF_zion_project.31300
+	}
+}
+# 深入锡安，中等能量
+# this = country
+on_GF_Zion_project_mid_energy = {
+	random_events = {
+		# buff
+		12 = GF_zion_project.32101 # 科研
+		12 = GF_zion_project.32102 # 星球发展
+		12 = GF_zion_project.32103 # 陆军
+		12 = GF_zion_project.32104 # 机器人产出
+		12 = GF_zion_project.32105 # 舰船火力
+		12 = GF_zion_project.32106 # 舰船经验
+		12 = GF_zion_project.32107 # 帝国规模
+		12 = GF_zion_project.32108 # 轨道空间站产出
+		# debuff
+		1 = GF_zion_project.32109 # 舰船火力
+		1 = GF_zion_project.32110 # 帝国规模
+		1 = GF_zion_project.32111 # 科研速度
+		1 = GF_zion_project.32112 # 机器人产出
+
+		# 机械领袖
+		17 = GF_zion_project.32201 # 机械领袖增强：特质 受祝福
+		18 = GF_zion_project.32202 # 机械领袖增强：移除所有负面特质
+		17 = GF_zion_project.32203 # 机械领袖削弱：特质 核心故障
+		18 = GF_zion_project.32204 # 机械领袖增强：添加经验 或 给予特殊特质 受启发
+
+		# 探测器
+		30 = GF_zion_project.32300
+	}
+}
+# 深入锡安，高能量
+# this = country
+on_GF_Zion_project_high_energy = {
+	random_events = {
+		# buff
+		28 = GF_zion_project.33101
+		28 = GF_zion_project.33102
+		28 = GF_zion_project.33103
+		28 = GF_zion_project.33104
+		# debuff
+		21 = GF_zion_project.33201
+		21 = GF_zion_project.33202
+		21 = GF_zion_project.33203
+		21 = GF_zion_project.33204
+
+		# 特殊事件：获得遗珍（提供强力buff），使天灾强度翻倍
+		4 = GF_zion_project.33300
+	}
+}

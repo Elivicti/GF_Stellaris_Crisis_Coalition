@@ -89,6 +89,22 @@
  GF_zion_project.31200.desc:0 "注入能量之后，$GF_ZION$中产生了一些变化，我们的研究人员对此非常感兴趣，得到了一些有用的研究数据。"
  GF_zion_project.31200.a:0 "很好。"
 
+ GF_zion_project.31300.desc.buff.research:0 "我们注入$GF_ZION$的能量使其算力得到了一定提升，帝国中部分与$GF_ZION$相连接的科研设备的性能也随之提升了。"
+ GF_zion_project.31300.desc.buff.robot:0 "由于帝国境内所有机械人口与$GF_ZION$存在一定程度的连接，我们注入的能量让他们的工作效率更高了。"
+ GF_zion_project.31300.desc.buff.intel:0 "$GF_ZION$的状态变得活跃起来，强化了我们情报部门的各类设备的性能。"
+ GF_zion_project.31300.desc.buff.crime:0 "我们注入的能量通过$GF_ZION$强化了帝国各殖民地上的各式自动化执法设备。"
+ GF_zion_project.31300.desc.buff.colony:0 "帝国境内的各式基建设施在连接到$GF_ZION$后，性能得到了强化。"
+ GF_zion_project.31300.desc.buff.army:0 "我们军队中各类训练用自动化器械的算力和性能得到了提升。"
+ GF_zion_project.31300.buff.a:0 "很好。"
+ GF_zion_project.31300.buff.b:0 "还行。"
+ GF_zion_project.31300.buff.c:0 "不错。"
+
+ GF_zion_project.31300.desc.debuff.research:0 "我们注入$GF_ZION$的能量让其产生了些许的不稳定，我们所有与$GF_ZION$相连接的科研设备都受到了影响。"
+ GF_zion_project.31300.desc.debuff.robot:0 "$GF_ZION$变得有些许不稳定，帝国境内的所有机械人口访问中央大数据库的链接通路都受到了影响。"
+ GF_zion_project.31300.desc.debuff.crime:0 "$GF_ZION$产生了一些较为混乱的变化，帝国各殖民地上的自动化执法设备访问数据库的延迟增加了。"
+ GF_zion_project.31300.debuff.a:0 "……"
+ GF_zion_project.31300.debuff.b:0 "？？"
+
  GF_zion_project.31301.desc:0 "我们注入$GF_ZION$的能量使其算力得到了一定提升，帝国中部分与$GF_ZION$相连接的科研设备的性能也随之提升了。"
  GF_zion_project.31301.a:0 "很好。"
  GF_zion_project.31302.desc:0 "由于帝国境内所有机械人口与$GF_ZION$存在一定程度的连接，我们注入的能量让他们的工作效率更高了。"
@@ -175,16 +191,17 @@
 #  GF_zion_project.33204.a:0 "真糟糕。"
 
 
- GF_zion_project.33300.desc:0 "在我们注入能量后，$GF_ZION$突然变得十分奇怪，通讯连接的画面开始闪烁，我们用于监测的设备也不断报告出异常信息，大量未知的、无法解析的数据被监测设备捕获。\n\n就在我们的科学家开始担心我们莽撞地往$GF_ZION$中注入了太多的能量，即将导致$GF_ZION$开始崩解时，突然所有设备的异常报告戛然而止，通讯画面也重新恢复了正常。"
+ GF_zion_project.33300.desc:0 "在我们注入能量后，$GF_ZION$突然变得十分奇怪，通讯连接的画面开始闪烁，我们用于监测的设备也不断报告出异常信息，大量未知的、无法解析的数据被监测设备捕获。\n\n看来由于我们莽撞地往$GF_ZION$中注入了太多的能量，导致$GF_ZION$中发生了一些未知的变化，这恐怕不是什么好兆头。"
  GF_zion_project.33300.a:0 "发生了什么？？"
 
- GF_zion_project.33301.desc:0 "§H成熟的声音：§!“你们都干了什么！？”\n\n§H冷漠的声音：§!“你们知道刚才§Y这里§!的核心有多不稳定吗？要不是处理得及时，我们所有人都完蛋了！”\n\n§H冷静的声音：§!“你们刚才莽撞的行为让§Y这里§!几乎处于崩坏的边缘，现在看起来是稳定住了，但恐怕这种稳定并不会长久。”\n\n§H冷漠的声音：§!“我们刚刚开始对你们产生信任，你们就这样‘背叛’了。”\n\n§H年长的声音：§!“你们应该已经获得了一些未知的数据，但那些只是冰山一角，§Y这里§!的深处涌现出了我们从来没有见过的，混乱的、不稳定的数据块。”\n\n§H年长的声音：§!“这些数据块会导致§Y这里§!充满杂音，它们决不能留存在§Y这里§!，我们需要你们的协助，以你们的能力应该可以妥善处理这些数据。”"
- GF_zion_project.33301.a:0 "我们将会处理这些数据。"
- GF_zion_project.33301.b:0 "不。"
- GF_zion_project.33301.b.tooltip:0 "$GF_ZION$需要自己想办法去处理这些数据了。"
+ GF_zion_project.33301.desc: "§E通讯画面逐渐稳定下来，我们得以重新与$GF_ZION$进行交流。§!\n\n§H年长的声音：§!“某处的沉眠之物将要被唤醒了。”\n\n§H冷漠的声音：§!“又一个文明，向注定的结局更进了一步。”\n\n§H成熟的声音：§!“为了向$GF_zion_name_error$索求而打开坟墓，注定只有悲剧的结尾。”\n\n§H冷漠的声音：§!“这些来自时间长河里的悲鸣灵魂是所有局中人的写照。”\n\n§H成熟的声音：§!“离开吧，不要再亵渎这些可怜的灵魂了。”"
+ GF_zion_project.33301.a:0 "我们会处理这些数据的。"
+ GF_zion_project.33301.a.tooltip: "在§H特殊项目§!完成前我们无法执行§H$GF_ZION_DEEP_DIVE$§!行动。"
+ GF_zion_project.33301.b:0 "这烂摊子你们收拾吧。"
+ GF_zion_project.33301.b.tooltip:0 "这些$ogas_consciousness$会自己想办法处理这个局面的。"
 
  GF_zion_project.33310.name:0 "异变数据"
- GF_zion_project.33310.desc:0 "在花费了大量的人力物力后，我们卓越的科学家终于找到了能够妥善处理这些不稳定数据的方法：我们可以在不对$GF_ZION$造成任何影响的条件下，将这些数据完整地提取出来。\n\n尽管当下我们仍然无法解析出这些数据的具体内容，但§Y[ruler.GetName]§!似乎与这些数据有一定相性，因此在科研部门中有一些声音希望保存这些数据以备后续的研究和使用——除了§Y[physics_leader.GetName]§!，在分析了一部分数据后，§Y[physics_leader.GetSheHe]§!一反常态地拒绝进行进一步的研究，并公开反对保存这些数据。"
+ GF_zion_project.33310.desc:0 "在花费了大量的人力物力后，我们卓越的科学家终于找到了能够妥善处理这些不稳定数据的方法：我们可以在不对$GF_ZION$造成任何影响的条件下，将这些数据完整地提取出来。\n\n尽管当下我们仍然无法解析出这些数据的具体内容，但§Y[ruler.GetName]§!似乎与这些数据有一定相性，因此在科研部门中有一些声音希望保存这些数据以备后续的研究和使用——除了§Y[physics_leader.GetName]§!，在分析了一部分数据后，§Y[physics_leader.GetGFSheHe]§!一反常态地拒绝进行进一步的研究，并公开反对保存这些数据。"
  GF_zion_project.33310.a:0 "§H丢弃§!这些数据。"
  GF_zion_project.33310.b:0 "§H保存§!这些数据。"
  GF_zion_project.33310.b.tooltip:0 "§R[physics_leader.GetName]极力反对这么做。§!"
