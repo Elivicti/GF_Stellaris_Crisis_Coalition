@@ -55,3 +55,6 @@
  GF_GetTheyCN_female: "她们"
  GF_GetTheyCN_male: "他们"
  GF_GetTheyCN_default: "它们"
+
+ GF_SheHe_doll: "她"
+ GF_SheHe_default: "[this.GetSheHe]"

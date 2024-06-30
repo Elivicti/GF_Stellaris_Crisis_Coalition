@@ -90,3 +90,17 @@ defined_text = {
 	}
 	default = GF_GetTheyCN_default
 }
+
+
+# this = leader
+defined_text = {
+	name = GetGFSheHe
+	random = no
+	text = {
+		trigger = {
+			species = { is_archetype = GF_ANDROID }
+		}
+		localization_key = GF_SheHe_doll
+	}
+	default = GF_SheHe_default
+}
