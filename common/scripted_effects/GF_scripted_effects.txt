@@ -285,28 +285,58 @@ GF_change_zion_favor = {
 	}
 }
 
-# scope = country
-GF_set_zion_deep_dive_cooldown = {
-	custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_5
-	GF_set_zion_deep_dive_cooldown_no_notification = yes
+# this = country
+GF_set_zion_deep_dive_cooldown_notification_yes = {
+	custom_tooltip_with_params = {
+		description = GF_add_zion_deep_dive_cooldown_tooltip
+		description_parameters = {
+			YEARS = $YEARS|5$
+		}
+	}
 	hidden_effect = {
 		country_event = {
 			id = GF_zion_project.34000
-			days = 1800
+			days = @GF_zion_cooldown_delay_years_$YEARS|5$
 		}
 	}
 }
+GF_set_zion_deep_dive_cooldown_notification_no = {}
 
-# scope = country
-GF_set_zion_deep_dive_cooldown_no_notification = {
+# this = country
+GF_set_zion_deep_dive_cooldown = {
 	hidden_effect = {
-		add_modifier = {
-			modifier = GF_zion_deep_dive_cooldown
-			years = 5
+		if = {
+			limit = { has_modifier = GF_zion_deep_dive_cooldown }
+			remove_modifier = GF_zion_deep_dive_cooldown
 		}
 	}
-}
 
+	[[INF]
+		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_inf
+		hidden_effect = {
+			add_modifier = { modifier = GF_zion_deep_dive_cooldown }
+			set_country_flag = flag_GF_inf_zion_deep_dive_cooldown
+		}
+	]
+
+	[[!INF]
+		GF_set_zion_deep_dive_cooldown_notification_$NOTIFICATION|yes$ = {
+			YEARS = $YEARS|5$
+		}
+		hidden_effect = {
+			remove_country_flag = flag_GF_inf_zion_deep_dive_cooldown
+			add_modifier = {
+				modifier = GF_zion_deep_dive_cooldown
+				years = $YEARS|5$
+			}
+			set_saved_date = {
+				key = GF_zion_cooldown_date
+				days_from_present = value:years_to_days|YEARS|$YEARS|5$|
+			}
+		}
+	]
+
+}
 
 # scope = planet
 GF_construct_railway_line_effect = {

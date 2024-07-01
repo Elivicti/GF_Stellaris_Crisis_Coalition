@@ -260,6 +260,14 @@ country_event = {
 			}
 			GF_require_zion_favor_high = yes
 		}
+		if = {
+			limit = {
+				has_modifier = GF_zion_deep_dive_cooldown
+				NOT = { has_country_flag = flag_GF_inf_zion_deep_dive_cooldown }
+			}
+			custom_tooltip = GF_zion_deep_dive_cooldown_date
+		}
+
 		hidden_effect = {
 			country_event = { id = GF_zion_project.30000 }
 		}

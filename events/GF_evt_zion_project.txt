@@ -410,7 +410,10 @@ country_event = {
 
 		hidden_effect = {
 			fire_on_action = { on_action = on_GF_Zion_project_low_energy }
-			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_set_zion_deep_dive_cooldown = {
+				YEARS = 5
+				NOTIFICATION = no
+			}
 			GF_zion_comm_end = yes
 		}
 	}
@@ -423,7 +426,10 @@ country_event = {
 
 		hidden_effect = {
 			fire_on_action = { on_action = on_GF_Zion_project_mid_energy }
-			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_set_zion_deep_dive_cooldown = {
+				YEARS = 5
+				NOTIFICATION = no
+			}
 			GF_zion_comm_end = yes
 		}
 	}
@@ -436,7 +442,10 @@ country_event = {
 
 		hidden_effect = {
 			fire_on_action = { on_action = on_GF_Zion_project_high_energy }
-			GF_set_zion_deep_dive_cooldown_no_notification = yes
+			GF_set_zion_deep_dive_cooldown = {
+				YEARS = 5
+				NOTIFICATION = no
+			}
 			GF_zion_comm_end = yes
 		}
 	}
@@ -462,7 +471,7 @@ country_event = {
 
 	option = {
 		name = GF_zion_project.31100.a
-		GF_set_zion_deep_dive_cooldown = yes
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -502,7 +511,7 @@ country_event = {
 			}
 		}
 
-		GF_set_zion_deep_dive_cooldown = yes
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -660,7 +669,10 @@ country_event = {
 	}
 	
 	after = {
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = {
+			YEARS = 5
+		}
 		hidden_effect = {
 			remove_country_flag = tmp_GF_buff_research  # 科研
 			remove_country_flag = tmp_GF_buff_robot     # 机器人产出
@@ -691,7 +703,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32101.a
 		add_modifier = { modifier = GF_zion_deep_dive_all_research_produces_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -705,7 +718,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32102.a
 		add_modifier = { modifier = GF_zion_deep_dive_planet_development_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -719,7 +733,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32103.a
 		add_modifier = { modifier = GF_zion_deep_dive_army_exp_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -733,7 +748,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32104.a
 		add_modifier = { modifier = GF_zion_deep_dive_robotic_produces_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -747,7 +763,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32105.a
 		add_modifier = { modifier = GF_zion_deep_dive_ship_fire_power_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -761,7 +778,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32106.a
 		add_modifier = { modifier = GF_zion_deep_dive_ship_exp_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -775,7 +793,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32107.a
 		add_modifier = { modifier = GF_zion_deep_dive_empire_size_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -789,7 +808,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32108.a
 		add_modifier = { modifier = GF_zion_deep_dive_station_produces_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 # debuff
@@ -804,7 +824,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32109.a
 		add_modifier = { modifier = GF_zion_deep_dive_ship_fire_power_n_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -818,7 +839,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32110.a
 		add_modifier = { modifier = GF_zion_deep_dive_empire_size_n_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -832,7 +854,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32111.a
 		add_modifier = { modifier = GF_zion_deep_dive_all_research_speed_n_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -846,7 +869,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.32112.a
 		add_modifier = { modifier = GF_zion_deep_dive_robot_produces_n_2 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 
@@ -898,7 +922,8 @@ country_event = {
 				commander = { add_trait = GF_trait_leader_enhanced_commander }
 			}
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 # 机械领袖增强：移除所有负面特质
@@ -922,7 +947,8 @@ country_event = {
 			limit = { species = { is_robotic = yes } }
 			remove_trait = all_negative
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 # 机械领袖削弱：特质 核心故障
@@ -974,7 +1000,8 @@ country_event = {
 			}
 			hidden_effect = { set_leader_flag = flag_l_GF_glitching_leader }
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 # 机械领袖增强：添加经验 或 给予特殊特质 受启发
@@ -1037,7 +1064,8 @@ country_event = {
 				}
 			}
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 
@@ -1147,7 +1175,8 @@ country_event = {
 				event_target:chosen_planet = { add_deposit = d_zro_deposit_5 }
 			}
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 
@@ -1165,7 +1194,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33101.a
 		add_modifier = { modifier = GF_zion_deep_dive_research_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1179,7 +1209,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33102.a
 		add_modifier = { modifier = GF_zion_deep_dive_production_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1193,7 +1224,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33103.a
 		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1207,7 +1239,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33104.a
 		add_modifier = { modifier = GF_zion_deep_dive_fleet_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 # debuff
@@ -1222,7 +1255,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33201.a
 		add_modifier = { modifier = GF_zion_deep_dive_research_n_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1236,7 +1270,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33202.a
 		add_modifier = { modifier = GF_zion_deep_dive_production_n_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1250,7 +1285,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33203.a
 		add_modifier = { modifier = GF_zion_deep_dive_diplomacy_n_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 country_event = {
@@ -1264,7 +1300,8 @@ country_event = {
 	option = {
 		name = GF_zion_project.33204.a
 		add_modifier = { modifier = GF_zion_deep_dive_fleet_n_3 years = 3 }
-		GF_set_zion_deep_dive_cooldown = yes
+
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 	}
 }
 
@@ -1313,14 +1350,7 @@ country_event = {
 		GF_enable_zion_project = { PROJECT = SP_GF_DATA_SINGULARITY_PROJECT }
 		GF_change_zion_favor = { VALUE = -15 }
 
-		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_inf
-		hidden_effect = {
-			remove_modifier = GF_zion_deep_dive_cooldown
-			add_modifier = {
-				modifier = GF_zion_deep_dive_cooldown
-				years = -1
-			}
-		}
+		GF_set_zion_deep_dive_cooldown = { INF = yes }
 		custom_tooltip = GF_zion_project.33301.a.tooltip
 
 		ai_chance = { factor = 0 }
@@ -1329,20 +1359,7 @@ country_event = {
 	option = {
 		name = GF_zion_project.33301.b
 		custom_tooltip = GF_zion_project.33301.b.tooltip
-		# GF_change_zion_favor = { VALUE = -25 }
-		
-		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_10
-		hidden_effect = {
-			remove_modifier = GF_zion_deep_dive_cooldown
-			add_modifier = {
-				modifier = GF_zion_deep_dive_cooldown
-				years = 10
-			}
-			country_event = {
-				id = GF_zion_project.34000
-				days = 3600
-			}
-		}
+		GF_set_zion_deep_dive_cooldown = { YEARS = 10 }
 		default_hide_option = yes
 	}
 }
@@ -1384,18 +1401,7 @@ country_event = {
 
 	after = {
 		GF_end_zion_secrets_event_chain = yes
-		custom_tooltip = GF_add_zion_deep_dive_cooldown_tooltip_3
-		hidden_effect = {
-			remove_modifier = GF_zion_deep_dive_cooldown
-			add_modifier = {
-				modifier = GF_zion_deep_dive_cooldown
-				years = 3
-			}
-			country_event = {
-				id = GF_zion_project.34000
-				days = 1080
-			}
-		}
+		GF_set_zion_deep_dive_cooldown = { YEARS = 3 }
 	}
 }
 
@@ -1429,6 +1435,7 @@ country_event = {
 
 	option = {
 		name = GF_zion_project.34000.c
+		allow = { GF_is_in_zion_comm = no }
 		hidden_effect = {
 			country_event = { id = GF_zion.0 }
 		}

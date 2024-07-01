@@ -12,6 +12,17 @@
 
 @GF_zion_project_cost_max = 1000000
 
+@GF_zion_cooldown_delay_years_1  = 360
+@GF_zion_cooldown_delay_years_2  = 720
+@GF_zion_cooldown_delay_years_3  = 1080
+@GF_zion_cooldown_delay_years_4  = 1440
+@GF_zion_cooldown_delay_years_5  = 1800
+@GF_zion_cooldown_delay_years_6  = 2160
+@GF_zion_cooldown_delay_years_7  = 2520
+@GF_zion_cooldown_delay_years_8  = 2880
+@GF_zion_cooldown_delay_years_9  = 3240
+@GF_zion_cooldown_delay_years_10 = 3600
+
 # OGAS升级提升线程数的起始等级
 @GF_OGAS_leveled_thread_add_start_after_level = 5
 

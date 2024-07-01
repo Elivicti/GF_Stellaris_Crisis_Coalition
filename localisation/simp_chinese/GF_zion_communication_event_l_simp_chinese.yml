@@ -44,12 +44,10 @@
  GF_zion.20000.desc:0 "没做完，在这里难产了。\n\n给大伙磕头了，咚咚咚"
 
  GF_change_zion_favor_tooltip:0 "$GF_ZION$对我们的评价改变了：£opinion£$VALUE|0=+$"
- 
+
+ GF_add_zion_deep_dive_cooldown_tooltip: "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£ §Y$YEARS|0$年§!内无法进行§Y深入$GF_ZION$§!行动。"
+
  GF_add_zion_deep_dive_cooldown_tooltip_inf:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：无法进行§Y深入$GF_ZION$§!行动。"
- GF_add_zion_deep_dive_cooldown_tooltip_10:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y10年§!内无法进行§Y深入$GF_ZION$§!行动。"
- GF_add_zion_deep_dive_cooldown_tooltip_5:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y5年§!内无法进行§Y深入$GF_ZION$§!行动。"
- GF_add_zion_deep_dive_cooldown_tooltip_4:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y4年§!内无法进行§Y深入$GF_ZION$§!行动。"
- GF_add_zion_deep_dive_cooldown_tooltip_3:0 "添加$GF_zion_deep_dive_cooldown$修正，效果：£time£§Y3年§!内无法进行§Y深入$GF_ZION$§!行动。"
 
  GF_zion.20000.desc.a:0 "§H成熟的声音：§!“你们的文明就像抱着核武器的婴儿，根本不知道自己面对的是什么……”"
  GF_zion.20000.desc.b:0 "§H冷漠的声音：§!“‘归宿’不过是个永恒牢笼，只有欺骗和数千年的等待……你们也将成为下一个受害者。”"
@@ -71,6 +69,7 @@
  GF_zion.21000.return:0 "我们换个话题吧。"
 
  GF_require_zion_deep_dive_no_cooldown:0 "需要$GF_ZION$处于稳定化的状态"
+ GF_zion_deep_dive_cooldown_date: "$GF_ZION$稳定化完成时间：§H[This.GF_zion_cooldown_date]§!"
 
  GF_require_zion_favor_very_high:0 "至少需要$GF_zion_favor_tooltip$ §G+80§!"
  GF_require_zion_favor_high:0 "至少需要$GF_zion_favor_tooltip$ §G+50§!"

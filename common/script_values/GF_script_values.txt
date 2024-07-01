@@ -271,3 +271,8 @@ GF_doll_cloud_network_trait_duration = {
 	base = @agenda_finish_modifier_duration
 	mult = value:scripted_modifier_mult|MODIFIER|council_agenda_finishing_effect_duration_mult|
 }
+
+years_to_days = {
+	set = $YEARS$
+	mult = 360
+}

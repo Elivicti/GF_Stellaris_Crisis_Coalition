@@ -124,7 +124,7 @@ GF_relic_data_singularity = {
 			modifier = GF_zion_deep_dive_data_horizon
 			years = 3
 		}
-		GF_set_zion_deep_dive_cooldown = yes
+		GF_set_zion_deep_dive_cooldown = { YEARS = 5 }
 		custom_tooltip_with_params = {
 			description = GF_relic_triumph_cooldown_tooltip
 			description_parameters = {
