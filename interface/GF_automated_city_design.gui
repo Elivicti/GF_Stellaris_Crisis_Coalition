@@ -33,17 +33,17 @@ guiTypes = {
 		}
 		containerWindowType = {
 			name = "GF_automated_city_design_desc"
-			orientation = "UPPER_LEFT"
-			origo = "LEFT"
+			orientation = UPPER_LEFT
+			origo = UPPER_LEFT
 			position = { x = 1005 y = 0 }
 			size = { width = 400 height = 800 }
 
 			effectButtonType = {
 				name = "GF_automated_city_specialist_type_title"
 				text = "GF_automated_city_specialist_type_title"
-				size = { width = 385 height = 50 }
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				position = { x = -10 y = 20 }
+				size = { x = 385 y = 50 }
 				
 				effect = GF_effect_button_always_on
 				spriteType = "GFX_invisible"
@@ -53,8 +53,8 @@ guiTypes = {
 			buttonType = {
 				name = "GF_automated_city_specialist_type_desc_bg"
 				position = { x = -10 y = 65 }
-				size = { width = 385 height = 210 }
-				orientation = "UPPER_LEFT"
+				size = { x = 385 y = 210 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 			}
@@ -63,8 +63,8 @@ guiTypes = {
 			buttonType = {
 				name = "GF_automated_city_district_bg0"
 				position = { x = 90 y = 290 }
-				size = { width = 285 height = 87 }
-				orientation = "UPPER_LEFT"
+				size = { x = 285 y = 87 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 				text = BLANK_STRING
@@ -82,7 +82,7 @@ guiTypes = {
 				name = "GF_automated_city_district_nexus_icon"
 				position = { x = 0 y = 290 }
 				spriteType = "GFX_district_GF_automated_nexus"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_effect_button_always_on
 				alwaysTransparent = yes
 			}
@@ -91,8 +91,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_bg1"
 				position = { x = 90 y = 390 }
-				size = { width = 285 height = 87 }
-				orientation = "UPPER_LEFT"
+				size = { x = 285 y = 87 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -102,7 +102,7 @@ guiTypes = {
 				name = "GF_automated_city_district_1_desc"
 				text = "GF_automated_city_district_1_desc"
 				position = { x = 95 y = 395 }
-				size = { width = 275 height = 72 }
+				size = { x = 275 y = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -114,7 +114,7 @@ guiTypes = {
 				name = "GF_automated_city_district_energy_icon"
 				position = { x = 0 y = 390 }
 				spriteType = "GFX_district_GF_automated_energy"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_base_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -122,7 +122,7 @@ guiTypes = {
 				name = "GF_automated_city_district_foundry_icon"
 				position = { x = 0 y = 390 }
 				spriteType = "GFX_district_GF_automated_foundry"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_advanced_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -130,7 +130,7 @@ guiTypes = {
 				name = "GF_automated_city_district_research_icon"
 				position = { x = 0 y = 390 }
 				spriteType = "GFX_district_GF_automated_research"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_special_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -139,8 +139,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_bg2"
 				position = { x = 90 y = 490 }
-				size = { width = 285 height = 87 }
-				orientation = "UPPER_LEFT"
+				size = { x = 285 y = 87 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -150,7 +150,7 @@ guiTypes = {
 				name = "GF_automated_city_district_2_desc"
 				text = "GF_automated_city_district_2_desc"
 				position = { x = 95 y = 495 }
-				size = { width = 275 height = 72 }
+				size = { x = 275 y = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -162,7 +162,7 @@ guiTypes = {
 				name = "GF_automated_city_district_mining_icon"
 				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_mining"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_base_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -170,7 +170,7 @@ guiTypes = {
 				name = "GF_automated_city_district_industry_icon"
 				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_industry"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_advanced_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -178,7 +178,7 @@ guiTypes = {
 				name = "GF_automated_city_district_factory_icon"
 				position = { x = 0 y = 490 }
 				spriteType = "GFX_district_GF_automated_factory"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_special_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -187,8 +187,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_bg3"
 				position = { x = 90 y = 590 }
-				size = { width = 285 height = 87 }
-				orientation = "UPPER_LEFT"
+				size = { x = 285 y = 87 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -198,7 +198,7 @@ guiTypes = {
 				name = "GF_automated_city_district_3_desc"
 				text = "GF_automated_city_district_3_desc"
 				position = { x = 95 y = 595 }
-				size = { width = 275 height = 72 }
+				size = { x = 275 y = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
 				effect = GF_show_district_desc
@@ -210,7 +210,7 @@ guiTypes = {
 				name = "GF_automated_city_district_food_icon"
 				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_farming"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_base_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -218,7 +218,7 @@ guiTypes = {
 				name = "GF_automated_city_district_refinery_icon"
 				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_refinery"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_advanced_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -226,7 +226,7 @@ guiTypes = {
 				name = "GF_automated_city_district_collapse_icon"
 				position = { x = 0 y = 590 }
 				spriteType = "GFX_district_GF_automated_collapse"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_special_res_district_icons
 				alwaysTransparent = yes
 			}
@@ -235,8 +235,8 @@ guiTypes = {
 			effectButtonType = {
 				name = "GF_automated_city_district_bg4"
 				position = { x = 90 y = 690 }
-				size = { width = 285 height = 87 }
-				orientation = "UPPER_LEFT"
+				size = { x = 285 y = 87 }
+				orientation = UPPER_LEFT
 				spriteType = "GFX_tiles_dark_area_cut_8"
 				alwaysTransparent = yes
 				effect = GF_show_special_res_district_icons
@@ -246,7 +246,7 @@ guiTypes = {
 				name = "GF_automated_city_district_4_desc"
 				text = "GF_automated_city_district_4_desc"
 				position = { x = 95 y = 695 }
-				size = { width = 275 height = 72 }
+				size = { x = 275 y = 72 }
 				font = "cg_16b"
 				alwaysTransparent = yes
 				effect = GF_show_special_res_district_icons
@@ -258,15 +258,15 @@ guiTypes = {
 				name = "GF_automated_city_district_reverse_collapse_icon"
 				position = { x = 0 y = 690 }
 				spriteType = "GFX_district_GF_automated_reverse_collapse"
-				orientation = "UPPER_LEFT"
+				orientation = UPPER_LEFT
 				effect = GF_show_special_res_district_icons
 				alwaysTransparent = yes
 			}
 		}
 		containerWindowType = {
 			name = "GF_automated_city_design_evt"
-			orientation = "UPPER_LEFT"
-			origo = LEFT
+			orientation = UPPER_LEFT
+			origo = UPPER_LEFT
 			position = { x = 0 y = 0 }
 			size = { width = 1000 height = 800 }
 			iconType = {
@@ -320,8 +320,8 @@ guiTypes = {
 			name = "portrait_background"
 			position = { x = 18 y = 56 }
 			size = { width = 964 height = 350 }
-			orientation = "UPPER_LEFT"
-			origo = "UPPER_LEFT"
+			orientation = UPPER_LEFT
+			origo = UPPER_LEFT
 			clipping = yes
 			iconType = {
 				name = "event_picture"
@@ -338,8 +338,8 @@ guiTypes = {
 			name = "portrait"
 			position = { x = 18 y = 51 }
 			size = { width = 964 height = 350 }
-			orientation = "UPPER_LEFT"
-			origo = "UPPER_LEFT"
+			orientation = UPPER_LEFT
+			origo = UPPER_LEFT
 			clipping = yes
 			iconType = {
 				name = "portrait"
@@ -527,9 +527,7 @@ guiTypes = {
 			name = "GF_automated_city_constructin_tooltip"
 			text = "GF_automated_city_constructin_tooltip"
 			position = { x = 30 y = 451 }
-			size = { width = 460 height = 320 }
-			maxWidth = 460
-			maxHeight = 320
+			size = { x = 460 y = 320 }
 
 			effect = GF_effect_button_always_on
 			spriteType = "GFX_invisible"
