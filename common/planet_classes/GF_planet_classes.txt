@@ -148,7 +148,7 @@ pc_GF_automated_city = {
 	entity_scale = @planet_standard_scale
 	icon = GFX_planet_type_GF_automated_city
 
-	climate = "dry"
+	climate = "artificial"
 
 	atmosphere_color		= hsv { 0.75 0.10 0.60 }		#DONE
 	atmosphere_intensity	= 1.0

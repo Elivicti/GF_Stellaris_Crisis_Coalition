@@ -23,6 +23,8 @@
  mod_pc_GF_automated_city_habitability:0 "$pc_GF_automated_city$宜居度"
  trait_pc_GF_automated_city_preference:0 "$pc_GF_automated_city$偏好"
  trait_pc_GF_automated_city_preference_desc:0 "为啥会有物种偏好$pc_GF_automated_city$？"
+ climate_artificial: "人工气候"
+ artificial: "§Y（人工气候）§!"
 
  GF_colony.5000.diplo_title:0 "$pc_GF_automated_city$建设"
  GF_colony.5000.name:0 "§H注意事项§!"
