@@ -231,32 +231,9 @@ building_GF_zener_network_center_3 = {
 			weight = 1
 			buildings_has_crystals = yes
 		}
-		modifier = {
-			factor = 0
-			owner = { has_country_flag = buildings_new_crystal_building }
-		}
-	}
-
-	on_queued = {
-		IF = {
-			limit = {
-				owner = { has_technology = tech_construction_templates }
-			}
-			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 270 } }
-		}
-		ELSE_IF = {
-			limit = {
-				owner = { has_technology = tech_assembly_pattern }
-			}
-			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
-		}
-		else = {
-			planet = {
-				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
-			}
-		}
 	}
 }
+
 building_GF_zener_network_center_4 = {
 	base_buildtime = 600
 	can_build = no
@@ -332,30 +309,6 @@ building_GF_zener_network_center_4 = {
 		modifier = {
 			weight = 1
 			buildings_has_crystals = yes
-		}
-		modifier = {
-			factor = 0
-			owner = { has_country_flag = buildings_new_crystal_building }
-		}
-	}
-
-	on_queued = {
-		IF = {
-			limit = {
-				owner = { has_technology = tech_construction_templates }
-			}
-			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 270 } }
-		}
-		ELSE_IF = {
-			limit = {
-				owner = { has_technology = tech_assembly_pattern }
-			}
-			owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 390 } }
-		}
-		else = {
-			planet = {
-				owner = { set_timed_country_flag = { flag = buildings_new_crystal_building days = 510 } }
-			}
 		}
 	}
 }
