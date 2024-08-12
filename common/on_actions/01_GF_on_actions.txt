@@ -104,6 +104,7 @@ on_released_as_vassal = {
 on_single_player_save_game_load = {
 	events = {
 		GF_evt_misc.1000	# 加载旧版存档时的处理
+		GF_mega.320 # 加载时处理逆向坍塌信标归属权
 	}
 }
 
@@ -170,6 +171,16 @@ on_megastructure_ownerless = {
 	}
 }
 
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+on_megastructure_upgraded = {
+	events = {
+		GF_mega.310 # 升级星门时检查星系flag
+	}
+}
+
 
 # Triggers when ground combat starts
 # This = planet
@@ -223,5 +234,24 @@ on_tradition_picked = {
 	events = {
 		GF_ascension_path.1000 # synthetics
 		GF_ascension_path.2000 # cybernetics
+	}
+}
+
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_victim = {
+	events = {
+		GF_mega.334 # 支援舰被摧毁
+		GF_mega.335 # 信标基站被摧毁
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+		GF_mega.333 # 支援舰被解散
 	}
 }

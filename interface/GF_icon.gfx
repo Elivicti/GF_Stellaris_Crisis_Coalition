@@ -131,6 +131,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_nb200.dds"
 	}
 
+	spriteType = {
+		name = "GFX_GF_reverse_collapse_warp_beacon"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reverse_collapse_warp_beacon.dds"
+	}
+
 	## shrike
 	spriteType = {
 		name = "GFX_GF_shrike_armor"
@@ -328,6 +333,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_GF_computing_center_3_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_reverse_collapse_beacon_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/gateway.dds"
 	}
 
 	# text icon

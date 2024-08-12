@@ -174,3 +174,24 @@ on_GF_Zion_project_high_energy = {
 		4 = GF_zion_project.33300
 	}
 }
+
+# Called upon entering FTL (on-action name scripted on the Bypass type)
+# THIS = Fleet
+# FROM = System jumping to
+# FROMFROM = System jumped from
+on_entering_GF_RCgateway = { }
+
+
+# Fired by scripted_action_possible in utility_component_template on a ship,
+# This = planet
+# From = fleet
+on_GF_RC_beacon_deployed = {
+	events = {
+		GF_mega.330
+	}
+}
+# This = planet
+# From = fleet
+on_GF_RC_beacon_deployment_canceled = {
+	events = { }
+}

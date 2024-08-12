@@ -373,3 +373,272 @@ country_event = {
 		name = GF_mega.210.a
 	}
 }
+
+
+##### 逆向坍塌星门
+country_event = {
+	id = GF_mega.300
+	title = GF_mega.300.name
+	desc = GF_mega.300.desc
+	show_sound = event_radio_chatter
+	location = from
+
+	picture = GFX_evt_drifting_gateway
+
+	is_triggered_only = yes
+	trigger = {
+		is_GF_authority = yes
+	}
+	immediate = {
+		from = { save_event_target_as = gateway_system }
+	}
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+# A Megastructure has been upgraded
+# Root = Country
+# From = Megastructure
+# FromFrom = System
+country_event = {
+	id = GF_mega.310
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = {
+			OR = {
+				is_megastructure_type = gateway_final
+				is_megastructure_type = gateway_restored
+			}
+		}
+		fromfrom = {
+			has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+			NOT = {
+				any_system_megastructure = { is_megastructure_type = GF_reverse_collapse_gateway }
+			}
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			remove_star_flag = flag_s_GF_reverse_collapse_gateway_node
+		}
+	}
+}
+
+# on_single_player_save_game_load
+event = {
+	id = GF_mega.320
+	hide_window = yes
+
+	is_triggered_only = yes
+	immediate = {
+		every_system = {
+			limit = { has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon }
+			random_system_megastructure = {
+				limit = { is_megastructure_type = GF_reverse_collapse_beacon }
+				save_event_target_as = beacon
+			}
+			random_fleet_in_system = {
+				limit = { has_fleet_flag = flag_f_GF_RC_beacon_defense_station }
+				set_location = event_target:beacon
+				save_event_target_as = beacon_defense
+				owner = {
+					save_event_target_as = beacon_owner
+
+				}
+			}
+			system_event = {
+				id = GF_mega.321
+				days = 1
+			}
+		}
+	}
+}
+system_event = {
+	id = GF_mega.321
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_system_megastructure = {
+			limit = { is_megastructure_type = GF_reverse_collapse_beacon }
+			event_target:beacon = {
+				set_location = prev
+			}
+			set_owner = event_target:beacon_owner
+		}
+		event_target:beacon = {
+			set_owner = event_target:beacon_owner
+		}
+	}
+}
+
+# 舰队行动：部署信标
+planet_event = {
+	id = GF_mega.330
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from.owner = {
+			any_owned_design = {
+				is_ship_size = GF_RC_beacon_military_station
+			}
+		}
+		solar_system = {
+			NOR = {
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+			}
+		}
+	}
+
+	immediate = {
+		from.owner = {
+			random_owned_design = {
+				limit = {
+					is_ship_size = GF_RC_beacon_military_station
+				}
+				save_event_target_as = GF_RC_beacon_station_design
+			}
+		}
+		solar_system = {
+			spawn_megastructure = {
+				type = GF_reverse_collapse_beacon
+				planet = prev
+				owner = prev.from
+				init_effect = {
+					create_fleet = {
+						name = NAME_GF_RC_beacon_station
+						settings = {
+							can_disband = no
+						}
+						effect = {
+							set_owner = from.owner
+							set_location = prev
+							create_ship = {
+								name = NAME_GF_RC_beacon_station
+								design = event_target:GF_RC_beacon_station_design
+							}
+							save_global_event_target_as = GF_RC_beacon_defense@from
+							save_event_target_as = tmp
+							set_fleet_flag = flag_f_GF_RC_beacon_defense_station
+							fleet_event = {
+								id = GF_mega.331
+								days = 30
+							}
+						}
+					}
+					save_global_event_target_as = GF_RCbeacon@event_target:tmp
+				}
+			}
+		}
+		from = {
+			save_global_event_target_as = GF_RC_beacon_fleet@event_target:tmp
+			set_fleet_flag = flag_f_GF_RC_beacon_deployed
+		}
+	}
+}
+# 月检，处理一些特殊情况下信标的所有权被移交的情况
+fleet_event = {
+	id = GF_mega.331
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:GF_RCbeacon@this = {
+			set_owner = prev.owner
+		}
+		fleet_event = {
+			id = GF_mega.331
+			days = 30
+		}
+	}
+}
+
+# 支援舰被解散
+# This = owner of fleet
+# From = disbanded fleet
+country_event = {
+	id = GF_mega.333
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		from = {
+			has_fleet_flag = flag_f_GF_RC_beacon_deployed
+		}
+	}
+	immediate = {
+		event_target:GF_RC_beacon_defense@from = {
+			save_event_target_as = tmp
+			solar_system = {
+				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+			}
+		}
+		remove_megastructure = event_target:GF_RCbeacon@event_target:tmp
+		delete_fleet = event_target:GF_RC_beacon_defense@from
+	}
+}
+
+# 支援舰或基站被摧毁
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+country_event = {
+	id = GF_mega.334
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			has_fleet_flag = flag_f_GF_RC_beacon_deployed
+		}
+	}
+
+	immediate = {
+		event_target:GF_RC_beacon_defense@fromfrom = {
+			save_event_target_as = tmp
+			solar_system = {
+				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+			}
+		}
+		remove_megastructure = event_target:GF_RCbeacon@event_target:tmp
+		delete_fleet = event_target:GF_RC_beacon_defense@fromfrom
+	}
+}
+country_event = {
+	id = GF_mega.335
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		fromfrom = {
+			has_fleet_flag = flag_f_GF_RC_beacon_defense_station
+		}
+	}
+
+	immediate = {
+		fromfrom.solar_system = {
+			remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+		}
+		remove_megastructure = event_target:GF_RCbeacon@fromfrom
+		event_target:GF_RC_beacon_fleet@fromfrom = {
+			remove_fleet_flag = flag_f_GF_RC_beacon_deployed
+			# set_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
+			set_timed_fleet_flag = {
+				flag = flag_f_GF_RC_beacon_deployment_cooldown
+				days = 180
+			}
+			set_saved_date = {
+				key = GF_RC_beacon_deployment_cooldown_finish_date
+				days_from_present = 180
+			}
+		}
+	}
+}

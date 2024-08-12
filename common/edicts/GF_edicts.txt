@@ -127,3 +127,12 @@ GF_relocate_relic_site = {
 		}
 	}
 }
+
+GF_hide_reverse_collapse_beacon_outliner_icon = {
+	icon = GFX_edict_type_policy
+	length = -1
+
+	prerequisites = {
+		GF_tech_reverse_collapse_gateway_beacon
+	}
+}

@@ -1,4 +1,22 @@
 ﻿l_simp_chinese:
+ GF_RC_BEACON_STATION_LIGHT_SECTION: "$LIGHT_MILITARY_STATION_SECTION$"
+ GF_RC_BEACON_STATION_PD_SECTION: "$PD_MILITARY_STATION_SECTION$"
+ GF_RC_BEACON_STATION_MEDIUM_SECTION: "$MEDIUM_MILITARY_STATION_SECTION$"
+ GF_RC_BEACON_STATION_MISSILE_SECTION: "$MISSILE_MILITARY_STATION_SECTION$"
+ GF_RC_BEACON_STATION_HEAVY_SECTION: "$HEAVY_MILITARY_STATION_SECTION$"
+ GF_RC_BEACON_STATION_HANGAR_SECTION: "$HANGAR_MILITARY_STATION_SECTION$"
+
+ NAME_GF_RC_beacon_station: " 信标基站"
+ GF_RC_beacon_military_station: "逆向坍塌信标基站"
+ GF_RC_beacon_military_station_plural: "逆向坍塌信标基站"
+ mod_shipsize_GF_RC_beacon_military_station_build_speed_mult: "$GF_RC_beacon_military_station$建造速度"
+ mod_shipsize_GF_RC_beacon_military_station_hull_mult: "$GF_RC_beacon_military_station$船体值"
+ mod_shipsize_GF_RC_beacon_military_station_hull_add: "$GF_RC_beacon_military_station$船体值"
+ mod_shipsize_GF_RC_beacon_military_station_evasion_mult: "$GF_RC_beacon_military_station$闪避"
+ mod_shipsize_GF_RC_beacon_military_station_disengage_chance_mult: "$GF_RC_beacon_military_station$脱离战斗几率"
+ mod_shipsize_GF_RC_beacon_military_station_tracking_mult: "$GF_RC_beacon_military_station$追踪"
+ 
+ 
  GF_shrike_warshiparge_key: "大型伯劳躯体"
 
  GF_shrike_warship_large: "大型伯劳战舰"

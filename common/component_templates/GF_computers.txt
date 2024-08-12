@@ -297,6 +297,35 @@ utility_component_template = {
 		weight = 8
 	}
 }
+utility_component_template = {
+	key = "GF_OGAS_COMPUTER_PLATFORM_BEACON_STATION"
+	size = small
+	icon = "GFX_GF_ogas_computer_platform"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = GF_ship_computers
+		cost = {
+			alloys = 25
+		}
+		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
+	}
+	size_restriction = { GF_RC_beacon_military_station }
+	component_set = "combat_computers"
+	ship_behavior = "platform"
+	prerequisites = { "GF_tech_combat_ogas_computers" }
+
+	ship_modifier = {
+		ship_fire_rate_mult    = 0.20
+		ship_weapon_range_mult = 0.20
+		ship_tracking_add = 15
+		ship_accuracy_add = 15
+	}
+
+	ai_weight = {
+		weight = 8
+	}
+}
 
 ######### 三进制电磁信号控制器 / 伯劳脑
 utility_component_template = {

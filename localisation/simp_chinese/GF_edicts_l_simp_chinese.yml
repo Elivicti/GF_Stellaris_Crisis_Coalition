@@ -18,3 +18,6 @@
 
  edict_GF_relocate_relic_site:0 "重定位$collapse_relic$"
  edict_GF_relocate_relic_site_desc:0 "即便我们不小心失去了$collapse_relic$的坐标，我们也能利用现有的数据再次定位它。"
+
+ edict_GF_hide_reverse_collapse_beacon_outliner_icon: "隐藏$GF_reverse_collapse_beacon$侧边栏信息"
+ edict_GF_hide_reverse_collapse_beacon_outliner_icon_desc: "使§Y$GF_reverse_collapse_beacon$§!不再显示在侧边栏的§Y巨构§!栏目。"

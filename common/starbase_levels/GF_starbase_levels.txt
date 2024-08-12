@@ -1,0 +1,8 @@
+starbase_level_GF_RC_beacon_station = {
+	ship_size = GF_RC_beacon_military_station
+	show_in_outliner = no
+	potential_home_base = no
+	collects_trade = no
+	downgrade_potential = { always = no }
+	special_construction = yes
+}
