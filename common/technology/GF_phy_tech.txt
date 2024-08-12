@@ -405,6 +405,56 @@ GF_tech_ternary_quantum_computing = {
 	}
 }
 
+GF_tech_reverse_collapse_gateway = {
+	area = physics
+	tier = 5
+	cost = @GFTech_tier5cost3
+	category = { particles }
+	ai_update_type = military
+	is_rare = yes
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_gateway }
+	}
+
+	prerequisites = {
+		GF_tech_collapse_jump_drive
+		GF_tech_collapse_relic_tech
+		tech_gateway_construction
+	}
+
+	weight = @GFTech_tier5weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_discovery_adopt
+		}
+		modifier = {
+			factor = value:tech_weight_likelihood
+			has_trait_in_council = { TRAIT = leader_trait_expertise_particles }
+		}
+		modifier = {
+			factor = @ap_grasp_the_void_travel_tech
+			has_ascension_perk = ap_grasp_the_void
+		}
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = 5
+			has_technology = GF_tech_collapse_slingshot_protocal
+		}
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = GF_tech_reverse_collapse_gateway_feature_title
+			desc = GF_tech_reverse_collapse_gateway_feature_desc
+		}
+	}
+}
+
 GF_tech_ogas_computing_center = {
 	area = physics
 	tier = 5

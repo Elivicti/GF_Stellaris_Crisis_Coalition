@@ -1,0 +1,77 @@
+#
+# These define the type of bypasses that exist in game. This is only the logical connection between systems.
+# These can be added to megastructures.
+#
+# bypass_type = {
+#	name = GATEWAY_GALACTIC		# the localization key used in triggers and effects for the type
+#	is_pathfind = yes			# whether this type can be automatically used by the pathfinding (otherwise you'll have to right click the object containing it)
+#	requires_exploration = no	# whether this bypass type needs to be 'seen' before it can be used
+#	uses_action = no			# whether this type needs an action or can be used automagically
+#	always_active = no			# whether bypasses of these types are automatically active on creation, or if they need to be researched/upgraded to be activated
+#	windup_time = 0.0			# days preparing before travel, translated into ticks on load.
+#	winddown_time = 0.0			# days preparing after travel, translated into ticks on load.
+#	ftl_multiplier = 0			# 0 is supposed to mean instant, WARNING: not implemented correctly.
+#	extends_sensors = yes		# whether you can "see through" the bypass and extends your sensor range to the other side
+#	icon_frame = 25
+#	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+#	galactic_map_tooltip_header=GATEWAY_GALACTIC
+#	galactic_map_tooltip_desc=GATEWAY_GALACTIC_DESC
+#	connection_type = any_other
+#	ftl_ship_effect	= "gateway_ftl_ship_effect_entity"		# what effect to spawn on the ship when they jump through the bypass
+#	ftl_bypass_effect	= "gateway_ftl_bypass_effect_entity"	# what effect to spawn on the bypass when a ship jumps through
+#	bypass_effect		= ""
+#	animation_time = 3				# number of days to wait for the jump animation to be played
+#	prerequisites = {
+#		tech_gateway_activation
+#	}
+#	on_pre_explore = {					# an effect that is called just before the jump of a right click "explore" action of a fleet
+#
+#	}
+#	country_can_use = {					# trigger to evaluate if a country can use bypasses of this type. this: country, from: (optional) system owner; default: { always = yes }
+#	}
+#	on_action = "on_entering_bypass"	# The name of the on-action event that will be fired upon entering FTL (if set)
+#										# THIS = Fleet
+#										# FROM = System jumping to
+#										# FROMFROM = System jumped from
+# }
+
+GF_RCgateway = {
+	name = GF_REVERSE_COLLAPSE_GATEWAY_NAME
+	is_pathfind = yes
+	uses_action = no
+	requires_exploration = no
+	always_active = no
+	windup_time = 0
+	winddown_time = 0
+	ftl_multiplier = 0			# 0 means instant
+	icon_frame = 25
+	remember_instances = no	# whether countries remember meeting a specific instance of that type, or if they just remember seeing the type in general
+	galactic_map_tooltip_header = GF_REVERSE_COLLAPSE_GATEWAY_NAME
+	galactic_map_tooltip_desc = GF_REVERSE_COLLAPSE_GATEWAY_DESC
+	connection_type = any_other
+	extends_sensors = yes
+	animation_time = 1
+	ftl_ship_effect = "gateway_ftl_ship_effect_entity"
+	ftl_bypass_effect = "gateway_ftl_bypass_effect_entity"
+	prerequisites = {
+		GF_tech_collapse_jump_drive
+	}
+
+	respect_closed_borders = yes
+	block_access_if_hostile = no
+
+	on_action = "on_entering_GF_RCgateway"
+
+	country_can_use = {
+		has_technology = GF_tech_collapse_jump_drive
+		if = {
+			limit = {
+				OR = {
+					is_fallen_empire = yes
+					is_crisis_faction = yes
+				}
+			}
+			has_country_flag = flag_GF_RCgateway_allowed
+		}
+	}
+}

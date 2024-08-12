@@ -74,6 +74,13 @@
  TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_TITLE:0 "§H解锁部件：§!$GF_COLLAPSE_JUMP_DRIVE$"
  TECH_UNLOCK_GF_COLLAPSE_JUMP_DRIVE_DESC:0 "§H$GF_COLLAPSE_JUMP_DRIVE$§!\n$GF_tech_collapse_jump_drive_desc$"
 
+ GF_tech_reverse_collapse_gateway: "逆向坍塌亚空间隧道"
+ GF_tech_reverse_collapse_gateway_desc: "利用逆向坍塌原理重构星门的亚空间隧道，能够为我们创建一种专有且独享的星际通行方式。"
+ GF_tech_reverse_collapse_gateway_feature_title: "§H解锁特性：§!星门升级"
+ GF_tech_reverse_collapse_gateway_feature_desc: "允许将建设完成的§Y星门§!改造为使用§Y逆向坍塌§!原理进行亚空间移动，任何不掌握§Y$GF_tech_collapse_jump_drive$§!技术的帝国将§R无法穿过§!改造后的星门。"
+
+ GF_tech_reverse_collapse_gateway_beacon: "逆向坍塌信标"
+ GF_tech_reverse_collapse_gateway_beacon_desc: "这种特制的大功率逆向坍塌信标允许逆向坍塌星门从任何地方构建与之相通的亚空间隧道，通过支援舰可在战场上机动部署，能够极大提升我们舰队机动作战的能力。"
 
  GF_tech_collapse_relic_tech:0 "遗迹技术"
  GF_tech_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管只是全部遗迹文明技术的冰山一角，它也足以重构我们对微观粒子的认知。"
