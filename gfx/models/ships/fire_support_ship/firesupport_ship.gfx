@@ -1,0 +1,25 @@
+objectTypes = {
+	pdxmesh = {
+		name = "firesupport_ship_mesh"
+		file = "gfx/models/ships/fire_support_ship/firesupport_ship.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			name = "decol_mesh1_decol_0Shape"
+			index = 0
+			texture_diffuse = firesupport_ship_diffuse.dds
+			texture_normal = "firesupport_ship_normal.dds"
+			texture_specular = "firesupport_ship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+}
+
+objectTypes ={
+	pdxmesh = {
+		name = "firesupport_ship_locator_mesh"
+		file = "gfx/models/ships/fire_support_ship/firesupport_ship_locator.mesh"
+		scale = 0.8
+	}
+	
+}

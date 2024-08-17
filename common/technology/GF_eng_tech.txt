@@ -452,7 +452,8 @@ GF_tech_ship_collapse_armor = {
 	}
 }
 
-GF_tech_reverse_collapse_gateway_beacon = {
+GF_tech_fire_support_ship = {
+	icon = tech_titans
 	area = engineering
 	tier = 5
 	cost = @GFTech_tier5cost3
@@ -461,11 +462,12 @@ GF_tech_reverse_collapse_gateway_beacon = {
 	is_rare = yes
 
 	potential = {
-		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_gateway_beacon }
+		GF_can_research_tech_trigger = { TECH = GF_tech_fire_support_ship }
 	}
 
 	prerequisites = {
-		GF_tech_reverse_collapse_gateway
+		GF_tech_strike_craft_nb200
+		tech_titans
 	}
 
 	weight = @GFTech_tier5weight3
@@ -481,7 +483,42 @@ GF_tech_reverse_collapse_gateway_beacon = {
 		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
-			TECHNOLOGY = tech_mega_engineering
+			TECHNOLOGY = GF_tech_fire_support_ship
+		}
+	}
+}
+
+GF_tech_reverse_collapse_gateway_beacon = {
+	area = engineering
+	tier = 5
+	cost = @GFTech_tier5cost3
+	category = { voidcraft }
+	ai_update_type = military
+	is_rare = yes
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_gateway_beacon }
+	}
+
+	prerequisites = {
+		GF_tech_reverse_collapse_gateway
+		GF_tech_fire_support_ship
+	}
+
+	weight = @GFTech_tier5weight3
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
 		}
 	}
 }

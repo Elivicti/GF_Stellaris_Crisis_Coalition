@@ -82,6 +82,9 @@
  GF_tech_reverse_collapse_gateway_beacon: "逆向坍塌信标"
  GF_tech_reverse_collapse_gateway_beacon_desc: "这种特制的大功率逆向坍塌信标允许逆向坍塌星门从任何地方构建与之相通的亚空间隧道，通过支援舰可在战场上机动部署，能够极大提升我们舰队机动作战的能力。"
 
+ GF_tech_fire_support_ship: "NB-292 “斯特利伯格” 火力支援舰"
+ GF_tech_fire_support_ship_desc: "作为一个世纪前南联空天母舰设计理念在太空时代延续的产物，这种巨大的战舰拥有厚重的装甲和数量众多的武器挂载点，使其能轻易地完成重火力支援或区域压制任务，同时得益于其庞大的载荷，也可以搭载特种设备执行特殊任务。"
+
  GF_tech_collapse_relic_tech:0 "遗迹技术"
  GF_tech_collapse_relic_tech_desc:0 "在$collapse_relic$中发现的资料里提取出来的遗迹文明技术碎片，尽管只是全部遗迹文明技术的冰山一角，它也足以重构我们对微观粒子的认知。"
 

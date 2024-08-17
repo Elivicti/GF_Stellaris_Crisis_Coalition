@@ -1,0 +1,439 @@
+
+ship_section_template = {
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+
+	key = GF_fire_support_ship_bow
+	ship_size = GF_fire_support_ship
+	entity = firesupport_ship_entity
+
+	fits_on_slot = bow
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "T01"
+		template = invisible_titanic_fixed
+		locatorname = "t_gun01"
+	}
+	component_slot = {
+		name = "G01"
+		template = invisible_missile_fixed
+		locatorname = "g_gun01"
+	}
+	component_slot = {
+		name = "G02"
+		template = invisible_missile_fixed
+		locatorname = "g_gun02"
+	}
+	component_slot = {
+		name = "S01"
+		template = point_defence_turret
+		locatorname = "s_gun01"
+	}
+	component_slot = {
+		name = "S02"
+		template = point_defence_turret
+		locatorname = "s_gun02"
+	}
+	component_slot = {
+		name = "S03"
+		template = point_defence_turret
+		locatorname = "s_gun03"
+	}
+	component_slot = {
+		name = "S04"
+		template = point_defence_turret
+		locatorname = "s_gun04"
+	}
+	component_slot = {
+		name = "S05"
+		template = small_turret
+		locatorname = "s_gun05"
+	}
+	component_slot = {
+		name = "S06"
+		template = small_turret
+		locatorname = "s_gun06"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+
+	key = GF_fire_support_ship_core
+	ship_size = GF_fire_support_ship
+	entity = firesupport_ship_locator_mesh_entity
+
+	fits_on_slot = core
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "X01"
+		template = extra_large_turret
+		locatorname = "x_gun01"
+	}
+	component_slot = {
+		name = "X02"
+		template = extra_large_turret
+		locatorname = "x_gun02"
+	}
+	component_slot = {
+		name = "L01"
+		template = large_turret
+		locatorname = "l_gun01"
+	}
+	component_slot = {
+		name = "L02"
+		template = large_turret
+		locatorname = "l_gun02"
+	}
+	component_slot = {
+		name = "L03"
+		template = large_turret
+		locatorname = "l_gun03"
+	}
+	component_slot = {
+		name = "L04"
+		template = large_turret
+		locatorname = "l_gun04"
+	}
+	component_slot = {
+		name = "L05"
+		template = large_turret
+		locatorname = "l_gun05"
+	}
+	component_slot = {
+		name = "L06"
+		template = large_turret
+		locatorname = "l_gun06"
+	}
+	component_slot = {
+		name = "L07"
+		template = large_turret
+		locatorname = "l_gun07"
+	}
+	component_slot = {
+		name = "L08"
+		template = large_turret
+		locatorname = "l_gun08"
+	}
+	component_slot = {
+		name = "S01"
+		template = medium_turret
+		locatorname = "s_gun07"
+	}
+	component_slot = {
+		name = "S02"
+		template = medium_turret
+		locatorname = "s_gun08"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+
+	key = GF_fire_support_ship_h_core
+	ship_size = GF_fire_support_ship
+	entity = firesupport_ship_locator_mesh_entity
+
+	fits_on_slot = core
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "X01"
+		template = extra_large_turret
+		locatorname = "x_gun01"
+	}
+	component_slot = {
+		name = "L01"
+		template = point_defence_turret
+		locatorname = "l_gun01"
+	}
+	component_slot = {
+		name = "L02"
+		template = point_defence_turret
+		locatorname = "l_gun02"
+	}
+	component_slot = {
+		name = "L03"
+		template = point_defence_turret
+		locatorname = "l_gun03"
+	}
+	component_slot = {
+		name = "L04"
+		template = point_defence_turret
+		locatorname = "l_gun04"
+	}
+
+
+	component_slot = {
+		name = "S01"
+		template = medium_missile_turret
+		locatorname = "s_gun07"
+	}
+	component_slot = {
+		name = "S02"
+		template = medium_missile_turret
+		locatorname = "s_gun08"
+	}
+
+	## strike craft
+	component_slot = {
+		name = "H01"
+		template = large_strike_craft
+		locatorname = "h_gun01"
+	}
+	component_slot = {
+		name = "H02"
+		template = large_strike_craft
+		locatorname = "h_gun01"
+	}
+	component_slot = {
+		name = "H03"
+		template = large_strike_craft
+		locatorname = "h_gun01"
+	}
+	component_slot = {
+		name = "H04"
+		template = large_strike_craft
+		locatorname = "h_gun01"
+	}
+	component_slot = {
+		name = "H05"
+		template = large_strike_craft
+		locatorname = "h_gun02"
+	}
+	component_slot = {
+		name = "H06"
+		template = large_strike_craft
+		locatorname = "h_gun02"
+	}
+	component_slot = {
+		name = "H07"
+		template = large_strike_craft
+		locatorname = "h_gun02"
+	}
+	component_slot = {
+		name = "H08"
+		template = large_strike_craft
+		locatorname = "h_gun02"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 8
+	aux_utility_slots = 2
+}
+
+ship_section_template = {
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+
+	key = GF_fire_support_ship_stern
+	ship_size = GF_fire_support_ship
+	entity = firesupport_ship_locator_mesh_entity
+
+	fits_on_slot = stern
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "X01"
+		template = extra_large_turret
+		locatorname = "x_gun03"
+	}
+	component_slot = {
+		name = "X02"
+		template = extra_large_turret
+		locatorname = "x_gun04"
+	}
+	component_slot = {
+		name = "L01"
+		template = large_turret
+		locatorname = "l_gun09"
+	}
+	component_slot = {
+		name = "L02"
+		template = large_turret
+		locatorname = "l_gun010"
+	}
+	component_slot = {
+		name = "L03"
+		template = large_turret
+		locatorname = "l_gun011"
+	}
+	component_slot = {
+		name = "L04"
+		template = large_turret
+		locatorname = "l_gun012"
+	}
+
+	component_slot = {
+		name = "S01"
+		template = small_turret
+		locatorname = "s_gun09"
+	}
+	component_slot = {
+		name = "S02"
+		template = small_turret
+		locatorname = "s_gun10"
+	}
+	component_slot = {
+		name = "S03"
+		template = small_turret
+		locatorname = "s_gun011"
+	}
+	component_slot = {
+		name = "S04"
+		template = small_turret
+		locatorname = "s_gun012"
+	}
+	component_slot = {
+		name = "S05"
+		template = point_defence_turret
+		locatorname = "s_gun013"
+	}
+	component_slot = {
+		name = "S06"
+		template = point_defence_turret
+		locatorname = "s_gun014"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	icon = GFX_ship_part_core_bow
+	icon_frame = 1
+
+	key = GF_fire_support_ship_H_stern
+	ship_size = GF_fire_support_ship
+	entity = firesupport_ship_locator_mesh_entity
+
+	fits_on_slot = stern
+
+	should_draw_components = yes
+
+	component_slot = {
+		name = "X01"
+		template = extra_large_turret
+		locatorname = "x_gun03"
+	}
+
+	component_slot = {
+		name = "L01"
+		template = medium_turret
+		locatorname = "l_gun09"
+	}
+	component_slot = {
+		name = "L02"
+		template = medium_turret
+		locatorname = "l_gun010"
+	}
+
+	component_slot = {
+		name = "S01"
+		template = small_turret
+		locatorname = "s_gun09"
+	}
+	component_slot = {
+		name = "S02"
+		template = small_turret
+		locatorname = "s_gun10"
+	}
+	component_slot = {
+		name = "S05"
+		template = point_defence_turret
+		locatorname = "s_gun013"
+	}
+	component_slot = {
+		name = "S06"
+		template = point_defence_turret
+		locatorname = "s_gun014"
+	}
+
+	## strike craft
+	component_slot = {
+		name = "H01"
+		template = large_strike_craft
+		locatorname = "h_gun03"
+	}
+	component_slot = {
+		name = "H02"
+		template = large_strike_craft
+		locatorname = "h_gun03"
+	}
+	component_slot = {
+		name = "H03"
+		template = large_strike_craft
+		locatorname = "h_gun03"
+	}
+	component_slot = {
+		name = "H04"
+		template = large_strike_craft
+		locatorname = "h_gun03"
+	}
+	component_slot = {
+		name = "H05"
+		template = large_strike_craft
+		locatorname = "h_gun04"
+	}
+	component_slot = {
+		name = "H06"
+		template = large_strike_craft
+		locatorname = "h_gun04"
+	}
+	component_slot = {
+		name = "H07"
+		template = large_strike_craft
+		locatorname = "h_gun04"
+	}
+	component_slot = {
+		name = "H08"
+		template = large_strike_craft
+		locatorname = "h_gun04"
+	}
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = 1000
+		}
+	}
+	large_utility_slots = 5
+	aux_utility_slots = 3
+}

@@ -1,0 +1,92 @@
+entity = {
+	name = "firesupport_ship_entity"
+	pdxmesh = "firesupport_ship_mesh"
+	# scale = 0.2
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = Engine_Large_01 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_02 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_03 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_04 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_05 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_06 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+	}
+	state = {  name = "moving"
+		start_event = { node = Engine_Large_01 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_02 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_03 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_04 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_05 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+		start_event = { node = Engine_Large_06 particle = GF_generic_3_0_exhaust_circle_long_moving keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death"
+		event={ time = 0 node = "target_locator_1" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_2" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_3" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_4" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_5" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_6" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_7" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_8" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_9" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0 node = "target_locator_10" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.5 node = "x_gun01" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.5 node = "x_gun01" particle = "ship_burn_particle" }
+		event={ time = 0.75 node = "x_gun02" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0.75 node = "x_gun02" particle = "ship_burn_particle" }
+		event={ time = 1.25 node = "x_gun03" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.25 node = "x_gun03" particle = "ship_burn_particle" }
+		event={ time = 1.75 node = "x_gun04" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.75 node = "x_gun04" particle = "ship_burn_particle" }
+		event={ time = 1.5 node = "l_gun01" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.5 node = "l_gun01" particle = "ship_burn_particle" }
+		event={ time = 0.75 node = "l_gun02" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0.75 node = "l_gun02" particle = "ship_burn_particle" }
+		event={ time = 1.5 node = "l_gun03" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.5 node = "l_gun03" particle = "ship_burn_particle" }
+		event={ time = 0.75 node = "l_gun04" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0.75 node = "l_gun04" particle = "ship_burn_particle" }
+		event={ time = 1.25 node = "l_gun05" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.25 node = "l_gun05" particle = "ship_burn_particle" }
+		event={ time = 1.75 node = "l_gun06" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.75 node = "l_gun06" particle = "ship_burn_particle" }
+		event={ time = 1.5 node = "l_gun07" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 1.5 node = "l_gun07" particle = "ship_burn_particle" }
+		event={ time = 0.75 node = "l_gun08" particle = "avian_01_large_ship_explosion_particle" }
+		event={ time = 0.75 node = "l_gun08" particle = "ship_burn_particle" }
+	}
+}
+entity = {
+	name = "firesupport_ship_frame_entity"
+	pdxmesh = "mammalian_01_titan_frame_mesh"
+	# scale = 10
+	locator = { name = root position = { 0 0 0 } rotation = { 0 0 0 } }
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+	
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_01" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_02" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_titan_ship_hum_03" } }
+	
+	}
+	state = { name = "moving" animation = "idle"
+		event =  { trigger_once = yes sound = { soundeffect = "moving_out_titan" } }
+	}
+	state = { name = "death" animation = "death" looping = no 
+		event = { time = 2.5 node = "explosion_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
+		event = { time = 3.5 node = "explosion_locator_02" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
+		event = { time = 5.5 node = "explosion_locator_03" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
+		event = { time = 7.5 node = "explosion_locator_04" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
+		event = { time = 9.5 node = "explosion_locator_05" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ship_explosion" } }
+		event = { time = 12.5 node = "ship_main" particle = "dreadnought_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "amb_titan_ship_death" } }
+	}
+}
+
+entity = {
+	name = firesupport_ship_locator_mesh_entity
+	pdxmesh = firesupport_ship_locator_mesh
+	# scale = 0.2
+	game_data = {
+		size = 0.01
+	}
+}

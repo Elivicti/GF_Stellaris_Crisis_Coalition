@@ -1,0 +1,40 @@
+# Here you can specify the limits for ships of some types that country can own.
+# Please don't use these limits for ship sizes which can be used by Global designs.
+# The Scope is the active Country; if applied to a Federation design, From will
+# be the Federation; if applied to a Community design, From will be the Country
+# leading it
+
+# Example:
+#name_of_limit = {
+#	ship_types = {
+#		# list of keys to ship_sizes database, these ship_sizes will share the calculated capacity
+#	}
+#
+#	# Defines the shared capacity of the specified ships that country is allowed to own
+#	# capacity = min( max, base + naval_cap_fraction * current_naval_cap )
+#	# where current_naval_cap is current naval capacity of the country
+#	base = 1					# Base (minimal) shared capacity of ships
+#	max = 200					# Maximal shared capacity of ships
+#	naval_cap_fraction = 0.1	# Fraction of current naval capacity of the country
+#
+#	# Trigger that defines if tooltip for naval capacity icon on the top bar should be shown
+#	show = {
+#		is_scope_valid = yes
+#		has_technology = tech_titans
+#	}
+#}
+
+GF_fire_support_ship_limit = {
+	ship_types = {
+		GF_fire_support_ship
+	}
+
+	base = 192   #    3 * size_multiplier(GF_fire_support_ship)
+	max  = 64000 # 1000 * size_multiplier(GF_fire_support_ship)
+	naval_cap_fraction = 0.16 # every 400 naval cap +1
+
+	show = {
+		is_scope_valid = yes
+		has_technology = GF_tech_fire_support_ship
+	}
+}

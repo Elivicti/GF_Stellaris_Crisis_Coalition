@@ -1,0 +1,114 @@
+GF_fire_support_ship = {
+	icon = ship_size_military_64
+	graphical_culture = yes
+	entity = firesupport_ship_frame_entity
+
+	collision_radius = @juggernaut_formation_priority
+	formation_priority =  @titan_formation_priority
+	max_speed = @speed_slow
+	acceleration = 0.2
+	rotation_speed = 0.05
+
+	class = shipclass_military_special
+
+	max_hitpoints = 200000
+	modifier = {
+		ship_evasion_add = @juggernaut_evasion
+		ship_shield_add = 20000
+	}
+	ship_modifier = {
+		ship_shield_hardening_add = 0.5
+	}
+
+	section_slots = {
+		"bow" = { locator = part2 }
+		"core" = { locator = part2 }
+		"stern"  = { locator = part2 }
+	}
+	num_target_locators = 10
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+	default_behavior = artillery
+
+	prerequisites = {
+		GF_tech_fire_support_ship
+	}
+	enable_default_design = yes
+	can_have_federation_design = no
+	use_shipnames_from = titan
+	size_multiplier = 64
+	fleet_slot_size = 64
+
+	enable_3dview_in_ship_browser = yes
+	combat_disengage_chance = -0.9
+
+	base_buildtime = 1800
+
+	construction_type = starbase_shipyard
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				OR = {
+					is_megastructure_type = mega_shipyard_3
+					is_megastructure_type = mega_shipyard_restored
+					has_megastructure_flag = flag_m_GF_mega_shipyard
+				}
+			}
+		}
+	}
+	possible_construction = {
+		switch = {
+			trigger = is_scope_type
+			megastructure = {
+				custom_tooltip = {
+					fail_text = requires_mega_shipyard_3
+					OR = {
+						is_megastructure_type = mega_shipyard_3
+						is_megastructure_type = mega_shipyard_restored
+						has_megastructure_flag = flag_GF_advanced_shipyard
+					}
+				}
+			}
+			starbase = {
+				custom_tooltip = {
+					fail_text = starbase_titan_yards_trigger
+					OR = {
+						has_starbase_building = titan_yards
+						has_starbase_building = AOW_miraculous_shipyard_uplink
+						has_starbase_flag = flag_GF_advanced_shipyard
+					}
+				}
+			}
+			default = {
+				always = no
+			}
+		}
+	}
+
+	resources = {
+		category = ships
+		cost = {
+			gf_core_chip = 100
+		}
+		upkeep = {
+			energy = 50
+			alloys = 25
+		}
+	}
+	min_upgrade_cost = {
+		alloys = 150
+	}
+
+	ai_ship_data = {
+		fraction ={
+			base = 1000
+		}
+	}
+}

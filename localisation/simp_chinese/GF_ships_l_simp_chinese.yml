@@ -15,7 +15,22 @@
  mod_shipsize_GF_RC_beacon_military_station_evasion_mult: "$GF_RC_beacon_military_station$闪避"
  mod_shipsize_GF_RC_beacon_military_station_disengage_chance_mult: "$GF_RC_beacon_military_station$脱离战斗几率"
  mod_shipsize_GF_RC_beacon_military_station_tracking_mult: "$GF_RC_beacon_military_station$追踪"
- 
+
+ requires_mega_shipyard_3: "£trigger_no£ 需要§Y巨型船坞§!"
+ GF_fire_support_ship: "火力支援舰"
+ GF_fire_support_ship_plural: "火力支援舰"
+ mod_shipsize_GF_fire_support_ship_build_speed_mult: "$GF_fire_support_ship$建造速度"
+ mod_shipsize_GF_fire_support_ship_hull_mult: "$GF_fire_support_ship$船体值"
+ mod_shipsize_GF_fire_support_ship_hull_add: "$GF_fire_support_ship$船体值"
+ mod_shipsize_GF_fire_support_ship_evasion_mult: "$GF_fire_support_ship$闪避"
+ mod_shipsize_GF_fire_support_ship_disengage_chance_mult: "$GF_fire_support_ship$脱离战斗几率"
+ mod_shipsize_GF_fire_support_ship_tracking_mult: "$GF_fire_support_ship$追踪"
+
+ GF_fire_support_ship_bow: "巨炮舰艏"
+ GF_fire_support_ship_core: "火炮核心"
+ GF_fire_support_ship_h_core: "航母核心"
+ GF_fire_support_ship_stern: "火炮舰艉"
+ GF_fire_support_ship_H_stern: "航母舰艉"
  
  GF_shrike_warshiparge_key: "大型伯劳躯体"
 
