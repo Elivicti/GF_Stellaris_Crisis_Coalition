@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxparticle = {
+		name = "GF_generic_3_0_exhaust_circle_long_moving"
+		type = "generic_exhaust_circle_long_moving_effect_file"
+		scale = 3.0
+	}
+}
