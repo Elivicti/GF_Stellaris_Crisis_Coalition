@@ -132,6 +132,14 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_GF_aura_hostile_supression"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_hostile_supression.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_aura_hostile_harassment"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_aura_hostile_harassment.dds"
+	}
+	spriteType = {
 		name = "GFX_GF_reverse_collapse_warp_beacon"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_reverse_collapse_warp_beacon.dds"
 	}

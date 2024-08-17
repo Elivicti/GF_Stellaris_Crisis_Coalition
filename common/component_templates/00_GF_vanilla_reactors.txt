@@ -115,15 +115,6 @@
 @platform_cost_5 = 56
 @platform_cost_6 = 74
 
-@cost0 = 0
-@cost1 = 5
-@cost2 = 10
-@cost3 = 20
-
-@power0 = -5
-@power1 = -10
-@power2 = -15
-@power3 = -25
 
 #########################
 # PLATFORM REACTORS
@@ -148,7 +139,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_fission_power" }
 	size_restriction = { GF_RC_beacon_military_station }
-	
+
 	component_set = "power_core"
 	upgrades_to = "GF_duplicate_PLATFORM_FUSION_REACTOR"
 
@@ -300,29 +291,34 @@ utility_component_template = {
 	}
 }
 
+
 #########################
-# PLATFORM COMPUTERS
+# JUGGERNAUT REACTORS
 #########################
 
 utility_component_template = {
-	key = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_DEFAULT"
+	key = "GF_duplicate_JUGGERNAUT_FISSION_REACTOR"
 	size = small
-	icon = "GFX_ship_part_computer_default"
+	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
-	power = @power0
+	power = @juggernaut_power_1
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cost0
+			alloys = @juggernaut_cost_1
+		}
+		upkeep = {
+			energy = 5.6
+			alloys = 0.56
 		}
 	}
-	size_restriction = { GF_RC_beacon_military_station }
-	component_set = "combat_computers"
-	ship_behavior = "platform"
-	upgrades_to = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_BASIC"
 
-	ship_modifier = {
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
 	}
+	upgrades_to = "GF_duplicate_JUGGERNAUT_FUSION_REACTOR"
 
 	ai_weight = {
 		weight = 1
@@ -330,27 +326,28 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_BASIC"
+	key = "GF_duplicate_JUGGERNAUT_FUSION_REACTOR"
 	size = small
-	icon = "GFX_ship_part_computer_platform_basic"
+	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
-	power = @power1
+	power = @juggernaut_power_2
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cost1
+			alloys = @juggernaut_cost_2
+		}
+		upkeep = {
+			energy = 7.28
+			alloys = 0.728
 		}
 	}
-	size_restriction = { GF_RC_beacon_military_station }
-	component_set = "combat_computers"
-	ship_behavior = "platform"
-	prerequisites = { "tech_combat_computers_1" }
-	upgrades_to = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_ADVANCED"
 
-	ship_modifier = {
-		ship_fire_rate_mult = 0.25
-		ship_tracking_add = 15
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
 	}
+	upgrades_to = "GF_duplicate_JUGGERNAUT_COLD_FUSION_REACTOR"
 
 	ai_weight = {
 		weight = 2
@@ -358,27 +355,28 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_ADVANCED"
+	key = "GF_duplicate_JUGGERNAUT_COLD_FUSION_REACTOR"
 	size = small
-	icon = "GFX_ship_part_computer_platform_advanced"
+	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
-	power = @power2
+	power = @juggernaut_power_3
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cost2
+			alloys = @juggernaut_cost_3
+		}
+		upkeep = {
+			energy = 9.46
+			alloys = 0.946
 		}
 	}
-	size_restriction = { GF_RC_beacon_military_station }
-	component_set = "combat_computers"
-	ship_behavior = "platform"
-	prerequisites = { "tech_combat_computers_2" }
-	upgrades_to = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_SAPIENT"
 
-	ship_modifier = {
-		ship_fire_rate_mult = 0.30
-		ship_tracking_add = 20
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
 	}
+	upgrades_to = "GF_duplicate_JUGGERNAUT_ANTIMATTER_REACTOR"
 
 	ai_weight = {
 		weight = 3
@@ -386,71 +384,96 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_SAPIENT"
+	key = "GF_duplicate_JUGGERNAUT_ANTIMATTER_REACTOR"
 	size = small
-	icon = "GFX_ship_part_computer_platform_sapient"
+	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
-	power = @power3
+	power = @juggernaut_power_4
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cost3
+			alloys = @juggernaut_cost_4
+		}
+		upkeep = {
+			energy = 12.30
+			alloys = 1.230
 		}
 	}
-	size_restriction = { GF_RC_beacon_military_station }
-	component_set = "combat_computers"
-	ship_behavior = "platform"
-	prerequisites = { "tech_combat_computers_3" }
 
-	ship_modifier = {
-		ship_fire_rate_mult = 0.35
-		ship_tracking_add = 25
-		ship_accuracy_add = 10
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
 	}
-
-	ai_weight = {
-		weight = 5
-		modifier = {
-			factor = 0
-			OR = {
-				has_global_flag = ghost_signal_5_flag
-				has_global_flag = ghost_signal_4_flag
-				has_global_flag = ghost_signal_3_flag
-				has_global_flag = ghost_signal_2_flag
-				has_global_flag = ghost_signal_1_flag
-				has_policy_flag = ai_outlawed
-			}
-		}
-	}
-}
-
-utility_component_template = {
-	key = "GF_duplicate_COMBAT_COMPUTER_PLATFORM_PRECOG"
-	size = small
-	icon = "GFX_ship_part_computer_platform_precog"
-	icon_frame = 1
-	power = @power3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cost3
-		}
-	}
-	size_restriction = { GF_RC_beacon_military_station }
-	component_set = "combat_computers"
-	ship_behavior = "platform"
-	prerequisites = { "tech_precognition_interface" }
-
-	ship_modifier = {
-		ship_fire_rate_mult = 0.35
-		ship_tracking_add = 35
-	}
+	upgrades_to = "GF_duplicate_JUGGERNAUT_ZERO_POINT_REACTOR"
 
 	ai_weight = {
 		weight = 4
 	}
 }
 
+utility_component_template = {
+	key = "GF_duplicate_JUGGERNAUT_ZERO_POINT_REACTOR"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @juggernaut_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @juggernaut_cost_5
+		}
+		upkeep = {
+			energy = 15.99
+			alloys = 1.599
+		}
+	}
 
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
+	}
+	upgrades_to = "GF_duplicate_JUGGERNAUT_DARK_MATTER_REACTOR"
 
+	ai_weight = {
+		weight = 5
+	}
+}
 
+utility_component_template = {
+	key = "GF_duplicate_JUGGERNAUT_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @juggernaut_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @juggernaut_cost_6
+			sr_dark_matter = 32
+		}
+		upkeep = {
+			energy = 20.79
+			alloys = 2.079
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	size_restriction = { 
+		GF_fire_support_ship
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+	}
+}

@@ -88,6 +88,9 @@
  GF_STRIKE_CRAFT_NB200:0 "物质穿梭舰NB-200"
  GF_STRIKE_CRAFT_NB200_DESC:0 "$GF_tech_strike_craft_nb200_desc$"
 
+ GF_SHIP_AURA_HOSTILE_HARASSMENT: "袭扰无人机"
+ GF_SHIP_AURA_HOSTILE_SUPRESSION: "电子入侵压制计算机"
+
  GF_REVERSE_COLLAPSE_WARP_BEACON: "逆向坍塌信标"
  GF_REVERSE_COLLAPSE_WARP_BEACON_AURA: "逆向坍塌跃迁增幅器"
  GF_reverse_collapse_warp_beacon_aura_tooltip: "§E光环仅对搭载了$GF_COLLAPSE_JUMP_DRIVE$的舰船生效§!\n\n§H解锁舰队行动：§!$GF_fleet_action_deploy_RC_beacon$"
@@ -95,7 +98,7 @@
  GF_fleet_action_deploy_RC_beacon: "部署逆向坍塌信标"
  GF_fleet_action_deploy_RC_beacon_desc: "在星球轨道上部署一座§Y逆向坍塌信标§!与一座具备防御能力的§Y信标基站§!，允许舰队通过§Y逆向坍塌星门网络§!移动至此。"
 
- GF_deploy_RC_beacon_desc: "§H$GF_fleet_action_deploy_RC_beacon$§!\n$GF_fleet_action_deploy_RC_beacon_desc$\n\n- 一艘支援舰只能部署§Y一座§!逆向坍塌信标。\n- 信标依赖于§Y信标基站§!与§Y支援舰§!存在，若二者之一被摧毁，信标也将被摧毁。\n- 使用巨构的§Y拆解§!功能来回收信标。\n- 部署耗时：§Y60 £time£§!\n- 部署冷却：§Y180 £time£§!"
+ GF_deploy_RC_beacon_desc: "§H$GF_fleet_action_deploy_RC_beacon$§!\n$GF_fleet_action_deploy_RC_beacon_desc$\n\n- 一艘支援舰只能部署§Y一座§!逆向坍塌信标。\n- 信标依赖于§Y信标基站§!与§Y支援舰§!存在，若二者之一被摧毁，信标也将被摧毁。\n- 使用巨构的§Y拆解§!功能来回收信标。\n- 部署耗时：£time£ §Y60§!\n- 部署冷却：£time£ §Y180§!\n\n§H注意：§!必须至少拥有一个$GF_RC_beacon_military_station$的设计"
  GF_deploy_RC_beacon_activity_key: "在§Y$PLANET_NAME$§!部署信标"
  GF_deploy_RC_beacon_menu_title: "部署信标"
  GF_deploy_RC_beacon_progress_activity_key: "§H部署信标：$PROGRESS$%§!"
@@ -114,6 +117,34 @@
  GF_duplicate_COMBAT_COMPUTER_PLATFORM_BASIC: "$COMBAT_COMPUTER_PLATFORM_BASIC$"
  GF_duplicate_COMBAT_COMPUTER_PLATFORM_ADVANCED: "$COMBAT_COMPUTER_PLATFORM_ADVANCED$"
  GF_duplicate_COMBAT_COMPUTER_PLATFORM_SAPIENT: "$COMBAT_COMPUTER_PLATFORM_SAPIENT$"
+
+ GF_duplicate_JUGGERNAUT_FISSION_REACTOR: "$JUGGERNAUT_FISSION_REACTOR$"
+ GF_duplicate_JUGGERNAUT_FUSION_REACTOR: "$JUGGERNAUT_FUSION_REACTOR$"
+ GF_duplicate_JUGGERNAUT_COLD_FUSION_REACTOR: "$JUGGERNAUT_COLD_FUSION_REACTOR$"
+ GF_duplicate_JUGGERNAUT_ANTIMATTER_REACTOR: "$JUGGERNAUT_ANTIMATTER_REACTOR$"
+ GF_duplicate_JUGGERNAUT_ZERO_POINT_REACTOR: "$JUGGERNAUT_ZERO_POINT_REACTOR$"
+ GF_duplicate_JUGGERNAUT_DARK_MATTER_REACTOR: "$JUGGERNAUT_DARK_MATTER_REACTOR$"
+
+ GF_duplicate_COMBAT_COMPUTER_ARTILLERY_DEFAULT: "$COMBAT_COMPUTER_ARTILLERY_DEFAULT$"
+ GF_duplicate_COMBAT_COMPUTER_ARTILLERY_BASIC: "$COMBAT_COMPUTER_ARTILLERY_BASIC$"
+ GF_duplicate_COMBAT_COMPUTER_ARTILLERY_ADVANCED: "$COMBAT_COMPUTER_ARTILLERY_ADVANCED$"
+ GF_duplicate_COMBAT_COMPUTER_ARTILLERY_SAPIENT: "$COMBAT_COMPUTER_ARTILLERY_SAPIENT$"
+ GF_duplicate_COMBAT_COMPUTER_ARTILLERY_PRECOG: "$COMBAT_COMPUTER_ARTILLERY_PRECOG$"
+ GF_duplicate_COMBAT_COMPUTER_CARRIER_BASIC: "$COMBAT_COMPUTER_CARRIER_BASIC$"
+ GF_duplicate_COMBAT_COMPUTER_CARRIER_ADVANCED: "$COMBAT_COMPUTER_CARRIER_ADVANCED$"
+ GF_duplicate_COMBAT_COMPUTER_CARRIER_SAPIENT: "$COMBAT_COMPUTER_CARRIER_SAPIENT$"
+ GF_duplicate_COMBAT_COMPUTER_CARRIER_PRECOG: "$COMBAT_COMPUTER_CARRIER_PRECOG$"
+
+ GF_duplicate_COLOSSUS_SHIP_THRUSTER_1: "$COLOSSUS_SHIP_THRUSTER_1$"
+ GF_duplicate_COLOSSUS_SHIP_THRUSTER_2: "$COLOSSUS_SHIP_THRUSTER_2$"
+ GF_duplicate_COLOSSUS_SHIP_THRUSTER_3: "$COLOSSUS_SHIP_THRUSTER_3$"
+ GF_duplicate_COLOSSUS_SHIP_THRUSTER_4: "$COLOSSUS_SHIP_THRUSTER_4$"
+ GF_duplicate_COLOSSUS_SHIP_THRUSTER_5: "$COLOSSUS_SHIP_THRUSTER_5$"
+
+ GF_SHIP_AURA_STRIKE_CRAFT: "$SHIP_AURA_STRIKE_CRAFT$"
+ GF_SHIP_AURA_RANGE: "$SHIP_AURA_RANGE$"
+ GF_SHIP_AURA_HYPERLANE: "$SHIP_AURA_HYPERLANE$"
+ GF_SHIP_AURA_PD_PENETRATION: "$SHIP_AURA_PD_PENETRATION$"
 
 
  GF_SHRIKE_ARMOR: "$GF_tech_shrike_armor$"

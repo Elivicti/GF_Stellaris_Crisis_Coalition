@@ -1,0 +1,412 @@
+
+
+# Strike Craft
+utility_component_template = {
+	key = "GF_SHIP_AURA_STRIKE_CRAFT"
+	size = medium
+	icon = "GFX_ship_part_aura_strike_craft"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	friendly_aura = {
+		name = "aura_strike_craft"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_friendly_strike_craft
+			priority = 1
+		}
+
+		modifier = {
+			weapon_type_strike_craft_weapon_damage_mult = 0.4
+			weapon_type_strike_craft_speed_mult = 0.4
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+# Weapon Range
+utility_component_template = {
+	key = "GF_SHIP_AURA_RANGE"
+	size = medium
+	icon = "GFX_ship_part_aura_range"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	friendly_aura = {
+		name = "aura_range"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_friendly_range
+			priority = 1
+		}
+
+		modifier = {
+			ship_weapon_range_mult = 0.4
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+# Hyperlane
+utility_component_template = {
+	key = "GF_SHIP_AURA_HYPERLANE"
+	size = medium
+	icon = "GFX_ship_part_aura_hyperlane"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	friendly_aura = {
+		name = "aura_hyperlane"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_friendly_hyperlane
+			priority = 1
+		}
+
+		modifier = {
+			ship_windup_mult = -0.5
+			ship_winddown_mult = -0.5
+			ship_jumpdrive_cooldown_mult = -0.25
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+# PD Penetration
+utility_component_template = {
+	key = "GF_SHIP_AURA_PD_PENETRATION"
+	size = medium
+	icon = "GFX_ship_part_aura_pd_penetration"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	hostile_aura = {
+		name = "aura_pd_penetration"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_hostile_pd_penetration
+			priority = 1
+		}
+
+		modifier = {
+			weapon_type_point_defense_weapon_damage_mult = -0.5
+			weapon_type_point_defense_weapon_fire_rate_mult = -0.5
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+#####################
+# 光环部件
+#####################
+
+utility_component_template = {
+	key = "GF_SHIP_AURA_HOSTILE_SUPRESSION"
+	size = medium
+	icon = GFX_GF_aura_hostile_supression
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	hostile_aura = {
+		name = aura_category_offensive
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_hostile_supression
+			priority = 1
+		}
+
+		modifier = {
+			ship_fire_rate_mult = -0.20
+			ship_evasion_mult = -0.20
+			ship_disengage_chance_mult = -0.5
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_energy
+		}
+	}
+}
+
+utility_component_template = {
+	key = "GF_SHIP_AURA_HOSTILE_HARASSMENT"
+	size = medium
+	icon = GFX_GF_aura_hostile_harassment
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+	component_set = "ship_aura_components"
+
+	hostile_aura = {
+		name = aura_category_offensive
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = GF_hostile_harassment
+			priority = 1
+		}
+
+		modifier = {
+			ship_shield_reduction = 0.10
+			ship_armor_reduction = 0.10
+			ship_tracking_mult = -0.33
+		}
+
+		damage_per_day = {
+			accuracy = 0.8
+			damage = {
+				min = 15
+				max = 35
+			}
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2
+			is_ai = yes
+			is_preferred_weapons = weapon_type_strike_craft
+		}
+	}
+}
+
+
+utility_component_template = {
+	key = "GF_REVERSE_COLLAPSE_WARP_BEACON"
+	size = small
+	icon = GFX_GF_reverse_collapse_warp_beacon
+
+	resources = {
+		category = GF_ship_collapse_utilities
+		cost = {
+			alloys = 500
+			GF_nyto_collapse_liquid = 20
+		}
+		upkeep = {
+			alloys = 5
+			GF_nyto_collapse_liquid = 10
+			gf_core_chip = 0.5
+		}
+	}
+	power = -400
+	component_set = ship_aura_components
+
+	custom_tooltip = GF_reverse_collapse_warp_beacon_aura_tooltip
+
+	friendly_aura = {
+		name = GF_REVERSE_COLLAPSE_WARP_BEACON_AURA
+		system_wide = yes
+
+		stack_info = {
+			id = GF_REVERSE_COLLAPSE_WARP_BEACON_AURA
+			priority = 10
+		}
+		apply_on = ships
+		limit = {
+			has_component = GF_COLLAPSE_JUMP_DRIVE
+		}
+
+		modifier = {
+			ship_ftl_jumpdrive_range_mult = 0.25
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+			ship_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+
+	size_restriction = {
+		GF_fire_support_ship
+	}
+
+	prerequisites = {
+		GF_tech_reverse_collapse_gateway_beacon
+	}
+
+	### scripted on_action name
+	scripted_action_name = on_GF_RC_beacon_deployed
+	### button description
+	scripted_action_tooltip = GF_deploy_RC_beacon_desc
+	### button title
+	scripted_action_activity_key = GF_deploy_RC_beacon_activity_key
+	### fleet action tooltip showed in fleet ui
+	scripted_action_context_menu_name = GF_deploy_RC_beacon_menu_title
+	scripted_action_icon = GFX_fleet_order_button_special_project
+
+	### not sure when this is fired
+	scripted_action_on_cancel = on_GF_RC_beacon_deployment_canceled
+
+	### progress tooltip showed in fleet ui
+	scripted_action_progress_activity_key = GF_deploy_RC_beacon_progress_activity_key
+	scripted_action_required_progress = 60
+
+	scripted_action_button_possible = {
+		custom_tooltip = {
+			fail_text = GF_RC_beacon_already_deployed
+			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployed }
+		}
+		custom_tooltip = {
+			fail_text = GF_RC_beacon_deployment_cooldown
+			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown }
+		}
+	}
+
+	scripted_action_possible = {
+		from = {
+			NOR = {
+				has_fleet_flag = flag_f_GF_RC_beacon_deployed
+				has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
+			}
+		}
+		solar_system = {
+			NOR = {
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+			}
+		}
+	}
+	scripted_action_finished = {}
+}

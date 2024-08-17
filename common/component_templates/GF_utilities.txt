@@ -249,6 +249,7 @@ utility_component_template = {
 	size_restriction = {
 		juggernaut
 		cosmo_crisis_titan
+		GF_fire_support_ship
 	}
 
 	ai_weight = {
@@ -324,93 +325,6 @@ utility_component_template = {
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
 	prerequisites = { "GF_tech_collapse_jump_drive" }
 	component_set = "ftl_components"
-}
-
-utility_component_template = {
-	key = "GF_REVERSE_COLLAPSE_WARP_BEACON"
-	size = small
-	icon = GFX_GF_reverse_collapse_warp_beacon
-
-	resources = {
-		category = GF_ship_collapse_utilities
-		cost = {
-			alloys = 50
-			GF_nyto_collapse_liquid = 20
-		}
-		upkeep = {
-			GF_nyto_collapse_liquid = 0.1
-			gf_core_chip = 0.5
-		}
-	}
-	power = -400
-	component_set = ship_aura_components
-
-	custom_tooltip = GF_reverse_collapse_warp_beacon_aura_tooltip
-
-	friendly_aura = {
-		name = GF_REVERSE_COLLAPSE_WARP_BEACON_AURA
-		stack_info = {
-			id = GF_REVERSE_COLLAPSE_WARP_BEACON_AURA
-			priority = 10
-		}
-		apply_on = ships
-		limit = {
-			has_component = GF_COLLAPSE_JUMP_DRIVE
-		}
-
-		modifier = {
-			ship_ftl_jumpdrive_range_mult = 0.25
-		}
-	}
-
-	prerequisites = {
-		GF_tech_reverse_collapse_gateway_beacon
-	}
-
-	### scripted on_action name
-	scripted_action_name = on_GF_RC_beacon_deployed
-	### button description
-	scripted_action_tooltip = GF_deploy_RC_beacon_desc
-	### button title
-	scripted_action_activity_key = GF_deploy_RC_beacon_activity_key
-	### fleet action tooltip showed in fleet ui
-	scripted_action_context_menu_name = GF_deploy_RC_beacon_menu_title
-	scripted_action_icon = GFX_fleet_task_planetfall_action
-
-	### not sure when this is fired
-	scripted_action_on_cancel = on_GF_RC_beacon_deployment_canceled
-
-	### progress tooltip showed in fleet ui
-	scripted_action_progress_activity_key = GF_deploy_RC_beacon_progress_activity_key
-	scripted_action_required_progress = 60
-
-	scripted_action_button_possible = {
-		custom_tooltip = {
-			fail_text = GF_RC_beacon_already_deployed
-			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployed }
-		}
-		custom_tooltip = {
-			fail_text = GF_RC_beacon_deployment_cooldown
-			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown }
-		}
-	}
-
-	scripted_action_possible = {
-		from = {
-			NOR = {
-				has_fleet_flag = flag_f_GF_RC_beacon_deployed
-				has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
-			}
-		}
-		solar_system = {
-			NOR = {
-				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
-				has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
-			}
-		}
-	}
-	scripted_action_finished = {
-	}
 }
 
 #####################
