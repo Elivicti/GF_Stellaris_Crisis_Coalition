@@ -13,12 +13,16 @@ GF_reverse_collapse_gateway = {
 	}
 	possible = {
 		custom_tooltip = {
-			fail_text = "requires_technology_gateway_construction"
+			fail_text = requires_technology_gateway_construction
 			from = { has_technology = tech_gateway_construction }
 		}
 		custom_tooltip = {
-			fail_text = "GF_requires_no_existing_reverse_collapse_gateway"
+			fail_text = GF_requires_no_existing_reverse_collapse_gateway
 			NOT = { has_star_flag = flag_s_GF_reverse_collapse_gateway_node }
+		}
+		custom_tooltip = {
+			fail_text = GF_requires_no_existing_reverse_collapse_beacon
+			NOT = { has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon }
 		}
 	}
 	upgrade_from = {
@@ -89,12 +93,10 @@ GF_reverse_collapse_gateway = {
 }
 
 GF_reverse_collapse_beacon = {
-	entity = "gatebuilder_01_gateway_entity"
-	construction_entity = "gateway_entity"
+	entity = "GF_revercollase_beacon_wormhole_entity"
+	construction_entity = "GF_revercollase_beacon_wormhole_entity"
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
-	# build_outside_gravity_well = yes						# indicates this will use "free" placement between the system's inner and outer ring
-	# if this option is active, the placement_rules will be completely ignored
 	show_galactic_map_icon = no
 	show_in_outliner = yes
 

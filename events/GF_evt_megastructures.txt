@@ -415,16 +415,29 @@ country_event = {
 			}
 		}
 		fromfrom = {
-			has_star_flag = flag_s_GF_reverse_collapse_gateway_node
-			NOT = {
-				any_system_megastructure = { is_megastructure_type = GF_reverse_collapse_gateway }
+			OR = {
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+				has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
 			}
 		}
 	}
 
 	immediate = {
 		fromfrom = {
-			remove_star_flag = flag_s_GF_reverse_collapse_gateway_node
+			if = {
+				limit = {
+					NOT = {
+						any_system_megastructure = { is_megastructure_type = GF_reverse_collapse_gateway }
+					}
+				}
+				remove_star_flag = flag_s_GF_reverse_collapse_gateway_node
+			}
+			if = {
+				limit = {
+					NOT = { any_system_megastructure = { is_megastructure_type = GF_reverse_collapse_beacon } }
+				}
+				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+			}
 		}
 	}
 }

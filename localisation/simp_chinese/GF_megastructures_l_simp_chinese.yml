@@ -52,6 +52,7 @@
  GF_reverse_collapse_gateway_DESC: "利用逆向坍塌原理穿梭于亚空间的星门，通过其能够快速到达其他星门。"
 
  GF_requires_no_existing_reverse_collapse_gateway: "$TRIGGER_FAIL$星系中已有一个$GF_reverse_collapse_gateway$。"
+ GF_requires_no_existing_reverse_collapse_beacon: "$TRIGGER_FAIL$星系中已有一个$GF_reverse_collapse_beacon$。"
 
  GF_reverse_collapse_beacon: "逆向坍塌信标"
  GF_reverse_collapse_beacon_DESC: "为逆向坍塌空间折跃设立的大功率信标，允许舰队通过逆向坍塌星门网络传送至此。信标依赖于基站与支援舰存在，若二者之一被摧毁，信标也将被摧毁。"

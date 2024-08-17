@@ -1,0 +1,10 @@
+entity = {
+	name = "GF_revercollase_beacon_wormhole_entity"
+
+	locator = { name = "root" position = { 0 0 0 } }
+	attach = {
+		"root" = natural_wormhole_entity
+	}
+
+	scale = 0.5
+}
