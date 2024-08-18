@@ -55,6 +55,7 @@
  decision_GF_automated_city_project_effect:0 "开启一个事件窗口以选择特定的§Y专精类型§! (§R一次性§!)，完成后将星球改造为§Y$pc_GF_automated_city$§!，解锁特殊的 £district£ §Y自动化区划§!，这些区划只需§Y少量§! £pop£ 人口进行维护即可高效运作。"
  GF_other_automated_city_terraform_ongoing:0 "£trigger_no£ 另一处$pc_GF_automated_city$建设决策中"
  GF_automated_city_terraform_ongoing:0 "£trigger_no£ $pc_GF_automated_city$建设进行中"
+ legendary_leader_planet_no_autocity: "£trigger_no£ 该行星的构造极不稳定，无法进行$pc_GF_automated_city$建设"
 
  decision_GF_automated_city_supress: "!!-提高自动化程序休眠等级-!!"
  decision_GF_automated_city_supress_desc: "休眠部分用于管控自动化设备的程序，以减少占用的OGAS线程。"
