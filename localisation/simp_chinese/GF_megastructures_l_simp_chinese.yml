@@ -60,6 +60,18 @@
  GF_mega.300.name: "逆向坍塌星门建设完成"
  GF_mega.300.desc: "位于§H[gateway_system.GetName]§!星系内的逆向坍塌星门已经建造完毕。它已与其余传送门网络建立稳定的亚空间连接，并且正常运转。"
 
+ MESSAGE_GF_REVERSE_BEACON_DEPLOYED: "信标已部署"
+ MESSAGE_GF_REVERSE_BEACON_DEPLOYED_DESC: "§Y$FLEET$§!已成功部署信标于§Y$PLANET$§!"
+
+ MESSAGE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED: "信标部署失败"
+ MESSAGE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED_DESC: "§Y$PLANET$§!上的部署行动已中止"
+
+ MESSAGE_GF_REVERSE_BEACON_DISMANTLED: "信标已拆除"
+ MESSAGE_GF_REVERSE_BEACON_DISMANTLED_DESC: "位于§Y$PLANET$§!的信标已被拆除"
+
+ MESSAGE_GF_REVERSE_BEACON_DESTROYED: "信标被摧毁"
+ MESSAGE_GF_REVERSE_BEACON_DESTROYED_DESC: "位于§Y$PLANET$§!的信标被摧毁"
+
  GF_mega_requires_not_habitable_planets: "$TRIGGER_FAIL$不能在宜居星球周围建造。"
 
  GF_bio_warship_assembly_0: "伯劳生物战舰主巢基址"

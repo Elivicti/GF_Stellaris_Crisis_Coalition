@@ -22,6 +22,15 @@ spriteTypes = {
 		name = "GFX_toast_GF_archive_unlocked"
 		texturefile = "gfx/interface/icons/toasts/toast_GF_archive_unlocked.dds"
 	}
+	spriteType = {
+		name = "GFX_message_GF_RC_beacon_deployed"
+		textureFile = "gfx/interface/icons/message/message_GF_reverse_collapse_beacon_deployed.dds"
+	}
+	spriteType = {
+		name = "GFX_message_GF_RC_beacon_deployment_failed"
+		textureFile = "gfx/interface/icons/message/message_GF_reverse_collapse_beacon_deployment_failed.dds"
+	}
+
 	# armies
 	spriteType = {
 		name = "GFX_GF_army_type_armored_train"

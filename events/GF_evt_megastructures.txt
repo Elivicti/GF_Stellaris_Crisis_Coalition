@@ -461,7 +461,6 @@ event = {
 				save_event_target_as = beacon_defense
 				owner = {
 					save_event_target_as = beacon_owner
-
 				}
 			}
 			system_event = {
@@ -490,6 +489,46 @@ system_event = {
 	}
 }
 
+# 舰队行动：部署信标失败
+planet_event = {
+	id = GF_mega.329
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			from.owner = {
+				NOT = {
+					any_owned_design = {
+						is_ship_size = GF_RC_beacon_military_station
+					}
+				}
+			}
+			solar_system = {
+				OR = {
+					has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+					has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+				}
+			}
+		}
+	}
+
+	immediate = {
+		from.owner = {
+			create_message = {
+				type = MESSAGE_TYPE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED
+				localization = MESSAGE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED_DESC
+				target = prev
+				days = 30
+				variable = {
+					type = name
+					localization = PLANET
+					scope = prev
+				}
+			}
+		}
+	}
+}
 # 舰队行动：部署信标
 planet_event = {
 	id = GF_mega.330
@@ -553,6 +592,24 @@ planet_event = {
 		from = {
 			save_global_event_target_as = GF_RC_beacon_fleet@event_target:tmp
 			set_fleet_flag = flag_f_GF_RC_beacon_deployed
+			owner = {
+				create_message = {
+					type = MESSAGE_TYPE_GF_REVERSE_BEACON_DEPLOYED
+					target = prevprev
+					localization = MESSAGE_GF_REVERSE_BEACON_DEPLOYED_DESC
+					days = 30
+					variable = {
+						type = name
+						localization = PLANET
+						scope = prevprev
+					}
+					variable = {
+						type = name
+						LOCALIZATION = FLEET
+						scope = prev
+					}
+				}
+			}
 		}
 	}
 }
@@ -593,6 +650,17 @@ country_event = {
 				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
 			}
 		}
+		create_message = {
+			type = MESSAGE_TYPE_GF_REVERSE_BEACON_DISMANTLED
+			localization = MESSAGE_GF_REVERSE_BEACON_DISMANTLED_DESC
+			target = event_target:GF_RCbeacon@event_target:tmp.planet
+			days = 30
+			variable = {
+				type = name
+				localization = PLANET
+				scope = event_target:GF_RCbeacon@event_target:tmp.planet
+			}
+		}
 		remove_megastructure = event_target:GF_RCbeacon@event_target:tmp
 		delete_fleet = event_target:GF_RC_beacon_defense@from
 	}
@@ -621,6 +689,17 @@ country_event = {
 				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
 			}
 		}
+		create_message = {
+			type = MESSAGE_TYPE_GF_REVERSE_BEACON_DESTROYED
+			localization = MESSAGE_GF_REVERSE_BEACON_DESTROYED_DESC
+			target = event_target:GF_RCbeacon@event_target:tmp.planet
+			days = 30
+			variable = {
+				type = name
+				localization = PLANET
+				scope = event_target:GF_RCbeacon@event_target:tmp.planet
+			}
+		}
 		remove_megastructure = event_target:GF_RCbeacon@event_target:tmp
 		delete_fleet = event_target:GF_RC_beacon_defense@fromfrom
 	}
@@ -639,6 +718,17 @@ country_event = {
 	immediate = {
 		fromfrom.solar_system = {
 			remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+		}
+		create_message = {
+			type = MESSAGE_TYPE_GF_REVERSE_BEACON_DESTROYED
+			localization = MESSAGE_GF_REVERSE_BEACON_DESTROYED_DESC
+			target = event_target:GF_RCbeacon@fromfrom.planet
+			days = 30
+			variable = {
+				type = name
+				localization = PLANET
+				scope = event_target:GF_RCbeacon@fromfrom.planet
+			}
 		}
 		remove_megastructure = event_target:GF_RCbeacon@fromfrom
 		event_target:GF_RC_beacon_fleet@fromfrom = {
