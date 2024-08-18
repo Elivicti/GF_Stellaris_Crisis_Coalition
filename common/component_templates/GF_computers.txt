@@ -155,7 +155,7 @@ utility_component_template = {
 		}
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
-	class_restriction = { shipclass_military shipclass_starbase }
+	# class_restriction = { shipclass_military shipclass_starbase }
 	size_restriction = {
 		frigate
 		destroyer
@@ -205,7 +205,7 @@ utility_component_template = {
 		}
 		upkeep = { gf_core_chip = @core_chip_upkeep_t1 }
 	}
-	class_restriction = { shipclass_military shipclass_starbase }
+	# class_restriction = { shipclass_military shipclass_starbase }
 	size_restriction = {
 		cruiser
 		battleship
@@ -282,7 +282,11 @@ utility_component_template = {
 		}
 		upkeep = { gf_core_chip = @core_chip_upkeep_t2 }
 	}
-	size_restriction = { juggernaut }
+	size_restriction = {
+		juggernaut
+
+		GF_fire_support_ship
+	}
 
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_free"
