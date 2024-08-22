@@ -43,6 +43,7 @@ GF_new_type = {
 	possible = {
 		origin = { value = GF_origin_commonwealth }
 	}
+	randomized = no
 	
 	graphical_culture = GF_new_type_01
 	move_pop_sound_effect = "moving_pop_confirmation"
