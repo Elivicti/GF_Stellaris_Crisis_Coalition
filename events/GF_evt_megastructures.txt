@@ -596,6 +596,10 @@ planet_event = {
 		from = {
 			save_global_event_target_as = GF_RC_beacon_fleet@event_target:tmp
 			set_fleet_flag = flag_f_GF_RC_beacon_deployed
+			set_saved_date = {
+				key = GF_RC_beacon_expire_date
+				days_from_present = @GF_reverse_collapse_beacon_expire_days
+			}
 			owner = {
 				create_message = {
 					type = MESSAGE_TYPE_GF_REVERSE_BEACON_DEPLOYED

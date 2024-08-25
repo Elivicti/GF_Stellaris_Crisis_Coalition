@@ -103,7 +103,7 @@
  GF_deploy_RC_beacon_activity_key: "在§Y$PLANET_NAME$§!部署信标"
  GF_deploy_RC_beacon_menu_title: "部署信标"
  GF_deploy_RC_beacon_progress_activity_key: "§H部署信标：$PROGRESS$%§!"
- GF_RC_beacon_already_deployed: "信标已部署"
+ GF_RC_beacon_already_deployed: "信标已部署，将于§Y[this.GF_RC_beacon_expire_date]§!失效"
  GF_RC_beacon_deployment_cooldown: "部署冷却中，完成时间：§H[this.GF_RC_beacon_deployment_cooldown_finish_date]§!"
 
  GF_duplicate_PLATFORM_FISSION_REACTOR: "$PLATFORM_FISSION_REACTOR$"
