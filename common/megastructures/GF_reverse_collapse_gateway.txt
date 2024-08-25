@@ -147,15 +147,7 @@ GF_reverse_collapse_beacon = {
 		every_fleet_in_system = {
 			limit = { has_fleet_flag = flag_f_GF_RC_beacon_defense_station }
 			event_target:GF_RC_beacon_fleet@this = {
-				remove_fleet_flag = flag_f_GF_RC_beacon_deployed
-				set_timed_fleet_flag = {
-					flag = flag_f_GF_RC_beacon_deployment_cooldown
-					days = 180
-				}
-				set_saved_date = {
-					key = GF_RC_beacon_deployment_cooldown_finish_date
-					days_from_present = 180
-				}
+				GF_set_RC_beacon_fleet_cooldown = yes
 				owner = {
 					create_message = {
 						type = MESSAGE_TYPE_GF_REVERSE_BEACON_DISMANTLED

@@ -47,6 +47,11 @@
 @GF_shrike_den_army_amenities_usage_mult = 0.02
 @GF_shrike_den_army_planet_stability_add = 0.5
 
+# 逆向坍塌信标
+@GF_reverse_collapse_beacon_deploy_days = 30
+@GF_reverse_collapse_beacon_cooldown_days = 120
+@GF_reverse_collapse_beacon_expire_days = 360
+
 # TECH COSTS
 @GFTech_tier0cost1 = 1000
 @GFTech_tier0cost2 = 1250

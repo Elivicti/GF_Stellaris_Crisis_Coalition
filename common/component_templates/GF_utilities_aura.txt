@@ -381,7 +381,7 @@ utility_component_template = {
 
 	### progress tooltip showed in fleet ui
 	scripted_action_progress_activity_key = GF_deploy_RC_beacon_progress_activity_key
-	scripted_action_required_progress = 60
+	scripted_action_required_progress = @GF_reverse_collapse_beacon_deploy_days
 
 	scripted_action_button_possible = {
 		custom_tooltip = {

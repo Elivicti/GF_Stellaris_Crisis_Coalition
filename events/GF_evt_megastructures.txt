@@ -458,33 +458,32 @@ event = {
 			random_fleet_in_system = {
 				limit = { has_fleet_flag = flag_f_GF_RC_beacon_defense_station }
 				set_location = event_target:beacon
-				save_event_target_as = beacon_defense
-				owner = {
-					save_event_target_as = beacon_owner
+				fleet_event = {
+					id = GF_mega.321
+					days = 1
 				}
-			}
-			system_event = {
-				id = GF_mega.321
-				days = 1
 			}
 		}
 	}
 }
-system_event = {
+fleet_event = {
 	id = GF_mega.321
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
-		random_system_megastructure = {
-			limit = { is_megastructure_type = GF_reverse_collapse_beacon }
-			event_target:beacon = {
-				set_location = prev
-			}
-			set_owner = event_target:beacon_owner
-		}
 		event_target:beacon = {
-			set_owner = event_target:beacon_owner
+			set_owner = prev.owner
+			if = {
+				limit = { NOT = { has_megastructure_flag = flag_mega_GF_will_expire } }
+				set_megastructure_flag = flag_mega_GF_will_expire
+				prevprev = {
+					fleet_event = {
+						id = GF_mega.332
+						days = @GF_reverse_collapse_beacon_expire_days
+					}
+				}
+			}
 		}
 	}
 }
@@ -583,8 +582,13 @@ planet_event = {
 								id = GF_mega.331
 								days = 30
 							}
+							fleet_event = {
+								id = GF_mega.332
+								days = @GF_reverse_collapse_beacon_expire_days
+							}
 						}
 					}
+					set_megastructure_flag = flag_mega_GF_will_expire
 					save_global_event_target_as = GF_RCbeacon@event_target:tmp
 				}
 			}
@@ -605,7 +609,7 @@ planet_event = {
 					}
 					variable = {
 						type = name
-						LOCALIZATION = FLEET
+						localization = FLEET
 						scope = prev
 					}
 				}
@@ -627,6 +631,45 @@ fleet_event = {
 			id = GF_mega.331
 			days = 30
 		}
+	}
+}
+# 定时移除
+fleet_event = {
+	id = GF_mega.332
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:GF_RCbeacon@this = {
+			planet = {
+				save_event_target_as = orbiting_planet
+			}
+		}
+		event_target:GF_RC_beacon_fleet@this = {
+			save_event_target_as = beacon_fleet
+			GF_set_RC_beacon_fleet_cooldown = yes
+		}
+		owner = {
+			create_message = {
+				type = MESSAGE_TYPE_GF_REVERSE_BEACON_DISMANTLED
+				target = event_target:orbiting_planet
+				localization = MESSAGE_GF_REVERSE_BEACON_EXPIRED_DESC
+				days = 30
+				variable = {
+					type = name
+					localization = PLANET
+					scope = event_target:orbiting_planet
+				}
+				variable = {
+					type = name
+					localization = FLEET
+					scope = event_target:beacon_fleet
+				}
+			}
+		}
+
+		remove_megastructure = event_target:GF_RCbeacon@this
+		delete_fleet = this
 	}
 }
 
@@ -732,16 +775,7 @@ country_event = {
 		}
 		remove_megastructure = event_target:GF_RCbeacon@fromfrom
 		event_target:GF_RC_beacon_fleet@fromfrom = {
-			remove_fleet_flag = flag_f_GF_RC_beacon_deployed
-			# set_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
-			set_timed_fleet_flag = {
-				flag = flag_f_GF_RC_beacon_deployment_cooldown
-				days = 180
-			}
-			set_saved_date = {
-				key = GF_RC_beacon_deployment_cooldown_finish_date
-				days_from_present = 180
-			}
+			GF_set_RC_beacon_fleet_cooldown = yes
 		}
 	}
 }

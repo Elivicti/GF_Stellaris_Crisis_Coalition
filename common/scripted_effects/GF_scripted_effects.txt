@@ -872,3 +872,16 @@ GF_show_OGAS_threads_statistics = {
 		limit = { any_owned_planet = { is_planet_class = pc_GF_automated_city } }
 	}
 }
+
+# this = fleet
+GF_set_RC_beacon_fleet_cooldown = {
+	remove_fleet_flag = flag_f_GF_RC_beacon_deployed
+	set_timed_fleet_flag = {
+		flag = flag_f_GF_RC_beacon_deployment_cooldown
+		days = @GF_reverse_collapse_beacon_cooldown_days
+	}
+	set_saved_date = {
+		key = GF_RC_beacon_deployment_cooldown_finish_date
+		days_from_present = @GF_reverse_collapse_beacon_cooldown_days
+	}
+}
