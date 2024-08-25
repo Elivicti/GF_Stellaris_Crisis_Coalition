@@ -23,6 +23,19 @@ utility_component_template = {
 			GF_nyto_collapse_liquid = 0.02
 		}
 	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -50,6 +63,19 @@ utility_component_template = {
 			GF_nyto_collapse_liquid = 0.05
 		}
 	}
+	
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -76,6 +102,19 @@ utility_component_template = {
 			alloys = 0.21
 			GF_nyto_collapse_liquid = 0.1
 		}
+	}
+
+	ai_weight = {
+		weight = @T6_weight
+		inline_script = {
+			script = ship_components/weights/roles_stealth
+			MULT = 2
+		}
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -114,6 +153,11 @@ utility_component_template = {
 			food = 2
 		}
 	}
+
+	ai_weight = {
+		weight = @T5_weight
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -149,6 +193,11 @@ utility_component_template = {
 			energy = 1.0
 			food = 4
 		}
+	}
+	
+	ai_weight = {
+		weight = @T5_weight
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -186,6 +235,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		base = 5
+		weight = @T5_weight
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }

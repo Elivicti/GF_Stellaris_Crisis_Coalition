@@ -1,0 +1,9 @@
+
+modifier = {
+	factor = 0
+	NOT = { is_country_type = default }
+	OR = {
+		GF_is_main_country = yes
+		has_country_flag = flag_GF_components_allowed
+	}
+}

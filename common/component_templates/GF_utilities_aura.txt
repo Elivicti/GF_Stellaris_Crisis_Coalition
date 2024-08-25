@@ -409,4 +409,8 @@ utility_component_template = {
 		}
 	}
 	scripted_action_finished = {}
+
+	ai_weight = {
+		weight = 0 # ai is not allowed to use complicated stuff
+	}
 }

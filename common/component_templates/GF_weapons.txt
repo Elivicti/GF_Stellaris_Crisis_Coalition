@@ -100,6 +100,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -168,6 +169,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -216,8 +218,8 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
-
 }
 
 
@@ -266,6 +268,15 @@ weapon_component_template = {
 	shield_penetration = 0.8
 	armor_penetration = 0.8
 
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 weapon_component_template = {
@@ -313,6 +324,15 @@ weapon_component_template = {
 	shield_penetration = 0.8
 	armor_penetration = 0.8
 
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 weapon_component_template = {
@@ -374,6 +394,7 @@ weapon_component_template = {
 				no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 			}
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -435,6 +456,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -491,6 +513,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -555,6 +578,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -609,6 +633,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -664,6 +689,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -719,6 +745,7 @@ weapon_component_template = {
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -784,6 +811,15 @@ strike_craft_component_template = {
 	tags = { weapon_type_strike_craft }
 	ai_tags = { weapon_role_point_defense carrier }
 	point_defence_targets = { "strike_craft" "missile" }
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 
@@ -844,4 +880,9 @@ strike_craft_component_template = {
 	icon = "GFX_GF_shrike_bomber"
 	icon_frame = 1
 	tags = { weapon_type_strike_craft weapon_swarm weapon_type_space_fauna }
+
+	ai_weight = {
+		weight = 5
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }

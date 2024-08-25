@@ -34,6 +34,15 @@ utility_component_template = {
 		transport
 		crisis_corvette
 	}
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -61,6 +70,15 @@ utility_component_template = {
 	size_restriction = {
 		destroyer
 		crisis_destroyer
+	}
+	
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -90,6 +108,15 @@ utility_component_template = {
 		crisis_cruiser
 		cosmo_crisis_destroyer
 	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -116,6 +143,15 @@ utility_component_template = {
 	size_restriction = {
 		battleship
 		offspring_battleship
+	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -145,6 +181,15 @@ utility_component_template = {
 		payback_warship
 		cosmo_crisis_battlecruiser
 	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -166,6 +211,15 @@ utility_component_template = {
 	size_restriction = {
 		colossus
 		star_eater
+	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -196,6 +250,15 @@ utility_component_template = {
 		military_station_medium
 		military_station_large
 	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
+	}
 }
 
 utility_component_template = {
@@ -222,6 +285,15 @@ utility_component_template = {
 	size_restriction = {
 		ion_cannon
 		GF_RC_beacon_military_station
+	}
+
+	ai_weight = {
+		weight = 7
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -254,6 +326,11 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 8
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -289,6 +366,11 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 8
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -320,6 +402,11 @@ utility_component_template = {
 
 	ai_weight = {
 		weight = 10
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
@@ -354,7 +441,12 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		base = 1000
+		weight = 1000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -383,7 +475,12 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		base = 1000
+		weight = 1000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -412,7 +509,12 @@ utility_component_template = {
 	component_set = "power_core"
 
 	ai_weight = {
-		base = 1000
+		weight = 1000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -446,7 +548,12 @@ utility_component_template = {
 		GF_shrike_queen
 	}
 	ai_weight = {
-		base = 1000
+		weight = 1000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -482,6 +589,11 @@ utility_component_template = {
 		GF_shrike_queen
 	}
 	ai_weight = {
-		base = 1000
+		weight = 1000
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
+		}
+		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
