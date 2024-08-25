@@ -401,6 +401,9 @@ utility_component_template = {
 				has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
 			}
 		}
+		is_star = no
+		is_astral_scar = no
+		GF_is_habitat = no
 		solar_system = {
 			NOR = {
 				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
