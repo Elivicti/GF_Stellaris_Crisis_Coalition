@@ -142,6 +142,9 @@
  GF_duplicate_COLOSSUS_SHIP_THRUSTER_4: "$COLOSSUS_SHIP_THRUSTER_4$"
  GF_duplicate_COLOSSUS_SHIP_THRUSTER_5: "$COLOSSUS_SHIP_THRUSTER_5$"
 
+ GF_fire_support_ship_aura: "舰船光环（$GF_fire_support_ship$）"
+ GF_fire_support_ship_aura_DESC: "$ship_aura_components_DESC$"
+
  GF_SHIP_AURA_STRIKE_CRAFT: "$SHIP_AURA_STRIKE_CRAFT$"
  GF_SHIP_AURA_RANGE: "$SHIP_AURA_RANGE$"
  GF_SHIP_AURA_HYPERLANE: "$SHIP_AURA_HYPERLANE$"

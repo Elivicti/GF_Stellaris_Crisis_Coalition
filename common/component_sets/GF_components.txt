@@ -65,6 +65,14 @@ component_set = {
 }
 
 component_set = {
+	key = "GF_fire_support_ship_aura"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+}
+
+component_set = {
 	key = "GF_SHRIKE_ARMOR"
 	icon = "GFX_GF_shrike_armor"
 	icon_frame = 1

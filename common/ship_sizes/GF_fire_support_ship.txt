@@ -32,7 +32,7 @@ GF_fire_support_ship = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ship_aura_components"
+	required_component_set = "GF_fire_support_ship_aura"
 	default_behavior = artillery
 
 	prerequisites = {
