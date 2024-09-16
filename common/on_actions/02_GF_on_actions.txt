@@ -13,6 +13,9 @@ on_tech_increased = {
 	events = {
 		GF_alaya.0	# “遗迹技术”研究完成
 		GF_evt_misc.200
+
+		GF_doll.510
+		GF_doll.515
 	}
 }
 

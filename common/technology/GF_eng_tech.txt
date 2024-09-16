@@ -81,7 +81,7 @@ GF_tech_mind_upgrade_1 = {
 
 
 	modifier = {
-		GF_doll_cat_specialist_produces_mult = 0.50
+		# GF_doll_cat_specialist_produces_mult = 0.50
 	}
 
 	weight_modifier = {
@@ -146,7 +146,7 @@ GF_tech_mind_upgrade_2 = {
 	}
 
 	modifier = {
-		GF_doll_cat_ruler_produces_mult = 0.50
+		# GF_doll_cat_ruler_produces_mult = 0.50
 	}
 
 	weight_modifier = { factor = 0 }

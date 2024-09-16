@@ -1,5 +1,88 @@
 namespace = GF_doll
 
+country_event = {
+	id = GF_doll.510
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		last_increased_tech = GF_tech_mind_upgrade_1
+	}
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				has_trait = GF_trait_doll
+				NOT = { has_trait = GF_trait_mind_upgrade_1 }
+			}
+			change_species_characteristics = {
+				add_trait = GF_trait_mind_upgrade_1
+			}
+		}
+	}
+}
+country_event = {
+	id = GF_doll.515
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		last_increased_tech = GF_tech_mind_upgrade_2
+	}
+
+	immediate = {
+		every_owned_species = {
+			limit = {
+				has_trait = GF_trait_mind_upgrade_1
+				NOT = { has_trait = GF_trait_mind_upgrade_2 }
+			}
+			change_species_characteristics = {
+				remove_trait = GF_trait_mind_upgrade_1
+				add_trait = GF_trait_mind_upgrade_2
+			}
+		}
+	}
+}
+country_event = {
+	id = GF_doll.518
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		OR = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_mind_upgrade_1 }
+			GF_can_research_tech_trigger = { TECH = GF_tech_mind_upgrade_2 }
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = { has_technology = GF_tech_mind_upgrade_1 }
+			every_owned_species = {
+				limit = {
+					has_trait = GF_trait_doll
+					NOT = { has_trait = GF_trait_mind_upgrade_1 }
+				}
+				change_species_characteristics = {
+					add_trait = GF_trait_mind_upgrade_1
+				}
+			}
+		}
+		else_if = {
+			limit = { has_technology = GF_tech_mind_upgrade_2 }
+			every_owned_species = {
+				limit = {
+					has_trait = GF_trait_mind_upgrade_1
+					NOT = { has_trait = GF_trait_mind_upgrade_2 }
+				}
+				change_species_characteristics = {
+					remove_trait = GF_trait_mind_upgrade_1
+					add_trait = GF_trait_mind_upgrade_2
+				}
+			}
+		}
+	}
+}
 
 country_event = {
 	id = GF_doll.1000
