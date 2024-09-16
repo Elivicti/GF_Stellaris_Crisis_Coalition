@@ -220,6 +220,10 @@ event = {
 			}
 			# 关键词档案库
 			GF_unlock_inital_keywords = yes
+			# 心智升级特质
+			country_event = {
+				id = GF_doll.518
+			}
 		}
 	}
 }
