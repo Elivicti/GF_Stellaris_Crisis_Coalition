@@ -186,7 +186,7 @@ country_event = {
 			days = @GF_doll_leader_reprogram_interval
 		}
 		every_owned_leader = {
-			limit = { has_trait = GF_trait_leader_doll }
+			limit = { GF_is_doll_leader = yes }
 			remove_all_negative_traits = yes
 		}
 		country_event = {

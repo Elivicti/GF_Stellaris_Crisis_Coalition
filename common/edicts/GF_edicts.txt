@@ -67,9 +67,9 @@ GF_doll_reprogram = {
 		weight = 0
 		modifier = {
 			add = @EdictHighPrio
-			count_owned_leader = {
-				limit = { GF_leader_has_vanilla_negative_traits = yes }
-				count > 0
+			any_owned_leader = {
+				GF_is_doll_leader = yes
+				GF_leader_has_vanilla_negative_traits = yes
 			}
 		}
 	}
