@@ -26,6 +26,13 @@
  GF_trait_delicious_food_desc:0 "§L某些仿生自律人形心智云图在模拟其造物主时被编入了独特的个性以进行区分，例如对甜食如蛋糕、糖果、波板糖的大量需求。§!"
  GF_trait_doll_expand:0 "傀儡人形网络"
  GF_trait_doll_expand_desc:0 "§L一个有自主意识的人形通过该网络被允许指挥多个无意识傀儡人形，这可以提高行动效率但代价是维护费用的提升。§!"
+
+ GF_trait_mind_upgrade_1: "$GF_tech_mind_upgrade_1$"
+ GF_trait_mind_upgrade_1_desc: "§L人形心智的潜能得到了释放。§!"
+ GF_trait_mind_upgrade_1_tooltip: "从事 £pop_cat_specialist£ §Y$pop_cat_specialist$岗位§!时的惩罚: §G-100%§!\n\n§E解锁能力:§!\n$t$允许担任§Y领袖§!\n\n§L只要§W政策§!允许，人形就可以担任更复杂的任务§!"
+ GF_trait_mind_upgrade_2: "$GF_tech_mind_upgrade_2$"
+ GF_trait_mind_upgrade_2_desc: "§L人形心智的潜能已经得到了几乎完全的释放。§!"
+ GF_trait_mind_upgrade_2_tooltip: "从事 £pop_cat_specialist£ §Y$pop_cat_specialist$岗位§!时的惩罚: §G-100%§!\n从事 £pop_cat_ruler£ §Y$pop_cat_ruler$岗位§!时的惩罚: §G-100%§!\n\n§E解锁能力:§!\n$t$允许从事 £pop_cat_ruler£ §Y$pop_cat_ruler$岗位§!\n$t$允许担任§Y领袖§!\n\n§L只要§W政策§!允许，人形就可以担任更复杂的任务§!"
 ############
  GF_trait_fire_core:0 "火控核心"
  GF_trait_fire_core_desc:0 "§L额外加装在仿生自律人形体内的战术附件，内置各式武器使用方式与相关战术动作数据，可以使一个刚出厂的人形迅速成为一名经验丰富的战士。§!"
