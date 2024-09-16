@@ -313,14 +313,7 @@ can_fill_specialist_job = {
 
 	if = { # GF
 		limit = { has_trait = GF_trait_doll }
-		owner = {
-			OR = {
-				NOT = { has_authority = GF_auth_commonwealth }
-				has_policy_flag = GF_doll_work_policy_high
-				has_policy_flag = GF_doll_work_policy_free
-				has_policy_flag = GF_doll_work_policy_middle
-			}
-		}
+		GF_can_doll_fill_specialist_job = yes
 	}
 }
 
@@ -382,13 +375,7 @@ can_fill_ruler_job = {
 		}
 		if = { # GF
 			limit = { has_trait = GF_trait_doll }
-			owner = {
-				OR = {
-					NOT = { has_authority = GF_auth_commonwealth }
-					has_policy_flag = GF_doll_work_policy_high
-					has_policy_flag = GF_doll_work_policy_free
-				}
-			}
+			GF_can_doll_fill_ruler_job = yes
 		}
 	}
 }

@@ -163,6 +163,50 @@ GF_require_OGAS_has_available_threads_with_trigger_icon = {
 	}
 }
 
+# this = pop/species
+GF_require_doll_mind_upgrade = {
+	GF_doll_mind_upgrade_level_$LEVEL$ = yes
+}
+GF_doll_mind_upgrade_level_1 = {
+	OR = {
+		has_trait = GF_trait_mind_upgrade_1
+		has_trait = GF_trait_mind_upgrade_2
+	}
+}
+GF_doll_mind_upgrade_level_2 = {
+	has_trait = GF_trait_mind_upgrade_2
+}
+
+# this = pop/species
+GF_can_doll_fill_specialist_job = {
+	hidden_trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				is_GF_authority = no
+				has_policy_flag = GF_doll_work_policy_free
+				has_policy_flag = GF_doll_work_policy_high
+				has_policy_flag = GF_doll_work_policy_middle
+			}
+		}
+	}
+}
+# this = pop/species
+GF_can_doll_fill_ruler_job = {
+	hidden_trigger = {
+		GF_require_doll_mind_upgrade = { LEVEL = 2 }
+		exists = owner
+		owner = {
+			OR = {
+				is_GF_authority = no
+				has_policy_flag = GF_doll_work_policy_free
+				has_policy_flag = GF_doll_work_policy_high
+			}
+		}
+	}
+}
+
+
 ###### game_rule related triggers
 
 # this = country
@@ -176,16 +220,15 @@ GF_can_build_doll_species = {
 # this = country
 # prev = pop
 GF_allow_doll_leaders = {
+	prev = { GF_require_doll_mind_upgrade = { LEVEL = 1 } }
 	OR = {
+		GF_is_main_country = no
 		has_policy_flag = GF_doll_right_full
 		has_policy_flag = GF_doll_right_limited
 	}
 }
 GF_allow_doll_leaders_military = {
-	OR = {
-		has_policy_flag = GF_doll_right_full
-		has_policy_flag = GF_doll_right_limited
-	}
+	GF_allow_doll_leaders = yes
 }
 
 # This = leader, leader we'd like to trade
