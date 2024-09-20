@@ -163,6 +163,32 @@ GF_require_OGAS_has_available_threads_with_trigger_icon = {
 	}
 }
 
+# this = starbase
+is_real_starbase_starbase = {
+	solar_system = {
+		exists = starbase
+		starbase = {
+			is_same_value = prevprev
+		}
+	}
+}
+# this = fleet
+is_real_starbase_fleet = {
+	is_ship_class = shipclass_starbase
+	starbase = {
+		is_real_starbase_starbase = yes
+	}
+}
+# this = fleet/starbase
+is_real_starbase = {
+	switch = {
+		trigger = is_scope_type
+		fleet = { is_real_starbase_fleet = yes }
+		starbase = { is_real_starbase_starbase = yes }
+		default = { always = no }
+	}
+}
+
 # this = pop/species
 GF_require_doll_mind_upgrade = {
 	GF_doll_mind_upgrade_level_$LEVEL$ = yes
