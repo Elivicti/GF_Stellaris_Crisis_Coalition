@@ -85,6 +85,19 @@
 
 
 
+
+## 封装效果
+
+|                    `key`                     |                             说明                             |
+| :------------------------------------------: | :----------------------------------------------------------: |
+| `fallen_empire_cleanse_border_worlds_effect` | 防止**军孤堕落**在拆除星基时<br />一并将**主宰**和**信标基站**等`class`为`shipclass_starbase`的舰船一并拆除 |
+
+文件：
+
++ `common/scripted_effects/z_scripted_effects.txt`
+
+
+
 ## 其他
 
 |                      文件                       |             `key`             |               说明               |
