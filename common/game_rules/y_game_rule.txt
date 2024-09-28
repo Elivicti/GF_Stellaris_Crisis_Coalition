@@ -44,7 +44,7 @@ species_can_live_on_planet = {
 					has_trait = trait_cybernetic
 					exists = root.owner
 					root.owner = {
-						has_authority = auth_machine_intelligence
+						is_machine_empire = yes
 						OR = {
 							has_civic = civic_machine_assimilator # Assimilator empire
 							has_ascension_perk = ap_mechromancy
@@ -211,55 +211,56 @@ can_species_be_assembled = {
 	}
 }
 
-
+# 注：覆盖过is_megacrop了
 # This = country
-can_build_branch_offices = {
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_MEGACORP
-		OR = {
-			has_authority = auth_corporate
-			has_civic = civic_galactic_sovereign_megacorp
+# can_build_branch_offices = {
+# 	custom_tooltip = {
+# 		fail_text = BRANCH_OFFICE_NOT_MEGACORP
+# 		OR = {
+# 			is_megacorp = yes
+# 			has_civic = civic_galactic_sovereign_megacorp
 
-			has_civic = GF_civic_GK	# GF
-		}
-	}
-}
+# 			has_civic = GF_civic_GK	# GF
+# 		}
+# 	}
+# }
 
+# 注：覆盖过is_megacorp了
 # This = country
-can_support_branch_offices = {
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
-		NOR = {
-			is_country_type = fallen_empire
-			is_country_type = awakened_fallen_empire
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
-		NOR = {
-			has_authority = auth_corporate
-			has_civic = civic_galactic_sovereign_megacorp
-			has_civic = GF_civic_GK
-		}
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
-		is_gestalt = no
-	}
-	custom_tooltip = {
-		fail_text = BRANCH_OFFICE_NOT_ADVANCED_PRE_FTL
-		if = {
-			limit = {
-				is_primitive = yes
-				is_gestalt = no
-			}
-			OR = {
-				has_pre_ftl_age = atomic_age
-				has_pre_ftl_age = early_space_age
-			}
-		}
-	}
-}
+# can_support_branch_offices = {
+# 	custom_tooltip = {
+# 		fail_text = BRANCH_OFFICE_NOT_FALLEN_EMPIRES
+# 		NOR = {
+# 			is_country_type = fallen_empire
+# 			is_country_type = awakened_fallen_empire
+# 		}
+# 	}
+# 	custom_tooltip = {
+# 		fail_text = BRANCH_OFFICE_NOT_ON_MEGACORP_PLANET
+# 		NOR = {
+# 			is_megacorp = yes
+# 			has_civic = civic_galactic_sovereign_megacorp
+# 			has_civic = GF_civic_GK
+# 		}
+# 	}
+# 	custom_tooltip = {
+# 		fail_text = BRANCH_OFFICE_NOT_REGULAR_EMPIRE
+# 		is_gestalt = no
+# 	}
+# 	custom_tooltip = {
+# 		fail_text = BRANCH_OFFICE_NOT_ADVANCED_PRE_FTL
+# 		if = {
+# 			limit = {
+# 				is_primitive = yes
+# 				is_gestalt = no
+# 			}
+# 			OR = {
+# 				has_pre_ftl_age = atomic_age
+# 				has_pre_ftl_age = early_space_age
+# 			}
+# 		}
+# 	}
+# }
 
 
 # This = species one
@@ -347,8 +348,7 @@ can_fill_ruler_job = {
 			# Rule out Traits for servitude & lack of free will
 			NOR = {
 				has_trait = trait_syncretic_proles
-				has_trait = trait_zombie
-				has_trait = trait_nerve_stapled
+				can_think = no
 			}
 			# Rule out Machine Pops, unless they're rendered sapient
 			OR = {
@@ -430,18 +430,18 @@ can_trade_leader = {
 		}
 		AND = {
 			ROOT = {
-				has_authority = auth_machine_intelligence
+				is_machine_empire = yes
 			}
 			FROM = {
-				has_authority = auth_machine_intelligence
+				is_machine_empire = yes
 			}
 		}
 		AND = {
 			ROOT = {
-				has_authority = auth_hive_mind
+				is_hive_empire = yes
 			}
 			FROM = {
-				has_authority = auth_hive_mind
+				is_hive_empire = yes
 			}
 		}
 		AND = { # Tactical Cogitator option
@@ -451,8 +451,8 @@ can_trade_leader = {
 			FROM = {
 				OR = {
 					is_regular_empire = yes
-					has_authority = auth_hive_mind
-					has_authority = auth_machine_intelligence
+					is_hive_empire = yes
+					is_machine_empire = yes
 				}
 				NOT = { has_country_flag = no_murdering_tactical_leaders }
 				NOT = {
@@ -463,6 +463,8 @@ can_trade_leader = {
 			}
 		}
 	}
+	# Can't trade gestalt nodes
+	is_gestalt_node = no
 	# The overlord can't be a fallen or awakened empire.
 	ROOT = {
 		NAND = {

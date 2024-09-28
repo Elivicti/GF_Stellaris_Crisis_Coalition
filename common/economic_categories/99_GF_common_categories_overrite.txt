@@ -7,13 +7,13 @@ megastructures = {
 	parent = country
 	generate_mult_modifiers = {
 		cost
-		produces
 		upkeep
+		produces
 	}
 	generate_add_modifiers = {
+		upkeep
 		cost
 		produces
-		upkeep
 	}
 	# triggered_cost_modifier = {
 	# 	key = megastructures_build
@@ -27,4 +27,5 @@ megastructures = {
 	# 	key = megastructure
 	# 	modifier_types = { mult }
 	# }
+	modifier_category = megastructure
 }

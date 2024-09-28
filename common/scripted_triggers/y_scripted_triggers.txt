@@ -22,14 +22,17 @@ is_special_colony_type = {
 # P社牛魔酬宾
 can_be_leader = {
 	has_citizenship_rights = yes
-	NOT = { has_trait = trait_syncretic_proles }
-	can_think = yes
+	# Rule out Traits for servitude & lack of free will
+	NOR = {
+		has_trait = trait_syncretic_proles
+		can_think = no
+	}
 	OR = {
 		is_robot_pop = no
 		root = {
 			OR = {
 				has_technology = tech_synthetic_leaders
-				has_authority = auth_machine_intelligence
+				is_machine_empire = yes
 				is_mechanical_empire = yes
 				is_individual_machine = yes
 
@@ -59,8 +62,11 @@ entertainer_job_check_trigger = {
 		}
 		is_being_purged = no
 		is_being_assimilated = no
-		NOT = { has_trait = trait_syncretic_proles }
-		can_think = yes
+		# Rule out Traits for servitude & lack of free will
+		NOR = {
+			has_trait = trait_syncretic_proles
+			can_think = no
+		}
 		OR = {
 			NOT = { has_trait = trait_mechanical }
 			owner = { has_technology = tech_droid_workers }
@@ -96,8 +102,11 @@ battle_thrall_job_check_trigger = {
 		}
 		is_being_purged = no
 		is_being_assimilated = no
-		NOT = { has_trait = trait_syncretic_proles }
-		can_think = yes
+		# Rule out Traits for servitude & lack of free will
+		NOR = {
+			has_trait = trait_syncretic_proles
+			can_think = no
+		}
 		NOT = {
 			has_military_service_type = {
 				type = military_service_none
@@ -139,7 +148,8 @@ can_set_ai_policy = {
 			OR = {
 				has_technology = tech_synthetic_workers
 				has_technology = tech_sapient_ai
-				has_authority = auth_machine_intelligence
+				is_machine_empire = yes
+				is_individual_machine = yes
 			}
 			OR = {
 				is_country_type = default

@@ -2,6 +2,8 @@
 #maintenance is directly scripted here. 0.25 translates to 0.25 monthly cost (excluding other upkeep modifiers)
 #morale_damage = 1		# average morale damage of the army, default: auto (calculated from morale * MORALE_DAMAGE_MULT)
 
+#ai_weight: as standard, but note that it pre-filters by whether the country can recruit this army (measuring by whether it is an assault army, whether it has the tech prereqs, and whether it passes potential_country)
+
 # Assault Armies
 assault_army = {
 	damage = 1.00
@@ -26,13 +28,13 @@ assault_army = {
 
 	show_tech_unlock_if = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
 	potential_country = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
 	}
@@ -41,6 +43,7 @@ assault_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_limited_cybernetic"
 				is_sapient = no
 
 				# GF
@@ -108,12 +111,26 @@ slave_army = {
 	prerequisites = { "tech_neural_implants" }
 
 	allow = {
-		has_building = building_slave_processing
+		custom_tooltip = {
+			fail_text = "requires_slave_processing_facility"
+			OR = {
+				has_building = building_slave_processing
+				AND = {
+					exists = orbital_defence
+					orbital_defence = {
+						exists = starbase
+						starbase = {
+							has_starbase_building = ring_slave_processing_facility
+						}
+					}
+				}
+			}
+		}
 		any_owned_pop = { is_pop_category = slave }
 	}
 	potential_country = {
 		has_policy_flag = slavery_allowed
-		NOT = { has_authority = auth_machine_intelligence }
+		is_machine_empire = no
 	}
 	potential = {
 		owner = {
@@ -126,6 +143,7 @@ slave_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_limited_cybernetic"
 				is_sapient = no
 
 				# GF
@@ -159,7 +177,6 @@ slave_army = {
 	}
 }
 
-
 # Clone Armies
 clone_army = {
 	damage = 1.00
@@ -186,14 +203,14 @@ clone_army = {
 
 	show_tech_unlock_if = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 		}
 	}
 
 	potential_country = {
 		OR = {
-			NOT = { has_authority = auth_machine_intelligence }
+			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 		}
 	}
@@ -202,6 +219,7 @@ clone_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_limited_cybernetic"
 				is_sapient = no
 
 				# GF
@@ -259,7 +277,7 @@ psionic_army = {
 
 	prerequisites = { "tech_telepathy" }
 	potential_country = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_machine_empire = no
 	}
 	potential = {
 		from = {
@@ -273,6 +291,7 @@ psionic_army = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_limited_cybernetic"
 				is_sapient = no
 
 				# GF
@@ -322,13 +341,14 @@ gene_warrior_army = {
 
 	prerequisites = { "tech_gene_seed_purification" }
 	potential_country = {
-		NOT = { has_authority = auth_machine_intelligence }
+		is_machine_empire = no
 	}
 	potential = {
 		from = {
 			NOR = {
 				has_trait = "trait_mechanical"
 				has_trait = "trait_machine_unit"
+				has_trait = "trait_limited_cybernetic"
 				is_sapient = no
 
 				# GF
