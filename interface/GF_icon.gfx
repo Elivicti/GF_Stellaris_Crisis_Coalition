@@ -351,6 +351,11 @@ spriteTypes = {
 		name = "GFX_GF_computing_center_3_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
 	}
+	spriteType = {
+		name = "GFX_GF_computing_center_0_build_icon"
+		textureFile = "gfx/interface/icons/technologies/GF_tech_ogas_computing_center.dds"
+	}
+
 
 	spriteType = {
 		name = "GFX_GF_reverse_collapse_beacon_outliner_icon"
