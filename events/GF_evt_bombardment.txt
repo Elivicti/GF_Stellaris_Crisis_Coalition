@@ -449,74 +449,86 @@ planet_event = {
 				reroll_random = yes
 				random_owned_pop = {
 					limit = { is_robot_pop = yes }
-					if = {
-						limit = {
-							OR = {
-								is_pop_category = worker
-								is_pop_category = simple_drone
+
+					reroll_random = yes
+					random_list = {
+						3 = {
+							modifier = {
+								subtract = 2
+								OR = {
+									is_pop_category = specialist
+									is_pop_category = complex_drone
+								}
+							}
+							modifier = {
+								factor = 0
+								OR = {
+									is_pop_category = worker
+									is_pop_category = simple_drone
+								}
 							}
 						}
-						set_pop_flag = flag_pop_GF_captured
-						log = "worker captured"
-					}
-					else_if = {
-						limit = {
-							OR = {
-								is_pop_category = specialist
-								is_pop_category = complex_drone
-							}
-						}
-						random_list = {
-							1 = { set_pop_flag = flag_pop_GF_captured log = "specialist captured" }
-							1 = { }
+						1 = {
+							save_event_target_as = target_pop
 						}
 					}
-					else = {
-						## ruler or any other
-						random_list = {
-							1 = { set_pop_flag = flag_pop_GF_captured log = "ruler captured" }
-							3 = { }
-						}
-					}
-					save_event_target_as = target_pop
 				}
 
-				event_target:target_pop = {
-					if = {
-						limit = { has_pop_flag = flag_pop_GF_captured }
-						prev.from.owner = {
-							capital_scope = {
-								create_pop = {
-									species = event_target:GF_doll_species_template
-									ethos = owner
-									effect = {
-										add_modifier = {
-											modifier = GF_captured_pop_debuff
-											mult = value:scripted_modifier_mult|MODIFIER|GF_pop_debuff_from_capture_mult|
-											years = 5
-										}
-									}
-								}
-							}
-							create_message = {
-								TYPE = MESSAGE_TYPE_GF_ROBOT_POP_CAPTURED
-								localization = MESSAGE_GF_ROBOT_POP_CAPTURED_DESC
-								days = 30
-								target = prev
-								variable = {
-									type = name
-									localization = PLANET
-									scope = root
-								}
-								variable = {
-									type = name
-									localization = CAPITAL
-									scope = capital_scope
-								}
-							}
+				if = {
+					limit = { exists = event_target:target_pop }
+					fire_on_action = {
+						on_action = on_pop_GF_bombard_captured
+						scopes = {
+							from = event_target:target_pop
+							fromfrom = from
 						}
-						kill_pop = yes
 					}
+				}
+			}
+		}
+	}
+}
+
+# this = planet
+# from = pop (captured)
+# fromfrom = fleet (bombarder)
+planet_event = {
+	id = GF_bombardment.3010
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		exists = from
+	}
+
+	immediate = {
+		resettle_pop = {
+			pop = from
+			planet = fromfrom.owner.capital_scope
+		}
+		from = {
+			change_species = event_target:GF_doll_species_template
+			add_modifier = {
+				modifier = GF_captured_pop_debuff
+				mult = fromfrom.owner.value:scripted_modifier_mult|MODIFIER|GF_pop_debuff_from_capture_mult|
+				years = 5
+			}
+		}
+		fromfrom.owner = {
+			create_message = {
+				TYPE = MESSAGE_TYPE_GF_ROBOT_POP_CAPTURED
+				localization = MESSAGE_GF_ROBOT_POP_CAPTURED_DESC
+				days = 30
+				target = from
+				variable = {
+					type = name
+					localization = PLANET
+					scope = root
+				}
+				variable = {
+					type = name
+					localization = CAPITAL
+					scope = capital_scope
 				}
 			}
 		}

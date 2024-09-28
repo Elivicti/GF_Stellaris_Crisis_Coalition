@@ -82,6 +82,15 @@ on_planet_bombarded_to_collapse_victim = {
 	}
 }
 
+# this = planet
+# from = pop (captured)
+# fromfrom = fleet (bombarder)
+on_pop_GF_bombard_captured = {
+	events = {
+		GF_bombardment.3010
+	}
+}
+
 # Triggers country_event for the defender upon victory
 # Root = country, planet owner
 # From = country, attack leader
