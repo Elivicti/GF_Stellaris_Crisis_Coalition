@@ -666,7 +666,7 @@ GF_collapse_planet_effect = {
 	remove_all_buildings = yes
 	# destroy habitats and ringworlds
 	if = {
-		limit = { is_planet_class = pc_habitat }
+		limit = { GF_is_habitat = yes }
 		spawn_habitat_cracker_effect = yes
 		remove_planet = yes
 	}
