@@ -94,13 +94,15 @@ weapon_component_template = {
 	min_range = 10.0
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -163,13 +165,15 @@ weapon_component_template = {
 	min_range = 10.0
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -212,13 +216,15 @@ weapon_component_template = {
 	range = 0
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -269,13 +275,15 @@ weapon_component_template = {
 	armor_penetration = 0.8
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -325,13 +333,15 @@ weapon_component_template = {
 	armor_penetration = 0.8
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = rare_crystals }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -386,7 +396,10 @@ weapon_component_template = {
 	missile_retarget_range = 120
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			OR = {
@@ -394,7 +407,6 @@ weapon_component_template = {
 				no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 			}
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -450,13 +462,15 @@ weapon_component_template = {
 	missile_retarget_range = 100
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -507,13 +521,15 @@ weapon_component_template = {
 	accuracy = 0.8
 	
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -572,13 +588,15 @@ weapon_component_template = {
 	}
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -627,13 +645,15 @@ weapon_component_template = {
 	tracking = 0.75
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -683,13 +703,15 @@ weapon_component_template = {
 	tracking = 0.5
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -739,13 +761,15 @@ weapon_component_template = {
 	tracking = 0.25
 
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = volatile_motes }
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -813,12 +837,14 @@ strike_craft_component_template = {
 	point_defence_targets = { "strike_craft" "missile" }
 	
 	ai_weight = {
-		weight = 5
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -882,7 +908,9 @@ strike_craft_component_template = {
 	tags = { weapon_type_strike_craft weapon_swarm weapon_type_space_fauna }
 
 	ai_weight = {
-		weight = 5
-		inline_script = "weights/GF_non_default_country_components_weight"
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 5
+		}
 	}
 }

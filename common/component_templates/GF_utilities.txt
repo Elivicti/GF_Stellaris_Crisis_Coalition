@@ -36,12 +36,14 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -73,12 +75,14 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -110,12 +114,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -146,12 +152,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -183,12 +191,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -214,12 +224,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -252,12 +264,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -288,12 +302,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 7
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 7
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -325,12 +341,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -365,12 +383,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -401,12 +421,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 10
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 10
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
@@ -441,12 +463,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 1000
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -475,12 +499,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 1000
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 1000
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -509,12 +535,14 @@ utility_component_template = {
 	component_set = "power_core"
 
 	ai_weight = {
-		weight = 1000
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 1000
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -548,12 +576,14 @@ utility_component_template = {
 		GF_shrike_queen
 	}
 	ai_weight = {
-		weight = 1000
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 1000
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -589,11 +619,13 @@ utility_component_template = {
 		GF_shrike_queen
 	}
 	ai_weight = {
-		weight = 1000
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 1000
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }

@@ -1,8 +1,8 @@
-
+weight = 0
 modifier = {
-	factor = 0
-	NOT = { is_country_type = default }
+	weight = $weight$
 	OR = {
+		is_country_type = default
 		GF_is_main_country = yes
 		has_country_flag = flag_GF_components_allowed
 	}

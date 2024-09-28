@@ -39,12 +39,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -78,12 +80,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -117,12 +121,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 9
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 9
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -153,12 +159,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 9
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -208,12 +216,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 9
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 9
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -260,12 +270,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -295,12 +307,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -334,12 +348,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 10
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 10
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -369,12 +385,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 utility_component_template = {
@@ -403,12 +421,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -444,12 +464,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -485,12 +507,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 9
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 9
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -525,12 +549,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 9
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 9
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -567,12 +593,14 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -607,11 +635,13 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 8
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = 8
+		}
 		modifier = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = gf_core_chip }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }

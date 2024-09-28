@@ -25,7 +25,10 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = @T6_weight
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T6_weight
+		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 2
@@ -34,7 +37,6 @@ utility_component_template = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -65,7 +67,10 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = @T6_weight
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T6_weight
+		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 2
@@ -74,7 +79,6 @@ utility_component_template = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -105,7 +109,10 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = @T6_weight
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T6_weight
+		}
 		inline_script = {
 			script = ship_components/weights/roles_stealth
 			MULT = 2
@@ -114,7 +121,6 @@ utility_component_template = {
 			factor = 0.0
 			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
 		}
-		inline_script = "weights/GF_non_default_country_components_weight"
 	}
 }
 
@@ -155,8 +161,10 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = @T5_weight
-		inline_script = "weights/GF_non_default_country_components_weight"
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T5_weight
+		}
 	}
 }
 
@@ -196,8 +204,10 @@ utility_component_template = {
 	}
 	
 	ai_weight = {
-		weight = @T5_weight
-		inline_script = "weights/GF_non_default_country_components_weight"
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T5_weight
+		}
 	}
 }
 
@@ -235,7 +245,9 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = @T5_weight
-		inline_script = "weights/GF_non_default_country_components_weight"
+		inline_script = {
+			script = "weights/GF_non_default_country_components_weight"
+			weight = @T5_weight
+		}
 	}
 }
