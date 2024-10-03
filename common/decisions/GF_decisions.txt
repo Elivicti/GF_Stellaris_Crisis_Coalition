@@ -185,10 +185,7 @@ decision_GF_rebuild_purify_wall = {
 		}
 		OR = {
 			GF_planet_has_contaminated_zone = yes
-			check_variable = {
-				which = v_GF_elid_threat_level
-				value > 0
-			}
+			GF_elid_threat_exists = yes
 		}
 		NOT = { has_deposit = d_GF_purify_wall }
 	}
@@ -196,10 +193,7 @@ decision_GF_rebuild_purify_wall = {
 	allow = {
 		custom_tooltip = {
 			fail_text = decision_GF_rebuild_purify_wall_requirements
-			check_variable = {
-				which = v_GF_elid_threat_level
-				value > 0
-			}
+			GF_elid_threat_exists = yes
 			
 		}
 	}
@@ -242,31 +236,22 @@ decision_GF_eliminate_all_elid = {
 	resources = {
 		category = decisions
 		cost = {
-			influence = 20
+			minerals = 50
 			energy = 300
 			multiplier = v_GF_elid_threat_level
 		}
 	}
 
 	potential = {
-		owner = {
-			has_authority = GF_auth_commonwealth
-			has_origin = GF_origin_commonwealth
-		}
+		owner = { GF_is_main_country = yes }
 		GF_planet_has_contaminated_zone = no
-		check_variable = {
-			which = v_GF_elid_threat_level
-			value > 0
-		}
+		GF_elid_threat_exists = yes
 	}
 
 	allow = {
 		has_ground_combat = no
 		hidden_trigger = {
-			check_variable = {
-				which = v_GF_elid_threat_level
-				value > 0
-			}
+			GF_elid_threat_exists = yes
 		}
 	}
 
@@ -277,7 +262,7 @@ decision_GF_eliminate_all_elid = {
 				which = v_GF_elid_threat_level
 				value = 0
 			}
-			planet_event = { id = GF_elid.1030 }
+			GF_update_elid_threat_modifier = yes
 		}
 	}
 
@@ -285,17 +270,8 @@ decision_GF_eliminate_all_elid = {
 		weight = 20
 		modifier = {
 			factor = 100
-			AND = {
-				NOR = {
-					has_deposit = d_GF_black_zone
-					has_deposit = d_GF_red_zone
-					has_deposit = d_GF_yellow_zone
-				}
-				check_variable = {
-					which = v_GF_elid_threat_level
-					value > 0
-				}
-			}
+			GF_planet_has_contaminated_zone = no
+			GF_elid_threat_exists = yes
 		}
 	}
 }

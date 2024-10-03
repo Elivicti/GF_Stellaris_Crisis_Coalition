@@ -11,7 +11,13 @@ d_GF_black_zone = {
 	can_be_cleared = {
 		NOT = { has_deposit = d_GF_red_zone }
 	}
-	on_cleared = { custom_tooltip = GF_on_black_zone_cleared_effect }
+	on_cleared = {
+		custom_tooltip = GF_on_black_zone_cleared_effect
+		hidden_effect = {
+			GF_begin_contaminated_zone_battle = { ZONE = d_GF_black_zone }
+			planet_event = { id = GF_elid.2100 }
+		}
+	}
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -36,7 +42,13 @@ d_GF_red_zone = {
 	can_be_cleared = {
 		NOT = { has_deposit = d_GF_yellow_zone }
 	}
-	on_cleared = { custom_tooltip = GF_on_red_zone_cleared_effect }
+	on_cleared = {
+		custom_tooltip = GF_on_red_zone_cleared_effect
+		hidden_effect = {
+			GF_begin_contaminated_zone_battle = { ZONE = d_GF_red_zone }
+			planet_event = { id = GF_elid.2200 }
+		}
+	}
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -57,7 +69,13 @@ d_GF_yellow_zone = {
 		pop_environment_tolerance = -0.05
 		planet_max_districts_add = -1
 	}
-	on_cleared = { custom_tooltip = GF_on_yellow_zone_cleared_effect }
+	on_cleared = {
+		custom_tooltip = GF_on_yellow_zone_cleared_effect
+		hidden_effect = {
+			GF_begin_contaminated_zone_battle = { ZONE = d_GF_yellow_zone }
+			planet_event = { id = GF_elid.2300 }
+		}
+	}
 	resources = {
 		category = deposit_blockers
 		cost = {
@@ -86,7 +104,7 @@ d_GF_purify_wall = {
 		}
 	}
 	drop_weight = { weight = 0 }
-	custom_tooltip = d_GF_purify_wall_effect_desc
+	# custom_tooltip = d_GF_purify_wall_effect_desc
 
 	#on_cleared = {
 	#	if = {

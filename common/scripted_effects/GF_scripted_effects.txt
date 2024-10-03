@@ -32,6 +32,125 @@ GF_set_cannot_research_basic_doll_tech = {
 	remove_country_flag = flag_can_research_GF_tech_doll_modding_point_1
 }
 
+# this = planet
+GF_spawn_elid_invasion = {
+	while = {
+		count = value:GF_elid_spawn_count|mult|$MULT|1$|add|$ADD|0$|
+		create_army = {
+			type = $TYPE$
+			name = NAME_$TYPE$
+			owner = event_target:aggressive_elid_country
+			species = event_target:aggressive_elid_species
+		}
+	}
+}
+
+# this = planet
+GF_begin_contaminated_zone_battle = {
+	set_planet_flag = flag_p_GF_battle_in_contaminated_zone
+	set_planet_flag = flag_p_GF_battle_in_$ZONE$
+}
+GF_end_contaminated_zone_battle = {
+	remove_planet_flag = flag_p_GF_battle_in_contaminated_zone
+	remove_planet_flag = flag_p_GF_battle_in_d_GF_black_zone
+	remove_planet_flag = flag_p_GF_battle_in_d_GF_red_zone
+	remove_planet_flag = flag_p_GF_battle_in_d_GF_yellow_zone
+}
+
+# this = planet
+GF_remove_elid_invasion_army = {
+	# 移除ELID陆军
+	every_planet_army = {
+		limit = {
+			OR = {
+				army_type = GF_army_hostile_elid
+				army_type = GF_army_hostile_elid_boss
+			}
+		}
+		remove_army = yes
+	}
+	set_controller = owner
+}
+
+# this = planet
+GF_increase_elid_threat = {
+	custom_tooltip_with_params = {
+		description = GF_elid_threat_level_increased
+		description_parameters = {
+			VALUE = $VALUE$
+		}
+	}
+	hidden_effect = {
+		change_variable = {
+			which = v_GF_elid_threat_level
+			value = $VALUE$
+		}
+		GF_update_elid_threat_modifier = yes
+	}
+}
+
+GF_decrease_elid_threat = {
+	custom_tooltip_with_params = {
+		description = GF_elid_threat_level_decreased
+		description_parameters = {
+			VALUE = $VALUE$
+		}
+	}
+	hidden_effect = {
+		subtract_variable = {
+			which = v_GF_elid_threat_level
+			value = $VALUE$
+		}
+		GF_update_elid_threat_modifier = yes
+	}
+}
+
+# this = planet
+GF_update_elid_threat_modifier = {
+	remove_modifier = GF_pm_elid_threat_level_low
+	remove_modifier = GF_pm_elid_threat_level_mid
+	remove_modifier = GF_pm_elid_threat_level_high
+	if = {
+		limit = { is_variable_set = v_GF_elid_threat_level }
+		if = {
+			limit = {
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value <= 0
+				}
+			}
+			# final victory
+			planet_event = { id = GF_elid.1030 }
+		}
+		else_if = { # threat level is less than 2
+			limit = {
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value <= @GF_elid_threat_low_threshold
+				}
+				GF_elid_threat_exists = yes
+			}
+			add_modifier = { modifier = GF_pm_elid_threat_level_low days = -1 }
+		}
+		else_if = { # threat level is (2, 6]
+			limit = {
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value <= @GF_elid_threat_mid_threshold
+				}
+				check_variable = {
+					which = v_GF_elid_threat_level
+					value > @GF_elid_threat_low_threshold
+				}
+			}
+			add_modifier = { modifier = GF_pm_elid_threat_level_mid days = -1 }
+		}
+		else = { # threat level is bigger than 6
+			add_modifier = { modifier = GF_pm_elid_threat_level_high days = -1 }
+		}
+	}
+}
+
 @GF_relic_site_jump_distance_min = 1
 @GF_relic_site_jump_distance_max = 4
 

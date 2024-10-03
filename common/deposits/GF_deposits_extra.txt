@@ -22,8 +22,6 @@ d_GF_black_zone_extra = {
 			planet = { owner = { has_technology = GF_tech_ecological_recovery } }
 		}
 	}
-
-	blocker_swap_types = { d_GF_red_zone_extra }
 	
 	drop_weight = { weight = 0 }
 }

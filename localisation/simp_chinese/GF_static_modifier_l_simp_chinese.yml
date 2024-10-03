@@ -81,17 +81,23 @@
  GF_pm_failed_in_defending_elid:0 "E.L.I.D防御战失败"
  GF_pm_failed_in_defending_elid_desc:0 "我们的军队在上一场与E.L.I.D感染者的冲突中遭遇了惨重的失败，许多设施都被破坏了。"
 
- GF_elid_thread_level_increase_tooltip:0 "\n我们的科学家预估，当§R坍塌辐射污染区§!存在时，E.L.I.D威胁度每§H20年§!将§R增加1点§!。"
- GF_elid_thread_level_tooltip:0 "当前威胁度等级细分："
+ GF_elid_threat_level: "E.L.I.D威胁度"
+ GF_elid_threat_level_increased: "$GF_elid_threat_level$增加了：§R$VALUE|0$§!"
+ GF_elid_threat_level_decreased: "$GF_elid_threat_level$降低了：§G$VALUE|0$§!"
 
- GF_pm_elid_threat_level_low:0 "E.L.I.D威胁度：§G低§!"
- GF_pm_elid_threat_level_low_desc:0 "主要的E.L.I.D感染者均已被消灭，只有小股感染者仍然在野外游荡。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$§G[GF_home_world.v_GF_elid_threat_level]§!"
+ GF_elid_threat_level_low: "§G[this.v_GF_elid_threat_level]§!"
+ GF_elid_threat_level_mid: "§H[this.v_GF_elid_threat_level]§!"
+ GF_elid_threat_level_high: "§R[this.v_GF_elid_threat_level]§!"
+ GF_pm_elid_threat_level_tooltip: "威胁度等级细分：[GF_home_world.GF_GetElidThreatLevel]\n\n我们的科学家预估，当§R坍塌辐射污染区§!存在时，$GF_elid_threat_level$每§H20年§!将§R增加1点§!。"
 
- GF_pm_elid_threat_level_mid:0 "E.L.I.D威胁度：§H中§!"
- GF_pm_elid_threat_level_mid_desc:0 "野外存在中小规模的E.L.I.D感染者集群，对城市构成不可小视的威胁。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$§H[GF_home_world.v_GF_elid_threat_level]§!"
+ GF_pm_elid_threat_level_low:0 "$GF_elid_threat_level$：§G低§!"
+ GF_pm_elid_threat_level_low_desc:0 "大型生骸集群均已被消灭，只有小股生骸仍然在野外游荡。"
 
- GF_pm_elid_threat_level_high:0 "E.L.I.D威胁度：§R高§!"
- GF_pm_elid_threat_level_high_desc:0 "E.L.I.D感染者控制了交通枢纽外的绝大部分地区，城市郊外几乎没有安全的地区。\n$GF_elid_thread_level_increase_tooltip$\n$GF_elid_thread_level_tooltip$§R[GF_home_world.v_GF_elid_threat_level]§!"
+ GF_pm_elid_threat_level_mid:0 "$GF_elid_threat_level$：§H中§!"
+ GF_pm_elid_threat_level_mid_desc:0 "野外存在中小规模的生骸集群，对城市构成不可小视的威胁。"
+
+ GF_pm_elid_threat_level_high:0 "$GF_elid_threat_level$：§R高§!"
+ GF_pm_elid_threat_level_high_desc:0 "生骸集群控制了交通枢纽外的绝大部分地区，城市郊外几乎没有安全的地区。"
 
  GF_pm_final_victory_in_defending_elid:0 "最终的胜利"
  GF_pm_final_victory_in_defending_elid_desc:0 "我们与广域低辐射感染症的斗争终于迎来了终点——以我们的胜利为句号。"

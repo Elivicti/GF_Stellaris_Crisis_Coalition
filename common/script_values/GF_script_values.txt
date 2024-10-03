@@ -54,6 +54,12 @@
 # For format for doing so is value:my_value|PARAM1|value1|PARAM2|value2|.
 # Then you can use $PARAM1$ in the script value and it will replace it with value1
 
+# this = planet
+GF_elid_spawn_count = {
+	set = v_GF_elid_threat_level
+	[[mult] mult = $mult$ ]
+	[[add]  add  = $add$  ]
+}
 
 # scope = country
 GF_monthly_resource_income = {

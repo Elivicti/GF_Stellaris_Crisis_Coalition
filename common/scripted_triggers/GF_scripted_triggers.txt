@@ -99,6 +99,31 @@ can_destroy_planet_with_PLANET_KILLER_GF_COLLAPSE_ENDING_FLASH = {
 }
 
 # this = planet
+GF_elid_combat_type_regular = {
+	GF_elid_combat_type_contaminated_zone = no
+}
+GF_elid_combat_type_contaminated_zone = {
+	has_planet_flag = flag_p_GF_battle_in_contaminated_zone
+}
+GF_elid_combat_type_d_GF_black_zone = {
+	GF_elid_combat_type_contaminated_zone = yes
+	has_planet_flag = flag_p_GF_battle_in_d_GF_black_zone
+}
+GF_elid_combat_type_d_GF_red_zone = {
+	GF_elid_combat_type_contaminated_zone = yes
+	has_planet_flag = flag_p_GF_battle_in_d_GF_red_zone
+}
+GF_elid_combat_type_d_GF_yellow_zone = {
+	GF_elid_combat_type_contaminated_zone = yes
+	has_planet_flag = flag_p_GF_battle_in_d_GF_yellow_zone
+}
+
+# this = planet
+GF_check_elid_combat_type = {
+	GF_elid_combat_type_$TYPE$ = yes
+}
+
+# this = planet
 GF_collapse_relic_site_requirements = {
 	OR = {
 		is_planet_class = pc_barren
@@ -151,16 +176,11 @@ GF_has_completed_gavirul_project = {
 	}
 }
 
-# scope = country, checks the country's authority and if v_GF_elid_threat_level is bigger than 0
-GF_default_elid_event_trigger = {
-	AND = {
-		has_authority = GF_auth_commonwealth
-		event_target:GF_home_world = {
-			check_variable = {
-				which = v_GF_elid_threat_level
-				value > 0
-			}
-		}
+# this = planet
+GF_elid_threat_exists = {
+	check_variable = {
+		which = v_GF_elid_threat_level
+		value > 0
 	}
 }
 

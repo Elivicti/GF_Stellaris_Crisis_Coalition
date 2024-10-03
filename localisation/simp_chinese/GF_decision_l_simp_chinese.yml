@@ -33,9 +33,9 @@
  decision_GF_rebuild_purify_wall_requirements:0 "E.L.I.D感染者已经不再具有威胁，我们没必要建设隔离墙。"
  decision_GF_rebuild_purify_wall_tooltip:0 "§G减少§!E.L.I.D感染者对城市的§R威胁度§!"
 
- decision_GF_eliminate_all_elid:0 "清理剩余E.L.I.D感染者"
- decision_GF_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的E.L.I.D感染者集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
- decision_GF_eliminate_all_elid_effects:0 "将会消灭所有剩余的E.L.I.D感染者，将它们的威胁降至0。"
+ decision_GF_eliminate_all_elid:0 "清理剩余游荡生骸"
+ decision_GF_eliminate_all_elid_desc:0 "在清除所有污染区后，具有较大规模的生骸集群已经完全被消灭，然而漏网之鱼仍然存在，为了城市建设的安全，我们可以组织军队进行一场全面的清扫，以绝后患。"
+ decision_GF_eliminate_all_elid_effects:0 "将会消灭所有剩余的游荡生骸，将它们的威胁降至0。"
 
 
  decision_GF_construct_railway_line:0 "现代化铁路网络建设"

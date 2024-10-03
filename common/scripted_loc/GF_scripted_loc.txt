@@ -30,6 +30,33 @@
 # 	value = value:desired_science_ships_system_mult
 # }
 
+# this = planet
+defined_text = {
+	name = GF_GetElidThreatLevel
+	text = {
+		localization_key = GF_elid_threat_level_low
+		trigger = {
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value <= @GF_elid_threat_low_threshold
+			}
+		}
+	}
+	text = {
+		localization_key = GF_elid_threat_level_mid
+		trigger = {
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value > @GF_elid_threat_low_threshold
+			}
+			check_variable = {
+				which = v_GF_elid_threat_level
+				value <= @GF_elid_threat_mid_threshold
+			}
+		}
+	}
+	default = GF_elid_threat_level_high
+}
 
 defined_text = {
 	name = GF_Get_OGAS_Connection_Title

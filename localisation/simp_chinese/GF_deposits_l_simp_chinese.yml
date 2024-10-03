@@ -7,15 +7,15 @@
 
  d_GF_yellow_zone:0 "黄区"
  d_GF_yellow_zone_desc:0 "黄区紧邻红区，是需要被净化收复，但工程尚未完成的地区。此区域坍塌辐射浓度较低，人类在其中行动需要进行周密防护。人形可自由行动。"
- GF_on_yellow_zone_cleared_effect:0 "将会与几支§Y中等规模§!的§Y小型§!E.L.I.D感染者集群进行作战。"
+ GF_on_yellow_zone_cleared_effect:0 "将会与几支§Y中等规模§!的§Y小型§!生骸集群进行作战。"
 
  d_GF_black_zone:0 "黑区"
  d_GF_black_zone_desc:0 "坍塌辐射源头所在地，大约为原爆造成的半径数公里的环形坑洞及周边数十公里地区。是需要克服净化的最后地区。该地区坍塌辐射浓度极高，一旦进入，难以生还。"
- GF_on_black_zone_cleared_effect:0 "将会与几支§R大型规模§!的E.L.I.D感染者集群进行作战。"
+ GF_on_black_zone_cleared_effect:0 "将会与几支§R大型规模§!的生骸集群进行作战。"
 
  d_GF_red_zone:0 "红区"
  d_GF_red_zone_desc:0 "红区紧邻黑区，是需要重点推行净化治理的重污染区。此区域存在相当浓度的坍塌辐射，无论人类或人形，进入此区域都必须进行周密防护。"
- GF_on_red_zone_cleared_effect:0 "将会与几支§H中等规模§!的E.L.I.D感染者集群进行作战。"
+ GF_on_red_zone_cleared_effect:0 "将会与几支§H中等规模§!的生骸集群进行作战。"
 
  d_GF_white_zone:0 "白区"
  d_GF_white_zone_desc:0 "白区是被包围在绿区之中的安全区，区域内辐射浓度为0。此类区域大多是曾经的经济、政治或军事重地，即便曾经遭受过一定的坍塌污染，也已经被完全净化，坍塌辐射所能造成的直接和间接伤害已被完全消除。"

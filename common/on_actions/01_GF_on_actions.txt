@@ -181,16 +181,6 @@ on_megastructure_upgraded = {
 	}
 }
 
-
-# Triggers when ground combat starts
-# This = planet
-# From = country attacking
-on_ground_combat_started = {
-	events = {
-		GF_elid.20
-	}
-}
-
 # We changed a species right
 # This = pop
 on_pop_rights_change = {
