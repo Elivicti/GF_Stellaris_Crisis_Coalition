@@ -188,8 +188,10 @@ building_GF_automated_coordination_nexus = {
 
 	on_built = {
 		hidden_effect = {
-			GF_check_OGAS_threads_over_cap_effect = {
-				from = this
+			owner = {
+				GF_check_OGAS_threads_over_cap_effect = {
+					from = prev
+				}
 			}
 		}
 	}
