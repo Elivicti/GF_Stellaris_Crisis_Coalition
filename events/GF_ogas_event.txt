@@ -250,18 +250,9 @@ country_event = {
 	id = GF_ogas.10000
 
 	title = GF_OGAS_connect
-	desc = {
-		text = GF_ogas.10000.desc.a
-		trigger = { has_authority = GF_auth_commonwealth }
-	}
-	desc = {
-		text = GF_ogas.10000.desc.b
-		trigger = { has_authority = GF_auth_commonwealth }
-	}
-	desc = {
-		text = GF_ogas.10000.desc.c
-		trigger = { has_authority = GF_auth_commonwealth }
-	}
+	desc = GF_ogas.10000.desc.a
+	desc = GF_ogas.10000.desc.b
+	desc = GF_ogas.10000.desc.c
 	diplomatic = yes
 	custom_gui = "GF_OGAS_standard_contact_event"
 	custom_gui_option = "GF_OGAS_standard_contact_event_option"
@@ -425,92 +416,119 @@ country_event = {
 country_event = {
 	id = GF_ogas.11200
 	title = GF_OGAS_connect
-	desc = {
-		text = GF_ogas.11200.desc.a
-		trigger = { GF_OGAS_has_any_available_threads = yes }
-	}
-	desc = {
-		text = GF_ogas.11200.desc.b
-		trigger = { GF_OGAS_has_any_available_threads = yes }
-	}
-	desc = {
-		text = GF_ogas.11200.desc.c
-		trigger = { GF_OGAS_has_any_available_threads = yes }
-	}
-	desc = {
-		text = GF_ogas.11200.desc.d
-		trigger = { GF_OGAS_has_any_available_threads = no }
-	}
+	desc = GF_ogas.11200.desc
+
 	diplomatic = yes
 	custom_gui = "GF_OGAS_standard_contact_event"
-	custom_gui_option = "GF_OGAS_standard_contact_event_option"
 	picture_event_data = {
 		portrait = event_target:GF_ogas_leader
-		room = ethic_griffin_room
 	}
-
-	immediate = { GF_OGAS_contact_begin = yes }
-
 	is_triggered_only = yes
 
+	immediate = {
+		GF_OGAS_contact_begin = yes
+		if = {
+			limit = { NOT = { exists = event_target:GF_OGAS_mission_text } }
+			event_target:GF_ogas_country = {
+				create_leader = {
+					name = random
+					class = scientist
+					species = this
+					event_leader = yes
+					immortal = yes
+					effect = {
+						save_global_event_target_as = GF_OGAS_mission_text
+						set_leader_flag = flag_l_GF_OGAS_mission_text
+						set_leader_flag = leader_death_events_blocked
+						reroll_random = yes
+						if = {
+							limit = { root = { GF_OGAS_has_any_available_threads = yes } }
+							random_list = {
+								1 = { set_name = GF_ogas.11200.desc.a }
+								1 = { set_name = GF_ogas.11200.desc.b }
+								1 = { set_name = GF_ogas.11200.desc.c }
+							}
+						}
+						else = {
+							set_name = GF_ogas.11200.desc.d
+						}
+					}
+				}
+			}
+		}
+	}
+
 	inline_script = {
 		script = OGAS/OGAS_mission
-		MISSION = governor
+		MISSION = GF_ogas_mode_governor
 		THREAD_COST = 1
 	}
 	inline_script = {
 		script = OGAS/OGAS_mission
-		MISSION = produce
+		MISSION = GF_ogas_mode_produce
 		THREAD_COST = 1
 	}
 	inline_script = {
 		script = OGAS/OGAS_mission
-		MISSION = upkeep
+		MISSION = GF_ogas_mode_upkeep
 		THREAD_COST = 1
 	}
 	inline_script = {
 		script = OGAS/OGAS_mission
-		MISSION = war
+		MISSION = GF_ogas_mode_war
 		THREAD_COST = 1
 	}
 	inline_script = {
 		script = OGAS/OGAS_mission
-		MISSION = research
+		MISSION = GF_ogas_mode_research
 		THREAD_COST = 1
 	}
 
 	inline_script = {
-		script = OGAS/OGAS_mission_tradition
-		TRADITION = tr_gf_automation_2
-		MISSION = produce_2
+		script = OGAS/OGAS_mission_condition
+		CONDITION = "has_tradition = tr_gf_automation_2"
+		MISSION = GF_ogas_mode_produce_2
+		THREAD_COST = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_mission_condition
+		CONDITION = "has_tradition = tr_gf_automation_4"
+		MISSION = GF_ogas_mode_research_2
+		THREAD_COST = 1
+	}
+	inline_script = {
+		script = OGAS/OGAS_mission_condition
+		CONDITION = "has_tradition = tr_gf_automation_6"
+		MISSION = GF_ogas_mode_empire
 		THREAD_COST = 1
 	}
 
-	inline_script = {
-		script = OGAS/OGAS_mission_tradition
-		TRADITION = tr_gf_automation_4
-		MISSION = research_2
-		THREAD_COST = 1
-	}
-
-	inline_script = {
-		script = OGAS/OGAS_mission_tradition
-		TRADITION = tr_gf_automation_6
-		MISSION = empire
-		THREAD_COST = 1
-	}
-	
-	
 	option = {
 		name = GF_ogas.return
+		custom_gui = GF_OGAS_standard_contact_event_option
 		hidden_effect = {
 			country_event = { id = GF_ogas.11000 }
+			clear_global_event_target = GF_OGAS_mission_text
+			event_target:GF_ogas_country = {
+				every_owned_leader = {
+					limit = { has_leader_flag = flag_l_GF_OGAS_mission_text }
+					kill_leader = { show_notification = no }
+				}
+			}
 		}
 	}
 	option = {
 		name = GF_ogas.main_menu
+		custom_gui = GF_OGAS_standard_contact_event_option
 		hidden_effect = {
 			country_event = { id = GF_ogas.10000 }
+			clear_global_event_target = GF_OGAS_mission_text
+			event_target:GF_ogas_country = {
+				every_owned_leader = {
+					limit = { has_leader_flag = flag_l_GF_OGAS_mission_text }
+					kill_leader = { show_notification = no }
+				}
+			}
 		}
 	}
 }

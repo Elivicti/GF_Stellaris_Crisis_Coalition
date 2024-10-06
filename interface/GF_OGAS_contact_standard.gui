@@ -11,7 +11,25 @@ guiTypes = {
 			buttonFont = "cg_16b"
 			buttonText = "OPTION_TEXT"
 			borderSize = { x = 30 y = 0 }
-			multiline = yes
+			multiline = no
+		}
+		overlappingElementsBoxType = {
+			name = "trigger_icons"
+			position = { x = -4 y = 12 }
+			size = { x = 65 y = 28 }
+		}
+	}
+
+	containerWindowType = {
+		name = "GF_OGAS_mission_system_option"
+		size = { width = 475 height = 42 }
+		buttonType = {
+			name = "option_button"
+			quadTextureSprite = "GFX_event_button_450_34_curator"
+			position = { x = 0 y = 0 }
+			font = "malgun_goth_24"
+			text = "OPTION_TEXT"
+			borderSize = { x = 30 y = 0 }
 		}
 		overlappingElementsBoxType = {
 			name = "trigger_icons"

@@ -1,0 +1,65 @@
+option = {
+	name = {
+		text = $MISSION$.turn_on
+		trigger = { NOT = { has_modifier = $MISSION$ } }
+	}
+	name = {
+		text = $MISSION$.turn_off
+		trigger = { has_modifier = $MISSION$ }
+	}
+	custom_gui = GF_OGAS_mission_system_option
+
+	trigger = {
+		$CONDITION$
+	}
+	allow = {
+		if = {
+			limit = { NOT = { has_modifier = $MISSION$ } }
+			GF_require_OGAS_has_available_threads = {
+				amount = $THREAD_COST$
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { has_modifier = $MISSION$ } }
+		custom_tooltip_with_params = {
+			description = GF_OGAS_mode_threads_used_tooltip
+			description_parameters = { VALUE = $THREAD_COST$ }
+		}
+		add_modifier = {
+			modifier = $MISSION$
+		}
+		hidden_effect = {
+			event_target:GF_OGAS_mission_text = {
+				set_name = $MISSION$.response.enable
+			}
+		}
+	}
+	else = {
+		custom_tooltip_with_params = {
+			description = GF_OGAS_mode_threads_released_tooltip
+			description_parameters = { VALUE = $THREAD_COST$ }
+		}
+		remove_modifier = $MISSION$
+		hidden_effect = {
+			event_target:GF_OGAS_mission_text = {
+				set_name =  $MISSION$.response.disable
+			}
+		}
+	}
+	hidden_effect = {
+		GF_OGAS_contact_end = yes
+		country_event = { id = GF_ogas.11200 }
+	}
+}
+
+# 参数说明：
+# MISSION      政务管理buff的名称
+# THREAD_COST  该政务管理buff将会占用的线程数
+# CONDITION    解锁该选项的条件，用""包裹，支持多行
+#
+# 需要定义以下本地化：
+# $MISSION$.turn_on: ""		# 开启XXX
+# $MISSION$.turn_off: ""	# 关闭XXX
+# $MISSION$.response.enable: ""  # 开启时的回应
+# $MISSION$.response.disable: "" # 关闭时的回应

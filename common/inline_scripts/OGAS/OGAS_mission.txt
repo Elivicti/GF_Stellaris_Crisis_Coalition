@@ -1,39 +1,8 @@
-option = {
-	inline_script = {
-		script = OGAS/mission/OGAS_mission_core
-		MISSION = $MISSION$
-	}
-	allow = {
-		if = {
-			limit = { NOT = { has_modifier = GF_ogas_mode_$MISSION$ } }
-			GF_require_OGAS_has_available_threads = { amount = $THREAD_COST$ }
-		}
-	}
+inline_script = {
+	script = OGAS/OGAS_mission_condition
+	CONDITION = "always = yes"
+	MISSION = $MISSION$
+	THREAD_COST = $THREAD_COST$
 }
 
-# 参数说明：
-# MISSION      政务管理buff的名称后缀，见下方政务管理buff命名格式说明
-# THREAD_COST  该政务管理buff将会占用的线程数
-#
-# 所有OGAS政务管理buff必须命名为：
-# GF_ogas_mode_XXX
-#
-# 需要定义以下本地化：
-# GF_ogas.mission.$MISSION$: ""				# 政务管理模式名称
-# GF_ogas.mission.$MISSION$.turn_on: ""		# 开启XXX
-# GF_ogas.mission.$MISSION$.turn_off: ""	# 关闭XXX
-#
-# 以下本地化需要定义对应的scripted_loc：
-# GF_ogas.mission.$MISSION$.response: "[GF_Get_OGAS_mode_response_$MISSION$]"	# 开启/关闭该buff后的回应
-# GF_OGAS_mode_$MISSION$_response_enable:  ""	# 开启该buff后的回应
-# GF_OGAS_mode_$MISSION$_response_disable: ""	# 关闭该buff后的回应
-#
-#### 该scipted_loc应以如下格式定义：
-# defined_text = {
-#	name = GF_Get_OGAS_mode_response_$MISSION$
-#	default = GF_OGAS_mode_$MISSION$_response_enable
-#	text = {
-#		trigger = { has_modifier = GF_ogas_mode_$MISSION$ }
-#		localization_key = GF_OGAS_mode_$MISSION$_response_disable
-#	}
-# }
+# 参数说明参见OGAS_mission_condition.txt
