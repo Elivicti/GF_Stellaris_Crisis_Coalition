@@ -6,6 +6,7 @@ citizenship_GF_doll_assimilation = {
 		is_robotic = yes
 		NOT = { has_trait = GF_trait_doll }
 		exists = from
+		NOT = { is_same_species = from }
 		from = { has_tradition = tr_gf_mind_upgrade_3 }
 	}
 
@@ -27,7 +28,7 @@ citizenship_GF_doll_purge = {
 		exists = from
 		from = {
 			NOR = {
-				has_authority = GF_auth_commonwealth
+				GF_is_main_country = yes
 				is_valid_GF_vassal = yes
 			}
 		}
@@ -37,7 +38,7 @@ citizenship_GF_doll_purge = {
 			exists = from
 			from = {
 				NOR = {
-					has_authority = GF_auth_commonwealth
+					GF_is_main_country = yes
 					is_valid_GF_vassal = yes
 				}
 			}
