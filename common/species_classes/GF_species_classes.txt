@@ -42,7 +42,9 @@ GF_new_type = {
 	archetype = BIOLOGICAL
 	possible = {
 		origin = { value = GF_origin_commonwealth }
+		authority = { value = GF_auth_commonwealth }
 	}
+	possible_secondary = { always = no }
 	randomized = no
 	
 	graphical_culture = GF_new_type_01
