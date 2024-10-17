@@ -1,69 +1,88 @@
+entity = {
+	name = "GF_computing_center_part_00"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	attach = { root = GF_spacestation_upper_ring_noanim_entity }
+	attach = { root = GF_spacestation_lower_ring_noanim_entity }
+}
+entity = {
+	name = "GF_computing_center_part_01"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	attach = { root = GF_spacestation_upper_ring_entity }
+	attach = { root = GF_spacestation_lower_ring_entity }
+}
+entity = {
+	name = "GF_computing_center_part_02"
+	locator = { name = "root" position = { 0 0 0 } }
+	locator = { name = "top"    position = {   0   14    0 } rotation = {  0  270  0 } }
+	locator = { name = "bottom" position = {   0   -9    0 } }
+
+	attach = { top    = GF_spacestation_top_entity }
+	attach = { bottom = GF_spacestation_bottom_plate_entity }
+}
+entity = {
+	name = "GF_computing_center_part_03"
+	locator = { name = "root" position = { 0 0 0 } }
+	locator = { name = "base1"  position = {  12    5    6 } rotation = { 330  0   0 } } # 左下
+	locator = { name = "base2"  position = {  -6    5   12 } rotation = { 240  0   0 } } # 右下
+	locator = { name = "base3"  position = { -12    5   -6 } rotation = { 150  0   0 } } # 右上
+	locator = { name = "base4"  position = {   6    5  -12 } rotation = {  60  0   0 } } # 左上
+
+	attach = { "base1" = GF_spacestation_base_large_entity }
+	attach = { "base2" = GF_spacestation_base_large_entity }
+	attach = { "base3" = GF_spacestation_base_large_entity }
+	attach = { "base4" = GF_spacestation_base_large_entity }
+}
+entity = {
+	name = "GF_computing_center_part_04"
+	locator = { name = "root" position = { 0 0 0 } }
+
+	attach = { root = GF_spacestation_upper_ring_shell_entity }
+	attach = { root = GF_spacestation_cables_entity }
+	attach = { root = GF_spacestation_lower_ring_shell_entity }
+}
+
 
 entity = {
 	name = "GF_computing_center_phase_01_entity"
 	locator = { name = "root"	position = { 0 0 0 } }
 
-	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
+	attach = { "root" = GF_computing_center_part_00 }
 
 	scale = 1.0
-	cull_radius = 500
 }
-
 entity = {
 	name = "GF_computing_center_phase_02_entity"
 	locator = { name = "root"	position = { 0 0 0 } }
 
-	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
-	attach = { "root" = "mammalian_01_dyson_sphere_part_1_entity" }
-
-	attach = { "root" = "penta_rays_short_entity" }
+	attach = { "root" = GF_computing_center_part_00 }
+	attach = { "root" = GF_computing_center_part_02 }
 
 	scale = 1.0
-	cull_radius = 500
 }
-
 entity = {
 	name = "GF_computing_center_phase_03_entity"
 	locator = { name = "root"	position = { 0 0 0 } }
-	locator = { name = "ring"	position = { 0 0 0 } rotation = { 90 90 0 } }
 
-	attach = { "root" = "mammalian_01_dyson_sphere_frame_entity" }
-	attach = { "root" = "mammalian_01_dyson_sphere_part_1_entity" }
-	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
-	attach = { "ring" = "GF_computing_center_rings_entity" }
+	attach = { "root" = GF_computing_center_part_00 }
+	attach = { "root" = GF_computing_center_part_02 }
+	attach = { "root" = GF_computing_center_part_03 }
 
-	attach = { "root" = "penta_rays_short_entity" }
+	attach = { root = GF_spacestation_outbursts_entity }
 
 	scale = 1.0
-	cull_radius = 500
 }
-
 entity = {
-	name = "GF_computing_center_phase_03_construction_entity"
+	name = "GF_computing_center_phase_04_entity"
 	locator = { name = "root"	position = { 0 0 0 } }
-	locator = { name = "ring"	position = { 0 0 0 } rotation = { 90 90 0 } }
 
-	attach = { "root" = "mammalian_01_dyson_sphere_part_4_entity" }
-	attach = { "ring" = "GF_computing_center_rings_construction_entity" }
+	attach = { "root" = GF_computing_center_part_01 }
+	attach = { "root" = GF_computing_center_part_02 }
+	attach = { "root" = GF_computing_center_part_03 }
+	attach = { "root" = GF_computing_center_part_04 }
+
+	attach = { root = GF_spacestation_outbursts_entity }
 
 	scale = 1.0
-	cull_radius = 500
-}
-
-entity = {
-	name = "GF_computing_center_rings_entity"
-	pdxmesh = "GF_computing_center_rings_mesh"
-	
-	default_state = "idle"
-	state = { name = "idle" animation = "idle" }
-	scale = 7.0
-}
-
-entity = {
-	name = "GF_computing_center_rings_construction_entity"
-	pdxmesh = "mammalian_01_colossus_rings_mesh"
-	
-	default_state = "idle"
-	state = { name = "idle" animation = "idle" }
-	scale = 7.0
 }

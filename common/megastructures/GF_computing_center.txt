@@ -1,4 +1,3 @@
-#Dyson Sphere Site
 GF_computing_center_0 = {
 	entity = "construction_platform_entity"
 	construction_entity = "construction_platform_entity"
@@ -53,7 +52,6 @@ GF_computing_center_0 = {
 			AOW_trgr_SSTM_single_star_system = yes
 		}
 	}
-
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
@@ -74,12 +72,14 @@ GF_computing_center_0 = {
 	# root = system
 	# from = country
 	ai_weight = {
-
+		modifier = {
+			set = 50
+			from = { GF_is_main_country = yes }
+		}
 		modifier = {
 			factor = 0
-			from = { NOT = { has_authority = GF_auth_commonwealth } }
+			from = { GF_is_main_country = no }
 		}
-
 		modifier = {
 			factor = 0.1
 			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
@@ -95,7 +95,6 @@ GF_computing_center_0 = {
 			}
 		}
 	}
-
 
 	# this = solar_system
 	# from = country
@@ -122,18 +121,11 @@ GF_computing_center_0 = {
 	}
 }
 
-#Dyson Sphere Frame
 GF_computing_center_1 = {
-	# entity = "GF_computing_center_stage_3_entity"
-	# construction_entity = "GF_computing_center_stage_3_construction_entity"
 	entity = "GF_computing_center_phase_01_entity"
-	construction_entity = "dyson_sphere_frame_entity"
+	construction_entity = "GF_computing_center_part_00"
 	portrait = "GFX_megastructure_construction_background"
-	# place_entity_on_planet_plane = yes
-	# entity_offset = { x = -20 y = 90 }
-	# rotate_to_center = yes
-	# scale_offset = yes
-
+	scales_with_planet = yes
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -177,11 +169,11 @@ GF_computing_center_1 = {
 	}
 }
 
-#Partial Dyson Sphere
 GF_computing_center_2 = {
 	entity = "GF_computing_center_phase_02_entity"
-	construction_entity = "dyson_sphere_part_1_entity"
+	construction_entity = "GF_computing_center_part_02"
 	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
 	build_time = 3600
 	resources = {
 		category = megastructures
@@ -192,7 +184,7 @@ GF_computing_center_2 = {
 
 		upkeep = {
 			alloys = 20
-			gf_core_chip = 5
+			gf_core_chip = 10
 		}
 
 		produces = {
@@ -202,8 +194,7 @@ GF_computing_center_2 = {
 		}
 	}
 	country_modifier = {
-		GF_OGAS_threads_add = 10
-		country_admin_cap_add = 25
+		GF_OGAS_threads_add = 5
 	}
 
 	inline_script = {
@@ -230,29 +221,86 @@ GF_computing_center_2 = {
 	}
 }
 
-#Partial Dyson Sphere
 GF_computing_center_3 = {
 	entity = "GF_computing_center_phase_03_entity"
-	construction_entity = "GF_computing_center_phase_03_construction_entity"
+	construction_entity = "GF_computing_center_part_03"
 	portrait = "GFX_megastructure_construction_background"
-	show_in_outliner = no
+	scales_with_planet = yes
+	show_in_outliner = yes
 	build_time = 3600
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 12000
+			alloys = 7500
+			gf_core_chip = 1000
 			unity = 5000
 		}
 
 		upkeep = {
 			alloys = 30
-			gf_core_chip = 10
+			gf_core_chip = 20
 		}
 
 		produces = {
-			physics_research = 150
-			society_research = 150
-			engineering_research = 150
+			physics_research = 200
+			society_research = 200
+			engineering_research = 200
+		}
+	}
+	country_modifier = {
+		GF_OGAS_threads_add = 10
+		country_admin_cap_add = 25
+	}
+
+	inline_script = {
+		script = "GF_mega_dismantle"
+		TIME = 360
+		ENERGY = 7500
+		TECH = GF_tech_ogas_computing_center
+		EVENT = GF_mega.195
+	}
+
+	upgrade_from = {
+		GF_computing_center_2
+	}
+
+	prerequisites = { "GF_tech_ogas_computing_center" }
+	show_prereqs = no
+
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = GF_mega.103
+				scopes = { from = prev.fromfrom }
+			}
+		}
+	}
+}
+
+GF_computing_center_4 = {
+	entity = "GF_computing_center_phase_04_entity"
+	construction_entity = "GF_computing_center_part_04"
+	portrait = "GFX_megastructure_construction_background"
+	scales_with_planet = yes
+	show_in_outliner = no
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			gf_core_chip = 500
+			unity = 5000
+		}
+
+		upkeep = {
+			alloys = 40
+			gf_core_chip = 30
+		}
+
+		produces = {
+			physics_research = 400
+			society_research = 400
+			engineering_research = 400
 		}
 	}
 	country_modifier = {
@@ -263,39 +311,30 @@ GF_computing_center_3 = {
 	inline_script = {
 		script = "GF_mega_dismantle"
 		TIME = 360
-		ENERGY = 12000
+		ENERGY = 10000
 		TECH = GF_tech_ogas_computing_center
 		EVENT = GF_mega.195
 	}
 
 	upgrade_from = {
-		GF_computing_center_2
+		GF_computing_center_3
 	}
 
 	prerequisites = { "GF_tech_ogas_computing_center" }
 	show_prereqs = yes
 
 	on_build_complete = {
-		fromfrom = {
-			solar_system.star = {
-				create_ambient_object = {
-					type = "GF_amb_computing_center"
-					location = this
-					effect = {
-						set_ambient_object_flag = GF_computing_center_ambient
-						set_location = {
-							target = prev
-							distance = 0
-							angle = random
-						}
-					}
-				}
+		create_ambient_object = {
+			type = "GF_amb_computing_center"
+			location = fromfrom
+			effect = {
+				set_ambient_object_flag = GF_computing_center_ambient
 			}
 		}
 		from = {
 			set_country_flag = has_built_or_repaired_megastructure
 			country_event = {
-				id = GF_mega.103
+				id = GF_mega.104
 				scopes = { from = prev.fromfrom }
 			}
 		}

@@ -943,10 +943,7 @@ GF_show_OGAS_threads_statistics = {
 		custom_tooltip = GF_ogas.threads_from_computing_center
 		limit = {
 			any_owned_megastructure = {
-				OR = {
-					is_megastructure_type = GF_computing_center_2
-					is_megastructure_type = GF_computing_center_3
-				}
+				GF_is_working_computing_center = yes
 			}
 		}
 	}

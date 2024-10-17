@@ -16,15 +16,21 @@ GF_get_thread_count_from_leader = {
 GF_get_thread_count_from_computing_center = {
 	base = 0
 	modifier = {
-		add = 10
+		add = 5
 		any_owned_megastructure = {
 			is_megastructure_type = GF_computing_center_2
 		}
 	}
 	modifier = {
-		add = 15
+		add = 10
 		any_owned_megastructure = {
 			is_megastructure_type = GF_computing_center_3
+		}
+	}
+	modifier = {
+		add = 15
+		any_owned_megastructure = {
+			is_megastructure_type = GF_computing_center_4
 		}
 	}
 }

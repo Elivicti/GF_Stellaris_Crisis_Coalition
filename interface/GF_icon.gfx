@@ -352,6 +352,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/crisis_sphere.dds"
 	}
 	spriteType = {
+		name = "GFX_GF_computing_center_background"
+		textureFile = "gfx/interface/planetview/GF_OGAS_computing_center.dds"
+	}
+	spriteType = {
 		name = "GFX_GF_computing_center_0_build_icon"
 		textureFile = "gfx/interface/icons/technologies/GF_tech_ogas_computing_center.dds"
 	}

@@ -52,7 +52,7 @@
  GF_ogas.10000.statistics:0 "数据统计"
  GF_ogas.threads_source_tooltip:0 "共计产生线程：§G[GF_GetOGASThreads]§!"
  GF_ogas.threads_from_leader:0 "$t$来自领袖：§G+[this.v_GF_threads_from_leader]§!"
- GF_ogas.threads_from_computing_center:0 "$t$$GF_computing_center_3$：§G+[this.v_GF_threads_from_computing_center]§!"
+ GF_ogas.threads_from_computing_center:0 "$t$$GF_computing_center_4$：§G+[this.v_GF_threads_from_computing_center]§!"
  GF_ogas.threads_from_tech:0 "$t$来自科技：§G+[this.v_GF_threads_from_tech]§!"
  GF_ogas.threads_from_subnet:0 "$t$来自子网：§G+[this.v_GF_threads_from_subnet]§!"
  GF_ogas.threads_usage_tooltip:0 "共计消耗线程：§R-[GF_GetOGASThreadsUsed]§!"
