@@ -1,0 +1,129 @@
+objectTypes = {
+	pdxmesh = {
+		name = "GF_spacestation_base_large_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_station_large.mesh"
+
+		meshsettings = {
+			name = "base_large"
+			texture_diffuse = "mammalian_01_strategic_coordination_center_diffuse.dds"
+			texture_normal = "mammalian_01_strategic_coordination_center_normal.dds"
+			texture_specular = "mammalian_01_strategic_coordination_center_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	############################################################
+	# This model comes from:
+	# https://sketchfab.com/3d-models/space-station-3-a7a6ad10261149cab31aa394bfcf8940
+	# and was split into several parts:
+	#  + GF_upper_ring.mesh
+	#  + GF_upper_ring_shell.mesh
+	#  + GF_cabbles.mesh
+	#  + GF_lower_ring.mesh
+	#  + GF_lower_ring_shell.mesh
+	# Format of this model is converted and textures are changed to fit the need of the
+	# game engine and this mod.
+	# All credits goes to the original author.
+	############################################################
+	pdxmesh = {
+		name = "GF_spacestation_upper_ring_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_upper_ring.mesh"
+
+		animation = { id = "idle" type = "GF_spacesation_upper_ring_idle_animation" }
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_upper_ring_noanim_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_upper_ring.mesh"
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_upper_ring_shell_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_upper_ring_shell.mesh"
+
+		animation = { id = "idle" type = "GF_spacesation_upper_ring_shell_idle_animation" }
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_cables_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_cables.mesh"
+
+		animation = { id = "idle" type = "GF_spacesation_cables_idle_animation" }
+
+		meshsettings = {
+			name = "stringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_cable_diffuse.dds"
+			texture_normal = "GF_spacestation_cable_normal.dds"
+			texture_specular = "GF_spacestation_cable_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_lower_ring_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_lower_ring.mesh"
+
+		animation = { id = "idle" type = "GF_spacesation_lower_ring_idle_animation" }
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_lower_ring_noanim_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_lower_ring.mesh"
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	pdxmesh = {
+		name = "GF_spacestation_lower_ring_shell_mesh"
+		file = "gfx/models/ships/megastructures/GF_spacestation/GF_lower_ring_shell.mesh"
+
+		animation = { id = "idle" type = "GF_spacesation_lower_ring_shell_idle_animation" }
+
+		meshsettings = {
+			name = "ringShape"
+			# index = 0
+			texture_diffuse = "GF_spacestation_ring_diffuse.dds"
+			texture_normal = "GF_spacestation_ring_normal.dds"
+			texture_specular = "GF_spacestation_ring_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

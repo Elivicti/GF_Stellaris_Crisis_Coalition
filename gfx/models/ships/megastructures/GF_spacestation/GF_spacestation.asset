@@ -1,0 +1,214 @@
+animation = {
+	name = "GF_spacesation_upper_ring_idle_animation"
+	file = "GF_upper_ring_idle.anim"
+}
+animation = {
+	name = "GF_spacesation_upper_ring_shell_idle_animation"
+	file = "GF_upper_ring_shell_idle.anim"
+}
+animation = {
+	name = "GF_spacesation_cables_idle_animation"
+	file = "GF_cables_idle.anim"
+}
+animation = {
+	name = "GF_spacesation_lower_ring_idle_animation"
+	file = "GF_lower_ring_idle.anim"
+}
+animation = {
+	name = "GF_spacesation_lower_ring_shell_idle_animation"
+	file = "GF_lower_ring_shell_idle.anim"
+}
+
+entity = {
+	name = "GF_spacestation_test"
+
+	locator = { name = "root" position = { 0 0 0 } }
+	# locator = { name = "base1"  position = {  10    5   10 } rotation = { 315  0   0 } } # 左下
+	# locator = { name = "base2"  position = { -10    5   10 } rotation = { 225  0   0 } } # 右下
+	# locator = { name = "base3"  position = { -10    5  -10 } rotation = { 135  0   0 } } # 右上
+	# locator = { name = "base4"  position = {  10    5  -10 } rotation = {  45  0   0 } } # 左上
+	locator = { name = "base1"  position = {  12    5    6 } rotation = { 330  0   0 } } # 左下
+	locator = { name = "base2"  position = {  -6    5   12 } rotation = { 240  0   0 } } # 右下
+	locator = { name = "base3"  position = { -12    5   -6 } rotation = { 150  0   0 } } # 右上
+	locator = { name = "base4"  position = {   6    5  -12 } rotation = {  60  0   0 } } # 左上
+	locator = { name = "top"    position = {   0   14    0 } rotation = {  0  270  0 } }
+	locator = { name = "bottom" position = {   0   -9    0 } }
+
+	# attach = { "base1" = GF_spacestation_base_large_entity }
+	# attach = { "base2" = GF_spacestation_base_large_entity }
+	# attach = { "base3" = GF_spacestation_base_large_entity }
+	# attach = { "base4" = GF_spacestation_base_large_entity }
+
+	# attach = { "top" = GF_spacestation_top_entity }
+	# attach = { "bottom" = GF_spacestation_bottom_plate_entity }
+
+	attach = { root = GF_spacestation_upper_ring_entity }
+	# attach = { root = GF_spacestation_upper_ring_shell_entity }
+	# attach = { root = GF_spacestation_cables_entity }
+	# attach = { root = GF_spacestation_lower_ring_entity }
+	# attach = { root = GF_spacestation_lower_ring_shell_entity }
+
+	# attach = { root = GF_spacestation_outbursts_entity }
+}
+
+entity = {
+	name = "GF_spacestation_outbursts_entity"
+	pdxmesh = "neutron_outbursts_mesh"
+
+	default_state = "idle"
+	state = { name = "idle" }
+
+	scale = 1
+
+	game_data = {
+		uv_animation_speed   = 0.5
+		uv_animation_direction  = { 0.75 1.0 }
+	}
+}
+
+entity = {
+	name = "GF_spacestation_top_entity"
+	pdxmesh = "matter_decompressor_01_stage_2_mesh"
+
+	scale = 0.08
+
+	meshsettings = {
+		name = "g_body2Shape"
+		index = 0
+		texture_diffuse = "mammalian_01_matter_decompressor_diffuse.dds"
+		texture_normal = "mammalian_01_matter_decompressor_normal.dds"
+		texture_specular = "mammalian_01_matter_decompressor_specular.dds"
+		shader = "PdxMeshShip"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+}
+entity = {
+	name = "GF_spacestation_bottom_plate_entity"
+	pdxmesh = "interstellar_assembly_01_stage_2_mesh"
+
+	scale = 0.20
+
+	default_state = "idle"
+	state = {
+		name = "idle" animation = "idle" animation_speed = 0.2
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_pulse" } }
+	}
+
+	meshsettings = {
+		name = "body_3Shape"
+		index = 0
+		texture_diffuse = "mammalian_01_interstellar_assembly_diffuse.dds"
+		texture_normal = "mammalian_01_interstellar_assembly_normal.dds"
+		texture_specular = "mammalian_01_interstellar_assembly_specular.dds"
+		shader = "PdxMeshShip"
+	}
+
+	attach = { ring_1 = "GF_spacestation_bottom_plate_hologram_effect_entity" }
+	attach = { ring_1 = "interstellar_assembly_effect_2_entity" }
+}
+entity = {
+	name = "GF_spacestation_bottom_plate_hologram_effect_entity"
+
+	locator = { name = "base"  position = { 0 25 0 }}
+	scale = 1.1
+
+	default_state = "idle"
+	state = {
+		name = "idle" state_time = 15 looping = yes
+		event = { time = 0 node = "base"
+			particle = "interstellar_assembly_2_effect" keep_particle = yes trigger_once = yes life = 15
+		}
+	}
+	attach = { base = "holo_light_entity" }
+}
+
+entity = {
+	name = "GF_spacestation_base_large_entity"
+	pdxmesh = GF_spacestation_base_large_mesh
+
+	default_state = "idle"
+	state = { name = "idle" }
+	scale = 0.15
+}
+
+
+entity = {
+	name = "GF_spacestation_upper_ring_entity"
+	pdxmesh = GF_spacestation_upper_ring_mesh
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.5 }
+
+	scale = 0.2
+}
+entity = {
+	name = "GF_spacestation_upper_ring_noanim_entity"
+	pdxmesh = GF_spacestation_upper_ring_noanim_mesh
+
+	default_state = "idle"
+	state = { name = "idle" }
+
+	scale = 0.2
+}
+
+entity = {
+	name = "GF_spacestation_upper_ring_shell_entity"
+	pdxmesh = GF_spacestation_upper_ring_shell_mesh
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.5 }
+
+	scale = 0.2
+}
+entity = {
+	name = "GF_spacestation_cables_entity"
+	pdxmesh = GF_spacestation_cables_mesh
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.5 }
+
+	scale = 0.2
+}
+
+entity = {
+	name = "GF_spacestation_lower_ring_entity"
+	pdxmesh = GF_spacestation_lower_ring_mesh
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.5 }
+
+	scale = 0.2
+}
+entity = {
+	name = "GF_spacestation_lower_ring_noanim_entity"
+	pdxmesh = GF_spacestation_lower_ring_noanim_mesh
+
+	default_state = "idle"
+	state = { name = "idle" }
+
+	scale = 0.2
+}
+entity = {
+	name = "GF_spacestation_lower_ring_shell_entity"
+	pdxmesh = GF_spacestation_lower_ring_shell_mesh
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.5 }
+
+	scale = 0.2
+}
