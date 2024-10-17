@@ -67,6 +67,13 @@ GF_unlock_history_archive_notification_yes = {
 }
 GF_unlock_history_archive_notification_no = {}
 
+GF_unlock_archive_notification_impl = {
+	# forward notification call
+	GF_unlock_$TYPE$_notification_$NOTIFICATION$ = {
+		VALUE = $VALUE$
+	}
+}
+
 # this = country
 # @param NOTIFICATION: yes | no (default: no)
 # @param TYPE:  keyword | history_archive | event_archive
@@ -76,8 +83,10 @@ GF_unlock_archive = {
 		limit = {
 			NOT = { GF_has_unlocked_archive = { TYPE = $TYPE$ VALUE = $VALUE$ } }
 		}
-		GF_unlock_$TYPE$_notification_$NOTIFICATION|yes$ = {
+		GF_unlock_archive_notification_impl = {
+			TYPE  = $TYPE$
 			VALUE = $VALUE$
+			NOTIFICATION = $NOTIFICATION|yes$
 		}
 		hidden_effect = {
 			event_target:GF_ogas_country = {
