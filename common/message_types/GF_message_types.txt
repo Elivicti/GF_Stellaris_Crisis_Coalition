@@ -103,6 +103,9 @@ message_type = {
 	key = MESSAGE_TYPE_GF_REVERSE_BEACON_DEPLOYED
 	icon = "GFX_message_GF_RC_beacon_deployed"
 
+	default_toast = yes
+	category = fleets
+
 	name = "MESSAGE_GF_REVERSE_BEACON_DEPLOYED"
 	sound = "notification"
 	ping = "mixed_notification_green"
@@ -110,6 +113,9 @@ message_type = {
 message_type = {
 	key = MESSAGE_TYPE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED
 	icon = "GFX_message_GF_RC_beacon_deployment_failed"
+
+	default_toast = yes
+	category = fleets
 
 	name = "MESSAGE_GF_REVERSE_BEACON_DEPLOYMENT_FAILED"
 	sound = "notification"
@@ -119,6 +125,9 @@ message_type = {
 	key = MESSAGE_TYPE_GF_REVERSE_BEACON_DISMANTLED
 	icon = "GFX_message_GF_RC_beacon_deployment_failed"
 
+	default_toast = yes
+	category = fleets
+
 	name = "MESSAGE_GF_REVERSE_BEACON_DISMANTLED"
 	sound = "notification"
 	ping = "ping_notification_yellow"
@@ -126,6 +135,9 @@ message_type = {
 message_type = {
 	key = MESSAGE_TYPE_GF_REVERSE_BEACON_DESTROYED
 	icon = "GFX_message_GF_RC_beacon_deployment_failed"
+
+	default_toast = yes
+	category = fleets
 
 	name = "MESSAGE_GF_REVERSE_BEACON_DESTROYED"
 	sound = "notification"
