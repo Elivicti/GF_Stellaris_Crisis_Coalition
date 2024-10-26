@@ -462,6 +462,18 @@ GF_can_pop_join_freedom_kindom = {
 	has_citizenship_rights = yes
 }
 
+# this = pop/species
+GF_can_be_assimilated_to_doll = {
+	switch = {
+		trigger = is_scope_type
+		pop     = { is_robot_pop = yes }
+		species = { is_robotic   = yes }
+		default = { always = no }
+	}
+	NOT = { has_trait = GF_trait_doll }
+	NOT = { is_same_species = $OWNER|owner$ }
+}
+
 # this = ship
 GF_has_shrike_heart = {
 	OR = {

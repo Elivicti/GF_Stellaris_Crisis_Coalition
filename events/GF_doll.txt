@@ -108,55 +108,36 @@ country_event = {
 	}
 }
 
+# on_pop_rights_change
+# 修改物种权利的时候，为每一个对应的人口触发这个事件
 pop_event = {
 	id = GF_doll.1005
 	hide_window = yes
 
 	is_triggered_only = yes
 	trigger = {
-		is_robot_pop = yes
+		GF_can_be_assimilated_to_doll = yes
 		has_citizenship_type = {
 			type = citizenship_GF_doll_assimilation
 			country = owner
 		}
-		species = {
-			NOT = { has_species_flag = citizenship_GF_doll_assimilation }
-		}
+		NOT = { has_pop_flag = citizenship_GF_doll_assimilation }
 	}
 
 	immediate = {
-		species = {
-			set_timed_species_flag = {
-				flag = citizenship_GF_doll_assimilation
-				days = 3
-			}
+		set_timed_pop_flag = {
+			flag = citizenship_GF_doll_assimilation
+			days = 1
 		}
-		pop_event = { id = GF_doll.1006 days = 1 }
-	}
-}
-
-pop_event = {
-	id = GF_doll.1006
-	hide_window = yes
-
-	is_triggered_only = yes
-	trigger = {
-		species = { has_species_flag = citizenship_GF_doll_assimilation }
-	}
-
-	immediate = {
-		species = {
-			# force set purge type
-			set_purge_type = {
-				type = purge_GF_assimilation
-				country = prev.owner
-				cooldown = yes
-			}
-			set_population_controls = {
-				type = GF_population_control_forced
-				country = prev.owner
-				cooldown = yes
-			}
+		set_purge_type = {
+			type = purge_GF_assimilation
+			country = owner
+			cooldown = yes
+		}
+		set_population_controls = {
+			type = GF_population_control_forced
+			country = owner
+			cooldown = yes
 		}
 	}
 }

@@ -3,16 +3,14 @@ citizenship_GF_doll_assimilation = {
 	is_purge = yes
 
 	potential = {
-		is_robotic = yes
-		NOT = { has_trait = GF_trait_doll }
 		exists = from
-		NOT = { is_same_species = from }
+		GF_can_be_assimilated_to_doll = { OWNER = from }
 		from = { has_tradition = tr_gf_mind_upgrade_3 }
 	}
 
 	allow = {
-		is_robotic = yes
-		NOT = { has_trait = GF_trait_doll }
+		hidden_trigger = { exists = from }
+		GF_can_be_assimilated_to_doll = { OWNER = from }
 	}
 	
 	ai_will_do = {
