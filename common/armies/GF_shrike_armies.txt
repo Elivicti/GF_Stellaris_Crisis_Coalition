@@ -3,8 +3,8 @@ GF_army_shrike = {
 	health = 2.50
 	has_morale = no
 	has_species = no
-	morale = 0.00
-	morale_damage = 0.00
+	morale = 1.00
+	morale_damage = 4.00
 	collateral_damage = 5.0
 	war_exhaustion = 0.05
 
@@ -33,8 +33,8 @@ GF_army_shrike_boss = {
 	health = 10.00
 	has_morale = no
 	has_species = no
-	morale = 0
-	morale_damage = 0.00
+	morale = 1
+	morale_damage = 12.00
 	collateral_damage = 10.0
 	war_exhaustion = 0.05
 
