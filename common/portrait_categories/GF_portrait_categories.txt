@@ -3,9 +3,14 @@
 
 GF_new_types = {
 	name = GF_new_type
-
 	sets = {
 		GF_new_types
+	}
+}
+
+GF_new_types_robot = {
+	name = GF_new_type_robot
+	sets = {
 		GF_new_types_robot
 	}
 }

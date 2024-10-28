@@ -129,7 +129,11 @@ country_event = {
 		event_target:GF_ogas_leader = {
 			set_owner = prev
 			if = {
-				limit = { prev.owner_main_species = { NOT = { is_species_class = GF_new_type } } }
+				limit = {
+					prev.owner_main_species = {
+						NOT = { species_portrait = GF_new_type }
+					}
+				}
 				change_leader_portrait = GF_doll_000
 			}
 		}
