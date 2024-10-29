@@ -94,9 +94,6 @@ GF_unlock_archive = {
 			}
 		}
 	}
-	else = {
-		log = "$TYPE$: $VALUE$ already unlocked"
-	}
 }
 
 GF_unlock_inital_keywords = {
