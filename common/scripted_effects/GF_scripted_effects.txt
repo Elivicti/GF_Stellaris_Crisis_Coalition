@@ -192,6 +192,121 @@ GF_create_collapse_relic_site = {
 	space_owner = { set_visited = event_target:relic_site_target_$index$.solar_system }
 }
 
+@GF_sf_event_system_jump_distance_min = 2
+@GF_sf_event_system_jump_distance_max = 8
+
+# this = system (source)
+GF_select_sf_event_target = {
+	$OWNER$ = { save_event_target_as = event_owner }
+	save_event_target_as = source_system
+	while = {
+		limit = { NOT = { exists = event_target:$EVENT_TARGET$ } }
+		random_system = {
+			limit = {
+				NOT = { has_star_flag = flag_s_GF_sf_event_system }
+				distance = {
+					source = prev
+					min_jumps = @GF_sf_event_system_jump_distance_min
+					max_jumps = @GF_sf_event_system_jump_distance_max
+				}
+				any_system_planet = {
+					OR = {
+						[[ASTEROID]     is_asteroid     = $ASTEROID$     ]
+						[[PLANET_CLASS] is_planet_class = $PLANET_CLASS$ ]
+					}
+					has_anomaly = no
+					NOR = {
+						has_planet_flag = suppress_archaeological_sites
+						exists = archaeological_site
+					}
+				}
+			}
+			random_system_planet = {
+				limit = {
+					OR = {
+						[[ASTEROID]     is_asteroid     = $ASTEROID$     ]
+						[[PLANET_CLASS] is_planet_class = $PLANET_CLASS$ ]
+					}
+					has_anomaly = no
+					NOR = {
+						has_planet_flag = suppress_archaeological_sites
+						exists = archaeological_site
+					}
+				}
+				save_event_target_as = $EVENT_TARGET$
+			}
+			weights = {
+				base = 200
+				# closer -> higher weight
+				complex_trigger_modifier = {
+					trigger = distance
+					parameters = {
+						source = event_target:source_system
+						type = hyperlane
+					}
+					mode = divide
+				}
+				# not owned by anyone
+				modifier = {
+					factor = 1.2
+					NOT = { exists = space_owner }
+				}
+				modifier = {
+					factor = 0.1
+					OR = {
+						# not owned by event owner
+						AND = {
+							exists = space_owner
+							space_owner = {
+								NOT = { is_same_value = event_target:event_owner }
+							}
+						}
+						# has enemy fleets
+						any_fleet_in_system = {
+							owner = { is_hostile_to = event_target:event_owner }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	event_target:$EVENT_TARGET$.solar_system = {
+		set_star_flag = flag_s_GF_sf_event_system
+	}
+	event_target:event_owner = {
+		set_visited = event_target:$EVENT_TARGET$.solar_system
+	}
+}
+
+GF_test = {
+	capital_scope.solar_system = {
+		save_event_target_as = source_system
+	}
+	every_system = {
+		set_variable = {
+			which = v_distance
+			value = value:GF_sf_candidate_system_weight#|SOURCE|prev.capital_scope.solar_system|
+		}
+		export_trigger_value_to_variable = {
+			variable = v_hyperlane_distance
+			trigger = distance
+			parameters = {
+				type = hyperlane
+				source = event_target:source_system
+			}
+		}
+		export_trigger_value_to_variable = {
+			variable = v_euclidean_distance
+			trigger = distance
+			parameters = {
+				type = euclidean
+				source = event_target:source_system
+			}
+		}
+	}
+}
+
 # this = system
 GF_ensure_sf_event_barren_planet = {
 	if = {

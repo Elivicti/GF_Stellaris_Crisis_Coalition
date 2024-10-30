@@ -195,7 +195,7 @@ GF_planet_has_contaminated_zone = {
 
 # this = system
 GF_sf_event_system_candidate_trigger = {
-	any_country = {
+	any_playable_country = {
 		has_origin = GF_origin_commonwealth
 		capital_scope.solar_system = {
 			distance = {
@@ -208,7 +208,7 @@ GF_sf_event_system_candidate_trigger = {
 	if = {
 		limit = {
 			has_star_flag = empire_cluster
-			any_country = {
+			any_playable_country = {
 				NOT = { has_origin = GF_origin_commonwealth }
 				capital_scope.solar_system = {
 					any_system = {

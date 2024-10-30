@@ -24,11 +24,11 @@ country_event = {
 	desc = "GF_sf.1.desc"
 	picture = GFX_evt_announcement
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_home_world
+	location = capital_scope
 	is_triggered_only = yes
 
 	immediate = {
-		event_target:GF_home_world.solar_system = {
+		capital_scope.solar_system = {
 			set_star_flag = flag_s_GF_sf_event_system
 		}
 	}
@@ -36,15 +36,14 @@ country_event = {
 	option = {
 		name = GF_sf.1.a
 		begin_event_chain = {
-			event_chain = "GF_sf_event_chain"
+			event_chain = GF_sf_event_chain
 			target = this
 		}
-		
-		event_target:GF_home_world = {
+		capital_scope = {
 			enable_special_project = {
-				name = "GF_sf_event_project_1"
+				name = GF_sf_event_project_1
 				location = this
-				owner = root
+				owner = prev
 			}
 		}
 	}
@@ -52,96 +51,65 @@ country_event = {
 
 #事件2:在荒芜星球建立特殊项目2
 planet_event = {
-	id = GF_sf.2
-	title = "GF_sf.2.name"
-	desc = "GF_sf.2.desc"
+	id = GF_sf.20
+	title = "GF_sf.20.name"
+	desc = "GF_sf.20.desc"
 	picture = GFX_evt_mysterious_signal
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_sf_site_target_2
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
-	immediate = {
-		closest_system = {
-			limit = { GF_sf_event_system_trigger = { TYPE = barren } }
-			min_steps = 2
-			max_steps = 10
-			hidden_effect = {
-				random_system_planet = {
-					limit = { GF_sf_event_planet_trigger = { TYPE = barren } }
-					save_event_target_as = GF_sf_site_target_2
-				}
-				set_star_flag = flag_s_GF_sf_event_system
-			}
-		}
-	}
-
 	option = {
-		name = "GF_sf.2.a"
-		event_target:GF_sf_site_target_2 = {
+		name = "GF_sf.20.a"
+		from = {
 			enable_special_project = {
 				name = "GF_sf_event_project_2"
 				location = this
-				owner = event_target:GF_ogas_owner
+				owner = prev.owner
 			}
 		}
 	}
 }
 
 # 事件21: 特殊项目2完成
-country_event = {
+ship_event = {
 	id = GF_sf.21
-	title = "GF_sf.21.name"
-	desc = "GF_sf.21.desc"
+	title = GF_sf.21.name
+	desc = GF_sf.21.desc
 
 	picture = GFX_evt_barren_dig_site
-
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_sf_site_target_2
-	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
+	location = from
+
+	is_triggered_only = yes
+
 	option = {
-		name = "GF_sf.21.a"
-		event_target:GF_sf_site_target_2 = {
-			create_archaeological_site = GF_sf_site_1
-		}
+		name = GF_sf.21.a
+		from = { create_archaeological_site = GF_sf_site_1 }
 	}
 }
 
 #事件3:在小行星建立特殊项目3
-country_event = {
-	id = GF_sf.3
-	title = "GF_sf.3.name"
-	desc = "GF_sf.3.desc"
+fleet_event = {
+	id = GF_sf.30
+	title = "GF_sf.30.name"
+	desc = "GF_sf.30.desc"
 	picture = GFX_evt_exploding_ship
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_sf_site_target_3
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
-	
-	immediate = {
-		closest_system = {
-			limit = { GF_sf_event_system_trigger = { TYPE = asteroid } }
-			min_steps = 2
-			max_steps = 10
-			hidden_effect = {
-				random_system_planet = {
-					limit = { GF_sf_event_planet_trigger = { TYPE = asteroid } }
-					save_event_target_as = GF_sf_site_target_3
-				}
-				set_star_flag = flag_s_GF_sf_event_system
-			}
-			
-		}
-	}
+
 	option = {
-		name = "GF_sf.3.a"
-		event_target:GF_sf_site_target_3 = {
+		name = "GF_sf.30.a"
+		from = {
 			enable_special_project = {
 				name = "GF_sf_event_project_3"
 				location = this
-				owner = event_target:GF_ogas_owner
+				owner = prev.owner
 			}
 		}
 	}
@@ -149,42 +117,28 @@ country_event = {
 
 #事件4:在荒芜星球建立特殊项目4
 ship_event = {
-	id = GF_sf.4
-	title = "GF_sf.4.name"
-	desc = "GF_sf.4.desc"
+	id = GF_sf.40
+	title = "GF_sf.40.name"
+	desc = "GF_sf.40.desc"
 	picture = GFX_evt_sabotaged_ship
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_sf_site_target_4
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
-	
-	immediate = {
-		closest_system = {
-			limit = { GF_sf_event_system_trigger = { TYPE = barren } }
-			min_steps = 2
-			max_steps = 10
-			hidden_effect = {
-				random_system_planet = {
-					limit = { GF_sf_event_planet_trigger = { TYPE = barren } }
-					save_event_target_as = GF_sf_site_target_4
-				}
-				set_star_flag = flag_s_GF_sf_event_system
-			}
-		}
-	}
+
 	option = {
-		name = "GF_sf.4.a"
-		event_target:GF_sf_site_target_4 = {
+		name = "GF_sf.40.a"
+		from = {
 			enable_special_project = {
 				name = "GF_sf_event_project_4"
 				location = this
-				owner = event_target:GF_ogas_owner
+				owner = prev.owner
 			}
 		}
 	}
 }
 # 事件41: 特殊项目4完成
-country_event = {
+ship_event = {
 	id = GF_sf.41
 	title = "GF_sf.41.name"
 	desc = "GF_sf.41.desc"
@@ -192,52 +146,35 @@ country_event = {
 	picture = GFX_evt_relic_world_street
 	show_sound = event_activating_unknown_technology
 
-	location = event_target:GF_sf_site_target_4
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 	
 	
 	option = {
 		name = "GF_sf.41.a"
-		event_target:GF_sf_site_target_4 = {
-			create_archaeological_site = GF_sf_site_2
-		}
+		from = { create_archaeological_site = GF_sf_site_2 }
 	}
 }
 
 #事件5:在小行星建立特殊项目
-country_event = {
-	id = GF_sf.5
-	title = "GF_sf.5.name"
-	desc = "GF_sf.5.desc"
+fleet_event = {
+	id = GF_sf.50
+	title = "GF_sf.50.name"
+	desc = "GF_sf.50.desc"
 	picture = GFX_evt_asteroid_field
 	show_sound = event_activating_unknown_technology
-	location = event_target:GF_sf_site_target_5
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
-	immediate = {
-		closest_system = {
-			limit = { GF_sf_event_system_trigger = { TYPE = asteroid } }
-			min_steps = 2
-			max_steps = 10
-			hidden_effect = {
-				random_system_planet = {
-					limit = { GF_sf_event_planet_trigger = { TYPE = asteroid } }
-					save_event_target_as = GF_sf_site_target_5
-				}
-				set_star_flag = flag_s_GF_sf_event_system
-			}
-		}
-	}
-	
 	option = {
-		name = "GF_sf.5.a"
-		event_target:GF_sf_site_target_5 = {
+		name = "GF_sf.50.a"
+		from = {
 			enable_special_project = {
 				name = "GF_sf_event_project_5"
 				location = this
-				owner = event_target:GF_ogas_owner
+				owner = prev.owner
 			}
 		}
 	}
@@ -245,9 +182,9 @@ country_event = {
 
 #事件6:生成星系、在机械星球建立特殊项目6
 ship_event = {
-	id = GF_sf.6
-	title = "GF_sf.6.name"
-	desc = "GF_sf.6.desc"
+	id = GF_sf.60
+	title = "GF_sf.60.name"
+	desc = "GF_sf.60.desc"
 	picture = GFX_evt_ruined_system
 	show_sound = event_activating_unknown_technology
 	location = event_target:GF_sf_site_target_6
@@ -288,17 +225,17 @@ ship_event = {
 		}
 	}
 	option = {
-		name = "GF_sf.6.a"
+		name = "GF_sf.60.a"
 		event_target:GF_sf_site_target_6 = {
 			enable_special_project = {
 				name = "GF_sf_event_project_6"
 				location = this
-				owner = event_target:GF_ogas_owner
+				owner = prev.owner
 			}
 		}
 	}
 }
-country_event = {
+ship_event = {
 	id = GF_sf.61
 	title = "GF_sf.61.name"
 	desc = "GF_sf.61.desc"
@@ -306,24 +243,22 @@ country_event = {
 	picture = GFX_evt_contingency_planet
 	show_sound = event_activating_unknown_technology
 
-	location = event_target:GF_sf_site_target_6
+	location = from
 	is_triggered_only = yes
 	event_chain = GF_sf_event_chain
 
 	
 	option = {
 		name = "GF_sf.61.a"
-		event_target:GF_sf_site_target_6 = {
-			create_archaeological_site = GF_sf_site_3
-		}
+		from = { create_archaeological_site = GF_sf_site_3 }
 	}
 }
 
 #事件7:遗迹遗珍解密、建立特殊项目7
 country_event = {
-	id = GF_sf.7
-	title = "GF_sf.7.name"
-	desc = "GF_sf.7.desc"
+	id = GF_sf.70
+	title = "GF_sf.70.name"
+	desc = "GF_sf.70.desc"
 	picture = GFX_evt_GF_core
 	show_sound = event_activating_unknown_technology
 	location = capital_scope
@@ -332,28 +267,44 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "GF_sf.7.a"
+		name = "GF_sf.70.a"
 		add_relic = GF_relic_orb_mainframe_alpha
 		hidden_effect = { set_country_flag = flag_GF_relic_orb_mainframe_alpha_get }
 		if = {
 			limit = { has_ancrel = yes }
-			custom_tooltip = "GF_sf.7.a.tooltip"
+			custom_tooltip = "GF_sf.70.a.tooltip"
+			hidden_effect = {
+				create_point_of_interest = {
+					id = GF_sf_orb_analyse_action
+					name = GF_artifact_analyse_orb_mainframe_alpha
+					desc = GF_sf_orb_artifact_action_desc
+					event_chain = GF_sf_event_chain
+					location = capital_scope
+				}
+			}
 		}
 		else = {
 			hidden_effect = {
 				set_country_flag = flag_GF_artifact_analyse_orb_mainframe_alpha_started
 				set_country_flag = flag_GF_analyse_orb_mainframe_alpha_decision_at_capital
+				create_point_of_interest = {
+					id = GF_sf_orb_analyse_action
+					name = GF_artifact_analyse_orb_mainframe_alpha
+					desc = GF_sf_orb_decision_desc
+					event_chain = GF_sf_event_chain
+					location = capital_scope
+				}
 			}
-			custom_tooltip = "GF_sf.7.a.tooltip.no_ancrel"
+			custom_tooltip = "GF_sf.70.a.tooltip.no_ancrel"
 		}
 	}
 }
 
 #事件8:遗迹遗珍获得、铁血事件链结束
 country_event = {
-	id = GF_sf.8
-	title = "GF_sf.8.name"
-	desc = "GF_sf.8.desc"
+	id = GF_sf.80
+	title = "GF_sf.80.name"
+	desc = "GF_sf.80.desc"
 	picture = GFX_evt_GF_net_world
 	show_sound = event_door_opening
 	event_chain = GF_sf_event_chain
@@ -365,12 +316,12 @@ country_event = {
 	}
 	
 	option = {
-		name = "GF_sf.8.a"
-		custom_tooltip = "GF_sf.8.a.tooltip"
+		name = "GF_sf.80.a"
+		custom_tooltip = "GF_sf.80.a.tooltip"
 		add_research_option = GF_tech_ternary_quantum_computing
 		if = {
 			limit = { has_country_flag = flag_GF_established_communication_with_zion }
-			custom_tooltip = "GF_sf.8.a.zion_tooltip"
+			custom_tooltip = "GF_sf.80.a.zion_tooltip"
 		}
 		end_event_chain = "GF_sf_event_chain"
 	}

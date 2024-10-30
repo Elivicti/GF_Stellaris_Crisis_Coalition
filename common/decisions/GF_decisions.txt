@@ -448,6 +448,9 @@ decision_GF_analyse_orb_mainframe_alpha = {
 			name = GF_sf_event_project_7
 			location = this
 		}
+		hidden_effect = {
+			owner = { remove_point_of_interest = GF_sf_orb_analyse_action }
+		}
 	}
 }
 

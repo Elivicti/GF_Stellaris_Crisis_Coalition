@@ -6,7 +6,21 @@ special_project = {
 	days_to_research = 90
 	picture = GFX_evt_announcement
 	event_scope = planet_event
-	on_success = { planet_event = { id = GF_sf.2 } }
+	on_success = {
+		solar_system = {
+			GF_select_sf_event_target = {
+				OWNER = owner
+				PLANET_CLASS = pc_barren
+				EVENT_TARGET = GF_sf_site_target
+			}
+		}
+		planet_event = {
+			id = GF_sf.20
+			scopes = {
+				from = event_target:GF_sf_site_target
+			}
+		}
+	}
 	on_fail = {}
 }
 
@@ -23,8 +37,9 @@ special_project = {
 		#skill = 3
 	}
 	on_success = {
-		owner = {
-			country_event = { id = GF_sf.21 }
+		ship_event = {
+			id = GF_sf.21
+			scopes = { from = from }
 		}
 	}
 	on_fail = {}
@@ -42,7 +57,19 @@ special_project = {
 		leader = scientist
 		#skill = 3
 	}
-	on_success = { ship_event = { id = GF_sf.4 } }
+	on_success = {
+		solar_system = {
+			GF_select_sf_event_target = {
+				OWNER = owner
+				PLANET_CLASS = pc_barren
+				EVENT_TARGET = GF_sf_site_target
+			}
+		}
+		ship_event = {
+			id = GF_sf.40
+			scopes = { from = event_target:GF_sf_site_target }
+		}
+	}
 	on_fail = {}
 }
 
@@ -59,8 +86,9 @@ special_project = {
 		#skill = 3
 	}
 	on_success = {
-		owner = {
-			country_event = { id = GF_sf.41 }
+		ship_event = {
+			id = GF_sf.41
+			scopes = { from = from }
 		}
 	}
 	on_fail = {}
@@ -78,7 +106,12 @@ special_project = {
 		leader = scientist
 		#skill = 3
 	}
-	on_success = { ship_event = { id = GF_sf.6 } }
+	on_success = {
+		ship_event = {
+			id = GF_sf.60
+			scopes = { from = from }
+		}
+	}
 	on_fail = {}
 }
 
@@ -95,8 +128,9 @@ special_project = {
 		#skill = 3
 	}
 	on_success = {
-		owner = {
-			country_event = { id = GF_sf.61 }
+		ship_event = {
+			id = GF_sf.61
+			scopes = { from = from }
 		}
 	}
 	on_fail = {}
@@ -111,7 +145,7 @@ special_project = {
 	picture = GFX_evt_physics_research
 	event_scope = country_event
 	on_success = {
-		country_event = { id = GF_sf.8 }
+		country_event = { id = GF_sf.80 }
 	}
 	on_fail = {}
 }
