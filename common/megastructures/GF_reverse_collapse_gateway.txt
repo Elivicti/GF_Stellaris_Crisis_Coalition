@@ -103,6 +103,7 @@ GF_reverse_collapse_beacon = {
 	show_in_outliner = yes
 
 	outliner_trigger = {
+		exists = owner
 		owner = {
 			NOT = { has_edict = GF_hide_reverse_collapse_beacon_outliner_icon }
 		}
