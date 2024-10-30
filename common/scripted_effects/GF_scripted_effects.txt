@@ -279,34 +279,6 @@ GF_select_sf_event_target = {
 	}
 }
 
-GF_test = {
-	capital_scope.solar_system = {
-		save_event_target_as = source_system
-	}
-	every_system = {
-		set_variable = {
-			which = v_distance
-			value = value:GF_sf_candidate_system_weight#|SOURCE|prev.capital_scope.solar_system|
-		}
-		export_trigger_value_to_variable = {
-			variable = v_hyperlane_distance
-			trigger = distance
-			parameters = {
-				type = hyperlane
-				source = event_target:source_system
-			}
-		}
-		export_trigger_value_to_variable = {
-			variable = v_euclidean_distance
-			trigger = distance
-			parameters = {
-				type = euclidean
-				source = event_target:source_system
-			}
-		}
-	}
-}
-
 # this = system
 GF_ensure_sf_event_barren_planet = {
 	if = {
