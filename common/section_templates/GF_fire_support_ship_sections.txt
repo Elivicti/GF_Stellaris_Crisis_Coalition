@@ -303,7 +303,7 @@ ship_section_template = {
 	component_slot = {
 		name = "S02"
 		template = small_turret
-		locatorname = "s_gun10"
+		locatorname = "s_gun010"
 	}
 	component_slot = {
 		name = "S03"
@@ -373,7 +373,7 @@ ship_section_template = {
 	component_slot = {
 		name = "S02"
 		template = small_turret
-		locatorname = "s_gun10"
+		locatorname = "s_gun010"
 	}
 	component_slot = {
 		name = "S05"
