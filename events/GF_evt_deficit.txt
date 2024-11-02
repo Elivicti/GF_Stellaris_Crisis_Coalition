@@ -251,3 +251,57 @@ situation_event = {
 		}
 	}
 }
+
+
+situation_event = {
+	id = GF_deficit.200
+	title = GF_deficit.200.name
+	desc = GF_deficit.200.desc
+
+	trigger = {
+		owner = { GF_is_main_country = yes }
+	}
+
+	immediate = {
+		owner = {
+			every_owned_planet = {
+				while = {
+					limit = { has_building = building_GF_reverse_collapse }
+					remove_building = building_GF_reverse_collapse
+				}
+				while = {
+					limit = { has_district = district_GF_automated_reverse_collapse }
+					remove_district = district_GF_automated_reverse_collapse
+				}
+			}
+
+			every_owned_ship = {
+				limit = {
+					is_ship_class = shipclass_military
+					NOR = {
+						has_ship_flag = flag_ship_GF_prevent_delete_from_collapse_liquid_deficit
+						fleet = {
+							has_fleet_flag = flag_f_GF_prevent_delete_from_collapse_liquid_deficit
+						}
+					}
+					GF_has_collapse_components = yes
+				}
+				random = {
+					chance = 50
+					if = {
+						limit = { exists = leader }
+						unassign_leader = leader
+					}
+					delete_ship = this
+				}
+			}
+		}
+	}
+
+	option = {
+		name = GF_deficit.200.a
+		hidden_effect = {
+			destroy_situation = this
+		}
+	}
+}

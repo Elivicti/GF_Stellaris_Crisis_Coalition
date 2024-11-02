@@ -424,13 +424,41 @@ GF_leader_has_core_glitch = {
 	}
 }
 
-# scope = country
-GF_should_country_has_collapse_liquid_deficit_debuff = {
+# this = ship
+GF_has_collapse_components = {
 	OR = {
-		has_country_flag = solarpunk_country
-		has_country_flag = flag_GF_country_has_collapse_liquid_deficit_debuff
-		has_technology = $OR_HAS_TECH$
+		has_component = GF_COLLAPSE_ARMOR_LARGE
+		has_component = GF_COLLAPSE_ARMOR_MEDIUM
+		has_component = GF_COLLAPSE_ARMOR_SMALL
+
+		has_component = GF_COLLAPSE_MASS_ACCELERATOR
+
+		has_component = GF_COLLAPSE_ARTILLERY
+		has_component = GF_COLLAPSE_CANNON_LARGE
+		has_component = GF_COLLAPSE_CANNON_MEDIUM
+		has_component = GF_COLLAPSE_CANNON_SMALL
+		has_component = GF_COLLAPSE_MISSILE
+		has_component = GF_COLLAPSE_TORPEDO
+
+		has_component = TITAN_GF_COLLAPSE_ENERGY_LANCE
+		has_component = XLARGE_GF_COLLAPSE_ENERGY_LANCE
+
+		has_component = GF_COLLAPSE_JUMP_DRIVE
+		has_component = CORVETTE_GF_COLLAPSE_REACTOR
+		has_component = DESTROYER_GF_COLLAPSE_REACTOR
+		has_component = CRUISER_GF_COLLAPSE_REACTOR
+		has_component = BATTLESHIP_GF_COLLAPSE_REACTOR
+		has_component = TITAN_GF_COLLAPSE_REACTOR
+		has_component = JUGGERNAUT_GF_COLLAPSE_REACTOR
+		has_component = PLATFORM_GF_COLLAPSE_REACTOR
+		has_component = ION_CANNON_GF_COLLAPSE_REACTOR
 	}
+}
+
+# this = country
+GF_should_have_collapse_liquid_deficit_debuff = {
+	is_nyto_country = no
+	NOT = { has_country_flag = flag_GF_prevent_collapse_liquid_deficit_debuff }
 }
 
 # scope = planet

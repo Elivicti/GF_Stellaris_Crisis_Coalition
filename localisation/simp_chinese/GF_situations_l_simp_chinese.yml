@@ -10,6 +10,8 @@
  GF_situation_collapse_liquid_deficit_nyto:0 "$GF_nyto_collapse_liquid_deficit_desc$"
  GF_situation_collapse_liquid_deficit_commonwealth:0 "$GF_situation_collapse_liquid_deficit_desc$所有依赖$GF_nyto_collapse_liquid$的地方都停摆了！"
 
+ GF_deficit_collapse_liquid_failed_tooltip: "消耗 £GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§!的§Y区划§!与§Y建筑§!将被§H全部拆除§!。\n消耗 £GF_nyto_collapse_liquid£ §Y$GF_nyto_collapse_liquid$§!的§Y军用舰船§!将被§H解散一半§!。"
+
  GF_deficit_collapse_liquid_approach:0 "坍缩液匮乏"
  GF_deficit_collapse_liquid_approach_nyto:0 "$GF_deficit_collapse_liquid_approach$"
 

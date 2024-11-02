@@ -1,3 +1,8 @@
+# 涅托
+is_nyto_country = {
+	always = no
+}
+
 
 # 奇观拓展
 # global_flag = AOW_installed

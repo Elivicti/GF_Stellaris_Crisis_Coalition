@@ -16,8 +16,8 @@ GF_situation_collapse_liquid_deficit = {
 		trigger = {
 			owner = {
 				NOR = {
-					has_authority = auth_GF_paradeus
-					has_authority = GF_auth_commonwealth
+					is_nyto_country = yes
+					GF_is_main_country = yes
 				}
 			}
 		}
@@ -25,7 +25,7 @@ GF_situation_collapse_liquid_deficit = {
 
 	desc = {
 		text = GF_situation_collapse_liquid_deficit_nyto
-		trigger = { owner = { has_authority = auth_GF_paradeus } }
+		trigger = { owner = { is_nyto_country = yes } }
 	}
 
 	desc = {
@@ -33,58 +33,70 @@ GF_situation_collapse_liquid_deficit = {
 		trigger = { owner = { has_authority = GF_auth_commonwealth } }
 	}
 
-	start_value = 50
+	start_value = 15
 	stages = {
-		deficit_stage = {
+		deficit_first = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_red
+			end = 25
+			triggered_modifier = {
+				potential = { owner = { GF_should_have_collapse_liquid_deficit_debuff = yes } }
+				GF_ship_collapse_armors_alloys_upkeep_mult = 1
+				GF_ship_collapse_utilities_alloys_upkeep_mult = 1
+				GF_ship_collapse_weapons_alloys_upkeep_mult = 1
+			}
+		}
+		deficit_second = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 50
+			triggered_modifier = {
+				potential = { owner = { GF_should_have_collapse_liquid_deficit_debuff = yes } }
+				GF_ship_collapse_armors_alloys_upkeep_mult = 2.5
+				GF_ship_collapse_utilities_alloys_upkeep_mult = 2.5
+				GF_ship_collapse_weapons_alloys_upkeep_mult = 2.5
+			}
+		}
+		deficit_third = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 75
+			triggered_modifier = {
+				potential = { owner = { GF_should_have_collapse_liquid_deficit_debuff = yes } }
+				GF_ship_collapse_armors_alloys_upkeep_mult = 4
+				GF_ship_collapse_utilities_alloys_upkeep_mult = 4
+				GF_ship_collapse_weapons_alloys_upkeep_mult = 4
+			}
+		}
+		deficit_fourth = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			triggered_modifier = {
+				potential = { owner = { GF_should_have_collapse_liquid_deficit_debuff = yes } }
+				GF_ship_collapse_armors_alloys_upkeep_mult = 5
+				GF_ship_collapse_utilities_alloys_upkeep_mult = 5
+				GF_ship_collapse_weapons_alloys_upkeep_mult = 5
+			}
 			end = 100
 		}
-	}
-
-	triggered_modifier = {
-		potential = {
-			owner = {
-				GF_should_country_has_collapse_liquid_deficit_debuff = {
-					OR_HAS_TECH = GF_tech_reverse_collapse_plant
-				}
-			}
-		}
-		modifier = {
-			GF_planet_reverse_collapser_produces_mult = -10
-		}
-	}
-
-	triggered_modifier = {
-		potential = {
-			owner = {
-				GF_should_country_has_collapse_liquid_deficit_debuff = {
-					OR_HAS_TECH = GF_tech_collapsetech_weaponize
-				}
-			}
-		}
-		modifier = {
-			GF_ship_collapse_armors_alloys_upkeep_mult = 5
-			GF_ship_collapse_utilities_alloys_upkeep_mult = 5
-			GF_ship_collapse_weapons_alloys_upkeep_mult = 5
-			weapon_type_GF_collapsed_weapon_damage_mult = -10
-			weapon_type_GF_collapsed_weapon_fire_rate_mult = -10
-		}
-	}
-
-	on_progress_complete = {
-		hidden_effect = { destroy_situation = this }
-	}
-	on_fail = {
-		custom_tooltip = deficit_situation_finish_tooltip
-		hidden_effect = { destroy_situation = this }
 	}
 	monthly_progress = {
 		base = 0
 		modifier = {
+			add = value:deficit_situation_progress_value|RESOURCE|GF_nyto_collapse_liquid|
+			desc = string_expenditures_greater_than_income_GF_nyto_collapse_liquid
+			owner = {
+				is_nyto_country = no
+				has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid }
+			}
+		}
+		modifier = {
 			add = 5
 			desc = string_expenditures_greater_than_income_GF_nyto_collapse_liquid
-			owner = { has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid } }
+			owner = {
+				is_nyto_country = yes
+				has_actual_deficit = { RESOURCE = GF_nyto_collapse_liquid }
+			}
 			situation_progress < 50
 		}
 		modifier = {
@@ -104,6 +116,54 @@ GF_situation_collapse_liquid_deficit = {
 				has_negative_income_with_stockpile = { RESOURCE = GF_nyto_collapse_liquid }
 			}
 		}
+		modifier = {
+			desc = civilian_difficulty
+			mult = 0.1
+			situation_monthly_progress > 0
+			is_difficulty = 0
+			owner = { is_ai = no }
+		}
+		modifier = {
+			desc = cadet_difficulty
+			mult = 0.5
+			situation_monthly_progress > 0
+			is_difficulty = 1
+			owner = { is_ai = no }
+		}
+	}
+
+	triggered_modifier = {
+		potential = {
+			owner = { GF_should_have_collapse_liquid_deficit_debuff = yes }
+		}
+		modifier = {
+			GF_planet_reverse_collapser_produces_mult = -10
+		}
+	}
+
+	triggered_modifier = {
+		potential = { owner = { GF_should_have_collapse_liquid_deficit_debuff = yes } }
+		modifier = {
+			weapon_type_GF_collapsed_weapon_damage_mult = -1
+			weapon_type_GF_collapsed_weapon_fire_rate_mult = -10
+		}
+	}
+
+	on_progress_complete = {
+		if = {
+			limit = { is_nyto_country = no }
+			custom_tooltip = GF_deficit_collapse_liquid_failed_tooltip
+			hidden_effect = {
+				situation_event = { id = GF_deficit.200 }
+			}
+		}
+		else = {
+			hidden_effect = { destroy_situation = this }
+		}
+	}
+	on_fail = {
+		custom_tooltip = deficit_situation_finish_tooltip
+		hidden_effect = { destroy_situation = this }
 	}
 
 	approach = {
@@ -112,7 +172,7 @@ GF_situation_collapse_liquid_deficit = {
 		icon_background = GFX_situation_approach_bg_yellow
 
 		potential = {
-			owner = { has_authority = auth_GF_paradeus } # 涅托
+			owner = { is_nyto_country = yes } # 涅托
 		}
 
 		modifier = {
@@ -124,7 +184,7 @@ GF_situation_collapse_liquid_deficit = {
 			base = 0
 			modifier = {
 				set = 100
-				owner = { has_authority = auth_GF_paradeus }
+				owner = { is_nyto_country = yes }
 			}
 		}
 	}
@@ -136,16 +196,12 @@ GF_situation_collapse_liquid_deficit = {
 		default = yes
 
 		potential = {
-			owner = { has_authority = GF_auth_commonwealth }
+			owner = { GF_is_main_country = yes }
 		}
 
 
 		ai_weight = {
-			base = 0
-			modifier = {
-				set = 100
-				owner = { has_authority = GF_auth_commonwealth }
-			}
+			base = 100
 		}
 	}
 	approach = {
@@ -154,7 +210,7 @@ GF_situation_collapse_liquid_deficit = {
 		icon_background = GFX_situation_approach_bg_yellow
 
 		potential = {
-			owner = { has_authority = GF_auth_commonwealth }
+			owner = { GF_is_main_country = yes }
 		}
 
 		modifier = {
@@ -168,14 +224,10 @@ GF_situation_collapse_liquid_deficit = {
 		}
 
 		ai_weight = {
-			base = 0
-			modifier = {
-				set = 120
-				owner = { has_authority = GF_auth_commonwealth }
-			}
+			base = 110
 			modifier = {
 				factor = 0
-				owner = { owner = { has_actual_deficit = { RESOURCE = energy } } }
+				owner = { has_actual_deficit = { RESOURCE = energy } }
 			}
 		}
 	}
