@@ -19,6 +19,7 @@
  requires_mega_shipyard_3: "£trigger_no£ 需要§Y巨型船坞§!"
  GF_fire_support_ship: "火力支援舰"
  GF_fire_support_ship_plural: "火力支援舰"
+ SHIP_GRAPHICS_GF_FIRE_SUPPORT_SHIP_DESC: "这种巨大的战舰拥有厚重的装甲和数量众多的武器挂载点，使其能轻易地完成重火力支援或区域压制任务，其庞大的载荷也可以搭载特种设备执行特殊任务。"
  mod_shipsize_GF_fire_support_ship_build_speed_mult: "$GF_fire_support_ship$建造速度"
  mod_shipsize_GF_fire_support_ship_hull_mult: "$GF_fire_support_ship$船体值"
  mod_shipsize_GF_fire_support_ship_hull_add: "$GF_fire_support_ship$船体值"
