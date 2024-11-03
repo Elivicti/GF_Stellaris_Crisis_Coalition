@@ -128,6 +128,21 @@ ship_event = {
 
 	option = {
 		name = "GF_sf.40.a"
+	}
+	option = {
+		name = "GF_sf.40.b"
+		custom_tooltip = GF_sf.40.b.tooltip
+	}
+
+	after = {
+		hidden_effect = {
+			owner = {
+				GF_unlock_archive = {
+					TYPE = keyword
+					VALUE = concept_GF_parapluie_virus
+				}
+			}
+		}
 		from = {
 			enable_special_project = {
 				name = "GF_sf_event_project_4"
@@ -201,23 +216,12 @@ ship_event = {
 					min_orientation_angle = 24
 					max_orientation_angle = 66
 					initializer = GF_sf_system
-				}
-			}
-			last_created_system = {
-				star = {
-					create_ambient_object = {
-						type = "contingency_2"
-						location = this
-					}
-					last_created_ambient_object = {
-						set_ambient_object_flag = contingency_system_effect_2
-						set_location = {
-							target = prev
-							distance = 0
-							angle = random
+					effect = {
+						random_system_planet = {
+							limit = { has_planet_flag = flag_p_GF_sf_the_great_sepulchre }
+							save_event_target_as = GF_sf_site_target_6
 						}
 					}
-					set_crisis_sound = ai_empire_ambient_stage_1
 				}
 			}
 			add_extra_hyperlane_to_spawned_system_effect = yes

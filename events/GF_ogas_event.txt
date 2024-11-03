@@ -716,6 +716,14 @@ country_event = {
 		script = OGAS/GF_keyword
 		KEYWORD = concept_GF_siliconization
 	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_butterfly_incident
+	}
+	inline_script = {
+		script = OGAS/GF_keyword
+		KEYWORD = concept_GF_parapluie_virus
+	}
 
 	option = {
 		name = GF_ogas.return
@@ -751,16 +759,8 @@ country_event = {
 		random_owned_leader = {
 			# limit = { is_researching_area = physics }
 			limit = { is_councilor_type = councilor_research }
-			save_event_target_as = physics_leader
-		}
-		random_owned_leader = {
-			# limit = { is_researching_area = society }
-			limit = { is_councilor_type = councilor_research }
 			save_event_target_as = society_leader
-		}
-		random_owned_leader = {
-			# limit = { is_researching_area = engineering }
-			limit = { is_councilor_type = councilor_research }
+			save_event_target_as = physics_leader
 			save_event_target_as = engineering_leader
 		}
 		GF_OGAS_contact_begin = yes
@@ -816,9 +816,21 @@ country_event = {
 country_event = {
 	id = GF_ogas.12300
 	title = GF_OGAS_connect
-	desc = GF_ogas.12300.desc.a
-#	desc = GF_ogas.12300.desc.b
-#	desc = GF_ogas.12300.desc.c
+
+	desc = {
+		text = GF_ogas.12300.desc.a
+		trigger = {
+			NOT = { GF_has_unlocked_any_archive = { TYPE = event_archive } }
+		}
+	}
+	desc = {
+		text = GF_ogas.12300.desc.b
+		trigger = {
+			GF_has_unlocked_any_archive = { TYPE = event_archive }
+		}
+	}
+
+
 	diplomatic = yes
 	diplomatic_title = GF_ogas.12000.c
 	picture_event_data = {
@@ -837,6 +849,11 @@ country_event = {
 #		response_text = GF_ogas.12100.a.response
 #		is_dialog_only = yes
 #	}
+
+	inline_script = {
+		script = OGAS/GF_event_archive
+		ARCHIVE = GF_sf_event_archive_1
+	}
 
 	option = {
 		name = GF_ogas.return

@@ -58,6 +58,16 @@ fleet_event = {
 		}
 		owner = {
 			small_artifact_reward = yes
+			hidden_effect = {
+				GF_unlock_archive = {
+					TYPE = keyword
+					VALUE = concept_GF_butterfly_incident
+				}
+				GF_unlock_archive = {
+					TYPE = event_archive
+					VALUE = GF_sf_event_archive_1
+				}
+			}
 		}
 	}
 }

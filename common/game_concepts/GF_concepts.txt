@@ -95,3 +95,6 @@ concept_GF_tech_mass_rebuild_function = {
 
 concept_GF_trait_leader_doll_cloud_network = {}
 concept_GF_trait_leader_doll_cloud_network_node = {}
+
+concept_GF_butterfly_incident = {}
+concept_GF_parapluie_virus = {}
