@@ -1,0 +1,9 @@
+option = {
+	name = $ARCHIVE$
+	response_text = $ARCHIVE$_desc
+	is_dialog_only = yes
+	trigger = { GF_has_unlocked_archive = { TYPE = event_archive VALUE = $ARCHIVE$ } }
+	hidden_effect = {
+		GF_set_archive_title = { TITLE = $ARCHIVE$ }
+	}
+}

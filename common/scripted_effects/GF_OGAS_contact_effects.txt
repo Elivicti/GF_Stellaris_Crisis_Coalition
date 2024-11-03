@@ -94,6 +94,11 @@ GF_unlock_archive = {
 			}
 		}
 	}
+	hidden_effect = {
+		event_target:GF_ogas_country = {
+			set_country_flag = flag_GF_has_unlocked_any_$TYPE$
+		}
+	}
 }
 
 GF_unlock_inital_keywords = {

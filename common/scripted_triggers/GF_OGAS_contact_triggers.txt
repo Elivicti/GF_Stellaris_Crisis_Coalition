@@ -15,6 +15,15 @@ GF_is_in_zion_comm = {
 }
 
 # this = country
+GF_has_unlocked_any_archive = {
+	hidden_trigger = {
+		event_target:GF_ogas_country = {
+			has_country_flag = flag_GF_has_unlocked_any_$TYPE$
+		}
+	}
+}
+
+# this = country
 GF_has_unlocked_keyword = {
 	hidden_trigger = {
 		event_target:GF_ogas_country = {
