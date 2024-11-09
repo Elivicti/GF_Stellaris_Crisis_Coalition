@@ -98,6 +98,8 @@
  building_GF_entertainment_module_desc: "该建筑为各类艺术作者提供了充足的基础设施。"
  building_GF_residential_module: "居住模块"
  building_GF_residential_module_desc: "该建筑为居民提供宽敞且舒适的住宅。"
+ building_GF_automated_factory: "人形组装工厂"
+ building_GF_automated_factory_desc: "高级人形装配工厂，能够快速组装大量人形。"
  
  building_GF_automated_energy_module: "能源模块"
  building_GF_automated_energy_module_desc: "该建筑为$GF_automated_city_districts$提供额外的能源生产能力。"

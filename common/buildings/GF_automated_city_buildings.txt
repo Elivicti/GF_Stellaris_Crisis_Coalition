@@ -483,6 +483,53 @@ building_GF_residential_module = {
 	}
 }
 
+building_GF_automated_factory = {
+	icon = building_GF_doll_factory
+	base_buildtime = @build_time_t1
+	position_priority = 20
+	building_sets = { GF_automated_city }
+
+	category = pop_assembly
+
+	potential = {
+		NOT = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+		OR = {
+			NOT = { exists = owner }
+			owner = { GF_is_main_country = yes }
+		}
+	}
+
+	triggered_planet_modifier = {
+		planet_pop_assembly_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_factory_assembly_speed_mult|
+	}
+
+	planet_modifier = {
+		GF_system_maintenance = -0.04
+	}
+
+	resources = {
+		category = GF_automated_city_districts_factory
+		cost = {
+			minerals = @base_cost_t1
+		}
+		upkeep = {
+			energy = @base_upkeep_t2
+			gf_core_chip = 1
+		}
+		upkeep = {
+			gf_core_chip = 1
+			mult = modifier:planet_pop_assemblers_gf_core_chip_upkeep_add
+		}
+	}
+
+	prerequisites = {
+		GF_tech_doll_assemble
+		GF_tech_ogas_computing_center
+	}
+	show_tech_unlock_if = { always = no }
+}
+
 # 基础资源
 # 30 <= position_priority < 50
 building_GF_automated_energy_module = {
