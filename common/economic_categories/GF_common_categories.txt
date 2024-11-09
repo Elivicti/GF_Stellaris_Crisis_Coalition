@@ -196,12 +196,6 @@ pop_category_GF_freedom_class = {
 	modifier_category = pop
 }
 
-GF_subnet_generate_threads_ec = {
-	generate_add_modifiers = {
-		produces
-	}
-}
-
 GF_doll_pops= {
 	parent = planet_pops
 	generate_add_modifiers = {

@@ -954,7 +954,7 @@ GF_calculate_OGAS_threads_statistics = {
 			any_owned_planet = {
 				has_building = building_GF_subnet_communication_nexus
 				check_modifier_value = {
-					modifier = GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+					modifier = GF_OGAS_threads_from_subnet
 					value > 0
 				}
 			}
@@ -993,7 +993,7 @@ GF_show_OGAS_threads_statistics = {
 			any_owned_planet = {
 				has_building = building_GF_subnet_communication_nexus
 				check_modifier_value = {
-					modifier = GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+					modifier = GF_OGAS_threads_from_subnet
 					value > 0
 				}
 			}

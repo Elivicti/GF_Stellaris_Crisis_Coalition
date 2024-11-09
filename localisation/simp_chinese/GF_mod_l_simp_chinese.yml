@@ -151,8 +151,7 @@
 
  mod_GF_doll_assemblers_assembly_speed_mult: "$GF_doll_assemblers$提供的机械组装速度"
 
-# faked from economic categories
- mod_GF_subnet_generate_threads_ec_gf_core_chip_produces_add: "子网产生的OGAS线程"
+ mod_GF_OGAS_threads_from_subnet: "子网产生的OGAS线程"
 ############
  mod_job_GF_assemble_mechanic_add:0 "人形技师岗位"
  mod_job_GF_programmer_add:0 "心智云图编辑员岗位"

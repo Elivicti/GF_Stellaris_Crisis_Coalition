@@ -30,7 +30,7 @@ building_GF_connection_nexus = {
 			}
 			gf_core_chip = 3
 			energy = 1
-			mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+			mult = this.modifier:GF_OGAS_threads_from_subnet
 		}
 	}
 
@@ -41,7 +41,7 @@ building_GF_connection_nexus = {
 			owner = { has_technology = GF_tech_distributed_subnet_computing }
 		}
 		GF_OGAS_threads_add = 1
-		mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+		mult = this.modifier:GF_OGAS_threads_from_subnet
 	}
 
 	country_modifier = {

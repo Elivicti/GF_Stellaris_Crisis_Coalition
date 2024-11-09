@@ -47,7 +47,7 @@ GF_get_thread_count_from_tech = {
 # this = planet
 GF_get_thread_count_from_subnet = {
 	base = 0
-	add = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+	add = this.modifier:GF_OGAS_threads_from_subnet
 }
 
 # this = country

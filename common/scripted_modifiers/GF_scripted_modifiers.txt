@@ -33,6 +33,12 @@ GF_OGAS_threads_used_add = {
 	category = country
 }
 
+GF_OGAS_threads_from_subnet = {
+	icon = mod_GF_OGAS_threads_add
+	good = yes
+	category = country
+}
+
 GF_doll_produces_mult = {
 	icon = mod_planet_jobs_robotic_produces_mult
 	percentage = yes

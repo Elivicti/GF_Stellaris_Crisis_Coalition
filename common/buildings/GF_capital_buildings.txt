@@ -767,7 +767,7 @@ building_GF_subnet_communication_nexus = {
 		upkeep = {
 			gf_core_chip = 3
 			energy = 1
-			mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+			mult = this.modifier:GF_OGAS_threads_from_subnet
 		}
 	}
 
@@ -778,7 +778,7 @@ building_GF_subnet_communication_nexus = {
 
 	triggered_country_modifier = {
 		GF_OGAS_threads_add = 1
-		mult = this.modifier:GF_subnet_generate_threads_ec_gf_core_chip_produces_add
+		mult = this.modifier:GF_OGAS_threads_from_subnet
 	}
 
 	triggered_desc = {
