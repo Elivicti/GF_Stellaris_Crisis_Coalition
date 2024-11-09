@@ -139,8 +139,8 @@
  GF_tech_automated_coordination: "效率协同算法"
  GF_tech_automated_coordination_desc: "通过改进的调度算法，使一整个星球的自动化设施融合为一个有机整体成为可能。"
 
- GF_tech_ogas_computing_center:0 "$GF_computing_center_3$"
- GF_tech_ogas_computing_center_desc:0 "$GF_computing_center_3_desc$"
+ GF_tech_ogas_computing_center:0 "$GF_computing_center_4$"
+ GF_tech_ogas_computing_center_desc:0 "$GF_computing_center_4_DESC$"
 
  GF_tech_distributed_subnet_computing: "分布式子网计算技术"
  GF_tech_distributed_subnet_computing_desc: "通过分布式的计算节点网络为OGAS提供更快速的数据处理能力。"
