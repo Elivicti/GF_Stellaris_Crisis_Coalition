@@ -67,7 +67,10 @@ special_project = {
 		}
 		ship_event = {
 			id = GF_sf.40
-			scopes = { from = event_target:GF_sf_site_target }
+			scopes = {
+				from = event_target:GF_sf_site_target
+				fromfrom = from
+			}
 		}
 	}
 	on_fail = {}
