@@ -450,6 +450,23 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
 				}
 			}
 		}

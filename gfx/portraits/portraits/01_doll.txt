@@ -10,7 +10,7 @@ portraits = {
 	GF_doll_001 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_06typesmg.dds"
+			"gfx/models/portraits/doll/pic_06TypeSMG.dds"
 			"gfx/models/portraits/doll/pic_06TypeSMG_5104.dds"
 			"gfx/models/portraits/doll/pic_06TypeSMG_5905.dds"
 			"gfx/models/portraits/doll/pic_06TypeSMG_7306.dds"
@@ -29,25 +29,27 @@ portraits = {
 		character_textures = {
 			"gfx/models/portraits/doll/pic_4type.dds"
 			"gfx/models/portraits/doll/pic_4type_4103.dds"
+			"gfx/models/portraits/doll/pic_4type_5305.dds"
 			"gfx/models/portraits/doll/pic_4type_7705.dds"
 		}
 	}
 	GF_doll_004 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_56-1type.dds"
-			"gfx/models/portraits/doll/pic_56-1type_1905.dds"
-			"gfx/models/portraits/doll/pic_56-1type_401.dds"
-			"gfx/models/portraits/doll/pic_56-1type_Mod.dds"
+			"gfx/models/portraits/doll/pic_56typeR.dds"
+			"gfx/models/portraits/doll/pic_56typeRMod.dds"
+			"gfx/models/portraits/doll/pic_56typeR_5508.dds"
+			"gfx/models/portraits/doll/pic_56typeR_7206.dds"
 		}
 	}
 	GF_doll_005 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_56typer.dds"
-			"gfx/models/portraits/doll/pic_56typeR_5508.dds"
-			"gfx/models/portraits/doll/pic_56typeR_7206.dds"
-			"gfx/models/portraits/doll/pic_56typeR_Mod.dds"
+			"gfx/models/portraits/doll/pic_56-1type.dds"
+			"gfx/models/portraits/doll/pic_56-1typeMod.dds"
+			"gfx/models/portraits/doll/pic_56-1type_1905.dds"
+			"gfx/models/portraits/doll/pic_56-1type_401.dds"
+			"gfx/models/portraits/doll/pic_56-1type_7706.dds"
 		}
 	}
 	GF_doll_006 = {
@@ -68,24 +70,29 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_64type.dds"
+			"gfx/models/portraits/doll/pic_64typeMod.dds"
 			"gfx/models/portraits/doll/pic_64type_104.dds"
 			"gfx/models/portraits/doll/pic_64type_11.dds"
 			"gfx/models/portraits/doll/pic_64type_5608.dds"
 			"gfx/models/portraits/doll/pic_64type_7108.dds"
-			"gfx/models/portraits/doll/pic_64type_Mod.dds"
+			"gfx/models/portraits/doll/pic_64type_8507.dds"
 		}
 	}
 	GF_doll_009 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_6p62.dds"
+			"gfx/models/portraits/doll/pic_6P62.dds"
+			"gfx/models/portraits/doll/pic_6P62_10409.dds"
 			"gfx/models/portraits/doll/pic_6P62_704.dds"
+			"gfx/models/portraits/doll/pic_6P62_8610.dds"
 		}
 	}
 	GF_doll_010 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_79type.dds"
+			"gfx/models/portraits/doll/pic_79typeMod.dds"
+			"gfx/models/portraits/doll/pic_79type_1402.dds"
 			"gfx/models/portraits/doll/pic_79type_3306.dds"
 			"gfx/models/portraits/doll/pic_79type_6904.dds"
 		}
@@ -94,13 +101,14 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_80type.dds"
-			"gfx/models/portraits/doll/pic_80type_Mod.dds"
+			"gfx/models/portraits/doll/pic_80typeMod.dds"
+			"gfx/models/portraits/doll/pic_80type_2504.dds"
 		}
 	}
 	GF_doll_012 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_81typer.dds"
+			"gfx/models/portraits/doll/pic_81typeR.dds"
 			"gfx/models/portraits/doll/pic_81typeR_1807.dds"
 		}
 	}
@@ -108,16 +116,20 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_88type.dds"
+			"gfx/models/portraits/doll/pic_88typeMod.dds"
 			"gfx/models/portraits/doll/pic_88type_1809.dds"
-			"gfx/models/portraits/doll/pic_88type_Mod.dds"
+			"gfx/models/portraits/doll/pic_88type_50001.dds"
+			"gfx/models/portraits/doll/pic_88type_5308.dds"
+			"gfx/models/portraits/doll/pic_88type_6503.dds"
+			"gfx/models/portraits/doll/pic_88type_7407.dds"
 		}
 	}
 	GF_doll_014 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_92type.dds"
+			"gfx/models/portraits/doll/pic_92typeMod.dds"
 			"gfx/models/portraits/doll/pic_92type_5507.dds"
-			"gfx/models/portraits/doll/pic_92type_Mod.dds"
 		}
 	}
 	GF_doll_015 = {
@@ -136,33 +148,38 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_97type.dds"
+			"gfx/models/portraits/doll/pic_97type_10403.dds"
 			"gfx/models/portraits/doll/pic_97type_3703.dds"
 			"gfx/models/portraits/doll/pic_97type_406.dds"
+			"gfx/models/portraits/doll/pic_97type_5103.dds"
 			"gfx/models/portraits/doll/pic_97type_6902.dds"
 		}
 	}
 	GF_doll_017 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_97types.dds"
+			"gfx/models/portraits/doll/pic_97typeS.dds"
+			"gfx/models/portraits/doll/pic_97typeSMod.dds"
 			"gfx/models/portraits/doll/pic_97typeS_3807.dds"
 			"gfx/models/portraits/doll/pic_97typeS_5805.dds"
-			"gfx/models/portraits/doll/pic_97typeS_Mod.dds"
 		}
 	}
 	GF_doll_018 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_98k.dds"
+			"gfx/models/portraits/doll/pic_98K.dds"
+			"gfx/models/portraits/doll/pic_98KMod.dds"
+			"gfx/models/portraits/doll/pic_98K_10001.dds"
+			"gfx/models/portraits/doll/pic_98K_11002.dds"
 			"gfx/models/portraits/doll/pic_98K_4301.dds"
 			"gfx/models/portraits/doll/pic_98K_8301.dds"
-			"gfx/models/portraits/doll/pic_98K_Mod.dds"
 		}
 	}
 	GF_doll_019 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_9a91.dds"
+			"gfx/models/portraits/doll/pic_9A91.dds"
+			"gfx/models/portraits/doll/pic_9A91_10605.dds"
 			"gfx/models/portraits/doll/pic_9A91_1302.dds"
 			"gfx/models/portraits/doll/pic_9A91_4104.dds"
 			"gfx/models/portraits/doll/pic_9A91_6204.dds"
@@ -172,35 +189,37 @@ portraits = {
 	GF_doll_020 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_a545.dds"
+			"gfx/models/portraits/doll/pic_A545.dds"
 			"gfx/models/portraits/doll/pic_A545_6803.dds"
 			"gfx/models/portraits/doll/pic_A545_7902.dds"
+			"gfx/models/portraits/doll/pic_A545_8906.dds"
 		}
 	}
 	GF_doll_021 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_a91.dds"
+			"gfx/models/portraits/doll/pic_A91.dds"
 			"gfx/models/portraits/doll/pic_A91_4403.dds"
 		}
 	}
 	GF_doll_022 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_aa12.dds"
+			"gfx/models/portraits/doll/pic_AA12.dds"
 			"gfx/models/portraits/doll/pic_AA12_2403.dds"
+			"gfx/models/portraits/doll/pic_AA12_8403.dds"
 		}
 	}
 	GF_doll_023 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_aat52.dds"
+			"gfx/models/portraits/doll/pic_AAT52.dds"
 		}
 	}
 	GF_doll_024 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_acr.dds"
+			"gfx/models/portraits/doll/pic_ACR.dds"
 			"gfx/models/portraits/doll/pic_ACR_5401.dds"
 			"gfx/models/portraits/doll/pic_ACR_7401.dds"
 		}
@@ -208,45 +227,47 @@ portraits = {
 	GF_doll_025 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ads.dds"
+			"gfx/models/portraits/doll/pic_ADS.dds"
 			"gfx/models/portraits/doll/pic_ADS_3601.dds"
 		}
 	}
 	GF_doll_026 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_aek999.dds"
+			"gfx/models/portraits/doll/pic_AEK999.dds"
 			"gfx/models/portraits/doll/pic_AEK999_1505.dds"
 		}
 	}
 	GF_doll_027 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ak12.dds"
-			"gfx/models/portraits/doll/pic_AK12_1.dds"
+			"gfx/models/portraits/doll/pic_AK12.dds"
+			"gfx/models/portraits/doll/pic_AK12Mod.dds"
 			"gfx/models/portraits/doll/pic_AK12_2402.dds"
 			"gfx/models/portraits/doll/pic_AK12_3302.dds"
+			"gfx/models/portraits/doll/pic_AK12_540.dds"
+			"gfx/models/portraits/doll/pic_AK12_8605.dds"
 		}
 	}
 	GF_doll_028 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_AK15.dds"
-			"gfx/models/portraits/doll/pic_AK15_1.dds"
-			"gfx/models/portraits/doll/pic_AK15_Mod.dds"
+			"gfx/models/portraits/doll/pic_AK15Mod.dds"
+			"gfx/models/portraits/doll/pic_AK15_8607.dds"
 		}
 	}
 	GF_doll_029 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ak47.dds"
+			"gfx/models/portraits/doll/pic_AK47.dds"
 			"gfx/models/portraits/doll/pic_AK47_501.dds"
 		}
 	}
 	GF_doll_030 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ak5.dds"
+			"gfx/models/portraits/doll/pic_Ak5.dds"
 			"gfx/models/portraits/doll/pic_Ak5_4707.dds"
 			"gfx/models/portraits/doll/pic_Ak5_7704.dds"
 		}
@@ -254,28 +275,28 @@ portraits = {
 	GF_doll_031 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ak74m.dds"
+			"gfx/models/portraits/doll/pic_AK74M.dds"
 			"gfx/models/portraits/doll/pic_AK74M_7305.dds"
 		}
 	}
 	GF_doll_032 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ak74u.dds"
+			"gfx/models/portraits/doll/pic_AK74U.dds"
 			"gfx/models/portraits/doll/pic_AK74U_3002.dds"
 		}
 	}
 	GF_doll_033 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_akalfa.dds"
+			"gfx/models/portraits/doll/pic_AKAlfa.dds"
 			"gfx/models/portraits/doll/pic_AKAlfa_4601.dds"
 		}
 	}
 	GF_doll_034 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ameli.dds"
+			"gfx/models/portraits/doll/pic_Ameli.dds"
 			"gfx/models/portraits/doll/pic_Ameli_1605.dds"
 			"gfx/models/portraits/doll/pic_Ameli_2409.dds"
 		}
@@ -284,16 +305,18 @@ portraits = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_AN94.dds"
-			"gfx/models/portraits/doll/pic_AN94_1.dds"
+			"gfx/models/portraits/doll/pic_AN94Mod.dds"
 			"gfx/models/portraits/doll/pic_AN94_2404.dds"
 			"gfx/models/portraits/doll/pic_AN94_3303.dds"
-			"gfx/models/portraits/doll/pic_AN94_Mod.dds"
+			"gfx/models/portraits/doll/pic_AN94_8606.dds"
 		}
 	}
 	GF_doll_036 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_apc556.dds"
+			"gfx/models/portraits/doll/pic_APC556.dds"
+			"gfx/models/portraits/doll/pic_APC556_10005.dds"
+			"gfx/models/portraits/doll/pic_APC556_10704.dds"
 			"gfx/models/portraits/doll/pic_APC556_8007.dds"
 		}
 	}
@@ -306,79 +329,87 @@ portraits = {
 	GF_doll_038 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_aps.dds"
+			"gfx/models/portraits/doll/pic_APS.dds"
+			"gfx/models/portraits/doll/pic_APSMod.dds"
 			"gfx/models/portraits/doll/pic_APS_4306.dds"
 			"gfx/models/portraits/doll/pic_APS_6808.dds"
-			"gfx/models/portraits/doll/pic_APS_Mod.dds"
+			"gfx/models/portraits/doll/pic_APS_8805.dds"
 		}
 	}
 	GF_doll_039 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_AR.dds"
-			"gfx/models/portraits/doll/pic_AR_Mod.dds"
+			"gfx/models/portraits/doll/pic_ARMod.dds"
 		}
 	}
 	GF_doll_040 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_AR15.dds"
+			"gfx/models/portraits/doll/pic_AR15Mod.dds"
+			"gfx/models/portraits/doll/pic_AR15_10906.dds"
 			"gfx/models/portraits/doll/pic_AR15_4508.dds"
 			"gfx/models/portraits/doll/pic_AR15_532.dds"
 			"gfx/models/portraits/doll/pic_AR15_552.dds"
 			"gfx/models/portraits/doll/pic_AR15_701.dds"
-			"gfx/models/portraits/doll/pic_AR15_Mod.dds"
+			"gfx/models/portraits/doll/pic_AR15_8903.dds"
 		}
 	}
 	GF_doll_041 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_AR18.dds"
+			"gfx/models/portraits/doll/pic_AR18_8504.dds"
 		}
 	}
 	GF_doll_042 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ar57.dds"
+			"gfx/models/portraits/doll/pic_AR57.dds"
 			"gfx/models/portraits/doll/pic_AR57_6705.dds"
 		}
 	}
 	GF_doll_043 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ar70.dds"
+			"gfx/models/portraits/doll/pic_AR70.dds"
 		}
 	}
 	GF_doll_044 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_art556.dds"
+			"gfx/models/portraits/doll/pic_ART556.dds"
+			"gfx/models/portraits/doll/pic_ART556_1803.dds"
+			"gfx/models/portraits/doll/pic_ART556_2803.dds"
 		}
 	}
 	GF_doll_045 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_arx160.dds"
+			"gfx/models/portraits/doll/pic_ARX160.dds"
 		}
 	}
 	GF_doll_046 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ash127.dds"
+			"gfx/models/portraits/doll/pic_Ash127.dds"
 		}
 	}
 	GF_doll_047 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_ASVAL.dds"
+			"gfx/models/portraits/doll/pic_ASVALMod.dds"
+			"gfx/models/portraits/doll/pic_ASVAL_10106.dds"
 			"gfx/models/portraits/doll/pic_ASVAL_2907.dds"
-			"gfx/models/portraits/doll/pic_ASVAL_Mod.dds"
 		}
 	}
 	GF_doll_048 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_aug.dds"
+			"gfx/models/portraits/doll/pic_AUG.dds"
+			"gfx/models/portraits/doll/pic_AUG_10701.dds"
 			"gfx/models/portraits/doll/pic_AUG_4802.dds"
 			"gfx/models/portraits/doll/pic_AUG_8103.dds"
 		}
@@ -386,7 +417,8 @@ portraits = {
 	GF_doll_049 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_augpara.dds"
+			"gfx/models/portraits/doll/pic_AUGPARA.dds"
+			"gfx/models/portraits/doll/pic_AUGPARA_10604.dds"
 			"gfx/models/portraits/doll/pic_AUGPARA_5503.dds"
 			"gfx/models/portraits/doll/pic_AUGPARA_561.dds"
 			"gfx/models/portraits/doll/pic_AUGPARA_579.dds"
@@ -396,424 +428,471 @@ portraits = {
 	GF_doll_050 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ballista.dds"
+			"gfx/models/portraits/doll/pic_Ballista.dds"
 		}
 	}
 	GF_doll_051 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_bm59.dds"
+			"gfx/models/portraits/doll/pic_Beowulf.dds"
 		}
 	}
 	GF_doll_052 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_brenmk.dds"
-			"gfx/models/portraits/doll/pic_BrenMK_2605.dds"
-			"gfx/models/portraits/doll/pic_BrenMK_Mod.dds"
+			"gfx/models/portraits/doll/pic_BM59.dds"
 		}
 	}
 	GF_doll_053 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_brenten.dds"
-			"gfx/models/portraits/doll/pic_BrenTen_7809.dds"
+			"gfx/models/portraits/doll/pic_BoysAntiTank.dds"
+			"gfx/models/portraits/doll/pic_BoysAntiTank_11001.dds"
 		}
 	}
 	GF_doll_054 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_browninghp.dds"
+			"gfx/models/portraits/doll/pic_BrenMK.dds"
+			"gfx/models/portraits/doll/pic_BrenMKMod.dds"
+			"gfx/models/portraits/doll/pic_BrenMK_2605.dds"
 		}
 	}
 	GF_doll_055 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_c14.dds"
-			"gfx/models/portraits/doll/pic_C14_7004.dds"
+			"gfx/models/portraits/doll/pic_BrenTen.dds"
+			"gfx/models/portraits/doll/pic_BrenTen_7809.dds"
 		}
 	}
 	GF_doll_056 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_c93.dds"
-			"gfx/models/portraits/doll/pic_C93_5801.dds"
+			"gfx/models/portraits/doll/pic_BrowningHP.dds"
 		}
 	}
 	GF_doll_057 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_c96.dds"
-			"gfx/models/portraits/doll/pic_C96_Mod.dds"
+			"gfx/models/portraits/doll/pic_C14.dds"
+			"gfx/models/portraits/doll/pic_C14_10006.dds"
+			"gfx/models/portraits/doll/pic_C14_10907.dds"
+			"gfx/models/portraits/doll/pic_C14_7004.dds"
 		}
 	}
 	GF_doll_058 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_car.dds"
+			"gfx/models/portraits/doll/pic_C93.dds"
+			"gfx/models/portraits/doll/pic_C93_5801.dds"
 		}
 	}
 	GF_doll_059 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_carcano1891.dds"
-			"gfx/models/portraits/doll/pic_Carcano1891_2201.dds"
-			"gfx/models/portraits/doll/pic_Carcano1891_2905.dds"
+			"gfx/models/portraits/doll/pic_C96.dds"
+			"gfx/models/portraits/doll/pic_C96Mod.dds"
+			"gfx/models/portraits/doll/pic_C96_8405.dds"
 		}
 	}
 	GF_doll_060 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_carcano1938.dds"
-			"gfx/models/portraits/doll/pic_Carcano1938_2202.dds"
-			"gfx/models/portraits/doll/pic_Carcano1938_2904.dds"
+			"gfx/models/portraits/doll/Pic_CAR.dds"
 		}
 	}
 	GF_doll_061 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cbjms.dds"
-			"gfx/models/portraits/doll/pic_CBJMS_2205.dds"
-			"gfx/models/portraits/doll/pic_CBJMS_3503.dds"
+			"gfx/models/portraits/doll/pic_Carcano1891.dds"
+			"gfx/models/portraits/doll/pic_Carcano1891_2201.dds"
+			"gfx/models/portraits/doll/pic_Carcano1891_2905.dds"
 		}
 	}
 	GF_doll_062 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cetme556.dds"
-			"gfx/models/portraits/doll/pic_CETME556_3809.dds"
-			"gfx/models/portraits/doll/pic_CETME556_6306.dds"
+			"gfx/models/portraits/doll/pic_Carcano1938.dds"
+			"gfx/models/portraits/doll/pic_Carcano1938_2202.dds"
+			"gfx/models/portraits/doll/pic_Carcano1938_2904.dds"
 		}
 	}
 	GF_doll_063 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_chauchatm1915.dds"
+			"gfx/models/portraits/doll/pic_CBJMS.dds"
+			"gfx/models/portraits/doll/pic_CBJMS_2205.dds"
+			"gfx/models/portraits/doll/pic_CBJMS_3503.dds"
+			"gfx/models/portraits/doll/pic_CBJMS_6403.dds"
 		}
 	}
 	GF_doll_064 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_CMR30.dds"
+			"gfx/models/portraits/doll/pic_CETME556.dds"
+			"gfx/models/portraits/doll/pic_CETME556_3809.dds"
+			"gfx/models/portraits/doll/pic_CETME556_6306.dds"
 		}
 	}
 	GF_doll_065 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_coltdefender.dds"
-			"gfx/models/portraits/doll/pic_ColtDefender_5505.dds"
-			"gfx/models/portraits/doll/pic_ColtDefender_7104.dds"
+			"gfx/models/portraits/doll/pic_ChauchatM1915.dds"
 		}
 	}
 	GF_doll_066 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_coltscw.dds"
+			"gfx/models/portraits/doll/pic_CM901.dds"
 		}
 	}
 	GF_doll_067 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ColtWalker.dds"
+			"gfx/models/portraits/doll/pic_CMR30.dds"
 		}
 	}
 	GF_doll_068 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_contender.dds"
-			"gfx/models/portraits/doll/pic_Contender_1502.dds"
-			"gfx/models/portraits/doll/pic_Contender_2302.dds"
-			"gfx/models/portraits/doll/pic_Contender_3201.dds"
+			"gfx/models/portraits/doll/pic_ColtDefender.dds"
+			"gfx/models/portraits/doll/pic_ColtDefender_5505.dds"
+			"gfx/models/portraits/doll/pic_ColtDefender_7104.dds"
 		}
 	}
 	GF_doll_069 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cr21.dds"
+			"gfx/models/portraits/doll/pic_ColtSCW.dds"
 		}
 	}
 	GF_doll_070 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cx4storm.dds"
-			"gfx/models/portraits/doll/pic_Cx4Storm_6606.dds"
+			"gfx/models/portraits/doll/pic_ColtWalker.dds"
+			"gfx/models/portraits/doll/pic_ColtWalker_10302.dds"
 		}
 	}
 	GF_doll_071 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cz100.dds"
+			"gfx/models/portraits/doll/pic_Contender.dds"
+			"gfx/models/portraits/doll/pic_Contender_1502.dds"
+			"gfx/models/portraits/doll/pic_Contender_2302.dds"
+			"gfx/models/portraits/doll/pic_Contender_3201.dds"
 		}
 	}
 	GF_doll_072 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cz2000.dds"
+			"gfx/models/portraits/doll/pic_CR21.dds"
+			"gfx/models/portraits/doll/pic_CR21Mod.dds"
 		}
 	}
 	GF_doll_073 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cz52.dds"
-			"gfx/models/portraits/doll/pic_CZ52_3007.dds"
+			"gfx/models/portraits/doll/pic_Cx4Storm.dds"
+			"gfx/models/portraits/doll/pic_Cx4Storm_6606.dds"
 		}
 	}
 	GF_doll_074 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cz75.dds"
-			"gfx/models/portraits/doll/pic_CZ75_1604.dds"
-			"gfx/models/portraits/doll/pic_CZ75_3005.dds"
-			"gfx/models/portraits/doll/pic_CZ75_7001.dds"
+			"gfx/models/portraits/doll/pic_CZ100.dds"
 		}
 	}
 	GF_doll_075 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_cz805.dds"
-			"gfx/models/portraits/doll/pic_CZ805_5807.dds"
+			"gfx/models/portraits/doll/pic_CZ2000.dds"
 		}
 	}
 	GF_doll_076 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_danuvia43m.dds"
+			"gfx/models/portraits/doll/pic_CZ52.dds"
+			"gfx/models/portraits/doll/pic_CZ52_10307.dds"
+			"gfx/models/portraits/doll/pic_CZ52_3007.dds"
 		}
 	}
 	GF_doll_077 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_delisle.dds"
-			"gfx/models/portraits/doll/pic_Delisle_6202.dds"
+			"gfx/models/portraits/doll/pic_CZ75.dds"
+			"gfx/models/portraits/doll/pic_CZ75_1604.dds"
+			"gfx/models/portraits/doll/pic_CZ75_3005.dds"
+			"gfx/models/portraits/doll/pic_CZ75_7001.dds"
 		}
 	}
 	GF_doll_078 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_derringer.dds"
+			"gfx/models/portraits/doll/pic_CZ805.dds"
+			"gfx/models/portraits/doll/pic_CZ805_5807.dds"
 		}
 	}
 	GF_doll_079 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_deserteagle.dds"
-			"gfx/models/portraits/doll/pic_DesertEagle_6501.dds"
-			"gfx/models/portraits/doll/pic_DesertEagle_8302.dds"
+			"gfx/models/portraits/doll/pic_Danuvia43M.dds"
 		}
 	}
 	GF_doll_080 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_dp12.dds"
-			"gfx/models/portraits/doll/pic_DP12_4201.dds"
-			"gfx/models/portraits/doll/pic_DP12_4901.dds"
-			"gfx/models/portraits/doll/pic_DP12_6102.dds"
-			"gfx/models/portraits/doll/pic_DP12_8101.dds"
-			"gfx/models/portraits/doll/pic_DP12_9999.dds"
-			"gfx/models/portraits/doll/pic_DP12_Mod.dds"
+			"gfx/models/portraits/doll/pic_Delisle.dds"
+			"gfx/models/portraits/doll/pic_Delisle_10504.dds"
+			"gfx/models/portraits/doll/pic_Delisle_6202.dds"
+			"gfx/models/portraits/doll/pic_Delisle_7801.dds"
 		}
 	}
 	GF_doll_081 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_dp28.dds"
+			"gfx/models/portraits/doll/pic_Derringer.dds"
 		}
 	}
 	GF_doll_082 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_dsr50.dds"
-			"gfx/models/portraits/doll/pic_DSR50_1801.dds"
-			"gfx/models/portraits/doll/pic_DSR50_2101.dds"
+			"gfx/models/portraits/doll/pic_DesertEagle.dds"
+			"gfx/models/portraits/doll/pic_DesertEagle_6501.dds"
 		}
 	}
 	GF_doll_083 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_dtasrs.dds"
+			"gfx/models/portraits/doll/pic_DP12.dds"
+			"gfx/models/portraits/doll/pic_DP12Mod.dds"
+			"gfx/models/portraits/doll/pic_DP12_4201.dds"
+			"gfx/models/portraits/doll/pic_DP12_4901.dds"
+			"gfx/models/portraits/doll/pic_DP12_6102.dds"
+			"gfx/models/portraits/doll/pic_DP12_8101.dds"
+			"gfx/models/portraits/doll/pic_DP12_8601.dds"
 		}
 	}
 	GF_doll_084 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_em2.dds"
-			"gfx/models/portraits/doll/pic_EM2_5706.dds"
+			"gfx/models/portraits/doll/pic_DP28.dds"
 		}
 	}
 	GF_doll_085 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_Erma.dds"
-			"gfx/models/portraits/doll/pic_Erma_8003.dds"
+			"gfx/models/portraits/doll/pic_DSR50.dds"
+			"gfx/models/portraits/doll/pic_DSR50_10501.dds"
+			"gfx/models/portraits/doll/pic_DSR50_1801.dds"
+			"gfx/models/portraits/doll/pic_DSR50_2101.dds"
 		}
 	}
 	GF_doll_086 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_evo3.dds"
+			"gfx/models/portraits/doll/pic_DTASRS.dds"
+		}
+	}
+	GF_doll_087 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_EM2.dds"
+			"gfx/models/portraits/doll/pic_EM2Mod.dds"
+			"gfx/models/portraits/doll/pic_EM2_5706.dds"
+		}
+	}
+	GF_doll_088 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Erma.dds"
+			"gfx/models/portraits/doll/pic_Erma_10201.dds"
+			"gfx/models/portraits/doll/pic_Erma_11101.dds"
+			"gfx/models/portraits/doll/pic_Erma_8003.dds"
+		}
+	}
+	GF_doll_089 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_EVO3.dds"
+			"gfx/models/portraits/doll/pic_EVO3Mod.dds"
 			"gfx/models/portraits/doll/pic_EVO3_2109.dds"
 			"gfx/models/portraits/doll/pic_EVO3_4607.dds"
 			"gfx/models/portraits/doll/pic_EVO3_5408.dds"
 			"gfx/models/portraits/doll/pic_EVO3_7307.dds"
 		}
 	}
-	GF_doll_087 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_F1.dds"
-			"gfx/models/portraits/doll/pic_F1_2606.dds"
-			"gfx/models/portraits/doll/pic_F1_Mod.dds"
-		}
-	}
-	GF_doll_088 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_f2000.dds"
-		}
-	}
-	GF_doll_089 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_falcon.dds"
-			"gfx/models/portraits/doll/pic_Falcon_4107.dds"
-			"gfx/models/portraits/doll/pic_Falcon_6908.dds"
-		}
-	}
 	GF_doll_090 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_famas.dds"
-			"gfx/models/portraits/doll/pic_FAMAS_2604.dds"
+			"gfx/models/portraits/doll/pic_F1.dds"
+			"gfx/models/portraits/doll/pic_F1Mod.dds"
+			"gfx/models/portraits/doll/pic_F1_2606.dds"
 		}
 	}
 	GF_doll_091 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fara83.dds"
+			"gfx/models/portraits/doll/pic_F2000.dds"
 		}
 	}
 	GF_doll_092 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fedorov.dds"
+			"gfx/models/portraits/doll/pic_Falcon.dds"
+			"gfx/models/portraits/doll/pic_FalconMod.dds"
+			"gfx/models/portraits/doll/pic_Falcon_11106.dds"
+			"gfx/models/portraits/doll/pic_Falcon_4107.dds"
+			"gfx/models/portraits/doll/pic_Falcon_6908.dds"
+			"gfx/models/portraits/doll/pic_Falcon_8908.dds"
 		}
 	}
 	GF_doll_093 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fg42.dds"
+			"gfx/models/portraits/doll/pic_FAMAS.dds"
+			"gfx/models/portraits/doll/pic_FAMAS_2604.dds"
 		}
 	}
 	GF_doll_094 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fmg9.dds"
+			"gfx/models/portraits/doll/pic_FARA83.dds"
 		}
 	}
 	GF_doll_095 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_FN49.dds"
-			"gfx/models/portraits/doll/pic_FN49_4709.dds"
-			"gfx/models/portraits/doll/pic_FN49_6809.dds"
-			"gfx/models/portraits/doll/pic_FN49_Mod.dds"
+			"gfx/models/portraits/doll/pic_Fedorov.dds"
+			"gfx/models/portraits/doll/pic_Fedorov_10305.dds"
 		}
 	}
 	GF_doll_096 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fn57.dds"
+			"gfx/models/portraits/doll/pic_FG42.dds"
+		}
+	}
+	GF_doll_097 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_FM24.dds"
+			"gfx/models/portraits/doll/pic_FM24_10801.dds"
+		}
+	}
+	GF_doll_098 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_FMG9.dds"
+		}
+	}
+	GF_doll_099 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_FN49.dds"
+			"gfx/models/portraits/doll/pic_FN49Mod.dds"
+		}
+	}
+	GF_doll_100 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_FN57.dds"
 			"gfx/models/portraits/doll/pic_FN57_1109.dds"
 			"gfx/models/portraits/doll/pic_FN57_1902.dds"
 			"gfx/models/portraits/doll/pic_FN57_2203.dds"
 			"gfx/models/portraits/doll/pic_FN57_2805.dds"
 		}
 	}
-	GF_doll_097 = {
+	GF_doll_101 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fnfal.dds"
+			"gfx/models/portraits/doll/pic_FNFAL.dds"
 			"gfx/models/portraits/doll/pic_FNFAL_2406.dds"
 			"gfx/models/portraits/doll/pic_FNFAL_308.dds"
 			"gfx/models/portraits/doll/pic_FNFAL_607.dds"
 		}
 	}
-	GF_doll_098 = {
+	GF_doll_102 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fnfnc.dds"
+			"gfx/models/portraits/doll/pic_FNFNC.dds"
 			"gfx/models/portraits/doll/pic_FNFNC_1406.dds"
 			"gfx/models/portraits/doll/pic_FNFNC_4308.dds"
 			"gfx/models/portraits/doll/pic_FNFNC_6608.dds"
 		}
 	}
-	GF_doll_099 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_fnp9.dds"
-		}
-	}
-	GF_doll_100 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_fnspr.dds"
-		}
-	}
-	GF_doll_101 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_fo12.dds"
-		}
-	}
-	GF_doll_102 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_fp6.dds"
-		}
-	}
 	GF_doll_103 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_fx05.dds"
-			"gfx/models/portraits/doll/pic_FX05_5806.dds"
-			"gfx/models/portraits/doll/pic_FX05_7002.dds"
-			"gfx/models/portraits/doll/pic_FX05_7904.dds"
+			"gfx/models/portraits/doll/pic_FNP9.dds"
 		}
 	}
 	GF_doll_104 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_G11.dds"
-			"gfx/models/portraits/doll/pic_G11_1602.dds"
-			"gfx/models/portraits/doll/pic_G11_2502.dds"
-			"gfx/models/portraits/doll/pic_G11_4102.dds"
-			"gfx/models/portraits/doll/pic_G11_572.dds"
-			"gfx/models/portraits/doll/pic_G11_582.dds"
-			"gfx/models/portraits/doll/pic_G11_maid.dds"
-			"gfx/models/portraits/doll/pic_G11_Mod.dds"
+			"gfx/models/portraits/doll/pic_FNSPR.dds"
 		}
 	}
 	GF_doll_105 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_g28.dds"
-			"gfx/models/portraits/doll/pic_G28_1104.dds"
-			"gfx/models/portraits/doll/pic_G28_2304.dds"
-			"gfx/models/portraits/doll/pic_G28_3307.dds"
+			"gfx/models/portraits/doll/pic_FO12.dds"
+			"gfx/models/portraits/doll/pic_FO12_10406.dds"
 		}
 	}
 	GF_doll_106 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_G3.dds"
-			"gfx/models/portraits/doll/pic_G3_1303.dds"
-			"gfx/models/portraits/doll/pic_G3_Mod.dds"
+			"gfx/models/portraits/doll/pic_FP6.dds"
 		}
 	}
 	GF_doll_107 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
+			"gfx/models/portraits/doll/pic_FX05.dds"
+			"gfx/models/portraits/doll/pic_FX05_5806.dds"
+			"gfx/models/portraits/doll/pic_FX05_7002.dds"
+			"gfx/models/portraits/doll/pic_FX05_7904.dds"
+		}
+	}
+	GF_doll_108 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_G11.dds"
+			"gfx/models/portraits/doll/pic_G11Mod.dds"
+			"gfx/models/portraits/doll/pic_G11_1602.dds"
+			"gfx/models/portraits/doll/pic_G11_2502.dds"
+			"gfx/models/portraits/doll/pic_G11_4102.dds"
+			"gfx/models/portraits/doll/pic_G11_538.dds"
+			"gfx/models/portraits/doll/pic_G11_572.dds"
+			"gfx/models/portraits/doll/pic_G11_582.dds"
+			"gfx/models/portraits/doll/pic_G11_8401.dds"
+			"gfx/models/portraits/doll/pic_G11_9.dds"
+		}
+	}
+	GF_doll_109 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_G28.dds"
+			"gfx/models/portraits/doll/pic_G28_1104.dds"
+			"gfx/models/portraits/doll/pic_G28_2304.dds"
+			"gfx/models/portraits/doll/pic_G28_3307.dds"
+			"gfx/models/portraits/doll/pic_G28_8704.dds"
+		}
+	}
+	GF_doll_110 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_G3.dds"
+			"gfx/models/portraits/doll/pic_G3Mod.dds"
+			"gfx/models/portraits/doll/pic_G3_10209.dds"
+			"gfx/models/portraits/doll/pic_G3_1303.dds"
+		}
+	}
+	GF_doll_111 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
 			"gfx/models/portraits/doll/pic_G36.dds"
+			"gfx/models/portraits/doll/pic_G36Mod.dds"
 			"gfx/models/portraits/doll/pic_G36_1507.dds"
 			"gfx/models/portraits/doll/pic_G36_1904.dds"
 			"gfx/models/portraits/doll/pic_G36_2407.dds"
@@ -822,114 +901,120 @@ portraits = {
 			"gfx/models/portraits/doll/pic_G36_565.dds"
 			"gfx/models/portraits/doll/pic_G36_6807.dds"
 			"gfx/models/portraits/doll/pic_G36_905.dds"
-			"gfx/models/portraits/doll/pic_G36_coffee.dds"
-			"gfx/models/portraits/doll/pic_G36_Mod.dds"
-		}
-	}
-	GF_doll_108 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_G36C.dds"
-			"gfx/models/portraits/doll/pic_G36C_1202.dds"
-			"gfx/models/portraits/doll/pic_G36C_3103.dds"
-			"gfx/models/portraits/doll/pic_G36C_3802.dds"
-			"gfx/models/portraits/doll/pic_G36C_5201.dds"
-			"gfx/models/portraits/doll/pic_G36C_Mod.dds"
-		}
-	}
-	GF_doll_109 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_g41.dds"
-			"gfx/models/portraits/doll/pic_G41_2401.dds"
-			"gfx/models/portraits/doll/pic_G41_7406.dds"
-		}
-	}
-	GF_doll_110 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_g43.dds"
-			"gfx/models/portraits/doll/pic_G43_7607.dds"
-		}
-	}
-	GF_doll_111 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_generalliu.dds"
-			"gfx/models/portraits/doll/pic_GeneralLiu_563.dds"
-			"gfx/models/portraits/doll/pic_GeneralLiu_7701.dds"
 		}
 	}
 	GF_doll_112 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_GepardM1.dds"
-			"gfx/models/portraits/doll/pic_GepardM1_2305.dds"
-			"gfx/models/portraits/doll/pic_GepardM1_3107.dds"
-			"gfx/models/portraits/doll/pic_GepardM1_4006.dds"
-			"gfx/models/portraits/doll/pic_GepardM1_Mod.dds"
+			"gfx/models/portraits/doll/pic_G36C.dds"
+			"gfx/models/portraits/doll/pic_G36CMod.dds"
+			"gfx/models/portraits/doll/pic_G36C_1202.dds"
+			"gfx/models/portraits/doll/pic_G36C_3103.dds"
+			"gfx/models/portraits/doll/pic_G36C_3802.dds"
+			"gfx/models/portraits/doll/pic_G36C_5201.dds"
 		}
 	}
 	GF_doll_113 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_glock17.dds"
+			"gfx/models/portraits/doll/pic_G41.dds"
+			"gfx/models/portraits/doll/pic_G41_2401.dds"
+			"gfx/models/portraits/doll/pic_G41_7406.dds"
 		}
 	}
 	GF_doll_114 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_gm6lynx.dds"
+			"gfx/models/portraits/doll/pic_G43.dds"
+			"gfx/models/portraits/doll/pic_G43_10210.dds"
+			"gfx/models/portraits/doll/pic_G43_7607.dds"
 		}
 	}
 	GF_doll_115 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_grizzly.dds"
-			"gfx/models/portraits/doll/pic_Grizzly_105.dds"
-			"gfx/models/portraits/doll/pic_Grizzly_2102.dds"
-			"gfx/models/portraits/doll/pic_Grizzly_4303.dds"
-			"gfx/models/portraits/doll/pic_Grizzly_903.dds"
+			"gfx/models/portraits/doll/pic_GeneralLiu.dds"
+			"gfx/models/portraits/doll/pic_GeneralLiu_10204.dds"
+			"gfx/models/portraits/doll/pic_GeneralLiu_563.dds"
+			"gfx/models/portraits/doll/pic_GeneralLiu_7701.dds"
+			"gfx/models/portraits/doll/pic_GeneralLiu_8703.dds"
 		}
 	}
 	GF_doll_116 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_GSH18.dds"
-			"gfx/models/portraits/doll/pic_GSH18_523.dds"
-			"gfx/models/portraits/doll/pic_GSH18_Mod.dds"
+			"gfx/models/portraits/doll/pic_GepardM1.dds"
+			"gfx/models/portraits/doll/pic_GepardM1Mod.dds"
+			"gfx/models/portraits/doll/pic_GepardM1_2305.dds"
+			"gfx/models/portraits/doll/pic_GepardM1_3107.dds"
 		}
 	}
 	GF_doll_117 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hezism1.dds"
+			"gfx/models/portraits/doll/pic_Glock17.dds"
 		}
 	}
 	GF_doll_118 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hk21.dds"
-			"gfx/models/portraits/doll/pic_HK21_2701.dds"
-			"gfx/models/portraits/doll/pic_HK21_4002.dds"
+			"gfx/models/portraits/doll/pic_Gm6Lynx.dds"
 		}
 	}
 	GF_doll_119 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hk23.dds"
+			"gfx/models/portraits/doll/pic_Grizzly.dds"
+			"gfx/models/portraits/doll/pic_Grizzly_105.dds"
+			"gfx/models/portraits/doll/pic_Grizzly_2102.dds"
+			"gfx/models/portraits/doll/pic_Grizzly_4303.dds"
+			"gfx/models/portraits/doll/pic_Grizzly_8603.dds"
+			"gfx/models/portraits/doll/pic_Grizzly_903.dds"
 		}
 	}
 	GF_doll_120 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hk33.dds"
+			"gfx/models/portraits/doll/pic_GSH18.dds"
+			"gfx/models/portraits/doll/pic_GSH18Mod.dds"
+			"gfx/models/portraits/doll/pic_GSH18_523.dds"
 		}
 	}
 	GF_doll_121 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
+			"gfx/models/portraits/doll/pic_HEZISM1.dds"
+		}
+	}
+	GF_doll_122 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_HK21.dds"
+			"gfx/models/portraits/doll/pic_HK21_10401.dds"
+			"gfx/models/portraits/doll/pic_HK21_2701.dds"
+			"gfx/models/portraits/doll/pic_HK21_4002.dds"
+		}
+	}
+	GF_doll_123 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_HK23.dds"
+		}
+	}
+	GF_doll_124 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_HK33.dds"
+		}
+	}
+	GF_doll_125 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
 			"gfx/models/portraits/doll/pic_HK416.dds"
+			"gfx/models/portraits/doll/pic_HK416Agent.dds"
+			"gfx/models/portraits/doll/pic_HK416Agent_546.dds"
+			"gfx/models/portraits/doll/pic_HK416Mod.dds"
+			"gfx/models/portraits/doll/pic_HK416_10203.dds"
 			"gfx/models/portraits/doll/pic_HK416_3401.dds"
 			"gfx/models/portraits/doll/pic_HK416_537.dds"
 			"gfx/models/portraits/doll/pic_HK416_548.dds"
@@ -937,1037 +1022,1125 @@ portraits = {
 			"gfx/models/portraits/doll/pic_HK416_581.dds"
 			"gfx/models/portraits/doll/pic_HK416_6505.dds"
 			"gfx/models/portraits/doll/pic_HK416_805.dds"
-			"gfx/models/portraits/doll/pic_HK416_Agent.dds"
-			"gfx/models/portraits/doll/pic_HK416_Agent546.dds"
-			"gfx/models/portraits/doll/pic_HK416_Mod.dds"
-		}
-	}
-	GF_doll_122 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_hk45.dds"
-			"gfx/models/portraits/doll/pic_HK45_2705.dds"
-		}
-	}
-	GF_doll_123 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_hk512.dds"
-		}
-	}
-	GF_doll_124 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_hkcaws.dds"
-			"gfx/models/portraits/doll/pic_HKCAWS_4003.dds"
-			"gfx/models/portraits/doll/pic_HKCAWS_7503.dds"
-		}
-	}
-	GF_doll_125 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_howatype89.dds"
-			"gfx/models/portraits/doll/pic_HowaType89_6601.dds"
 		}
 	}
 	GF_doll_126 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hs2000.dds"
+			"gfx/models/portraits/doll/pic_HK433.dds"
+			"gfx/models/portraits/doll/pic_HK433_10202.dds"
+			"gfx/models/portraits/doll/pic_HK433_8502.dds"
 		}
 	}
 	GF_doll_127 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hs50.dds"
-			"gfx/models/portraits/doll/pic_HS50_6805.dds"
-			"gfx/models/portraits/doll/pic_HS50_7304.dds"
-			"gfx/models/portraits/doll/pic_HS50_8303.dds"
+			"gfx/models/portraits/doll/pic_HK45.dds"
+			"gfx/models/portraits/doll/pic_HK45_10007.dds"
+			"gfx/models/portraits/doll/pic_HK45_2705.dds"
 		}
 	}
 	GF_doll_128 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_hsm10.dds"
+			"gfx/models/portraits/doll/pic_HK512.dds"
 		}
 	}
 	GF_doll_129 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_IDW.dds"
-			"gfx/models/portraits/doll/pic_IDW_2108.dds"
+			"gfx/models/portraits/doll/pic_HKCAWS.dds"
+			"gfx/models/portraits/doll/pic_HKCAWS_4003.dds"
+			"gfx/models/portraits/doll/pic_HKCAWS_7503.dds"
 		}
 	}
 	GF_doll_130 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_insas.dds"
+			"gfx/models/portraits/doll/pic_HowaType89.dds"
+			"gfx/models/portraits/doll/pic_HowaType89_6601.dds"
 		}
 	}
 	GF_doll_131 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ithaca37.dds"
-			"gfx/models/portraits/doll/pic_Ithaca37_1105.dds"
-			"gfx/models/portraits/doll/pic_Ithaca37_5605.dds"
+			"gfx/models/portraits/doll/pic_HS2000.dds"
 		}
 	}
 	GF_doll_132 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_iws2000.dds"
-			"gfx/models/portraits/doll/pic_IWS2000_1403.dds"
-			"gfx/models/portraits/doll/pic_IWS2000_3004.dds"
+			"gfx/models/portraits/doll/pic_HS50.dds"
+			"gfx/models/portraits/doll/pic_HS50_10901.dds"
+			"gfx/models/portraits/doll/pic_HS50_6805.dds"
+			"gfx/models/portraits/doll/pic_HS50_7304.dds"
+			"gfx/models/portraits/doll/pic_HS50_8303.dds"
 		}
 	}
 	GF_doll_133 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_Jatimatic.dds"
+			"gfx/models/portraits/doll/pic_HSM10.dds"
 		}
 	}
 	GF_doll_134 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_jericho.dds"
+			"gfx/models/portraits/doll/pic_IDW.dds"
+			"gfx/models/portraits/doll/pic_IDWMod.dds"
+			"gfx/models/portraits/doll/pic_IDW_2108.dds"
+			"gfx/models/portraits/doll/pic_IDW_3205.dds"
 		}
 	}
 	GF_doll_135 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_js-127.dds"
-			"gfx/models/portraits/doll/pic_JS-127_1804.dds"
-			"gfx/models/portraits/doll/pic_JS-127_2702.dds"
+			"gfx/models/portraits/doll/pic_INSAS.dds"
 		}
 	}
 	GF_doll_136 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_js9mm.dds"
-			"gfx/models/portraits/doll/pic_JS9mm_4204.dds"
-			"gfx/models/portraits/doll/pic_JS9mm_4702.dds"
-			"gfx/models/portraits/doll/pic_JS9mm_7603.dds"
+			"gfx/models/portraits/doll/pic_Ithaca37.dds"
+			"gfx/models/portraits/doll/pic_Ithaca37_1105.dds"
+			"gfx/models/portraits/doll/pic_Ithaca37_5605.dds"
 		}
 	}
 	GF_doll_137 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k11.dds"
-			"gfx/models/portraits/doll/pic_K11_3402.dds"
+			"gfx/models/portraits/doll/pic_IWS2000.dds"
+			"gfx/models/portraits/doll/pic_IWS2000_1403.dds"
+			"gfx/models/portraits/doll/pic_IWS2000_3004.dds"
+			"gfx/models/portraits/doll/pic_IWS2000_7308.dds"
 		}
 	}
 	GF_doll_138 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k2.dds"
-			"gfx/models/portraits/doll/pic_K2_2001.dds"
-			"gfx/models/portraits/doll/pic_K2_3301.dds"
+			"gfx/models/portraits/doll/pic_Jatimatic.dds"
 		}
 	}
 	GF_doll_139 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k3.dds"
+			"gfx/models/portraits/doll/pic_Jericho.dds"
 		}
 	}
 	GF_doll_140 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k31.dds"
+			"gfx/models/portraits/doll/pic_JS9mm.dds"
+			"gfx/models/portraits/doll/pic_JS9mm_10802.dds"
+			"gfx/models/portraits/doll/pic_JS9mm_4204.dds"
+			"gfx/models/portraits/doll/pic_JS9mm_4702.dds"
+			"gfx/models/portraits/doll/pic_JS9mm_7603.dds"
 		}
 	}
 	GF_doll_141 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k5.dds"
-			"gfx/models/portraits/doll/pic_K5_2002.dds"
-			"gfx/models/portraits/doll/pic_K5_3308.dds"
-			"gfx/models/portraits/doll/pic_K5_5306.dds"
-			"gfx/models/portraits/doll/pic_K5_6905.dds"
-			"gfx/models/portraits/doll/pic_K5_Mod.dds"
+			"gfx/models/portraits/doll/pic_JS-127.dds"
+			"gfx/models/portraits/doll/pic_JS-127_1804.dds"
+			"gfx/models/portraits/doll/pic_JS-127_2702.dds"
 		}
 	}
 	GF_doll_142 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_k7.dds"
+			"gfx/models/portraits/doll/pic_K11.dds"
+			"gfx/models/portraits/doll/pic_K11_3402.dds"
 		}
 	}
 	GF_doll_143 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_kac.dds"
-			"gfx/models/portraits/doll/pic_KAC_4706.dds"
-			"gfx/models/portraits/doll/pic_KAC_6404.dds"
+			"gfx/models/portraits/doll/pic_K2.dds"
+			"gfx/models/portraits/doll/pic_K2_2001.dds"
+			"gfx/models/portraits/doll/pic_K2_3301.dds"
 		}
 	}
 	GF_doll_144 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_kgp9.dds"
+			"gfx/models/portraits/doll/pic_K3.dds"
 		}
 	}
 	GF_doll_145 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_kh2002.dds"
-			"gfx/models/portraits/doll/pic_KH2002_7602.dds"
-			"gfx/models/portraits/doll/pic_KH2002_8202.dds"
+			"gfx/models/portraits/doll/pic_K31.dds"
 		}
 	}
 	GF_doll_146 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_klin.dds"
-			"gfx/models/portraits/doll/pic_KLIN_1204.dds"
-			"gfx/models/portraits/doll/pic_KLIN_2003.dds"
+			"gfx/models/portraits/doll/pic_K5.dds"
+			"gfx/models/portraits/doll/pic_K5Mod.dds"
+			"gfx/models/portraits/doll/pic_K5_2002.dds"
+			"gfx/models/portraits/doll/pic_K5_3308.dds"
+			"gfx/models/portraits/doll/pic_K5_5306.dds"
+			"gfx/models/portraits/doll/pic_K5_6905.dds"
 		}
 	}
 	GF_doll_147 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_kolibri.dds"
-			"gfx/models/portraits/doll/pic_Kolibri_6802.dds"
+			"gfx/models/portraits/doll/pic_K7.dds"
 		}
 	}
 	GF_doll_148 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_kord.dds"
-			"gfx/models/portraits/doll/pic_Kord_8201.dds"
+			"gfx/models/portraits/doll/pic_KAC.dds"
+			"gfx/models/portraits/doll/pic_KAC_4706.dds"
+			"gfx/models/portraits/doll/pic_KAC_6404.dds"
 		}
 	}
 	GF_doll_149 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_KP31.dds"
-			"gfx/models/portraits/doll/pic_KP31_310.dds"
-			"gfx/models/portraits/doll/pic_KP31_Mod.dds"
+			"gfx/models/portraits/doll/pic_KH2002.dds"
+			"gfx/models/portraits/doll/pic_KH2002_10603.dds"
+			"gfx/models/portraits/doll/pic_KH2002_7602.dds"
+			"gfx/models/portraits/doll/pic_KH2002_8202.dds"
 		}
 	}
 	GF_doll_150 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ks23.dds"
+			"gfx/models/portraits/doll/pic_KLIN.dds"
+			"gfx/models/portraits/doll/pic_KLIN_1204.dds"
+			"gfx/models/portraits/doll/pic_KLIN_2003.dds"
 		}
 	}
 	GF_doll_151 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ksg.dds"
+			"gfx/models/portraits/doll/pic_Kolibri.dds"
+			"gfx/models/portraits/doll/pic_Kolibri_6802.dds"
 		}
 	}
 	GF_doll_152 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_KSVK.dds"
-			"gfx/models/portraits/doll/pic_KSVK_3405.dds"
-			"gfx/models/portraits/doll/pic_KSVK_3805.dds"
-			"gfx/models/portraits/doll/pic_KSVK_4509.dds"
-			"gfx/models/portraits/doll/pic_KSVK_5504.dds"
-			"gfx/models/portraits/doll/pic_KSVK_7807.dds"
-			"gfx/models/portraits/doll/pic_KSVK_Mod.dds"
+			"gfx/models/portraits/doll/pic_Kord.dds"
+			"gfx/models/portraits/doll/pic_Kord_5102.dds"
+			"gfx/models/portraits/doll/pic_Kord_8201.dds"
 		}
 	}
 	GF_doll_153 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_l85a1.dds"
+			"gfx/models/portraits/doll/pic_KP31.dds"
+			"gfx/models/portraits/doll/pic_KP31Mod.dds"
+			"gfx/models/portraits/doll/pic_KP31_1103.dds"
+			"gfx/models/portraits/doll/pic_KP31_310.dds"
+			"gfx/models/portraits/doll/pic_KP31_3101.dds"
 		}
 	}
 	GF_doll_154 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_LAMG.dds"
+			"gfx/models/portraits/doll/pic_KS23.dds"
 		}
 	}
 	GF_doll_155 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_lewis.dds"
-			"gfx/models/portraits/doll/pic_Lewis_3502.dds"
-			"gfx/models/portraits/doll/pic_Lewis_4001.dds"
-			"gfx/models/portraits/doll/pic_Lewis_5501.dds"
-			"gfx/models/portraits/doll/pic_Lewis_6901.dds"
-			"gfx/models/portraits/doll/pic_Lewis_9999.dds"
+			"gfx/models/portraits/doll/pic_KSG.dds"
 		}
 	}
 	GF_doll_156 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_liberator.dds"
+			"gfx/models/portraits/doll/pic_KSVK.dds"
+			"gfx/models/portraits/doll/pic_KSVKMod.dds"
+			"gfx/models/portraits/doll/pic_KSVK_3405.dds"
+			"gfx/models/portraits/doll/pic_KSVK_3805.dds"
+			"gfx/models/portraits/doll/pic_KSVK_4509.dds"
+			"gfx/models/portraits/doll/pic_KSVK_5504.dds"
+			"gfx/models/portraits/doll/pic_KSVK_7807.dds"
 		}
 	}
 	GF_doll_157 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ls26.dds"
+			"gfx/models/portraits/doll/pic_L85A1.dds"
 		}
 	}
 	GF_doll_158 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ltlx7000.dds"
-			"gfx/models/portraits/doll/pic_LTLX7000_6101.dds"
-			"gfx/models/portraits/doll/pic_LTLX7000_6702.dds"
+			"gfx/models/portraits/doll/pic_LAMG.dds"
+			"gfx/models/portraits/doll/pic_LAMG_10602.dds"
+			"gfx/models/portraits/doll/pic_LAMG_8505.dds"
 		}
 	}
 	GF_doll_159 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_lusa.dds"
-			"gfx/models/portraits/doll/pic_Lusa_5902.dds"
-			"gfx/models/portraits/doll/pic_Lusa_6703.dds"
-			"gfx/models/portraits/doll/pic_Lusa_7802.dds"
+			"gfx/models/portraits/doll/pic_Lewis.dds"
+			"gfx/models/portraits/doll/pic_Lewis_3502.dds"
+			"gfx/models/portraits/doll/pic_Lewis_4001.dds"
+			"gfx/models/portraits/doll/pic_Lewis_5501.dds"
+			"gfx/models/portraits/doll/pic_Lewis_6901.dds"
 		}
 	}
 	GF_doll_160 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_LWMMG.dds"
-			"gfx/models/portraits/doll/pic_LWMMG_1808.dds"
-			"gfx/models/portraits/doll/pic_LWMMG_4007.dds"
-			"gfx/models/portraits/doll/pic_LWMMG_6406.dds"
-			"gfx/models/portraits/doll/pic_LWMMG_6909.dds"
-			"gfx/models/portraits/doll/pic_LWMMG_Mod.dds"
+			"gfx/models/portraits/doll/pic_Liberator.dds"
+			"gfx/models/portraits/doll/pic_Liberator_595.dds"
 		}
 	}
 	GF_doll_161 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1.dds"
-			"gfx/models/portraits/doll/pic_M1_1106.dds"
-			"gfx/models/portraits/doll/pic_M1_6907.dds"
-			"gfx/models/portraits/doll/pic_M1_8309.dds"
+			"gfx/models/portraits/doll/pic_LS26.dds"
 		}
 	}
 	GF_doll_162 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1014.dds"
-			"gfx/models/portraits/doll/pic_M1014_2906.dds"
-			"gfx/models/portraits/doll/pic_M1014_4305.dds"
+			"gfx/models/portraits/doll/pic_LTLX7000.dds"
+			"gfx/models/portraits/doll/pic_LTLX7000_6101.dds"
+			"gfx/models/portraits/doll/pic_LTLX7000_6702.dds"
 		}
 	}
 	GF_doll_163 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M110.dds"
+			"gfx/models/portraits/doll/pic_Lusa.dds"
+			"gfx/models/portraits/doll/pic_Lusa_5902.dds"
+			"gfx/models/portraits/doll/pic_Lusa_6703.dds"
+			"gfx/models/portraits/doll/pic_Lusa_7802.dds"
+			"gfx/models/portraits/doll/pic_Lusa_8501.dds"
 		}
 	}
 	GF_doll_164 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m12.dds"
+			"gfx/models/portraits/doll/pic_LWMMG.dds"
+			"gfx/models/portraits/doll/pic_LWMMGMod.dds"
+			"gfx/models/portraits/doll/pic_LWMMG_1808.dds"
+			"gfx/models/portraits/doll/pic_LWMMG_4007.dds"
+			"gfx/models/portraits/doll/pic_LWMMG_6406.dds"
+			"gfx/models/portraits/doll/pic_LWMMG_6909.dds"
+			"gfx/models/portraits/doll/pic_LWMMG_8611.dds"
 		}
 	}
 	GF_doll_165 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M14.dds"
-			"gfx/models/portraits/doll/pic_M14_303.dds"
-			"gfx/models/portraits/doll/pic_M14_6707.dds"
-			"gfx/models/portraits/doll/pic_M14_Mod.dds"
+			"gfx/models/portraits/doll/pic_M1.dds"
+			"gfx/models/portraits/doll/pic_M1_10008.dds"
+			"gfx/models/portraits/doll/pic_M1_1106.dds"
+			"gfx/models/portraits/doll/pic_M1_6907.dds"
+			"gfx/models/portraits/doll/pic_M1_8309.dds"
 		}
 	}
 	GF_doll_166 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m16a1.dds"
-			"gfx/models/portraits/doll/pic_M16A1_533.dds"
-			"gfx/models/portraits/doll/pic_M16A1_554.dds"
+			"gfx/models/portraits/doll/pic_M1014.dds"
+			"gfx/models/portraits/doll/pic_M1014_2906.dds"
+			"gfx/models/portraits/doll/pic_M1014_4305.dds"
 		}
 	}
 	GF_doll_167 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M1873.dds"
-			"gfx/models/portraits/doll/pic_M1873_2105.dds"
-			"gfx/models/portraits/doll/pic_M1873_301.dds"
-			"gfx/models/portraits/doll/pic_M1873_Mod.dds"
+			"gfx/models/portraits/doll/pic_M110.dds"
+			"gfx/models/portraits/doll/pic_M110_10002.dds"
 		}
 	}
 	GF_doll_168 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1887.dds"
-			"gfx/models/portraits/doll/pic_M1887_2503.dds"
+			"gfx/models/portraits/doll/pic_M12.dds"
 		}
 	}
 	GF_doll_169 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1891.dds"
-			"gfx/models/portraits/doll/pic_M1891_4803.dds"
-			"gfx/models/portraits/doll/pic_M1891_803.dds"
-			"gfx/models/portraits/doll/pic_M1891_Mod.dds"
+			"gfx/models/portraits/doll/pic_M14.dds"
+			"gfx/models/portraits/doll/pic_M14Mod.dds"
+			"gfx/models/portraits/doll/pic_M14_303.dds"
+			"gfx/models/portraits/doll/pic_M14_6707.dds"
+			"gfx/models/portraits/doll/pic_M14_8705.dds"
 		}
 	}
 	GF_doll_170 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1895.dds"
-			"gfx/models/portraits/doll/pic_M1895_2706.dds"
-			"gfx/models/portraits/doll/pic_M1895_5309.dds"
-			"gfx/models/portraits/doll/pic_M1895_7107.dds"
-			"gfx/models/portraits/doll/pic_M1895_Mod.dds"
+			"gfx/models/portraits/doll/pic_M16A1.dds"
+			"gfx/models/portraits/doll/pic_M16A1_533.dds"
+			"gfx/models/portraits/doll/pic_M16A1_553.dds"
+			"gfx/models/portraits/doll/pic_M16A1_8904.dds"
 		}
 	}
 	GF_doll_171 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1895mg.dds"
+			"gfx/models/portraits/doll/pic_M1851N.dds"
+			"gfx/models/portraits/doll/pic_M1851N_11005.dds"
 		}
 	}
 	GF_doll_172 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M1897.dds"
-			"gfx/models/portraits/doll/pic_M1897_2505.dds"
-			"gfx/models/portraits/doll/pic_M1897_4805.dds"
-			"gfx/models/portraits/doll/pic_M1897_Mod.dds"
+			"gfx/models/portraits/doll/pic_M1873.dds"
+			"gfx/models/portraits/doll/pic_M1873Mod.dds"
+			"gfx/models/portraits/doll/pic_M1873_2105.dds"
+			"gfx/models/portraits/doll/pic_M1873_301.dds"
 		}
 	}
 	GF_doll_173 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1903.dds"
-			"gfx/models/portraits/doll/pic_M1903_10.dds"
-			"gfx/models/portraits/doll/pic_M1903_1107.dds"
-			"gfx/models/portraits/doll/pic_M1903_302.dds"
-			"gfx/models/portraits/doll/pic_M1903_5.dds"
-			"gfx/models/portraits/doll/pic_M1903_802.dds"
-			"gfx/models/portraits/doll/pic_M1903_9999.dds"
+			"gfx/models/portraits/doll/pic_M1887.dds"
+			"gfx/models/portraits/doll/pic_M1887_10902.dds"
+			"gfx/models/portraits/doll/pic_M1887_2503.dds"
 		}
 	}
 	GF_doll_174 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M1911.dds"
-			"gfx/models/portraits/doll/pic_M1911_4514.dds"
-			"gfx/models/portraits/doll/pic_M1911_Mod.dds"
+			"gfx/models/portraits/doll/pic_M1891.dds"
+			"gfx/models/portraits/doll/pic_M1891Mod.dds"
+			"gfx/models/portraits/doll/pic_M1891_4803.dds"
+			"gfx/models/portraits/doll/pic_M1891_803.dds"
 		}
 	}
 	GF_doll_175 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M1918.dds"
-			"gfx/models/portraits/doll/pic_M1918_102.dds"
-			"gfx/models/portraits/doll/pic_M1918_1606.dds"
-			"gfx/models/portraits/doll/pic_M1918_806.dds"
-			"gfx/models/portraits/doll/pic_M1918_Mod.dds"
+			"gfx/models/portraits/doll/pic_M1895.dds"
+			"gfx/models/portraits/doll/pic_M1895Mod.dds"
+			"gfx/models/portraits/doll/pic_M1895_2706.dds"
+			"gfx/models/portraits/doll/pic_M1895_5309.dds"
+			"gfx/models/portraits/doll/pic_M1895_7107.dds"
 		}
 	}
 	GF_doll_176 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1919a4.dds"
-			"gfx/models/portraits/doll/pic_M1919A4_106.dds"
-			"gfx/models/portraits/doll/pic_M1919A4_7.dds"
-			"gfx/models/portraits/doll/pic_M1919A4_Mod.dds"
+			"gfx/models/portraits/doll/pic_M1895MG.dds"
 		}
 	}
 	GF_doll_177 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1928a1.dds"
-			"gfx/models/portraits/doll/pic_M1928A1_1501.dds"
-			"gfx/models/portraits/doll/pic_M1928A1_5703.dds"
+			"gfx/models/portraits/doll/pic_M1897.dds"
+			"gfx/models/portraits/doll/pic_M1897Mod.dds"
+			"gfx/models/portraits/doll/pic_M1897_2505.dds"
+			"gfx/models/portraits/doll/pic_M1897_4805.dds"
 		}
 	}
 	GF_doll_178 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m1a1.dds"
-			"gfx/models/portraits/doll/pic_M1A1_4106.dds"
+			"gfx/models/portraits/doll/pic_M1903.dds"
+			"gfx/models/portraits/doll/pic_M1903_1107.dds"
+			"gfx/models/portraits/doll/pic_M1903_302.dds"
+			"gfx/models/portraits/doll/pic_M1903_5.dds"
+			"gfx/models/portraits/doll/pic_M1903_802.dds"
 		}
 	}
 	GF_doll_179 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m200.dds"
-			"gfx/models/portraits/doll/pic_M200_4502.dds"
-			"gfx/models/portraits/doll/pic_M200_560.dds"
+			"gfx/models/portraits/doll/pic_M1911.dds"
+			"gfx/models/portraits/doll/pic_M1911Mod.dds"
+			"gfx/models/portraits/doll/pic_M1911_4514.dds"
+			"gfx/models/portraits/doll/pic_M1911_8406.dds"
 		}
 	}
 	GF_doll_180 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m21.dds"
-			"gfx/models/portraits/doll/pic_M21_5107.dds"
+			"gfx/models/portraits/doll/pic_M1918.dds"
+			"gfx/models/portraits/doll/pic_M1918Mod.dds"
+			"gfx/models/portraits/doll/pic_M1918_102.dds"
+			"gfx/models/portraits/doll/pic_M1918_1606.dds"
+			"gfx/models/portraits/doll/pic_M1918_806.dds"
 		}
 	}
 	GF_doll_181 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M240L.dds"
+			"gfx/models/portraits/doll/pic_M1919A4.dds"
+			"gfx/models/portraits/doll/pic_M1919A4Mod.dds"
+			"gfx/models/portraits/doll/pic_M1919A4_106.dds"
+			"gfx/models/portraits/doll/pic_M1919A4_7.dds"
 		}
 	}
 	GF_doll_182 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m249saw.dds"
-			"gfx/models/portraits/doll/pic_M249SAW_1301.dds"
-			"gfx/models/portraits/doll/pic_M249SAW_3604.dds"
+			"gfx/models/portraits/doll/pic_M1928A1.dds"
+			"gfx/models/portraits/doll/pic_M1928A1_10703.dds"
+			"gfx/models/portraits/doll/pic_M1928A1_1501.dds"
+			"gfx/models/portraits/doll/pic_M1928A1_5703.dds"
 		}
 	}
 	GF_doll_183 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m26mass.dds"
+			"gfx/models/portraits/doll/pic_M1A1.dds"
+			"gfx/models/portraits/doll/pic_M1A1_4106.dds"
 		}
 	}
 	GF_doll_184 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m2hb.dds"
-			"gfx/models/portraits/doll/pic_M2HB_3904.dds"
+			"gfx/models/portraits/doll/pic_M200.dds"
+			"gfx/models/portraits/doll/pic_M200_4502.dds"
+			"gfx/models/portraits/doll/pic_M200_560.dds"
 		}
 	}
 	GF_doll_185 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m3.dds"
+			"gfx/models/portraits/doll/pic_M21.dds"
+			"gfx/models/portraits/doll/pic_M21_304.dds"
+			"gfx/models/portraits/doll/pic_M21_5107.dds"
 		}
 	}
 	GF_doll_186 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M327.dds"
-			"gfx/models/portraits/doll/pic_M327_7601.dds"
+			"gfx/models/portraits/doll/pic_M240L.dds"
+			"gfx/models/portraits/doll/pic_M240L_8402.dds"
 		}
 	}
 	GF_doll_187 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_M4-SOPMOD-II.dds"
-			"gfx/models/portraits/doll/pic_M4-SOPMOD-II_4507.dds"
-			"gfx/models/portraits/doll/pic_M4-SOPMOD-II_531.dds"
-			"gfx/models/portraits/doll/pic_M4-SOPMOD-II_551.dds"
-			"gfx/models/portraits/doll/pic_M4-SOPMOD-II_Mod.dds"
+			"gfx/models/portraits/doll/pic_M249SAW.dds"
+			"gfx/models/portraits/doll/pic_M249SAW_1301.dds"
+			"gfx/models/portraits/doll/pic_M249SAW_3604.dds"
 		}
 	}
 	GF_doll_188 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_M26MASS.dds"
+			"gfx/models/portraits/doll/pic_M26MASS_9001.dds"
+		}
+	}
+	GF_doll_189 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_M2HB.dds"
+			"gfx/models/portraits/doll/pic_M2HB_10408.dds"
+			"gfx/models/portraits/doll/pic_M2HB_3904.dds"
+		}
+	}
+	GF_doll_190 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_M3.dds"
+		}
+	}
+	GF_doll_191 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_M327.dds"
+		}
+	}
+	GF_doll_192 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_m45.dds"
 			"gfx/models/portraits/doll/pic_m45_4.dds"
 		}
 	}
-	GF_doll_189 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_M4A1.dds"
-			"gfx/models/portraits/doll/pic_M4A1_4505.dds"
-			"gfx/models/portraits/doll/pic_M4A1_530.dds"
-			"gfx/models/portraits/doll/pic_M4A1_550.dds"
-			"gfx/models/portraits/doll/pic_M4A1_Mod.dds"
-		}
-	}
-	GF_doll_190 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_m500.dds"
-			"gfx/models/portraits/doll/pic_M500_3707.dds"
-			"gfx/models/portraits/doll/pic_M500_Mod.dds"
-		}
-	}
-	GF_doll_191 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_m590.dds"
-			"gfx/models/portraits/doll/pic_M590_1806.dds"
-			"gfx/models/portraits/doll/pic_M590_3706.dds"
-		}
-	}
-	GF_doll_192 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_m60.dds"
-		}
-	}
 	GF_doll_193 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m6asw.dds"
+			"gfx/models/portraits/doll/pic_M4A1.dds"
+			"gfx/models/portraits/doll/pic_M4A1Mod.dds"
+			"gfx/models/portraits/doll/pic_M4A1_4505.dds"
+			"gfx/models/portraits/doll/pic_M4A1_530.dds"
+			"gfx/models/portraits/doll/pic_M4A1_550.dds"
+			"gfx/models/portraits/doll/pic_M4A1_8901.dds"
 		}
 	}
 	GF_doll_194 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m82.dds"
-			"gfx/models/portraits/doll/pic_M82_5105.dds"
-			"gfx/models/portraits/doll/pic_M82_5907.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD II.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD IIMod.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD II_4507.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD II_531.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD II_551.dds"
+			"gfx/models/portraits/doll/pic_M4 SOPMOD II_8902.dds"
 		}
 	}
 	GF_doll_195 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m82a1.dds"
-			"gfx/models/portraits/doll/pic_M82A1_5803.dds"
+			"gfx/models/portraits/doll/pic_M500.dds"
+			"gfx/models/portraits/doll/pic_M500Mod.dds"
+			"gfx/models/portraits/doll/pic_M500_3707.dds"
 		}
 	}
 	GF_doll_196 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m870p.dds"
-			"gfx/models/portraits/doll/pic_M870P_3803.dds"
+			"gfx/models/portraits/doll/pic_M590.dds"
+			"gfx/models/portraits/doll/pic_M590_1806.dds"
+			"gfx/models/portraits/doll/pic_M590_3706.dds"
 		}
 	}
 	GF_doll_197 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m9.dds"
+			"gfx/models/portraits/doll/pic_M60.dds"
 		}
 	}
 	GF_doll_198 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m950a.dds"
-			"gfx/models/portraits/doll/pic_M950A_2303.dds"
-			"gfx/models/portraits/doll/pic_M950A_4302.dds"
-			"gfx/models/portraits/doll/pic_M950A_702.dds"
-			"gfx/models/portraits/doll/pic_M950A_808.dds"
-			"gfx/models/portraits/doll/pic_M950A_Mod.dds"
+			"gfx/models/portraits/doll/pic_M6ASW.dds"
+			"gfx/models/portraits/doll/pic_M6ASW_7301.dds"
 		}
 	}
 	GF_doll_199 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_m99.dds"
-			"gfx/models/portraits/doll/pic_M99_1701.dds"
-			"gfx/models/portraits/doll/pic_M99_3304.dds"
-			"gfx/models/portraits/doll/pic_M99_404.dds"
+			"gfx/models/portraits/doll/pic_M82.dds"
+			"gfx/models/portraits/doll/pic_M82_5105.dds"
+			"gfx/models/portraits/doll/pic_M82_5907.dds"
 		}
 	}
 	GF_doll_200 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mab38.dds"
-			"gfx/models/portraits/doll/pic_MAB38_Mod.dds"
+			"gfx/models/portraits/doll/pic_M82A1.dds"
+			"gfx/models/portraits/doll/pic_M82A1_5803.dds"
 		}
 	}
 	GF_doll_201 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mac10.dds"
+			"gfx/models/portraits/doll/pic_M870P.dds"
+			"gfx/models/portraits/doll/pic_M870P_3803.dds"
 		}
 	}
 	GF_doll_202 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mag7.dds"
+			"gfx/models/portraits/doll/pic_M9.dds"
 		}
 	}
 	GF_doll_203 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_magal.dds"
-			"gfx/models/portraits/doll/pic_Magal_5707.dds"
+			"gfx/models/portraits/doll/pic_M950A.dds"
+			"gfx/models/portraits/doll/pic_M950AMod.dds"
+			"gfx/models/portraits/doll/pic_M950A_2303.dds"
+			"gfx/models/portraits/doll/pic_M950A_4302.dds"
+			"gfx/models/portraits/doll/pic_M950A_702.dds"
+			"gfx/models/portraits/doll/pic_M950A_808.dds"
 		}
 	}
 	GF_doll_204 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mas38.dds"
+			"gfx/models/portraits/doll/pic_M99.dds"
+			"gfx/models/portraits/doll/pic_M99_1701.dds"
+			"gfx/models/portraits/doll/pic_M99_3304.dds"
+			"gfx/models/portraits/doll/pic_M99_404.dds"
 		}
 	}
 	GF_doll_205 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mat49.dds"
+			"gfx/models/portraits/doll/pic_MAB38.dds"
+			"gfx/models/portraits/doll/pic_MAB38Mod.dds"
 		}
 	}
 	GF_doll_206 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mdr.dds"
-			"gfx/models/portraits/doll/pic_MDR_2603.dds"
-			"gfx/models/portraits/doll/pic_MDR_3305.dds"
+			"gfx/models/portraits/doll/pic_MAC10.dds"
 		}
 	}
 	GF_doll_207 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_MG3.dds"
-			"gfx/models/portraits/doll/pic_MG3_1304.dds"
-			"gfx/models/portraits/doll/pic_MG3_3806.dds"
-			"gfx/models/portraits/doll/pic_MG3_4105.dds"
-			"gfx/models/portraits/doll/pic_MG3_7205.dds"
-			"gfx/models/portraits/doll/pic_MG3_Mod.dds"
+			"gfx/models/portraits/doll/pic_MAG7.dds"
 		}
 	}
 	GF_doll_208 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mg338.dds"
+			"gfx/models/portraits/doll/pic_Magal.dds"
+			"gfx/models/portraits/doll/pic_Magal_5707.dds"
 		}
 	}
 	GF_doll_209 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mg34.dds"
-			"gfx/models/portraits/doll/pic_MG34_4210.dds"
+			"gfx/models/portraits/doll/pic_MartiniHenry.dds"
 		}
 	}
 	GF_doll_210 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mg36.dds"
-			"gfx/models/portraits/doll/pic_MG36_4205.dds"
-			"gfx/models/portraits/doll/pic_MG36_8305.dds"
+			"gfx/models/portraits/doll/pic_MAS38.dds"
 		}
 	}
 	GF_doll_211 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/Pic_MG4.dds"
-			"gfx/models/portraits/doll/Pic_MG4_703.dds"
-			"gfx/models/portraits/doll/pic_MG4_Mod.dds"
+			"gfx/models/portraits/doll/pic_MAT49.dds"
 		}
 	}
 	GF_doll_212 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mg42.dds"
-			"gfx/models/portraits/doll/pic_MG42_7606.dds"
+			"gfx/models/portraits/doll/pic_MDR.dds"
+			"gfx/models/portraits/doll/pic_MDR_2603.dds"
+			"gfx/models/portraits/doll/pic_MDR_3305.dds"
+			"gfx/models/portraits/doll/pic_MDR_50005.dds"
 		}
 	}
 	GF_doll_213 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mg5.dds"
+			"gfx/models/portraits/doll/pic_MG15.dds"
+		}
+	}
+	GF_doll_214 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG3.dds"
+			"gfx/models/portraits/doll/pic_MG3Mod.dds"
+			"gfx/models/portraits/doll/pic_MG3_1304.dds"
+			"gfx/models/portraits/doll/pic_MG3_3806.dds"
+			"gfx/models/portraits/doll/pic_MG3_4105.dds"
+			"gfx/models/portraits/doll/pic_MG3_7205.dds"
+		}
+	}
+	GF_doll_215 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG338.dds"
+		}
+	}
+	GF_doll_216 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG34.dds"
+			"gfx/models/portraits/doll/pic_MG34_4210.dds"
+		}
+	}
+	GF_doll_217 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG36.dds"
+			"gfx/models/portraits/doll/pic_MG36_4205.dds"
+			"gfx/models/portraits/doll/pic_MG36_8305.dds"
+		}
+	}
+	GF_doll_218 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/Pic_MG4.dds"
+			"gfx/models/portraits/doll/pic_MG4Mod.dds"
+			"gfx/models/portraits/doll/Pic_MG4_703.dds"
+		}
+	}
+	GF_doll_219 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG42.dds"
+			"gfx/models/portraits/doll/pic_MG42_597.dds"
+			"gfx/models/portraits/doll/pic_MG42_7606.dds"
+		}
+	}
+	GF_doll_220 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_MG5.dds"
 			"gfx/models/portraits/doll/pic_MG5_1504.dds"
 			"gfx/models/portraits/doll/pic_MG5_2501.dds"
 			"gfx/models/portraits/doll/pic_MG5_309.dds"
 			"gfx/models/portraits/doll/pic_MG5_4902.dds"
 		}
 	}
-	GF_doll_214 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_MicroUZI.dds"
-			"gfx/models/portraits/doll/pic_MicroUZI_101.dds"
-			"gfx/models/portraits/doll/pic_MicroUZI_7907.dds"
-			"gfx/models/portraits/doll/pic_MicroUZI_Mod.dds"
-		}
-	}
-	GF_doll_215 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_mk12.dds"
-			"gfx/models/portraits/doll/pic_Mk12_6203.dds"
-		}
-	}
-	GF_doll_216 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_mk23.dds"
-			"gfx/models/portraits/doll/pic_Mk23_1805.dds"
-			"gfx/models/portraits/doll/pic_Mk23_3105.dds"
-			"gfx/models/portraits/doll/pic_Mk23_3705.dds"
-			"gfx/models/portraits/doll/pic_Mk23_8.dds"
-		}
-	}
-	GF_doll_217 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_MK3A1.dds"
-			"gfx/models/portraits/doll/pic_MK3A1_8001.dds"
-		}
-	}
-	GF_doll_218 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_mk46.dds"
-		}
-	}
-	GF_doll_219 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_mk48.dds"
-			"gfx/models/portraits/doll/pic_Mk48_4804.dds"
-			"gfx/models/portraits/doll/pic_Mk48_8306.dds"
-		}
-	}
-	GF_doll_220 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_mlemk1.dds"
-			"gfx/models/portraits/doll/pic_MLEMK1_10.dds"
-			"gfx/models/portraits/doll/pic_MLEMK1_604.dds"
-			"gfx/models/portraits/doll/pic_MLEMK1_901.dds"
-			"gfx/models/portraits/doll/pic_MLEMK1_Mod.dds"
-		}
-	}
 	GF_doll_221 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mondragonm1908.dds"
-			"gfx/models/portraits/doll/pic_MondragonM1908_5704.dds"
-			"gfx/models/portraits/doll/pic_MondragonM1908_6304.dds"
-			"gfx/models/portraits/doll/pic_MondragonM1908_8105.dds"
+			"gfx/models/portraits/doll/pic_MicroUZI.dds"
+			"gfx/models/portraits/doll/pic_MicroUZIMod.dds"
+			"gfx/models/portraits/doll/pic_MicroUZI_101.dds"
+			"gfx/models/portraits/doll/pic_MicroUZI_7907.dds"
 		}
 	}
 	GF_doll_222 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mp40.dds"
-			"gfx/models/portraits/doll/pic_MP40_902.dds"
+			"gfx/models/portraits/doll/pic_Mk12.dds"
+			"gfx/models/portraits/doll/pic_Mk12_6203.dds"
 		}
 	}
 	GF_doll_223 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mp41.dds"
-			"gfx/models/portraits/doll/pic_MP41_8206.dds"
+			"gfx/models/portraits/doll/pic_MK18.dds"
 		}
 	}
 	GF_doll_224 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_MP443.dds"
-			"gfx/models/portraits/doll/pic_MP443_6405.dds"
-			"gfx/models/portraits/doll/pic_MP443_7105.dds"
-			"gfx/models/portraits/doll/pic_MP443_8108.dds"
-			"gfx/models/portraits/doll/pic_MP443_Mod.dds"
+			"gfx/models/portraits/doll/pic_Mk23.dds"
+			"gfx/models/portraits/doll/pic_Mk23_10607.dds"
+			"gfx/models/portraits/doll/pic_Mk23_1805.dds"
+			"gfx/models/portraits/doll/pic_Mk23_3105.dds"
+			"gfx/models/portraits/doll/pic_Mk23_3705.dds"
+			"gfx/models/portraits/doll/pic_Mk23_8.dds"
+			"gfx/models/portraits/doll/pic_Mk23_9005.dds"
 		}
 	}
 	GF_doll_225 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_MP446.dds"
-			"gfx/models/portraits/doll/pic_MP446_103.dds"
-			"gfx/models/portraits/doll/pic_MP446_402.dds"
-			"gfx/models/portraits/doll/pic_MP446_Mod.dds"
+			"gfx/models/portraits/doll/pic_MK3A1.dds"
+			"gfx/models/portraits/doll/pic_MK3A1_11003.dds"
+			"gfx/models/portraits/doll/pic_MK3A1_8001.dds"
 		}
 	}
 	GF_doll_226 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mp448.dds"
+			"gfx/models/portraits/doll/pic_Mk46.dds"
 		}
 	}
 	GF_doll_227 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_MP5.dds"
-			"gfx/models/portraits/doll/pic_MP5_1205.dds"
-			"gfx/models/portraits/doll/pic_MP5_1903.dds"
-			"gfx/models/portraits/doll/pic_MP5_3.dds"
-			"gfx/models/portraits/doll/pic_MP5_3006.dds"
-			"gfx/models/portraits/doll/pic_MP5_Mod.dds"
+			"gfx/models/portraits/doll/pic_MK48.dds"
+			"gfx/models/portraits/doll/pic_Mk48_4804.dds"
+			"gfx/models/portraits/doll/pic_Mk48_8306.dds"
 		}
 	}
 	GF_doll_228 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mp7.dds"
-			"gfx/models/portraits/doll/pic_MP7_2405.dds"
-			"gfx/models/portraits/doll/pic_MP7_6806.dds"
+			"gfx/models/portraits/doll/pic_MLEMK1.dds"
+			"gfx/models/portraits/doll/pic_MLEMK1Mod.dds"
+			"gfx/models/portraits/doll/pic_MLEMK1_10.dds"
+			"gfx/models/portraits/doll/pic_MLEMK1_604.dds"
+			"gfx/models/portraits/doll/pic_MLEMK1_901.dds"
 		}
 	}
 	GF_doll_229 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mpk.dds"
+			"gfx/models/portraits/doll/pic_MondragonM1908.dds"
+			"gfx/models/portraits/doll/pic_MondragonM1908_5704.dds"
+			"gfx/models/portraits/doll/pic_MondragonM1908_6304.dds"
+			"gfx/models/portraits/doll/pic_MondragonM1908_8105.dds"
 		}
 	}
 	GF_doll_230 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mpl.dds"
+			"gfx/models/portraits/doll/pic_MP40.dds"
+			"gfx/models/portraits/doll/pic_MP40_10808.dds"
+			"gfx/models/portraits/doll/pic_MP40_902.dds"
 		}
 	}
 	GF_doll_231 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_MSBS.dds"
+			"gfx/models/portraits/doll/pic_MP41.dds"
+			"gfx/models/portraits/doll/pic_MP41Mod.dds"
+			"gfx/models/portraits/doll/pic_MP41_10706.dds"
+			"gfx/models/portraits/doll/pic_MP41_8206.dds"
 		}
 	}
 	GF_doll_232 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_mt9.dds"
+			"gfx/models/portraits/doll/pic_MP443.dds"
+			"gfx/models/portraits/doll/pic_MP443Mod.dds"
+			"gfx/models/portraits/doll/pic_MP443_6405.dds"
+			"gfx/models/portraits/doll/pic_MP443_7105.dds"
+			"gfx/models/portraits/doll/pic_MP443_8108.dds"
 		}
 	}
 	GF_doll_233 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_negev.dds"
-			"gfx/models/portraits/doll/pic_NEGEV_3202.dds"
-			"gfx/models/portraits/doll/pic_NEGEV_904.dds"
+			"gfx/models/portraits/doll/pic_MP446.dds"
+			"gfx/models/portraits/doll/pic_MP446Mod.dds"
+			"gfx/models/portraits/doll/pic_MP446_103.dds"
+			"gfx/models/portraits/doll/pic_MP446_402.dds"
 		}
 	}
 	GF_doll_234 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_Nova.dds"
+			"gfx/models/portraits/doll/pic_MP448.dds"
 		}
 	}
 	GF_doll_235 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ns2000.dds"
-			"gfx/models/portraits/doll/pic_NS2000_4406.dds"
+			"gfx/models/portraits/doll/pic_MP5.dds"
+			"gfx/models/portraits/doll/pic_MP5Mod.dds"
+			"gfx/models/portraits/doll/pic_MP5_10606.dds"
+			"gfx/models/portraits/doll/pic_MP5_1205.dds"
+			"gfx/models/portraits/doll/pic_MP5_1903.dds"
+			"gfx/models/portraits/doll/pic_MP5_3.dds"
+			"gfx/models/portraits/doll/pic_MP5_3006.dds"
+			"gfx/models/portraits/doll/pic_MP5_9006.dds"
 		}
 	}
 	GF_doll_236 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_NTW20.dds"
-			"gfx/models/portraits/doll/pic_NTW20_1101.dds"
-			"gfx/models/portraits/doll/pic_NTW20_2301.dds"
-			"gfx/models/portraits/doll/pic_NTW20_307.dds"
-			"gfx/models/portraits/doll/pic_NTW20_4801.dds"
-			"gfx/models/portraits/doll/pic_NTW20_Mod.dds"
+			"gfx/models/portraits/doll/pic_MP7.dds"
+			"gfx/models/portraits/doll/pic_MP7_11103.dds"
+			"gfx/models/portraits/doll/pic_MP7_2405.dds"
+			"gfx/models/portraits/doll/pic_MP7_6806.dds"
 		}
 	}
 	GF_doll_237 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_nz75.dds"
-			"gfx/models/portraits/doll/pic_NZ75_1702.dds"
-			"gfx/models/portraits/doll/pic_NZ75_403.dds"
+			"gfx/models/portraits/doll/pic_MPK.dds"
+			"gfx/models/portraits/doll/pic_MPK_7806.dds"
 		}
 	}
 	GF_doll_238 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_OBR.dds"
-			"gfx/models/portraits/doll/pic_OBR_5407.dds"
-			"gfx/models/portraits/doll/pic_OBR_586.dds"
-			"gfx/models/portraits/doll/pic_OBR_Mod.dds"
+			"gfx/models/portraits/doll/pic_MPL.dds"
+			"gfx/models/portraits/doll/pic_MPL_7804.dds"
 		}
 	}
 	GF_doll_239 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_oc44.dds"
-			"gfx/models/portraits/doll/pic_OC44_1608.dds"
-			"gfx/models/portraits/doll/pic_OC44_3406.dds"
-			"gfx/models/portraits/doll/pic_OC44_6207.dds"
+			"gfx/models/portraits/doll/pic_MSBS.dds"
 		}
 	}
 	GF_doll_240 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ots12.dds"
-			"gfx/models/portraits/doll/pic_OTs12_3605.dds"
+			"gfx/models/portraits/doll/pic_MT9.dds"
 		}
 	}
 	GF_doll_241 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ots14.dds"
+			"gfx/models/portraits/doll/pic_NEGEV.dds"
+			"gfx/models/portraits/doll/pic_NEGEV_3202.dds"
+			"gfx/models/portraits/doll/pic_NEGEV_904.dds"
+		}
+	}
+	GF_doll_242 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Nova.dds"
+		}
+	}
+	GF_doll_243 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_NS2000.dds"
+			"gfx/models/portraits/doll/pic_NS2000_4406.dds"
+		}
+	}
+	GF_doll_244 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_NTW20.dds"
+			"gfx/models/portraits/doll/pic_NTW20Mod.dds"
+			"gfx/models/portraits/doll/pic_NTW20_1101.dds"
+			"gfx/models/portraits/doll/pic_NTW20_2301.dds"
+			"gfx/models/portraits/doll/pic_NTW20_307.dds"
+			"gfx/models/portraits/doll/pic_NTW20_4801.dds"
+		}
+	}
+	GF_doll_245 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_NZ75.dds"
+			"gfx/models/portraits/doll/pic_NZ75_1702.dds"
+			"gfx/models/portraits/doll/pic_NZ75_403.dds"
+			"gfx/models/portraits/doll/pic_NZ75_8802.dds"
+		}
+	}
+	GF_doll_246 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_OBR.dds"
+			"gfx/models/portraits/doll/pic_OBRMod.dds"
+			"gfx/models/portraits/doll/pic_OBR_5407.dds"
+			"gfx/models/portraits/doll/pic_OBR_586.dds"
+		}
+	}
+	GF_doll_247 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_OC44.dds"
+			"gfx/models/portraits/doll/pic_OC44_1608.dds"
+			"gfx/models/portraits/doll/pic_OC44_3406.dds"
+			"gfx/models/portraits/doll/pic_OC44_6207.dds"
+		}
+	}
+	GF_doll_248 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_OTs12.dds"
+			"gfx/models/portraits/doll/pic_OTs12_3605.dds"
+		}
+	}
+	GF_doll_249 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_OTs14.dds"
 			"gfx/models/portraits/doll/pic_OTs14_1203.dds"
 			"gfx/models/portraits/doll/pic_OTs14_3001.dds"
 			"gfx/models/portraits/doll/pic_OTs14_4501.dds"
 			"gfx/models/portraits/doll/pic_OTs14_5602.dds"
 		}
 	}
-	GF_doll_242 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_ots39.dds"
-			"gfx/models/portraits/doll/pic_OTs39_7906.dds"
-		}
-	}
-	GF_doll_243 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_p08.dds"
-		}
-	}
-	GF_doll_244 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_P10C.dds"
-		}
-	}
-	GF_doll_245 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_p22.dds"
-			"gfx/models/portraits/doll/pic_P22_6903.dds"
-		}
-	}
-	GF_doll_246 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_p226.dds"
-		}
-	}
-	GF_doll_247 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_P290.dds"
-		}
-	}
-	GF_doll_248 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_p30.dds"
-			"gfx/models/portraits/doll/pic_P30_4404.dds"
-		}
-	}
-	GF_doll_249 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_p38.dds"
-			"gfx/models/portraits/doll/pic_P38_2410.dds"
-		}
-	}
 	GF_doll_250 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_p7.dds"
-			"gfx/models/portraits/doll/pic_P7_1404.dds"
-			"gfx/models/portraits/doll/pic_P7_606.dds"
+			"gfx/models/portraits/doll/pic_OTs39.dds"
+			"gfx/models/portraits/doll/pic_OTs39_7906.dds"
 		}
 	}
 	GF_doll_251 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_p90.dds"
-			"gfx/models/portraits/doll/pic_P90_2802.dds"
-			"gfx/models/portraits/doll/pic_P90_5701.dds"
+			"gfx/models/portraits/doll/pic_Owen.dds"
 		}
 	}
 	GF_doll_252 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_p99.dds"
+			"gfx/models/portraits/doll/pic_P08.dds"
 		}
 	}
 	GF_doll_253 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_pa15.dds"
-			"gfx/models/portraits/doll/pic_PA15_3701.dds"
-			"gfx/models/portraits/doll/pic_PA15_4202.dds"
-			"gfx/models/portraits/doll/pic_PA15_4402.dds"
-			"gfx/models/portraits/doll/pic_PA15_5802.dds"
+			"gfx/models/portraits/doll/pic_P10C.dds"
 		}
 	}
 	GF_doll_254 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_pdw.dds"
-			"gfx/models/portraits/doll/pic_PDW_4005.dds"
+			"gfx/models/portraits/doll/pic_P2000.dds"
+			"gfx/models/portraits/doll/pic_P2000_10502.dds"
 		}
 	}
 	GF_doll_255 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_pk.dds"
-			"gfx/models/portraits/doll/pic_PK_605.dds"
+			"gfx/models/portraits/doll/pic_P22.dds"
+			"gfx/models/portraits/doll/pic_P22_3902.dds"
+			"gfx/models/portraits/doll/pic_P22_6903.dds"
 		}
 	}
 	GF_doll_256 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_pkp.dds"
+			"gfx/models/portraits/doll/pic_P226.dds"
+		}
+	}
+	GF_doll_257 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P290.dds"
+		}
+	}
+	GF_doll_258 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P30.dds"
+			"gfx/models/portraits/doll/pic_P30_4404.dds"
+		}
+	}
+	GF_doll_259 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P38.dds"
+			"gfx/models/portraits/doll/pic_P38_2410.dds"
+		}
+	}
+	GF_doll_260 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P50.dds"
+			"gfx/models/portraits/doll/pic_P50_11104.dds"
+		}
+	}
+	GF_doll_261 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P7.dds"
+			"gfx/models/portraits/doll/pic_P7_10705.dds"
+			"gfx/models/portraits/doll/pic_P7_1404.dds"
+			"gfx/models/portraits/doll/pic_P7_606.dds"
+		}
+	}
+	GF_doll_262 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P90.dds"
+			"gfx/models/portraits/doll/pic_P90_2802.dds"
+			"gfx/models/portraits/doll/pic_P90_50004.dds"
+			"gfx/models/portraits/doll/pic_P90_5701.dds"
+		}
+	}
+	GF_doll_263 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_P99.dds"
+		}
+	}
+	GF_doll_264 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PA15.dds"
+			"gfx/models/portraits/doll/pic_PA15_3701.dds"
+			"gfx/models/portraits/doll/pic_PA15_4202.dds"
+			"gfx/models/portraits/doll/pic_PA15_4402.dds"
+			"gfx/models/portraits/doll/pic_PA15_5802.dds"
+			"gfx/models/portraits/doll/pic_PA15_7501.dds"
+			"gfx/models/portraits/doll/pic_PA15_8701.dds"
+		}
+	}
+	GF_doll_265 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PDW.dds"
+			"gfx/models/portraits/doll/pic_PDW_4005.dds"
+		}
+	}
+	GF_doll_266 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PK.dds"
+			"gfx/models/portraits/doll/pic_PK_605.dds"
+		}
+	}
+	GF_doll_267 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PKP.dds"
 			"gfx/models/portraits/doll/pic_PKP_1201.dds"
 			"gfx/models/portraits/doll/pic_PKP_1503.dds"
 			"gfx/models/portraits/doll/pic_PKP_3102.dds"
@@ -1975,385 +2148,416 @@ portraits = {
 			"gfx/models/portraits/doll/pic_PKP_5904.dds"
 		}
 	}
-	GF_doll_257 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_PM.dds"
-			"gfx/models/portraits/doll/pic_PM_1.dds"
-			"gfx/models/portraits/doll/pic_PM_4310.dds"
-			"gfx/models/portraits/doll/pic_PM_Mod.dds"
-		}
-	}
-	GF_doll_258 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pm06.dds"
-			"gfx/models/portraits/doll/pic_PM06_2703.dds"
-		}
-	}
-	GF_doll_259 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pm1910.dds"
-			"gfx/models/portraits/doll/pic_PM1910_5307.dds"
-		}
-	}
-	GF_doll_260 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pm9.dds"
-			"gfx/models/portraits/doll/pic_PM9_6201.dds"
-		}
-	}
-	GF_doll_261 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_PP19.dds"
-			"gfx/models/portraits/doll/pic_PP19_2204.dds"
-			"gfx/models/portraits/doll/pic_PP19_4705.dds"
-			"gfx/models/portraits/doll/pic_PP19_Mod.dds"
-		}
-	}
-	GF_doll_262 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pp1901.dds"
-			"gfx/models/portraits/doll/pic_PP1901_4405.dds"
-		}
-	}
-	GF_doll_263 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pp2000.dds"
-		}
-	}
-	GF_doll_264 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pp90.dds"
-		}
-	}
-	GF_doll_265 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_ppd40.dds"
-			"gfx/models/portraits/doll/pic_PPD40_6105.dds"
-			"gfx/models/portraits/doll/pic_PPD40_7905.dds"
-		}
-	}
-	GF_doll_266 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_PPK.dds"
-			"gfx/models/portraits/doll/pic_PPK_3905.dds"
-			"gfx/models/portraits/doll/pic_PPK_6109.dds"
-			"gfx/models/portraits/doll/pic_PPK_Mod.dds"
-		}
-	}
-	GF_doll_267 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_ppq.dds"
-			"gfx/models/portraits/doll/pic_PPQ_7604.dds"
-		}
-	}
 	GF_doll_268 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_pps43.dds"
+			"gfx/models/portraits/doll/pic_PM.dds"
+			"gfx/models/portraits/doll/pic_PMMod.dds"
+			"gfx/models/portraits/doll/pic_PM_1.dds"
+			"gfx/models/portraits/doll/pic_PM_4310.dds"
 		}
 	}
 	GF_doll_269 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_PPsh41.dds"
-			"gfx/models/portraits/doll/pic_PPsh41_5808.dds"
-			"gfx/models/portraits/doll/pic_PPsh41_602.dds"
-			"gfx/models/portraits/doll/pic_PPsh41_Mod.dds"
+			"gfx/models/portraits/doll/pic_PM06.dds"
+			"gfx/models/portraits/doll/pic_PM06_2703.dds"
 		}
 	}
 	GF_doll_270 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_psg1.dds"
-			"gfx/models/portraits/doll/pic_PSG1_3808.dds"
+			"gfx/models/portraits/doll/pic_PM1910.dds"
+			"gfx/models/portraits/doll/pic_PM1910_5307.dds"
 		}
 	}
 	GF_doll_271 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_psm.dds"
+			"gfx/models/portraits/doll/pic_PM9.dds"
+			"gfx/models/portraits/doll/pic_PM9_6201.dds"
 		}
 	}
 	GF_doll_272 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ptrd.dds"
-			"gfx/models/portraits/doll/pic_PTRD_408.dds"
-			"gfx/models/portraits/doll/pic_PTRD_8204.dds"
+			"gfx/models/portraits/doll/pic_PP19.dds"
+			"gfx/models/portraits/doll/pic_PP19Mod.dds"
+			"gfx/models/portraits/doll/pic_PP19_10105.dds"
+			"gfx/models/portraits/doll/pic_PP19_2204.dds"
+			"gfx/models/portraits/doll/pic_PP19_4705.dds"
 		}
 	}
 	GF_doll_273 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_px4storm.dds"
+			"gfx/models/portraits/doll/pic_PP1901.dds"
+			"gfx/models/portraits/doll/pic_PP1901_4405.dds"
+		}
+	}
+	GF_doll_274 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PP2000.dds"
+		}
+	}
+	GF_doll_275 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PP90.dds"
+			"gfx/models/portraits/doll/pic_PP90_10306.dds"
+		}
+	}
+	GF_doll_276 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PPD40.dds"
+			"gfx/models/portraits/doll/pic_PPD40_6105.dds"
+			"gfx/models/portraits/doll/pic_PPD40_7905.dds"
+		}
+	}
+	GF_doll_277 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PPK.dds"
+			"gfx/models/portraits/doll/pic_PPKMod.dds"
+			"gfx/models/portraits/doll/pic_PPK_3905.dds"
+			"gfx/models/portraits/doll/pic_PPK_6109.dds"
+		}
+	}
+	GF_doll_278 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PPQ.dds"
+		}
+	}
+	GF_doll_279 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PPS43.dds"
+		}
+	}
+	GF_doll_280 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PPsh41.dds"
+			"gfx/models/portraits/doll/pic_PPsh41Mod.dds"
+			"gfx/models/portraits/doll/pic_PPsh41_5808.dds"
+			"gfx/models/portraits/doll/pic_PPsh41_602.dds"
+			"gfx/models/portraits/doll/pic_PPsh41_9008.dds"
+		}
+	}
+	GF_doll_281 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PSG1.dds"
+			"gfx/models/portraits/doll/pic_PSG1_3808.dds"
+			"gfx/models/portraits/doll/pic_PSG1_8404.dds"
+		}
+	}
+	GF_doll_282 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PSM.dds"
+		}
+	}
+	GF_doll_283 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_PTRD.dds"
+			"gfx/models/portraits/doll/pic_PTRD_10104.dds"
+			"gfx/models/portraits/doll/pic_PTRD_408.dds"
+			"gfx/models/portraits/doll/pic_PTRD_8204.dds"
+		}
+	}
+	GF_doll_284 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Px4Storm.dds"
+			"gfx/models/portraits/doll/pic_Px4StormMod.dds"
 			"gfx/models/portraits/doll/pic_Px4Storm_2801.dds"
 			"gfx/models/portraits/doll/pic_Px4Storm_6103.dds"
 			"gfx/models/portraits/doll/pic_Px4Storm_7203.dds"
 			"gfx/models/portraits/doll/pic_Px4Storm_8002.dds"
 		}
 	}
-	GF_doll_274 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_python.dds"
-			"gfx/models/portraits/doll/pic_Python_6603.dds"
-		}
-	}
-	GF_doll_275 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_pzb39.dds"
-			"gfx/models/portraits/doll/pic_PzB39_1506.dds"
-		}
-	}
-	GF_doll_276 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/Pic_QBU-191.dds"
-		}
-	}
-	GF_doll_277 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_qbu88.dds"
-			"gfx/models/portraits/doll/pic_QBU88_3801.dds"
-			"gfx/models/portraits/doll/pic_QBU88_4503.dds"
-			"gfx/models/portraits/doll/pic_QBU88_5502.dds"
-			"gfx/models/portraits/doll/pic_QBU88_7403.dds"
-			"gfx/models/portraits/doll/pic_QBU88_hallo.dds"
-		}
-	}
-	GF_doll_278 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_qbz191.dds"
-			"gfx/models/portraits/doll/pic_QBZ191_575.dds"
-			"gfx/models/portraits/doll/pic_QBZ191_7702.dds"
-		}
-	}
-	GF_doll_279 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_qsb91.dds"
-		}
-	}
-	GF_doll_280 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_r5rgp.dds"
-		}
-	}
-	GF_doll_281 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_r93.dds"
-		}
-	}
-	GF_doll_282 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_rexzero1.dds"
-			"gfx/models/portraits/doll/pic_RexZero1_7003.dds"
-			"gfx/models/portraits/doll/pic_RexZero1_8005.dds"
-		}
-	}
-	GF_doll_283 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_rfb.dds"
-			"gfx/models/portraits/doll/pic_RFB_1601.dds"
-			"gfx/models/portraits/doll/pic_RFB_2902.dds"
-		}
-	}
-	GF_doll_284 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_rhino.dds"
-			"gfx/models/portraits/doll/pic_Rhino_7103.dds"
-		}
-	}
 	GF_doll_285 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ribeyrolles.dds"
-			"gfx/models/portraits/doll/pic_Ribeyrolles_Mod.dds"
+			"gfx/models/portraits/doll/pic_Python.dds"
+			"gfx/models/portraits/doll/pic_Python_8801.dds"
 		}
 	}
 	GF_doll_286 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_RMB93_1705.dds"
-			"gfx/models/portraits/doll/pic_RMB93_Mod.dds"
+			"gfx/models/portraits/doll/pic_PzB39.dds"
+			"gfx/models/portraits/doll/pic_PzB39_1506.dds"
 		}
 	}
 	GF_doll_287 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_RO635.dds"
-			"gfx/models/portraits/doll/pic_RO635_4504.dds"
-			"gfx/models/portraits/doll/pic_RO635_534.dds"
-			"gfx/models/portraits/doll/pic_RO635_554.dds"
-			"gfx/models/portraits/doll/pic_RO635_Mod.dds"
+			"gfx/models/portraits/doll/pic_QBU191.dds"
+			"gfx/models/portraits/doll/pic_QBU191_10108.dds"
+			"gfx/models/portraits/doll/pic_QBU191_8702.dds"
 		}
 	}
 	GF_doll_288 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_rpd.dds"
+			"gfx/models/portraits/doll/pic_QBU88.dds"
+			"gfx/models/portraits/doll/pic_QBU88_4503.dds"
+			"gfx/models/portraits/doll/pic_QBU88_5502.dds"
+			"gfx/models/portraits/doll/pic_QBU88_7403.dds"
 		}
 	}
 	GF_doll_289 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_rpk16.dds"
-			"gfx/models/portraits/doll/pic_RPK16_1.dds"
+			"gfx/models/portraits/doll/pic_QBZ191.dds"
+			"gfx/models/portraits/doll/pic_QBZ191_10101.dds"
+			"gfx/models/portraits/doll/pic_QBZ191_575.dds"
+			"gfx/models/portraits/doll/pic_QBZ191_7702.dds"
 		}
 	}
 	GF_doll_290 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_rpk203.dds"
-			"gfx/models/portraits/doll/pic_RPK203_5901.dds"
+			"gfx/models/portraits/doll/pic_QSB91.dds"
+			"gfx/models/portraits/doll/pic_QSB91_6108.dds"
 		}
 	}
 	GF_doll_291 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_rt20.dds"
+			"gfx/models/portraits/doll/pic_R5RGP.dds"
+			"gfx/models/portraits/doll/pic_R5RGP_5302.dds"
 		}
 	}
 	GF_doll_292 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sacr.dds"
-			"gfx/models/portraits/doll/pic_SACR_5303.dds"
-			"gfx/models/portraits/doll/pic_SACR_5903.dds"
+			"gfx/models/portraits/doll/pic_R93.dds"
+			"gfx/models/portraits/doll/pic_R93_3501.dds"
 		}
 	}
 	GF_doll_293 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_saf.dds"
-			"gfx/models/portraits/doll/pic_SAF_5205.dds"
-			"gfx/models/portraits/doll/pic_SAF_6607.dds"
+			"gfx/models/portraits/doll/pic_RexZero1.dds"
+			"gfx/models/portraits/doll/pic_RexZero1_7003.dds"
+			"gfx/models/portraits/doll/pic_RexZero1_8005.dds"
 		}
 	}
 	GF_doll_294 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_saiga12.dds"
-			"gfx/models/portraits/doll/pic_Saiga12_3901.dds"
-			"gfx/models/portraits/doll/pic_Saiga12_4510.dds"
-			"gfx/models/portraits/doll/pic_Saiga12_5402.dds"
+			"gfx/models/portraits/doll/pic_RFB.dds"
+			"gfx/models/portraits/doll/pic_RFB_1601.dds"
+			"gfx/models/portraits/doll/pic_RFB_2902.dds"
 		}
 	}
 	GF_doll_295 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_Saiga308.dds"
+			"gfx/models/portraits/doll/pic_Rhino.dds"
+			"gfx/models/portraits/doll/pic_Rhino_10702.dds"
+			"gfx/models/portraits/doll/pic_Rhino_7103.dds"
 		}
 	}
 	GF_doll_296 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sar21.dds"
+			"gfx/models/portraits/doll/pic_Ribeyrolles.dds"
+			"gfx/models/portraits/doll/pic_RibeyrollesMod.dds"
 		}
 	}
 	GF_doll_297 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sat8.dds"
-			"gfx/models/portraits/doll/pic_SAT8_1802.dds"
-			"gfx/models/portraits/doll/pic_SAT8_2601.dds"
-			"gfx/models/portraits/doll/pic_SAT8_3602.dds"
+			"gfx/models/portraits/doll/pic_RMB93.dds"
+			"gfx/models/portraits/doll/pic_RMB93Mod.dds"
+			"gfx/models/portraits/doll/pic_RMB93_10807.dds"
+			"gfx/models/portraits/doll/pic_RMB93_1705.dds"
+			"gfx/models/portraits/doll/pic_RMB93_4309.dds"
 		}
 	}
 	GF_doll_298 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_savage99.dds"
-			"gfx/models/portraits/doll/pic_Savage99_8004.dds"
+			"gfx/models/portraits/doll/pic_RO635.dds"
+			"gfx/models/portraits/doll/pic_RO635Mod.dds"
+			"gfx/models/portraits/doll/pic_RO635_4504.dds"
+			"gfx/models/portraits/doll/pic_RO635_534.dds"
+			"gfx/models/portraits/doll/pic_RO635_554.dds"
+			"gfx/models/portraits/doll/pic_RO635_596.dds"
+			"gfx/models/portraits/doll/pic_RO635_8905.dds"
 		}
 	}
 	GF_doll_299 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_SCARH.dds"
+			"gfx/models/portraits/doll/pic_RPD.dds"
 		}
 	}
 	GF_doll_300 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_SCARL.dds"
+			"gfx/models/portraits/doll/pic_RPK16.dds"
+			"gfx/models/portraits/doll/pic_RPK16_8608.dds"
 		}
 	}
 	GF_doll_301 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_scout.dds"
+			"gfx/models/portraits/doll/pic_RPK203.dds"
+			"gfx/models/portraits/doll/pic_RPK203_5901.dds"
 		}
 	}
 	GF_doll_302 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_scr.dds"
-			"gfx/models/portraits/doll/pic_SCR_7402.dds"
+			"gfx/models/portraits/doll/pic_RT20.dds"
 		}
 	}
 	GF_doll_303 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_shipka.dds"
-			"gfx/models/portraits/doll/pic_Shipka_5404.dds"
+			"gfx/models/portraits/doll/pic_SACR.dds"
+			"gfx/models/portraits/doll/pic_SACR_5303.dds"
+			"gfx/models/portraits/doll/pic_SACR_5903.dds"
 		}
 	}
 	GF_doll_304 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sig510.dds"
+			"gfx/models/portraits/doll/pic_SAF.dds"
+			"gfx/models/portraits/doll/pic_SAF_5205.dds"
+			"gfx/models/portraits/doll/pic_SAF_6607.dds"
+			"gfx/models/portraits/doll/pic_SAF_7504.dds"
 		}
 	}
 	GF_doll_305 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sig556.dds"
+			"gfx/models/portraits/doll/pic_Saiga12.dds"
+			"gfx/models/portraits/doll/pic_Saiga12_3901.dds"
+			"gfx/models/portraits/doll/pic_Saiga12_4510.dds"
+			"gfx/models/portraits/doll/pic_Saiga12_5402.dds"
 		}
 	}
 	GF_doll_306 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sigmcx.dds"
-			"gfx/models/portraits/doll/pic_SIGMCX_7404.dds"
-			"gfx/models/portraits/doll/pic_SIGMCX_8203.dds"
+			"gfx/models/portraits/doll/pic_Saiga308.dds"
 		}
 	}
 	GF_doll_307 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_six12.dds"
+			"gfx/models/portraits/doll/pic_SAR21.dds"
 		}
 	}
 	GF_doll_308 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sks.dds"
+			"gfx/models/portraits/doll/pic_SAT8.dds"
+			"gfx/models/portraits/doll/pic_SAT8_1802.dds"
+			"gfx/models/portraits/doll/pic_SAT8_2601.dds"
+			"gfx/models/portraits/doll/pic_SAT8_3602.dds"
 		}
 	}
 	GF_doll_309 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sl8.dds"
+			"gfx/models/portraits/doll/pic_Savage99.dds"
+			"gfx/models/portraits/doll/pic_Savage99_8004.dds"
+		}
+	}
+	GF_doll_310 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SCARH.dds"
+			"gfx/models/portraits/doll/pic_SCARH_10601.dds"
+		}
+	}
+	GF_doll_311 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SCARL.dds"
+		}
+	}
+	GF_doll_312 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_scout.dds"
+		}
+	}
+	GF_doll_313 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SCR.dds"
+			"gfx/models/portraits/doll/pic_SCR_10102.dds"
+			"gfx/models/portraits/doll/pic_SCR_7402.dds"
+		}
+	}
+	GF_doll_314 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Shipka.dds"
+			"gfx/models/portraits/doll/pic_Shipka_5404.dds"
+		}
+	}
+	GF_doll_315 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SIG510.dds"
+		}
+	}
+	GF_doll_316 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SIG556.dds"
+		}
+	}
+	GF_doll_317 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SIGCROSS.dds"
+		}
+	}
+	GF_doll_318 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SIGM400.dds"
+		}
+	}
+	GF_doll_319 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SIGMCX.dds"
+			"gfx/models/portraits/doll/pic_SIGMCX_10503.dds"
+			"gfx/models/portraits/doll/pic_SIGMCX_7404.dds"
+			"gfx/models/portraits/doll/pic_SIGMCX_8203.dds"
+		}
+	}
+	GF_doll_320 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Six12.dds"
+		}
+	}
+	GF_doll_321 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SKS.dds"
+		}
+	}
+	GF_doll_322 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_SL8.dds"
 			"gfx/models/portraits/doll/pic_SL8_4704.dds"
 			"gfx/models/portraits/doll/pic_SL8_5202.dds"
 			"gfx/models/portraits/doll/pic_SL8_564.dds"
@@ -2361,349 +2565,381 @@ portraits = {
 			"gfx/models/portraits/doll/pic_SL8_6302.dds"
 		}
 	}
-	GF_doll_310 = {
+	GF_doll_323 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sp9.dds"
+			"gfx/models/portraits/doll/pic_SP9.dds"
 			"gfx/models/portraits/doll/pic_SP9_6303.dds"
 			"gfx/models/portraits/doll/pic_SP9_6801.dds"
 			"gfx/models/portraits/doll/pic_SP9_8102.dds"
 		}
 	}
-	GF_doll_311 = {
+	GF_doll_324 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_spas12.dds"
+			"gfx/models/portraits/doll/pic_SPAS12.dds"
+			"gfx/models/portraits/doll/pic_SPAS12Mod.dds"
+			"gfx/models/portraits/doll/pic_SPAS12_10103.dds"
 			"gfx/models/portraits/doll/pic_SPAS12_2408.dds"
 			"gfx/models/portraits/doll/pic_SPAS12_3203.dds"
 			"gfx/models/portraits/doll/pic_SPAS12_522.dds"
 		}
 	}
-	GF_doll_312 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_SPAS15.dds"
-		}
-	}
-	GF_doll_313 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_spectrem4.dds"
-		}
-	}
-	GF_doll_314 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_spitfire.dds"
-			"gfx/models/portraits/doll/pic_Spitfire_1405.dds"
-		}
-	}
-	GF_doll_315 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_spp1.dds"
-			"gfx/models/portraits/doll/pic_SPP1_1703.dds"
-			"gfx/models/portraits/doll/pic_SPP1_4207.dds"
-		}
-	}
-	GF_doll_316 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_sps.dds"
-			"gfx/models/portraits/doll/pic_SPS_3506.dds"
-		}
-	}
-	GF_doll_317 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_sr2.dds"
-			"gfx/models/portraits/doll/pic_SR2_7502.dds"
-			"gfx/models/portraits/doll/pic_SR2_8307.dds"
-		}
-	}
-	GF_doll_318 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_sr3mp.dds"
-			"gfx/models/portraits/doll/pic_SR3MP_3704.dds"
-			"gfx/models/portraits/doll/pic_SR3MP_4101.dds"
-			"gfx/models/portraits/doll/pic_SR3MP_807.dds"
-		}
-	}
-	GF_doll_319 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_ssg3000.dds"
-		}
-	}
-	GF_doll_320 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_ssg69.dds"
-		}
-	}
-	GF_doll_321 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_StenMK2.dds"
-			"gfx/models/portraits/doll/pic_StenMK2_603.dds"
-			"gfx/models/portraits/doll/pic_StenMK2_7605.dds"
-			"gfx/models/portraits/doll/pic_StenMK2_Mod.dds"
-		}
-	}
-	GF_doll_322 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_sterling.dds"
-			"gfx/models/portraits/doll/pic_Sterling_7303.dds"
-		}
-	}
-	GF_doll_323 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_STG44.dds"
-			"gfx/models/portraits/doll/pic_STG44_Mod.dds"
-		}
-	}
-	GF_doll_324 = {
-		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
-		character_textures = {
-			"gfx/models/portraits/doll/pic_stg940.dds"
-		}
-	}
 	GF_doll_325 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_sub2000.dds"
+			"gfx/models/portraits/doll/pic_SPAS15.dds"
+			"gfx/models/portraits/doll/pic_SPAS15_10903.dds"
+			"gfx/models/portraits/doll/pic_SPAS15_9003.dds"
 		}
 	}
 	GF_doll_326 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/Pic_SuperSASS.dds"
-			"gfx/models/portraits/doll/pic_SuperSASS_1407.dds"
-			"gfx/models/portraits/doll/pic_SuperSASS_Mod.dds"
+			"gfx/models/portraits/doll/pic_SpectreM4.dds"
 		}
 	}
 	GF_doll_327 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_supershorty.dds"
-			"gfx/models/portraits/doll/pic_SuperShorty_1704.dds"
-			"gfx/models/portraits/doll/pic_SuperShorty_5204.dds"
+			"gfx/models/portraits/doll/pic_Spitfire.dds"
+			"gfx/models/portraits/doll/pic_Spitfire_1405.dds"
 		}
 	}
 	GF_doll_328 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_SV98.dds"
-			"gfx/models/portraits/doll/pic_SV98_1906.dds"
-			"gfx/models/portraits/doll/pic_SV98_502.dds"
-			"gfx/models/portraits/doll/pic_SV98_Mod.dds"
+			"gfx/models/portraits/doll/pic_SPP1.dds"
+			"gfx/models/portraits/doll/pic_SPP1_1703.dds"
 		}
 	}
 	GF_doll_329 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_svch.dds"
-			"gfx/models/portraits/doll/pic_SVCh_6402.dds"
+			"gfx/models/portraits/doll/pic_SPS.dds"
+			"gfx/models/portraits/doll/pic_SPS_3506.dds"
 		}
 	}
 	GF_doll_330 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_svd.dds"
-			"gfx/models/portraits/doll/Pic_SVD_305.dds"
-			"gfx/models/portraits/doll/pic_SVD_5506.dds"
+			"gfx/models/portraits/doll/pic_SR2.dds"
+			"gfx/models/portraits/doll/pic_SR2_10904.dds"
+			"gfx/models/portraits/doll/pic_SR2_7502.dds"
+			"gfx/models/portraits/doll/pic_SR2_8307.dds"
 		}
 	}
 	GF_doll_331 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_svt38.dds"
+			"gfx/models/portraits/doll/pic_SR3MP.dds"
+			"gfx/models/portraits/doll/pic_SR3MP_10805.dds"
+			"gfx/models/portraits/doll/pic_SR3MP_3704.dds"
+			"gfx/models/portraits/doll/pic_SR3MP_4101.dds"
+			"gfx/models/portraits/doll/pic_SR3MP_807.dds"
 		}
 	}
 	GF_doll_332 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_t5000.dds"
-			"gfx/models/portraits/doll/pic_T5000_3106.dds"
-			"gfx/models/portraits/doll/pic_T5000_4605.dds"
+			"gfx/models/portraits/doll/pic_SSG3000.dds"
+			"gfx/models/portraits/doll/pic_SSG3000_10505.dds"
 		}
 	}
 	GF_doll_333 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_t65.dds"
+			"gfx/models/portraits/doll/pic_SSG69.dds"
 		}
 	}
 	GF_doll_334 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_t77.dds"
-			"gfx/models/portraits/doll/pic_T77_6906.dds"
+			"gfx/models/portraits/doll/pic_StenMK2.dds"
+			"gfx/models/portraits/doll/pic_StenMK2Mod.dds"
+			"gfx/models/portraits/doll/pic_StenMK2_603.dds"
+			"gfx/models/portraits/doll/pic_StenMK2_7605.dds"
 		}
 	}
 	GF_doll_335 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_t91.dds"
-			"gfx/models/portraits/doll/pic_T91_4206.dds"
+			"gfx/models/portraits/doll/pic_Sterling.dds"
+			"gfx/models/portraits/doll/pic_Sterling_7303.dds"
 		}
 	}
 	GF_doll_336 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tabuk.dds"
-			"gfx/models/portraits/doll/pic_Tabuk_4906.dds"
-			"gfx/models/portraits/doll/pic_Tabuk_6206.dds"
-			"gfx/models/portraits/doll/pic_Tabuk_7204.dds"
-			"gfx/models/portraits/doll/pic_Tabuk_8006.dds"
+			"gfx/models/portraits/doll/pic_Stevens520.dds"
 		}
 	}
 	GF_doll_337 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tac50.dds"
-			"gfx/models/portraits/doll/pic_TAC50_2602.dds"
+			"gfx/models/portraits/doll/pic_Stevens620.dds"
 		}
 	}
 	GF_doll_338 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tar21.dds"
-			"gfx/models/portraits/doll/pic_TAR21_1305.dds"
-			"gfx/models/portraits/doll/pic_TAR21_8106.dds"
+			"gfx/models/portraits/doll/pic_STG44.dds"
+			"gfx/models/portraits/doll/pic_STG44Mod.dds"
+			"gfx/models/portraits/doll/pic_STG44_8612.dds"
 		}
 	}
 	GF_doll_339 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tavorts12.dds"
-			"gfx/models/portraits/doll/pic_TavorTS12_7408.dds"
-			"gfx/models/portraits/doll/pic_TavorTS12_8205.dds"
+			"gfx/models/portraits/doll/pic_stg940.dds"
 		}
 	}
 	GF_doll_340 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tcms.dds"
+			"gfx/models/portraits/doll/pic_SUB2000.dds"
 		}
 	}
 	GF_doll_341 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tec9.dds"
-			"gfx/models/portraits/doll/pic_TEC9_5206.dds"
+			"gfx/models/portraits/doll/Pic_SuperSASS.dds"
+			"gfx/models/portraits/doll/pic_SuperSASSMod.dds"
+			"gfx/models/portraits/doll/pic_SuperSASS_1407.dds"
 		}
 	}
 	GF_doll_342 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tfq.dds"
+			"gfx/models/portraits/doll/pic_SuperShorty.dds"
+			"gfx/models/portraits/doll/pic_SuperShorty_1704.dds"
+			"gfx/models/portraits/doll/pic_SuperShorty_5204.dds"
+			"gfx/models/portraits/doll/pic_SuperShorty_8506.dds"
 		}
 	}
 	GF_doll_343 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_thunder50.dds"
-			"gfx/models/portraits/doll/pic_Thunder50_2206.dds"
-			"gfx/models/portraits/doll/pic_Thunder50_3309.dds"
+			"gfx/models/portraits/doll/pic_SV98.dds"
+			"gfx/models/portraits/doll/pic_SV98Mod.dds"
+			"gfx/models/portraits/doll/pic_SV98_1906.dds"
+			"gfx/models/portraits/doll/pic_SV98_502.dds"
 		}
 	}
 	GF_doll_344 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tkb408.dds"
-			"gfx/models/portraits/doll/pic_TKB408_6804.dds"
+			"gfx/models/portraits/doll/pic_SVCh.dds"
+			"gfx/models/portraits/doll/pic_SVCh_6402.dds"
 		}
 	}
 	GF_doll_345 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tmp.dds"
-			"gfx/models/portraits/doll/pic_TMP_2807.dds"
-			"gfx/models/portraits/doll/pic_TMP_3708.dds"
-			"gfx/models/portraits/doll/pic_TMP_4606.dds"
+			"gfx/models/portraits/doll/Pic_SVD.dds"
+			"gfx/models/portraits/doll/Pic_SVD_305.dds"
+			"gfx/models/portraits/doll/pic_SVD_5506.dds"
 		}
 	}
 	GF_doll_346 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_TPS.dds"
+			"gfx/models/portraits/doll/pic_SVT38.dds"
 		}
 	}
 	GF_doll_347 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_tt33.dds"
+			"gfx/models/portraits/doll/pic_T5000.dds"
+			"gfx/models/portraits/doll/pic_T5000_3106.dds"
+			"gfx/models/portraits/doll/pic_T5000_4605.dds"
+		}
+	}
+	GF_doll_348 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_T65.dds"
+		}
+	}
+	GF_doll_349 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_T77.dds"
+			"gfx/models/portraits/doll/pic_T77_6906.dds"
+		}
+	}
+	GF_doll_350 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_T91.dds"
+			"gfx/models/portraits/doll/pic_T91_4206.dds"
+		}
+	}
+	GF_doll_351 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Tabuk.dds"
+			"gfx/models/portraits/doll/pic_Tabuk_6206.dds"
+			"gfx/models/portraits/doll/pic_Tabuk_7204.dds"
+			"gfx/models/portraits/doll/pic_Tabuk_8006.dds"
+		}
+	}
+	GF_doll_352 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TAC50.dds"
+			"gfx/models/portraits/doll/pic_TAC50_10405.dds"
+			"gfx/models/portraits/doll/pic_TAC50_2602.dds"
+		}
+	}
+	GF_doll_353 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TAR21.dds"
+			"gfx/models/portraits/doll/pic_TAR21_1305.dds"
+			"gfx/models/portraits/doll/pic_TAR21_8106.dds"
+		}
+	}
+	GF_doll_354 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TavorTS12.dds"
+			"gfx/models/portraits/doll/pic_TavorTS12_7408.dds"
+			"gfx/models/portraits/doll/pic_TavorTS12_8205.dds"
+		}
+	}
+	GF_doll_355 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TCMS.dds"
+		}
+	}
+	GF_doll_356 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TEC9.dds"
+			"gfx/models/portraits/doll/pic_TEC9_5206.dds"
+		}
+	}
+	GF_doll_357 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TFQ.dds"
+		}
+	}
+	GF_doll_358 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Thunder50.dds"
+			"gfx/models/portraits/doll/pic_Thunder50_2206.dds"
+			"gfx/models/portraits/doll/pic_Thunder50_3309.dds"
+		}
+	}
+	GF_doll_359 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TKB408.dds"
+			"gfx/models/portraits/doll/pic_TKB408_6804.dds"
+			"gfx/models/portraits/doll/pic_TKB408_9004.dds"
+		}
+	}
+	GF_doll_360 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TMP.dds"
+			"gfx/models/portraits/doll/pic_TMP_2807.dds"
+			"gfx/models/portraits/doll/pic_TMP_3708.dds"
+			"gfx/models/portraits/doll/pic_TMP_4606.dds"
+		}
+	}
+	GF_doll_361 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TPS.dds"
+			"gfx/models/portraits/doll/pic_TPS_10301.dds"
+		}
+	}
+	GF_doll_362 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_TT33.dds"
+			"gfx/models/portraits/doll/pic_TT33_11007.dds"
 			"gfx/models/portraits/doll/pic_TT33_3204.dds"
 			"gfx/models/portraits/doll/pic_TT33_5106.dds"
 			"gfx/models/portraits/doll/pic_TT33_601.dds"
 			"gfx/models/portraits/doll/pic_TT33_6205.dds"
 		}
 	}
-	GF_doll_348 = {
+	GF_doll_363 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_type03.dds"
+			"gfx/models/portraits/doll/pic_Type03.dds"
 		}
 	}
-	GF_doll_349 = {
+	GF_doll_364 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_type100.dds"
+			"gfx/models/portraits/doll/pic_Type100.dds"
+			"gfx/models/portraits/doll/pic_Type100Mod.dds"
 			"gfx/models/portraits/doll/pic_Type100_2903.dds"
 			"gfx/models/portraits/doll/pic_Type100_4004.dds"
 			"gfx/models/portraits/doll/pic_Type100_4905.dds"
 			"gfx/models/portraits/doll/pic_Type100_7102.dds"
-			"gfx/models/portraits/doll/pic_Type100_Mod.dds"
+			"gfx/models/portraits/doll/pic_Type100_8804.dds"
 		}
 	}
-	GF_doll_350 = {
+	GF_doll_365 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_type62.dds"
+			"gfx/models/portraits/doll/pic_Type62.dds"
 			"gfx/models/portraits/doll/pic_Type62_2908.dds"
 		}
 	}
-	GF_doll_351 = {
+	GF_doll_366 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_type64-ar.dds"
+			"gfx/models/portraits/doll/pic_Type64-AR.dds"
 			"gfx/models/portraits/doll/pic_Type64-AR_2901.dds"
 			"gfx/models/portraits/doll/pic_Type64-AR_5702.dds"
 		}
 	}
-	GF_doll_352 = {
+	GF_doll_367 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_type88.dds"
+			"gfx/models/portraits/doll/pic_Type82S.dds"
+		}
+	}
+	GF_doll_368 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_Type88.dds"
 			"gfx/models/portraits/doll/pic_Type88_3003.dds"
 			"gfx/models/portraits/doll/pic_Type88_3504.dds"
 		}
 	}
-	GF_doll_353 = {
+	GF_doll_369 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ukm2000.dds"
+			"gfx/models/portraits/doll/pic_UKM2000.dds"
+			"gfx/models/portraits/doll/pic_UKM2000_3903.dds"
 			"gfx/models/portraits/doll/pic_UKM2000_5406.dds"
 			"gfx/models/portraits/doll/pic_UKM2000_6106.dds"
 		}
 	}
-	GF_doll_354 = {
+	GF_doll_370 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_ump40.dds"
+			"gfx/models/portraits/doll/pic_UMP40.dds"
 			"gfx/models/portraits/doll/pic_UMP40_539.dds"
 			"gfx/models/portraits/doll/pic_UMP40_559.dds"
 			"gfx/models/portraits/doll/pic_UMP40_585.dds"
 		}
 	}
-	GF_doll_355 = {
+	GF_doll_371 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_UMP45.dds"
+			"gfx/models/portraits/doll/pic_UMP45Mod.dds"
 			"gfx/models/portraits/doll/pic_UMP45_2107.dds"
 			"gfx/models/portraits/doll/pic_UMP45_3403.dds"
 			"gfx/models/portraits/doll/pic_UMP45_410.dds"
@@ -2712,13 +2948,13 @@ portraits = {
 			"gfx/models/portraits/doll/pic_UMP45_5405.dds"
 			"gfx/models/portraits/doll/pic_UMP45_555.dds"
 			"gfx/models/portraits/doll/pic_UMP45_584.dds"
-			"gfx/models/portraits/doll/pic_UMP45_Mod.dds"
 		}
 	}
-	GF_doll_356 = {
+	GF_doll_372 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_UMP9.dds"
+			"gfx/models/portraits/doll/pic_UMP9Mod.dds"
 			"gfx/models/portraits/doll/pic_UMP9_2106.dds"
 			"gfx/models/portraits/doll/pic_UMP9_3404.dds"
 			"gfx/models/portraits/doll/pic_UMP9_409.dds"
@@ -2726,145 +2962,146 @@ portraits = {
 			"gfx/models/portraits/doll/pic_UMP9_556.dds"
 			"gfx/models/portraits/doll/pic_UMP9_583.dds"
 			"gfx/models/portraits/doll/pic_UMP9_6704.dds"
-			"gfx/models/portraits/doll/pic_UMP9_9999.dds"
-			"gfx/models/portraits/doll/pic_UMP9_Mod.dds"
 		}
 	}
-	GF_doll_357 = {
+	GF_doll_373 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_usas12.dds"
+			"gfx/models/portraits/doll/pic_USAS12.dds"
 			"gfx/models/portraits/doll/pic_USAS12_2704.dds"
 		}
 	}
-	GF_doll_358 = {
+	GF_doll_374 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_uspcompact.dds"
+			"gfx/models/portraits/doll/pic_USPCompact.dds"
 		}
 	}
-	GF_doll_359 = {
+	GF_doll_375 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_UTS15.dds"
 		}
 	}
-	GF_doll_360 = {
+	GF_doll_376 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vector.dds"
+			"gfx/models/portraits/doll/pic_Vector.dds"
+			"gfx/models/portraits/doll/pic_VectorAgent.dds"
+			"gfx/models/portraits/doll/pic_VectorAgent_547.dds"
+			"gfx/models/portraits/doll/pic_Vector_10402.dds"
 			"gfx/models/portraits/doll/pic_Vector_1901.dds"
 			"gfx/models/portraits/doll/pic_Vector_2.dds"
 			"gfx/models/portraits/doll/pic_Vector_549.dds"
 			"gfx/models/portraits/doll/pic_Vector_6701.dds"
-			"gfx/models/portraits/doll/pic_Vector_Agent.dds"
-			"gfx/models/portraits/doll/pic_Vector_Agent547.dds"
 		}
 	}
-	GF_doll_361 = {
+	GF_doll_377 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vepr.dds"
+			"gfx/models/portraits/doll/pic_VEPR.dds"
 		}
 	}
-	GF_doll_362 = {
+	GF_doll_378 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vhs.dds"
+			"gfx/models/portraits/doll/pic_VHS.dds"
 			"gfx/models/portraits/doll/pic_VHS_5203.dds"
 			"gfx/models/portraits/doll/pic_VHS_562.dds"
 			"gfx/models/portraits/doll/pic_VHS_577.dds"
 		}
 	}
-	GF_doll_363 = {
+	GF_doll_379 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vigneronm2.dds"
+			"gfx/models/portraits/doll/pic_VigneronM2.dds"
 		}
 	}
-	GF_doll_364 = {
+	GF_doll_380 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vp1915.dds"
+			"gfx/models/portraits/doll/pic_VP1915.dds"
+			"gfx/models/portraits/doll/pic_VP1915_6604.dds"
 			"gfx/models/portraits/doll/pic_VP1915_7703.dds"
+			"gfx/models/portraits/doll/pic_VP1915_8503.dds"
 		}
 	}
-	GF_doll_365 = {
+	GF_doll_381 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vp70.dds"
+			"gfx/models/portraits/doll/pic_VP70.dds"
 		}
 	}
-	GF_doll_366 = {
+	GF_doll_382 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_VP9.dds"
 		}
 	}
-	GF_doll_367 = {
+	GF_doll_383 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vpm5.dds"
+			"gfx/models/portraits/doll/pic_VPM5.dds"
 			"gfx/models/portraits/doll/pic_VPM5_6107.dds"
 			"gfx/models/portraits/doll/pic_VPM5_6706.dds"
 		}
 	}
-	GF_doll_368 = {
+	GF_doll_384 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_VRB.dds"
 		}
 	}
-	GF_doll_369 = {
+	GF_doll_385 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vsk.dds"
+			"gfx/models/portraits/doll/pic_VSK.dds"
 			"gfx/models/portraits/doll/pic_VSK_5301.dds"
 			"gfx/models/portraits/doll/pic_VSK_5804.dds"
 			"gfx/models/portraits/doll/pic_VSK_7201.dds"
 		}
 	}
-	GF_doll_370 = {
+	GF_doll_386 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_vz61.dds"
+			"gfx/models/portraits/doll/pic_VZ61.dds"
 			"gfx/models/portraits/doll/pic_VZ61_801.dds"
 		}
 	}
-	GF_doll_371 = {
+	GF_doll_387 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_wa2000.dds"
+			"gfx/models/portraits/doll/pic_WA2000.dds"
 			"gfx/models/portraits/doll/pic_WA2000_1108.dds"
 			"gfx/models/portraits/doll/pic_WA2000_306.dds"
 			"gfx/models/portraits/doll/pic_WA2000_6.dds"
 			"gfx/models/portraits/doll/pic_WA2000_804.dds"
 		}
 	}
-	GF_doll_372 = {
+	GF_doll_388 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_webley.dds"
+			"gfx/models/portraits/doll/pic_Webley.dds"
 			"gfx/models/portraits/doll/pic_Webley_5601.dds"
 		}
 	}
-	GF_doll_373 = {
+	GF_doll_389 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_Welrod.dds"
+			"gfx/models/portraits/doll/pic_WelrodMod.dds"
 			"gfx/models/portraits/doll/pic_Welrod_1401.dds"
 			"gfx/models/portraits/doll/pic_Welrod_2103.dds"
 			"gfx/models/portraits/doll/pic_Welrod_411.dds"
-			"gfx/models/portraits/doll/pic_Welrod_Mod.dds"
 		}
 	}
-	GF_doll_374 = {
+	GF_doll_390 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_wkp.dds"
+			"gfx/models/portraits/doll/pic_WKP.dds"
 		}
 	}
-	GF_doll_375 = {
+	GF_doll_391 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_wz29.dds"
@@ -2872,68 +3109,75 @@ portraits = {
 			"gfx/models/portraits/doll/pic_wz29_5908.dds"
 		}
 	}
-	GF_doll_376 = {
+	GF_doll_392 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_x95.dds"
+			"gfx/models/portraits/doll/pic_X95.dds"
+			"gfx/models/portraits/doll/pic_X95_10205.dds"
 			"gfx/models/portraits/doll/pic_X95_4603.dds"
 		}
 	}
-	GF_doll_377 = {
+	GF_doll_393 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_xm3.dds"
-			"gfx/models/portraits/doll/pic_XM3_Mod.dds"
+			"gfx/models/portraits/doll/pic_XM3Mod.dds"
 		}
 	}
-	GF_doll_378 = {
+	GF_doll_394 = {
+		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
+		character_textures = {
+			"gfx/models/portraits/doll/pic_XM556.dds"
+		}
+	}
+	GF_doll_395 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
 			"gfx/models/portraits/doll/pic_XM8.dds"
+			"gfx/models/portraits/doll/pic_XM8Mod.dds"
 			"gfx/models/portraits/doll/pic_XM8_5606.dds"
-			"gfx/models/portraits/doll/pic_XM8_Mod.dds"
 		}
 	}
-	GF_doll_379 = {
+	GF_doll_396 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_z62.dds"
+			"gfx/models/portraits/doll/pic_Z62.dds"
 			"gfx/models/portraits/doll/pic_Z62_3507.dds"
 		}
 	}
-	GF_doll_380 = {
+	GF_doll_397 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_zasm76.dds"
+			"gfx/models/portraits/doll/pic_ZasM76.dds"
 			"gfx/models/portraits/doll/pic_ZasM76_4511.dds"
+			"gfx/models/portraits/doll/pic_ZasM76_6307.dds"
+			"gfx/models/portraits/doll/pic_ZasM76_9007.dds"
 		}
 	}
-	GF_doll_381 = {
+	GF_doll_398 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_zastavam21.dds"
+			"gfx/models/portraits/doll/pic_ZastavaM21.dds"
+			"gfx/models/portraits/doll/pic_ZastavaM21Mod.dds"
 			"gfx/models/portraits/doll/pic_ZastavaM21_1603.dds"
 			"gfx/models/portraits/doll/pic_ZastavaM21_2104.dds"
 			"gfx/models/portraits/doll/pic_ZastavaM21_4304.dds"
 		}
 	}
-	GF_doll_382 = {
+	GF_doll_399 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_zb26.dds"
-			"gfx/models/portraits/doll/pic_ZB26_4703.dds"
-			"gfx/models/portraits/doll/pic_ZB26_5603.dds"
+			"gfx/models/portraits/doll/pic_ZB26.dds"
 			"gfx/models/portraits/doll/pic_ZB26_7101.dds"
 		}
 	}
-	GF_doll_383 = {
+	GF_doll_400 = {
 		entity = "GF_leader_doll_entity" clothes_selector = no_texture attachment_selector = no_texture greeting_sound = no_sound
 		character_textures = {
-			"gfx/models/portraits/doll/pic_zip22.dds"
+			"gfx/models/portraits/doll/pic_ZIP22.dds"
 		}
 	}
 }
-
 
 portrait_groups = {
 	GF_doll = {
@@ -3324,6 +3568,24 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
+
 				}
 			}
 		}
@@ -3713,6 +3975,24 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
+
 				}
 			}
 		}
@@ -4102,6 +4382,24 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
+
 				}
 			}
 		}
@@ -4491,6 +4789,24 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
+
 				}
 			}
 		}
@@ -4880,6 +5196,24 @@ portrait_groups = {
 					GF_doll_381
 					GF_doll_382
 					GF_doll_383
+					GF_doll_384
+					GF_doll_385
+					GF_doll_386
+					GF_doll_387
+					GF_doll_388
+					GF_doll_389
+					GF_doll_390
+					GF_doll_391
+					GF_doll_392
+					GF_doll_393
+					GF_doll_394
+					GF_doll_395
+					GF_doll_396
+					GF_doll_397
+					GF_doll_398
+					GF_doll_399
+					GF_doll_400
+
 				}
 			}
 		}
