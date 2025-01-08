@@ -258,6 +258,7 @@ situation_event = {
 	title = GF_deficit.200.name
 	desc = GF_deficit.200.desc
 
+	is_triggered_only = yes
 	trigger = {
 		owner = { GF_is_main_country = yes }
 	}
