@@ -312,6 +312,21 @@ country_event = {
 			# 	type = GF_situation_cyberization
 			# 	target = this
 			# }
+
+			# fix possible failed to create cyberspecies event_target (wtf paradox)
+			# trigger three times to ensure
+			country_event = {
+				id = GF_ascension_path.2020
+				days = 1080 # 36 months
+			}
+			country_event = {
+				id = GF_ascension_path.2020
+				days = 1260 # 42 months
+			}
+			country_event = {
+				id = GF_ascension_path.2020
+				days = 1440 # 48 months
+			}
 		}
 		else = {
 			country_event = { id = GF_ascension_path.2001 days = 1 }
@@ -514,5 +529,30 @@ country_event = {
 
 	option = {
 		name = "utopia.2501.a"
+	}
+}
+
+country_event = {
+	id = GF_ascension_path.2020
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = {
+			any_owned_pop = {
+				is_robot_pop = no
+				is_same_species = owner.owner_main_species
+				is_spiritualist = no
+				OR = {
+					has_trait = trait_cybernetic
+					has_trait = trait_limited_cybernetic
+				}
+			}
+		}
+	}
+	immediate = {
+		owner_main_species = {
+			create_cyber_species_effect = yes
+		}
 	}
 }
