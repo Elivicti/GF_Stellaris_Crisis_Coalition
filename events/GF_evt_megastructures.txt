@@ -466,17 +466,27 @@ event = {
 	immediate = {
 		every_system = {
 			limit = { has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon }
-			random_system_megastructure = {
-				limit = { is_megastructure_type = GF_reverse_collapse_beacon }
-				save_event_target_as = beacon
-			}
-			random_fleet_in_system = {
-				limit = { has_fleet_flag = flag_f_GF_RC_beacon_defense_station }
-				set_location = event_target:beacon
-				fleet_event = {
-					id = GF_mega.321
-					days = 1
+			if = {
+				limit = {
+					any_system_megastructure = {
+						is_megastructure_type = GF_reverse_collapse_beacon
+					}
 				}
+				random_system_megastructure = {
+					limit = { is_megastructure_type = GF_reverse_collapse_beacon }
+					save_event_target_as = beacon
+				}
+				random_fleet_in_system = {
+					limit = { has_fleet_flag = flag_f_GF_RC_beacon_defense_station }
+					set_location = event_target:beacon
+					fleet_event = {
+						id = GF_mega.321
+						days = 1
+					}
+				}
+			}
+			else = {
+				remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
 			}
 		}
 	}
@@ -686,7 +696,9 @@ fleet_event = {
 				}
 			}
 		}
-
+		solar_system = {
+			remove_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+		}
 		remove_megastructure = event_target:GF_RCbeacon@this
 		delete_fleet = this
 	}
