@@ -421,14 +421,7 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		inline_script = {
-			script = "weights/GF_non_default_country_components_weight"
-			weight = 10
-		}
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = GF_nyto_collapse_liquid }
-		}
+		weight = 10
 	}
 
 	class_restriction = { shipclass_military shipclass_constructor shipclass_colonizer shipclass_science_ship shipclass_transport shipclass_military_special shipclass_starbase }
