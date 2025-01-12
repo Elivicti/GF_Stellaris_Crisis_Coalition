@@ -185,7 +185,7 @@ GF_tech_collapse_jump_drive = {
 
 	prerequisites = {
 		"tech_jump_drive_1"
-		"GF_tech_collapsetech_weaponize"
+		"GF_tech_collapse_relic_tech"
 	}
 
 	weight_modifier = {
