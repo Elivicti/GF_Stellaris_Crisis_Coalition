@@ -3,6 +3,39 @@
 #####################
 
 utility_component_template = {
+	# 民用船反应堆（殖民、工程、运输船）
+	key = "CORVETTE_GF_COLLAPSE_REACTOR_CIVIL"
+	size = small
+	icon = "GFX_GF_collapse_power_core"
+	icon_frame = 1
+	power = 300
+	resources = {
+		category = GF_ship_collapse_utilities
+		cost = {
+			alloys = 50
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.05
+		}
+	}
+
+	prerequisites = { "GF_tech_collapse_power_core" }
+	component_set = "power_core"
+	size_restriction = {
+		colonizer
+		lithoid_colonizer
+		sponsored_colonizer
+		constructor
+		science
+		transport
+	}
+	ai_weight = {
+		weight = 10
+	}
+}
+
+utility_component_template = {
 	# 护卫舰反应堆
 	key = "CORVETTE_GF_COLLAPSE_REACTOR"
 	size = small
@@ -26,12 +59,6 @@ utility_component_template = {
 	size_restriction = {
 		corvette
 		frigate
-		colonizer
-		lithoid_colonizer
-		sponsored_colonizer
-		constructor
-		science
-		transport
 		crisis_corvette
 	}
 	
