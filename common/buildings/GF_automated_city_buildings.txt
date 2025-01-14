@@ -392,7 +392,7 @@ building_GF_underground_expansion_module = {
 	}
 
 	planet_modifier = {
-		planet_max_districts_add = 1
+		planet_max_districts_add = 2
 	}
 }
 building_GF_energy_management_module = {
