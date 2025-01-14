@@ -282,3 +282,43 @@ years_to_days = {
 	set = $YEARS$
 	mult = 360
 }
+
+# this = planet
+GF_autocity_size_district_count_bonus = {
+	base = 0
+	# (  planet_size + 12  )^3 
+	# (--------------------) + 1
+	# (         13         )
+
+	# ((x - a) / b) ^ 3 + c
+	# x == planet_size
+	# a == -12  b == 13
+	# c ==   1
+	add = trigger:planet_size
+	add = 12
+	divide = 13
+	min = 1
+
+	pow = 3
+	add = 1
+
+	floor = yes
+}
+
+
+# this = planet
+GF_autocity_size_district_empire_size_penalty = {
+	base = 0
+	#  (2 * planet_size - 5) ^ 2 + 1575
+	# ----------------------------------
+	#              900
+
+	add = trigger:planet_size
+	min = 2.5 # lowest point of the curve
+
+	mult = 2
+	subtract = 5
+	pow = 2
+	add = 1575
+	divide = 900
+}

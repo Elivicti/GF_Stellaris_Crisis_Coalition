@@ -76,3 +76,6 @@
  GF_can_clear_relic_entrance_tooltip:0 "£trigger_no£ 需要先清理其它障碍"
  GF_cannot_clear_relic_entrance_tooltip:0 "£trigger_no£ 我们无法清理这个神秘的障碍"
  GF_sf_relic_entrance_cleared_effect:0 "§H将发掘这扇大门背后的秘密§!"
+
+ d_GF_autocity: "$pc_GF_automated_city$"
+ d_GF_autocity_tooltip: "自动化星球的可建造区划数将基于[this.GetName]的 £planetsize£ 行星规模进行调整：\n$MOD_PLANET_MAX_DISTRICTS_ADD$ §Y∝§! £planetsize£ ^ 3\n$MOD_EMPIRE_SIZE_DISTRICTS_MULT$ §Y∝§! £planetsize£ ^ 2\n\n§E已生效的 £planetsize£ 行星规模调整：§!"
