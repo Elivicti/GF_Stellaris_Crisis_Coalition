@@ -107,6 +107,19 @@ GF_automated_city_construction = {
 			current_situation_approach = GF_automated_city_construction_approach_speed_up
 		}
 		modifier = {
+			desc = GF_automated_city_construction_speed_from_agenda
+			factor = owner.value:scripted_modifier_mult|MODIFIER|GF_automated_city_construction_speed_agenda_mult|
+			NOT = {
+				current_situation_approach = GF_automated_city_construction_approach_cancel
+			}
+			owner = {
+				OR = {
+					has_modifier = GF_agenda_automation_finish
+					has_agenda_selected = GF_agenda_automation
+				}
+			}
+		}
+		modifier = {
 			desc = GF_automated_city_construction_approach_cancel
 			subtract = 3
 			current_situation_approach = GF_automated_city_construction_approach_cancel

@@ -1,3 +1,11 @@
+
+GF_automated_city_construction_speed_agenda_mult = {
+	icon = mod_reshape_form_agenda
+	percentage = yes
+	good = yes
+	category = country
+}
+
 GF_automated_city_max_districts_mult = {
 	icon = mod_planet_max_districts_mult
 	good = yes
