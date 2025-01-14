@@ -1,8 +1,11 @@
 ﻿l_simp_chinese:
 #################
- GF_Stellaris_Update_Log:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n\n$GF_Stellaris_Log_20241031$\n\n$GF_Stellaris_Update_Log_Tip$"
+ GF_Stellaris_Update_Log:0 "§R注意：新版本不保证与旧版存档的兼容性，载入旧版存档前请备份存档§!\n\n$GF_Stellaris_Log_20250114$\n\n$GF_Stellaris_Update_Log_Tip$"
 
  GF_Stellaris_Update_Log_Tip:0 "要获取更详细的§Y更新日志§!，请前往§Y创意工坊页面§!查看§Y改动说明§!。\n\n如果您在使用过程中对本机功能还有其他建议，或者发现系统错误，请向OGAS维护与升级部门主管安娜小姐反馈，QQ群：1035699926\n其他开发者若要接入本机系统，请参阅§Y000_documentation§!目录。"
+
+ # 2025.1.14
+ GF_Stellaris_Log_20250114: "1. §Y$pc_GF_automated_city$§!现在会根据星球大小获得区划上限加成和区划产生的帝国规模增加\n2. 新增§Y$pc_GF_automated_city$§!相关的 £engineering£ §Y循环科技§!\n3. 调整§Y$council_agenda_GF_agenda_automation_name$§!议程提供的效果\n4. 新增人形立绘\n5. 其他问题修复与优化"
 
  # 2024.10.31
  GF_Stellaris_Log_20241031: "1. §Y$GF_REVERSE_COLLAPSE_WARP_BEACON$§!现在具有$@GF_reverse_collapse_beacon_expire_days|Y=0$ £time£ 的持续时间\n2. 降低§Y$GF_fleet_action_deploy_RC_beacon$§!的时间和冷却时间\n3. 为人形添加§Y$GF_trait_mind_upgrade_1$§!与§Y$GF_trait_mind_upgrade_2$§!特质\n4. 堕落不再会使用模组的部件，且军孤不再会把信标基站拆除\n5. §Y$GF_fire_support_ship$§!的上限调整为§Y每1000§!舰容§Y增加1艘§!\n6. §Y$tr_gf_mind_upgrade_3$§!现在不能同化机飞后的主物种\n7. 更新§Y$GF_computing_center_4$§!的模型并调整了各个阶段的产出和花费"
