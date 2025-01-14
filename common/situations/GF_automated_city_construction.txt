@@ -154,24 +154,7 @@ GF_automated_city_construction = {
 				set_country_flag = flag_GF_has_completed_autocity_construction
 			}
 			target = {
-				planet_event = { id = GF_colony.5005 }
-				planet_event = { id = GF_colony.5006 }
-				planet_event = { id = GF_colony.5007 }
-				# 通知
-				planet_event = { id = GF_colony.5010 }
-
-				clear_deposits = yes
-				clear_planet_modifiers = yes
-				add_modifier = { modifier = GF_automated_city_status }
-
-				remove_all_buildings = yes
-				add_building = building_GF_connection_nexus
-				if = {
-					limit = { exists = orbital_defence }
-					orbital_defence.starbase = {
-						set_starbase_size = orbital_ring_tier_3
-					}
-				}
+				GF_autocity_construction_complete_effect = yes
 			}
 			destroy_situation = this
 		}

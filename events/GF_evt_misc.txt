@@ -218,6 +218,13 @@ event = {
 					}
 				}
 			}
+			every_galaxy_planet = {
+				limit = { is_planet_class = pc_GF_automated_city }
+				if = {
+					limit = { NOT = { has_deposit = d_GF_autocity } }
+					GF_make_autocity_district_effect = yes
+				}
+			}
 			# 关键词档案库
 			GF_unlock_inital_keywords = yes
 			# 心智升级特质

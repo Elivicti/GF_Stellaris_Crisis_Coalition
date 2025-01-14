@@ -204,3 +204,27 @@ d_GF_railway_hub = {
 		weight = 0
 	}
 }
+
+d_GF_autocity = {
+	icon = d_GF_south_pole_urban
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	triggered_planet_modifier = {
+		planet_max_districts_add = 1
+		mult = v_GF_automated_city_district_count_bonus
+	}
+	triggered_planet_modifier = {
+		empire_size_districts_mult = 1
+		mult = v_GF_automated_city_district_empire_size_penalty
+	}
+	
+	resources = {
+		category = planet_deposits
+	}
+	custom_tooltip = d_GF_autocity_tooltip
+
+	drop_weight = {
+		weight = 0
+	}
+}

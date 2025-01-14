@@ -1066,3 +1066,38 @@ GF_set_RC_beacon_fleet_cooldown = {
 		days_from_present = @GF_reverse_collapse_beacon_cooldown_days
 	}
 }
+
+# this = planet
+GF_autocity_construction_complete_effect = {
+	planet_event = { id = GF_colony.5005 }
+	planet_event = { id = GF_colony.5006 }
+	planet_event = { id = GF_colony.5007 }
+	# 通知
+	planet_event = { id = GF_colony.5010 }
+
+	clear_deposits = yes
+	clear_planet_modifiers = yes
+	add_modifier = { modifier = GF_automated_city_status }
+
+	remove_all_buildings = yes
+	add_building = building_GF_connection_nexus
+	if = {
+		limit = { exists = orbital_defence }
+		orbital_defence.starbase = {
+			set_starbase_size = orbital_ring_tier_3
+		}
+	}
+	GF_make_autocity_district_effect = yes
+}
+# this = planet
+GF_make_autocity_district_effect = {
+	set_variable = {
+		which = v_GF_automated_city_district_count_bonus
+		value = value:GF_autocity_size_district_count_bonus
+	}
+	set_variable = {
+		which = v_GF_automated_city_district_empire_size_penalty
+		value = value:GF_autocity_size_district_empire_size_penalty
+	}
+	add_deposit = d_GF_autocity
+}
