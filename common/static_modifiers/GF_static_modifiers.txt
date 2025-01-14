@@ -87,9 +87,11 @@ GF_ogas_mode_empire = {
 ###### 议程
 GF_agenda_automation_finish = {
 	icon = "gfx/interface/icons/modifiers/mod_planet_building_build_speed_mult.dds"
-	planet_building_build_speed_mult = 0.10
-	GF_automated_city_districts_produces_mult = 0.10
+	planet_building_build_speed_mult = 0.20
+	GF_automated_city_districts_produces_mult = 0.15
 	planet_pops_robotics_upkeep_mult = -0.15
+	GF_system_maintenance = 0.10
+	GF_automated_city_construction_speed_agenda_mult = 0.30
 }
 
 GF_agenda_doll_cloud_network_finish = {

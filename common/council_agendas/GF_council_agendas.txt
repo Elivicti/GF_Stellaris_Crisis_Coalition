@@ -13,8 +13,10 @@ GF_agenda_automation = {
 		has_technology = GF_tech_ogas_computing_center
 	}
 	modifier = {
-		planet_pop_assembly_mult = 0.10
-		planet_jobs_robotic_produces_mult = 0.10
+		planet_building_build_speed_mult = 0.10
+		GF_automated_city_districts_produces_mult = 0.05
+		GF_system_maintenance = 0.5
+		GF_automated_city_construction_speed_agenda_mult = 0.15
 	}
 	finish_modifier = GF_agenda_automation_finish
 }

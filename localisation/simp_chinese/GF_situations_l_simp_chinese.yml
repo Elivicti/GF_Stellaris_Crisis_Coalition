@@ -83,11 +83,12 @@
  GF_automated_city_construction_approach_normal:0 "维持支出"
  GF_automated_city_construction_approach_normal_effect_desc:0 ""
  GF_automated_city_construction_approach_speed_up:0 "加快建设"
- GF_automated_city_construction_approach_speed_up_effect_desc:0 "每月建设进度: §G+1§!"
+ GF_automated_city_construction_approach_speed_up_effect_desc:0 "每月建设进度: §G+50%§!"
 
  GF_automated_city_construction_districts_city: "$district_city$数量"
  GF_automated_city_construction_districts_industrial: "$district_industrial$数量"
  GF_automated_city_construction_districts_other: "其他区划数量"
+ GF_automated_city_construction_speed_from_agenda: "$council_agenda_GF_agenda_automation_name$议程"
 
 
 # 五年经济计划
