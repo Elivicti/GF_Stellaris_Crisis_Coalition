@@ -522,3 +522,327 @@ GF_tech_reverse_collapse_gateway_beacon = {
 		}
 	}
 }
+
+
+######## auto city
+GF_tech_3d_cloest_packing_1 = {
+	area = engineering
+	category = { materials industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_3d_cloest_packing_1 }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_max_districts_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+GF_tech_3d_cloest_packing_2 = {
+	area = engineering
+	category = { materials industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+
+	prerequisites = { GF_tech_3d_cloest_packing_1 }
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_3d_cloest_packing_2 }
+	}
+
+	modifier = {
+		GF_automated_city_max_districts_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+
+GF_tech_autocity_energy = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 5
+
+	icon = tech_repeatable_improved_tile_energy_output
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_energy }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_energy_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+GF_tech_autocity_food = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 5
+
+	icon = tech_repeatable_improved_tile_food_output
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_food }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_food_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+GF_tech_autocity_minerals = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 5
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_minerals }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_minerals_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+
+GF_tech_autocity_alloys = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 3
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_alloys }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_alloys_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+GF_tech_autocity_consumer_goods = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 3
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_consumer_goods }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_consumer_goods_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+GF_tech_autocity_rare = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 2
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_rare }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_rare_crystals_produces_mult = 0.05
+		GF_automated_city_districts_exotic_gases_produces_mult = 0.05
+		GF_automated_city_districts_volatile_motes_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}
+
+GF_tech_autocity_collapse_fluid = {
+	area = engineering
+	category = { industry }
+	tier = 5
+	cost = @GFTech_tier5cost5
+	weight = @GFTech_tier5weight1
+	is_rare = yes
+	cost_per_level = @repeatableTechLevelCost
+	levels = 3
+
+	potential = {
+		GF_can_research_tech_trigger = { TECH = GF_tech_autocity_collapse_fluid }
+		has_active_tradition = tr_gf_automation_finish
+	}
+
+	modifier = {
+		GF_automated_city_districts_GF_nyto_collapse_liquid_produces_mult = 0.05
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_trait_in_council = { TRAIT = leader_trait_curator }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_2 }
+				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
+			}
+		}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = GF_tech_reverse_collapse_gateway_beacon
+		}
+	}
+}

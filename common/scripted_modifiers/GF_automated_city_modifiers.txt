@@ -1,3 +1,9 @@
+GF_automated_city_max_districts_mult = {
+	icon = mod_planet_max_districts_mult
+	good = yes
+	percentage = yes
+	category = country
+}
 
 GF_system_maintenance = {
 	icon = mod_planet_stability_add

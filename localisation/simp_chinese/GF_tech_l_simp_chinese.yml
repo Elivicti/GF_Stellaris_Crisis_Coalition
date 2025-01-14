@@ -147,6 +147,25 @@
  GF_unlock_subnet_specialization: "§H解锁附庸特化：§!$GF_specialist_OGAS_subnet$"
  GF_unlock_subnet_specialization_desc: "$GF_preset_OGAS_subnet_desc$"
 
+ GF_tech_3d_cloest_packing_1: "高效空间利用"
+ GF_tech_3d_cloest_packing_1_desc: "通过优化各类设施的布局，提高空间的利用率。"
+ GF_tech_3d_cloest_packing_2: "极致空间利用"
+ GF_tech_3d_cloest_packing_2_desc: "大量的自动化工业设备几乎以空间最密堆积的形式层叠在一起，实现极致的空间利用。"
+ GF_tech_autocity_energy: "量子光伏电网"
+ GF_tech_autocity_energy_desc: "这一突破性的能源存储与传输技术极大地提高了能源收集与存储效率。"
+ GF_tech_autocity_food: "自然生态模拟"
+ GF_tech_autocity_food_desc: "在可控环境内模拟作物的最佳生长条件，实现快速增产。"
+ GF_tech_autocity_minerals: "纳米矿物提取"
+ GF_tech_autocity_minerals_desc: "先进的提取工艺确保矿石原料的每一个分子都能得到利用。"
+ GF_tech_autocity_alloys: "高温闪铸工艺"
+ GF_tech_autocity_alloys_desc: "这种特殊的工艺大大加快了合金锻造的速度，显著提高了生产的效率。"
+ GF_tech_autocity_consumer_goods: "智能装配产线"
+ GF_tech_autocity_consumer_goods_desc: "全面优化后的生产流水线能够极大提高消费品的生产速度。"
+ GF_tech_autocity_rare: "先进精炼工艺"
+ GF_tech_autocity_rare_desc: "这种工艺能够显著增加从矿物原料中精炼出稀有资源的产率。"
+ GF_tech_autocity_collapse_fluid: "坍塌流程优化"
+ GF_tech_autocity_collapse_fluid_desc: "针对自动化设施对坍塌液生产流程调优，提高生产效率。"
+
 #### 危险科技路线
 
 ## 社会学线（伯劳+ELID）

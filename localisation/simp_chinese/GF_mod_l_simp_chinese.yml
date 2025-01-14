@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  GIRLF:0 "少女前线"
 ############ overwrite
  mod_megastructures_produces_mult:0 "巨型结构产出"
@@ -212,6 +212,7 @@
 
  mod_GF_planet_URNC_commissioner_stability_add:0 "£job_GF_URNC_commissioner£ $GF_planet_URNC_commissioner$产出的 £mod_planet_stability_add£ 稳定度"
 
+ mod_GF_automated_city_max_districts_mult: "$pc_GF_automated_city$$MOD_PLANET_MAX_DISTRICTS_MULT$"
  mod_GF_system_maintenance:0 "系统维护度"
  mod_GF_automated_city_districts_factory_assembly_speed_mult:0 "$district_GF_automated_factory$生产的 £mod_planet_pop_assembly_mult£ 人口组装"
 
