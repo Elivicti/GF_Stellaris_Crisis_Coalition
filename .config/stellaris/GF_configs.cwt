@@ -1,0 +1,236 @@
+scripted_variables = {
+    # 'x' or 'x = xxx'
+    # 'x' can also be a pattern expression (template expression, ant expression or regex)
+
+    ## hint = 模组版本号
+    GF_Stellaris_MOD_VER
+}
+
+definitions = {
+    # game rule related triggers
+    ### prev = species
+    ## type = scripted_trigger
+    ## replace_scopes = { this = country root = planet }
+    GF_can_build_doll_species
+
+    ### prev = pop
+    ## type = scripted_trigger
+    ## replace_scopes = { this = country }
+    GF_allow_doll_leaders
+
+    ### prev = pop
+    ## type = scripted_trigger
+    ## replace_scopes = { this = country }
+    GF_allow_doll_leaders_military
+
+    ## type = scripted_trigger
+    ## replace_scopes = { this = leader root = country from = country }
+    GF_can_trade_robotic_leader
+
+    ########## game rule related triggers
+
+    # since 1.3.5, scope context related options are also available here
+    ## type = scripted_trigger
+    ## replace_scopes = { this = country root = country }
+    GF_can_research_tech_trigger
+
+    ## type = scripted_trigger
+    ## replace_scopes = { this = system }
+    GF_sf_event_system_trigger
+
+    ## type = scripted_trigger
+    ## replace_scopes = { this = planet }
+    GF_sf_event_planet_trigger
+
+    ## type = scripted_effect
+    ## replace_scopes = { this = country }
+    GF_unlock_archive
+
+    ## type = scripted_effect
+    ## replace_scopes = { this = country }
+    GF_set_OGAS_story_event_picture
+
+    ## type = scripted_effect
+    ## replace_scopes = { this = country }
+    GF_clear_OGAS_story_event_picture
+
+    ## type = scripted_effect
+    ## replace_scopes = { this = country }
+    GF_set_zion_deep_dive_cooldown
+}
+
+parameters = {
+    # 'x' or 'x = xxx'
+    # 'x' is a parameter name, e.g., for '$JOB$', 'x' should be 'JOB'
+    # 'x' can also be a pattern expression (template expression, ant expression or regex)
+    # use 'x = xxx' to declare context config(s) (add '## context_configs_type = multiple' if there is various context configs)
+
+    # since 1.3.6, value of option 'context_key' can also be a pattern expression (template expression, ant expression or regex)
+
+    ## context_key = scripted_trigger@GF_can_research_tech_trigger
+    TECH = <technology>
+
+    ## context_key = scripted_trigger@GF_sf_event_system_trigger
+    ## context_configs_type = multiple
+    TYPE = { barren asteroid }
+
+    ## context_key = scripted_trigger@GF_sf_event_planet_trigger
+    ## context_configs_type = multiple
+    TYPE = { barren asteroid }
+
+    ## context_key = inline_script@trait/GF_traits
+    ICON = <sprite>
+    ## context_key = inline_script@trait/GF_traits
+    GLOW = bool
+    ## context_key = inline_script@trait/GF_traits
+    ## context_configs_type = multiple
+    BACKGROUND = { none black yellow light_blue green }
+    ## context_key = inline_script@trait/GF_traits
+    ## context_configs_type = multiple
+    RARITY = enum[leader_trait_rarity]
+    ## context_key = inline_script@trait/GF_traits
+    ## context_configs_type = multiple
+    CLASS = {
+        leader
+        <leader_class>
+    }
+    ## context_key = inline_script@trait/GF_traits
+    ## context_configs_type = multiple
+    COUNCIL = { bool triggered always }
+
+    ## context_key = inline_script@OGAS/GF_archive
+    TITLE = localisation
+    ## context_key = inline_script@OGAS/GF_archive
+    ARCHIVE = localisation
+
+
+    ## context_key = inline_script@OGAS/GF_keyword
+    KEYWORD = <game_concept>
+
+    ## context_key = scripted_effect@GF_unlock_keyword
+    NOTIFICATION = bool
+    ## context_key = scripted_effect@GF_unlock_keyword
+    KEYWORD = <game_concept>
+
+    ## context_key = scripted_effect@GF_unlock_archive
+    NOTIFICATION = bool
+
+    ## context_key = scripted_effect@GF_unlock_archive
+    ## context_configs_type = multiple
+    VALUE = {
+        <game_concept>
+        localisation
+    }
+
+    ## context_key = scripted_effect@GF_unlock_archive
+    ## context_configs_type = multiple
+    TYPE = { keyword history_archive event_archive }
+
+
+    ## context_key = scripted_trigger@GF_has_unlocked_archive
+    VALUE = <game_concept>
+    ## context_key = scripted_trigger@GF_has_unlocked_archive
+    ## context_configs_type = multiple
+    TYPE = { keyword history_archive event_archive }
+
+
+    ## context_key = scripted_trigger@GF_check_OGAS_story_event_picture
+    SCOPE = scope_group[target_country]
+    ## context_key = scripted_trigger@GF_check_OGAS_story_event_picture
+    PICTURE = <sprite>
+
+    ## context_key = scripted_effect@GF_set_OGAS_story_event_picture
+    PICTURE = <sprite>
+
+    ## context_key = scripted_effect@GF_set_zion_deep_dive_cooldown
+    INF = bool
+    ## context_key = scripted_effect@GF_set_zion_deep_dive_cooldown
+    NOTIFICATION = bool
+    ## context_key = scripted_effect@GF_set_zion_deep_dive_cooldown
+    YEARS = int
+}
+
+dynamic_values = {
+    event_target = {
+        # 'x' or 'x = xxx'
+        # 'x' can also be a pattern expression (template expression, ant expression or regex)
+
+        ### event target points to earth
+        ## hint = Earth
+        ## push_scope = planet
+        GF_home_world
+
+        ## hint = OGAS Country
+        ## push_scope = country
+        GF_ogas_country
+
+        ## hint = OGAS Leader
+        ## push_scope = leader
+        GF_ogas_leader
+
+        ## push_scope = leader
+        GF_archive_title
+    }
+}
+
+# inline_scripts = {
+#     # 'x' or 'x = xxx'
+#     # 'x' is a inline script expression, e.g., for 'inline_script = jobs/researchers_add', 'x' should be 'jobs/researchers_add'
+#     # 'x' can also be a pattern expression (template expression, ant expression or regex)
+#     # use 'x = xxx' to declare context config(s) (add '## context_configs_type = multiple' if there is various context configs)
+#     # note extended documentation is unavailable for inline scripts
+#
+#     x
+#
+#     # more detailed examples for declaring context config(s)
+#
+#     ## context_configs_type = multiple
+#     x = {
+#         ## cardinality = 0..1
+#         potential = single_alias_right[trigger_clause]
+#         ## cardinality = 0..1
+#         possible = single_alias_right[trigger_clause]
+#     }
+#
+#     # since 1.3.5, scope context related options are also available here
+#
+#     ## replace_scopes = { this = country root = country }
+#     x
+#
+#     # since 1.3.6, using single alias at root level is also available here
+#
+#     ## context_configs_type = multiple
+#     x = single_alias_right[trigger_clause]
+# }
+
+
+#on_actions = {
+#    # 'x' or 'x = xxx'
+#    # 'x' can also be a pattern expression (template expression, ant expression or regex)
+#
+#    ### Some documentation
+#    ## replace_scopes = { this = country from = any }
+#    ## event_type = country
+#    on_OGAS_used_threads_over_cap
+#
+#    ## replace_scopes = { this = country }
+#    ## event_type = country
+#    on_GF_game_start
+#
+#    ### 奇观拓展拆除兼容
+#    ## replace_scopes = { this = country from = country fromfrom = megastructure }
+#    ## event_type = country
+#    on_megastructure_ownerless
+#}
+
+
+# ## scopes = { any }
+# alias[effect:modifier_tooltip] = {
+#
+#     ## cardinality = 0..1
+#     indent = localisation
+#
+#     ## cardinality = 1..inf
+#     alias_name[modifier] = alias_match_left[modifier]
+#
+# }
