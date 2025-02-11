@@ -15,7 +15,7 @@ GF_agenda_automation = {
 	modifier = {
 		planet_building_build_speed_mult = 0.10
 		GF_automated_city_districts_produces_mult = 0.05
-		GF_system_maintenance = 0.5
+		GF_system_maintenance = 0.05
 		GF_automated_city_construction_speed_agenda_mult = 0.15
 	}
 	finish_modifier = GF_agenda_automation_finish
