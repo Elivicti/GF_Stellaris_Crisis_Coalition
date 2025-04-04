@@ -1,0 +1,11 @@
+# 这个on_action中包含用于兼容的on_action
+# 特别地，必须在其之后触发的事件
+
+
+# Triggers when pressing begin in the intro window
+# This = country to press begin
+on_press_begin = {
+	events = {
+		GF_evt_misc.120 # PD
+	}
+}

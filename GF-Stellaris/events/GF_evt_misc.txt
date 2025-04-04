@@ -18,6 +18,7 @@ country_event = {
 	}
 }
 
+### 意识形态战争会改变危机联合的政体，需要特殊处理保持政体不变
 # on_war_beginning
 # Root = Country
 # From = War
@@ -173,6 +174,33 @@ country_event = {
 		}
 	}
 }
+
+
+#### Planet Diversity兼容
+
+# on_press_begin
+# 若开局使用PD的特殊星球类型，PD会在on_press_begin时清空区划、建筑和地块，并重刷
+# 此事件必须比PD的事件后触发
+country_event = {
+	id = GF_evt_misc.120
+	hide_window = yes
+
+	is_triggered_only = yes
+	trigger = {
+		has_global_flag = planetarydiversity # PD
+		GF_is_Crisis_Coalition = yes
+	}
+
+	immediate = {
+		capital_scope = {
+			clear_deposits = yes
+			planet_event = {
+				id = GF_start.10
+			}
+		}
+	}
+}
+
 
 ### on_single_player_save_game_load
 # no scope
