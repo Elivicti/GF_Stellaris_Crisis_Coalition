@@ -10,6 +10,7 @@ GF_planet_dormancy = {
 		upkeep
 		# produces
 	}
+	modifier_category = pop_job
 }
 
 GF_doll_assemblers = {
@@ -17,7 +18,8 @@ GF_doll_assemblers = {
 	generate_mult_modifiers = {
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_job
+
 }
 
 GF_ship_collapse_weapons = {
@@ -84,7 +86,7 @@ GF_planet_collapser = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_job
 }
 
 GF_planet_reverse_collapser = {
@@ -98,7 +100,7 @@ GF_planet_reverse_collapser = {
 		produces
 		upkeep
 	}
-	modifier_category = pop
+	modifier_category = pop_job
 }
 
 GF_planet_reverse_collapser_researcher = {
@@ -107,7 +109,7 @@ GF_planet_reverse_collapser_researcher = {
 	generate_mult_modifiers = {
 		produces
 	}
-	modifier_category = pop
+	modifier_category = pop_job
 
 }
 
@@ -181,6 +183,7 @@ GF_automated_city_maintainer = {
 	generate_mult_modifiers = {
 		upkeep
 	}
+	modifier_category = pop_job
 }
 
 pop_category_GF_freedom_class = {
@@ -193,7 +196,7 @@ pop_category_GF_freedom_class = {
 		upkeep
 		produces
 	}
-	modifier_category = pop
+	modifier_category = pop_group
 }
 
 GF_doll_pops= {
@@ -201,4 +204,5 @@ GF_doll_pops= {
 	generate_add_modifiers = {
 		produces
 	}
+	modifier_category = pop_group
 }

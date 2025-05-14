@@ -75,8 +75,8 @@ d_GF_doll_factory = {
 	category = deposit_cat_rare
 	icon = d_GF_doll_factory
 	planet_modifier = {
-		job_GF_assemble_mechanic_add = 1
-		job_GF_programmer_add = 1
+		job_GF_assemble_mechanic_add = 100
+		job_GF_programmer_add = 100
 		# debug
 		# planet_pop_assembly_add = 25
 	}
@@ -158,7 +158,7 @@ d_GF_relic_preservation = {
 	category = deposit_cat_rare
 	icon = d_GF_relic_preservation
 	planet_modifier = {
-		job_GF_relic_researcher_add = 1
+		job_GF_relic_researcher_add = 100
 	}
 	drop_weight = {
 		weight = 0
@@ -171,7 +171,7 @@ d_GF_south_pole_urban = {
 	icon = d_GF_south_pole_urban
 	planet_modifier = {
 		planet_housing_add = 3
-		job_GF_relic_researcher_add = 1
+		job_GF_relic_researcher_add = 100
 		district_farming_max = 1
 		district_mining_max = 1
 		district_generator_max = 1

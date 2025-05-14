@@ -5,6 +5,10 @@ GF_relic_department = {
 	use_guiding_ethic_as_pop_filter = no
 	visual_ethic = "technologist_visual_ethic"
 
+	extortion_resource = {
+		category = pop_factions
+	}
+
 	unique = yes
 	support_multiplier = 1
 
@@ -42,12 +46,22 @@ GF_relic_department = {
 
 	can_join_faction = {
 		# is_shackled_robot = no
+		# if ={
+		# 	limit = {
+		# 		planet = {
+		# 			any_owned_pop_group = { exists = pop_job }
+		# 		}
+		# 	}
+		# }
 		OR = {
-			has_job = bureaucrat
-			has_job = manager
-			has_job = researcher
-			has_job = GF_programmer
-			has_job_category = ruler
+			# has_job = bureaucrat
+			# has_job = manager
+			# has_job = researcher
+			# has_job = GF_programmer
+			is_unemployed = no
+
+			is_pop_category = specialist
+			is_pop_category = ruler
 		}
 
 		if = {
@@ -65,7 +79,7 @@ GF_relic_department = {
 		base = 100
 		modifier = {
 			factor = 0.05
-			NOT = { pop_has_ethic = ethic_materialist }
+			NOT = { pop_group_has_ethic = ethic_materialist }
 		}
 		modifier = {
 			factor = 1.5

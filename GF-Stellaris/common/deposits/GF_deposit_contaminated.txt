@@ -95,7 +95,8 @@ d_GF_purify_wall = {
 		planet_max_districts_add = -1
 		pop_environment_tolerance = 0.05
 		army_defense_health_mult = 0.20
-		job_GF_guard_doll_add = 2
+		job_GF_guard_doll_add = 200
+		planet_building_capacity_add = 2
 	}
 	resources = {
 		category = planet_deposits

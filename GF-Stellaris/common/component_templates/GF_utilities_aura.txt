@@ -366,52 +366,62 @@ utility_component_template = {
 		GF_tech_reverse_collapse_gateway_beacon
 	}
 
-	### scripted on_action name
-	scripted_action_name = on_GF_RC_beacon_deployed
-	### button description
-	scripted_action_tooltip = GF_deploy_RC_beacon_desc
-	### button title
-	scripted_action_activity_key = GF_deploy_RC_beacon_activity_key
-	### fleet action tooltip showed in fleet ui
-	scripted_action_context_menu_name = GF_deploy_RC_beacon_menu_title
-	scripted_action_icon = GFX_fleet_order_button_special_project
+	scripted_action = {
+		scope = planet
 
-	### not sure when this is fired
-	scripted_action_on_cancel = on_GF_RC_beacon_deployment_canceled
+		### scripted on_action name
+		name = on_GF_RC_beacon_deployed
+		### button description
+		tooltip = GF_deploy_RC_beacon_desc
+		### button title
+		activity_key = GF_deploy_RC_beacon_activity_key
+		### fleet action tooltip showed in fleet ui
+		context_menu_name = GF_deploy_RC_beacon_menu_title
+		icon = GFX_fleet_order_button_special_project
 
-	### progress tooltip showed in fleet ui
-	scripted_action_progress_activity_key = GF_deploy_RC_beacon_progress_activity_key
-	scripted_action_required_progress = @GF_reverse_collapse_beacon_deploy_days
+		### not sure when this is fired
+		on_cancel = on_GF_RC_beacon_deployment_canceled
 
-	scripted_action_button_possible = {
-		custom_tooltip = {
-			fail_text = GF_RC_beacon_already_deployed
-			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployed }
-		}
-		custom_tooltip = {
-			fail_text = GF_RC_beacon_deployment_cooldown
-			NOT = { has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown }
-		}
-	}
+		### progress tooltip showed in fleet ui
+		progress_activity_key = GF_deploy_RC_beacon_progress_activity_key
+		required_progress = @GF_reverse_collapse_beacon_deploy_days
 
-	scripted_action_possible = {
-		from = {
-			NOR = {
-				has_fleet_flag = flag_f_GF_RC_beacon_deployed
-				has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
+		button_clickable = {
+			custom_tooltip = {
+				fail_text = GF_RC_beacon_already_deployed
+				NOT = { from = { has_fleet_flag = flag_f_GF_RC_beacon_deployed } }
+			}
+			custom_tooltip = {
+				fail_text = GF_RC_beacon_deployment_cooldown
+				NOT = { from = { has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown } }
 			}
 		}
-		is_star = no
-		is_astral_scar = no
-		GF_is_habitat = no
-		solar_system = {
-			NOR = {
-				has_star_flag = flag_s_GF_reverse_collapse_gateway_node
-				has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+		# cost = {
+		# 	alloys = 200
+		# 	energy = 500
+		# 	GF_nyto_collapse_liquid = 100
+		# }
+
+		possible = {
+			from = {
+				NOR = {
+					has_fleet_flag = flag_f_GF_RC_beacon_deployed
+					has_fleet_flag = flag_f_GF_RC_beacon_deployment_cooldown
+				}
+			}
+			is_star = no
+			is_astral_scar = no
+			GF_is_habitat = no
+			solar_system = {
+				NOR = {
+					has_star_flag = flag_s_GF_reverse_collapse_gateway_node
+					has_star_flag = flag_s_GF_reverse_collapse_gateway_beacon
+				}
 			}
 		}
+		finished = {}
 	}
-	scripted_action_finished = {}
+
 
 	ai_weight = {
 		weight = 0 # ai is not allowed to use complicated stuff
