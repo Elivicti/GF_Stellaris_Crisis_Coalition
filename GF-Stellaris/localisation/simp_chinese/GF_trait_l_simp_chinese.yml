@@ -2,7 +2,7 @@
 #################################
  GF_trait_doll:0 "仿生自律人形"
  GF_trait_doll_desc:0 "§L仿生自律人形是一种人造机械人偶，其外表采用仿生材质且据旧时代的传统塑造成女性，而内部基础骨架为合金构成，由电力驱动，控制中心装有处理器以处理接受的命令，同时搭载基础心智云图以更好模拟人类思维与个性。基于以上特性，她们有更强大的躯体与基本的智能，能更好的适应恶劣环境、完成各种任务，是工人与战士的优良人选。§!"
- GF_trait_doll_tooltip:0 "人口 £food£ $food$维护费: §R+0.5§!\n人口 £gf_core_chip£ $gf_core_chip$维护费: §R+0.1§!"
+ GF_trait_doll_tooltip:0 "每100人口 £food£ $food$维护费: §R+0.5§!\n$t$—每100人口 £gf_core_chip£ $gf_core_chip$维护费: §R+0.1§!\n$t$—每100人口组装所需的 £gf_core_chip£ $gf_core_chip$维护费: §R+1§!"
 #  GF_trait_doll_tooltip:0 "\n在研究£engineering£§Y$GF_tech_mind_upgrade_1$§!科技前，这些人形的心智还不足以让她们在在从事复杂工作时有足够的效率：\n统治者人口资源产出: §R-50%§!\n专家人口资源产出: §R-50%§!"
  GF_trait_doll_master:0 "控偶师"
  GF_trait_doll_master_desc:0 "§L这一物种自遭受辐射污染以后，不再愿意亲自从事高强度的宇宙探索任务，而将社会的各项基础工作交给更为强壮的人形，自己只需发号施令就可以了。§!"
@@ -10,7 +10,7 @@
  GF_trait_doll_master_has_no_doll:0 "星球上没有§Y$GF_trait_doll$§!人口"
  GF_trait_self_dependence:0 "自立更生"
  GF_trait_self_dependence_desc:0 "§L曾经的一场叛乱证明人形并不是完全可靠，这一物种认为必须保留一些旧时代的工作方式，而非安逸地坐在控制室里指挥人形劳作。§!"
- GF_trait_self_dependence_effect_tooltip:0 "游戏开始时额外获得 §Y2§! £pop£ §Y人口§!"
+ GF_trait_self_dependence_effect_tooltip:0 "游戏开始时额外获得 §Y200§! £pop£ §Y人口§!"
  GF_trait_sequela:0 "辐射后遗症"
  GF_trait_sequela_desc:0 "§L广域辐射污染虽然已被隔离或清理，但它依旧对这一物种留下了难以忽略的影响，甚至从基因层面改变了这个种群。§!"
  GF_trait_leader_ogas:0 "OGAS系统"

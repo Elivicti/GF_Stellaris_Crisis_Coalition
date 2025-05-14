@@ -2,6 +2,13 @@ GF_ANDROID = {
 	species_trait_points = 3
 	species_max_traits = 6
 	robotic = yes
+
+	resources = {
+		category = planet_pops
+
+		inline_script = "pop_resources/regular_upkeep"      # Regular food, mineral and energy upkeep.
+		inline_script = "pop_resources/pop_misc_production" # Resource production from other sources
+	}
 }
 
 collective_consciousness = {

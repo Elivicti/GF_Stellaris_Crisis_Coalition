@@ -19,22 +19,6 @@ GF_doll = {
 
 	resources = {
 		category = GF_doll_pops
-		upkeep = {
-			trigger = { is_being_purged = no }
-			gf_core_chip = 0.1
-		}
-		upkeep = {
-			trigger = {
-				is_being_purged = no
-				owner = {
-					NOR = {
-						has_policy_flag = GF_run_mode_policy_no_food
-						has_policy_flag = GF_run_mode_policy_overload
-					}
-				}
-			}
-			food = 0.5
-		}
 	}
 }
 
@@ -46,7 +30,7 @@ GF_new_type = {
 	}
 	possible_secondary = { always = no }
 	randomized = no
-	
+
 	graphical_culture = GF_new_type_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 	trait = "GF_trait_sequela"

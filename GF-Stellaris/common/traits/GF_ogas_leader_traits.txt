@@ -1,5 +1,4 @@
 GF_trait_leader_ogas = {
-	cost = 0
 	# leader_trait_type = destiny
 	inline_script = {
 		script = trait/GF_traits
@@ -10,6 +9,7 @@ GF_trait_leader_ogas = {
 		RARITY = paragon
 		GLOW = yes
 		TIER = none
+		TIMED = no
 	}
 
 	self_modifier = {
@@ -38,7 +38,6 @@ GF_trait_leader_ogas = {
 }
 
 GF_trait_leader_ogas_glitch = {
-	cost = 0
 	inline_script = {
 		script = trait/icon_negative
 		ICON = GFX_leader_trait_erratic_morality_core
@@ -70,7 +69,6 @@ GF_trait_leader_ogas_glitch = {
 }
 
 GF_trait_leader_ogas_2 = {
-	cost = 0
 	# leader_trait_type = destiny
 	inline_script = {
 		script = trait/GF_traits
@@ -81,6 +79,7 @@ GF_trait_leader_ogas_2 = {
 		RARITY = paragon
 		GLOW = no
 		TIER = none
+		TIMED = no
 	}
 
 	leader_class = { official }
@@ -113,7 +112,6 @@ GF_trait_leader_ogas_2 = {
 }
 
 GF_trait_leader_ogas_subnet_core = {
-	cost = 0
 	# leader_trait_type = destiny
 	inline_script = {
 		script = trait/GF_traits
@@ -124,6 +122,7 @@ GF_trait_leader_ogas_subnet_core = {
 		RARITY = paragon
 		GLOW = yes
 		TIER = none
+		TIMED = no
 	}
 
 	councilor_modifier = {
@@ -160,7 +159,6 @@ GF_trait_leader_ogas_subnet_core = {
 }
 
 GF_trait_leader_doll_cloud_network = {
-	cost = 0
 	# @trait_sorting_priority_$RARITY$_$COUNCIL$_$TIER$
 	# @trait_sorting_priority_veteran_yes_none
 	inline_script = {

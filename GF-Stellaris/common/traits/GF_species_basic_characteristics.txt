@@ -21,7 +21,7 @@ GF_trait_doll = {
 		pop_environment_tolerance = 0.9
 		pop_demotion_time_mult = -2
 		army_damage_mult = 0.2
-		planet_jobs_worker_produces_mult = 0.10
+		pop_cat_worker_bonus_workforce_mult = 0.10
 	}
 
 	triggered_species_modifier = {
@@ -38,34 +38,56 @@ GF_trait_doll = {
 		planet_jobs_ruler_produces_mult = -0.50
 	}
 
+	resources = {
+		category = planet_pops
+		upkeep = {
+			trigger = { is_being_purged = no }
+			gf_core_chip = 0.15
+		}
+		upkeep = {
+			trigger = {
+				is_being_purged = no
+				owner = {
+					NOR = {
+						has_policy_flag = GF_run_mode_policy_no_food
+						has_policy_flag = GF_run_mode_policy_overload
+					}
+				}
+			}
+			food = 0.5
+		}
+	}
+
 	custom_tooltip_with_modifiers = GF_trait_doll_tooltip
 
-	assembling_modifier = {
-		planet_pop_assemblers_gf_core_chip_upkeep_add = 1
-	}
+	# triggered_planet_pop_group_modifier_for_all = {
+	# 	planet_pop_assemblers_gf_core_chip_upkeep_add = 1
+	# 	pop_bonus_workforce_mult = 1000
+	# }
 
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = { is_being_purged = no }
-		planet_jobs_produces_mult = 1
+		pop_bonus_workforce_mult = 1
 		mult = modifier:GF_doll_produces_mult
 	}
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = { is_being_purged = no }
-		planet_jobs_worker_produces_mult = 1
+
+		pop_cat_worker_bonus_workforce_mult = 1
 		mult = modifier:GF_doll_cat_worker_produces_mult
 	}
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = { is_being_purged = no }
-		planet_jobs_specialist_produces_mult = 1
+		pop_cat_specialist_bonus_workforce_mult = 1
 		mult = modifier:GF_doll_cat_specialist_produces_mult
 	}
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = { is_being_purged = no }
-		planet_jobs_ruler_produces_mult = 1
+		pop_cat_ruler_bonus_workforce_mult = 1
 		mult = modifier:GF_doll_cat_ruler_produces_mult
 	}
 
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		planet_pops_upkeep_mult = 1
 		mult = modifier:GF_doll_upkeep_mult
 	}
@@ -149,9 +171,9 @@ GF_trait_sequela = {
 	advanced_trait = no
 	modifier = {
 		army_damage_mult = -0.2
-		planet_jobs_worker_produces_mult = -0.2
-		pop_growth_speed = -0.2
-		planet_jobs_specialist_produces_mult = 0.05
+		pop_cat_worker_bonus_workforce_mult = -0.2
+		logistic_growth_mult = -0.20
+		pop_cat_specialist_bonus_workforce_mult = 0.05
 	}
 	allowed_archetypes = {
 		BIOLOGICAL

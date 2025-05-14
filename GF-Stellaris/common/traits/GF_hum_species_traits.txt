@@ -10,24 +10,24 @@ GF_trait_doll_master = {
 	advanced_trait = no
 	modifier = {
 		species_leader_exp_gain = 0.10
-		planet_jobs_ruler_produces_mult = 0.20
-		planet_jobs_specialist_produces_mult = 0.15
-		planet_jobs_worker_produces_mult = -0.25
+		pop_cat_ruler_bonus_workforce_mult = 0.20
+		pop_cat_specialist_bonus_workforce_mult = 0.15
+		pop_cat_worker_bonus_workforce_mult = -0.35
 		pop_category_specialists_consumer_goods_upkeep_add = 0.10
 		pop_category_rulers_consumer_goods_upkeep_add = 0.15
 		army_damage_mult = -0.50
 	}
 	custom_tooltip_with_modifiers = GF_trait_doll_master_effect_desc
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
 			planet = {
-				NOT = { any_owned_pop = { has_trait = GF_trait_doll } }
+				NOT = { any_owned_pop_group = { has_trait = GF_trait_doll } }
 			}
 		}
 		key = GF_trait_doll_master_has_no_doll
-		planet_jobs_ruler_produces_mult = -0.10
-		planet_jobs_specialist_produces_mult = -0.10
+		pop_cat_ruler_bonus_workforce_mult = -0.10
+		pop_cat_specialist_bonus_workforce_mult = -0.10
 	}
 	allowed_archetypes = { BIOLOGICAL }
 	ai_weight = {
@@ -50,9 +50,9 @@ GF_trait_self_dependence = {
 	advanced_trait = no
 	modifier = {
 		army_damage_mult = 0.50
-		planet_jobs_worker_produces_mult = 0.70
-		pop_growth_speed = 0.25
-		planet_jobs_consumer_goods_upkeep_mult = -0.20
+		pop_cat_worker_bonus_workforce_mult = 0.70
+		logistic_growth_mult = 0.25
+		planet_pops_consumer_goods_upkeep_mult = -0.20
 		planet_pops_upkeep_mult = 0.15
 	}
 	custom_tooltip_with_modifiers = GF_trait_self_dependence_effect_tooltip
@@ -83,8 +83,8 @@ GF_trait_sequela_immune = {
 	modifier = {
 		pop_environment_tolerance = 0.20
 		army_damage_mult = 0.15
-		pop_growth_speed = 0.10
-		planet_jobs_produces_mult = 0.10
+		logistic_growth_mult = 0.10
+		pop_bonus_workforce_mult = 0.10
 	}
 
 	ai_weight = {
