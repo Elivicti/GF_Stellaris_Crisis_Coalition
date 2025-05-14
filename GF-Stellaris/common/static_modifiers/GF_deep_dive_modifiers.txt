@@ -31,7 +31,7 @@ GF_zion_deep_dive_engineering_research_produces_1 = {
 }
 
 GF_zion_deep_dive_robotic_produces_1 = {
-	planet_jobs_robotic_produces_mult = 0.05
+	planet_jobs_robotic_produces_mult_fake = 0.05
 }
 
 GF_zion_deep_dive_base_intel_1 = {
@@ -60,7 +60,7 @@ GF_zion_deep_dive_all_research_speed_n_1 = {
 	all_technology_research_speed = -0.05
 }
 GF_zion_deep_dive_robot_produces_n_1 = {
-	planet_jobs_robotic_produces_mult = -0.05
+	planet_jobs_robotic_produces_mult_fake = -0.05
 }
 GF_zion_deep_dive_crime_n_1 = {
 	planet_crime_mult = 0.05
@@ -89,7 +89,7 @@ GF_zion_deep_dive_army_exp_2 = {
 }
 
 GF_zion_deep_dive_robotic_produces_2 = {
-	planet_jobs_robotic_produces_mult = 0.10
+	planet_jobs_robotic_produces_mult_fake = 0.10
 }
 
 GF_zion_deep_dive_ship_fire_power_2 = {
@@ -131,7 +131,7 @@ GF_zion_deep_dive_all_research_speed_n_2 = {
 }
 
 GF_zion_deep_dive_robot_produces_n_2 = {
-	planet_jobs_robotic_produces_mult = -0.10
+	planet_jobs_robotic_produces_mult_fake = -0.10
 }
 
 ### Tier 3
@@ -145,7 +145,7 @@ GF_zion_deep_dive_research_3 = {
 
 GF_zion_deep_dive_production_3 = {
 	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
-	planet_jobs_robotic_produces_mult = 0.50
+	planet_jobs_robotic_produces_mult_fake = 0.50
 	station_gatherers_produces_mult = 0.50
 	megastructures_produces_mult = 0.25
 }
@@ -177,7 +177,7 @@ GF_zion_deep_dive_research_n_3 = {
 
 GF_zion_deep_dive_production_n_3 = {
 	icon = "gfx/interface/icons/modifiers/mod_upkeep_add.dds"
-	planet_jobs_robotic_produces_mult = -0.25
+	planet_jobs_robotic_produces_mult_fake = -0.25
 	station_gatherers_produces_mult = -0.20
 	megastructures_produces_mult = -0.20
 	megastructures_upkeep_mult = 0.50
@@ -202,7 +202,7 @@ GF_zion_deep_dive_fleet_n_3 = {
 # Tier 4
 GF_zion_deep_dive_data_horizon = {
 	icon = "gfx/interface/icons/traits/event_trait/leader_trait_zion_enhanced_leader.dds"
-	planet_jobs_robotic_produces_mult = 0.50
+	planet_jobs_robotic_produces_mult_fake = 0.50
 	stations_produces_mult = 0.50
 	planet_jobs_physics_research_produces_mult = 0.25
 	planet_jobs_society_research_produces_mult = 0.25
