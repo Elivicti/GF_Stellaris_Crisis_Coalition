@@ -4,6 +4,10 @@ GF_doll_rights_organization = {
 	guiding_ethic = ethic_egalitarian
 	visual_ethic = "progressive_visual_ethic"
 
+	extortion_resource = {
+		category = pop_factions
+	}
+
 	unique = yes
 	support_multiplier = 1
 

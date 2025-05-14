@@ -37,6 +37,7 @@ utility_component_template = {
 	ship_modifier = {
 		weapon_type_explosive_weapon_damage_mult = 0.20
 	}
+	upgrade_path = torpedo
 
 	ai_weight = {
 		inline_script = {
@@ -70,6 +71,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 	ai_tags = { gunship brawler brawler_stealth }
 	ai_tag_weight = 0
+	upgrade_path = swarm
 
 	modifier = {
 		ship_evasion_mult = 0.50
@@ -111,6 +113,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 	ai_tags = { screen }
 	ai_tag_weight = 0
+	upgrade_path = picket
 
 	modifier = {
 		ship_evasion_mult = 0.25
@@ -152,6 +155,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 	ai_tags = { gunship }
 	ai_tag_weight = 0
+	upgrade_path = line
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.30
@@ -208,6 +212,7 @@ utility_component_template = {
 	prerequisites = { "GF_tech_combat_ogas_computers" }
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
 	ai_tag_weight = 0
+	upgrade_path = artillery
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.25
@@ -295,6 +300,7 @@ utility_component_template = {
 		upkeep = { gf_core_chip = @core_chip_upkeep_t2 }
 	}
 	class_restriction = { shipclass_military }
+	upgrade_path = default
 
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_free"
@@ -336,6 +342,7 @@ utility_component_template = {
 
 		GF_fire_support_ship
 	}
+	upgrade_path = default
 
 	component_set = "combat_computers"
 	ship_behavior = "GF_ogas_free"
@@ -376,6 +383,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "platform"
 	prerequisites = { "GF_tech_combat_ogas_computers" }
+	upgrade_path = default
 
 	ship_modifier = {
 		ship_fire_rate_mult    = 0.20
@@ -419,6 +427,7 @@ utility_component_template = {
 		ship_tracking_add = 15
 		ship_accuracy_add = 15
 	}
+	upgrade_path = default
 
 	ai_weight = {
 		inline_script = {

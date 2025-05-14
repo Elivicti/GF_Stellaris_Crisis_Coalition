@@ -31,7 +31,7 @@ d_GF_sf_control_center = {
 	category = deposit_cat_rare
 	planet_modifier = {
 		GF_ANDROID_pop_happiness = 0.10
-		job_GF_liaison_add = 2
+		job_GF_liaison_add = 200
 		species_empire_size_mult = -0.10
 	}
 	drop_weight = { weight = 0 }
@@ -45,7 +45,7 @@ d_GF_sf_doll_factory_ruin = {
 	planet_modifier = {
 		district_GF_assembly_max = -5
 	}
-	
+
 	use_for_min_max_adjustments = yes
 	resources = {
 		category = deposit_blockers

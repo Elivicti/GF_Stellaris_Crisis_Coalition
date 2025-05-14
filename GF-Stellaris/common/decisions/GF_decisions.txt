@@ -499,7 +499,7 @@ decision_GF_autocity_ring_construction = {
 		}
 		if = {
 			limit = { from = { is_ai = yes } }
-			num_pops >= 25
+			pop_amount >= 2500
 		}
 	}
 
@@ -552,7 +552,7 @@ decision_GF_autocity_ring_construction = {
 			factor = 3
 			solar_system = {
 				any_system_colony = {
-					num_pops >= 50
+					pop_amount >= 5000
 					NOT = { exists = orbital_defence }
 				}
 			}
@@ -593,7 +593,7 @@ decision_GF_autocity_ring_upgrade = {
 		}
 		if = {
 			limit = { from = { is_ai = yes } }
-			num_pops >= 25
+			pop_amount >= 2500
 		}
 	}
 
@@ -638,7 +638,7 @@ decision_GF_autocity_ring_upgrade = {
 			factor = 3
 			solar_system = {
 				any_system_colony = {
-					num_pops >= 50
+					pop_amount >= 5000
 					NOT = { exists = orbital_defence }
 				}
 			}
