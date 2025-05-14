@@ -4,7 +4,13 @@
 
 building_GF_collapse_1 = {
 	base_buildtime = @b1_time
+
 	category = manufacturing
+	building_sets = {
+		industrial
+		factory
+		foundry
+	}
 
 	potential = {
 		NOR = {
@@ -23,7 +29,7 @@ building_GF_collapse_1 = {
 	}
 
 	planet_modifier = {
-		job_GF_collapser_add = 2
+		job_GF_collapser_add = 200
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -84,7 +90,7 @@ building_GF_collapse_2 = {
 	}
 
 	planet_modifier = {
-		job_GF_collapser_add = 4
+		job_GF_collapser_add = 400
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -116,7 +122,13 @@ building_GF_collapse_2 = {
 
 building_GF_reverse_collapse = {
 	base_buildtime = @b2_time
+
 	category = manufacturing
+	building_sets = {
+		industrial
+		factory
+		foundry
+	}
 
 	potential = {
 		NOR = {
@@ -153,7 +165,7 @@ building_GF_reverse_collapse = {
 				GF_has_research_designation = yes
 			}
 		}
-		job_GF_reverse_collapser_industry_add = 1
+		job_GF_reverse_collapser_industry_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -163,7 +175,7 @@ building_GF_reverse_collapse = {
 				GF_has_foundry_designation = yes
 			}
 		}
-		job_GF_reverse_collapser_industry_add = 1
+		job_GF_reverse_collapser_industry_add = 100
 	}
 
 	triggered_planet_modifier = {
@@ -181,7 +193,7 @@ building_GF_reverse_collapse = {
 				}
 			}
 		}
-		job_GF_reverse_collapser_refinery_add = 1
+		job_GF_reverse_collapser_refinery_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = {
@@ -203,11 +215,11 @@ building_GF_reverse_collapse = {
 				}
 			}
 		}
-		job_GF_reverse_collapser_refinery_add = 1
+		job_GF_reverse_collapser_refinery_add = 100
 	}
 	triggered_planet_modifier = {
 		potential = { GF_has_research_designation = yes }
-		job_GF_reverse_collapser_research_add = 2
+		job_GF_reverse_collapser_research_add = 200
 	}
 
 	resources = {

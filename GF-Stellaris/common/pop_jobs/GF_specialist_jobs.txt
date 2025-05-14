@@ -1,8 +1,12 @@
 GF_assemble_mechanic = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_doll_factory
-	clothes_texture_index = 3
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_doll_factory
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -37,15 +41,7 @@ GF_assemble_mechanic = {
 		category = GF_doll_assemblers
 		upkeep = {
 			alloys = 2
-		}
-		upkeep = {
-			trigger = {
-				planet = {
-					exists = assembling_species
-					assembling_species = { has_trait = GF_trait_doll }
-				}
-			}
-			gf_core_chip = 1
+			# gf_core_chip = 1
 		}
 	}
 	weight = {
@@ -61,8 +57,13 @@ GF_assemble_mechanic = {
 }
 GF_liaison = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_zener_network_center_1
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_zener_network_center_1
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -73,12 +74,13 @@ GF_liaison = {
 	}
 	possible_precalc = can_fill_specialist_job
 
-	planet_modifier = {
-		planet_administrators_produces_mult = 0.05
-		planet_jobs_robotic_produces_mult = 0.05
+	triggered_planet_modifier = {
+		planet_bureaucrats_produces_mult = 0.05
+		planet_jobs_robotic_produces_mult_fake = 0.05
+
 	}
 
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			owner = { has_valid_civic = GF_civic_90WISH }
 		}
@@ -109,9 +111,13 @@ GF_liaison = {
 }
 GF_programmer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_42lab_2
-	clothes_texture_index = 1
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_42lab_2
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -124,7 +130,7 @@ GF_programmer = {
 	resources = {
 		category = GF_planet_jobs_doll_programmers
 		produces = {
-			gf_core_chip = 2
+			gf_core_chip = 2.5
 		}
 		upkeep = {
 			energy = 1
@@ -145,9 +151,12 @@ GF_programmer = {
 ####
 GF_URNC_secretary = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 1
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -159,14 +168,14 @@ GF_URNC_secretary = {
 	possible_precalc = can_fill_specialist_job
 
 	resources = {
-		category = planet_administrators
+		category = planet_bureaucrats
 		produces = {
 			unity = 2
 		}
 	}
 
 	triggered_planet_modifier = {
-		planet_amenities_add = 4
+		planet_amenities_add = 400
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -231,10 +240,15 @@ GF_URNC_secretary = {
 }
 GF_AU_consultant = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_institute
-	clothes_texture_index = 1
-	icon = researcher
+
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_institute
+			icon = researcher
+		}
+	}
+	tags = { research }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -264,7 +278,7 @@ GF_AU_consultant = {
 	}
 
 	triggered_planet_modifier = {
-		planet_amenities_add = 1
+		planet_amenities_add = 100
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -363,9 +377,12 @@ GF_AU_consultant = {
 }
 GF_GK_commander = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 1
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -380,16 +397,12 @@ GF_GK_commander = {
 		category = planet_executives
 		produces = {
 			unity = 1
+			trade = 3
 		}
 	}
 
 	triggered_planet_modifier = {
-		trade_value_add = 3
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
-
-	triggered_planet_modifier = {
-		planet_amenities_add = 1
+		planet_amenities_add = 100
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -447,9 +460,12 @@ GF_GK_commander = {
 ##
 GF_collapser = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_collapse_1
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_collapse_1
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -500,18 +516,21 @@ GF_collapser = {
 			is_enslaved = yes
 			can_take_servant_job = no
 		}
-		modifier = {
-			factor = 5
-			has_job = GF_collapser
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	has_job = GF_collapser
+		# }
 	}
 }
 
 GF_reverse_collapser_refinery = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_reverse_collapse
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_reverse_collapse
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -646,18 +665,21 @@ GF_reverse_collapser_refinery = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = GF_reverse_collapser_refinery
-		}
+		# modifier = {
+		# 	factor = 7
+		# 	has_job = GF_reverse_collapser_refinery
+		# }
 	}
 }
 
 GF_reverse_collapser_industry = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_reverse_collapse
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_reverse_collapse
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -715,18 +737,21 @@ GF_reverse_collapser_industry = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = GF_reverse_collapser_industry
-		}
+		# modifier = {
+		# 	factor = 7
+		# 	has_job = GF_reverse_collapser_industry
+		# }
 	}
 }
 
 GF_reverse_collapser_research = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_GF_reverse_collapse
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_reverse_collapse
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -763,18 +788,22 @@ GF_reverse_collapser_research = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = GF_reverse_collapser_research
-		}
+		# modifier = {
+		# 	factor = 7
+		# 	has_job = GF_reverse_collapser_research
+		# }
 	}
 }
 
 GF_system_dispatcher = {
 	category = specialist
-	clothes_texture_index = 3
 
-	condition_string = SPECIALIST_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_connection_nexus
+		}
+	}
 	possible_precalc = can_fill_specialist_job
 
 	planet_modifier = {
@@ -783,7 +812,7 @@ GF_system_dispatcher = {
 		planet_crime_add = -15
 	}
 	triggered_planet_modifier = {
-		planet_amenities_add = 2
+		planet_amenities_add = 200
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -807,18 +836,17 @@ GF_system_dispatcher = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = GF_system_dispatcher
-		}
 	}
 }
 
 GF_maintenance_engineer = {
 	category = specialist
-	clothes_texture_index = 3
-	
-	condition_string = SPECIALIST_JOB_TRIGGER
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_GF_connection_nexus
+		}
+	}
 	possible_precalc = can_fill_specialist_job
 
 	planet_modifier = {
@@ -826,7 +854,7 @@ GF_maintenance_engineer = {
 	}
 
 	triggered_planet_modifier = {
-		planet_amenities_add = 1
+		planet_amenities_add = 100
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -850,18 +878,21 @@ GF_maintenance_engineer = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 7
-			has_job = GF_maintenance_engineer
-		}
+		# modifier = {
+		# 	factor = 7
+		# 	has_job = GF_maintenance_engineer
+		# }
 	}
 }
 
 GF_relic_researcher = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_research_lab_1
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -872,7 +903,7 @@ GF_relic_researcher = {
 
 	possible_precalc = can_fill_specialist_job
 
-	triggered_pop_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			planet = {
 				exists = army_leader
@@ -882,7 +913,7 @@ GF_relic_researcher = {
 			}
 		}
 		modifier = {
-			pop_defense_armies_add = 1
+			defense_armies_add = 1
 		}
 	}
 
@@ -937,10 +968,10 @@ GF_relic_researcher = {
 			factor = 0.1
 			can_take_servant_job = yes
 		}
-		modifier = {
-			factor = 1.5
-			has_job = GF_relic_researcher
-		}
+		# modifier = {
+		# 	factor = 1.5
+		# 	has_job = GF_relic_researcher
+		# }
 		modifier = {
 			factor = 0.8
 			is_enslaved = yes

@@ -1,9 +1,14 @@
 GF_freedom_kingdom = {
 	category = GF_freedom_class
-	building_icon = building_GF_doll_maintain_center_2
+
+	swappable_data = {
+		default = {
+			building_icon = building_GF_doll_maintain_center_2
+			condition_string = GF_freedom_kingdom_conditions
+		}
+	}
 	can_set_priority = no
 
-	condition_string = GF_freedom_kingdom_conditions
 	possible_pre_triggers = {
 		is_being_purged = no
 		is_being_assimilated = no
@@ -14,7 +19,7 @@ GF_freedom_kingdom = {
 		GF_can_pop_join_freedom_kindom = yes
 	}
 
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = planet
 			planet = { has_modifier = GF_automated_city_supressed }
@@ -50,7 +55,6 @@ GF_freedom_kingdom = {
 GF_doll_assimilation = {
 	category = assimilation
 	is_capped_by_modifier = no
-	clothes_texture_index = 2
 
 	possible_pre_triggers = {
 		is_sapient = yes

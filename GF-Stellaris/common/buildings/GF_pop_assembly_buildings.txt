@@ -6,13 +6,17 @@ building_GF_doll_factory = {
 	base_buildtime = 360
 
 	category = pop_assembly
+	building_sets = {
+		government
+		urban
+	}
 	
 	potential = {
 		owner = { GF_can_research_basic_doll_tech_trigger = yes }
 	}
 	
 	planet_modifier = {
-		job_GF_assemble_mechanic_add = 1
+		job_GF_assemble_mechanic_add = 100
 	}
 
 	destroy_trigger = {

@@ -3,6 +3,11 @@ building_GF_zener_network_center_1 = {
 	base_cap_amount = 1
 	icon = building_GF_zener_network_center_1
 	category = unity
+	building_sets = {
+		government
+		urban
+		unity
+	}
 
 	potential = {
 		exists = owner
@@ -38,7 +43,7 @@ building_GF_zener_network_center_1 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 1
+		job_GF_liaison_add = 100
 		species_empire_size_mult = -0.05
 	}
 
@@ -117,7 +122,7 @@ building_GF_zener_network_center_2 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 2
+		job_GF_liaison_add = 200
 		species_empire_size_mult = -0.1
 	}
 
@@ -196,7 +201,7 @@ building_GF_zener_network_center_3 = {
 	}
 
 	planet_modifier = {
-		job_GF_liaison_add = 3
+		job_GF_liaison_add = 300
 		species_empire_size_mult = -0.15
 	}
 
@@ -273,7 +278,7 @@ building_GF_zener_network_center_4 = {
 			rare_crystals = 100
 		}
 		upkeep = {
-			energy = 4
+			energy = 400
 			rare_crystals = 2
 		}
 	}

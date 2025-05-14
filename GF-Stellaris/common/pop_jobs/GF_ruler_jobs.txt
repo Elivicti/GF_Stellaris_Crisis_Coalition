@@ -1,8 +1,12 @@
 GF_URNC_commissioner = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 1
+
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -13,13 +17,6 @@ GF_URNC_commissioner = {
 	}
 
 	possible_precalc = can_fill_ruler_job
-	# possible = {
-	# 	OR = {
-	# 		NOT = { has_trait = GF_trait_doll }
-	# 		GF_can_doll_fill_ruler_job = yes
-	# 	}
-	# }
-
 	resources = {
 		category = GF_planet_URNC_commissioner
 		produces = {
@@ -28,11 +25,11 @@ GF_URNC_commissioner = {
 	}
 
 	planet_modifier = {
-		planet_administrators_produces_mult = 0.05
+		planet_bureaucrats_produces_mult = 0.05
 	}
 
 	triggered_planet_modifier = {
-		planet_amenities_add = 8
+		planet_amenities_add = 800
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -103,9 +100,13 @@ GF_URNC_commissioner = {
 }
 GF_AU_director = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_institute
-	clothes_texture_index = 1
+
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_institute
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -116,12 +117,6 @@ GF_AU_director = {
 	}
 
 	possible_precalc = can_fill_ruler_job
-	# possible = {
-	# 	OR = {
-	# 		NOT = { has_trait = GF_trait_doll }
-	# 		GF_can_doll_fill_ruler_job = yes
-	# 	}
-	# }
 
 	resources = {
 		category = GF_planet_AU_director
@@ -142,11 +137,11 @@ GF_AU_director = {
 	}
 
 	planet_modifier = {
-		planet_administrators_produces_mult = 0.05
+		planet_bureaucrats_produces_mult = 0.05
 	}
 
 	triggered_planet_modifier = {
-		planet_amenities_add = 2
+		planet_amenities_add = 200
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -180,10 +175,10 @@ GF_AU_director = {
 				has_trait = trait_natural_sociologists
 			}
 		}
-		modifier = {
-			factor = 5
-			has_job = GF_AU_director
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	has_job = GF_AU_director
+		# }
 		modifier = {
 			factor = 0.65
 			has_trait = trait_presapient_proles
@@ -249,9 +244,13 @@ GF_AU_director = {
 }
 GF_GK_officer = {
 	category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	building_icon = building_capital
-	clothes_texture_index = 1
+
+	swappable_data = {
+		default = {
+			condition_string = RULER_JOB_TRIGGER
+			building_icon = building_capital
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -262,31 +261,26 @@ GF_GK_officer = {
 	}
 
 	possible_precalc = can_fill_ruler_job
-	# possible = {
-	# 	OR = {
-	# 		NOT = { has_trait = GF_trait_doll }
-	# 		GF_can_doll_fill_ruler_job = yes
-	# 	}
-	# }
 
 	resources = {
 		category = GF_planet_GK_officer
 		produces = {
 			unity = 2
+			trade = 6
 		}
 	}
 
 	planet_modifier = {
-		planet_administrators_produces_mult = 0.05
+		planet_bureaucrats_produces_mult = 0.05
 	}
 
-	triggered_planet_modifier = {
-		trade_value_add = 6
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
+	# triggered_planet_modifier = {
+	# 	trade_value_add = 6
+	# 	mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	# }
 	
 	triggered_planet_modifier = {
-		planet_amenities_add = 2
+		planet_amenities_add = 200
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 
@@ -318,10 +312,10 @@ GF_GK_officer = {
 			factor = 0.5
 			has_trait = trait_repugnant
 		}
-		modifier = {
-			factor = 5
-			has_job = GF_GK_officer
-		}
+		# modifier = {
+		# 	factor = 5
+		# 	has_job = GF_GK_officer
+		# }
 		# crisis purge
 		modifier = {
 			factor = 0.01
