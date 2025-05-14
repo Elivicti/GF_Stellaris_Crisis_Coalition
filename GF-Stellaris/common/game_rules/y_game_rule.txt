@@ -93,6 +93,26 @@ species_can_live_on_planet = {
 			}
 		}
 	}
+	custom_tooltip = {
+		fail_text = WILDERNESS_NATURAL_WORLDS_DECLINE
+		if = {
+			limit = {
+				has_trait = trait_wilderness
+			}
+			root = { is_habitable_for_wilderness = yes }
+		}
+	}
+
+	custom_tooltip = {
+		fail_text = WILDERNESS_DEAD_WORLD
+		if = {
+			limit = {
+				has_trait = trait_wilderness
+				exists = root.owner
+			}
+			root.owner = { is_wilderness_empire = yes }
+		}
+	}
 }
 
 #Checks whether any leaders (scientists etc) can be formed from this pop
@@ -130,6 +150,20 @@ can_species_be_assembled = {
 				is_fallen_empire = no
 				has_active_tradition = tr_virtuality_finish
 			}
+		}
+	}
+	NOR = {
+		has_citizenship_type = {
+			type = citizenship_protected_drone
+			country = root.owner
+		}
+		has_citizenship_type = {
+			type = citizenship_symbiotic_drone
+			country = root.owner
+		}
+		has_citizenship_type = {
+			type = citizenship_exploited_drone
+			country = root.owner
 		}
 	}
 	OR = {
@@ -180,7 +214,7 @@ can_species_be_assembled = {
 				}
 				root = {
 					# Event 'clones.3' should cover this, but extra safety check.
-					has_building = building_clone_army_clone_vat
+					check_modifier_value = { modifier = clone_soldiers_sustained value > 0 }
 					NOT = {
 						check_variable = {
 							which = clone_pops_missing
@@ -198,6 +232,13 @@ can_species_be_assembled = {
 						AND = {
 							has_building = building_posthumous_employment_center
 							owner = { has_civic = civic_permanent_employment }
+						}
+						AND = {
+							has_building = building_genomic_facility
+							exists = owner
+							owner = {
+								has_country_flag = cloning_unlock_level_1
+							}
 						}
 						has_planet_flag = can_organic_assemble_flag #for mod compatibility
 					}
@@ -346,10 +387,9 @@ can_fill_ruler_job = {
 			is_being_purged = no
 			is_being_assimilated = no
 			# Rule out Traits for servitude & lack of free will
-			NOR = {
-				has_trait = trait_syncretic_proles
-				can_think = no
-			}
+			can_think = yes
+			# Rule out Disconnected Drones
+			has_disconnected_drone_citizenship_type = no
 			# Rule out Machine Pops, unless they're rendered sapient
 			OR = {
 				NOT = { has_trait = trait_mechanical }
