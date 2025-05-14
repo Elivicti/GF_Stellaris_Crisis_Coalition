@@ -37,6 +37,7 @@ assault_army = {
 			is_machine_empire = no
 			has_valid_civic = civic_machine_assimilator
 		}
+		is_wilderness_empire = no
 	}
 	potential = {
 		from = {
@@ -126,15 +127,19 @@ slave_army = {
 				}
 			}
 		}
-		any_owned_pop = { is_pop_category = slave }
+		any_owned_pop_group = { is_pop_category = slave }
 	}
 	potential_country = {
-		has_policy_flag = slavery_allowed
+		OR = {
+			has_policy_flag = slavery_allowed
+			has_exploited_disconnected_drones = yes
+		}
 		is_machine_empire = no
+		is_wilderness_empire = no
 	}
 	potential = {
 		owner = {
-			any_owned_pop = {
+			any_owned_pop_group = {
 				is_pop_category = slave
 				is_same_species = from
 			}
@@ -213,6 +218,7 @@ clone_army = {
 			is_machine_empire = no
 			has_civic = civic_machine_assimilator
 		}
+		is_wilderness_empire = no
 	}
 	potential = {
 		from = {
@@ -278,6 +284,7 @@ psionic_army = {
 	prerequisites = { "tech_telepathy" }
 	potential_country = {
 		is_machine_empire = no
+		is_wilderness_empire = no
 	}
 	potential = {
 		from = {
@@ -342,6 +349,7 @@ gene_warrior_army = {
 	prerequisites = { "tech_gene_seed_purification" }
 	potential_country = {
 		is_machine_empire = no
+		is_wilderness_empire = no
 	}
 	potential = {
 		from = {
@@ -410,10 +418,6 @@ undead_army = {
 		}
 		planet = {
 			has_active_building = building_dread_encampment
-			num_assigned_jobs = {
-				job = necromancer
-				value >= 1
-			}
 		}
 	}
 
