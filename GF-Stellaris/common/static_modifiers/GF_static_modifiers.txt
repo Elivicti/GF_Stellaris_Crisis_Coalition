@@ -1,7 +1,7 @@
 ### RESOURCE DEFICITS
 gf_core_chip_deficit = {
 	planet_pop_assembly_mult = -10
-	planet_jobs_robotic_produces_mult = -10
+	planet_jobs_robotic_produces_mult_fake = -10
 	GF_ANDROID_pop_happiness = -10
 }
 
@@ -29,7 +29,7 @@ GF_ogas_mode_produce = {
 GF_ogas_mode_upkeep = {
 	icon = "gfx/interface/icons/modifiers/mod_country_terraform_speed_mult.dds"
 	icon_frame = 3
-	planet_jobs_robotic_produces_mult = 0.1
+	planet_jobs_robotic_produces_mult_fake = 0.1
 	planet_pops_robotics_upkeep_mult = -0.1
 	planet_jobs_energy_upkeep_mult = 0.05
 	GF_OGAS_threads_used_add = 1

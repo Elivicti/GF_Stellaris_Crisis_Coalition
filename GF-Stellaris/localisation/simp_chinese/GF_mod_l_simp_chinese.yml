@@ -264,3 +264,5 @@
  mod_building_GF_automated_factory_module_max: "$building_GF_automated_factory_module$上限"
  mod_building_GF_automated_collapse_module_max: "$building_GF_automated_collapse_module$上限"
  mod_building_GF_automated_reverse_collapse_module_max: "$building_GF_automated_reverse_collapse_module$上限"
+
+ mod_planet_jobs_robotic_produces_mult_fake: "$mod_planet_jobs_robotic_produces_mult$（无效）"

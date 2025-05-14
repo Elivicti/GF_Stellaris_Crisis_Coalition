@@ -60,7 +60,7 @@ GF_relic_orb_mainframe_alpha = {
 
 	triggered_country_modifier = {
 		potential = { always = yes }
-		planet_jobs_robotic_produces_mult = 0.10
+		planet_jobs_robotic_produces_mult_fake = 0.10
 	}
 
 	score = 3000
