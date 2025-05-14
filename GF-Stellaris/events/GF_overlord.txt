@@ -48,14 +48,13 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				count_owned_pop = {
-					limit = { is_robot_pop = yes }
-					count > 1
+				any_owned_pop_group = {
+					is_robot_pop_group = yes
 				}
 			}
 			# 机械人口存在且足够，移交人口
-			random_owned_pop = {
-				limit = { is_robot_pop = yes }
+			random_owned_pop_group = {
+				limit = { is_robot_pop_group = yes }
 				save_event_target_as = transfer_pop
 			}
 			if = {
@@ -103,9 +102,10 @@ country_event = {
 							scope = prev
 						}
 					}
-					resettle_pop = {
-						pop = event_target:transfer_pop
-						planet = capital_scope
+					resettle_pop_group = {
+						POP_GROUP = event_target:transfer_pop
+						PLANET = capital_scope
+						AMOUNT = 100
 					}
 				}
 				else = { country_event = { id = GF_overlord.202 } }

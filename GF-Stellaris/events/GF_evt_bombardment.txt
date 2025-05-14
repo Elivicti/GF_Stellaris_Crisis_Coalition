@@ -15,7 +15,7 @@ planet_event = {
 	immediate = {
 		# 随机杀死人口
 		if = {
-			limit = { num_pops > 3 }
+			limit = { pop_amount > 300 }
 			random_list = {
 				100 = {
 					modifier = { subtract = trigger:planet_devastation }
@@ -30,19 +30,22 @@ planet_event = {
 						add = 15
 						GF_is_habitat = yes
 					}
-					random_owned_pop = {
+					random_owned_pop_group = {
 						weights = {
 							base = 1.0
 							modifier = {
 								factor = 0.75
-								is_robot_pop = yes
+								is_robot_pop_group = yes
 							}
 							modifier = {
 								factor = 0.25
 								has_trait = GF_trait_sequela_immune
 							}
 						}
-						kill_pop = yes
+						kill_pop_group = {
+							pop_group = this
+							amount = 100
+						}
 					}
 				}
 			}
@@ -434,8 +437,8 @@ planet_event = {
 	trigger = {
 		has_orbital_bombardment_stance = GF_bombardment_capture
 		NOT = { has_planet_flag = flag_p_GF_capture_bombardment_capture_inhibitor }
-		num_pops > 3
-		any_owned_pop = { is_robot_pop = yes }
+		pop_amount > 300
+		any_owned_pop_group = { is_robot_pop_group = yes }
 	}
 
 	immediate = {
@@ -447,7 +450,7 @@ planet_event = {
 			95 = { }
 			5 = {
 				reroll_random = yes
-				random_owned_pop = {
+				random_owned_pop_group = {
 					limit = { is_robot_pop = yes }
 
 					reroll_random = yes
@@ -502,11 +505,16 @@ planet_event = {
 	}
 
 	immediate = {
-		resettle_pop = {
-			pop = from
-			planet = fromfrom.owner.capital_scope
+		# resettle_pop = {
+		# 	pop = from
+		# 	planet = fromfrom.owner.capital_scope
+		# }
+		resettle_pop_group = {
+			POP_GROUP = from
+			PLANET = fromfrom.owner.capital_scope
+			AMOUNT = 100
 		}
-		from = {
+		event_target:resettled_pop_group = {
 			change_species = event_target:GF_doll_species_template
 			add_modifier = {
 				modifier = GF_captured_pop_debuff
