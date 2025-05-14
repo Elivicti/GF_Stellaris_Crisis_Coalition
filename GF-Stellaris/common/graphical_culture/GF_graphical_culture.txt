@@ -1,6 +1,16 @@
 GF_new_type_01 = {
 	ship_color = yes
 	fallback = mammalian_01
+
+	ship_kinds = {
+		default_ship
+		space_amoeba
+		tiyanki
+		voidworm
+		cutholoid
+		crystalline_entity
+	}
+
 	ship_lighting = {
 		cam_light_1_dir = { 0.6 -0.2 0.1 }
 		cam_light_2_dir = { -0.4 0.0 0.0 }
