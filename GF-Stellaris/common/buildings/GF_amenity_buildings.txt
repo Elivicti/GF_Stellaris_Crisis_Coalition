@@ -2,11 +2,16 @@ building_GF_doll_maintain_center_1 = {
 	base_buildtime = 360
 	icon = building_GF_doll_maintain_center_1
 	base_cap_amount = 1
+
 	category = amenity
+	building_sets = {
+		government
+		urban
+	}
+
 	potential = {
 		exists = owner
 		owner = { has_authority = GF_auth_commonwealth }
-		
 	}
 	destroy_trigger = {
 		exists = owner
@@ -36,7 +41,7 @@ building_GF_doll_maintain_center_1 = {
 			planet = { has_modifier = GF_storage_protocol }
 		}
 		modifier = {
-			job_GF_dormancy_doll_add = 10
+			job_GF_dormancy_doll_add = 1000
 		}
 	}
 	triggered_desc = {
@@ -106,7 +111,7 @@ building_GF_doll_maintain_center_2 = {
 			planet = { has_modifier = GF_storage_protocol }
 		}
 		modifier = {
-			job_GF_dormancy_doll_add = 20
+			job_GF_dormancy_doll_add = 2000
 		}
 	}
 	triggered_desc = {

@@ -8,6 +8,10 @@ building_GF_shrike_den = {
 
 	base_cap_amount = 1
 
+	building_sets = {
+		GF_TEMP_NULL
+	}
+
 	resources = {
 		category = planet_buildings
 		cost = {

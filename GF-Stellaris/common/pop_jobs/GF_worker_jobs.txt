@@ -1,26 +1,27 @@
 GF_guard_doll = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_stronghold
-	clothes_texture_index = 4
+
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_stronghold
+		}
+	}
 	
 	planet_modifier = {
 		planet_crime_add = -5
 		planet_stability_add = 2
+		planet_defense_armies_add = 2
 	}
 	country_modifier = {
 		country_naval_cap_add = 2
 	}
-	
-	pop_modifier = {
-		pop_defense_armies_add = 2
-	}
 
-	triggered_pop_modifier = {
+	triggered_planet_modifier = {
 		potential = {
 			planet = { has_modifier = GF_sercurity_protocol }
 		}
-		pop_defense_armies_add = 1
+		planet_defense_armies_add = 1
 	}
 	
 	resources = {
@@ -33,7 +34,6 @@ GF_guard_doll = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robot_pop = yes
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
@@ -53,9 +53,13 @@ GF_guard_doll = {
 }
 GF_dormancy_doll = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_GF_doll_maintain_center_1
-	pop_modifier = {
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_GF_doll_maintain_center_1
+		}
+	}
+	pop_group_modifier = {
 		planet_pops_upkeep_mult = -2
 		pop_housing_usage_mult = -2
 		pop_amenities_usage_mult = -2
@@ -82,7 +86,6 @@ GF_dormancy_doll = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robot_pop = yes
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
@@ -96,17 +99,20 @@ GF_dormancy_doll = {
 }
 GF_command_doll = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_GF_auto_colony_capital
 
-	pop_modifier = {
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_GF_auto_colony_capital
+		}
 	}
+
 	triggered_planet_modifier = {
 		planet_amenities_add = 4
 		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
 	}
 	resources = {
-		category = planet_administrators
+		category = planet_bureaucrats
 		produces = {
 			unity = 3
 		}
@@ -131,7 +137,6 @@ GF_command_doll = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robot_pop = yes
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
@@ -144,16 +149,21 @@ GF_command_doll = {
 	weight = {
 		weight = @specialist_job_weight
 		factor = 1.5
-		modifier = {
-			factor = 0
-			has_job = GF_assemble_doll
-		}
+		# modifier = {
+		# 	factor = 0
+		# 	has_job = GF_assemble_doll
+		# }
 	}
 }
 GF_maintain_doll = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_GF_doll_maintain_center_1
+
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_GF_doll_maintain_center_1
+		}
+	}
 
 	resources = {
 		category = planet_jobs
@@ -173,7 +183,6 @@ GF_maintain_doll = {
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robot_pop = yes
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
@@ -211,25 +220,28 @@ GF_maintain_doll = {
 		}
 		modifier = {
 			factor = 0.1
-			NOT = { has_job = GF_maintain_doll }
+			# NOT = { has_job = GF_maintain_doll }
 			planet = {
-				free_amenities > 5
+				free_amenities > 500
 			}
 		}
 	}
 }
 GF_assemble_doll = {
 	category = worker
-	condition_string = WORKER_JOB_TRIGGER
-	building_icon = building_GF_doll_factory
-	clothes_texture_index = 3
+
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_GF_doll_factory
+		}
+	}
 		
 	possible_pre_triggers = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
 		is_sapient = yes
-		is_robot_pop = yes
 	}
 	possible_precalc = can_fill_worker_job
 	possible = {
@@ -257,15 +269,6 @@ GF_assemble_doll = {
 		upkeep = {
 			alloys = 1
 		}
-		upkeep = {
-			trigger = {
-				planet = {
-					exists = assembling_species
-					assembling_species = { has_trait = GF_trait_doll }
-				}
-			}
-			gf_core_chip = 0.5
-		}
 	}
 	weight = {
 		weight = @specialist_job_weight
@@ -273,7 +276,7 @@ GF_assemble_doll = {
 			set = @ruler_job_weight
 			planet = {
 				OR = {
-					num_pops <= 3
+					pop_amount <= 300
 					check_modifier_value = {
 						modifier = planet_pop_assembly_add
 						value < 2
