@@ -159,63 +159,8 @@ building_GF_reverse_collapse = {
 
 
 	triggered_planet_modifier = {
-		potential = {
-			NOR = {
-				GF_has_refinery_designation = yes
-				GF_has_research_designation = yes
-			}
-		}
-		job_GF_reverse_collapser_industry_add = 100
-	}
-	triggered_planet_modifier = {
-		potential = {
-			OR = {
-				has_industrial_designation = yes
-				GF_has_factory_designation = yes
-				GF_has_foundry_designation = yes
-			}
-		}
-		job_GF_reverse_collapser_industry_add = 100
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			GF_has_refinery_designation = yes
-			exists = owner
-			owner = {
-				OR = {
-					has_technology = tech_exotic_gases
-					has_technology = tech_mine_exotic_gases
-					has_technology = tech_volatile_motes
-					has_technology = tech_mine_volatile_motes
-					has_technology = tech_rare_crystals
-					has_technology = tech_mine_rare_crystals
-				}
-			}
-		}
-		job_GF_reverse_collapser_refinery_add = 100
-	}
-	triggered_planet_modifier = {
-		potential = {
-			NOR = {
-				has_industrial_designation = yes
-				GF_has_factory_designation = yes
-				GF_has_foundry_designation = yes
-				GF_has_research_designation = yes
-			}
-			exists = owner
-			owner = {
-				OR = {
-					has_technology = tech_exotic_gases
-					has_technology = tech_mine_exotic_gases
-					has_technology = tech_volatile_motes
-					has_technology = tech_mine_volatile_motes
-					has_technology = tech_rare_crystals
-					has_technology = tech_mine_rare_crystals
-				}
-			}
-		}
-		job_GF_reverse_collapser_refinery_add = 100
+		potential = { GF_has_research_designation = no }
+		job_GF_reverse_collapser_industry_add = 200
 	}
 	triggered_planet_modifier = {
 		potential = { GF_has_research_designation = yes }
@@ -239,13 +184,12 @@ building_GF_reverse_collapse = {
 	triggered_desc = {
 		text = building_GF_reverse_collapse_effect_desc
 	}
-	
+
 	triggered_desc = {
 		trigger = {
 			NOR = {
 				GF_has_factory_designation = yes
 				GF_has_foundry_designation = yes
-				GF_has_refinery_designation = yes
 				GF_has_research_designation = yes
 			}
 		}
@@ -258,28 +202,6 @@ building_GF_reverse_collapse = {
 	triggered_desc = {
 		trigger = { GF_has_factory_designation = yes }
 		text = job_GF_reverse_collapser_industry_consumer_goods_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			NOR = {
-				has_industrial_designation = yes
-				GF_has_factory_designation = yes
-				GF_has_foundry_designation = yes
-				GF_has_research_designation = yes
-			}
-			exists = owner
-			owner = {
-				OR = {
-					has_technology = tech_exotic_gases
-					has_technology = tech_mine_exotic_gases
-					has_technology = tech_volatile_motes
-					has_technology = tech_mine_volatile_motes
-					has_technology = tech_rare_crystals
-					has_technology = tech_mine_rare_crystals
-				}
-			}
-		}
-		text = job_GF_reverse_collapser_refinery_effect_desc
 	}
 	triggered_desc = {
 		trigger = { GF_has_research_designation = yes }

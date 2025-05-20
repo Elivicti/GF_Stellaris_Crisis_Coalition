@@ -77,7 +77,7 @@ GF_planet_GK_officer = {
 
 GF_planet_collapser = {
 	icon = "job_GF_collapser"
-	parent = planet_jobs_productive
+	parent = planet_jobs_specialist
 	generate_mult_modifiers = {
 		produces
 		upkeep
@@ -91,7 +91,7 @@ GF_planet_collapser = {
 
 GF_planet_reverse_collapser = {
 	icon = "job_GF_reverse_collapser_industry"
-	parent = planet_jobs_productive
+	parent = planet_jobs_specialist
 	generate_mult_modifiers = {
 		produces
 		upkeep

@@ -47,7 +47,7 @@
 
  mod_job_GF_collapser_add:0 "坍塌反应技师岗位"
  mod_job_GF_reverse_collapser_refinery_add:0 "逆向坍塌精炼技师岗位"
- mod_job_GF_reverse_collapser_industry_add:0 "逆向坍塌工业技师岗位"
+ mod_job_GF_reverse_collapser_industry_add:0 "$job_GF_reverse_collapser_industry$岗位"
  mod_job_GF_reverse_collapser_research_add:0 "逆向坍塌研究员岗位"
 
  GF_planet_collapser:0 "坍塌反应技师岗位"

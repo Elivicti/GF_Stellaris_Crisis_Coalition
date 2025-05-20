@@ -81,7 +81,7 @@ GF_monthly_resource_income = {
 GF_zion_inspired_leader_exp = {
 	# 添加的经验的计算公式:
 	# -100 * skill + 2000
-	set = trigger:has_skill
+	set = trigger:has_base_skill
 	max = 10
 	mult = -100
 	add = 2000
@@ -90,7 +90,7 @@ GF_zion_inspired_leader_exp = {
 # scope = country
 GF_count_non_doll_robot_pop = {
 	complex_trigger_modifier = {
-		trigger = count_owned_pop
+		trigger = count_owned_pop_amount
 		trigger_scope = owner
 		parameters = {
 			limit = { GF_is_non_doll_robot_pop = yes }
@@ -147,7 +147,7 @@ GF_count_district = {
 GF_count_district_non_urban = {
 	set = value:GF_count_district|TYPE|any|
 	subtract = value:GF_count_district|TYPE|district_city|
-	subtract = value:GF_count_district|TYPE|district_industrial|
+	# subtract = value:GF_count_district|TYPE|district_industrial|
 	[[FACTOR]
 		mult = $FACTOR$
 	]
@@ -209,7 +209,7 @@ GF_get_OGAS_threads_used = {
 GF_generate_job_from_unemployed_pops = {
 	base = 0
 	complex_trigger_modifier = {
-		trigger = count_owned_pop
+		trigger = count_owned_pop_amount
 		parameters = {
 			limit = {
 				OR = {
@@ -244,7 +244,7 @@ GF_doll_produces_mult = {
 # this = leader
 GF_OGAS_leveled_threads_add = {
 	base = 0
-	add = trigger:has_level
+	add = trigger:has_total_skill
 	subtract = $START_AFTER_LEVEL$
 	min = 0
 }
@@ -321,4 +321,13 @@ GF_autocity_size_district_empire_size_penalty = {
 	pow = 2
 	add = 1575
 	divide = 900
+}
+
+# this = planet/country
+# compute average of planet_metallurgists_$RES$_produces_add and planet_artisans_$RES$_produces_add
+GF_reverse_collapser_rare_resources_modifier_transform = {
+	base = 0
+	add = modifier:planet_metallurgists_$RES$_$TYPE|produces_add$
+	add = modifier:planet_artisans_$RES$_$TYPE|produces_add$
+	divide = 2
 }

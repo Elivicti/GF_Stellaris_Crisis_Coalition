@@ -543,7 +543,7 @@ GF_reverse_collapser_refinery = {
 
 	resources = {
 		category = GF_planet_reverse_collapser
-		
+
 		produces = {
 			exotic_gases = 1
 			volatile_motes = 1
@@ -647,7 +647,7 @@ GF_reverse_collapser_refinery = {
 			volatile_motes = -0.5
 			rare_crystals = 1
 		}
-		
+
 		upkeep = {
 			GF_nyto_collapse_liquid = 6
 		}
@@ -719,9 +719,34 @@ GF_reverse_collapser_industry = {
 			alloys = 4
 			consumer_goods = 6
 		}
-		
+
 		upkeep = {
 			GF_nyto_collapse_liquid = 10
+		}
+
+		produces = {
+			exotic_gases = 1
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|exotic_gases|
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 2
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|exotic_gases|
+		}
+		produces = {
+			volatile_motes = 1
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|volatile_motes|
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 2
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|volatile_motes|
+		}
+		produces = {
+			rare_crystals = 1
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|rare_crystals|
+		}
+		upkeep = {
+			GF_nyto_collapse_liquid = 2
+			mult = planet.value:GF_reverse_collapser_rare_resources_modifier_transform|RES|rare_crystals|
 		}
 	}
 
@@ -904,17 +929,8 @@ GF_relic_researcher = {
 	possible_precalc = can_fill_specialist_job
 
 	triggered_planet_modifier = {
-		potential = {
-			planet = {
-				exists = army_leader
-				army_leader = {
-					has_trait = leader_trait_academia_recruiter
-				}
-			}
-		}
-		modifier = {
-			defense_armies_add = 1
-		}
+		planet_defense_armies_add = 1
+		mult = planet.modifier:job_researcher_naval_cap_add
 	}
 
 	resources = {
