@@ -93,7 +93,7 @@
  job_GF_maintain_doll_plural:0 "维护人形"
  job_GF_maintain_doll:0 "维护人形"
  job_GF_maintain_doll_desc:0 "依据人形自我维护程序与上级指令来保养、维修其他人形的人形单位。"
- job_GF_assemble_doll_effect_desc:0 "£job_GF_assemble_doll£ $job_GF_assemble_doll_plural$消耗 £alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!，组装§Y$GF_ANDROID$§!人口时额外消耗 £gf_core_chip£ §Y$gf_core_chip$§!"
+ job_GF_assemble_doll_effect_desc:0 "£job_GF_assemble_doll£ $job_GF_assemble_doll_plural$消耗 £alloys£ §Y$alloys$§!来组装新的 £pop£ §Y机械人口§!。"
  job_GF_assemble_doll_plural:0 "组装人形"
  job_GF_assemble_doll:0 "组装人形"
  job_GF_assemble_doll_desc:0 "依据预载的人形组装程序与上级指令来组装其他人形的人形单位。"
