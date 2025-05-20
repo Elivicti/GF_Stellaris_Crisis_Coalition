@@ -1,3 +1,17 @@
+GF_new_type = {
+	archetype = BIOLOGICAL
+	possible = {
+		origin = { value = GF_origin_commonwealth }
+		authority = { value = GF_auth_commonwealth }
+	}
+	possible_secondary = { always = no }
+	randomized = no
+
+	graphical_culture = GF_new_type_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+	trait = "GF_trait_sequela"
+}
+
 GF_doll = {
 	archetype = GF_ANDROID
 	playable = { always = no }
@@ -20,20 +34,6 @@ GF_doll = {
 	resources = {
 		category = GF_doll_pops
 	}
-}
-
-GF_new_type = {
-	archetype = BIOLOGICAL
-	possible = {
-		origin = { value = GF_origin_commonwealth }
-		authority = { value = GF_auth_commonwealth }
-	}
-	possible_secondary = { always = no }
-	randomized = no
-
-	graphical_culture = GF_new_type_01
-	move_pop_sound_effect = "moving_pop_confirmation"
-	trait = "GF_trait_sequela"
 }
 
 GF_new_type_robot = {
