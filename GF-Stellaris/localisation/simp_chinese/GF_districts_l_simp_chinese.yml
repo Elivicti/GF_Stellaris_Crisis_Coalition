@@ -17,6 +17,27 @@
  district_GF_assembly_desc:0 "该区划遍布着仿生自律人形的装配生产线，她们将在这里完成组装，然后被分配至需要的岗位。"
  district_GF_assembly_vanilla_desc:0 "该区划遍布着尖端机械装配生产线，崭新的机械人口将从这里开启它们的人生。"
 
+ mod_planet_district_GF_center_build_speed_mult: "$district_GF_center$建造速度"
+ mod_planet_district_GF_generator_or_mining_build_speed_mult: "$district_GF_generator_or_mining$建造速度"
+ mod_planet_district_GF_collapse_build_speed_mult: "$district_GF_collapse$建造速度"
+ mod_planet_district_GF_assembly_build_speed_mult: "$district_GF_assembly$建造速度"
+
+ district_GF_generator_or_mining: "能源与矿产区划"
+ district_GF_generator_or_mining_plural: "能源与矿产区划"
+ district_GF_generator_or_mining_desc: "负责产生能源与采掘矿物的区划，为整个星球的生产活动提供保障。"
+
+## 区域
+ GF_zone_assembly: "装配特区"
+ GF_zone_assembly_desc: "专门用于装配新机械个体的特区。"
+ mod_planet_GF_zone_assembly_build_speed_mult: "$GF_zone_assembly$建造速度"
+ GF_zone_collapse: "坍塌反应特区"
+ GF_zone_collapse_desc: "专门用于生产坍塌液的特区。"
+ mod_planet_GF_zone_collapse_build_speed_mult: "$GF_zone_collapse$建造速度"
+ GF_zone_reverse_collapse: "逆向坍塌反应特区"
+ GF_zone_reverse_collapse_desc: "专门用于逆向坍塌反应生产资源的特区。"
+ mod_planet_GF_zone_reverse_collapse_build_speed_mult: "$GF_zone_reverse_collapse$建造速度"
+
+
 ## 复制的原版区划
  district_GF_duplicate_city:0 "$district_city$"
  district_GF_duplicate_city_desc:0 "$district_city_desc$"

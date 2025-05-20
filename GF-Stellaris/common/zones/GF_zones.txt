@@ -1,0 +1,179 @@
+GF_zone_assembly = {
+	icon = GFX_GF_zone_assembly_icon # PLACEHOLDER
+	base_buildtime = @zone_buildtime
+
+
+	potential = {
+		exists = owner
+		owner = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_doll_assemble }
+		}
+	}
+
+	unlock = {
+		OR = {
+			is_planet_class = pc_GF_sf_machine
+			AND = {
+				exists = owner
+				owner = {
+					has_technology = GF_tech_doll_assemble
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+	district_planet_modifier = {
+		job_GF_assemble_doll_add = 100
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	inline_script = {
+		script = zones/shared_city_non_urban_zone_modifiers
+	}
+
+
+	included_building_sets = {
+		industrial
+		automation
+	}
+}
+
+GF_zone_collapse = {
+	icon = GFX_GF_zone_collapse_icon
+	base_buildtime = @zone_buildtime
+
+	potential = {
+		exists = owner
+		owner = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_collapse_plant_1 }
+		}
+	}
+
+	unlock = {
+		OR = {
+			is_planet_class = pc_GF_sf_machine
+			AND = {
+				exists = owner
+				owner = {
+					has_technology = GF_tech_collapse_plant_1
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+	district_planet_modifier = {
+		job_GF_collapser_add = 100
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	inline_script = {
+		script = zones/shared_city_non_urban_zone_modifiers
+	}
+
+
+	included_building_sets = {
+		industrial
+		automation
+	}
+}
+
+GF_zone_reverse_collapse = {
+	icon = GFX_GF_zone_reverse_collapse_icon
+	base_buildtime = @zone_buildtime
+
+	potential = {
+		exists = owner
+		owner = {
+			GF_can_research_tech_trigger = { TECH = GF_tech_reverse_collapse_plant }
+		}
+	}
+
+	unlock = {
+		OR = {
+			is_planet_class = pc_GF_sf_machine
+			AND = {
+				exists = owner
+				owner = {
+					has_technology = GF_tech_reverse_collapse_plant
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+
+	triggered_district_planet_modifier = {
+		potential = { GF_has_research_designation = no }
+		job_GF_reverse_collapser_industry_add = 200
+	}
+	triggered_district_planet_modifier = {
+		potential = { GF_has_research_designation = yes }
+		job_GF_reverse_collapser_research_add = 200
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	inline_script = {
+		script = zones/shared_city_non_urban_zone_modifiers
+	}
+
+
+	included_building_sets = {
+		industrial
+		automation
+	}
+
+
+	triggered_desc = {
+		trigger = {
+			NOR = {
+				GF_has_factory_designation = yes
+				GF_has_foundry_designation = yes
+				# GF_has_refinery_designation = yes
+				GF_has_research_designation = yes
+			}
+		}
+		text = job_GF_reverse_collapser_industry_effect_desc
+	}
+	triggered_desc = {
+		trigger = { GF_has_foundry_designation = yes }
+		text = job_GF_reverse_collapser_industry_alloys_effect_desc
+	}
+	triggered_desc = {
+		trigger = { GF_has_factory_designation = yes }
+		text = job_GF_reverse_collapser_industry_consumer_goods_effect_desc
+	}
+	triggered_desc = {
+		trigger = { GF_has_research_designation = yes }
+		text = job_GF_reverse_collapser_research_effect_desc
+	}
+
+}

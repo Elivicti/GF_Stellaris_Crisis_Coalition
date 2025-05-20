@@ -375,4 +375,64 @@ spriteTypes = {
 		name = "GFX_text_GF_OGAS_threads_add"
 		textureFile = "gfx/interface/icons/modifiers/mod_GF_OGAS_threads_add.dds"
 	}
+
+	# districts & zones
+	corneredTileSpriteType = {
+		name = "GFX_district_GF_center_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_GF_center_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_district_GF_center_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/district_city_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_GF_generator_or_mining_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_generator.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_district_GF_generator_or_mining_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/district_generator_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_GF_collapse_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_GF_collapse_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_district_GF_collapse_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/district_farming_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_district_GF_assembly_box_icon_rectangle"
+		texturefile = "gfx/interface/icons/districts/grid_box/district_GF_assembly_rectangle.dds"
+		borderSize = { x = 1 y = 1 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+	}
+	spriteType = {
+		name = "GFX_district_GF_assembly_bg"
+		texturefile = "gfx/interface/planetview/district_backgrounds/district_hab_science_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GF_zone_assembly_icon"
+		textureFile = "gfx/interface/icons/jobs/job_replicator.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_zone_collapse_icon"
+		textureFile = "gfx/interface/icons/jobs/job_GF_collapser.dds"
+	}
+	spriteType = {
+		name = "GFX_GF_zone_reverse_collapse_icon"
+		textureFile = "gfx/interface/icons/jobs/job_GF_reverse_collapser_industry.dds"
+	}
+	## automated city
 }

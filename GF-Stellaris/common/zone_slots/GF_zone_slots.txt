@@ -1,0 +1,24 @@
+GF_slot_industrial = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_assembly
+		GF_zone_collapse
+		GF_zone_reverse_collapse
+
+		zone_industrial
+		zone_foundry
+		zone_factory
+		zone_research
+		zone_research_physics
+		zone_research_engineering
+		zone_research_society
+		zone_fortress
+	}
+
+	exclude = {
+		zone_default
+		zone_minerals
+		zone_food
+		zone_energy
+	}
+}
