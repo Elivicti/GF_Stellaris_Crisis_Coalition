@@ -148,6 +148,12 @@ parameters = {
     NOTIFICATION = bool
     ## context_key = scripted_effect@GF_set_zion_deep_dive_cooldown
     YEARS = int
+
+    ## context_key = script_value@GF_reverse_collapser_rare_resources_modifier_transform
+    RES = <resource>
+    ## context_key = script_value@GF_reverse_collapser_rare_resources_modifier_transform
+    ## context_configs_type = multiple
+    TYPE = { produces_add produces_mult cost_add cost_mult upkeep_add upkeep_mult }
 }
 
 dynamic_values = {
