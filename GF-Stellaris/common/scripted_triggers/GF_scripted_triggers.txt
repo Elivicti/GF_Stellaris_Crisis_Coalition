@@ -387,7 +387,7 @@ GF_zion_require_resource_stockpile = {
 GF_is_non_doll_robot_pop = {
 	AND = {
 		NOT = { has_trait = GF_trait_doll }
-		is_robot_pop = yes
+		is_robot_pop_group = yes
 	}
 }
 

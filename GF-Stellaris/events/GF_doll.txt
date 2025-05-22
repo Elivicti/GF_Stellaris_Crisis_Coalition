@@ -110,7 +110,7 @@ country_event = {
 
 # on_pop_rights_change
 # 修改物种权利的时候，为每一个对应的人口触发这个事件
-pop_event = {
+pop_group_event = {
 	id = GF_doll.1005
 	hide_window = yes
 
@@ -121,11 +121,11 @@ pop_event = {
 			type = citizenship_GF_doll_assimilation
 			country = owner
 		}
-		NOT = { has_pop_flag = citizenship_GF_doll_assimilation }
+		NOT = { has_pop_group_flag = citizenship_GF_doll_assimilation }
 	}
 
 	immediate = {
-		set_timed_pop_flag = {
+		set_timed_pop_group_flag = {
 			flag = citizenship_GF_doll_assimilation
 			days = 1
 		}

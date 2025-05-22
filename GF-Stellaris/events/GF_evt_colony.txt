@@ -35,7 +35,7 @@ planet_event = {
 			which = v_GF_auto_colony_capacity
 			value = @GF_auto_colony_boundary_start
 		}
-		every_owned_pop = {
+		every_owned_pop_group = {
 			if = {
 				limit = { has_job = GF_dormancy_doll }
 				prev = {

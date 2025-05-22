@@ -174,12 +174,6 @@ GF_has_factory_designation = {
 	}
 }
 
-GF_has_refinery_designation = {
-	OR = {
-		has_refinery_designation = yes
-		has_designation = col_GF_automated_city_refinery
-	}
-}
 
 GF_has_research_designation = {
 	OR = {

@@ -91,11 +91,11 @@ decision_GF_auto_colony_off = {
 			limit = { has_modifier = GF_auto_colony_boundary_modifier }
 			remove_modifier = GF_auto_colony_boundary_modifier
 		}
-		
+
 		hidden_effect = {
 			add_building = building_colony_shelter
 			remove_building = building_GF_auto_colony_capital
-			set_colony_type = col_default
+			set_colony_type = col_city
 			remove_planet_flag = flag_p_GF_auto_colony
 
 			validate_planet_buildings_and_districts = yes
@@ -113,6 +113,7 @@ decision_GF_auto_colony_off = {
 
 decision_GF_automated_city_project = {
 	icon = decision_GF_automated_city_project
+	enactment_time = 30
 	owned_planets_only = yes
 	resources = {
 		category = decisions

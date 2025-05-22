@@ -616,12 +616,12 @@ GF_convert_to_OGAS_subnet = {
 		alloys = 100
 		consumer_goods = 100
 		gf_core_chip = 100
-		
+
 		unity = 1000
 	}
-	every_owned_pop = {
+	every_owned_pop_group = {
 		limit = {
-			is_robot_pop = yes
+			is_robot_pop_group = yes
 			NOT = { has_trait = GF_trait_doll }
 		}
 		change_species = event_target:doll_species
@@ -659,7 +659,7 @@ GF_convert_to_OGAS_subnet = {
 		}
 		if = {
 			limit = {
-				NOT = { any_owned_pop = { is_same_species_class = event_target:doll_species } }
+				NOT = { any_owned_pop_group = { is_same_species_class = event_target:doll_species } }
 			}
 			create_pop = { species = event_target:doll_species }
 		}
@@ -817,7 +817,7 @@ GF_change_ogas_threads = {
 GF_check_OGAS_threads_over_cap_effect = {
 	country_event = {
 		id = GF_evt_misc.100
-		days = 5
+		days = $delay|5$
 		scopes = { from = $from$ }
 	}
 }
@@ -846,7 +846,7 @@ GF_clear_core_chip_deficit_flags = {
 
 # this = planet
 GF_collapse_planet_effect = {
-	every_owned_pop = { kill_pop = yes }
+	every_owned_pop_group = { kill_pop_group = { pop_group = this percentage = 1 } }
 	remove_all_buildings = yes
 	# destroy habitats and ringworlds
 	if = {
