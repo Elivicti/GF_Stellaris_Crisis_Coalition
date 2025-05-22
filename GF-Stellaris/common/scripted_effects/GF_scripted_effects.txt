@@ -1069,9 +1069,59 @@ GF_set_RC_beacon_fleet_cooldown = {
 
 # this = planet
 GF_autocity_construction_complete_effect = {
-	planet_event = { id = GF_colony.5005 }
-	planet_event = { id = GF_colony.5006 }
-	planet_event = { id = GF_colony.5007 }
+	optimize_memory
+	set_variable = {
+		which = city_cnt
+		value = value:GF_export_district_count|DISTRICT|district_city|FACTOR|0.8|
+	}
+	set_variable = {
+		which = other_cnt
+		value = value:GF_export_district_count|DISTRICT|any|
+	}
+	subtract_variable = {
+		which = other_cnt
+		value = value:GF_export_district_count|DISTRICT|district_city|
+	}
+	divide_variable = {
+		which = other_cnt
+		value = 6
+	}
+	floor_variable = other_cnt
+	if = {
+		limit = {
+			OR = {
+				has_zone = { zone = zone_industrial }
+				has_zone = { zone = zone_foundry }
+				has_zone = { zone = zone_factory }
+			}
+		}
+		multiply_variable = {
+			which = city_cnt
+			value = 1.2
+		}
+		floor_variable = city_cnt
+	}
+	change_pc = pc_GF_automated_city
+	while = {
+		count = city_cnt
+		add_district = district_GF_automated_nexus
+	}
+	while = {
+		count = other_cnt
+		add_district = district_GF_autocity_specialization_01
+	}
+	while = {
+		count = other_cnt
+		add_district = district_GF_autocity_specialization_02
+	}
+	while = {
+		count = other_cnt
+		add_district = district_GF_autocity_specialization_03
+	}
+	validate_and_repair_planet_buildings_and_districts = yes
+	clear_variable = city_cnt
+	clear_variable = other_cnt
+
 	# 通知
 	planet_event = { id = GF_colony.5010 }
 

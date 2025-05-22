@@ -7,18 +7,6 @@ GF_automated_city_construction = {
 	complete_icon = GFX_situation_outcome_meh
 	complete_icon_frame = GFX_situation_outcome_frame_green
 
-	desc = {
-		text = GF_automated_city_construction_desc_base
-		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_base_resources } }
-	}
-	desc = {
-		text = GF_automated_city_construction_desc_advanced
-		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources } }
-	}
-	desc = {
-		text = GF_automated_city_construction_desc_special
-		trigger = { target = { has_planet_flag = flag_p_GF_automated_city_special_resources } }
-	}
 
 	start_value = 0
 	stages = {
@@ -32,15 +20,8 @@ GF_automated_city_construction = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_green
 			end = 90
-			
 			modifier = {
 				GF_OGAS_threads_used_add = 1
-			}
-			triggered_modifier = {
-				potential = {
-					target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
-				}
-				modifier = { GF_OGAS_threads_used_add = 1 }
 			}
 			target_modifier = {
 				planet_districts_upkeep_mult = -0.10
@@ -52,19 +33,7 @@ GF_automated_city_construction = {
 			end = 120
 
 			modifier = {
-				GF_OGAS_threads_used_add = 2
-			}
-			triggered_modifier = {
-				potential = {
-					target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
-				}
-				modifier = { GF_OGAS_threads_used_add = 1 }
-			}
-			triggered_modifier = {
-				potential = {
-					target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
-				}
-				modifier = { GF_OGAS_threads_used_add = 2 }
+				GF_OGAS_threads_used_add = 1
 			}
 			target_modifier = {
 				planet_districts_upkeep_mult = -0.20
@@ -88,8 +57,8 @@ GF_automated_city_construction = {
 			}
 		}
 		modifier = {
-			desc = GF_automated_city_construction_districts_industrial
-			add = target.value:GF_count_district|TYPE|district_industrial|FACTOR|0.05|
+			desc = GF_automated_city_construction_built_zones
+			mult = target.value:GF_count_zone|TYPE|any|FACTOR|0.025|ADD|1|
 			NOT = {
 				current_situation_approach = GF_automated_city_construction_approach_cancel
 			}
@@ -136,13 +105,20 @@ GF_automated_city_construction = {
 		}
 	}
 
+	on_start = {
+		target = {
+			set_planet_flag = flag_p_GF_automated_city_terraform_ongoing
+		}
+	}
+
 	on_fail = {
 		custom_tooltip = GF_automated_city_construction_fail_tooltip
 		hidden_effect = {
 			target = {
-				remove_planet_flag = flag_p_GF_automated_city_base_resources
-				remove_planet_flag = flag_p_GF_automated_city_advanced_resources
-				remove_planet_flag = flag_p_GF_automated_city_special_resources
+				remove_planet_flag = flag_p_GF_automated_city_terraform_ongoing
+				# remove_planet_flag = flag_p_GF_automated_city_base_resources
+				# remove_planet_flag = flag_p_GF_automated_city_advanced_resources
+				# remove_planet_flag = flag_p_GF_automated_city_special_resources
 			}
 		}
 	}
@@ -207,8 +183,8 @@ GF_automated_city_construction = {
 		resources = {
 			category = situations
 			upkeep = {
-				minerals = 300
-				alloys = 50
+				minerals = 450
+				alloys = 75
 			}
 		}
 	}

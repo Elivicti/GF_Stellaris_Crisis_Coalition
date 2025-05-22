@@ -17,12 +17,12 @@
  pc_GF_collapsed_not_habitable_desc:0 "一颗表面遍布坍塌辐射结晶的岩石星球，浓烈的坍塌辐射粒子成为了这颗星球的大气层，不可能有任何生命能在这颗星球上生存。"
  pc_GF_collapsed_not_habitable_adj:0 "荒芜"
 
- pc_GF_automated_city:0 "自动化星球"
- pc_GF_automated_city_desc:0 "都市和大型自动化机械设施完全覆盖了这颗星球的地表，自然的法则已被坚定的意志完全替代。"
- pc_GF_automated_city_adj:0 "自动化星球的"
- mod_pc_GF_automated_city_habitability:0 "$pc_GF_automated_city$宜居度"
- trait_pc_GF_automated_city_preference:0 "$pc_GF_automated_city$偏好"
- trait_pc_GF_automated_city_preference_desc:0 "为啥会有物种偏好$pc_GF_automated_city$？"
+ pc_GF_automated_city: "自动化星球"
+ pc_GF_automated_city_desc: "都市和大型自动化机械设施完全覆盖了这颗星球的地表，自然的法则已被文明的意志完全替代。"
+ pc_GF_automated_city_adj: "自动化星球的"
+ mod_pc_GF_automated_city_habitability: "$pc_GF_automated_city$宜居度"
+ trait_pc_GF_automated_city_preference: "$pc_GF_automated_city$偏好"
+ trait_pc_GF_automated_city_preference_desc: "为啥会有物种偏好$pc_GF_automated_city$？"
  climate_artificial: "人工气候"
  artificial: "§Y（人工气候）§!"
 

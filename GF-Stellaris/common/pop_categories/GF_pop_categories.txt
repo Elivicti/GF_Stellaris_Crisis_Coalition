@@ -12,35 +12,13 @@ GF_freedom_class = {
 		planet = { is_planet_class = pc_GF_automated_city }
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			can_generate_trade_value = yes
-		}
-		trade_value_add = @trade_value_very_high
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			can_assemble_budding_pop = yes
-		}
-		planet_pop_assembly_organic_add = @plantoid_budding_rate
-	}
-
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			NOT = { has_trait = trait_noxious }
 		}
 		key = trait_noxious
 		pop_happiness = 1
 		mult = modifier:pop_non_noxious_happiness
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			can_assemble_tiyanki_pop = yes
-		}
-		planet_pop_assembly_organic_add = @tiyanki_budding_rate
 	}
 
 	triggered_planet_modifier = {
@@ -51,52 +29,20 @@ GF_freedom_class = {
 
 	resources = {
 		category = pop_category_GF_freedom_class
+		produces = {
+			trade = @trade_value_very_high
+		}
 		upkeep = { consumer_goods = 1 }
-
-		# Regular food, mineral and energy upkeep.
-		inline_script = "pop_categories/regular_upkeep"
-
-		# Additional energy upkeep for cyborgs.
-		inline_script = "pop_categories/cyborg_upkeep"
-
-		# Instrument of Desire Upkeep
-		inline_script = "pop_categories/instrument_upkeep"
-
-		# Exotic Metabolism Upkeep
-		upkeep = {
-			trigger = {
-				is_organic_species = yes
-				has_trait = trait_exotic_metabolism
-			}
-			exotic_gases = @exotic_metabolism
-		}
-
-		# Resource Production
-
-		# Lithoid Trait Output
-		inline_script = "pop_categories/trait_production"
-
-		produces = {
-			trigger = {
-				is_organic_species = yes
-				has_trait = trait_inorganic_breath
-			}
-			exotic_gases = @inorganic_breath
-		}
-
-		produces = {
-			trigger = {
-				has_trait = trait_drake_scaled
-			}
-			alloys = @drake_scaled_trait_resource_production
-		}
 	}
 
 	weight = {
 		weight = 1
 		modifier = {
 			set = 10000
-			is_unemployed = yes
+			OR = {
+				is_unemployed = yes
+				is_pop_category = GF_freedom_class
+			}
 			GF_can_pop_join_freedom_kindom = yes
 		}
 	}
@@ -119,7 +65,7 @@ GF_freedom_class = {
 		unity = 50
 	}
 
-	pop_modifier = {
+	pop_group_modifier = {
 		pop_political_power = 2
 		pop_housing_usage_base = 1
 		pop_amenities_usage_base = 1
@@ -127,13 +73,23 @@ GF_freedom_class = {
 		species_empire_size_mult = -0.25
 	}
 
-	triggered_pop_modifier = {
+	triggered_pop_group_modifier = {
 		potential = {
 			exists = owner
 			owner = { has_deficit = consumer_goods }
 		}
 		key = consumer_goods_deficit
 		pop_happiness = -0.5
-		planet_jobs_produces_mult = -0.50
+		pop_bonus_workforce_mult = -0.50
+	}
+
+	triggered_pop_group_modifier = {
+		potential = {
+			exists = planet
+			planet = { has_modifier = GF_automated_city_supressed }
+		}
+		description = GF_automated_city_supressed
+		pop_amenities_usage_mult = 1
+		mult = modifier:GF_freedom_kingdom_amenities_usage_mult
 	}
 }

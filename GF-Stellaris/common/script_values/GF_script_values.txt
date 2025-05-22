@@ -152,6 +152,22 @@ GF_count_district_non_urban = {
 		mult = $FACTOR$
 	]
 }
+# this = planet
+GF_count_zone = {
+	complex_trigger_modifier = {
+		trigger = num_zones
+		parameters = {
+			type = $TYPE$
+		}
+		mode = add
+	}
+	[[FACTOR]
+		mult = $FACTOR$
+	]
+	[[ADD]
+		add = $ADD$
+	]
+}
 
 # scope = planet
 GF_cal_system_maintenance_production_effect = {

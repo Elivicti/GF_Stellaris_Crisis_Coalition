@@ -141,50 +141,50 @@ GF_get_thread_usage_from_auto_city_construction = {
 		}
 		mode = add
 	}
-	complex_trigger_modifier = {
-		trigger = count_situation
-		parameters = {
-			limit = {
-				is_situation_type = GF_automated_city_construction
-				current_stage = stage_2
-				target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
-			}
-		}
-		mode = add
-	}
-
-	complex_trigger_modifier = {
-		trigger = count_situation
-		parameters = {
-			limit = {
-				is_situation_type = GF_automated_city_construction
-				current_stage = stage_3
-			}
-		}
-		mode = add
-		mult = 2
-	}
-	complex_trigger_modifier = {
-		trigger = count_situation
-		parameters = {
-			limit = {
-				is_situation_type = GF_automated_city_construction
-				current_stage = stage_3
-				target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
-			}
-		}
-		mode = add
-	}
-	complex_trigger_modifier = {
-		trigger = count_situation
-		parameters = {
-			limit = {
-				is_situation_type = GF_automated_city_construction
-				current_stage = stage_3
-				target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
-			}
-		}
-		mode = add
-		mult = 2
-	}
+	# complex_trigger_modifier = {
+	# 	trigger = count_situation
+	# 	parameters = {
+	# 		limit = {
+	# 			is_situation_type = GF_automated_city_construction
+	# 			current_stage = stage_2
+	# 			target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+	# 		}
+	# 	}
+	# 	mode = add
+	# }
+	#
+	# complex_trigger_modifier = {
+	# 	trigger = count_situation
+	# 	parameters = {
+	# 		limit = {
+	# 			is_situation_type = GF_automated_city_construction
+	# 			current_stage = stage_3
+	# 		}
+	# 	}
+	# 	mode = add
+	# 	mult = 2
+	# }
+	# complex_trigger_modifier = {
+	# 	trigger = count_situation
+	# 	parameters = {
+	# 		limit = {
+	# 			is_situation_type = GF_automated_city_construction
+	# 			current_stage = stage_3
+	# 			target = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
+	# 		}
+	# 	}
+	# 	mode = add
+	# }
+	# complex_trigger_modifier = {
+	# 	trigger = count_situation
+	# 	parameters = {
+	# 		limit = {
+	# 			is_situation_type = GF_automated_city_construction
+	# 			current_stage = stage_3
+	# 			target = { has_planet_flag = flag_p_GF_automated_city_special_resources }
+	# 		}
+	# 	}
+	# 	mode = add
+	# 	mult = 2
+	# }
 }

@@ -31,7 +31,7 @@ GF_freedom_kingdom_amenities_usage_mult = {
 	icon = mod_pop_amenities_usage_add
 	good = no
 	percentage = yes
-	category = pop
+	category = pop_group
 }
 
 
@@ -86,5 +86,11 @@ GF_automated_city_districts_collapse_base_produces_mult = {
 GF_automated_city_districts_reverse_collapse_base_produces_mult = {
 	percentage = yes
 	good = yes
+	category = planet
+}
+
+GF_automated_city_specialization_level = {
+	icon = mod_commander_exp_gain
+	neutral = yes
 	category = planet
 }

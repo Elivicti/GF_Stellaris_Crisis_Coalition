@@ -1,9 +1,10 @@
 GF_freedom_kingdom = {
 	category = GF_freedom_class
+	is_capped_by_modifier = no
 
 	swappable_data = {
 		default = {
-			building_icon = building_GF_doll_maintain_center_2
+			building_icon = building_fe_sky_dome
 			condition_string = GF_freedom_kingdom_conditions
 		}
 	}
@@ -19,16 +20,6 @@ GF_freedom_kingdom = {
 		GF_can_pop_join_freedom_kindom = yes
 	}
 
-	triggered_pop_group_modifier = {
-		potential = {
-			exists = planet
-			planet = { has_modifier = GF_automated_city_supressed }
-		}
-		description = GF_automated_city_supressed
-		pop_amenities_usage_mult = 1
-		mult = modifier:GF_freedom_kingdom_amenities_usage_mult
-	}
-	
 	resources = {
 		category = planet_jobs
 		produces = {
@@ -42,7 +33,7 @@ GF_freedom_kingdom = {
 	planet_modifier = {
 		planet_crime_add = -1
 	}
-	
+
 	weight = {
 		weight = @clerk_job_weight
 		modifier = {

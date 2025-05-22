@@ -65,28 +65,30 @@
 
 
 # 自动化星球建设
- GF_automated_city_construction:0 "$pc_GF_automated_city$建设"
- GF_automated_city_construction_type:0 "$pc_GF_automated_city$建设"
- GF_automated_city_construction_desc:0 "我们正在对[target.GetName]进行改造，完成后将转变为$pc_GF_automated_city$。"
- GF_automated_city_construction_desc_base:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityBaseResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+2§!"
- GF_automated_city_construction_desc_advanced:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityAdvancedResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+3§!"
- GF_automated_city_construction_desc_special:0 "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCitySpecialResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+4§!"
+ GF_automated_city_construction: "$pc_GF_automated_city$建设"
+ GF_automated_city_construction_type: "$pc_GF_automated_city$建设"
+ GF_automated_city_construction_desc: "我们正在对[target.GetName]进行改造，完成后将转变为$pc_GF_automated_city$。\n\n§E建设完成后：§!\n$t$$mod_GF_OGAS_threads_used_add$：§R+1§!"
 
- GF_automated_city_construction_fail_tooltip:0 "$pc_GF_automated_city$建设将被取消，所有已建设的设施将被拆除。"
- GF_automated_city_construction_complete_tooltip:0 "[target.GetName]将更改为§H$pc_GF_automated_city$§!。"
+ GF_automated_city_construction_desc_base: "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityBaseResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+2§!"
+ GF_automated_city_construction_desc_advanced: "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCityAdvancedResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+3§!"
+ GF_automated_city_construction_desc_special: "我们正在对[target.GetName]进行改造，完成后将转变为§H$GFAutomatedCitySpecialResource$§!型$pc_GF_automated_city$。\n\n该类型将在完成后产生$mod_GF_OGAS_threads_used_add$：§R+4§!"
 
- GF_automated_city_construction_monthly_change_tooltip:0 "每月建设进度"
- GF_automated_city_construction_no_threads:0 "OGAS线程不足"
+ GF_automated_city_construction_fail_tooltip: "$pc_GF_automated_city$建设将被取消，所有已建设的设施将被拆除。"
+ GF_automated_city_construction_complete_tooltip: "[target.GetName]将更改为§H$pc_GF_automated_city$§!。"
 
- GF_automated_city_construction_approach_cancel:0 "取消建设"
- GF_automated_city_construction_approach_cancel_effect_desc:0 "每月建设进度: §R-3§!"
- GF_automated_city_construction_approach_normal:0 "维持支出"
- GF_automated_city_construction_approach_normal_effect_desc:0 ""
- GF_automated_city_construction_approach_speed_up:0 "加快建设"
- GF_automated_city_construction_approach_speed_up_effect_desc:0 "每月建设进度: §G+50%§!"
+ GF_automated_city_construction_monthly_change_tooltip: "每月建设进度"
+ GF_automated_city_construction_no_threads: "OGAS线程不足"
+
+ GF_automated_city_construction_approach_cancel: "取消建设"
+ GF_automated_city_construction_approach_cancel_effect_desc: "每月建设进度: §R-3§!"
+ GF_automated_city_construction_approach_normal: "维持支出"
+ GF_automated_city_construction_approach_normal_effect_desc: ""
+ GF_automated_city_construction_approach_speed_up: "加快建设"
+ GF_automated_city_construction_approach_speed_up_effect_desc: "每月建设进度: §G+50%§!"
 
  GF_automated_city_construction_districts_city: "$district_city$数量"
  GF_automated_city_construction_districts_industrial: "$district_industrial$数量"
+ GF_automated_city_construction_built_zones: "已建设的区域数量"
  GF_automated_city_construction_districts_other: "其他区划数量"
  GF_automated_city_construction_speed_from_agenda: "$council_agenda_GF_agenda_automation_name$议程"
 

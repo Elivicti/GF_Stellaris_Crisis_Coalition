@@ -37,10 +37,7 @@ col_GF_auto_colony = {
 
 col_GF_automated_city = {
 	icon = GFX_colony_type_GF_auto_city
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_produces_mult = 0.10
 		planet_building_build_speed_mult = 0.20
@@ -53,11 +50,7 @@ col_GF_automated_city = {
 
 col_GF_automated_city_energy = {
 	icon = GFX_colony_type_GF_auto_city_energy
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_base_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_energy_produces_mult = 0.25
 		GF_automated_city_districts_minerals_produces_mult = -0.50
@@ -69,21 +62,16 @@ col_GF_automated_city_energy = {
 			has_designation = col_GF_automated_city_energy
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_energy }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_energy }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_minerals = {
 	icon = GFX_colony_type_GF_auto_city_minerals
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_base_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_minerals_produces_mult = 0.25
 		GF_automated_city_districts_energy_produces_mult = -0.50
@@ -95,21 +83,16 @@ col_GF_automated_city_minerals = {
 			has_designation = col_GF_automated_city_minerals
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_mining }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_minerals }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_food = {
 	icon = GFX_colony_type_GF_auto_city_food
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_base_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_food_produces_mult = 0.25
 		GF_automated_city_districts_energy_produces_mult = -0.50
@@ -121,8 +104,8 @@ col_GF_automated_city_food = {
 			has_designation = col_GF_automated_city_food
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_farming }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_food }
 			mode = add
 			mult = 3
 		}
@@ -131,11 +114,7 @@ col_GF_automated_city_food = {
 
 col_GF_automated_city_alloys = {
 	icon = GFX_colony_type_GF_auto_city_alloys
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_alloys_produces_mult = 0.25
 		GF_automated_city_districts_consumer_goods_produces_mult = -0.50
@@ -150,21 +129,16 @@ col_GF_automated_city_alloys = {
 			has_designation = col_GF_automated_city_alloys
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_foundry }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_foundry }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_consumer_goods = {
 	icon = GFX_colony_type_GF_auto_city_consumer_goods
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_consumer_goods_produces_mult = 0.25
 		GF_automated_city_districts_alloys_produces_mult = -0.50
@@ -179,21 +153,16 @@ col_GF_automated_city_consumer_goods = {
 			has_designation = col_GF_automated_city_consumer_goods
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_industry }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_industry }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_refinery = {
 	icon = GFX_colony_type_GF_auto_city_refinery
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_volatile_motes_produces_mult = 0.25
 		GF_automated_city_districts_exotic_gases_produces_mult = 0.25
@@ -208,8 +177,8 @@ col_GF_automated_city_refinery = {
 			has_designation = col_GF_automated_city_refinery
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_refinery }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_refinery }
 			mode = add
 			mult = 3
 		}
@@ -218,11 +187,7 @@ col_GF_automated_city_refinery = {
 
 col_GF_automated_city_research = {
 	icon = GFX_colony_type_GF_auto_city_research
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_physics_research_produces_mult = 0.25
 		GF_automated_city_districts_society_research_produces_mult = 0.25
@@ -243,21 +208,16 @@ col_GF_automated_city_research = {
 			has_designation = col_GF_automated_city_research
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_research }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_research }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_factory = {
 	icon = GFX_colony_type_GF_auto_city_factory
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_factory_assembly_speed_mult = 0.15
 		GF_automated_city_districts_physics_research_produces_mult = -0.50
@@ -278,21 +238,16 @@ col_GF_automated_city_factory = {
 			has_designation = col_GF_automated_city_factory
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_factory }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_assembly }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_collapse = {
 	icon = GFX_colony_type_GF_auto_city_collapse
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_GF_nyto_collapse_liquid_produces_mult = 0.25
 		GF_automated_city_districts_physics_research_produces_mult = -0.50
@@ -313,28 +268,23 @@ col_GF_automated_city_collapse = {
 			has_designation = col_GF_automated_city_collapse
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_collapse }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_collapse }
 			mode = add
 			mult = 3
 		}
 	}
 }
-
 col_GF_automated_city_reverse_collapse = {
 	icon = GFX_colony_type_GF_auto_city_reverse_collapse
-	potential = {
-		exists = owner
-		is_planet_class = pc_GF_automated_city
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
+	potential = { is_planet_class = pc_GF_automated_city }
 	planet_modifier = {
 		GF_automated_city_districts_alloys_produces_mult = 0.25
 		GF_automated_city_districts_consumer_goods_produces_mult = 0.25
 		GF_automated_city_districts_volatile_motes_produces_mult = 0.25
 		GF_automated_city_districts_exotic_gases_produces_mult = 0.25
 		GF_automated_city_districts_rare_crystals_produces_mult = 0.25
-		
+
 		GF_automated_city_districts_physics_research_produces_mult = -0.50
 		GF_automated_city_districts_society_research_produces_mult = -0.50
 		GF_automated_city_districts_engineering_research_produces_mult = -0.50
@@ -349,8 +299,8 @@ col_GF_automated_city_reverse_collapse = {
 			has_designation = col_GF_automated_city_reverse_collapse
 		}
 		complex_trigger_modifier = {
-			trigger = num_districts
-			parameters = { type = district_GF_automated_reverse_collapse }
+			trigger = num_zones
+			parameters = { type = GF_zone_autocity_reverse_collapse }
 			mode = add
 			mult = 3
 		}

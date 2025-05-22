@@ -420,6 +420,16 @@ can_fill_ruler_job = {
 	}
 }
 
+# Some parts in code still need to know some more specifics from script
+#this/root = pop job
+is_civilian_job = {
+	OR = {
+		has_job_category = civilian
+		has_job_category = maintenance_drone
+		has_job_category = GF_freedom_class
+	}
+}
+
 # This = leader, leader we'd like to trade
 # Root = country, country that owns the leader currently
 # From = country, country that would receive the leader

@@ -9,7 +9,9 @@ building_GF_connection_nexus = {
 	position_priority = 0
 	category = government
 
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+	}
 
 	potential = {
 		is_planet_class = pc_GF_automated_city
@@ -45,27 +47,42 @@ building_GF_connection_nexus = {
 	}
 
 	country_modifier = {
-		GF_OGAS_threads_used_add = 2
-	}
-	triggered_country_modifier = {
-		potential = { has_planet_flag = flag_p_GF_automated_city_advanced_resources }
 		GF_OGAS_threads_used_add = 1
 	}
 	triggered_country_modifier = {
-		potential = { has_planet_flag = flag_p_GF_automated_city_special_resources }
-		GF_OGAS_threads_used_add = 2
+		potential = {
+			check_modifier_value = {
+				modifier = GF_automated_city_specialization_level
+				value >= 1
+			}
+		}
+		GF_OGAS_threads_used_add = 1
+	}
+	triggered_country_modifier = {
+		potential = {
+			check_modifier_value = {
+				modifier = GF_automated_city_specialization_level
+				value >= 4
+			}
+		}
+		GF_OGAS_threads_used_add = 1
+	}
+	triggered_country_modifier = {
+		potential = {
+			check_modifier_value = {
+				modifier = GF_automated_city_specialization_level
+				value >= 7
+			}
+		}
+		GF_OGAS_threads_used_add = 1
 	}
 
 	planet_modifier = {
 		planet_stability_add = 10
 		GF_system_maintenance = 0.20
-		job_GF_system_dispatcher_add = 2
-		job_GF_maintenance_engineer_add = 1
-	}
-
-	triggered_planet_modifier = {
-		planet_max_districts_mult = 1
-		mult = owner.modifier:GF_automated_city_max_districts_mult
+		job_GF_system_dispatcher_add = 200
+		job_GF_maintenance_engineer_add = 100
+		pop_demotion_time_mult = -2
 	}
 
 	triggered_planet_modifier = {
@@ -84,10 +101,10 @@ building_GF_connection_nexus = {
 		mult = value:GF_cal_system_maintenance_upkeep_effect
 	}
 
-	triggered_planet_modifier = {
-		job_GF_freedom_kingdom_add = 1
-		mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|append_condition|GF_can_pop_join_freedom_kindom|
-	}
+	# triggered_planet_modifier = {
+	# 	job_GF_freedom_kingdom_add = 1
+	# 	mult = value:GF_generate_job_from_unemployed_pops|job|GF_freedom_kingdom|append_condition|GF_can_pop_join_freedom_kindom|
+	# }
 
 	triggered_country_modifier = {
 		potential = { has_modifier = GF_automated_city_supressed }
@@ -142,8 +159,8 @@ building_GF_connection_nexus = {
 building_GF_automated_coordination_nexus = {
 	icon = building_vultaum_reality_computer
 	base_buildtime = 720
-	position_priority = 1
-	building_sets = { GF_automated_city }
+	position_priority = 2
+	building_sets = { GF_automated_city_government }
 
 	category = government
 	potential = {
@@ -256,7 +273,10 @@ building_GF_automated_coordination_nexus = {
 building_GF_automated_maintenance_module = {
 	icon = building_production_center
 	base_buildtime = @build_time_t1
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 10
 
 	category = government
@@ -279,7 +299,7 @@ building_GF_automated_maintenance_module = {
 	}
 
 	planet_modifier = {
-		job_GF_maintenance_engineer_add = 2
+		job_GF_maintenance_engineer_add = 200
 		GF_automated_city_districts_nexus_gf_core_chip_upkeep_add = 0.2
 		GF_automated_city_districts_upkeep_mult = -0.05
 		GF_system_maintenance = -0.04
@@ -289,7 +309,10 @@ building_GF_automated_maintenance_module = {
 building_GF_automated_defence_module = {
 	icon = building_fortress
 	base_buildtime = @build_time_t1
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 11
 
 	category = army
@@ -313,7 +336,7 @@ building_GF_automated_defence_module = {
 
 	planet_modifier = {
 		planet_orbital_bombardment_damage = -0.25
-		job_soldier_add = 10
+		job_soldier_add = 1000
 		GF_system_maintenance = -0.08
 	}
 }
@@ -321,7 +344,10 @@ building_GF_automated_politic_module = {
 	icon = building_bureaucratic_3
 	base_buildtime = @build_time_t1
 	position_priority = 12
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 
 	category = government
 	potential = {
@@ -369,7 +395,10 @@ building_GF_automated_politic_module = {
 building_GF_underground_expansion_module = {
 	icon = building_mine_generic
 	base_buildtime = @build_time_t2
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 13
 
 	category = government
@@ -398,7 +427,10 @@ building_GF_underground_expansion_module = {
 building_GF_energy_management_module = {
 	icon = building_class_4_singularity
 	base_buildtime = @build_time_t1
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 14
 
 	category = resource
@@ -428,7 +460,10 @@ building_GF_energy_management_module = {
 building_GF_entertainment_module = {
 	icon = building_palace
 	base_buildtime = @build_time_t1
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 15
 
 	category = amenity
@@ -451,15 +486,18 @@ building_GF_entertainment_module = {
 	}
 
 	planet_modifier = {
-		job_culture_worker_add = 10
-		job_entertainer_add = 5
+		job_culture_worker_add = 1000
+		job_entertainer_add = 500
 		GF_system_maintenance = -0.02
 	}
 }
 building_GF_residential_module = {
 	icon = building_paradise_dome
 	base_buildtime = @build_time_t1
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 	position_priority = 16
 
 	category = amenity
@@ -482,8 +520,8 @@ building_GF_residential_module = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 50
-		planet_amenities_add = 20
+		planet_housing_add = 5000
+		planet_amenities_add = 2000
 		GF_system_maintenance = -0.02
 	}
 }
@@ -492,12 +530,14 @@ building_GF_automated_factory = {
 	icon = building_GF_doll_factory
 	base_buildtime = @build_time_t1
 	position_priority = 20
-	building_sets = { GF_automated_city }
+	building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
 
 	category = pop_assembly
 
 	potential = {
-		NOT = { has_planet_flag = flag_p_GF_automated_city_special_resources }
 		OR = {
 			NOT = { exists = owner }
 			owner = { GF_is_main_country = yes }

@@ -188,7 +188,7 @@ d_GF_railway_hub = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		trade_value_mult = 0.25
+		planet_jobs_trade_produces_mult = 0.25
 		planet_building_build_speed_mult = 0.05
 	}
 
@@ -218,7 +218,12 @@ d_GF_autocity = {
 		empire_size_districts_mult = 1
 		mult = v_GF_automated_city_district_empire_size_penalty
 	}
-	
+
+	triggered_planet_modifier = {
+		planet_max_districts_mult = 1
+		mult = owner.modifier:GF_automated_city_max_districts_mult
+	}
+
 	resources = {
 		category = planet_deposits
 	}
