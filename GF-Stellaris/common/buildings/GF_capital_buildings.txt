@@ -141,6 +141,8 @@ building_GF_auto_colony_capital = {
 
 		planet_housing_add = 500
 		planet_amenities_add = 500
+
+		planet_building_capacity_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -265,6 +267,7 @@ building_GF_GK_headquarters_2 = {
 	planet_modifier = {
 		job_GF_GK_commander_add = 200
 		planet_housing_add = 300
+		planet_building_capacity_add = 1
 	}
 	
 	resources = {
@@ -325,6 +328,7 @@ building_GF_GK_headquarters_3 = {
 		job_GF_GK_commander_add = 300
 		job_GF_GK_officer_add = 100
 		planet_housing_add = 500
+		planet_building_capacity_add = 1
 	}
 	
 	resources = {
@@ -450,6 +454,7 @@ building_GF_AU_council_2 = {
 	planet_modifier = {
 		job_GF_AU_consultant_add = 200
 		planet_housing_add = 300
+		planet_building_capacity_add = 1
 	}
 	
 	resources = {
@@ -509,6 +514,7 @@ building_GF_AU_council_3 = {
 		job_GF_AU_consultant_add = 300
 		job_GF_AU_director_add = 100
 		planet_housing_add = 500
+		planet_building_capacity_add = 1
 	}
 	
 	resources = {
@@ -634,6 +640,7 @@ building_GF_URNC_committee_2 = {
 	planet_modifier = {
 		job_GF_URNC_secretary_add = 200
 		planet_housing_add = 300
+		planet_building_capacity_add = 1
 	}
 	resources = {
 		category = planet_buildings
@@ -692,6 +699,7 @@ building_GF_URNC_committee_3 = {
 		job_GF_URNC_secretary_add = 300
 		job_GF_URNC_commissioner_add = 100
 		planet_housing_add = 500
+		planet_building_capacity_add = 1
 	}
 	resources = {
 		category = planet_buildings
