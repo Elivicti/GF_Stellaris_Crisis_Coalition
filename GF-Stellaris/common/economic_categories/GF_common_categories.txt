@@ -122,60 +122,41 @@ GF_automated_city_districts = {
 		upkeep
 	}
 }
+GF_automated_city_districts_production_01 = {
+	parent = GF_automated_city_districts
+	modifier_category = planet
+
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+}
+GF_automated_city_districts_production_02 = {
+	parent = GF_automated_city_districts
+	modifier_category = planet
+
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+}
+GF_automated_city_districts_production_03 = {
+	parent = GF_automated_city_districts
+	modifier_category = planet
+
+	generate_add_modifiers = {
+		produces
+		cost
+		upkeep
+	}
+}
+
 GF_automated_city_districts_nexus = {
 	parent = GF_automated_city_districts
 	modifier_category = planet
 	generate_add_modifiers = { upkeep }
-}
-GF_automated_city_districts_generator = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_farming = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_mining = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_foundry = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_industry = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_refinery = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_research = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_factory = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_collapse = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
-}
-GF_automated_city_districts_reverse_collapse = {
-	parent = GF_automated_city_districts
-	modifier_category = planet
-	generate_mult_modifiers = { upkeep }
 }
 
 GF_automated_city_maintainer = {

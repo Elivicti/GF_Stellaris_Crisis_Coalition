@@ -22,3 +22,75 @@ GF_slot_industrial = {
 		zone_energy
 	}
 }
+
+GF_slot_autocity_nexus = {
+	unlock = { always = yes }
+	start = GF_zone_autocity_nexus
+	include = {
+		GF_zone_autocity_nexus
+	}
+}
+GF_slot_autocity_01 = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_autocity_nexus
+	}
+}
+GF_slot_autocity_02 = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_autocity_nexus
+	}
+}
+
+GF_slot_autocity_specialization_01 = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_autocity_generator_01
+		GF_zone_autocity_mining_01
+		GF_zone_autocity_farming_01
+
+		GF_zone_autocity_foundry_01
+		GF_zone_autocity_industry_01
+		GF_zone_autocity_refinery_01
+
+		GF_zone_autocity_assembly_01
+		GF_zone_autocity_research_01
+		GF_zone_autocity_collapse_01
+		GF_zone_autocity_reverse_collapse_01
+	}
+}
+GF_slot_autocity_specialization_02 = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_autocity_generator_02
+		GF_zone_autocity_mining_02
+		GF_zone_autocity_farming_02
+
+		GF_zone_autocity_foundry_02
+		GF_zone_autocity_industry_02
+		GF_zone_autocity_refinery_02
+
+		GF_zone_autocity_assembly_02
+		GF_zone_autocity_research_02
+		GF_zone_autocity_collapse_02
+		GF_zone_autocity_reverse_collapse_02
+	}
+}
+GF_slot_autocity_specialization_03 = {
+	unlock = { always = yes }
+	include = {
+		GF_zone_autocity_generator_03
+		GF_zone_autocity_mining_03
+		GF_zone_autocity_farming_03
+
+		GF_zone_autocity_foundry_03
+		GF_zone_autocity_industry_03
+		GF_zone_autocity_refinery_03
+
+		GF_zone_autocity_assembly_03
+		GF_zone_autocity_research_03
+		GF_zone_autocity_collapse_03
+		GF_zone_autocity_reverse_collapse_03
+	}
+}

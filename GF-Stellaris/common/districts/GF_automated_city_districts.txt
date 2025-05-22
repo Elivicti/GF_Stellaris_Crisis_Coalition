@@ -33,7 +33,13 @@ district_GF_automated_nexus = {
 	show_on_uncolonized = {
 		uses_district_set = GF_automated_city_district_set
 	}
-	
+
+	zone_slots = {
+		GF_slot_autocity_nexus
+		GF_slot_autocity_01
+		GF_slot_autocity_02
+	}
+
 	potential = {
 		uses_district_set = GF_automated_city_district_set
 	}
@@ -49,9 +55,9 @@ district_GF_automated_nexus = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 12
+		planet_housing_add = 1200
 
-		job_GF_system_dispatcher_add = 1
+		job_GF_system_dispatcher_add = 100
 		GF_system_maintenance = -0.05
 	}
 
@@ -61,7 +67,7 @@ district_GF_automated_nexus = {
 			owner = { has_active_tradition = tr_prosperity_public_works }
 		}
 		modifier = {
-			planet_housing_add = 3
+			planet_housing_add = 300
 		}
 	}
 
@@ -71,7 +77,7 @@ district_GF_automated_nexus = {
 			owner = { has_technology = tech_housing_1 }
 		}
 		modifier = {
-			planet_housing_add = 3
+			planet_housing_add = 300
 		}
 	}
 
@@ -81,7 +87,7 @@ district_GF_automated_nexus = {
 			owner = { has_technology = tech_housing_2 }
 		}
 		modifier = {
-			planet_housing_add = 3
+			planet_housing_add = 300
 		}
 	}
 
@@ -90,497 +96,125 @@ district_GF_automated_nexus = {
 	}
 }
 
-district_GF_automated_energy = {
+district_GF_autocity_specialization_01 = {
 	base_buildtime = @build_time
+	icon = district_arcology_housing_secondary
 	is_capped_by_modifier = no
-	icon = district_rw_generator
 
 	prerequisites = { "GF_tech_ternary_quantum_computing" }
 	show_tech_unlock_if = { always = no }
 
 	show_on_uncolonized = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
-	
 	potential = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
 
 	resources = {
-		category = GF_automated_city_districts_generator
+		category = GF_automated_city_districts_production_01
 		cost = {
 			minerals = @base_cost_t1
-			rare_crystals = @rare_cost
 		}
 		upkeep = {
-			energy = @base_upkeep_t2
-			rare_crystals = @rare_upkeep_t1
+			energy = @base_upkeep_t1
 		}
-		produces = {
-			energy = 100
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_generator_base_produces_mult|
-		}
+	}
+
+	zone_slots = {
+		GF_slot_autocity_specialization_01
 	}
 
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 1200
 
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
+		job_GF_maintenance_engineer_add = 100
+		GF_system_maintenance = -0.05
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_maintenance_engineer_effect_desc
 	}
 }
-
-district_GF_automated_mining = {
+district_GF_autocity_specialization_02 = {
 	base_buildtime = @build_time
+	icon = district_arcology_housing_secondary
 	is_capped_by_modifier = no
-	icon = district_mining
-	
+
 	prerequisites = { "GF_tech_ternary_quantum_computing" }
 	show_tech_unlock_if = { always = no }
 
 	show_on_uncolonized = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
-	
 	potential = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
 
 	resources = {
-		category = GF_automated_city_districts_mining
+		category = GF_automated_city_districts_production_02
 		cost = {
-			minerals = @base_cost_t2
+			minerals = @base_cost_t1
 		}
 		upkeep = {
-			energy = @base_upkeep_t3
+			energy = @base_upkeep_t1
 		}
-		produces = {
-			minerals = 75
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_mining_base_produces_mult|
-		}
+	}
+
+	zone_slots = {
+		GF_slot_autocity_specialization_02
 	}
 
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 1200
 
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
+		job_GF_maintenance_engineer_add = 100
+		GF_system_maintenance = -0.05
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_maintenance_engineer_effect_desc
 	}
 }
-
-district_GF_automated_farming = {
+district_GF_autocity_specialization_03 = {
 	base_buildtime = @build_time
+	icon = district_arcology_housing_secondary
 	is_capped_by_modifier = no
-	icon = district_rw_farming
-	
+
 	prerequisites = { "GF_tech_ternary_quantum_computing" }
 	show_tech_unlock_if = { always = no }
 
 	show_on_uncolonized = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
-	
 	potential = {
 		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_base_resources
 	}
 
 	resources = {
-		category = GF_automated_city_districts_farming
+		category = GF_automated_city_districts_production_03
 		cost = {
 			minerals = @base_cost_t1
-			volatile_motes = @rare_cost
 		}
 		upkeep = {
-			energy = @base_upkeep_t2
-			volatile_motes = @rare_upkeep_t1
+			energy = @base_upkeep_t1
 		}
-		produces = {
-			food = 100
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_farming_base_produces_mult|
-		}
+	}
+
+	zone_slots = {
+		GF_slot_autocity_specialization_03
 	}
 
 	planet_modifier = {
-		planet_housing_add = 8
+		planet_housing_add = 1200
 
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
+		job_GF_maintenance_engineer_add = 100
+		GF_system_maintenance = -0.05
 	}
-	
+
 	triggered_desc = {
 		text = job_GF_maintenance_engineer_effect_desc
 	}
 }
 
 
-
-district_GF_automated_foundry = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	icon = district_arcology_arms_industry
-	
-	prerequisites = { "GF_tech_ternary_quantum_computing" }
-	show_tech_unlock_if = { always = no }
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-
-	resources = {
-		category = GF_automated_city_districts_foundry
-		cost = {
-			minerals = @base_cost_t1
-			volatile_motes = @rare_cost
-		}
-		upkeep = {
-			energy = @base_upkeep_t2
-			volatile_motes = @rare_upkeep_t2
-			minerals = @material_upkeep_t1
-		}
-		produces = {
-			alloys = 48
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_foundry_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-district_GF_automated_industry = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	icon = district_arcology_civilian_industry
-	
-	prerequisites = { "GF_tech_ternary_quantum_computing" }
-	show_tech_unlock_if = { always = no }
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-
-	resources = {
-		category = GF_automated_city_districts_industry
-		cost = {
-			minerals = @base_cost_t1
-			rare_crystals = @rare_cost
-		}
-		upkeep = {
-			energy = @base_upkeep_t2
-			rare_crystals = @rare_upkeep_t2
-			minerals = @material_upkeep_t1
-		}
-		produces = {
-			consumer_goods = 90
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_industry_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-district_GF_automated_refinery = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	
-	prerequisites = { "GF_tech_ternary_quantum_computing" }
-	show_tech_unlock_if = { always = no }
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_advanced_resources
-	}
-
-	allow = {
-		hidden_trigger = { exists = owner }
-		custom_tooltip = {
-			fail_text = district_GF_automated_refinery_preq
-			owner = {
-				OR = {
-					has_technology = tech_exotic_gases
-					has_technology = tech_mine_exotic_gases
-					has_technology = tech_rare_crystals
-					has_technology = tech_mine_rare_crystals
-					has_technology = tech_volatile_motes
-					has_technology = tech_mine_volatile_motes
-				}
-			}
-		}
-	}
-
-	resources = {
-		category = GF_automated_city_districts_refinery
-		cost = {
-			minerals = @base_cost_t3
-		}
-		upkeep = {
-			energy = @base_upkeep_t2
-			minerals = @material_upkeep_t1
-		}
-		produces = {
-			exotic_gases = 8
-			volatile_motes = 8
-			rare_crystals = 8
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_refinery_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-
-
-district_GF_automated_research = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	icon = district_research
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-
-	prerequisites = { "GF_tech_doll_assemble" }
-	show_tech_unlock_if = { always = no }
-
-	resources = {
-		category = GF_automated_city_districts_research
-		cost = {
-			minerals = @base_cost_t1
-			exotic_gases = @rare_cost
-		}
-		upkeep = {
-			energy = @base_upkeep_t3
-			exotic_gases = @rare_upkeep_t3
-		}
-		produces = {
-			physics_research = 60
-			society_research = 60
-			engineering_research = 60
-			gf_core_chip = 30
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_research_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-district_GF_automated_factory = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	icon = district_GF_assembly
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-
-	prerequisites = { "GF_tech_doll_assemble" }
-	show_tech_unlock_if = { always = no }
-
-	resources = {
-		category = GF_automated_city_districts_factory
-		cost = {
-			minerals = @base_cost_t1
-			exotic_gases = @rare_cost
-		}
-		upkeep = {
-			energy = 8
-			alloys = 8
-			gf_core_chip = 2
-		}
-		upkeep = {
-			trigger = {
-				exists = assembling_species
-				assembling_species = { has_trait = GF_trait_doll }
-			}
-			gf_core_chip = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		planet_pop_assembly_add = 4
-		mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_factory_assembly_speed_mult|
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-		
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-district_GF_automated_collapse = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-	icon = district_GF_collapse
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-
-	prerequisites = { "GF_tech_collapse_plant_1" }
-	show_tech_unlock_if = { has_tradition = tr_gf_automation_finish }
-
-	resources = {
-		category = GF_automated_city_districts_collapse
-		cost = {
-			minerals = @base_cost_t3
-		}
-		upkeep = {
-			energy = @base_upkeep_t3
-			minerals = @material_upkeep_t1
-		}
-		produces = {
-			GF_nyto_collapse_liquid = 90
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_collapse_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}
-
-district_GF_automated_reverse_collapse = {
-	base_buildtime = @build_time
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-	
-	potential = {
-		uses_district_set = GF_automated_city_district_set
-		has_planet_flag = flag_p_GF_automated_city_special_resources
-	}
-
-	prerequisites = { "GF_tech_reverse_collapse_plant" }
-	show_tech_unlock_if = { has_tradition = tr_gf_automation_finish }
-
-	resources = {
-		category = GF_automated_city_districts_reverse_collapse
-		cost = {
-			minerals = @base_cost_t3
-		}
-		upkeep = {
-			energy = @base_upkeep_t2
-			gf_core_chip = @rare_upkeep_t3
-			GF_nyto_collapse_liquid = @material_upkeep_t2
-		}
-		produces = {
-			alloys = 24
-			consumer_goods = 36
-			exotic_gases = 4
-			volatile_motes = 4
-			rare_crystals = 4
-			mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_reverse_collapse_base_produces_mult|
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 8
-
-		job_GF_maintenance_engineer_add = 1
-		GF_system_maintenance = -0.10
-	}
-	
-	triggered_desc = {
-		text = job_GF_maintenance_engineer_effect_desc
-	}
-}

@@ -7,6 +7,8 @@
  GF_tr_requies_analyse_orb_mainframe_alpha_finished_success:0 "£trigger_yes£完成特殊项目：§Y$GF_artifact_analyse_orb_mainframe_alpha$§!"
  tr_gf_automation_finish:0 "$GF_tradition_automation$完成"
  tr_gf_automation_finish_effect_desc:0 "§H解锁决议：§!$decision_GF_automated_city_project$\n§H解锁阶层：§!$pop_cat_GF_freedom_class$"
+ GF_finish_automation_tradition_fail: "£trigger_no£完成§Y$GF_tradition_automation$§!传统"
+ GF_finish_automation_tradition_success: "£trigger_yes£完成§Y$GF_tradition_automation$§!传统"
  tr_gf_automation_1:0 "优化算法"
  tr_gf_automation_1_delayed:0 "OGAS会对我们现有的生产工艺进行仔细的分析与迭代，改进对应的流程步骤，从而降低了资源的损耗与浪费，提高转化率。"
  tr_gf_automation_2:0 "效率最大化"

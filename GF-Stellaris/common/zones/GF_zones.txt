@@ -1,5 +1,5 @@
 GF_zone_assembly = {
-	icon = GFX_GF_zone_assembly_icon # PLACEHOLDER
+	icon = GFX_GF_zone_assembly_icon
 	base_buildtime = @zone_buildtime
 
 
@@ -177,3 +177,399 @@ GF_zone_reverse_collapse = {
 	}
 
 }
+
+
+## automated city
+
+GF_zone_autocity_nexus = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	max_buildings = 6
+
+	unlock = {
+		exists = owner
+		owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_government
+		GF_automated_city_generic
+	}
+}
+
+GF_zone_autocity_energy = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_energy # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_energy
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 1
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_energy_produces_add = 100
+	}
+}
+GF_zone_autocity_food = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_food # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_food
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 1
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_food_produces_add = 100
+		# mult = value:scripted_modifier_mult|MODIFIER|GF_automated_city_districts_farming_base_produces_mult|
+	}
+}
+GF_zone_autocity_minerals = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_minerals # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_minerals
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 1
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_minerals_produces_add = 75
+	}
+}
+
+GF_zone_autocity_foundry = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_alloys # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_foundry
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 2
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_alloys_produces_add = 48
+	}
+}
+GF_zone_autocity_industry = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_consumer_goods # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_industry
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 2
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_consumer_goods_produces_add = 90
+	}
+}
+GF_zone_autocity_refinery = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_refinery # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_refinery
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 2
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_exotic_gases_produces_add = 8
+		GF_automated_city_districts_production_volatile_motes_produces_add = 8
+		GF_automated_city_districts_production_rare_crystals_produces_add = 8
+	}
+}
+
+
+GF_zone_autocity_assembly = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_factory # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_assembly
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 3
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		planet_pop_assembly_add = 4
+	}
+}
+GF_zone_autocity_research = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_research # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_assembly
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 3
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_physics_research_produces_add = 60
+		GF_automated_city_districts_production_society_research_produces_add = 60
+		GF_automated_city_districts_production_engineering_research_produces_add = 60
+		GF_automated_city_districts_production_gf_core_chip_produces_add = 30
+	}
+}
+GF_zone_autocity_collapse = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_collapse # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_collapse
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 3
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_GF_nyto_collapse_liquid_produces_add = 90
+	}
+}
+GF_zone_autocity_reverse_collapse = {
+	base_buildtime = @zone_buildtime
+	icon = GFX_colony_type_GF_auto_city_reverse_collapse # PLACEHOLDER
+
+	resources = {
+		category = planet_zones
+		cost = { minerals = @zone_cost }
+	}
+
+	potential = {
+		uses_district_set = GF_automated_city_district_set
+	}
+
+	unlock = {
+		hidden_trigger = { exists = owner }
+		hidden:owner = { GF_can_build_automated_city = yes }
+	}
+
+	included_building_sets = {
+		GF_automated_city_reverse_collapse
+		GF_automated_city_generic
+	}
+
+	planet_modifier = {
+		GF_automated_city_specialization_level = 3
+	}
+
+	district_planet_modifier = {
+		planet_housing_add = -400
+		GF_system_maintenance = -0.05
+	}
+
+	triggered_district_planet_modifier = {
+		GF_automated_city_districts_production_alloys_produces_add = 24
+		GF_automated_city_districts_production_consumer_goods_produces_add = 36
+		GF_automated_city_districts_production_exotic_gases_produces_add = 4
+		GF_automated_city_districts_production_volatile_motes_produces_add = 4
+		GF_automated_city_districts_production_rare_crystals_produces_add = 4
+	}
+}
+

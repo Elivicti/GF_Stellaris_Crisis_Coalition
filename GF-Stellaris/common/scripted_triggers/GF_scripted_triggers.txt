@@ -510,3 +510,15 @@ GF_has_shrike_heart = {
 		has_component = GF_SHRIKE_HEART_LARGE
 	}
 }
+
+# this = country
+GF_can_build_automated_city = {
+	custom_tooltip = {
+		fail_text = GF_finish_automation_tradition_fail
+		success_text = GF_finish_automation_tradition_success
+		OR = {
+			has_active_tradition = tr_gf_automation_finish
+			has_country_flag = flag_GF_can_build_automated_city
+		}
+	}
+}

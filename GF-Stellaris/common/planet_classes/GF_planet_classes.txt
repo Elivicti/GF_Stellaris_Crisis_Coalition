@@ -81,6 +81,7 @@ pc_GF_sf_machine = {
 
 	colonizable = yes
 	district_set = GF_sf_machine_world
+	starting_district = district_GF_center
 	is_artificial_planet = yes
 	starting_planet = no
 	show_city = no
@@ -156,8 +157,6 @@ pc_GF_automated_city = {
 
 	city_color_lut = "gfx/portraits/misc/colorcorrection_continental.dds"
 
-	building_set = GF_automated_city
-
 	modifier = {
 		planet_max_buildings_add = 36
 	}
@@ -178,6 +177,7 @@ pc_GF_automated_city = {
 
 	colonizable = yes
 	district_set = GF_automated_city_district_set
+	starting_district = district_GF_automated_nexus
 	starting_planet = no
 	is_artificial_planet = yes
 	ideal = yes
